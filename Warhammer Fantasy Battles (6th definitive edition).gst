@@ -254,20 +254,6 @@
     </categoryEntry>
     <categoryEntry id="32f1-197f-d719-a393" name="Special list rules" hidden="false"/>
   </categoryEntries>
-  <forceEntries>
-    <forceEntry id="7d9d-6c8d-4ea0-b7ad" name="Standard " hidden="false">
-      <categoryLinks>
-        <categoryLink id="223a-0bf6-f992-7db0" name="Lord" hidden="false" targetId="d024-d25b-a9b4-73b6" primary="false"/>
-        <categoryLink id="7697-ca4b-195e-cd8d" name="Heroes" hidden="false" targetId="c16b-f319-2c62-2c12" primary="false"/>
-        <categoryLink id="a87e-de8e-ade8-cae0" name="Core" hidden="false" targetId="64bf-efb4-9978-26df" primary="false"/>
-        <categoryLink id="35fe-76ab-1547-66f3" name="Special" hidden="false" targetId="43cc-fc3f-35a7-8d03" primary="false"/>
-        <categoryLink id="aa64-c672-9ef8-b6f7" name="Rare" hidden="false" targetId="e94b-6a54-8779-cd60" primary="false"/>
-        <categoryLink id="1a43-0c1d-6a51-d2af" name="Characters" hidden="false" targetId="7a1c-d611-c2dc-def1" primary="false"/>
-        <categoryLink id="30d2-fdcf-80db-31b5" name="Special Characters" hidden="false" targetId="0644-bfcd-32c2-21dc" primary="false"/>
-        <categoryLink id="081c-3c2a-a576-6833" name="Experimental rules" hidden="false" targetId="4fed-b911-e6e0-927b" primary="false"/>
-      </categoryLinks>
-    </forceEntry>
-  </forceEntries>
   <sharedSelectionEntries>
     <selectionEntry id="e9ad-f1ce-aebf-6d23" name="Battle Standard Bearer" publicationId="315e-e3c4-08af-fd51" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
