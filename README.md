@@ -5,7 +5,7 @@ It also tries to add the references to all the rules written here, so any player
 
 Ideally we will also apply F.A.Q.s, erratas and any other patch, update or change in the rules during the 6th edition.
 
-The data is heavily based on [Ergofarg's work](https://github.com/Ergofarg/Warhammer-Fantasy-6th-edition/)), which was the first stone. Everything else has been built over his work.
+The data is heavily based on [Ergofarg's work](https://github.com/Ergofarg/Warhammer-Fantasy-6th-edition/), which was the first stone. Everything else has been built over his work.
 
 The main additions are:
   - Options for the alternative lists!
