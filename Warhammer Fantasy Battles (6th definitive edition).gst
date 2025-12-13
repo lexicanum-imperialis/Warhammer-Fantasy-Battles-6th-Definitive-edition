@@ -457,6 +457,8 @@
     <selectionEntry id="1eb7-3f36-8cf7-e0ba" name="Great Weapon" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="38c9-2702-5d98-b2ad" name="Great Weapon" hidden="false" targetId="97d4-ed3b-5f76-5a23" type="profile"/>
+        <infoLink name="Requires Two Hands" id="8957-d0e2-a0e1-92ab" hidden="false" type="rule" targetId="fd57-939f-0f92-0953"/>
+        <infoLink name="Strikes Last" id="ec3a-d6f0-862f-3582" hidden="false" type="rule" targetId="dd3a-b57e-97a7-2da7"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
@@ -567,6 +569,7 @@
     <selectionEntry id="4c50-49fe-7ac2-4b3b" name="Crossbow" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="4f1e-39c2-0117-02e3" name="Crossbow" hidden="false" targetId="1979-9085-40d4-adee" type="profile"/>
+        <infoLink name="Move-or-Fire" id="69a0-1c21-ec1f-2359" hidden="false" type="rule" targetId="bcce-845e-1cd0-b65e"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
@@ -619,6 +622,7 @@
     <selectionEntry id="2eb9-be12-caec-57e8" name="Flail" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="fe8f-7914-842b-138e" name="Flail" hidden="false" targetId="10f8-e196-d180-044c" type="profile"/>
+        <infoLink name="Requires Two Hands" id="7f77-9853-8e3c-6729" hidden="false" type="rule" targetId="fd57-939f-0f92-0953"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
@@ -1831,16 +1835,25 @@ Note that a spell cast with a Power Stone can never be cast with Irresistible Fo
     <rule id="3be4-7ba4-c28d-154b" name="Special characters" publicationId="315e-e3c4-08af-fd51" page="101" hidden="false">
       <description>Both players are allowed to field special characters, even if the rules already set no permission was needed. This is a courtesy rule.</description>
     </rule>
+    <rule name="Move-or-Fire" id="bcce-845e-1cd0-b65e" hidden="false" page="90" publicationId="315e-e3c4-08af-fd51">
+      <description>Some missile weapons take a long time to load, such as crossbows and handguns. So, a model that is armed with a move-or-fire weapon may not fire his weapon if he has moved at all during that turn. It doesn&apos;t matter if the model was forced to move by some compulsory action or by magic. Any movement will prevent the model from shooting, even the simple act of turning round.</description>
+    </rule>
+    <rule name="Requires Two Hands" id="fd57-939f-0f92-0953" hidden="false" publicationId="315e-e3c4-08af-fd51" page="89">
+      <description>If a weapon requires two hands to use then it is not possible to simultaneously employ a shield or another weapon. If a shield is carried then it must be slung across the warrior&apos;s back or dropped behind him whilst he fights in close combat.</description>
+    </rule>
+    <rule name="Strikes Last" id="dd3a-b57e-97a7-2da7" hidden="false" page="89" publicationId="315e-e3c4-08af-fd51">
+      <description>Troops armed with a weapon that strikes last will always strike last during close combat where they would otherwise strike in Initiative order. Note that troops that charge will still strike first in the initial turn of close combat, as charging troops always strike first rather man in Initiative order. For example, troops armed with Great Axes will strike first on the turn they charge and strike last thereafter.</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
-    <profile id="5556-38ea-b278-4a8f" name="Hand Weapon" hidden="false" typeId="7889-42d9-70a0-3ea9" typeName="Weapon">
+    <profile id="5556-38ea-b278-4a8f" name="Hand Weapon" hidden="false" typeId="7889-42d9-70a0-3ea9" typeName="Weapon" page="91" publicationId="315e-e3c4-08af-fd51">
       <characteristics>
         <characteristic name="Range" typeId="3107-4d1e-9a51-6564">CC only</characteristic>
         <characteristic name="Strength" typeId="6fe4-1ebb-cb04-1378">As User</characteristic>
         <characteristic name="Special Rules" typeId="a21a-cdc0-4b13-b236"/>
       </characteristics>
     </profile>
-    <profile id="72aa-da68-2dae-4ab6" name="Additional Hand weapon" hidden="false" typeId="7889-42d9-70a0-3ea9" typeName="Weapon">
+    <profile id="72aa-da68-2dae-4ab6" name="Additional Hand weapon" hidden="false" typeId="7889-42d9-70a0-3ea9" typeName="Weapon" page="88" publicationId="315e-e3c4-08af-fd51">
       <characteristics>
         <characteristic name="Range" typeId="3107-4d1e-9a51-6564"/>
         <characteristic name="Strength" typeId="6fe4-1ebb-cb04-1378"/>
@@ -1854,7 +1867,7 @@ Note that a spell cast with a Power Stone can never be cast with Irresistible Fo
         <characteristic name="Special Rules" typeId="a21a-cdc0-4b13-b236">Requires 2 Hands</characteristic>
       </characteristics>
     </profile>
-    <profile id="97d4-ed3b-5f76-5a23" name="Great Weapon" hidden="false" typeId="7889-42d9-70a0-3ea9" typeName="Weapon">
+    <profile id="97d4-ed3b-5f76-5a23" name="Great Weapon" hidden="false" typeId="7889-42d9-70a0-3ea9" typeName="Weapon" page="91" publicationId="315e-e3c4-08af-fd51">
       <characteristics>
         <characteristic name="Range" typeId="3107-4d1e-9a51-6564"/>
         <characteristic name="Strength" typeId="6fe4-1ebb-cb04-1378">As user +2</characteristic>
@@ -1901,7 +1914,7 @@ Always Strikes Last</characteristic>
         <characteristic name="Special Rules" typeId="a21a-cdc0-4b13-b236">May fight in two ranks</characteristic>
       </characteristics>
     </profile>
-    <profile id="ec76-323e-c09d-eae4" name="Bow" hidden="false" typeId="7889-42d9-70a0-3ea9" typeName="Weapon">
+    <profile id="ec76-323e-c09d-eae4" name="Bow" hidden="false" typeId="7889-42d9-70a0-3ea9" typeName="Weapon" page="92" publicationId="315e-e3c4-08af-fd51">
       <characteristics>
         <characteristic name="Range" typeId="3107-4d1e-9a51-6564">24&quot;</characteristic>
         <characteristic name="Strength" typeId="6fe4-1ebb-cb04-1378">3</characteristic>
@@ -1928,7 +1941,7 @@ Always Strikes Last</characteristic>
         <characteristic name="Special Rules" typeId="a21a-cdc0-4b13-b236"/>
       </characteristics>
     </profile>
-    <profile id="1979-9085-40d4-adee" name="Crossbow" hidden="false" typeId="7889-42d9-70a0-3ea9" typeName="Weapon">
+    <profile id="1979-9085-40d4-adee" name="Crossbow" hidden="false" typeId="7889-42d9-70a0-3ea9" typeName="Weapon" page="92" publicationId="315e-e3c4-08af-fd51">
       <characteristics>
         <characteristic name="Range" typeId="3107-4d1e-9a51-6564">30</characteristic>
         <characteristic name="Strength" typeId="6fe4-1ebb-cb04-1378">4</characteristic>
@@ -1977,7 +1990,7 @@ Always Strikes Last</characteristic>
         <characteristic name="Special Rules" typeId="a21a-cdc0-4b13-b236">Armour piercing, In cc S4, AP for first turn of combat only.</characteristic>
       </characteristics>
     </profile>
-    <profile id="10f8-e196-d180-044c" name="Flail" hidden="false" typeId="7889-42d9-70a0-3ea9" typeName="Weapon">
+    <profile id="10f8-e196-d180-044c" name="Flail" hidden="false" typeId="7889-42d9-70a0-3ea9" typeName="Weapon" page="91" publicationId="315e-e3c4-08af-fd51">
       <characteristics>
         <characteristic name="Range" typeId="3107-4d1e-9a51-6564">cc</characteristic>
         <characteristic name="Strength" typeId="6fe4-1ebb-cb04-1378">As user</characteristic>
