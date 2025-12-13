@@ -7195,6 +7195,86 @@ If you roll a &apos;misfire&apos; result something has gone awry with the warps
         <infoLink name="Immune to Psycology " id="4030-af53-1020-d70e" hidden="false" type="rule" targetId="ff2b-8db6-64fa-e9ca"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Vermin Lord" hidden="false" id="c38b-af7f-3194-bd9d" publicationId="1c46-d3dc-d886-3cc8" page="10" collective="false">
+      <profiles>
+        <profile name="Vermin Lord" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="2c89-ee74-cb99-9cef" publicationId="1c46-d3dc-d886-3cc8" page="10">
+          <characteristics>
+            <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">5</characteristic>
+            <characteristic name="WS" typeId="f95b-da01-0578-3bdc">8</characteristic>
+            <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">0</characteristic>
+            <characteristic name="S" typeId="b690-4bc0-bb73-267b">6</characteristic>
+            <characteristic name="T" typeId="8712-f56f-5b22-a720">6</characteristic>
+            <characteristic name="W" typeId="253a-9b00-4fde-8ac2">6</characteristic>
+            <characteristic name="I" typeId="dfff-363e-f72a-5a59">10</characteristic>
+            <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">6</characteristic>
+            <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">9</characteristic>
+            <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+            <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">5+</characteristic>
+            <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Immune to Psycology " id="32f3-80b5-a32e-bcc6" hidden="false" type="rule" targetId="ff2b-8db6-64fa-e9ca"/>
+        <infoLink name="Terror" id="a20c-75cf-c700-777d" hidden="false" type="rule" targetId="96f0-c50f-e59e-85fa"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Lord" hidden="false" id="7f3c-e2bc-1404-a5a5" targetId="d024-d25b-a9b4-73b6" primary="true"/>
+        <categoryLink name="Characters" hidden="false" id="b067-5a7c-ad73-7f85" targetId="7a1c-d611-c2dc-def1" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapons" id="254b-adc7-ef9f-a579" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Doom Glaive" hidden="false" id="3939-cacb-8742-a8c1" publicationId="1c46-d3dc-d886-3cc8" page="10">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="21b5-41d5-be19-622c" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2a0d-b4cc-53ae-7d35" includeChildSelections="false"/>
+              </constraints>
+              <rules>
+                <rule name="Doom Glaive (Vermin Lord)" id="ecc3-529b-84af-b5c2" hidden="false" publicationId="1c46-d3dc-d886-3cc8" page="10">
+                  <description>A hit from a Doom Glaive allows
+no armour saves.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="General" hidden="false" id="44d4-666f-444f-fada" collective="false" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry"/>
+        <entryLink import="true" name="Level 4 magic" hidden="false" id="428b-442e-443f-ebff" type="selectionEntry" targetId="e997-963c-c076-0de2">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="518d-8355-0eec-1412"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="650"/>
+        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="4"/>
+        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="2"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8fbf-2773-0587-d2b2" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
+      <rules>
+        <rule name="Daemonic Instability (Vermin Lord)" id="8dab-5855-c03d-38bf" hidden="false" publicationId="1c46-d3dc-d886-3cc8" page="10">
+          <description>When a Vermin Lord loses a round of combat it must take a special Daemonic Instability test instead of a Break test.
+1. Calculate combat resolution as normal.
+2. Roll 2D6 and compare this to the Vermin Lord&apos;s Leadership value, with no combat resolution modifiers. If the roll is higher, the Vermin Lord loses its grip on the mortal world and disappears from the battlefield. It count as destroyed.
+3. If the Vermin Lord does not instantly disappear, compare the dice roll to their Leadership value, taking into account any modifiers for combat resolution. For each point the Vermin Lord fails its Instability test by, it suffers one additional wound. No saves of any kind are allowed against these wounds, including Ward saves, regeneration, etc. If characters are present in the unit, the controlling player can decide how to allocate wounds between the character/s and the unit.
+4. If the Vermin Lord is wiped out by instability in the first round of combat, the enemy may overrun as normal.</description>
+        </rule>
+        <rule name="Daemonic Aura" id="b074-7891-655b-d2f5" hidden="false" page="10" publicationId="1c46-d3dc-d886-3cc8">
+          <description>The Vermin Lord get a 5+ Ward save. However, this Ward save cannot be used against magical attacks (ie, spells and magic items).</description>
+        </rule>
+        <rule name="Horned Rat Incarnate" id="0426-2bb1-d643-3091" hidden="false" page="10" publicationId="1c46-d3dc-d886-3cc8">
+          <description>All friendly Skaven units with at least one model within 6&quot; of the Vermin Lord are Immune to Psychology.</description>
+        </rule>
+        <rule name="Stands alone (Vermin Lord)" id="b14f-87cf-9cff-4773" hidden="false" page="10" publicationId="1c46-d3dc-d886-3cc8">
+          <description>A Vermin Lord may never join units.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
   </selectionEntries>
   <entryLinks>
     <entryLink id="c042-1d75-40ca-c654" name="Allow experimental rules?" hidden="false" collective="false" import="true" targetId="8b76-92c4-23f9-54b1" type="selectionEntry">
