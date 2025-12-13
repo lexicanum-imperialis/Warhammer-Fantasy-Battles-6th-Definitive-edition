@@ -2483,15 +2483,6 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="set-primary" field="category" value="43cc-fc3f-35a7-8d03">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="38dc-9bed-455f-f309" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
       </modifiers>
       <infoLinks>
         <infoLink id="9958-b0b6-9eef-603d" name="Warp Lightning Cannon" hidden="false" targetId="9ffb-ded0-c4a5-99d6" type="profile"/>
@@ -2506,6 +2497,22 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="remove" value="e94b-6a54-8779-cd60" field="category"/>
+            <modifier type="set-primary" value="43cc-fc3f-35a7-8d03" field="category"/>
+            <modifier type="unset-primary" value="e94b-6a54-8779-cd60" field="category"/>
+          </modifiers>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="0" field="selections" scope="force" childId="38dc-9bed-455f-f309" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry id="2286-a8f2-9229-8303" name="Dogs Of War" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
@@ -3026,7 +3033,7 @@ The patronage of Warlord Gnawdwell means that Queek is very well equipped for a 
         <categoryLink id="3a63-c17c-2262-d0e5" name="Characters" hidden="false" targetId="7a1c-d611-c2dc-def1" primary="false"/>
         <categoryLink id="cd0c-851c-263f-5b77" name="Lord" hidden="false" targetId="d024-d25b-a9b4-73b6" primary="false"/>
         <categoryLink id="e63e-b055-92b4-8712" name="Heroes" hidden="false" targetId="c16b-f319-2c62-2c12" primary="false"/>
-        <categoryLink id="2a53-9e0d-0fcb-84e3" name="Special Characters" hidden="false" targetId="0644-bfcd-32c2-21dc" primary="false"/>
+        <categoryLink id="2a53-9e0d-0fcb-84e3" name="Special Characters" hidden="false" targetId="0644-bfcd-32c2-21dc" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="29e0-2670-8426-c349" name="Weapons" hidden="false" collective="false" import="true">
@@ -7075,7 +7082,6 @@ The rules are massive, so just check the book (&quot;Warhammer Chronicles 2004&q
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="New Entry" hidden="false" id="9dc8-5667-40fa-5250"/>
     <selectionEntry type="upgrade" import="true" name="Doomwheel" hidden="false" id="9dc5-d12b-c33d-0c76" publicationId="1c46-d3dc-d886-3cc8" page="8">
       <categoryLinks>
         <categoryLink name="Rare" hidden="false" id="5640-8ba5-1b8a-b71e" targetId="e94b-6a54-8779-cd60" primary="true"/>
