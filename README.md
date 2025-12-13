@@ -35,12 +35,12 @@ The main additions are:
 
 ### Sources consulted
 
-|Short-n |Title of the source                    |Year|Author(s)                          |
-|:------:|:--------------------------------------|:--:|:----------------------------------|
-|BRB     |"Warhammer Rulebook 6th Edition"       |2000|by Rick Priestly and Tuomas Pirinen|
-|AN-02   |"Warhammer Annual"                     |2002|by Gav Thorpe                      |
-|CR-03   |"Warhammer Chronicles"                 |2003|by Jake Thornton & Alessio Cavatore|
-|CR-04   |"Warhammer Chronicles"                 |2004|by Jake Thornton & Alessio Cavatore|
-|Lustria |"Warhammer: Lustria"                   |2004|by Andy Hoare & Graham McNeil      |
-|SoC     |"Warhammer: Storm of Chaos"            |2004|by Gav Thorpe                      |
-|Skaven-A| Warhammer Armies: Skaven (6th Edition)|2002|by Alessio Cavatore                |
+|Short-n  |Title of the source                    |Year|Author(s)                          |
+|:-------:|:--------------------------------------|:--:|:----------------------------------|
+|BRB      |"Warhammer Rulebook 6th Edition"       |2000|by Rick Priestly and Tuomas Pirinen|
+|AN-02    |"Warhammer Annual"                     |2002|by Gav Thorpe                      |
+|CR-03    |"Warhammer Chronicles"                 |2003|by Jake Thornton & Alessio Cavatore|
+|CR-04    |"Warhammer Chronicles"                 |2004|by Jake Thornton & Alessio Cavatore|
+|Lustria  |"Warhammer: Lustria"                   |2004|by Andy Hoare & Graham McNeil      |
+|SoC      |"Warhammer: Storm of Chaos"            |2004|by Gav Thorpe                      |
+|Skaven-AB| Warhammer Armies: Skaven (6th Edition)|2002|by Alessio Cavatore                |

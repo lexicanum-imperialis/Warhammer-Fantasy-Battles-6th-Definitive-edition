@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <gameSystem id="0d13-7737-ea86-4662" name="Warhammer Fantasy Battles (6th definitive edition)" revision="1" battleScribeVersion="2.03" authorName="Ergo Fargo and Arturo" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
-    <publication id="315e-e3c4-08af-fd51" name="BRB" shortName="BRB" publisher="Basic Rulebook of Warhammer Fantasy Battles, 6th edition" publicationDate="2000" publisherUrl="Games-Workshop"/>
-    <publication id="91c2-b862-8010-87bb" name="CR-03" publicationDate="2003"/>
-    <publication id="1ec0-3b22-5b99-e411" name="AN-02" publicationDate="2002"/>
-    <publication id="cc59-6466-b62e-cf5b" name="CR-04" publicationDate="2004"/>
-    <publication id="415d-9fbb-df83-ad27" name="Lustria (Campaign)" shortName="LUS" publicationDate="2004"/>
-    <publication id="d2ec-1dc7-f0d5-acbb" name="Storm of Chaos (Campaign)" shortName="SoC" publicationDate="2004"/>
+    <publication id="315e-e3c4-08af-fd51" name="BRB" shortName="Warhammer Rulebook 6th Edition" publisher="by Rick Priestly and Tuomas Pirinen" publicationDate="2000" publisherUrl="Games-Workshop"/>
+    <publication id="91c2-b862-8010-87bb" name="CR-03" shortName="Warhammer Chronicles (2003)" publisher="Jake Thornton &amp; Alessio Cavatore" publicationDate="2003" publisherUrl="Games-Workshop"/>
+    <publication id="1ec0-3b22-5b99-e411" name="AN-02" shortName="Warhammer: Annual (2002)" publisher="by Gav Thorpe" publicationDate="2002" publisherUrl="Games-Workshop"/>
+    <publication id="cc59-6466-b62e-cf5b" name="CR-04" shortName="Warhammer Chronicles (2004)" publisher="Jake Thornton &amp; Alessio Cavatore" publicationDate="2004" publisherUrl="Games-Workshop"/>
+    <publication id="415d-9fbb-df83-ad27" name="LUS" shortName="Lustria (Campaign)" publisher="Andy Hoare &amp; Graham McNeil" publicationDate="2004" publisherUrl="Games-Workshop"/>
+    <publication id="d2ec-1dc7-f0d5-acbb" name="SoC" shortName="Storm of Chaos (Campaign)" publisher="Gav Thorpe" publicationDate="2004" publisherUrl="Games-Workshop"/>
   </publications>
   <costTypes>
     <costType id="ecfa-8486-4f6c-c249" name="pts" defaultCostLimit="-1.0" hidden="false"/>
