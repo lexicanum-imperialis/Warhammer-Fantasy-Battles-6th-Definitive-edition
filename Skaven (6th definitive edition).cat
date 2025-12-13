@@ -1304,6 +1304,46 @@
             <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Yellow Death Upgrade" hidden="true" id="d5f2-dc63-da6c-b164" collective="false" publicationId="5963-108c-c916-4298" page="4">
+          <modifiers>
+            <modifier type="set" value="1" field="7bce-7df8-cb5d-b882">
+              <conditions>
+                <condition type="instanceOf" value="0" field="selections" scope="force" childId="adc6-cd5d-19cc-1bf3" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="fe72-9a50-1ec2-4c8e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f616-86dc-c7a5-1343" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="7bce-7df8-cb5d-b882" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Poisoned Attacks" id="1e62-25ef-a445-c632" hidden="false" targetId="2738-27d5-f4af-4722" type="rule"/>
+            <infoLink name="Yellow Death Rats" id="0e1e-c2b2-d2a3-b695" hidden="true" targetId="daeb-8243-ccf2-d954" type="profile" publicationId="5963-108c-c916-4298" page="4">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="instanceOf" value="0" field="selections" scope="self" childId="d5f2-dc63-da6c-b164" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="35"/>
+            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+          </costs>
+          <rules>
+            <rule name="Warp Fleas (Morbus Sanguis)" id="da6f-c0cb-cc9b-2542" hidden="false" publicationId="5963-108c-c916-4298" page="4">
+              <description>Anyone fighting Morbus in hand-to-hand combat does so with -1 to hit penalty as they’re distracted by the biting fleas. This affects even Skaven because the fleas have grown so large from the effects of the warpstone in Morbus&apos; bloodstream.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
       </selectionEntries>
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
@@ -4766,6 +4806,11 @@ Warp Lightning is a magic missile with a range of 24&quot; It can be cast at a c
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="increment" value="1" field="367b-d38a-fd89-197c">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="8b76-92c4-23f9-54b1" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <profiles>
         <profile id="3b96-718b-0990-f70a" name="Rat Riders" publicationId="00d8-bc10-9f9a-edb3" page="80" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
@@ -4896,6 +4941,9 @@ Warp Lightning is a magic missile with a range of 24&quot; It can be cast at a c
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="367b-d38a-fd89-197c"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry id="ad0e-9049-0a89-8297" name="Eshin Triad" publicationId="d2ec-1dc7-f0d5-acbb" page="93" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
@@ -7237,7 +7285,15 @@ If you roll a &apos;misfire&apos; result something has gone awry with the warps
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="increment" value="1" field="0386-7973-6678-ce1b">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="8b76-92c4-23f9-54b1" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="0386-7973-6678-ce1b"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Vermin Lord" hidden="false" id="c38b-af7f-3194-bd9d" publicationId="1c46-d3dc-d886-3cc8" page="10" collective="false">
       <profiles>
@@ -7265,6 +7321,8 @@ If you roll a &apos;misfire&apos; result something has gone awry with the warps
       <categoryLinks>
         <categoryLink name="Lord" hidden="false" id="7f3c-e2bc-1404-a5a5" targetId="d024-d25b-a9b4-73b6" primary="true"/>
         <categoryLink name="Characters" hidden="false" id="b067-5a7c-ad73-7f85" targetId="7a1c-d611-c2dc-def1" primary="false"/>
+        <categoryLink name="Heroes" hidden="false" id="fc2c-8404-ac69-a6af" targetId="c16b-f319-2c62-2c12" primary="false"/>
+        <categoryLink name="Rare" hidden="false" id="f790-afa5-31e3-a3c3" targetId="e94b-6a54-8779-cd60" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Weapons" id="254b-adc7-ef9f-a579" hidden="false" collective="false" import="true">
@@ -7285,7 +7343,11 @@ no armour saves.</description>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink import="true" name="General" hidden="false" id="44d4-666f-444f-fada" collective="false" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry"/>
+        <entryLink import="true" name="General" hidden="false" id="44d4-666f-444f-fada" collective="false" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dba1-556a-35af-cf49"/>
+          </constraints>
+        </entryLink>
         <entryLink import="true" name="Level 4 magic" hidden="false" id="428b-442e-443f-ebff" type="selectionEntry" targetId="e997-963c-c076-0de2">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="518d-8355-0eec-1412"/>
@@ -7298,7 +7360,7 @@ no armour saves.</description>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="2"/>
       </costs>
       <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8fbf-2773-0587-d2b2" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="8fbf-2773-0587-d2b2" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
       </constraints>
       <rules>
         <rule name="Daemonic Instability (Vermin Lord)" id="8dab-5855-c03d-38bf" hidden="false" publicationId="1c46-d3dc-d886-3cc8" page="10">
@@ -7316,6 +7378,106 @@ no armour saves.</description>
         </rule>
         <rule name="Stands alone (Vermin Lord)" id="b14f-87cf-9cff-4773" hidden="false" page="10" publicationId="1c46-d3dc-d886-3cc8">
           <description>A Vermin Lord may never join units.</description>
+        </rule>
+      </rules>
+      <modifiers>
+        <modifier type="increment" value="1" field="8fbf-2773-0587-d2b2">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="8b76-92c4-23f9-54b1" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Morbus Sanguis, Plague Lord" hidden="true" id="fe72-9a50-1ec2-4c8e" publicationId="f804-741f-2593-2dec" page="78" collective="false">
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="0" field="selections" scope="force" childId="adc6-cd5d-19cc-1bf3" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="1" field="66c0-a7a2-9f7a-8c19">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="8b76-92c4-23f9-54b1" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="8923-5946-7b10-8957" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Plague Lord" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="2e95-ab53-edd6-b8c7" publicationId="5963-108c-c916-4298" page="4">
+          <characteristics>
+            <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">5</characteristic>
+            <characteristic name="WS" typeId="f95b-da01-0578-3bdc">6</characteristic>
+            <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">3</characteristic>
+            <characteristic name="S" typeId="b690-4bc0-bb73-267b">4</characteristic>
+            <characteristic name="T" typeId="8712-f56f-5b22-a720">5</characteristic>
+            <characteristic name="W" typeId="253a-9b00-4fde-8ac2">3</characteristic>
+            <characteristic name="I" typeId="dfff-363e-f72a-5a59">6</characteristic>
+            <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">5</characteristic>
+            <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">7</characteristic>
+            <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+            <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+            <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Frenzy" id="83f2-6050-64ef-8d3d" hidden="false" targetId="ab5d-dda1-bffc-a027" type="rule"/>
+        <infoLink name="Fear" id="8f59-7e50-e957-e010" hidden="false" type="rule" targetId="1524-2372-4aa0-6881"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Lord" hidden="false" id="d302-8560-825e-836d" targetId="d024-d25b-a9b4-73b6" primary="false"/>
+        <categoryLink name="Characters" hidden="false" id="c075-509a-b89a-fe41" targetId="7a1c-d611-c2dc-def1" primary="false"/>
+        <categoryLink name="Clan Pestilens" hidden="false" id="796f-cdd8-da61-2c39" targetId="569c-a212-3b60-af72" primary="false"/>
+        <categoryLink name="Special Characters" hidden="false" id="c429-5a40-f66e-1ca4" targetId="0644-bfcd-32c2-21dc" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Level 4 magic" hidden="false" id="daf1-17e6-8229-539b" collective="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="523f-3896-57b0-ce71" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="face-fb4b-1db1-9a64" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapons" id="6939-97a4-0f12-ab41" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="3ac1-0c2b-dc78-b47c" collective="false" targetId="abdb-bbd0-41b2-5dff" type="selectionEntry">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1208-0c01-4d53-cbcb" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cc8a-a5d8-50cf-964a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Plague Censer" hidden="false" id="044a-b150-5031-bb48" collective="false" targetId="fc1e-c9d2-a1b6-d1d9" type="selectionEntry">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c448-d2d7-7b09-4cf2" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="General" hidden="false" id="58a7-5069-20d7-a102" collective="false" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="150"/>
+        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="4"/>
+        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="2"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="66c0-a7a2-9f7a-8c19"/>
+      </constraints>
+      <rules>
+        <rule name="Warp Fleas (Morbus Sanguis)" id="f5b3-34d4-93ae-ca47" hidden="false" publicationId="5963-108c-c916-4298" page="4">
+          <description>Anyone fighting Morbus in hand-to-hand combat does so with -1 to hit penalty as they’re distracted by the biting fleas. This affects even Skaven because the fleas have grown so large from the effects of the warpstone in Morbus&apos; bloodstream.</description>
         </rule>
       </rules>
     </selectionEntry>
@@ -9141,12 +9303,12 @@ D6: Result
     <profile id="daeb-8243-ccf2-d954" name="Plague Rats" publicationId="f804-741f-2593-2dec" page="15" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
       <characteristics>
         <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">6</characteristic>
-        <characteristic name="WS" typeId="f95b-da01-0578-3bdc">3</characteristic>
+        <characteristic name="WS" typeId="f95b-da01-0578-3bdc">4</characteristic>
         <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">0</characteristic>
-        <characteristic name="S" typeId="b690-4bc0-bb73-267b">2</characteristic>
+        <characteristic name="S" typeId="b690-4bc0-bb73-267b">3</characteristic>
         <characteristic name="T" typeId="8712-f56f-5b22-a720">2</characteristic>
         <characteristic name="W" typeId="253a-9b00-4fde-8ac2">5</characteristic>
-        <characteristic name="I" typeId="dfff-363e-f72a-5a59">1</characteristic>
+        <characteristic name="I" typeId="dfff-363e-f72a-5a59">2</characteristic>
         <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">5</characteristic>
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">10</characteristic>
         <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
