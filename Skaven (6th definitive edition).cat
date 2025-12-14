@@ -2463,7 +2463,6 @@
             <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bec8-e291-0c4a-903f" type="instanceOf"/>
           </conditions>
         </modifier>
-        <modifier type="add" field="category" value="43cc-fc3f-35a7-8d03"/>
         <modifier type="add" field="category" value="7aa6-96b4-5b49-d7d9">
           <conditions>
             <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bec8-e291-0c4a-903f" type="instanceOf"/>
@@ -2471,15 +2470,20 @@
         </modifier>
       </modifiers>
       <modifierGroups>
-        <modifierGroup>
-          <conditions>
-            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="adc6-cd5d-19cc-1bf3" type="instanceOf"/>
-          </conditions>
+        <modifierGroup type="and">
           <modifiers>
-            <modifier type="add" field="category" value="43cc-fc3f-35a7-8d03"/>
-            <modifier type="set-primary" field="category" value="43cc-fc3f-35a7-8d03"/>
-            <modifier type="remove" field="category" value="e94b-6a54-8779-cd60"/>
+            <modifier type="add" value="43cc-fc3f-35a7-8d03" field="category"/>
+            <modifier type="set-primary" value="43cc-fc3f-35a7-8d03" field="category"/>
+            <modifier type="remove" value="e94b-6a54-8779-cd60" field="category"/>
           </modifiers>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="0" field="selections" scope="force" childId="2ac5-0165-8a9e-8942" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="0" field="selections" scope="force" childId="adc6-cd5d-19cc-1bf3" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifierGroup>
       </modifierGroups>
       <constraints>
