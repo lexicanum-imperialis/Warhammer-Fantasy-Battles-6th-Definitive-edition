@@ -1231,6 +1231,11 @@
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fc42-956d-d586-3eb2" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="fe72-9a50-1ec2-4c8e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <infoLinks>
             <infoLink id="f6b5-008b-eb16-7ca8" name="Poisoned Attacks" hidden="false" targetId="2738-27d5-f4af-4722" type="rule"/>
@@ -1243,12 +1248,23 @@
         <selectionEntry id="e76e-17da-7472-b990" name="Yellow Death Upgrade" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="44a8-7619-cdfd-81e8" type="max"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="fa7e-5c5e-2f53-a3f5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <modifiers>
             <modifier type="increment" field="ecfa-8486-4f6c-c249" value="35">
               <repeats>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fc42-956d-d586-3eb2" repeats="1" roundUp="false"/>
               </repeats>
+            </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="fe72-9a50-1ec2-4c8e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="1" field="fa7e-5c5e-2f53-a3f5">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="fe72-9a50-1ec2-4c8e" shared="true" includeChildSelections="true"/>
+              </conditions>
             </modifier>
           </modifiers>
           <infoLinks>
