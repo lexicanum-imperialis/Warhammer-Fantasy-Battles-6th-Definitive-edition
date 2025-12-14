@@ -1283,7 +1283,7 @@
             </modifier>
             <modifier type="increment" value="20" field="costs">
               <repeats>
-                <repeat value="1" repeats="1" field="selections" scope="parent" childId="fc42-956d-d586-3eb2" shared="true" roundUp="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="9141-8a9b-5f0f-48f4" childId="fc42-956d-d586-3eb2" shared="true" roundUp="false"/>
               </repeats>
             </modifier>
           </modifiers>
@@ -1323,7 +1323,7 @@
             </modifier>
             <modifier type="increment" value="35" field="costs">
               <repeats>
-                <repeat value="1" repeats="1" field="selections" scope="parent" childId="fc42-956d-d586-3eb2" shared="true" roundUp="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="9141-8a9b-5f0f-48f4" childId="fc42-956d-d586-3eb2" shared="true" roundUp="false"/>
               </repeats>
             </modifier>
           </modifiers>
@@ -1333,14 +1333,18 @@
           </constraints>
           <infoLinks>
             <infoLink name="Poisoned Attacks" id="1e62-25ef-a445-c632" hidden="false" targetId="2738-27d5-f4af-4722" type="rule"/>
-            <infoLink name="Yellow Death Rats" id="0e1e-c2b2-d2a3-b695" hidden="true" targetId="daeb-8243-ccf2-d954" type="profile" publicationId="5963-108c-c916-4298" page="4">
-              <modifiers>
-                <modifier type="set" value="false" field="hidden">
+            <infoLink name="Plague Rats" id="0e1e-c2b2-d2a3-b695" hidden="true" targetId="daeb-8243-ccf2-d954" type="profile" publicationId="5963-108c-c916-4298" page="4">
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden"/>
+                    <modifier type="set" value="Yellow Death (Rat Swarm)" field="name"/>
+                  </modifiers>
                   <conditions>
                     <condition type="instanceOf" value="0" field="selections" scope="self" childId="d5f2-dc63-da6c-b164" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
-                </modifier>
-              </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </infoLink>
           </infoLinks>
           <costs>
