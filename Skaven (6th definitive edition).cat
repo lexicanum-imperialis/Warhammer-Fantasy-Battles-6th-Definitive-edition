@@ -1291,6 +1291,11 @@
                 <repeat value="1" repeats="1" field="selections" scope="9141-8a9b-5f0f-48f4" childId="fc42-956d-d586-3eb2" shared="true" roundUp="false"/>
               </repeats>
             </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="fe72-9a50-1ec2-4c8e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="593e-99eb-99a9-f4a9" type="max"/>
@@ -1314,16 +1319,16 @@
             <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Yellow Death Upgrade" hidden="true" id="d5f2-dc63-da6c-b164" collective="false" publicationId="5963-108c-c916-4298" page="4">
+        <selectionEntry type="upgrade" import="true" name="Yellow Death Upgrade" hidden="false" id="d5f2-dc63-da6c-b164" collective="false" publicationId="5963-108c-c916-4298" page="4">
           <modifiers>
             <modifier type="set" value="1" field="7bce-7df8-cb5d-b882">
               <conditions>
                 <condition type="equalTo" value="1" field="selections" scope="force" childId="fe72-9a50-1ec2-4c8e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </modifier>
-            <modifier type="set" value="false" field="hidden">
+            <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="fe72-9a50-1ec2-4c8e" shared="true" includeChildSelections="true"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="fe72-9a50-1ec2-4c8e" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
             <modifier type="increment" value="35" field="costs">
@@ -1357,11 +1362,6 @@
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
-          <rules>
-            <rule name="Warp Fleas (Morbus Sanguis)" id="da6f-c0cb-cc9b-2542" hidden="false" publicationId="5963-108c-c916-4298" page="4">
-              <description>Anyone fighting Morbus in hand-to-hand combat does so with -1 to hit penalty as they’re distracted by the biting fleas. This affects even Skaven because the fleas have grown so large from the effects of the warpstone in Morbus&apos; bloodstream.</description>
-            </rule>
-          </rules>
         </selectionEntry>
       </selectionEntries>
       <costs>
