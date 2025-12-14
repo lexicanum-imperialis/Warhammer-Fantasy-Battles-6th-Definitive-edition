@@ -649,9 +649,6 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="1b7c-2c90-6d96-28c9" name="General" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5b30-f604-aa3b-1c34" type="max"/>
-      </constraints>
       <categoryLinks>
         <categoryLink id="b6a9-2d67-cff3-dde7" name="General" hidden="false" targetId="a37e-7207-de6d-acb0" primary="false"/>
       </categoryLinks>
@@ -2018,13 +2015,6 @@ Always Strikes Last</characteristic>
         <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
         <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
-      </characteristics>
-    </profile>
-    <profile id="0281-a3e5-5759-d725" name="Javelin" hidden="false" typeId="7889-42d9-70a0-3ea9" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="3107-4d1e-9a51-6564">8&quot;</characteristic>
-        <characteristic name="Strength" typeId="6fe4-1ebb-cb04-1378">As User</characteristic>
-        <characteristic name="Special Rules" typeId="a21a-cdc0-4b13-b236">Thrown Weapon</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
