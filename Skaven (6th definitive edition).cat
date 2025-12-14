@@ -1192,11 +1192,10 @@
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="9141-8a9b-5f0f-48f4" name="Rat Swarm Unit" hidden="false" collective="false" import="true" type="unit">
+<selectionEntry id="9141-8a9b-5f0f-48f4" name="Rat Swarm Unit" hidden="false" collective="false" import="true" type="unit">
   <categoryLinks>
     <categoryLink id="4013-c030-dcdc-2bec" name="Core" hidden="false" targetId="64bf-efb4-9978-26df" primary="true"/>
   </categoryLinks>
-  
   <selectionEntries>
     <selectionEntry id="fc42-956d-d586-3eb2" name="Rat Swarm Model" hidden="false" collective="false" import="true" type="model">
       <constraints>
@@ -1206,7 +1205,6 @@
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="45"/>
       </costs>
-      
       <infoLinks>
         <infoLink id="1964-9cd0-4058-ab7a" name="Rat Swarms" hidden="false" targetId="5355-e4ec-c94b-d4d4" type="profile">
           <modifiers>
@@ -1222,46 +1220,53 @@
             </modifier>
           </modifiers>
         </infoLink>
-        
         <infoLink id="1ffe-e1bb-0e5b-405c" name="Swarm" hidden="false" targetId="b822-e5e8-ebfc-fa2f" type="rule"/>
         <infoLink id="5af9-64b3-a1e8-b9c8" name="Expendable" hidden="false" targetId="62af-f28d-681b-0102" type="rule"/>
         <infoLink id="1ca2-72ed-7c33-5eb1" name="Skirmishers" hidden="false" targetId="1945-ac89-9cc4-3537" type="rule"/>
         <infoLink id="6819-ec07-07c5-705f" name="Small" hidden="false" targetId="4839-e7a0-f4de-4b56" type="rule"/>
       </infoLinks>
-
-      <selectionEntries>
-        
-        <selectionEntry id="cc17-8b29-821a-0677" name="Plague Rat Upgrade" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="593e-99eb-99a9-f4a9" type="max"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="20"/>
-          </costs>
-          <infoLinks>
-            <infoLink id="f6b5-008b-eb16-7ca8" name="Poisoned Attacks" hidden="false" targetId="2738-27d5-f4af-4722" type="rule"/>
-            <infoLink id="a27c-f626-c447-6912" name="Plague Rats" hidden="false" targetId="daeb-8243-ccf2-d954" type="profile"/>
-          </infoLinks>
-        </selectionEntry>
-
-        <selectionEntry id="e76e-17da-7472-b990" name="Yellow Death Upgrade" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="44a8-7619-cdfd-81e8" type="max"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="35"/>
-          </costs>
-          <infoLinks>
-            <infoLink id="b105-5b4c-c8ed-6434" name="Poisoned Attacks" hidden="false" targetId="2738-27d5-f4af-4722" type="rule"/>
-            <infoLink id="0e1e-c2b2-d2a3-b695" name="Plague Rats" hidden="false" targetId="daeb-8243-ccf2-d954" type="profile">
-              <modifiers>
-                <modifier type="set" field="name" value="Yellow Death (Rat Swarm)"/>
-              </modifiers>
-            </infoLink>
-          </infoLinks>
-        </selectionEntry>
-
-      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="cc17-8b29-821a-0677" name="Plague Rat Upgrade" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="593e-99eb-99a9-f4a9" type="max"/>
+      </constraints>
+      <modifiers>
+        <modifier type="increment" field="ecfa-8486-4f6c-c249" value="20">
+          <repeats>
+            <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fc42-956d-d586-3eb2" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <infoLinks>
+        <infoLink id="f6b5-008b-eb16-7ca8" name="Poisoned Attacks" hidden="false" targetId="2738-27d5-f4af-4722" type="rule"/>
+        <infoLink id="a27c-f626-c447-6912" name="Plague Rats" hidden="false" targetId="daeb-8243-ccf2-d954" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e76e-17da-7472-b990" name="Yellow Death Upgrade" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="44a8-7619-cdfd-81e8" type="max"/>
+      </constraints>
+      <modifiers>
+        <modifier type="increment" field="ecfa-8486-4f6c-c249" value="35">
+          <repeats>
+            <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fc42-956d-d586-3eb2" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <infoLinks>
+        <infoLink id="b105-5b4c-c8ed-6434" name="Poisoned Attacks" hidden="false" targetId="2738-27d5-f4af-4722" type="rule"/>
+        <infoLink id="0e1e-c2b2-d2a3-b695" name="Plague Rats" hidden="false" targetId="daeb-8243-ccf2-d954" type="profile">
+          <modifiers>
+            <modifier type="set" field="name" value="Yellow Death (Rat Swarm)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+      </costs>
     </selectionEntry>
   </selectionEntries>
 </selectionEntry>
