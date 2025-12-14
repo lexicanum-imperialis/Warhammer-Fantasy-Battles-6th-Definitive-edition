@@ -1309,7 +1309,7 @@
             <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Yellow Death Upgrade" hidden="false" id="d5f2-dc63-da6c-b164" collective="false" publicationId="5963-108c-c916-4298" page="4">
+        <selectionEntry type="upgrade" import="true" name="Yellow Death Upgrade old" hidden="false" id="d5f2-dc63-da6c-b164" collective="false" publicationId="5963-108c-c916-4298" page="4">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
@@ -1328,6 +1328,32 @@
           </constraints>
           <infoLinks>
             <infoLink name="Poisoned Attacks" id="1e62-25ef-a445-c632" hidden="false" targetId="2738-27d5-f4af-4722" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Yellow Death Upgrade" hidden="false" id="e76e-17da-7472-b990" collective="false" page="4" publicationId="5963-108c-c916-4298">
+          <modifiers>
+            <modifier type="increment" value="35" field="costs">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="self" childId="9141-8a9b-5f0f-48f4" shared="true" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="fe72-9a50-1ec2-4c8e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="44a8-7619-cdfd-81e8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="13c1-932d-3f24-9e06" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Poisoned Attacks" id="b105-5b4c-c8ed-6434" hidden="false" targetId="2738-27d5-f4af-4722" type="rule"/>
             <infoLink name="Plague Rats" id="0e1e-c2b2-d2a3-b695" hidden="true" targetId="daeb-8243-ccf2-d954" type="profile" publicationId="5963-108c-c916-4298" page="4">
               <modifierGroups>
                 <modifierGroup type="and">
@@ -1336,16 +1362,16 @@
                     <modifier type="set" value="Yellow Death (Rat Swarm)" field="name"/>
                   </modifiers>
                   <conditions>
-                    <condition type="instanceOf" value="0" field="selections" scope="self" childId="d5f2-dc63-da6c-b164" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="0" field="selections" scope="self" childId="e76e-17da-7472-b990" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </modifierGroup>
               </modifierGroups>
             </infoLink>
           </infoLinks>
           <costs>
-            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
