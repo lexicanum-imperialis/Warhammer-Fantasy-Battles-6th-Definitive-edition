@@ -1290,7 +1290,7 @@
     </selectionEntry>
     <selectionEntry id="8b76-92c4-23f9-54b1" name="Allow experimental rules?" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b302-93b6-3d1d-13d6"/>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="b302-93b6-3d1d-13d6" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
       <infoLinks>
         <infoLink id="a873-a572-3da0-2573" name="Experimental rules" hidden="false" targetId="e29e-22d4-5752-b23d" type="rule"/>
@@ -1308,7 +1308,7 @@
     </selectionEntry>
     <selectionEntry id="8923-5946-7b10-8957" name="Allow special characters?" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5036-e10c-2fd8-f135"/>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="5036-e10c-2fd8-f135" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
       <infoLinks>
         <infoLink id="5bf6-245f-e93b-eb11" name="Special characters" hidden="false" targetId="3be4-7ba4-c28d-154b" type="rule"/>
