@@ -51,12 +51,7 @@
     </profileType>
   </profileTypes>
   <categoryEntries>
-    <categoryEntry id="4fed-b911-e6e0-927b" name="Experimental rules" hidden="false">
-      <constraints>
-        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="47ba-d0eb-f447-c7d8" type="max"/>
-        <constraint field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="cf9c-a14a-80ae-f9cf" type="min"/>
-      </constraints>
-    </categoryEntry>
+    <categoryEntry id="4fed-b911-e6e0-927b" name="Experimental rules" hidden="false"/>
     <categoryEntry id="32f1-197f-d719-a393" name="Special list rules" hidden="false"/>
     <categoryEntry id="0644-bfcd-32c2-21dc" name="Special Characters" hidden="false"/>
     <categoryEntry id="d024-d25b-a9b4-73b6" name="Lord" hidden="false">
