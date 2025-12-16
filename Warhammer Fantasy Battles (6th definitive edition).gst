@@ -658,6 +658,9 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="2"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="2"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fc6d-21e4-3da5-17f9"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry id="5f8c-ee59-3060-16c4" name="Javelin" hidden="false" collective="false" import="true" type="upgrade">
       <costs>

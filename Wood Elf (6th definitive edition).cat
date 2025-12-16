@@ -3,7 +3,7 @@
   <publications>
     <publication id="5471-0e6f-161c-97bd" name="WE-AB" shortName="Warhammer Armies: Wood Elves (6th Edition)" publisher="by Anthony Reynolds and Matthew Ward" publicationDate="2005"/>
     <publication id="fae0-621c-1260-a754" name="WD#310(UK)" shortName="White-Dwarf #310 UK"/>
-    <publication id="e947-0dac-ff90-bd9f" name="New Publication"/>
+    <publication id="e947-0dac-ff90-bd9f" name="WebGW" publisherUrl="http://us.games-workshop.com/games/warhammer/woodelves/gaming/skaw/default.htm" publicationDate="2006.06.15"/>
   </publications>
   <categoryEntries>
     <categoryEntry id="56b3-da88-ddd4-ebb5" name="Highborn general" hidden="false"/>
@@ -1432,19 +1432,10 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="b2e0-658d-81a0-aa0b" name="Skaw the Falconer" publicationId="fae0-621c-1260-a754" hidden="false" collective="false" import="true" type="unit">
-      <infoLinks>
-        <infoLink id="9258-7670-66d2-75da" name="Noble" publicationId="fae0-621c-1260-a754" hidden="false" targetId="d86e-93b9-f140-7015" type="profile">
-          <modifiers>
-            <modifier type="set" field="0e92-d038-82bf-fb41" value="9"/>
-            <modifier type="set" field="dfff-363e-f72a-5a59" value="9"/>
-            <modifier type="set" field="6b9f-c8fe-8998-27e3" value="4"/>
-            <modifier type="set" field="name" value="Skaw"/>
-          </modifiers>
-        </infoLink>
-      </infoLinks>
       <categoryLinks>
-        <categoryLink id="3d63-d610-b09c-3613" name="Heroes" hidden="false" targetId="c16b-f319-2c62-2c12" primary="true"/>
+        <categoryLink id="3d63-d610-b09c-3613" name="Heroes" hidden="false" targetId="c16b-f319-2c62-2c12" primary="false"/>
         <categoryLink id="12a9-e578-fede-90a1" name="Characters" hidden="false" targetId="7a1c-d611-c2dc-def1" primary="false"/>
+        <categoryLink name="Special Characters" hidden="false" id="d6cd-704a-e9f5-77f6" targetId="0644-bfcd-32c2-21dc" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="f7d2-bc7e-5909-379c" name="Additional Weapons" hidden="false" collective="false" import="true">
@@ -1452,68 +1443,52 @@
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="91b4-8aa7-73db-2046" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="833f-a4ff-4c94-bb80" name="Two Hand Weapons" hidden="false" collective="false" import="true" targetId="36a8-7bbb-d204-0314" type="selectionEntry">
-              <costs>
-                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="4"/>
-              </costs>
-            </entryLink>
-            <entryLink id="e950-c2ec-4c75-6e83" name="Great Weapon" hidden="false" collective="false" import="true" targetId="1eb7-3f36-8cf7-e0ba" type="selectionEntry">
-              <costs>
-                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="4"/>
-              </costs>
-            </entryLink>
-            <entryLink id="483a-858e-0188-eeb0" name="Spear Infantry" hidden="false" collective="false" import="true" targetId="104f-5817-4bda-9382" type="selectionEntry">
-              <costs>
-                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="2"/>
-              </costs>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="a5e3-511f-11d3-c0e8" type="selectionEntry" targetId="abdb-bbd0-41b2-5dff">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4163-77f4-46b8-95af"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3a29-8afe-32ed-55d0"/>
+              </constraints>
             </entryLink>
           </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Lash of Claws" hidden="false" id="3372-5feb-5d60-5dc7" page="WE" publicationId="e947-0dac-ff90-bd9f">
+              <rules>
+                <rule name="Lash of Claws" id="66a6-4c56-c6ef-a287" hidden="false" page="WE" publicationId="e947-0dac-ff90-bd9f">
+                  <description>This whip allows Skaw to always strike first — if another Character has this ability, resolve the Attacks in Initiative order. In addition, any model hit by the flail loses 1 Attack (down to a minimum of 1) for the remainder of that turn.</description>
+                </rule>
+              </rules>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5973-fa56-c6c5-35a2"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="705a-86aa-766b-c126"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup id="8fb8-f53a-275f-d926" name="Armour" hidden="false" collective="false" import="true">
-          <entryLinks>
-            <entryLink id="bcb8-f141-122a-a214" name="Light Armour" hidden="false" collective="false" import="true" targetId="055f-8e4e-f170-35d2" type="selectionEntry">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Cape of Feathers" hidden="false" id="390c-35d4-7514-6efb" publicationId="e947-0dac-ff90-bd9f" page="WE">
+              <rules>
+                <rule name="Cape of Feathers" id="0edf-ab14-9a3f-efac" hidden="false" page="WE" publicationId="e947-0dac-ff90-bd9f">
+                  <description>This item grants Skaw a 4+ Armour Save against all shooting attacks.</description>
+                </rule>
+              </rules>
+              <profiles>
+                <profile name="Cape of Feathers" typeId="f681-9937-db53-f1d8" typeName="Armour" hidden="false" id="5fd3-2c04-013e-ba82" page="WE" publicationId="e947-0dac-ff90-bd9f">
+                  <characteristics>
+                    <characteristic name="Saving Throw Modifier" typeId="b600-e1ed-0765-27c1">4+ (shooting)</characteristic>
+                    <characteristic name="Special rules" typeId="42c3-68ab-cfa5-203e"/>
+                  </characteristics>
+                </profile>
+              </profiles>
               <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6621-54fd-3727-af21" type="max"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="acb2-1e58-0461-d21b"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f366-803b-953c-a0d2"/>
               </constraints>
-              <costs>
-                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="2"/>
-              </costs>
-            </entryLink>
-            <entryLink id="f1cb-0022-a1ea-9d01" name="Shield" hidden="false" collective="false" import="true" targetId="50e2-1873-a856-03e7" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b19d-b36a-3669-5299" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="2"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="a538-4cbc-1d89-e5f5" name="Magic and Spites" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="ecfa-8486-4f6c-c249" scope="parent" value="50" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6874-1b56-10b3-9b43" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="ee23-92da-08dd-2b7d" name="Spites" hidden="false" collective="false" import="true" targetId="9141-e557-c558-91a9" type="selectionEntryGroup"/>
-            <entryLink id="ac39-f2e1-2f10-f552" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="92f3-82d8-558e-55e1" type="selectionEntryGroup"/>
-            <entryLink id="a2ec-57ce-5a09-25a2" name="Magic Armour" hidden="false" collective="false" import="true" targetId="2f4c-c766-7fd2-e7e6" type="selectionEntryGroup"/>
-            <entryLink id="7c3e-c170-58b4-b698" name="Talismans" hidden="false" collective="false" import="true" targetId="a664-c8f8-1595-c50a" type="selectionEntryGroup"/>
-            <entryLink id="ec78-a0e1-e2aa-c77a" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="580f-1d21-16a7-c3f4" type="selectionEntryGroup"/>
-          </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="52a2-f7a0-713e-036d" name="General" hidden="false" collective="false" import="true" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c07c-f318-c7f2-747e" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="c6ac-eaaf-f0c9-2dd7" name="Long Bow" hidden="false" collective="false" import="true" targetId="f920-04d5-06c0-c2c9" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb79-e12a-3a0a-195b" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="db0a-da21-d80e-ee34" type="max"/>
-          </constraints>
-        </entryLink>
         <entryLink id="e0b3-194a-b993-5602" name="Kindreds" hidden="false" collective="false" import="true" targetId="3b63-972e-880d-6606" type="selectionEntryGroup">
           <selectionEntries>
             <selectionEntry id="e432-efa6-373d-ee42" name="Alter Kindred" hidden="false" collective="false" import="true" type="upgrade">
@@ -1534,7 +1509,7 @@
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="75"/>
+        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="175"/>
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
@@ -1548,6 +1523,45 @@
       <constraints>
         <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="e2db-07d7-6413-af98" includeChildSelections="false"/>
       </constraints>
+      <profiles>
+        <profile name="Skaw the Falconer" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="5415-9fea-967e-fca4" publicationId="e947-0dac-ff90-bd9f">
+          <characteristics>
+            <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">9</characteristic>
+            <characteristic name="WS" typeId="f95b-da01-0578-3bdc">6</characteristic>
+            <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">6</characteristic>
+            <characteristic name="S" typeId="b690-4bc0-bb73-267b">4</characteristic>
+            <characteristic name="T" typeId="8712-f56f-5b22-a720">3</characteristic>
+            <characteristic name="W" typeId="253a-9b00-4fde-8ac2">2</characteristic>
+            <characteristic name="I" typeId="dfff-363e-f72a-5a59">9</characteristic>
+            <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">4</characteristic>
+            <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">9</characteristic>
+            <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">4+ (shooting)</characteristic>
+            <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+            <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
+          </characteristics>
+        </profile>
+        <profile name="Skaw&apos;s Hawks" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="5a5f-68a1-efe1-43e4" publicationId="e947-0dac-ff90-bd9f" page="WE">
+          <characteristics>
+            <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">-</characteristic>
+            <characteristic name="WS" typeId="f95b-da01-0578-3bdc">4</characteristic>
+            <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">-</characteristic>
+            <characteristic name="S" typeId="b690-4bc0-bb73-267b">4</characteristic>
+            <characteristic name="T" typeId="8712-f56f-5b22-a720">-</characteristic>
+            <characteristic name="W" typeId="253a-9b00-4fde-8ac2">-</characteristic>
+            <characteristic name="I" typeId="dfff-363e-f72a-5a59">6</characteristic>
+            <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">3</characteristic>
+            <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">-</characteristic>
+            <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+            <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+            <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Hawks (Skaw)" id="2dcc-daf3-2c29-a00f" hidden="false" publicationId="e947-0dac-ff90-bd9f" page="WE">
+          <description>Skaw has three birds of prey that he uses as missile weapons and as weapons in hand-to-hand combat. The range of each bird is 24&quot;, and they will always hit on a 2+ at a Strength of 4. In hand-to-hand combat, the birds give Skaw an additional 3 Attacks at a Strength and Weapon Skill of 4.</description>
+        </rule>
+      </rules>
     </selectionEntry>
   </selectionEntries>
   <entryLinks>
