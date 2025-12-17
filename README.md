@@ -59,6 +59,10 @@ The main additions are:
 - [x] Ariel, Queen of Athel Loren (WebGW)
 - [x] Skaw the Falconer (WebGW)
 
+### Tomb Kings
+- [x] Khalida (TK-AB)
+- [x] Settra (TK-AB)
+
 ## Alternative lists included
 - [x] Clan Eshin (SKV-AB)
 - [x] Clan Eshin (SoC)
@@ -67,6 +71,7 @@ The main additions are:
 - [x] Clan Pestilens (SKV-AB)
 - [x] Bubonic Court of Nurglitch (LUS)
 - [x] Hell Pit (WD-311)
+- [ ] Quatar's Army (WebGW)
 
 ## Sources consulted
 

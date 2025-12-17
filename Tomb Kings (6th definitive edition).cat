@@ -130,12 +130,24 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="1275-eef1-e965-00fb" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="27df-a7ec-a388-5f5c" name="Liche High Priest" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="add" field="category" value="e94b-6a54-8779-cd60">
           <conditions>
             <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e96e-b80b-5f0e-e017" type="greaterThan"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="1275-eef1-e965-00fb" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -412,6 +424,7 @@
       </costs>
       <constraints>
         <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="7f8a-c9cb-4849-4680"/>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="d711-dbf9-b12b-7a87" includeChildSelections="false"/>
       </constraints>
       <modifiers>
         <modifier type="set" value="1" field="7f8a-c9cb-4849-4680">
@@ -419,6 +432,11 @@
             <condition type="atLeast" value="1" field="selections" scope="force" childId="d756-23fa-6bd6-69fb" shared="true" includeChildSelections="true"/>
           </conditions>
           <comment>https://6th.whfb.app/special-rules/army-of-the-queen</comment>
+        </modifier>
+        <modifier type="set" value="2" field="d711-dbf9-b12b-7a87">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="1275-eef1-e965-00fb" shared="true" includeChildSelections="true"/>
+          </conditions>
         </modifier>
       </modifiers>
     </selectionEntry>
@@ -527,12 +545,24 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="1275-eef1-e965-00fb" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="78f9-33ae-0bae-bbcd" name="Liche Priest" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="add" field="category" value="e94b-6a54-8779-cd60">
           <conditions>
             <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="befc-a601-76fe-a482" type="greaterThan"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="1275-eef1-e965-00fb" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -733,6 +763,13 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="1275-eef1-e965-00fb" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="37a0-3ffd-4f40-6db1" name="Skeleton Light Horsemen" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -835,10 +872,24 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>The Army of Quatar (Sehenesmet)</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="1275-eef1-e965-00fb" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <modifiers>
+            <modifier type="unset-primary" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="remove" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="add" value="43cc-fc3f-35a7-8d03" field="category"/>
+            <modifier type="set-primary" value="43cc-fc3f-35a7-8d03" field="category"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry id="8705-da5d-1f66-2328" name="Tomb Swarm" hidden="false" collective="false" import="true" type="unit">
       <constraints>
-        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f444-b72a-9e44-14a2" type="max"/>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f444-b72a-9e44-14a2" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="0423-033a-2e3b-cf20" name="Tomb Swarm" hidden="false" targetId="7015-0a8d-b707-bf08" type="profile"/>
@@ -869,6 +920,13 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="2" field="f444-b72a-9e44-14a2">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="1275-eef1-e965-00fb" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="4125-a802-f54d-e7ad" name="Skeleton Heavy Horsemen" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -960,6 +1018,20 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>The Army of Quatar (Sehenesmet)</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="1275-eef1-e965-00fb" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <modifiers>
+            <modifier type="unset-primary" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="remove" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="add" value="43cc-fc3f-35a7-8d03" field="category"/>
+            <modifier type="set-primary" value="43cc-fc3f-35a7-8d03" field="category"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry id="a513-6ee9-7fca-3d3b" name="Chariots" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
@@ -1140,6 +1212,20 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>The Army of Quatar (Sehenesmet)</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="1275-eef1-e965-00fb" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <modifiers>
+            <modifier type="unset-primary" value="32f1-197f-d719-a393" field="category"/>
+            <modifier type="remove" value="43cc-fc3f-35a7-8d03" field="category"/>
+            <modifier type="add" value="e94b-6a54-8779-cd60" field="category"/>
+            <modifier type="set-primary" value="e94b-6a54-8779-cd60" field="category"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry id="f26f-442a-6281-a0a1" name="Tomb Guard" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -1228,6 +1314,13 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="1275-eef1-e965-00fb" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="0cd8-e69a-e739-6774" name="Ushabti" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -1256,6 +1349,20 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>The Army of Quatar (Sehenesmet)</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="1275-eef1-e965-00fb" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <modifiers>
+            <modifier type="unset-primary" value="43cc-fc3f-35a7-8d03" field="category"/>
+            <modifier type="remove" value="43cc-fc3f-35a7-8d03" field="category"/>
+            <modifier type="add" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="set-primary" value="64bf-efb4-9978-26df" field="category"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry id="fc8a-6cdd-1437-91dd" name="Carrion" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -1294,6 +1401,20 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>The Army of Quatar (Sehenesmet)</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="1275-eef1-e965-00fb" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <modifiers>
+            <modifier type="unset-primary" value="43cc-fc3f-35a7-8d03" field="category"/>
+            <modifier type="remove" value="43cc-fc3f-35a7-8d03" field="category"/>
+            <modifier type="add" value="e94b-6a54-8779-cd60" field="category"/>
+            <modifier type="set-primary" value="e94b-6a54-8779-cd60" field="category"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry id="2126-1869-d66a-5c9c" name="Tomb Scorpion" hidden="false" collective="false" import="true" type="unit">
       <rules>
@@ -1314,6 +1435,20 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>The Army of Quatar (Sehenesmet)</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="1275-eef1-e965-00fb" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <modifiers>
+            <modifier type="unset-primary" value="43cc-fc3f-35a7-8d03" field="category"/>
+            <modifier type="remove" value="43cc-fc3f-35a7-8d03" field="category"/>
+            <modifier type="add" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="set-primary" value="64bf-efb4-9978-26df" field="category"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry id="8966-1a7e-bb68-714b" name="Screaming Skull Catapult" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -1438,6 +1573,20 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>The Army of Quatar (Sehenesmet)</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="1275-eef1-e965-00fb" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <modifiers>
+            <modifier type="unset-primary" value="e94b-6a54-8779-cd60" field="category"/>
+            <modifier type="remove" value="e94b-6a54-8779-cd60" field="category"/>
+            <modifier type="add" value="43cc-fc3f-35a7-8d03" field="category"/>
+            <modifier type="set-primary" value="43cc-fc3f-35a7-8d03" field="category"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry id="92c8-901b-b6b9-71a0" name="Dogs of War" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
@@ -1448,6 +1597,13 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="1275-eef1-e965-00fb" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="d756-23fa-6bd6-69fb" name="Khalida Neferher" hidden="false" collective="false" import="true" type="unit" page="68-69" publicationId="04f9-cede-fdb3-1e6c">
       <infoLinks>
@@ -1552,6 +1708,11 @@ The Queen moves with the swiftness of a striking asp, and will always strikes fi
         <modifier type="set" value="1" field="af12-bd0e-57f5-8260">
           <conditions>
             <condition type="equalTo" value="1" field="selections" scope="force" childId="8923-5946-7b10-8957" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="1275-eef1-e965-00fb" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -1670,7 +1831,135 @@ The Queen moves with the swiftness of a striking asp, and will always strikes fi
             <condition type="equalTo" value="1" field="selections" scope="force" childId="8923-5946-7b10-8957" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="1275-eef1-e965-00fb" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
+    </selectionEntry>
+    <selectionEntry id="7f0e-8291-c3f1-3ff6" name="Sehenesmet, Vizier of Quatar" hidden="false" collective="false" import="true" type="unit" page="3" publicationId="31e0-a609-b995-133f">
+      <infoLinks>
+        <infoLink id="5d55-c6b7-eb5a-d686" name="Bone Giant" hidden="false" targetId="3537-7a82-2a80-32d4" type="profile"/>
+        <infoLink id="1939-5814-496d-61c1" name="Undead Constructs" hidden="false" targetId="149b-a988-a985-bb71" type="rule"/>
+        <infoLink id="1773-4954-f327-3df2" name="Large Target" hidden="false" targetId="4463-1b38-aa4d-e03c" type="rule"/>
+        <infoLink id="e199-b998-9dab-805a" name="Terror" hidden="false" targetId="96f0-c50f-e59e-85fa" type="rule"/>
+        <infoLink id="e5a0-2622-79fd-016c" name="Unstoppable Assault" hidden="false" targetId="3809-6570-311e-36a4" type="rule"/>
+        <infoLink name="Magical Resistance (2)" id="c0f9-11af-ff81-0930" hidden="false" type="rule" targetId="df8d-7c05-c47b-9cd6"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="c86c-b882-5dc8-e160" name="Rare" hidden="false" targetId="e94b-6a54-8779-cd60" primary="false"/>
+        <categoryLink name="Special Characters" hidden="false" id="6945-de6d-a83f-fa91" targetId="0644-bfcd-32c2-21dc" primary="true"/>
+        <categoryLink name="Hierophant" hidden="false" id="e1ae-c3b8-5b0f-27f1" targetId="4cea-07e0-7cc4-c075" primary="false"/>
+        <categoryLink name="Tomb kings General" hidden="false" id="e4a2-826a-56dc-0122" targetId="4e75-e0b6-8eb7-7d6c" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="6e20-af7e-59c5-721c" name="Heavy Armour" hidden="false" collective="false" import="true" targetId="dde4-0ba8-7b3c-57b7" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4945-124a-0f90-27c5" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bf42-f971-79ee-02f2" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="General" hidden="false" id="c887-7779-b8c2-c9ca" collective="false" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry">
+          <modifiers>
+            <modifier type="decrement" value="2" field="fcec-2340-6368-a2ba"/>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fc1a-3e18-9ef9-a402"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="595"/>
+        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="2"/>
+      </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapons" id="126d-532d-2b9b-cbbe" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Two Hand Weapons" hidden="false" id="1d5b-944d-21cc-e19f" collective="false" targetId="36a8-7bbb-d204-0314" type="selectionEntry">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8999-2fa1-db16-569d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="10"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Great Weapon" hidden="false" id="756c-ffa4-8f06-a89a" type="selectionEntry" targetId="1eb7-3f36-8cf7-e0ba">
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="15"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="75ce-7679-bba9-aa1b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Shield" hidden="false" id="5747-6144-da77-429f" type="selectionEntry" targetId="50e2-1873-a856-03e7">
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="30"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="The Sacred Crook of Shapesh" hidden="false" id="7f79-c252-ddfa-02f7" type="selectionEntry" targetId="ce3e-4c01-1bb1-54de"/>
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Great bow" hidden="false" id="2c8c-3f19-2e6d-cab2">
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="30"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+              </costs>
+              <rules>
+                <rule name="Giant Bow" id="1374-fdfe-99f6-e4a3" hidden="false" page="LIZ-AB, p. 31">
+                  <description>The giant bow is a Bolt Thrower, using all the rules for Bolt Throwers, with the following exceptions: The giant bow is fired using the Skinks&apos; Ballistic Skill, and inflicts a single Strength 5 hit that does D3 wounds. The giant bow can move and fire, although it can only fire in the arc of sight of the Bone Giant itself. As the Bone Giant is a large target, the giant bow may shoot over normal sized units and interposing terrain that large target can see over.</description>
+                </rule>
+              </rules>
+              <entryLinks>
+                <entryLink import="true" name="Bolt Thrower" hidden="false" id="f17d-55d5-eb17-fee8" type="selectionEntry" targetId="62e0-5a1d-ff7c-31dd">
+                  <modifiers>
+                    <modifier type="set" value="Giant Bow" field="name"/>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
+              <profiles>
+                <profile name="Great bow" typeId="7889-42d9-70a0-3ea9" typeName="Weapon" hidden="false" id="b30c-599c-5424-86d7">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3107-4d1e-9a51-6564">48&quot;</characteristic>
+                    <characteristic name="Strength" typeId="6fe4-1ebb-cb04-1378">5-1 per rank</characteristic>
+                    <characteristic name="Damage" typeId="6f2f-d612-52ef-1633">D3</characteristic>
+                    <characteristic name="Special Rules" typeId="a21a-cdc0-4b13-b236"/>
+                    <characteristic name="Saves" typeId="8014-a8b2-15c3-da95">No armour saves</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="roster" shared="true" id="95c6-755c-c26e-e018" includeChildSelections="true"/>
+        <constraint type="min" value="0" field="selections" scope="roster" shared="true" id="5a6c-99d4-303a-a085" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="1" field="95c6-755c-c26e-e018">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="8923-5946-7b10-8957" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="8b76-92c4-23f9-54b1" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="1" field="5a6c-99d4-303a-a085">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="1275-eef1-e965-00fb" shared="true" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <rules>
+        <rule name="Liche Giant (Sehenesmet)" id="169b-fa8d-42e1-e0ba" hidden="false" publicationId="31e0-a609-b995-133f" page="3">
+          <description>Sehenesmet combines the physical power of a Bone Giant with the mystical arts of a Liche Priest. All of the rules for both Bone Giants and Liche High Priests apply to Sehenesmet</description>
+        </rule>
+      </rules>
     </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
@@ -3170,7 +3459,29 @@ Units may be affected by this incantation only once per Magic phase, regardless 
     </forceEntry>
   </forceEntries>
   <entryLinks>
-    <entryLink import="true" name="Allow experimental rules?" hidden="false" id="5992-892b-07f0-9ab3" type="selectionEntry" targetId="8b76-92c4-23f9-54b1"/>
-    <entryLink import="true" name="Allow special characters?" hidden="false" id="7f48-9790-6079-e1c6" type="selectionEntry" targetId="8923-5946-7b10-8957"/>
+    <entryLink import="true" name="Allow experimental rules?" hidden="false" id="5992-892b-07f0-9ab3" type="selectionEntry" targetId="8b76-92c4-23f9-54b1">
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="force" shared="true" id="c14e-9a54-427c-d35a" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="1" field="c14e-9a54-427c-d35a">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="1275-eef1-e965-00fb" shared="true" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Allow special characters?" hidden="false" id="7f48-9790-6079-e1c6" type="selectionEntry" targetId="8923-5946-7b10-8957">
+      <modifiers>
+        <modifier type="set" value="1" field="9d92-c18c-174c-d236">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="1275-eef1-e965-00fb" shared="true" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="force" shared="true" id="9d92-c18c-174c-d236" includeChildSelections="true"/>
+      </constraints>
+    </entryLink>
   </entryLinks>
 </catalogue>
