@@ -1326,8 +1326,8 @@
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Bolt Thrower" hidden="false" id="62e0-5a1d-ff7c-31dd" publicationId="315e-e3c4-08af-fd51" page="124">
       <infoLinks>
-        <infoLink name="War machines" id="a260-3c27-65af-f410" hidden="false" type="profile" targetId="f9f4-4ab2-8b24-8433"/>
         <infoLink name="Bolt-Thrower" id="a4ba-b2c4-6c51-fd90" hidden="false" type="profile" targetId="6c75-5af6-cc63-e80a"/>
+        <infoLink name="War machines" id="fbd6-1fe6-f6fe-c5ce" hidden="false" type="profile" targetId="f9f4-4ab2-8b24-8433"/>
       </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
