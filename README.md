@@ -62,6 +62,7 @@ The main additions are:
 ### Tomb Kings
 - [x] Khalida (TK-AB)
 - [x] Settra (TK-AB)
+- [x] Sehenesmet (WebGW)
 
 ## Alternative lists included
 - [x] Clan Eshin (SKV-AB)
@@ -71,7 +72,7 @@ The main additions are:
 - [x] Clan Pestilens (SKV-AB)
 - [x] Bubonic Court of Nurglitch (LUS)
 - [x] Hell Pit (WD-311)
-- [ ] Quatar's Army (WebGW)
+- [x] Quatar's Army (WebGW)
 
 ## Sources consulted
 
