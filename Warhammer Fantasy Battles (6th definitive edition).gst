@@ -444,7 +444,7 @@
     <categoryEntry id="b0b1-5266-2bcd-f592" name="Detachment" hidden="false"/>
     <categoryEntry id="7a1c-d611-c2dc-def1" name="Characters" hidden="false">
       <constraints>
-        <constraint field="selections" scope="roster" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="75ab-5a0c-edbf-33d2" type="max"/>
+        <constraint field="selections" scope="force" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="75ab-5a0c-edbf-33d2" type="max"/>
       </constraints>
       <modifierGroups>
         <modifierGroup type="and">
@@ -540,8 +540,8 @@
     </categoryEntry>
     <categoryEntry id="a37e-7207-de6d-acb0" name="General" hidden="false">
       <constraints>
-        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="d818-c60d-b1f8-8aaa" type="max"/>
-        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="1077-7379-f142-f382" type="min"/>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="d818-c60d-b1f8-8aaa" type="max"/>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="1077-7379-f142-f382" type="min"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="54c9-b217-e67c-bd60"/>
       </constraints>
     </categoryEntry>
