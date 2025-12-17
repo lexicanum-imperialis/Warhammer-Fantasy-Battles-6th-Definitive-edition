@@ -1448,6 +1448,8 @@
         <infoLink id="4569-ffd1-f0b1-3961" name="Flammable" hidden="false" targetId="ff92-e6dd-2f5d-dcca" type="rule"/>
         <infoLink id="4549-7eb2-01c1-28fe" name="My Will be Done" hidden="false" targetId="1856-55bd-bacc-9964" type="rule"/>
         <infoLink name="Poisoned Attacks" id="9bc3-c86e-e879-9c02" hidden="false" type="rule" targetId="2738-27d5-f4af-4722"/>
+        <infoLink name="Regeneration" id="6f44-202a-ef3a-51aa" hidden="false" type="rule" targetId="59c1-8a35-5a25-ebe1"/>
+        <infoLink name="Terror" id="8a8c-af11-44cc-0536" hidden="false" type="rule" targetId="96f0-c50f-e59e-85fa"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="fb45-1fcb-8bc9-ac47" name="Tomb kings General" hidden="false" targetId="4e75-e0b6-8eb7-7d6c" primary="false"/>
@@ -1457,6 +1459,9 @@
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="d9e7-8e42-44c4-ef50" name="Magic" hidden="false" collective="false" import="true" type="upgrade">
+          <entryLinks>
+            <entryLink import="true" name="2. Horekhah&apos;s Incantation of Righteous Smiting (Bound Spell)" hidden="false" id="7ac3-40d6-d71c-8978" type="selectionEntry" targetId="d851-d47f-063e-11cd"/>
+          </entryLinks>
           <costs>
             <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
@@ -1465,22 +1470,19 @@
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="75c1-b902-400d-4c25" name="Additional Weapons" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="75c1-b902-400d-4c25" name="Enchanted items" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e6ba-095a-3651-9673" type="max"/>
           </constraints>
-          <entryLinks>
-            <entryLink id="7d30-2f87-38d2-743c" name="Great Weapon" hidden="false" collective="false" import="true" targetId="1eb7-3f36-8cf7-e0ba" type="selectionEntry">
-              <costs>
-                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="4"/>
-              </costs>
-            </entryLink>
-            <entryLink id="0035-2f63-5da7-3d73" name="Flail" hidden="false" collective="false" import="true" targetId="2eb9-be12-caec-57e8" type="selectionEntry">
-              <costs>
-                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="2"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Venom Staff" hidden="false" id="a484-015c-8598-0c90" publicationId="04f9-cede-fdb3-1e6c" page="69">
+              <rules>
+                <rule name="Venom Staff (L5)" id="5cc2-ec0f-19c1-690e" hidden="false" page="69" publicationId="04f9-cede-fdb3-1e6c">
+                  <description>Bound Spell, Power Level 5. The staff contains a Bound magic missile with a range of 24&quot;, causing 2D6 Strength 4 hits. If a unit takes any wounds from the staff, it may not move in its next Movement phase.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -2077,6 +2079,26 @@ The Queen moves with the swiftness of a striking asp, and will always strikes fi
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="1. Sekhubi&apos;s Incantation of Vengeance (Bound Spell)" hidden="false" id="ebd7-25ba-855b-f8a6" page="35" publicationId="04f9-cede-fdb3-1e6c">
+      <infoLinks>
+        <infoLink name="Sekhubi&apos;s Incantation of Vengeance (Bound Spell)" id="3744-220e-092a-aac1" hidden="false" type="rule" targetId="4f43-3961-c480-eb1a"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="2. Horekhah&apos;s Incantation of Righteous Smiting (Bound Spell)" hidden="false" id="d851-d47f-063e-11cd" page="35" publicationId="04f9-cede-fdb3-1e6c">
+      <infoLinks>
+        <infoLink name="Horekhah&apos;s Incantation of Righteous Smiting (Bound Spell)" id="0999-7e60-4990-06cf" hidden="false" type="rule" targetId="913a-3025-5e6e-5ceb"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="3. Diedra&apos;s Incantation of Summoning (Bound Spell)" hidden="false" id="6acb-d867-208d-d893" page="35" publicationId="04f9-cede-fdb3-1e6c">
+      <infoLinks>
+        <infoLink name="Diedra&apos;s Incantation of Summoning (Bound Spell)" id="3e4b-6336-039c-67ce" hidden="false" type="rule" targetId="dcb6-f128-6b04-8bf0"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="4. Mankara&apos;s Incantation of Urgency (Bound Spell)" hidden="false" id="0fe0-4a3c-7b83-160d" page="35" publicationId="04f9-cede-fdb3-1e6c">
+      <infoLinks>
+        <infoLink name="Mankara&apos;s Incantation of Urgency (Bound Spell)" id="1255-1d40-c5e7-5ad7" hidden="false" type="rule" targetId="c713-461a-b811-2f0a" page="35" publicationId="04f9-cede-fdb3-1e6c"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="0182-4c8b-d929-1f21" name="Arcane Items" hidden="false" collective="false" import="true">
@@ -2420,6 +2442,45 @@ The Crown of Kings enables the Tomb King to roll two D6 for his &quot;My Will Be
     </rule>
     <rule id="b36e-1a67-b9a4-b4f5" name="Flying Unit" hidden="false">
       <description>Carrion are a unit of flyers and follow the rules on page 106 of the Rulebook/.</description>
+    </rule>
+    <rule name="Horekhah&apos;s Incantation of Righteous Smiting (Bound Spell)" id="913a-3025-5e6e-5ceb" hidden="false" page="35" publicationId="04f9-cede-fdb3-1e6c">
+      <description>Target one of your own Undead units within 12&quot; of the Priest. If the unit is not engaged in combat, it can immediately shoot with any missile weapons it carries. This is effectively an additional Shooting phase. This can be used on Screaming Skull Catapults too (if they have not moved that turn). As this counts as an additional Shooting phase, an Incantation of Righteous Smiting successfully cast on a unit that could not shoot in its next Shooting phase, due to a misfire or spell for example, may count this as that next Shooting phase. In effect they cannot shoot in this magical Shooting phase, but will be able to then shoot in the regular Shooting phase.
+
+
+If the unit is engaged in close combat, all models in the unit can immediately make one normal close combat attack against any models they are in base contact with, exactly as they would have done in the following Close Combat phase (including Strength bonuses if charging, etc, but excluding impact hits). In the case of cavalry, both rider and mount may make one attack. For chariots, both steeds and crew can each make one attack. There is no combat resolution, but if enough casualties are caused the enemy unit must take a Panic test. If the enemy unit panics and flee, and the Undead are free to move, the Undead must pursue the enemy (they can test to restrain pursuit as normal).
+
+
+Units may be affected by this incantation only once per Magic phase, regardless of its source.</description>
+    </rule>
+    <rule name="Sekhubi&apos;s Incantation of Vengeance (Bound Spell)" id="4f43-3961-c480-eb1a" hidden="false" page="35" publicationId="04f9-cede-fdb3-1e6c">
+      <description>This is a magic missile with a range of 18&quot;. If cast, it hits the target and causes D6 Strength 4 hits.</description>
+    </rule>
+    <rule name="Diedra&apos;s Incantation of Summoning (Bound Spell)" id="dcb6-f128-6b04-8bf0" hidden="false" page="35" publicationId="04f9-cede-fdb3-1e6c">
+      <description>Target one of your own Undead units within 12&quot; of the Priest, even if engaged in combat. If the incantation is successful, warriors that have fallen rise again to fight for their king. The affected unit regains D3 wounds (or D3 wounds worth of models), up to the initial number of wounds on the model&apos;s profile or models in the unit. Tomb Guard regain D6 wounds worth of models rather than D3. Skeleton Warriors are easier to resurrect than other Undead, so two D6 may be rolled, and the highest dice roll is the number of wounds worth of models that is regained.
+
+
+The unit may never have more wounds or models than it started the game with. This can effectively bring back models including Champions, Musicians and Standard Bearers) that have been killed if their unit still survives and the spell regenerates enough wounds. Any unit in the Tomb Kings army may be healed in this manner, including undead constructs and chariots. For example, the spell is cast on a unit of Ushabti that has already lost two models and another has suffered two wounds. The player rolls a 5, restoring three Wounds, so the wounded model is repaired (two Wounds) and one of the destroyed Ushabti is brought back with a single Wound.
+
+
+The wounds must be healed in a strict order. First, any Champions will be healed/resurrected and then other command models. Once this has been done, any multiple wound rank and file models will be healed to their starting value, and then any remaining wounds can be used to resurrect destroyed rank and file models.
+
+
+Rank and file models are added to the front rank until the front rank reaches at least four models. Then, additional models may be added to either the front rank or they can be added to create rear ranks. If the unit alreadv has more than one rank new models can only be added to rear ranks.
+
+
+Characters must be nominated separately from a unit if they are to benefit from this incantation. If they are riding a chariot, the player must nominate whether it is the chariot or the character who is going to be healed. Any excess wounds that are not used are lost. In the same manner, war machine crew are nominated separately from any characters that have joined them and the war machine itself.
+
+
+Models summoned back into a unit that is involved in combat do not count as charging, even if that unit charged into combat that turn.</description>
+    </rule>
+    <rule name="Mankara&apos;s Incantation of Urgency (Bound Spell)" id="c713-461a-b811-2f0a" hidden="false" page="35" publicationId="04f9-cede-fdb3-1e6c">
+      <description>Target one of your own Undead units within 12&quot; of the Priest. It cannot be cast on units engaged in combat. The unit can immediately make its normal move, exactly like in the Movement phase (it can wheel, turn, change formation or even reform, etc).
+
+
+The unit can charge an enemy and the same rules apply as for a normal charge. A unit charged by means of this incantation can react to the charge as normal and must take the appropriate Psychology tests.
+
+
+Units may be affected by this incantation only once per Magic phase, regardless of its source.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
