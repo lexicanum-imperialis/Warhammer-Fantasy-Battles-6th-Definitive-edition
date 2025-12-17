@@ -58,107 +58,282 @@
     <categoryEntry id="0644-bfcd-32c2-21dc" name="Special Characters" hidden="false"/>
     <categoryEntry id="d024-d25b-a9b4-73b6" name="Lord" hidden="false">
       <modifierGroups>
-        <modifierGroup>
+        <modifierGroup type="and">
           <modifiers>
-            <modifier type="increment" field="df04-208d-fddd-8111" value="1">
-              <repeats>
-                <repeat field="limit::ecfa-8486-4f6c-c249" scope="roster" value="1000" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
-              </repeats>
+            <modifier type="set" value="0" field="df04-208d-fddd-8111">
               <conditions>
-                <condition field="limit::ecfa-8486-4f6c-c249" scope="roster" value="1999" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" type="greaterThan"/>
+                <condition type="lessThan" value="2000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </modifier>
-            <modifier type="set" field="df04-208d-fddd-8111" value="0">
-              <conditions>
-                <condition field="limit::ecfa-8486-4f6c-c249" scope="roster" value="2000" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" type="lessThan"/>
-              </conditions>
+            <modifier type="set" value="1" field="df04-208d-fddd-8111">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="3000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="greaterThan" value="1999" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="2" field="df04-208d-fddd-8111">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="4000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="greaterThan" value="2999" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="3" field="df04-208d-fddd-8111">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="5000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="greaterThan" value="3999" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="4" field="df04-208d-fddd-8111">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="6000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="greaterThan" value="4999" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="5" field="df04-208d-fddd-8111">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="7000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="greaterThan" value="5999" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="6" field="df04-208d-fddd-8111">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="8000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="greaterThan" value="6999" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="7" field="df04-208d-fddd-8111">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="9000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="greaterThan" value="7999" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="8" field="df04-208d-fddd-8111">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="10000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="greaterThan" value="8999" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </modifierGroup>
       </modifierGroups>
       <constraints>
-        <constraint field="selections" scope="parent" value="-1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df04-208d-fddd-8111" type="max"/>
+        <constraint field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="df04-208d-fddd-8111" type="max"/>
       </constraints>
     </categoryEntry>
     <categoryEntry id="c16b-f319-2c62-2c12" name="Heroes" hidden="false"/>
     <categoryEntry id="64bf-efb4-9978-26df" name="Core" hidden="false">
-      <modifiers>
-        <modifier type="increment" field="3b3e-fb79-8158-d599" value="1">
-          <conditions>
-            <condition field="limit::ecfa-8486-4f6c-c249" scope="roster" value="1999" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" type="greaterThan"/>
-          </conditions>
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition field="limit::ecfa-8486-4f6c-c249" scope="roster" value="3000" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" type="lessThan"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="set" field="3b3e-fb79-8158-d599" value="6">
-          <repeats>
-            <repeat field="limit::ecfa-8486-4f6c-c249" scope="roster" value="1000" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
-          </repeats>
-          <conditions>
-            <condition field="limit::ecfa-8486-4f6c-c249" scope="roster" value="4999" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" type="greaterThan"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" field="3b3e-fb79-8158-d599" value="5">
-          <conditions>
-            <condition field="limit::ecfa-8486-4f6c-c249" scope="roster" value="3999" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" type="greaterThan"/>
-          </conditions>
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition field="limit::ecfa-8486-4f6c-c249" scope="roster" value="5000" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" type="lessThan"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="set" field="3b3e-fb79-8158-d599" value="4">
-          <conditions>
-            <condition field="limit::ecfa-8486-4f6c-c249" scope="roster" value="2999" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" type="greaterThan"/>
-          </conditions>
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition field="limit::ecfa-8486-4f6c-c249" scope="roster" value="4000" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" type="lessThan"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
       <constraints>
-        <constraint field="selections" scope="roster" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3b3e-fb79-8158-d599" type="min"/>
+        <constraint field="selections" scope="force" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3b3e-fb79-8158-d599" type="min"/>
       </constraints>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="2" field="3b3e-fb79-8158-d599">
+              <conditions>
+                <condition type="lessThan" value="2000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="3" field="3b3e-fb79-8158-d599">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="3000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="greaterThan" value="1999" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="4" field="3b3e-fb79-8158-d599">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="4000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="greaterThan" value="2999" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="5" field="3b3e-fb79-8158-d599">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="5000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="greaterThan" value="3999" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="6" field="3b3e-fb79-8158-d599">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="6000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="greaterThan" value="4999" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="7" field="3b3e-fb79-8158-d599">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="7000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="greaterThan" value="5999" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="8" field="3b3e-fb79-8158-d599">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="8000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="greaterThan" value="6999" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="9" field="3b3e-fb79-8158-d599">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="9000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="greaterThan" value="7999" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="10" field="3b3e-fb79-8158-d599">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="10000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="greaterThan" value="8999" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </categoryEntry>
     <categoryEntry id="43cc-fc3f-35a7-8d03" name="Special" hidden="false">
-      <modifiers>
-        <modifier type="set" field="5c22-e72c-6e57-5b45" value="3">
-          <conditions>
-            <condition field="limit::ecfa-8486-4f6c-c249" scope="roster" value="2000" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="lessThan"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <modifierGroups>
         <modifierGroup>
           <modifiers>
-            <modifier type="increment" field="5c22-e72c-6e57-5b45" value="1">
-              <repeats>
-                <repeat field="limit::ecfa-8486-4f6c-c249" scope="roster" value="1000" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
-              </repeats>
+            <modifier type="set" field="5c22-e72c-6e57-5b45" value="3">
               <conditions>
-                <condition field="limit::ecfa-8486-4f6c-c249" scope="roster" value="1999" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" type="greaterThan"/>
+                <condition field="limit::ecfa-8486-4f6c-c249" scope="roster" value="2000" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" type="lessThan"/>
               </conditions>
             </modifier>
             <modifier type="set" field="5c22-e72c-6e57-5b45" value="4">
-              <conditions>
-                <condition field="limit::ecfa-8486-4f6c-c249" scope="roster" value="1999" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" type="greaterThan"/>
-              </conditions>
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
                     <condition field="limit::ecfa-8486-4f6c-c249" scope="roster" value="3000" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" type="lessThan"/>
+                    <condition type="greaterThan" value="1999" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="5" field="5c22-e72c-6e57-5b45">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="4000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="greaterThan" value="2999" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="6" field="5c22-e72c-6e57-5b45">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="5000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="greaterThan" value="3999" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="7" field="5c22-e72c-6e57-5b45">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="6000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="greaterThan" value="4999" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="8" field="5c22-e72c-6e57-5b45">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="7000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="greaterThan" value="5999" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="9" field="5c22-e72c-6e57-5b45">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="8000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="greaterThan" value="6999" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="10" field="5c22-e72c-6e57-5b45">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="9000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="greaterThan" value="7999" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="11" field="5c22-e72c-6e57-5b45">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="10000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="greaterThan" value="8999" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -167,36 +342,94 @@
         </modifierGroup>
       </modifierGroups>
       <constraints>
-        <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c22-e72c-6e57-5b45" type="max"/>
+        <constraint field="selections" scope="force" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="5c22-e72c-6e57-5b45" type="max"/>
       </constraints>
     </categoryEntry>
     <categoryEntry id="e94b-6a54-8779-cd60" name="Rare" hidden="false">
-      <modifiers>
-        <modifier type="set" field="f13a-0c3f-2d8a-4dd0" value="1">
-          <conditions>
-            <condition field="limit::ecfa-8486-4f6c-c249" scope="roster" value="2000" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" type="lessThan"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <modifierGroups>
-        <modifierGroup>
+        <modifierGroup type="and">
           <modifiers>
-            <modifier type="increment" field="f13a-0c3f-2d8a-4dd0" value="1">
-              <repeats>
-                <repeat field="limit::ecfa-8486-4f6c-c249" scope="roster" value="1000" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
-              </repeats>
+            <modifier type="set" value="1" field="f13a-0c3f-2d8a-4dd0">
               <conditions>
-                <condition field="limit::ecfa-8486-4f6c-c249" scope="roster" value="1999" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" type="greaterThan"/>
+                <condition type="lessThan" value="2000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </modifier>
-            <modifier type="set" field="f13a-0c3f-2d8a-4dd0" value="2">
-              <conditions>
-                <condition field="limit::ecfa-8486-4f6c-c249" scope="roster" value="1999" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" type="greaterThan"/>
-              </conditions>
+            <modifier type="set" value="2" field="f13a-0c3f-2d8a-4dd0">
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="limit::ecfa-8486-4f6c-c249" scope="roster" value="3000" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" type="lessThan"/>
+                    <condition type="lessThan" value="3000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="greaterThan" value="1999" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="3" field="f13a-0c3f-2d8a-4dd0">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="4000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="greaterThan" value="2999" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="4" field="f13a-0c3f-2d8a-4dd0">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="5000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="greaterThan" value="3999" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="5" field="f13a-0c3f-2d8a-4dd0">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="6000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="greaterThan" value="4999" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="6" field="f13a-0c3f-2d8a-4dd0">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="7000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="greaterThan" value="5999" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="7" field="f13a-0c3f-2d8a-4dd0">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="8000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="greaterThan" value="6999" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="8" field="f13a-0c3f-2d8a-4dd0">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="9000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="greaterThan" value="7999" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="9" field="f13a-0c3f-2d8a-4dd0">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="10000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="greaterThan" value="8999" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -205,44 +438,105 @@
         </modifierGroup>
       </modifierGroups>
       <constraints>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f13a-0c3f-2d8a-4dd0" type="max"/>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f13a-0c3f-2d8a-4dd0" type="max"/>
       </constraints>
     </categoryEntry>
     <categoryEntry id="b0b1-5266-2bcd-f592" name="Detachment" hidden="false"/>
     <categoryEntry id="7a1c-d611-c2dc-def1" name="Characters" hidden="false">
-      <modifiers>
-        <modifier type="set" field="75ab-5a0c-edbf-33d2" value="4">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition field="limit::ecfa-8486-4f6c-c249" scope="roster" value="3000" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" type="lessThan"/>
-                <condition field="limit::ecfa-8486-4f6c-c249" scope="roster" value="1999" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" type="greaterThan"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="increment" field="75ab-5a0c-edbf-33d2" value="2">
-          <repeats>
-            <repeat field="limit::ecfa-8486-4f6c-c249" scope="roster" value="1000" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
-          </repeats>
-          <conditions>
-            <condition field="limit::ecfa-8486-4f6c-c249" scope="roster" value="2999" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" type="greaterThan"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" field="75ab-5a0c-edbf-33d2" value="0">
-          <conditions>
-            <condition field="limit::ecfa-8486-4f6c-c249" scope="roster" value="2999" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" type="greaterThan"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" field="75ab-5a0c-edbf-33d2" value="3">
-          <conditions>
-            <condition field="limit::ecfa-8486-4f6c-c249" scope="roster" value="2000" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" type="lessThan"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <constraints>
-        <constraint field="selections" scope="parent" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="75ab-5a0c-edbf-33d2" type="max"/>
+        <constraint field="selections" scope="roster" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="75ab-5a0c-edbf-33d2" type="max"/>
       </constraints>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="3" field="75ab-5a0c-edbf-33d2">
+              <conditions>
+                <condition type="lessThan" value="2000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="4" field="75ab-5a0c-edbf-33d2">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="3000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="greaterThan" value="1999" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="6" field="75ab-5a0c-edbf-33d2">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="4000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="greaterThan" value="2999" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="8" field="75ab-5a0c-edbf-33d2">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="5000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="greaterThan" value="3999" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="10" field="75ab-5a0c-edbf-33d2">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="6000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="greaterThan" value="4999" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="12" field="75ab-5a0c-edbf-33d2">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="7000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="greaterThan" value="5999" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="14" field="75ab-5a0c-edbf-33d2">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="8000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="greaterThan" value="6999" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="16" field="75ab-5a0c-edbf-33d2">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="9000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="greaterThan" value="7999" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="18" field="75ab-5a0c-edbf-33d2">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="10000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="greaterThan" value="8999" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </categoryEntry>
     <categoryEntry id="a37e-7207-de6d-acb0" name="General" hidden="false">
       <constraints>
