@@ -1552,16 +1552,6 @@
           </repeats>
         </modifier>
       </modifiers>
-      <modifierGroups>
-        <modifierGroup>
-          <conditions>
-            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1f80-7ea0-3959-e31a" type="equalTo"/>
-          </conditions>
-          <modifiers>
-            <modifier type="set" field="name" value="Warpstone Mutants"/>
-          </modifiers>
-        </modifierGroup>
-      </modifierGroups>
       <constraints>
         <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b1c8-af0f-7023-be0a" type="max"/>
       </constraints>
@@ -1591,9 +1581,6 @@
             <infoLink id="30ca-44eb-369e-36e2" name="Clan Rat Slave" hidden="false" targetId="a61c-9c33-3cc5-ef8a" type="profile">
               <modifierGroups>
                 <modifierGroup>
-                  <conditions>
-                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1f80-7ea0-3959-e31a" type="equalTo"/>
-                  </conditions>
                   <modifiers>
                     <modifier type="set" field="8712-f56f-5b22-a720" value="4"/>
                     <modifier type="set" field="name" value="Warpstone Mutant"/>
@@ -1601,6 +1588,14 @@
                     <modifier type="set" field="dfff-363e-f72a-5a59" value="3"/>
                     <modifier type="set" field="2d45-18fe-9eb3-b113" value="4"/>
                   </modifiers>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="1f80-7ea0-3959-e31a" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="9d3e-f7cc-c8d9-21d7" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifierGroup>
               </modifierGroups>
             </infoLink>
@@ -1616,7 +1611,27 @@
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b036-c4cd-b458-637a" type="max"/>
           </constraints>
           <infoLinks>
-            <infoLink id="431d-4a89-1868-3698" name="Pawleader" hidden="false" targetId="f1ba-f678-63ed-4e41" type="profile"/>
+            <infoLink id="431d-4a89-1868-3698" name="Pawleader" hidden="false" targetId="f1ba-f678-63ed-4e41" type="profile">
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="4" field="8712-f56f-5b22-a720"/>
+                    <modifier type="set" value="Pawleader Mutant" field="name"/>
+                    <modifier type="set" value="4" field="b690-4bc0-bb73-267b"/>
+                    <modifier type="set" value="3" field="dfff-363e-f72a-5a59"/>
+                    <modifier type="set" value="4" field="2d45-18fe-9eb3-b113"/>
+                  </modifiers>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="1f80-7ea0-3959-e31a" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="9d3e-f7cc-c8d9-21d7" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifierGroup>
+              </modifierGroups>
+            </infoLink>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="8"/>
@@ -1632,6 +1647,26 @@
             <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="4"/>
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Warpstone Mutants" hidden="true" id="9d3e-f7cc-c8d9-21d7" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="b9f7-1818-593b-20c7" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="increment" value="2" field="ecfa-8486-4f6c-c249">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="ac67-7e1e-e41b-226a" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="1f80-7ea0-3959-e31a" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
