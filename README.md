@@ -79,6 +79,7 @@ The main additions are:
 |Lustria   |"Warhammer: Lustria"                        |2004   |by Andy Hoare & Graham McNeil        |
 |SoC       |"Warhammer: Storm of Chaos"                 |2004   |by Gav Thorpe                        |
 |SKV-AB    |"Warhammer Armies: Skaven (6th Edition)"    |2002   |by Alessio Cavatore                  |
+|TK-AB     |"Warhammer Armies: Tomb Kings (6th Edition)"|2003   |by Alessio Cavatore                  |
 |WE-AB     |"Warhammer Armies: Wood Elves (6th Edition)"|2005   |by Anthony Reynolds and Matthew Ward |
 |CJ#49     |Citadel Journal #49                         |2002   |by Alessio Cavatore and Andy Chambers|
 |WD#296(UK)|White-Dwarf #296 UK                       |2004-08|by Anthony Reynolds                  |
