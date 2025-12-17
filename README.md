@@ -17,14 +17,14 @@ The main additions are:
 
 - [x] Skaven
 - [x] Wood Elves
-- [ ] Tomb kings
+- [x] Tomb kings
+- [ ] Bretonnia
 - [ ] Lizardmen
 - [ ] High Elves
 - [ ] Beast of Chaos
 - [ ] Hordes of Chaos (maybe with the Beast of Chaos)
 - [ ] Daemons of Chaos (with the Hordes of Chaos)
 - [ ] Dark Elves
-- [ ] Bretonnia
 - [ ] Dwarves (at least the second ArmyBook)
 - [ ] The Empire
 - [ ] Vampire Counts
