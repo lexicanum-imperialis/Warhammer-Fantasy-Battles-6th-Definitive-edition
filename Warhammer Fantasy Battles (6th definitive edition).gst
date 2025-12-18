@@ -2142,6 +2142,9 @@ Note that a spell cast with a Power Stone can never be cast with Irresistible Fo
     <rule name="Strikes Last" id="dd3a-b57e-97a7-2da7" hidden="false" page="89" publicationId="315e-e3c4-08af-fd51">
       <description>Troops armed with a weapon that strikes last will always strike last during close combat where they would otherwise strike in Initiative order. Note that troops that charge will still strike first in the initial turn of close combat, as charging troops always strike first rather man in Initiative order. For example, troops armed with Great Axes will strike first on the turn they charge and strike last thereafter.</description>
     </rule>
+    <rule id="7b4c-7e37-f46f-5955" name="Magical Resistance (3)" hidden="false">
+      <description>Generates three dispel dice when spells cast at the unit</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="5556-38ea-b278-4a8f" name="Hand Weapon" hidden="false" typeId="7889-42d9-70a0-3ea9" typeName="Weapon" page="91" publicationId="315e-e3c4-08af-fd51">

@@ -663,6 +663,9 @@
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
+          <entryLinks>
+            <entryLink import="true" name="Favour of the Fay" hidden="false" id="d0bf-7e1e-fa89-f7fe" type="selectionEntry" targetId="64c1-eb82-5e42-c606"/>
+          </entryLinks>
         </selectionEntry>
         <selectionEntry id="a22c-930e-26f9-4cd2" name="Standard Bearer" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -807,6 +810,9 @@
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
+          <entryLinks>
+            <entryLink import="true" name="Favour of the Fay" hidden="false" id="618b-5b03-0161-8ae3" type="selectionEntry" targetId="64c1-eb82-5e42-c606"/>
+          </entryLinks>
         </selectionEntry>
         <selectionEntry id="b464-becf-ab59-782b" name="Knight of the Realm" hidden="false" collective="false" import="true" type="model">
           <constraints>
@@ -1198,6 +1204,9 @@
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
+          <entryLinks>
+            <entryLink import="true" name="Favour of the Fay" hidden="false" id="e6b5-1fd7-1bb9-5004" type="selectionEntry" targetId="64c1-eb82-5e42-c606"/>
+          </entryLinks>
         </selectionEntry>
         <selectionEntry id="ebb7-fc5f-8e6d-6545" name="Questing Knight" hidden="false" collective="false" import="true" type="model">
           <constraints>
@@ -1342,6 +1351,9 @@
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
+          <entryLinks>
+            <entryLink import="true" name="Favour of the Fay" hidden="false" id="016f-eff6-2a15-c1e1" type="selectionEntry" targetId="64c1-eb82-5e42-c606"/>
+          </entryLinks>
         </selectionEntry>
         <selectionEntry id="bfef-1015-d60c-1035" name="Pegasus Knights" hidden="false" collective="false" import="true" type="model">
           <constraints>
@@ -1677,7 +1689,7 @@
     </selectionEntry>
     <selectionEntry id="7336-0d12-d395-239f" name="Grail Knights" hidden="false" collective="false" import="true" type="unit">
       <constraints>
-        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a587-b5c0-163e-830c" type="max"/>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a587-b5c0-163e-830c" type="max"/>
       </constraints>
       <profiles>
         <profile id="e750-f1de-ff56-9333" name="Grail Knight" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
@@ -1703,7 +1715,7 @@
         <categoryLink id="dea7-5a10-1860-1510" name="Rare" hidden="false" targetId="e94b-6a54-8779-cd60" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="49ae-67b9-804c-582c" name="Grail Knight" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry id="49ae-67b9-804c-582c" name="Grail Knight" hidden="false" collective="false" import="true" type="model" sortIndex="1">
           <constraints>
             <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a0a-979e-9b1f-2843" type="min"/>
             <constraint field="selections" scope="parent" value="12" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e38-1e7a-7de4-495c" type="max"/>
@@ -1713,8 +1725,20 @@
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="2" field="7a0a-979e-9b1f-2843"/>
+                <modifier type="set" value="8" field="6e38-1e7a-7de4-495c"/>
+                <modifier type="set" value="Grail Guardian" field="name"/>
+              </modifiers>
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="7336-0d12-d395-239f" childId="d959-852f-7e75-b90e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifierGroup>
+          </modifierGroups>
         </selectionEntry>
-        <selectionEntry id="49a3-4929-5082-77fc" name="Musician" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="49a3-4929-5082-77fc" name="Musician" hidden="false" collective="false" import="true" type="upgrade" sortIndex="8">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5613-b54c-4f6b-1bd9" type="max"/>
           </constraints>
@@ -1724,7 +1748,7 @@
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="08bd-8626-bca1-22a1" name="Standard Bearer" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="08bd-8626-bca1-22a1" name="Standard Bearer" hidden="false" collective="false" import="true" type="upgrade" sortIndex="9">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d35-38f4-3416-3b4f" type="max"/>
           </constraints>
@@ -1741,9 +1765,25 @@
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Grail Guardians" hidden="true" id="d959-852f-7e75-b90e" sortIndex="3">
+          <infoLinks>
+            <infoLink name="Grail Guardians (Fay Enchantress)" id="5fe0-846b-4aea-8ce8" hidden="false" type="rule" targetId="584d-01f9-1126-2c4c"/>
+          </infoLinks>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="466c-05e3-5537-2921" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="faf4-0db6-8665-7165" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="3e86-0382-3f8d-4579" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="2466-193c-5838-da8a" name="Bretonnian Warhorse" hidden="false" collective="false" import="true" targetId="adc2-53db-4a9e-b8ea" type="selectionEntry">
+        <entryLink id="2466-193c-5838-da8a" name="Bretonnian Warhorse" hidden="false" collective="false" import="true" targetId="adc2-53db-4a9e-b8ea" type="selectionEntry" sortIndex="2">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2a27-536a-3ffa-9012" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ce55-b449-fcb0-d9b2" type="max"/>
@@ -1757,25 +1797,25 @@
             </entryLink>
           </entryLinks>
         </entryLink>
-        <entryLink id="5c4b-9146-48a3-0cf5" name="Hand Weapon" hidden="false" collective="false" import="true" targetId="abdb-bbd0-41b2-5dff" type="selectionEntry">
+        <entryLink id="5c4b-9146-48a3-0cf5" name="Hand Weapon" hidden="false" collective="false" import="true" targetId="abdb-bbd0-41b2-5dff" type="selectionEntry" sortIndex="4">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="14e9-9573-bb2c-0d65" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7f2d-95f9-f2ad-190e" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="05db-3809-6f46-a876" name="Lance" hidden="false" collective="false" import="true" targetId="8649-8ac8-5a6f-fd8d" type="selectionEntry">
+        <entryLink id="05db-3809-6f46-a876" name="Lance" hidden="false" collective="false" import="true" targetId="8649-8ac8-5a6f-fd8d" type="selectionEntry" sortIndex="6">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9e28-dd7e-c85c-c71b" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a35a-bc01-4d00-47f7" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="945d-42d8-15cb-7ebd" name="Heavy Armour" hidden="false" collective="false" import="true" targetId="dde4-0ba8-7b3c-57b7" type="selectionEntry">
+        <entryLink id="945d-42d8-15cb-7ebd" name="Heavy Armour" hidden="false" collective="false" import="true" targetId="dde4-0ba8-7b3c-57b7" type="selectionEntry" sortIndex="5">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="765e-b716-a76e-21eb" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5a38-f7f9-0d12-8f46" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="4871-4b1c-60b4-4886" name="Shield" hidden="false" collective="false" import="true" targetId="50e2-1873-a856-03e7" type="selectionEntry">
+        <entryLink id="4871-4b1c-60b4-4886" name="Shield" hidden="false" collective="false" import="true" targetId="50e2-1873-a856-03e7" type="selectionEntry" sortIndex="7">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="990f-ad3f-17cf-feb6" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2dd5-afff-89f5-590d" type="max"/>
@@ -1787,6 +1827,16 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="parent" childId="d959-852f-7e75-b90e" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <modifiers>
+            <modifier type="increment" value="1" field="a587-b5c0-163e-830c"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry id="12f8-986e-f2a2-3a03" name="Field Trebuchet" hidden="false" collective="false" import="true" type="unit">
       <profiles>
@@ -2082,7 +2132,7 @@
     </selectionEntry>
     <selectionEntry id="466c-05e3-5537-2921" name="The Fay Enchantress" hidden="false" collective="false" import="true" type="unit" page="76" publicationId="143d-ca87-8001-00a0">
       <profiles>
-        <profile id="8537-20fc-2340-6fd6" name="Fay Enchantress" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
+        <profile id="8537-20fc-2340-6fd6" name="Fay Enchantress" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile" page="77" publicationId="143d-ca87-8001-00a0">
           <characteristics>
             <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">5</characteristic>
             <characteristic name="WS" typeId="f95b-da01-0578-3bdc">4</characteristic>
@@ -2101,6 +2151,12 @@
       </profiles>
       <infoLinks>
         <infoLink id="53d5-ef2a-56ea-6f29" name="Aura of the Lady" hidden="false" targetId="2725-335a-09fb-a734" type="rule"/>
+        <infoLink name="Fear" id="9bd2-733e-8795-de9c" hidden="false" type="rule" targetId="1524-2372-4aa0-6881"/>
+        <infoLink name="Magical Resistance (3)" id="813d-6bd7-5cd8-bcc1" hidden="false" type="rule" targetId="7b4c-7e37-f46f-5955"/>
+        <infoLink name="Blessing of the Lady (Fay)" id="8be4-7d1e-a80f-ebd8" hidden="false" type="rule" targetId="dff1-095b-d7fa-5081"/>
+        <infoLink name="Grail Guardians (Fay Enchantress)" id="59d6-1714-195b-b8de" hidden="false" type="rule" targetId="584d-01f9-1126-2c4c"/>
+        <infoLink name="Spiteful Glance" id="d8ab-95c0-0f17-7d17" hidden="false" type="rule" targetId="e620-ba61-ecd9-3553"/>
+        <infoLink name="Favour of the Fay" id="94be-980f-6467-5ef5" hidden="false" type="rule" targetId="c91a-fdcf-51fb-6443"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="a6f5-8c56-fb3e-c2f4" name="Lord" hidden="false" targetId="d024-d25b-a9b4-73b6" primary="false"/>
@@ -2124,26 +2180,12 @@
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="83bf-108f-efe1-9406" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="8ec5-f0d8-3740-eddc" name="Bretonnian Warhorse" hidden="false" collective="false" import="true" targetId="adc2-53db-4a9e-b8ea" type="selectionEntry">
-              <selectionEntries>
-                <selectionEntry id="2ef0-bf97-372d-9160" name="Barding" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="de3e-14d1-747d-396f" type="max"/>
-                  </constraints>
-                  <costs>
-                    <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="6"/>
-                    <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-                    <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
+            <entryLink import="true" name="Unicorn" hidden="false" id="b81e-ea15-af1e-187e" type="selectionEntry" targetId="16de-b2ea-a05a-f5f3">
+              <modifiers>
+                <modifier type="set" value="Silvaron" field="name"/>
+              </modifiers>
               <costs>
-                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="15"/>
-              </costs>
-            </entryLink>
-            <entryLink id="bf2b-1b5c-f98b-8f33" name="Royal Pegasus" hidden="false" collective="false" import="true" targetId="bfa3-6734-c03f-3594" type="selectionEntry">
-              <costs>
-                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="50"/>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="65"/>
               </costs>
             </entryLink>
           </entryLinks>
@@ -2164,6 +2206,11 @@
               </costs>
             </selectionEntry>
           </selectionEntries>
+          <rules>
+            <rule name="Magic (Fay Enchantress)" id="9430-ec3e-ef89-99e3" hidden="false" page="77" publicationId="143d-ca87-8001-00a0">
+              <description>+2 to cast Lore of Life spells</description>
+            </rule>
+          </rules>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -2176,7 +2223,7 @@
         <entryLink id="434b-28a3-d7c1-b582" name="General" hidden="false" collective="false" import="true" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="190"/>
+        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="480"/>
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
@@ -2190,6 +2237,11 @@
           </conditions>
         </modifier>
       </modifiers>
+      <rules>
+        <rule name="Supreme Aura of the Lady" id="67c4-a3f6-346b-0bf0" hidden="false" page="77" publicationId="143d-ca87-8001-00a0">
+          <description>The Fay Enchantress has Magic Resistance (3). She causes FEAR. Against Skaven, Orcs &amp; Goblins and all creatures from Beast of Chaos Armies book, she causes TERROR.</description>
+        </rule>
+      </rules>
     </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
@@ -3066,6 +3118,31 @@
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Unicorn" hidden="false" id="16de-b2ea-a05a-f5f3">
+      <infoLinks>
+        <infoLink name="Unicorn" id="08e0-098f-6a75-4ebe" hidden="false" type="profile" targetId="2b22-c2a8-5bd5-a187" page="77" publicationId="143d-ca87-8001-00a0"/>
+        <infoLink name="Magical Resistance (2)" id="6d9d-8563-49a1-07a2" hidden="false" type="rule" targetId="df8d-7c05-c47b-9cd6"/>
+        <infoLink name="Impale" id="92ef-e4a3-73eb-9f22" hidden="false" type="rule" targetId="c13c-4362-eeb0-b21f" page="19">
+          <comment>WE-AB</comment>
+        </infoLink>
+        <infoLink name="Fear" id="f1c1-51ad-05dc-1d32" hidden="false" type="rule" targetId="1524-2372-4aa0-6881"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Favour of the Fay" hidden="true" id="64c1-eb82-5e42-c606" page="77" publicationId="143d-ca87-8001-00a0">
+      <infoLinks>
+        <infoLink name="Favour of the Fay" id="daa9-f88e-69b6-b9c4" hidden="false" type="rule" targetId="c91a-fdcf-51fb-6443"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="719e-f5b3-7d11-9be9" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="466c-05e3-5537-2921" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="1935-adfb-63e1-b051" name="Virtues" hidden="false" collective="false" import="true">
@@ -3521,7 +3598,7 @@ Because he is Insubstantial, he can&apos;t be harmed except by magical attacks, 
 He also cannot join or be joined by units or characters.</description>
     </rule>
     <rule id="f79f-29b9-5e38-b64a" name="Blessing of the Lady" publicationId="143d-ca87-8001-00a0" page="75" hidden="false">
-      <description>Regardless of whether the Bretonnian army prays or not, the Green Knight always has a 5+ Ward save..</description>
+      <description>All knight units have a 6+ Ward save against any attack, or 5+ against S5 attacks- Regardless of whether the Bretonnian army prays or not, the Green Knight always has a 5+ Ward save.</description>
     </rule>
     <rule id="5163-4f04-d5f7-db2c" name="Guardian of the Sacred Sites" publicationId="143d-ca87-8001-00a0" page="75" hidden="false">
       <description>The Green Knight is not placed on the board during deployment. In the Remaining Moves phase of any Bretonnian Movement phase, the Bretonnian player may attempt to awaken the Green Knight. Roll a dice — he will awaken on the dice roll of a 3 or more. If he does not awaken that turn, then the player may try again the following turn, and so on.
@@ -3535,6 +3612,21 @@ For calculating Victory Points, the enemy only gets full Victory Points for the 
     </rule>
     <rule id="0d6f-a087-083a-5f37" name="The Shadow Steed" publicationId="143d-ca87-8001-00a0" page="75" hidden="false">
       <description>The steed of the Green Knight is not slowed by its banding, and so its Movement is 8”</description>
+    </rule>
+    <rule name="Impale" id="c13c-4362-eeb0-b21f" hidden="false">
+      <description>When a unicorn charges into combat it receives +2 to its Strength.</description>
+    </rule>
+    <rule id="dff1-095b-d7fa-5081" name="Blessing of the Lady (Fay)" publicationId="143d-ca87-8001-00a0" page="77" hidden="false">
+      <description>The Bretonnian army doesn&apos;t need to pray for this blessing. All knight units have a 6+ Ward save against any attack, or 5+ against S5 attacks. Knights in the unit of the Fay Enchantress have a 5+ Ward.</description>
+    </rule>
+    <rule name="Grail Guardians (Fay Enchantress)" id="584d-01f9-1126-2c4c" hidden="false" publicationId="143d-ca87-8001-00a0" page="77">
+      <description>The Fay Enchantress may be accompanied by 2-8 Grail Guardians (Grail Knights). She can not leave the unit, and they do not count for the 0-1 Grail Knight limit.</description>
+    </rule>
+    <rule name="Spiteful Glance" id="e620-ba61-ecd9-3553" hidden="false" page="77" publicationId="143d-ca87-8001-00a0">
+      <description>All enemy models in base contact at the start of each Close Combat phase must pass an lnitiative test (remember a 6 is always a failure) or take 1 wound, with no Armour or Ward save allowed. These tests must be made before anything has occurred in that round of combat, even coming before chariot impact hits. Any wounds and casualties are treated as normal close combat casualties.</description>
+    </rule>
+    <rule name="Favour of the Fay" id="c91a-fdcf-51fb-6443" hidden="false" page="77" publicationId="143d-ca87-8001-00a0">
+      <description>One model in the Bretonnian army (which must be the Champion of any unit of Knights) may be given the Favour of the Fay. Nominate which model is given the Favour before the game starts but after deployment is finished. This model may add +1 to all rolls To Hit in close combat. However, if the model loses The Blessing of the Lady, then both the Favoured model and the Fay Enchantress take a wound that cannot be saved by Armour saves or Ward saves.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
@@ -3575,6 +3667,22 @@ For calculating Victory Points, the enemy only gets full Victory Points for the 
         <characteristic name="I" typeId="dfff-363e-f72a-5a59">3</characteristic>
         <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">5</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Unicorn" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="2b22-c2a8-5bd5-a187">
+      <characteristics>
+        <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">10</characteristic>
+        <characteristic name="WS" typeId="f95b-da01-0578-3bdc">5</characteristic>
+        <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">0</characteristic>
+        <characteristic name="S" typeId="b690-4bc0-bb73-267b">4(6)</characteristic>
+        <characteristic name="T" typeId="8712-f56f-5b22-a720">4</characteristic>
+        <characteristic name="W" typeId="253a-9b00-4fde-8ac2">3</characteristic>
+        <characteristic name="I" typeId="dfff-363e-f72a-5a59">5</characteristic>
+        <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">2</characteristic>
+        <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">8</characteristic>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+        <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">+5</characteristic>
+        <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
       </characteristics>
     </profile>
   </sharedProfiles>
