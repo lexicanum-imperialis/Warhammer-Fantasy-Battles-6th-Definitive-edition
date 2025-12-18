@@ -298,6 +298,13 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="10e2-baf2-e758-c27e" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="2674-4f8e-d872-f448" name="Paladin" hidden="false" collective="false" import="true" type="unit">
       <profiles>
@@ -612,6 +619,15 @@
         <infoLink id="aee2-d948-7ca3-07a0" name="Impetuous" hidden="false" targetId="8d74-785f-2be0-4513" type="rule"/>
         <infoLink id="10cb-dcb6-1a2a-1793" name="Purebreed Warhorse" hidden="false" targetId="178a-cce9-03bb-8c64" type="rule"/>
         <infoLink id="57d9-d294-c180-7fc4" name="Knights Vow" hidden="false" targetId="8424-74fa-ba21-d8f1" type="rule"/>
+        <infoLink name="Glory or Death!" id="8555-2b91-baa8-e46d" hidden="true" type="rule" targetId="a02e-f1e6-7a8f-c374">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="10e2-baf2-e758-c27e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="8397-a0d6-7b65-ed85" name="Core" hidden="false" targetId="64bf-efb4-9978-26df" primary="true"/>
@@ -638,38 +654,10 @@
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="8c18-dbfa-f763-33b0" name="Cavalier" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ec1-9f92-7918-2cf1" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="true" id="5786-871e-e24d-607c" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="6aa4-e6ef-b120-121e" name="Cavalier" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
-              <characteristics>
-                <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">4</characteristic>
-                <characteristic name="WS" typeId="f95b-da01-0578-3bdc">3</characteristic>
-                <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">3</characteristic>
-                <characteristic name="S" typeId="b690-4bc0-bb73-267b">3</characteristic>
-                <characteristic name="T" typeId="8712-f56f-5b22-a720">3</characteristic>
-                <characteristic name="W" typeId="253a-9b00-4fde-8ac2">1</characteristic>
-                <characteristic name="I" typeId="dfff-363e-f72a-5a59">3</characteristic>
-                <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">2</characteristic>
-                <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">7</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
-            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-          </costs>
-          <entryLinks>
-            <entryLink import="true" name="Favour of the Fay" hidden="false" id="d0bf-7e1e-fa89-f7fe" type="selectionEntry" targetId="64c1-eb82-5e42-c606"/>
-          </entryLinks>
-        </selectionEntry>
         <selectionEntry id="a22c-930e-26f9-4cd2" name="Standard Bearer" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="65d7-3061-37bd-6a2d" type="max"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="45cc-d40b-9a50-bcbc" includeChildSelections="false"/>
           </constraints>
           <entryLinks>
             <entryLink id="de3a-5873-cf4f-9139" name="Magic Banners Knight Errant" hidden="false" collective="false" import="true" targetId="d5e1-4753-cd63-f85c" type="selectionEntryGroup">
@@ -683,6 +671,14 @@
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
+          <modifiers>
+            <modifier type="set" value="1" field="45cc-d40b-9a50-bcbc">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="10e2-baf2-e758-c27e" shared="true" includeChildSelections="true"/>
+              </conditions>
+              <comment>Errantry Fervour (SoC, p.90)</comment>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -730,6 +726,177 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="force" shared="true" id="2118-9889-ee00-6a58" includeChildSelections="false"/>
+      </constraints>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="2" field="2118-9889-ee00-6a58">
+              <conditions>
+                <condition type="lessThan" value="2000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="3" field="2118-9889-ee00-6a58">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="3000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="greaterThan" value="1999" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="4" field="2118-9889-ee00-6a58">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="4000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="greaterThan" value="2999" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="5" field="2118-9889-ee00-6a58">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="5000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="greaterThan" value="3999" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="6" field="2118-9889-ee00-6a58">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="6000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="greaterThan" value="4999" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="7" field="2118-9889-ee00-6a58">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="7000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="greaterThan" value="5999" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="8" field="2118-9889-ee00-6a58">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="8000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="greaterThan" value="6999" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="9" field="2118-9889-ee00-6a58">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="9000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="greaterThan" value="7999" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="10" field="2118-9889-ee00-6a58">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="10000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="greaterThan" value="8999" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="10e2-baf2-e758-c27e" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <comment>Errantry War (SoC)</comment>
+        </modifierGroup>
+      </modifierGroups>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Champion" id="5b91-6182-3ef5-9643" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Grail Knight" hidden="true" id="a8b6-5bfe-a52f-209d" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e020-ba4b-fc3a-b378" percentValue="false" includeChildSelections="false" includeChildForces="true"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="22"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+              </costs>
+              <entryLinks>
+                <entryLink import="true" name="Favour of the Fay" hidden="false" id="2528-0707-5605-4cd6" type="selectionEntry" targetId="64c1-eb82-5e42-c606"/>
+                <entryLink import="true" name="Favour of the Fay" hidden="false" id="df39-45fe-58e3-f436" type="selectionEntry" targetId="64c1-eb82-5e42-c606"/>
+              </entryLinks>
+              <infoLinks>
+                <infoLink name="Grail Knight" id="8a67-742e-ba69-0f15" hidden="false" type="profile" targetId="a9a1-d6b0-af75-cf34"/>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="10e2-baf2-e758-c27e" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Cavalier" hidden="false" id="8c18-dbfa-f763-33b0" collective="false">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1ec1-9f92-7918-2cf1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5786-871e-e24d-607c" percentValue="false" includeChildSelections="false" includeChildForces="true"/>
+              </constraints>
+              <profiles>
+                <profile name="Cavalier" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="6aa4-e6ef-b120-121e">
+                  <characteristics>
+                    <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">4</characteristic>
+                    <characteristic name="WS" typeId="f95b-da01-0578-3bdc">3</characteristic>
+                    <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">3</characteristic>
+                    <characteristic name="S" typeId="b690-4bc0-bb73-267b">3</characteristic>
+                    <characteristic name="T" typeId="8712-f56f-5b22-a720">3</characteristic>
+                    <characteristic name="W" typeId="253a-9b00-4fde-8ac2">1</characteristic>
+                    <characteristic name="I" typeId="dfff-363e-f72a-5a59">3</characteristic>
+                    <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">2</characteristic>
+                    <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">7</characteristic>
+                    <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+                    <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+                    <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+              </costs>
+              <entryLinks>
+                <entryLink import="true" name="Favour of the Fay" hidden="false" id="d0bf-7e1e-fa89-f7fe" type="selectionEntry" targetId="64c1-eb82-5e42-c606"/>
+              </entryLinks>
+              <modifiers>
+                <modifier type="set" value="0" field="1ec1-9f92-7918-2cf1">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="10e2-baf2-e758-c27e" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e38f-5b0c-bbb2-4b5e" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d5a0-3f6c-1a8b-d80f" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="3f3b-a058-295e-9046" name="Knights of the Realm" hidden="false" collective="false" import="true" type="unit">
       <constraints>
@@ -871,6 +1038,13 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="0" field="f9c2-08f7-b725-fc4f">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="10e2-baf2-e758-c27e" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="fcdd-429a-3b79-7e8d" name="Men at Arms" hidden="false" collective="false" import="true" type="unit">
       <profiles>
@@ -1553,6 +1727,20 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="10e2-baf2-e758-c27e" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <modifiers>
+            <modifier type="unset-primary" value="43cc-fc3f-35a7-8d03" field="category"/>
+            <modifier type="add" value="e94b-6a54-8779-cd60" field="category"/>
+            <modifier type="remove" value="43cc-fc3f-35a7-8d03" field="category"/>
+            <modifier type="set-primary" value="e94b-6a54-8779-cd60" field="category"/>
+          </modifiers>
+          <comment>Errantry War (SoC, p.90)</comment>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry id="c051-04d6-2b7e-7ab6" name="Mounted Yeoman" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -1719,25 +1907,11 @@
       <constraints>
         <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a587-b5c0-163e-830c" type="max"/>
       </constraints>
-      <profiles>
-        <profile id="e750-f1de-ff56-9333" name="Grail Knight" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
-          <characteristics>
-            <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">4</characteristic>
-            <characteristic name="WS" typeId="f95b-da01-0578-3bdc">5</characteristic>
-            <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">3</characteristic>
-            <characteristic name="S" typeId="b690-4bc0-bb73-267b">4</characteristic>
-            <characteristic name="T" typeId="8712-f56f-5b22-a720">3</characteristic>
-            <characteristic name="W" typeId="253a-9b00-4fde-8ac2">1</characteristic>
-            <characteristic name="I" typeId="dfff-363e-f72a-5a59">5</characteristic>
-            <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">2</characteristic>
-            <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">8</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <infoLinks>
         <infoLink id="b137-3841-bfa6-91ec" name="Living Saints" hidden="false" targetId="3985-d413-2cea-685b" type="rule"/>
         <infoLink id="c986-b1be-e820-8c39" name="Purebreed Warhorse" hidden="false" targetId="178a-cce9-03bb-8c64" type="rule"/>
         <infoLink id="e9e0-fbb4-493f-839b" name="Grail Vow" hidden="false" targetId="5612-7357-6ef2-5130" type="rule"/>
+        <infoLink name="Grail Knight" id="4eca-ed45-74e9-d029" hidden="false" type="profile" targetId="a9a1-d6b0-af75-cf34"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="dea7-5a10-1860-1510" name="Rare" hidden="false" targetId="e94b-6a54-8779-cd60" primary="true"/>
@@ -1874,6 +2048,13 @@
           <comment>The Army of the King (BR-AB, p.79)</comment>
         </modifierGroup>
       </modifierGroups>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="10e2-baf2-e758-c27e" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="12f8-986e-f2a2-3a03" name="Field Trebuchet" hidden="false" collective="false" import="true" type="unit">
       <profiles>
@@ -2080,6 +2261,13 @@
       <constraints>
         <constraint type="min" value="1" field="selections" scope="force" shared="true" id="49e3-c542-6bff-9805" includeChildSelections="false"/>
       </constraints>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="10e2-baf2-e758-c27e" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="e9d1-eb9d-7c44-f777" name="The Green Knight" publicationId="143d-ca87-8001-00a0" page="75" hidden="false" collective="false" import="true" type="unit">
       <constraints>
@@ -2291,9 +2479,9 @@
             <characteristic name="I" typeId="dfff-363e-f72a-5a59">7</characteristic>
             <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">5</characteristic>
             <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">9</characteristic>
-            <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+            <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">4+</characteristic>
             <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">5+</characteristic>
-            <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
+            <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2301,6 +2489,7 @@
         <categoryLink id="ef7e-949c-3c2a-312d" name="Lord" hidden="false" targetId="d024-d25b-a9b4-73b6" primary="false"/>
         <categoryLink id="1b82-d868-81b2-4f63" name="Characters" hidden="false" targetId="7a1c-d611-c2dc-def1" primary="false"/>
         <categoryLink name="Special Characters" hidden="false" id="a9a6-af47-0445-5840" targetId="0644-bfcd-32c2-21dc" primary="true"/>
+        <categoryLink name="Heroes" hidden="false" id="2963-517d-815a-ded0" targetId="c16b-f319-2c62-2c12" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="7434-15c8-8f75-0b88" name="Vow" hidden="false" collective="false" import="true" defaultSelectionEntryId="1858-1a94-5453-9f62">
@@ -3513,7 +3702,31 @@
         <entryLink id="6f98-e16f-94b2-069f" name="Banner of Defence" hidden="false" collective="false" import="true" targetId="fe78-d0b7-d8d6-15a2" type="selectionEntry"/>
         <entryLink id="de21-9d6c-0a2a-60b4" name="Twilight Banner" hidden="false" collective="false" import="true" targetId="ee42-2ebd-4d24-7e2c" type="selectionEntry"/>
         <entryLink id="ef7d-22f1-da63-74c2" name="Conqueror&apos;s Tapestry" hidden="false" collective="false" import="true" targetId="ba96-4c1c-bb0e-596b" type="selectionEntry"/>
-        <entryLink id="c8ef-e6c7-3b8d-a65d" name="Errantry Banner" hidden="false" collective="false" import="true" targetId="11f2-47db-45fa-2c62" type="selectionEntry"/>
+        <entryLink id="c8ef-e6c7-3b8d-a65d" name="Errantry Banner" hidden="false" collective="false" import="true" targetId="11f2-47db-45fa-2c62" type="selectionEntry">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="2c24-db48-7e54-e66e"/>
+          </constraints>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="1" field="2c24-db48-7e54-e66e">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="10e2-baf2-e758-c27e" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-1" field="82fb-3068-4765-d511">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="10e2-baf2-e758-c27e" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="10e2-baf2-e758-c27e" shared="true" includeChildSelections="true"/>
+              </conditions>
+              <comment>Errantry Fervour (SoC, p.90)</comment>
+            </modifierGroup>
+          </modifierGroups>
+        </entryLink>
         <entryLink id="3d04-0563-a17a-3aa5" name="Banner of Chalons" hidden="false" collective="false" import="true" targetId="cd54-e462-6b64-cef7" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
@@ -3774,11 +3987,8 @@ The twilight Banner can only be used in the Remaining Moves section of the turn 
 Every enemy standard captured by the unit possessing the Conqueror&apos;s Tapestry is worth 200 Victory Points instead of 100. If an enemy unit captures the Conqueror&apos;s tapestry, the enemy gains 200 Victory Points rather than 100.</description>
     </rule>
     <rule id="390f-b25e-5be3-6ab1" name="Errantry Banner" publicationId="143d-ca87-8001-00a0" page="63" hidden="false">
-      <description>(Knights Errant unit only)
-This tattered banner has been across the length and breadth of the Old World and beyond, whipped by the arctic winds of the Boil Country and bleached by the burning sun of Araby. It Instills its bearers with fiery awe and holy strength.
-All Knights Errant in the unit get a +1 Strength bonus on any 
-turn they charge (no effect on steeds or characters). However, a 
-unit with this banner suffers -2 to its Ld for any Impetuous tests.</description>
+      <description>(Knights Errant unit only) This tattered banner has been across the length and breadth of the Old World and beyond, whipped by the arctic winds of the Boil Country and bleached by the burning sun of Araby. It Instills its bearers with fiery awe and holy strength.
+All Knights Errant in the unit get a +1 Strength bonus on any turn they charge (no effect on steeds or characters). However, a unit with this banner suffers -2 to its Ld for any Impetuous tests.</description>
     </rule>
     <rule id="0867-043b-5c9e-d2fc" name="Banner of Chalons" publicationId="143d-ca87-8001-00a0" page="63" hidden="false">
       <description>This magnificent banner is kept furled until the last Instant before a charge. When unfurlled in all its glory foes become awestruck and are unable to tear their eyes from it.
@@ -3880,6 +4090,21 @@ For calculating Victory Points, the enemy only gets full Victory Points for the 
     <rule name="Beaquis the Hippogryph" id="3895-36f3-80db-22e8" hidden="false" page="79" publicationId="143d-ca87-8001-00a0">
       <description>As with all Hyppogryphs, Beaquis can Fly, is a Large Target and causes terror. Such is the bond of loyalty between the beast and its master that Beaquis will always count as rolling a 6 on the Monster Reaction table in the event of his master&apos;s death. No Leadership test is taken if Louen is slain.</description>
     </rule>
+    <rule name="Glory or Death!" id="a02e-f1e6-7a8f-c374" hidden="false" page="90" publicationId="315e-e3c4-08af-fd51">
+      <description>Knights Errant suffer the following modifiers to any Impetuous test they take (this is cumulative with the -2 modifier due to the Errantry Banner itself).
+
+-1 if there is one or more fear-causing enemies within charge range.
+
+-1 if there is one or more terror-causing enemies within charge range.
+
+-1 if there is one or more dragons within charge range (including undead Zombie Dragons).
+
+-1 if there is one or more Damsels within 6&quot; (they like to show off in front of the ladies).
+
+-1 if there is one or more enemy unit within charge range that has a higher Unit Strength than the Knights Errant unit.
+
+In addition, Knights Errant must always pursue. They roll an extra D6 in pursuit, and choose the highest three dice.</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="f713-bc53-80c7-4485" name="Hippogryph" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
@@ -3949,6 +4174,22 @@ For calculating Victory Points, the enemy only gets full Victory Points for the 
         <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">4</characteristic>
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">9</characteristic>
         <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+        <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">5+</characteristic>
+        <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">4</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Grail Knight" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="a9a1-d6b0-af75-cf34">
+      <characteristics>
+        <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">4</characteristic>
+        <characteristic name="WS" typeId="f95b-da01-0578-3bdc">5</characteristic>
+        <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">3</characteristic>
+        <characteristic name="S" typeId="b690-4bc0-bb73-267b">4</characteristic>
+        <characteristic name="T" typeId="8712-f56f-5b22-a720">3</characteristic>
+        <characteristic name="W" typeId="253a-9b00-4fde-8ac2">1</characteristic>
+        <characteristic name="I" typeId="dfff-363e-f72a-5a59">5</characteristic>
+        <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">2</characteristic>
+        <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">8</characteristic>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
         <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
       </characteristics>
@@ -3972,7 +4213,7 @@ For calculating Victory Points, the enemy only gets full Victory Points for the 
         <categoryLink name="Rare" hidden="false" id="d43e-06c7-2a32-36b7" targetId="e94b-6a54-8779-cd60" primary="false"/>
       </categoryLinks>
     </forceEntry>
-    <forceEntry name="Standard (BR-AB)" id="10e2-baf2-e758-c27e" hidden="false" publicationId="f804-741f-2593-2dec" page="64">
+    <forceEntry name="Errantry War (SoC)" id="10e2-baf2-e758-c27e" hidden="false" publicationId="d2ec-1dc7-f0d5-acbb" page="90">
       <categoryLinks>
         <categoryLink name="Experimental rules" hidden="false" id="e2f0-26b5-18d2-37f6" targetId="4fed-b911-e6e0-927b" primary="false"/>
         <categoryLink name="Special Characters" hidden="false" id="5c34-951b-daab-e14d" targetId="0644-bfcd-32c2-21dc" primary="false"/>
@@ -3983,7 +4224,7 @@ For calculating Victory Points, the enemy only gets full Victory Points for the 
         </categoryLink>
         <categoryLink name="Lord" hidden="false" id="b9df-b525-6081-4de8" targetId="d024-d25b-a9b4-73b6" primary="false"/>
         <categoryLink name="Heroes" hidden="false" id="5b32-2789-2237-be1e" targetId="c16b-f319-2c62-2c12" primary="false"/>
-        <categoryLink name="Core" hidden="false" id="0fcb-88a7-2963-0fc3" targetId="64bf-efb4-9978-26df" primary="false"/>
+        <categoryLink name="Core" hidden="false" id="fd29-07dd-19ae-7d87" targetId="64bf-efb4-9978-26df" primary="false"/>
         <categoryLink name="Special" hidden="false" id="a886-0ccc-2d71-3672" targetId="43cc-fc3f-35a7-8d03" primary="false"/>
         <categoryLink name="Rare" hidden="false" id="5921-6be7-25d9-7cf6" targetId="e94b-6a54-8779-cd60" primary="false"/>
       </categoryLinks>
@@ -3993,4 +4234,10 @@ For calculating Victory Points, the enemy only gets full Victory Points for the 
     <entryLink import="true" name="Allow experimental rules?" hidden="false" id="130b-4803-25ac-04d7" type="selectionEntry" targetId="8b76-92c4-23f9-54b1"/>
     <entryLink import="true" name="Allow special characters?" hidden="false" id="27c3-b3d8-b8e8-814e" type="selectionEntry" targetId="8923-5946-7b10-8957"/>
   </entryLinks>
+  <categoryEntries>
+    <categoryEntry name="Knights Errant" id="60d5-db40-1d6a-0e8d" hidden="true" page="90" publicationId="d2ec-1dc7-f0d5-acbb"/>
+    <categoryEntry name="Core" id="c9e4-8f23-e5ff-cd89" hidden="false" publicationId="d2ec-1dc7-f0d5-acbb" page="90">
+      <comment>Errantry War&apos;s Core</comment>
+    </categoryEntry>
+  </categoryEntries>
 </catalogue>
