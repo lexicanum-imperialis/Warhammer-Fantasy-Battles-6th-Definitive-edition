@@ -18,7 +18,7 @@ The main additions are:
 - [x] Skaven
 - [x] Wood Elves
 - [x] Tomb kings
-- [ ] Bretonnia
+- [x] Bretonnia
 - [ ] Lizardmen
 - [ ] High Elves
 - [ ] Beast of Chaos
@@ -68,8 +68,8 @@ The main additions are:
 - [x] The Green Knight (it was already included)
 - [x] The Fay Enchantress
 - [x] Louen Leoncoeur, King of Bretonnia
-- [ ] Sir Almaric of Gaudaron (WD#310(UK))
-- [ ] Tristan and Jules (WD#303(UK))
+- [x] Sir Amalric of Gaudaron (WD#310(UK))
+- [x] Tristan and Jules (WD#303(UK))
 
 ## Alternative lists included
 - [x] Clan Eshin (SKV-AB)
