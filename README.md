@@ -71,6 +71,11 @@ The main additions are:
 - [x] Sir Amalric of Gaudaron (WD#310(UK))
 - [x] Tristan and Jules (WD#303(UK))
 
+### Lizarmen
+- [x] Kroq-gar (it was already included)
+- [x] Kroak (it was already included)
+- [x] Sacred Hosts rules (WD#300(UK))
+
 ## Alternative lists included
 - [x] Clan Eshin (SKV-AB)
 - [x] Clan Eshin (SoC)
@@ -97,6 +102,7 @@ The main additions are:
 |WE-AB     |"Warhammer Armies: Wood Elves (6th Edition)"|2005   |by Anthony Reynolds and Matthew Ward |
 |CJ#49     |Citadel Journal #49                         |2002   |by Alessio Cavatore and Andy Chambers|
 |WD#296(UK)|White-Dwarf #296 UK                       |2004-08|by Anthony Reynolds                  |
+|WD#300(UK)|White-Dwarf #300 UK                       |200X-08|by XX XX                  |Sacred hosts
 |WD#311(UK)|White-Dwarf #311 UK                       |2005-11|by by Phil Kelly                     |
 |WD#317(UK)|White-Dwarf #317 UK                       |2006-05|by Gareth Hamilton                   |
 |WebGW(UK)|["Warpstone - A Skaven civil war scenario"](http:/uk.games-workshop.com/warhammerworld/warhammer/skaven/SK-articles/warpstone-scenerio/)|????|by Jonathan Green                  |
