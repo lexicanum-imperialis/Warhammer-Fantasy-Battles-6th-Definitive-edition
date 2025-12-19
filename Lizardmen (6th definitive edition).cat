@@ -1922,7 +1922,7 @@ The Hand of Gods has a range of 8&quot; and strikes every enemy unit within line
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Sacred Host" hidden="false" id="b5ff-0687-4b30-f367" publicationId="ddfb-5507-69d5-5482" page="50-55">
+    <selectionEntry type="upgrade" import="true" name="Sacred Host of the Gods" hidden="false" id="b5ff-0687-4b30-f367" publicationId="ddfb-5507-69d5-5482" page="50-55">
       <categoryLinks>
         <categoryLink name="Special list rules" hidden="false" id="92f9-1635-23d3-2269" targetId="32f1-197f-d719-a393" primary="true"/>
       </categoryLinks>
@@ -2061,6 +2061,7 @@ The Hand of Gods has a range of 8&quot; and strikes every enemy unit within line
         <selectionEntry id="5090-4554-70ce-bb23" name="Blessed Spawning of Chotec" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="21a9-dab3-6168-a1a5" type="max"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="6d41-eed3-02f4-0d83"/>
           </constraints>
           <infoLinks>
             <infoLink id="3bf9-7788-fb66-0d86" name="Blesssed Spawning of Chotec" hidden="false" targetId="9b0f-2665-1cc0-cb7a" type="rule"/>
@@ -2070,10 +2071,18 @@ The Hand of Gods has a range of 8&quot; and strikes every enemy unit within line
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
+          <modifiers>
+            <modifier type="set" value="1" field="6d41-eed3-02f4-0d83">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="b18a-25a7-2af9-00d3" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry id="a381-e0a0-76ab-3af4" name="Blessed Spawning of Huanchi" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="687c-b6ad-5846-461b" type="max"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="15ef-190e-3389-cccb"/>
           </constraints>
           <infoLinks>
             <infoLink id="d86a-4cfb-2c00-3370" name="Blesssed Spawning of Huanchi" hidden="false" targetId="e1fd-08c6-2aa0-fd20" type="rule"/>
@@ -2083,6 +2092,13 @@ The Hand of Gods has a range of 8&quot; and strikes every enemy unit within line
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
+          <modifiers>
+            <modifier type="set" value="1" field="15ef-190e-3389-cccb">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="4c79-b87d-aae5-600c" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry id="6dec-fac4-bc23-6b10" name="Blessed Spawning of Itzl" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -2140,6 +2156,7 @@ The Hand of Gods has a range of 8&quot; and strikes every enemy unit within line
         <selectionEntry id="6767-d667-d13d-0a2f" name="Blessed Spawning of Tzunki" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2af7-f475-7778-6efc" type="max"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="7661-7f9f-719a-93ff"/>
           </constraints>
           <infoLinks>
             <infoLink id="c2e6-a031-00bb-3566" name="Blesssed Spawning of Tzunki" hidden="false" targetId="49d9-40fc-b608-87a2" type="rule"/>
@@ -2149,10 +2166,18 @@ The Hand of Gods has a range of 8&quot; and strikes every enemy unit within line
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
+          <modifiers>
+            <modifier type="set" value="1" field="7661-7f9f-719a-93ff">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="e7e5-d37e-55ea-fc4c" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry id="3c49-4f0f-3130-1124" name="Blessed Spawning of Quetzl" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f69-4f67-7485-fe4c" type="max"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="005b-139a-33db-8bfd"/>
           </constraints>
           <infoLinks>
             <infoLink id="e008-5b18-28e7-4b96" name="Blesssed Spawning of Quetzl" hidden="false" targetId="1c8b-3c91-c79e-853e" type="rule"/>
@@ -2162,10 +2187,18 @@ The Hand of Gods has a range of 8&quot; and strikes every enemy unit within line
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
+          <modifiers>
+            <modifier type="set" value="1" field="005b-139a-33db-8bfd">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="cb3a-3d23-dd43-44fb" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry id="a3ce-255a-61bc-d364" name="Blessed Spawning of Sotek" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6cac-4999-46ba-0c9a" type="max"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="fb00-0f90-a749-a39c"/>
           </constraints>
           <infoLinks>
             <infoLink id="ae9f-e233-88d1-d13a" name="Blesssed Spawning of Sotek" hidden="false" targetId="d93f-c967-c856-d295" type="rule"/>
@@ -2175,10 +2208,18 @@ The Hand of Gods has a range of 8&quot; and strikes every enemy unit within line
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
+          <modifiers>
+            <modifier type="set" value="1" field="fb00-0f90-a749-a39c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="a5ce-d1da-5d2e-e051" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry id="bb6e-8aed-be52-d253" name="Blessed Spawning of Tepok" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2a10-7e21-6f3e-b280" type="max"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="e836-f012-0b30-19d0"/>
           </constraints>
           <infoLinks>
             <infoLink id="f8d0-32d6-ea3a-a8ca" name="Blesssed Spawning of Tepok" hidden="false" targetId="4fda-2623-4a50-2dee" type="rule"/>
@@ -2188,10 +2229,18 @@ The Hand of Gods has a range of 8&quot; and strikes every enemy unit within line
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
+          <modifiers>
+            <modifier type="set" value="1" field="e836-f012-0b30-19d0">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="42bf-2d83-4069-2172" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry id="a581-9f31-387f-9569" name="Blessed Spawning of Tlazcotl" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fcd1-0cb1-b22d-3281" type="max"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="7b4d-8808-6171-e932"/>
           </constraints>
           <infoLinks>
             <infoLink id="1622-d85d-994d-4ad7" name="Blesssed Spawning of Tlazcotl" hidden="false" targetId="4995-80be-43e2-c907" type="rule"/>
@@ -2201,6 +2250,13 @@ The Hand of Gods has a range of 8&quot; and strikes every enemy unit within line
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
+          <modifiers>
+            <modifier type="set" value="1" field="7b4d-8808-6171-e932">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="3207-d96b-cff7-8ec0" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -2230,6 +2286,7 @@ The Hand of Gods has a range of 8&quot; and strikes every enemy unit within line
         <selectionEntry id="20ca-8f5a-017e-8adc" name="Blessed Spawning of Chotec" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c57d-e57b-b28b-9a75" type="max"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="10fa-cfca-2ec0-3ad4"/>
           </constraints>
           <infoLinks>
             <infoLink id="f3ae-a43a-0a6d-7174" name="Blesssed Spawning of Chotec" hidden="false" targetId="9b0f-2665-1cc0-cb7a" type="rule"/>
@@ -2239,10 +2296,18 @@ The Hand of Gods has a range of 8&quot; and strikes every enemy unit within line
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
+          <modifiers>
+            <modifier type="set" value="1" field="10fa-cfca-2ec0-3ad4">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="b18a-25a7-2af9-00d3" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry id="c3e8-aff2-a1a1-9d6b" name="Blessed Spawning of Huanchi" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5143-98ba-5e9b-2d9f" type="max"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="0402-6fbb-ec32-2f86"/>
           </constraints>
           <infoLinks>
             <infoLink id="1ea3-ca0c-2b12-1b76" name="Blesssed Spawning of Huanchi" hidden="false" targetId="e1fd-08c6-2aa0-fd20" type="rule"/>
@@ -2252,6 +2317,13 @@ The Hand of Gods has a range of 8&quot; and strikes every enemy unit within line
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
+          <modifiers>
+            <modifier type="set" value="1" field="0402-6fbb-ec32-2f86">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="4c79-b87d-aae5-600c" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry id="3912-5772-a8ea-62f5" name="Blessed Spawning of Itzl" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -2288,6 +2360,7 @@ The Hand of Gods has a range of 8&quot; and strikes every enemy unit within line
         <selectionEntry id="2c17-de46-9c69-f82a" name="Blessed Spawning of Tzunki" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0297-591a-3d68-5be0" type="max"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="6b98-8508-da58-ab96"/>
           </constraints>
           <infoLinks>
             <infoLink id="95bd-de46-37b5-6c81" name="Blesssed Spawning of Tzunki" hidden="false" targetId="49d9-40fc-b608-87a2" type="rule"/>
@@ -2297,10 +2370,18 @@ The Hand of Gods has a range of 8&quot; and strikes every enemy unit within line
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
+          <modifiers>
+            <modifier type="set" value="1" field="6b98-8508-da58-ab96">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="e7e5-d37e-55ea-fc4c" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry id="c7e3-b5ef-ddba-85c8" name="Blessed Spawning of Quetzl" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b2d3-7e04-2429-8952" type="max"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="4150-2abd-bd08-2c7d"/>
           </constraints>
           <infoLinks>
             <infoLink id="4fba-0f68-6e09-ea59" name="Blesssed Spawning of Quetzl" hidden="false" targetId="1c8b-3c91-c79e-853e" type="rule"/>
@@ -2310,10 +2391,18 @@ The Hand of Gods has a range of 8&quot; and strikes every enemy unit within line
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
+          <modifiers>
+            <modifier type="set" value="1" field="4150-2abd-bd08-2c7d">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="cb3a-3d23-dd43-44fb" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry id="d46e-9fbc-c832-b859" name="Blessed Spawning of Sotek" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f786-60bb-e6a2-1f29" type="max"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="6b57-2e0b-e051-b8de"/>
           </constraints>
           <infoLinks>
             <infoLink id="5266-a2d1-cd62-8d89" name="Blesssed Spawning of Sotek" hidden="false" targetId="d93f-c967-c856-d295" type="rule"/>
@@ -2323,10 +2412,18 @@ The Hand of Gods has a range of 8&quot; and strikes every enemy unit within line
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
+          <modifiers>
+            <modifier type="set" value="1" field="6b57-2e0b-e051-b8de">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="a5ce-d1da-5d2e-e051" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry id="061a-41cc-921e-b55d" name="Blessed Spawning of Tepok" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a99-2913-7d8d-ae25" type="max"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="de92-1682-2873-9def"/>
           </constraints>
           <infoLinks>
             <infoLink id="5e2a-3c73-6cd0-d0c8" name="Blesssed Spawning of Tepok" hidden="false" targetId="4fda-2623-4a50-2dee" type="rule"/>
@@ -2336,10 +2433,18 @@ The Hand of Gods has a range of 8&quot; and strikes every enemy unit within line
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
+          <modifiers>
+            <modifier type="set" value="1" field="de92-1682-2873-9def">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="42bf-2d83-4069-2172" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry id="efc1-98bc-1bdc-856c" name="Blessed Spawning of Tlazcotl" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2b6f-a248-d439-b971" type="max"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="1141-e065-6465-3c75"/>
           </constraints>
           <infoLinks>
             <infoLink id="514d-9e8e-d7d1-1d03" name="Blesssed Spawning of Tlazcotl" hidden="false" targetId="4995-80be-43e2-c907" type="rule"/>
@@ -2349,6 +2454,13 @@ The Hand of Gods has a range of 8&quot; and strikes every enemy unit within line
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
+          <modifiers>
+            <modifier type="set" value="1" field="1141-e065-6465-3c75">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="3207-d96b-cff7-8ec0" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -3424,9 +3536,14 @@ In addition, the bearer causes Fear in Skaven.</characteristic>
           </costs>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="fe15-38b7-daea-2ec8" shared="true" includeChildSelections="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="fe15-38b7-daea-2ec8" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="b5ff-0687-4b30-f367" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </entryLink>
@@ -3447,9 +3564,14 @@ In addition, the bearer causes Fear in Skaven.</characteristic>
           </costs>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="fe15-38b7-daea-2ec8" shared="true" includeChildSelections="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="fe15-38b7-daea-2ec8" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="b5ff-0687-4b30-f367" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </entryLink>
@@ -3462,9 +3584,14 @@ In addition, the bearer causes Fear in Skaven.</characteristic>
           </costs>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="fe15-38b7-daea-2ec8" shared="true" includeChildSelections="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="fe15-38b7-daea-2ec8" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="b5ff-0687-4b30-f367" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </entryLink>
@@ -3477,9 +3604,14 @@ In addition, the bearer causes Fear in Skaven.</characteristic>
           </costs>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="fe15-38b7-daea-2ec8" shared="true" includeChildSelections="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="fe15-38b7-daea-2ec8" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="b5ff-0687-4b30-f367" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </entryLink>
@@ -3489,9 +3621,14 @@ In addition, the bearer causes Fear in Skaven.</characteristic>
           </constraints>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="fe15-38b7-daea-2ec8" shared="true" includeChildSelections="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="fe15-38b7-daea-2ec8" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="b5ff-0687-4b30-f367" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </entryLink>
@@ -3504,9 +3641,14 @@ In addition, the bearer causes Fear in Skaven.</characteristic>
           </costs>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="fe15-38b7-daea-2ec8" shared="true" includeChildSelections="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="fe15-38b7-daea-2ec8" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="b5ff-0687-4b30-f367" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </entryLink>
