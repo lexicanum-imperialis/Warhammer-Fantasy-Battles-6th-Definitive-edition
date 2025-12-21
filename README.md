@@ -19,6 +19,7 @@ The main additions are:
 - [x] Wood Elves
 - [x] Tomb kings
 - [x] Bretonnia
+- [x] Chaos Dwarves
 - [ ] Lizardmen
 - [ ] High Elves
 - [ ] Beast of Chaos
@@ -29,7 +30,6 @@ The main additions are:
 - [ ] The Empire
 - [ ] Vampire Counts
 - [ ] Orcs and Goblins
-- [ ] Chaos Dwarves
 - [ ] Kislev
 - [ ] Dogs of War
 
