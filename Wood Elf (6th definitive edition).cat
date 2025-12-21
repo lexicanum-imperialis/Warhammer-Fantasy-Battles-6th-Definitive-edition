@@ -3,7 +3,7 @@
   <publications>
     <publication id="5471-0e6f-161c-97bd" name="WE-AB" shortName="Warhammer Armies: Wood Elves (6th Edition)" publisher="by Anthony Reynolds and Matthew Ward" publicationDate="2005"/>
     <publication id="fae0-621c-1260-a754" name="WD#310(UK)" shortName="White-Dwarf #310 UK"/>
-    <publication id="e947-0dac-ff90-bd9f" name="WebGW" publisherUrl="http://us.games-workshop.com/games/warhammer/woodelves/gaming/skaw/default.htm" publicationDate="2006.06.15"/>
+    <publication id="e947-0dac-ff90-bd9f" name="WebGW" publicationDate="2006.06.15" publisherUrl="http://us.games-workshop.com/games/warhammer/woodelves/gaming/skaw/default.htm"/>
   </publications>
   <categoryEntries>
     <categoryEntry id="56b3-da88-ddd4-ebb5" name="Highborn general" hidden="false"/>
@@ -18,13 +18,13 @@
         <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="838a-b722-3082-384d" type="max"/>
       </constraints>
     </categoryEntry>
-    <categoryEntry name="Non_forest_spirit" id="1366-ea1f-3c6d-0727" hidden="true"/>
+    <categoryEntry id="1366-ea1f-3c6d-0727" name="Non_forest_spirit" hidden="true"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="9b02-4b8b-05b9-3421" name="Standard (AB)" publicationId="5471-0e6f-161c-97bd" page="40" hidden="false">
       <categoryLinks>
         <categoryLink id="d1be-3d71-c70a-1754" name="Experimental rules" hidden="false" targetId="4fed-b911-e6e0-927b" primary="false"/>
-        <categoryLink name="Special list rules" hidden="false" id="8f23-e903-c5d5-3766" targetId="32f1-197f-d719-a393"/>
+        <categoryLink id="8f23-e903-c5d5-3766" name="Special list rules" hidden="false" targetId="32f1-197f-d719-a393" primary="false"/>
         <categoryLink id="13bb-86e6-e66f-0fee" name="Characters" hidden="false" targetId="7a1c-d611-c2dc-def1" primary="false"/>
         <categoryLink id="e191-b9a7-1fb1-f363" name="Special Characters" hidden="false" targetId="0644-bfcd-32c2-21dc" primary="false"/>
         <categoryLink id="028f-29da-9126-4e35" name="Lord" hidden="false" targetId="d024-d25b-a9b4-73b6" primary="false"/>
@@ -32,7 +32,8 @@
         <categoryLink id="c6b6-ef1c-6b8e-73ee" name="Core" hidden="false" targetId="64bf-efb4-9978-26df" primary="false"/>
         <categoryLink id="22e5-ac19-2591-fd6e" name="Special" hidden="false" targetId="43cc-fc3f-35a7-8d03" primary="false"/>
         <categoryLink id="b3bb-b96e-1de9-85f8" name="Rare" hidden="false" targetId="e94b-6a54-8779-cd60" primary="false"/>
-        <categoryLink name="Non_forest_spirit" hidden="false" id="0af5-1582-64da-549f" targetId="1366-ea1f-3c6d-0727"/>
+        <categoryLink id="0af5-1582-64da-549f" name="Non_forest_spirit" hidden="false" targetId="1366-ea1f-3c6d-0727" primary="false"/>
+        <categoryLink id="5d38-8eb2-14e9-a6d0" name="Regiment of Renown" hidden="false" targetId="ee09-9a50-ad78-9c32" primary="false"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
@@ -44,7 +45,7 @@
       </infoLinks>
       <categoryLinks>
         <categoryLink id="6921-29a6-f15b-66bb" name="Rare" hidden="false" targetId="e94b-6a54-8779-cd60" primary="true"/>
-        <categoryLink name="Non_forest_spirit" hidden="false" id="09e5-eaa9-ff22-c0bd" targetId="1366-ea1f-3c6d-0727" primary="false"/>
+        <categoryLink id="09e5-eaa9-ff22-c0bd" name="Non_forest_spirit" hidden="false" targetId="1366-ea1f-3c6d-0727" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="2a50-8628-baab-61c3" name="Powerful talons" hidden="false" collective="false" import="true" type="upgrade">
@@ -100,6 +101,16 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="4dbd-9212-97bf-bac9" name="Waywatchers" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="5501-ad06-7e1b-1af2" value="0">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="85ed-fbfd-e533-45e3" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="-1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5501-ad06-7e1b-1af2" type="max"/>
+      </constraints>
       <infoLinks>
         <infoLink id="b7f2-8d4c-7a82-d193" name="Waywatcher" hidden="false" targetId="10eb-30eb-590a-a5f4" type="profile"/>
         <infoLink id="667e-be8d-1a5e-14a8" name="Skirmishers" hidden="false" targetId="1945-ac89-9cc4-3537" type="rule"/>
@@ -108,7 +119,7 @@
       </infoLinks>
       <categoryLinks>
         <categoryLink id="9a04-b797-8957-5b23" name="Rare" hidden="false" targetId="e94b-6a54-8779-cd60" primary="true"/>
-        <categoryLink name="Non_forest_spirit" hidden="false" id="1778-8c77-934a-f03b" targetId="1366-ea1f-3c6d-0727" primary="false"/>
+        <categoryLink id="1778-8c77-934a-f03b" name="Non_forest_spirit" hidden="false" targetId="1366-ea1f-3c6d-0727" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="affa-d829-1b12-dda1" name="Waywatchers" hidden="false" collective="false" import="true" type="model">
@@ -155,16 +166,6 @@
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
       </costs>
-      <constraints>
-        <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="5501-ad06-7e1b-1af2"/>
-      </constraints>
-      <modifiers>
-        <modifier type="set" value="0" field="5501-ad06-7e1b-1af2">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="85ed-fbfd-e533-45e3" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
     </selectionEntry>
     <selectionEntry id="4b55-33ee-0b8e-25a1" name="Treekin" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -207,6 +208,23 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="c3d9-d792-bd19-528e" name="Wild Riders of Kurnous" hidden="false" collective="false" import="true" type="unit">
+      <modifierGroups>
+        <modifierGroup>
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="85ed-fbfd-e533-45e3" type="atLeast"/>
+          </conditions>
+          <modifiers>
+            <modifier type="unset-primary" field="category" value="43cc-fc3f-35a7-8d03"/>
+            <modifier type="increment" field="6054-a6ad-1d97-0fcd" value="1"/>
+            <modifier type="remove" field="category" value="43cc-fc3f-35a7-8d03"/>
+            <modifier type="add" field="category" value="64bf-efb4-9978-26df"/>
+            <modifier type="set-primary" field="category" value="64bf-efb4-9978-26df"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+      <constraints>
+        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6054-a6ad-1d97-0fcd" type="min"/>
+      </constraints>
       <infoLinks>
         <infoLink id="12b7-1b0e-1b5b-17ea" name="Elven Steed" hidden="false" targetId="6547-d129-9f78-062b" type="profile"/>
         <infoLink id="de6e-696f-ff3c-a709" name="Wild Rider" hidden="false" targetId="24a0-6f82-aa21-5093" type="profile"/>
@@ -291,23 +309,6 @@
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
       </costs>
-      <modifierGroups>
-        <modifierGroup type="and">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="85ed-fbfd-e533-45e3" shared="true" includeChildSelections="true"/>
-          </conditions>
-          <modifiers>
-            <modifier type="unset-primary" value="43cc-fc3f-35a7-8d03" field="category"/>
-            <modifier type="increment" value="1" field="6054-a6ad-1d97-0fcd"/>
-            <modifier type="remove" value="43cc-fc3f-35a7-8d03" field="category"/>
-            <modifier type="add" value="64bf-efb4-9978-26df" field="category"/>
-            <modifier type="set-primary" value="64bf-efb4-9978-26df" field="category"/>
-          </modifiers>
-        </modifierGroup>
-      </modifierGroups>
-      <constraints>
-        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="6054-a6ad-1d97-0fcd"/>
-      </constraints>
     </selectionEntry>
     <selectionEntry id="5777-1535-e68e-7f46" name="Warhawk Riders" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -318,7 +319,7 @@
       </infoLinks>
       <categoryLinks>
         <categoryLink id="096b-6755-7dbd-976a" name="Special" hidden="false" targetId="43cc-fc3f-35a7-8d03" primary="true"/>
-        <categoryLink name="Non_forest_spirit" hidden="false" id="2ac0-2a22-27ec-47c3" targetId="1366-ea1f-3c6d-0727" primary="false"/>
+        <categoryLink id="2ac0-2a22-27ec-47c3" name="Non_forest_spirit" hidden="false" targetId="1366-ea1f-3c6d-0727" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="b250-034e-3b44-76ee" name="Warhawk Riders" hidden="false" collective="false" import="true" type="model">
@@ -376,7 +377,7 @@
       </infoLinks>
       <categoryLinks>
         <categoryLink id="cd36-28dd-dbfb-73bd" name="Special" hidden="false" targetId="43cc-fc3f-35a7-8d03" primary="true"/>
-        <categoryLink name="Non_forest_spirit" hidden="false" id="3d27-7c8a-eb05-785d" targetId="1366-ea1f-3c6d-0727" primary="false"/>
+        <categoryLink id="3d27-7c8a-eb05-785d" name="Non_forest_spirit" hidden="false" targetId="1366-ea1f-3c6d-0727" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="a34e-5301-5375-4cbe" name="Wardancer" hidden="false" collective="false" import="true" type="model">
@@ -483,7 +484,7 @@
       </infoLinks>
       <categoryLinks>
         <categoryLink id="adf9-a082-e9a0-3979" name="Special" hidden="false" targetId="43cc-fc3f-35a7-8d03" primary="true"/>
-        <categoryLink name="Non_forest_spirit" hidden="false" id="4892-0421-75dc-885a" targetId="1366-ea1f-3c6d-0727" primary="false"/>
+        <categoryLink id="4892-0421-75dc-885a" name="Non_forest_spirit" hidden="false" targetId="1366-ea1f-3c6d-0727" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="5609-7af8-3eb9-49b3" name="Eternal Guard" hidden="false" collective="false" import="true" type="model">
@@ -564,7 +565,7 @@
       <categoryLinks>
         <categoryLink id="69b8-f579-c0c3-63a5" name="Lord" hidden="false" targetId="d024-d25b-a9b4-73b6" primary="true"/>
         <categoryLink id="3c14-556e-d52e-7527" name="Characters" hidden="false" targetId="7a1c-d611-c2dc-def1" primary="false"/>
-        <categoryLink name="Non_forest_spirit" hidden="false" id="faf1-2bfd-e5ec-7538" targetId="1366-ea1f-3c6d-0727" primary="false"/>
+        <categoryLink id="faf1-2bfd-e5ec-7538" name="Non_forest_spirit" hidden="false" targetId="1366-ea1f-3c6d-0727" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="e39b-bd82-f920-5aa7" name="Additional Weapons" hidden="false" collective="false" import="true">
@@ -709,7 +710,7 @@
       <categoryLinks>
         <categoryLink id="ee08-b1de-862d-908c" name="Lord" hidden="false" targetId="d024-d25b-a9b4-73b6" primary="true"/>
         <categoryLink id="39ea-dd7c-af04-9411" name="Characters" hidden="false" targetId="7a1c-d611-c2dc-def1" primary="false"/>
-        <categoryLink name="Non_forest_spirit" hidden="false" id="80d1-02bb-2a0b-2cc1" targetId="1366-ea1f-3c6d-0727" primary="false"/>
+        <categoryLink id="80d1-02bb-2a0b-2cc1" name="Non_forest_spirit" hidden="false" targetId="1366-ea1f-3c6d-0727" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="38e6-99b9-334e-97cd" name="Mounts" hidden="false" collective="false" import="true">
@@ -857,7 +858,7 @@
       <categoryLinks>
         <categoryLink id="7c41-98cd-f96b-4eec" name="Heroes" hidden="false" targetId="c16b-f319-2c62-2c12" primary="true"/>
         <categoryLink id="694d-44a9-deff-ef54" name="Characters" hidden="false" targetId="7a1c-d611-c2dc-def1" primary="false"/>
-        <categoryLink name="Non_forest_spirit" hidden="false" id="a924-7cd5-c182-bb09" targetId="1366-ea1f-3c6d-0727" primary="false"/>
+        <categoryLink id="a924-7cd5-c182-bb09" name="Non_forest_spirit" hidden="false" targetId="1366-ea1f-3c6d-0727" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="e426-71ca-0828-8ab2" name="Additional Weapons" hidden="false" collective="false" import="true">
@@ -1002,7 +1003,7 @@
         <categoryLink id="b8aa-be3a-daf5-898a" name="Heroes" hidden="false" targetId="c16b-f319-2c62-2c12" primary="true"/>
         <categoryLink id="ad7e-6f40-4105-efd8" name="Heroes" hidden="false" targetId="c16b-f319-2c62-2c12" primary="false"/>
         <categoryLink id="565c-5e69-c1b5-4987" name="Characters" hidden="false" targetId="7a1c-d611-c2dc-def1" primary="false"/>
-        <categoryLink name="Non_forest_spirit" hidden="false" id="0448-4ac0-54e9-a103" targetId="1366-ea1f-3c6d-0727" primary="false"/>
+        <categoryLink id="0448-4ac0-54e9-a103" name="Non_forest_spirit" hidden="false" targetId="1366-ea1f-3c6d-0727" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="6e3b-3470-c59a-2578" name="Mounts" hidden="false" collective="false" import="true">
@@ -1150,6 +1151,19 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="acf4-0d54-550f-4fdd" name="Glade Guard" hidden="false" collective="false" import="true" type="unit">
+      <modifierGroups>
+        <modifierGroup>
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="85ed-fbfd-e533-45e3" type="atLeast"/>
+          </conditions>
+          <modifiers>
+            <modifier type="unset-primary" field="category" value="64bf-efb4-9978-26df"/>
+            <modifier type="remove" field="category" value="64bf-efb4-9978-26df"/>
+            <modifier type="add" field="category" value="43cc-fc3f-35a7-8d03"/>
+            <modifier type="set-primary" field="category" value="43cc-fc3f-35a7-8d03"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
       <infoLinks>
         <infoLink id="0af2-3604-21f1-e6fe" name="Glade Guard" hidden="false" targetId="10d4-8ad6-fda1-c693" type="profile"/>
         <infoLink id="a825-885c-3b16-38c3" name="Glade Guard Longbows" hidden="false" targetId="1507-26eb-e50c-5c71" type="rule"/>
@@ -1158,7 +1172,7 @@
         <categoryLink id="7ee8-7cff-13d8-491e" name="Core" hidden="false" targetId="64bf-efb4-9978-26df" primary="true"/>
         <categoryLink id="e233-c876-d77c-7e9d" name="Core" hidden="false" targetId="64bf-efb4-9978-26df" primary="false"/>
         <categoryLink id="1f28-a23f-b988-2032" name="Gladey Gladey" hidden="false" targetId="fa5a-8ef3-ac8d-2859" primary="false"/>
-        <categoryLink name="Non_forest_spirit" hidden="false" id="4c0b-9615-8ce3-4dd7" targetId="1366-ea1f-3c6d-0727" primary="false"/>
+        <categoryLink id="4c0b-9615-8ce3-4dd7" name="Non_forest_spirit" hidden="false" targetId="1366-ea1f-3c6d-0727" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="795d-571c-0c12-d677" name="Glade Guard" hidden="false" collective="false" import="true" type="model">
@@ -1228,19 +1242,6 @@
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
       </costs>
-      <modifierGroups>
-        <modifierGroup type="and">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="85ed-fbfd-e533-45e3" shared="true" includeChildSelections="true"/>
-          </conditions>
-          <modifiers>
-            <modifier type="unset-primary" value="64bf-efb4-9978-26df" field="category"/>
-            <modifier type="remove" value="64bf-efb4-9978-26df" field="category"/>
-            <modifier type="add" value="43cc-fc3f-35a7-8d03" field="category"/>
-            <modifier type="set-primary" value="43cc-fc3f-35a7-8d03" field="category"/>
-          </modifiers>
-        </modifierGroup>
-      </modifierGroups>
     </selectionEntry>
     <selectionEntry id="5305-aa2b-4249-4af4" name="Glade Guard Scouts" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
@@ -1250,6 +1251,19 @@
           </repeats>
         </modifier>
       </modifiers>
+      <modifierGroups>
+        <modifierGroup>
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="85ed-fbfd-e533-45e3" type="atLeast"/>
+          </conditions>
+          <modifiers>
+            <modifier type="unset-primary" field="category" value="64bf-efb4-9978-26df"/>
+            <modifier type="remove" field="category" value="64bf-efb4-9978-26df"/>
+            <modifier type="add" field="category" value="43cc-fc3f-35a7-8d03"/>
+            <modifier type="set-primary" field="category" value="43cc-fc3f-35a7-8d03"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
       <constraints>
         <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c88b-1b2d-4fb7-51a8" type="max"/>
       </constraints>
@@ -1261,7 +1275,7 @@
       <categoryLinks>
         <categoryLink id="56ad-87d2-a082-cb18" name="Core" hidden="false" targetId="64bf-efb4-9978-26df" primary="true"/>
         <categoryLink id="9685-5958-97f7-e97b" name="Core" hidden="false" targetId="64bf-efb4-9978-26df" primary="false"/>
-        <categoryLink name="Non_forest_spirit" hidden="false" id="e1a4-93df-3f95-dc5e" targetId="1366-ea1f-3c6d-0727" primary="false"/>
+        <categoryLink id="e1a4-93df-3f95-dc5e" name="Non_forest_spirit" hidden="false" targetId="1366-ea1f-3c6d-0727" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="394d-a2d2-3f0c-f090" name="Glade Guard" hidden="false" collective="false" import="true" type="model">
@@ -1332,19 +1346,6 @@
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
       </costs>
-      <modifierGroups>
-        <modifierGroup type="and">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="85ed-fbfd-e533-45e3" shared="true" includeChildSelections="true"/>
-          </conditions>
-          <modifiers>
-            <modifier type="unset-primary" value="64bf-efb4-9978-26df" field="category"/>
-            <modifier type="remove" value="64bf-efb4-9978-26df" field="category"/>
-            <modifier type="add" value="43cc-fc3f-35a7-8d03" field="category"/>
-            <modifier type="set-primary" value="43cc-fc3f-35a7-8d03" field="category"/>
-          </modifiers>
-        </modifierGroup>
-      </modifierGroups>
     </selectionEntry>
     <selectionEntry id="8382-4605-d7f8-f7ed" name="Glade Riders" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -1356,7 +1357,7 @@
         <categoryLink id="91ef-2827-3423-5fb3" name="Core" hidden="false" targetId="64bf-efb4-9978-26df" primary="true"/>
         <categoryLink id="8bb6-7256-fe39-b888" name="Core" hidden="false" targetId="64bf-efb4-9978-26df" primary="false"/>
         <categoryLink id="2fec-4690-44a2-8ea6" name="Gladey Gladey" hidden="false" targetId="fa5a-8ef3-ac8d-2859" primary="false"/>
-        <categoryLink name="Non_forest_spirit" hidden="false" id="160d-87c1-56ff-7dd3" targetId="1366-ea1f-3c6d-0727" primary="false"/>
+        <categoryLink id="160d-87c1-56ff-7dd3" name="Non_forest_spirit" hidden="false" targetId="1366-ea1f-3c6d-0727" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="aee1-b663-2002-5cd2" name="Glade Riders" hidden="false" collective="false" import="true" type="model">
@@ -1430,8 +1431,8 @@
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="force" childId="8923-5946-7b10-8957" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="equalTo" value="1" field="selections" scope="force" childId="8b76-92c4-23f9-54b1" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8923-5946-7b10-8957" type="equalTo"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8b76-92c4-23f9-54b1" type="equalTo"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -1504,59 +1505,123 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="b2e0-658d-81a0-aa0b" name="Skaw the Falconer" publicationId="fae0-621c-1260-a754" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="e2db-07d7-6413-af98" value="1">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8923-5946-7b10-8957" type="equalTo"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8b76-92c4-23f9-54b1" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="e2db-07d7-6413-af98" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="5415-9fea-967e-fca4" name="Skaw the Falconer" publicationId="e947-0dac-ff90-bd9f" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
+          <characteristics>
+            <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">9</characteristic>
+            <characteristic name="WS" typeId="f95b-da01-0578-3bdc">6</characteristic>
+            <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">6</characteristic>
+            <characteristic name="S" typeId="b690-4bc0-bb73-267b">4</characteristic>
+            <characteristic name="T" typeId="8712-f56f-5b22-a720">3</characteristic>
+            <characteristic name="W" typeId="253a-9b00-4fde-8ac2">2</characteristic>
+            <characteristic name="I" typeId="dfff-363e-f72a-5a59">9</characteristic>
+            <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">4</characteristic>
+            <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">9</characteristic>
+            <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">4+ (shooting)</characteristic>
+            <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+            <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
+          </characteristics>
+        </profile>
+        <profile id="5a5f-68a1-efe1-43e4" name="Skaw&apos;s Hawks" publicationId="e947-0dac-ff90-bd9f" page="WE" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
+          <characteristics>
+            <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">-</characteristic>
+            <characteristic name="WS" typeId="f95b-da01-0578-3bdc">4</characteristic>
+            <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">-</characteristic>
+            <characteristic name="S" typeId="b690-4bc0-bb73-267b">4</characteristic>
+            <characteristic name="T" typeId="8712-f56f-5b22-a720">-</characteristic>
+            <characteristic name="W" typeId="253a-9b00-4fde-8ac2">-</characteristic>
+            <characteristic name="I" typeId="dfff-363e-f72a-5a59">6</characteristic>
+            <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">3</characteristic>
+            <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">-</characteristic>
+            <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+            <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+            <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="2dcc-daf3-2c29-a00f" name="Hawks (Skaw)" publicationId="e947-0dac-ff90-bd9f" page="WE" hidden="false">
+          <description>Skaw has three birds of prey that he uses as missile weapons and as weapons in hand-to-hand combat. The range of each bird is 24&quot;, and they will always hit on a 2+ at a Strength of 4. In hand-to-hand combat, the birds give Skaw an additional 3 Attacks at a Strength and Weapon Skill of 4.</description>
+        </rule>
+      </rules>
       <categoryLinks>
         <categoryLink id="3d63-d610-b09c-3613" name="Heroes" hidden="false" targetId="c16b-f319-2c62-2c12" primary="false"/>
         <categoryLink id="12a9-e578-fede-90a1" name="Characters" hidden="false" targetId="7a1c-d611-c2dc-def1" primary="false"/>
-        <categoryLink name="Special Characters" hidden="false" id="d6cd-704a-e9f5-77f6" targetId="0644-bfcd-32c2-21dc" primary="true"/>
-        <categoryLink name="Non_forest_spirit" hidden="false" id="471f-40b0-7173-0a93" targetId="1366-ea1f-3c6d-0727" primary="false"/>
+        <categoryLink id="d6cd-704a-e9f5-77f6" name="Special Characters" hidden="false" targetId="0644-bfcd-32c2-21dc" primary="true"/>
+        <categoryLink id="471f-40b0-7173-0a93" name="Non_forest_spirit" hidden="false" targetId="1366-ea1f-3c6d-0727" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="f7d2-bc7e-5909-379c" name="Additional Weapons" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="91b4-8aa7-73db-2046" type="max"/>
           </constraints>
-          <entryLinks>
-            <entryLink import="true" name="Hand Weapon" hidden="false" id="a5e3-511f-11d3-c0e8" type="selectionEntry" targetId="abdb-bbd0-41b2-5dff">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4163-77f4-46b8-95af"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3a29-8afe-32ed-55d0"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Lash of Claws" hidden="false" id="3372-5feb-5d60-5dc7" page="WE" publicationId="e947-0dac-ff90-bd9f">
+            <selectionEntry id="3372-5feb-5d60-5dc7" name="Lash of Claws" publicationId="e947-0dac-ff90-bd9f" page="WE" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5973-fa56-c6c5-35a2" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="705a-86aa-766b-c126" type="min"/>
+              </constraints>
               <rules>
-                <rule name="Lash of Claws" id="66a6-4c56-c6ef-a287" hidden="false" page="WE" publicationId="e947-0dac-ff90-bd9f">
+                <rule id="66a6-4c56-c6ef-a287" name="Lash of Claws" publicationId="e947-0dac-ff90-bd9f" page="WE" hidden="false">
                   <description>This whip allows Skaw to always strike first — if another Character has this ability, resolve the Attacks in Initiative order. In addition, any model hit by the flail loses 1 Attack (down to a minimum of 1) for the remainder of that turn.</description>
                 </rule>
               </rules>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5973-fa56-c6c5-35a2"/>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="705a-86aa-766b-c126"/>
-              </constraints>
+              <costs>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
+          <entryLinks>
+            <entryLink id="a5e3-511f-11d3-c0e8" name="Hand Weapon" hidden="false" collective="false" import="true" targetId="abdb-bbd0-41b2-5dff" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4163-77f4-46b8-95af" type="min"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a29-8afe-32ed-55d0" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="8fb8-f53a-275f-d926" name="Armour" hidden="false" collective="false" import="true">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Cape of Feathers" hidden="false" id="390c-35d4-7514-6efb" publicationId="e947-0dac-ff90-bd9f" page="WE">
-              <rules>
-                <rule name="Cape of Feathers" id="0edf-ab14-9a3f-efac" hidden="false" page="WE" publicationId="e947-0dac-ff90-bd9f">
-                  <description>This item grants Skaw a 4+ Armour Save against all shooting attacks.</description>
-                </rule>
-              </rules>
+            <selectionEntry id="390c-35d4-7514-6efb" name="Cape of Feathers" publicationId="e947-0dac-ff90-bd9f" page="WE" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="acb2-1e58-0461-d21b" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f366-803b-953c-a0d2" type="min"/>
+              </constraints>
               <profiles>
-                <profile name="Cape of Feathers" typeId="f681-9937-db53-f1d8" typeName="Armour" hidden="false" id="5fd3-2c04-013e-ba82" page="WE" publicationId="e947-0dac-ff90-bd9f">
+                <profile id="5fd3-2c04-013e-ba82" name="Cape of Feathers" publicationId="e947-0dac-ff90-bd9f" page="WE" hidden="false" typeId="f681-9937-db53-f1d8" typeName="Armour">
                   <characteristics>
                     <characteristic name="Saving Throw Modifier" typeId="b600-e1ed-0765-27c1">4+ (shooting)</characteristic>
                     <characteristic name="Special rules" typeId="42c3-68ab-cfa5-203e"/>
                   </characteristics>
                 </profile>
               </profiles>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="acb2-1e58-0461-d21b"/>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f366-803b-953c-a0d2"/>
-              </constraints>
+              <rules>
+                <rule id="0edf-ab14-9a3f-efac" name="Cape of Feathers" publicationId="e947-0dac-ff90-bd9f" page="WE" hidden="false">
+                  <description>This item grants Skaw a 4+ Armour Save against all shooting attacks.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -1586,135 +1651,25 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry id="ba4f-c55a-3967-c34b" name="Ariel, Queen of Athel Loren" publicationId="e947-0dac-ff90-bd9f" page="WE" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
-        <modifier type="set" value="1" field="e2db-07d7-6413-af98">
+        <modifier type="set" field="eed9-1bda-5410-9f14" value="1">
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="force" childId="8923-5946-7b10-8957" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="equalTo" value="1" field="selections" scope="force" childId="8b76-92c4-23f9-54b1" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8923-5946-7b10-8957" type="equalTo"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8b76-92c4-23f9-54b1" type="equalTo"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint type="max" value="0" field="selections" scope="roster" shared="true" id="e2db-07d7-6413-af98" includeChildSelections="true" includeChildForces="true"/>
+        <constraint field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="eed9-1bda-5410-9f14" type="max"/>
       </constraints>
       <profiles>
-        <profile name="Skaw the Falconer" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="5415-9fea-967e-fca4" publicationId="e947-0dac-ff90-bd9f">
-          <characteristics>
-            <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">9</characteristic>
-            <characteristic name="WS" typeId="f95b-da01-0578-3bdc">6</characteristic>
-            <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">6</characteristic>
-            <characteristic name="S" typeId="b690-4bc0-bb73-267b">4</characteristic>
-            <characteristic name="T" typeId="8712-f56f-5b22-a720">3</characteristic>
-            <characteristic name="W" typeId="253a-9b00-4fde-8ac2">2</characteristic>
-            <characteristic name="I" typeId="dfff-363e-f72a-5a59">9</characteristic>
-            <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">4</characteristic>
-            <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">9</characteristic>
-            <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">4+ (shooting)</characteristic>
-            <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
-            <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
-          </characteristics>
-        </profile>
-        <profile name="Skaw&apos;s Hawks" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="5a5f-68a1-efe1-43e4" publicationId="e947-0dac-ff90-bd9f" page="WE">
-          <characteristics>
-            <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">-</characteristic>
-            <characteristic name="WS" typeId="f95b-da01-0578-3bdc">4</characteristic>
-            <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">-</characteristic>
-            <characteristic name="S" typeId="b690-4bc0-bb73-267b">4</characteristic>
-            <characteristic name="T" typeId="8712-f56f-5b22-a720">-</characteristic>
-            <characteristic name="W" typeId="253a-9b00-4fde-8ac2">-</characteristic>
-            <characteristic name="I" typeId="dfff-363e-f72a-5a59">6</characteristic>
-            <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">3</characteristic>
-            <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">-</characteristic>
-            <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
-            <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
-            <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
-          </characteristics>
-        </profile>
-      </profiles>
-      <rules>
-        <rule name="Hawks (Skaw)" id="2dcc-daf3-2c29-a00f" hidden="false" publicationId="e947-0dac-ff90-bd9f" page="WE">
-          <description>Skaw has three birds of prey that he uses as missile weapons and as weapons in hand-to-hand combat. The range of each bird is 24&quot;, and they will always hit on a 2+ at a Strength of 4. In hand-to-hand combat, the birds give Skaw an additional 3 Attacks at a Strength and Weapon Skill of 4.</description>
-        </rule>
-      </rules>
-    </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Ariel, Queen of Athel Loren" hidden="false" id="ba4f-c55a-3967-c34b" collective="false" publicationId="e947-0dac-ff90-bd9f" page="WE">
-      <infoLinks>
-        <infoLink name="Fly" id="c3e1-20dd-fd27-a8c2" hidden="false" type="rule" targetId="e930-0b71-2fef-3937"/>
-        <infoLink name="Forest Spirit" id="8802-7389-f456-fd0a" hidden="false" type="rule" targetId="7322-402a-5d78-360e"/>
-        <infoLink name="Terror" id="d493-201e-2fca-0c57" hidden="false" type="rule" targetId="96f0-c50f-e59e-85fa"/>
-        <infoLink name="Magical Resistance (2)" id="700e-d784-894a-ba6a" hidden="false" type="rule" targetId="df8d-7c05-c47b-9cd6"/>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink name="Lord" hidden="false" id="066e-3043-7dd9-d70c" targetId="d024-d25b-a9b4-73b6" primary="false"/>
-        <categoryLink name="Characters" hidden="false" id="0652-8828-b531-756b" targetId="7a1c-d611-c2dc-def1" primary="false"/>
-        <categoryLink name="Special Characters" hidden="false" id="0e84-8ddb-0d17-85a2" targetId="0644-bfcd-32c2-21dc" primary="true"/>
-        <categoryLink name="Heroes" hidden="false" id="0a81-a987-e864-22e9" targetId="c16b-f319-2c62-2c12" primary="false"/>
-        <categoryLink name="Non_forest_spirit" hidden="false" id="1386-81e8-b755-f8ce" targetId="1366-ea1f-3c6d-0727" primary="false"/>
-      </categoryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Magic and Spites" id="005a-d746-db6d-217d" hidden="false" collective="false" import="true">
-          <entryLinks>
-            <entryLink import="true" name="Arcane Items" hidden="false" id="1d53-db5f-bee0-1aa8" collective="false" targetId="052f-5a92-5e7c-307a" type="selectionEntryGroup">
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="The Heartstone of Athel Loren" hidden="false" id="2414-9ee5-cd98-53d6" page="WE" publicationId="e947-0dac-ff90-bd9f">
-                  <rules>
-                    <rule name="The Heartstone of Athel Loren" id="383b-bb2e-ca56-b5fc" hidden="false" page="WE" publicationId="e947-0dac-ff90-bd9f">
-                      <description>This item grants Ariel a Magic Resistance of 2. In addition, if she successfully resists a spell targeted at her, the casting Wizard must immediately take a Leadership test. If he fails, he immediately loses a magic level and may not cast that spell for the remainder of the game.</description>
-                    </rule>
-                  </rules>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5105-ba3b-f421-ed1d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2d0c-bcb5-1833-b688" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </constraints>
-                </selectionEntry>
-              </selectionEntries>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b99a-d28d-892a-84e4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="Magic powers" id="90c6-3091-61ef-2396" hidden="false" collective="false" import="true" defaultSelectionEntryId="54d8-3f8f-ea3b-f636">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7cff-cdfb-ffce-e53c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f345-b3e7-1e6d-894d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Magic Level 4" hidden="false" id="8285-7a24-3881-66b5" collective="false">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b0a1-c195-ad87-709b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-              <costs>
-                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="4"/>
-                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="2"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <rules>
-            <rule name="+1 to cast spells (AL)" id="eaac-24ce-f397-eac4" hidden="false">
-              <description>Ariel gets +1 to cast any spells from the Lore of Athel Loren.</description>
-            </rule>
-          </rules>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <entryLinks>
-        <entryLink import="true" name="General" hidden="false" id="52a7-b0aa-04e5-6a90" collective="false" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry">
-          <categoryLinks>
-            <categoryLink name="Highborn general" hidden="false" id="7dfb-702a-5243-7386" targetId="56b3-da88-ddd4-ebb5" primary="false"/>
-          </categoryLinks>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="600"/>
-        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-      </costs>
-      <profiles>
-        <profile name="Ariel, Queen of Athel Loren" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="9aa5-70ba-ad27-297f">
+        <profile id="9aa5-70ba-ad27-297f" name="Ariel, Queen of Athel Loren" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
           <characteristics>
             <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">5</characteristic>
             <characteristic name="WS" typeId="f95b-da01-0578-3bdc">5</characteristic>
@@ -1732,116 +1687,107 @@
         </profile>
       </profiles>
       <rules>
-        <rule name="Earthbind (Ariel)" id="1bb2-0198-af18-9d44" hidden="false" page="WE" publicationId="e947-0dac-ff90-bd9f">
+        <rule id="1bb2-0198-af18-9d44" name="Earthbind (Ariel)" publicationId="e947-0dac-ff90-bd9f" page="WE" hidden="false">
           <description>Any units declaring a charge on Ariel count as moving through Difficult Terrain for the duration of the turn. In addition, if Ariel flees from combat, any enemies attempting to pursue her roll an extra D6 when determining their pursuit distance and discard the highest result.</description>
         </rule>
-        <rule name="Aura of the Fey Queen (Ariel)" id="5c68-6656-b3c0-9a3e" hidden="false" page="WE" publicationId="e947-0dac-ff90-bd9f">
+        <rule id="5c68-6656-b3c0-9a3e" name="Aura of the Fey Queen (Ariel)" publicationId="e947-0dac-ff90-bd9f" page="WE" hidden="false">
           <description>All friendly units within 6&quot; of Ariel are Immune to Panic.</description>
         </rule>
-        <rule name="Elemental Form (Ariel)" id="ce44-894a-ea57-bbf8" hidden="false" page="WE" publicationId="e947-0dac-ff90-bd9f">
+        <rule id="ce44-894a-ea57-bbf8" name="Elemental Form (Ariel)" publicationId="e947-0dac-ff90-bd9f" page="WE" hidden="false">
           <description>If she chooses to move using her ground movement, she may move through all forms of Difficult Terrain without penalty.</description>
         </rule>
       </rules>
-      <constraints>
-        <constraint type="max" value="0" field="selections" scope="roster" shared="true" id="eed9-1bda-5410-9f14" includeChildSelections="true" includeChildForces="true"/>
-      </constraints>
-      <modifiers>
-        <modifier type="set" value="1" field="eed9-1bda-5410-9f14">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="force" childId="8923-5946-7b10-8957" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="equalTo" value="1" field="selections" scope="force" childId="8b76-92c4-23f9-54b1" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-    </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Orion, King in the Woods" hidden="false" id="85ed-fbfd-e533-45e3" collective="false" publicationId="5471-0e6f-161c-97bd" page="70">
       <infoLinks>
-        <infoLink name="Forest Spirit" id="b57b-f7b6-5529-6e1a" hidden="false" type="rule" targetId="7322-402a-5d78-360e"/>
-        <infoLink name="Terror" id="5625-c9e7-b2d1-cc75" hidden="false" type="rule" targetId="96f0-c50f-e59e-85fa"/>
-        <infoLink name="Unbreakable" id="06a3-8e38-b602-1254" hidden="false" type="rule" targetId="8ae3-9724-980f-7308"/>
+        <infoLink id="c3e1-20dd-fd27-a8c2" name="Fly" hidden="false" targetId="e930-0b71-2fef-3937" type="rule"/>
+        <infoLink id="8802-7389-f456-fd0a" name="Forest Spirit" hidden="false" targetId="7322-402a-5d78-360e" type="rule"/>
+        <infoLink id="d493-201e-2fca-0c57" name="Terror" hidden="false" targetId="96f0-c50f-e59e-85fa" type="rule"/>
+        <infoLink id="700e-d784-894a-ba6a" name="Magical Resistance (2)" hidden="false" targetId="df8d-7c05-c47b-9cd6" type="rule"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink name="Lord" hidden="false" id="084f-a41d-84e0-50f3" targetId="d024-d25b-a9b4-73b6" primary="false"/>
-        <categoryLink name="Characters" hidden="false" id="5a6a-a2f1-eb17-ce9d" targetId="7a1c-d611-c2dc-def1" primary="false"/>
-        <categoryLink name="Special Characters" hidden="false" id="6bd1-475a-167b-0e3f" targetId="0644-bfcd-32c2-21dc" primary="true"/>
-        <categoryLink name="Heroes" hidden="false" id="4953-8714-b3de-cd7f" targetId="c16b-f319-2c62-2c12" primary="false"/>
+        <categoryLink id="066e-3043-7dd9-d70c" name="Lord" hidden="false" targetId="d024-d25b-a9b4-73b6" primary="false"/>
+        <categoryLink id="0652-8828-b531-756b" name="Characters" hidden="false" targetId="7a1c-d611-c2dc-def1" primary="false"/>
+        <categoryLink id="0e84-8ddb-0d17-85a2" name="Special Characters" hidden="false" targetId="0644-bfcd-32c2-21dc" primary="true"/>
+        <categoryLink id="0a81-a987-e864-22e9" name="Heroes" hidden="false" targetId="c16b-f319-2c62-2c12" primary="false"/>
+        <categoryLink id="1386-81e8-b755-f8ce" name="Non_forest_spirit" hidden="false" targetId="1366-ea1f-3c6d-0727" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Magic items" id="e6b4-472e-9490-4eeb" hidden="false">
+        <selectionEntryGroup id="005a-d746-db6d-217d" name="Magic and Spites" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="1d53-db5f-bee0-1aa8" name="Arcane Items" hidden="false" collective="false" import="true" targetId="052f-5a92-5e7c-307a" type="selectionEntryGroup">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b99a-d28d-892a-84e4" type="min"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="2414-9ee5-cd98-53d6" name="The Heartstone of Athel Loren" publicationId="e947-0dac-ff90-bd9f" page="WE" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5105-ba3b-f421-ed1d" type="max"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d0c-bcb5-1833-b688" type="min"/>
+                  </constraints>
+                  <rules>
+                    <rule id="383b-bb2e-ca56-b5fc" name="The Heartstone of Athel Loren" publicationId="e947-0dac-ff90-bd9f" page="WE" hidden="false">
+                      <description>This item grants Ariel a Magic Resistance of 2. In addition, if she successfully resists a spell targeted at her, the casting Wizard must immediately take a Leadership test. If he fails, he immediately loses a magic level and may not cast that spell for the remainder of the game.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                    <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+                    <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="90c6-3091-61ef-2396" name="Magic powers" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7cff-cdfb-ffce-e53c" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f345-b3e7-1e6d-894d" type="min"/>
+          </constraints>
+          <rules>
+            <rule id="eaac-24ce-f397-eac4" name="+1 to cast spells (AL)" hidden="false">
+              <description>Ariel gets +1 to cast any spells from the Lore of Athel Loren.</description>
+            </rule>
+          </rules>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Spear of Kurnous" hidden="false" id="11b7-fa26-81bf-90e2">
-              <rules>
-                <rule name="Spear of Kurnous" id="821a-eb5f-dcd8-56fb" hidden="false" page="71" publicationId="5471-0e6f-161c-97bd">
-                  <description>when he charges into combat with the Spear of Kurnous, he adds +2 to his Strength.</description>
-                </rule>
-              </rules>
+            <selectionEntry id="8285-7a24-3881-66b5" name="Magic Level 4" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2f5e-d1f4-fda3-b049"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8d5d-eeb2-677b-da29"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b0a1-c195-ad87-709b" type="max"/>
               </constraints>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="The Hawk&apos;s Talon" hidden="false" id="13d3-d71d-e8b4-47e5">
-              <rules>
-                <rule name="The Hawk&apos;s Talon" id="0349-1e45-80f1-e87c" hidden="false" page="71" publicationId="5471-0e6f-161c-97bd">
-                  <description>This is treated as a longbow that has a Strength of 6 and can penetrate ranks in the same manner as a bolt thrower. In addition, each unsaved wound caused by the Hawk&apos;s Talon becomes D3 wounds rather than 1. Orion does not suffer a -1 to hit penalty for moving and shooting.</description>
-                </rule>
-              </rules>
-              <infoLinks>
-                <infoLink name="Long Bow" id="6273-ffd8-5834-4f85" hidden="false" type="profile" targetId="67c1-cca3-76a7-0667">
-                  <modifiers>
-                    <modifier type="set" value="6" field="6fe4-1ebb-cb04-1378"/>
-                    <modifier type="set" value="The Hawk&apos;s Talon" field="name"/>
-                  </modifiers>
-                </infoLink>
-              </infoLinks>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8282-a77d-40ea-938f"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d61d-ee09-e07f-9216"/>
-              </constraints>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Cloak of Isha" hidden="false" id="47ac-0a03-0002-7752">
-              <rules>
-                <rule name="Cloak of Isha" id="e087-0337-dc2c-b3c5" hidden="false" page="71" publicationId="5471-0e6f-161c-97bd">
-                  <description>The Cloak of Isha adds two Dispel dice to the Wood Elf Dispel dice pool.</description>
-                </rule>
-              </rules>
               <costs>
-                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
-                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="4"/>
                 <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="2"/>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
               </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Horn of the Wild Hunt" hidden="false" id="25a2-e069-5530-2b4e" page="71" publicationId="5471-0e6f-161c-97bd">
-              <rules>
-                <rule name="Horn of the Wild Hunt" id="9541-dd8d-79a6-a07a" hidden="false" page="71" publicationId="5471-0e6f-161c-97bd">
-                  <description>One use only. The first time Orion declares a charge, he sounds the Horn of the Wild Hunt. All enemies within 18&quot; of him (before he starts his charge move) must take a Panic test.</description>
-                </rule>
-              </rules>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink import="true" name="General" hidden="false" id="1e99-88db-eaab-55d7" collective="false" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry">
+        <entryLink id="52a7-b0aa-04e5-6a90" name="General" hidden="false" collective="false" import="true" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry">
           <categoryLinks>
-            <categoryLink name="Highborn general" hidden="false" id="386c-1439-5779-c7c6" targetId="56b3-da88-ddd4-ebb5" primary="false"/>
+            <categoryLink id="7dfb-702a-5243-7386" name="Highborn general" hidden="false" targetId="56b3-da88-ddd4-ebb5" primary="false"/>
           </categoryLinks>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ce51-32ed-fa54-9b85"/>
-          </constraints>
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="575"/>
+        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="600"/>
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry id="85ed-fbfd-e533-45e3" name="Orion, King in the Woods" publicationId="5471-0e6f-161c-97bd" page="70" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="4b54-d9d2-2f5b-47e8" value="1">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8923-5946-7b10-8957" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="4b54-d9d2-2f5b-47e8" type="max"/>
+      </constraints>
       <profiles>
-        <profile name="Orion" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="e6f6-65f7-f973-1e69" page="70" publicationId="5471-0e6f-161c-97bd">
+        <profile id="e6f6-65f7-f973-1e69" name="Orion" publicationId="5471-0e6f-161c-97bd" page="70" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
           <characteristics>
             <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">9</characteristic>
             <characteristic name="WS" typeId="f95b-da01-0578-3bdc">8</characteristic>
@@ -1859,27 +1805,32 @@
         </profile>
       </profiles>
       <rules>
-        <rule name="Spirit of Kurnous" id="663c-4d6d-dc9e-d9f7" hidden="false" page="71" publicationId="5471-0e6f-161c-97bd">
+        <rule id="663c-4d6d-dc9e-d9f7" name="Spirit of Kurnous" publicationId="5471-0e6f-161c-97bd" page="71" hidden="false">
           <description>Orion is Unbreakable. However, if he is beaten in combat, his essence will begin to fade. If Orion is beaten in combat, then for each point of combat resolution he loses by he also loses one wound. If Orion is within 6&quot; of a wood the number of wounds he loses is reduced by one (so, if he loses the combat by one and is within 6&quot; of a wood, he does not lose any wounds).</description>
         </rule>
-        <rule name="The Wild Hunt (Orion)" id="e9af-4a05-c4c0-f1d6" hidden="false" page="71" publicationId="5471-0e6f-161c-97bd">
+        <rule id="e9af-4a05-c4c0-f1d6" name="The Wild Hunt (Orion)" publicationId="5471-0e6f-161c-97bd" page="71" hidden="false">
           <description>In an army led by Orion, Wild Riders of Kurnous are a Core choice. An army led by Orion must include at least one unit of Wild Riders. In addition, in an army led by Orion, Glade Guard and Scouts count as Special units, and Waywatchers may not be taken at all.</description>
         </rule>
       </rules>
-      <constraints>
-        <constraint type="max" value="0" field="selections" scope="roster" shared="true" id="4b54-d9d2-2f5b-47e8" includeChildSelections="true" includeChildForces="true"/>
-      </constraints>
-      <modifiers>
-        <modifier type="set" value="1" field="4b54-d9d2-2f5b-47e8">
-          <conditions>
-            <condition type="equalTo" value="1" field="selections" scope="force" childId="8923-5946-7b10-8957" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </conditions>
-        </modifier>
-      </modifiers>
+      <infoLinks>
+        <infoLink id="b57b-f7b6-5529-6e1a" name="Forest Spirit" hidden="false" targetId="7322-402a-5d78-360e" type="rule"/>
+        <infoLink id="5625-c9e7-b2d1-cc75" name="Terror" hidden="false" targetId="96f0-c50f-e59e-85fa" type="rule"/>
+        <infoLink id="06a3-8e38-b602-1254" name="Unbreakable" hidden="false" targetId="8ae3-9724-980f-7308" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="084f-a41d-84e0-50f3" name="Lord" hidden="false" targetId="d024-d25b-a9b4-73b6" primary="false"/>
+        <categoryLink id="5a6a-a2f1-eb17-ce9d" name="Characters" hidden="false" targetId="7a1c-d611-c2dc-def1" primary="false"/>
+        <categoryLink id="6bd1-475a-167b-0e3f" name="Special Characters" hidden="false" targetId="0644-bfcd-32c2-21dc" primary="true"/>
+        <categoryLink id="4953-8714-b3de-cd7f" name="Heroes" hidden="false" targetId="c16b-f319-2c62-2c12" primary="false"/>
+      </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Hounds of the Hunt" hidden="false" id="2e60-f85b-99f7-9e7f">
+        <selectionEntry id="2e60-f85b-99f7-9e7f" name="Hounds of the Hunt" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7e24-bf7f-2a83-f08e" type="max"/>
+            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bad9-1740-d4b1-64a9" type="min"/>
+          </constraints>
           <profiles>
-            <profile name="Hound" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="542a-cbf6-4bbb-4418">
+            <profile id="542a-cbf6-4bbb-4418" name="Hound" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
               <characteristics>
                 <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">9</characteristic>
                 <characteristic name="WS" typeId="f95b-da01-0578-3bdc">4</characteristic>
@@ -1896,74 +1847,128 @@
               </characteristics>
             </profile>
           </profiles>
+          <rules>
+            <rule id="e09a-af79-a616-8246" name="Spirit of Kurnous" publicationId="5471-0e6f-161c-97bd" page="70" hidden="false">
+              <description>Orion is Unbreakable. However, if he is beaten in combat, his essence will begin to fade. If Orion is beaten in combat, then for each point of combat resolution he loses by he also loses one wound. If Orion is within 6&quot; of a wood the number of wounds he loses is reduced by one (so, if he loses the combat by one and is within 6&quot; of a wood, he does not lose any wounds).</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="a825-3f9b-1fed-3db6" name="Forest Spirit" hidden="false" targetId="7322-402a-5d78-360e" type="rule"/>
+            <infoLink id="424e-ee57-96a5-eeb8" name="Unbreakable" hidden="false" targetId="8ae3-9724-980f-7308" type="rule"/>
+          </infoLinks>
           <costs>
             <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="15"/>
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
-          <constraints>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="7e24-bf7f-2a83-f08e"/>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="bad9-1740-d4b1-64a9"/>
-          </constraints>
-          <infoLinks>
-            <infoLink name="Forest Spirit" id="a825-3f9b-1fed-3db6" hidden="false" type="rule" targetId="7322-402a-5d78-360e"/>
-            <infoLink name="Unbreakable" id="424e-ee57-96a5-eeb8" hidden="false" type="rule" targetId="8ae3-9724-980f-7308"/>
-          </infoLinks>
-          <rules>
-            <rule name="Spirit of Kurnous" id="e09a-af79-a616-8246" hidden="false" page="70" publicationId="5471-0e6f-161c-97bd">
-              <description>Orion is Unbreakable. However, if he is beaten in combat, his essence will begin to fade. If Orion is beaten in combat, then for each point of combat resolution he loses by he also loses one wound. If Orion is within 6&quot; of a wood the number of wounds he loses is reduced by one (so, if he loses the combat by one and is within 6&quot; of a wood, he does not lose any wounds).</description>
-            </rule>
-          </rules>
         </selectionEntry>
       </selectionEntries>
-    </selectionEntry>
-    <selectionEntry id="b01e-282c-48fb-6291" name="Drycha" hidden="false" collective="false" import="true" type="unit" page="72-73" publicationId="5471-0e6f-161c-97bd">
-      <infoLinks>
-        <infoLink id="e76d-3f57-be3d-5040" name="Fear" hidden="false" targetId="1524-2372-4aa0-6881" type="rule"/>
-        <infoLink id="e702-2254-a7a9-33f0" name="Forest Spirit" hidden="false" targetId="7322-402a-5d78-360e" type="rule"/>
-        <infoLink name="Forest Stalkers" id="517d-2c42-2bea-8757" hidden="false" type="rule" targetId="ee3c-cd24-db81-c58a"/>
-        <infoLink name="Terror" id="7065-5f4f-ade8-c078" hidden="false" type="rule" targetId="96f0-c50f-e59e-85fa"/>
-        <infoLink name="Forest Walkers" id="9e47-f3fc-e3cd-fe27" hidden="false" type="rule" targetId="fcf3-acc8-01dd-b878"/>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink id="efe4-c89b-f940-3ffc" name="Characters" hidden="false" targetId="7a1c-d611-c2dc-def1" primary="false"/>
-        <categoryLink name="Special Characters" hidden="false" id="6204-8fce-3ffb-2824" targetId="0644-bfcd-32c2-21dc" primary="true"/>
-        <categoryLink name="Lord" hidden="false" id="8514-5e02-dbc1-d2fe" targetId="d024-d25b-a9b4-73b6" primary="false"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="0220-efcf-5902-7153" name="Level 2 Wizard" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b882-0722-e06a-6066" type="max"/>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5c91-96e7-31b1-6ff3"/>
-          </constraints>
-          <costs>
-            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="2"/>
-            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="1"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="e6b4-472e-9490-4eeb" name="Magic items" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="11b7-fa26-81bf-90e2" name="Spear of Kurnous" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f5e-d1f4-fda3-b049" type="min"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d5d-eeb2-677b-da29" type="max"/>
+              </constraints>
+              <rules>
+                <rule id="821a-eb5f-dcd8-56fb" name="Spear of Kurnous" publicationId="5471-0e6f-161c-97bd" page="71" hidden="false">
+                  <description>when he charges into combat with the Spear of Kurnous, he adds +2 to his Strength.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="13d3-d71d-e8b4-47e5" name="The Hawk&apos;s Talon" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8282-a77d-40ea-938f" type="min"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d61d-ee09-e07f-9216" type="max"/>
+              </constraints>
+              <rules>
+                <rule id="0349-1e45-80f1-e87c" name="The Hawk&apos;s Talon" publicationId="5471-0e6f-161c-97bd" page="71" hidden="false">
+                  <description>This is treated as a longbow that has a Strength of 6 and can penetrate ranks in the same manner as a bolt thrower. In addition, each unsaved wound caused by the Hawk&apos;s Talon becomes D3 wounds rather than 1. Orion does not suffer a -1 to hit penalty for moving and shooting.</description>
+                </rule>
+              </rules>
+              <infoLinks>
+                <infoLink id="6273-ffd8-5834-4f85" name="Long Bow" hidden="false" targetId="67c1-cca3-76a7-0667" type="profile">
+                  <modifiers>
+                    <modifier type="set" field="6fe4-1ebb-cb04-1378" value="6"/>
+                    <modifier type="set" field="name" value="The Hawk&apos;s Talon"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+              <costs>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="47ac-0a03-0002-7752" name="Cloak of Isha" hidden="false" collective="false" import="true" type="upgrade">
+              <rules>
+                <rule id="e087-0337-dc2c-b3c5" name="Cloak of Isha" publicationId="5471-0e6f-161c-97bd" page="71" hidden="false">
+                  <description>The Cloak of Isha adds two Dispel dice to the Wood Elf Dispel dice pool.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="2"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="25a2-e069-5530-2b4e" name="Horn of the Wild Hunt" publicationId="5471-0e6f-161c-97bd" page="71" hidden="false" collective="false" import="true" type="upgrade">
+              <rules>
+                <rule id="9541-dd8d-79a6-a07a" name="Horn of the Wild Hunt" publicationId="5471-0e6f-161c-97bd" page="71" hidden="false">
+                  <description>One use only. The first time Orion declares a charge, he sounds the Horn of the Wild Hunt. All enemies within 18&quot; of him (before he starts his charge move) must take a Panic test.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="cee2-944c-e90c-c101" name="General" hidden="false" collective="false" import="true" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry">
+        <entryLink id="1e99-88db-eaab-55d7" name="General" hidden="false" collective="false" import="true" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ce51-32ed-fa54-9b85" type="min"/>
+          </constraints>
           <categoryLinks>
-            <categoryLink id="3ba2-ba3a-f53b-53f6" name="Highborn general" hidden="false" targetId="56b3-da88-ddd4-ebb5" primary="false"/>
+            <categoryLink id="386c-1439-5779-c7c6" name="Highborn general" hidden="false" targetId="56b3-da88-ddd4-ebb5" primary="false"/>
           </categoryLinks>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3453-8b91-2ef2-8984"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="01c8-f4bc-71ae-6050" name="Tree Spites" hidden="false" collective="false" import="true" targetId="c6d9-d6e1-96ac-0f4d" type="selectionEntryGroup">
-          <constraints>
-            <constraint field="ecfa-8486-4f6c-c249" scope="parent" value="50" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2746-f770-7cb3-2c8d" type="max"/>
-          </constraints>
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="355"/>
+        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="575"/>
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="2"/>
+        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry id="b01e-282c-48fb-6291" name="Drycha" publicationId="5471-0e6f-161c-97bd" page="72-73" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="6f1a-6927-22df-2a08" value="1">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8923-5946-7b10-8957" type="equalTo"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1366-ea1f-3c6d-0727" type="lessThan">
+                  <comment>Drycha&apos;s Army</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="6f1a-6927-22df-2a08" type="max"/>
+      </constraints>
       <profiles>
-        <profile name="Drycha" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="00d1-70bf-306f-f8fa">
+        <profile id="00d1-70bf-306f-f8fa" name="Drycha" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
           <characteristics>
             <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">5</characteristic>
             <characteristic name="WS" typeId="f95b-da01-0578-3bdc">7</characteristic>
@@ -1981,110 +1986,75 @@
         </profile>
       </profiles>
       <rules>
-        <rule name="Eternal Rage" id="7845-9632-4575-2fd8" hidden="false" page="73" publicationId="5471-0e6f-161c-97bd">
+        <rule id="7845-9632-4575-2fd8" name="Eternal Rage" publicationId="5471-0e6f-161c-97bd" page="73" hidden="false">
           <description>Drycha is filled with deep and abiding loathing of all non-forest spirits. Accordingly, she may re-roll all failed &apos;to hit&apos; rolls in close combat.</description>
         </rule>
-        <rule name="Fanatical" id="28f8-c74e-0acb-ea1a" hidden="false" page="73" publicationId="5471-0e6f-161c-97bd">
+        <rule id="28f8-c74e-0acb-ea1a" name="Fanatical" publicationId="5471-0e6f-161c-97bd" page="73" hidden="false">
           <description>For each wound Drycha suffers, she gains an additional attack for the remainder of the game.</description>
         </rule>
-        <rule name="Tree Singing (Drycha)" id="db4f-2874-b8aa-d14e" hidden="false" page="73" publicationId="5471-0e6f-161c-97bd">
+        <rule id="db4f-2874-b8aa-d14e" name="Tree Singing (Drycha)" publicationId="5471-0e6f-161c-97bd" page="73" hidden="false">
           <description>She may cast the Tree Singing spell twice each turn, at a Bound Spell level of 3, in exactly the same manner as a Treeman Ancient.</description>
         </rule>
       </rules>
-      <constraints>
-        <constraint type="max" value="0" field="selections" scope="roster" shared="true" id="6f1a-6927-22df-2a08" includeChildSelections="true" includeChildForces="true"/>
-      </constraints>
-      <modifiers>
-        <modifier type="set" value="1" field="6f1a-6927-22df-2a08">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="force" childId="8923-5946-7b10-8957" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="1366-ea1f-3c6d-0727" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false">
-                  <comment>Drycha&apos;s Army</comment>
-                </condition>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-    </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Naestra and Arahan, Sisters of Twilight" hidden="false" id="ea6d-f265-89d3-808e" collective="false" publicationId="5471-0e6f-161c-97bd" page="74-75">
       <infoLinks>
-        <infoLink name="Forest Walkers" id="eda1-e17b-7c72-4837" hidden="false" type="rule" targetId="fcf3-acc8-01dd-b878"/>
-        <infoLink name="Asrai Archery" id="9ea4-5156-86c7-3ede" hidden="false" type="rule" targetId="d1ac-ca23-6202-c8a8"/>
+        <infoLink id="e76d-3f57-be3d-5040" name="Fear" hidden="false" targetId="1524-2372-4aa0-6881" type="rule"/>
+        <infoLink id="e702-2254-a7a9-33f0" name="Forest Spirit" hidden="false" targetId="7322-402a-5d78-360e" type="rule"/>
+        <infoLink id="517d-2c42-2bea-8757" name="Forest Stalkers" hidden="false" targetId="ee3c-cd24-db81-c58a" type="rule"/>
+        <infoLink id="7065-5f4f-ade8-c078" name="Terror" hidden="false" targetId="96f0-c50f-e59e-85fa" type="rule"/>
+        <infoLink id="9e47-f3fc-e3cd-fe27" name="Forest Walkers" hidden="false" targetId="fcf3-acc8-01dd-b878" type="rule"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink name="Lord" hidden="false" id="f73a-c6df-cf6c-1028" targetId="d024-d25b-a9b4-73b6" primary="false"/>
-        <categoryLink name="Characters" hidden="false" id="76bc-5dc2-6e56-c59a" targetId="7a1c-d611-c2dc-def1" primary="false"/>
-        <categoryLink name="Special Characters" hidden="false" id="35f9-dc84-9deb-5f90" targetId="0644-bfcd-32c2-21dc" primary="true"/>
-        <categoryLink name="Heroes" hidden="false" id="7895-a784-1da6-94c4" targetId="c16b-f319-2c62-2c12" primary="false"/>
-        <categoryLink name="Non_forest_spirit" hidden="false" id="61f7-c05a-48ee-2f0e" targetId="1366-ea1f-3c6d-0727" primary="false"/>
+        <categoryLink id="efe4-c89b-f940-3ffc" name="Characters" hidden="false" targetId="7a1c-d611-c2dc-def1" primary="false"/>
+        <categoryLink id="6204-8fce-3ffb-2824" name="Special Characters" hidden="false" targetId="0644-bfcd-32c2-21dc" primary="true"/>
+        <categoryLink id="8514-5e02-dbc1-d2fe" name="Lord" hidden="false" targetId="d024-d25b-a9b4-73b6" primary="false"/>
       </categoryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Magic items" id="463b-0bb5-1b6d-70c2" hidden="false">
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Bow of Arahan" hidden="false" id="8e66-6a8a-ba53-7ba8">
-              <rules>
-                <rule name="The Hawk&apos;s Talon" id="f26d-4958-6f49-d5a4" hidden="false" page="71" publicationId="5471-0e6f-161c-97bd">
-                  <description>This is treated as a longbow that has a Strength of 6 and can penetrate ranks in the same manner as a bolt thrower. In addition, each unsaved wound caused by the Hawk&apos;s Talon becomes D3 wounds rather than 1. Orion does not suffer a -1 to hit penalty for moving and shooting.</description>
-                </rule>
-                <rule name="Bow of Arahan" id="9e1f-1e02-7934-2c97" hidden="false">
-                  <description>If Arahan&apos;s longbow shot hits, place the small template over the target (subject to normal targeting restrictions) and resolve it as you would for a stone thrower, with the exceptions that hits are resolved at Strength of 3 and Armour Saves are allowed as normal. Arahan may shoot at a different target to Naestra (and Ceithin-Har if he is present) if she wishes.</description>
-                </rule>
-              </rules>
-              <infoLinks>
-                <infoLink name="Long Bow" id="8728-6473-2340-1753" hidden="false" type="profile" targetId="67c1-cca3-76a7-0667">
-                  <modifiers>
-                    <modifier type="set" value="Bow of Arahan" field="name"/>
-                  </modifiers>
-                </infoLink>
-              </infoLinks>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="81e1-02a4-8f61-188a"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8576-553d-d6bd-9629"/>
-              </constraints>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="Mount" id="f6ba-5861-9682-c360" hidden="false">
-          <entryLinks>
-            <entryLink import="true" name="Forest Dragon" hidden="false" id="9e50-e789-fb6e-ae20" type="selectionEntry" targetId="8b96-ec3a-cd31-7f8e">
-              <costs>
-                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="320"/>
-              </costs>
-              <modifiers>
-                <modifier type="set" value="Ceithin-Har (Forest Dragon)" field="name"/>
-              </modifiers>
-            </entryLink>
-            <entryLink import="true" name="Great Eagle" hidden="false" id="41ca-44ba-96b0-9dd0" type="selectionEntry" targetId="0521-24e0-2a22-4531">
-              <costs>
-                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="50"/>
-              </costs>
-              <modifiers>
-                <modifier type="set" value="Gwindalor (Great Eagle)" field="name"/>
-              </modifiers>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <entryLinks>
-        <entryLink import="true" name="General" hidden="false" id="3c57-8c4f-d29c-8752" collective="false" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry">
-          <categoryLinks>
-            <categoryLink name="Highborn general" hidden="false" id="dfe3-0ca5-8951-da54" targetId="56b3-da88-ddd4-ebb5" primary="false"/>
-          </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="0220-efcf-5902-7153" name="Level 2 Wizard" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="529a-fbe3-2681-0053"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b882-0722-e06a-6066" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c91-96e7-31b1-6ff3" type="min"/>
+          </constraints>
+          <costs>
+            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="2"/>
+            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="1"/>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="cee2-944c-e90c-c101" name="General" hidden="false" collective="false" import="true" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3453-8b91-2ef2-8984" type="min"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink id="3ba2-ba3a-f53b-53f6" name="Highborn general" hidden="false" targetId="56b3-da88-ddd4-ebb5" primary="false"/>
+          </categoryLinks>
+        </entryLink>
+        <entryLink id="01c8-f4bc-71ae-6050" name="Tree Spites" hidden="false" collective="false" import="true" targetId="c6d9-d6e1-96ac-0f4d" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="ecfa-8486-4f6c-c249" scope="parent" value="50" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2746-f770-7cb3-2c8d" type="max"/>
           </constraints>
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="275"/>
+        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="355"/>
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="2"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry id="ea6d-f265-89d3-808e" name="Naestra and Arahan, Sisters of Twilight" publicationId="5471-0e6f-161c-97bd" page="74-75" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="9409-2a13-f8f4-7e09" value="1">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8923-5946-7b10-8957" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="9409-2a13-f8f4-7e09" type="max"/>
+      </constraints>
       <profiles>
-        <profile name="Arahan" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="38d9-ef40-49e3-896b" page="75" publicationId="5471-0e6f-161c-97bd">
+        <profile id="38d9-ef40-49e3-896b" name="Arahan" publicationId="5471-0e6f-161c-97bd" page="75" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
           <characteristics>
             <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">5</characteristic>
             <characteristic name="WS" typeId="f95b-da01-0578-3bdc">6</characteristic>
@@ -2100,7 +2070,7 @@
             <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
           </characteristics>
         </profile>
-        <profile name="Naestra" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="8c37-d59e-6951-09f9" page="75" publicationId="5471-0e6f-161c-97bd">
+        <profile id="8c37-d59e-6951-09f9" name="Naestra" publicationId="5471-0e6f-161c-97bd" page="75" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
           <characteristics>
             <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">5</characteristic>
             <characteristic name="WS" typeId="f95b-da01-0578-3bdc">6</characteristic>
@@ -2118,25 +2088,99 @@
         </profile>
       </profiles>
       <rules>
-        <rule name="Sister-twins" id="a3fa-175c-3c99-62e7" hidden="false" page="75" publicationId="5471-0e6f-161c-97bd">
+        <rule id="a3fa-175c-3c99-62e7" name="Sister-twins" publicationId="5471-0e6f-161c-97bd" page="75" hidden="false">
           <description>If either Arahan or Naestra is slain, do not remove the model from play unless the other sister is killed in the same phase. If either sister is still alive at the end of a phase, both are restored to their starting number of Wounds. In the event of a challenge, both sisters must fight.</description>
         </rule>
-        <rule name="Masters of the Wild" id="e5a2-39f3-a6be-bc71" hidden="false" page="75" publicationId="5471-0e6f-161c-97bd">
+        <rule id="e5a2-39f3-a6be-bc71" name="Masters of the Wild" publicationId="5471-0e6f-161c-97bd" page="75" hidden="false">
           <description>For shooting, any shots that would normally hit the rider are split between Arahan and Naestra (ie, when riding a monster, the rider is normally hit on the roll of a 5+). For each hit that hits a rider, roll a further dice - on a 1-3 Arahan is struck, on a 4-6 Naestra is struck. Also, if their mount is slain, they will form into a skirmishing unit consisting of the two of them. If both sisters are slain, their mount will always react as if it had rolled a 5 or 6 on the Monster Reaction table.</description>
         </rule>
       </rules>
-      <constraints>
-        <constraint type="max" value="0" field="selections" scope="roster" shared="true" id="9409-2a13-f8f4-7e09" includeChildSelections="true" includeChildForces="true"/>
-      </constraints>
-      <modifiers>
-        <modifier type="set" value="1" field="9409-2a13-f8f4-7e09">
-          <conditions>
-            <condition type="equalTo" value="1" field="selections" scope="force" childId="8923-5946-7b10-8957" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </conditions>
-        </modifier>
-      </modifiers>
+      <infoLinks>
+        <infoLink id="eda1-e17b-7c72-4837" name="Forest Walkers" hidden="false" targetId="fcf3-acc8-01dd-b878" type="rule"/>
+        <infoLink id="9ea4-5156-86c7-3ede" name="Asrai Archery" hidden="false" targetId="d1ac-ca23-6202-c8a8" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="f73a-c6df-cf6c-1028" name="Lord" hidden="false" targetId="d024-d25b-a9b4-73b6" primary="false"/>
+        <categoryLink id="76bc-5dc2-6e56-c59a" name="Characters" hidden="false" targetId="7a1c-d611-c2dc-def1" primary="false"/>
+        <categoryLink id="35f9-dc84-9deb-5f90" name="Special Characters" hidden="false" targetId="0644-bfcd-32c2-21dc" primary="true"/>
+        <categoryLink id="7895-a784-1da6-94c4" name="Heroes" hidden="false" targetId="c16b-f319-2c62-2c12" primary="false"/>
+        <categoryLink id="61f7-c05a-48ee-2f0e" name="Non_forest_spirit" hidden="false" targetId="1366-ea1f-3c6d-0727" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="463b-0bb5-1b6d-70c2" name="Magic items" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="8e66-6a8a-ba53-7ba8" name="Bow of Arahan" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="81e1-02a4-8f61-188a" type="min"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8576-553d-d6bd-9629" type="max"/>
+              </constraints>
+              <rules>
+                <rule id="f26d-4958-6f49-d5a4" name="The Hawk&apos;s Talon" publicationId="5471-0e6f-161c-97bd" page="71" hidden="false">
+                  <description>This is treated as a longbow that has a Strength of 6 and can penetrate ranks in the same manner as a bolt thrower. In addition, each unsaved wound caused by the Hawk&apos;s Talon becomes D3 wounds rather than 1. Orion does not suffer a -1 to hit penalty for moving and shooting.</description>
+                </rule>
+                <rule id="9e1f-1e02-7934-2c97" name="Bow of Arahan" hidden="false">
+                  <description>If Arahan&apos;s longbow shot hits, place the small template over the target (subject to normal targeting restrictions) and resolve it as you would for a stone thrower, with the exceptions that hits are resolved at Strength of 3 and Armour Saves are allowed as normal. Arahan may shoot at a different target to Naestra (and Ceithin-Har if he is present) if she wishes.</description>
+                </rule>
+              </rules>
+              <infoLinks>
+                <infoLink id="8728-6473-2340-1753" name="Long Bow" hidden="false" targetId="67c1-cca3-76a7-0667" type="profile">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Bow of Arahan"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+              <costs>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="f6ba-5861-9682-c360" name="Mount" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="9e50-e789-fb6e-ae20" name="Forest Dragon" hidden="false" collective="false" import="true" targetId="8b96-ec3a-cd31-7f8e" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="name" value="Ceithin-Har (Forest Dragon)"/>
+              </modifiers>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="320"/>
+              </costs>
+            </entryLink>
+            <entryLink id="41ca-44ba-96b0-9dd0" name="Great Eagle" hidden="false" collective="false" import="true" targetId="0521-24e0-2a22-4531" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="name" value="Gwindalor (Great Eagle)"/>
+              </modifiers>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="50"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="3c57-8c4f-d29c-8752" name="General" hidden="false" collective="false" import="true" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="529a-fbe3-2681-0053" type="min"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink id="dfe3-0ca5-8951-da54" name="Highborn general" hidden="false" targetId="56b3-da88-ddd4-ebb5" primary="false"/>
+          </categoryLinks>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="275"/>
+        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+      </costs>
     </selectionEntry>
   </selectionEntries>
+  <entryLinks>
+    <entryLink id="f42a-becf-7f6f-30bf" name="Allow experimental rules?" hidden="false" collective="false" import="true" targetId="8b76-92c4-23f9-54b1" type="selectionEntry"/>
+    <entryLink id="0bd6-9259-fc8f-5f61" name="Allow special characters?" hidden="false" collective="false" import="true" targetId="8923-5946-7b10-8957" type="selectionEntry"/>
+    <entryLink id="6e70-e1ba-9144-f192" name="Pirazzo&apos;s Lost Legion" hidden="false" collective="false" import="true" targetId="bf3e-42e7-f52f-fb99" type="selectionEntry"/>
+    <entryLink id="933f-4919-acc2-2622" name="Leopalds Leopard Company" hidden="false" collective="false" import="true" targetId="ab54-8cc7-3975-5c86" type="selectionEntry"/>
+  </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="4bef-a28f-d72e-fe2a" name="The Spirit Sword" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -3023,7 +3067,7 @@ They benefit from Talismanic Tattoos, Fury Of Kurnous and Forest Spirit Special 
       </constraints>
       <infoLinks>
         <infoLink id="670f-7fff-c47d-db03" name="Great Eagle" hidden="false" targetId="d63c-1ad8-79c3-9d2f" type="profile"/>
-        <infoLink name="Fly" id="39d3-adc3-8f01-0cc4" hidden="false" type="rule" targetId="e930-0b71-2fef-3937"/>
+        <infoLink id="39d3-adc3-8f01-0cc4" name="Fly" hidden="false" targetId="e930-0b71-2fef-3937" type="rule"/>
       </infoLinks>
       <costs>
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
@@ -3037,9 +3081,9 @@ They benefit from Talismanic Tattoos, Fury Of Kurnous and Forest Spirit Special 
       </constraints>
       <infoLinks>
         <infoLink id="27a7-32a5-18e0-6396" name="Unicorn" hidden="false" targetId="c39d-46d7-5b1d-aa38" type="profile"/>
-        <infoLink name="Forest Spirit" id="4c85-20e6-627b-0b7e" hidden="false" type="rule" targetId="7322-402a-5d78-360e"/>
-        <infoLink name="Impale" id="8661-effb-0577-e096" hidden="false" type="rule" targetId="589c-b3bd-d564-4e83"/>
-        <infoLink name="Magical Resistance (2)" id="10f2-35db-6e63-6f22" hidden="false" type="rule" targetId="df8d-7c05-c47b-9cd6"/>
+        <infoLink id="4c85-20e6-627b-0b7e" name="Forest Spirit" hidden="false" targetId="7322-402a-5d78-360e" type="rule"/>
+        <infoLink id="8661-effb-0577-e096" name="Impale" hidden="false" targetId="589c-b3bd-d564-4e83" type="rule"/>
+        <infoLink id="10f2-35db-6e63-6f22" name="Magical Resistance (2)" hidden="false" targetId="df8d-7c05-c47b-9cd6" type="rule"/>
       </infoLinks>
       <costs>
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
@@ -3052,11 +3096,11 @@ They benefit from Talismanic Tattoos, Fury Of Kurnous and Forest Spirit Special 
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aa93-720c-b98c-aa1a" type="max"/>
       </constraints>
       <infoLinks>
-        <infoLink name="Fly" id="519a-f424-ee9b-7e20" hidden="false" type="rule" targetId="e930-0b71-2fef-3937"/>
-        <infoLink name="Large Target" id="a3fe-1903-f1fa-a19b" hidden="false" type="rule" targetId="4463-1b38-aa4d-e03c"/>
-        <infoLink name="Poison Breath" id="ceb1-7b6a-4a85-2187" hidden="false" type="rule" targetId="41d3-52ce-39db-244c"/>
-        <infoLink name="Terror" id="3a82-27c9-14b2-6a9e" hidden="false" type="rule" targetId="96f0-c50f-e59e-85fa"/>
-        <infoLink name="Forest Dragon" id="f801-cff4-2a7a-8801" hidden="false" type="profile" targetId="7d73-1c10-0ebd-3b0b"/>
+        <infoLink id="519a-f424-ee9b-7e20" name="Fly" hidden="false" targetId="e930-0b71-2fef-3937" type="rule"/>
+        <infoLink id="a3fe-1903-f1fa-a19b" name="Large Target" hidden="false" targetId="4463-1b38-aa4d-e03c" type="rule"/>
+        <infoLink id="ceb1-7b6a-4a85-2187" name="Poison Breath" hidden="false" targetId="41d3-52ce-39db-244c" type="rule"/>
+        <infoLink id="3a82-27c9-14b2-6a9e" name="Terror" hidden="false" targetId="96f0-c50f-e59e-85fa" type="rule"/>
+        <infoLink id="f801-cff4-2a7a-8801" name="Forest Dragon" hidden="false" targetId="7d73-1c10-0ebd-3b0b" type="profile"/>
       </infoLinks>
       <costs>
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
@@ -3244,15 +3288,15 @@ They benefit from Talismanic Tattoos, Fury Of Kurnous and Forest Spirit Special 
         <entryLink id="a8db-4c43-48e2-1508" name="Aeth – the Banner of Springtide" hidden="false" collective="false" import="true" targetId="0945-c88d-16cc-ee5e" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Mounts" id="4cc8-e25f-5392-6a11" hidden="false">
+    <selectionEntryGroup id="4cc8-e25f-5392-6a11" name="Mounts" hidden="false" collective="false" import="true">
       <entryLinks>
-        <entryLink import="true" name="Elven Steed" hidden="false" id="d57c-cc01-b654-811b" type="selectionEntry" targetId="71d9-2c66-1b06-8b62"/>
-        <entryLink import="true" name="Great Stag" hidden="false" id="ef0f-8917-2e56-5019" type="selectionEntry" targetId="d774-ad1f-c375-09dd"/>
-        <entryLink import="true" name="Great Eagle" hidden="false" id="e073-3ba0-79f6-7923" type="selectionEntry" targetId="0521-24e0-2a22-4531"/>
-        <entryLink import="true" name="Unicorn" hidden="false" id="fb37-a445-4b48-8395" type="selectionEntry" targetId="9c67-b84a-c907-213d"/>
-        <entryLink import="true" name="Forest Dragon" hidden="false" id="0063-9361-7eba-1a43" type="selectionEntry" targetId="8b96-ec3a-cd31-7f8e">
+        <entryLink id="d57c-cc01-b654-811b" name="Elven Steed" hidden="false" collective="false" import="true" targetId="71d9-2c66-1b06-8b62" type="selectionEntry"/>
+        <entryLink id="ef0f-8917-2e56-5019" name="Great Stag" hidden="false" collective="false" import="true" targetId="d774-ad1f-c375-09dd" type="selectionEntry"/>
+        <entryLink id="e073-3ba0-79f6-7923" name="Great Eagle" hidden="false" collective="false" import="true" targetId="0521-24e0-2a22-4531" type="selectionEntry"/>
+        <entryLink id="fb37-a445-4b48-8395" name="Unicorn" hidden="false" collective="false" import="true" targetId="9c67-b84a-c907-213d" type="selectionEntry"/>
+        <entryLink id="0063-9361-7eba-1a43" name="Forest Dragon" hidden="false" collective="false" import="true" targetId="8b96-ec3a-cd31-7f8e" type="selectionEntry">
           <categoryLinks>
-            <categoryLink name="Heroes" hidden="false" id="26c1-426c-0042-7b96" targetId="c16b-f319-2c62-2c12" primary="false"/>
+            <categoryLink id="26c1-426c-0042-7b96" name="Heroes" hidden="false" targetId="c16b-f319-2c62-2c12" primary="false"/>
           </categoryLinks>
         </entryLink>
       </entryLinks>
@@ -4025,8 +4069,7 @@ Wardancers cannot take armour or be given magical weapons that are not classed a
       </characteristics>
     </profile>
   </sharedProfiles>
-  <entryLinks>
-    <entryLink import="true" name="Allow experimental rules?" hidden="false" id="f42a-becf-7f6f-30bf" type="selectionEntry" targetId="8b76-92c4-23f9-54b1"/>
-    <entryLink import="true" name="Allow special characters?" hidden="false" id="0bd6-9259-fc8f-5f61" type="selectionEntry" targetId="8923-5946-7b10-8957"/>
-  </entryLinks>
+  <catalogueLinks>
+    <catalogueLink id="1d31-5262-0836-3b59" name="Dogs of War" targetId="fa9c-5f79-ce12-480c" type="catalogue" importRootEntries="false"/>
+  </catalogueLinks>
 </catalogue>

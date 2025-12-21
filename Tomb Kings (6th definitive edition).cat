@@ -3,7 +3,7 @@
   <publications>
     <publication id="04f9-cede-fdb3-1e6c" name="TK-AB" shortName="Warhammer Armies: Tomb Kings (6th Edition)" publisher="by Alessio Cavatore" publicationDate="2003"/>
     <publication id="024c-2a27-ea11-a5e8" name="Chronicles 2004"/>
-    <publication name="WebGW(OZ)" id="31e0-a609-b995-133f" hidden="false" publisherUrl="http://oz.games-workshop.com/news/oz/journal/assets/GiantWarriorsofKhemri.pdf" publisher="by Gav Thorpe" shortName="&quot;Giant Warriors of Khemri&quot;" publicationDate="2003-05"/>
+    <publication id="31e0-a609-b995-133f" name="WebGW(OZ)" shortName="&quot;Giant Warriors of Khemri&quot;" publisher="by Gav Thorpe" publicationDate="2003-05" publisherUrl="http://oz.games-workshop.com/news/oz/journal/assets/GiantWarriorsofKhemri.pdf"/>
   </publications>
   <categoryEntries>
     <categoryEntry id="4e75-e0b6-8eb7-7d6c" name="Tomb kings General" hidden="false">
@@ -23,8 +23,44 @@
     </categoryEntry>
     <categoryEntry id="a066-363e-a1c1-aa6b" name="Tomb King" hidden="false"/>
   </categoryEntries>
+  <forceEntries>
+    <forceEntry id="6a31-e995-535d-a939" name="Standard (TK-AB)" hidden="false">
+      <categoryLinks>
+        <categoryLink id="4405-8b9c-c81e-445a" name="Experimental rules" hidden="false" targetId="4fed-b911-e6e0-927b" primary="false"/>
+        <categoryLink id="9268-ba02-bafc-0c21" name="Special list rules" hidden="false" targetId="32f1-197f-d719-a393" primary="false"/>
+        <categoryLink id="cd0a-ec25-3f8c-76ae" name="Characters" hidden="false" targetId="7a1c-d611-c2dc-def1" primary="false"/>
+        <categoryLink id="d6e4-5ee7-a359-acdc" name="Special Characters" hidden="false" targetId="0644-bfcd-32c2-21dc" primary="false"/>
+        <categoryLink id="2413-b5ae-8970-3c9a" name="Lord" hidden="false" targetId="d024-d25b-a9b4-73b6" primary="false"/>
+        <categoryLink id="1ef2-0949-2f75-ae4a" name="Heroes" hidden="false" targetId="c16b-f319-2c62-2c12" primary="false"/>
+        <categoryLink id="8013-9da5-e98d-f23d" name="Core" hidden="false" targetId="64bf-efb4-9978-26df" primary="false"/>
+        <categoryLink id="95eb-c218-2733-4d23" name="Special" hidden="false" targetId="43cc-fc3f-35a7-8d03" primary="false"/>
+        <categoryLink id="8cef-a5b9-6940-cd06" name="Rare" hidden="false" targetId="e94b-6a54-8779-cd60" primary="false"/>
+        <categoryLink id="b9ab-ffe7-bf05-1476" name="Regiment of Renown" hidden="false" targetId="ee09-9a50-ad78-9c32" primary="false"/>
+      </categoryLinks>
+    </forceEntry>
+    <forceEntry id="1275-eef1-e965-00fb" name="Army of Quatar (WebGW-OZ)" publicationId="31e0-a609-b995-133f" page="3" hidden="false">
+      <categoryLinks>
+        <categoryLink id="035b-ffe4-1bb3-62a5" name="Experimental rules" hidden="false" targetId="4fed-b911-e6e0-927b" primary="false"/>
+        <categoryLink id="e093-c846-154e-0544" name="Special list rules" hidden="false" targetId="32f1-197f-d719-a393" primary="false"/>
+        <categoryLink id="f697-9f54-6935-7d49" name="Characters" hidden="false" targetId="7a1c-d611-c2dc-def1" primary="false"/>
+        <categoryLink id="3ea4-6d0d-31d6-7427" name="Special Characters" hidden="false" targetId="0644-bfcd-32c2-21dc" primary="false"/>
+        <categoryLink id="4434-ce21-6f47-bd9e" name="Lord" hidden="false" targetId="d024-d25b-a9b4-73b6" primary="false"/>
+        <categoryLink id="c8da-4d36-3494-15da" name="Heroes" hidden="false" targetId="c16b-f319-2c62-2c12" primary="false"/>
+        <categoryLink id="40b5-71b4-b504-97d3" name="Core" hidden="false" targetId="64bf-efb4-9978-26df" primary="false"/>
+        <categoryLink id="6179-1e40-faa7-0ff9" name="Special" hidden="false" targetId="43cc-fc3f-35a7-8d03" primary="false"/>
+        <categoryLink id="2c6f-3c70-7c23-7aff" name="Rare" hidden="false" targetId="e94b-6a54-8779-cd60" primary="false"/>
+      </categoryLinks>
+    </forceEntry>
+  </forceEntries>
   <selectionEntries>
     <selectionEntry id="5f2b-d3e2-60f2-a4e6" name="Tomb King" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1275-eef1-e965-00fb" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <infoLinks>
         <infoLink id="2210-9741-7311-e655" name="Tomb King" hidden="false" targetId="8a60-0398-a620-ca9e" type="profile"/>
         <infoLink id="6e69-d60f-61d8-5f27" name="Undead" hidden="false" targetId="97a4-d2a9-5b16-f0c3" type="rule"/>
@@ -130,13 +166,6 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
-      <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="1275-eef1-e965-00fb" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
     </selectionEntry>
     <selectionEntry id="27df-a7ec-a388-5f5c" name="Liche High Priest" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
@@ -145,9 +174,9 @@
             <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e96e-b80b-5f0e-e017" type="greaterThan"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="true" field="hidden">
+        <modifier type="set" field="hidden" value="true">
           <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="1275-eef1-e965-00fb" shared="true" includeChildSelections="true"/>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1275-eef1-e965-00fb" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -252,6 +281,23 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="615a-d19d-aba2-a910" name="Skeleton Warriors" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="7f8a-c9cb-4849-4680" value="1">
+          <comment>https://6th.whfb.app/special-rules/army-of-the-queen</comment>
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d756-23fa-6bd6-69fb" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="d711-dbf9-b12b-7a87" value="2">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1275-eef1-e965-00fb" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7f8a-c9cb-4849-4680" type="min"/>
+        <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d711-dbf9-b12b-7a87" type="max"/>
+      </constraints>
       <infoLinks>
         <infoLink id="2057-5f80-6a7e-0fe5" name="Skeleton Warriors" hidden="false" targetId="b982-6e46-6b76-b724" type="profile"/>
         <infoLink id="91ad-6281-5d36-5615" name="Undead" hidden="false" targetId="97a4-d2a9-5b16-f0c3" type="rule"/>
@@ -326,34 +372,39 @@
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Blessing of the Asp" hidden="true" id="5264-171d-b6e0-b63e" page="69" publicationId="04f9-cede-fdb3-1e6c">
-          <constraints>
-            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="21a9-950f-46a1-4bff" includeChildSelections="false"/>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="2821-c3b6-1631-7976" includeChildSelections="false"/>
-          </constraints>
+        <selectionEntry id="5264-171d-b6e0-b63e" name="Blessing of the Asp" publicationId="04f9-cede-fdb3-1e6c" page="69" hidden="true" collective="false" import="true" type="upgrade">
           <modifiers>
-            <modifier type="increment" value="2" field="ecfa-8486-4f6c-c249">
+            <modifier type="increment" field="ecfa-8486-4f6c-c249" value="2">
               <repeats>
-                <repeat value="1" repeats="1" field="selections" scope="parent" childId="426d-e5ea-5ba4-4296" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="426d-e5ea-5ba4-4296" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
           </modifiers>
           <modifierGroups>
-            <modifierGroup type="and">
+            <modifierGroup>
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d756-23fa-6bd6-69fb" type="atLeast"/>
+              </conditions>
               <modifiers>
-                <modifier type="set" value="1" field="21a9-950f-46a1-4bff">
+                <modifier type="set" field="21a9-950f-46a1-4bff" value="1">
                   <comment>https://6th.whfb.app/special-rules/army-of-the-queen</comment>
                 </modifier>
-                <modifier type="set" value="false" field="hidden"/>
+                <modifier type="set" field="hidden" value="false"/>
               </modifiers>
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="d756-23fa-6bd6-69fb" shared="true" includeChildSelections="true"/>
-              </conditions>
             </modifierGroup>
           </modifierGroups>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="21a9-950f-46a1-4bff" type="max"/>
+            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2821-c3b6-1631-7976" type="min"/>
+          </constraints>
           <infoLinks>
-            <infoLink name="Poisoned Attacks" id="a2a8-69af-c01b-3720" hidden="false" type="rule" targetId="2738-27d5-f4af-4722"/>
+            <infoLink id="a2a8-69af-c01b-3720" name="Poisoned Attacks" hidden="false" targetId="2738-27d5-f4af-4722" type="rule"/>
           </infoLinks>
+          <costs>
+            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -371,29 +422,29 @@
                   </repeats>
                 </modifier>
               </modifiers>
+              <infoLinks>
+                <infoLink id="8c7f-66d2-2e32-7c62" name="Spears (Infantry)" hidden="false" targetId="222b-1e29-9d24-09d7" type="profile"/>
+                <infoLink id="7bc0-483c-b7d4-9c9e" name="Shield" hidden="false" targetId="3d79-7984-991a-8b67" type="profile"/>
+              </infoLinks>
               <costs>
                 <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
                 <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
                 <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
               </costs>
-              <infoLinks>
-                <infoLink name="Spears (Infantry)" id="8c7f-66d2-2e32-7c62" hidden="false" type="profile" targetId="222b-1e29-9d24-09d7"/>
-                <infoLink name="Shield" id="7bc0-483c-b7d4-9c9e" hidden="false" targetId="3d79-7984-991a-8b67" type="profile"/>
-              </infoLinks>
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
             <entryLink id="c9b2-b5c8-8052-aee5" name="Bow" hidden="false" collective="false" import="true" targetId="9efb-2b02-f245-62f5" type="selectionEntry">
               <modifiers>
-                <modifier type="set" value="1" field="f315-e23d-3c90-7c28">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d756-23fa-6bd6-69fb" shared="true" includeChildSelections="true"/>
-                  </conditions>
+                <modifier type="set" field="f315-e23d-3c90-7c28" value="1">
                   <comment>https://6th.whfb.app/special-rules/army-of-the-queen</comment>
+                  <conditions>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d756-23fa-6bd6-69fb" type="atLeast"/>
+                  </conditions>
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="f315-e23d-3c90-7c28"/>
+                <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f315-e23d-3c90-7c28" type="min"/>
               </constraints>
             </entryLink>
             <entryLink id="5286-24ab-70f1-9ede" name="Shield" hidden="false" collective="false" import="true" targetId="50e2-1873-a856-03e7" type="selectionEntry"/>
@@ -422,25 +473,15 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
-      <constraints>
-        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="7f8a-c9cb-4849-4680"/>
-        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="d711-dbf9-b12b-7a87" includeChildSelections="false"/>
-      </constraints>
+    </selectionEntry>
+    <selectionEntry id="123a-1327-cb5c-f202" name="Tomb Prince" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
-        <modifier type="set" value="1" field="7f8a-c9cb-4849-4680">
+        <modifier type="set" field="hidden" value="true">
           <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="d756-23fa-6bd6-69fb" shared="true" includeChildSelections="true"/>
-          </conditions>
-          <comment>https://6th.whfb.app/special-rules/army-of-the-queen</comment>
-        </modifier>
-        <modifier type="set" value="2" field="d711-dbf9-b12b-7a87">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="1275-eef1-e965-00fb" shared="true" includeChildSelections="true"/>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1275-eef1-e965-00fb" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
-    </selectionEntry>
-    <selectionEntry id="123a-1327-cb5c-f202" name="Tomb Prince" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
         <infoLink id="e1e6-268a-5b23-9814" name="Tomb Prince" hidden="false" targetId="d450-215a-2fda-38c6" type="profile"/>
         <infoLink id="0ddd-53c7-614c-7e3e" name="Undead" hidden="false" targetId="97a4-d2a9-5b16-f0c3" type="rule"/>
@@ -545,13 +586,6 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
-      <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="1275-eef1-e965-00fb" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
     </selectionEntry>
     <selectionEntry id="78f9-33ae-0bae-bbcd" name="Liche Priest" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
@@ -560,9 +594,9 @@
             <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="befc-a601-76fe-a482" type="greaterThan"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="true" field="hidden">
+        <modifier type="set" field="hidden" value="true">
           <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="1275-eef1-e965-00fb" shared="true" includeChildSelections="true"/>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1275-eef1-e965-00fb" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -670,6 +704,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="cd59-482f-c5dd-1578" name="Icon Bearer" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1275-eef1-e965-00fb" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6acb-9107-6c18-0668" type="max"/>
       </constraints>
@@ -763,15 +804,22 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
-      <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="1275-eef1-e965-00fb" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
     </selectionEntry>
     <selectionEntry id="37a0-3ffd-4f40-6db1" name="Skeleton Light Horsemen" hidden="false" collective="false" import="true" type="unit">
+      <modifierGroups>
+        <modifierGroup>
+          <comment>The Army of Quatar (Sehenesmet)</comment>
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1275-eef1-e965-00fb" type="instanceOf"/>
+          </conditions>
+          <modifiers>
+            <modifier type="unset-primary" field="category" value="64bf-efb4-9978-26df"/>
+            <modifier type="remove" field="category" value="64bf-efb4-9978-26df"/>
+            <modifier type="add" field="category" value="43cc-fc3f-35a7-8d03"/>
+            <modifier type="set-primary" field="category" value="43cc-fc3f-35a7-8d03"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
       <infoLinks>
         <infoLink id="1f46-958b-00fa-dd1d" name="Skeleton Light Horseman" hidden="false" targetId="0264-24e3-00a1-3fed" type="profile"/>
         <infoLink id="df76-80fe-6403-c62c" name="Skeletal Steed" hidden="false" targetId="15ef-717a-a9dc-9b95" type="profile"/>
@@ -826,31 +874,36 @@
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Blessing of the Asp" hidden="true" id="eeb9-c93c-caec-e3e8" page="69" publicationId="04f9-cede-fdb3-1e6c">
-          <constraints>
-            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="7e97-d40a-0dd8-ecdd" includeChildSelections="false"/>
-          </constraints>
+        <selectionEntry id="eeb9-c93c-caec-e3e8" name="Blessing of the Asp" publicationId="04f9-cede-fdb3-1e6c" page="69" hidden="true" collective="false" import="true" type="upgrade">
           <modifierGroups>
-            <modifierGroup type="and">
+            <modifierGroup>
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d756-23fa-6bd6-69fb" type="atLeast"/>
+              </conditions>
               <modifiers>
-                <modifier type="set" value="1" field="7e97-d40a-0dd8-ecdd">
+                <modifier type="set" field="7e97-d40a-0dd8-ecdd" value="1">
                   <comment>https://6th.whfb.app/special-rules/army-of-the-queen</comment>
                 </modifier>
-                <modifier type="set" value="false" field="hidden"/>
-                <modifier type="increment" value="2" field="ecfa-8486-4f6c-c249">
+                <modifier type="set" field="hidden" value="false"/>
+                <modifier type="increment" field="ecfa-8486-4f6c-c249" value="2">
                   <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="37a0-3ffd-4f40-6db1" childId="4ecb-c037-276d-53b4" shared="true" roundUp="false"/>
+                    <repeat field="selections" scope="37a0-3ffd-4f40-6db1" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4ecb-c037-276d-53b4" repeats="1" roundUp="false"/>
                   </repeats>
                 </modifier>
               </modifiers>
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="d756-23fa-6bd6-69fb" shared="true" includeChildSelections="true"/>
-              </conditions>
             </modifierGroup>
           </modifierGroups>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7e97-d40a-0dd8-ecdd" type="max"/>
+          </constraints>
           <infoLinks>
-            <infoLink name="Poisoned Attacks" id="dd24-748e-0da3-b1b2" hidden="false" type="rule" targetId="2738-27d5-f4af-4722"/>
+            <infoLink id="dd24-748e-0da3-b1b2" name="Poisoned Attacks" hidden="false" targetId="2738-27d5-f4af-4722" type="rule"/>
           </infoLinks>
+          <costs>
+            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -872,22 +925,15 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
-      <modifierGroups>
-        <modifierGroup type="and">
-          <comment>The Army of Quatar (Sehenesmet)</comment>
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="1275-eef1-e965-00fb" shared="true" includeChildSelections="true"/>
-          </conditions>
-          <modifiers>
-            <modifier type="unset-primary" value="64bf-efb4-9978-26df" field="category"/>
-            <modifier type="remove" value="64bf-efb4-9978-26df" field="category"/>
-            <modifier type="add" value="43cc-fc3f-35a7-8d03" field="category"/>
-            <modifier type="set-primary" value="43cc-fc3f-35a7-8d03" field="category"/>
-          </modifiers>
-        </modifierGroup>
-      </modifierGroups>
     </selectionEntry>
     <selectionEntry id="8705-da5d-1f66-2328" name="Tomb Swarm" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="f444-b72a-9e44-14a2" value="2">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1275-eef1-e965-00fb" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f444-b72a-9e44-14a2" type="max"/>
       </constraints>
@@ -920,15 +966,22 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
-      <modifiers>
-        <modifier type="set" value="2" field="f444-b72a-9e44-14a2">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="1275-eef1-e965-00fb" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
     </selectionEntry>
     <selectionEntry id="4125-a802-f54d-e7ad" name="Skeleton Heavy Horsemen" hidden="false" collective="false" import="true" type="unit">
+      <modifierGroups>
+        <modifierGroup>
+          <comment>The Army of Quatar (Sehenesmet)</comment>
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1275-eef1-e965-00fb" type="instanceOf"/>
+          </conditions>
+          <modifiers>
+            <modifier type="unset-primary" field="category" value="64bf-efb4-9978-26df"/>
+            <modifier type="remove" field="category" value="64bf-efb4-9978-26df"/>
+            <modifier type="add" field="category" value="43cc-fc3f-35a7-8d03"/>
+            <modifier type="set-primary" field="category" value="43cc-fc3f-35a7-8d03"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
       <infoLinks>
         <infoLink id="3092-1c98-794b-62ce" name="Skeleton Heavy Horsemen" hidden="false" targetId="a4c3-29c2-0b56-2421" type="profile"/>
         <infoLink id="4e9f-c222-7cf6-d2ef" name="Skeletal Steed" hidden="false" targetId="15ef-717a-a9dc-9b95" type="profile"/>
@@ -1018,20 +1071,6 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
-      <modifierGroups>
-        <modifierGroup type="and">
-          <comment>The Army of Quatar (Sehenesmet)</comment>
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="1275-eef1-e965-00fb" shared="true" includeChildSelections="true"/>
-          </conditions>
-          <modifiers>
-            <modifier type="unset-primary" value="64bf-efb4-9978-26df" field="category"/>
-            <modifier type="remove" value="64bf-efb4-9978-26df" field="category"/>
-            <modifier type="add" value="43cc-fc3f-35a7-8d03" field="category"/>
-            <modifier type="set-primary" value="43cc-fc3f-35a7-8d03" field="category"/>
-          </modifiers>
-        </modifierGroup>
-      </modifierGroups>
     </selectionEntry>
     <selectionEntry id="a513-6ee9-7fca-3d3b" name="Chariots" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
@@ -1046,6 +1085,20 @@
           </conditions>
         </modifier>
       </modifiers>
+      <modifierGroups>
+        <modifierGroup>
+          <comment>The Army of Quatar (Sehenesmet)</comment>
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1275-eef1-e965-00fb" type="instanceOf"/>
+          </conditions>
+          <modifiers>
+            <modifier type="unset-primary" field="category" value="32f1-197f-d719-a393"/>
+            <modifier type="remove" field="category" value="43cc-fc3f-35a7-8d03"/>
+            <modifier type="add" field="category" value="e94b-6a54-8779-cd60"/>
+            <modifier type="set-primary" field="category" value="e94b-6a54-8779-cd60"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
       <infoLinks>
         <infoLink id="1af4-c217-5190-bef6" name="Chariot" hidden="false" targetId="6b85-43b7-6ea0-90b0" type="profile"/>
         <infoLink id="00a4-fc76-1563-b5dc" name="Chariot Skeletal Steed " hidden="false" targetId="ffcb-aeae-600e-318d" type="profile"/>
@@ -1180,31 +1233,36 @@
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Blessing of the Asp" hidden="true" id="cfb0-3060-2c8f-d65b" page="69" publicationId="04f9-cede-fdb3-1e6c">
-          <constraints>
-            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="d524-825d-ffda-e3ac" includeChildSelections="false"/>
-          </constraints>
+        <selectionEntry id="cfb0-3060-2c8f-d65b" name="Blessing of the Asp" publicationId="04f9-cede-fdb3-1e6c" page="69" hidden="true" collective="false" import="true" type="upgrade">
           <modifierGroups>
-            <modifierGroup type="and">
+            <modifierGroup>
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d756-23fa-6bd6-69fb" type="atLeast"/>
+              </conditions>
               <modifiers>
-                <modifier type="set" value="1" field="d524-825d-ffda-e3ac">
+                <modifier type="set" field="d524-825d-ffda-e3ac" value="1">
                   <comment>https://6th.whfb.app/special-rules/army-of-the-queen</comment>
                 </modifier>
-                <modifier type="set" value="false" field="hidden"/>
-                <modifier type="increment" value="2" field="ecfa-8486-4f6c-c249">
+                <modifier type="set" field="hidden" value="false"/>
+                <modifier type="increment" field="ecfa-8486-4f6c-c249" value="2">
                   <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="a513-6ee9-7fca-3d3b" childId="71fd-64a6-35a7-83eb" shared="true" roundUp="false"/>
+                    <repeat field="selections" scope="a513-6ee9-7fca-3d3b" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="71fd-64a6-35a7-83eb" repeats="1" roundUp="false"/>
                   </repeats>
                 </modifier>
               </modifiers>
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="d756-23fa-6bd6-69fb" shared="true" includeChildSelections="true"/>
-              </conditions>
             </modifierGroup>
           </modifierGroups>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d524-825d-ffda-e3ac" type="max"/>
+          </constraints>
           <infoLinks>
-            <infoLink name="Poisoned Attacks" id="868e-b7dd-9d98-11c3" hidden="false" type="rule" targetId="2738-27d5-f4af-4722"/>
+            <infoLink id="868e-b7dd-9d98-11c3" name="Poisoned Attacks" hidden="false" targetId="2738-27d5-f4af-4722" type="rule"/>
           </infoLinks>
+          <costs>
+            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -1212,22 +1270,15 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
-      <modifierGroups>
-        <modifierGroup type="and">
-          <comment>The Army of Quatar (Sehenesmet)</comment>
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="1275-eef1-e965-00fb" shared="true" includeChildSelections="true"/>
-          </conditions>
-          <modifiers>
-            <modifier type="unset-primary" value="32f1-197f-d719-a393" field="category"/>
-            <modifier type="remove" value="43cc-fc3f-35a7-8d03" field="category"/>
-            <modifier type="add" value="e94b-6a54-8779-cd60" field="category"/>
-            <modifier type="set-primary" value="e94b-6a54-8779-cd60" field="category"/>
-          </modifiers>
-        </modifierGroup>
-      </modifierGroups>
     </selectionEntry>
     <selectionEntry id="f26f-442a-6281-a0a1" name="Tomb Guard" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1275-eef1-e965-00fb" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <infoLinks>
         <infoLink id="ce3e-51fa-4483-24fd" name="Tomb Guard" hidden="false" targetId="a7e8-078d-86a5-1274" type="profile"/>
         <infoLink id="abeb-24ae-e1d4-855e" name="Tomb Blades" hidden="false" targetId="faa9-669f-d6d0-3810" type="rule"/>
@@ -1314,15 +1365,22 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
-      <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="1275-eef1-e965-00fb" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
     </selectionEntry>
     <selectionEntry id="0cd8-e69a-e739-6774" name="Ushabti" hidden="false" collective="false" import="true" type="unit">
+      <modifierGroups>
+        <modifierGroup>
+          <comment>The Army of Quatar (Sehenesmet)</comment>
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1275-eef1-e965-00fb" type="instanceOf"/>
+          </conditions>
+          <modifiers>
+            <modifier type="unset-primary" field="category" value="43cc-fc3f-35a7-8d03"/>
+            <modifier type="remove" field="category" value="43cc-fc3f-35a7-8d03"/>
+            <modifier type="add" field="category" value="64bf-efb4-9978-26df"/>
+            <modifier type="set-primary" field="category" value="64bf-efb4-9978-26df"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
       <infoLinks>
         <infoLink id="a1fe-c776-edea-cedc" name="Ushabti" hidden="false" targetId="afb8-51bf-176a-3b36" type="profile"/>
       </infoLinks>
@@ -1349,22 +1407,22 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry id="fc8a-6cdd-1437-91dd" name="Carrion" hidden="false" collective="false" import="true" type="unit">
       <modifierGroups>
-        <modifierGroup type="and">
+        <modifierGroup>
           <comment>The Army of Quatar (Sehenesmet)</comment>
           <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="1275-eef1-e965-00fb" shared="true" includeChildSelections="true"/>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1275-eef1-e965-00fb" type="instanceOf"/>
           </conditions>
           <modifiers>
-            <modifier type="unset-primary" value="43cc-fc3f-35a7-8d03" field="category"/>
-            <modifier type="remove" value="43cc-fc3f-35a7-8d03" field="category"/>
-            <modifier type="add" value="64bf-efb4-9978-26df" field="category"/>
-            <modifier type="set-primary" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="unset-primary" field="category" value="43cc-fc3f-35a7-8d03"/>
+            <modifier type="remove" field="category" value="43cc-fc3f-35a7-8d03"/>
+            <modifier type="add" field="category" value="e94b-6a54-8779-cd60"/>
+            <modifier type="set-primary" field="category" value="e94b-6a54-8779-cd60"/>
           </modifiers>
         </modifierGroup>
       </modifierGroups>
-    </selectionEntry>
-    <selectionEntry id="fc8a-6cdd-1437-91dd" name="Carrion" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
         <infoLink id="05ab-d04d-1969-dee8" name="Carrion" hidden="false" targetId="ad95-9cc3-0075-28c1" type="profile"/>
         <infoLink id="b119-1f8c-93f1-abbb" name="Flying Unit" hidden="false" targetId="b36e-1a67-b9a4-b4f5" type="rule"/>
@@ -1401,22 +1459,22 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry id="2126-1869-d66a-5c9c" name="Tomb Scorpion" hidden="false" collective="false" import="true" type="unit">
       <modifierGroups>
-        <modifierGroup type="and">
+        <modifierGroup>
           <comment>The Army of Quatar (Sehenesmet)</comment>
           <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="1275-eef1-e965-00fb" shared="true" includeChildSelections="true"/>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1275-eef1-e965-00fb" type="instanceOf"/>
           </conditions>
           <modifiers>
-            <modifier type="unset-primary" value="43cc-fc3f-35a7-8d03" field="category"/>
-            <modifier type="remove" value="43cc-fc3f-35a7-8d03" field="category"/>
-            <modifier type="add" value="e94b-6a54-8779-cd60" field="category"/>
-            <modifier type="set-primary" value="e94b-6a54-8779-cd60" field="category"/>
+            <modifier type="unset-primary" field="category" value="43cc-fc3f-35a7-8d03"/>
+            <modifier type="remove" field="category" value="43cc-fc3f-35a7-8d03"/>
+            <modifier type="add" field="category" value="64bf-efb4-9978-26df"/>
+            <modifier type="set-primary" field="category" value="64bf-efb4-9978-26df"/>
           </modifiers>
         </modifierGroup>
       </modifierGroups>
-    </selectionEntry>
-    <selectionEntry id="2126-1869-d66a-5c9c" name="Tomb Scorpion" hidden="false" collective="false" import="true" type="unit">
       <rules>
         <rule id="9601-95ad-47e9-a988" name="Magical Restiance (1)" hidden="false"/>
       </rules>
@@ -1435,20 +1493,6 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
-      <modifierGroups>
-        <modifierGroup type="and">
-          <comment>The Army of Quatar (Sehenesmet)</comment>
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="1275-eef1-e965-00fb" shared="true" includeChildSelections="true"/>
-          </conditions>
-          <modifiers>
-            <modifier type="unset-primary" value="43cc-fc3f-35a7-8d03" field="category"/>
-            <modifier type="remove" value="43cc-fc3f-35a7-8d03" field="category"/>
-            <modifier type="add" value="64bf-efb4-9978-26df" field="category"/>
-            <modifier type="set-primary" value="64bf-efb4-9978-26df" field="category"/>
-          </modifiers>
-        </modifierGroup>
-      </modifierGroups>
     </selectionEntry>
     <selectionEntry id="8966-1a7e-bb68-714b" name="Screaming Skull Catapult" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -1491,6 +1535,20 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="bade-5f64-e8bf-5d7f" name="Bone Giant" hidden="false" collective="false" import="true" type="unit">
+      <modifierGroups>
+        <modifierGroup>
+          <comment>The Army of Quatar (Sehenesmet)</comment>
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1275-eef1-e965-00fb" type="instanceOf"/>
+          </conditions>
+          <modifiers>
+            <modifier type="unset-primary" field="category" value="e94b-6a54-8779-cd60"/>
+            <modifier type="remove" field="category" value="e94b-6a54-8779-cd60"/>
+            <modifier type="add" field="category" value="43cc-fc3f-35a7-8d03"/>
+            <modifier type="set-primary" field="category" value="43cc-fc3f-35a7-8d03"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
       <infoLinks>
         <infoLink id="3dd8-f6c0-c300-be95" name="Bone Giant" hidden="false" targetId="3537-7a82-2a80-32d4" type="profile"/>
         <infoLink id="ef9a-e416-c0aa-1ab6" name="Undead Constructs" hidden="false" targetId="149b-a988-a985-bb71" type="rule"/>
@@ -1501,6 +1559,64 @@
       <categoryLinks>
         <categoryLink id="80f9-63b8-6bf3-a08f" name="Rare" hidden="false" targetId="e94b-6a54-8779-cd60" primary="true"/>
       </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="7132-f380-b6f1-3c49" name="Weapons" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="a8e9-216e-f17a-f354" name="Giant bow" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3d36-27f4-c54a-a26e" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="6c8f-2512-5eeb-7a67" name="Great bow" hidden="false" typeId="7889-42d9-70a0-3ea9" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3107-4d1e-9a51-6564">48&quot;</characteristic>
+                    <characteristic name="Strength" typeId="6fe4-1ebb-cb04-1378">5-1 per rank</characteristic>
+                    <characteristic name="Damage" typeId="6f2f-d612-52ef-1633">D3</characteristic>
+                    <characteristic name="Special Rules" typeId="a21a-cdc0-4b13-b236"/>
+                    <characteristic name="Saves" typeId="8014-a8b2-15c3-da95">No armour saves</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule id="9d84-3058-99ca-0b09" name="Giant Bow" page="LIZ-AB, p. 31" hidden="false">
+                  <description>The giant bow is a Bolt Thrower, using all the rules for Bolt Throwers, with the following exceptions: The giant bow is fired using the Skinks&apos; Ballistic Skill, and inflicts a single Strength 5 hit that does D3 wounds. The giant bow can move and fire, although it can only fire in the arc of sight of the Bone Giant itself. As the Bone Giant is a large target, the giant bow may shoot over normal sized units and interposing terrain that large target can see over.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="30"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink id="5f0e-9e0f-68c7-eeac" name="Two Hand Weapons" hidden="false" collective="false" import="true" targetId="36a8-7bbb-d204-0314" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0cb6-2bf4-2226-bf57" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="10"/>
+              </costs>
+            </entryLink>
+            <entryLink id="2c83-bc48-344c-02a6" name="Great Weapon" hidden="false" collective="false" import="true" targetId="1eb7-3f36-8cf7-e0ba" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6c70-6026-9274-c3da" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="15"/>
+              </costs>
+            </entryLink>
+            <entryLink id="3103-4529-a25a-aeb4" name="Shield" hidden="false" collective="false" import="true" targetId="50e2-1873-a856-03e7" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a71-5517-4442-77b7" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="30"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <entryLinks>
         <entryLink id="4225-cf6c-b37f-0f3a" name="Heavy Armour" hidden="false" collective="false" import="true" targetId="dde4-0ba8-7b3c-57b7" type="selectionEntry">
           <constraints>
@@ -1514,115 +1630,76 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Weapons" id="7132-f380-b6f1-3c49" hidden="false">
-          <entryLinks>
-            <entryLink import="true" name="Two Hand Weapons" hidden="false" id="5f0e-9e0f-68c7-eeac" collective="false" targetId="36a8-7bbb-d204-0314" type="selectionEntry">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0cb6-2bf4-2226-bf57" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="10"/>
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Great Weapon" hidden="false" id="2c83-bc48-344c-02a6" type="selectionEntry" targetId="1eb7-3f36-8cf7-e0ba">
-              <costs>
-                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="15"/>
-              </costs>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6c70-6026-9274-c3da" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Shield" hidden="false" id="3103-4529-a25a-aeb4" type="selectionEntry" targetId="50e2-1873-a856-03e7">
-              <costs>
-                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="30"/>
-              </costs>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0a71-5517-4442-77b7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Giant bow" hidden="false" id="a8e9-216e-f17a-f354">
-              <costs>
-                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="30"/>
-                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-              </costs>
-              <rules>
-                <rule name="Giant Bow" id="9d84-3058-99ca-0b09" hidden="false" page="LIZ-AB, p. 31">
-                  <description>The giant bow is a Bolt Thrower, using all the rules for Bolt Throwers, with the following exceptions: The giant bow is fired using the Skinks&apos; Ballistic Skill, and inflicts a single Strength 5 hit that does D3 wounds. The giant bow can move and fire, although it can only fire in the arc of sight of the Bone Giant itself. As the Bone Giant is a large target, the giant bow may shoot over normal sized units and interposing terrain that large target can see over.</description>
-                </rule>
-              </rules>
-              <profiles>
-                <profile name="Great bow" typeId="7889-42d9-70a0-3ea9" typeName="Weapon" hidden="false" id="6c8f-2512-5eeb-7a67">
-                  <characteristics>
-                    <characteristic name="Range" typeId="3107-4d1e-9a51-6564">48&quot;</characteristic>
-                    <characteristic name="Strength" typeId="6fe4-1ebb-cb04-1378">5-1 per rank</characteristic>
-                    <characteristic name="Damage" typeId="6f2f-d612-52ef-1633">D3</characteristic>
-                    <characteristic name="Special Rules" typeId="a21a-cdc0-4b13-b236"/>
-                    <characteristic name="Saves" typeId="8014-a8b2-15c3-da95">No armour saves</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3d36-27f4-c54a-a26e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <modifierGroups>
-        <modifierGroup type="and">
-          <comment>The Army of Quatar (Sehenesmet)</comment>
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="1275-eef1-e965-00fb" shared="true" includeChildSelections="true"/>
-          </conditions>
-          <modifiers>
-            <modifier type="unset-primary" value="e94b-6a54-8779-cd60" field="category"/>
-            <modifier type="remove" value="e94b-6a54-8779-cd60" field="category"/>
-            <modifier type="add" value="43cc-fc3f-35a7-8d03" field="category"/>
-            <modifier type="set-primary" value="43cc-fc3f-35a7-8d03" field="category"/>
-          </modifiers>
-        </modifierGroup>
-      </modifierGroups>
     </selectionEntry>
-    <selectionEntry id="92c8-901b-b6b9-71a0" name="Dogs of War" hidden="false" collective="false" import="true" type="unit">
-      <categoryLinks>
-        <categoryLink id="802e-ffa7-a8e2-152e" name="Rare" hidden="false" targetId="e94b-6a54-8779-cd60" primary="true"/>
-      </categoryLinks>
-      <costs>
-        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
-        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-      </costs>
+    <selectionEntry id="d756-23fa-6bd6-69fb" name="Khalida Neferher" publicationId="04f9-cede-fdb3-1e6c" page="68-69" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
-        <modifier type="set" value="true" field="hidden">
+        <modifier type="set" field="af12-bd0e-57f5-8260" value="1">
           <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="1275-eef1-e965-00fb" shared="true" includeChildSelections="true"/>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8923-5946-7b10-8957" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1275-eef1-e965-00fb" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
-    </selectionEntry>
-    <selectionEntry id="d756-23fa-6bd6-69fb" name="Khalida Neferher" hidden="false" collective="false" import="true" type="unit" page="68-69" publicationId="04f9-cede-fdb3-1e6c">
+      <constraints>
+        <constraint field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="af12-bd0e-57f5-8260" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="9c8d-7f62-b916-fca3" name="Khalida Neferher" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
+          <characteristics>
+            <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">6</characteristic>
+            <characteristic name="WS" typeId="f95b-da01-0578-3bdc">6</characteristic>
+            <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">4</characteristic>
+            <characteristic name="S" typeId="b690-4bc0-bb73-267b">4</characteristic>
+            <characteristic name="T" typeId="8712-f56f-5b22-a720">5</characteristic>
+            <characteristic name="W" typeId="253a-9b00-4fde-8ac2">3</characteristic>
+            <characteristic name="I" typeId="dfff-363e-f72a-5a59">9</characteristic>
+            <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">5</characteristic>
+            <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">10</characteristic>
+            <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+            <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+            <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="80de-b6d6-bc1e-983f" name="Curse of Queen Khalida" publicationId="04f9-cede-fdb3-1e6c" page="69" hidden="false">
+          <description>Any model or unit responsible for the death of Queen Khalida (see the Tomb Kings&apos; Curse) is affected by her curse on the dice roll of 4+. If affected, then roll a D6 for each model/unit, and on the dice roll of a 6, the model loses a wound that cannot be saved in any way (including Ward saves) nor Regenerated. Roll again at the start of each of your opponent&apos;s turns for the rest of the game, and they take a further wound on a roll of 6.</description>
+        </rule>
+        <rule id="1f23-eec0-5c23-ef6b" name="Incarnation of the Asp Goddess" publicationId="04f9-cede-fdb3-1e6c" page="69" hidden="false">
+          <description>All attacks made by her count as magical attacks and Poisoned Attacks, and she herself is immune to poison. In addition to this, any of her attacks that count as poisoned (so any 6s to hit), will inflict D3 wounds rather than 1 as well as wounding automatically.
+
+
+The Queen moves with the swiftness of a striking asp, and will always strikes first in combat, even if she was charged. If her opponent also has this ability, resolve their attacks in Initiative order.</description>
+        </rule>
+        <rule id="e06b-87af-3ce8-887b" name="The Queen&apos;s Command" publicationId="04f9-cede-fdb3-1e6c" page="69" hidden="false">
+          <description>Khalid may cast Horekhah&apos;s Incantation of Righteous Smiting once per Magic phase. It is automatically cast, and cannot be dispelled.</description>
+        </rule>
+        <rule id="20e8-b54c-0776-f35e" name="Army of the Queen" publicationId="04f9-cede-fdb3-1e6c" page="69" hidden="false">
+          <description>An army that includes Khalida must contain at least one unit of Skeleton Warriors armed with bows.</description>
+        </rule>
+      </rules>
       <infoLinks>
         <infoLink id="6d20-e041-c75e-a456" name="Undead" hidden="false" targetId="97a4-d2a9-5b16-f0c3" type="rule"/>
         <infoLink id="4569-ffd1-f0b1-3961" name="Flammable" hidden="false" targetId="ff92-e6dd-2f5d-dcca" type="rule"/>
         <infoLink id="4549-7eb2-01c1-28fe" name="My Will be Done" hidden="false" targetId="1856-55bd-bacc-9964" type="rule"/>
-        <infoLink name="Poisoned Attacks" id="9bc3-c86e-e879-9c02" hidden="false" type="rule" targetId="2738-27d5-f4af-4722"/>
-        <infoLink name="Regeneration" id="6f44-202a-ef3a-51aa" hidden="false" type="rule" targetId="59c1-8a35-5a25-ebe1"/>
-        <infoLink name="Terror" id="8a8c-af11-44cc-0536" hidden="false" type="rule" targetId="96f0-c50f-e59e-85fa"/>
+        <infoLink id="9bc3-c86e-e879-9c02" name="Poisoned Attacks" hidden="false" targetId="2738-27d5-f4af-4722" type="rule"/>
+        <infoLink id="6f44-202a-ef3a-51aa" name="Regeneration" hidden="false" targetId="59c1-8a35-5a25-ebe1" type="rule"/>
+        <infoLink id="8a8c-af11-44cc-0536" name="Terror" hidden="false" targetId="96f0-c50f-e59e-85fa" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="fb45-1fcb-8bc9-ac47" name="Tomb kings General" hidden="false" targetId="4e75-e0b6-8eb7-7d6c" primary="false"/>
         <categoryLink id="7587-0e43-4817-7496" name="Heroes" hidden="false" targetId="c16b-f319-2c62-2c12" primary="false"/>
         <categoryLink id="b380-5e4a-7bdf-1eb2" name="Characters" hidden="false" targetId="7a1c-d611-c2dc-def1" primary="false"/>
-        <categoryLink name="Special Characters" hidden="false" id="dbee-de01-4a86-0ac0" targetId="0644-bfcd-32c2-21dc" primary="true"/>
+        <categoryLink id="dbee-de01-4a86-0ac0" name="Special Characters" hidden="false" targetId="0644-bfcd-32c2-21dc" primary="true"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="d9e7-8e42-44c4-ef50" name="Magic" hidden="false" collective="false" import="true" type="upgrade">
           <entryLinks>
-            <entryLink import="true" name="2. Horekhah&apos;s Incantation of Righteous Smiting (Bound Spell)" hidden="false" id="7ac3-40d6-d71c-8978" type="selectionEntry" targetId="d851-d47f-063e-11cd"/>
+            <entryLink id="7ac3-40d6-d71c-8978" name="2. Horekhah&apos;s Incantation of Righteous Smiting (Bound Spell)" hidden="false" collective="false" import="true" targetId="d851-d47f-063e-11cd" type="selectionEntry"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
@@ -1637,10 +1714,15 @@
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e6ba-095a-3651-9673" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Venom Staff" hidden="false" id="a484-015c-8598-0c90" publicationId="04f9-cede-fdb3-1e6c" page="69">
+            <selectionEntry id="a484-015c-8598-0c90" name="Venom Staff" publicationId="04f9-cede-fdb3-1e6c" page="69" hidden="false" collective="false" import="true" type="upgrade">
               <infoLinks>
-                <infoLink name="Venom Staff (L5)" id="6763-8977-9570-eee7" hidden="false" type="rule" targetId="5cc2-ec0f-19c1-690e"/>
+                <infoLink id="6763-8977-9570-eee7" name="Venom Staff (L5)" hidden="false" targetId="5cc2-ec0f-19c1-690e" type="rule"/>
               </infoLinks>
+              <costs>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -1663,74 +1745,39 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
-      <profiles>
-        <profile name="Khalida Neferher" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="9c8d-7f62-b916-fca3">
-          <characteristics>
-            <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">6</characteristic>
-            <characteristic name="WS" typeId="f95b-da01-0578-3bdc">6</characteristic>
-            <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">4</characteristic>
-            <characteristic name="S" typeId="b690-4bc0-bb73-267b">4</characteristic>
-            <characteristic name="T" typeId="8712-f56f-5b22-a720">5</characteristic>
-            <characteristic name="W" typeId="253a-9b00-4fde-8ac2">3</characteristic>
-            <characteristic name="I" typeId="dfff-363e-f72a-5a59">9</characteristic>
-            <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">5</characteristic>
-            <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">10</characteristic>
-            <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
-            <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
-            <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
-          </characteristics>
-        </profile>
-      </profiles>
-      <rules>
-        <rule name="Curse of Queen Khalida" id="80de-b6d6-bc1e-983f" hidden="false" page="69" publicationId="04f9-cede-fdb3-1e6c">
-          <description>Any model or unit responsible for the death of Queen Khalida (see the Tomb Kings&apos; Curse) is affected by her curse on the dice roll of 4+. If affected, then roll a D6 for each model/unit, and on the dice roll of a 6, the model loses a wound that cannot be saved in any way (including Ward saves) nor Regenerated. Roll again at the start of each of your opponent&apos;s turns for the rest of the game, and they take a further wound on a roll of 6.</description>
-        </rule>
-        <rule name="Incarnation of the Asp Goddess" id="1f23-eec0-5c23-ef6b" hidden="false" page="69" publicationId="04f9-cede-fdb3-1e6c">
-          <description>All attacks made by her count as magical attacks and Poisoned Attacks, and she herself is immune to poison. In addition to this, any of her attacks that count as poisoned (so any 6s to hit), will inflict D3 wounds rather than 1 as well as wounding automatically.
-
-
-The Queen moves with the swiftness of a striking asp, and will always strikes first in combat, even if she was charged. If her opponent also has this ability, resolve their attacks in Initiative order.</description>
-        </rule>
-        <rule name="The Queen&apos;s Command" id="e06b-87af-3ce8-887b" hidden="false" page="69" publicationId="04f9-cede-fdb3-1e6c">
-          <description>Khalid may cast Horekhah&apos;s Incantation of Righteous Smiting once per Magic phase. It is automatically cast, and cannot be dispelled.</description>
-        </rule>
-        <rule name="Army of the Queen" id="20e8-b54c-0776-f35e" hidden="false" page="69" publicationId="04f9-cede-fdb3-1e6c">
-          <description>An army that includes Khalida must contain at least one unit of Skeleton Warriors armed with bows.</description>
-        </rule>
-      </rules>
-      <constraints>
-        <constraint type="max" value="0" field="selections" scope="roster" shared="true" id="af12-bd0e-57f5-8260" includeChildSelections="true"/>
-      </constraints>
+    </selectionEntry>
+    <selectionEntry id="c8db-db77-83e2-b1e1" name="Settra the Imperishable" publicationId="04f9-cede-fdb3-1e6c" page="66-67" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
-        <modifier type="set" value="1" field="af12-bd0e-57f5-8260">
+        <modifier type="set" field="b420-f9ff-73c2-a7e7" value="1">
           <conditions>
-            <condition type="equalTo" value="1" field="selections" scope="force" childId="8923-5946-7b10-8957" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8923-5946-7b10-8957" type="equalTo"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="true" field="hidden">
+        <modifier type="set" field="hidden" value="true">
           <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="1275-eef1-e965-00fb" shared="true" includeChildSelections="true"/>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1275-eef1-e965-00fb" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
-    </selectionEntry>
-    <selectionEntry id="c8db-db77-83e2-b1e1" name="Settra the Imperishable" hidden="false" collective="false" import="true" type="unit" page="66-67" publicationId="04f9-cede-fdb3-1e6c">
+      <constraints>
+        <constraint field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b420-f9ff-73c2-a7e7" type="max"/>
+      </constraints>
       <infoLinks>
         <infoLink id="e386-503b-5ef7-2b16" name="Undead" hidden="false" targetId="97a4-d2a9-5b16-f0c3" type="rule"/>
         <infoLink id="630b-a7ba-f606-1568" name="Flammable" hidden="false" targetId="ff92-e6dd-2f5d-dcca" type="rule"/>
         <infoLink id="908f-6471-286e-57fd" name="The Curse of Settra" hidden="false" targetId="b8a8-840a-2c31-e5dd" type="rule"/>
         <infoLink id="28bb-d50a-3706-a5f9" name="The Will of Settra" hidden="false" targetId="aebb-c17d-b917-64c6" type="rule"/>
-        <infoLink name="Setttra" id="cba0-a48d-10bf-3663" hidden="false" type="profile" targetId="bb5e-b02c-a717-0824"/>
-        <infoLink name="Settra the Great" id="8046-3304-8d85-44ea" hidden="false" type="rule" targetId="6cb0-7aee-0ddb-34b5"/>
-        <infoLink name="Settra&apos;s Army" id="8c76-8704-c22f-f918" hidden="false" type="rule" targetId="cb8a-c041-ca3d-d32e"/>
-        <infoLink name="Chariot of the Gods " id="4a07-a6e5-c688-73d7" hidden="false" type="rule" targetId="e741-5740-04e5-1479"/>
+        <infoLink id="cba0-a48d-10bf-3663" name="Setttra" hidden="false" targetId="bb5e-b02c-a717-0824" type="profile"/>
+        <infoLink id="8046-3304-8d85-44ea" name="Settra the Great" hidden="false" targetId="6cb0-7aee-0ddb-34b5" type="rule"/>
+        <infoLink id="8c76-8704-c22f-f918" name="Settra&apos;s Army" hidden="false" targetId="cb8a-c041-ca3d-d32e" type="rule"/>
+        <infoLink id="4a07-a6e5-c688-73d7" name="Chariot of the Gods " hidden="false" targetId="e741-5740-04e5-1479" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="3064-5f26-298f-7296" name="Lord" hidden="false" targetId="d024-d25b-a9b4-73b6" primary="false"/>
         <categoryLink id="6eae-1acc-0c1a-ac33" name="Tomb kings General" hidden="false" targetId="4e75-e0b6-8eb7-7d6c" primary="false"/>
         <categoryLink id="9e55-ab45-2b1b-cfa4" name="Characters" hidden="false" targetId="7a1c-d611-c2dc-def1" primary="false"/>
         <categoryLink id="1673-5092-c0ec-d8bc" name="Tomb King" hidden="false" targetId="a066-363e-a1c1-aa6b" primary="false"/>
-        <categoryLink name="Special Characters" hidden="false" id="32bd-2db0-014a-16b4" targetId="0644-bfcd-32c2-21dc" primary="true"/>
+        <categoryLink id="32bd-2db0-014a-16b4" name="Special Characters" hidden="false" targetId="0644-bfcd-32c2-21dc" primary="true"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="1d6c-cc8b-dbe5-08bf" name="Chariot" hidden="false" collective="false" import="true" type="upgrade">
@@ -1740,10 +1787,10 @@ The Queen moves with the swiftness of a striking asp, and will always strikes fi
           <infoLinks>
             <infoLink id="f4af-be09-29c7-9f3a" name="Chariot" hidden="false" targetId="6b85-43b7-6ea0-90b0" type="profile">
               <modifiers>
-                <modifier type="set" value="5" field="b690-4bc0-bb73-267b"/>
-                <modifier type="set" value="5" field="8712-f56f-5b22-a720"/>
-                <modifier type="set" value="5" field="253a-9b00-4fde-8ac2"/>
-                <modifier type="set" value="6" field="fa44-51dd-e69c-8d6a"/>
+                <modifier type="set" field="b690-4bc0-bb73-267b" value="5"/>
+                <modifier type="set" field="8712-f56f-5b22-a720" value="5"/>
+                <modifier type="set" field="253a-9b00-4fde-8ac2" value="5"/>
+                <modifier type="set" field="fa44-51dd-e69c-8d6a" value="6"/>
               </modifiers>
             </infoLink>
           </infoLinks>
@@ -1757,6 +1804,7 @@ The Queen moves with the swiftness of a striking asp, and will always strikes fi
           <costs>
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="013e-2189-0724-9782" name="Magic" hidden="false" collective="false" import="true" type="upgrade">
@@ -1783,9 +1831,9 @@ The Queen moves with the swiftness of a striking asp, and will always strikes fi
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e4f6-3ebe-9928-1488" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Blessed Blade of Ptra" hidden="false" id="47e4-dd18-0869-632b" type="selectionEntry" targetId="b3c9-1f9c-ef2e-e611">
+            <entryLink id="47e4-dd18-0869-632b" name="Blessed Blade of Ptra" hidden="false" collective="false" import="true" targetId="b3c9-1f9c-ef2e-e611" type="selectionEntry">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dc0f-3e26-2b2f-c02c" includeChildSelections="false"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dc0f-3e26-2b2f-c02c" type="min"/>
               </constraints>
             </entryLink>
           </entryLinks>
@@ -1819,37 +1867,59 @@ The Queen moves with the swiftness of a striking asp, and will always strikes fi
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
-      <constraints>
-        <constraint type="max" value="0" field="selections" scope="roster" shared="true" id="b420-f9ff-73c2-a7e7" includeChildSelections="true"/>
-      </constraints>
+    </selectionEntry>
+    <selectionEntry id="7f0e-8291-c3f1-3ff6" name="Sehenesmet, Vizier of Quatar" publicationId="31e0-a609-b995-133f" page="3" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
-        <modifier type="set" value="1" field="b420-f9ff-73c2-a7e7">
-          <conditions>
-            <condition type="equalTo" value="1" field="selections" scope="force" childId="8923-5946-7b10-8957" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </conditions>
+        <modifier type="set" field="95c6-755c-c26e-e018" value="1">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8923-5946-7b10-8957" type="equalTo"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8b76-92c4-23f9-54b1" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
-        <modifier type="set" value="true" field="hidden">
+        <modifier type="set" field="5a6c-99d4-303a-a085" value="1">
           <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="1275-eef1-e965-00fb" shared="true" includeChildSelections="true"/>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1275-eef1-e965-00fb" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
-    </selectionEntry>
-    <selectionEntry id="7f0e-8291-c3f1-3ff6" name="Sehenesmet, Vizier of Quatar" hidden="false" collective="false" import="true" type="unit" page="3" publicationId="31e0-a609-b995-133f">
+      <constraints>
+        <constraint field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="95c6-755c-c26e-e018" type="max"/>
+        <constraint field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5a6c-99d4-303a-a085" type="min"/>
+      </constraints>
+      <rules>
+        <rule id="169b-fa8d-42e1-e0ba" name="Liche Giant (Sehenesmet)" publicationId="31e0-a609-b995-133f" page="3" hidden="false">
+          <description>Sehenesmet combines the physical power of a Bone Giant with the mystical arts of a Liche Priest. All of the rules for both Bone Giants and Liche High Priests apply to Sehenesmet</description>
+        </rule>
+      </rules>
       <infoLinks>
         <infoLink id="5d55-c6b7-eb5a-d686" name="Bone Giant" hidden="false" targetId="3537-7a82-2a80-32d4" type="profile"/>
         <infoLink id="1939-5814-496d-61c1" name="Undead Constructs" hidden="false" targetId="149b-a988-a985-bb71" type="rule"/>
         <infoLink id="1773-4954-f327-3df2" name="Large Target" hidden="false" targetId="4463-1b38-aa4d-e03c" type="rule"/>
         <infoLink id="e199-b998-9dab-805a" name="Terror" hidden="false" targetId="96f0-c50f-e59e-85fa" type="rule"/>
         <infoLink id="e5a0-2622-79fd-016c" name="Unstoppable Assault" hidden="false" targetId="3809-6570-311e-36a4" type="rule"/>
-        <infoLink name="Magical Resistance (2)" id="c0f9-11af-ff81-0930" hidden="false" type="rule" targetId="df8d-7c05-c47b-9cd6"/>
+        <infoLink id="c0f9-11af-ff81-0930" name="Magical Resistance (2)" hidden="false" targetId="df8d-7c05-c47b-9cd6" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="c86c-b882-5dc8-e160" name="Rare" hidden="false" targetId="e94b-6a54-8779-cd60" primary="false"/>
-        <categoryLink name="Special Characters" hidden="false" id="6945-de6d-a83f-fa91" targetId="0644-bfcd-32c2-21dc" primary="true"/>
-        <categoryLink name="Hierophant" hidden="false" id="e1ae-c3b8-5b0f-27f1" targetId="4cea-07e0-7cc4-c075" primary="false"/>
-        <categoryLink name="Tomb kings General" hidden="false" id="e4a2-826a-56dc-0122" targetId="4e75-e0b6-8eb7-7d6c" primary="false"/>
+        <categoryLink id="6945-de6d-a83f-fa91" name="Special Characters" hidden="false" targetId="0644-bfcd-32c2-21dc" primary="true"/>
+        <categoryLink id="e1ae-c3b8-5b0f-27f1" name="Hierophant" hidden="false" targetId="4cea-07e0-7cc4-c075" primary="false"/>
+        <categoryLink id="e4a2-826a-56dc-0122" name="Tomb kings General" hidden="false" targetId="4e75-e0b6-8eb7-7d6c" primary="false"/>
       </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="126d-532d-2b9b-cbbe" name="Weapons" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="7f79-c252-ddfa-02f7" name="The Sacred Crook of Shapesh" hidden="false" collective="false" import="true" targetId="ce3e-4c01-1bb1-54de" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a0d9-0c4e-f299-8453" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <entryLinks>
         <entryLink id="6e20-af7e-59c5-721c" name="Heavy Armour" hidden="false" collective="false" import="true" targetId="dde4-0ba8-7b3c-57b7" type="selectionEntry">
           <constraints>
@@ -1857,12 +1927,12 @@ The Queen moves with the swiftness of a striking asp, and will always strikes fi
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bf42-f971-79ee-02f2" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="General" hidden="false" id="c887-7779-b8c2-c9ca" collective="false" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry">
+        <entryLink id="c887-7779-b8c2-c9ca" name="General" hidden="false" collective="false" import="true" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry">
           <modifiers>
-            <modifier type="decrement" value="2" field="fcec-2340-6368-a2ba"/>
+            <modifier type="decrement" field="fcec-2340-6368-a2ba" value="2"/>
           </modifiers>
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fc1a-3e18-9ef9-a402"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fc1a-3e18-9ef9-a402" type="min"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -1871,45 +1941,38 @@ The Queen moves with the swiftness of a striking asp, and will always strikes fi
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="2"/>
       </costs>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Weapons" id="126d-532d-2b9b-cbbe" hidden="false">
-          <entryLinks>
-            <entryLink import="true" name="The Sacred Crook of Shapesh" hidden="false" id="7f79-c252-ddfa-02f7" type="selectionEntry" targetId="ce3e-4c01-1bb1-54de">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a0d9-0c4e-f299-8453" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <constraints>
-        <constraint type="max" value="0" field="selections" scope="roster" shared="true" id="95c6-755c-c26e-e018" includeChildSelections="true"/>
-        <constraint type="min" value="0" field="selections" scope="roster" shared="true" id="5a6c-99d4-303a-a085" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-      </constraints>
+    </selectionEntry>
+  </selectionEntries>
+  <entryLinks>
+    <entryLink id="5992-892b-07f0-9ab3" name="Allow experimental rules?" hidden="false" collective="false" import="true" targetId="8b76-92c4-23f9-54b1" type="selectionEntry">
       <modifiers>
-        <modifier type="set" value="1" field="95c6-755c-c26e-e018">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="force" childId="8923-5946-7b10-8957" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="equalTo" value="1" field="selections" scope="force" childId="8b76-92c4-23f9-54b1" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="set" value="1" field="5a6c-99d4-303a-a085">
+        <modifier type="set" field="c14e-9a54-427c-d35a" value="1">
           <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="1275-eef1-e965-00fb" shared="true" includeChildSelections="true" includeChildForces="false"/>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1275-eef1-e965-00fb" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
-      <rules>
-        <rule name="Liche Giant (Sehenesmet)" id="169b-fa8d-42e1-e0ba" hidden="false" publicationId="31e0-a609-b995-133f" page="3">
-          <description>Sehenesmet combines the physical power of a Bone Giant with the mystical arts of a Liche Priest. All of the rules for both Bone Giants and Liche High Priests apply to Sehenesmet</description>
-        </rule>
-      </rules>
-    </selectionEntry>
-  </selectionEntries>
+      <constraints>
+        <constraint field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c14e-9a54-427c-d35a" type="min"/>
+      </constraints>
+    </entryLink>
+    <entryLink id="7f48-9790-6079-e1c6" name="Allow special characters?" hidden="false" collective="false" import="true" targetId="8923-5946-7b10-8957" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="9d92-c18c-174c-d236" value="1">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1275-eef1-e965-00fb" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9d92-c18c-174c-d236" type="min"/>
+      </constraints>
+    </entryLink>
+    <entryLink id="5e82-cd9f-fdfd-20c1" name="Pirazzo&apos;s Lost Legion" hidden="false" collective="false" import="true" targetId="bf3e-42e7-f52f-fb99" type="selectionEntry"/>
+    <entryLink import="true" name="Leopalds Leopard Company" hidden="false" id="6ae1-2c11-7312-9df9" type="selectionEntry" targetId="ab54-8cc7-3975-5c86"/>
+    <entryLink import="true" name="Vespero&apos;s Vandetta" hidden="false" id="f321-19e8-83a1-7c93" type="selectionEntry" targetId="db6b-b1e2-c59d-47d6"/>
+    <entryLink import="true" name="Voland&apos;s Venators" hidden="false" id="177a-96a6-b455-f47d" type="selectionEntry" targetId="e598-cc90-07d4-ac3b"/>
+  </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="6d56-4256-16c0-5f89" name="Destroyer of Eternities" publicationId="04f9-cede-fdb3-1e6c" page="36" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -2211,14 +2274,14 @@ The Queen moves with the swiftness of a striking asp, and will always strikes fi
       <constraints>
         <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d822-f16f-6cde-a295" type="max"/>
       </constraints>
+      <infoLinks>
+        <infoLink id="b1bc-2e42-fdd3-b715" name="The Sacred Crook of Shapesh" hidden="false" targetId="03e3-446b-7f05-f746" type="rule"/>
+      </infoLinks>
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
-      <infoLinks>
-        <infoLink name="The Sacred Crook of Shapesh" id="b1bc-2e42-fdd3-b715" hidden="false" type="rule" targetId="03e3-446b-7f05-f746"/>
-      </infoLinks>
     </selectionEntry>
     <selectionEntry id="41d4-3709-0119-eeb9" name="Staff of Ravening" publicationId="04f9-cede-fdb3-1e6c" page="38" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -2355,27 +2418,27 @@ The Queen moves with the swiftness of a striking asp, and will always strikes fi
       <constraints>
         <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8707-8f44-bbde-c670" type="max"/>
       </constraints>
+      <infoLinks>
+        <infoLink id="92d1-dfb6-3ad1-d612" name="The Armour of Golden Magnificence" hidden="false" targetId="8864-70fe-09c7-0ac2" type="rule"/>
+      </infoLinks>
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
-      <infoLinks>
-        <infoLink name="The Armour of Golden Magnificence" id="92d1-dfb6-3ad1-d612" hidden="false" type="rule" targetId="8864-70fe-09c7-0ac2"/>
-      </infoLinks>
     </selectionEntry>
     <selectionEntry id="bc2d-3c4e-d3a7-520f" name="The Crown of Nehekhara" publicationId="04f9-cede-fdb3-1e6c" page="67" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4777-190c-d00e-54db" type="max"/>
       </constraints>
+      <infoLinks>
+        <infoLink id="915b-c008-20be-d65f" name="The Crown of Nehekhara" hidden="false" targetId="1634-b1c7-e5c4-c0b5" type="rule"/>
+      </infoLinks>
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
-      <infoLinks>
-        <infoLink name="The Crown of Nehekhara" id="915b-c008-20be-d65f" hidden="false" type="rule" targetId="1634-b1c7-e5c4-c0b5"/>
-      </infoLinks>
     </selectionEntry>
     <selectionEntry id="0875-943e-a57d-025a" name="Venom Staff" publicationId="04f9-cede-fdb3-1e6c" page="69" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -2450,25 +2513,45 @@ The Queen moves with the swiftness of a striking asp, and will always strikes fi
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="1. Sekhubi&apos;s Incantation of Vengeance (Bound Spell)" hidden="false" id="ebd7-25ba-855b-f8a6" page="35" publicationId="04f9-cede-fdb3-1e6c">
+    <selectionEntry id="ebd7-25ba-855b-f8a6" name="1. Sekhubi&apos;s Incantation of Vengeance (Bound Spell)" publicationId="04f9-cede-fdb3-1e6c" page="35" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink name="Sekhubi&apos;s Incantation of Vengeance (Bound Spell)" id="3744-220e-092a-aac1" hidden="false" type="rule" targetId="4f43-3961-c480-eb1a"/>
+        <infoLink id="3744-220e-092a-aac1" name="Sekhubi&apos;s Incantation of Vengeance (Bound Spell)" hidden="false" targetId="4f43-3961-c480-eb1a" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+      </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="2. Horekhah&apos;s Incantation of Righteous Smiting (Bound Spell)" hidden="false" id="d851-d47f-063e-11cd" page="35" publicationId="04f9-cede-fdb3-1e6c">
+    <selectionEntry id="d851-d47f-063e-11cd" name="2. Horekhah&apos;s Incantation of Righteous Smiting (Bound Spell)" publicationId="04f9-cede-fdb3-1e6c" page="35" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink name="Horekhah&apos;s Incantation of Righteous Smiting (Bound Spell)" id="0999-7e60-4990-06cf" hidden="false" type="rule" targetId="913a-3025-5e6e-5ceb"/>
+        <infoLink id="0999-7e60-4990-06cf" name="Horekhah&apos;s Incantation of Righteous Smiting (Bound Spell)" hidden="false" targetId="913a-3025-5e6e-5ceb" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+      </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="3. Diedra&apos;s Incantation of Summoning (Bound Spell)" hidden="false" id="6acb-d867-208d-d893" page="35" publicationId="04f9-cede-fdb3-1e6c">
+    <selectionEntry id="6acb-d867-208d-d893" name="3. Diedra&apos;s Incantation of Summoning (Bound Spell)" publicationId="04f9-cede-fdb3-1e6c" page="35" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink name="Diedra&apos;s Incantation of Summoning (Bound Spell)" id="3e4b-6336-039c-67ce" hidden="false" type="rule" targetId="dcb6-f128-6b04-8bf0"/>
+        <infoLink id="3e4b-6336-039c-67ce" name="Diedra&apos;s Incantation of Summoning (Bound Spell)" hidden="false" targetId="dcb6-f128-6b04-8bf0" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+      </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="4. Mankara&apos;s Incantation of Urgency (Bound Spell)" hidden="false" id="0fe0-4a3c-7b83-160d" page="35" publicationId="04f9-cede-fdb3-1e6c">
+    <selectionEntry id="0fe0-4a3c-7b83-160d" name="4. Mankara&apos;s Incantation of Urgency (Bound Spell)" publicationId="04f9-cede-fdb3-1e6c" page="35" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink name="Mankara&apos;s Incantation of Urgency (Bound Spell)" id="1255-1d40-c5e7-5ad7" hidden="false" type="rule" targetId="c713-461a-b811-2f0a" page="35" publicationId="04f9-cede-fdb3-1e6c"/>
+        <infoLink id="1255-1d40-c5e7-5ad7" name="Mankara&apos;s Incantation of Urgency (Bound Spell)" publicationId="04f9-cede-fdb3-1e6c" page="35" hidden="false" targetId="c713-461a-b811-2f0a" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -2814,7 +2897,7 @@ The Crown of Kings enables the Tomb King to roll two D6 for his &quot;My Will Be
     <rule id="b36e-1a67-b9a4-b4f5" name="Flying Unit" hidden="false">
       <description>Carrion are a unit of flyers and follow the rules on page 106 of the Rulebook/.</description>
     </rule>
-    <rule name="Horekhah&apos;s Incantation of Righteous Smiting (Bound Spell)" id="913a-3025-5e6e-5ceb" hidden="false" page="35" publicationId="04f9-cede-fdb3-1e6c">
+    <rule id="913a-3025-5e6e-5ceb" name="Horekhah&apos;s Incantation of Righteous Smiting (Bound Spell)" publicationId="04f9-cede-fdb3-1e6c" page="35" hidden="false">
       <description>Target one of your own Undead units within 12&quot; of the Priest. If the unit is not engaged in combat, it can immediately shoot with any missile weapons it carries. This is effectively an additional Shooting phase. This can be used on Screaming Skull Catapults too (if they have not moved that turn). As this counts as an additional Shooting phase, an Incantation of Righteous Smiting successfully cast on a unit that could not shoot in its next Shooting phase, due to a misfire or spell for example, may count this as that next Shooting phase. In effect they cannot shoot in this magical Shooting phase, but will be able to then shoot in the regular Shooting phase.
 
 
@@ -2823,10 +2906,10 @@ If the unit is engaged in close combat, all models in the unit can immediately m
 
 Units may be affected by this incantation only once per Magic phase, regardless of its source.</description>
     </rule>
-    <rule name="Sekhubi&apos;s Incantation of Vengeance (Bound Spell)" id="4f43-3961-c480-eb1a" hidden="false" page="35" publicationId="04f9-cede-fdb3-1e6c">
+    <rule id="4f43-3961-c480-eb1a" name="Sekhubi&apos;s Incantation of Vengeance (Bound Spell)" publicationId="04f9-cede-fdb3-1e6c" page="35" hidden="false">
       <description>This is a magic missile with a range of 18&quot;. If cast, it hits the target and causes D6 Strength 4 hits.</description>
     </rule>
-    <rule name="Diedra&apos;s Incantation of Summoning (Bound Spell)" id="dcb6-f128-6b04-8bf0" hidden="false" page="35" publicationId="04f9-cede-fdb3-1e6c">
+    <rule id="dcb6-f128-6b04-8bf0" name="Diedra&apos;s Incantation of Summoning (Bound Spell)" publicationId="04f9-cede-fdb3-1e6c" page="35" hidden="false">
       <description>Target one of your own Undead units within 12&quot; of the Priest, even if engaged in combat. If the incantation is successful, warriors that have fallen rise again to fight for their king. The affected unit regains D3 wounds (or D3 wounds worth of models), up to the initial number of wounds on the model&apos;s profile or models in the unit. Tomb Guard regain D6 wounds worth of models rather than D3. Skeleton Warriors are easier to resurrect than other Undead, so two D6 may be rolled, and the highest dice roll is the number of wounds worth of models that is regained.
 
 
@@ -2844,7 +2927,7 @@ Characters must be nominated separately from a unit if they are to benefit from 
 
 Models summoned back into a unit that is involved in combat do not count as charging, even if that unit charged into combat that turn.</description>
     </rule>
-    <rule name="Mankara&apos;s Incantation of Urgency (Bound Spell)" id="c713-461a-b811-2f0a" hidden="false" page="35" publicationId="04f9-cede-fdb3-1e6c">
+    <rule id="c713-461a-b811-2f0a" name="Mankara&apos;s Incantation of Urgency (Bound Spell)" publicationId="04f9-cede-fdb3-1e6c" page="35" hidden="false">
       <description>Target one of your own Undead units within 12&quot; of the Priest. It cannot be cast on units engaged in combat. The unit can immediately make its normal move, exactly like in the Movement phase (it can wheel, turn, change formation or even reform, etc).
 
 
@@ -2853,26 +2936,26 @@ The unit can charge an enemy and the same rules apply as for a normal charge. A 
 
 Units may be affected by this incantation only once per Magic phase, regardless of its source.</description>
     </rule>
-    <rule name="The Curse of Settra" id="b8a8-840a-2c31-e5dd" hidden="false" page="67" publicationId="04f9-cede-fdb3-1e6c">
+    <rule id="b8a8-840a-2c31-e5dd" name="The Curse of Settra" publicationId="04f9-cede-fdb3-1e6c" page="67" hidden="false">
       <description>The model responsible for killing a Tomb King or Tomb Prince must immediately take a leadership test. If it fails the test, it must immediately take D6 wounds that cannot be saved. If it was a unit, randomize as shooting. If it was more than one unit, in a multiple combat, all units must take the the test as above. In addition, if Settra is killed by any means, then every enemy unit within 2D6&quot; suffers 2D6 Strength 2 hits (distributed as shooting hits).</description>
     </rule>
-    <rule name="The Sacred Crook of Shapesh" id="03e3-446b-7f05-f746" hidden="false" publicationId="31e0-a609-b995-133f" page="3">
+    <rule id="03e3-446b-7f05-f746" name="The Sacred Crook of Shapesh" publicationId="31e0-a609-b995-133f" page="3" hidden="false">
       <description>The Sacred Crook of Shapesh can be wielded in combat like a great weapon.
 Keep track of the number of unsaved wounds inflicted by the Sacred Crook in each Close Combat phase. In each Tomb Kings Magic phase, the power of the Crook may be unleashed as a magic missile that cannot be dispelled (before Sehenesmet’s incantations). Pick a single enemy unit within 24&quot; as the target.
 
 
 The unit suffers a number of Strength 4 hits equal to the number of wounds currently ‘stored’ in the Crook. Once unleashed, the number of wounds stored in the staff are returned to 0 until Sehenesmet inflicts more wounds. In addition, it doubles the range of Sehenesmet’s incantations.</description>
     </rule>
-    <rule name="The Crown of Nehekhara" id="1634-b1c7-e5c4-c0b5" hidden="false" publicationId="04f9-cede-fdb3-1e6c" page="67">
+    <rule id="1634-b1c7-e5c4-c0b5" name="The Crown of Nehekhara" publicationId="04f9-cede-fdb3-1e6c" page="67" hidden="false">
       <description>Settra and his chariot benefit from a 4+ Ward save. In addition, Settra causes terror.</description>
     </rule>
-    <rule name="The Armour of Golden Magnificence" id="29b7-183a-d4be-f0cc" hidden="false">
+    <rule id="29b7-183a-d4be-f0cc" name="The Armour of Golden Magnificence" hidden="false">
       <description>The Armour of Golden Magnificence</description>
     </rule>
-    <rule name="The Armour of Golden Magnificence" id="8864-70fe-09c7-0ac2" hidden="false" page="67" publicationId="04f9-cede-fdb3-1e6c">
+    <rule id="8864-70fe-09c7-0ac2" name="The Armour of Golden Magnificence" publicationId="04f9-cede-fdb3-1e6c" page="67" hidden="false">
       <description>Settra has a 2+ Armour saving throw. This saving throw is never modified to worse than a 4+, even if hit by an attack that normally allows no Armour save (such as a cannonball).</description>
     </rule>
-    <rule name="Venom Staff (L5)" id="5cc2-ec0f-19c1-690e" hidden="false" page="69" publicationId="04f9-cede-fdb3-1e6c">
+    <rule id="5cc2-ec0f-19c1-690e" name="Venom Staff (L5)" publicationId="04f9-cede-fdb3-1e6c" page="69" hidden="false">
       <description>Bound Spell, Power Level 5. The staff contains a Bound magic missile with a range of 24&quot;, causing 2D6 Strength 4 hits. If a unit takes any wounds from the staff, it may not move in its next Movement phase.</description>
     </rule>
   </sharedRules>
@@ -3389,7 +3472,7 @@ The unit suffers a number of Strength 4 hits equal to the number of wounds curr
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
       </characteristics>
     </profile>
-    <profile name="Setttra" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="bb5e-b02c-a717-0824" page="67" publicationId="04f9-cede-fdb3-1e6c">
+    <profile id="bb5e-b02c-a717-0824" name="Setttra" publicationId="04f9-cede-fdb3-1e6c" page="67" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
       <characteristics>
         <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">4</characteristic>
         <characteristic name="WS" typeId="f95b-da01-0578-3bdc">7</characteristic>
@@ -3406,58 +3489,7 @@ The unit suffers a number of Strength 4 hits equal to the number of wounds curr
       </characteristics>
     </profile>
   </sharedProfiles>
-  <forceEntries>
-    <forceEntry name="Standard (TK-AB)" id="6a31-e995-535d-a939" hidden="false">
-      <categoryLinks>
-        <categoryLink name="Experimental rules" hidden="false" id="4405-8b9c-c81e-445a" targetId="4fed-b911-e6e0-927b"/>
-        <categoryLink name="Special list rules" hidden="false" id="9268-ba02-bafc-0c21" targetId="32f1-197f-d719-a393"/>
-        <categoryLink name="Characters" hidden="false" id="cd0a-ec25-3f8c-76ae" targetId="7a1c-d611-c2dc-def1"/>
-        <categoryLink name="Special Characters" hidden="false" id="d6e4-5ee7-a359-acdc" targetId="0644-bfcd-32c2-21dc"/>
-        <categoryLink name="Lord" hidden="false" id="2413-b5ae-8970-3c9a" targetId="d024-d25b-a9b4-73b6"/>
-        <categoryLink name="Heroes" hidden="false" id="1ef2-0949-2f75-ae4a" targetId="c16b-f319-2c62-2c12"/>
-        <categoryLink name="Core" hidden="false" id="8013-9da5-e98d-f23d" targetId="64bf-efb4-9978-26df"/>
-        <categoryLink name="Special" hidden="false" id="95eb-c218-2733-4d23" targetId="43cc-fc3f-35a7-8d03"/>
-        <categoryLink name="Rare" hidden="false" id="8cef-a5b9-6940-cd06" targetId="e94b-6a54-8779-cd60"/>
-      </categoryLinks>
-    </forceEntry>
-    <forceEntry name="Army of Quatar (WebGW-OZ)" id="1275-eef1-e965-00fb" hidden="false" publicationId="31e0-a609-b995-133f" page="3">
-      <categoryLinks>
-        <categoryLink name="Experimental rules" hidden="false" id="035b-ffe4-1bb3-62a5" targetId="4fed-b911-e6e0-927b"/>
-        <categoryLink name="Special list rules" hidden="false" id="e093-c846-154e-0544" targetId="32f1-197f-d719-a393"/>
-        <categoryLink name="Characters" hidden="false" id="f697-9f54-6935-7d49" targetId="7a1c-d611-c2dc-def1"/>
-        <categoryLink name="Special Characters" hidden="false" id="3ea4-6d0d-31d6-7427" targetId="0644-bfcd-32c2-21dc"/>
-        <categoryLink name="Lord" hidden="false" id="4434-ce21-6f47-bd9e" targetId="d024-d25b-a9b4-73b6"/>
-        <categoryLink name="Heroes" hidden="false" id="c8da-4d36-3494-15da" targetId="c16b-f319-2c62-2c12"/>
-        <categoryLink name="Core" hidden="false" id="40b5-71b4-b504-97d3" targetId="64bf-efb4-9978-26df"/>
-        <categoryLink name="Special" hidden="false" id="6179-1e40-faa7-0ff9" targetId="43cc-fc3f-35a7-8d03"/>
-        <categoryLink name="Rare" hidden="false" id="2c6f-3c70-7c23-7aff" targetId="e94b-6a54-8779-cd60"/>
-      </categoryLinks>
-    </forceEntry>
-  </forceEntries>
-  <entryLinks>
-    <entryLink import="true" name="Allow experimental rules?" hidden="false" id="5992-892b-07f0-9ab3" type="selectionEntry" targetId="8b76-92c4-23f9-54b1">
-      <constraints>
-        <constraint type="min" value="0" field="selections" scope="force" shared="true" id="c14e-9a54-427c-d35a" includeChildSelections="true"/>
-      </constraints>
-      <modifiers>
-        <modifier type="set" value="1" field="c14e-9a54-427c-d35a">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="1275-eef1-e965-00fb" shared="true" includeChildSelections="true" includeChildForces="false"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-    </entryLink>
-    <entryLink import="true" name="Allow special characters?" hidden="false" id="7f48-9790-6079-e1c6" type="selectionEntry" targetId="8923-5946-7b10-8957">
-      <modifiers>
-        <modifier type="set" value="1" field="9d92-c18c-174c-d236">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="1275-eef1-e965-00fb" shared="true" includeChildSelections="true" includeChildForces="false"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint type="min" value="0" field="selections" scope="force" shared="true" id="9d92-c18c-174c-d236" includeChildSelections="true"/>
-      </constraints>
-    </entryLink>
-  </entryLinks>
+  <catalogueLinks>
+    <catalogueLink id="6c31-d368-f757-48e4" name="Dogs of War" targetId="fa9c-5f79-ce12-480c" type="catalogue" importRootEntries="false"/>
+  </catalogueLinks>
 </catalogue>

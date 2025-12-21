@@ -80,6 +80,8 @@ The main additions are:
 - [x] Kroak (it was already included)
 - [x] Sacred Hosts rules (WD#300(UK))
 
+### Dogs of War
+
 ## Alternative lists included
 - [x] Clan Eshin (SKV-AB)
 - [x] Clan Eshin (SoC)

@@ -54,6 +54,7 @@
         <categoryLink id="a4bc-8548-b212-ed89" name="Core" hidden="false" targetId="64bf-efb4-9978-26df" primary="false"/>
         <categoryLink id="aafe-f153-696a-fcd8" name="Special" hidden="false" targetId="43cc-fc3f-35a7-8d03" primary="false"/>
         <categoryLink id="2d70-3993-6e3a-8c89" name="Rare" hidden="false" targetId="e94b-6a54-8779-cd60" primary="false"/>
+        <categoryLink id="6a68-4d3a-518b-90ec" name="Regiment of Renown" hidden="false" targetId="ee09-9a50-ad78-9c32" primary="false"/>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="1191-bf6e-974a-b6e7" name="Clan Eshin (SK-AB)" publicationId="f804-741f-2593-2dec" page="76" hidden="false">
@@ -1196,9 +1197,6 @@
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="922a-2ddf-a85d-6764" type="min"/>
             <constraint field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bae9-d99e-134d-439e" type="max"/>
           </constraints>
-          <costs>
-            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="45"/>
-          </costs>
           <infoLinks>
             <infoLink id="1964-9cd0-4058-ab7a" name="Rat Swarms" hidden="false" targetId="5355-e4ec-c94b-d4d4" type="profile">
               <modifiers>
@@ -1219,53 +1217,60 @@
             <infoLink id="1ca2-72ed-7c33-5eb1" name="Skirmishers" hidden="false" targetId="1945-ac89-9cc4-3537" type="rule"/>
             <infoLink id="6819-ec07-07c5-705f" name="Small" hidden="false" targetId="4839-e7a0-f4de-4b56" type="rule"/>
           </infoLinks>
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="45"/>
+            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="cc17-8b29-821a-0677" name="Plague Rat Upgrade" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="593e-99eb-99a9-f4a9" type="max"/>
-          </constraints>
           <modifiers>
             <modifier type="increment" field="ecfa-8486-4f6c-c249" value="20">
               <repeats>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fc42-956d-d586-3eb2" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
-            <modifier type="set" value="true" field="hidden">
+            <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="fe72-9a50-1ec2-4c8e" shared="true" includeChildSelections="true"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fe72-9a50-1ec2-4c8e" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="593e-99eb-99a9-f4a9" type="max"/>
+          </constraints>
           <infoLinks>
             <infoLink id="f6b5-008b-eb16-7ca8" name="Poisoned Attacks" hidden="false" targetId="2738-27d5-f4af-4722" type="rule"/>
             <infoLink id="a27c-f626-c447-6912" name="Plague Rats" hidden="false" targetId="daeb-8243-ccf2-d954" type="profile"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="e76e-17da-7472-b990" name="Yellow Death Upgrade" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="44a8-7619-cdfd-81e8" type="max"/>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="fa7e-5c5e-2f53-a3f5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
           <modifiers>
             <modifier type="increment" field="ecfa-8486-4f6c-c249" value="35">
               <repeats>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fc42-956d-d586-3eb2" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
-            <modifier type="set" value="true" field="hidden">
+            <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="fe72-9a50-1ec2-4c8e" shared="true" includeChildSelections="true"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fe72-9a50-1ec2-4c8e" type="lessThan"/>
               </conditions>
             </modifier>
-            <modifier type="set" value="1" field="fa7e-5c5e-2f53-a3f5">
+            <modifier type="set" field="fa7e-5c5e-2f53-a3f5" value="1">
               <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="force" childId="fe72-9a50-1ec2-4c8e" shared="true" includeChildSelections="true"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fe72-9a50-1ec2-4c8e" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="44a8-7619-cdfd-81e8" type="max"/>
+            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fa7e-5c5e-2f53-a3f5" type="min"/>
+          </constraints>
           <infoLinks>
             <infoLink id="b105-5b4c-c8ed-6434" name="Poisoned Attacks" hidden="false" targetId="2738-27d5-f4af-4722" type="rule"/>
             <infoLink id="0e1e-c2b2-d2a3-b695" name="Plague Rats" hidden="false" targetId="daeb-8243-ccf2-d954" type="profile">
@@ -1276,9 +1281,16 @@
           </infoLinks>
           <costs>
             <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <costs>
+        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="f2c6-e214-f683-c0d7" name="Giant Rats" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
@@ -1429,6 +1441,24 @@
           </conditions>
         </modifier>
       </modifiers>
+      <modifierGroups>
+        <modifierGroup>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="adc6-cd5d-19cc-1bf3" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0903-619f-ec8b-1c7a" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="38dc-9bed-455f-f309" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+          <modifiers>
+            <modifier type="remove" field="category" value="64bf-efb4-9978-26df"/>
+            <modifier type="set-primary" field="category" value="43cc-fc3f-35a7-8d03"/>
+            <modifier type="add" field="category" value="43cc-fc3f-35a7-8d03"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
       <constraints>
         <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2493-56dd-6941-62c0" type="max"/>
       </constraints>
@@ -1525,24 +1555,6 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
-      <modifierGroups>
-        <modifierGroup type="and">
-          <modifiers>
-            <modifier type="remove" value="64bf-efb4-9978-26df" field="category"/>
-            <modifier type="set-primary" value="43cc-fc3f-35a7-8d03" field="category"/>
-            <modifier type="add" value="43cc-fc3f-35a7-8d03" field="category"/>
-          </modifiers>
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition type="instanceOf" value="0" field="selections" scope="force" childId="adc6-cd5d-19cc-1bf3" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="0" field="selections" scope="force" childId="0903-619f-ec8b-1c7a" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="0" field="selections" scope="force" childId="38dc-9bed-455f-f309" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifierGroup>
-      </modifierGroups>
     </selectionEntry>
     <selectionEntry id="8f25-7fae-1ff5-1672" name="Clanrat Slaves" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
@@ -1581,6 +1593,14 @@
             <infoLink id="30ca-44eb-369e-36e2" name="Clan Rat Slave" hidden="false" targetId="a61c-9c33-3cc5-ef8a" type="profile">
               <modifierGroups>
                 <modifierGroup>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1f80-7ea0-3959-e31a" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9d3e-f7cc-c8d9-21d7" type="atLeast"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                   <modifiers>
                     <modifier type="set" field="8712-f56f-5b22-a720" value="4"/>
                     <modifier type="set" field="name" value="Warpstone Mutant"/>
@@ -1588,14 +1608,6 @@
                     <modifier type="set" field="dfff-363e-f72a-5a59" value="3"/>
                     <modifier type="set" field="2d45-18fe-9eb3-b113" value="4"/>
                   </modifiers>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="force" childId="1f80-7ea0-3959-e31a" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="9d3e-f7cc-c8d9-21d7" shared="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
                 </modifierGroup>
               </modifierGroups>
             </infoLink>
@@ -1613,22 +1625,22 @@
           <infoLinks>
             <infoLink id="431d-4a89-1868-3698" name="Pawleader" hidden="false" targetId="f1ba-f678-63ed-4e41" type="profile">
               <modifierGroups>
-                <modifierGroup type="and">
-                  <modifiers>
-                    <modifier type="set" value="4" field="8712-f56f-5b22-a720"/>
-                    <modifier type="set" value="Pawleader Mutant" field="name"/>
-                    <modifier type="set" value="4" field="b690-4bc0-bb73-267b"/>
-                    <modifier type="set" value="3" field="dfff-363e-f72a-5a59"/>
-                    <modifier type="set" value="4" field="2d45-18fe-9eb3-b113"/>
-                  </modifiers>
+                <modifierGroup>
                   <conditionGroups>
                     <conditionGroup type="and">
                       <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="force" childId="1f80-7ea0-3959-e31a" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="9d3e-f7cc-c8d9-21d7" shared="true"/>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1f80-7ea0-3959-e31a" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9d3e-f7cc-c8d9-21d7" type="atLeast"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
+                  <modifiers>
+                    <modifier type="set" field="8712-f56f-5b22-a720" value="4"/>
+                    <modifier type="set" field="name" value="Pawleader Mutant"/>
+                    <modifier type="set" field="b690-4bc0-bb73-267b" value="4"/>
+                    <modifier type="set" field="dfff-363e-f72a-5a59" value="3"/>
+                    <modifier type="set" field="2d45-18fe-9eb3-b113" value="4"/>
+                  </modifiers>
                 </modifierGroup>
               </modifierGroups>
             </infoLink>
@@ -1649,24 +1661,26 @@
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Warpstone Mutants" hidden="true" id="9d3e-f7cc-c8d9-21d7" collective="false">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="b9f7-1818-593b-20c7" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
-          </constraints>
+        <selectionEntry id="9d3e-f7cc-c8d9-21d7" name="Warpstone Mutants" hidden="true" collective="false" import="true" type="upgrade">
           <modifiers>
-            <modifier type="increment" value="2" field="ecfa-8486-4f6c-c249">
+            <modifier type="increment" field="ecfa-8486-4f6c-c249" value="2">
               <repeats>
-                <repeat value="1" repeats="1" field="selections" scope="parent" childId="ac67-7e1e-e41b-226a" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac67-7e1e-e41b-226a" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
-            <modifier type="set" value="false" field="hidden">
+            <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="force" childId="1f80-7ea0-3959-e31a" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1f80-7ea0-3959-e31a" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="b9f7-1818-593b-20c7" type="max"/>
+          </constraints>
           <costs>
             <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -2052,21 +2066,21 @@
             <modifier type="set-primary" field="category" value="64bf-efb4-9978-26df"/>
           </modifiers>
         </modifierGroup>
-        <modifierGroup type="and">
-          <modifiers>
-            <modifier type="set-primary" value="e94b-6a54-8779-cd60" field="category"/>
-            <modifier type="add" value="e94b-6a54-8779-cd60" field="category"/>
-            <modifier type="remove" value="43cc-fc3f-35a7-8d03" field="category"/>
-          </modifiers>
+        <modifierGroup>
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition type="instanceOf" value="0" field="selections" scope="force" childId="0903-619f-ec8b-1c7a" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="0" field="selections" scope="force" childId="adc6-cd5d-19cc-1bf3" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="0" field="selections" scope="force" childId="1191-bf6e-974a-b6e7" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0903-619f-ec8b-1c7a" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="adc6-cd5d-19cc-1bf3" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1191-bf6e-974a-b6e7" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
+          <modifiers>
+            <modifier type="set-primary" field="category" value="e94b-6a54-8779-cd60"/>
+            <modifier type="add" field="category" value="e94b-6a54-8779-cd60"/>
+            <modifier type="remove" field="category" value="43cc-fc3f-35a7-8d03"/>
+          </modifiers>
         </modifierGroup>
       </modifierGroups>
       <constraints>
@@ -2284,20 +2298,20 @@
         </modifier>
       </modifiers>
       <modifierGroups>
-        <modifierGroup type="and">
-          <modifiers>
-            <modifier type="add" value="43cc-fc3f-35a7-8d03" field="category"/>
-            <modifier type="set-primary" value="43cc-fc3f-35a7-8d03" field="category"/>
-            <modifier type="remove" value="e94b-6a54-8779-cd60" field="category"/>
-          </modifiers>
+        <modifierGroup>
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition type="instanceOf" value="0" field="selections" scope="force" childId="2ac5-0165-8a9e-8942" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="0" field="selections" scope="force" childId="adc6-cd5d-19cc-1bf3" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2ac5-0165-8a9e-8942" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="adc6-cd5d-19cc-1bf3" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
+          <modifiers>
+            <modifier type="add" field="category" value="43cc-fc3f-35a7-8d03"/>
+            <modifier type="set-primary" field="category" value="43cc-fc3f-35a7-8d03"/>
+            <modifier type="remove" field="category" value="e94b-6a54-8779-cd60"/>
+          </modifiers>
         </modifierGroup>
       </modifierGroups>
       <constraints>
@@ -2386,33 +2400,6 @@
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="100"/>
-        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="2286-a8f2-9229-8303" name="Dogs Of War" hidden="false" collective="false" import="true" type="unit">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9f0b-5346-a3bc-b5fe" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2ac5-0165-8a9e-8942" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="add" field="category" value="7aa6-96b4-5b49-d7d9">
-          <conditions>
-            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bec8-e291-0c4a-903f" type="instanceOf"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <categoryLinks>
-        <categoryLink id="1ea3-74c8-c31a-bf0f" name="Rare" hidden="false" targetId="e94b-6a54-8779-cd60" primary="true"/>
-      </categoryLinks>
-      <costs>
-        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
@@ -2707,6 +2694,8 @@ An enemy model cannot attack back against whip-armed models if it is not in base
                 <characteristic name="Range" typeId="3107-4d1e-9a51-6564">in base contact with an enemy</characteristic>
                 <characteristic name="Strength" typeId="6fe4-1ebb-cb04-1378"/>
                 <characteristic name="Special Rules" typeId="a21a-cdc0-4b13-b236">4A, Killing-Blow (also against Ogre-size monsters but not swarms)</characteristic>
+                <characteristic name="Damage" typeId="6f2f-d612-52ef-1633"/>
+                <characteristic name="Saves" typeId="8014-a8b2-15c3-da95"/>
               </characteristics>
             </profile>
           </profiles>
@@ -2834,6 +2823,8 @@ An enemy model cannot attack back against whip-armed models if it is not in base
                 <characteristic name="Range" typeId="3107-4d1e-9a51-6564">in base contact with an enemy</characteristic>
                 <characteristic name="Strength" typeId="6fe4-1ebb-cb04-1378"/>
                 <characteristic name="Special Rules" typeId="a21a-cdc0-4b13-b236">4A, Killing-Blow (also against Ogre-size monsters but not swarms)</characteristic>
+                <characteristic name="Damage" typeId="6f2f-d612-52ef-1633"/>
+                <characteristic name="Saves" typeId="8014-a8b2-15c3-da95"/>
               </characteristics>
             </profile>
           </profiles>
@@ -6686,8 +6677,8 @@ Warp Lightning is a magic missile with a range of 24&quot; It can be cast at a c
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition type="instanceOf" value="0" field="selections" scope="force" childId="38dc-9bed-455f-f309" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="0" field="selections" scope="force" childId="f143-b4f7-0151-8478" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="38dc-9bed-455f-f309" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f143-b4f7-0151-8478" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -7044,7 +7035,7 @@ If you roll a &apos;misfire&apos; result something has gone awry with the warps
       <infoLinks>
         <infoLink id="9fed-2405-925c-6f64" name="Magical Resistance (2)" hidden="false" targetId="df8d-7c05-c47b-9cd6" type="rule"/>
         <infoLink id="4030-af53-1020-d70e" name="Immune to Psycology " hidden="false" targetId="ff2b-8db6-64fa-e9ca" type="rule"/>
-        <infoLink name="Experimental rules" id="f001-e0fb-26fd-2252" hidden="false" type="rule" targetId="e29e-22d4-5752-b23d"/>
+        <infoLink id="f001-e0fb-26fd-2252" name="Experimental rules" hidden="false" targetId="e29e-22d4-5752-b23d" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="5640-8ba5-1b8a-b71e" name="Rare" hidden="false" targetId="e94b-6a54-8779-cd60" primary="true"/>
@@ -7190,7 +7181,7 @@ If you roll a &apos;misfire&apos; result something has gone awry with the warps
       <infoLinks>
         <infoLink id="32f3-80b5-a32e-bcc6" name="Immune to Psycology " hidden="false" targetId="ff2b-8db6-64fa-e9ca" type="rule"/>
         <infoLink id="a20c-75cf-c700-777d" name="Terror" hidden="false" targetId="96f0-c50f-e59e-85fa" type="rule"/>
-        <infoLink name="Experimental rules" id="0725-2ea3-7d08-ebbc" hidden="false" type="rule" targetId="e29e-22d4-5752-b23d"/>
+        <infoLink id="0725-2ea3-7d08-ebbc" name="Experimental rules" hidden="false" targetId="e29e-22d4-5752-b23d" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="7f3c-e2bc-1404-a5a5" name="Lord" hidden="false" targetId="d024-d25b-a9b4-73b6" primary="true"/>
@@ -7534,6 +7525,9 @@ no armour saves.</description>
         <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a7ba-c911-9380-9388" type="min"/>
       </constraints>
     </entryLink>
+    <entryLink id="7fd7-3451-e254-c198" name="Pirazzo&apos;s Lost Legion" hidden="false" collective="false" import="true" targetId="bf3e-42e7-f52f-fb99" type="selectionEntry"/>
+    <entryLink import="true" name="Voland&apos;s Venators" hidden="false" id="a0b1-3a60-1af8-03d5" type="selectionEntry" targetId="e598-cc90-07d4-ac3b"/>
+    <entryLink import="true" name="Leopalds Leopard Company" hidden="false" id="9f4c-22be-cc0f-1996" type="selectionEntry" targetId="ab54-8cc7-3975-5c86"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="5dcc-e6e0-089a-d0ae" name="Warplock Pistol" publicationId="f804-741f-2593-2dec" page="32" hidden="false" collective="false" import="true" type="upgrade">
@@ -9313,6 +9307,8 @@ D6: Result
         <characteristic name="Range" typeId="3107-4d1e-9a51-6564">10&quot;</characteristic>
         <characteristic name="Strength" typeId="6fe4-1ebb-cb04-1378">5</characteristic>
         <characteristic name="Special Rules" typeId="a21a-cdc0-4b13-b236">cc , AP, Reliable</characteristic>
+        <characteristic name="Damage" typeId="6f2f-d612-52ef-1633"/>
+        <characteristic name="Saves" typeId="8014-a8b2-15c3-da95"/>
       </characteristics>
     </profile>
     <profile id="5484-c014-b312-c985" name="Screaming Bell" publicationId="f804-741f-2593-2dec" page="30-31" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
@@ -9385,6 +9381,8 @@ D6: Result
         <characteristic name="Strength" typeId="6fe4-1ebb-cb04-1378">4</characteristic>
         <characteristic name="Special Rules" typeId="a21a-cdc0-4b13-b236">-2 Sv
 Move or Fire</characteristic>
+        <characteristic name="Damage" typeId="6f2f-d612-52ef-1633"/>
+        <characteristic name="Saves" typeId="8014-a8b2-15c3-da95"/>
       </characteristics>
     </profile>
     <profile id="bf8a-51f8-640d-e05e" name="Giant Rat" publicationId="f804-741f-2593-2dec" page="22" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
@@ -9555,6 +9553,8 @@ An enemy model cannot attack back against whip-armed models if it is not in base
         <characteristic name="Range" typeId="3107-4d1e-9a51-6564">in base contact with an enemy</characteristic>
         <characteristic name="Strength" typeId="6fe4-1ebb-cb04-1378"/>
         <characteristic name="Special Rules" typeId="a21a-cdc0-4b13-b236">+1A</characteristic>
+        <characteristic name="Damage" typeId="6f2f-d612-52ef-1633"/>
+        <characteristic name="Saves" typeId="8014-a8b2-15c3-da95"/>
       </characteristics>
     </profile>
     <profile id="1aa1-6ff6-f657-4e85" name="Warpstone Armour" publicationId="f804-741f-2593-2dec" page="37" hidden="false" typeId="f681-9937-db53-f1d8" typeName="Armour">
@@ -9568,6 +9568,8 @@ An enemy model cannot attack back against whip-armed models if it is not in base
         <characteristic name="Range" typeId="3107-4d1e-9a51-6564">CC only</characteristic>
         <characteristic name="Strength" typeId="6fe4-1ebb-cb04-1378"/>
         <characteristic name="Special Rules" typeId="a21a-cdc0-4b13-b236">No armour saves are allowed against wounds caused by the Gouger</characteristic>
+        <characteristic name="Damage" typeId="6f2f-d612-52ef-1633"/>
+        <characteristic name="Saves" typeId="8014-a8b2-15c3-da95"/>
       </characteristics>
     </profile>
     <profile id="6aff-0399-3e7a-6ece" name="Dwarf-Slayer" publicationId="f804-741f-2593-2dec" page="36" hidden="false" typeId="7889-42d9-70a0-3ea9" typeName="Weapon">
@@ -9575,7 +9577,12 @@ An enemy model cannot attack back against whip-armed models if it is not in base
         <characteristic name="Range" typeId="3107-4d1e-9a51-6564">CC only</characteristic>
         <characteristic name="Strength" typeId="6fe4-1ebb-cb04-1378"/>
         <characteristic name="Special Rules" typeId="a21a-cdc0-4b13-b236">Against Dwarfs, the wielder always wounds on a 2+. Armour saves suffer a -3 modifier, regardless of the wielder&apos;s Strenght.</characteristic>
+        <characteristic name="Damage" typeId="6f2f-d612-52ef-1633"/>
+        <characteristic name="Saves" typeId="8014-a8b2-15c3-da95"/>
       </characteristics>
     </profile>
   </sharedProfiles>
+  <catalogueLinks>
+    <catalogueLink id="4f16-8437-4e47-58a8" name="Dogs of War" targetId="fa9c-5f79-ce12-480c" type="catalogue" importRootEntries="false"/>
+  </catalogueLinks>
 </catalogue>
