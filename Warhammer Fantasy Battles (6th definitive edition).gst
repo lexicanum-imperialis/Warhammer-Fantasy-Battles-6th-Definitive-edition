@@ -2148,6 +2148,9 @@ Note that a spell cast with a Power Stone can never be cast with Irresistible Fo
     <rule name="Cannons" id="1bda-9392-bbe9-36e5" hidden="false" page="122-123" publicationId="315e-e3c4-08af-fd51">
       <description>See rules for cannons in https://6th.whfb.app/war-machines/cannons</description>
     </rule>
+    <rule id="3cde-53bb-8bd8-e8af" name="Scaly Skin 6+" hidden="false">
+      <description>Armour save 6+</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="5556-38ea-b278-4a8f" name="Hand Weapon" hidden="false" typeId="7889-42d9-70a0-3ea9" typeName="Weapon" page="91" publicationId="315e-e3c4-08af-fd51">
