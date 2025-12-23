@@ -1628,6 +1628,21 @@
         <infoLink name="War machines" id="fbd6-1fe6-f6fe-c5ce" hidden="false" type="profile" targetId="f9f4-4ab2-8b24-8433"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry id="2f23-1b8b-5314-4d34" name="Print FAQ with the roster rules?" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="2f7f-d59e-3780-5c1f" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="1412-a947-8639-9f93" name="Experimental rules" hidden="false" targetId="4fed-b911-e6e0-927b" primary="false"/>
+        <categoryLink id="4908-a5dc-d62c-69ed" name="Experimental rules" hidden="false" targetId="4fed-b911-e6e0-927b" primary="false"/>
+        <categoryLink id="bb58-248c-7f84-9835" name="Special list rules" hidden="false" targetId="32f1-197f-d719-a393" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="f679-dff7-370a-6050" name="Lore of Metal" hidden="false" collective="false" import="true">
