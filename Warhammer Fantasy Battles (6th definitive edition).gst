@@ -712,6 +712,10 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d015-a1ba-41be-3ada" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="40c1-e17a-2dd8-fba6" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry id="055f-8e4e-f170-35d2" name="Light Armour" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -1795,7 +1799,8 @@ Troops that are immune to psychology are never affected by fear terror, frenzy o
       <description>In first round of combat (H-T-H) the model counts as having two handweapons. In the first turn only these have STR4 and Armour Piercing.</description>
     </rule>
     <rule id="1e6c-d634-a65c-78eb" name="Hatred" hidden="false">
-      <description>In the first turn of combat you may re-roll missed and apos;To-hit&apos; rolls</description>
+      <description>Troops fighting in close combat with a hated foe may re-roll any misses When they attack in the first turn of any combat. This bonus only applies in the first turn of a combat and represents the unit venting its pent up hatred on the foe. After the initial round of blood mad hacking they lose some impetus and subsequently fight as normal for the rest of the combat.
+Troops who hate their enemy must always pursue them if they flee. They cannot attempt to avoid pursuit by testing their Leadership as other troops can. They must even pursue if behind a defended obstacle.</description>
     </rule>
     <rule id="eecc-4ed0-db8a-f6dc" name="Thrown Weapons" hidden="false">
       <description>Thrown weapons do not suffer penalties for long range, nor for moving</description>
