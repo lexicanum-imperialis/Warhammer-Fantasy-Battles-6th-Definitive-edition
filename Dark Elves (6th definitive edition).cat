@@ -2297,9 +2297,6 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="a757-462a-11d5-9636" name="Reaper Bolt Thrower" hidden="false" collective="false" import="true" type="unit">
-      <constraints>
-        <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d010-c4b7-ff43-a51d" type="max"/>
-      </constraints>
       <infoLinks>
         <infoLink id="a312-647e-25ef-f14f" name="Hate High Elves" hidden="false" targetId="cc26-8206-5d40-1626" type="rule"/>
       </infoLinks>
@@ -2307,10 +2304,10 @@
         <categoryLink id="1af7-1157-b950-41b1" name="Rare" hidden="false" targetId="e94b-6a54-8779-cd60" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="8d99-db74-0051-4a45" name="Reaper Bolt Thrower" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry id="8d99-db74-0051-4a45" name="Reaper Bolt Thrower team" hidden="false" collective="false" import="true" type="model">
           <constraints>
-            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ccf9-fefc-71c8-bd73" type="max"/>
-            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="164c-de9a-de1f-b3ae" type="min"/>
+            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ccf9-fefc-71c8-bd73" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="41ec-bee5-0865-0448" type="min"/>
           </constraints>
           <selectionEntries>
             <selectionEntry id="60b3-aed5-bac2-0bd4" name="Crew" hidden="false" collective="false" import="true" type="upgrade">
@@ -2333,35 +2330,43 @@
                   </characteristics>
                 </profile>
               </profiles>
-              <selectionEntries>
-                <selectionEntry id="ef5d-1234-9f7f-7f69" name="Hand Weapon" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
-                    <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-                    <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-                  </costs>
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bdc0-54df-68c2-418b" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="07a8-2fa1-c38a-77b8" includeChildSelections="false"/>
-                  </constraints>
-                </selectionEntry>
-              </selectionEntries>
-              <entryLinks>
-                <entryLink id="381e-0653-e9c9-dc6a" name="Light Armour" hidden="false" collective="false" import="true" targetId="055f-8e4e-f170-35d2" type="selectionEntry">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6652-8c5e-4cf7-9a58" includeChildSelections="false"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
               <costs>
                 <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
                 <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
                 <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
               </costs>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapons and Armour" id="f3eb-28b5-64be-28bd" hidden="false">
+                  <entryLinks>
+                    <entryLink import="true" name="Light Armour" hidden="false" id="381e-0653-e9c9-dc6a" collective="false" targetId="055f-8e4e-f170-35d2" type="selectionEntry">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6652-8c5e-4cf7-9a58" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Hand Weapon" hidden="false" id="ef5d-1234-9f7f-7f69" collective="false">
+                      <costs>
+                        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+                        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bdc0-54df-68c2-418b" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="07a8-2fa1-c38a-77b8" includeChildSelections="false"/>
+                      </constraints>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <constraints>
+                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="d779-0b84-3daf-34b5" includeChildSelections="false"/>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="f7bb-1fdb-d454-9d4d" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
             </selectionEntry>
             <selectionEntry id="0137-be86-e4e7-d374" name="Reaper" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
-                <profile id="84b2-db11-8b53-8de6" name="Reaper" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
+                <profile id="84b2-db11-8b53-8de6" name="Reaper BT" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
                   <characteristics>
                     <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">-</characteristic>
                     <characteristic name="WS" typeId="f95b-da01-0578-3bdc">-</characteristic>
