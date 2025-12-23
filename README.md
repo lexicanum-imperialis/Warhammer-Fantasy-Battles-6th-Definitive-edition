@@ -81,6 +81,28 @@ The main additions are:
 - [x] Sacred Hosts rules (WD#300(UK))
 
 ### Dogs of War
+- [x] Al Muktar's Desert Dogs
+- [x] Asarnil the Dragonlord
+- [x] Bearman of Urslo
+- [x] Birdman of Catrazza
+- [x] Braganza's Besiegers
+- [x] Bronzino's Galloper Gun
+- [x] Golgfag's Ogres
+- [x] Leopold's Leopard Company
+- [x] Long Drong's Slayer Pirate
+- [x] Lumpin Croop's Fighting Cock
+- [x] Marksmen of Miragliano
+- [x] Ogla Khan's Wolfboy
+- [x] Pirazzo's Lost Legion
+- [x] Ricco's Republican Guard
+- [x] The Alcantani Fellowship
+- [x] Tichi Huichi's Raiders
+- [x] Vespero's Vendetta
+- [x] Voland's Venators
+
+### Dark Elves
+Patched to WD#287(UK)
+Added Magic objects from Albion (WD#263(UK))
 
 ## Alternative lists included
 - [x] Clan Eshin (SKV-AB)
