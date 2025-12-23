@@ -1606,7 +1606,7 @@
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8923-5946-7b10-8957" name="Allow special characters?" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="8923-5946-7b10-8957" name="Allow special characters?" hidden="false" collective="false" import="true" type="upgrade" defaultAmount="1">
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="5036-e10c-2fd8-f135" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
