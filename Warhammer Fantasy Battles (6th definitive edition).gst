@@ -1633,8 +1633,6 @@
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="2f7f-d59e-3780-5c1f" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
       <categoryLinks>
-        <categoryLink id="1412-a947-8639-9f93" name="Experimental rules" hidden="false" targetId="4fed-b911-e6e0-927b" primary="false"/>
-        <categoryLink id="4908-a5dc-d62c-69ed" name="Experimental rules" hidden="false" targetId="4fed-b911-e6e0-927b" primary="false"/>
         <categoryLink id="bb58-248c-7f84-9835" name="Special list rules" hidden="false" targetId="32f1-197f-d719-a393" primary="true"/>
       </categoryLinks>
       <costs>
