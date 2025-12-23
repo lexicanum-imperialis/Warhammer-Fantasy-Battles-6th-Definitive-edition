@@ -1609,6 +1609,7 @@
     <selectionEntry id="8923-5946-7b10-8957" name="Allow special characters?" hidden="false" collective="false" import="true" type="upgrade" defaultAmount="1">
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="5036-e10c-2fd8-f135" includeChildSelections="true" includeChildForces="true"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f271-21c4-2043-9aa0"/>
       </constraints>
       <infoLinks>
         <infoLink id="5bf6-245f-e93b-eb11" name="Special characters" hidden="false" targetId="3be4-7ba4-c28d-154b" type="rule"/>
@@ -1621,6 +1622,13 @@
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="0" field="f271-21c4-2043-9aa0">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="8923-5946-7b10-8957" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Bolt Thrower" hidden="false" id="62e0-5a1d-ff7c-31dd" publicationId="315e-e3c4-08af-fd51" page="124">
       <infoLinks>
