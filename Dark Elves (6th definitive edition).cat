@@ -3208,7 +3208,7 @@ At the start of each of the opposing army&apos;s turns, roll a D6. On a roll of 
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b7c2-5230-d33e-025d" includeChildSelections="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Bracchus" hidden="false" id="668f-6831-b4fc-fe2c" collective="false" targetId="269a-cdbc-e46f-3940" type="selectionEntry">
+            <entryLink import="true" name="Black Dragon" hidden="false" id="668f-6831-b4fc-fe2c" collective="false" targetId="269a-cdbc-e46f-3940" type="selectionEntry">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d2fd-c3b0-5932-a0c4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="404a-a174-c072-eb55" includeChildSelections="false"/>
@@ -3709,6 +3709,34 @@ In addition, a monster that is beaten in hand to hand combat by Rakarth is assum
           </rules>
         </infoGroup>
       </infoGroups>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="roster" shared="true" id="d6b5-0f74-79c2-bbf0" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="1" field="d6b5-0f74-79c2-bbf0">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="8923-5946-7b10-8957" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="1c9c-880c-43f5-a24a" shared="true" includeChildSelections="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="8b76-92c4-23f9-54b1" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="0" field="d6b5-0f74-79c2-bbf0"/>
+            <modifier type="add" value="{this} may not be fielded in an army that contains Morathi." field="error"/>
+          </modifiers>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="1c9c-880c-43f5-a24a" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <comment>&quot;She may not be fielded in an army that contains Morathi.&quot;</comment>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry id="c67d-adfa-d54d-cb33" name="Kuoran, Captain of the Black Guard" publicationId="20b9-0ee7-8f6f-8d28" hidden="false" collective="false" import="true" type="unit">
       <profiles>
