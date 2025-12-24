@@ -222,6 +222,7 @@
             <selectionEntry id="5757-fa04-871e-f842" name="Sea Dragon Cloak" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d3d-5f2d-9d62-f12e" type="max"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="8601-3e39-2e5b-28b6" includeChildSelections="false"/>
               </constraints>
               <infoLinks>
                 <infoLink id="b218-5a50-8ef2-5d57" name="Sea Dragon Cloak" hidden="false" targetId="ac64-371e-2bbf-45bb" type="profile"/>
@@ -231,6 +232,18 @@
                 <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
                 <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
               </costs>
+              <modifiers>
+                <modifier type="set" value="1" field="8601-3e39-2e5b-28b6">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="4b5b-aebb-1526-91bb" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="7a1e-c134-434e-3313" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
             </selectionEntry>
             <selectionEntry id="0b9c-d3ff-6535-74cd" name="Shield" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -527,6 +540,13 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="4b5b-aebb-1526-91bb" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="ca34-2c11-1f0d-c958" name="High Soceress" hidden="false" collective="false" import="true" type="unit">
       <profiles>
@@ -642,6 +662,11 @@
             <condition type="instanceOf" value="1" field="selections" scope="force" childId="77cd-dafb-16af-93c0" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="4b5b-aebb-1526-91bb" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
     </selectionEntry>
     <selectionEntry id="bd43-41c0-298e-22be" name="Dark Elf Noble" hidden="false" collective="false" import="true" type="unit">
@@ -739,6 +764,7 @@
             <selectionEntry id="ab69-76b5-97c8-a03b" name="Sea Dragon Cloak" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="43c2-9d1e-ef72-9805" type="max"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="d771-6844-c1f1-f6ba" includeChildSelections="false"/>
               </constraints>
               <infoLinks>
                 <infoLink id="73bf-1b65-2d8c-97fa" name="Sea Dragon Cloak" hidden="false" targetId="ac64-371e-2bbf-45bb" type="profile"/>
@@ -748,6 +774,18 @@
                 <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
                 <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
               </costs>
+              <modifiers>
+                <modifier type="set" value="1" field="d771-6844-c1f1-f6ba">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="4b5b-aebb-1526-91bb" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="7a1e-c134-434e-3313" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
             </selectionEntry>
             <selectionEntry id="d472-d3a0-5133-b72a" name="Shield" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -993,6 +1031,11 @@
             <condition type="instanceOf" value="1" field="selections" scope="force" childId="77cd-dafb-16af-93c0" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="4b5b-aebb-1526-91bb" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="62f9-5cd4-ed5f-f0e1" includeChildSelections="false"/>
@@ -1128,6 +1171,11 @@
         <modifier type="set" value="true" field="hidden">
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="force" childId="77cd-dafb-16af-93c0" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="4b5b-aebb-1526-91bb" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -1327,6 +1375,11 @@
         <modifier type="set" value="true" field="hidden">
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="force" childId="77cd-dafb-16af-93c0" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="4b5b-aebb-1526-91bb" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -1757,6 +1810,16 @@
           </modifiers>
         </modifierGroup>
       </modifierGroups>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="f9c8-8278-5a3e-7066" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="1" field="f9c8-8278-5a3e-7066">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="4b5b-aebb-1526-91bb" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="59da-df39-a41e-7d08" name="Witch Elves Of Kaine" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -2043,12 +2106,15 @@
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
       <modifiers>
-        <modifier type="set" value="true" field="hidden">
+        <modifier type="set" value="1" field="81d5-8396-edad-14c0">
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="force" childId="77cd-dafb-16af-93c0" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="81d5-8396-edad-14c0" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry id="f886-cb22-921b-518e" name="Executioners" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -2485,9 +2551,14 @@ You may choose the type of Veteran Hydra that joins your forces for this battl
       </costs>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="77cd-dafb-16af-93c0" shared="true" includeChildSelections="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="77cd-dafb-16af-93c0" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="4b5b-aebb-1526-91bb" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
     </selectionEntry>
@@ -2593,9 +2664,14 @@ You may choose the type of Veteran Hydra that joins your forces for this battl
       </costs>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="77cd-dafb-16af-93c0" shared="true" includeChildSelections="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="77cd-dafb-16af-93c0" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="4b5b-aebb-1526-91bb" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
     </selectionEntry>
@@ -2728,9 +2804,14 @@ You may choose the type of Veteran Hydra that joins your forces for this battl
           </conditions>
         </modifier>
         <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="77cd-dafb-16af-93c0" shared="true" includeChildSelections="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="77cd-dafb-16af-93c0" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="4b5b-aebb-1526-91bb" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <modifierGroups>
@@ -2863,14 +2944,19 @@ You may choose the type of Veteran Hydra that joins your forces for this battl
       <modifierGroups>
         <modifierGroup type="and">
           <comment>List: City Garrison (AN-02, p.32)</comment>
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="77cd-dafb-16af-93c0" shared="true" includeChildSelections="true"/>
-          </conditions>
           <modifiers>
             <modifier type="add" value="43cc-fc3f-35a7-8d03" field="category"/>
             <modifier type="set-primary" value="43cc-fc3f-35a7-8d03" field="category"/>
             <modifier type="remove" value="e94b-6a54-8779-cd60" field="category"/>
           </modifiers>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="77cd-dafb-16af-93c0" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="4b5b-aebb-1526-91bb" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifierGroup>
       </modifierGroups>
     </selectionEntry>
@@ -4296,6 +4382,11 @@ In addition, a monster that is beaten in hand to hand combat by Rakarth is assum
           </conditions>
         </modifier>
       </modifiers>
+      <rules>
+        <rule name="Garrison Formation" id="0a3d-0308-9f20-c579" hidden="false" publicationId="91c2-b862-8010-87bb" page="32">
+          <description>A unit with Garrison Formation may mix both models armed with spears and repeater crossbows in the same unit. When taken in this manner, all repeater crossbowmen must be placed in the first rank and remain there. The second and following ranks are made up entirely of spearmen. During the game, remove casualties from the back of the unit as normal; it is assumed that spear-armed models step forward and discard their spears to pick up the repeater crossbows of the fallen first rankers. Only when all the spearmen have been slain can casualties be taken from the repeater crossbowmen in the first rank.</description>
+        </rule>
+      </rules>
     </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
@@ -5783,7 +5874,20 @@ Affected models suffer a wound with no armour saves if the Dark Elf player can r
         <categoryLink name="Core" hidden="false" id="56a9-3778-4653-8648" targetId="64bf-efb4-9978-26df" primary="false"/>
         <categoryLink name="Special" hidden="false" id="6c34-18c2-220e-6c40" targetId="43cc-fc3f-35a7-8d03" primary="false"/>
         <categoryLink name="Rare" hidden="false" id="987d-d64c-04c6-8e77" targetId="e94b-6a54-8779-cd60" primary="false"/>
-        <categoryLink name="Regiment of Renown" hidden="false" id="7b3a-d216-1843-4e8f" targetId="ee09-9a50-ad78-9c32" primary="false"/>
+      </categoryLinks>
+    </forceEntry>
+    <forceEntry name="The Raiding Army (DE-AB)" id="4b5b-aebb-1526-91bb" hidden="false" publicationId="20b9-0ee7-8f6f-8d28">
+      <categoryLinks>
+        <categoryLink name="Experimental rules" hidden="false" id="368d-9c6d-d7d3-de6a" targetId="4fed-b911-e6e0-927b" primary="false"/>
+        <categoryLink name="Special list rules" hidden="false" id="8031-9acb-dd62-ba42" targetId="32f1-197f-d719-a393" primary="false"/>
+        <categoryLink name="Special Characters" hidden="false" id="311e-45ed-fe1f-8374" targetId="0644-bfcd-32c2-21dc" primary="false"/>
+        <categoryLink name="Characters" hidden="false" id="526d-ee89-3f4c-80e9" targetId="7a1c-d611-c2dc-def1" primary="false"/>
+        <categoryLink name="Lord" hidden="false" id="1e34-8e3d-7019-42e8" targetId="d024-d25b-a9b4-73b6" primary="false"/>
+        <categoryLink name="Heroes" hidden="false" id="4eac-54b5-4e33-f50f" targetId="c16b-f319-2c62-2c12" primary="false"/>
+        <categoryLink name="Core" hidden="false" id="466c-653c-b948-5738" targetId="64bf-efb4-9978-26df" primary="false"/>
+        <categoryLink name="Special" hidden="false" id="a92f-db51-15e5-29d4" targetId="43cc-fc3f-35a7-8d03" primary="false"/>
+        <categoryLink name="Rare" hidden="false" id="cf82-ef06-804d-5c28" targetId="e94b-6a54-8779-cd60" primary="false"/>
+        <categoryLink name="Regiment of Renown" hidden="false" id="c12f-49ef-54d2-d951" targetId="ee09-9a50-ad78-9c32" primary="false"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
