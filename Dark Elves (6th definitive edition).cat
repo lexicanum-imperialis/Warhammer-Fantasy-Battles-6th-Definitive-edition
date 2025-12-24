@@ -2388,6 +2388,19 @@
           <comment>Black Guard (Malekith), DE-AB, p.51</comment>
         </modifier>
       </modifiers>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="c67d-adfa-d54d-cb33" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <comment>Captain of The Black Guard (Kuoran)</comment>
+          <modifiers>
+            <modifier type="add" value="43cc-fc3f-35a7-8d03" field="category"/>
+            <modifier type="set-primary" value="43cc-fc3f-35a7-8d03" field="category"/>
+            <modifier type="remove" value="e94b-6a54-8779-cd60" field="category"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry id="a757-462a-11d5-9636" name="Reaper Bolt Thrower" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -3761,8 +3774,9 @@ In addition, a monster that is beaten in hand to hand combat by Rakarth is assum
         <infoLink id="2563-3c44-21df-20cc" name="Hate High Elves" hidden="false" targetId="cc26-8206-5d40-1626" type="rule"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="1c1a-4593-cc28-46e1" name="Lord" hidden="false" targetId="d024-d25b-a9b4-73b6" primary="true"/>
+        <categoryLink id="1c1a-4593-cc28-46e1" name="Lord" hidden="false" targetId="d024-d25b-a9b4-73b6" primary="false"/>
         <categoryLink id="7aa2-6c68-4a0a-fab5" name="Characters" hidden="false" targetId="7a1c-d611-c2dc-def1" primary="false"/>
+        <categoryLink name="Special Characters" hidden="false" id="3eb6-719d-fd81-3f90" targetId="0644-bfcd-32c2-21dc" primary="true"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="6e65-72f5-6e86-e5a6" name="Hand Weapon" hidden="false" collective="false" import="true" type="upgrade">
@@ -3779,220 +3793,64 @@ In addition, a monster that is beaten in hand to hand combat by Rakarth is assum
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="bca8-2bac-977e-d382" name="Repeater Crossbow" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="50cc-da54-27cc-d0bb" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="9ff8-166a-a600-955e" name="Repeater crossbow" hidden="false" targetId="b916-4f8c-1160-5e41" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="15"/>
-            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="0771-5d92-c4c3-c425" name="Magic" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f5ad-b029-017e-997d" type="max"/>
-          </constraints>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="250a-99ca-6989-dbb7" name="Magic Items (100 points)" hidden="false" collective="false" import="true">
-              <constraints>
-                <constraint field="ecfa-8486-4f6c-c249" scope="parent" value="100" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="93ed-d7c9-ef1c-ac1a" type="max"/>
-              </constraints>
-              <entryLinks>
-                <entryLink id="07cd-34b7-2701-bc9a" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="a294-4c2f-402f-fb78" type="selectionEntryGroup"/>
-                <entryLink id="a606-904a-adf1-e3e9" name="Magic Armour" hidden="false" collective="false" import="true" targetId="529d-b024-a6f0-fa3c" type="selectionEntryGroup"/>
-                <entryLink id="8cfa-00be-0d4f-0943" name="Talismans" hidden="false" collective="false" import="true" targetId="8d27-b094-8eb7-d32b" type="selectionEntryGroup"/>
-                <entryLink id="a4ec-ece0-07a7-7460" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="8b31-cab4-4143-b140" type="selectionEntryGroup"/>
-              </entryLinks>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <costs>
-            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
-            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-          </costs>
-        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="2567-ed15-4a9d-f6d8" name="CC Weapons" hidden="false" collective="false" import="true">
+        <selectionEntryGroup name="Weapons and Armour" id="102e-8d1b-1255-7696" hidden="false">
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="846c-8694-0148-bfd0" type="max"/>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="5e1f-7e0d-ceee-9b01" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="bbbc-234c-dad3-6f55" includeChildSelections="false"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="748d-44d3-19ca-db7d" name="Additional Hand Weapon" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry type="upgrade" import="true" name="Blade of Ensorcelled Iron" hidden="false" id="8dc5-c6bd-9878-a2bf">
               <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3aef-ffcf-971d-b03b" type="max"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8909-1823-cf6b-d249" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ecbf-c76e-e98a-2864" includeChildSelections="false"/>
               </constraints>
-              <infoLinks>
-                <infoLink id="cf18-b719-db62-ee8d" name="Additional Hand weapon" hidden="false" targetId="72aa-da68-2dae-4ab6" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="6"/>
-                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-              </costs>
+              <rules>
+                <rule name="Blade of Ensorcelled Iron" id="fe41-65a0-011e-a79f" hidden="false" page="4" publicationId="df25-56db-f021-517a">
+                  <description>Gives +1 to hit in close combat.</description>
+                </rule>
+              </rules>
             </selectionEntry>
-            <selectionEntry id="313a-ad38-4cf8-bdb3" name="Halberd" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry type="upgrade" import="true" name="Armour of Meteoric Iron" hidden="false" id="d545-2f21-a9da-1e8f">
               <constraints>
-                <constraint field="selections" scope="parent" value="-1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c4cc-646e-7d59-2dde" type="max"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c8f8-601a-7b0f-8145" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="251e-1a8b-7d45-6db0" includeChildSelections="false"/>
               </constraints>
-              <infoLinks>
-                <infoLink id="1520-31d5-3569-3033" name="Halberd" hidden="false" targetId="3596-7d17-9ca2-fb92" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="6"/>
-                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="58f5-b567-696a-0ef5" name="Great Weapon" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1578-dca5-3b66-52ad" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="8c9d-256e-4a37-c265" name="Great Weapon" hidden="false" targetId="97d4-ed3b-5f76-5a23" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="6"/>
-                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="0436-ec1d-a68c-8f36" name="Lance" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="-1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c17-9ee1-0eff-00c7" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="0575-d02d-cb2e-3fe1" name="Lance" hidden="false" targetId="a15a-0123-6693-7a50" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="6"/>
-                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-              </costs>
+              <rules>
+                <rule name="Armour of Meteoric Iron" id="8969-0b8d-594e-f087" hidden="false" page="4" publicationId="df25-56db-f021-517a">
+                  <description>This gives Kouran a 1+ save which cannot be improved by any means.</description>
+                </rule>
+              </rules>
             </selectionEntry>
           </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="cfce-55a4-6dc5-7a45" name="Mounts" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a96a-cece-5a78-6e96" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="0f5b-972a-4028-e743" name="Cold One" hidden="false" collective="false" import="true" targetId="6315-38ea-2a11-da65" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="ecfa-8486-4f6c-c249" value="39"/>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7923-bd4a-9d2a-d028" type="max"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="5371-8948-f307-6b82" name="Dark Steed" hidden="false" collective="false" import="true" targetId="03e9-b763-6e56-2836" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="ecfa-8486-4f6c-c249" value="18"/>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bddd-d0db-0f02-89f3" type="max"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="400e-1223-0027-d98c" name="Dark Pegasus" publicationId="20b9-0ee7-8f6f-8d28" page="14" hidden="false" collective="false" import="true" targetId="68f3-4984-8c3c-e164" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9277-4102-adac-8244" type="max"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="d4cd-c526-7009-fe85" name="Manticore" hidden="false" collective="false" import="true" targetId="1ac4-decf-43eb-a6bc" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="71f1-d194-a603-4c8d" type="max"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="20bf-6697-086d-06b5" name="Black Dragon" hidden="false" collective="false" import="true" targetId="269a-cdbc-e46f-3940" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4188-3dbf-c057-b6da" type="max"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="fc5e-48ad-50d5-bb59" name="Cold One Chariot" hidden="false" collective="false" import="true" targetId="d003-57cb-9a43-beb0" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7954-af2e-3b48-bb7f" type="max"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="96c7-429c-80b0-f0bc" name="Armour" hidden="false" collective="false" import="true">
-          <selectionEntries>
-            <selectionEntry id="8b61-a74c-95c1-97db" name="Sea Dragon Cloak" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b08f-ac72-8d8f-e4ef" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="6631-6436-6da2-7ae7" name="Sea Dragon Cloak" hidden="false" targetId="ac64-371e-2bbf-45bb" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="9"/>
-                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="c5f6-4037-ceec-7033" name="Shield" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f296-c9e0-20b4-a36a" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="c147-be8e-2389-9153" name="Shield" hidden="false" targetId="3d79-7984-991a-8b67" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="3"/>
-                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="cdc6-8cb0-81a5-2590" name="Body armour" hidden="false" collective="false" import="true">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b734-5185-c53a-dc6c" type="max"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="a10f-4a95-f956-8cee" name="Light Amour" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="75dc-5312-30a1-7031" type="max"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="387d-9062-f36a-8f97" name="Light Armour" hidden="false" targetId="752a-95b9-343a-8f75" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="3"/>
-                    <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-                    <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="c7be-c76f-7338-7143" name="Heavy Armour" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fd55-8819-7a65-649b" type="max"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="dc40-ce86-e969-3568" name="Heavy Armour" hidden="false" targetId="3dd5-f228-98a7-453a" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="6"/>
-                    <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-                    <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="5e80-de64-9075-0543" name="General" hidden="false" collective="false" import="true" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="125"/>
+        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="255"/>
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <infoGroups>
+        <infoGroup name="Special rules" id="d281-37a8-d15a-39a1" hidden="false">
+          <rules>
+            <rule name="Captain of The Black Guard" id="90db-e522-18cf-d8a2" hidden="false" page="4" publicationId="df25-56db-f021-517a">
+              <description>Kouran must be deployed with a unit of Black Guard and may not voluntarily leave that unit. However, if Kouran is in your army, Black Guard are a Special choice instead of Rare. This means if you have both Malekith and Kouran in an army, you may take Black Guard units as Special choices and they are no longer 0-1. As a member of the Black Guard, Kouran is subject to the rules hatred and stubborn.</description>
+            </rule>
+            <rule name="Unparalleled General" id="34cc-888e-22e7-6fc2" hidden="false" page="4" publicationId="df25-56db-f021-517a">
+              <description>Whenever a scenario requires players to roll a dice to determine something (table edge, who deploys first, who gets the first turn, etc) then the Dark Elf player gains a +1 to these dice rolls, in addition to any other modifiers.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink name="Eternal Hatred" id="10a0-cfb7-c585-3769" hidden="false" targetId="e7ae-2dbe-e80f-623e" type="rule">
+              <comment>WD#287(UK)</comment>
+            </infoLink>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
     </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
