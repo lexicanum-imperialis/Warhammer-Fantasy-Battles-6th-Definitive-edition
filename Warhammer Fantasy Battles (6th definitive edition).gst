@@ -2169,6 +2169,12 @@ Note that a spell cast with a Power Stone can never be cast with Irresistible Fo
     <rule id="3cde-53bb-8bd8-e8af" name="Scaly Skin 6+" hidden="false">
       <description>Armour save 6+</description>
     </rule>
+    <rule name="Multiple Shots" id="e281-de89-db38-9504" hidden="false" publicationId="315e-e3c4-08af-fd51" page="90">
+      <description>Some missile weapons enable their users to shoot several times in each Shooting phase - known as multiple shots. The number of times the weapon can fire is given as part of its description. Eg, a Dark Elf repeater crossbow can fire two shots in each Shooting phase so is noted as having 2x multiple shots. These weapons can either fire once without penalty, or several times with a -1 to hit penalty for each shot.
+
+
+Note that a model&apos;s Attacks characteristic has no effect on the number of shots it can make. The Attacks characteristic refers to close combat attacks only.</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="5556-38ea-b278-4a8f" name="Hand Weapon" hidden="false" typeId="7889-42d9-70a0-3ea9" typeName="Weapon" page="91" publicationId="315e-e3c4-08af-fd51">
