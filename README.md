@@ -99,10 +99,17 @@ The main additions are:
 - [x] Tichi Huichi's Raiders
 - [x] Vespero's Vendetta
 - [x] Voland's Venators
+- [x] Ruglud's Armoured Orc
+- [x] Mengil's Manflayers
+- [x] The Cursed Company
+
 
 ### Dark Elves
-Patched to WD#287(UK)
-Added Magic objects from Albion (WD#263(UK))
+- [x] Malekith, the Witch King
+- [x] Morathi, the Hag Sorceress
+- [x] Malus Darkblade
+- [x] Patched to WD#287(UK)
+- [x] Magic objects from Albion Campaign (WD#263(UK))
 
 ## Alternative lists included
 - [x] Clan Eshin (SKV-AB)
