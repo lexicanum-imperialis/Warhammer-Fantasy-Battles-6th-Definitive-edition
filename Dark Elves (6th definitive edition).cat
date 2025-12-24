@@ -3827,7 +3827,18 @@ In addition, a monster that is beaten in hand to hand combat by Rakarth is assum
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="5e80-de64-9075-0543" name="General" hidden="false" collective="false" import="true" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry"/>
+        <entryLink id="5e80-de64-9075-0543" name="General" hidden="false" collective="false" import="true" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bfcd-64d7-4152-6bb3" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="bfcd-64d7-4152-6bb3">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="d094-32ff-3aca-1dcf" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="255"/>
@@ -3851,6 +3862,21 @@ In addition, a monster that is beaten in hand to hand combat by Rakarth is assum
           </infoLinks>
         </infoGroup>
       </infoGroups>
+      <modifiers>
+        <modifier type="set" value="1" field="8533-d7b3-8bd3-f341">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="8923-5946-7b10-8957" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="8b76-92c4-23f9-54b1" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="force" shared="true" id="8533-d7b3-8bd3-f341" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
