@@ -2716,10 +2716,6 @@
           </characteristics>
         </profile>
       </profiles>
-      <infoLinks>
-        <infoLink id="1ef7-2f81-7552-85b3" name="Hate High Elves" hidden="false" targetId="cc26-8206-5d40-1626" type="rule"/>
-        <infoLink id="3bb0-6da5-f8ed-dc68" name="Sect Enmity" hidden="false" targetId="dcd7-72d5-27bb-be52" type="rule"/>
-      </infoLinks>
       <categoryLinks>
         <categoryLink id="28b0-ab8d-d0c0-f343" name="Lord" hidden="false" targetId="d024-d25b-a9b4-73b6" primary="false"/>
         <categoryLink id="6213-cf6b-2b8b-36eb" name="Characters" hidden="false" targetId="7a1c-d611-c2dc-def1" primary="false"/>
@@ -2860,14 +2856,22 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="3"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="2"/>
       </costs>
-      <rules>
-        <rule name="Beloved of Khaine" id="6285-0c8c-c959-dc76" hidden="false" page="53" publicationId="20b9-0ee7-8f6f-8d28">
-          <description>Any Witch Elves within 12&quot; of Morathi may use her Leadership value, as if she was their army General. If Morathi is in your army Witch Elves may not use the army General&apos;s Leadership.</description>
-        </rule>
-        <rule name="Enchanting Beauty" id="89cd-2ba6-6492-bab3" hidden="false" page="53" publicationId="20b9-0ee7-8f6f-8d28">
-          <description>Any enemy model in base contact with Morathi at the start of round of combat must pass a Leadership test or have their WS reduced to 1 for the duration of that round.</description>
-        </rule>
-      </rules>
+      <infoGroups>
+        <infoGroup name="Special rules" id="4729-af0b-429d-8392" hidden="false">
+          <infoLinks>
+            <infoLink name="Sect Enmity" id="3bb0-6da5-f8ed-dc68" hidden="false" targetId="dcd7-72d5-27bb-be52" type="rule"/>
+            <infoLink name="Hate High Elves" id="1ef7-2f81-7552-85b3" hidden="false" targetId="cc26-8206-5d40-1626" type="rule"/>
+          </infoLinks>
+          <rules>
+            <rule name="Enchanting Beauty" id="89cd-2ba6-6492-bab3" hidden="false" page="53" publicationId="20b9-0ee7-8f6f-8d28">
+              <description>Any enemy model in base contact with Morathi at the start of round of combat must pass a Leadership test or have their WS reduced to 1 for the duration of that round.</description>
+            </rule>
+            <rule name="Beloved of Khaine" id="6285-0c8c-c959-dc76" hidden="false" page="53" publicationId="20b9-0ee7-8f6f-8d28">
+              <description>Any Witch Elves within 12&quot; of Morathi may use her Leadership value, as if she was their army General. If Morathi is in your army Witch Elves may not use the army General&apos;s Leadership.</description>
+            </rule>
+          </rules>
+        </infoGroup>
+      </infoGroups>
     </selectionEntry>
     <selectionEntry id="54d7-e066-4e64-0fcd" name="Malus Darkblade" publicationId="20b9-0ee7-8f6f-8d28" hidden="false" collective="false" import="true" type="unit" page="54-55">
       <profiles>
@@ -3027,6 +3031,16 @@
           </infoLinks>
         </infoGroup>
       </infoGroups>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="roster" shared="true" id="34f0-3e63-e741-ca56" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="1" field="34f0-3e63-e741-ca56">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="8923-5946-7b10-8957" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="fcf8-0002-dd22-b871" name="Shadowblade" hidden="false" collective="false" import="true" type="unit">
       <profiles>
@@ -3047,19 +3061,6 @@
           </characteristics>
         </profile>
       </profiles>
-      <infoLinks>
-        <infoLink id="53a4-441d-2ff0-3f84" name="Scouts" hidden="false" targetId="889c-dfc3-95a5-2d30" type="rule"/>
-        <infoLink name="Hate High Elves" id="51f8-a122-d08f-6159" hidden="false" type="rule" targetId="cc26-8206-5d40-1626"/>
-        <infoLink name="Hidden (Dark Elves)" id="8382-77a5-fba4-14c1" hidden="false" type="rule" targetId="5a5b-32fb-afc1-c780" publicationId="5ca0-bacc-e801-f933" page="7">
-          <comment>WD#287(UK)</comment>
-        </infoLink>
-        <infoLink name="Leadership (Assassins)" id="f8ba-6994-c951-3f38" hidden="false" type="rule" targetId="cdef-2fc9-26e0-467f"/>
-        <infoLink name="Dance of Doom" id="6333-bc91-192a-1ee5" hidden="false" type="rule" targetId="e4c9-6c81-fc41-3395"/>
-        <infoLink name="Killing Blow" id="5c85-aaef-52cd-a671" hidden="false" type="rule" targetId="e08e-1c7b-a667-f05b"/>
-        <infoLink name="Hand of Khaine (Artefact and Skill)" id="d2f9-fd50-5e79-c6ac" hidden="false" type="rule" targetId="5b13-bf78-192e-9046"/>
-        <infoLink name="Cry of War" id="893e-04bd-0421-afa5" hidden="false" type="rule" targetId="c35e-1b48-a19c-8d80"/>
-        <infoLink name="Poisoned Attacks" id="12f0-a118-176b-d7a9" hidden="false" type="rule" targetId="2738-27d5-f4af-4722"/>
-      </infoLinks>
       <categoryLinks>
         <categoryLink id="ec67-757f-9457-06f3" name="Characters" hidden="false" targetId="7a1c-d611-c2dc-def1" primary="false"/>
         <categoryLink name="Special Characters" hidden="false" id="3aa4-6b0e-976e-fa2a" targetId="0644-bfcd-32c2-21dc" primary="true"/>
@@ -3132,19 +3133,43 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
-      <rules>
-        <rule name="Master of Assassins" id="34b2-22a1-8adc-faee" hidden="false" publicationId="cc59-6466-b62e-cf5b" page="77">
-          <description>Shadowblade is treated as an Assassin in all respects, with the exception of his Hidden rules. Shadowblade may be deployed in one of four ways: as normal; as a Scout (within a unit of Shades if you desire); using the Hidden rues on page 11 of the Dark Elves Armies book; inside the enemy army. If he chooses to deploy in the enemy army, the following rules are used. After your opponent has deployed, secretly write down within which enemy unit Shadowblade has attempted to conceal himself. This must be a roughly man-sized infantry unit, or war machine crew (and includes Goblins, Dwarfs, Halflings and such, but nothing larger than man-sized - even Shadowblade cannot make himself look like an Ogre...).
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="roster" shared="true" id="dd50-054d-f87b-089b" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="1" field="dd50-054d-f87b-089b">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="8923-5946-7b10-8957" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <infoGroups>
+        <infoGroup name="Special rules" id="4b38-14ea-31c4-5663" hidden="false">
+          <infoLinks>
+            <infoLink name="Scouts" id="53a4-441d-2ff0-3f84" hidden="false" targetId="889c-dfc3-95a5-2d30" type="rule"/>
+            <infoLink name="Poisoned Attacks" id="12f0-a118-176b-d7a9" hidden="false" type="rule" targetId="2738-27d5-f4af-4722"/>
+            <infoLink name="Cry of War" id="893e-04bd-0421-afa5" hidden="false" type="rule" targetId="c35e-1b48-a19c-8d80"/>
+            <infoLink name="Dance of Doom" id="6333-bc91-192a-1ee5" hidden="false" type="rule" targetId="e4c9-6c81-fc41-3395"/>
+            <infoLink name="Hand of Khaine (Artefact and Skill)" id="d2f9-fd50-5e79-c6ac" hidden="false" type="rule" targetId="5b13-bf78-192e-9046"/>
+            <infoLink name="Hate High Elves" id="51f8-a122-d08f-6159" hidden="false" type="rule" targetId="cc26-8206-5d40-1626"/>
+            <infoLink name="Hidden (Dark Elves)" id="8382-77a5-fba4-14c1" hidden="false" type="rule" targetId="5a5b-32fb-afc1-c780" publicationId="5ca0-bacc-e801-f933" page="7">
+              <comment>WD#287(UK)</comment>
+            </infoLink>
+            <infoLink name="Killing Blow" id="5c85-aaef-52cd-a671" hidden="false" type="rule" targetId="e08e-1c7b-a667-f05b"/>
+            <infoLink name="Leadership (Assassins)" id="f8ba-6994-c951-3f38" hidden="false" type="rule" targetId="cdef-2fc9-26e0-467f"/>
+          </infoLinks>
+          <rules>
+            <rule name="Master of Assassins" id="34b2-22a1-8adc-faee" hidden="false" publicationId="cc59-6466-b62e-cf5b" page="77">
+              <description>Shadowblade is treated as an Assassin in all respects, with the exception of his Hidden rules. Shadowblade may be deployed in one of four ways: as normal; as a Scout (within a unit of Shades if you desire); using the Hidden rues on page 11 of the Dark Elves Armies book; inside the enemy army. If he chooses to deploy in the enemy army, the following rules are used. After your opponent has deployed, secretly write down within which enemy unit Shadowblade has attempted to conceal himself. This must be a roughly man-sized infantry unit, or war machine crew (and includes Goblins, Dwarfs, Halflings and such, but nothing larger than man-sized - even Shadowblade cannot make himself look like an Ogre...).
 
 
 At the start of each of the opposing army&apos;s turns, roll a D6. On a roll of a 2+, he is still undiscovered. On a roll of a 1, the enemy have seen through his disguise and he is placed on the table. Alternatively, at the start of any Dark Elf turn, Shadowblade can be revealed voluntarily. Regardless of how he is revealed, use the following method to place him on the table. Reveal to your opponent within which unit Shadowblade was hiding. Shadowblade replaces one of the models in the unit (he was killed before the battle), remove one ordinary unit member (not a Command model or character). Place Shadowblade anywhere in contact with the unit. If he is revealed voluntarily, Shadowblade counts as charging that turn; if he was discovered then the enemy count as charging. Shadowblade may drink his Potion of Strength at the start of a turn in which he was voluntarily revealed.</description>
-        </rule>
-      </rules>
+            </rule>
+          </rules>
+        </infoGroup>
+      </infoGroups>
     </selectionEntry>
     <selectionEntry id="7c22-22d7-f1b4-76ca" name="Rakarth, the Beastlord" hidden="false" collective="false" import="true" type="unit">
-      <infoLinks>
-        <infoLink id="30a4-0566-2ddc-c977" name="Hate High Elves" hidden="false" targetId="cc26-8206-5d40-1626" type="rule"/>
-      </infoLinks>
       <categoryLinks>
         <categoryLink id="d1f3-b16f-d10a-1628" name="Heroes" hidden="false" targetId="c16b-f319-2c62-2c12" primary="false"/>
         <categoryLink id="b192-b75c-7961-ef40" name="Characters" hidden="false" targetId="7a1c-d611-c2dc-def1" primary="false"/>
@@ -3243,14 +3268,31 @@ At the start of each of the opposing army&apos;s turns, roll a D6. On a roll of 
           </characteristics>
         </profile>
       </profiles>
-      <rules>
-        <rule name="Beastlord" id="624b-0c94-3723-5e64" hidden="false" page="116" publicationId="91c2-b862-8010-87bb">
-          <description>Any friendly monster taking a Monster Reaction test within 12&quot; of Rakarth will always pass the required Leadership test. If the Beastlord is slain whilst riding his Black Dragon Bracchus, the Dragon does not need to take a Monster Reaction test and will fight on as normal.
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="roster" shared="true" id="0999-4584-e811-ed72" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="1" field="0999-4584-e811-ed72">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="8923-5946-7b10-8957" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <infoGroups>
+        <infoGroup name="Special rules" id="b4b3-3372-b51b-f62e" hidden="false">
+          <infoLinks>
+            <infoLink name="Hate High Elves" id="30a4-0566-2ddc-c977" hidden="false" targetId="cc26-8206-5d40-1626" type="rule"/>
+          </infoLinks>
+          <rules>
+            <rule name="Beastlord" id="624b-0c94-3723-5e64" hidden="false" page="116" publicationId="91c2-b862-8010-87bb">
+              <description>Any friendly monster taking a Monster Reaction test within 12&quot; of Rakarth will always pass the required Leadership test. If the Beastlord is slain whilst riding his Black Dragon Bracchus, the Dragon does not need to take a Monster Reaction test and will fight on as normal.
 
 
 In addition, a monster that is beaten in hand to hand combat by Rakarth is assumed to be dominated by the Beastlord and will come under his control. This only applies to ridden monsters, and only once the rider is killed. The monster does not flee, but rather is moved back from Rakarth an inch, and is considered to be a part of the Dark Elf player&apos;s army immediately. The monster will remain under Rakarth&apos;s control for the remainder of the game. If Rakarth is killed then any monsters under his control revert to the control of their original owner. If Rakarth survives the battle, then any monsters under his control are assumed to be destroyed in regards for working out Victory Points. Note that an enemy does not get any Victory Points for killing a monster enslaved in such a way by Rakarth.</description>
-        </rule>
-      </rules>
+            </rule>
+          </rules>
+        </infoGroup>
+      </infoGroups>
     </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
