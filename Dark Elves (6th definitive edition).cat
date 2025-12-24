@@ -25,6 +25,13 @@
             <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
             <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="City Commander" field="name">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="77cd-dafb-16af-93c0" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <infoLinks>
@@ -171,16 +178,37 @@
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="673b-b16a-3450-b5ea" type="max"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="77cd-dafb-16af-93c0" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </entryLink>
             <entryLink id="3564-ed13-bf2c-f3eb" name="Manticore" hidden="false" collective="false" import="true" targetId="1ac4-decf-43eb-a6bc" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f9ca-e4bd-c9e5-0f04" type="max"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="77cd-dafb-16af-93c0" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </entryLink>
             <entryLink id="9828-6cc8-2232-af06" name="Black Dragon" hidden="false" collective="false" import="true" targetId="269a-cdbc-e46f-3940" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="01ea-0ab8-c729-d859" type="max"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="77cd-dafb-16af-93c0" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </entryLink>
             <entryLink id="fbe7-20db-09e6-e02a" name="Cold One Chariot" hidden="false" collective="false" import="true" targetId="d003-57cb-9a43-beb0" type="selectionEntry">
               <constraints>
@@ -263,6 +291,13 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="City Commander" field="name">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="77cd-dafb-16af-93c0" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="c733-61ea-1425-1253" name="Cold One Chariots" hidden="false" collective="false" import="true" type="unit">
       <constraints>
@@ -344,7 +379,7 @@
             <constraint field="selections" scope="parent" value="-1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="25a9-f7e3-23a9-0edd" type="max"/>
           </constraints>
           <profiles>
-            <profile id="3cf5-3ae8-90fd-5fe8" name="Dark Elf Mkujh" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
+            <profile id="3cf5-3ae8-90fd-5fe8" name="Dark Elf" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
               <modifiers>
                 <modifier type="set" field="name" value="Dark Elf Warriors "/>
               </modifiers>
@@ -360,7 +395,7 @@
                 <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">8</characteristic>
                 <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
                 <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
-                <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
+                <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -601,6 +636,13 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="3"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="2"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="77cd-dafb-16af-93c0" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="bd43-41c0-298e-22be" name="Dark Elf Noble" hidden="false" collective="false" import="true" type="unit">
       <profiles>
@@ -945,6 +987,16 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="1"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="1"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="1" field="62f9-5cd4-ed5f-f0e1">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="77cd-dafb-16af-93c0" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="62f9-5cd4-ed5f-f0e1" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry id="c64e-5686-3531-2032" name="Beastmaster" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -1072,6 +1124,13 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="77cd-dafb-16af-93c0" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="f3c1-d9c4-9a7b-0fe9" name="Assassin" hidden="false" collective="false" import="true" type="unit">
       <profiles>
@@ -1264,6 +1323,13 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="77cd-dafb-16af-93c0" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="f615-4919-4e3b-a2e8" name="Corsairs" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -1392,6 +1458,13 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="77cd-dafb-16af-93c0" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="9975-9145-65c0-7966" name="Dark Riders" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -1543,6 +1616,19 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>List: City Garrison (AN-02, p.32)</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="77cd-dafb-16af-93c0" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <modifiers>
+            <modifier type="add" value="43cc-fc3f-35a7-8d03" field="category"/>
+            <modifier type="set-primary" value="43cc-fc3f-35a7-8d03" field="category"/>
+            <modifier type="remove" value="64bf-efb4-9978-26df" field="category"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry id="36cd-52eb-d902-7aa3" name="Shades" hidden="false" collective="false" import="true" type="unit">
       <profiles>
@@ -1658,6 +1744,19 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>List: City Garrison (AN-02, p.32)</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="77cd-dafb-16af-93c0" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <modifiers>
+            <modifier type="add" value="e94b-6a54-8779-cd60" field="category"/>
+            <modifier type="set-primary" value="e94b-6a54-8779-cd60" field="category"/>
+            <modifier type="remove" value="43cc-fc3f-35a7-8d03" field="category"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry id="59da-df39-a41e-7d08" name="Witch Elves Of Kaine" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -1804,6 +1903,13 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="77cd-dafb-16af-93c0" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="67b7-8c9d-1615-e19c" name="Cold One Knights" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -1936,6 +2042,13 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="77cd-dafb-16af-93c0" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="f886-cb22-921b-518e" name="Executioners" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -2034,6 +2147,11 @@
             <condition type="atLeast" value="1" field="selections" scope="force" childId="87ae-d551-51a2-54e7" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="77cd-dafb-16af-93c0" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
     </selectionEntry>
     <selectionEntry id="900a-004d-c3cf-0714" name="Harpies" hidden="false" collective="false" import="true" type="unit">
@@ -2094,6 +2212,19 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>List: City Garrison (AN-02, p.32)</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="77cd-dafb-16af-93c0" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <modifiers>
+            <modifier type="add" value="e94b-6a54-8779-cd60" field="category"/>
+            <modifier type="set-primary" value="e94b-6a54-8779-cd60" field="category"/>
+            <modifier type="remove" value="43cc-fc3f-35a7-8d03" field="category"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry id="424f-9a77-2a02-4cec" name="War Hydra" hidden="false" collective="false" import="true" type="unit">
       <constraints>
@@ -2352,6 +2483,13 @@ You may choose the type of Veteran Hydra that joins your forces for this battl
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="77cd-dafb-16af-93c0" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="e83d-6513-8fad-ebff" name="Cauldron Of Blood" hidden="false" collective="false" import="true" type="unit">
       <constraints>
@@ -2453,6 +2591,13 @@ You may choose the type of Veteran Hydra that joins your forces for this battl
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="77cd-dafb-16af-93c0" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="7f4d-6e05-3f5c-d50a" name="Black Guard" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -2580,6 +2725,11 @@ You may choose the type of Veteran Hydra that joins your forces for this battl
         <modifier type="set" value="1" field="a973-18f0-c995-771b">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="force" childId="c67d-adfa-d54d-cb33" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="77cd-dafb-16af-93c0" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2710,6 +2860,19 @@ You may choose the type of Veteran Hydra that joins your forces for this battl
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>List: City Garrison (AN-02, p.32)</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="77cd-dafb-16af-93c0" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <modifiers>
+            <modifier type="add" value="43cc-fc3f-35a7-8d03" field="category"/>
+            <modifier type="set-primary" value="43cc-fc3f-35a7-8d03" field="category"/>
+            <modifier type="remove" value="e94b-6a54-8779-cd60" field="category"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry id="d094-32ff-3aca-1dcf" name="Malekith, Witch King of Naggaroth" publicationId="20b9-0ee7-8f6f-8d28" hidden="false" collective="false" import="true" type="unit" page="50-51">
       <profiles>
@@ -3893,6 +4056,246 @@ In addition, a monster that is beaten in hand to hand combat by Rakarth is assum
       <constraints>
         <constraint type="max" value="0" field="selections" scope="force" shared="true" id="8533-d7b3-8bd3-f341" includeChildSelections="false"/>
       </constraints>
+    </selectionEntry>
+    <selectionEntry id="0706-24b6-29e9-34d5" name="City Guard" hidden="true" collective="false" import="true" type="unit">
+      <infoLinks>
+        <infoLink id="c0c6-9f35-f9bd-c7d3" name="Hate High Elves" hidden="false" targetId="cc26-8206-5d40-1626" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="18cb-c5ed-3892-718c" name="Core" hidden="false" targetId="64bf-efb4-9978-26df" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="a463-56c8-9c02-df76" name="City Guard" hidden="false" collective="false" import="true" type="model" publicationId="5ca0-bacc-e801-f933" page="7">
+          <constraints>
+            <constraint field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7738-5b04-0934-ba62" type="min"/>
+            <constraint field="selections" scope="parent" value="-1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="443c-9cc5-2bc5-4305" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="57ed-8186-da9d-f9a0" name="City Guard" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
+              <characteristics>
+                <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">5</characteristic>
+                <characteristic name="WS" typeId="f95b-da01-0578-3bdc">4</characteristic>
+                <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">4</characteristic>
+                <characteristic name="S" typeId="b690-4bc0-bb73-267b">3</characteristic>
+                <characteristic name="T" typeId="8712-f56f-5b22-a720">3</characteristic>
+                <characteristic name="W" typeId="253a-9b00-4fde-8ac2">1</characteristic>
+                <characteristic name="I" typeId="dfff-363e-f72a-5a59">5</characteristic>
+                <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
+                <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">8</characteristic>
+                <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+                <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+                <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="7"/>
+            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+          </costs>
+          <comment>WD#287(UK) affects here??</comment>
+        </selectionEntry>
+        <selectionEntry id="5d63-eca8-32c8-2b95" name="Shield" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="increment" field="ecfa-8486-4f6c-c249" value="1">
+              <repeats>
+                <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="70ce-e012-5eb4-7506" type="max"/>
+            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f65-a959-18db-bbf4" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="40bf-6e01-7be5-563c" name="Shield" hidden="false" targetId="3d79-7984-991a-8b67" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="4b61-e2e9-f582-d69d" name="Weapons" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1261-88b4-5b18-8ada" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="367e-23db-7009-371c" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="40b7-307a-ce11-e550" name="Spears" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="a7ec-0708-d4f9-1eaa" value="0"/>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4272-8b1c-41a8-0120" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a7ec-0708-d4f9-1eaa" type="min"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="ee5a-44de-e166-0477" name="Repeater Crossbow" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="increment" field="ecfa-8486-4f6c-c249" value="4">
+                  <repeats>
+                    <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="aef9-011b-3920-ef86" type="max"/>
+                <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="62d4-1609-90ed-d81e" type="min"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="2a2f-0045-4753-1fac" name="Command" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="abf7-249f-73fd-235b" name="Musician" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="43c9-ec9f-bca6-1e8b" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="5"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="fc5f-852f-a728-3a74" name="Standard Bearer" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c30b-e05b-4bd6-785c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="10"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+              </costs>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Magic Standards" id="1fd5-f298-d0de-2d6d" hidden="false" collective="false" import="true">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c02b-0f31-2063-468d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="50" field="ecfa-8486-4f6c-c249" scope="parent" shared="true" id="cd24-0530-74e9-e5e7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="1" field="selections" scope="force" shared="true" id="81ce-15d5-0a46-3d5f" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Banner of Nagarythe" hidden="false" id="ea69-6591-9b6c-e18d" collective="false">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a17b-0d3d-5e09-bb9e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="ade8-bfa1-edc3-9b29" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="150"/>
+                        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+                      </costs>
+                      <infoLinks>
+                        <infoLink name="Banner of Nagarythe" id="c26b-7571-b33c-e950" hidden="false" type="rule" targetId="9965-2f08-faee-e894"/>
+                      </infoLinks>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Hydra Banner" hidden="false" id="597b-159d-d8fa-5532" collective="false">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d5cb-aab4-b8e5-ab04" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="c321-beab-bcaf-cd10" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="80"/>
+                        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Dread Banner" hidden="false" id="94aa-68d5-6546-c397" collective="false">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="725b-059f-9308-689e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="1040-827d-8ef1-4595" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="75"/>
+                        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Banner of Murder" hidden="false" id="ac7f-4a17-2a4f-574d" collective="false">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="82a4-1c3c-0160-73b3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="a92a-8c45-0ce7-c474" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="45"/>
+                        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Standard of Slaughter" hidden="false" id="c4fc-f37f-5200-079f" collective="false">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="82d1-7495-40f5-b008" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="d5e8-40d0-3ea0-4505" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="35"/>
+                        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <entryLinks>
+                    <entryLink import="true" name="War Banner" hidden="false" id="017a-f413-cdd3-677e" collective="false" targetId="f327-567f-ef99-0403" type="selectionEntry"/>
+                    <entryLink import="true" name="Soul Shadows Standard" hidden="false" id="f98a-4e45-e280-5d1f" collective="false" targetId="b2e8-fefa-e753-689e" type="selectionEntry"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+            <selectionEntry id="45cb-82c2-40e0-b07f" name="Lordling" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2dba-2058-7e91-3fa3" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="3744-3aac-7cec-12f3" name="Lordling" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
+                  <characteristics>
+                    <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">5</characteristic>
+                    <characteristic name="WS" typeId="f95b-da01-0578-3bdc">4</characteristic>
+                    <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">4</characteristic>
+                    <characteristic name="S" typeId="b690-4bc0-bb73-267b">3</characteristic>
+                    <characteristic name="T" typeId="8712-f56f-5b22-a720">3</characteristic>
+                    <characteristic name="W" typeId="253a-9b00-4fde-8ac2">1</characteristic>
+                    <characteristic name="I" typeId="dfff-363e-f72a-5a59">5</characteristic>
+                    <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">2</characteristic>
+                    <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">8</characteristic>
+                    <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+                    <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+                    <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="10"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="77cd-dafb-16af-93c0" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
@@ -5367,6 +5770,20 @@ Affected models suffer a wound with no armour saves if the Dark Elf player can r
         <categoryLink name="Special" hidden="false" id="9417-d863-86e3-d77e" targetId="43cc-fc3f-35a7-8d03" primary="false"/>
         <categoryLink name="Rare" hidden="false" id="3897-6984-047b-946d" targetId="e94b-6a54-8779-cd60" primary="false"/>
         <categoryLink name="Regiment of Renown" hidden="false" id="8c5a-7620-1c34-e97d" targetId="ee09-9a50-ad78-9c32" primary="false"/>
+      </categoryLinks>
+    </forceEntry>
+    <forceEntry name="City Garrison (AN-02)" id="77cd-dafb-16af-93c0" hidden="false" publicationId="91c2-b862-8010-87bb" page="32">
+      <categoryLinks>
+        <categoryLink name="Experimental rules" hidden="false" id="088e-98c9-c20c-4cab" targetId="4fed-b911-e6e0-927b" primary="false"/>
+        <categoryLink name="Special list rules" hidden="false" id="a4a7-c4a2-4ed2-67e3" targetId="32f1-197f-d719-a393" primary="false"/>
+        <categoryLink name="Special Characters" hidden="false" id="3b73-7dc6-de64-3cd0" targetId="0644-bfcd-32c2-21dc" primary="false"/>
+        <categoryLink name="Characters" hidden="false" id="d32d-2edd-a923-5557" targetId="7a1c-d611-c2dc-def1" primary="false"/>
+        <categoryLink name="Lord" hidden="false" id="cace-4e52-2f25-5c73" targetId="d024-d25b-a9b4-73b6" primary="false"/>
+        <categoryLink name="Heroes" hidden="false" id="acae-9a0c-6dc3-5a02" targetId="c16b-f319-2c62-2c12" primary="false"/>
+        <categoryLink name="Core" hidden="false" id="56a9-3778-4653-8648" targetId="64bf-efb4-9978-26df" primary="false"/>
+        <categoryLink name="Special" hidden="false" id="6c34-18c2-220e-6c40" targetId="43cc-fc3f-35a7-8d03" primary="false"/>
+        <categoryLink name="Rare" hidden="false" id="987d-d64c-04c6-8e77" targetId="e94b-6a54-8779-cd60" primary="false"/>
+        <categoryLink name="Regiment of Renown" hidden="false" id="7b3a-d216-1843-4e8f" targetId="ee09-9a50-ad78-9c32" primary="false"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
