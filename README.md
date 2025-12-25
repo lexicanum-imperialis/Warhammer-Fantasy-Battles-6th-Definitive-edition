@@ -147,3 +147,13 @@ The main additions are:
 |WebGW(UK)|["Warpstone - A Skaven civil war scenario"](http:/uk.games-workshop.com/warhammerworld/warhammer/skaven/SK-articles/warpstone-scenerio/)|????|by Jonathan Green                  |
 |WebGW(US)|["Character - Ariel"](http://us.games-workshop.com/games/warhammer/woodelves/gaming/ariel/default.htm)|2006-07|                                 |
 |WebGW(US)|["Character - Skaw"](http:/us.games-workshop.com/games/warhammer/woodelves/gaming/skaw/default.htm)|2006-07|                                 |
+
+
+
+
+## Acknowledge and gratitudes
+I want to thank first to the team from [Las _Tablillas Sagradas_](https://lastablillassagradas.blogspot.com/), who made their fabulous _Warhammer Compendium_ that has inspired this whole project. Special mention to Antonio, who possess the knowledge of Tzeentch and the wisdom of Teclis.
+
+In second but not least, [Ergofarg](https://github.com/Ergofarg/Warhammer-Fantasy-6th-edition/) and his collaborators, whom I owe a lot of hours saved from their preexisten effort. I have learned a lot studying their files.
+
+Also many thanks to all who offer eyes or ears to discuss and improve the project.
