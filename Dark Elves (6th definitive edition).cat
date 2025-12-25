@@ -581,9 +581,14 @@
       </costs>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="4b5b-aebb-1526-91bb" shared="true" includeChildSelections="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="ff5e-f712-03ce-bb85" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="4b5b-aebb-1526-91bb" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
     </selectionEntry>
@@ -1598,9 +1603,14 @@
       </costs>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="77cd-dafb-16af-93c0" shared="true" includeChildSelections="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="77cd-dafb-16af-93c0" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="ff5e-f712-03ce-bb85" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
     </selectionEntry>
@@ -2404,14 +2414,9 @@
             <modifier type="set-primary" value="e94b-6a54-8779-cd60" field="category"/>
             <modifier type="remove" value="43cc-fc3f-35a7-8d03" field="category"/>
           </modifiers>
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="ff5e-f712-03ce-bb85" shared="true" includeChildSelections="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="77cd-dafb-16af-93c0" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="77cd-dafb-16af-93c0" shared="true" includeChildSelections="true"/>
+          </conditions>
         </modifierGroup>
       </modifierGroups>
     </selectionEntry>
@@ -2679,6 +2684,7 @@ You may choose the type of Veteran Hydra that joins your forces for this battl
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="77cd-dafb-16af-93c0" shared="true" includeChildSelections="true"/>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="4b5b-aebb-1526-91bb" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="ff5e-f712-03ce-bb85" shared="true" includeChildSelections="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -2933,6 +2939,7 @@ You may choose the type of Veteran Hydra that joins your forces for this battl
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="77cd-dafb-16af-93c0" shared="true" includeChildSelections="true"/>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="4b5b-aebb-1526-91bb" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="ff5e-f712-03ce-bb85" shared="true" includeChildSelections="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -3083,6 +3090,13 @@ You may choose the type of Veteran Hydra that joins your forces for this battl
           </conditionGroups>
         </modifierGroup>
       </modifierGroups>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="ff5e-f712-03ce-bb85" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="d094-32ff-3aca-1dcf" name="Malekith, Witch King of Naggaroth" publicationId="20b9-0ee7-8f6f-8d28" hidden="false" collective="false" import="true" type="unit" page="50-51">
       <profiles>
@@ -4959,7 +4973,7 @@ In addition, a monster that is beaten in hand to hand combat by Rakarth is assum
         <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="de73-73be-b44d-80a0" type="max"/>
       </constraints>
       <infoLinks>
-        <infoLink id="a122-95d1-13c3-86d5" name="Draich of Dark Power (Magic Weapon)" hidden="false" targetId="81ec-0a62-57ab-6d0e" type="rule"/>
+        <infoLink id="a122-95d1-13c3-86d5" name="Draich of Dark Power (Magic Weapon)" hidden="false" targetId="81ec-0a62-57ab-6d0e" type="rule" page="86" publicationId="d2ec-1dc7-f0d5-acbb"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="50"/>
@@ -4973,7 +4987,7 @@ In addition, a monster that is beaten in hand to hand combat by Rakarth is assum
         <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="08c7-8fc5-d9dd-d442" type="max"/>
       </constraints>
       <infoLinks>
-        <infoLink id="452a-233b-5c74-4d2e" name="Blade of Spite (Magic Weapon)" hidden="false" targetId="d841-a415-50b4-1525" type="rule"/>
+        <infoLink id="452a-233b-5c74-4d2e" name="Blade of Spite (Magic Weapon)" hidden="false" targetId="d841-a415-50b4-1525" type="rule" publicationId="d2ec-1dc7-f0d5-acbb" page="86"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="25"/>
@@ -6057,6 +6071,19 @@ Affected models suffer a wound with no armour saves if the Dark Elf player can r
         <categoryLink name="Core" hidden="false" id="4c9b-3b18-1c43-f390" targetId="64bf-efb4-9978-26df" primary="false"/>
         <categoryLink name="Special" hidden="false" id="cb5f-e9d2-fdaf-66ee" targetId="43cc-fc3f-35a7-8d03" primary="false"/>
         <categoryLink name="Rare" hidden="false" id="c989-ed4e-8ea7-710c" targetId="e94b-6a54-8779-cd60" primary="false"/>
+      </categoryLinks>
+    </forceEntry>
+    <forceEntry name="[WIP] Cult of Slaanesh (SoC)" id="5013-f9f4-e03b-94d5" hidden="false" publicationId="d2ec-1dc7-f0d5-acbb" page="86">
+      <categoryLinks>
+        <categoryLink name="Experimental rules" hidden="false" id="256a-09c0-09e8-547e" targetId="4fed-b911-e6e0-927b" primary="false"/>
+        <categoryLink name="Special list rules" hidden="false" id="4948-25f5-b405-8a36" targetId="32f1-197f-d719-a393" primary="false"/>
+        <categoryLink name="Special Characters" hidden="false" id="ca8e-c2d0-6452-7f67" targetId="0644-bfcd-32c2-21dc" primary="false"/>
+        <categoryLink name="Characters" hidden="false" id="cbd5-a5d7-f3a4-bbf4" targetId="7a1c-d611-c2dc-def1" primary="false"/>
+        <categoryLink name="Lord" hidden="false" id="1053-66dd-47bc-9780" targetId="d024-d25b-a9b4-73b6" primary="false"/>
+        <categoryLink name="Heroes" hidden="false" id="984e-8fc5-a683-1fe5" targetId="c16b-f319-2c62-2c12" primary="false"/>
+        <categoryLink name="Core" hidden="false" id="b0e2-f6d6-3b34-4566" targetId="64bf-efb4-9978-26df" primary="false"/>
+        <categoryLink name="Special" hidden="false" id="7569-0f45-7f81-3d09" targetId="43cc-fc3f-35a7-8d03" primary="false"/>
+        <categoryLink name="Rare" hidden="false" id="6646-2ca2-87c0-247c" targetId="e94b-6a54-8779-cd60" primary="false"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
