@@ -20,12 +20,12 @@ The main additions are:
 - [x] Tomb kings
 - [x] Bretonnia
 - [x] Chaos Dwarves
+- [x] Dark Elves
 - [ ] Lizardmen
 - [ ] High Elves
 - [ ] Beast of Chaos
 - [ ] Hordes of Chaos (maybe with the Beast of Chaos)
 - [ ] Daemons of Chaos (with the Hordes of Chaos)
-- [ ] Dark Elves
 - [ ] Dwarves (at least the second ArmyBook)
 - [ ] The Empire
 - [ ] Vampire Counts
