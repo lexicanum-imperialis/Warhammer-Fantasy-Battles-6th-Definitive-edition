@@ -396,6 +396,13 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="1" field="ee0f-218e-fce2-c05c">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="77cd-dafb-16af-93c0" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="5c80-089a-f5fa-c01b" name="Dark Elf Warriors" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -437,6 +444,13 @@
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
           <comment>WD#287(UK)</comment>
+          <modifiers>
+            <modifier type="set" value="9" field="ecfa-8486-4f6c-c249">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="77cd-dafb-16af-93c0" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry id="2564-f879-8b1b-e19a" name="Shield" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
@@ -480,6 +494,9 @@
                 <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
                 <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
               </costs>
+              <infoLinks>
+                <infoLink name="Repeater crossbow" id="b7f3-129c-5c25-621d" hidden="false" type="profile" targetId="b916-4f8c-1160-5e41"/>
+              </infoLinks>
             </selectionEntry>
             <selectionEntry id="6e7c-5cc4-8156-ec81" name="Repeater Crossbow" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -498,6 +515,9 @@
                 <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
                 <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
               </costs>
+              <infoLinks>
+                <infoLink name="Repeater crossbow" id="16ea-3abb-195e-9bda" hidden="false" type="profile" targetId="b916-4f8c-1160-5e41"/>
+              </infoLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -1885,9 +1905,14 @@
       </constraints>
       <modifiers>
         <modifier type="set" value="1" field="f9c8-8278-5a3e-7066">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="4b5b-aebb-1526-91bb" shared="true" includeChildSelections="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="4b5b-aebb-1526-91bb" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="77cd-dafb-16af-93c0" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
     </selectionEntry>
@@ -4289,7 +4314,7 @@ In addition, a monster that is beaten in hand to hand combat by Rakarth is assum
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="7"/>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="9"/>
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
@@ -4337,24 +4362,23 @@ In addition, a monster that is beaten in hand to hand combat by Rakarth is assum
                 <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
                 <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
               </costs>
+              <infoLinks>
+                <infoLink name="Spears (Infantry)" id="f5cb-6fe5-8462-7084" hidden="false" type="profile" targetId="222b-1e29-9d24-09d7"/>
+              </infoLinks>
             </selectionEntry>
             <selectionEntry id="ee5a-44de-e166-0477" name="Repeater Crossbow" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="increment" field="ecfa-8486-4f6c-c249" value="4">
-                  <repeats>
-                    <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="aef9-011b-3920-ef86" type="max"/>
                 <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="62d4-1609-90ed-d81e" type="min"/>
               </constraints>
               <costs>
-                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="4"/>
                 <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
                 <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
               </costs>
+              <infoLinks>
+                <infoLink name="Repeater crossbow" id="75de-3ce8-f23f-7eec" hidden="false" type="profile" targetId="b916-4f8c-1160-5e41"/>
+              </infoLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
