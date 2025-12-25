@@ -145,9 +145,9 @@ The main additions are:
 |SoC       |"Warhammer: Storm of Chaos"                       |2004   |by Gav Thorpe                         |
 |RH        |"Warhammer Armies: Ravening Hordes (6th Edition)" |2000   |by Jake Thornton with Alessio Cavatore|
 |OG-AB     |"Warhammer Armies: Orcs & Goblins (6th Edition)"  |2000   |by Rick Priestly and Jake Thornton    |
-|SKV-AB    |"Warhammer Armies: Skaven (6th Edition)"          |2002   |by Alessio Cavatore                   |
+|SKV-AB    |"Warhammer Armies: Skaven (6th Edition)"          |2002   |by Alessio Cavatore                   | 
 |TK-AB     |"Warhammer Armies: Tomb Kings (6th Edition)"      |2003   |by Alessio Cavatore                   |
-|WE-AB     |"Warhammer Armies: Wood Elves (6th Edition)"      |2005   |by Anthony Reynolds and Matthew Ward  |
+|WE-AB     |"Warhammer Armies: Wood Elves (6th Edition)"      |2005   |by Anthony Reynolds and Matthew Ward  | 
 |DE-AB     |"Warhammer Armies: Dark Elves (6th Edition)"      |2001-06|by Gav Thorpe y Space McQuirk and Tuomas Pirinen|
 |LM-AB     |"Warhammer Armies: Lizardmen (6th Edition)"       |2003   |by Anthony Reynolds                   |
 |HC-AB     |"Warhammer Armies: Hordes of Chaos (6th Edition)" |2002   |by Gav Thorpe, Rick Priestly, Anthony Reynolds and Alessio Cavatore|
