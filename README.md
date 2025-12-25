@@ -137,6 +137,7 @@ The main additions are:
 |Short-n   |Title of the source                               |Year   |Author(s)                             |
 |:--------:|:-------------------------------------------------|:-----:|:-------------------------------------|
 |BRB       |"Warhammer Rulebook 6th Edition"                  |2000   |by Rick Priestly and Tuomas Pirinen   |
+|BR-AB     |"Warhammer Armies: Bretonnia (6th Edition)"       |2003   |by Anthony Reynolds                   |
 |AN-02     |"Warhammer Annual"                                |2002   |by Gav Thorpe                         |
 |CR-03     |"Warhammer Chronicles"                            |2003   |by Jake Thornton & Alessio Cavatore   |
 |CR-04     |"Warhammer Chronicles"                            |2004   |by Jake Thornton & Alessio Cavatore   |
@@ -147,16 +148,22 @@ The main additions are:
 |SKV-AB    |"Warhammer Armies: Skaven (6th Edition)"          |2002   |by Alessio Cavatore                   |
 |TK-AB     |"Warhammer Armies: Tomb Kings (6th Edition)"      |2003   |by Alessio Cavatore                   |
 |WE-AB     |"Warhammer Armies: Wood Elves (6th Edition)"      |2005   |by Anthony Reynolds and Matthew Ward  |
+|DE-AB     |"Warhammer Armies: Dark Elves (6th Edition)"      |2001-06|by Gav Thorpe y Space McQuirk and Tuomas Pirinen|
+|LM-AB     |"Warhammer Armies: Lizardmen (6th Edition)"       |2003   |by Anthony Reynolds                   |
+|HC-AB     |"Warhammer Armies: Hordes of Chaos (6th Edition)" |2002   |by Gav Thorpe, Rick Priestly, Anthony Reynolds and Alessio Cavatore|
 |CJ#49     |Citadel Journal #49                               |2002   |by Alessio Cavatore and Andy Chambers |
-|WD#250(US)|White-Dwarf #250 US                             |2000-11|by Gav Thorpe                         |
-|WD#258(US)|White-Dwarf #258 US                             |2001-07|by Gav Thorpe                         |
-|WD#296(UK)|White-Dwarf #296 UK                             |2004-08|by Anthony Reynolds                   |
-|WD#300(UK)|White-Dwarf #300 UK                             |200X-08|by ?? ??                              |
-|WD#311(UK)|White-Dwarf #311 UK                             |2005-11|by by Phil Kelly                      |
-|WD#317(UK)|White-Dwarf #317 UK                             |2006-05|by Gareth Hamilton                    |
-|WebGW(UK)|["Warpstone - A Skaven civil war scenario"](http:/uk.games-workshop.com/warhammerworld/warhammer/skaven/SK-articles/warpstone-scenerio/)|????|by Jonathan Green                  |
-|WebGW(US)|["Character - Ariel"](http://us.games-workshop.com/games/warhammer/woodelves/gaming/ariel/default.htm)|2006-07|                                 |
-|WebGW(US)|["Character - Skaw"](http:/us.games-workshop.com/games/warhammer/woodelves/gaming/skaw/default.htm)|2006-07|                                 |
+|WD#250(US)|White-Dwarf #250 US                               |2000-11|by Gav Thorpe                         |
+|WD#258(US)|White-Dwarf #258 US                               |2001-07|by Gav Thorpe                         |
+|WD#296(UK)|White-Dwarf #296 UK                               |2004-08|by Anthony Reynolds                   |
+|WD#298(UK)|White-Dwarf #298 UK                               |       |                                      |
+|WD#300(UK)|White-Dwarf #300 UK                               |2004-12|by Andy Hoare                         |
+|WD#310(UK)|White-Dwarf #310 UK                               |       |                                      |
+|WD#311(UK)|White-Dwarf #311 UK                               |2005-11|by Phil Kelly                         |
+|WD#317(UK)|White-Dwarf #317 UK                               |2006-05|by Gareth Hamilton                    |
+|WebGW(UK) |["Warpstone - A Skaven civil war scenario"](http:/uk.games-workshop.com/warhammerworld/warhammer/skaven/SK-articles/warpstone-scenerio/)|2004-03-14|by Jonathan Green|
+|WebGW(US) |["Character - Ariel"](http://us.games-workshop.com/games/warhammer/woodelves/gaming/ariel/default.htm)|2006-07| |
+|WebGW(US) |["Character - Skaw"](http:/us.games-workshop.com/games/warhammer/woodelves/gaming/skaw/default.htm)|2006-07| |
+|WebGW(OZ) |["Giant Warriors of Khemri"](http://oz.games-workshop.com/news/oz/journal/assets/GiantWarriorsofKhemri.pdf)|2003-05|by Gav Thorpe|
 
 
 
