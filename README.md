@@ -108,8 +108,12 @@ The main additions are:
 - [x] Malekith, the Witch King
 - [x] Morathi, the Hag Sorceress
 - [x] Malus Darkblade
+- [x] Crone Hellebron (WebGW)
+- [x] Kuoran (WebGW)
+- [x] Tullaris (WebGW)
 - [x] Patched to WD#287(UK)
 - [x] Magic objects from Albion Campaign (WD#263(UK))
+- [x] Optional rules for upgrading the War Hydras (AN-02)
 
 ## Alternative lists included
 - [x] Clan Eshin (SKV-AB)
@@ -121,6 +125,10 @@ The main additions are:
 - [x] Hell Pit (WD-311)
 - [x] Quatar's Army (WebGW)
 - [x] Errantry War (SoC)
+- [x] Raiding Army (DE-AB)
+- [x] City Garrison (AN-02)
+- [x] Watchtower Patrol (WK#259(UK))
+- [x] Cult of Slaanesh (SoC)
 
 ## Sources consulted
 
