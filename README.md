@@ -108,6 +108,8 @@ The main additions are:
 - [x] Malekith, the Witch King
 - [x] Morathi, the Hag Sorceress
 - [x] Malus Darkblade
+- [x] Rakarth (CR-04)
+- [x] Shadowblade (CR-04)
 - [x] Crone Hellebron (WebGW)
 - [x] Kuoran (WebGW)
 - [x] Tullaris (WebGW)
