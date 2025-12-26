@@ -10,9 +10,9 @@
     <publication id="d67c-4221-e6fc-7951" name="HC-AB" shortName="Warhammer Armies: Hordes of Chaos (6th Edition)" publisher="by Gav Thorpe, Rick Priestly, Anthony Reynolds and Alessio Cavatore" publicationDate="2002"/>
   </publications>
   <selectionEntries>
-    <selectionEntry id="79af-7092-a9a9-393d" name="Dark Elf Highborn" publicationId="20b9-0ee7-8f6f-8d28" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="79af-7092-a9a9-393d" name="Highborn" publicationId="20b9-0ee7-8f6f-8d28" hidden="false" collective="false" import="true" type="unit">
       <profiles>
-        <profile id="3ffc-3172-37a9-a1fc" name="Dark Elf Highborn" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
+        <profile id="3ffc-3172-37a9-a1fc" name="Highborn" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
           <characteristics>
             <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">5</characteristic>
             <characteristic name="WS" typeId="f95b-da01-0578-3bdc">7</characteristic>
@@ -71,20 +71,47 @@
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="afcd-54e0-e5d2-cb0f" name="Magic" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry type="upgrade" import="true" name="Character options" hidden="false" id="e8af-bd8c-71e2-8c30" collective="false">
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3fff-deef-fa40-fae6" type="max"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="31ee-1b0d-0417-5cc6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="100" field="ecfa-8486-4f6c-c249" scope="parent" shared="true" id="79df-9ec7-9c79-b8dc" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a8f3-c5ec-4979-8f97" includeChildSelections="false"/>
           </constraints>
           <selectionEntryGroups>
-            <selectionEntryGroup id="3a38-b44d-849d-cf3e" name="Magic Items (100 points)" hidden="false" collective="false" import="true">
-              <constraints>
-                <constraint field="ecfa-8486-4f6c-c249" scope="parent" value="100" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d06-aa9e-cd56-249b" type="max"/>
-              </constraints>
+            <selectionEntryGroup name="Magic Items (100 pts)" id="0d5a-75a3-eed0-ffd3" hidden="false" collective="false" import="true">
               <entryLinks>
-                <entryLink id="094d-cdd7-6672-8426" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="a294-4c2f-402f-fb78" type="selectionEntryGroup"/>
-                <entryLink id="8164-c6ef-14f8-b390" name="Magic Armour" hidden="false" collective="false" import="true" targetId="529d-b024-a6f0-fa3c" type="selectionEntryGroup"/>
-                <entryLink id="30cb-2ef6-2eb1-495c" name="Talismans" hidden="false" collective="false" import="true" targetId="8d27-b094-8eb7-d32b" type="selectionEntryGroup"/>
-                <entryLink id="ad19-307c-ea15-0b70" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="8b31-cab4-4143-b140" type="selectionEntryGroup"/>
+                <entryLink import="true" name="Magic Weapons" hidden="false" id="127e-2c9d-bcf2-bd18" collective="false" targetId="a294-4c2f-402f-fb78" type="selectionEntryGroup"/>
+                <entryLink import="true" name="Magic Armour" hidden="false" id="9e2a-28a0-d6c2-2098" collective="false" targetId="529d-b024-a6f0-fa3c" type="selectionEntryGroup"/>
+                <entryLink import="true" name="Talismans" hidden="false" id="7b0b-1b83-003a-967c" collective="false" targetId="8d27-b094-8eb7-d32b" type="selectionEntryGroup"/>
+                <entryLink import="true" name="Enchanted Items" hidden="false" id="03de-a157-52dc-1526" collective="false" targetId="8b31-cab4-4143-b140" type="selectionEntryGroup"/>
+                <entryLink import="true" name="Arcane Items" hidden="false" id="079c-9065-c744-173d" type="selectionEntryGroup" targetId="b150-2a07-20b9-49df"/>
+                <entryLink import="true" name="Enchanted Items (HoC)" hidden="true" id="1017-86fd-f379-9c83" collective="false" targetId="6dcf-a1e0-6066-e410" type="selectionEntryGroup">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="4990-1770-2328-effd" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Magic Weapons (HoC)" hidden="true" id="6020-609e-5573-1f1b" collective="false" targetId="a32b-ff8d-318c-be99" type="selectionEntryGroup">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="4990-1770-2328-effd" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Talismans (HoC)" hidden="true" id="6cd2-5462-69f3-adf6" collective="false" targetId="25dc-a67d-d8f6-fe86" type="selectionEntryGroup">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="4990-1770-2328-effd" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -634,30 +661,72 @@
         <categoryLink id="00f1-12d7-6616-4502" name="Characters" hidden="false" targetId="7a1c-d611-c2dc-def1" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="1926-a27d-16a5-8c6b" name="Upgrade to Level 4" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f533-5a17-8b3f-152a" type="max"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="40"/>
-            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="1"/>
-            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-          </costs>
-        </selectionEntry>
         <selectionEntry id="5110-7a43-ca0d-8e2f" name="Magic" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2810-cd30-19bd-9d4e" type="max"/>
           </constraints>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="9c3e-024e-012d-5d42" name="Magic Items (100 points)" hidden="false" collective="false" import="true">
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+          </costs>
+          <entryLinks>
+            <entryLink import="true" name="Lore of Dark Magic" hidden="false" id="6f86-5f63-8d61-a29e" type="selectionEntryGroup" targetId="76d0-7d08-fd0a-c3a7"/>
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Upgrade to Level 4" hidden="false" id="1926-a27d-16a5-8c6b" collective="false">
               <constraints>
-                <constraint field="ecfa-8486-4f6c-c249" scope="parent" value="100" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fcd3-2316-3c3b-60ec" type="max"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f533-5a17-8b3f-152a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="40"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="1"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Character options" hidden="false" id="44c2-7f08-3cfb-4814" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b006-f45f-f1ad-ac6f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="100" field="ecfa-8486-4f6c-c249" scope="parent" shared="true" id="6e9a-fe6d-027a-b135" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9ee0-b5a8-cd66-7149" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Magic Items (100 pts)" id="84f6-5329-3e51-b1c9" hidden="false" collective="false" import="true">
               <entryLinks>
-                <entryLink id="7ce8-2ff8-96dc-5eba" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="a294-4c2f-402f-fb78" type="selectionEntryGroup"/>
-                <entryLink id="c9fa-a01f-24c6-245c" name="Talismans" hidden="false" collective="false" import="true" targetId="8d27-b094-8eb7-d32b" type="selectionEntryGroup"/>
-                <entryLink id="8f73-0d99-ff97-b511" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="8b31-cab4-4143-b140" type="selectionEntryGroup"/>
-                <entryLink id="90b4-15e2-e9fd-62d9" name="Arcane Items" hidden="false" collective="false" import="true" targetId="b150-2a07-20b9-49df" type="selectionEntryGroup"/>
+                <entryLink import="true" name="Magic Weapons" hidden="false" id="9d80-e612-fdca-fa0d" collective="false" targetId="a294-4c2f-402f-fb78" type="selectionEntryGroup"/>
+                <entryLink import="true" name="Magic Armour" hidden="false" id="2699-3ada-188a-2717" collective="false" targetId="529d-b024-a6f0-fa3c" type="selectionEntryGroup"/>
+                <entryLink import="true" name="Talismans" hidden="false" id="3848-678a-be3c-d708" collective="false" targetId="8d27-b094-8eb7-d32b" type="selectionEntryGroup"/>
+                <entryLink import="true" name="Enchanted Items" hidden="false" id="73ed-e032-c842-cfe6" collective="false" targetId="8b31-cab4-4143-b140" type="selectionEntryGroup"/>
+                <entryLink import="true" name="Arcane Items" hidden="false" id="7d11-cdd4-8bb3-b064" type="selectionEntryGroup" targetId="b150-2a07-20b9-49df"/>
+                <entryLink import="true" name="Enchanted Items (HoC)" hidden="true" id="7250-45c4-7560-1022" collective="false" targetId="6dcf-a1e0-6066-e410" type="selectionEntryGroup">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="4990-1770-2328-effd" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Magic Weapons (HoC)" hidden="true" id="7c0d-745b-ebea-c4ae" collective="false" targetId="a32b-ff8d-318c-be99" type="selectionEntryGroup">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="4990-1770-2328-effd" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Talismans (HoC)" hidden="true" id="1d7a-c171-79e6-8e98" collective="false" targetId="25dc-a67d-d8f6-fe86" type="selectionEntryGroup">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="4990-1770-2328-effd" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -667,7 +736,15 @@
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
           <entryLinks>
-            <entryLink import="true" name="Lore of Dark Magic" hidden="false" id="6f86-5f63-8d61-a29e" type="selectionEntryGroup" targetId="76d0-7d08-fd0a-c3a7"/>
+            <entryLink import="true" name="Lord of Slaanesh" hidden="false" id="69f4-deac-a8c1-9c00" type="selectionEntry" targetId="fa63-d29d-10c7-5f93">
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="25"/>
+              </costs>
+              <modifiers>
+                <modifier type="add" value="4990-1770-2328-effd" field="category" scope="unit"/>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="General" hidden="false" id="d57d-6d02-bdb0-d089" collective="false" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry"/>
           </entryLinks>
         </selectionEntry>
       </selectionEntries>
@@ -718,7 +795,7 @@
               <modifiers>
                 <modifier type="set" value="1" field="d527-ce1c-a872-8a97">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="cf3e-bcfb-a535-d4f6" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="4990-1770-2328-effd" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -733,10 +810,6 @@
           </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="d57d-6d02-bdb0-d089" name="General" hidden="false" collective="false" import="true" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry"/>
-        <entryLink import="true" name="Lord of Slaanesh" hidden="false" id="cf3e-bcfb-a535-d4f6" type="selectionEntry" targetId="fa63-d29d-10c7-5f93"/>
-      </entryLinks>
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="215"/>
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="3"/>
@@ -860,9 +933,6 @@
               <costs>
                 <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
               </costs>
-              <modifiers>
-                <modifier type="add" value="4990-1770-2328-effd" field="category" scope="unit"/>
-              </modifiers>
             </entryLink>
           </entryLinks>
         </selectionEntry>
@@ -907,6 +977,11 @@
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="5013-f9f4-e03b-94d5" shared="true" includeChildSelections="true"/>
+                  </conditions>
                 </modifier>
               </modifiers>
             </selectionEntry>
@@ -957,6 +1032,20 @@
                   </costs>
                 </selectionEntry>
               </selectionEntries>
+              <entryLinks>
+                <entryLink import="true" name="Chaos Armour*" hidden="true" id="007b-3d46-7b4a-aa48" type="selectionEntry" targetId="91d4-774c-6c6c-fba3">
+                  <costs>
+                    <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="10"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="5013-f9f4-e03b-94d5" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
@@ -1050,6 +1139,11 @@
                 <modifier type="set" value="1" field="8ae5-ba93-9543-b1cb">
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="4990-1770-2328-effd" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="5013-f9f4-e03b-94d5" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -1196,9 +1290,6 @@
               <costs>
                 <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
               </costs>
-              <modifiers>
-                <modifier type="add" value="4990-1770-2328-effd" field="category" scope="unit"/>
-              </modifiers>
             </entryLink>
           </entryLinks>
         </selectionEntry>
@@ -1929,6 +2020,13 @@
           </conditionGroups>
         </modifierGroup>
       </modifierGroups>
+      <entryLinks>
+        <entryLink import="true" name="Mark of Slaanesh (troops)" hidden="false" id="45d5-7c12-2319-7fa0" type="selectionEntry" targetId="fdca-8baf-a3cb-dc25">
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="10"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry id="36cd-52eb-d902-7aa3" name="Shades" hidden="false" collective="false" import="true" type="unit">
       <profiles>
@@ -5358,12 +5456,12 @@ In addition, a monster that is beaten in hand to hand combat by Rakarth is assum
         </modifier>
       </modifiers>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Chaos Furies" hidden="true" id="227a-c2b8-1368-2fde" collective="false">
+    <selectionEntry type="unit" import="true" name="Furies" hidden="true" id="227a-c2b8-1368-2fde" collective="false">
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="1f23-9921-681d-0642" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
       <infoLinks>
-        <infoLink name="Chaos Furies" id="63b2-5fb7-8db7-f7eb" hidden="false" targetId="355e-98d8-214d-a486" type="profile"/>
+        <infoLink name="Furies" id="63b2-5fb7-8db7-f7eb" hidden="false" targetId="355e-98d8-214d-a486" type="profile"/>
         <infoLink name="Flying Unit" id="7967-c311-4a89-4da7" hidden="false" targetId="c973-b6a5-c2b2-cab1" type="rule"/>
         <infoLink name="Skirmishers" id="d21a-53f3-d361-56e7" hidden="false" type="rule" targetId="1945-ac89-9cc4-3537"/>
       </infoLinks>
@@ -5745,6 +5843,16 @@ In addition, a monster that is beaten in hand to hand combat by Rakarth is assum
       <constraints>
         <constraint type="min" value="1" field="selections" scope="force" shared="true" id="5b7e-ffc2-a409-2d61" includeChildSelections="false"/>
       </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Mark of Slaanesh (troops)" hidden="false" id="9979-1745-40a1-7938" type="selectionEntry" targetId="fdca-8baf-a3cb-dc25">
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6e77-0888-327b-4e80" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Druchii Anointed" hidden="true" id="b024-9584-34d3-b469" collective="false">
       <profiles>
@@ -5817,6 +5925,33 @@ In addition, a monster that is beaten in hand to hand combat by Rakarth is assum
                 <entryLink import="true" name="Enchanted Items" hidden="false" id="2072-51ce-a094-df63" collective="false" targetId="8b31-cab4-4143-b140" type="selectionEntryGroup"/>
                 <entryLink import="true" name="Anointed Daemonic Gifts" hidden="false" id="58d4-d4d3-d3e3-d07c" type="selectionEntryGroup" targetId="557b-966e-d68e-9d04"/>
                 <entryLink import="true" name="Daemonic Gifts (Slaanesh)" hidden="false" id="01cd-c9b2-c792-fe80" type="selectionEntryGroup" targetId="3e7f-2c6b-b220-e467"/>
+                <entryLink import="true" name="Enchanted Items (HoC)" hidden="true" id="040b-4503-dc9f-d213" collective="false" targetId="6dcf-a1e0-6066-e410" type="selectionEntryGroup">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="4990-1770-2328-effd" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Magic Weapons (HoC)" hidden="true" id="d29c-4170-b5b4-df0c" collective="false" targetId="a32b-ff8d-318c-be99" type="selectionEntryGroup">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="4990-1770-2328-effd" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Talismans (HoC)" hidden="true" id="a074-58b2-528a-65c2" collective="false" targetId="25dc-a67d-d8f6-fe86" type="selectionEntryGroup">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="4990-1770-2328-effd" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup name="Magic Level" id="0a52-ea4b-935a-6456" hidden="false">
@@ -5997,6 +6132,19 @@ In addition, a monster that is beaten in hand to hand combat by Rakarth is assum
           </conditions>
         </modifier>
       </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Mark of Slaanesh (Lord)" hidden="false" id="7f4d-f5da-7be7-833f" type="selectionEntry" targetId="fa63-d29d-10c7-5f93">
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="add" value="4990-1770-2328-effd" field="category" scope="unit"/>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a5ea-b660-726e-13c3" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
@@ -6648,7 +6796,7 @@ In addition, a monster that is beaten in hand to hand combat by Rakarth is assum
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Hero of Slaanesh" hidden="true" id="31e5-e4c0-625d-0e43">
+    <selectionEntry type="upgrade" import="true" name="Mark of Slaanesh (Hero)" hidden="true" id="31e5-e4c0-625d-0e43">
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="20"/>
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
@@ -6667,6 +6815,7 @@ In addition, a monster that is beaten in hand to hand combat by Rakarth is assum
             <condition type="instanceOf" value="1" field="selections" scope="force" childId="5013-f9f4-e03b-94d5" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
+        <modifier type="add" value="4990-1770-2328-effd" field="category" scope="unit"/>
       </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Power Familiar" hidden="false" id="d5dc-d99d-61d2-2462" collective="false">
@@ -6894,7 +7043,7 @@ In addition, a monster that is beaten in hand to hand combat by Rakarth is assum
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Regiment of Slaanesh" hidden="true" id="fdca-8baf-a3cb-dc25" collective="false">
+    <selectionEntry type="upgrade" import="true" name="Mark of Slaanesh (troops)" hidden="true" id="fdca-8baf-a3cb-dc25" collective="false">
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7cab-7d01-9c43-ea56" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
       </constraints>
@@ -6912,6 +7061,7 @@ In addition, a monster that is beaten in hand to hand combat by Rakarth is assum
             <condition type="instanceOf" value="1" field="selections" scope="force" childId="5013-f9f4-e03b-94d5" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
+        <modifier type="add" value="4990-1770-2328-effd" field="category" scope="unit"/>
       </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Amulet of Chaos" hidden="false" id="b90a-a938-9901-641f" collective="false">
@@ -7280,7 +7430,7 @@ In addition, a monster that is beaten in hand to hand combat by Rakarth is assum
         <infoLink name="Gaze of Acquiescence" id="1968-ab6b-5390-44c9" hidden="false" type="rule" targetId="0705-9fad-dae1-6e98"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Lord of Slaanesh" hidden="true" id="fa63-d29d-10c7-5f93" collective="false">
+    <selectionEntry type="upgrade" import="true" name="Mark of Slaanesh (Lord)" hidden="true" id="fa63-d29d-10c7-5f93" collective="false">
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2bec-30e0-ce74-c591" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
       </constraints>
@@ -7299,6 +7449,7 @@ In addition, a monster that is beaten in hand to hand combat by Rakarth is assum
             <condition type="instanceOf" value="1" field="selections" scope="force" childId="5013-f9f4-e03b-94d5" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
+        <modifier type="add" value="4990-1770-2328-effd" field="category" scope="unit"/>
       </modifiers>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -8579,7 +8730,7 @@ nothing happens. On a roll of 4 or more, the model is turned Into a Chaos Spawn 
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">6</characteristic>
         <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
         <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
-        <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
+        <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
       </characteristics>
     </profile>
     <profile name="Knight" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="3842-ae9b-70a3-2123" publicationId="d750-ac7f-7465-d6d1" page="24">
