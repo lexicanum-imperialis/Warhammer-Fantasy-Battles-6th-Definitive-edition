@@ -33,6 +33,7 @@
         <categoryLink id="ed7f-35e0-ddb6-caa0" name="Core" hidden="false" targetId="64bf-efb4-9978-26df" primary="false"/>
         <categoryLink id="05ed-ef89-372f-1acb" name="Special" hidden="false" targetId="43cc-fc3f-35a7-8d03" primary="false"/>
         <categoryLink id="96a0-4979-47f1-4ef8" name="Rare" hidden="false" targetId="e94b-6a54-8779-cd60" primary="false"/>
+        <categoryLink name="Regiment of Renown" hidden="false" id="b81f-5559-48ee-4c30" targetId="ee09-9a50-ad78-9c32" primary="false"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
@@ -848,6 +849,16 @@
             </modifierGroup>
           </modifierGroups>
         </modifierGroup>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="add" value="43cc-fc3f-35a7-8d03" field="category"/>
+            <modifier type="set-primary" value="43cc-fc3f-35a7-8d03" field="category"/>
+            <modifier type="remove" value="64bf-efb4-9978-26df" field="category"/>
+          </modifiers>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="fe15-38b7-daea-2ec8" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifierGroup>
       </modifierGroups>
       <infoLinks>
         <infoLink id="c593-92fc-2222-f3eb" name="Saurus Warrior" hidden="false" targetId="f7b5-50ad-834b-f896" type="profile"/>
@@ -1076,6 +1087,7 @@
               </costs>
             </selectionEntry>
           </selectionEntries>
+          <comment>TODO: In Southlands, they can switch blowpipes for poisoned short bows at +1pts/model (LM-AB, p.75)</comment>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -1201,6 +1213,17 @@
               </modifiers>
             </modifierGroup>
           </modifierGroups>
+        </modifierGroup>
+        <modifierGroup type="and">
+          <conditions>
+            <condition type="instanceOf" value="0" field="selections" scope="force" childId="fe15-38b7-daea-2ec8" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+          <modifiers>
+            <modifier type="set-primary" value="e94b-6a54-8779-cd60" field="category"/>
+            <modifier type="add" value="e94b-6a54-8779-cd60" field="category"/>
+            <modifier type="remove" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="remove" value="43cc-fc3f-35a7-8d03" field="category"/>
+          </modifiers>
         </modifierGroup>
       </modifierGroups>
       <constraints>
@@ -1476,6 +1499,13 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="fe15-38b7-daea-2ec8" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="471f-311a-c3b5-0ba5" name="Kroxigor" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -2457,7 +2487,7 @@ These may take one of the following Blessed Spawning each:
     </selectionEntry>
     <selectionEntry id="b6da-02b5-a11d-bbf4" name="Skink Cohorts" hidden="true" collective="false" import="true" type="unit">
       <infoLinks>
-        <infoLink id="750d-f9d0-7f98-0781" name="Skink" hidden="false" targetId="0dd7-040d-bfb2-95a0" type="profile"/>
+        <infoLink id="750d-f9d0-7f98-0781" name="Skink Skirmisher" hidden="false" targetId="0dd7-040d-bfb2-95a0" type="profile"/>
         <infoLink id="c42f-2835-7512-0c33" name="Aquatic" hidden="false" targetId="d1be-78da-561d-0934" type="rule"/>
         <infoLink id="0598-c776-7f8c-fd8a" name="Cold Blooded" hidden="false" targetId="da71-1c1e-ded6-959a" type="rule"/>
       </infoLinks>
@@ -2593,26 +2623,82 @@ These may take one of the following Blessed Spawning each:
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-      </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="25d0-a815-5281-2c76" name="Blessed Spawning (Skinks of the Southlands)" hidden="true" collective="false" import="true" targetId="62df-4048-7504-aed8" type="selectionEntryGroup">
-          <modifiers>
-            <modifier type="set" field="0f86-105f-edc5-61c9" value="1">
-              <conditions>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5ff-0687-4b30-f367" type="atLeast"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fe15-38b7-daea-2ec8" type="instanceOf"/>
-              </conditions>
-            </modifier>
-          </modifiers>
+        <selectionEntryGroup name="Blessed Spawning (Skinks of the Southlands)" id="d2c8-0502-195c-bc9c" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0f86-105f-edc5-61c9" type="min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5e36-e1cc-a2e7-99df" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
-        </entryLink>
-      </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Blessed Mark of the Old Ones" hidden="false" id="ed67-2a2b-2078-6a37" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" id="e4c4-7c12-08bd-bfbc" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Blesssed Mark of the Old Ones" id="d75d-4866-449d-b0de" hidden="false" targetId="4cc1-35fc-92c0-dd94" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="35"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Blessed Spawning of Sotek, the Serpent God" hidden="false" id="a34b-52fd-7afe-1c71" collective="false" targetId="6391-ef05-a9e0-9c09" type="selectionEntry">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ca27-d0d9-de17-5028" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="10"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Blessed Spawning of Chotec, the Solar God" hidden="false" id="f2a0-d4b6-928d-90ea" collective="false" targetId="4ad5-2248-6d34-f01b" type="selectionEntry">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ba22-c10a-4311-f953" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="5"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Blessed Spawning of Huanchi, the Jaguar God" hidden="false" id="51f9-6b34-6d60-0ec4" collective="false" targetId="2431-73ea-e415-7496" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="equalTo" value="0" field="selections" scope="force" childId="b5ff-0687-4b30-f367" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="fe15-38b7-daea-2ec8" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cfa9-6122-cfa0-f9fc" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Blessed Spawning of Tepok, the Inscrutable" hidden="false" id="60cd-b06c-4b28-2978" collective="false" targetId="047c-64df-42fc-9ed5" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="equalTo" value="0" field="selections" scope="force" childId="b5ff-0687-4b30-f367" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="fe15-38b7-daea-2ec8" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1ec4-f821-3cb1-ada0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="20"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
@@ -2633,10 +2719,166 @@ These may take one of the following Blessed Spawning each:
             <modifier type="remove" value="64bf-efb4-9978-26df" field="category"/>
           </modifiers>
           <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="parent" childId="25d0-a815-5281-2c76" shared="true" includeChildSelections="true"/>
+            <condition type="equalTo" value="1" field="selections" scope="self" childId="d2c8-0502-195c-bc9c" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifierGroup>
       </modifierGroups>
+    </selectionEntry>
+    <selectionEntry id="dfd6-ff93-192b-4102" name="Horned One Riders" hidden="true" collective="false" import="true" type="unit">
+      <modifierGroups>
+        <modifierGroup>
+          <comment>Army of Kroq-Gar (LM-AB, p.69)</comment>
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="859a-ac18-878a-600b" type="equalTo">
+              <comment>If Kroq-Gar is the General of the army</comment>
+            </condition>
+          </conditions>
+          <modifiers>
+            <modifier type="add" field="category" value="64bf-efb4-9978-26df"/>
+            <modifier type="set-primary" field="category" value="64bf-efb4-9978-26df"/>
+            <modifier type="remove" field="category" value="43cc-fc3f-35a7-8d03"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+      <infoLinks>
+        <infoLink id="80ff-5437-f45f-b33c" name="Cold Blooded" hidden="false" targetId="da71-1c1e-ded6-959a" type="rule"/>
+        <infoLink id="a6b0-d349-8c8d-101b" name="Fear" hidden="false" targetId="1524-2372-4aa0-6881" type="rule"/>
+        <infoLink id="0d7c-60c2-bbaa-c4a6" name="Skink Skirmisher" hidden="false" targetId="0dd7-040d-bfb2-95a0" type="profile">
+          <modifiers>
+            <modifier type="set" value="Skink" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="2842-fbf1-ea53-2732" name="Horned One" hidden="false" targetId="b632-4ebc-146d-c4df" type="profile"/>
+        <infoLink name="Fast Cavalry" id="741a-59b5-e354-7033" hidden="false" type="rule" targetId="6a56-df83-e623-2218"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="5d8a-6d4c-2ad9-b852" name="Special" hidden="false" targetId="43cc-fc3f-35a7-8d03" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="5096-1fd0-3e53-a1b3" name="Hand Weapon" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="afdd-ab84-5138-8ee8" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d427-a10a-7116-ad90" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="baf0-a597-0427-7bfb" name="Hand Weapon" hidden="false" targetId="5556-38ea-b278-4a8f" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="d87b-8e8f-1247-98b4" name="Spear" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5050-67f5-067e-ef0a" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="370a-b47b-9113-53b7" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="eea3-04c2-7d47-1a06" name="Spear (Mounted)" hidden="false" targetId="ec7d-fa6d-d0f6-5589" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="61aa-18b8-6544-528a" name="Shield" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2494-8bd1-1224-6560" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4260-5927-f13d-699a" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="6376-9861-c315-31fd" name="Shield" hidden="false" targetId="3d79-7984-991a-8b67" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="7cc6-01d3-149c-e826" name="Skink Rider" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2428-2f2e-da4f-befb" type="min"/>
+            <constraint type="max" value="15" field="selections" scope="parent" shared="true" id="8a48-4c9f-c1c4-1979" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="21"/>
+            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="412b-4c27-baf7-1898" name="Command" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="dd4e-3c2c-b1fe-930f" name="Spawning Champion" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d7a2-124f-1b2b-5990" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="f474-62b9-1f3f-4638" name="Skink Skirmisher Brave" hidden="false" targetId="4e12-ae35-5bed-9593" type="profile">
+                  <modifiers>
+                    <modifier type="set" value="Brave" field="name"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="14"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="c3c5-ebcb-478f-17a9" name="Musician" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c27d-43cf-87e6-3a68" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="7"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="f7b0-d364-5cbe-1ce1" name="Standard Bearer" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b7f8-c416-44b6-3c3c" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="ae30-9266-ada3-1996" name="Magic Banners" hidden="false" collective="false" import="true" targetId="106e-cbcc-35b6-ec13" type="selectionEntryGroup">
+                  <constraints>
+                    <constraint field="ecfa-8486-4f6c-c249" scope="parent" value="50" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d547-8278-a047-82ab" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="14"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="fe15-38b7-daea-2ec8" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Blessed Spawning (Skinks of the Southlands)" hidden="false" id="706f-461d-d06d-66db" type="selectionEntryGroup" targetId="62df-4048-7504-aed8"/>
+      </entryLinks>
+      <rules>
+        <rule name="Blesssed Spawning of Itzl, the Rider God" id="d9f4-ada7-b418-10c6" hidden="false" publicationId="3a49-dd2e-fcaa-cdb1" page="51">
+          <description>Characters must take the Blesssed Spawning of Itzl if they wish to ride a Carnosaur or a Cold One.</description>
+        </rule>
+      </rules>
     </selectionEntry>
   </selectionEntries>
   <entryLinks>

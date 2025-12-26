@@ -131,6 +131,7 @@ The main additions are:
 - [x] City Garrison (AN-02)
 - [x] Watchtower Patrol (WK#259(UK))
 - [x] Cult of Slaanesh (SoC)
+- [x] Southlands (LM-AB)
 
 ## Sources consulted
 
