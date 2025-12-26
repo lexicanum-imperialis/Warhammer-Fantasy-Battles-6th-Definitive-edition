@@ -822,33 +822,15 @@
                 <entryLink import="true" name="Arcane Items" hidden="false" id="1606-d135-686b-9a91" type="selectionEntryGroup" targetId="b150-2a07-20b9-49df"/>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Magic Items (HoC)" id="775a-500d-b5a1-3e5d" hidden="true">
-              <modifiers>
-                <modifier type="set" value="false" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="5013-f9f4-e03b-94d5" shared="true" includeChildSelections="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="bd43-41c0-298e-22be" childId="4990-1770-2328-effd" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-              <entryLinks>
-                <entryLink import="true" name="Arcane Items (HoC)" hidden="false" id="294d-e610-2121-50b4" type="selectionEntryGroup" targetId="6ada-c79b-f68f-fc49"/>
-                <entryLink import="true" name="Talismans (HoC)" hidden="false" id="1985-5b3d-9074-eee2" collective="false" targetId="25dc-a67d-d8f6-fe86" type="selectionEntryGroup"/>
-                <entryLink import="true" name="Magic Weapons (HoC)" hidden="false" id="6a17-15ba-9dc1-82a0" collective="false" targetId="a32b-ff8d-318c-be99" type="selectionEntryGroup"/>
-                <entryLink import="true" name="Magic Armour (HoC)" hidden="false" id="2fc2-ce15-6abc-e241" collective="false" targetId="7864-88e1-f426-a899" type="selectionEntryGroup"/>
-                <entryLink import="true" name="Enchanted Items (HoC)" hidden="false" id="8ada-e2e9-230c-e107" collective="false" targetId="6dcf-a1e0-6066-e410" type="selectionEntryGroup"/>
-              </entryLinks>
-            </selectionEntryGroup>
           </selectionEntryGroups>
           <costs>
             <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
+          <entryLinks>
+            <entryLink import="true" name="Magic Items selection (HoC)" hidden="false" id="abad-f546-a574-022a" type="selectionEntryGroup" targetId="775a-500d-b5a1-3e5d"/>
+          </entryLinks>
         </selectionEntry>
         <selectionEntry id="45dd-5586-ab52-911a" name="Battle Standard Bearer" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -7779,6 +7761,27 @@ Spell still fails</characteristic>
           </conditions>
         </modifier>
       </modifiers>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Magic Items selection (HoC)" id="775a-500d-b5a1-3e5d" hidden="true">
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="5013-f9f4-e03b-94d5" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="4990-1770-2328-effd" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Arcane Items (HoC)" hidden="false" id="294d-e610-2121-50b4" type="selectionEntryGroup" targetId="6ada-c79b-f68f-fc49"/>
+        <entryLink import="true" name="Talismans (HoC)" hidden="false" id="1985-5b3d-9074-eee2" collective="false" targetId="25dc-a67d-d8f6-fe86" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Magic Weapons (HoC)" hidden="false" id="6a17-15ba-9dc1-82a0" collective="false" targetId="a32b-ff8d-318c-be99" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Magic Armour (HoC)" hidden="false" id="2fc2-ce15-6abc-e241" collective="false" targetId="7864-88e1-f426-a899" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Enchanted Items (HoC)" hidden="false" id="8ada-e2e9-230c-e107" collective="false" targetId="6dcf-a1e0-6066-e410" type="selectionEntryGroup"/>
+      </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
