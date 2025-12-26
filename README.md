@@ -19,17 +19,17 @@ The main additions are:
 - [x] Wood Elves
 - [x] Tomb kings
 - [x] Bretonnia
-- [x] Chaos Dwarves
+- [x] Chaos Dwarfs
 - [x] Dark Elves
 - [ ] Lizardmen
+- [ ] Orcs and Goblins
 - [ ] High Elves
 - [ ] Beast of Chaos
 - [ ] Hordes of Chaos (maybe with the Beast of Chaos)
 - [ ] Daemons of Chaos (with the Hordes of Chaos)
-- [ ] Dwarves (at least the second ArmyBook)
+- [ ] Dwarfs (at least the second ArmyBook)
 - [ ] The Empire
 - [ ] Vampire Counts
-- [ ] Orcs and Goblins
 - [ ] Kislev
 - [ ] Dogs of War
 
@@ -154,6 +154,7 @@ The main additions are:
 |CJ#49     |Citadel Journal #49                               |2002   |by Alessio Cavatore and Andy Chambers |
 |WD#250(US)|White-Dwarf #250 US                               |2000-11|by Gav Thorpe                         |
 |WD#258(US)|White-Dwarf #258 US                               |2001-07|by Gav Thorpe                         |
+|WD#259(UK)|White-Dwarf #259 UK                               |       |                                      |
 |WD#296(UK)|White-Dwarf #296 UK                               |2004-08|by Anthony Reynolds                   |
 |WD#298(UK)|White-Dwarf #298 UK                               |       |                                      |
 |WD#300(UK)|White-Dwarf #300 UK                               |2004-12|by Andy Hoare                         |
