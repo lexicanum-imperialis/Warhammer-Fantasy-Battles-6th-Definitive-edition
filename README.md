@@ -21,7 +21,7 @@ The main additions are:
 - [x] Bretonnia
 - [x] Chaos Dwarfs
 - [x] Dark Elves
-- [ ] Lizardmen
+- [x] Lizardmen
 - [ ] Orcs and Goblins
 - [ ] High Elves
 - [ ] Beast of Chaos
@@ -83,6 +83,7 @@ The main additions are:
 - [x] Lord Mazdamundi (WD#290(USA))
 - [x] Nakai (webGW)
 - [x] Xltep (webGW)
+- [x] Ten-zlati (webGW)
 
 ### Dogs of War
 - [x] Al Muktar's Desert Dogs
