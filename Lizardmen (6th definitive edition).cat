@@ -996,6 +996,11 @@
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fe15-38b7-daea-2ec8" type="atLeast"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="0" field="1239-2402-7195-3d05">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="cac7-06e3-24a5-7655" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="30d8-59b7-0761-13b5" type="min"/>
@@ -1170,23 +1175,6 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="e235-3d94-2bdc-6a1a" name="Temple Guard" hidden="false" collective="false" import="true" type="unit">
-      <modifiers>
-        <modifier type="set" field="6cdc-b7e5-8987-a4ca" value="1">
-          <conditions>
-            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5c12-eebd-de21-0b3d" type="equalTo"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" field="6cdc-b7e5-8987-a4ca" value="2">
-          <conditions>
-            <condition field="selections" scope="roster" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5c12-eebd-de21-0b3d" type="equalTo"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" field="6cdc-b7e5-8987-a4ca" value="3">
-          <conditions>
-            <condition field="selections" scope="roster" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5c12-eebd-de21-0b3d" type="equalTo"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <modifierGroups>
         <modifierGroup>
           <comment>Sacred Hosts (WD#300(UK))</comment>
@@ -1247,6 +1235,29 @@
             <modifier type="remove" value="43cc-fc3f-35a7-8d03" field="category"/>
           </modifiers>
         </modifierGroup>
+        <modifierGroup type="and">
+          <comment>1 per Slann</comment>
+          <modifiers>
+            <modifier type="set" value="1" field="6cdc-b7e5-8987-a4ca">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="roster" childId="5c12-eebd-de21-0b3d" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="2" field="6cdc-b7e5-8987-a4ca">
+              <conditions>
+                <condition type="equalTo" value="2" field="selections" scope="roster" childId="5c12-eebd-de21-0b3d" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="3" field="6cdc-b7e5-8987-a4ca">
+              <conditions>
+                <condition type="equalTo" value="3" field="selections" scope="roster" childId="5c12-eebd-de21-0b3d" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="cac7-06e3-24a5-7655" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifierGroup>
       </modifierGroups>
       <constraints>
         <constraint field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6cdc-b7e5-8987-a4ca" type="max"/>
@@ -1254,7 +1265,15 @@
       <infoLinks>
         <infoLink id="eb07-ebd9-9e08-854d" name="Cold Blooded" hidden="false" targetId="da71-1c1e-ded6-959a" type="rule"/>
         <infoLink id="23cb-a05f-2c1b-f20a" name="Scaly Skin 5+" hidden="false" targetId="0afe-62e9-ea96-1421" type="rule"/>
-        <infoLink id="cd37-7607-ed04-4717" name="Sacred Duty" hidden="false" targetId="4e4c-ec7c-1755-31a4" type="rule"/>
+        <infoLink id="cd37-7607-ed04-4717" name="Sacred Duty" hidden="false" targetId="4e4c-ec7c-1755-31a4" type="rule">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="cac7-06e3-24a5-7655" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink id="b217-e047-08dd-43e5" name="Temple Guard" hidden="false" targetId="893b-c80b-3ebc-dce8" type="profile"/>
       </infoLinks>
       <categoryLinks>
@@ -1820,7 +1839,7 @@
     </selectionEntry>
     <selectionEntry id="6dcb-749a-4870-ff2f" name="Venerable Lord Kroak" publicationId="3a49-dd2e-fcaa-cdb1" page="67" hidden="false" collective="false" import="true" type="unit">
       <constraints>
-        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="89e0-c562-dc59-00b4" type="max"/>
+        <constraint field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="89e0-c562-dc59-00b4" type="max"/>
       </constraints>
       <profiles>
         <profile id="e46e-ad44-00c6-c458" name="Venerable Lord Kroak" publicationId="3a49-dd2e-fcaa-cdb1" page="67" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
@@ -1972,10 +1991,17 @@ If there is a building or wall section directly underneath the place where this 
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="1" field="89e0-c562-dc59-00b4">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="8923-5946-7b10-8957" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="06a5-d1d6-692f-de8e" name="Ancient Scar-Leader Kroq-Gar" publicationId="3a49-dd2e-fcaa-cdb1" page="69" hidden="false" collective="false" import="true" type="unit">
       <constraints>
-        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="08de-bfec-e82e-cdd5" type="max"/>
+        <constraint field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="08de-bfec-e82e-cdd5" type="max"/>
       </constraints>
       <profiles>
         <profile id="f363-beda-4b0b-e07c" name="Kroq-Gar" publicationId="3a49-dd2e-fcaa-cdb1" page="69" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
@@ -2085,6 +2111,13 @@ The Hand of Gods has a range of 8&quot; and strikes every enemy unit within line
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="1" field="08de-bfec-e82e-cdd5">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="8923-5946-7b10-8957" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="b5ff-0687-4b30-f367" name="Sacred Host of the Gods" publicationId="ddfb-5507-69d5-5482" page="50-55" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
@@ -3351,10 +3384,206 @@ Tehenhauin may only join units of Jungle Swarms (not Lesser Swarms), and is coun
         </modifier>
       </modifiers>
     </selectionEntry>
+    <selectionEntry id="cac7-06e3-24a5-7655" name="Lord Mazdamundi" hidden="false" collective="false" import="true" type="unit" page="40-41" publicationId="1c84-0f77-2d0e-eab7">
+      <categoryLinks>
+        <categoryLink id="eada-8fce-1578-3fed" name="Lord" hidden="false" targetId="d024-d25b-a9b4-73b6" primary="false"/>
+        <categoryLink id="44f8-16e6-74af-4428" name="Characters" hidden="false" targetId="7a1c-d611-c2dc-def1" primary="false"/>
+        <categoryLink id="2b4f-aca4-80c7-11f1" name="Slann" hidden="false" targetId="5c12-eebd-de21-0b3d" primary="false"/>
+        <categoryLink name="Special Characters" hidden="false" id="ab32-b9b6-4118-16a5" targetId="0644-bfcd-32c2-21dc" primary="true"/>
+        <categoryLink name="Experimental rules" hidden="false" id="f300-a848-e752-b8d3" targetId="4fed-b911-e6e0-927b" primary="false"/>
+        <categoryLink name="Heroes" hidden="false" id="839e-ecea-f520-bd02" targetId="c16b-f319-2c62-2c12" primary="false"/>
+        <categoryLink name="Rare" hidden="false" id="4864-2792-07fc-77c8" targetId="e94b-6a54-8779-cd60" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="fabb-70a4-5e14-dc13" name="Wizard Level 4" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="837a-d10d-5c16-2989" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a49c-533e-9575-8340" type="min"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="4"/>
+            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="2"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="0d4d-e985-80f2-02f4" name="Generation" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="efbb-bbd9-2515-8229" type="max"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8e9b-05b9-7c3b-e3a1" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="bbbf-2764-9ae1-80f1" name="Second Generation" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fe15-38b7-daea-2ec8" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <infoLinks>
+                <infoLink id="3683-8860-9ede-8c70" name="Second Generation" hidden="false" targetId="4df7-f4d8-ca3e-d30c" type="rule"/>
+                <infoLink id="8513-3cee-117a-5d6a" name="Third Generation" hidden="false" targetId="a819-9883-21a7-1448" type="rule"/>
+                <infoLink id="f7d3-58ec-1b1a-3233" name="Fourth Generation" hidden="false" targetId="8a36-6b24-aada-3987" type="rule"/>
+                <infoLink id="acbf-2178-148f-afca" name="Fifth Generation" hidden="false" targetId="83ad-a932-c23a-7bc9" type="rule"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink id="170f-033f-d393-89a7" name="Heroes" hidden="false" targetId="c16b-f319-2c62-2c12" primary="false"/>
+                <categoryLink id="3b0a-bd6b-6e92-d039" name="Rare" hidden="false" targetId="e94b-6a54-8779-cd60" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="5d75-7352-b8d0-f649" name="Magic Items" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink import="true" name="Plaque of Tepok, the Inscrutable" hidden="false" id="6085-3f3c-ba35-614e" type="selectionEntry" targetId="3ceb-3da3-41cd-917a">
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="53e5-83c5-032d-c4c1" name="Spells" hidden="false" collective="false" import="true">
+          <infoLinks>
+            <infoLink id="54e6-6f73-0592-0272" name="Drain Magic" hidden="false" targetId="1d5e-afeb-df27-29dd" type="rule"/>
+          </infoLinks>
+          <rules>
+            <rule name="1. Part the Waters" id="8ab0-2f6f-c3a3-5d85" hidden="false" page="41" publicationId="1c84-0f77-2d0e-eab7">
+              <description>Cast on a 7+, Remains in play
+This spell may be cast upon one water feature anywhere on the table (e.g., a swamp or river). All models (friend or foe) treat this feature as open terrain. This spell remains in play until it is dispelled, Mazdamundi chooses to ends it (which he can do at any time), he attempts to cast another spell, or he is slain. If the spell ends, any model or unit even partially in the terrain feature is destroyed as the waters crash down upon it, unless it is Aquatic.</description>
+            </rule>
+            <rule name="2. Demise of Cities" id="79b5-7777-d6bc-65ff" hidden="false" page="41" publicationId="1c84-0f77-2d0e-eab7">
+              <description>Cast on a 10+
+
+Nominate a point anywhere on the table where you wish the spell to be focused. Roll a Scatter die and an Artillery die and place a marker there - that is where the spell is centered. On a Misfire result, the other player gets to place the marker, again rolling the Artillery die and aScatter die. If the opponent should roll a Misfire too, then the spell does not work and the Magic Phase comes to an immediate end.Roll a rhta see how many inches the tremors spread. Any unit within this radius suffers D6 S5 hits. In addition, any unit that suffers any Wounds may only move at half rate in its next Movement Phase.
+Models that fly are completely unaffected by this spell and neither take Wounds nor have their movement restricted.
+If there is a building or wall section directly underneath the place where this spell is centered then it automatically takes a S10 hit.
+Models may take further damage from the destruction of any structures, as described in the Siege rules or on p. 130 of the Warhammer rulebook.</description>
+            </rule>
+            <rule name="3. Earth Line" id="cd56-a608-6628-398a" hidden="false" page="41" publicationId="1c84-0f77-2d0e-eab7">
+              <description>Cast on a 10+
+Chose a corner of the board and trace a line from Lord Mazdamundi to this corner. Every model underneath this line suffers a single S4 hit.
+</description>
+            </rule>
+            <rule name="4. Move the Mountains" id="fb5c-9b15-eb20-9ae2" hidden="false" page="41" publicationId="1c84-0f77-2d0e-eab7">
+              <description>Cast on a 12+
+This spell is targeted at a single hill anywhere on the table. Any unit at least partially on the hill may do nothing in its following turn except cling to the ground to avoid tumbling off the slopes, falling down cracks in the earth, or being crushed by lumps of falling rock. No unit on the hill (even partially) may move, shoot, or cast spells until the caster&apos;s next Magic Phase. Units engaged in close combat and at least partially on the hill suffer -1 to hit, though they will flee and pursue as normal.</description>
+            </rule>
+          </rules>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="62d6-dd0a-bebd-735a" name="General" hidden="false" collective="false" import="true" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b4e1-1527-0f1a-9431" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Battle Standard Bearer" hidden="false" id="9907-876c-b91f-47b3" collective="false" targetId="e9ad-f1ce-aebf-6d23" type="selectionEntry">
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+          </costs>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="New Entry" hidden="false" id="d735-95a2-c9a9-cf29">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7559-04c8-4169-7082" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e1f4-2c23-0736-e780" includeChildSelections="false"/>
+              </constraints>
+              <rules>
+                <rule name="The Sunburst Standard of Hexoatl (Magical Banner)" id="6cb5-e8fa-203e-cd7f" hidden="false" publicationId="1c84-0f77-2d0e-eab7" page="41">
+                  <description>Flying units cannot charge Mazdamundi with their flying movement; instead, they must use their normal ground movement.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+          </selectionEntries>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="930"/>
+        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="1" field="281f-3480-01f0-7f98">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="8923-5946-7b10-8957" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="a33f-fd69-3a8a-7c18" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Lord Mazdamundi &amp; S&apos;laq" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="602a-0945-6118-da1e">
+          <characteristics>
+            <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">6</characteristic>
+            <characteristic name="WS" typeId="f95b-da01-0578-3bdc">3</characteristic>
+            <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">0</characteristic>
+            <characteristic name="S" typeId="b690-4bc0-bb73-267b">5</characteristic>
+            <characteristic name="T" typeId="8712-f56f-5b22-a720">6</characteristic>
+            <characteristic name="W" typeId="253a-9b00-4fde-8ac2">8</characteristic>
+            <characteristic name="I" typeId="dfff-363e-f72a-5a59">2</characteristic>
+            <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">4</characteristic>
+            <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">9</characteristic>
+            <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+            <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+            <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoGroups>
+        <infoGroup name="Special rules" id="4c08-3d01-b894-ccbf" hidden="false">
+          <infoLinks>
+            <infoLink name="Wisdom of the Old Ones" id="3c94-8c35-4888-fd03" hidden="false" targetId="6835-fbc3-f800-cce2" type="rule"/>
+            <infoLink name="Cold Blooded" id="751f-3345-ded2-f5ac" hidden="false" targetId="da71-1c1e-ded6-959a" type="rule"/>
+            <infoLink name="Contemplation" id="fa8f-bc6d-0b92-7797" hidden="false" targetId="cf3f-0615-c6d3-10a7" type="rule"/>
+            <infoLink name="Large Target" id="ffc3-d763-d647-d834" hidden="false" targetId="25b1-e384-bfcb-beed" type="rule"/>
+            <infoLink name="Palanquin" id="55f3-ccc1-603b-d247" hidden="false" targetId="1be8-a4e9-32f6-2589" type="rule"/>
+            <infoLink name="Shield of the Old Ones" id="2153-5228-7fa4-1afc" hidden="false" targetId="0e2c-5dd2-438e-9bf9" type="rule"/>
+            <infoLink name="Telepathy" id="2a71-0fc9-69aa-6f0c" hidden="false" targetId="dd42-cff3-0fac-96c6" type="rule"/>
+            <infoLink name="Unit Strength 5" id="32ed-d88f-a24f-b390" hidden="false" targetId="6b65-6cb5-58ae-dfe3" type="rule"/>
+            <infoLink name="The Itxi Grubs" id="3777-e618-d195-ce44" hidden="false" type="rule" targetId="02a2-4b8a-724a-aeea"/>
+          </infoLinks>
+          <rules>
+            <rule name="Combined profile" id="6a90-fa92-b50d-80a9" hidden="false" page="41" publicationId="1c84-0f77-2d0e-eab7">
+              <description>Such is the power of Lord Mazdamundi&apos;s will that he is able to control his Stegadon S&apos;laq as if it were an extension of his own being, and he is able to control the mighty beast even beyond its death. As such, Mazdamundi and S&apos;laq have a combined profile.</description>
+            </rule>
+            <rule name="Spell casting (Mazdamundi)" id="564d-e0ae-652c-ab65" hidden="false" page="41" publicationId="1c84-0f77-2d0e-eab7">
+              <description>Lord Mazdamundi does not roll for spells like other wizards. Instead, he will always have the following four spells, as well as Drain Magic:
+1. Part the Waters
+2. Demise of Cities
+3. Earth Line
+4. Move the Mountains</description>
+            </rule>
+          </rules>
+        </infoGroup>
+      </infoGroups>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="force" shared="true" id="281f-3480-01f0-7f98" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
   </selectionEntries>
   <entryLinks>
     <entryLink id="a33f-fd69-3a8a-7c18" name="Allow experimental rules?" hidden="false" collective="false" import="true" targetId="8b76-92c4-23f9-54b1" type="selectionEntry"/>
-    <entryLink id="72c8-f74c-3cd5-48bc" name="Allow special characters?" hidden="false" collective="false" import="true" targetId="8923-5946-7b10-8957" type="selectionEntry"/>
+    <entryLink id="72c8-f74c-3cd5-48bc" name="Allow special characters?" hidden="false" collective="false" import="true" targetId="8923-5946-7b10-8957" type="selectionEntry">
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="force" shared="true" id="838b-e744-19ab-1d35" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="1" field="838b-e744-19ab-1d35">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="f7d4-7faf-8470-ee0d" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
     <entryLink id="9c8a-4ecc-41e2-60c7" name="Pirazzo&apos;s Lost Legion" hidden="false" collective="false" import="true" targetId="5351-f58d-361f-7a9d" type="selectionEntry"/>
     <entryLink import="true" name="Ricco&apos;s Republican Guard" hidden="false" id="d8bb-84a0-d443-b07d" type="selectionEntry" targetId="30d3-b878-f633-045a"/>
     <entryLink import="true" name="Leopold&apos;s Leopard Company" hidden="false" id="59a7-21ee-e9ab-0417" type="selectionEntry" targetId="8848-c408-d8ff-97d9"/>
@@ -5515,6 +5744,15 @@ of Quetzl using the following amendments:
     </rule>
     <rule name="Scales of the Coiled One" id="87de-27d7-5076-7715" hidden="false" page="61" publicationId="415d-9fbb-df83-ad27">
       <description>Tehenhauin wears fragments of the scaly hide of a great serpent whose mummified body is worshipped as an avatar of the Serpent God at the Shrine of the Great Viper. This grants the Prophet of Sotek a Scaly Skin Save of 5+.</description>
+    </rule>
+    <rule name="Sacred Host of Hexoati" id="4963-ae61-cbfb-a2c6" hidden="false" page="41" publicationId="1c84-0f77-2d0e-eab7">
+      <description>Lord Mazdamundi will always be the army General. When an army is led by Lord Mazdamundi, the 0-1 per Slann restriction on Temple Guard regiments is changed to 2+ regiments. However, no Saurus Warrior regiments may take any Sacred Marks (in effect, the fact that so many Saurus are born to be Temple Guard is their Sacred Mark). Note that the Temple Guards&apos; Sacred Duty special rule is suspended when the army is led by Lord Mazdamundi.</description>
+    </rule>
+    <rule name="The Itxi Grubs" id="02a2-4b8a-724a-aeea" hidden="false" page="41" publicationId="1c84-0f77-2d0e-eab7">
+      <description>One use only
+Mazdamundi can declare that he is chewing the grubs at the start of
+his Magic Phase. He then adds a further +1 to all attempts to cast
+and dispel spells until the start of his next Magic Phase.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
