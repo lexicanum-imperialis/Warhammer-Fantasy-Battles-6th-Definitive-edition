@@ -82,6 +82,7 @@ The main additions are:
 - [x] Tehenhauin (LUS)
 - [x] Lord Mazdamundi (WD#290(USA))
 - [x] Nakai (webGW)
+- [x] Xltep (webGW)
 
 ### Dogs of War
 - [x] Al Muktar's Desert Dogs
