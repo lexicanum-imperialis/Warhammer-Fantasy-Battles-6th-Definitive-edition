@@ -438,26 +438,6 @@
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
-        <selectionEntryGroup id="e20e-1d11-a8da-0df1" name="Blessed Spawning" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a4f-5c5c-ae63-421a" type="max"/>
-            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb3f-da9a-81a0-d95e" type="min"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="8899-b410-457c-4d84" name="Blessed Spawning (Skinks)" hidden="false" collective="false" import="true" targetId="b9e5-bb8b-3bbf-5f75" type="selectionEntryGroup">
-              <modifiers>
-                <modifier type="set" field="0a9a-d353-4702-54e4" value="1">
-                  <conditions>
-                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5ff-0687-4b30-f367" type="atLeast"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a9a-d353-4702-54e4" type="min"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
         <selectionEntryGroup id="451d-f3aa-269d-a613" name="Mount" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b140-2ff7-9bfa-e7f5" type="max"/>
@@ -477,6 +457,32 @@
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="fd02-6b50-d219-173d" name="General" hidden="false" collective="false" import="true" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry"/>
+        <entryLink import="true" name="Blessed Spawning (Skinks of the Southlands)" hidden="true" id="2096-ee41-005e-fb1e" collective="false" targetId="62df-4048-7504-aed8" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="fe15-38b7-daea-2ec8" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Blessed Spawning (Skinks)" hidden="false" id="8899-b410-457c-4d84" collective="false" targetId="b9e5-bb8b-3bbf-5f75" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" value="1" field="0a9a-d353-4702-54e4">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="b5ff-0687-4b30-f367" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="fe15-38b7-daea-2ec8" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="0a9a-d353-4702-54e4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="55"/>
@@ -693,9 +699,31 @@
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5ff-0687-4b30-f367" type="atLeast"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="fe15-38b7-daea-2ec8" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0f5c-e51b-f4b8-0ae3" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Blessed Spawning (Skinks of the Southlands)" hidden="true" id="7bd9-dcaf-b020-bcf7" collective="false" targetId="62df-4048-7504-aed8" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" value="1" field="ce13-e799-f59d-b4d5">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="b5ff-0687-4b30-f367" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="fe15-38b7-daea-2ec8" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="ce13-e799-f59d-b4d5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -2296,18 +2324,7 @@ The Hand of Gods has a range of 8&quot; and strikes every enemy unit within line
         <selectionEntry type="model" import="true" name="Skink Priest" hidden="false" id="8992-7a7e-1836-1c15">
           <entryLinks>
             <entryLink import="true" name="General" hidden="false" id="6a6d-f0ce-bf9d-be98" collective="false" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry"/>
-            <entryLink import="true" name="Blessed Spawning (Skinks)" hidden="false" id="dd5d-d1ed-9f2e-4061" collective="false" targetId="b9e5-bb8b-3bbf-5f75" type="selectionEntryGroup">
-              <modifiers>
-                <modifier type="set" value="1" field="42c8-4c24-ecbe-5f6b">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="force" childId="b5ff-0687-4b30-f367" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="42c8-4c24-ecbe-5f6b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-            </entryLink>
+            <entryLink import="true" name="Blessed Spawning (Skinks of the Southlands)" hidden="false" id="dd5d-d1ed-9f2e-4061" collective="false" targetId="62df-4048-7504-aed8" type="selectionEntryGroup"/>
           </entryLinks>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Scout" hidden="false" id="b854-6c52-c23b-eae4" collective="false">
@@ -4208,18 +4225,6 @@ In addition, the bearer causes Fear in Skaven.</characteristic>
           </costs>
         </entryLink>
         <entryLink import="true" name="Blessed Spawning of Chotec, the Solar God" hidden="false" id="82a0-840e-4b0b-986a" collective="false" targetId="4ad5-2248-6d34-f01b" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="fe15-38b7-daea-2ec8" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="b5ff-0687-4b30-f367" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b0bf-1e7c-373f-ec81" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
