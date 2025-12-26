@@ -36,6 +36,20 @@
         <categoryLink name="Regiment of Renown" hidden="false" id="b81f-5559-48ee-4c30" targetId="ee09-9a50-ad78-9c32" primary="false"/>
       </categoryLinks>
     </forceEntry>
+    <forceEntry id="f7d4-7faf-8470-ee0d" name="Red Host (LUS)" publicationId="415d-9fbb-df83-ad27" page="59-61" hidden="false">
+      <categoryLinks>
+        <categoryLink id="058d-7cf5-cdd6-6c17" name="Experimental rules" hidden="false" targetId="4fed-b911-e6e0-927b" primary="false"/>
+        <categoryLink id="8b05-5778-ddb1-ad95" name="Special list rules" hidden="false" targetId="32f1-197f-d719-a393" primary="false"/>
+        <categoryLink id="0f44-3ee3-d3b7-0cec" name="Special Characters" hidden="false" targetId="0644-bfcd-32c2-21dc" primary="false"/>
+        <categoryLink id="33e7-b2ce-52ed-33ee" name="Characters" hidden="false" targetId="7a1c-d611-c2dc-def1" primary="false"/>
+        <categoryLink id="9316-a77e-7f17-1138" name="Lord" hidden="false" targetId="d024-d25b-a9b4-73b6" primary="false"/>
+        <categoryLink id="64c1-e90c-ed54-ade3" name="Heroes" hidden="false" targetId="c16b-f319-2c62-2c12" primary="false"/>
+        <categoryLink id="45a4-a523-a717-3a17" name="Core" hidden="false" targetId="64bf-efb4-9978-26df" primary="false"/>
+        <categoryLink id="7c6a-ec1f-fdcd-ea1d" name="Special" hidden="false" targetId="43cc-fc3f-35a7-8d03" primary="false"/>
+        <categoryLink id="498d-266c-57b2-c07c" name="Rare" hidden="false" targetId="e94b-6a54-8779-cd60" primary="false"/>
+        <categoryLink name="Regiment of Renown" hidden="false" id="cdd8-8007-ab39-753d" targetId="ee09-9a50-ad78-9c32" primary="false"/>
+      </categoryLinks>
+    </forceEntry>
   </forceEntries>
   <selectionEntries>
     <selectionEntry id="64c4-4576-b4b0-0b87" name="Slann Mage Priest" hidden="false" collective="false" import="true" type="unit">
@@ -173,6 +187,13 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="f7d4-7faf-8470-ee0d" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="c243-9509-ac23-a5a0" name="Saurus Oldblood" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -1124,6 +1145,7 @@
         <infoLink id="392d-1a1c-c4b6-7bef" name="Swarm" hidden="false" targetId="777f-72b4-bdf2-184a" type="rule"/>
         <infoLink id="7155-8166-a4ca-42d8" name="Small" hidden="false" targetId="6b31-dd96-9739-05ce" type="rule"/>
         <infoLink id="b4aa-d6a1-8692-7d26" name="Poisoned Attacks" hidden="false" targetId="2738-27d5-f4af-4722" type="rule"/>
+        <infoLink name="Unbreakable" id="a4d5-4938-a5aa-a22b" hidden="false" type="rule" targetId="8ae3-9724-980f-7308"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="23a7-311b-d601-7b41" name="Core" hidden="false" targetId="64bf-efb4-9978-26df" primary="true"/>
@@ -1569,14 +1591,7 @@
         <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6a51-ec4c-57f4-2d3d" type="max"/>
       </constraints>
       <infoLinks>
-        <infoLink id="375d-9d5a-83c9-2189" name="Aquatic" hidden="false" targetId="d1be-78da-561d-0934" type="rule"/>
-        <infoLink id="0f50-63db-06dd-8a33" name="Cold Blooded" hidden="false" targetId="da71-1c1e-ded6-959a" type="rule"/>
-        <infoLink id="59f1-2cbe-61b9-dfe5" name="Skirmishers" hidden="false" targetId="1945-ac89-9cc4-3537" type="rule"/>
-        <infoLink id="1bf9-931e-e595-f80d" name="Scout (Skinks)" hidden="false" targetId="02e3-3d78-0697-b75b" type="rule"/>
-        <infoLink id="9536-ff69-50e2-a1e9" name="Poisoned Attacks" hidden="false" targetId="c42e-9dc4-8229-5abe" type="rule"/>
         <infoLink id="410a-71b9-6b84-182a" name="Chameleon Skink" hidden="false" targetId="e795-afb9-4133-f7e3" type="profile"/>
-        <infoLink id="dca6-42bd-056b-7455" name="Expert Hunters" hidden="false" targetId="8b55-7616-fd0b-f1a4" type="rule"/>
-        <infoLink id="822a-6053-7000-fc01" name="Chameleons" hidden="false" targetId="942f-bcf6-d9a6-97d0" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="5a1e-be3c-4138-cc64" name="Special" hidden="false" targetId="43cc-fc3f-35a7-8d03" primary="true"/>
@@ -1640,6 +1655,32 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Red Host (LUS)</comment>
+          <modifiers>
+            <modifier type="add" value="e94b-6a54-8779-cd60" field="category"/>
+            <modifier type="remove" value="43cc-fc3f-35a7-8d03" field="category"/>
+            <modifier type="set-primary" value="e94b-6a54-8779-cd60" field="category"/>
+          </modifiers>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="f7d4-7faf-8470-ee0d" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifierGroup>
+      </modifierGroups>
+      <infoGroups>
+        <infoGroup name="Special rules" id="4ade-07e6-8047-da3a" hidden="false">
+          <infoLinks>
+            <infoLink name="Skirmishers" id="59f1-2cbe-61b9-dfe5" hidden="false" targetId="1945-ac89-9cc4-3537" type="rule"/>
+            <infoLink name="Aquatic" id="375d-9d5a-83c9-2189" hidden="false" targetId="d1be-78da-561d-0934" type="rule"/>
+            <infoLink name="Chameleons" id="822a-6053-7000-fc01" hidden="false" targetId="942f-bcf6-d9a6-97d0" type="rule"/>
+            <infoLink name="Cold Blooded" id="0f50-63db-06dd-8a33" hidden="false" targetId="da71-1c1e-ded6-959a" type="rule"/>
+            <infoLink name="Expert Hunters" id="dca6-42bd-056b-7455" hidden="false" targetId="8b55-7616-fd0b-f1a4" type="rule"/>
+            <infoLink name="Poisoned Attacks" id="9536-ff69-50e2-a1e9" hidden="false" targetId="c42e-9dc4-8229-5abe" type="rule"/>
+            <infoLink name="Scout (Skinks)" id="1bf9-931e-e595-f80d" hidden="false" targetId="02e3-3d78-0697-b75b" type="rule"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
     </selectionEntry>
     <selectionEntry id="618f-c45e-845e-05af" name="Terradons" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -1687,25 +1728,8 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="b897-4495-81ab-300f" name="Stegadon" hidden="false" collective="false" import="true" type="unit">
-      <rules>
-        <rule id="3185-17b2-4e70-9bcc" name="Unit Strength 8" hidden="false">
-          <description>The Stegadon has a unit strength of 2. No not really its 8.</description>
-        </rule>
-      </rules>
       <infoLinks>
         <infoLink id="7a31-9074-ed14-e8d8" name="Stegadon" hidden="false" targetId="2db5-b28c-675e-eb12" type="profile"/>
-        <infoLink id="f0d2-f3f5-2e4c-dad4" name="Cold Blooded" hidden="false" targetId="da71-1c1e-ded6-959a" type="rule"/>
-        <infoLink id="aecb-2042-d195-0860" name="Ridden Monster" hidden="false" targetId="32db-8f99-46ca-df75" type="rule"/>
-        <infoLink id="a631-00d2-96a9-2626" name="Scaly Skin 4+" hidden="false" targetId="d9b3-2f25-faa4-a7fb" type="rule"/>
-        <infoLink id="d034-12d5-ada6-3ad9" name="Terror" hidden="false" targetId="756a-1071-031a-2158" type="rule"/>
-        <infoLink id="f805-1e0a-e12b-39c3" name="Large Target" hidden="false" targetId="25b1-e384-bfcb-beed" type="rule"/>
-        <infoLink id="4a18-bc82-edf5-8bb9" name="Impact Hits" hidden="false" targetId="f0c4-f861-6880-7aa0" type="rule"/>
-        <infoLink id="ecbd-13f3-3999-a035" name="Howdah" hidden="false" targetId="5c7e-c9e2-e1ed-86ca" type="rule"/>
-        <infoLink id="1c6e-7111-eee5-d6fb" name="Mixed Weapons" hidden="false" targetId="8cf4-ddde-eb05-f9b3" type="rule"/>
-        <infoLink id="4e61-642c-820b-7bad" name="Giant Bow" hidden="false" targetId="b555-06f7-369f-b934" type="rule"/>
-        <infoLink id="cbb2-1a85-f832-2f05" name="Stubborn" hidden="false" targetId="6254-3ee5-7fab-6595" type="rule"/>
-        <infoLink id="389b-0959-70c6-1e78" name="Immune to Panic" hidden="false" targetId="ab76-c582-4154-09fb" type="rule"/>
-        <infoLink id="0a49-6b0b-3a2b-61bc" name="Poisoned Attacks" hidden="false" targetId="c42e-9dc4-8229-5abe" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="1cef-6451-c221-efe4" name="Rare" hidden="false" targetId="e94b-6a54-8779-cd60" primary="true"/>
@@ -1715,6 +1739,36 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <infoGroups>
+        <infoGroup name="Special rules" id="b0f2-3cba-f427-cff6" hidden="false">
+          <rules>
+            <rule name="Unit Strength 8" id="3185-17b2-4e70-9bcc" hidden="false">
+              <description>The Stegadon has a unit strength of 2. No not really its 8.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink name="Cold Blooded" id="f0d2-f3f5-2e4c-dad4" hidden="false" targetId="da71-1c1e-ded6-959a" type="rule"/>
+            <infoLink name="Giant Bow" id="4e61-642c-820b-7bad" hidden="false" targetId="b555-06f7-369f-b934" type="rule"/>
+            <infoLink name="Howdah" id="ecbd-13f3-3999-a035" hidden="false" targetId="5c7e-c9e2-e1ed-86ca" type="rule"/>
+            <infoLink name="Immune to Panic" id="389b-0959-70c6-1e78" hidden="false" targetId="ab76-c582-4154-09fb" type="rule"/>
+            <infoLink name="Impact Hits" id="4a18-bc82-edf5-8bb9" hidden="false" targetId="f0c4-f861-6880-7aa0" type="rule"/>
+            <infoLink name="Large Target" id="f805-1e0a-e12b-39c3" hidden="false" targetId="25b1-e384-bfcb-beed" type="rule"/>
+            <infoLink name="Mixed Weapons" id="1c6e-7111-eee5-d6fb" hidden="false" targetId="8cf4-ddde-eb05-f9b3" type="rule"/>
+            <infoLink name="Poisoned Attacks" id="0a49-6b0b-3a2b-61bc" hidden="false" targetId="c42e-9dc4-8229-5abe" type="rule"/>
+            <infoLink name="Ridden Monster" id="aecb-2042-d195-0860" hidden="false" targetId="32db-8f99-46ca-df75" type="rule"/>
+            <infoLink name="Scaly Skin 4+" id="a631-00d2-96a9-2626" hidden="false" targetId="d9b3-2f25-faa4-a7fb" type="rule"/>
+            <infoLink name="Stubborn" id="cbb2-1a85-f832-2f05" hidden="false" targetId="6254-3ee5-7fab-6595" type="rule"/>
+            <infoLink name="Terror" id="d034-12d5-ada6-3ad9" hidden="false" targetId="756a-1071-031a-2158" type="rule"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="f7d4-7faf-8470-ee0d" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="4f57-02c2-7c48-f1e8" name="Salamander Hunting Packs" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -2039,9 +2093,15 @@ The Hand of Gods has a range of 8&quot; and strikes every enemy unit within line
             <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fe15-38b7-daea-2ec8" type="atLeast"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="1" field="0528-8f2c-7cdc-32d8">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="f7d4-7faf-8470-ee0d" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="259a-5e42-839d-55b2" type="max"/>
+        <constraint type="min" value="0" field="selections" scope="force" shared="true" id="0528-8f2c-7cdc-32d8" includeChildSelections="true"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="92f9-1635-23d3-2269" name="Special list rules" hidden="false" targetId="32f1-197f-d719-a393" primary="true"/>
@@ -2134,6 +2194,7 @@ The Hand of Gods has a range of 8&quot; and strikes every enemy unit within line
             <selectionEntry id="a5ce-d1da-5d2e-e051" name="Sacred Host of Sotek, the Serpent God" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1e9e-8096-7c3d-3c32" type="max"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="bd32-ae4e-fdbd-2b1d" includeChildSelections="false"/>
               </constraints>
               <infoLinks>
                 <infoLink id="b463-a25b-72d4-8100" name="Sacred Host of Sotek, the Serpent God" hidden="false" targetId="3470-ec9b-7721-4069" type="rule"/>
@@ -2143,6 +2204,13 @@ The Hand of Gods has a range of 8&quot; and strikes every enemy unit within line
                 <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
                 <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
               </costs>
+              <modifiers>
+                <modifier type="set" value="1" field="bd32-ae4e-fdbd-2b1d">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="f7d4-7faf-8470-ee0d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -2200,6 +2268,13 @@ The Hand of Gods has a range of 8&quot; and strikes every enemy unit within line
                 <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
                 <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
               </costs>
+              <modifiers>
+                <modifier type="set" value="75" field="316e-76d8-28bc-df19">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="f7d4-7faf-8470-ee0d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Scout" hidden="false" id="4e67-1233-0a64-5cf3" collective="false">
               <constraints>
@@ -2343,9 +2418,14 @@ The Hand of Gods has a range of 8&quot; and strikes every enemy unit within line
       </costs>
       <modifiers>
         <modifier type="set" value="false" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="fe15-38b7-daea-2ec8" shared="true" includeChildSelections="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="fe15-38b7-daea-2ec8" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="f7d4-7faf-8470-ee0d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
     </selectionEntry>
@@ -2879,6 +2959,397 @@ These may take one of the following Blessed Spawning each:
           <description>Characters must take the Blesssed Spawning of Itzl if they wish to ride a Carnosaur or a Cold One.</description>
         </rule>
       </rules>
+    </selectionEntry>
+    <selectionEntry id="56e7-0e42-990f-bbdf" name="Tehenhauin, the Prophet of Sotek" publicationId="3a49-dd2e-fcaa-cdb1" page="59" hidden="true" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="37f5-ce5d-91c2-db5e" name="Characters" hidden="false" targetId="7a1c-d611-c2dc-def1" primary="false"/>
+        <categoryLink name="Lord" hidden="false" id="646b-3cc2-e908-2fcd" targetId="d024-d25b-a9b4-73b6" primary="false"/>
+        <categoryLink name="Special Characters" hidden="false" id="ec00-e9b7-4610-d1cb" targetId="0644-bfcd-32c2-21dc" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="d35f-1c87-e400-ed40" name="Magic" hidden="false" collective="false" import="true" defaultSelectionEntryId="2e7e-4d6a-7fe0-6900">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1512-d62c-bfbf-6569" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f1db-c424-e153-d302" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="239b-deca-8159-2640" name="Wizard Level 3" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fea3-56a4-529c-4a4c" type="max"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ff84-1fcc-9dc5-8c24" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="3"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="2"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="8615-5b0e-4eb9-b6be" name="Magic Items" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink import="true" name="Blade of the Serpent&apos;s Tongue (Magic Weapon)" hidden="false" id="2baa-5234-2614-a4fe" type="selectionEntry" targetId="3739-4e47-e465-d8b6"/>
+            <entryLink import="true" name="Totem of Sotek (Enchanted Item)" hidden="false" id="39b6-4ff0-23ab-cac9" type="selectionEntry" targetId="8a28-222c-1e99-5724"/>
+            <entryLink import="true" name="Blessed Spawning of Sotek, the Serpent God" hidden="false" id="32e6-391f-c270-af3f" type="selectionEntry" targetId="6391-ef05-a9e0-9c09"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="ae5e-7be8-8591-5485" name="General" hidden="false" collective="false" import="true" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f87b-28de-6405-f445" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="350"/>
+        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+      </costs>
+      <profiles>
+        <profile name="Tehenhauin" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="92e3-8ddc-d257-f192" page="61" publicationId="415d-9fbb-df83-ad27">
+          <characteristics>
+            <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">6</characteristic>
+            <characteristic name="WS" typeId="f95b-da01-0578-3bdc">6</characteristic>
+            <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">4</characteristic>
+            <characteristic name="S" typeId="b690-4bc0-bb73-267b">4</characteristic>
+            <characteristic name="T" typeId="8712-f56f-5b22-a720">3</characteristic>
+            <characteristic name="W" typeId="253a-9b00-4fde-8ac2">3</characteristic>
+            <characteristic name="I" typeId="dfff-363e-f72a-5a59">6</characteristic>
+            <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">3</characteristic>
+            <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">8</characteristic>
+            <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">5+</characteristic>
+            <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">4+</characteristic>
+            <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">3</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Tide of Serpents" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="a124-a044-95c0-9fc2" page="61" publicationId="415d-9fbb-df83-ad27">
+          <characteristics>
+            <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">-</characteristic>
+            <characteristic name="WS" typeId="f95b-da01-0578-3bdc">2</characteristic>
+            <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">-</characteristic>
+            <characteristic name="S" typeId="b690-4bc0-bb73-267b">2</characteristic>
+            <characteristic name="T" typeId="8712-f56f-5b22-a720">-</characteristic>
+            <characteristic name="W" typeId="253a-9b00-4fde-8ac2">-</characteristic>
+            <characteristic name="I" typeId="dfff-363e-f72a-5a59">2</characteristic>
+            <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">D6</characteristic>
+            <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">-</characteristic>
+            <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+            <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+            <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoGroups>
+        <infoGroup name="Special rules" id="0252-f15f-4bf8-a57a" hidden="false">
+          <infoLinks>
+            <infoLink name="Cold Blooded" id="4635-59ac-1a46-989b" hidden="false" targetId="da71-1c1e-ded6-959a" type="rule"/>
+            <infoLink name="Aquatic" id="ad37-eed2-2c23-4995" hidden="false" targetId="d1be-78da-561d-0934" type="rule"/>
+            <infoLink name="Red Crests" id="dc59-537d-e80c-6e5f" hidden="false" type="rule" targetId="f171-a144-6587-7b04"/>
+            <infoLink name="Shield of Sotek" id="c237-3650-a044-2c30" hidden="false" type="rule" targetId="1399-57af-9808-5dfc"/>
+            <infoLink name="Scaly Skin 5+" id="c924-4ccc-7986-89b5" hidden="false" type="rule" targetId="0afe-62e9-ea96-1421"/>
+            <infoLink name="Poisoned Attacks" id="9d3c-06fe-cf4f-fd38" hidden="false" type="rule" targetId="2738-27d5-f4af-4722"/>
+          </infoLinks>
+          <rules>
+            <rule name="Tide of Serpents" id="e3e1-523f-d474-c394" hidden="false" page="61" publicationId="415d-9fbb-df83-ad27">
+              <description>Tehenhauin is at all times surrounded by a swarm of serpents, the beasts of the jungle that are drawn to him as a child of Sotek. These serpents make D6 Poisoned Attacks, as noted on Tehenhauin&apos;s profile. They may not be targeted separately, and are killed should the Prophet be removed as a casualty.
+
+
+Tehenhauin may only join units of Jungle Swarms (not Lesser Swarms), and is counted as Unbreakable, and as a Skirmisher whilst with them. When on his own, Tehenhauin counts as a single model on foot. Tehenhauin and his tide of serpents have a Unit Strength of 3. The Lesser Swarms are able to make &quot;Look Out, Sir!&quot; rolls.</description>
+            </rule>
+          </rules>
+        </infoGroup>
+      </infoGroups>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="f7d4-7faf-8470-ee0d" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="force" shared="true" id="2054-43bb-5a80-b23c" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry id="64ec-34d1-14ee-0d54" name="Red Crested Skinks" hidden="true" collective="false" import="true" type="unit">
+      <infoLinks>
+        <infoLink id="3aa4-3131-9729-184b" name="Red Crest" hidden="false" targetId="d0d0-091e-8468-5ff5" type="profile"/>
+        <infoLink id="0e3b-7370-34b8-e8e8" name="Aquatic" hidden="false" targetId="d1be-78da-561d-0934" type="rule"/>
+        <infoLink id="745c-7d89-3241-b273" name="Cold Blooded" hidden="false" targetId="da71-1c1e-ded6-959a" type="rule"/>
+        <infoLink name="Blesssed Spawning of Sotek, the Serpent God" id="7e28-b13c-920e-b9ae" hidden="false" type="rule" targetId="d93f-c967-c856-d295"/>
+        <infoLink name="Red Crests" id="e87d-0c36-5991-5b74" hidden="false" type="rule" targetId="f171-a144-6587-7b04"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="dfa6-943a-6d05-528a" name="Core" hidden="false" targetId="64bf-efb4-9978-26df" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="0438-aeff-c664-519c" name="Skink Brave" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb52-b16d-7d2f-48bc" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="38b2-77b9-9e38-92e5" name="Skink Skirmisher Brave" hidden="false" targetId="4e12-ae35-5bed-9593" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="10"/>
+            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="70f0-9a38-1016-3819" name="Red Crest" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b088-5e96-f372-736b" type="min"/>
+            <constraint field="selections" scope="parent" value="25" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1311-d379-4683-9532" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="7"/>
+            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="0818-6a32-7248-a6bb" name="Scouts" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="increment" field="ecfa-8486-4f6c-c249" value="1">
+              <repeats>
+                <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bef5-4730-5e24-d4db" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Musician" hidden="false" id="ab8d-b9c5-7d8e-9b41">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="068a-353b-741d-7014" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="5"/>
+            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Standard Bearer" hidden="false" id="e251-3812-2082-0210">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cc91-934c-0f45-a01b" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="10"/>
+            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+          </costs>
+          <entryLinks>
+            <entryLink import="true" name="Magic Banners" hidden="false" id="4b84-7a8e-158e-09a3" type="selectionEntryGroup" targetId="106e-cbcc-35b6-ec13">
+              <constraints>
+                <constraint type="max" value="25" field="ecfa-8486-4f6c-c249" scope="parent" shared="true" id="c49d-e306-80cd-b09c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="9623-f692-c1ac-0957" name="Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="7fd8-5c40-0608-a13e">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e5ba-4773-6ff4-ef28" type="min"/>
+            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0218-2524-00d6-602e" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Hand Weapon" hidden="false" id="f356-8011-2438-e698" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="49e3-d84e-020b-b007" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="93bb-247d-99fa-ca28" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Hand Weapon" id="5b46-838b-c018-d323" hidden="false" targetId="5556-38ea-b278-4a8f" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Shield" hidden="false" id="3604-c218-e6fb-343f" type="selectionEntry" targetId="50e2-1873-a856-03e7">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1d68-13db-012d-b7de" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="820b-f7f3-0a85-1873" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Blessed Spawning (Skinks of the Southlands)" id="7844-dc2c-6536-142a" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8b67-ff9c-daab-a7c0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Blessed Mark of the Old Ones" hidden="false" id="ef07-8304-bf91-131c" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" id="8f69-b7ae-a72d-e0e4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Blesssed Mark of the Old Ones" id="b552-c10f-d534-20a9" hidden="false" targetId="4cc1-35fc-92c0-dd94" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="35"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Blessed Spawning of Sotek, the Serpent God" hidden="false" id="55dd-de4b-8479-dbb3" collective="false" targetId="6391-ef05-a9e0-9c09" type="selectionEntry">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="937e-1db7-999f-4b76" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="10"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Blessed Spawning of Chotec, the Solar God" hidden="false" id="29f3-9c84-d9f9-0bcd" collective="false" targetId="4ad5-2248-6d34-f01b" type="selectionEntry">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b948-6503-ebc7-3d03" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="5"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Blessed Spawning of Huanchi, the Jaguar God" hidden="false" id="a2a2-fa9b-8a6e-db7d" collective="false" targetId="2431-73ea-e415-7496" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="equalTo" value="0" field="selections" scope="force" childId="b5ff-0687-4b30-f367" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="fe15-38b7-daea-2ec8" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4561-060a-da92-280a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Blessed Spawning of Tepok, the Inscrutable" hidden="false" id="6d2d-e868-1cd5-6806" collective="false" targetId="047c-64df-42fc-9ed5" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="equalTo" value="0" field="selections" scope="force" childId="b5ff-0687-4b30-f367" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="fe15-38b7-daea-2ec8" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="09fc-f675-20a8-c4b3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="20"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="f7d4-7faf-8470-ee0d" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry id="5797-332f-ee94-ac10" name="Lesser Swarms" hidden="true" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9f4a-3c9b-2204-36b0" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="31dd-058b-e051-fe0a" name="Lesser Swarms" hidden="false" targetId="687d-480b-61aa-33db" type="profile"/>
+        <infoLink id="4be1-7081-3d3b-83b9" name="Swarm" hidden="false" targetId="777f-72b4-bdf2-184a" type="rule"/>
+        <infoLink id="4d93-978d-8d84-6dd7" name="Small" hidden="false" targetId="6b31-dd96-9739-05ce" type="rule"/>
+        <infoLink id="047b-42bc-34f2-e783" name="Poisoned Attacks" hidden="false" targetId="2738-27d5-f4af-4722" type="rule"/>
+        <infoLink name="Unbreakable" id="23bc-ecf5-e4ca-f161" hidden="false" type="rule" targetId="8ae3-9724-980f-7308"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="98d4-1a4b-a372-8ec7" name="Core" hidden="false" targetId="64bf-efb4-9978-26df" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="b9bb-2a34-bdd9-d101" name="Lesser Swarm" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d29a-66c2-9dd5-2ba3" type="max"/>
+            <constraint field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="197d-8366-798a-4a7b" type="min"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="60"/>
+            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="f7d4-7faf-8470-ee0d" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry id="8ea0-c7ba-d609-e772" name="Engine of the Gods" hidden="true" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="35a4-8421-c9ea-f4a6" name="Unit Strength 8" hidden="false">
+          <description>The Stegadon has a unit strength of 2. No not really its 8.</description>
+        </rule>
+        <rule name="The Power of the Ancients" id="6953-e8b7-3af9-315f" hidden="false" page="60" publicationId="415d-9fbb-df83-ad27">
+          <description>The Engine is a stone thrower, as described in the Warhammer Rulebook, and in addition, its attacks are counted as Magical and Flaming. The Engine has no crew as such, but shooting attacks against it are randomised between the Arcanadon and the Engine as described in the Warhammer Rulebook. The Engine itself may not be targeted separately in close combat. In addition, the Engine has a 360° field of fire, and can move and fire - it does not need to turn to face the direction in which it is shooting. Should the Engine roll a Misfire result of &apos;1&apos;, the entire model is removed as a casualty as devastating energies cascade out of control.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="8953-4529-eeaf-5763" name="Arcanodon" hidden="false" targetId="2d79-f0e9-7a78-451b" type="profile"/>
+        <infoLink id="22f8-5413-f85c-32ef" name="Cold Blooded" hidden="false" targetId="da71-1c1e-ded6-959a" type="rule"/>
+        <infoLink id="d43a-9af4-bd43-0cad" name="Ridden Monster" hidden="false" targetId="32db-8f99-46ca-df75" type="rule"/>
+        <infoLink id="fb90-f18f-250a-9221" name="Scaly Skin 4+" hidden="false" targetId="d9b3-2f25-faa4-a7fb" type="rule"/>
+        <infoLink id="4a8b-2291-f5f2-09b1" name="Terror" hidden="false" targetId="756a-1071-031a-2158" type="rule"/>
+        <infoLink id="85ce-29a2-0ed2-e2d6" name="Large Target" hidden="false" targetId="25b1-e384-bfcb-beed" type="rule"/>
+        <infoLink id="98de-54a5-a4df-4379" name="Impact Hits" hidden="false" targetId="f0c4-f861-6880-7aa0" type="rule"/>
+        <infoLink id="6f90-a871-1620-8b33" name="Mixed Weapons" hidden="false" targetId="8cf4-ddde-eb05-f9b3" type="rule"/>
+        <infoLink id="9f74-5f38-14e2-5321" name="Stubborn" hidden="false" targetId="6254-3ee5-7fab-6595" type="rule"/>
+        <infoLink id="ba70-e55f-6427-004c" name="Immune to Panic" hidden="false" targetId="ab76-c582-4154-09fb" type="rule"/>
+        <infoLink id="1977-21aa-0e0f-5d7a" name="Poisoned Attacks" hidden="false" targetId="c42e-9dc4-8229-5abe" type="rule"/>
+        <infoLink id="d42f-dc51-bc10-5d56" name="Engine" hidden="false" targetId="da1f-143d-503f-287b" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="66d3-e912-db78-66a3" name="Rare" hidden="false" targetId="e94b-6a54-8779-cd60" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="235"/>
+        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="f7d4-7faf-8470-ee0d" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
   </selectionEntries>
   <entryLinks>
@@ -3703,6 +4174,53 @@ These may take one of the following Blessed Spawning each:
         <infoLink name="Fast Cavalry" id="e97a-b1a2-a689-733b" hidden="false" type="rule" targetId="6a56-df83-e623-2218"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Blade of the Serpent&apos;s Tongue (Magic Weapon)" hidden="false" id="3739-4e47-e465-d8b6">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="63b4-6140-8fa4-5e5a" includeChildSelections="false"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Blade of the Serpent&apos;s Tongue (Magic Weapon)" id="1ba8-9325-efd2-c75d" hidden="false" type="rule" targetId="60b1-b9a7-eb4b-dfc4"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Dagger of Sotek, the Serpent God" typeId="7889-42d9-70a0-3ea9" typeName="Weapon" hidden="false" id="bb1a-da67-26b8-3024" publicationId="3a49-dd2e-fcaa-cdb1" page="53">
+          <characteristics>
+            <characteristic name="Range" typeId="3107-4d1e-9a51-6564">Melee</characteristic>
+            <characteristic name="Strength" typeId="6fe4-1ebb-cb04-1378">As user</characteristic>
+            <characteristic name="Damage" typeId="6f2f-d612-52ef-1633"/>
+            <characteristic name="Special Rules" typeId="a21a-cdc0-4b13-b236">Skink only.
+
+Confers Killing Blow on the Bearer.
+In addition, the bearer causes Fear in Skaven.</characteristic>
+            <characteristic name="Saves" typeId="8014-a8b2-15c3-da95"/>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="Blade of the Serpent&apos;s Tongue" field="name"/>
+            <modifier type="set" value="+1" field="6fe4-1ebb-cb04-1378"/>
+          </modifiers>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Totem of Sotek (Enchanted Item)" hidden="false" id="8a28-222c-1e99-5724">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="0fc0-c6dc-7e3d-1673" includeChildSelections="false"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Totem of Sotek (Enchanted Item)" id="a606-32de-a779-e081" hidden="false" type="rule" targetId="08b8-dabc-1ab2-a106"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Red Crests" hidden="false" id="adfb-e3ed-5e20-0669">
+      <costs>
+        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="5"/>
+        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fc18-b845-6cbc-d3b0" includeChildSelections="false"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Red Crests" id="67fa-a37f-d9cc-387e" hidden="false" type="rule" targetId="f171-a144-6587-7b04"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="4cfd-b3c7-a3ea-68f1" name="Arcane Items" hidden="false" collective="false" import="true">
@@ -4137,6 +4655,9 @@ In addition, the bearer causes Fear in Skaven.</characteristic>
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
+          <infoLinks>
+            <infoLink name="Killing Blow" id="dd19-bfd4-6fa6-8dd3" hidden="false" type="rule" targetId="e08e-1c7b-a667-f05b"/>
+          </infoLinks>
         </selectionEntry>
         <selectionEntry id="aaf4-ca24-eb2e-6e54" name="The Blade of Realities" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -4972,6 +5493,29 @@ of Quetzl using the following amendments:
 * Skink Skirmishers and characters must purchase the Sacred Spawning of Tepok for + 20 points per unit, and + 20 points per character, granting them Magic Resistance (1).
 * Skink Priests in a Sacred Host of Tepok are only allowed to take their spells from the Lore of Light.</description>
     </rule>
+    <rule name="Blade of the Serpent&apos;s Tongue (Magic Weapon)" id="60b1-b9a7-eb4b-dfc4" hidden="false" page="61" publicationId="415d-9fbb-df83-ad27">
+      <description>The Blade of the Serpent&apos;s Tongue counts as a Dagger of Sotek (see page 53 of the Lizardmen Army book), but in addition grants Tehenhauin +1 Strength on the turn he charges.</description>
+    </rule>
+    <rule name="Totem of Sotek (Enchanted Item)" id="08b8-dabc-1ab2-a106" hidden="false" page="61" publicationId="415d-9fbb-df83-ad27">
+      <description>Jungle Swarms in the unit joined by Tehenhauin benefit from Regeneration, though they only recover a wound on 6+.</description>
+    </rule>
+    <rule name="Red Crests" id="f171-a144-6587-7b04" hidden="false" page="59" publicationId="415d-9fbb-df83-ad27">
+      <description>Skink characters may be upgraded to Red Crests at a cost of +5 points, benefiting from the following advantages:
+* They are only affected by Clan Pestilens Plague Censers on a 6+, in the same way as the Censer Bearers themselves.
+
+* They are immune to normal Poisoned Attacks - count them as normal weapons of the same type.
+
+* They are subject to Hatred of all types of Skaven.
+
+* They are not slowed by jungle or wooded terrain.
+</description>
+    </rule>
+    <rule name="Shield of Sotek" id="1399-57af-9808-5dfc" hidden="false" page="61" publicationId="415d-9fbb-df83-ad27">
+      <description>Tehenhauin is watched over by the Serpent God himself, granting him a 4+ Ward Save.</description>
+    </rule>
+    <rule name="Scales of the Coiled One" id="87de-27d7-5076-7715" hidden="false" page="61" publicationId="415d-9fbb-df83-ad27">
+      <description>Tehenhauin wears fragments of the scaly hide of a great serpent whose mummified body is worshipped as an avatar of the Serpent God at the Shrine of the Great Viper. This grants the Prophet of Sotek a Scaly Skin Save of 5+.</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="5943-700c-955c-d22d" name="Slann Mage Priest" publicationId="3a49-dd2e-fcaa-cdb1" page="23-24" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
@@ -5051,7 +5595,7 @@ of Quetzl using the following amendments:
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">10</characteristic>
         <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
         <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
-        <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
+        <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">3</characteristic>
       </characteristics>
     </profile>
     <profile id="0dd7-040d-bfb2-95a0" name="Skink Skirmisher" publicationId="3a49-dd2e-fcaa-cdb1" page="60" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
@@ -5307,7 +5851,7 @@ of Quetzl using the following amendments:
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">5</characteristic>
         <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
         <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
-        <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
+        <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">8</characteristic>
       </characteristics>
     </profile>
     <profile id="b47d-89a9-39eb-89bf" name="Skink Crew" publicationId="3a49-dd2e-fcaa-cdb1" page="64" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
@@ -5451,6 +5995,70 @@ of Quetzl using the following amendments:
         <characteristic name="I" typeId="dfff-363e-f72a-5a59">3</characteristic>
         <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">3</characteristic>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+        <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+        <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
+      </characteristics>
+    </profile>
+    <profile id="687d-480b-61aa-33db" name="Lesser Swarms" publicationId="415d-9fbb-df83-ad27" page="60" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
+      <characteristics>
+        <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">6</characteristic>
+        <characteristic name="WS" typeId="f95b-da01-0578-3bdc">3</characteristic>
+        <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">0</characteristic>
+        <characteristic name="S" typeId="b690-4bc0-bb73-267b">2</characteristic>
+        <characteristic name="T" typeId="8712-f56f-5b22-a720">2</characteristic>
+        <characteristic name="W" typeId="253a-9b00-4fde-8ac2">3</characteristic>
+        <characteristic name="I" typeId="dfff-363e-f72a-5a59">1</characteristic>
+        <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">3</characteristic>
+        <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">10</characteristic>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+        <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+        <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">3</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="d0d0-091e-8468-5ff5" name="Red Crest" publicationId="3a49-dd2e-fcaa-cdb1" page="60" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
+      <characteristics>
+        <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">6</characteristic>
+        <characteristic name="WS" typeId="f95b-da01-0578-3bdc">3</characteristic>
+        <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">3</characteristic>
+        <characteristic name="S" typeId="b690-4bc0-bb73-267b">3</characteristic>
+        <characteristic name="T" typeId="8712-f56f-5b22-a720">2</characteristic>
+        <characteristic name="W" typeId="253a-9b00-4fde-8ac2">1</characteristic>
+        <characteristic name="I" typeId="dfff-363e-f72a-5a59">4</characteristic>
+        <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
+        <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">5</characteristic>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+        <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+        <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="2d79-f0e9-7a78-451b" name="Arcanodon" publicationId="415d-9fbb-df83-ad27" page="60" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
+      <characteristics>
+        <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">6</characteristic>
+        <characteristic name="WS" typeId="f95b-da01-0578-3bdc">2</characteristic>
+        <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">0</characteristic>
+        <characteristic name="S" typeId="b690-4bc0-bb73-267b">5</characteristic>
+        <characteristic name="T" typeId="8712-f56f-5b22-a720">6</characteristic>
+        <characteristic name="W" typeId="253a-9b00-4fde-8ac2">5</characteristic>
+        <characteristic name="I" typeId="dfff-363e-f72a-5a59">1</characteristic>
+        <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">3</characteristic>
+        <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">5</characteristic>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">4+</characteristic>
+        <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+        <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">8</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="da1f-143d-503f-287b" name="Engine" publicationId="415d-9fbb-df83-ad27" page="60" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
+      <characteristics>
+        <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">-</characteristic>
+        <characteristic name="WS" typeId="f95b-da01-0578-3bdc">-</characteristic>
+        <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">-</characteristic>
+        <characteristic name="S" typeId="b690-4bc0-bb73-267b">-</characteristic>
+        <characteristic name="T" typeId="8712-f56f-5b22-a720">7</characteristic>
+        <characteristic name="W" typeId="253a-9b00-4fde-8ac2">3</characteristic>
+        <characteristic name="I" typeId="dfff-363e-f72a-5a59">-</characteristic>
+        <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">-</characteristic>
+        <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">-</characteristic>
         <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
         <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>

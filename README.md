@@ -79,6 +79,7 @@ The main additions are:
 - [x] Kroq-gar (it was already included)
 - [x] Kroak (it was already included)
 - [x] Sacred Hosts rules (WD#300(UK))
+- [x] Tehenhauin (LUS)
 
 ### Dogs of War
 - [x] Al Muktar's Desert Dogs
@@ -132,6 +133,7 @@ The main additions are:
 - [x] Watchtower Patrol (WK#259(UK))
 - [x] Cult of Slaanesh (SoC)
 - [x] Southlands (LM-AB)
+- [x] Red Host (LUS)
 
 ## Sources consulted
 
