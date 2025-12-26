@@ -807,20 +807,35 @@
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="31a8-11cf-864a-e093" name="Magic" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="31a8-11cf-864a-e093" name="Magic selection (50 points)" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c52-602f-aaf6-b49b" type="max"/>
+            <constraint type="max" value="50" field="ecfa-8486-4f6c-c249" scope="parent" shared="true" id="a601-5837-2537-72e0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <selectionEntryGroups>
-            <selectionEntryGroup id="a2aa-651d-a5fc-fac7" name="Magic Items (50 points)" hidden="false" collective="false" import="true">
-              <constraints>
-                <constraint field="ecfa-8486-4f6c-c249" scope="parent" value="50" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a601-5837-2537-72e0" type="max"/>
-              </constraints>
+            <selectionEntryGroup id="a2aa-651d-a5fc-fac7" name="Magic Items" hidden="false" collective="false" import="true">
               <entryLinks>
                 <entryLink id="69ec-a27b-6346-4ab4" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="a294-4c2f-402f-fb78" type="selectionEntryGroup"/>
                 <entryLink id="1ac0-e63b-85dd-43f1" name="Magic Armour" hidden="false" collective="false" import="true" targetId="529d-b024-a6f0-fa3c" type="selectionEntryGroup"/>
                 <entryLink id="6633-9804-8bdb-e2c8" name="Talismans" hidden="false" collective="false" import="true" targetId="8d27-b094-8eb7-d32b" type="selectionEntryGroup"/>
                 <entryLink id="4166-26c9-6f42-4dbe" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="8b31-cab4-4143-b140" type="selectionEntryGroup"/>
+                <entryLink import="true" name="Arcane Items" hidden="false" id="1606-d135-686b-9a91" type="selectionEntryGroup" targetId="b150-2a07-20b9-49df"/>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Magic Items (HoC)" id="775a-500d-b5a1-3e5d" hidden="false">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="5013-f9f4-e03b-94d5" shared="true" includeChildSelections="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="4990-1770-2328-effd" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <entryLinks>
                 <entryLink import="true" name="Arcane Items (HoC)" hidden="true" id="294d-e610-2121-50b4" type="selectionEntryGroup" targetId="6ada-c79b-f68f-fc49">
                   <modifiers>
                     <modifier type="set" value="false" field="hidden">
@@ -835,21 +850,7 @@
                     </modifier>
                   </modifiers>
                 </entryLink>
-                <entryLink import="true" name="Enchanted Items (HoC)" hidden="true" id="8ada-e2e9-230c-e107" collective="false" targetId="6dcf-a1e0-6066-e410" type="selectionEntryGroup">
-                  <modifiers>
-                    <modifier type="set" value="false" field="hidden">
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="5013-f9f4-e03b-94d5" shared="true" includeChildSelections="true"/>
-                            <condition type="equalTo" value="0" field="selections" scope="parent" childId="0f93-0da2-31fd-6f0b" shared="true"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
-                </entryLink>
-                <entryLink import="true" name="Magic Armour (HoC)" hidden="true" id="2fc2-ce15-6abc-e241" collective="false" targetId="7864-88e1-f426-a899" type="selectionEntryGroup">
+                <entryLink import="true" name="Talismans (HoC)" hidden="true" id="1985-5b3d-9074-eee2" collective="false" targetId="25dc-a67d-d8f6-fe86" type="selectionEntryGroup">
                   <modifiers>
                     <modifier type="set" value="false" field="hidden">
                       <conditionGroups>
@@ -877,7 +878,7 @@
                     </modifier>
                   </modifiers>
                 </entryLink>
-                <entryLink import="true" name="Talismans (HoC)" hidden="true" id="1985-5b3d-9074-eee2" collective="false" targetId="25dc-a67d-d8f6-fe86" type="selectionEntryGroup">
+                <entryLink import="true" name="Magic Armour (HoC)" hidden="true" id="2fc2-ce15-6abc-e241" collective="false" targetId="7864-88e1-f426-a899" type="selectionEntryGroup">
                   <modifiers>
                     <modifier type="set" value="false" field="hidden">
                       <conditionGroups>
@@ -891,7 +892,20 @@
                     </modifier>
                   </modifiers>
                 </entryLink>
-                <entryLink import="true" name="Arcane Items" hidden="false" id="1606-d135-686b-9a91" type="selectionEntryGroup" targetId="b150-2a07-20b9-49df"/>
+                <entryLink import="true" name="Enchanted Items (HoC)" hidden="true" id="8ada-e2e9-230c-e107" collective="false" targetId="6dcf-a1e0-6066-e410" type="selectionEntryGroup">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="5013-f9f4-e03b-94d5" shared="true" includeChildSelections="true"/>
+                            <condition type="equalTo" value="0" field="selections" scope="parent" childId="0f93-0da2-31fd-6f0b" shared="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
