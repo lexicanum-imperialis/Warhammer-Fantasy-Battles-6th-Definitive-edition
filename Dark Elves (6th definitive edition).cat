@@ -820,15 +820,6 @@
                 <entryLink id="6633-9804-8bdb-e2c8" name="Talismans" hidden="false" collective="false" import="true" targetId="8d27-b094-8eb7-d32b" type="selectionEntryGroup"/>
                 <entryLink id="4166-26c9-6f42-4dbe" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="8b31-cab4-4143-b140" type="selectionEntryGroup"/>
                 <entryLink import="true" name="Arcane Items" hidden="false" id="1606-d135-686b-9a91" type="selectionEntryGroup" targetId="b150-2a07-20b9-49df"/>
-                <entryLink import="true" name="Arcane Items (HoC)" hidden="true" id="65f0-d38c-cebc-0554" type="selectionEntryGroup" targetId="6ada-c79b-f68f-fc49">
-                  <modifiers>
-                    <modifier type="set" value="false" field="hidden">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="4990-1770-2328-effd" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </entryLink>
                 <entryLink import="true" name="Enchanted Items (HoC)" hidden="true" id="f580-ac93-e55f-1551" collective="false" targetId="6dcf-a1e0-6066-e410" type="selectionEntryGroup">
                   <modifiers>
                     <modifier type="set" value="false" field="hidden">
@@ -856,15 +847,6 @@
                     </modifier>
                   </modifiers>
                 </entryLink>
-                <entryLink import="true" name="Magic Armour (HoC)" hidden="true" id="6d65-ae4b-e78f-e5e7" collective="false" targetId="7864-88e1-f426-a899" type="selectionEntryGroup">
-                  <modifiers>
-                    <modifier type="set" value="false" field="hidden">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="4990-1770-2328-effd" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -879,7 +861,7 @@
                 <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
               </costs>
               <modifiers>
-                <modifier type="add" value="4990-1770-2328-effd" field="category" scope="bd43-41c0-298e-22be"/>
+                <modifier type="add" value="4990-1770-2328-effd" field="category" scope="unit"/>
               </modifiers>
             </entryLink>
           </entryLinks>
@@ -1067,7 +1049,7 @@
               <modifiers>
                 <modifier type="set" value="1" field="8ae5-ba93-9543-b1cb">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="0f93-0da2-31fd-6f0b" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="4990-1770-2328-effd" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -1134,30 +1116,73 @@
         <categoryLink id="6028-d9fb-889f-f8f9" name="Characters" hidden="false" targetId="7a1c-d611-c2dc-def1" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="4650-6fd8-9504-5252" name="Level 2" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a7c8-2d7c-bc79-95a6" type="max"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="40"/>
-            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="1"/>
-            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-          </costs>
-        </selectionEntry>
         <selectionEntry id="2af7-2408-4a5d-38fc" name="Magic" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d156-c7f1-b2ac-61e9" type="max"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="53ae-e1c0-ee58-71d0" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+          </costs>
+          <entryLinks>
+            <entryLink import="true" name="Lore of Dark Magic" hidden="false" id="82f2-df78-dbc4-fb7e" type="selectionEntryGroup" targetId="76d0-7d08-fd0a-c3a7"/>
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Level 2" hidden="false" id="4650-6fd8-9504-5252" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a7c8-2d7c-bc79-95a6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="40"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="1"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Character options" hidden="false" id="7423-8c05-d474-2ec1" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1fee-22e6-6585-6570" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="50" field="ecfa-8486-4f6c-c249" scope="parent" shared="true" id="83a1-5ce6-d182-7cf4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2843-2a28-ae3b-fdcd" includeChildSelections="false"/>
           </constraints>
           <selectionEntryGroups>
-            <selectionEntryGroup id="ac0d-49f3-cb12-b397" name="Magic Items (50 points)" hidden="false" collective="false" import="true">
-              <constraints>
-                <constraint field="ecfa-8486-4f6c-c249" scope="parent" value="50" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="227f-d90d-26f0-304c" type="max"/>
-              </constraints>
+            <selectionEntryGroup name="Magic Items (50 pts)" id="3b01-99d7-30e1-5c7f" hidden="false" collective="false" import="true">
               <entryLinks>
-                <entryLink id="ea7c-02e8-de7d-0bca" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="a294-4c2f-402f-fb78" type="selectionEntryGroup"/>
-                <entryLink id="5b1f-5816-8671-f932" name="Talismans" hidden="false" collective="false" import="true" targetId="8d27-b094-8eb7-d32b" type="selectionEntryGroup"/>
-                <entryLink id="19e3-87da-02dc-0802" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="8b31-cab4-4143-b140" type="selectionEntryGroup"/>
-                <entryLink id="2e61-b631-7c14-311d" name="Arcane Items" hidden="false" collective="false" import="true" targetId="b150-2a07-20b9-49df" type="selectionEntryGroup"/>
+                <entryLink import="true" name="Magic Weapons" hidden="false" id="d857-6839-7f1e-0c35" collective="false" targetId="a294-4c2f-402f-fb78" type="selectionEntryGroup"/>
+                <entryLink import="true" name="Magic Armour" hidden="false" id="1fce-083c-e159-0d8f" collective="false" targetId="529d-b024-a6f0-fa3c" type="selectionEntryGroup"/>
+                <entryLink import="true" name="Talismans" hidden="false" id="cc9e-b7ae-b036-b2dd" collective="false" targetId="8d27-b094-8eb7-d32b" type="selectionEntryGroup"/>
+                <entryLink import="true" name="Enchanted Items" hidden="false" id="048a-982c-a099-9f9d" collective="false" targetId="8b31-cab4-4143-b140" type="selectionEntryGroup"/>
+                <entryLink import="true" name="Arcane Items" hidden="false" id="d85f-adb7-f591-0ab6" type="selectionEntryGroup" targetId="b150-2a07-20b9-49df"/>
+                <entryLink import="true" name="Enchanted Items (HoC)" hidden="true" id="c6e7-0550-f92b-eec4" collective="false" targetId="6dcf-a1e0-6066-e410" type="selectionEntryGroup">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="4990-1770-2328-effd" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Magic Weapons (HoC)" hidden="true" id="da82-1934-fbd8-4b03" collective="false" targetId="a32b-ff8d-318c-be99" type="selectionEntryGroup">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="4990-1770-2328-effd" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Talismans (HoC)" hidden="true" id="1f5f-11f5-57bb-6b4f" collective="false" targetId="25dc-a67d-d8f6-fe86" type="selectionEntryGroup">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="4990-1770-2328-effd" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -1167,7 +1192,14 @@
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
           <entryLinks>
-            <entryLink import="true" name="Lore of Dark Magic" hidden="false" id="82f2-df78-dbc4-fb7e" type="selectionEntryGroup" targetId="76d0-7d08-fd0a-c3a7"/>
+            <entryLink import="true" name="Hero of Slaanesh" hidden="false" id="ac4a-963b-2d5a-ad3d" type="selectionEntry" targetId="31e5-e4c0-625d-0e43">
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+              </costs>
+              <modifiers>
+                <modifier type="add" value="4990-1770-2328-effd" field="category" scope="unit"/>
+              </modifiers>
+            </entryLink>
           </entryLinks>
         </selectionEntry>
       </selectionEntries>
@@ -1192,7 +1224,7 @@
               <modifiers>
                 <modifier type="set" value="1" field="e9da-e023-b83f-929b">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="1646-ecf8-5e92-5b2a" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="4990-1770-2328-effd" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -1212,11 +1244,6 @@
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="f0dd-194b-58fd-d01e" name="General" hidden="false" collective="false" import="true" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry"/>
-        <entryLink import="true" name="Hero of Slaanesh" hidden="false" id="1646-ecf8-5e92-5b2a" type="selectionEntry" targetId="31e5-e4c0-625d-0e43">
-          <costs>
-            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
-          </costs>
-        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="90"/>
@@ -4914,12 +4941,6 @@ In addition, a monster that is beaten in hand to hand combat by Rakarth is assum
             <entryLink import="true" name="Enchanted Items (HoC)" hidden="false" id="d069-bb0a-9d52-4d26" collective="false" targetId="6dcf-a1e0-6066-e410" type="selectionEntryGroup"/>
             <entryLink import="true" name="Talismans (HoC)" hidden="false" id="9a24-115c-8405-ec36" collective="false" targetId="25dc-a67d-d8f6-fe86" type="selectionEntryGroup"/>
             <entryLink import="true" name="Magic Weapons (HoC)" hidden="false" id="1ae9-6a68-ae15-5a25" collective="false" targetId="a32b-ff8d-318c-be99" type="selectionEntryGroup"/>
-            <entryLink import="true" name="Magic Armour (HoC)" hidden="false" id="0899-a8cd-fe0e-d179" collective="false" targetId="7864-88e1-f426-a899" type="selectionEntryGroup"/>
-            <entryLink import="true" name="Arcane Items (HoC)" hidden="false" id="4d0e-5ca4-41b3-455e" collective="false" targetId="6ada-c79b-f68f-fc49" type="selectionEntryGroup">
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="24dd-2bdb-c4c4-6c9e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup name="Mounts" id="0715-618f-ed32-417e" hidden="false" collective="false" import="true">
@@ -7696,40 +7717,19 @@ Spell still fails</characteristic>
         <entryLink import="true" name="Quickening Blood" hidden="false" id="c90c-e783-c798-b6df" type="selectionEntry" targetId="b553-aaff-c411-0f64"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Arcane Items (HoC)" id="6ada-c79b-f68f-fc49" hidden="false" collective="false" import="true" collapsible="true">
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4a0a-8a2d-4f63-8c87" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-      </constraints>
-      <entryLinks>
-        <entryLink import="true" name="Staff of Change" hidden="false" id="7210-6a64-9283-fcc3" collective="false" targetId="e578-f774-59d1-7ac4" type="selectionEntry"/>
-        <entryLink import="true" name="Skull of Katam" hidden="false" id="9b67-4794-9304-eb57" collective="false" targetId="d348-aa49-d365-884d" type="selectionEntry"/>
-        <entryLink import="true" name="Power Familiar" hidden="false" id="722c-6630-2700-45c1" collective="false" targetId="d5dc-d99d-61d2-2462" type="selectionEntry"/>
-        <entryLink import="true" name="Warrior Familiar" hidden="false" id="08c7-f126-7c6b-e0f9" collective="false" targetId="ddb9-9116-4925-17e7" type="selectionEntry"/>
-        <entryLink import="true" name="Spell Familiar" hidden="false" id="87c5-23ac-0aed-62f8" collective="false" targetId="0d2e-df08-5ee0-1ef5" type="selectionEntry"/>
-      </entryLinks>
-    </selectionEntryGroup>
     <selectionEntryGroup name="Enchanted Items (HoC)" id="6dcf-a1e0-6066-e410" hidden="false" collective="false" import="true" publicationId="d67c-4221-e6fc-7951" collapsible="true">
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0543-5700-f277-a1c4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
       </constraints>
       <entryLinks>
         <entryLink import="true" name="Bindings of Slaanesh" hidden="false" id="6458-c201-eb92-c1ae" collective="false" targetId="5f1c-fa12-91f5-061e" type="selectionEntry"/>
-        <entryLink import="true" name="Rod of Corruption" hidden="false" id="382e-c039-777a-37c6" collective="false" targetId="921e-bee0-0ef1-c00a" type="selectionEntry"/>
-        <entryLink import="true" name="Book of Secrets" hidden="false" id="3cb8-f002-cd22-8f54" collective="false" targetId="9565-60c4-a170-78bd" type="selectionEntry"/>
-        <entryLink import="true" name="Chalice of Chaos" hidden="false" id="e94c-5648-4e96-3710" collective="false" targetId="ae51-457e-4071-29ba" type="selectionEntry"/>
-        <entryLink import="true" name="Deaths head" hidden="false" id="d622-5b7e-56a4-0b1f" collective="false" targetId="4743-036d-398a-1002" type="selectionEntry"/>
         <entryLink import="true" name="Sceptre of Domination" hidden="false" id="8d21-1e61-ed8c-8746" collective="false" targetId="c2bb-561e-9726-e610" type="selectionEntry"/>
-        <entryLink import="true" name="Hell of Many Eyes" hidden="false" id="709c-a3c7-7993-0df2" collective="false" targetId="607c-5ec8-84b8-a552" type="selectionEntry"/>
-        <entryLink import="true" name="Mirror of Knowledge" hidden="false" id="2229-67c3-1549-1423" collective="false" targetId="0ba9-77c4-caca-bd0e" type="selectionEntry"/>
         <entryLink import="true" name="Pendant of Slaanesh" hidden="false" id="ecef-a7ed-d8ea-8a82" collective="false" targetId="956e-75e4-709f-2e81" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Talismans (HoC)" id="25dc-a67d-d8f6-fe86" hidden="false" collapsible="true">
       <entryLinks>
-        <entryLink import="true" name="Amulet of Chaos" hidden="false" id="b7a2-0ee9-f27b-e863" collective="false" targetId="b90a-a938-9901-641f" type="selectionEntry"/>
         <entryLink import="true" name="Beguiling Gem " hidden="false" id="f4c1-9a6f-7c3d-f13e" collective="false" targetId="5749-81be-c8a9-5138" type="selectionEntry"/>
-        <entryLink import="true" name="Crown of Everlasting Conquest" hidden="false" id="03fb-75b4-d13d-b192" collective="false" targetId="9e0a-0343-0bf5-5a0c" type="selectionEntry"/>
-        <entryLink import="true" name="Gaze of the Gods" hidden="false" id="91c7-3fe6-c9be-0909" collective="false" targetId="846f-3bc6-36dd-97e3" type="selectionEntry"/>
       </entryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f9c6-bed4-1f9f-cab6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -7740,7 +7740,6 @@ Spell still fails</characteristic>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f2e4-e775-748b-c56d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
       </constraints>
       <entryLinks>
-        <entryLink import="true" name="Banner of Wrath" hidden="false" id="be0b-3fe2-03c4-f0a2" collective="false" targetId="a89e-3352-d7aa-174c" type="selectionEntry"/>
         <entryLink import="true" name="Rapturous Standard" hidden="false" id="30a9-7032-5f73-b069" collective="false" targetId="58b2-afdb-685a-7e57" type="selectionEntry"/>
       </entryLinks>
       <modifiers>
@@ -7751,45 +7750,12 @@ Spell still fails</characteristic>
         </modifier>
       </modifiers>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Magic Armour (HoC)" id="7864-88e1-f426-a899" hidden="false" collective="false" import="true" collapsible="true">
-      <modifiers>
-        <modifier type="increment" value="1" field="4fa5-3472-c130-a03f">
-          <conditions>
-            <condition type="equalTo" value="1" field="selections" scope="parent" childId="c5c1-60aa-745f-c9d3" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4fa5-3472-c130-a03f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-      </constraints>
-      <entryLinks>
-        <entryLink import="true" name="Armour of Damnation " hidden="false" id="ef1e-0bfd-18a9-d7f7" collective="false" targetId="8559-07a5-c824-fce2" type="selectionEntry"/>
-        <entryLink import="true" name="Armour of Tortured Souls " hidden="false" id="8583-845e-390d-3131" collective="false" targetId="8f0e-608e-8593-3073" type="selectionEntry"/>
-        <entryLink import="true" name="Bane Shield " hidden="false" id="cd5a-f160-4a78-fdd3" collective="false" targetId="cf01-b8fd-20a8-3484" type="selectionEntry"/>
-        <entryLink import="true" name="Chaos Runeshield " hidden="false" id="44e4-d77e-16f3-7c79" collective="false" targetId="3afd-e716-0a94-1784" type="selectionEntry"/>
-        <entryLink import="true" name="Crimson Armour of Dargan" hidden="false" id="bc3a-ddd6-70f1-4c76" collective="false" targetId="5ea1-bd6c-3324-0b74" type="selectionEntry"/>
-      </entryLinks>
-    </selectionEntryGroup>
     <selectionEntryGroup name="Magic Weapons (HoC)" id="a32b-ff8d-318c-be99" hidden="false" collective="false" import="true" collapsible="true">
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a096-a9a3-d466-4fa7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
       </constraints>
       <entryLinks>
-        <entryLink import="true" name="Chaos Daemon Sword " hidden="false" id="9919-7c94-68e2-7724" collective="false" targetId="ec01-ce94-e51b-ae8d" type="selectionEntry"/>
-        <entryLink import="true" name="Sword of Change " hidden="false" id="7556-a86b-84b4-510c" collective="false" targetId="1ad1-6622-572e-ee15" type="selectionEntry"/>
-        <entryLink import="true" name="Hellfire Sword" hidden="false" id="42b1-6fb7-a5f8-da8c" collective="false" targetId="9088-c166-f673-3c20" type="selectionEntry"/>
-        <entryLink import="true" name="Chaos Runesword" hidden="false" id="9e3f-0d55-cee0-3a63" collective="false" targetId="6634-015c-7bdc-ace7" type="selectionEntry"/>
         <entryLink import="true" name="Whip Of Pleasure" hidden="false" id="c80f-b5ce-20c9-45ff" collective="false" targetId="e1cf-6275-33ac-879a" type="selectionEntry"/>
-        <entryLink import="true" name="Berserker Sword " hidden="false" id="e1d7-453e-58b4-e8e2" collective="false" targetId="14a4-6578-a0e1-7889" type="selectionEntry"/>
-        <entryLink import="true" name="Rending Sword " hidden="false" id="7043-de04-73fd-0eb6" collective="false" targetId="0210-04ca-346e-f0cb" type="selectionEntry"/>
-        <entryLink import="true" name="Filth Mace " hidden="false" id="beb6-8fe8-4609-db11" collective="false" targetId="7c15-2b6d-cfac-6079" type="selectionEntry"/>
-        <entryLink import="true" name="Blade of Blood" hidden="false" id="8860-5f55-1df0-056b" collective="false" targetId="dc8f-2033-d1c8-72f6" type="selectionEntry"/>
-        <entryLink import="true" name="Soul Cleaver " hidden="false" id="12f9-59ff-68a7-39c7" collective="false" targetId="7b6e-3056-0a61-482c" type="selectionEntry"/>
-        <entryLink import="true" name="Axe of Khorne" hidden="false" id="93f7-af50-7281-09d0" collective="false" targetId="e994-6711-25d4-7360" type="selectionEntry">
-          <costs>
-            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="25"/>
-          </costs>
-        </entryLink>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Daemonic Gifts (Slaanesh)" id="3e7f-2c6b-b220-e467" hidden="false" page="49" publicationId="d67c-4221-e6fc-7951">
@@ -7815,10 +7781,8 @@ Spell still fails</characteristic>
         </modifier>
       </modifiers>
       <entryLinks>
-        <entryLink import="true" name="Arcane Items (HoC)" hidden="false" id="294d-e610-2121-50b4" type="selectionEntryGroup" targetId="6ada-c79b-f68f-fc49"/>
         <entryLink import="true" name="Talismans (HoC)" hidden="false" id="1985-5b3d-9074-eee2" collective="false" targetId="25dc-a67d-d8f6-fe86" type="selectionEntryGroup"/>
         <entryLink import="true" name="Magic Weapons (HoC)" hidden="false" id="6a17-15ba-9dc1-82a0" collective="false" targetId="a32b-ff8d-318c-be99" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Magic Armour (HoC)" hidden="false" id="2fc2-ce15-6abc-e241" collective="false" targetId="7864-88e1-f426-a899" type="selectionEntryGroup"/>
         <entryLink import="true" name="Enchanted Items (HoC)" hidden="false" id="8ada-e2e9-230c-e107" collective="false" targetId="6dcf-a1e0-6066-e410" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntryGroup>
@@ -8073,7 +8037,6 @@ Target any enemy unit on the tabletop. This unit becomes infected with Nurgles R
     </rule>
     <rule name="Pendant of Slaanesh" id="dcfb-f3c9-8ca8-d5cb" hidden="false">
       <description>Models with the Mark of Slaanesh only.
-
 For each Wound the character loses (after saving throws, etc). he gains an extra Attack for the rest of the battle.</description>
     </rule>
     <rule name="Mirror of Knowledge" id="d35b-cd2a-b791-121d" hidden="false">
@@ -8102,7 +8065,6 @@ The bearer is a Level 1 Sorcerer and knows a random spell from the Lore of Fire,
     </rule>
     <rule name="Bindings of Slaanesh" id="dd57-31e4-29cf-297e" hidden="false">
       <description>Models with the Mark of Slaanesh only.
-
 Whenever the bearer issues a challenge, the enemy cannot refuse it and the Chaos player may choose who will accept the challenge. The model forced to accept the challenge may be anywhere within the enemy unit. and even characters that would normally be in a position that would disallow them from accepting challenges (by not being in the fighting rank, for instance) may be forced into accepting the challenge. In the first round an enemy is ensnared, the bearer always strike last. regardless of any other factor, magic item or spell.</description>
     </rule>
     <rule name="Regiment of Slaanesh" id="40a8-5693-4c2a-6a80" hidden="false" publicationId="7f4a-e6ae-d049-ee56" page="61">
