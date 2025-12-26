@@ -81,6 +81,7 @@ The main additions are:
 - [x] Sacred Hosts rules (WD#300(UK))
 - [x] Tehenhauin (LUS)
 - [x] Lord Mazdamundi (WD#290(USA))
+- [x] Nakai (webGW)
 
 ### Dogs of War
 - [x] Al Muktar's Desert Dogs
