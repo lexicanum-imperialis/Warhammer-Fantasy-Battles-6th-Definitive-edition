@@ -84,6 +84,7 @@ The main additions are:
 - [x] Nakai (webGW)
 - [x] Xltep (webGW)
 - [x] Ten-zlati (webGW)
+- [ ] Quatl (CR-04)
 
 ### Dogs of War
 - [x] Al Muktar's Desert Dogs
@@ -138,6 +139,7 @@ The main additions are:
 - [x] Cult of Slaanesh (SoC)
 - [x] Southlands (LM-AB)
 - [x] Red Host (LUS)
+- [ ] Lost valley of the Carnosaurs (CR-04)
 
 ## Sources consulted
 
@@ -165,14 +167,16 @@ The main additions are:
 |WD#296(UK)|White-Dwarf #296 UK                               |2004-08|by Anthony Reynolds                   |
 |WD#298(UK)|White-Dwarf #298 UK                               |       |                                      |
 |WD#300(UK)|White-Dwarf #300 UK                               |2004-12|by Andy Hoare                         |
+|WD#303(UK)|White-Dwarf #303 UK                               |       |                                      |
 |WD#310(UK)|White-Dwarf #310 UK                               |       |                                      |
 |WD#311(UK)|White-Dwarf #311 UK                               |2005-11|by Phil Kelly                         |
 |WD#317(UK)|White-Dwarf #317 UK                               |2006-05|by Gareth Hamilton                    |
-|WebGW(UK) |["Warpstone - A Skaven civil war scenario"](http:/uk.games-workshop.com/warhammerworld/warhammer/skaven/SK-articles/warpstone-scenerio/)|2004-03-14|by Jonathan Green|
-|WebGW(US) |["Character - Ariel"](http://us.games-workshop.com/games/warhammer/woodelves/gaming/ariel/default.htm)|2006-07| |
-|WebGW(US) |["Character - Skaw"](http:/us.games-workshop.com/games/warhammer/woodelves/gaming/skaw/default.htm)|2006-07| |
-|WebGW(OZ) |["Giant Warriors of Khemri"](http://oz.games-workshop.com/news/oz/journal/assets/GiantWarriorsofKhemri.pdf)|2003-05|by Gav Thorpe|
-|WebGW(US) |[""](http:/us.games-workshop.com/games/warhammer/lizardmen/gaming/campaign/characters/xltep.htm)|||
+|WebGW(UK) |["Warpstone - A Skaven civil war scenario"](http:/uk.games-workshop.com/warhammerworld/warhammer/skaven/SK-articles/warpstone-scenerio/)|2004-03-14 (consulted)|by Jonathan Green|
+|WebGW(US) |["Character - Ariel"](http://us.games-workshop.com/games/warhammer/woodelves/gaming/ariel/default.htm)     |2006-07 (consulted)| |
+|WebGW(US) |["Character - Skaw"](http:/us.games-workshop.com/games/warhammer/woodelves/gaming/skaw/default.htm)        |2006-07 (consulted)| |
+|WebGW(OZ) |["Giant Warriors of Khemri"](http://oz.games-workshop.com/news/oz/journal/assets/GiantWarriorsofKhemri.pdf)|2003-05 (consulted)|by Gav Thorpe|
+|WebGW(UK) |["Masters of the Druchii"](http://uk.games-workshop.com/darkelves/special-characters/)                     |2006-05 (consulted)||
+|WebGW(US) |["Lizardmen characters"](http:/us.games-workshop.com/games/warhammer/lizardmen/gaming/campaign/characters/)|2005-08 (consulted)||
 
 
 
