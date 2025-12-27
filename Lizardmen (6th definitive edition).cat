@@ -980,9 +980,14 @@
         <entryLink id="08cf-e97b-2217-24d0" name="Blessed Spawning Warrios" hidden="false" collective="false" import="true" targetId="bd30-a138-fa7a-ecbe" type="selectionEntryGroup">
           <modifiers>
             <modifier type="set" field="30d8-59b7-0761-13b5" value="1">
-              <conditions>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5ff-0687-4b30-f367" type="atLeast"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="cac7-06e3-24a5-7655" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="b5ff-0687-4b30-f367" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
             <modifier type="set" field="1239-2402-7195-3d05" value="1">
               <comment>If Kroq-Gar is the General of the army</comment>
@@ -1259,9 +1264,17 @@
             <condition type="lessThan" value="1" field="selections" scope="force" childId="cac7-06e3-24a5-7655" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifierGroup>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="-1" field="6cdc-b7e5-8987-a4ca"/>
+            <modifier type="set" value="2" field="59a2-0285-db60-d5b9"/>
+          </modifiers>
+          <comment>Lord Mazdamundi</comment>
+        </modifierGroup>
       </modifierGroups>
       <constraints>
         <constraint field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6cdc-b7e5-8987-a4ca" type="max"/>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="59a2-0285-db60-d5b9"/>
       </constraints>
       <infoLinks>
         <infoLink id="eb07-ebd9-9e08-854d" name="Cold Blooded" hidden="false" targetId="da71-1c1e-ded6-959a" type="rule"/>
@@ -1387,21 +1400,6 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="07dc-2e03-43a0-57da" name="Blessed Spawning Warrios" hidden="false" collective="false" import="true" targetId="bd30-a138-fa7a-ecbe" type="selectionEntryGroup">
-          <comment>Sacred Hosts (WD#300(UK))</comment>
-          <modifiers>
-            <modifier type="set" field="4c5b-9623-e0b0-10ac" value="1">
-              <conditions>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5ff-0687-4b30-f367" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4c5b-9623-e0b0-10ac" type="min"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
@@ -3469,8 +3467,7 @@ Models may take further damage from the destruction of any structures, as descr
             </rule>
             <rule name="3. Earth Line" id="cd56-a608-6628-398a" hidden="false" page="41" publicationId="1c84-0f77-2d0e-eab7">
               <description>Cast on a 10+
-Chose a corner of the board and trace a line from Lord Mazdamundi to this corner. Every model underneath this line suffers a single S4 hit.
-</description>
+Chose a corner of the board and trace a line from Lord Mazdamundi to this corner. Every model underneath this line suffers a single S4 hit.</description>
             </rule>
             <rule name="4. Move the Mountains" id="fb5c-9b15-eb20-9ae2" hidden="false" page="41" publicationId="1c84-0f77-2d0e-eab7">
               <description>Cast on a 12+
@@ -3623,7 +3620,7 @@ This spell is targeted at a single hill anywhere on the table. Any unit at leas
             <infoLink name="Cold Blooded" id="75a9-e508-af95-a523" hidden="false" targetId="da71-1c1e-ded6-959a" type="rule"/>
             <infoLink name="Fear" id="b37e-cd85-120c-642b" hidden="false" targetId="27fd-b1a1-acd5-cbd5" type="rule"/>
             <infoLink name="Scaly Skin 4+" id="26cd-d446-ea9e-1a8e" hidden="false" targetId="d9b3-2f25-faa4-a7fb" type="rule"/>
-            <infoLink name="Touched by Sotek" id="16ad-0a94-a64a-7548" hidden="false" type="rule" targetId="59c1-8a35-5a25-ebe1"/>
+            <infoLink name="Regeneration" id="16ad-0a94-a64a-7548" hidden="false" type="rule" targetId="59c1-8a35-5a25-ebe1"/>
           </infoLinks>
           <rules>
             <rule name="Jungle Spirit" id="05a0-6b13-4824-3a75" hidden="false" publicationId="cc3e-70c8-0bf5-1e29">
@@ -5487,6 +5484,19 @@ In addition, the bearer causes Fear in Skaven.</characteristic>
           </costs>
         </entryLink>
       </entryLinks>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Sacred Host of Hexoatl (Mazdamundi)</comment>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <comment>Sacred Host of Hexoatl (Mazdamundi)</comment>
+            </modifier>
+          </modifiers>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="cac7-06e3-24a5-7655" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntryGroup>
     <selectionEntryGroup id="b5f1-cbfb-ba4b-490e" name="Scar Vet Blessed spawnings" hidden="false" collective="false" import="true">
       <entryLinks>
@@ -6040,8 +6050,7 @@ of Quetzl using the following amendments:
 
 * They are subject to Hatred of all types of Skaven.
 
-* They are not slowed by jungle or wooded terrain.
-</description>
+* They are not slowed by jungle or wooded terrain.</description>
     </rule>
     <rule name="Shield of Sotek" id="1399-57af-9808-5dfc" hidden="false" page="61" publicationId="415d-9fbb-df83-ad27">
       <description>Tehenhauin is watched over by the Serpent God himself, granting him a 4+ Ward Save.</description>

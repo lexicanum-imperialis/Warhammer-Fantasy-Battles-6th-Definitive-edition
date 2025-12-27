@@ -172,7 +172,7 @@ The main additions are:
 |WebGW(US) |["Character - Ariel"](http://us.games-workshop.com/games/warhammer/woodelves/gaming/ariel/default.htm)|2006-07| |
 |WebGW(US) |["Character - Skaw"](http:/us.games-workshop.com/games/warhammer/woodelves/gaming/skaw/default.htm)|2006-07| |
 |WebGW(OZ) |["Giant Warriors of Khemri"](http://oz.games-workshop.com/news/oz/journal/assets/GiantWarriorsofKhemri.pdf)|2003-05|by Gav Thorpe|
-
+|WebGW(US) |[""](http:/us.games-workshop.com/games/warhammer/lizardmen/gaming/campaign/characters/xltep.htm)|||
 
 
 
