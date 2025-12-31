@@ -119,9 +119,15 @@ The main additions are:
 - [x] Crone Hellebron (WebGW)
 - [x] Kuoran (WebGW)
 - [x] Tullaris (WebGW)
-- [x] Patched to WD#287(UK)
-- [x] Magic objects from Albion Campaign (WD#263(UK))
+- [x] Patched to WD#287(UK) (all lists)
+- [x] Magic objects from 'Albion' Campaign (WD#263(UK))
+- [x] Magic objects from 'Storm of Chaos' Campaign (SoC)
 - [x] Optional rules for upgrading the War Hydras (AN-02)
+
+### Orcs and Goblins
+- [x] Goblin Spider Riders (only Savage Orcs Horde, OG-AB, p.77)
+- [x] Spider Swarm (only Savage Orcs Horde, OG-AB, p.77)
+- [x] Savage Orcs Chariot (only Savage Orcs Horde, OG-AB, p.77)
 
 ## Alternative lists included
 - [x] Clan Eshin (SKV-AB)
@@ -140,6 +146,7 @@ The main additions are:
 - [x] Southlands (LM-AB)
 - [x] Red Host (LUS)
 - [ ] Lost valley of the Carnosaurs (CR-04)
+- [x] Savage Orc Horde (OG-AB), p.76
 
 ## Sources consulted
 

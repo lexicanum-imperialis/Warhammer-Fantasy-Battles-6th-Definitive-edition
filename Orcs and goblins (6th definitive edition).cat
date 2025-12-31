@@ -229,6 +229,19 @@
         <categoryLink name="Regiment of Renown" hidden="false" id="8abf-3a11-3649-e665" targetId="ee09-9a50-ad78-9c32" primary="false"/>
       </categoryLinks>
     </forceEntry>
+    <forceEntry name="Savage Orc Horde (OG-AB)" id="59e1-efd7-af88-55a1" hidden="false" publicationId="3a49-dd2e-fcaa-cdb1" page="76">
+      <categoryLinks>
+        <categoryLink name="Experimental rules" hidden="false" id="cba1-4cd4-1891-7b8b" targetId="4fed-b911-e6e0-927b" primary="false"/>
+        <categoryLink name="Special list rules" hidden="false" id="c872-f7e3-647e-d831" targetId="32f1-197f-d719-a393" primary="false"/>
+        <categoryLink name="Special Characters" hidden="false" id="4f0b-9b8c-bd6b-c382" targetId="0644-bfcd-32c2-21dc" primary="false"/>
+        <categoryLink name="Characters" hidden="false" id="927e-efd7-0915-29f6" targetId="7a1c-d611-c2dc-def1" primary="false"/>
+        <categoryLink name="Lord" hidden="false" id="ae05-e0f8-4760-d0e6" targetId="d024-d25b-a9b4-73b6" primary="false"/>
+        <categoryLink name="Heroes" hidden="false" id="cf28-f643-d504-4d05" targetId="c16b-f319-2c62-2c12" primary="false"/>
+        <categoryLink name="Core" hidden="false" id="a189-a79c-a924-692f" targetId="64bf-efb4-9978-26df" primary="false"/>
+        <categoryLink name="Special" hidden="false" id="b64c-4349-5695-e517" targetId="43cc-fc3f-35a7-8d03" primary="false"/>
+        <categoryLink name="Rare" hidden="false" id="21dc-6ef8-9d1b-8a69" targetId="e94b-6a54-8779-cd60" primary="false"/>
+      </categoryLinks>
+    </forceEntry>
   </forceEntries>
   <selectionEntries>
     <selectionEntry id="ed65-df1a-50a2-c3ac" name="Night Goblin" hidden="false" collective="false" import="true" type="unit">
@@ -391,6 +404,14 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Savage Orc Horde (OG-AB, p.76)</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="59e1-efd7-af88-55a1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="bb55-40ee-fc47-a98a" name="Black Orc Warboss" hidden="false" collective="false" import="true" type="unit">
       <profiles>
@@ -580,22 +601,14 @@
                 <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="7ab2-ec11-847a-4321" name="Chariot" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3bb0-a782-817d-d6ea" type="max"/>
-              </constraints>
-              <categoryLinks>
-                <categoryLink id="dcac-a3d9-20d1-61e0" name="Special" hidden="false" targetId="43cc-fc3f-35a7-8d03" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
-                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-              </costs>
-            </selectionEntry>
           </selectionEntries>
           <entryLinks>
             <entryLink id="6057-8e72-5263-632e" name="Wyvern" hidden="false" collective="false" import="true" targetId="b184-b03c-693b-53b1" type="selectionEntry"/>
+            <entryLink import="true" name="Orc Boar Chariot" hidden="false" id="cde8-edcf-0c0f-01e8" type="selectionEntry" targetId="5678-6ad3-0e79-2233">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b807-c5d3-56c6-abc3" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -607,6 +620,14 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Savage Orc Horde (OG-AB, p.76)</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="59e1-efd7-af88-55a1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="ef14-5cdd-677a-f14b" name="Orc Warboss" hidden="false" collective="false" import="true" type="unit">
       <profiles>
@@ -772,6 +793,14 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Savage Orc Horde (OG-AB, p.76)</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="59e1-efd7-af88-55a1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="ca27-a5f4-4a3e-7aeb" name="Savage Orc Warboss" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
@@ -916,6 +945,7 @@
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="f7d1-c89f-3727-40a9" name="General" hidden="false" collective="false" import="true" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry"/>
+        <entryLink import="true" name="Savage Orc Boar Chariot" hidden="false" id="f461-5f9e-5603-6e81" type="selectionEntry" targetId="a462-dc3d-4e19-0833"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="125"/>
@@ -1056,6 +1086,14 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Savage Orc Horde (OG-AB, p.76)</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="59e1-efd7-af88-55a1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="0767-0a7d-7c03-8833" name="Savage Orc Great Shaman" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
@@ -1187,6 +1225,7 @@
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="4c6c-f0fa-c07a-7943" name="General" hidden="false" collective="false" import="true" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry"/>
+        <entryLink import="true" name="Savage Orc Boar Chariot" hidden="false" id="bafd-a088-85c1-920a" type="selectionEntry" targetId="a462-dc3d-4e19-0833"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="190"/>
@@ -1465,6 +1504,14 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Savage Orc Horde (OG-AB, p.76)</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="59e1-efd7-af88-55a1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="e590-c649-611d-2aa5" name="Goblin Great Shaman" hidden="false" collective="false" import="true" type="unit">
       <profiles>
@@ -1696,6 +1743,14 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Savage Orc Horde (OG-AB, p.76)</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="59e1-efd7-af88-55a1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="febe-2170-775b-0d13" name="Black Orc Bigboss" hidden="false" collective="false" import="true" type="unit">
       <profiles>
@@ -1920,6 +1975,14 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Savage Orc Horde (OG-AB, p.76)</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="59e1-efd7-af88-55a1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="6279-4d0a-6dce-f2f3" name="Orc Bigboss" hidden="false" collective="false" import="true" type="unit">
       <profiles>
@@ -2120,6 +2183,14 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Savage Orc Horde (OG-AB, p.76)</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="59e1-efd7-af88-55a1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="d49c-e990-280d-3d1f" name="Savage Orc Bigboss" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
@@ -2275,6 +2346,7 @@
           </entryLinks>
         </entryLink>
         <entryLink id="18d3-2ab5-07ce-f515" name="General" hidden="false" collective="false" import="true" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry"/>
+        <entryLink import="true" name="Savage Orc Boar Chariot" hidden="false" id="963b-8fca-4aa1-8531" type="selectionEntry" targetId="a462-dc3d-4e19-0833"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="75"/>
@@ -2415,12 +2487,20 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Savage Orc Horde (OG-AB, p.76)</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="59e1-efd7-af88-55a1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="3648-1f5c-5e1d-0711" name="Savage Orc  Shaman" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
-            <condition field="selections" scope="a2fa-6a0e-8c17-373c" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="instanceOf"/>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a2fa-6a0e-8c17-373c" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2536,6 +2616,7 @@
             <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="8"/>
           </costs>
         </entryLink>
+        <entryLink import="true" name="Savage Orc Boar Chariot" hidden="false" id="0b75-a2bf-eb07-828b" type="selectionEntry" targetId="a462-dc3d-4e19-0833"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="67"/>
@@ -2564,8 +2645,7 @@
       </infoLinks>
       <categoryLinks>
         <categoryLink id="d3da-2258-2ba7-c4c9" name="Characters" hidden="false" targetId="7a1c-d611-c2dc-def1" primary="false"/>
-        <categoryLink id="5b64-a7aa-e6a3-a513" name="Heroes" hidden="false" targetId="c16b-f319-2c62-2c12" primary="true"/>
-        <categoryLink id="bd54-fe1a-3f12-a03d" name="Heroes" hidden="false" targetId="c16b-f319-2c62-2c12" primary="false"/>
+        <categoryLink id="bd54-fe1a-3f12-a03d" name="Heroes" hidden="false" targetId="c16b-f319-2c62-2c12" primary="true"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="545f-c1ec-128c-8228" name="Hand Weapon" hidden="false" collective="false" import="true" type="upgrade">
@@ -2847,6 +2927,14 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Savage Orc Horde (OG-AB, p.76)</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="59e1-efd7-af88-55a1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="554e-660d-0005-d122" name="Goblin Shaman" hidden="false" collective="false" import="true" type="unit">
       <profiles>
@@ -3076,6 +3164,14 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Savage Orc Horde (OG-AB, p.76)</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="59e1-efd7-af88-55a1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="ac23-b9d3-4046-23b7" name="Orc Boyz" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -3249,6 +3345,14 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Savage Orc Horde (OG-AB, p.76)</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="59e1-efd7-af88-55a1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="bc74-bb63-2abd-4e0b" name="Orc Arrer Boyz" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -3370,6 +3474,14 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Savage Orc Horde (OG-AB, p.76)</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="59e1-efd7-af88-55a1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="e4d9-143c-2cf3-6615" name="Savage Orc Boyz" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
@@ -3684,7 +3796,7 @@
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
-            <condition field="selections" scope="a2fa-6a0e-8c17-373c" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="instanceOf"/>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a2fa-6a0e-8c17-373c" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -3693,6 +3805,7 @@
         <infoLink id="5da2-cd9d-10dc-47f1" name="Animosity" hidden="false" targetId="23f9-c5d1-7c15-0c4c" type="rule"/>
         <infoLink id="0c7a-efc3-37b8-871e" name="Fear Elves" hidden="false" targetId="b9cb-9cdd-44c3-ba52" type="rule"/>
         <infoLink id="e564-9cf9-e4ef-e624" name="Wolf" hidden="false" targetId="82b6-8aaa-c0a3-356b" type="profile"/>
+        <infoLink name="Fast Cavalry" id="f931-57c3-5156-3e67" hidden="false" type="rule" targetId="6a56-df83-e623-2218"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="6cc8-3422-4670-e786" name="Core" hidden="false" targetId="64bf-efb4-9978-26df" primary="true"/>
@@ -3841,6 +3954,14 @@
                 <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
                 <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
               </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <comment>Savage Orc Horde (OG-AB, p.76)</comment>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="59e1-efd7-af88-55a1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -3850,10 +3971,23 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Savage Orc Horde (OG-AB, p.76)</comment>
+          <modifiers>
+            <modifier type="add" value="43cc-fc3f-35a7-8d03" field="category"/>
+            <modifier type="set-primary" value="43cc-fc3f-35a7-8d03" field="category"/>
+            <modifier type="remove" value="64bf-efb4-9978-26df" field="category"/>
+          </modifiers>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="59e1-efd7-af88-55a1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry id="06f6-cf8d-e27d-3b8e" name="Snotlings" hidden="false" collective="false" import="true" type="unit">
       <constraints>
-        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5321-d8a7-fb89-8156" type="max"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="875a-054f-9c08-e155" includeChildSelections="false"/>
       </constraints>
       <infoLinks>
         <infoLink id="8569-583b-7d93-eac8" name="Snotling base" hidden="false" targetId="5a59-3330-2988-3b85" type="profile"/>
@@ -3882,6 +4016,19 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Savage Orc Horde (OG-AB, p.76)</comment>
+          <modifiers>
+            <modifier type="add" value="43cc-fc3f-35a7-8d03" field="category"/>
+            <modifier type="set-primary" value="43cc-fc3f-35a7-8d03" field="category"/>
+            <modifier type="remove" value="64bf-efb4-9978-26df" field="category"/>
+          </modifiers>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="59e1-efd7-af88-55a1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry id="5a89-d7b1-3214-b52c" name="Black Orcs" hidden="false" collective="false" import="true" type="unit">
       <constraints>
@@ -4075,12 +4222,26 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Savage Orc Horde (OG-AB, p.76)</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="59e1-efd7-af88-55a1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="faf0-2158-5450-f8ef" name="Orc Boar Boyz" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
             <condition field="selections" scope="a2fa-6a0e-8c17-373c" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="instanceOf"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Savage Orc Horde (OG-AB, p.76)</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="59e1-efd7-af88-55a1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -4387,6 +4548,14 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Savage Orc Horde (OG-AB, p.76)</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="59e1-efd7-af88-55a1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="5678-6ad3-0e79-2233" name="Orc Boar Chariot" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
@@ -4397,7 +4566,13 @@
         </modifier>
         <modifier type="set" field="hidden" value="true">
           <conditions>
-            <condition field="selections" scope="a2fa-6a0e-8c17-373c" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="instanceOf"/>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a2fa-6a0e-8c17-373c" type="instanceOf"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Savage Orc Horde (OG-AB, p.76)</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="59e1-efd7-af88-55a1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -4408,7 +4583,7 @@
         <infoLink id="741d-3032-bd61-4e10" name="Tuskar Charge" hidden="false" targetId="2761-5d2d-c41a-c536" type="rule"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="4a4a-b77c-e895-0f6c" name="Special" hidden="false" targetId="43cc-fc3f-35a7-8d03" primary="true"/>
+        <categoryLink name="Special" hidden="false" id="a39d-7f17-a9a5-c2b7" targetId="43cc-fc3f-35a7-8d03" primary="true"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="29ae-542a-a624-a552" name="Orc Chariot" hidden="false" collective="false" import="true" type="model">
@@ -4480,6 +4655,12 @@
         <modifier type="remove" field="category" value="43cc-fc3f-35a7-8d03">
           <conditions>
             <condition field="selections" scope="a2fa-6a0e-8c17-373c" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="instanceOf"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Savage Orc Horde (OG-AB, p.76)</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="59e1-efd7-af88-55a1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -4588,7 +4769,7 @@
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
-            <condition field="selections" scope="a2fa-6a0e-8c17-373c" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="instanceOf"/>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a2fa-6a0e-8c17-373c" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -4681,12 +4862,35 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Savage Orc Horde (OG-AB, p.76)</comment>
+          <modifiers>
+            <modifier type="add" value="43cc-fc3f-35a7-8d03" field="category"/>
+            <modifier type="set-primary" value="43cc-fc3f-35a7-8d03" field="category"/>
+            <modifier type="remove" value="e94b-6a54-8779-cd60" field="category"/>
+            <modifier type="set" value="1" field="c4ae-b454-3e3f-215b"/>
+          </modifiers>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="59e1-efd7-af88-55a1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifierGroup>
+      </modifierGroups>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="c4ae-b454-3e3f-215b" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry id="9d60-0225-349a-a76d" name="Snotling Pump Wagon" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
             <condition field="selections" scope="a2fa-6a0e-8c17-373c" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="instanceOf"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Savage Orc Horde (OG-AB, p.76)</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="59e1-efd7-af88-55a1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -4895,6 +5099,14 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Savage Orc Horde (OG-AB, p.76)</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="59e1-efd7-af88-55a1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="1beb-9007-1c33-7589" name="Goblin Spear Chukka" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
@@ -4906,6 +5118,12 @@
         <modifier type="remove" field="category" value="43cc-fc3f-35a7-8d03">
           <conditions>
             <condition field="selections" scope="a2fa-6a0e-8c17-373c" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="instanceOf"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Savage Orc Horde (OG-AB, p.76)</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="59e1-efd7-af88-55a1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -5036,6 +5254,12 @@
             <condition field="selections" scope="a2fa-6a0e-8c17-373c" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="instanceOf"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Savage Orc Horde (OG-AB, p.76)</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="59e1-efd7-af88-55a1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9988-ba31-977d-d62e" type="max"/>
@@ -5162,7 +5386,7 @@
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ed97-811b-cdb5-46c3" name="Extra Goblin Hero" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="ed97-811b-cdb5-46c3" name="Extra Goblin Hero" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="186c-6345-5b25-5aa2" value="0">
           <conditionGroups>
@@ -5186,6 +5410,12 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Savage Orc Horde (OG-AB, p.76)</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="59e1-efd7-af88-55a1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
         </modifier>
       </modifiers>
       <constraints>
@@ -5536,6 +5766,7 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <comment>For GOBLIN HORDE only</comment>
     </selectionEntry>
     <selectionEntry id="8787-293e-965a-f8c2" name="Orc Big &apos;uns Boar Boyz" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
@@ -5547,6 +5778,12 @@
         <modifier type="set" field="hidden" value="true">
           <conditions>
             <condition field="selections" scope="a2fa-6a0e-8c17-373c" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="instanceOf"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Savage Orc Horde (OG-AB, p.76)</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="59e1-efd7-af88-55a1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -5678,6 +5915,12 @@
           <repeats>
             <repeat field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="344f-77ef-7238-f157" repeats="1" roundUp="false"/>
           </repeats>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Savage Orc Horde (OG-AB, p.76)</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="59e1-efd7-af88-55a1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
         </modifier>
       </modifiers>
       <constraints>
@@ -6208,6 +6451,302 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry id="cedf-b7e5-a05d-8685" name="Goblin Spider Riders" hidden="true" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="59e1-efd7-af88-55a1" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <infoLinks>
+        <infoLink id="e0bd-ccef-a9c6-e87b" name="Goblin" hidden="false" targetId="6c5f-716b-8044-a797" type="profile"/>
+        <infoLink id="d115-34b2-3515-4490" name="Animosity" hidden="false" targetId="23f9-c5d1-7c15-0c4c" type="rule"/>
+        <infoLink id="7aae-d9d6-946a-6e04" name="Fear Elves" hidden="false" targetId="b9cb-9cdd-44c3-ba52" type="rule"/>
+        <infoLink id="7770-4231-b436-5ddb" name="Spider" hidden="false" targetId="dd6e-9a85-f5fe-e1ab" type="profile"/>
+        <infoLink name="Poisoned Attacks" id="f855-1458-fef7-12de" hidden="false" type="rule" targetId="2738-27d5-f4af-4722"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Rare" hidden="false" id="e560-f537-fd21-b305" targetId="e94b-6a54-8779-cd60" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="0447-ccba-01bf-be77" name="Goblin Spider rider" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="5" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5a60-3286-fcec-1d18" type="min"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="10"/>
+            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="417e-5665-0bde-ae40" name="Weapons" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7ade-c1e5-dcd6-6091" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="05ca-cbe8-bae1-8214" name="Short Bows" hidden="false" collective="false" import="true" type="upgrade">
+              <comment>Swap shield for shortbow</comment>
+              <modifiers>
+                <modifier type="increment" field="ecfa-8486-4f6c-c249" value="2">
+                  <repeats>
+                    <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e96a-9beb-72d8-e31c" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="7762-4aad-8202-5b2d" name="Spears" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="increment" field="ecfa-8486-4f6c-c249" value="1">
+                  <repeats>
+                    <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="74b3-a418-6eb7-29e1" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="4636-d476-6353-de75" name="Spears (Infantry)" hidden="false" targetId="222b-1e29-9d24-09d7" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="8252-0ffa-9b84-7e7a" name="Hand Weapons" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="4036-4be0-2853-09be" value="0"/>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4036-4be0-2853-09be" type="min"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da33-b8f9-b068-7e14" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="b463-9047-5364-6a45" name="Command Group" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="5679-b06f-3fbc-d4d5" name="Musician" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c04d-f817-dbfd-86a5" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="6"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="314b-1954-9b76-8799" name="Standard Bearer" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2e1f-9038-d264-c41e" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="12"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="ee97-bde7-535d-bc9d" name="Boss" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cd40-ea17-2d78-e318" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="e6e4-aca3-1f6e-cca9" name="Goblin Boss" hidden="false" targetId="dbc8-1632-0c07-ca46" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="12"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="62b6-751e-4a33-748d" name="Armour" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="4231-406d-6013-52b5" name="Shields" hidden="false" collective="false" import="true" type="upgrade">
+              <comment>Swap shield for shortbow</comment>
+              <modifiers>
+                <modifier type="increment" field="ecfa-8486-4f6c-c249" value="1">
+                  <repeats>
+                    <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="57f0-05d9-86b7-77d0" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="4872-fefe-e153-9e04" name="Shield" hidden="false" targetId="3d79-7984-991a-8b67" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="8078-d503-3d2f-eacd" includeChildSelections="false"/>
+      </constraints>
+      <rules>
+        <rule name="Movement through obstacles" id="abe6-6f8b-9be8-5048" hidden="false" publicationId="7dda-637b-31ad-951c" page="77">
+          <description>Giant Spider&apos;s movement is 7 and they treat obstacles (such as walls) and difficult or impassable &apos;dry&apos; terrain (such as woods) as open ground. &apos;Wet&apos; terrain such as rivers or lakes of lava are difficult or impassable as normal.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry id="6de1-8b77-f380-aec4" name="Spider Swarms" hidden="true" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="621a-b6ea-1993-0d98" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="bf9c-4dbe-22c7-714e" name="Swarm base" hidden="false" targetId="54cd-37b8-d29f-7ba6" type="profile"/>
+        <infoLink id="51a2-4ed7-60b4-3f72" name="Horde" hidden="false" targetId="3dd1-c254-2d58-2f70" type="rule"/>
+        <infoLink id="a702-216f-8d98-b6b9" name="Unbreakable (snotling)" hidden="false" targetId="7efa-d975-da07-172c" type="rule"/>
+        <infoLink id="cd00-3b8e-ce71-f1a8" name="Nobody Cares" hidden="false" targetId="fb92-f585-e69f-22b1" type="rule"/>
+        <infoLink name="Poisoned Attacks" id="865b-21a8-fe86-224b" hidden="false" type="rule" targetId="2738-27d5-f4af-4722"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Rare" hidden="false" id="b92f-c8d1-f081-0f90" targetId="e94b-6a54-8779-cd60" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="6801-4a89-de31-d562" name="Swarm base" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c57-7e69-06bf-313f" type="min"/>
+            <constraint field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="acc2-85b8-8aa3-3fa6" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="50"/>
+            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="59e1-efd7-af88-55a1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry id="91b0-2e81-0087-8e72" name="Savage Orc Boar Chariot" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="increment" field="c21a-df75-9aa7-fd31" value="1">
+          <repeats>
+            <repeat field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a85e-af08-5fea-41bd" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a2fa-6a0e-8c17-373c" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c21a-df75-9aa7-fd31" type="min"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="ee91-cedb-5a0a-4857" name="Tuskar Charge" hidden="false" targetId="2761-5d2d-c41a-c536" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Rare" hidden="false" id="e6cc-7fc1-3edb-2f12" targetId="e94b-6a54-8779-cd60" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="ee6e-9414-abdf-ad59" name="Savage Orc Chariot" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a25b-ef1a-3735-9c10" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6733-8c3b-883e-8777" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="0de4-ff47-2d5c-2766" name="Orc Chariot" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
+              <characteristics>
+                <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">-</characteristic>
+                <characteristic name="WS" typeId="f95b-da01-0578-3bdc">-</characteristic>
+                <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">-</characteristic>
+                <characteristic name="S" typeId="b690-4bc0-bb73-267b">5</characteristic>
+                <characteristic name="T" typeId="8712-f56f-5b22-a720">5</characteristic>
+                <characteristic name="W" typeId="253a-9b00-4fde-8ac2">4</characteristic>
+                <characteristic name="I" typeId="dfff-363e-f72a-5a59">-</characteristic>
+                <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1d6</characteristic>
+                <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">-</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="a5ca-0850-11a4-8b92" name="2 Orc Crew" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
+              <characteristics>
+                <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">-</characteristic>
+                <characteristic name="WS" typeId="f95b-da01-0578-3bdc">3</characteristic>
+                <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">3</characteristic>
+                <characteristic name="S" typeId="b690-4bc0-bb73-267b">3</characteristic>
+                <characteristic name="T" typeId="8712-f56f-5b22-a720">-</characteristic>
+                <characteristic name="W" typeId="253a-9b00-4fde-8ac2">-</characteristic>
+                <characteristic name="I" typeId="dfff-363e-f72a-5a59">2</characteristic>
+                <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
+                <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">7</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="4366-344e-f4e0-590b" name="Boar" hidden="false" targetId="de91-b5e9-a96d-1f5a" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="967c-ce4a-2495-cf72" name="Extra crew" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a3db-c964-db2f-cf2b" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="6"/>
+            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="80"/>
+        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+      </costs>
+      <entryLinks>
+        <entryLink import="true" name="Warpaint" hidden="false" id="0b62-b4aa-b38a-923d" type="selectionEntry" targetId="1617-8289-f833-dfc6">
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="15"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
@@ -7026,6 +7565,189 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Orc Boar Chariot" hidden="false" id="ca2a-ff41-6666-8155" collective="false">
+      <modifiers>
+        <modifier type="increment" value="1" field="065f-9ab7-97df-7791">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="roster" childId="a85e-af08-5fea-41bd" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+          </repeats>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="a2fa-6a0e-8c17-373c" childId="any" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="roster" shared="true" id="065f-9ab7-97df-7791" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Tuskar Charge" id="9409-fc2b-dc50-0684" hidden="false" targetId="2761-5d2d-c41a-c536" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Special" hidden="false" id="2c3b-39dd-e181-7410" targetId="43cc-fc3f-35a7-8d03" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Orc Chariot" hidden="false" id="2e67-fd97-c96c-6f8c" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cb7d-f66e-b4f7-85f4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bf4a-70f5-92fe-3198" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Orc Chariot" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="127e-091a-52c0-0d47">
+              <characteristics>
+                <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">-</characteristic>
+                <characteristic name="WS" typeId="f95b-da01-0578-3bdc">-</characteristic>
+                <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">-</characteristic>
+                <characteristic name="S" typeId="b690-4bc0-bb73-267b">5</characteristic>
+                <characteristic name="T" typeId="8712-f56f-5b22-a720">5</characteristic>
+                <characteristic name="W" typeId="253a-9b00-4fde-8ac2">4</characteristic>
+                <characteristic name="I" typeId="dfff-363e-f72a-5a59">-</characteristic>
+                <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1d6</characteristic>
+                <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">-</characteristic>
+                <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+                <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+                <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
+              </characteristics>
+            </profile>
+            <profile name="2 Orc Crew" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="4792-a379-dfab-df16">
+              <characteristics>
+                <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">-</characteristic>
+                <characteristic name="WS" typeId="f95b-da01-0578-3bdc">3</characteristic>
+                <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">3</characteristic>
+                <characteristic name="S" typeId="b690-4bc0-bb73-267b">3</characteristic>
+                <characteristic name="T" typeId="8712-f56f-5b22-a720">-</characteristic>
+                <characteristic name="W" typeId="253a-9b00-4fde-8ac2">-</characteristic>
+                <characteristic name="I" typeId="dfff-363e-f72a-5a59">2</characteristic>
+                <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
+                <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">7</characteristic>
+                <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+                <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+                <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Boar" id="c562-edb1-11f8-206a" hidden="false" targetId="de91-b5e9-a96d-1f5a" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Extra crew" hidden="false" id="55a4-149a-4c64-e63e" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3f4b-3ba8-1362-833e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="6"/>
+            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="80"/>
+        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Savage Orc Boar Chariot" hidden="false" id="a462-dc3d-4e19-0833" collective="false">
+      <modifiers>
+        <modifier type="increment" value="1" field="82b2-d18b-5fdf-d43c">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="roster" childId="a85e-af08-5fea-41bd" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+          </repeats>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="a2fa-6a0e-8c17-373c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="roster" shared="true" id="82b2-d18b-5fdf-d43c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Tuskar Charge" id="9533-b99d-d74f-b050" hidden="false" targetId="2761-5d2d-c41a-c536" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Rare" hidden="false" id="fad1-5efa-60e1-7e73" targetId="e94b-6a54-8779-cd60" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Savage Orc Chariot" hidden="false" id="d4d1-7d2f-3ff3-9529" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a5b8-5393-ba1c-ba26" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f94c-5dcc-2fcb-d8fd" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Orc Chariot" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="9439-7fdf-c113-f569">
+              <characteristics>
+                <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">-</characteristic>
+                <characteristic name="WS" typeId="f95b-da01-0578-3bdc">-</characteristic>
+                <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">-</characteristic>
+                <characteristic name="S" typeId="b690-4bc0-bb73-267b">5</characteristic>
+                <characteristic name="T" typeId="8712-f56f-5b22-a720">5</characteristic>
+                <characteristic name="W" typeId="253a-9b00-4fde-8ac2">4</characteristic>
+                <characteristic name="I" typeId="dfff-363e-f72a-5a59">-</characteristic>
+                <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1d6</characteristic>
+                <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">-</characteristic>
+                <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+                <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+                <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
+              </characteristics>
+            </profile>
+            <profile name="2 Orc Crew" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="381f-6008-94d0-68f7">
+              <characteristics>
+                <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">-</characteristic>
+                <characteristic name="WS" typeId="f95b-da01-0578-3bdc">3</characteristic>
+                <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">3</characteristic>
+                <characteristic name="S" typeId="b690-4bc0-bb73-267b">3</characteristic>
+                <characteristic name="T" typeId="8712-f56f-5b22-a720">-</characteristic>
+                <characteristic name="W" typeId="253a-9b00-4fde-8ac2">-</characteristic>
+                <characteristic name="I" typeId="dfff-363e-f72a-5a59">2</characteristic>
+                <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
+                <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">7</characteristic>
+                <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+                <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+                <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Boar" id="ed67-6c04-c0aa-1721" hidden="false" targetId="de91-b5e9-a96d-1f5a" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Extra crew" hidden="false" id="9ea9-102f-f200-d3fd" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="462a-a14a-deeb-592c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="6"/>
+            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="80"/>
+        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+      </costs>
+      <entryLinks>
+        <entryLink import="true" name="Warpaint" hidden="false" id="a8dc-a454-c0e3-809d" type="selectionEntry" targetId="1617-8289-f833-dfc6">
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="15"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -8015,6 +8737,38 @@ The Gaze of Mork is a magic missile with a range of up to 24&quot;. If successfu
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">5</characteristic>
       </characteristics>
     </profile>
+    <profile id="dd6e-9a85-f5fe-e1ab" name="Spider" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile" page="77" publicationId="7dda-637b-31ad-951c">
+      <characteristics>
+        <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">7</characteristic>
+        <characteristic name="WS" typeId="f95b-da01-0578-3bdc">3</characteristic>
+        <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">3</characteristic>
+        <characteristic name="S" typeId="b690-4bc0-bb73-267b">3</characteristic>
+        <characteristic name="T" typeId="8712-f56f-5b22-a720">3</characteristic>
+        <characteristic name="W" typeId="253a-9b00-4fde-8ac2">1</characteristic>
+        <characteristic name="I" typeId="dfff-363e-f72a-5a59">3</characteristic>
+        <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
+        <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">3</characteristic>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+        <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+        <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
+      </characteristics>
+    </profile>
+    <profile id="54cd-37b8-d29f-7ba6" name="Swarm base" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile" page="77" publicationId="7dda-637b-31ad-951c">
+      <characteristics>
+        <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">4</characteristic>
+        <characteristic name="WS" typeId="f95b-da01-0578-3bdc">3</characteristic>
+        <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">0</characteristic>
+        <characteristic name="S" typeId="b690-4bc0-bb73-267b">2</characteristic>
+        <characteristic name="T" typeId="8712-f56f-5b22-a720">2</characteristic>
+        <characteristic name="W" typeId="253a-9b00-4fde-8ac2">5</characteristic>
+        <characteristic name="I" typeId="dfff-363e-f72a-5a59">1</characteristic>
+        <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">5</characteristic>
+        <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">10</characteristic>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+        <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+        <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
+      </characteristics>
+    </profile>
   </sharedProfiles>
   <entryLinks>
     <entryLink import="true" name="Al Muktar&apos;s Desert Dogs" hidden="false" id="b256-efe8-92a1-5d11" type="selectionEntry" targetId="22e7-a415-2e0e-a39f"/>
@@ -8035,7 +8789,6 @@ The Gaze of Mork is a magic missile with a range of up to 24&quot;. If successfu
           <modifiers>
             <modifier type="add" value="43cc-fc3f-35a7-8d03" field="category"/>
             <modifier type="remove" value="e94b-6a54-8779-cd60" field="category"/>
-            <modifier type="set-primary" value="43cc-fc3f-35a7-8d03" field="category"/>
           </modifiers>
         </modifierGroup>
       </modifierGroups>
