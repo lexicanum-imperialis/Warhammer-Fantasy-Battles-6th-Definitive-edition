@@ -278,6 +278,19 @@
         <categoryLink name="Rare" hidden="false" id="5646-9388-f4de-8451" targetId="e94b-6a54-8779-cd60" primary="false"/>
       </categoryLinks>
     </forceEntry>
+    <forceEntry name="Nomadic Badlands Waaagh! (OG-AB)" id="1f55-c922-66d8-08ef" hidden="false" publicationId="7dda-637b-31ad-951c" page="77">
+      <categoryLinks>
+        <categoryLink name="Experimental rules" hidden="false" id="6802-f0f2-3912-39a2" targetId="4fed-b911-e6e0-927b" primary="false"/>
+        <categoryLink name="Special list rules" hidden="false" id="b407-0034-00e7-2985" targetId="32f1-197f-d719-a393" primary="false"/>
+        <categoryLink name="Special Characters" hidden="false" id="b2dd-7fe4-5c2b-7c0d" targetId="0644-bfcd-32c2-21dc" primary="false"/>
+        <categoryLink name="Characters" hidden="false" id="8d5a-4a57-bdad-d495" targetId="7a1c-d611-c2dc-def1" primary="false"/>
+        <categoryLink name="Lord" hidden="false" id="cd28-6f61-2503-285f" targetId="d024-d25b-a9b4-73b6" primary="false"/>
+        <categoryLink name="Heroes" hidden="false" id="f0eb-76d8-fdcd-1c45" targetId="c16b-f319-2c62-2c12" primary="false"/>
+        <categoryLink name="Core" hidden="false" id="9d87-f4e3-76f0-a044" targetId="64bf-efb4-9978-26df" primary="false"/>
+        <categoryLink name="Special" hidden="false" id="b6cb-bdfa-6907-bf51" targetId="43cc-fc3f-35a7-8d03" primary="false"/>
+        <categoryLink name="Rare" hidden="false" id="ebc6-97b8-f660-be94" targetId="e94b-6a54-8779-cd60" primary="false"/>
+      </categoryLinks>
+    </forceEntry>
   </forceEntries>
   <selectionEntries>
     <selectionEntry id="ed65-df1a-50a2-c3ac" name="Night Goblin" hidden="false" collective="false" import="true" type="unit">
@@ -466,6 +479,7 @@
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="59e1-efd7-af88-55a1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="b26c-6f4c-34a5-dc0c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="1f55-c922-66d8-08ef" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -645,6 +659,7 @@
         <selectionEntryGroup id="3661-ae25-a9ad-8013" name="Mounts" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b84f-cac9-618a-8db4" type="max"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="b9b4-6b71-4077-3bb1" includeChildSelections="false"/>
           </constraints>
           <selectionEntries>
             <selectionEntry id="3776-c7b4-3c72-2747" name="Boar" hidden="false" collective="false" import="true" type="upgrade">
@@ -669,6 +684,13 @@
               </constraints>
             </entryLink>
           </entryLinks>
+          <modifiers>
+            <modifier type="set" value="1" field="b9b4-6b71-4077-3bb1">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="1f55-c922-66d8-08ef" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -805,6 +827,7 @@
         <selectionEntryGroup id="d9c1-2bb5-2e17-eeab" name="Mounts" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="201f-2be0-a421-1fff" type="max"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="c94f-1e38-44cf-3765" includeChildSelections="false"/>
           </constraints>
           <selectionEntries>
             <selectionEntry id="0529-b311-d560-de46" name="Boar" hidden="false" collective="false" import="true" type="upgrade">
@@ -837,6 +860,13 @@
           <entryLinks>
             <entryLink id="3709-81b8-9663-0859" name="Wyvern" hidden="false" collective="false" import="true" targetId="b184-b03c-693b-53b1" type="selectionEntry"/>
           </entryLinks>
+          <modifiers>
+            <modifier type="set" value="1" field="c94f-1e38-44cf-3765">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="1f55-c922-66d8-08ef" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
         <selectionEntryGroup id="a4f7-f2e0-6082-a177" name="Magic Items" hidden="false" collective="false" import="true">
           <constraints>
@@ -953,6 +983,7 @@
         <selectionEntry id="e3e2-8cb4-5969-908e" name="Boar" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f971-98c8-1cd8-18ef" type="max"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="d0a9-fa6c-27c5-9c57" includeChildSelections="false"/>
           </constraints>
           <infoLinks>
             <infoLink id="29cd-7937-99f1-b29d" name="Boar" hidden="false" targetId="de91-b5e9-a96d-1f5a" type="profile"/>
@@ -962,6 +993,13 @@
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
+          <modifiers>
+            <modifier type="set" value="1" field="d0a9-fa6c-27c5-9c57">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="1f55-c922-66d8-08ef" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -1089,6 +1127,7 @@
         <selectionEntryGroup id="ba8a-b51f-65f9-5f96" name="Mounts" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f8e1-ca07-e490-cdcf" type="max"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="1b40-9a15-a41c-9cd6" includeChildSelections="false"/>
           </constraints>
           <selectionEntries>
             <selectionEntry id="8614-4beb-61b2-9595" name="Boar" hidden="false" collective="false" import="true" type="upgrade">
@@ -1118,6 +1157,13 @@
               </costs>
             </selectionEntry>
           </selectionEntries>
+          <modifiers>
+            <modifier type="set" value="1" field="1b40-9a15-a41c-9cd6">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="1f55-c922-66d8-08ef" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
         <selectionEntryGroup id="d0b4-bc9d-bb72-39e8" name="Magic Items" hidden="false" collective="false" import="true">
           <constraints>
@@ -1237,6 +1283,7 @@
         <selectionEntry id="f0c6-f7a7-457c-e1d7" name="Boar" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0801-c9e1-5d2e-deae" type="max"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="b159-2f79-2cd6-828b" includeChildSelections="false"/>
           </constraints>
           <infoLinks>
             <infoLink id="1b64-baf6-145b-5937" name="Boar" hidden="false" targetId="de91-b5e9-a96d-1f5a" type="profile"/>
@@ -1246,6 +1293,13 @@
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
+          <modifiers>
+            <modifier type="set" value="1" field="b159-2f79-2cd6-828b">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="1f55-c922-66d8-08ef" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry id="61f8-7aca-67c9-124d" name="Warpaint" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -1440,6 +1494,7 @@
         <selectionEntryGroup id="7cbc-c5bd-5ea6-1d60" name="Mounts" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a96f-1adf-fbf4-1d51" type="max"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="0b88-d729-6408-d945" includeChildSelections="false"/>
           </constraints>
           <selectionEntries>
             <selectionEntry id="e14d-1ba4-5c9d-96b2" name="Wolf" hidden="false" collective="false" import="true" type="upgrade">
@@ -1466,6 +1521,13 @@
               </costs>
             </selectionEntry>
           </selectionEntries>
+          <modifiers>
+            <modifier type="set" value="1" field="0b88-d729-6408-d945">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="1f55-c922-66d8-08ef" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
         <selectionEntryGroup id="9b5a-0a39-02f7-a6ac" name="Magic Items" hidden="false" collective="false" import="true">
           <constraints>
@@ -1617,6 +1679,7 @@
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="b26c-6f4c-34a5-dc0c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="59e1-efd7-af88-55a1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="1f55-c922-66d8-08ef" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -1678,6 +1741,7 @@
         <selectionEntryGroup id="8ae9-6a07-d7dd-0f1b" name="Mounts" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b839-830c-196b-db73" type="max"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="c92d-1c26-3b25-5a67" includeChildSelections="false"/>
           </constraints>
           <selectionEntries>
             <selectionEntry id="552c-d9c5-52e5-fd1c" name="Wolf" hidden="false" collective="false" import="true" type="upgrade">
@@ -1704,6 +1768,13 @@
               </costs>
             </selectionEntry>
           </selectionEntries>
+          <modifiers>
+            <modifier type="set" value="1" field="c92d-1c26-3b25-5a67">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="1f55-c922-66d8-08ef" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
         <selectionEntryGroup id="d43a-4107-8610-85de" name="Magic Level" hidden="false" collective="false" import="true" defaultSelectionEntryId="9e32-8685-6ceb-98c4">
           <constraints>
@@ -1869,6 +1940,7 @@
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="b26c-6f4c-34a5-dc0c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="59e1-efd7-af88-55a1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="1f55-c922-66d8-08ef" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -2025,6 +2097,7 @@
         <selectionEntryGroup id="8a7a-d454-ad84-6f7e" name="Mounts" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b1f4-515f-23ef-a9d8" type="max"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="a90d-4ca4-299a-1a72" includeChildSelections="false"/>
           </constraints>
           <selectionEntries>
             <selectionEntry id="fd20-5671-fbd8-0523" name="Boar" hidden="false" collective="false" import="true" type="upgrade">
@@ -2068,6 +2141,13 @@
               </categoryLinks>
             </entryLink>
           </entryLinks>
+          <modifiers>
+            <modifier type="set" value="1" field="a90d-4ca4-299a-1a72">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="1f55-c922-66d8-08ef" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
         <selectionEntryGroup id="604e-93d6-661c-994a" name="Magic Items" hidden="false" collective="false" import="true">
           <constraints>
@@ -2250,6 +2330,7 @@
         <selectionEntryGroup id="6a02-d336-e192-56fd" name="Mounts" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d429-1ba5-7bbe-a0ef" type="max"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="bdd7-3caf-c4ac-4832" includeChildSelections="false"/>
           </constraints>
           <selectionEntries>
             <selectionEntry id="bb3a-135f-90e4-2fe1" name="Boar" hidden="false" collective="false" import="true" type="upgrade">
@@ -2293,6 +2374,13 @@
               </categoryLinks>
             </entryLink>
           </entryLinks>
+          <modifiers>
+            <modifier type="set" value="1" field="bdd7-3caf-c4ac-4832">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="1f55-c922-66d8-08ef" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -2396,6 +2484,7 @@
         <selectionEntry id="213a-5713-21a8-1007" name="Boar" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3367-7db3-a19e-3e2d" type="max"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="7fe1-b7df-3c98-b186" includeChildSelections="false"/>
           </constraints>
           <infoLinks>
             <infoLink id="20dd-a9aa-105b-0b40" name="Boar" hidden="false" targetId="de91-b5e9-a96d-1f5a" type="profile"/>
@@ -2405,6 +2494,13 @@
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
+          <modifiers>
+            <modifier type="set" value="1" field="7fe1-b7df-3c98-b186">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="1f55-c922-66d8-08ef" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry id="eccc-ab7a-8b90-aa9a" name="Warpaint" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -2554,6 +2650,7 @@
         <selectionEntryGroup id="282d-afda-0de8-93c8" name="Mounts" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c573-f278-8886-0687" type="max"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="4194-dd10-a476-18d0" includeChildSelections="false"/>
           </constraints>
           <selectionEntries>
             <selectionEntry id="8693-494e-7eb0-b741" name="Boar" hidden="false" collective="false" import="true" type="upgrade">
@@ -2583,6 +2680,13 @@
               </costs>
             </selectionEntry>
           </selectionEntries>
+          <modifiers>
+            <modifier type="set" value="1" field="4194-dd10-a476-18d0">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="1f55-c922-66d8-08ef" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
         <selectionEntryGroup id="7b2a-6a9f-5841-a207" name="Magic Items" hidden="false" collective="false" import="true">
           <constraints>
@@ -2701,6 +2805,7 @@
         <selectionEntry id="93ed-6872-11e0-dc57" name="Boar" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1349-172d-6444-e4e0" type="max"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="264e-0979-6871-a0f6" includeChildSelections="false"/>
           </constraints>
           <infoLinks>
             <infoLink id="7b46-3988-3811-dac8" name="Boar" hidden="false" targetId="de91-b5e9-a96d-1f5a" type="profile"/>
@@ -2710,6 +2815,13 @@
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
+          <modifiers>
+            <modifier type="set" value="1" field="264e-0979-6871-a0f6">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="1f55-c922-66d8-08ef" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry id="b35c-0d9b-c8c0-703a" name="Show Spells" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -2895,6 +3007,7 @@
         <selectionEntryGroup id="f56e-dc8a-17aa-ae21" name="Mounts" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="122e-25f4-3a36-cfb8" type="max"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="fd5f-97bb-5f0e-7743" includeChildSelections="false"/>
           </constraints>
           <selectionEntries>
             <selectionEntry id="2385-9f7d-4f4c-0384" name="Wolf" hidden="false" collective="false" import="true" type="upgrade">
@@ -2921,6 +3034,13 @@
               </costs>
             </selectionEntry>
           </selectionEntries>
+          <modifiers>
+            <modifier type="set" value="1" field="fd5f-97bb-5f0e-7743">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="1f55-c922-66d8-08ef" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
         <selectionEntryGroup id="808e-3895-8cc9-ab54" name="Magic Items" hidden="false" collective="false" import="true">
           <constraints>
@@ -3104,6 +3224,7 @@
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="b26c-6f4c-34a5-dc0c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="59e1-efd7-af88-55a1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="1f55-c922-66d8-08ef" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -3164,6 +3285,7 @@
         <selectionEntryGroup id="3a26-e515-28a5-93c6" name="Mounts" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b2f7-5338-ed67-f58a" type="max"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="ebed-997e-0073-1bf3" includeChildSelections="false"/>
           </constraints>
           <selectionEntries>
             <selectionEntry id="bb2c-a988-f447-3242" name="Wolf" hidden="false" collective="false" import="true" type="upgrade">
@@ -3190,6 +3312,13 @@
               </costs>
             </selectionEntry>
           </selectionEntries>
+          <modifiers>
+            <modifier type="set" value="1" field="ebed-997e-0073-1bf3">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="1f55-c922-66d8-08ef" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
         <selectionEntryGroup id="5949-d37c-f238-180c" name="Magic Items Selection" hidden="false" collective="false" import="true">
           <constraints>
@@ -3354,6 +3483,7 @@
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="b26c-6f4c-34a5-dc0c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="59e1-efd7-af88-55a1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="1f55-c922-66d8-08ef" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -3540,6 +3670,7 @@
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="c248-eea0-b5c1-857b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="59e1-efd7-af88-55a1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="1f55-c922-66d8-08ef" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -3688,6 +3819,7 @@
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="c248-eea0-b5c1-857b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="59e1-efd7-af88-55a1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="b26c-6f4c-34a5-dc0c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="1f55-c922-66d8-08ef" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -3703,6 +3835,7 @@
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="c248-eea0-b5c1-857b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="a2fa-6a0e-8c17-373c" childId="any" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="b26c-6f4c-34a5-dc0c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="1f55-c922-66d8-08ef" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -4033,6 +4166,7 @@
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="a2fa-6a0e-8c17-373c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="c248-eea0-b5c1-857b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="1f55-c922-66d8-08ef" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -4293,6 +4427,13 @@
           </conditions>
         </modifierGroup>
       </modifierGroups>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="1f55-c922-66d8-08ef" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="5a89-d7b1-3214-b52c" name="Black Orcs" hidden="false" collective="false" import="true" type="unit">
       <constraints>
@@ -4495,6 +4636,7 @@
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="59e1-efd7-af88-55a1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="c248-eea0-b5c1-857b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="b26c-6f4c-34a5-dc0c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="1f55-c922-66d8-08ef" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -4635,6 +4777,19 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="add" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="set-primary" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="remove" value="43cc-fc3f-35a7-8d03" field="category"/>
+          </modifiers>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="1f55-c922-66d8-08ef" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+          <comment>Nomadic Badlands Waaagh! (OG-AB, p.77)</comment>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry id="a25f-0865-f401-61ba" name="Savage Orc Boar Boyz" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
@@ -4833,6 +4988,7 @@
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="b26c-6f4c-34a5-dc0c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="59e1-efd7-af88-55a1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="1f55-c922-66d8-08ef" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -4927,6 +5083,19 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="add" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="set-primary" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="remove" value="43cc-fc3f-35a7-8d03" field="category"/>
+          </modifiers>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="1f55-c922-66d8-08ef" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+          <comment>Nomadic Badlands Waaagh! (OG-AB, p.77)</comment>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry id="1d77-ded1-ed42-4858" name="Goblin Rock Lobba" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
@@ -4937,6 +5106,7 @@
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="59e1-efd7-af88-55a1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="c248-eea0-b5c1-857b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="1f55-c922-66d8-08ef" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -5076,6 +5246,7 @@
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="c248-eea0-b5c1-857b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                 <condition type="instanceOf" value="0" field="selections" scope="force" childId="a2fa-6a0e-8c17-373c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="1f55-c922-66d8-08ef" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -5288,6 +5459,11 @@
             <condition field="selections" scope="a2fa-6a0e-8c17-373c" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="instanceOf"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="1f55-c922-66d8-08ef" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <infoLinks>
         <infoLink id="5551-a55f-a547-a856" name="Ignore Greenskin Panic: " hidden="false" targetId="47bc-b420-0136-87a8" type="rule"/>
@@ -5423,6 +5599,7 @@
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="c248-eea0-b5c1-857b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="59e1-efd7-af88-55a1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="1f55-c922-66d8-08ef" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -5438,6 +5615,7 @@
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="59e1-efd7-af88-55a1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="c248-eea0-b5c1-857b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="1f55-c922-66d8-08ef" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -5914,6 +6092,13 @@
                 <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
                 <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
               </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="1f55-c922-66d8-08ef" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntry>
             <selectionEntry id="39dc-04bb-38b6-d58c" name="Goblin Bigboss extra" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -6062,6 +6247,7 @@
                 <selectionEntryGroup id="2a5d-641f-c8da-6fc1" name="Mounts" hidden="false" collective="false" import="true">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="081d-2e64-8a98-5fb8" type="max"/>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="2e1a-f0e9-7232-6421" includeChildSelections="false"/>
                   </constraints>
                   <selectionEntries>
                     <selectionEntry id="6216-927e-94a0-f45b" name="Wolf" hidden="false" collective="false" import="true" type="upgrade">
@@ -6088,6 +6274,13 @@
                       </costs>
                     </selectionEntry>
                   </selectionEntries>
+                  <modifiers>
+                    <modifier type="set" value="1" field="2e1a-f0e9-7232-6421">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="1f55-c922-66d8-08ef" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <entryLinks>
@@ -6107,7 +6300,7 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
-      <comment>For GOBLIN HORDE only</comment>
+      <comment>For GOBLIN HORDE only (??? NO, IT&apos;S NOT (OG-AB, p.34))</comment>
     </selectionEntry>
     <selectionEntry id="8787-293e-965a-f8c2" name="Orc Big &apos;uns Boar Boyz" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
@@ -6250,6 +6443,7 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <comment>In NBW???</comment>
     </selectionEntry>
     <selectionEntry id="eeb1-a6c4-b57e-f08c" name="Orc Big &apos;Uns" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
@@ -6266,6 +6460,7 @@
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="c248-eea0-b5c1-857b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="59e1-efd7-af88-55a1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="b26c-6f4c-34a5-dc0c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="1f55-c922-66d8-08ef" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -6592,6 +6787,7 @@
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="c248-eea0-b5c1-857b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="a2fa-6a0e-8c17-373c" childId="any" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="b26c-6f4c-34a5-dc0c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="1f55-c922-66d8-08ef" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -6765,9 +6961,14 @@
     <selectionEntry id="4112-026b-500a-b6fd" name="Stone Trolls" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="59e1-efd7-af88-55a1" type="instanceOf"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="1f55-c922-66d8-08ef" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="instanceOf" value="0" field="selections" scope="force" childId="59e1-efd7-af88-55a1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <profiles>
