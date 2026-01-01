@@ -151,6 +151,7 @@ The main additions are:
 - [x] Savage Orc Horde (OG-AB), p.76
 - [x] Mountain or Troll Country Waaagh! Horde (OG-AB), p.77
 - [x] Nomadic Badlands Waaagh! Horde (OG-AB), p.77
+- [x] Snotling Horde (OG-AB), p.77
 
 ## Sources consulted
 
