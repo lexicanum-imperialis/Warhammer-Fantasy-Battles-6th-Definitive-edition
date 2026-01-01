@@ -147,6 +147,7 @@ The main additions are:
 - [x] Red Host (LUS)
 - [ ] Lost valley of the Carnosaurs (CR-04)
 - [x] Savage Orc Horde (OG-AB), p.76
+- [x] Mountain or Troll Country Waaagh! Horde (OG-AB), p.77
 
 ## Sources consulted
 
