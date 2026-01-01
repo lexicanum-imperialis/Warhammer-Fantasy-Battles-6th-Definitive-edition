@@ -265,6 +265,19 @@
         <categoryLink name="Rare" hidden="false" id="c011-5de1-c0a9-b9de" targetId="e94b-6a54-8779-cd60" primary="false"/>
       </categoryLinks>
     </forceEntry>
+    <forceEntry name="Common Goblin Horde (OG-AB)" id="b26c-6f4c-34a5-dc0c" hidden="false" publicationId="7dda-637b-31ad-951c" page="76">
+      <categoryLinks>
+        <categoryLink name="Experimental rules" hidden="false" id="040a-e8ef-c7da-dd9c" targetId="4fed-b911-e6e0-927b" primary="false"/>
+        <categoryLink name="Special list rules" hidden="false" id="95e7-a99f-8b2f-f2c3" targetId="32f1-197f-d719-a393" primary="false"/>
+        <categoryLink name="Special Characters" hidden="false" id="c90b-cb49-9420-51da" targetId="0644-bfcd-32c2-21dc" primary="false"/>
+        <categoryLink name="Characters" hidden="false" id="3245-e36e-2634-4220" targetId="7a1c-d611-c2dc-def1" primary="false"/>
+        <categoryLink name="Lord" hidden="false" id="b392-ca35-9a2d-9cd7" targetId="d024-d25b-a9b4-73b6" primary="false"/>
+        <categoryLink name="Heroes" hidden="false" id="8f2b-c31d-8f75-7980" targetId="c16b-f319-2c62-2c12" primary="false"/>
+        <categoryLink name="Core" hidden="false" id="819a-737c-3ef9-3649" targetId="64bf-efb4-9978-26df" primary="false"/>
+        <categoryLink name="Special" hidden="false" id="df40-98ce-76f8-6cdc" targetId="43cc-fc3f-35a7-8d03" primary="false"/>
+        <categoryLink name="Rare" hidden="false" id="5646-9388-f4de-8451" targetId="e94b-6a54-8779-cd60" primary="false"/>
+      </categoryLinks>
+    </forceEntry>
   </forceEntries>
   <selectionEntries>
     <selectionEntry id="ed65-df1a-50a2-c3ac" name="Night Goblin" hidden="false" collective="false" import="true" type="unit">
@@ -408,7 +421,6 @@
                   </modifierGroups>
                   <constraints>
                     <constraint type="max" value="0" field="selections" scope="force" shared="true" id="869d-5627-1fde-152b" includeChildSelections="false"/>
-                    <constraint type="max" value="50" field="ecfa-8486-4f6c-c249" scope="parent" shared="true" id="7473-9513-444c-0616" percentValue="false"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
@@ -449,9 +461,14 @@
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <comment>Savage Orc Horde (OG-AB, p.76)</comment>
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="59e1-efd7-af88-55a1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="59e1-efd7-af88-55a1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="b26c-6f4c-34a5-dc0c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
     </selectionEntry>
@@ -670,6 +687,7 @@
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="c248-eea0-b5c1-857b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="59e1-efd7-af88-55a1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="b26c-6f4c-34a5-dc0c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -848,6 +866,7 @@
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="c248-eea0-b5c1-857b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="59e1-efd7-af88-55a1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="b26c-6f4c-34a5-dc0c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -862,6 +881,7 @@
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="c248-eea0-b5c1-857b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="a2fa-6a0e-8c17-373c" childId="any" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="b26c-6f4c-34a5-dc0c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -1155,6 +1175,7 @@
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="c248-eea0-b5c1-857b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="59e1-efd7-af88-55a1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="b26c-6f4c-34a5-dc0c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -1169,6 +1190,7 @@
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="c248-eea0-b5c1-857b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="a2fa-6a0e-8c17-373c" childId="any" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="b26c-6f4c-34a5-dc0c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -1590,9 +1612,14 @@
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <comment>Savage Orc Horde (OG-AB, p.76)</comment>
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="59e1-efd7-af88-55a1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="b26c-6f4c-34a5-dc0c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="59e1-efd7-af88-55a1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
     </selectionEntry>
@@ -1837,9 +1864,14 @@
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <comment>Savage Orc Horde (OG-AB, p.76)</comment>
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="59e1-efd7-af88-55a1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="b26c-6f4c-34a5-dc0c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="59e1-efd7-af88-55a1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
     </selectionEntry>
@@ -2074,6 +2106,7 @@
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="c248-eea0-b5c1-857b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="59e1-efd7-af88-55a1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="b26c-6f4c-34a5-dc0c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -2287,6 +2320,7 @@
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="c248-eea0-b5c1-857b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="59e1-efd7-af88-55a1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="b26c-6f4c-34a5-dc0c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -2301,6 +2335,7 @@
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="c248-eea0-b5c1-857b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="a2fa-6a0e-8c17-373c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="b26c-6f4c-34a5-dc0c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -2605,6 +2640,7 @@
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="c248-eea0-b5c1-857b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="59e1-efd7-af88-55a1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="b26c-6f4c-34a5-dc0c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -2619,6 +2655,7 @@
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="c248-eea0-b5c1-857b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="a2fa-6a0e-8c17-373c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="b26c-6f4c-34a5-dc0c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -3062,9 +3099,14 @@
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <comment>Savage Orc Horde (OG-AB, p.76)</comment>
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="59e1-efd7-af88-55a1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="b26c-6f4c-34a5-dc0c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="59e1-efd7-af88-55a1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
     </selectionEntry>
@@ -3307,9 +3349,14 @@
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <comment>Savage Orc Horde (OG-AB, p.76)</comment>
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="59e1-efd7-af88-55a1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="b26c-6f4c-34a5-dc0c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="59e1-efd7-af88-55a1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
     </selectionEntry>
@@ -3498,6 +3545,19 @@
           </conditionGroups>
         </modifier>
       </modifiers>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="b26c-6f4c-34a5-dc0c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+          <comment>Common Goblin Horde (OG-AB, p.76)</comment>
+          <modifiers>
+            <modifier type="set-primary" value="e94b-6a54-8779-cd60" field="category"/>
+            <modifier type="remove" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="add" value="e94b-6a54-8779-cd60" field="category"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry id="bc74-bb63-2abd-4e0b" name="Orc Arrer Boyz" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -3627,6 +3687,7 @@
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="c248-eea0-b5c1-857b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="59e1-efd7-af88-55a1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="b26c-6f4c-34a5-dc0c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -3641,6 +3702,7 @@
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="c248-eea0-b5c1-857b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="a2fa-6a0e-8c17-373c" childId="any" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="b26c-6f4c-34a5-dc0c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -3924,6 +3986,24 @@
                 <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
                 <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
               </costs>
+              <entryLinks>
+                <entryLink import="true" name="Magical Standard (Goblins)" hidden="true" id="77cf-2fad-1931-d03d" type="selectionEntryGroup" targetId="150f-e2fe-acfb-6092">
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <modifiers>
+                        <modifier type="set" value="false" field="hidden"/>
+                        <modifier type="set" value="1" field="1c5a-dfaf-c1f3-9dda"/>
+                      </modifiers>
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="b26c-6f4c-34a5-dc0c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </modifierGroup>
+                  </modifierGroups>
+                  <constraints>
+                    <constraint type="max" value="0" field="selections" scope="force" shared="true" id="1c5a-dfaf-c1f3-9dda" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
             </selectionEntry>
             <selectionEntry id="4d2f-6d57-256d-4a09" name="Boss" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -4200,6 +4280,18 @@
             <condition type="instanceOf" value="1" field="selections" scope="force" childId="59e1-efd7-af88-55a1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifierGroup>
+        <modifierGroup type="and">
+          <comment>Common Goblin Horde (OG-AB, p.76)</comment>
+          <modifiers>
+            <modifier type="add" value="43cc-fc3f-35a7-8d03" field="category"/>
+            <modifier type="set-primary" value="43cc-fc3f-35a7-8d03" field="category"/>
+            <modifier type="remove" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="set" value="-1" field="875a-054f-9c08-e155"/>
+          </modifiers>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="b26c-6f4c-34a5-dc0c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifierGroup>
       </modifierGroups>
     </selectionEntry>
     <selectionEntry id="5a89-d7b1-3214-b52c" name="Black Orcs" hidden="false" collective="false" import="true" type="unit">
@@ -4402,6 +4494,7 @@
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="59e1-efd7-af88-55a1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="c248-eea0-b5c1-857b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="b26c-6f4c-34a5-dc0c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -4417,6 +4510,7 @@
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="59e1-efd7-af88-55a1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="c248-eea0-b5c1-857b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="a2fa-6a0e-8c17-373c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="b26c-6f4c-34a5-dc0c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -4550,6 +4644,7 @@
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="c248-eea0-b5c1-857b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="a2fa-6a0e-8c17-373c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="b26c-6f4c-34a5-dc0c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -4733,9 +4828,14 @@
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <comment>Savage Orc Horde (OG-AB, p.76)</comment>
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="59e1-efd7-af88-55a1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="b26c-6f4c-34a5-dc0c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="59e1-efd7-af88-55a1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
     </selectionEntry>
@@ -4753,6 +4853,7 @@
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="59e1-efd7-af88-55a1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="c248-eea0-b5c1-857b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="a2fa-6a0e-8c17-373c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="b26c-6f4c-34a5-dc0c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -4829,16 +4930,6 @@
     </selectionEntry>
     <selectionEntry id="1d77-ded1-ed42-4858" name="Goblin Rock Lobba" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
-        <modifier type="set-primary" field="category" value="e94b-6a54-8779-cd60">
-          <conditions>
-            <condition field="selections" scope="a2fa-6a0e-8c17-373c" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="instanceOf"/>
-          </conditions>
-        </modifier>
-        <modifier type="remove" field="category" value="43cc-fc3f-35a7-8d03">
-          <conditions>
-            <condition field="selections" scope="a2fa-6a0e-8c17-373c" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="instanceOf"/>
-          </conditions>
-        </modifier>
         <modifier type="set" value="true" field="hidden">
           <comment>Savage Orc Horde (OG-AB, p.76)</comment>
           <conditionGroups>
@@ -4944,6 +5035,13 @@
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="b26c-6f4c-34a5-dc0c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -4951,6 +5049,24 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Common Goblin Horde (OG-AB, p.76)</comment>
+          <modifiers>
+            <modifier type="remove" value="43cc-fc3f-35a7-8d03" field="category"/>
+            <modifier type="set-primary" value="e94b-6a54-8779-cd60" field="category"/>
+            <modifier type="add" value="e94b-6a54-8779-cd60" field="category"/>
+          </modifiers>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="b26c-6f4c-34a5-dc0c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="instanceOf" value="0" field="selections" scope="a2fa-6a0e-8c17-373c" childId="any" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry id="7b28-6caa-7922-aeb8" name="Trolls" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
@@ -5065,6 +5181,17 @@
           </modifiers>
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="force" childId="59e1-efd7-af88-55a1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifierGroup>
+        <modifierGroup type="and">
+          <comment>Common Goblin Horde (OG-AB, p.76)</comment>
+          <modifiers>
+            <modifier type="add" value="43cc-fc3f-35a7-8d03" field="category"/>
+            <modifier type="set-primary" value="43cc-fc3f-35a7-8d03" field="category"/>
+            <modifier type="remove" value="e94b-6a54-8779-cd60" field="category"/>
+          </modifiers>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="b26c-6f4c-34a5-dc0c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifierGroup>
       </modifierGroups>
@@ -5274,6 +5401,13 @@
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="b26c-6f4c-34a5-dc0c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -5297,16 +5431,6 @@
     </selectionEntry>
     <selectionEntry id="1beb-9007-1c33-7589" name="Goblin Spear Chukka" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
-        <modifier type="set-primary" field="category" value="e94b-6a54-8779-cd60">
-          <conditions>
-            <condition field="selections" scope="a2fa-6a0e-8c17-373c" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="instanceOf"/>
-          </conditions>
-        </modifier>
-        <modifier type="remove" field="category" value="43cc-fc3f-35a7-8d03">
-          <conditions>
-            <condition field="selections" scope="a2fa-6a0e-8c17-373c" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="instanceOf"/>
-          </conditions>
-        </modifier>
         <modifier type="set" value="true" field="hidden">
           <comment>Savage Orc Horde (OG-AB, p.76)</comment>
           <conditionGroups>
@@ -5424,6 +5548,13 @@
                 <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
                 <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
               </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="b26c-6f4c-34a5-dc0c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntry>
           </selectionEntries>
           <costs>
@@ -5438,6 +5569,24 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Common Goblin Horde (OG-AB, p.76)</comment>
+          <modifiers>
+            <modifier type="remove" value="43cc-fc3f-35a7-8d03" field="category"/>
+            <modifier type="set-primary" value="e94b-6a54-8779-cd60" field="category"/>
+            <modifier type="add" value="e94b-6a54-8779-cd60" field="category"/>
+          </modifiers>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="b26c-6f4c-34a5-dc0c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="instanceOf" value="0" field="selections" scope="a2fa-6a0e-8c17-373c" childId="any" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry id="5943-b878-61dd-7620" name="Goblin Wolf Chariots" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
@@ -5578,7 +5727,7 @@
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ed97-811b-cdb5-46c3" name="Extra Goblin Hero" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="ed97-811b-cdb5-46c3" name="Extra Goblin Hero" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="186c-6345-5b25-5aa2" value="0">
           <conditionGroups>
@@ -5974,6 +6123,7 @@
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="59e1-efd7-af88-55a1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="c248-eea0-b5c1-857b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="a2fa-6a0e-8c17-373c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="b26c-6f4c-34a5-dc0c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -6115,6 +6265,7 @@
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="c248-eea0-b5c1-857b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="59e1-efd7-af88-55a1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="b26c-6f4c-34a5-dc0c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -6297,6 +6448,7 @@
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="c248-eea0-b5c1-857b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="a2fa-6a0e-8c17-373c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="b26c-6f4c-34a5-dc0c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -6439,6 +6591,7 @@
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="c248-eea0-b5c1-857b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="a2fa-6a0e-8c17-373c" childId="any" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="b26c-6f4c-34a5-dc0c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -8170,6 +8323,7 @@
       </entryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="9933-42bf-9c8a-0d23" includeChildSelections="true"/>
+        <constraint type="max" value="50" field="ecfa-8486-4f6c-c249" scope="parent" shared="true" id="7473-9513-444c-0616" percentValue="false"/>
       </constraints>
     </selectionEntryGroup>
     <selectionEntryGroup id="150f-e2fe-acfb-6092" name="Magical Standard (Goblins)" hidden="false" collective="false" import="true">
@@ -8183,6 +8337,10 @@
         <entryLink id="759e-3c33-c13e-c296" name="Nogg&apos;s Banner of Butchery " hidden="false" collective="false" import="true" targetId="648e-1b65-a83f-c81f" type="selectionEntry"/>
         <entryLink id="2ff0-8659-cbfd-9859" name="The Bashin&apos; Flag of Bork" hidden="false" collective="false" import="true" targetId="edf2-4cea-3652-899d" type="selectionEntry"/>
       </entryLinks>
+      <constraints>
+        <constraint type="max" value="50" field="ecfa-8486-4f6c-c249" scope="parent" shared="true" id="d4e7-1bfd-f669-796b" percentValue="false"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="8cb1-87aa-ed96-07c2" includeChildSelections="true"/>
+      </constraints>
     </selectionEntryGroup>
     <selectionEntryGroup id="6566-3982-6715-5d45" name="Big Waaagh" hidden="false" collective="false" import="true">
       <entryLinks>
