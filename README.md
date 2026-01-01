@@ -146,6 +146,8 @@ The main additions are:
 - [x] Southlands (LM-AB)
 - [x] Red Host (LUS)
 - [ ] Lost valley of the Carnosaurs (CR-04)
+- [x] Night Goblin Horde (OG-AB), p.76
+- [x] Common Goblin Horde (OG-AB), p.76
 - [x] Savage Orc Horde (OG-AB), p.76
 - [x] Mountain or Troll Country Waaagh! Horde (OG-AB), p.77
 
