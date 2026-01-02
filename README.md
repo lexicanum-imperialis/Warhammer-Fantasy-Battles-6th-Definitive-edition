@@ -132,6 +132,7 @@ The main additions are:
 - [x] Wurrzag (OG-AB, p.69)
 - [x] Borgut Facebeater (SoC, p.57)
 - [x] Grom the Paunch (CR-04, p.80-81)
+- [x] Azhag the Slaughterer (AN-02, p.81-82)
 
 ## Alternative lists included
 - [x] Clan Eshin (SKV-AB)
