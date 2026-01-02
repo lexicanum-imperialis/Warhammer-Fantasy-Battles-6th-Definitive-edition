@@ -1609,20 +1609,33 @@
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="222d-1b27-09e7-ead0" name="Black Orc hero extra cost" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry type="upgrade" import="true" name="Additional Hero choice" hidden="false" id="e3cf-e551-eb3d-852e">
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="30a9-f4b4-963d-13c9" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c8c9-6213-6e4f-033f" type="max"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7198-b57b-4d7b-6c52" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8a24-9eaa-7a36-19d9" includeChildSelections="false"/>
           </constraints>
           <categoryLinks>
-            <categoryLink id="fd21-2c68-20a3-f8cf" name="Characters" hidden="false" targetId="7a1c-d611-c2dc-def1" primary="false"/>
-            <categoryLink id="823c-f2a4-42f1-05ce" name="Characters" hidden="false" targetId="7a1c-d611-c2dc-def1" primary="false"/>
+            <categoryLink name="Heroes" hidden="false" id="f0ef-f989-71af-8321" targetId="c16b-f319-2c62-2c12" primary="false"/>
+            <categoryLink name="Characters" hidden="false" id="5ad5-4a72-28c3-edf2" targetId="7a1c-d611-c2dc-def1" primary="false"/>
           </categoryLinks>
-          <costs>
-            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
-            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-          </costs>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="0" field="7198-b57b-4d7b-6c52">
+                  <comment>(SoC, p.58) &quot;Black Orc Warbosses and Black Orc Big Bosses only count as a further Hero choice if they have a mount of any type.&quot;</comment>
+                </modifier>
+                <modifier type="set" value="0" field="8a24-9eaa-7a36-19d9"/>
+              </modifiers>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="febe-2170-775b-0d13" childId="8a7a-d454-ad84-6f7e" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="1821-fbd1-0d96-2d88" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifierGroup>
+          </modifierGroups>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -4254,6 +4267,7 @@
                 <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
                 <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
               </costs>
+              <comment>SoC p.58</comment>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -7132,6 +7146,34 @@
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Additional Hero choice" hidden="false" id="c362-4718-7408-312e">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a78d-67eb-ede2-2cd9" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c619-5d37-67ee-4c71" includeChildSelections="false"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink name="Heroes" hidden="false" id="a99b-2843-61ee-b25a" targetId="c16b-f319-2c62-2c12" primary="false"/>
+            <categoryLink name="Characters" hidden="false" id="7b3d-9570-ffed-e178" targetId="7a1c-d611-c2dc-def1" primary="false"/>
+          </categoryLinks>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="0" field="a78d-67eb-ede2-2cd9">
+                  <comment>(SoC, p.58) &quot;Black Orc Warbosses and Black Orc Big Bosses only count as a further Hero choice if they have a mount of any type.&quot;</comment>
+                </modifier>
+                <modifier type="set" value="0" field="c619-5d37-67ee-4c71"/>
+              </modifiers>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="parent" childId="c3ca-9190-9a62-3b6c" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="1821-fbd1-0d96-2d88" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifierGroup>
+          </modifierGroups>
+        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="db09-247d-3ea8-1f63" name="Weapons" hidden="false" collective="false" import="true">
@@ -7254,6 +7296,17 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="remove" value="7a1c-d611-c2dc-def1" field="category">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="c3ca-9190-9a62-3b6c" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="c3ca-9190-9a62-3b6c" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+          <comment>(SoC, p.58) &quot;Black Orc Warbosses and Black Orc Big Bosses only count as a further Hero choice if they have a mount of any type.&quot;</comment>
         </modifier>
       </modifiers>
     </selectionEntry>
@@ -7463,6 +7516,7 @@
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="608a-bb9c-c111-e096" includeChildSelections="false"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="29f9-629b-f467-d0c9" includeChildSelections="false"/>
                   </constraints>
+                  <comment>SoC p.58</comment>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
@@ -7605,6 +7659,19 @@
           </rules>
         </infoGroup>
       </infoGroups>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="remove" value="c16b-f319-2c62-2c12" field="category"/>
+            <modifier type="add" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="remove" value="43cc-fc3f-35a7-8d03" field="category"/>
+          </modifiers>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="1821-fbd1-0d96-2d88" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <comment>&quot;In this army, Grimgor and his Black Orc guards count as a Lord choice and a Core choice.&quot; (SoC, p.58)</comment>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry id="74d1-13e5-d030-0577" name="Wurrzag Ud Ura Zahubu" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
@@ -7821,6 +7888,37 @@ Additionally, before the armies are deployed, roll 1D6 for each Shaman in the ar
       </infoGroups>
       <constraints>
         <constraint type="max" value="0" field="selections" scope="force" shared="true" id="0ada-d5a1-b96b-fc8c" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Grimgor&apos;s &apos;Ardboyz" hidden="true" id="6f0d-f5ce-642d-f53d">
+      <categoryLinks>
+        <categoryLink name="Special list rules" hidden="false" id="03c4-1f68-213b-58d5" targetId="32f1-197f-d719-a393" primary="true"/>
+      </categoryLinks>
+      <rules>
+        <rule name="Grimgor&apos;s &apos;Ardboyz" id="98dd-e1dd-0437-3290" hidden="false" page="58" publicationId="d2ec-1dc7-f0d5-acbb">
+          <description>* The army may include Grimgor Ironhide as its General. It may also include Borgut Facebeater. If Grimgor is not present then Borgut will be the General. If neither are present then the General must be a Black Orc Warboss or Orc Warboss. If no Lord choices are allowed (because of the maximum points being played) then the General must be a Black Orc Big Boss or Orc Big Boss.
+
+
+* In this army, Grimgor and his Black Orc guards count as a Lord choice and a Core choice.
+
+* Black Orc Warbosses and Black Orc Big Bosses only count as a further Hero choice if they have a mount of any type.
+
+* There must be more Warbosses and Bigbosses in the army, including Grimgor and Borgut, than there are Great Shamans and Shamans.
+
+* Grimgor is only interested in getting the biggest, strongest, hurtiest Orcs in his army. Consequently, any number of units of Orc Boyz or Orc Boar Boyz can be upgraded to Big &apos;Uns.
+
+Note. Originally, Grimgor&apos;s bodyguards were defined as having additional hand weapons as these were the only models available. Since then the range has expanded to include Black Orcs with great weapons, so if you wish, you may arm Grimgor&apos;s bodyguard with these instead.</description>
+        </rule>
+      </rules>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="1821-fbd1-0d96-2d88" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="force" shared="true" id="0150-5753-06b5-3fa5" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
   </selectionEntries>
