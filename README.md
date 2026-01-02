@@ -135,6 +135,7 @@ The main additions are:
 - [x] Azhag the Slaughterer (AN-02, p.81-82)
 - [x] Morglum Necksnapper (webGW(US) and T#25(ES))
 - [x] Gorfang Rotgut (webGW(US) and T#25(ES))
+- [x] Skarsnik and Gobbla (CJ#46, p.28)
 
 ## Alternative lists included
 - [x] Clan Eshin (SKV-AB)
