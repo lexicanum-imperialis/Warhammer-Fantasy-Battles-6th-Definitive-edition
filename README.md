@@ -129,6 +129,7 @@ The main additions are:
 - [x] Spider Swarm (only Savage Orcs Horde, OG-AB, p.77)
 - [x] Savage Orcs Chariot (only Savage Orcs Horde, OG-AB, p.77)
 - [x] Grimgor Ironhide (OG-AB, p.67)
+- [x] Wurrzag (OG-AB, p.69)
 
 ## Alternative lists included
 - [x] Clan Eshin (SKV-AB)

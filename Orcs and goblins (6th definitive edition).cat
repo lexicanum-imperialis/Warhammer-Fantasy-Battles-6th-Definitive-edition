@@ -7389,20 +7389,15 @@
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dc2a-7e27-f825-c736" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f73b-f0a1-1095-32a2" includeChildSelections="false"/>
                   </constraints>
-                  <entryLinks>
-                    <entryLink import="true" name="Magical Standard" hidden="false" id="7018-edb3-2674-6e17" collective="false" targetId="0406-bb04-6134-2ee9" type="selectionEntryGroup">
-                      <constraints>
-                        <constraint type="max" value="50" field="ecfa-8486-4f6c-c249" scope="parent" shared="true" id="f1c3-fc76-f906-ecc4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                      </constraints>
-                    </entryLink>
-                  </entryLinks>
                   <costs>
                     <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="12"/>
                     <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
                     <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
                   </costs>
                   <infoLinks>
-                    <infoLink name="Stubborn" id="dc54-f053-05bf-27eb" hidden="false" type="rule" targetId="410a-0d06-9044-665e"/>
+                    <infoLink name="Stubborn" id="dc54-f053-05bf-27eb" hidden="false" type="rule" targetId="410a-0d06-9044-665e">
+                      <comment>Blasted Banner (OG-AB, p.67)</comment>
+                    </infoLink>
                   </infoLinks>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Boss" hidden="false" id="1616-b90f-aa95-8530" collective="false">
@@ -7557,6 +7552,14 @@
             <condition type="atLeast" value="1" field="selections" scope="force" childId="a6aa-186b-f08e-c185" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="b26c-6f4c-34a5-dc0c" shared="true" includeChildSelections="true"/>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="c248-eea0-b5c1-857b" shared="true" includeChildSelections="true"/>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="03cc-8a3f-abd4-3c03" shared="true" includeChildSelections="true"/>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="1f55-c922-66d8-08ef" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint type="max" value="0" field="selections" scope="force" shared="true" id="0df5-49d1-1eaf-e9f8" includeChildSelections="false"/>
@@ -7564,7 +7567,7 @@
       <infoGroups>
         <infoGroup name="Special rules" id="897d-482c-7b6a-b5d0" hidden="false" page="67" publicationId="7dda-637b-31ad-951c">
           <infoLinks>
-            <infoLink name="Ignore Greenskin Panic: " id="051b-9e95-4a34-beb4" hidden="false" type="rule" targetId="47bc-b420-0136-87a8"/>
+            <infoLink name="Ignore Greenskin Panic" id="051b-9e95-4a34-beb4" hidden="false" type="rule" targetId="47bc-b420-0136-87a8"/>
             <infoLink name="Quell Animosity" id="f589-801b-02df-66be" hidden="false" type="rule" targetId="0f2a-c100-8eb9-7490"/>
             <infoLink name="Hatred" id="8126-84bb-e069-e066" hidden="false" type="rule" targetId="1e6c-d634-a65c-78eb"/>
           </infoLinks>
@@ -7603,23 +7606,23 @@
         </infoGroup>
       </infoGroups>
     </selectionEntry>
-    <selectionEntry id="74d1-13e5-d030-0577" name="Wurrzag" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="74d1-13e5-d030-0577" name="Wurrzag Ud Ura Zahubu" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="c248-eea0-b5c1-857b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                <condition type="instanceOf" value="1" field="selections" scope="a2fa-6a0e-8c17-373c" childId="any" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="b26c-6f4c-34a5-dc0c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="03cc-8a3f-abd4-3c03" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
+        <modifier type="set" value="1" field="0ada-d5a1-b96b-fc8c">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="a6aa-186b-f08e-c185" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="b26c-6f4c-34a5-dc0c" shared="true" includeChildSelections="true"/>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="c248-eea0-b5c1-857b" shared="true" includeChildSelections="true"/>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="03cc-8a3f-abd4-3c03" shared="true" includeChildSelections="true"/>
+          </conditions>
         </modifier>
       </modifiers>
       <profiles>
-        <profile id="3c14-495c-1508-27a3" name="Orc Great Shaman" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
+        <profile id="3c14-495c-1508-27a3" name="Wurrzag" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile" page="69" publicationId="7dda-637b-31ad-951c">
           <characteristics>
             <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">4</characteristic>
             <characteristic name="WS" typeId="f95b-da01-0578-3bdc">3</characteristic>
@@ -7630,20 +7633,18 @@
             <characteristic name="I" typeId="dfff-363e-f72a-5a59">2</characteristic>
             <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
             <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">8</characteristic>
+            <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">6+</characteristic>
+            <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">5+</characteristic>
+            <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <infoLinks>
-        <infoLink id="bd94-fbeb-0044-6f81" name="Ignore Goblin Panic" hidden="false" targetId="f457-297e-425b-75d4" type="rule"/>
-        <infoLink id="0120-2b16-fa6b-59e1" name="Choppa" hidden="false" targetId="ab83-3475-b1c7-aafa" type="rule"/>
-        <infoLink id="011e-22aa-036c-6ea9" name="Frenzy: Savage Orcs " hidden="false" targetId="01cc-ed1b-58ba-0cd6" type="rule"/>
-        <infoLink id="d3c3-d8e4-65d4-1d3b" name="Warpaint" hidden="false" targetId="e8d6-cd4a-7353-54a7" type="rule"/>
-      </infoLinks>
       <categoryLinks>
         <categoryLink id="9c3c-b22d-118c-b2c9" name="Lord" hidden="false" targetId="d024-d25b-a9b4-73b6" primary="false"/>
         <categoryLink id="f32c-6c4c-1055-3f6b" name="Characters" hidden="false" targetId="7a1c-d611-c2dc-def1" primary="false"/>
         <categoryLink id="e53a-7e6d-1650-ccd1" name="Orc" hidden="false" targetId="d4a7-5999-8207-4efe" primary="false"/>
         <categoryLink name="Special Characters" hidden="false" id="c11e-c454-7b7b-2c81" targetId="0644-bfcd-32c2-21dc" primary="true"/>
+        <categoryLink name="Heroes" hidden="false" id="939c-62e2-5ccf-c6c9" targetId="c16b-f319-2c62-2c12" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="c1dc-5aeb-b153-d3a1" name="Choppa" hidden="false" collective="false" import="true" type="upgrade">
@@ -7657,36 +7658,38 @@
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="9743-09f5-e83e-9a48" name="Boar" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="9743-09f5-e83e-9a48" name="Sleenrippa the Boar (Mount)" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b438-0b36-eaf4-2f60" type="max"/>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="2e78-a116-d821-cb15" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2e78-a116-d821-cb15" includeChildSelections="false"/>
           </constraints>
           <infoLinks>
-            <infoLink id="99c1-0c92-8cb7-a835" name="Boar" hidden="false" targetId="de91-b5e9-a96d-1f5a" type="profile"/>
+            <infoLink id="99c1-0c92-8cb7-a835" name="Boar" hidden="false" targetId="de91-b5e9-a96d-1f5a" type="profile">
+              <modifiers>
+                <modifier type="set" value="Sleenrippa" field="name"/>
+                <modifier type="set" value="4" field="b690-4bc0-bb73-267b"/>
+                <modifier type="set" value="2" field="dfff-363e-f72a-5a59"/>
+              </modifiers>
+            </infoLink>
           </infoLinks>
           <costs>
-            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="24"/>
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
-          <modifiers>
-            <modifier type="set" value="1" field="2e78-a116-d821-cb15">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="1f55-c922-66d8-08ef" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </selectionEntry>
         <selectionEntry id="271b-bfa0-88c9-c6ca" name="Warpaint" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c872-256c-65fb-1c32" type="max"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="01aa-ef09-2b85-a194" includeChildSelections="false"/>
           </constraints>
           <infoLinks>
-            <infoLink id="6d80-6615-76ea-b906" name="Warpaint" hidden="false" targetId="a3a4-411c-d447-c84d" type="profile"/>
+            <infoLink id="6d80-6615-76ea-b906" name="Warpaint" hidden="false" targetId="a3a4-411c-d447-c84d" type="profile">
+              <modifiers>
+                <modifier type="set" value="5+" field="b600-e1ed-0765-27c1"/>
+              </modifiers>
+            </infoLink>
           </infoLinks>
           <costs>
-            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="12"/>
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
@@ -7707,59 +7710,118 @@
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="e8c2-4453-117c-b3e8" name="Magic Items" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="ecfa-8486-4f6c-c249" scope="parent" value="100" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c7d3-4f84-4009-208d" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="d678-7286-1ff7-37ec" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="6d5f-aed3-1c41-d305" type="selectionEntryGroup"/>
-            <entryLink id="3fd5-f49b-7e53-a289" name="Magic Talismans Savage" hidden="false" collective="false" import="true" targetId="2323-2874-dacd-315b" type="selectionEntryGroup"/>
-            <entryLink id="975e-f1e6-a3f1-8017" name="Enchanted Items Savage Orcs" hidden="false" collective="false" import="true" targetId="9c80-9f97-e489-0600" type="selectionEntryGroup"/>
-            <entryLink id="cdcc-94e4-9d65-9941" name="Arcane Items" hidden="false" collective="false" import="true" targetId="2eab-0673-0cb1-a5ea" type="selectionEntryGroup"/>
-          </entryLinks>
-        </selectionEntryGroup>
         <selectionEntryGroup id="47f3-aa97-7d60-97a9" name="Magic Level" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e15-f59b-3dcd-c468" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6429-c7d6-4e58-eb29" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="183b-b041-9f32-47a2" name="Level 3 Shaman" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b36-272a-a8b8-d8d6" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
-                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="3"/>
-                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="2"/>
-              </costs>
-            </selectionEntry>
             <selectionEntry id="e217-462d-c3bb-d324" name="Level 4 Shaman" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6650-f533-63a7-9d5a" type="max"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="60bd-63f0-d914-69e1" includeChildSelections="false"/>
               </constraints>
               <costs>
-                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="35"/>
                 <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="4"/>
                 <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="2"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-      </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="ac39-9aaa-1f53-2f23" name="General" hidden="false" collective="false" import="true" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry"/>
-        <entryLink import="true" name="Savage Orc Boar Chariot" hidden="false" id="a567-1f2a-71ac-4e66" type="selectionEntry" targetId="a462-dc3d-4e19-0833">
+        <selectionEntryGroup name="Magic Items" id="0e82-9a64-6bc7-d8f7" hidden="false">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8d2f-0805-1ab8-14ae" includeChildSelections="false"/>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="28ad-efb9-4aa4-f582" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="1d49-7e50-57bf-9b0a" includeChildSelections="false"/>
           </constraints>
-        </entryLink>
-      </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Baleful Mask (Talisman)" hidden="false" id="77c7-a154-1a3f-3954">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a986-84fe-19d1-56ef" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e84e-07ba-dd7a-7eff" includeChildSelections="false"/>
+              </constraints>
+              <rules>
+                <rule name="Baleful Mask" id="ae9d-62db-3e22-88af" hidden="false" publicationId="7dda-637b-31ad-951c" page="69">
+                  <description>Bound Spell. Power Level 3.
+The Mask contains a Gaze of Mork spell which works exactly as described in the Waaagh! Magic section. This may be cast once per Magic phase like an ordinary spell. The spell requires no Power dice to cast, all the power required is provided by the Mask itself.</description>
+                </rule>
+              </rules>
+              <infoLinks>
+                <infoLink name="GAZE OF MORK" id="3d68-afdc-4c2b-411e" hidden="false" type="rule" targetId="3e56-0647-dea6-cf80"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Wizzbang the Power Squig (Arcane Item)" hidden="false" id="66dd-5b5e-7f25-f27d">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d08c-3063-e0a9-5130" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2840-8b19-31ed-8383" includeChildSelections="false"/>
+              </constraints>
+              <rules>
+                <rule name="Wizzbang the Power Squig" id="85cc-76a4-4596-38fa" hidden="false" page="69" publicationId="7dda-637b-31ad-951c">
+                  <description>At the end of either player&apos;s Magic phase, Wurrzag may store up to two unused dice from his pool in the Power Squig. In the next Magic phase these are released and added to the pool in addition to those he would normally have.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Bonewood Staff (Enchanted Item)" hidden="false" id="cd7a-667f-d6d8-3811">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c398-747b-7055-5bcd" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2481-7d28-3a4e-588a" includeChildSelections="false"/>
+              </constraints>
+              <rules>
+                <rule name="Bonewood Staff" id="e0fa-7a47-86b6-009e" hidden="false" page="69" publicationId="7dda-637b-31ad-951c">
+                  <description>Bound Spell. Power Level 4.
+The staff contains a spell which turns Wurrzag&apos;s foes into Squigs. This may be cast once per Magic phase like an ordinary spell. The spell requires no Power dice to cast, all the power required is provided by the Staff itself.
+Wurrzag can use it on models in close combat.
+
+The victim, his mount (unless a monster) and all his equipment are immediately turned into Squigs. Replace the enemy model with a loose Squig and immediately bounce him away as per the normal rules. If the enemy model was mounted on a steed that only has 1 Wound then replace it with two Squigs and bounce them off separately. As usual, the Squigs don&apos;t attack units when they start bouncing, just where they land.
+
+
+Additionally, before the armies are deployed, roll 1D6 for each Shaman in the army apart from Wurrzag. On the roll of a 2-6 they are fine and take part as normal. On the roll of a 1 that Shaman has annoyed Wurrzag and been turned into a Squig. The Shaman is lost along with any magic items he was carrying. However, if you have a Night Goblin Squig Herd in your army you may add +1 extra free Cave Squig to the unit for each Shaman that gets on the wrong end of Wurrzag&apos;s temper.
+
+</description>
+                </rule>
+              </rules>
+              <infoLinks>
+                <infoLink name="Squig" id="4886-dfea-b6e8-a134" hidden="false" type="profile" targetId="b290-0baa-c81c-a154">
+                  <modifiers>
+                    <modifier type="append" value="(Spell)" field="name" join=" "/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="190"/>
+        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="500"/>
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <infoGroups>
+        <infoGroup name="Special rules" id="508a-6ad9-85a1-7284" hidden="false" page="69" publicationId="7dda-637b-31ad-951c">
+          <infoLinks>
+            <infoLink name="Frenzy: Savage Orcs " id="011e-22aa-036c-6ea9" hidden="false" targetId="01cc-ed1b-58ba-0cd6" type="rule"/>
+            <infoLink name="Ignore Goblin Panic" id="bd94-fbeb-0044-6f81" hidden="false" targetId="f457-297e-425b-75d4" type="rule">
+              <comment>IS THIS CORRECT?? NOT IN THE ARMY BOOK</comment>
+            </infoLink>
+          </infoLinks>
+          <rules>
+            <rule name="Mork&apos;s Favourite" id="5afe-3069-5ca2-6b17" hidden="false" publicationId="7dda-637b-31ad-951c" page="69">
+              <description>Wurrzag is a Level 4 Wizard and may generate his spells from either or both the Little Waaagh! and the Big Waaagh!, just like any other Level 4 Shaman. Being Mork&apos;s current favourite, Wurrzag adds +1 to the casting total of each spell he attempts. Also he cannot Miscast. If he rolls a double 1 the spell fails and he loses any dice stored in his Squig, but is otherwise unharmed.</description>
+            </rule>
+            <rule name="Tastes Bad" id="0411-2cba-f28d-2fb9" hidden="false" page="69" publicationId="7dda-637b-31ad-951c">
+              <description>An enemy mount or monster may only make half its normal number of Attacks (rounded down) when in base contact with Wurrzag - even if its Attacks are not directed at him.</description>
+            </rule>
+            <rule name="Bring out the Git" id="fd1f-f10f-5b23-1cc2" hidden="false" page="69" publicationId="7dda-637b-31ad-951c">
+              <description>Can&apos;t be the general unless he is the only character.</description>
+            </rule>
+            <rule name="Warpaint (Wurrzag)" id="8019-2668-0e74-d1de" hidden="false" page="69" publicationId="7dda-637b-31ad-951c">
+              <description>Instead of being a 6+ Ward save, Wurrzag&apos;s warpaint gives him a 5+ Ward save.</description>
+            </rule>
+          </rules>
+        </infoGroup>
+      </infoGroups>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="force" shared="true" id="0ada-d5a1-b96b-fc8c" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
@@ -9336,6 +9398,9 @@ The Gaze of Mork is a magic missile with a range of up to 24&quot;. If successfu
         <characteristic name="I" typeId="dfff-363e-f72a-5a59">3</characteristic>
         <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">3</characteristic>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+        <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+        <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
       </characteristics>
     </profile>
     <profile id="82b6-8aaa-c0a3-356b" name="Wolf" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
