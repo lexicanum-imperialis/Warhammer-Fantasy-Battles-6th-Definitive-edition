@@ -109,7 +109,6 @@ The main additions are:
 - [x] Mengil's Manflayers
 - [x] The Cursed Company
 
-
 ### Dark Elves
 - [x] Malekith, the Witch King
 - [x] Morathi, the Hag Sorceress
@@ -128,6 +127,7 @@ The main additions are:
 - [x] Goblin Spider Riders (only Savage Orcs Horde, OG-AB, p.77)
 - [x] Spider Swarm (only Savage Orcs Horde, OG-AB, p.77)
 - [x] Savage Orcs Chariot (only Savage Orcs Horde, OG-AB, p.77)
+- [x] Snotling Warboss (only Snotling Horde, OG-AB, p.77)
 - [x] Grimgor Ironhide (OG-AB, p.67)
 - [x] Wurrzag (OG-AB, p.69)
 - [x] Borgut Facebeater (SoC, p.57)
