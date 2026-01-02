@@ -131,6 +131,7 @@ The main additions are:
 - [x] Grimgor Ironhide (OG-AB, p.67)
 - [x] Wurrzag (OG-AB, p.69)
 - [x] Borgut Facebeater (SoC, p.57)
+- [x] Grom the Paunch (CR-04, p.80-81)
 
 ## Alternative lists included
 - [x] Clan Eshin (SKV-AB)
