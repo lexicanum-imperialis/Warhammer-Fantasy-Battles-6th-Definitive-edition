@@ -4320,13 +4320,23 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="set" value="-1" field="4e53-29c7-31c3-8b2d">
-          <comment>SoC, p.58</comment>
+      </modifiers>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Grimgor&apos;Ardboyz (SoC, p.58)</comment>
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="force" childId="1821-fbd1-0d96-2d88" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
-        </modifier>
-      </modifiers>
+          <modifiers>
+            <modifier type="set" value="-1" field="4e53-29c7-31c3-8b2d">
+              <comment>SoC, p.58</comment>
+            </modifier>
+            <modifier type="set-primary" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="add" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="remove" value="43cc-fc3f-35a7-8d03" field="category"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry id="faf0-2158-5450-f8ef" name="Orc Boar Boyz" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
@@ -4492,6 +4502,7 @@
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="a2fa-6a0e-8c17-373c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="b26c-6f4c-34a5-dc0c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="03cc-8a3f-abd4-3c03" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="1821-fbd1-0d96-2d88" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -6391,6 +6402,7 @@
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="a2fa-6a0e-8c17-373c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="b26c-6f4c-34a5-dc0c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="03cc-8a3f-abd4-3c03" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="1821-fbd1-0d96-2d88" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -7432,6 +7444,7 @@
             <infoLink name="Quell Animosity" id="3dc3-0557-6d4d-dd53" hidden="false" targetId="0f2a-c100-8eb9-7490" type="rule"/>
             <infoLink name="Ignore Greenskin Panic: " id="58af-ad2b-885d-205f" hidden="false" targetId="47bc-b420-0136-87a8" type="rule"/>
             <infoLink name="Choppa" id="6f0e-a653-e5de-3e51" hidden="false" targetId="ab83-3475-b1c7-aafa" type="rule"/>
+            <infoLink name="Magical Resistance (1)" id="bfb2-706e-9c4b-4687" hidden="false" type="rule" targetId="da12-a0e8-30ec-6c32"/>
           </infoLinks>
           <categoryLinks>
             <categoryLink name="Special" hidden="false" id="0563-8a3a-bba1-b5fe" targetId="43cc-fc3f-35a7-8d03" primary="true"/>
@@ -7990,7 +8003,7 @@ Note. Originally, Grimgor&apos;s bodyguards were defined as having additional ha
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Effigy of Gork" hidden="true" id="069f-c82f-084a-bbc8" publicationId="d2ec-1dc7-f0d5-acbb" page="58-59">
       <categoryLinks>
-        <categoryLink name="Rare" hidden="false" id="24c7-c613-b13a-02d5" targetId="e94b-6a54-8779-cd60" primary="false"/>
+        <categoryLink name="Rare" hidden="false" id="24c7-c613-b13a-02d5" targetId="e94b-6a54-8779-cd60" primary="true"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="40"/>
@@ -8014,40 +8027,48 @@ Note. Originally, Grimgor&apos;s bodyguards were defined as having additional ha
 
 Before the battle, the Orcs will reverently roar their praises to Gork and touch their standards to the Effigy. Any unit with its own standard may roll on the table below, representing the blessing that Gork has conferred on them. The blessing is cumulative with any existing magical powers their standard may have.
 
-
 D6 | Result
 -----|---------------------------------------------------------------------------------
 1-2|The unit&apos;s standard carries a Bound Spell: The Hand of Gork
 
-
 3-4|The unit&apos;s standard carries a Bound Spell: Bash &apos;em Ladz
-
 
 5-6|The unit&apos;s standard carries a Bound Spell: &apos;Ere We Go!
 
-
-
-
 Bound Spells are cast at a Power Level of 4 and can be used once per game on the unit carrying the blessed banner. The Power Level is also modified as follows:
-
 
 * Add 1 if the unit bearing the standard has a Unit Strength of 15 or more.
 
-
-
 * Add 1 if the unit bearing the standard is being led by a Warboss or Big Boss.
 
-
 * Add 1 if the unit bearing the standard is in close combat.</description>
+            </rule>
+            <rule name="Stop Messin&apos; Around" id="2f8f-69ff-ec4b-b8fa" hidden="false" page="59" publicationId="d2ec-1dc7-f0d5-acbb">
+              <description>Any Orc unit within 24&quot; of the centre of the Effigy, which fails an Animosity test, can ignore the result if it can successfully declare a charge on the enemy and does so.</description>
+            </rule>
+            <rule name="Gork Likes a Fight" id="f2bd-df4d-96e2-ec68" hidden="false" publicationId="d2ec-1dc7-f0d5-acbb" page="59">
+              <description>Black Orcs are Gork&apos;s favourites and he likes to see them get stuck in and not get perished because of magic, which is nowhere near so much fun. For each Black Orc Lord or Hero within 24&quot; of the centre of the Effigy at the start of the enemy Magic phase add one dice to the Orc Dispel dice pool.</description>
             </rule>
           </rules>
           <infoLinks>
             <infoLink name="&apos;ERE WE GO!" id="7ad4-a90d-d258-3493" hidden="false" type="rule" targetId="75be-85d3-92b5-d5c3"/>
             <infoLink name="THE HAND OF GORK" id="cff6-a91a-0433-8d32" hidden="false" type="rule" targetId="f1cf-5d16-34f7-1898"/>
-            <infoLink name="THE HAND OF GORK" id="d7c6-2efa-0ca0-5dc8" hidden="false" type="rule" targetId="f1cf-5d16-34f7-1898"/>
+            <infoLink name="BASH&apos;EM LADZ" id="d7c6-2efa-0ca0-5dc8" hidden="false" type="rule" targetId="1884-363c-f67b-196d"/>
           </infoLinks>
         </infoGroup>
       </infoGroups>
+      <modifiers>
+        <modifier type="set" value="0" field="ecfa-8486-4f6c-c249">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="064c-59f9-cafb-fee8" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="1821-fbd1-0d96-2d88" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
