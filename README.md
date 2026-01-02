@@ -136,6 +136,7 @@ The main additions are:
 - [x] Morglum Necksnapper (webGW(US) and T#25(ES))
 - [x] Gorfang Rotgut (webGW(US) and T#25(ES))
 - [x] Skarsnik and Gobbla (CJ#46, p.28)
+- [x] Badruk 'Eadsplitta (webGW(US))
 
 ## Alternative lists included
 - [x] Clan Eshin (SKV-AB)
@@ -200,7 +201,8 @@ The main additions are:
 |WebGW(UK) |["Masters of the Druchii"](http://uk.games-workshop.com/darkelves/special-characters/)                     |2006-05 (consulted)||
 |WebGW(US) |["Lizardmen characters"](http:/us.games-workshop.com/games/warhammer/lizardmen/gaming/campaign/characters/)|2005-08 (consulted)||
 |WebGW(US) |[""](http://us.games-workshop.com/games/warhammer/orcs/gaming/special_characters/morglum.htm) | 2007-01 (consulted) |
-|WebGW(US) |[""](http://us.games-workshop.com/games/warhammer/orcs/gaming/special_characters/gorfang.htm) | 2007-01 (consulted)
+|WebGW(US) |[""](http://us.games-workshop.com/games/warhammer/orcs/gaming/special_characters/gorfang.htm) | 2007-01 (consulted) |
+|WebGW(US) |[""](http://us.games-workshop.com/games/warhammer/orcs/assets/badruk.pdf)                     | 2004-07 (consulted) |
 
 ## Acknowledge and gratitudes
 I want to thank first to the team from [Las _Tablillas Sagradas_](https://lastablillassagradas.blogspot.com/), who made their fabulous _Warhammer Compendium_ that has inspired this whole project. Special mention to Antonio, who possess the knowledge of Tzeentch and the wisdom of Teclis.
