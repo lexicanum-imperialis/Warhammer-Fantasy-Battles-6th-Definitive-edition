@@ -154,6 +154,7 @@ The main additions are:
 - [x] Mountain or Troll Country Waaagh! Horde (OG-AB), p.77
 - [x] Nomadic Badlands Waaagh! Horde (OG-AB), p.77
 - [x] Snotling Horde (OG-AB), p.77
+- [x] Grimgor'Ardboyz (SoC, p.58)
 
 ## Sources consulted
 
