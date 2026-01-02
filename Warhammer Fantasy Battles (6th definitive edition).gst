@@ -2175,6 +2175,9 @@ Note that a spell cast with a Power Stone can never be cast with Irresistible Fo
 
 Note that a model&apos;s Attacks characteristic has no effect on the number of shots it can make. The Attacks characteristic refers to close combat attacks only.</description>
     </rule>
+    <rule name="Strikes First" id="7f45-dea2-ae93-7524" hidden="false" page="" publicationId="315e-e3c4-08af-fd51">
+      <description>Troops armed with a weapon that strikes last will always strike FIRST during close combat where they would otherwise strike in Initiative order. Note that troops that charge will still strike first in the initial turn of close combat, as charging troops always strike first rather man in Initiative order.</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="5556-38ea-b278-4a8f" name="Hand Weapon" hidden="false" typeId="7889-42d9-70a0-3ea9" typeName="Weapon" page="91" publicationId="315e-e3c4-08af-fd51">
