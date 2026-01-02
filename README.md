@@ -130,6 +130,7 @@ The main additions are:
 - [x] Savage Orcs Chariot (only Savage Orcs Horde, OG-AB, p.77)
 - [x] Grimgor Ironhide (OG-AB, p.67)
 - [x] Wurrzag (OG-AB, p.69)
+- [x] Borgut Facebeater (SoC, p.57)
 
 ## Alternative lists included
 - [x] Clan Eshin (SKV-AB)
