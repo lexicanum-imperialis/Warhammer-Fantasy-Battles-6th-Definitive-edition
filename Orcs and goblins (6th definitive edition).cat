@@ -3,6 +3,7 @@
   <publications>
     <publication name="OG-AB" id="7dda-637b-31ad-951c" hidden="false" shortName="Warhammer Armies: Orcs &amp; Goblins (6th Edition)" publisher="by Rick Priestly and Jake Thornton" publicationDate="2000"/>
     <publication name="CJ#46" id="c225-67ae-f5bb-7e88" hidden="false" shortName="&quot;Night Goblin Hordes&quot;, in Citadel Journal #46, p.24" publisher="by Rick Priestley and Jake Thornton"/>
+    <publication name="WebGW(US)" id="0c82-30a9-603b-9f27" hidden="false" publisherUrl="http://us.games-workshop.com/games/warhammer/orcs/gaming/special_characters/morglum.htm" publicationDate="2007-01 (consulted)" shortName="&quot;/morglum.htm&quot;, &quot;/gorfang.htm&quot;"/>
   </publications>
   <categoryEntries>
     <categoryEntry id="d4a7-5999-8207-4efe" name="Orc" hidden="false"/>
@@ -3991,6 +3992,7 @@
     <selectionEntry id="5a89-d7b1-3214-b52c" name="Black Orcs" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4e53-29c7-31c3-8b2d" type="max"/>
+        <constraint type="min" value="0" field="selections" scope="force" shared="true" id="d1bb-986b-cbb1-af01" includeChildSelections="true"/>
       </constraints>
       <profiles>
         <profile id="c41b-0ab6-06d7-4975" name="Black Orcs" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
@@ -4196,6 +4198,12 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="set" value="1" field="d1bb-986b-cbb1-af01">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="acad-4844-9ec2-d439" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <comment>Morglum Necksnapper (webGW(US))</comment>
         </modifier>
       </modifiers>
       <modifierGroups>
@@ -8964,6 +8972,281 @@ In addition, Grom would never tolerate the presence of anybody who might threat
           </rules>
         </infoGroup>
       </infoGroups>
+    </selectionEntry>
+    <selectionEntry id="acad-4844-9ec2-d439" name="Morglum Necksnapper" hidden="false" collective="false" import="true" type="unit" publicationId="0c82-30a9-603b-9f27">
+      <profiles>
+        <profile id="064d-e04f-e03f-b7ed" name="Morglum" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile" page="36" publicationId="7dda-637b-31ad-951c">
+          <characteristics>
+            <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">4</characteristic>
+            <characteristic name="WS" typeId="f95b-da01-0578-3bdc">7</characteristic>
+            <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">3</characteristic>
+            <characteristic name="S" typeId="b690-4bc0-bb73-267b">5</characteristic>
+            <characteristic name="T" typeId="8712-f56f-5b22-a720">5</characteristic>
+            <characteristic name="W" typeId="253a-9b00-4fde-8ac2">3</characteristic>
+            <characteristic name="I" typeId="dfff-363e-f72a-5a59">4</characteristic>
+            <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">4</characteristic>
+            <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">9</characteristic>
+            <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">3+</characteristic>
+            <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">4+</characteristic>
+            <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="ebce-99f5-a5a4-7602" name="Lord" hidden="false" targetId="d024-d25b-a9b4-73b6" primary="false"/>
+        <categoryLink id="5c14-b7b2-3a32-7033" name="Characters" hidden="false" targetId="7a1c-d611-c2dc-def1" primary="false"/>
+        <categoryLink id="b97e-f490-8472-63ec" name="Orc" hidden="false" targetId="d4a7-5999-8207-4efe" primary="false"/>
+        <categoryLink name="Special Characters" hidden="false" id="7e9d-0326-fe29-069a" targetId="0644-bfcd-32c2-21dc" primary="true"/>
+        <categoryLink name="Experimental rules" hidden="false" id="3bd2-432c-7762-62cd" targetId="4fed-b911-e6e0-927b" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Additional Hero choice" hidden="false" id="f62a-6d14-37f4-b422">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c1ec-339f-f45e-e426" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fca6-a3bb-7cef-fa38" includeChildSelections="false"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink name="Heroes" hidden="false" id="9311-3d2f-cc9e-87b4" targetId="c16b-f319-2c62-2c12" primary="false"/>
+            <categoryLink name="Characters" hidden="false" id="375b-3bc1-35a1-ab84" targetId="7a1c-d611-c2dc-def1" primary="false"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Boar" hidden="false" id="c0f6-25f9-8847-5d82" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3dc3-d9db-a911-0363" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Boar" id="e1d0-b833-2569-6800" hidden="false" targetId="de91-b5e9-a96d-1f5a" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Magic Items" id="3bc8-0136-71dc-4bb9" hidden="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4511-4e4c-aedd-bd92" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b385-fecc-6940-aa87" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Bulak&apos;s Bloody Armour (Magic Armour)" hidden="false" id="5bbb-2ace-5cf5-c984">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d3e7-7f79-ac35-4868" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0895-895e-adc5-c373" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Bulak&apos;s Bloody Armour" typeId="f681-9937-db53-f1d8" typeName="Armour" hidden="false" id="ed09-cce2-5e99-f1b7" publicationId="0c82-30a9-603b-9f27">
+                  <characteristics>
+                    <characteristic name="Saving Throw Modifier" typeId="b600-e1ed-0765-27c1">4+</characteristic>
+                    <characteristic name="Special rules" typeId="42c3-68ab-cfa5-203e">4+ Ward save, if 1 suffers 2W</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule name="Bulak&apos;s Bloody Armour" id="44d7-6e89-9578-a43c" hidden="false" publicationId="0c82-30a9-603b-9f27">
+                  <description>4+ Ward save. If he rolls a 1 when rolling his ward save he suffers 2 wounds instead of 1 as the bitter spirit of Bulak takes his revenge!</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="746a-ced6-38b1-4a4a" name="General" hidden="false" collective="false" import="true" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bbda-78de-ef31-e833" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Two Hand Weapons" hidden="false" id="ff6e-8ca5-7967-4e0f" type="selectionEntry" targetId="36a8-7bbb-d204-0314">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="66ba-b8ea-cf81-dcac" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4caf-2aa9-4186-7990" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="210"/>
+        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Savage Orc Horde (OG-AB, p.76)</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="c248-eea0-b5c1-857b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="59e1-efd7-af88-55a1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="b26c-6f4c-34a5-dc0c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="03cc-8a3f-abd4-3c03" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="9f70-0506-b8c7-f2c4" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="5653-1e8a-640d-fc56" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="1" field="deaa-9c05-93c6-50aa">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="a6aa-186b-f08e-c185" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="22a7-2e88-eaf1-49a9" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="force" shared="true" id="deaa-9c05-93c6-50aa" includeChildSelections="false"/>
+      </constraints>
+      <infoGroups>
+        <infoGroup name="Special rules" id="573e-0f56-8a10-aae2" hidden="false" publicationId="0c82-30a9-603b-9f27">
+          <infoLinks>
+            <infoLink name="Immune to Psycology " id="d0a5-87ec-c6b2-ba06" hidden="false" type="rule" targetId="ff2b-8db6-64fa-e9ca"/>
+            <infoLink name="Quell Animosity" id="c865-c095-2ace-5dfd" hidden="false" type="rule" targetId="0f2a-c100-8eb9-7490"/>
+            <infoLink name="Fear" id="1c93-1d83-197e-5f0e" hidden="false" type="rule" targetId="1524-2372-4aa0-6881"/>
+          </infoLinks>
+          <rules>
+            <rule name="Natural Leader" id="23b9-512c-5303-bd69" hidden="false">
+              <description>This means that Morglum will always be your general.</description>
+            </rule>
+            <rule name="War Boar" id="4a6c-3089-2cf4-57c9" hidden="false" publicationId="0c82-30a9-603b-9f27">
+              <description>He can use an axe in each hand to gain +1 Attack even though mounted models would not normally be able to do so.</description>
+            </rule>
+            <rule name="Morglum Necksnapper" id="77da-9d13-f4e6-88ed" hidden="false">
+              <description>Your army may be led by Morglum Necksnapper. If you decide to do this, Morglum is the Warlord of your army and therefore replaces the Warlord described in the main army list. Your army must include at least one unit of Black Orcs if it is led by Morglum Necksnapper.</description>
+            </rule>
+          </rules>
+        </infoGroup>
+      </infoGroups>
+    </selectionEntry>
+    <selectionEntry id="015b-bfbe-2acf-f40f" name="Gorfang Rotgut" hidden="false" collective="false" import="true" type="unit" publicationId="0c82-30a9-603b-9f27">
+      <profiles>
+        <profile id="e6b3-f1b2-6e97-54c5" name="Gorfang" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile" publicationId="0c82-30a9-603b-9f27">
+          <characteristics>
+            <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">4</characteristic>
+            <characteristic name="WS" typeId="f95b-da01-0578-3bdc">5</characteristic>
+            <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">3</characteristic>
+            <characteristic name="S" typeId="b690-4bc0-bb73-267b">5</characteristic>
+            <characteristic name="T" typeId="8712-f56f-5b22-a720">5</characteristic>
+            <characteristic name="W" typeId="253a-9b00-4fde-8ac2">3</characteristic>
+            <characteristic name="I" typeId="dfff-363e-f72a-5a59">3</characteristic>
+            <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">3(4)</characteristic>
+            <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">8</characteristic>
+            <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">4+</characteristic>
+            <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+            <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="e023-c528-dc78-49c1" name="Ignore Goblin Panic" hidden="false" targetId="f457-297e-425b-75d4" type="rule"/>
+        <infoLink name="Hate Dwarfs" id="a6ab-b344-3805-d878" hidden="false" type="rule" targetId="9d06-d305-182a-2eb9"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="d549-132b-3037-b8b6" name="Characters" hidden="false" targetId="7a1c-d611-c2dc-def1" primary="false"/>
+        <categoryLink id="41e9-8fd2-8500-eeff" name="Heroes" hidden="false" targetId="c16b-f319-2c62-2c12" primary="false"/>
+        <categoryLink id="ea71-273d-26ab-3204" name="Orc" hidden="false" targetId="d4a7-5999-8207-4efe" primary="false"/>
+        <categoryLink name="Special Characters" hidden="false" id="95f5-b618-9509-7ad8" targetId="0644-bfcd-32c2-21dc" primary="true"/>
+        <categoryLink name="Experimental rules" hidden="false" id="2c50-2c08-9f9d-dd25" targetId="4fed-b911-e6e0-927b" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Additional Hero choice" hidden="false" id="316c-5248-96ab-8bd6">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c7d6-9347-17c9-7987" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4a6c-af40-a23e-3772" includeChildSelections="false"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink name="Heroes" hidden="false" id="dfbc-6bb7-ca5a-0244" targetId="c16b-f319-2c62-2c12" primary="false"/>
+            <categoryLink name="Characters" hidden="false" id="1b5e-64dd-1547-556b" targetId="7a1c-d611-c2dc-def1" primary="false"/>
+          </categoryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Magic Items" id="da15-2cd0-92b3-4c2d" hidden="false">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="aa63-0534-71a3-d4b5" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="715c-784a-1eb3-5d44" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="The Red Fang (Magic Weapon)" hidden="false" id="4042-3f0f-b696-1a99">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a393-f0f0-e4b7-4a28" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d841-497a-3165-259f" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="The Red Fang (Magic Weapon)" typeId="7889-42d9-70a0-3ea9" typeName="Weapon" hidden="false" id="76b2-6e72-916d-f746" publicationId="0c82-30a9-603b-9f27">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3107-4d1e-9a51-6564"/>
+                    <characteristic name="Strength" typeId="6fe4-1ebb-cb04-1378"/>
+                    <characteristic name="Damage" typeId="6f2f-d612-52ef-1633">+1A</characteristic>
+                    <characteristic name="Special Rules" typeId="a21a-cdc0-4b13-b236">+1A, +1 to hit for all his attacks</characteristic>
+                    <characteristic name="Saves" typeId="8014-a8b2-15c3-da95"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Evil Sun Armour (Magic Armour)" hidden="false" id="2b79-f923-af01-2a26">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8041-ec78-d3e8-30a0" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d7c2-9911-4b28-175a" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Evil Sun Armour (Magic Armour)" typeId="f681-9937-db53-f1d8" typeName="Armour" hidden="false" id="a089-61d4-e97f-4e98">
+                  <characteristics>
+                    <characteristic name="Saving Throw Modifier" typeId="b600-e1ed-0765-27c1">4+</characteristic>
+                    <characteristic name="Special rules" typeId="42c3-68ab-cfa5-203e">Magic Resistance (2)</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Magical Resistance (2)" id="a129-e56e-9655-e6d7" hidden="false" type="rule" targetId="df8d-7c05-c47b-9cd6"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="b786-3200-393e-5ad9" name="General" hidden="false" collective="false" import="true" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="195"/>
+        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Savage Orc Horde (OG-AB, p.76)</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="c248-eea0-b5c1-857b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="59e1-efd7-af88-55a1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="b26c-6f4c-34a5-dc0c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="03cc-8a3f-abd4-3c03" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="9f70-0506-b8c7-f2c4" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="5653-1e8a-640d-fc56" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="9f70-0506-b8c7-f2c4" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="1" field="5fe2-7fe2-fa69-22a0">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="a6aa-186b-f08e-c185" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="22a7-2e88-eaf1-49a9" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="force" shared="true" id="5fe2-7fe2-fa69-22a0" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>

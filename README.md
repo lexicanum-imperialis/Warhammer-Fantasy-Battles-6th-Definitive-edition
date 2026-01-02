@@ -133,6 +133,8 @@ The main additions are:
 - [x] Borgut Facebeater (SoC, p.57)
 - [x] Grom the Paunch (CR-04, p.80-81)
 - [x] Azhag the Slaughterer (AN-02, p.81-82)
+- [x] Morglum Necksnapper (webGW(US) and T#25(ES))
+- [x] Gorfang Rotgut (webGW(US) and T#25(ES))
 
 ## Alternative lists included
 - [x] Clan Eshin (SKV-AB)
@@ -196,8 +198,8 @@ The main additions are:
 |WebGW(OZ) |["Giant Warriors of Khemri"](http://oz.games-workshop.com/news/oz/journal/assets/GiantWarriorsofKhemri.pdf)|2003-05 (consulted)|by Gav Thorpe|
 |WebGW(UK) |["Masters of the Druchii"](http://uk.games-workshop.com/darkelves/special-characters/)                     |2006-05 (consulted)||
 |WebGW(US) |["Lizardmen characters"](http:/us.games-workshop.com/games/warhammer/lizardmen/gaming/campaign/characters/)|2005-08 (consulted)||
-
-
+|WebGW(US) |[""](http://us.games-workshop.com/games/warhammer/orcs/gaming/special_characters/morglum.htm) | 2007-01 (consulted) |
+|WebGW(US) |[""](http://us.games-workshop.com/games/warhammer/orcs/gaming/special_characters/gorfang.htm) | 2007-01 (consulted)
 
 ## Acknowledge and gratitudes
 I want to thank first to the team from [Las _Tablillas Sagradas_](https://lastablillassagradas.blogspot.com/), who made their fabulous _Warhammer Compendium_ that has inspired this whole project. Special mention to Antonio, who possess the knowledge of Tzeentch and the wisdom of Teclis.
