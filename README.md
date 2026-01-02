@@ -156,6 +156,7 @@ The main additions are:
 - [x] Nomadic Badlands Waaagh! Horde (OG-AB), p.77
 - [x] Snotling Horde (OG-AB), p.77
 - [x] Grimgor'Ardboyz (SoC, p.58)
+- [x] Night Goblin Horde (C#46, p.24-27)
 
 ## Sources consulted
 
