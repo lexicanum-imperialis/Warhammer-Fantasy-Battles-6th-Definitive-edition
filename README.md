@@ -140,6 +140,7 @@ The main additions are:
 
 ### High Elves
 - [x] Imrik, Dragon Prince of Caledor (HE-AB, p.64)
+- [x] Tyrion, Defender of Ulthuan (HE-AB, p.70)
 
 ## Alternative lists included
 - [x] Clan Eshin (SKV-AB)

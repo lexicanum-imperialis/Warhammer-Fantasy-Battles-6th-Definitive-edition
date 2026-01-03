@@ -2407,17 +2407,14 @@
             <characteristic name="T" typeId="8712-f56f-5b22-a720">3</characteristic>
             <characteristic name="W" typeId="253a-9b00-4fde-8ac2">4</characteristic>
             <characteristic name="I" typeId="dfff-363e-f72a-5a59">10</characteristic>
-            <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">4</characteristic>
+            <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">4(+1*)</characteristic>
             <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">10</characteristic>
-            <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
-            <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+            <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">1+</characteristic>
+            <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">4+(2+*)</characteristic>
             <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <infoLinks>
-        <infoLink id="4027-204b-778e-fda1" name="Stoic" publicationId="a40f-696a-94e8-ecfb" page="6" hidden="false" targetId="8cbe-c290-da84-4c94" type="rule"/>
-      </infoLinks>
       <categoryLinks>
         <categoryLink id="4f4f-0820-1914-c92f" name="Lord" hidden="false" targetId="d024-d25b-a9b4-73b6" primary="false"/>
         <categoryLink id="a994-e3c9-b759-4075" name="Characters" hidden="false" targetId="7a1c-d611-c2dc-def1" primary="false"/>
@@ -2477,19 +2474,49 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="76a0-a4a4-e175-1f76" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="Sunfang (Magic Weapon)" typeId="7889-42d9-70a0-3ea9" typeName="Weapon" hidden="false" id="a365-f961-c47a-4d6c">
+                <profile name="Sunfang (Magic Weapon)" typeId="7889-42d9-70a0-3ea9" typeName="Weapon" hidden="false" id="a365-f961-c47a-4d6c" page="70" publicationId="a40f-696a-94e8-ecfb">
                   <characteristics>
                     <characteristic name="Range" typeId="3107-4d1e-9a51-6564">CC</characteristic>
                     <characteristic name="Strength" typeId="6fe4-1ebb-cb04-1378">+3</characteristic>
                     <characteristic name="Damage" typeId="6f2f-d612-52ef-1633"/>
-                    <characteristic name="Special Rules" typeId="a21a-cdc0-4b13-b236"/>
-                    <characteristic name="Saves" typeId="8014-a8b2-15c3-da95">Once per battle in his own Magic phase, Tyrion may use Sunfang to cast the Bound Spell, Power Level 6, Fury of Khaine. The spell requires no Power dice to cast, all the power required is provided by Sunfang itself.</characteristic>
+                    <characteristic name="Special Rules" typeId="a21a-cdc0-4b13-b236">Once per battle in his own Magic phase, Tyrion may use Sunfang to cast the Bound Spell, Power Level 6, Fury of Khaine. The spell requires no Power dice to cast, all the power required is provided by Sunfang itself.</characteristic>
+                    <characteristic name="Saves" typeId="8014-a8b2-15c3-da95"/>
                   </characteristics>
                 </profile>
               </profiles>
               <infoLinks>
                 <infoLink name="Fury of Khaine" id="ef48-5f2c-f34a-d821" hidden="false" type="rule" targetId="83ae-1fb7-0313-ae7a"/>
               </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Dragon Armour of Aenarion (Magic Armour)" hidden="false" id="e318-4d42-08d2-be6e">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c490-ed66-9138-eff6" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b86e-f00a-b4b2-3f1f" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Dragon Armour of Aenarion" typeId="f681-9937-db53-f1d8" typeName="Armour" hidden="false" id="a53b-eee3-1b25-b4be" page="70" publicationId="a40f-696a-94e8-ecfb">
+                  <characteristics>
+                    <characteristic name="Saving Throw Modifier" typeId="b600-e1ed-0765-27c1">1+</characteristic>
+                    <characteristic name="Special rules" typeId="42c3-68ab-cfa5-203e">4+ Ward save, Dragon Armour</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Dragon Armour" id="1c25-d183-918f-2658" hidden="false" type="rule" targetId="46e3-233c-a770-eae0"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Heart of Avelorn (Talisman)" hidden="false" id="124a-b095-dc3e-b973">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2f05-5e89-8ffb-a1a2" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3510-5b0c-540c-4eeb" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Heart of Avelorn (Talisman)" typeId="a89b-d5a3-7805-c44e" typeName="Magic Items" hidden="false" id="bafc-7a24-5402-b85e" page="70" publicationId="a40f-696a-94e8-ecfb">
+                  <characteristics>
+                    <characteristic name="Magic stuff" typeId="c7b5-c239-d6c1-0627">If Tyrion is slain, the Heart bursts into a thousand pieces in a flash of dazzling white light. This rush of magical energy returns Tyrion to life with 1 Wound. Obviously it will only work once.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -2517,6 +2544,24 @@
           </conditions>
         </modifier>
       </modifiers>
+      <infoGroups>
+        <infoGroup name="Special rules" id="8536-99d4-feff-d732" hidden="false">
+          <infoLinks>
+            <infoLink name="Stoic" id="4027-204b-778e-fda1" hidden="false" publicationId="a40f-696a-94e8-ecfb" page="6" targetId="8cbe-c290-da84-4c94" type="rule"/>
+          </infoLinks>
+          <rules>
+            <rule name="Riposte" id="0c82-7234-6fda-4deb" hidden="false" page="70" publicationId="a40f-696a-94e8-ecfb">
+              <description>Tyrion parries the first enemy hit against him per Close Combat phase and it has no effect. In addition, assuming Tyrion is still alive after all other attacks have been made, he may make a single extra attack of his own back against the model that he parried. This attack is in addition to those normally allowed to Tyrion and follows all of the rules for Tyrion&apos;s attacks. This has no effect on special attacks which do not use the model&apos;s Attacks characteristic (such as a Night Goblin Fanatic or a Giant).</description>
+            </rule>
+            <rule name="Feint" id="6c23-5360-f487-df7e" hidden="false" page="70" publicationId="a40f-696a-94e8-ecfb">
+              <description>Tyrion may re-roll any failed rolls to hit on the first turn of each close combat.</description>
+            </rule>
+            <rule name="Curse of Aenarion (Tyrion)" id="875a-22b6-617b-52b5" hidden="false" publicationId="a40f-696a-94e8-ecfb" page="70">
+              <description>As soon as Tyrion is reduced co 1 Wound he gets a 2+ Ward save for the rest of the battle (including after the Heart has restored him, should this happen). This will replace the 4+ Ward save from the Dragon Armour of Aenarion as you can&apos;t have more than one Ward save. Note that if an attack will inflict multiple wounds, for example a cannon ball, then Tyrion will only get this special Ward save if he has already been reduced to 1 Wound before he is hit.</description>
+            </rule>
+          </rules>
+        </infoGroup>
+      </infoGroups>
     </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
