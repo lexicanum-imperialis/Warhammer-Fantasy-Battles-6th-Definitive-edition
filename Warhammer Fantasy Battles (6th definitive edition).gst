@@ -2175,8 +2175,17 @@ Note that a spell cast with a Power Stone can never be cast with Irresistible Fo
 
 Note that a model&apos;s Attacks characteristic has no effect on the number of shots it can make. The Attacks characteristic refers to close combat attacks only.</description>
     </rule>
-    <rule name="Strikes First" id="7f45-dea2-ae93-7524" hidden="false" page="" publicationId="315e-e3c4-08af-fd51">
+    <rule name="Strikes First" id="7f45-dea2-ae93-7524" hidden="false" publicationId="315e-e3c4-08af-fd51">
       <description>Troops armed with a weapon that strikes last will always strike FIRST during close combat where they would otherwise strike in Initiative order. Note that troops that charge will still strike first in the initial turn of close combat, as charging troops always strike first rather man in Initiative order.</description>
+    </rule>
+    <rule name="Fight in Ranks" id="3ab7-3aff-9aee-3030" hidden="false" page="89" publicationId="315e-e3c4-08af-fd51">
+      <description>If a unit is entitled to fight in this way then any model in a second or subsequent rank can fight if it is behind a model that is engaged in close combat to its front. Extra ranks cannot fight to their side or rear but only to their front. Where a weapon can fight in two or more ranks, this is indicated in the weapon&apos;s description, for example, &apos;spears fight in two ranks&apos;.
+
+
+In order to employ all of its additional ranks as described, a unit must not have moved in that turn. If a unit has moved, if it has charged for example, then it fights with one less rank than it otherwise would. For example, a unit of Spearmen can normally fight in two ranks, but will fight with only one rank if they charge. The unit will be able to fight with the extra rank during subsequent rounds of close combat.
+
+
+Note that troops armed with weapons which fight in ranks can fight with the extra ranks only against opponents engaged to their front, not against enemies fighting in the formation&apos;s flank or rear.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>

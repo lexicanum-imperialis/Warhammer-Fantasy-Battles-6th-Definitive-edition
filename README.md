@@ -144,6 +144,8 @@ The main additions are:
 - [x] Teclis, High Loremaster of the White Tower (HE-AB, p.72-73)
 - [x] Eltharion the Grim (CR-04, p.74-75)
 - [x] Eltharion, the Swordmaster (CR-04, p.76)
+- [x] Alarielle, the Everqueen (CR-03, p.114)
+- [x] Handmaidens of the Everqueen (CR-03, p.115)
 
 ## Alternative lists included
 - [x] Clan Eshin (SKV-AB)

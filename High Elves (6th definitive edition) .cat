@@ -2752,6 +2752,16 @@ Note, however, that the number of Wounds on the profiles refers to starting Woun
           </rules>
         </infoGroup>
       </infoGroups>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="force" shared="true" id="1c15-6bf6-6e81-0fcd" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="1" field="1c15-6bf6-6e81-0fcd">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="623c-5b78-172c-7c65" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="bc11-d14e-4c78-1496" name="Eltharion the Grim, Warden of Tor Yvresse" hidden="false" collective="false" import="true" type="unit" page="74-75" publicationId="cc59-6466-b62e-cf5b">
       <profiles>
@@ -3025,6 +3035,289 @@ If he is in combat with Grom, the fury of Eltharion&apos;s blows is such that h
           <description>Eltharion hates Orcs and Goblins and Dark Elves, but is otherwise Immune to Psychology. Any unit of Swordmasters joined by Eltharion becomes stubborn.</description>
         </rule>
       </rules>
+    </selectionEntry>
+    <selectionEntry id="2fe9-bc3e-7138-09c0" name="Alarielle, the Everqueen" hidden="false" collective="false" import="true" type="unit" page="114" publicationId="91c2-b862-8010-87bb">
+      <profiles>
+        <profile id="728c-a3d2-5bf6-fc12" name="Alarielle" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile" page="114" publicationId="91c2-b862-8010-87bb">
+          <characteristics>
+            <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">5</characteristic>
+            <characteristic name="WS" typeId="f95b-da01-0578-3bdc">4</characteristic>
+            <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">5</characteristic>
+            <characteristic name="S" typeId="b690-4bc0-bb73-267b">3</characteristic>
+            <characteristic name="T" typeId="8712-f56f-5b22-a720">3</characteristic>
+            <characteristic name="W" typeId="253a-9b00-4fde-8ac2">3</characteristic>
+            <characteristic name="I" typeId="dfff-363e-f72a-5a59">8</characteristic>
+            <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
+            <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">10</characteristic>
+            <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+            <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">4+</characteristic>
+            <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="14b1-568f-b59e-96d9" name="Lord" hidden="false" targetId="d024-d25b-a9b4-73b6" primary="false"/>
+        <categoryLink id="758a-060f-950f-b441" name="Characters" hidden="false" targetId="7a1c-d611-c2dc-def1" primary="false"/>
+        <categoryLink name="Special Characters" hidden="false" id="fdbe-7942-c1ba-30f6" targetId="0644-bfcd-32c2-21dc" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="7e2c-c97a-726b-b486" name="Wizard Level" hidden="false" collective="false" import="true" defaultSelectionEntryId="a4b8-ef05-84db-e0ab">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="42b4-c3e3-f461-ebb0" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bdb5-ce59-8079-612d" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="b0c4-db68-6351-6013" name="Magic Level 4" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="894c-9def-ad14-c43e" type="max"/>
+              </constraints>
+              <costs>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="4"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="2"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Equipment" id="2184-e8bb-6d03-c547" hidden="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="44bc-1471-03ca-89bb" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bb7e-8fcf-c4cf-64eb" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Shieldstone of Isha (Enchanted Item)" hidden="false" id="2744-1629-848f-dca5">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="829c-8511-d228-186b" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8d33-3b38-ffc1-d99a" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Shieldstone of Isha" typeId="a89b-d5a3-7805-c44e" typeName="Magic Items" hidden="false" id="01f2-ba93-4cb0-bb85" page="114" publicationId="91c2-b862-8010-87bb">
+                  <characteristics>
+                    <characteristic name="Magic stuff" typeId="c7b5-c239-d6c1-0627">Alarielle has a 4+ Ward save</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Star of Avelorn (Enchanted Item)" hidden="false" id="90b1-11c3-80ad-21ea">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5485-d921-fe98-b558" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="415e-ddb0-12b6-7094" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Star of Avelorn" typeId="a89b-d5a3-7805-c44e" typeName="Magic Items" hidden="false" id="2ed9-b6dc-a444-c730" page="114" publicationId="91c2-b862-8010-87bb">
+                  <characteristics>
+                    <characteristic name="Magic stuff" typeId="c7b5-c239-d6c1-0627">At the start of the High Elf turn, Alarielle may use the Star to heal a wounded High Elf character within 12&quot;. If there are no wounded characters in range, she may use the Star to heal herself. Roll a D6 for each wound lost on the target character; on a roll of a 4+ the wound is restored.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Stave of Avelorn (Enchanted Item)" hidden="false" id="332d-bd87-4b2b-b7d9">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="af32-e333-261d-fdeb" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9725-1396-b7da-4f75" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Stave of Avelorn (Enchanted Item)" typeId="a89b-d5a3-7805-c44e" typeName="Magic Items" hidden="false" id="399f-afcc-b160-a60f" page="114" publicationId="91c2-b862-8010-87bb">
+                  <characteristics>
+                    <characteristic name="Magic stuff" typeId="c7b5-c239-d6c1-0627">Once in each High Elf Magic phase, you may choose to unleash one of Alarielle&apos;s spells through the Stave of Avelorn. This may be a spell she has already cast that turn. This spell is treated exactly like a Bound Spell, and has a Power Level of 5.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="b9d2-6f4a-0955-81c0" name="Hand Weapon" hidden="false" collective="false" import="true" targetId="abdb-bbd0-41b2-5dff" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="de4d-b002-528a-aa3a" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b283-44dc-d885-4e60" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Lore of Life" hidden="false" id="6096-7654-95fb-01e4" type="selectionEntryGroup" targetId="7814-b731-32d8-88be"/>
+        <entryLink import="true" name="Lore of High Magic" hidden="false" id="e2a9-ff3a-0ca0-df23" type="selectionEntryGroup" targetId="71b4-fc3e-92cd-f192"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="515"/>
+        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="force" shared="true" id="6900-630d-622e-6f7b" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="1" field="6900-630d-622e-6f7b">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="623c-5b78-172c-7c65" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <infoGroups>
+        <infoGroup name="Special rules" id="95d8-4d64-94af-d3f3" hidden="false" page="114" publicationId="91c2-b862-8010-87bb">
+          <infoLinks>
+            <infoLink name="Stoic" id="e778-57bb-3920-6bfe" hidden="false" publicationId="a40f-696a-94e8-ecfb" page="6" targetId="8cbe-c290-da84-4c94" type="rule"/>
+            <infoLink name="High Elf Mages" id="0268-62e9-4368-2144" hidden="false" type="rule" targetId="97c2-f4b1-6c1a-c73a"/>
+            <infoLink name="Strikes First" id="77c6-d7fa-9264-c0ee" hidden="false" type="rule" targetId="7f45-dea2-ae93-7524"/>
+          </infoLinks>
+          <rules>
+            <rule name="High Mage" id="66a7-2025-60e7-e9c0" hidden="false" page="114" publicationId="91c2-b862-8010-87bb">
+              <description>Alarielle follows all the rules for a High Mage. In addition, she knows all of the High Magic spells, and also all of the spells from the Lore of Life and may use either or both in the Magic phase.</description>
+            </rule>
+            <rule name="Boon of Isha" id="7890-6441-edca-fba0" hidden="false" page="114" publicationId="91c2-b862-8010-87bb">
+              <description>At the start of the High Elf Shooting phase and at the start of the High Elf Close Combat phase, Alarielle may grant the Boon of Isha to a friendly unit within 12&quot;. The unit adds +1 to all of its rolls to hit for that phase. In addition, any shooting or close combat attacks made by the unit count as magical for that phase.</description>
+            </rule>
+            <rule name="The Touch of the Everqueen" id="6100-a95e-5e47-2803" hidden="false" page="114" publicationId="91c2-b862-8010-87bb">
+              <description>Alarielle always strikes first in close combat. If an enemy also has this ability, the models strike in Initiative order (roll off in the case of equal Initiative values). If Alarielle hits her target, then no to wound roll is made. Instead the enemy model may make no attacks that turn, and any other models attacking it hit automatically that phase. In the case of a mounted model (on a chariot or monster, for example), Alarielle must roll to hit against the highest Weapon Skill, but if she hits then the entire model is affected, including any special attacks, impact hits, etc.</description>
+            </rule>
+            <rule name="Chaos Bane" id="da38-e052-4834-df8a" hidden="false" page="114" publicationId="91c2-b862-8010-87bb">
+              <description>Any Daemonic unit (including Daemonic monsters and characters) that starts the Magic phase with a model within 6&quot; of Alarielle is affected by the aura of law and harmony that surrounds her. Each unit in range suffers D6 Strength 5 hits that count as magical attacks.
+
+
+In addition, roll a D6 for each magic item belonging to a model from a Chaos, Skaven or Undead army within 6&quot; of Alarielle at the start of the Magic phase. The magic item is destroyed on a D6 roll of a 6 (roll for each item separately).</description>
+            </rule>
+          </rules>
+        </infoGroup>
+      </infoGroups>
+      <rules>
+        <rule name="Maiden Guard" id="e1ca-d32f-cf5d-9b61" hidden="false" page="114" publicationId="91c2-b862-8010-87bb">
+          <description>If her Maiden Guard are included in the army, she must lead the unit and can not leave it.
+If Alarielle is with her Handmaidens then the whole unit becomes Unbreakable</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Handmaidens of the Everqueen" hidden="false" id="41d6-16c1-7f9a-e059" publicationId="91c2-b862-8010-87bb" page="115">
+      <categoryLinks>
+        <categoryLink name="Rare" hidden="false" id="b3f9-d008-b468-7068" targetId="e94b-6a54-8779-cd60" primary="true"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="d919-dc2d-4a80-9c08" includeChildSelections="false"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Handmaiden" hidden="false" id="618e-2ac8-6f49-6242">
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="20"/>
+            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="9852-51d3-e597-ac2b" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Command group" id="f6f6-c408-695b-0c1c" hidden="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="349d-ecf1-baed-5c5c" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d68e-15db-d846-bcc9" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Champion" hidden="false" id="2049-5a24-b5fc-1743">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="25c6-3448-c939-21a2" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9dbf-af3c-6120-996a" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="10"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Musician" hidden="false" id="d6c9-d609-d80f-4d11">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="26cb-d250-ccf6-ea1a" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="991a-7552-9a6e-6d6c" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="10"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+              </costs>
+              <rules>
+                <rule name="The Horn of Isha (Enchanted Item)" id="9d7b-885f-3977-de19" hidden="false" page="115" publicationId="91c2-b862-8010-87bb">
+                  <description>Once per battle, at the beginning of any High Elf Shooting phase or of any Close Combat phase (own or enemy&apos;s), the High Elf player may declare that the Musician will blow the Horn of Isha. This will allow the Handmaidens to either fight with 2. Attacks (in the Close Combat phase) or shoot twice (in the Shooting phase).</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Standard Bearer" hidden="false" id="6d63-e4f2-e659-8636">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6020-fe3f-dfc1-23de" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="64b1-ce8a-468c-f8ca" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="10"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+              </costs>
+              <rules>
+                <rule name="The Banner of Avelorn (Magic Standard)" id="1ca6-1b6a-4d02-e508" hidden="false" page="115" publicationId="91c2-b862-8010-87bb">
+                  <description>So beautiful is the Banner of Avelorn that any enemy wishing to charge the Handmaidens must first pass a Leadership test. If the test is failed, the chargers stand in their place, transfixed by the magic. The Handmaidens must declare their charge reaction before the test is made. Note that the banner has no effect on troops that are Immune to Psychology.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Weapons and Armour" id="3332-a8e1-1bca-9671" hidden="false">
+          <constraints>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="0086-7abf-c86f-39d5" includeChildSelections="false"/>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="de15-0ad6-9595-5ffd" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="b827-2def-3d84-bd2d" type="selectionEntry" targetId="abdb-bbd0-41b2-5dff">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3b8b-7c92-f099-51ad" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="052a-c264-3f39-d052" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Heavy Armour" hidden="false" id="2704-cf65-4c0a-5dbc" type="selectionEntry" targetId="dde4-0ba8-7b3c-57b7"/>
+            <entryLink import="true" name="Spear Infantry" hidden="false" id="625f-a109-9c60-19fc" type="selectionEntry" targetId="104f-5817-4bda-9382">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6c31-0115-5fc1-dac0" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0988-1a20-7031-be29" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Long Bow" hidden="false" id="8fc4-440d-0702-61c0" type="selectionEntry" targetId="f920-04d5-06c0-c2c9">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2d54-57ff-f6ba-0b53" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4cc2-11e2-1996-7703" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="70"/>
+        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+      </costs>
+      <profiles>
+        <profile name="Handmaiden" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="a496-11a4-4023-75fc" publicationId="91c2-b862-8010-87bb" page="115">
+          <characteristics>
+            <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">5</characteristic>
+            <characteristic name="WS" typeId="f95b-da01-0578-3bdc">5</characteristic>
+            <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">5</characteristic>
+            <characteristic name="S" typeId="b690-4bc0-bb73-267b">3</characteristic>
+            <characteristic name="T" typeId="8712-f56f-5b22-a720">3</characteristic>
+            <characteristic name="W" typeId="253a-9b00-4fde-8ac2">1</characteristic>
+            <characteristic name="I" typeId="dfff-363e-f72a-5a59">6</characteristic>
+            <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
+            <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">8</characteristic>
+            <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">5+</characteristic>
+            <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+            <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Maiden Guard" id="da94-2d29-f5fb-3187" hidden="false" page="114" publicationId="91c2-b862-8010-87bb">
+          <description>If her Maiden Guard are included in the army, she must lead the unit and can not leave it.
+If Alarielle is with her Handmaidens then the whole unit becomes Unbreakable</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Immune to Psycology " id="7e12-0e3c-1a3a-d3ea" hidden="false" type="rule" targetId="ff2b-8db6-64fa-e9ca"/>
+        <infoLink name="Stoic" id="bd7b-f2b6-7ec4-0af0" hidden="false" type="rule" targetId="8cbe-c290-da84-4c94"/>
+        <infoLink name="Fight in Three Ranks (Spears only)" id="dca5-161f-c5a7-476f" hidden="false" type="rule" targetId="184b-9a54-e59b-eef5"/>
+        <infoLink name="Fight in Ranks" id="387f-eeec-b83b-18ed" hidden="false" type="rule" targetId="3ab7-3aff-9aee-3030"/>
+      </infoLinks>
     </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
@@ -3988,6 +4281,20 @@ If he is in combat with Grom, the fury of Eltharion&apos;s blows is such that h
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
+    <selectionEntryGroup name="Lore of High Magic" id="71b4-fc3e-92cd-f192" hidden="false" page="21" publicationId="a40f-696a-94e8-ecfb">
+      <entryLinks>
+        <entryLink import="true" name="0. Drain Magic (Signature Spell)" hidden="false" id="2091-8736-f011-1374" type="selectionEntry" targetId="9b4b-20e5-0e0f-163f"/>
+        <entryLink import="true" name="1. Walk Between Worlds" hidden="false" id="ad7e-72f5-e661-28c2" type="selectionEntry" targetId="168c-3fbc-bcc4-f681"/>
+        <entryLink import="true" name="2. Curse of Arrow Attraction" hidden="false" id="9c3c-6fde-8412-d596" type="selectionEntry" targetId="ee47-7530-1659-6afa"/>
+        <entryLink import="true" name="3. Fortune is Fickle" hidden="false" id="b95b-55a0-8f9c-c606" type="selectionEntry" targetId="6bca-4040-8675-d8a5"/>
+        <entryLink import="true" name="4. Fury of Khaine" hidden="false" id="3897-d63c-f380-7c29" type="selectionEntry" targetId="abd9-024b-2c35-9113"/>
+        <entryLink import="true" name="5. Flames of the Phoenix" hidden="false" id="a3a6-f7e0-1cc6-4a42" type="selectionEntry" targetId="91c5-6439-e4e7-9e9b"/>
+        <entryLink import="true" name="6. Vaul&apos;s Unmaking" hidden="false" id="6bbb-6d74-080f-5eff" type="selectionEntry" targetId="cd4a-1713-8ca7-665e"/>
+      </entryLinks>
+      <constraints>
+        <constraint type="max" value="7" field="selections" scope="parent" shared="true" id="2625-0f15-a1d8-9a1f" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
     <rule id="46e3-233c-a770-eae0" name="Dragon Armour" hidden="false">
@@ -4234,8 +4541,7 @@ If the unit has no magic items then the spell has no effect.</description>
     </rule>
     <rule name="Flames of the Phoenix" id="a8fb-51d4-360c-3c33" hidden="false" page="21" publicationId="a40f-696a-94e8-ecfb">
       <description>Casting Value: 11+  Remains in play.
-This may be cast on an enemy unit within 24&quot;. Each model, including characters and unit champions, takes a Strength 3 hit immediately. If the spell is still in play at the start of the caster&apos;s next Magic phase, each model in the unit takes a Strength 4 hit. If still in play at the start of the caster&apos;s following Magic phase, each model takes a Strength 5 hit, and so on, with the Strength increasing by 1 each turn it remains in play. The spell lasts until dispelled, the Mage chooses to end it (which he can do at any time), attempts to cast another spell or is slain.
-</description>
+This may be cast on an enemy unit within 24&quot;. Each model, including characters and unit champions, takes a Strength 3 hit immediately. If the spell is still in play at the start of the caster&apos;s next Magic phase, each model in the unit takes a Strength 4 hit. If still in play at the start of the caster&apos;s following Magic phase, each model takes a Strength 5 hit, and so on, with the Strength increasing by 1 each turn it remains in play. The spell lasts until dispelled, the Mage chooses to end it (which he can do at any time), attempts to cast another spell or is slain.</description>
     </rule>
     <rule name="Fortune is Fickle" id="6841-48ee-e348-b852" hidden="false" publicationId="a40f-696a-94e8-ecfb" page="21">
       <description>Casting Value: 7+  Remains in play.
@@ -4247,13 +4553,11 @@ The spell lasts until it is dispelled, the Mage chooses to end it (which he can 
     </rule>
     <rule name="Curse of Arrow Attraction" id="49b4-a2db-8dea-389e" hidden="false" publicationId="a40f-696a-94e8-ecfb" page="21">
       <description>Casting Value: 6+
-This may be cast on an enemy unit within 24&quot; of the caster. Any missile fire directed at the unit in the following Shooting phase may re-roll any failed rolls to hit. If the unit is targeted by a template or breath weapon then you may re-roll to hit any models which are partially covered. The Curse has no effect on close combat.
-</description>
+This may be cast on an enemy unit within 24&quot; of the caster. Any missile fire directed at the unit in the following Shooting phase may re-roll any failed rolls to hit. If the unit is targeted by a template or breath weapon then you may re-roll to hit any models which are partially covered. The Curse has no effect on close combat.</description>
     </rule>
     <rule name="Walk Between Worlds" id="d662-bf24-3a52-fde0" hidden="false" publicationId="a40f-696a-94e8-ecfb" page="21">
       <description>Casting Value: 4+
-This only affects the caster, and only if he is on foot. The caster becomes ethereal. He can only be hit by magical weapons and can move through obstacles and through impassable or difficult terrain as if it was open ground. The caster is affected by spells as normal, and may cast spells himself and fight as normal. Lasts until the start of the caster&apos;s next Magic phase.
-</description>
+This only affects the caster, and only if he is on foot. The caster becomes ethereal. He can only be hit by magical weapons and can move through obstacles and through impassable or difficult terrain as if it was open ground. The caster is affected by spells as normal, and may cast spells himself and fight as normal. Lasts until the start of the caster&apos;s next Magic phase.</description>
     </rule>
     <rule name="Drain Magic (Signature Spell)" id="0b77-5f25-ec71-2427" hidden="false" page="21" publicationId="a40f-696a-94e8-ecfb">
       <description>Casting Value: 5+
