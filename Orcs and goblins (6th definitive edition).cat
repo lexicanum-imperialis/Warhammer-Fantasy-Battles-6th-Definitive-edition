@@ -8463,13 +8463,18 @@ In addition, Grom would never tolerate the presence of anybody who might threat
                 <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="e4d1-6d9a-5d95-ea19" name="Short Bows" hidden="true" collective="false" import="true" type="upgrade">
+            <selectionEntry id="e4d1-6d9a-5d95-ea19" name="Short Bows" hidden="false" collective="false" import="true" type="upgrade">
               <comment>Swap shield for shortbow</comment>
               <modifiers>
                 <modifier type="increment" field="ecfa-8486-4f6c-c249" value="1">
                   <repeats>
                     <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
                   </repeats>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="9f70-0506-b8c7-f2c4" shared="true" includeChildSelections="true"/>
+                  </conditions>
                 </modifier>
               </modifiers>
               <costs>
@@ -9506,8 +9511,7 @@ In addition, Grom would never tolerate the presence of anybody who might threat
               <rules>
                 <rule name="Skarsnik&apos;s Prodder" id="d4f0-0cb3-c9cd-ae29" hidden="false">
                   <description>The Prodder confers +1 Strength to all close combat attacks made by the character fighting with it.
-In addition, the Prodder can cast Prodder&apos;s blasts during each OG magic phase.
-</description>
+In addition, the Prodder can cast Prodder&apos;s blasts during each OG magic phase.</description>
                 </rule>
                 <rule name="Prodder&apos;s blasts" id="8feb-685b-0692-17b8" hidden="false" page="28" publicationId="c225-67ae-f5bb-7e88">
                   <description>Power Level of 3. No Power dice are required to cast this spell.
