@@ -143,6 +143,7 @@ The main additions are:
 - [x] Tyrion, Defender of Ulthuan (HE-AB, p.70)
 - [x] Teclis, High Loremaster of the White Tower (HE-AB, p.72-73)
 - [x] Eltharion the Grim (CR-04, p.74-75)
+- [x] Eltharion, the Swordmaster (CR-04, p.76)
 
 ## Alternative lists included
 - [x] Clan Eshin (SKV-AB)
