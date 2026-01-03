@@ -142,6 +142,7 @@ The main additions are:
 - [x] Imrik, Dragon Prince of Caledor (HE-AB, p.64)
 - [x] Tyrion, Defender of Ulthuan (HE-AB, p.70)
 - [x] Teclis, High Loremaster of the White Tower (HE-AB, p.72-73)
+- [x] Eltharion the Grim (CR-04, p.74-75)
 
 ## Alternative lists included
 - [x] Clan Eshin (SKV-AB)
