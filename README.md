@@ -138,6 +138,9 @@ The main additions are:
 - [x] Skarsnik and Gobbla (CJ#46, p.28)
 - [x] Badruk 'Eadsplitta (webGW(US))
 
+### High Elves
+- [x] Imrik, Dragon Prince of Caledor (HE-AB, p.64)
+
 ## Alternative lists included
 - [x] Clan Eshin (SKV-AB)
 - [x] Clan Eshin (SoC)
