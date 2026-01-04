@@ -3,6 +3,7 @@
   <readme>Any errors or suggestions post in the Warhammer Fantasy 6th edition facebook group. Else mail me.</readme>
   <publications>
     <publication id="a40f-696a-94e8-ecfb" name="HE-AB" shortName="Warhammer Armies: High Elves (6th Edition)" publisher="by Jake Thornton and Space McQuirk" publicationDate="2001"/>
+    <publication name="CJ#48" id="c659-7e88-cb23-5934" hidden="false" shortName="Citadel Journal #48" publisher="by Alessio Cavatore" publicationDate="2002"/>
   </publications>
   <selectionEntries>
     <selectionEntry id="f42c-be6f-8a5d-7199" name="Prince" hidden="false" collective="false" import="true" type="unit">
@@ -2029,9 +2030,15 @@
             <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e164-b6f6-b42d-82ed" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="1" field="8e38-83b0-7bb8-dbe8">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2c21-3410-bf27-5cb6" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="343d-842d-c436-770a" type="max"/>
+        <constraint type="min" value="0" field="selections" scope="force" shared="true" id="8e38-83b0-7bb8-dbe8" includeChildSelections="false"/>
       </constraints>
       <profiles>
         <profile id="33e4-e456-e1c2-9767" name="White Lions" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
@@ -3344,6 +3351,203 @@ If Alarielle is with her Handmaidens then the whole unit becomes Unbreakable</de
         <infoLink name="Fight in three ranks" id="dca5-161f-c5a7-476f" hidden="false" type="rule" targetId="184b-9a54-e59b-eef5"/>
         <infoLink name="Fight in Ranks" id="387f-eeec-b83b-18ed" hidden="false" type="rule" targetId="3ab7-3aff-9aee-3030"/>
       </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="2c21-3410-bf27-5cb6" name="Korhil, Hunter Captain of the White Lions" hidden="false" collective="false" import="true" type="unit" publicationId="c659-7e88-cb23-5934" page="12">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9220-5bc2-98fa-e66d" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="eb50-7e68-3c65-3d1c" name="Korhil" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile" publicationId="c659-7e88-cb23-5934" page="12">
+          <characteristics>
+            <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">5</characteristic>
+            <characteristic name="WS" typeId="f95b-da01-0578-3bdc">7</characteristic>
+            <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">6</characteristic>
+            <characteristic name="S" typeId="b690-4bc0-bb73-267b">4(7)</characteristic>
+            <characteristic name="T" typeId="8712-f56f-5b22-a720">3</characteristic>
+            <characteristic name="W" typeId="253a-9b00-4fde-8ac2">2</characteristic>
+            <characteristic name="I" typeId="dfff-363e-f72a-5a59">8</characteristic>
+            <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">3</characteristic>
+            <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">9</characteristic>
+            <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">4+/3+</characteristic>
+            <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+            <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="e5b8-5683-8bbb-d573" name="Woodsmen" hidden="false" targetId="314a-5235-87a5-1e35" type="rule"/>
+        <infoLink id="5376-bc7b-a7ca-5f0b" name="Lion Cloak" hidden="false" targetId="a901-1bf3-12dd-9958" type="rule"/>
+        <infoLink id="02a0-7cf5-367c-b16c" name="Stoic" publicationId="a40f-696a-94e8-ecfb" page="6" hidden="false" targetId="8cbe-c290-da84-4c94" type="rule"/>
+        <infoLink name="Killing Blow" id="e637-7e4d-2b1c-ab36" hidden="false" type="rule" targetId="e08e-1c7b-a667-f05b"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Experimental rules" hidden="false" id="a619-cc02-991e-4335" targetId="4fed-b911-e6e0-927b" primary="false"/>
+        <categoryLink name="Special Characters" hidden="false" id="8cfc-b7c1-7d71-8770" targetId="0644-bfcd-32c2-21dc" primary="true"/>
+        <categoryLink name="Characters" hidden="false" id="a89a-e3d7-6f10-a415" targetId="7a1c-d611-c2dc-def1" primary="false"/>
+        <categoryLink name="Heroes" hidden="false" id="9d86-1411-d0d7-ff60" targetId="c16b-f319-2c62-2c12" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="2709-b985-521b-746c" name="Lion Cloak" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2936-a2e8-d914-233b" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d74c-7def-90ff-081c" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="e95e-9a50-c651-47c1" name="Lion Cloak" hidden="false" targetId="a901-1bf3-12dd-9958" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="b649-b1af-027a-604c" name="Command Group" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="fedb-0817-47fa-dc6c" name="Musician" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4fd5-f209-4e16-2938" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="7"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="b837-41d3-757e-a906" name="Standard Bearer" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="01da-faa5-c1a7-67ad" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="0631-77c8-03c9-34da" name="Magic Banners" hidden="false" collective="false" import="true" targetId="c1c3-239d-926d-d504" type="selectionEntryGroup">
+                  <constraints>
+                    <constraint field="ecfa-8486-4f6c-c249" scope="parent" value="50" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d7d8-e93a-d8ed-2b11" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="14"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="e78b-22af-b49f-10e1" name="Guardian" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f3b1-2013-c97d-8fc0" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="a623-9915-4d35-5e10" name="Guardian" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
+                  <characteristics>
+                    <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">5</characteristic>
+                    <characteristic name="WS" typeId="f95b-da01-0578-3bdc">5</characteristic>
+                    <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">4</characteristic>
+                    <characteristic name="S" typeId="b690-4bc0-bb73-267b">4</characteristic>
+                    <characteristic name="T" typeId="8712-f56f-5b22-a720">3</characteristic>
+                    <characteristic name="W" typeId="253a-9b00-4fde-8ac2">1</characteristic>
+                    <characteristic name="I" typeId="dfff-363e-f72a-5a59">5</characteristic>
+                    <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">2</characteristic>
+                    <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">8</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <selectionEntryGroups>
+                <selectionEntryGroup id="21bb-f952-f604-94be" name="Magic Items" hidden="false" collective="false" import="true">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="25" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="101e-2288-d331-31ea" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="b18a-9e8c-0f83-806f" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="776e-c590-48d5-4bce" type="selectionEntryGroup"/>
+                    <entryLink id="87cd-b440-971e-c4f7" name="Magic Armour" hidden="false" collective="false" import="true" targetId="3532-01ee-3728-ecc6" type="selectionEntryGroup"/>
+                    <entryLink id="0bb5-592c-1517-ff7f" name="Talismans" hidden="false" collective="false" import="true" targetId="f948-c838-ba2d-07c5" type="selectionEntryGroup"/>
+                    <entryLink id="ab1d-f333-bbb8-b91a" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="39ab-c370-3f13-7d60" type="selectionEntryGroup"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="14"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Magic Items" id="1d69-e5fa-fac5-379a" hidden="false">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="c38d-38db-6230-5697" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="e9db-08ee-8284-7260" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="The Axe Chayal (Magic Weapon)" hidden="false" id="22e5-83d2-9d24-9b8a" publicationId="c659-7e88-cb23-5934" page="12">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f5c4-771c-b390-e230" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c72f-6a55-404a-0fff" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="The Axe Chayal" typeId="7889-42d9-70a0-3ea9" typeName="Weapon" hidden="false" id="7b49-a98d-df5f-e3c2" page="12" publicationId="c659-7e88-cb23-5934">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3107-4d1e-9a51-6564">CC</characteristic>
+                    <characteristic name="Strength" typeId="6fe4-1ebb-cb04-1378">+3</characteristic>
+                    <characteristic name="Damage" typeId="6f2f-d612-52ef-1633"/>
+                    <characteristic name="Special Rules" typeId="a21a-cdc0-4b13-b236">Requires two hands, NOT STRIKE LAST</characteristic>
+                    <characteristic name="Saves" typeId="8014-a8b2-15c3-da95"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Requires Two Hands" id="5f0f-c733-3c27-2086" hidden="false" type="rule" targetId="fd57-939f-0f92-0953"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="The Pelt of Charandis (Magic Armour)" hidden="false" id="f264-d592-53ae-d823">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9498-33ad-d135-a593" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ef1c-96fd-7b06-fa6f" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="The Pelt of Charandis (Magic Armour)" typeId="f681-9937-db53-f1d8" typeName="Armour" hidden="false" id="1bd5-658f-d9fe-31b9" page="12" publicationId="c659-7e88-cb23-5934">
+                  <characteristics>
+                    <characteristic name="Saving Throw Modifier" typeId="b600-e1ed-0765-27c1">3+/4+</characteristic>
+                    <characteristic name="Special rules" typeId="42c3-68ab-cfa5-203e">The Pelt of Charandis</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule name="The Pelt of Charandis" id="9149-d92d-f5cd-f485" hidden="false" publicationId="c659-7e88-cb23-5934" page="12">
+                  <description>The cloak confers a +3 armour saving throw bonus against shooting and +2 against attacks in hand-to-hand combat.
+This gives Korhil an armour save of 3+ and 4+ respectively.
+Even more usefully the enchantment of the cloak protects Korhil from all poisons, including the Black Venom of the Dark Elf Assassins, the toxins employed by Witch Elves, and the Weeping Blades of Skaven assassins.
+Poisoned weapons and other attacks lose any special benefits, but otherwise count as normal weapons of their type.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="b3d2-dc4e-de8a-866c" name="Hand Weapon" hidden="false" collective="false" import="true" targetId="abdb-bbd0-41b2-5dff" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5ab8-51df-0a6d-9600" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a8a1-8a6f-e3d6-37f7" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="8d24-4756-d153-4b17" name="Light Armour" hidden="false" collective="false" import="true" targetId="055f-8e4e-f170-35d2" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a8d-02e0-ae56-d64a" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a546-7c32-c647-344c" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="180"/>
+        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+      </costs>
+      <rules>
+        <rule name="Bodyguard (Korhil)" id="180a-74b5-5083-1f36" hidden="false" page="12" publicationId="c659-7e88-cb23-5934">
+          <description>Korhil is the Captain of the White Lions and so is placed on the tabletop together with his unit of White Lions at the start of the battle. If another character is positioned with the White Lions at the start of the battle, then the model must be placed next to Korhil and Korhil will act as his bodyguard. Korhil can only act as a bodyguard to one model during the battle. If several models are placed with the White Lions, declare which one Korhil is guarding at the start of the battle. So long as the guarded character remains with the White Lions and stays next to Korhil then no enemy can attack the character - all attacks will be directed against Korhil instead. Note that challenges can be issued and met as normal and if the character protected by Korhil is in a challenge, Korhil will not interfere and his special bodyguard rule does not apply. Korhil can always accept challenges, even if not in base contact with any enemy.
+Players will note that if the army&apos;s General is placed with the White Lions led by Korhil, then it will be impossible to attack the General whilst Korhil lives (unless the General decides to step in a challenge). This means it is impossible to hurt the General until Korhil is slain, making him a very important part of the High Elf army indeed.</description>
+        </rule>
+      </rules>
     </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>

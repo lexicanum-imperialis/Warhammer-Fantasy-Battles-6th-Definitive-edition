@@ -146,6 +146,7 @@ The main additions are:
 - [x] Eltharion, the Swordmaster (CR-04, p.76)
 - [x] Alarielle, the Everqueen (CR-03, p.114)
 - [x] Handmaidens of the Everqueen (CR-03, p.115)
+- [x] Korhil, Hunter Captain of the White Lions (CJ#48, p.12)
 
 ## Alternative lists included
 - [x] Clan Eshin (SKV-AB)
