@@ -147,6 +147,7 @@ The main additions are:
 - [x] Alarielle, the Everqueen (CR-03, p.114)
 - [x] Handmaidens of the Everqueen (CR-03, p.115)
 - [x] Korhil, Hunter Captain of the White Lions (CJ#48, p.12)
+- [x] Alith Anar, the Shadow King (webGW(ITA), p.27)
 
 ## Alternative lists included
 - [x] Clan Eshin (SKV-AB)
@@ -180,7 +181,6 @@ The main additions are:
 |Short-n   |Title of the source                               |Year   |Author(s)                             |
 |:--------:|:-------------------------------------------------|:-----:|:-------------------------------------|
 |BRB       |"Warhammer Rulebook 6th Edition"                  |2000   |by Rick Priestly and Tuomas Pirinen   |
-|BR-AB     |"Warhammer Armies: Bretonnia (6th Edition)"       |2003   |by Anthony Reynolds                   |
 |AN-02     |"Warhammer Annual"                                |2002   |by Gav Thorpe                         |
 |CR-03     |"Warhammer Chronicles"                            |2003   |by Jake Thornton & Alessio Cavatore   |
 |CR-04     |"Warhammer Chronicles"                            |2004   |by Jake Thornton & Alessio Cavatore   |
@@ -188,12 +188,14 @@ The main additions are:
 |SoC       |"Warhammer: Storm of Chaos"                       |2004   |by Gav Thorpe                         |
 |RH        |"Warhammer Armies: Ravening Hordes (6th Edition)" |2000   |by Jake Thornton with Alessio Cavatore|
 |OG-AB     |"Warhammer Armies: Orcs & Goblins (6th Edition)"  |2000   |by Rick Priestly and Jake Thornton    |
+|DE-AB     |"Warhammer Armies: Dark Elves (6th Edition)"      |2001-06|by Gav Thorpe y Space McQuirk and Tuomas Pirinen|
 |SKV-AB    |"Warhammer Armies: Skaven (6th Edition)"          |2002   |by Alessio Cavatore                   | 
+|HC-AB     |"Warhammer Armies: Hordes of Chaos (6th Edition)" |2002   |by Gav Thorpe, Rick Priestly, Anthony Reynolds and Alessio Cavatore|
+|BR-AB     |"Warhammer Armies: Bretonnia (6th Edition)"       |2003   |by Anthony Reynolds                   |
 |TK-AB     |"Warhammer Armies: Tomb Kings (6th Edition)"      |2003   |by Alessio Cavatore                   |
 |WE-AB     |"Warhammer Armies: Wood Elves (6th Edition)"      |2005   |by Anthony Reynolds and Matthew Ward  | 
-|DE-AB     |"Warhammer Armies: Dark Elves (6th Edition)"      |2001-06|by Gav Thorpe y Space McQuirk and Tuomas Pirinen|
 |LM-AB     |"Warhammer Armies: Lizardmen (6th Edition)"       |2003   |by Anthony Reynolds                   |
-|HC-AB     |"Warhammer Armies: Hordes of Chaos (6th Edition)" |2002   |by Gav Thorpe, Rick Priestly, Anthony Reynolds and Alessio Cavatore|
+|CJ#48     |Citadel Journal #48                               |2002   |by Alessio Cavatore, Rick Preistley and Nigel Stillman |
 |CJ#49     |Citadel Journal #49                               |2002   |by Alessio Cavatore and Andy Chambers |
 |WD#250(US)|White-Dwarf #250 US                               |2000-11|by Gav Thorpe                         |
 |WD#258(US)|White-Dwarf #258 US                               |2001-07|by Gav Thorpe                         |
@@ -214,7 +216,7 @@ The main additions are:
 |WebGW(US) |[""](http://us.games-workshop.com/games/warhammer/orcs/gaming/special_characters/morglum.htm) | 2007-01 (consulted) |
 |WebGW(US) |[""](http://us.games-workshop.com/games/warhammer/orcs/gaming/special_characters/gorfang.htm) | 2007-01 (consulted) |
 |WebGW(US) |[""](http://us.games-workshop.com/games/warhammer/orcs/assets/badruk.pdf)                     | 2004-07 (consulted) |
-
+|WebWG(ITA)|[""](http:/it.games-workshop.com:80/doc/events/cw/cwfb2005_1.2.zip)                           | 2005-07 |
 ## Acknowledge and gratitudes
 I want to thank first to the team from [Las _Tablillas Sagradas_](https://lastablillassagradas.blogspot.com/), who made their fabulous _Warhammer Compendium_ that has inspired this whole project. Special mention to Antonio, who possess the knowledge of Tzeentch and the wisdom of Teclis.
 
