@@ -22,13 +22,13 @@ The main additions are:
 - [x] Chaos Dwarfs
 - [x] Dark Elves
 - [x] Lizardmen
-- [ ] Orcs and Goblins
-- [ ] High Elves
+- [x] Orcs and Goblins
+- [x] High Elves
+- [ ] The Empire
 - [ ] Beast of Chaos
 - [ ] Hordes of Chaos (maybe with the Beast of Chaos)
 - [ ] Daemons of Chaos (with the Hordes of Chaos)
 - [ ] Dwarfs (at least the second ArmyBook)
-- [ ] The Empire
 - [ ] Vampire Counts
 - [ ] Kislev
 - [ ] Dogs of War
@@ -65,7 +65,7 @@ The main additions are:
 - [x] Sehenesmet (WebGW)
 
 ### Bretonnia
-- [x] The Green Knight (it was already included)
+- [x] The Green Knight
 - [x] The Fay Enchantress
 - [x] Louen Leoncoeur, King of Bretonnia
 - [x] Sir Amalric of Gaudaron (WD#310(UK))
@@ -76,8 +76,8 @@ The main additions are:
 - [x] FAQ
 
 ### Lizarmen
-- [x] Kroq-gar (it was already included)
-- [x] Kroak (it was already included)
+- [x] Kroq-gar
+- [x] Kroak
 - [x] Sacred Hosts rules (WD#300(UK))
 - [x] Tehenhauin (LUS)
 - [x] Lord Mazdamundi (WD#290(USA))
@@ -148,6 +148,7 @@ The main additions are:
 - [x] Handmaidens of the Everqueen (CR-03, p.115)
 - [x] Korhil, Hunter Captain of the White Lions (CJ#48, p.12)
 - [x] Alith Anar, the Shadow King (webGW(ITA), p.27)
+- [x] Selafyn of the Annulii (WD#304(UK), p.112-113)
 
 ## Alternative lists included
 - [x] Clan Eshin (SKV-AB)
@@ -175,6 +176,7 @@ The main additions are:
 - [x] Grimgor'Ardboyz (SoC, p.58)
 - [x] Night Goblin Horde (C#46, p.24-27)
 - [x] High Elf Sea Patrol (SoC, 9.94-95)
+- [ ] War of the Beard
 
 ## Sources consulted
 
