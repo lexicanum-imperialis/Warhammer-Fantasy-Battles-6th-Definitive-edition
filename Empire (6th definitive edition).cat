@@ -3,7 +3,7 @@
   <readme>Huntsmen do not count towards the MINIMUM core choice.</readme>
   <publications>
     <publication id="b61c-34ec-3be0-1b38" name="EM-AB" shortName="Warhammer Armies: The Empire (6th Edition)" publisher="by Alessio Cavatore" publicationDate="2000-10"/>
-    <publication name="CJ#43" id="9eb2-99ea-4657-d0a4" hidden="false" shortName="&quot;Empire Crisader Armies&quot; in Citadel Journal #43" publisher="by Alessio Cavatore" publicationDate=""/>
+    <publication name="CJ#43" id="9eb2-99ea-4657-d0a4" hidden="false" shortName="&quot;Empire Crisader Armies&quot; in Citadel Journal #43" publisher="by Alessio Cavatore"/>
   </publications>
   <categoryEntries>
     <categoryEntry id="03f5-490b-d79d-08a2" name="Knight  of Inner Circle" hidden="false">
@@ -300,7 +300,15 @@
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="536c-1042-a3a2-dfd9" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="bf2b-f4c7-0a9e-3b2d" name="General" hidden="false" collective="false" import="true" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry"/>
+        <entryLink id="bf2b-f4c7-0a9e-3b2d" name="General" hidden="false" collective="false" import="true" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="9d76-5d25-ce1d-1d12" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="80"/>
@@ -958,10 +966,53 @@
       <infoLinks>
         <infoLink id="b968-23a8-1f42-6af7" name="Elite" hidden="false" targetId="15ce-32a2-92e2-1279" type="profile">
           <modifiers>
-            <modifier type="set" field="name" value="Knight"/>
+            <modifier type="set" field="name" value="Knight Jaguar">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="67d5-64ae-ed43-01ff" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="4" field="b690-4bc0-bb73-267b">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="6e1d-9e41-114f-8128" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="name" value="Black Knight of Morr">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e892-010a-dd61-f086" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="name" value="Knight Griffon">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="2685-64b9-8818-b0b1" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="name" value="Knight of the Blazing Sun">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="dfad-d77b-9156-e917" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="name" value="Knight of the Twin-Tailed Orb">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="c5d3-2192-223d-bb28" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="name" value="Knight Panther">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="5b35-830f-c55e-7210" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="name" value="Reiksguard Knight">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e474-301b-4e41-61c6" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="name" value="Knight of Mannan">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="89cf-4b37-19e2-89d2" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </infoLink>
-        <infoLink id="0903-ce69-77c4-c371" name="Barding" hidden="false" targetId="25e4-8f3a-a1a8-a7b6" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="efe1-3135-5d3e-564d" name="Core" hidden="false" targetId="64bf-efb4-9978-26df" primary="true"/>
@@ -1009,6 +1060,11 @@
             <infoLink id="7310-540c-a461-d9e9" name="Elite Champion" hidden="false" targetId="73cc-0129-e7fe-ea53" type="profile">
               <modifiers>
                 <modifier type="set" field="name" value="First Knight"/>
+                <modifier type="set" value="4" field="b690-4bc0-bb73-267b">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="6e1d-9e41-114f-8128" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </infoLink>
           </infoLinks>
@@ -1075,6 +1131,48 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="Knights Jaguar" field="name">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="self" childId="67d5-64ae-ed43-01ff" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="Black Knights of Morr" field="name">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="self" childId="e892-010a-dd61-f086" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="Knights of the Blazing Sun" field="name">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="self" childId="dfad-d77b-9156-e917" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="Knights of the Twin-Tailed Orb" field="name">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="self" childId="c5d3-2192-223d-bb28" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="Knights Griffon" field="name">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="self" childId="2685-64b9-8818-b0b1" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="Knights Panther" field="name">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="self" childId="5b35-830f-c55e-7210" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="Reiksguard Knights" field="name">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="self" childId="e474-301b-4e41-61c6" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="Sons of Mannan" field="name">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="self" childId="89cf-4b37-19e2-89d2" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="73e1-597e-1546-10f7" name="Knights Of the White Wolf" hidden="false" collective="false" import="true" type="unit">
       <constraints>
@@ -1708,7 +1806,15 @@
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c05-dbb0-ce76-1ca3" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="ebfe-5617-1c16-0ead" name="General" hidden="false" collective="false" import="true" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry"/>
+        <entryLink id="ebfe-5617-1c16-0ead" name="General" hidden="false" collective="false" import="true" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="9d76-5d25-ce1d-1d12" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="160"/>
@@ -4979,6 +5085,9 @@ A unit of Knights Griffon may re-form at the beginning of the turn (as describe
         <characteristic name="I" typeId="dfff-363e-f72a-5a59">3</characteristic>
         <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">8</characteristic>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+        <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+        <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
       </characteristics>
     </profile>
     <profile id="73cc-0129-e7fe-ea53" name="Elite Champion" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
@@ -4992,6 +5101,9 @@ A unit of Knights Griffon may re-form at the beginning of the turn (as describe
         <characteristic name="I" typeId="dfff-363e-f72a-5a59">3</characteristic>
         <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">2</characteristic>
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">8</characteristic>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+        <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+        <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
       </characteristics>
     </profile>
     <profile id="6d52-59d7-9b29-042b" name="Warhorse" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
