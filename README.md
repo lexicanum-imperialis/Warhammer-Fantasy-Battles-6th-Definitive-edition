@@ -150,6 +150,11 @@ The main additions are:
 - [x] Alith Anar, the Shadow King (webGW(ITA), p.27)
 - [x] Selafyn of the Annulii (WD#304(UK), p.112-113)
 
+### The Empire
+- [x] Balthazar Gelt (EM-AB)
+- [x] Luthor Huss (EM-AB)
+- [x] Reiksmarshall Kurt Helborg, Captain of the Reiksguard (CJ#43, p.15)
+
 ## Alternative lists included
 - [x] Clan Eshin (SKV-AB)
 - [x] Clan Eshin (SoC)
