@@ -154,6 +154,7 @@ The main additions are:
 - [x] Balthazar Gelt (EM-AB)
 - [x] Luthor Huss (EM-AB)
 - [x] Reiksmarshall Kurt Helborg, Captain of the Reiksguard (CJ#43, p.15)
+- [x] Knightly Orders rules from CJ#43 (p.11-13)
 
 ## Alternative lists included
 - [x] Clan Eshin (SKV-AB)
