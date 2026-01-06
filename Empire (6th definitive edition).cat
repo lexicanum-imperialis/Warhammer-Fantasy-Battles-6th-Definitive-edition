@@ -1257,6 +1257,20 @@
             <condition type="atLeast" value="1" field="selections" scope="self" childId="e628-04ab-0a07-b37c" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="-1" field="2943-aa1c-4532-4fb2">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="9d76-5d25-ce1d-1d12" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="2" field="2943-aa1c-4532-4fb2">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="force" childId="07a9-8f33-4435-2a18" shared="true" roundUp="false" includeChildSelections="true"/>
+            <repeat value="1" repeats="1" field="selections" scope="force" childId="c9b6-d649-2517-db24" shared="true" roundUp="false" includeChildSelections="true"/>
+          </repeats>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="9d76-5d25-ce1d-1d12" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <selectionEntryGroups>
         <selectionEntryGroup name="Knightly Order" id="06b5-8412-53d1-49ac" hidden="false">
@@ -1272,6 +1286,9 @@
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="force" shared="true" id="2943-aa1c-4532-4fb2" includeChildSelections="true" automatic="false" message="You must have at least one unit of Reiksguard for every unit of other Knights (&apos;The Emperors Guard&apos;, EM-AB, p.78)."/>
+      </constraints>
     </selectionEntry>
     <selectionEntry id="73e1-597e-1546-10f7" name="Knights Of the White Wolf" hidden="false" collective="false" import="true" type="unit">
       <constraints>
@@ -5024,7 +5041,7 @@
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Great Weapon (replaces Shield)" hidden="false" id="e667-bf75-c92f-1ede" type="selectionEntry" targetId="1eb7-3f36-8cf7-e0ba">
+        <entryLink import="true" name="Great Weapon" hidden="false" id="e667-bf75-c92f-1ede" type="selectionEntry" targetId="1eb7-3f36-8cf7-e0ba">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8126-b330-ec8d-9cea" includeChildSelections="false"/>
           </constraints>
@@ -5308,6 +5325,7 @@
                 <condition type="equalTo" value="1" field="selections" scope="unit" childId="6e1d-9e41-114f-8128" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="0" field="3658-92dd-1868-b6bf" scope="force"/>
           </modifiers>
         </entryLink>
         <entryLink import="true" name="Knights of the Twin-Tailed Orb" hidden="false" id="a16b-489c-929c-5c78" type="selectionEntry" targetId="c5d3-2192-223d-bb28">
