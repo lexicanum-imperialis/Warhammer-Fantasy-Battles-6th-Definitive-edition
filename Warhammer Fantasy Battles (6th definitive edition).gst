@@ -932,6 +932,9 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <infoLinks>
+        <infoLink name="Morning Star" id="8d83-250e-88ed-4518" hidden="false" type="profile" targetId="929d-16ed-c03a-8d1c"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry id="bd00-7ec3-0e5b-0d52" name="Brace Of Pistols" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
@@ -2376,7 +2379,7 @@ Always Strikes Last</characteristic>
         <characteristic name="Saves" typeId="8014-a8b2-15c3-da95"/>
       </characteristics>
     </profile>
-    <profile id="929d-16ed-c03a-8d1c" name="Morning Star" hidden="false" typeId="7889-42d9-70a0-3ea9" typeName="Weapon">
+    <profile id="929d-16ed-c03a-8d1c" name="Morning Star" hidden="false" typeId="7889-42d9-70a0-3ea9" typeName="Weapon" page="91" publicationId="315e-e3c4-08af-fd51">
       <characteristics>
         <characteristic name="Range" typeId="3107-4d1e-9a51-6564">cc</characteristic>
         <characteristic name="Strength" typeId="6fe4-1ebb-cb04-1378">as user</characteristic>

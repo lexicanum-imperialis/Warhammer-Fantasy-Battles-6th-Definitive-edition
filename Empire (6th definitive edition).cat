@@ -4,7 +4,7 @@
   <publications>
     <publication id="b61c-34ec-3be0-1b38" name="EM-AB" shortName="Warhammer Armies: The Empire (6th Edition)" publisher="by Alessio Cavatore" publicationDate="2000-10"/>
     <publication name="CJ#43" id="9eb2-99ea-4657-d0a4" hidden="false" shortName="&quot;Empire Crisader Armies&quot; in Citadel Journal #43" publisher="by Alessio Cavatore"/>
-    <publication name="WD#310(UK)" id="79ed-409e-ecd3-8f13" hidden="false" shortName="in White-Dwarf #310 UK, p.116-122" publicationDate="2005-10"/>
+    <publication name="WD#310(UK)" id="79ed-409e-ecd3-8f13" hidden="false" shortName="in White-Dwarf #310 UK, p.116-122" publicationDate="2005-10" publisher="by Mat Ward"/>
   </publications>
   <categoryEntries>
     <categoryEntry id="03f5-490b-d79d-08a2" name="Knight  of Inner Circle" hidden="false">
@@ -1250,6 +1250,11 @@
         <modifier type="set" value="Templars of the Everlasting Light" field="name">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="self" childId="8801-735a-084c-43b5" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="Custom Knighty Order" field="name">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="self" childId="e628-04ab-0a07-b37c" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -4890,6 +4895,7 @@
                 </modifier>
               </modifiers>
             </entryLink>
+            <entryLink import="true" name="Signature Weapon" hidden="false" id="5191-89ca-822d-60e5" type="selectionEntry" targetId="d1e5-fa47-0345-c862"/>
           </entryLinks>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5f81-d4a6-b74f-6fc3" includeChildSelections="false"/>
@@ -4969,6 +4975,68 @@
       <constraints>
         <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="9ff4-e65c-ebb1-1f3c" includeChildSelections="false"/>
       </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Signature Weapon" hidden="false" id="d1e5-fa47-0345-c862">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ecdd-8e84-6a0e-c90b" includeChildSelections="false"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Cavalry hammer " hidden="false" id="5686-cb97-9dcc-34fe" type="selectionEntry" targetId="9c55-fbdf-3b4c-f808">
+          <modifiers>
+            <modifier type="increment" value="3" field="ecfa-8486-4f6c-c249">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="7b8d-8405-0e74-9f46" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Pistol" hidden="false" id="fdd1-053d-3b57-76ca" type="selectionEntry" targetId="44f9-f44d-d693-84f8">
+          <rules>
+            <rule name="Not replace lance" id="45a3-03e9-e611-9a98" hidden="false">
+              <description>The pistol does not replace the Lance</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dbff-c6e9-ba8a-4a3c" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="increment" value="2" field="ecfa-8486-4f6c-c249">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="7b8d-8405-0e74-9f46" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Morning Star" hidden="false" id="b96a-c794-705c-8e9c" type="selectionEntry" targetId="f2fb-8b67-9f3b-a096">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1580-442c-c904-f4e7" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Flail" hidden="false" id="2fbc-7266-8d77-8b09" type="selectionEntry" targetId="2eb9-be12-caec-57e8">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1578-c052-64d5-eb72" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="ecfa-8486-4f6c-c249">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="7b8d-8405-0e74-9f46" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Great Weapon (replaces Shield)" hidden="false" id="e667-bf75-c92f-1ede" type="selectionEntry" targetId="1eb7-3f36-8cf7-e0ba">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8126-b330-ec8d-9cea" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="increment" value="2" field="ecfa-8486-4f6c-c249">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="7b8d-8405-0e74-9f46" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
