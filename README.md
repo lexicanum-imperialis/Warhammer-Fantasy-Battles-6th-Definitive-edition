@@ -157,6 +157,7 @@ The main additions are:
 - [x] Knightly Orders rules from CJ#43 (p.11-13)
 - [x] Knightly Orders rules from WD#310
 - [x] Custom Knightly Orders rules from WD#310
+- [x] Reiksguard on Foot (WD#310, p.120)
 
 ## Alternative lists included
 - [x] Clan Eshin (SKV-AB)
@@ -186,6 +187,7 @@ The main additions are:
 - [x] High Elf Sea Patrol (SoC, 9.94-95)
 - [ ] War of the Beard
 - [x] The Emperor's Guard (EM-AB, p.78)
+- [x] The Artillery Train of Nuln (EM-AB, p.78)
 
 ## Sources consulted
 
