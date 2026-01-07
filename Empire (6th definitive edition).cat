@@ -1214,6 +1214,35 @@
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="128a-6411-f218-72fc" type="max"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f0ce-7b2e-0be1-9dd1" type="min"/>
           </constraints>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="0" field="f0ce-7b2e-0be1-9dd1"/>
+                <modifier type="set" value="0" field="128a-6411-f218-72fc"/>
+              </modifiers>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="5191-89ca-822d-60e5" shared="true" includeChildSelections="true"/>
+                    <condition type="notEqualTo" value="1" field="selections" scope="parent" childId="44f9-f44d-d693-84f8" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifierGroup>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="1" field="f0ce-7b2e-0be1-9dd1"/>
+                <modifier type="set" value="1" field="128a-6411-f218-72fc"/>
+              </modifiers>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="parent" childId="44f9-f44d-d693-84f8" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifierGroup>
+          </modifierGroups>
         </entryLink>
         <entryLink id="d2a3-c146-1dbb-118f" name="Hand Weapon" hidden="false" collective="false" import="true" targetId="abdb-bbd0-41b2-5dff" type="selectionEntry">
           <constraints>
@@ -5459,7 +5488,7 @@ Makes sense to allow it with the &quot;other&quot; Reiksguard, but it&apos;s not
                 </modifier>
               </modifiers>
             </entryLink>
-            <entryLink import="true" name="Signature Weapon" hidden="false" id="5191-89ca-822d-60e5" type="selectionEntry" targetId="d1e5-fa47-0345-c862"/>
+            <entryLink import="true" name="Signature Weapon" hidden="false" id="5191-89ca-822d-60e5" type="selectionEntryGroup" targetId="7195-9f86-b364-0a4f"/>
           </entryLinks>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5f81-d4a6-b74f-6fc3" includeChildSelections="false"/>
@@ -5539,68 +5568,6 @@ Makes sense to allow it with the &quot;other&quot; Reiksguard, but it&apos;s not
       <constraints>
         <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="9ff4-e65c-ebb1-1f3c" includeChildSelections="false"/>
       </constraints>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Signature Weapon" hidden="false" id="d1e5-fa47-0345-c862">
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ecdd-8e84-6a0e-c90b" includeChildSelections="false"/>
-      </constraints>
-      <entryLinks>
-        <entryLink import="true" name="Cavalry hammer " hidden="false" id="5686-cb97-9dcc-34fe" type="selectionEntry" targetId="9c55-fbdf-3b4c-f808">
-          <modifiers>
-            <modifier type="increment" value="3" field="ecfa-8486-4f6c-c249">
-              <repeats>
-                <repeat value="1" repeats="1" field="selections" scope="unit" childId="7b8d-8405-0e74-9f46" shared="true" roundUp="false" includeChildSelections="true"/>
-              </repeats>
-            </modifier>
-          </modifiers>
-        </entryLink>
-        <entryLink import="true" name="Pistol" hidden="false" id="fdd1-053d-3b57-76ca" type="selectionEntry" targetId="44f9-f44d-d693-84f8">
-          <rules>
-            <rule name="Not replace lance" id="45a3-03e9-e611-9a98" hidden="false">
-              <description>The pistol does not replace the Lance</description>
-            </rule>
-          </rules>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dbff-c6e9-ba8a-4a3c" includeChildSelections="false"/>
-          </constraints>
-          <modifiers>
-            <modifier type="increment" value="2" field="ecfa-8486-4f6c-c249">
-              <repeats>
-                <repeat value="1" repeats="1" field="selections" scope="unit" childId="7b8d-8405-0e74-9f46" shared="true" roundUp="false" includeChildSelections="true"/>
-              </repeats>
-            </modifier>
-          </modifiers>
-        </entryLink>
-        <entryLink import="true" name="Morning Star" hidden="false" id="b96a-c794-705c-8e9c" type="selectionEntry" targetId="f2fb-8b67-9f3b-a096">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1580-442c-c904-f4e7" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
-        <entryLink import="true" name="Flail" hidden="false" id="2fbc-7266-8d77-8b09" type="selectionEntry" targetId="2eb9-be12-caec-57e8">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1578-c052-64d5-eb72" includeChildSelections="false"/>
-          </constraints>
-          <modifiers>
-            <modifier type="increment" value="1" field="ecfa-8486-4f6c-c249">
-              <repeats>
-                <repeat value="1" repeats="1" field="selections" scope="unit" childId="7b8d-8405-0e74-9f46" shared="true" roundUp="false" includeChildSelections="true"/>
-              </repeats>
-            </modifier>
-          </modifiers>
-        </entryLink>
-        <entryLink import="true" name="Great Weapon" hidden="false" id="e667-bf75-c92f-1ede" type="selectionEntry" targetId="1eb7-3f36-8cf7-e0ba">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8126-b330-ec8d-9cea" includeChildSelections="false"/>
-          </constraints>
-          <modifiers>
-            <modifier type="increment" value="2" field="ecfa-8486-4f6c-c249">
-              <repeats>
-                <repeat value="1" repeats="1" field="selections" scope="unit" childId="7b8d-8405-0e74-9f46" shared="true" roundUp="false" includeChildSelections="true"/>
-              </repeats>
-            </modifier>
-          </modifiers>
-        </entryLink>
-      </entryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -5987,6 +5954,68 @@ Makes sense to allow it with the &quot;other&quot; Reiksguard, but it&apos;s not
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Custom Knightly Order (WD#310(UK)" id="d27b-f764-4a4e-f9a1" hidden="false"/>
+    <selectionEntryGroup name="Signature Weapon" id="7195-9f86-b364-0a4f" hidden="false">
+      <entryLinks>
+        <entryLink import="true" name="Cavalry hammer " hidden="false" id="5686-cb97-9dcc-34fe" type="selectionEntry" targetId="9c55-fbdf-3b4c-f808">
+          <modifiers>
+            <modifier type="increment" value="3" field="ecfa-8486-4f6c-c249">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="7b8d-8405-0e74-9f46" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Flail" hidden="false" id="2fbc-7266-8d77-8b09" type="selectionEntry" targetId="2eb9-be12-caec-57e8">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1578-c052-64d5-eb72" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="ecfa-8486-4f6c-c249">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="7b8d-8405-0e74-9f46" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Great Weapon" hidden="false" id="e667-bf75-c92f-1ede" type="selectionEntry" targetId="1eb7-3f36-8cf7-e0ba">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8126-b330-ec8d-9cea" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="increment" value="2" field="ecfa-8486-4f6c-c249">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="7b8d-8405-0e74-9f46" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Morning Star" hidden="false" id="b96a-c794-705c-8e9c" type="selectionEntry" targetId="f2fb-8b67-9f3b-a096">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1580-442c-c904-f4e7" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Pistol" hidden="false" id="fdd1-053d-3b57-76ca" type="selectionEntry" targetId="44f9-f44d-d693-84f8">
+          <rules>
+            <rule name="Not replace lance" id="45a3-03e9-e611-9a98" hidden="false">
+              <description>The pistol does not replace the Lance</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dbff-c6e9-ba8a-4a3c" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="increment" value="2" field="ecfa-8486-4f6c-c249">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="7b8d-8405-0e74-9f46" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ecdd-8e84-6a0e-c90b" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
     <rule id="c044-7bdd-9520-1958" name="Magic Banner" publicationId="b61c-34ec-3be0-1b38" page="6" hidden="false">
