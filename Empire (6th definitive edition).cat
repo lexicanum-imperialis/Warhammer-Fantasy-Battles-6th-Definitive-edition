@@ -17,6 +17,11 @@
         <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="4c08-de90-69ce-f4da" type="max"/>
       </constraints>
     </categoryEntry>
+    <categoryEntry name="State troops" id="2067-05d1-55c9-f09f" hidden="false">
+      <comment>State troops can be used as independent units, Parent units or Detachments (EM-AB, p.6)</comment>
+    </categoryEntry>
+    <categoryEntry name="Militia" id="bdb0-067d-c73e-2eb2" hidden="false"/>
+    <categoryEntry name="Artillery" id="cd31-a064-897e-7a97" hidden="false"/>
   </categoryEntries>
   <selectionEntries>
     <selectionEntry id="569f-7be3-1aa2-004f" name="Halberdiers" hidden="false" collective="false" import="true" type="unit">
@@ -327,6 +332,7 @@
       </infoLinks>
       <categoryLinks>
         <categoryLink id="9d8f-acd6-9284-ac63" name="Core" hidden="false" targetId="64bf-efb4-9978-26df" primary="true"/>
+        <categoryLink name="State troops" hidden="false" id="e778-3261-d604-f8b4" targetId="2067-05d1-55c9-f09f" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="4fe5-0c22-a5f2-c78a" name="Spearmen" hidden="false" collective="false" import="true" type="model">
@@ -437,6 +443,7 @@
       </profiles>
       <categoryLinks>
         <categoryLink id="0dfc-d95f-2a18-e24d" name="Core" hidden="false" targetId="64bf-efb4-9978-26df" primary="true"/>
+        <categoryLink name="State troops" hidden="false" id="568f-4904-1235-c238" targetId="2067-05d1-55c9-f09f" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="54b6-a718-d953-242f" name="Swordsmen" hidden="false" collective="false" import="true" type="model">
@@ -539,6 +546,7 @@
       </infoLinks>
       <categoryLinks>
         <categoryLink id="c68e-c785-9617-f6b8" name="Core" hidden="false" targetId="64bf-efb4-9978-26df" primary="true"/>
+        <categoryLink name="State troops" hidden="false" id="18f7-5833-78f0-aa9d" targetId="2067-05d1-55c9-f09f" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="bee1-0bdd-2d66-e17f" name="Handgunners" hidden="false" collective="false" import="true" type="model">
@@ -659,6 +667,7 @@
       </infoLinks>
       <categoryLinks>
         <categoryLink id="d229-ad0d-db5b-7833" name="Core" hidden="false" targetId="64bf-efb4-9978-26df" primary="true"/>
+        <categoryLink name="Militia" hidden="false" id="d2ad-a7fc-c807-ead2" targetId="bdb0-067d-c73e-2eb2" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="9e84-31d4-577f-d85d" name="Fighter" hidden="false" collective="false" import="true" type="model">
@@ -742,6 +751,7 @@
       </infoLinks>
       <categoryLinks>
         <categoryLink id="4b2a-6b12-2d58-be19" name="Core" hidden="false" targetId="64bf-efb4-9978-26df" primary="true"/>
+        <categoryLink name="Militia" hidden="false" id="2b60-7850-0faf-0702" targetId="bdb0-067d-c73e-2eb2" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="639d-da46-0bc0-72a5" name="Archer" hidden="false" collective="false" import="true" type="model">
@@ -816,6 +826,7 @@
       </infoLinks>
       <categoryLinks>
         <categoryLink id="2c7c-19d7-06b9-b62d" name="Core" hidden="false" targetId="64bf-efb4-9978-26df" primary="true"/>
+        <categoryLink name="Militia" hidden="false" id="35f2-b7f2-eee1-d6de" targetId="bdb0-067d-c73e-2eb2" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="13b1-9ed0-fcc2-48dd" name="Huntsman" hidden="false" collective="false" import="true" type="model">
@@ -885,6 +896,7 @@
       </infoLinks>
       <categoryLinks>
         <categoryLink id="4c6b-488d-50c8-b41c" name="Core" hidden="false" targetId="64bf-efb4-9978-26df" primary="true"/>
+        <categoryLink name="Militia" hidden="false" id="e6ee-31cd-9323-6b9d" targetId="bdb0-067d-c73e-2eb2" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="0e36-0205-1927-3cbb" name="Crossbowmen" hidden="false" collective="false" import="true" type="model">
@@ -1657,6 +1669,7 @@
       </infoLinks>
       <categoryLinks>
         <categoryLink id="1f9a-ed4a-4627-34a0" name="Special" hidden="false" targetId="43cc-fc3f-35a7-8d03" primary="true"/>
+        <categoryLink name="Artillery" hidden="false" id="3daa-c058-f4f6-839f" targetId="cd31-a064-897e-7a97" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="367b-d51f-1eed-8654" name="3 Crew" hidden="false" collective="true" import="true" type="upgrade">
@@ -1684,6 +1697,41 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="0cdb-7e97-efe4-402c" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="increment" value="1" field="0cdb-7e97-efe4-402c">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="c6c6-3b29-466d-5ac0" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="force" childId="bdb0-067d-c73e-2eb2" shared="true" roundUp="false" includeChildSelections="true"/>
+            <repeat value="1" repeats="1" field="selections" scope="force" childId="2067-05d1-55c9-f09f" shared="true" roundUp="false" includeChildSelections="true"/>
+          </repeats>
+        </modifier>
+        <modifier type="decrement" value="1" field="0cdb-7e97-efe4-402c">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="c6c6-3b29-466d-5ac0" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="force" childId="862d-3e61-0bf1-4f79" shared="true" roundUp="false" includeChildSelections="true"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="0" field="0cdb-7e97-efe4-402c"/>
+            <modifier type="add" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="remove" value="43cc-fc3f-35a7-8d03" field="category"/>
+            <modifier type="set-primary" value="64bf-efb4-9978-26df" field="category"/>
+          </modifiers>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="c6c6-3b29-466d-5ac0" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry id="862d-3e61-0bf1-4f79" name="Mortar" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -1700,6 +1748,7 @@
       </infoLinks>
       <categoryLinks>
         <categoryLink id="ed04-f965-ed77-02c5" name="Special" hidden="false" targetId="43cc-fc3f-35a7-8d03" primary="true"/>
+        <categoryLink name="Artillery" hidden="false" id="92f8-3a16-1d89-4aef" targetId="cd31-a064-897e-7a97" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="9433-9730-ad2a-1e45" name="3 Crew" hidden="false" collective="true" import="true" type="upgrade">
@@ -1727,6 +1776,41 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="0" field="ad45-de28-6565-8991"/>
+            <modifier type="add" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="remove" value="43cc-fc3f-35a7-8d03" field="category"/>
+            <modifier type="set-primary" value="64bf-efb4-9978-26df" field="category"/>
+          </modifiers>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="c6c6-3b29-466d-5ac0" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifierGroup>
+      </modifierGroups>
+      <modifiers>
+        <modifier type="increment" value="1" field="ad45-de28-6565-8991">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="c6c6-3b29-466d-5ac0" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="force" childId="bdb0-067d-c73e-2eb2" shared="true" roundUp="false" includeChildSelections="true"/>
+            <repeat value="1" repeats="1" field="selections" scope="force" childId="2067-05d1-55c9-f09f" shared="true" roundUp="false" includeChildSelections="true"/>
+          </repeats>
+        </modifier>
+        <modifier type="decrement" value="1" field="ad45-de28-6565-8991">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="c6c6-3b29-466d-5ac0" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="force" childId="d3f0-a597-6023-0c70" shared="true" roundUp="false" includeChildSelections="true"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="ad45-de28-6565-8991" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry id="f989-ca7c-b4e6-5d98" name="Hellblaster Volley Gun" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -6161,6 +6245,24 @@ Units of Knights with this disadvantage never receive rank bonuses, nor do the
         <categoryLink name="Special" hidden="false" id="3083-cf9f-70d2-3f68" targetId="43cc-fc3f-35a7-8d03" primary="false"/>
         <categoryLink name="Rare" hidden="false" id="ed8e-3e55-c49e-142b" targetId="e94b-6a54-8779-cd60" primary="false"/>
         <categoryLink name="Regiment of Renown" hidden="false" id="851b-dc53-59bc-d557" targetId="ee09-9a50-ad78-9c32"/>
+      </categoryLinks>
+    </forceEntry>
+    <forceEntry name="The Artillery Train of Nuln (EM-AB)" id="c6c6-3b29-466d-5ac0" hidden="false" publicationId="b61c-34ec-3be0-1b38" page="78">
+      <categoryLinks>
+        <categoryLink name="Experimental rules" hidden="false" id="2e10-0f2d-00cc-ca08" targetId="4fed-b911-e6e0-927b" primary="false"/>
+        <categoryLink name="Special list rules" hidden="false" id="9450-df61-0ce8-d8e5" targetId="32f1-197f-d719-a393"/>
+        <categoryLink name="Special Characters" hidden="false" id="2a83-919e-7fa0-2458" targetId="0644-bfcd-32c2-21dc" primary="false"/>
+        <categoryLink name="Characters" hidden="false" id="5af9-9510-5749-3177" targetId="7a1c-d611-c2dc-def1" primary="false">
+          <modifiers>
+            <modifier type="increment" value="1" field="75ab-5a0c-edbf-33d2"/>
+          </modifiers>
+        </categoryLink>
+        <categoryLink name="Lord" hidden="false" id="35c1-0651-291b-13e5" targetId="d024-d25b-a9b4-73b6" primary="false"/>
+        <categoryLink name="Heroes" hidden="false" id="4818-c0ce-ab8e-fba5" targetId="c16b-f319-2c62-2c12" primary="false"/>
+        <categoryLink name="Core" hidden="false" id="041c-d592-70c1-b53f" targetId="64bf-efb4-9978-26df" primary="false"/>
+        <categoryLink name="Special" hidden="false" id="5978-7086-b584-7fdb" targetId="43cc-fc3f-35a7-8d03" primary="false"/>
+        <categoryLink name="Rare" hidden="false" id="2272-38eb-9032-d495" targetId="e94b-6a54-8779-cd60" primary="false"/>
+        <categoryLink name="Regiment of Renown" hidden="false" id="9946-7e38-20aa-7642" targetId="ee09-9a50-ad78-9c32"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
