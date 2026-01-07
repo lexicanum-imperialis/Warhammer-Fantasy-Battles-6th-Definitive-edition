@@ -153,6 +153,9 @@
             <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">3</characteristic>
             <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">9</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="Burgomeister" field="name"/>
+          </modifiers>
         </profile>
       </profiles>
       <categoryLinks>
@@ -334,6 +337,13 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="Burgomeister" field="name">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="d1ca-0d07-b9d2-0ff1" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="1db9-88b7-80ef-40d5" name="Spearmen" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -1348,6 +1358,11 @@
             <condition type="instanceOf" value="1" field="selections" scope="force" childId="9d76-5d25-ce1d-1d12" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="d1ca-0d07-b9d2-0ff1" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <selectionEntryGroups>
         <selectionEntryGroup name="Knightly Order" id="06b5-8412-53d1-49ac" hidden="false">
@@ -1540,6 +1555,13 @@
           </modifiers>
         </modifierGroup>
       </modifierGroups>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="d1ca-0d07-b9d2-0ff1" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="c976-7d43-b55c-3e12" name="0-1 Greatswords" hidden="false" collective="false" import="true" type="unit">
       <constraints>
@@ -1671,6 +1693,11 @@
         <modifier type="set" value="true" field="hidden">
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="force" childId="fb55-f061-f6d9-9f27" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="d1ca-0d07-b9d2-0ff1" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2027,6 +2054,11 @@
             <condition type="instanceOf" value="1" field="selections" scope="force" childId="fb55-f061-f6d9-9f27" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="d1ca-0d07-b9d2-0ff1" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
     </selectionEntry>
     <selectionEntry id="2e84-5c9d-84bf-4895" name="Flagellants" hidden="false" collective="false" import="true" type="unit">
@@ -2117,6 +2149,11 @@
         <modifier type="set" value="0" field="8065-3efe-ac55-1a57">
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="force" childId="fb55-f061-f6d9-9f27" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="d1ca-0d07-b9d2-0ff1" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2252,6 +2289,11 @@
             <modifier type="set" value="true" field="hidden">
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="9d76-5d25-ce1d-1d12" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="d1ca-0d07-b9d2-0ff1" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -3039,6 +3081,14 @@
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="593f-8e04-350e-8fea" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="230e-191e-7405-cf43" type="max"/>
           </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Barding" hidden="false" id="0c75-471c-22be-b639" type="selectionEntry" targetId="3211-d836-02f1-01d0">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6bf8-0447-b9d7-0fb9" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6520-c587-ab34-9887" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </entryLink>
         <entryLink id="d989-ccc8-be68-88e4" name="General" hidden="false" collective="false" import="true" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry"/>
       </entryLinks>
@@ -3290,6 +3340,12 @@
             <condition type="instanceOf" value="1" field="selections" scope="force" childId="fb55-f061-f6d9-9f27" shared="true" includeChildSelections="true"/>
           </conditions>
           <comment>Because you can&apos;t field Engineers, it doesn&apos;t make sense</comment>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="d1ca-0d07-b9d2-0ff1" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <comment>Marienburg has no Steam Tank, right?</comment>
         </modifier>
       </modifiers>
     </selectionEntry>
@@ -4006,14 +4062,6 @@ Makes sense to allow it with the &quot;other&quot; Reiksguard, but it&apos;s not
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
-      <entryLinks>
-        <entryLink import="true" name="Barding" hidden="false" id="d88e-96b3-f836-5c05" type="selectionEntry" targetId="3211-d836-02f1-01d0">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="04dd-69af-d359-f919" includeChildSelections="false"/>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="eeed-b95f-d8ef-df2a" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0cda-8c44-bc6f-1e6a" includeChildSelections="false"/>
       </constraints>
@@ -6525,30 +6573,312 @@ Units of Knights with this disadvantage never receive rank bonuses, nor do the
         <categoryLink name="Rare" hidden="false" id="8574-fae5-5f81-8969" targetId="e94b-6a54-8779-cd60" primary="false"/>
       </categoryLinks>
     </forceEntry>
+    <forceEntry name="Marienburger Mercenary Army (EM-AB)" id="d1ca-0d07-b9d2-0ff1" hidden="false" publicationId="b61c-34ec-3be0-1b38" page="79">
+      <categoryLinks>
+        <categoryLink name="Experimental rules" hidden="false" id="81f2-98c0-13b8-4ad5" targetId="4fed-b911-e6e0-927b" primary="false"/>
+        <categoryLink name="Special list rules" hidden="false" id="8e43-e05a-9143-7abb" targetId="32f1-197f-d719-a393"/>
+        <categoryLink name="Special Characters" hidden="false" id="b2cb-a6ae-7eb1-a3f1" targetId="0644-bfcd-32c2-21dc" primary="false"/>
+        <categoryLink name="Characters" hidden="false" id="d0f9-b8b6-102c-ee2a" targetId="7a1c-d611-c2dc-def1" primary="false">
+          <modifiers>
+            <modifier type="increment" value="1" field="75ab-5a0c-edbf-33d2"/>
+          </modifiers>
+        </categoryLink>
+        <categoryLink name="Lord" hidden="false" id="d8e0-e00f-3d4e-a10a" targetId="d024-d25b-a9b4-73b6" primary="false"/>
+        <categoryLink name="Heroes" hidden="false" id="6bd9-f0ae-8a1a-7cd3" targetId="c16b-f319-2c62-2c12" primary="false"/>
+        <categoryLink name="Core" hidden="false" id="5a34-c43c-dedb-1b3d" targetId="64bf-efb4-9978-26df" primary="false"/>
+        <categoryLink name="Special" hidden="false" id="facd-9b4c-3d28-7111" targetId="43cc-fc3f-35a7-8d03" primary="false"/>
+        <categoryLink name="Rare" hidden="false" id="1843-3671-4007-6aa1" targetId="e94b-6a54-8779-cd60" primary="false"/>
+        <categoryLink name="Regiment of Renown" hidden="false" id="ecb7-b051-37c7-2997" targetId="ee09-9a50-ad78-9c32">
+          <constraints>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="51f7-4cc5-fad2-1f91"/>
+          </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="51f7-4cc5-fad2-1f91">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="force" childId="2067-05d1-55c9-f09f" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="force" childId="bdb0-067d-c73e-2eb2" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
   </forceEntries>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Mercenaries" id="7773-ecbb-5fb9-eb56" targetId="fc47-8392-a6c8-452a"/>
   </catalogueLinks>
   <entryLinks>
-    <entryLink import="true" name="Al Muktar&apos;s Desert Dogs" hidden="false" id="305e-3038-2c51-38fc" type="selectionEntry" targetId="22e7-a415-2e0e-a39f"/>
+    <entryLink import="true" name="Al Muktar&apos;s Desert Dogs" hidden="false" id="305e-3038-2c51-38fc" type="selectionEntry" targetId="22e7-a415-2e0e-a39f">
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Marienburger Mercenary Army (EM-AB, p.79)</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="d1ca-0d07-b9d2-0ff1" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <modifiers>
+            <modifier type="add" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="set-primary" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="remove" value="43cc-fc3f-35a7-8d03" field="category"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+    </entryLink>
     <entryLink import="true" name="Asarnil the Dragonlord" hidden="false" id="602e-685e-ccb8-641d" type="selectionEntry" targetId="5854-6f84-521e-9c14"/>
-    <entryLink import="true" name="Bearmen of Urslo" hidden="false" id="3ed2-7775-d217-14c2" type="selectionEntry" targetId="ab79-9343-3a3d-ff06"/>
-    <entryLink import="true" name="Birdmen of Catrazza" hidden="false" id="8049-8c25-93fa-f30b" type="selectionEntry" targetId="7014-02dd-7b9e-d65c"/>
-    <entryLink import="true" name="Braganza&apos;s Besiegers" hidden="false" id="fa35-ad2f-9987-4ebf" type="selectionEntry" targetId="63b1-1724-ee36-fa68"/>
-    <entryLink import="true" name="Bronzino&apos;s Galloper Guns" hidden="false" id="14d1-2da8-67cf-84ab" type="selectionEntry" targetId="3f74-0a3b-478e-bac3"/>
-    <entryLink import="true" name="Golgfag&apos;s Ogres" hidden="false" id="ce68-7cc4-ef1a-0fa1" type="selectionEntry" targetId="db7e-cfeb-cef5-d034"/>
-    <entryLink import="true" name="Leopold&apos;s Leopard Company" hidden="false" id="50eb-2727-96b8-490d" type="selectionEntry" targetId="8848-c408-d8ff-97d9"/>
-    <entryLink import="true" name="Long Drong&apos;s Slayer Pirates" hidden="false" id="a179-e7ec-101c-0796" type="selectionEntry" targetId="8ebf-e19f-adea-1f75"/>
-    <entryLink import="true" name="Lumpin Croop&apos;s Fighting Cocks" hidden="false" id="04f0-d8d9-770a-cd56" type="selectionEntry" targetId="2a88-f6ee-0aee-21d9"/>
-    <entryLink import="true" name="Marksmen of Miragliano" hidden="false" id="1a01-bd0d-954f-67d7" type="selectionEntry" targetId="8086-f18f-e1b0-4ae5"/>
-    <entryLink import="true" name="Pirazzo&apos;s Lost Legion" hidden="false" id="51de-41ce-93a2-4bf8" type="selectionEntry" targetId="5351-f58d-361f-7a9d"/>
-    <entryLink import="true" name="Ricco&apos;s Republican Guard" hidden="false" id="493d-0574-ac44-9ef0" type="selectionEntry" targetId="30d3-b878-f633-045a"/>
-    <entryLink import="true" name="Ruglud&apos;s Armoured Orcs" hidden="false" id="37d2-ca9a-9485-4df2" type="selectionEntry" targetId="bddc-2940-a680-e5be"/>
-    <entryLink import="true" name="The Alcantani Fellowship" hidden="false" id="efd6-9ceb-74c2-35e8" type="selectionEntry" targetId="1cbf-33eb-3a1b-5887"/>
-    <entryLink import="true" name="The Cursed Company" hidden="false" id="0ee8-6e22-f12d-edf4" type="selectionEntry" targetId="ea10-c9a1-1ae8-aaaf"/>
-    <entryLink import="true" name="Tichi Huichi&apos;s Raiders" hidden="false" id="4c49-e197-052d-9364" type="selectionEntry" targetId="86b2-59ec-ed5a-cf74"/>
-    <entryLink import="true" name="Vespero&apos;s Vendetta" hidden="false" id="575a-d976-dc4b-36ca" type="selectionEntry" targetId="a14c-79da-9d49-49b1"/>
-    <entryLink import="true" name="Voland&apos;s Venators" hidden="false" id="4b04-8e21-c86e-768d" type="selectionEntry" targetId="41e8-0d1b-81fe-2013"/>
+    <entryLink import="true" name="Bearmen of Urslo" hidden="false" id="3ed2-7775-d217-14c2" type="selectionEntry" targetId="ab79-9343-3a3d-ff06">
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Marienburger Mercenary Army (EM-AB, p.79)</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="d1ca-0d07-b9d2-0ff1" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <modifiers>
+            <modifier type="add" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="set-primary" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="remove" value="43cc-fc3f-35a7-8d03" field="category"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+    </entryLink>
+    <entryLink import="true" name="Birdmen of Catrazza" hidden="false" id="8049-8c25-93fa-f30b" type="selectionEntry" targetId="7014-02dd-7b9e-d65c">
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Marienburger Mercenary Army (EM-AB, p.79)</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="d1ca-0d07-b9d2-0ff1" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <modifiers>
+            <modifier type="add" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="set-primary" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="remove" value="e94b-6a54-8779-cd60" field="category"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+    </entryLink>
+    <entryLink import="true" name="Braganza&apos;s Besiegers" hidden="false" id="fa35-ad2f-9987-4ebf" type="selectionEntry" targetId="63b1-1724-ee36-fa68">
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Marienburger Mercenary Army (EM-AB, p.79)</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="d1ca-0d07-b9d2-0ff1" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <modifiers>
+            <modifier type="add" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="set-primary" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="remove" value="43cc-fc3f-35a7-8d03" field="category"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+    </entryLink>
+    <entryLink import="true" name="Bronzino&apos;s Galloper Guns" hidden="false" id="14d1-2da8-67cf-84ab" type="selectionEntry" targetId="3f74-0a3b-478e-bac3">
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Marienburger Mercenary Army (EM-AB, p.79)</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="d1ca-0d07-b9d2-0ff1" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <modifiers>
+            <modifier type="add" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="set-primary" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="remove" value="e94b-6a54-8779-cd60" field="category"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+    </entryLink>
+    <entryLink import="true" name="Golgfag&apos;s Ogres" hidden="false" id="ce68-7cc4-ef1a-0fa1" type="selectionEntry" targetId="db7e-cfeb-cef5-d034">
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Marienburger Mercenary Army (EM-AB, p.79)</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="d1ca-0d07-b9d2-0ff1" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <modifiers>
+            <modifier type="add" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="set-primary" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="remove" value="e94b-6a54-8779-cd60" field="category"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+    </entryLink>
+    <entryLink import="true" name="Leopold&apos;s Leopard Company" hidden="false" id="50eb-2727-96b8-490d" type="selectionEntry" targetId="8848-c408-d8ff-97d9">
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Marienburger Mercenary Army (EM-AB, p.79)</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="d1ca-0d07-b9d2-0ff1" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <modifiers>
+            <modifier type="add" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="set-primary" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="remove" value="43cc-fc3f-35a7-8d03" field="category"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+    </entryLink>
+    <entryLink import="true" name="Long Drong&apos;s Slayer Pirates" hidden="false" id="a179-e7ec-101c-0796" type="selectionEntry" targetId="8ebf-e19f-adea-1f75">
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Marienburger Mercenary Army (EM-AB, p.79)</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="d1ca-0d07-b9d2-0ff1" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <modifiers>
+            <modifier type="add" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="set-primary" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="remove" value="e94b-6a54-8779-cd60" field="category"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+    </entryLink>
+    <entryLink import="true" name="Lumpin Croop&apos;s Fighting Cocks" hidden="false" id="04f0-d8d9-770a-cd56" type="selectionEntry" targetId="2a88-f6ee-0aee-21d9">
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Marienburger Mercenary Army (EM-AB, p.79)</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="d1ca-0d07-b9d2-0ff1" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <modifiers>
+            <modifier type="add" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="set-primary" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="remove" value="e94b-6a54-8779-cd60" field="category"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+    </entryLink>
+    <entryLink import="true" name="Marksmen of Miragliano" hidden="false" id="1a01-bd0d-954f-67d7" type="selectionEntry" targetId="8086-f18f-e1b0-4ae5">
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Marienburger Mercenary Army (EM-AB, p.79)</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="d1ca-0d07-b9d2-0ff1" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <modifiers>
+            <modifier type="add" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="set-primary" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="remove" value="e94b-6a54-8779-cd60" field="category"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+    </entryLink>
+    <entryLink import="true" name="Pirazzo&apos;s Lost Legion" hidden="false" id="51de-41ce-93a2-4bf8" type="selectionEntry" targetId="5351-f58d-361f-7a9d">
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Marienburger Mercenary Army (EM-AB, p.79)</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="d1ca-0d07-b9d2-0ff1" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <modifiers>
+            <modifier type="add" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="set-primary" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="remove" value="43cc-fc3f-35a7-8d03" field="category"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+    </entryLink>
+    <entryLink import="true" name="Ricco&apos;s Republican Guard" hidden="false" id="493d-0574-ac44-9ef0" type="selectionEntry" targetId="30d3-b878-f633-045a">
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Marienburger Mercenary Army (EM-AB, p.79)</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="d1ca-0d07-b9d2-0ff1" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <modifiers>
+            <modifier type="add" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="set-primary" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="remove" value="43cc-fc3f-35a7-8d03" field="category"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+    </entryLink>
+    <entryLink import="true" name="Ruglud&apos;s Armoured Orcs" hidden="false" id="37d2-ca9a-9485-4df2" type="selectionEntry" targetId="bddc-2940-a680-e5be">
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Marienburger Mercenary Army (EM-AB, p.79)</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="d1ca-0d07-b9d2-0ff1" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <modifiers>
+            <modifier type="add" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="set-primary" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="remove" value="e94b-6a54-8779-cd60" field="category"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+    </entryLink>
+    <entryLink import="true" name="The Alcantani Fellowship" hidden="false" id="efd6-9ceb-74c2-35e8" type="selectionEntry" targetId="1cbf-33eb-3a1b-5887">
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Marienburger Mercenary Army (EM-AB, p.79)</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="d1ca-0d07-b9d2-0ff1" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <modifiers>
+            <modifier type="add" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="set-primary" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="remove" value="43cc-fc3f-35a7-8d03" field="category"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+    </entryLink>
+    <entryLink import="true" name="The Cursed Company" hidden="false" id="0ee8-6e22-f12d-edf4" type="selectionEntry" targetId="ea10-c9a1-1ae8-aaaf">
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Marienburger Mercenary Army (EM-AB, p.79)</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="d1ca-0d07-b9d2-0ff1" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <modifiers>
+            <modifier type="add" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="set-primary" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="remove" value="e94b-6a54-8779-cd60" field="category"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+    </entryLink>
+    <entryLink import="true" name="Tichi Huichi&apos;s Raiders" hidden="false" id="4c49-e197-052d-9364" type="selectionEntry" targetId="86b2-59ec-ed5a-cf74">
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Marienburger Mercenary Army (EM-AB, p.79)</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="d1ca-0d07-b9d2-0ff1" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <modifiers>
+            <modifier type="add" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="set-primary" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="remove" value="e94b-6a54-8779-cd60" field="category"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+    </entryLink>
+    <entryLink import="true" name="Vespero&apos;s Vendetta" hidden="false" id="575a-d976-dc4b-36ca" type="selectionEntry" targetId="a14c-79da-9d49-49b1">
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Marienburger Mercenary Army (EM-AB, p.79)</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="d1ca-0d07-b9d2-0ff1" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <modifiers>
+            <modifier type="add" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="set-primary" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="remove" value="43cc-fc3f-35a7-8d03" field="category"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+    </entryLink>
+    <entryLink import="true" name="Voland&apos;s Venators" hidden="false" id="4b04-8e21-c86e-768d" type="selectionEntry" targetId="41e8-0d1b-81fe-2013">
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Marienburger Mercenary Army (EM-AB, p.79)</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="d1ca-0d07-b9d2-0ff1" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <modifiers>
+            <modifier type="add" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="set-primary" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="remove" value="e94b-6a54-8779-cd60" field="category"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+    </entryLink>
     <entryLink import="true" name="Allow experimental rules?" hidden="false" id="2961-128d-196e-c6c6" type="selectionEntry" targetId="8b76-92c4-23f9-54b1">
       <constraints>
         <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="30c1-0e8a-ca51-3eee" includeChildSelections="false"/>
