@@ -188,6 +188,7 @@ The main additions are:
 - [ ] War of the Beard
 - [x] The Emperor's Guard (EM-AB, p.78)
 - [x] The Artillery Train of Nuln (EM-AB, p.78)
+- [x] Sigmarite Army (EM-AB, p.79)
 
 ## Sources consulted
 
