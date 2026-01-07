@@ -2372,14 +2372,15 @@
         <entryLink id="ebfe-5617-1c16-0ead" name="General" hidden="false" collective="false" import="true" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="9d76-5d25-ce1d-1d12" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="d1ca-0d07-b9d2-0ff1" shared="true" includeChildSelections="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="c6c6-3b29-466d-5ac0" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="d1ca-0d07-b9d2-0ff1" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="9d76-5d25-ce1d-1d12" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </entryLink>
@@ -6970,11 +6971,26 @@ Units of Knights with this disadvantage never receive rank bonuses, nor do the
       </constraints>
       <modifiers>
         <modifier type="set" value="1" field="30c1-0e8a-ca51-3eee">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="9d76-5d25-ce1d-1d12" shared="true" includeChildSelections="true">
-              <comment>&quot;This appendix offers players some interesting alternatives to the basic Army list. It must be clear that the lists presented in this appendix are intended to be fun and are in no way as fair and balanced as the main list. Players should therefore agree with their opponent before the game if they can make use of these lists.&quot; (EM-AB, p.78)</comment>
-            </condition>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="fb55-f061-f6d9-9f27" shared="true" includeChildSelections="true">
+                  <comment>&quot;This appendix offers players some interesting alternatives to the basic Army list. It must be clear that the lists presented in this appendix are intended to be fun and are in no way as fair and balanced as the main list. Players should therefore agree with their opponent before the game if they can make use of these lists.&quot; (EM-AB, p.78)</comment>
+                </condition>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="9d76-5d25-ce1d-1d12" shared="true" includeChildSelections="true">
+                  <comment>&quot;This appendix offers players some interesting alternatives to the basic Army list. It must be clear that the lists presented in this appendix are intended to be fun and are in no way as fair and balanced as the main list. Players should therefore agree with their opponent before the game if they can make use of these lists.&quot; (EM-AB, p.78)</comment>
+                </condition>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="c6c6-3b29-466d-5ac0" shared="true" includeChildSelections="true">
+                  <comment>&quot;This appendix offers players some interesting alternatives to the basic Army list. It must be clear that the lists presented in this appendix are intended to be fun and are in no way as fair and balanced as the main list. Players should therefore agree with their opponent before the game if they can make use of these lists.&quot; (EM-AB, p.78)</comment>
+                </condition>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="d1ca-0d07-b9d2-0ff1" shared="true" includeChildSelections="true">
+                  <comment>&quot;This appendix offers players some interesting alternatives to the basic Army list. It must be clear that the lists presented in this appendix are intended to be fun and are in no way as fair and balanced as the main list. Players should therefore agree with their opponent before the game if they can make use of these lists.&quot; (EM-AB, p.78)</comment>
+                </condition>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="e628-04ab-0a07-b37c" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="3d6b-e7e1-9c78-28a3" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
     </entryLink>
