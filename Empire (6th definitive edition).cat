@@ -2384,12 +2384,28 @@
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="29c9-4d50-361c-dfb1" type="min"/>
           </constraints>
           <entryLinks>
-            <entryLink id="cc8d-7cc1-0e80-0108" name="Cavalry hammer " hidden="false" collective="false" import="true" targetId="9c55-fbdf-3b4c-f808" type="selectionEntry">
+            <entryLink id="cc8d-7cc1-0e80-0108" name="Cavalry hammer " hidden="true" collective="false" import="true" targetId="9c55-fbdf-3b4c-f808" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="name" value="Cavalry Hammer (White Wolves)"/>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="8ab4-17be-8a49-b3f7" childId="32c2-bfbe-88b1-8425" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="1" field="106f-93b5-2186-7f80">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="8ab4-17be-8a49-b3f7" childId="32c2-bfbe-88b1-8425" shared="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="8ab4-17be-8a49-b3f7" childId="c071-eb48-3009-9ec1" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
               </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a144-8323-15a1-d4fe" type="max"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="106f-93b5-2186-7f80" includeChildSelections="false"/>
               </constraints>
               <costs>
                 <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="6"/>
@@ -2398,9 +2414,24 @@
             <entryLink id="6ffd-43e9-329f-d85c" name="Lance" hidden="false" collective="false" import="true" targetId="8649-8ac8-5a6f-fd8d" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c3dd-c1d8-860d-0091" type="max"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6992-af3c-357c-9bdc" includeChildSelections="false"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="8ab4-17be-8a49-b3f7" childId="32c2-bfbe-88b1-8425" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </entryLink>
           </entryLinks>
+          <modifiers>
+            <modifier type="set" value="0" field="29c9-4d50-361c-dfb1">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="8ab4-17be-8a49-b3f7" childId="c071-eb48-3009-9ec1" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
         <selectionEntryGroup name="Knightly Order" id="a10d-3539-8d93-55cd" hidden="false">
           <entryLinks>
@@ -2477,6 +2508,16 @@
               <conditions>
                 <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c55-fbdf-3b4c-f808" type="equalTo"/>
               </conditions>
+            </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="8ab4-17be-8a49-b3f7" childId="32c2-bfbe-88b1-8425" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="8ab4-17be-8a49-b3f7" childId="cc8d-7cc1-0e80-0108" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
