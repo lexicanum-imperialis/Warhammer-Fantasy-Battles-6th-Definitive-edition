@@ -1329,10 +1329,15 @@
         <entryLink import="true" name="Cavalry hammer " hidden="true" id="9a71-cb61-06fb-005a" collective="false" targetId="9c55-fbdf-3b4c-f808" type="selectionEntry">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dff9-eb0b-1c59-3470" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f78b-9ad2-c515-7c0a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="f78b-9ad2-c515-7c0a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="8685-ea3d-4b1b-0f20" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="1" field="f78b-9ad2-c515-7c0a">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="parent" childId="8685-ea3d-4b1b-0f20" shared="true" includeChildSelections="true"/>
               </conditions>
@@ -2399,14 +2404,38 @@
         </selectionEntryGroup>
         <selectionEntryGroup name="Knightly Order" id="a10d-3539-8d93-55cd" hidden="false">
           <entryLinks>
-            <entryLink import="true" name="Knightly Orders (CJ#43)" hidden="false" id="e20d-9b53-bc73-45cd" type="selectionEntryGroup" targetId="d454-fa90-afa7-fa48">
+            <entryLink import="true" name="Knightly Orders (CJ#43)" hidden="false" id="e20d-9b53-bc73-45cd" type="selectionEntryGroup" targetId="0028-c66b-de73-8a32">
               <comment>CJ#43</comment>
             </entryLink>
-            <entryLink import="true" name="Knightly Orders (WD#310(UK))" hidden="false" id="29cc-7184-aa01-dc85" type="selectionEntryGroup" targetId="4dfe-f8e3-0e1b-e859"/>
-            <entryLink import="true" name="Custom Knightly Order (WD#310(UK)" hidden="false" id="7aee-75b1-2ead-25e7" type="selectionEntry" targetId="0bd1-8b50-44e0-6fc7"/>
+            <entryLink import="true" name="Knightly Orders (WD#310(UK))" hidden="false" id="29cc-7184-aa01-dc85" type="selectionEntryGroup" targetId="7059-6d2b-6ed3-3527">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Knightly Orders (EM-AB)" id="ef59-a7d3-a7d7-ec9c" hidden="true">
+                  <entryLinks>
+                    <entryLink import="true" name="0-1 Knights of the White Wolf" hidden="false" id="4430-d4ff-7985-09fa" type="selectionEntry" targetId="32c2-bfbe-88b1-8425"/>
+                  </entryLinks>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="32c2-bfbe-88b1-8425" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </entryLink>
+            <entryLink import="true" name="Custom Knightly Order (WD#310(UK)" hidden="true" id="7aee-75b1-2ead-25e7" type="selectionEntry" targetId="d96d-14b0-228e-3a86">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="0bd1-8b50-44e0-6fc7" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
           </entryLinks>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="self" shared="true" id="013b-ca2c-876e-7ba6" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e08a-3412-5d3e-0923" includeChildSelections="false"/>
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -5678,6 +5707,142 @@ Makes sense to allow it with the &quot;other&quot; Reiksguard, but it&apos;s not
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Custom Knightly Order (WD#310(UK)" hidden="false" id="d96d-14b0-228e-3a86">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Knightly advantages" hidden="false" id="9e15-4b01-6369-f11f">
+          <entryLinks>
+            <entryLink import="true" name="Blessed (Knights)" hidden="false" id="195f-ea44-4768-6059" type="selectionEntry" targetId="e252-623d-12ed-6efd">
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Exemplars of Sigmar (Knights)" hidden="false" id="e8b9-36e5-4109-98b9" type="selectionEntry" targetId="8c35-c7e7-0a70-7a90">
+              <modifiers>
+                <modifier type="increment" value="2" field="ecfa-8486-4f6c-c249">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="unit" childId="7b8d-8405-0e74-9f46" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Fearless (Knights)" hidden="false" id="3558-e6ed-bd0a-c2f5" type="selectionEntry" targetId="9ba1-0df4-965b-b58c">
+              <modifiers>
+                <modifier type="increment" value="2" field="ecfa-8486-4f6c-c249">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="unit" childId="7b8d-8405-0e74-9f46" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Resolute (Knights)" hidden="false" id="7c33-2c4d-2a9d-7d4d" type="selectionEntry" targetId="43cd-ae1d-e963-40cd">
+              <modifiers>
+                <modifier type="increment" value="1" field="ecfa-8486-4f6c-c249">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="unit" childId="7b8d-8405-0e74-9f46" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Unquenchable Zeal (Knights)" hidden="false" id="b159-3100-a462-52bc" type="selectionEntry" targetId="61ad-13d4-6e9a-eb67">
+              <modifiers>
+                <modifier type="increment" value="2" field="ecfa-8486-4f6c-c249">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="unit" childId="7b8d-8405-0e74-9f46" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Wealthy (Knights)" hidden="false" id="0f39-e885-3444-b9e8" type="selectionEntry" targetId="d77b-0cfd-1f44-5e33">
+              <modifiers>
+                <modifier type="increment" value="1" field="ecfa-8486-4f6c-c249">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="unit" childId="7b8d-8405-0e74-9f46" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Signature Weapon" hidden="false" id="6cfd-75f0-ce2b-9570" type="selectionEntryGroup" targetId="7195-9f86-b364-0a4f"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0027-e914-6a76-aa42" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Knightly disadvantages" hidden="false" id="53e6-de64-eb72-842e">
+          <entryLinks>
+            <entryLink import="true" name="Disorderly (Knights)" hidden="false" id="197c-54b4-f6de-ab0d" type="selectionEntry" targetId="7208-d3ed-87c2-4047">
+              <modifiers>
+                <modifier type="decrement" value="2" field="ecfa-8486-4f6c-c249">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="unit" childId="7b8d-8405-0e74-9f46" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Fractious (Knights)" hidden="false" id="8080-46db-70ff-e48e" type="selectionEntry" targetId="5fc2-bdc2-b4ab-c1db">
+              <modifiers>
+                <modifier type="decrement" value="2" field="ecfa-8486-4f6c-c249">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="unit" childId="7b8d-8405-0e74-9f46" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Humility (Knights)" hidden="false" id="512f-7188-10ba-12e2" type="selectionEntry" targetId="f4bc-df88-4c01-9477">
+              <modifiers>
+                <modifier type="decrement" value="1" field="ecfa-8486-4f6c-c249">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="unit" childId="7b8d-8405-0e74-9f46" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Jinxed (Knights)" hidden="false" id="ae8f-fe19-7a40-659e" type="selectionEntry" targetId="852a-afa0-2b6b-d4cc">
+              <modifiers>
+                <modifier type="decrement" value="2" field="ecfa-8486-4f6c-c249">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="unit" childId="7b8d-8405-0e74-9f46" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Pariahs (Knights)" hidden="false" id="c6e1-a509-1f26-0d22" type="selectionEntry" targetId="449a-f003-3ec1-2d5c">
+              <modifiers>
+                <modifier type="decrement" value="1" field="ecfa-8486-4f6c-c249">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="unit" childId="7b8d-8405-0e74-9f46" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Pride (Knights)" hidden="false" id="178c-859e-1db0-d5bf" type="selectionEntry" targetId="e735-7ffa-fb7f-d62a">
+              <modifiers>
+                <modifier type="decrement" value="2" field="ecfa-8486-4f6c-c249">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="unit" childId="7b8d-8405-0e74-9f46" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Recklessness (Knights)" hidden="false" id="841c-deac-aaaf-b1e3" type="selectionEntry" targetId="ee81-952b-d0ba-fc8a">
+              <modifiers>
+                <modifier type="decrement" value="2" field="ecfa-8486-4f6c-c249">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="unit" childId="7b8d-8405-0e74-9f46" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f59d-3b8e-2eb4-384c" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="f8f7-dd62-ac1a-bca1" includeChildSelections="false"/>
+      </constraints>
+      <comment>GRAND TEMPLAR -</comment>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="7e1a-728d-7c04-6dc8" name="State Magic Banners" hidden="true" collective="false" import="true">
@@ -6075,7 +6240,6 @@ Makes sense to allow it with the &quot;other&quot; Reiksguard, but it&apos;s not
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Custom Knightly Order (WD#310(UK)" id="d27b-f764-4a4e-f9a1" hidden="false"/>
     <selectionEntryGroup name="Signature Weapon" id="7195-9f86-b364-0a4f" hidden="false">
       <entryLinks>
         <entryLink import="true" name="Cavalry hammer " hidden="false" id="5686-cb97-9dcc-34fe" type="selectionEntry" targetId="9c55-fbdf-3b4c-f808">
@@ -6137,6 +6301,204 @@ Makes sense to allow it with the &quot;other&quot; Reiksguard, but it&apos;s not
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ecdd-8e84-6a0e-c90b" includeChildSelections="false"/>
       </constraints>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Knightly Orders (WD#310(UK))" id="7059-6d2b-6ed3-3527" hidden="false">
+      <comment>GRAND TEMPLAR - WD#310(UK)</comment>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1f94-bceb-13ee-f93d" includeChildSelections="false"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Knights Griffon" hidden="true" id="fedf-98ee-e6b0-7a25" type="selectionEntry" targetId="2eb1-3844-71d9-22ab">
+          <modifiers>
+            <modifier type="decrement" value="1" field="ecfa-8486-4f6c-c249">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="7b8d-8405-0e74-9f46" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="2eb1-3844-71d9-22ab" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Order of the Gold Lion" hidden="true" id="1452-e783-6a0e-82a4" type="selectionEntry" targetId="c239-fa50-4cfc-f238">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="c239-fa50-4cfc-f238" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Order of the Black Bear" hidden="true" id="56ba-e158-899d-bec7" type="selectionEntry" targetId="cf1a-543c-feed-d458">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="cf1a-543c-feed-d458" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Grand Order of the Reiksguard" hidden="true" id="113d-9e21-ab6b-f5f7" type="selectionEntry" targetId="fadf-e269-2309-035c">
+          <modifiers>
+            <modifier type="increment" value="3" field="ecfa-8486-4f6c-c249">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="7b8d-8405-0e74-9f46" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="fadf-e269-2309-035c" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Templars of the Everlasting Light" hidden="true" id="da67-4de7-2c4c-b035" type="selectionEntry" targetId="8801-735a-084c-43b5">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="8801-735a-084c-43b5" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Order of the Blazing Sun" hidden="true" id="4b69-a5ba-f18b-32ea" type="selectionEntry" targetId="27de-d9a5-19f0-eba6">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="27de-d9a5-19f0-eba6" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Knights Panther" hidden="true" id="7fa8-a186-dc1b-6a43" type="selectionEntry" targetId="7ed6-2858-667c-4d92">
+          <modifiers>
+            <modifier type="increment" value="1" field="ecfa-8486-4f6c-c249">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="7b8d-8405-0e74-9f46" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="7ed6-2858-667c-4d92" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Knightly Orders (CJ#43)" id="0028-c66b-de73-8a32" hidden="false" page="11-14" publicationId="9eb2-99ea-4657-d0a4">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5881-22a7-c058-d56d" includeChildSelections="false"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Knights of the Blazing Sun" hidden="true" id="daa8-cc67-91f7-e5cc" type="selectionEntry" targetId="dfad-d77b-9156-e917">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="dfad-d77b-9156-e917" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="3"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Reiksguard Knights" hidden="true" id="9c5e-d990-4078-b958" type="selectionEntry" targetId="e474-301b-4e41-61c6">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="e474-301b-4e41-61c6" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="5"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Knights Panther" hidden="true" id="0386-1880-86c2-55d1" type="selectionEntry" targetId="5b35-830f-c55e-7210">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="5b35-830f-c55e-7210" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="8"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Knights Jaguar" hidden="true" id="7972-b1d7-a066-2319" type="selectionEntry" targetId="67d5-64ae-ed43-01ff">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="67d5-64ae-ed43-01ff" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="8"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Black Knights of Morr" hidden="true" id="9952-6ae1-ded4-e819" type="selectionEntry" targetId="e892-010a-dd61-f086">
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="6"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="e892-010a-dd61-f086" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Knights of the Twin-Tailed Orb" hidden="true" id="cda9-c038-d217-16d2" type="selectionEntry" targetId="c5d3-2192-223d-bb28">
+          <modifiers>
+            <modifier type="increment" value="12" field="ecfa-8486-4f6c-c249">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="7b8d-8405-0e74-9f46" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="unit" childId="6e1d-9e41-114f-8128" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="c5d3-2192-223d-bb28" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="10"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Sons of Mannan" hidden="true" id="7b35-a246-26c0-2866" type="selectionEntry" targetId="89cf-4b37-19e2-89d2">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="89cf-4b37-19e2-89d2" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="12"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Knights Griffon" hidden="true" id="00e2-01e1-4873-2dc3" type="selectionEntry" targetId="2685-64b9-8818-b0b1">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="2685-64b9-8818-b0b1" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="10"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+      <comment>GRAND TEMPLAR - CJ#43</comment>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
