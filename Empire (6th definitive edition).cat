@@ -1427,12 +1427,13 @@
           </entryLinks>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="self" shared="true" id="7944-27db-49ec-7bbd" includeChildSelections="false"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="21ca-c541-0b3d-6d4d" includeChildSelections="false"/>
           </constraints>
           <comment>+++++++++++++++++++++++</comment>
           <selectionEntryGroups>
             <selectionEntryGroup name="Knightly Orders (EM-AB)" id="3918-9830-1fe5-1e5d" hidden="false" sortIndex="1">
               <entryLinks>
-                <entryLink import="true" name="Knights of the White Wolf" hidden="false" id="8685-ea3d-4b1b-0f20" type="selectionEntry" targetId="32c2-bfbe-88b1-8425">
+                <entryLink import="true" name="0-1 Knights of the White Wolf" hidden="false" id="8685-ea3d-4b1b-0f20" type="selectionEntry" targetId="32c2-bfbe-88b1-8425">
                   <modifiers>
                     <modifier type="set" value="true" field="hidden">
                       <conditions>
@@ -1444,6 +1445,18 @@
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
+          <modifiers>
+            <modifier type="set" value="1" field="21ca-c541-0b3d-6d4d">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="802e-a5b7-4570-1e7e" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="cd47-f9b6-5a40-b4b2" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <constraints>
@@ -1581,6 +1594,133 @@
                     <condition type="lessThan" value="1" field="selections" scope="1d77-9e6e-a6ab-573f" childId="8229-6f9b-ba74-c239" shared="true" includeChildSelections="true"/>
                     <condition type="lessThan" value="1" field="selections" scope="self" childId="32c2-bfbe-88b1-8425" shared="true" includeChildSelections="true"/>
                   </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifierGroup>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="add" value="e94b-6a54-8779-cd60" field="category"/>
+            <modifier type="remove" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="set-primary" value="e94b-6a54-8779-cd60" field="category"/>
+          </modifiers>
+          <comment>Crusader Army (EM-AB, p.79)</comment>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="cd47-f9b6-5a40-b4b2" shared="true" includeChildSelections="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="9671-dac7-b4be-4230" shared="true" includeChildSelections="true"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="equalTo" value="1" field="selections" scope="force" childId="9f9b-5a33-9c07-93e6" shared="true" includeChildSelections="true">
+                              <comment>MAIN ORDER</comment>
+                            </condition>
+                            <condition type="lessThan" value="1" field="selections" scope="self" childId="32c2-bfbe-88b1-8425" shared="true" includeChildSelections="true">
+                              <comment>UNIT SELECTION</comment>
+                            </condition>
+                          </conditions>
+                          <comment>White Wolf (EM-AB)</comment>
+                        </conditionGroup>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="equalTo" value="1" field="selections" scope="force" childId="4366-93f8-b336-146c" shared="true" includeChildSelections="true">
+                              <comment>MAIN ORDER</comment>
+                            </condition>
+                            <condition type="lessThan" value="1" field="selections" scope="self" childId="e892-010a-dd61-f086" shared="true" includeChildSelections="true">
+                              <comment>UNIT SELECTION</comment>
+                            </condition>
+                          </conditions>
+                          <comment>Black Knights of Morr (CJ#43)</comment>
+                        </conditionGroup>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="equalTo" value="1" field="selections" scope="force" childId="fc45-fa4f-840d-66ec" shared="true" includeChildSelections="true">
+                              <comment>MAIN ORDER</comment>
+                            </condition>
+                            <condition type="lessThan" value="1" field="selections" scope="self" childId="67d5-64ae-ed43-01ff" shared="true" includeChildSelections="true">
+                              <comment>UNIT SELECTION</comment>
+                            </condition>
+                          </conditions>
+                          <comment>Knights Jaguar (CJ#43)</comment>
+                        </conditionGroup>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="equalTo" value="1" field="selections" scope="force" childId="af9c-e476-012e-e450" shared="true" includeChildSelections="true">
+                              <comment>MAIN ORDER</comment>
+                            </condition>
+                            <condition type="lessThan" value="1" field="selections" scope="self" childId="dcb0-92b7-0d14-21ee" shared="true" includeChildSelections="true">
+                              <comment>UNIT SELECTION</comment>
+                            </condition>
+                          </conditions>
+                          <comment>Knights Griffon (CJ#43)</comment>
+                        </conditionGroup>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="equalTo" value="1" field="selections" scope="force" childId="1eb2-f4af-f60e-2e5a" shared="true" includeChildSelections="true">
+                              <comment>MAIN ORDER</comment>
+                            </condition>
+                            <condition type="lessThan" value="1" field="selections" scope="self" childId="f711-222f-99ff-5e01" shared="true" includeChildSelections="true">
+                              <comment>UNIT SELECTION</comment>
+                            </condition>
+                          </conditions>
+                          <comment>Knights of the Blazing Sun (CJ#43)</comment>
+                        </conditionGroup>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="equalTo" value="1" field="selections" scope="force" childId="f989-81cb-eeba-bbea" shared="true" includeChildSelections="true">
+                              <comment>MAIN ORDER</comment>
+                            </condition>
+                            <condition type="lessThan" value="1" field="selections" scope="self" childId="c5d3-2192-223d-bb28" shared="true" includeChildSelections="true">
+                              <comment>UNIT SELECTION</comment>
+                            </condition>
+                          </conditions>
+                          <comment>Knights of the Twin-Tailed Orb (CJ#43)</comment>
+                        </conditionGroup>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="equalTo" value="1" field="selections" scope="force" childId="e13a-55e7-b685-b51f" shared="true" includeChildSelections="true">
+                              <comment>MAIN ORDER</comment>
+                            </condition>
+                            <condition type="lessThan" value="1" field="selections" scope="self" childId="e474-301b-4e41-61c6" shared="true" includeChildSelections="true">
+                              <comment>UNIT SELECTION</comment>
+                            </condition>
+                          </conditions>
+                          <comment>Reiksguard Knights (CJ#43)</comment>
+                        </conditionGroup>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="equalTo" value="1" field="selections" scope="force" childId="9ca4-8895-e8b7-50dc" shared="true" includeChildSelections="true">
+                              <comment>MAIN ORDER</comment>
+                            </condition>
+                            <condition type="lessThan" value="1" field="selections" scope="self" childId="4d61-5e19-b5b3-9e35" shared="true" includeChildSelections="true">
+                              <comment>UNIT SELECTION</comment>
+                            </condition>
+                          </conditions>
+                          <comment>Knights Panther (CJ#43)</comment>
+                        </conditionGroup>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="equalTo" value="1" field="selections" scope="force" childId="7b49-e753-dd0b-ebe9" shared="true" includeChildSelections="true">
+                              <comment>MAIN ORDER</comment>
+                            </condition>
+                            <condition type="lessThan" value="1" field="selections" scope="self" childId="5850-09ea-03d3-1fb8" shared="true" includeChildSelections="true">
+                              <comment>UNIT SELECTION</comment>
+                            </condition>
+                          </conditions>
+                          <comment>Sons of Mannan (CJ#43)</comment>
+                        </conditionGroup>
+                      </conditionGroups>
+                      <comment>Which order is Main?</comment>
+                    </conditionGroup>
+                  </conditionGroups>
+                  <comment>Main check wrapper</comment>
                 </conditionGroup>
               </conditionGroups>
             </conditionGroup>
@@ -4258,7 +4398,7 @@ Makes sense to allow it with the &quot;other&quot; Reiksguard, but it&apos;s not
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Main Knighly Order" hidden="true" id="19cb-f79c-e3d2-30b2">
+    <selectionEntry type="upgrade" import="true" name="Main Knightly Order of the Crusade" hidden="true" id="19cb-f79c-e3d2-30b2">
       <constraints>
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="936a-4e91-edba-6736" includeChildSelections="true"/>
         <constraint type="min" value="1" field="selections" scope="force" shared="true" id="36c8-b7c7-acd0-0fbe" includeChildSelections="true"/>
@@ -4266,6 +4406,115 @@ Makes sense to allow it with the &quot;other&quot; Reiksguard, but it&apos;s not
       <categoryLinks>
         <categoryLink name="Special list rules" hidden="false" id="3242-2cad-4b58-48be" targetId="32f1-197f-d719-a393" primary="true"/>
       </categoryLinks>
+      <rules>
+        <rule name="Main Knightly Order of the Crusade" id="fab2-6bc7-7538-9202" hidden="false" publicationId="b61c-34ec-3be0-1b38" page="79">
+          <description>Core units: Any number of units of Knight of one Order (could be White Wolves, only one unit of Knights of the Inner Circle).
+
+
+Select a Knightly Order as Main for Core choices, and Knights of different orders will move to Rare.
+
+
+Crusader Army (EM-AB, p.79)</description>
+        </rule>
+      </rules>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Knightly Order" id="9671-dac7-b4be-4230" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Custom Knightly Order (WD#310(UK)" hidden="false" id="4c5d-bea4-cc68-ac61" type="selectionEntry" targetId="0bd1-8b50-44e0-6fc7"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="self" shared="true" id="b2da-d0f2-aacb-6ce5" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4f88-1f56-578b-66a9" includeChildSelections="false"/>
+          </constraints>
+          <comment>MAIN ORDER OF THE LIST</comment>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Knightly Orders (EM-AB)" id="67e2-dacd-c9c2-ee29" hidden="false" sortIndex="1">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Knights of the White Wolf" hidden="false" id="9f9b-5a33-9c07-93e6" page="25" publicationId="b61c-34ec-3be0-1b38">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="19f1-8d2e-b1a7-f1f1" includeChildSelections="false"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink name="Cavalry hammer " id="38c2-9a21-b74f-bce1" hidden="false" type="rule" targetId="7833-9ec2-9012-935d"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                    <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+                  </costs>
+                  <comment>EM-AB</comment>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Knightly Orders (CJ#43)" id="642c-6119-9d6d-bc7c" hidden="false" page="11-14" publicationId="9eb2-99ea-4657-d0a4" sortIndex="2">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8106-568e-dbed-b558" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Knights of the Blazing Sun" hidden="false" id="1eb2-f4af-f60e-2e5a" type="selectionEntry" targetId="dfad-d77b-9156-e917">
+                  <costs>
+                    <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Reiksguard Knights" hidden="false" id="e13a-55e7-b685-b51f" type="selectionEntry" targetId="e474-301b-4e41-61c6">
+                  <costs>
+                    <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Knights Panther" hidden="false" id="9ca4-8895-e8b7-50dc" type="selectionEntry" targetId="5b35-830f-c55e-7210">
+                  <costs>
+                    <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Knights Jaguar" hidden="false" id="fc45-fa4f-840d-66ec" type="selectionEntry" targetId="67d5-64ae-ed43-01ff">
+                  <costs>
+                    <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Black Knights of Morr" hidden="false" id="4366-93f8-b336-146c" type="selectionEntry" targetId="e892-010a-dd61-f086">
+                  <costs>
+                    <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Knights of the Twin-Tailed Orb" hidden="false" id="f989-81cb-eeba-bbea" type="selectionEntry" targetId="c5d3-2192-223d-bb28">
+                  <costs>
+                    <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Sons of Mannan" hidden="false" id="7b49-e753-dd0b-ebe9" type="selectionEntry" targetId="89cf-4b37-19e2-89d2">
+                  <costs>
+                    <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Knights Griffon" hidden="false" id="af9c-e476-012e-e450" type="selectionEntry" targetId="2685-64b9-8818-b0b1">
+                  <costs>
+                    <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <comment>CJ#43</comment>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Knightly Orders (WD#310(UK))" id="8867-5a24-b11a-7319" hidden="false" sortIndex="3">
+              <comment>WD#310(UK)</comment>
+              <entryLinks>
+                <entryLink import="true" name="Knights Griffon" hidden="false" id="77f0-c250-2ea7-d390" type="selectionEntry" targetId="2eb1-3844-71d9-22ab"/>
+                <entryLink import="true" name="Order of the Gold Lion" hidden="false" id="7466-07a1-e62e-a214" type="selectionEntry" targetId="c239-fa50-4cfc-f238"/>
+                <entryLink import="true" name="Order of the Black Bear" hidden="false" id="07fa-ca6a-1f90-95a6" type="selectionEntry" targetId="cf1a-543c-feed-d458"/>
+                <entryLink import="true" name="Grand Order of the Reiksguard" hidden="false" id="c0bd-6813-ae64-e961" type="selectionEntry" targetId="fadf-e269-2309-035c"/>
+                <entryLink import="true" name="Templars of the Everlasting Light" hidden="false" id="5244-5cb5-ebbe-673b" type="selectionEntry" targetId="8801-735a-084c-43b5"/>
+                <entryLink import="true" name="Order of the Blazing Sun" hidden="false" id="f97b-e4f1-e861-6c56" type="selectionEntry" targetId="27de-d9a5-19f0-eba6"/>
+                <entryLink import="true" name="Knights Panther" hidden="false" id="fbfb-eb56-1bd1-b823" type="selectionEntry" targetId="7ed6-2858-667c-4d92"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="cd47-f9b6-5a40-b4b2" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
@@ -5992,14 +6241,24 @@ Makes sense to allow it with the &quot;other&quot; Reiksguard, but it&apos;s not
       <comment>EM-AB</comment>
       <modifiers>
         <modifier type="set" value="-1" field="3219-23f5-50e5-8903">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="802e-a5b7-4570-1e7e" shared="true" includeChildSelections="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="802e-a5b7-4570-1e7e" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="cd47-f9b6-5a40-b4b2" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
         <modifier type="set" value="Knights of the White Wolf" field="name">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="802e-a5b7-4570-1e7e" shared="true" includeChildSelections="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="cd47-f9b6-5a40-b4b2" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="802e-a5b7-4570-1e7e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
     </selectionEntry>
@@ -7520,7 +7779,6 @@ Units of Knights with this disadvantage never receive rank bonuses, nor do the
         <categoryLink name="Core" hidden="false" id="f4d3-26b4-726c-adc2" targetId="64bf-efb4-9978-26df" primary="false"/>
         <categoryLink name="Special" hidden="false" id="1d08-e3f1-ab7b-e379" targetId="43cc-fc3f-35a7-8d03" primary="false"/>
         <categoryLink name="Rare" hidden="false" id="f345-3fe7-2853-17c3" targetId="e94b-6a54-8779-cd60" primary="false"/>
-        <categoryLink name="Regiment of Renown" hidden="false" id="37bf-318a-d22b-2e9e" targetId="ee09-9a50-ad78-9c32"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
