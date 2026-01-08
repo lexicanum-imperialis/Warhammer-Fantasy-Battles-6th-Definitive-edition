@@ -1568,28 +1568,18 @@
             <modifier type="remove" value="64bf-efb4-9978-26df" field="category"/>
             <modifier type="set-primary" value="e94b-6a54-8779-cd60" field="category"/>
           </modifiers>
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="802e-a5b7-4570-1e7e" shared="true" includeChildSelections="true"/>
-          </conditions>
-          <comment>The Cult of Ulric (EM-AB, p.79)</comment>
-        </modifierGroup>
-        <modifierGroup type="and">
-          <modifiers>
-            <modifier type="add" value="64bf-efb4-9978-26df" field="category"/>
-            <modifier type="remove" value="e94b-6a54-8779-cd60" field="category"/>
-            <modifier type="set-primary" value="64bf-efb4-9978-26df" field="category"/>
-          </modifiers>
           <comment>The Cult of Ulric (EM-AB, p.79)</comment>
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="802e-a5b7-4570-1e7e" shared="true" includeChildSelections="true"/>
+                <condition type="greaterThan" value="0" field="selections" scope="1d77-9e6e-a6ab-573f" childId="06b5-8412-53d1-49ac" shared="true" includeChildSelections="true"/>
               </conditions>
               <conditionGroups>
-                <conditionGroup type="or">
+                <conditionGroup type="and">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="1d77-9e6e-a6ab-573f" childId="8229-6f9b-ba74-c239" shared="true" includeChildSelections="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="32c2-bfbe-88b1-8425" shared="true" includeChildSelections="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="1d77-9e6e-a6ab-573f" childId="8229-6f9b-ba74-c239" shared="true" includeChildSelections="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="self" childId="32c2-bfbe-88b1-8425" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -4267,6 +4257,15 @@ Makes sense to allow it with the &quot;other&quot; Reiksguard, but it&apos;s not
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Main Knighly Order" hidden="true" id="19cb-f79c-e3d2-30b2">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="936a-4e91-edba-6736" includeChildSelections="true"/>
+        <constraint type="min" value="1" field="selections" scope="force" shared="true" id="36c8-b7c7-acd0-0fbe" includeChildSelections="true"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink name="Special list rules" hidden="false" id="3242-2cad-4b58-48be" targetId="32f1-197f-d719-a393" primary="true"/>
+      </categoryLinks>
     </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
@@ -7488,7 +7487,7 @@ Units of Knights with this disadvantage never receive rank bonuses, nor do the
         </categoryLink>
       </categoryLinks>
     </forceEntry>
-    <forceEntry name="Cult of Ulric (EM-AB)" id="802e-a5b7-4570-1e7e" hidden="false" publicationId="b61c-34ec-3be0-1b38" page="78">
+    <forceEntry name="Cult of Ulric (EM-AB)" id="802e-a5b7-4570-1e7e" hidden="false" publicationId="b61c-34ec-3be0-1b38" page="79">
       <categoryLinks>
         <categoryLink name="Experimental rules" hidden="false" id="6b0d-182b-9fff-97c0" targetId="4fed-b911-e6e0-927b" primary="false"/>
         <categoryLink name="Special list rules" hidden="false" id="dab7-7a9b-5568-ec6e" targetId="32f1-197f-d719-a393"/>
@@ -7504,6 +7503,24 @@ Units of Knights with this disadvantage never receive rank bonuses, nor do the
         <categoryLink name="Special" hidden="false" id="8363-44af-9d45-54dd" targetId="43cc-fc3f-35a7-8d03" primary="false"/>
         <categoryLink name="Rare" hidden="false" id="c44f-3956-e54a-239f" targetId="e94b-6a54-8779-cd60" primary="false"/>
         <categoryLink name="Regiment of Renown" hidden="false" id="e3d9-582c-892e-e695" targetId="ee09-9a50-ad78-9c32"/>
+      </categoryLinks>
+    </forceEntry>
+    <forceEntry name="Crusader Army (EM-AB)" id="cd47-f9b6-5a40-b4b2" hidden="false" publicationId="b61c-34ec-3be0-1b38" page="79">
+      <categoryLinks>
+        <categoryLink name="Experimental rules" hidden="false" id="11f3-f3bf-d393-f17c" targetId="4fed-b911-e6e0-927b" primary="false"/>
+        <categoryLink name="Special list rules" hidden="false" id="b8a7-d9b1-0748-a303" targetId="32f1-197f-d719-a393"/>
+        <categoryLink name="Special Characters" hidden="false" id="ca38-84d0-2ede-bd5b" targetId="0644-bfcd-32c2-21dc" primary="false"/>
+        <categoryLink name="Characters" hidden="false" id="a490-075f-b63e-b4e8" targetId="7a1c-d611-c2dc-def1" primary="false">
+          <modifiers>
+            <modifier type="increment" value="1" field="75ab-5a0c-edbf-33d2"/>
+          </modifiers>
+        </categoryLink>
+        <categoryLink name="Lord" hidden="false" id="5c68-85aa-312a-b992" targetId="d024-d25b-a9b4-73b6" primary="false"/>
+        <categoryLink name="Heroes" hidden="false" id="be12-d595-301a-eb8f" targetId="c16b-f319-2c62-2c12" primary="false"/>
+        <categoryLink name="Core" hidden="false" id="f4d3-26b4-726c-adc2" targetId="64bf-efb4-9978-26df" primary="false"/>
+        <categoryLink name="Special" hidden="false" id="1d08-e3f1-ab7b-e379" targetId="43cc-fc3f-35a7-8d03" primary="false"/>
+        <categoryLink name="Rare" hidden="false" id="f345-3fe7-2853-17c3" targetId="e94b-6a54-8779-cd60" primary="false"/>
+        <categoryLink name="Regiment of Renown" hidden="false" id="37bf-318a-d22b-2e9e" targetId="ee09-9a50-ad78-9c32"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
