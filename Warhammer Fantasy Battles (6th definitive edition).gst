@@ -713,7 +713,6 @@
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
       <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d015-a1ba-41be-3ada" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="40c1-e17a-2dd8-fba6" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
