@@ -158,6 +158,7 @@ The main additions are:
 - [x] Knightly Orders rules from WD#310
 - [x] Custom Knightly Orders rules from WD#310
 - [x] Reiksguard on Foot (WD#310, p.120)
+- [x] Volkmar the Grim, Grand Theogonist (AN-02, p.60)
 
 ## Alternative lists included
 - [x] Clan Eshin (SKV-AB)
