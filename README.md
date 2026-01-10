@@ -159,6 +159,7 @@ The main additions are:
 - [x] Custom Knightly Orders rules from WD#310
 - [x] Reiksguard on Foot (WD#310, p.120)
 - [x] Volkmar the Grim, Grand Theogonist (AN-02, p.60)
+- [x] Emperor Karl Franz, Prince of Altdorf (SoC, p.42)
 
 ## Alternative lists included
 - [x] Clan Eshin (SKV-AB)

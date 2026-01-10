@@ -154,7 +154,11 @@
             <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">9</characteristic>
           </characteristics>
           <modifiers>
-            <modifier type="set" value="Burgomeister" field="name"/>
+            <modifier type="set" value="Burgomeister" field="name">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="d1ca-0d07-b9d2-0ff1" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </profile>
       </profiles>
@@ -2039,6 +2043,13 @@
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="d1ca-0d07-b9d2-0ff1" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="Reiksguard" field="name">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="d26d-dff7-d02a-a2f1" shared="true" includeChildSelections="true">
+                  <comment>Karl Franz (SoC) is the General</comment>
+                </condition>
+              </conditions>
+            </modifier>
           </modifiers>
         </infoLink>
         <infoLink id="c661-7b93-5c8a-b3cb" name="Stubborn" hidden="false" targetId="410a-0d06-9044-665e" type="rule">
@@ -2078,6 +2089,13 @@
             <modifier type="set" value="Teutogen Guard" field="name">
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="802e-a5b7-4570-1e7e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="Reiksguard on Foot" field="name">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="d26d-dff7-d02a-a2f1" shared="true" includeChildSelections="true">
+                  <comment>Karl Franz (SoC) is the General</comment>
+                </condition>
               </conditions>
             </modifier>
           </modifiers>
@@ -2123,6 +2141,23 @@
             <modifier type="add" value="64bf-efb4-9978-26df" field="category"/>
           </modifiers>
         </modifierGroup>
+        <modifierGroup type="and">
+          <comment>Karl Franz (SoC, p.42)</comment>
+          <modifiers>
+            <modifier type="set" value="-1" field="5b9e-6352-c309-b82a">
+              <comment>Karl Franz (SoC, p.42)</comment>
+            </modifier>
+            <modifier type="set" value="Reiksguard on Foot (SoC)" field="name"/>
+            <modifier type="add" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="remove" value="43cc-fc3f-35a7-8d03" field="category"/>
+            <modifier type="set-primary" value="64bf-efb4-9978-26df" field="category"/>
+          </modifiers>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="d26d-dff7-d02a-a2f1" shared="true" includeChildSelections="true">
+              <comment>Karl Franz (SoC) is the General</comment>
+            </condition>
+          </conditions>
+        </modifierGroup>
       </modifierGroups>
       <selectionEntryGroups>
         <selectionEntryGroup name="Command group" id="6992-4856-b517-07d9" hidden="false">
@@ -2167,9 +2202,17 @@
                       </conditions>
                     </modifier>
                     <modifier type="set" value="Champion" field="name">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="d1ca-0d07-b9d2-0ff1" shared="true" includeChildSelections="true"/>
-                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="d1ca-0d07-b9d2-0ff1" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="force" childId="d26d-dff7-d02a-a2f1" shared="true" includeChildSelections="true">
+                              <comment>Karl Franz (SoC) is the General</comment>
+                            </condition>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="802e-a5b7-4570-1e7e" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                   </modifiers>
                 </infoLink>
@@ -2186,6 +2229,9 @@
                       <conditions>
                         <condition type="instanceOf" value="1" field="selections" scope="force" childId="d1ca-0d07-b9d2-0ff1" shared="true" includeChildSelections="true"/>
                         <condition type="instanceOf" value="1" field="selections" scope="force" childId="802e-a5b7-4570-1e7e" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="d26d-dff7-d02a-a2f1" shared="true" includeChildSelections="true">
+                          <comment>Karl Franz (SoC) is the General</comment>
+                        </condition>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -4940,7 +4986,7 @@ Crusader Army (EM-AB, p.79)</description>
     </selectionEntry>
     <selectionEntry id="d785-6307-78f9-4fc3" name="Emperor Karl Franz, Prince of Altdorf" hidden="false" collective="false" import="true" type="unit" publicationId="d2ec-1dc7-f0d5-acbb" page="42">
       <profiles>
-        <profile id="d6be-72c1-4adb-b4e2" name="Elector Count" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
+        <profile id="d6be-72c1-4adb-b4e2" name="Karl Franz" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile" publicationId="d2ec-1dc7-f0d5-acbb" page="42">
           <characteristics>
             <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">4</characteristic>
             <characteristic name="WS" typeId="f95b-da01-0578-3bdc">5</characteristic>
@@ -4950,11 +4996,11 @@ Crusader Army (EM-AB, p.79)</description>
             <characteristic name="W" typeId="253a-9b00-4fde-8ac2">3</characteristic>
             <characteristic name="I" typeId="dfff-363e-f72a-5a59">5</characteristic>
             <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">3</characteristic>
-            <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">9</characteristic>
+            <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">10</characteristic>
+            <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">4+</characteristic>
+            <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">4+</characteristic>
+            <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
           </characteristics>
-          <modifiers>
-            <modifier type="set" value="Burgomeister" field="name"/>
-          </modifiers>
         </profile>
       </profiles>
       <categoryLinks>
@@ -4962,193 +5008,131 @@ Crusader Army (EM-AB, p.79)</description>
         <categoryLink id="6899-5318-310c-64f8" name="Characters" hidden="false" targetId="7a1c-d611-c2dc-def1" primary="false"/>
         <categoryLink name="Special Characters" hidden="false" id="9939-032b-b8c4-cd30" targetId="0644-bfcd-32c2-21dc" primary="true"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="cd3b-9f9a-5bde-6a3e" name="Magic Selection" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0393-a8a7-817d-2c36" type="max"/>
-            <constraint field="ecfa-8486-4f6c-c249" scope="parent" value="100" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dd11-1484-1206-78ae" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="2dda-2ceb-1dfb-4c9a" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="c071-eb48-3009-9ec1" type="selectionEntryGroup"/>
-            <entryLink id="b7a3-a017-a15b-c03e" name="Magic Armour" hidden="false" collective="false" import="true" targetId="4eac-745d-bb60-7cb6" type="selectionEntryGroup"/>
-            <entryLink id="545a-8860-23f5-e251" name="Talismans" hidden="false" collective="false" import="true" targetId="7faf-c609-0b44-9a28" type="selectionEntryGroup"/>
-            <entryLink id="83e3-912e-f40f-3063" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="e9a6-1d90-fba1-755e" type="selectionEntryGroup"/>
-          </entryLinks>
-          <costs>
-            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
-            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="8b54-3d3c-0929-57b9" name="Weapons" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="88c1-b9e6-4bec-8ef6" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="4c5b-f31a-7f2a-fa2d" name="Lance" hidden="false" collective="false" import="true" targetId="8649-8ac8-5a6f-fd8d" type="selectionEntry">
-              <costs>
-                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="6"/>
-              </costs>
-            </entryLink>
-            <entryLink id="058a-49b5-dd98-052f" name="Great Weapon" hidden="false" collective="false" import="true" targetId="1eb7-3f36-8cf7-e0ba" type="selectionEntry">
-              <costs>
-                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="6"/>
-              </costs>
-            </entryLink>
-            <entryLink id="a92b-4c61-36d9-4117" name="Pistol" hidden="false" collective="false" import="true" targetId="44f9-f44d-d693-84f8" type="selectionEntry">
-              <costs>
-                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="10"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="a153-7f87-e76a-1bad" name="Ranged Weapons" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9943-3af8-1802-11e1" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="b6d5-7ec2-323d-2037" name="Empire handgun" hidden="false" collective="false" import="true" targetId="5360-4088-4cb8-8081" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ef5e-f7c2-da81-afff" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="15"/>
-              </costs>
-            </entryLink>
-            <entryLink id="f3c7-c7d7-2bf0-98de" name="Long Bow" hidden="false" collective="false" import="true" targetId="f920-04d5-06c0-c2c9" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b298-7f06-108d-911a" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="15"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="ad82-0b58-bfd3-fc73" name="Armour" hidden="false" collective="false" import="true">
-          <modifiers>
-            <modifier type="increment" field="a314-70f2-00ab-71f6" value="1">
-              <conditions>
-                <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="50e2-1873-a856-03e7" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a314-70f2-00ab-71f6" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="47a7-955b-3b88-cc1e" name="Light Armour" hidden="false" collective="false" import="true" targetId="055f-8e4e-f170-35d2" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a81e-d71f-8d3f-23fd" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="3"/>
-              </costs>
-            </entryLink>
-            <entryLink id="feb1-1464-43ac-f7e1" name="Heavy Armour" hidden="false" collective="false" import="true" targetId="dde4-0ba8-7b3c-57b7" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a4eb-978a-3e48-5e4b" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="6"/>
-              </costs>
-            </entryLink>
-            <entryLink id="a30b-4a0c-f1a7-4de5" name="Full Plate Armour" hidden="false" collective="false" import="true" targetId="199f-b4b9-aaca-490f" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d35e-3da1-5df1-31c1" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="12"/>
-              </costs>
-            </entryLink>
-            <entryLink id="6881-375b-b249-72a5" name="Shield" hidden="false" collective="false" import="true" targetId="50e2-1873-a856-03e7" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f02-aa50-db0d-defa" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="3"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
         <selectionEntryGroup id="23d7-47f5-a825-e726" name="Mounts" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a772-4725-d2c9-b160" type="max"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e5c2-c6d2-eac4-fedf" includeChildSelections="false"/>
+          </constraints>
+          <comment>Deathclaw</comment>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Deathclaw (Griffon)" hidden="false" id="1cb6-c6b5-0ff9-b9f0" publicationId="b61c-34ec-3be0-1b38" page="18" collective="false">
+              <infoLinks>
+                <infoLink name="Terror" id="412c-67ee-34fe-817b" hidden="false" targetId="96f0-c50f-e59e-85fa" type="rule"/>
+                <infoLink name="Fly" id="06e8-14fa-01aa-449c" hidden="false" targetId="e930-0b71-2fef-3937" type="rule"/>
+                <infoLink name="Large Target" id="3ea4-5b63-c938-43b4" hidden="false" targetId="4463-1b38-aa4d-e03c" type="rule"/>
+                <infoLink name="Magical Resistance (3)" id="e5f0-3b91-c426-e07c" hidden="false" type="rule" targetId="7b4c-7e37-f46f-5955"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="225"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="Deathclaw (Griffon)" field="name"/>
+              </modifiers>
+              <profiles>
+                <profile name="Deathclaw" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="425e-7527-0f9c-3f36" page="42" publicationId="d2ec-1dc7-f0d5-acbb">
+                  <characteristics>
+                    <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">6</characteristic>
+                    <characteristic name="WS" typeId="f95b-da01-0578-3bdc">6</characteristic>
+                    <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">0</characteristic>
+                    <characteristic name="S" typeId="b690-4bc0-bb73-267b">5</characteristic>
+                    <characteristic name="T" typeId="8712-f56f-5b22-a720">5</characteristic>
+                    <characteristic name="W" typeId="253a-9b00-4fde-8ac2">4</characteristic>
+                    <characteristic name="I" typeId="dfff-363e-f72a-5a59">5</characteristic>
+                    <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">4</characteristic>
+                    <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">8</characteristic>
+                    <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+                    <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+                    <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">4</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule name="Deathclaw" id="d03b-a606-40f5-2a72" hidden="false" page="42" publicationId="d2ec-1dc7-f0d5-acbb">
+                  <description>Deathclaw automatically passes the Leadership test he needs to take if Karl Franz falls. In addition, Deathclaw will hate the character/unit that kills Karl Franz.</description>
+                </rule>
+              </rules>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bcb1-71ef-ffaa-4b25" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="63ec-9eb4-ee82-5175" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Equipment" id="3f2e-bfd4-9662-72ec" hidden="false">
+          <constraints>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="bd41-7715-ad99-4869" includeChildSelections="false"/>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="59ac-2718-6409-eecc" includeChildSelections="false"/>
           </constraints>
           <entryLinks>
-            <entryLink id="2c72-3c3a-8e47-9774" name="Empire Warhorse" hidden="false" collective="false" import="true" targetId="a1e3-7f97-5fc6-abaa" type="selectionEntry">
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="cc82-7eb7-85b0-44c2" collective="false" targetId="abdb-bbd0-41b2-5dff" type="selectionEntry">
               <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a106-7b2a-7b6d-7933" type="max"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aa22-c917-8fec-92c1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8883-ab57-9e9f-b8fc" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
-              <entryLinks>
-                <entryLink id="32c7-68a2-abbb-f265" name="Barding" hidden="false" collective="false" import="true" targetId="3211-d836-02f1-01d0" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c35-96b1-1007-24ca" type="max"/>
-                  </constraints>
-                  <costs>
-                    <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="6"/>
-                  </costs>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="15"/>
-              </costs>
             </entryLink>
-            <entryLink id="23f2-570c-85e1-4240" name="Pegasus" hidden="false" collective="false" import="true" targetId="a91e-b043-4fc5-bd37" type="selectionEntry">
+            <entryLink import="true" name="Ghal Maraz (Magic Weapon)" hidden="false" id="cb1e-ced7-ab1a-619f" type="selectionEntry" targetId="cfa7-30bb-a56b-3ee4"/>
+            <entryLink import="true" name="Reikland Runefang (Magic Weapon)" hidden="false" id="b189-a13a-583b-90be" type="selectionEntry" targetId="b25c-60fc-e024-38a2"/>
+            <entryLink import="true" name="Full Plate Armour" hidden="false" id="b881-a773-9c1a-d270" type="selectionEntry" targetId="199f-b4b9-aaca-490f">
               <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9898-4c87-07c1-f827" type="max"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="779e-a1ae-5cfd-dd24" includeChildSelections="false"/>
               </constraints>
-              <costs>
-                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="50"/>
-              </costs>
-            </entryLink>
-            <entryLink id="d12f-fc0b-0bd3-077c" name="Griffon" hidden="false" collective="false" import="true" targetId="0c82-fabb-3b47-4bf0" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b9a9-e78f-30b6-7c54" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="200"/>
-              </costs>
             </entryLink>
           </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="The Silver Seal (Talisman)" hidden="false" id="34a1-45fc-abe5-4d86">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" id="a834-504f-5eea-4cff" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="77f0-66b5-750e-7303" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8ce5-6524-650d-93c9" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="The Silver Seal (Talisman)" typeId="a89b-d5a3-7805-c44e" typeName="Magic Items" hidden="false" id="cee7-593b-bb54-4fd8">
+                  <characteristics>
+                    <characteristic name="Magic stuff" typeId="c7b5-c239-d6c1-0627">4+ Ward save.
+Magic Resistance (3).
+-1 to hit Karl Franz and Deathclaw in CC/shooting.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="cc82-7eb7-85b0-44c2" name="Hand Weapon" hidden="false" collective="false" import="true" targetId="abdb-bbd0-41b2-5dff" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aa22-c917-8fec-92c1" type="max"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8883-ab57-9e9f-b8fc" type="min"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="d26d-dff7-d02a-a2f1" name="General" hidden="false" collective="false" import="true" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="9d76-5d25-ce1d-1d12" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </entryLink>
+        <entryLink id="d26d-dff7-d02a-a2f1" name="General" hidden="false" collective="false" import="true" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="665"/>
+        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="440"/>
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
       <modifiers>
-        <modifier type="set" value="Burgomeister" field="name">
+        <modifier type="set" value="1" field="79cb-7119-ba4b-f281">
           <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="d1ca-0d07-b9d2-0ff1" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="cd47-f9b6-5a40-b4b2" shared="true" includeChildSelections="true"/>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="ce2b-8350-16e0-d488" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
+      <infoLinks>
+        <infoLink name="Magical Resistance (3)" id="1140-7bc9-cb88-0b2e" hidden="false" type="rule" targetId="7b4c-7e37-f46f-5955"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="force" shared="true" id="79cb-7119-ba4b-f281" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+      </constraints>
+      <rules>
+        <rule name="Leader of Men" id="4b1b-6bcb-279b-02eb" hidden="false" page="42" publicationId="d2ec-1dc7-f0d5-acbb">
+          <description>The presence and unflinching courage of the Emperor greatly raise the morale of his soldiers, inspiring the humblest of fighters to mighty acts of heroism. The Emperor is Immune to Panic.
+
+
+All friendly units within 18&quot; of the Emperor can always use his Leadership instead of their own (this replaces his normal General ability of passing on his Leadership within 12&quot;). In addition, all units using Karl Franz&apos;s Leadership can re-roll failed Psychology tests (remember that Break tests are not Psychology tests).</description>
+        </rule>
+        <rule name="The Reiksguard" id="97ca-2fb1-7cf5-2158" hidden="false" page="42" publicationId="d2ec-1dc7-f0d5-acbb">
+          <description>Karl Franz is protected by the knights of the Reiksguard and he commands the entire order. To represent this, up to half the Knightly Orders units in Karl Franz&apos;s army may be upgraded to Inner Circle, and Greatswords may be taken as a Core choice to represent Reiksguard Knights on foot.</description>
+        </rule>
+      </rules>
     </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
@@ -5451,6 +5435,16 @@ Crusader Army (EM-AB, p.79)</description>
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="-1" field="abd1-90ab-2b66-ecff">
+          <comment>Karl Franz (SoC, p.42)</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="d26d-dff7-d02a-a2f1" shared="true" includeChildSelections="true">
+              <comment>Karl Franz (SoC) is the General</comment>
+            </condition>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="564c-7f8a-80ed-b526" name="Runefang" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -7056,6 +7050,51 @@ Crusader Army (EM-AB, p.79)</description>
         <infoLink name="Blessing of Sigmar" id="16dd-6bd8-0d7b-40de" hidden="false" type="rule" targetId="10a3-1ca9-2174-db3a"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Ghal Maraz (Magic Weapon)" hidden="false" id="cfa7-30bb-a56b-3ee4" page="41" publicationId="d2ec-1dc7-f0d5-acbb">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="b847-f81f-9174-5fde" includeChildSelections="false"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Ghal Maraz" id="54e5-5c6f-e7e4-0b2a" hidden="false" type="rule" targetId="b513-6ce0-14ef-dd04"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Ghal Maraz" typeId="7889-42d9-70a0-3ea9" typeName="Weapon" hidden="false" id="17d8-c080-ba2e-91d1">
+          <characteristics>
+            <characteristic name="Range" typeId="3107-4d1e-9a51-6564">CC</characteristic>
+            <characteristic name="Strength" typeId="6fe4-1ebb-cb04-1378"/>
+            <characteristic name="Damage" typeId="6f2f-d612-52ef-1633">Each unsaved wound becomes D3 W</characteristic>
+            <characteristic name="Special Rules" typeId="a21a-cdc0-4b13-b236">+2 A, All hits wounds automatically</characteristic>
+            <characteristic name="Saves" typeId="8014-a8b2-15c3-da95">No armour saves allowed</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="180"/>
+        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Reikland Runefang (Magic Weapon)" hidden="false" id="b25c-60fc-e024-38a2" page="41" publicationId="d2ec-1dc7-f0d5-acbb">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="9cb6-ba8c-bf14-3882" includeChildSelections="false"/>
+      </constraints>
+      <profiles>
+        <profile name="Reikland Runefang" typeId="7889-42d9-70a0-3ea9" typeName="Weapon" hidden="false" id="d932-9986-ccfb-d6eb">
+          <characteristics>
+            <characteristic name="Range" typeId="3107-4d1e-9a51-6564">CC</characteristic>
+            <characteristic name="Strength" typeId="6fe4-1ebb-cb04-1378"/>
+            <characteristic name="Damage" typeId="6f2f-d612-52ef-1633"/>
+            <characteristic name="Special Rules" typeId="a21a-cdc0-4b13-b236">All hits wounds automatically</characteristic>
+            <characteristic name="Saves" typeId="8014-a8b2-15c3-da95">No armour saves allowed</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="100"/>
+        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="7e1a-728d-7c04-6dc8" name="State Magic Banners" hidden="true" collective="false" import="true">
@@ -8138,6 +8177,14 @@ This Order may not field Inner Circle Knights or Grand Masters.</description>
       <description>Knights: -2 points/model, Characters: Free
 Units of Knights with this disadvantage never receive rank bonuses, nor do they negate the rank bonus of an enemy.</description>
     </rule>
+    <rule name="Ghal Maraz" id="b513-6ce0-14ef-dd04" hidden="false" publicationId="d2ec-1dc7-f0d5-acbb" page="41">
+      <description>The Hammer of Sigmar grants its wielder +2 Attacks.
+
+Any hits wound automatically and no Armour saves are allowed. Each unsaved wound becomes D3 wounds.
+
+
+Note: During the events known as the Storm of Chaos, Ghal Maraz is wielded by the Exalted of Sigmar, Valten. If Valten is in the same army as Karl Franz, the Emperor must be armed with his Runefang.</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="b777-4b66-0f67-d717" name="Empire soldier" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
@@ -8756,6 +8803,7 @@ Units of Knights with this disadvantage never receive rank bonuses, nor do the
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="802e-a5b7-4570-1e7e" shared="true" includeChildSelections="true">
                   <comment>&quot;This appendix offers players some interesting alternatives to the basic Army list. It must be clear that the lists presented in this appendix are intended to be fun and are in no way as fair and balanced as the main list. Players should therefore agree with their opponent before the game if they can make use of these lists.&quot; (EM-AB, p.78)</comment>
                 </condition>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="6719-843e-9dca-c3b4" shared="true" includeChildSelections="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
