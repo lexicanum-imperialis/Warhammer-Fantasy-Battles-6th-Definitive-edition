@@ -40,8 +40,8 @@ The main additions are:
 - [x] ~Throt the Unclean (SKV-AB)~
 - [x] Throt the Unclean (CR-03)
 - [x] Warlord Queet, Head-Taker (CR-03)
-- [x] Snikch, Deathlord (WD#296(UK))
-- [x] Ghoritch, Castellan of HellPit (WD#311(UK))
+- [x] Snikch, Deathlord (WD#296-UK)
+- [x] Ghoritch, Castellan of HellPit (WD#311-UK)
 - [x] Ikit Claw, Chief Warlock (CJ#49)
 - [x] Lord Skrolk, Lord of Plague (CJ#49)
 - [x] Arch Plague Lord Nurglitch (LUS)
@@ -68,8 +68,8 @@ The main additions are:
 - [x] The Green Knight
 - [x] The Fay Enchantress
 - [x] Louen Leoncoeur, King of Bretonnia
-- [x] Sir Amalric of Gaudaron (WD#310(UK))
-- [x] Tristan and Jules (WD#303(UK))
+- [x] Sir Amalric of Gaudaron (WD#310-UK)
+- [x] Tristan and Jules (WD#303-UK)
 
 ### Chaos Dwarfs
 - [x] Orc Arrer Boyz
@@ -78,7 +78,7 @@ The main additions are:
 ### Lizarmen
 - [x] Kroq-gar
 - [x] Kroak
-- [x] Sacred Hosts rules (WD#300(UK))
+- [x] Sacred Hosts rules (WD#300-UK)
 - [x] Tehenhauin (LUS)
 - [x] Lord Mazdamundi (WD#290(USA))
 - [x] Nakai (webGW)
@@ -118,8 +118,8 @@ The main additions are:
 - [x] Crone Hellebron (WebGW)
 - [x] Kuoran (WebGW)
 - [x] Tullaris (WebGW)
-- [x] Patched to WD#287(UK) (all lists)
-- [x] Magic objects from 'Albion' Campaign (WD#263(UK))
+- [x] Patched to WD#287-UK (all lists)
+- [x] Magic objects from 'Albion' Campaign (WD#263-UK)
 - [x] Magic objects from 'Storm of Chaos' Campaign (SoC)
 - [x] Optional rules for upgrading the War Hydras (AN-02)
 
@@ -133,10 +133,10 @@ The main additions are:
 - [x] Borgut Facebeater (SoC, p.57)
 - [x] Grom the Paunch (CR-04, p.80-81)
 - [x] Azhag the Slaughterer (AN-02, p.81-82)
-- [x] Morglum Necksnapper (webGW(US) and T#25(ES))
-- [x] Gorfang Rotgut (webGW(US) and T#25(ES))
+- [x] Morglum Necksnapper (webGW-US and T#25(ES))
+- [x] Gorfang Rotgut (webGW-US and T#25(ES))
 - [x] Skarsnik and Gobbla (CJ#46, p.28)
-- [x] Badruk 'Eadsplitta (webGW(US))
+- [x] Badruk 'Eadsplitta (webGW-US)
 
 ### High Elves
 - [x] Imrik, Dragon Prince of Caledor (HE-AB, p.64)
@@ -147,8 +147,8 @@ The main additions are:
 - [x] Alarielle, the Everqueen (CR-03, p.114)
 - [x] Handmaidens of the Everqueen (CR-03, p.115)
 - [x] Korhil, Hunter Captain of the White Lions (CJ#48, p.12)
-- [x] Alith Anar, the Shadow King (webGW(ITA), p.27)
-- [x] Selafyn of the Annulii (WD#304(UK), p.112-113)
+- [x] Alith Anar, the Shadow King (webGW-ITA, p.27)
+- [x] Selafyn of the Annulii (WD#304-UK, p.112-113)
 
 ### The Empire
 - [x] Balthazar Gelt (EM-AB)
@@ -160,6 +160,8 @@ The main additions are:
 - [x] Reiksguard on Foot (WD#310, p.120)
 - [x] Volkmar the Grim, Grand Theogonist (AN-02, p.60)
 - [x] Emperor Karl Franz, Prince of Altdorf (SoC, p.42)
+- [x] Emperor Karl Franz, Prince of Altdorf (WD#288, p.61)
+- [x] Karl Franz, the Ruling Emperor (webGW-ES)
 
 ## Alternative lists included
 - [x] Clan Eshin (SKV-AB)
@@ -173,7 +175,7 @@ The main additions are:
 - [x] Errantry War (SoC)
 - [x] Raiding Army (DE-AB)
 - [x] City Garrison (AN-02)
-- [x] Watchtower Patrol (WK#259(UK))
+- [x] Watchtower Patrol (WK#259-UK)
 - [x] Cult of Slaanesh (SoC)
 - [x] Southlands (LM-AB)
 - [x] Red Host (LUS)
@@ -216,26 +218,26 @@ The main additions are:
 |LM-AB     |"Warhammer Armies: Lizardmen (6th Edition)"       |2003   |by Anthony Reynolds                   |
 |CJ#48     |Citadel Journal #48                               |2002   |by Alessio Cavatore, Rick Preistley and Nigel Stillman |
 |CJ#49     |Citadel Journal #49                               |2002   |by Alessio Cavatore and Andy Chambers |
-|WD#250(US)|White-Dwarf #250 US                               |2000-11|by Gav Thorpe                         |
-|WD#258(US)|White-Dwarf #258 US                               |2001-07|by Gav Thorpe                         |
-|WD#259(UK)|White-Dwarf #259 UK                               |       |                                      |
-|WD#296(UK)|White-Dwarf #296 UK                               |2004-08|by Anthony Reynolds                   |
-|WD#298(UK)|White-Dwarf #298 UK                               |       |                                      |
-|WD#300(UK)|White-Dwarf #300 UK                               |2004-12|by Andy Hoare                         |
-|WD#303(UK)|White-Dwarf #303 UK                               |       |                                      |
-|WD#310(UK)|White-Dwarf #310 UK                               |       |                                      |
-|WD#311(UK)|White-Dwarf #311 UK                               |2005-11|by Phil Kelly                         |
-|WD#317(UK)|White-Dwarf #317 UK                               |2006-05|by Gareth Hamilton                    |
-|WebGW(UK) |["Warpstone - A Skaven civil war scenario"](http:/uk.games-workshop.com/warhammerworld/warhammer/skaven/SK-articles/warpstone-scenerio/)|2004-03-14 (consulted)|by Jonathan Green|
-|WebGW(US) |["Character - Ariel"](http://us.games-workshop.com/games/warhammer/woodelves/gaming/ariel/default.htm)     |2006-07 (consulted)| |
-|WebGW(US) |["Character - Skaw"](http:/us.games-workshop.com/games/warhammer/woodelves/gaming/skaw/default.htm)        |2006-07 (consulted)| |
-|WebGW(OZ) |["Giant Warriors of Khemri"](http://oz.games-workshop.com/news/oz/journal/assets/GiantWarriorsofKhemri.pdf)|2003-05 (consulted)|by Gav Thorpe|
-|WebGW(UK) |["Masters of the Druchii"](http://uk.games-workshop.com/darkelves/special-characters/)                     |2006-05 (consulted)||
-|WebGW(US) |["Lizardmen characters"](http:/us.games-workshop.com/games/warhammer/lizardmen/gaming/campaign/characters/)|2005-08 (consulted)||
-|WebGW(US) |[""](http://us.games-workshop.com/games/warhammer/orcs/gaming/special_characters/morglum.htm) | 2007-01 (consulted) |
-|WebGW(US) |[""](http://us.games-workshop.com/games/warhammer/orcs/gaming/special_characters/gorfang.htm) | 2007-01 (consulted) |
-|WebGW(US) |[""](http://us.games-workshop.com/games/warhammer/orcs/assets/badruk.pdf)                     | 2004-07 (consulted) |
-|WebWG(ITA)|[""](http:/it.games-workshop.com:80/doc/events/cw/cwfb2005_1.2.zip)                           | 2005-07 |
+|WD#250-US|White-Dwarf #250 US                               |2000-11|by Gav Thorpe                         |
+|WD#258-US|White-Dwarf #258 US                               |2001-07|by Gav Thorpe                         |
+|WD#259-UK|White-Dwarf #259 UK                               |       |                                      |
+|WD#296-UK|White-Dwarf #296 UK                               |2004-08|by Anthony Reynolds                   |
+|WD#298-UK|White-Dwarf #298 UK                               |       |                                      |
+|WD#300-UK|White-Dwarf #300 UK                               |2004-12|by Andy Hoare                         |
+|WD#303-UK|White-Dwarf #303 UK                               |       |                                      |
+|WD#310-UK|White-Dwarf #310 UK                               |       |                                      |
+|WD#311-UK|White-Dwarf #311 UK                               |2005-11|by Phil Kelly                         |
+|WD#317-UK|White-Dwarf #317 UK                               |2006-05|by Gareth Hamilton                    |
+|WebGW-UK |["Warpstone - A Skaven civil war scenario"](http:/uk.games-workshop.com/warhammerworld/warhammer/skaven/SK-articles/warpstone-scenerio/)|2004-03-14 (consulted)|by Jonathan Green|
+|WebGW-US |["Character - Ariel"](http://us.games-workshop.com/games/warhammer/woodelves/gaming/ariel/default.htm)     |2006-07 (consulted)| |
+|WebGW-US |["Character - Skaw"](http:/us.games-workshop.com/games/warhammer/woodelves/gaming/skaw/default.htm)        |2006-07 (consulted)| |
+|WebGW-OZ |["Giant Warriors of Khemri"](http://oz.games-workshop.com/news/oz/journal/assets/GiantWarriorsofKhemri.pdf)|2003-05 (consulted)|by Gav Thorpe|
+|WebGW-UK |["Masters of the Druchii"](http://uk.games-workshop.com/darkelves/special-characters/)                     |2006-05 (consulted)||
+|WebGW-US |["Lizardmen characters"](http:/us.games-workshop.com/games/warhammer/lizardmen/gaming/campaign/characters/)|2005-08 (consulted)||
+|WebGW-US |[""](http://us.games-workshop.com/games/warhammer/orcs/gaming/special_characters/morglum.htm) | 2007-01 (consulted) |
+|WebGW-US |[""](http://us.games-workshop.com/games/warhammer/orcs/gaming/special_characters/gorfang.htm) | 2007-01 (consulted) |
+|WebGW-US |[""](http://us.games-workshop.com/games/warhammer/orcs/assets/badruk.pdf)                     | 2004-07 (consulted) |
+|WebWG-ITA|[""](http:/it.games-workshop.com:80/doc/events/cw/cwfb2005_1.2.zip)                           | 2005-07 |
 ## Acknowledge and gratitudes
 I want to thank first to the team from [Las _Tablillas Sagradas_](https://lastablillassagradas.blogspot.com/), who made their fabulous _Warhammer Compendium_ that has inspired this whole project. Special mention to Antonio, who possess the knowledge of Tzeentch and the wisdom of Teclis.
 
