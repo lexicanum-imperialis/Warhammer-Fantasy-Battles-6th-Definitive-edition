@@ -195,6 +195,7 @@ The main additions are:
 - [x] Sigmarite Army (EM-AB, p.79)
 - [x] Marienburger Mercenary Army (EM-AB, p.79)
 - [x] Cult of Ulric (EM-AB, p.79)
+- [x] Cult of Ulric (CR-04, p.2-13)
 - [x] Crusader Army (EM-AB, p.79)
 
 ## Sources consulted
