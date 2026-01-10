@@ -15,7 +15,7 @@
   </costTypes>
   <profileTypes>
     <profileType id="a54a-7f00-29bf-12b1" name="Profile">
-      <comment>Unit Strenght. From official rulebooks, supplements and the Base Size and Unit Strenght Card Reference from WD-286(UK)</comment>
+      <comment>Unit Strenght. From official rulebooks, supplements and the Base Size and Unit Strenght Card Reference from WD-286-UK</comment>
       <characteristicTypes>
         <characteristicType id="0e92-d038-82bf-fb41" name="Mv"/>
         <characteristicType id="f95b-da01-0578-3bdc" name="WS"/>

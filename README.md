@@ -133,8 +133,8 @@ The main additions are:
 - [x] Borgut Facebeater (SoC, p.57)
 - [x] Grom the Paunch (CR-04, p.80-81)
 - [x] Azhag the Slaughterer (AN-02, p.81-82)
-- [x] Morglum Necksnapper (webGW-US and T#25(ES))
-- [x] Gorfang Rotgut (webGW-US and T#25(ES))
+- [x] Morglum Necksnapper (webGW-US and T#25-ES)
+- [x] Gorfang Rotgut (webGW-US and T#25-ES)
 - [x] Skarsnik and Gobbla (CJ#46, p.28)
 - [x] Badruk 'Eadsplitta (webGW-US)
 

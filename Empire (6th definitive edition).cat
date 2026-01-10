@@ -4,9 +4,9 @@
   <publications>
     <publication id="b61c-34ec-3be0-1b38" name="EM-AB" shortName="Warhammer Armies: The Empire (6th Edition)" publisher="by Alessio Cavatore" publicationDate="2000-10"/>
     <publication name="CJ#43" id="9eb2-99ea-4657-d0a4" hidden="false" shortName="&quot;Empire Crisader Armies&quot; in Citadel Journal #43" publisher="by Alessio Cavatore"/>
-    <publication name="WD#310(UK)" id="79ed-409e-ecd3-8f13" hidden="false" shortName="in White-Dwarf #310 UK, p.116-122" publicationDate="2005-10" publisher="by Mat Ward"/>
-    <publication name="WebGW(ES)" id="a5f9-2079-90fd-253e" hidden="false" publisherUrl="http:/www.games-workshop.es/warhammer/imperio/adicional/karl.asp" publicationDate="2006-01 (consulted)" shortName="Karl Franz - The Ruling Emperor"/>
-    <publication name="WD#288(UK)" id="a1ae-b874-5b04-6cce" hidden="false" shortName="&quot;The Chosen of Sigmar&quot; in White-Dwarf #288 UK, p.60-63" publicationDate="2003-12" publisher="by Gav Thorpe"/>
+    <publication name="WD#310-UK" id="79ed-409e-ecd3-8f13" hidden="false" shortName="in White-Dwarf #310 UK, p.116-122" publicationDate="2005-10" publisher="by Mat Ward"/>
+    <publication name="WebGW-ES" id="a5f9-2079-90fd-253e" hidden="false" publisherUrl="http:/www.games-workshop.es/warhammer/imperio/adicional/karl.asp" publicationDate="2006-01 (consulted)" shortName="Karl Franz - The Ruling Emperor"/>
+    <publication name="WD#288-UK" id="a1ae-b874-5b04-6cce" hidden="false" shortName="&quot;The Chosen of Sigmar&quot; in White-Dwarf #288 UK, p.60-63" publicationDate="2003-12" publisher="by Gav Thorpe"/>
   </publications>
   <categoryEntries>
     <categoryEntry id="03f5-490b-d79d-08a2" name="Knight  of Inner Circle" hidden="false">
@@ -1479,8 +1479,8 @@
             <entryLink import="true" name="Knightly Orders (CJ#43)" hidden="false" id="3d6b-e7e1-9c78-28a3" type="selectionEntryGroup" targetId="d454-fa90-afa7-fa48" sortIndex="2">
               <comment>CJ#43</comment>
             </entryLink>
-            <entryLink import="true" name="Knightly Orders (WD#310(UK))" hidden="false" id="6719-843e-9dca-c3b4" type="selectionEntryGroup" targetId="4dfe-f8e3-0e1b-e859" sortIndex="3"/>
-            <entryLink import="true" name="Custom Knightly Order (WD#310(UK)" hidden="false" id="e628-04ab-0a07-b37c" type="selectionEntry" targetId="0bd1-8b50-44e0-6fc7"/>
+            <entryLink import="true" name="Knightly Orders (WD#310-UK)" hidden="false" id="6719-843e-9dca-c3b4" type="selectionEntryGroup" targetId="4dfe-f8e3-0e1b-e859" sortIndex="3"/>
+            <entryLink import="true" name="Custom Knightly Order (WD#310-UK" hidden="false" id="e628-04ab-0a07-b37c" type="selectionEntry" targetId="0bd1-8b50-44e0-6fc7"/>
           </entryLinks>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="self" shared="true" id="7944-27db-49ec-7bbd" includeChildSelections="false"/>
@@ -2046,11 +2046,18 @@
               </conditions>
             </modifier>
             <modifier type="set" value="Reiksguard" field="name">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="d26d-dff7-d02a-a2f1" shared="true" includeChildSelections="true">
-                  <comment>Karl Franz (SoC) is the General</comment>
-                </condition>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="25c9-899c-e14f-16e0" shared="true" includeChildSelections="true">
+                      <comment>Karl Franz (WD) is the General</comment>
+                    </condition>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d26d-dff7-d02a-a2f1" shared="true" includeChildSelections="true">
+                      <comment>Karl Franz (SoC) is the General</comment>
+                    </condition>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </infoLink>
@@ -2154,11 +2161,18 @@
             <modifier type="remove" value="43cc-fc3f-35a7-8d03" field="category"/>
             <modifier type="set-primary" value="64bf-efb4-9978-26df" field="category"/>
           </modifiers>
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="d26d-dff7-d02a-a2f1" shared="true" includeChildSelections="true">
-              <comment>Karl Franz (SoC) is the General</comment>
-            </condition>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="25c9-899c-e14f-16e0" shared="true" includeChildSelections="true">
+                  <comment>Karl Franz (WD) is the General</comment>
+                </condition>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="d26d-dff7-d02a-a2f1" shared="true" includeChildSelections="true">
+                  <comment>Karl Franz (SoC) is the General</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifierGroup>
       </modifierGroups>
       <selectionEntryGroups>
@@ -2212,6 +2226,9 @@
                               <comment>Karl Franz (SoC) is the General</comment>
                             </condition>
                             <condition type="instanceOf" value="1" field="selections" scope="force" childId="802e-a5b7-4570-1e7e" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="force" childId="25c9-899c-e14f-16e0" shared="true" includeChildSelections="true">
+                              <comment>Karl Franz (WD) is the General</comment>
+                            </condition>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
@@ -2233,6 +2250,9 @@
                         <condition type="instanceOf" value="1" field="selections" scope="force" childId="802e-a5b7-4570-1e7e" shared="true" includeChildSelections="true"/>
                         <condition type="atLeast" value="1" field="selections" scope="force" childId="d26d-dff7-d02a-a2f1" shared="true" includeChildSelections="true">
                           <comment>Karl Franz (SoC) is the General</comment>
+                        </condition>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="25c9-899c-e14f-16e0" shared="true" includeChildSelections="true">
+                          <comment>Karl Franz (WD) is the General</comment>
                         </condition>
                       </conditions>
                     </conditionGroup>
@@ -2917,7 +2937,7 @@
             <entryLink import="true" name="Knightly Orders (CJ#43)" hidden="false" id="e20d-9b53-bc73-45cd" type="selectionEntryGroup" targetId="0028-c66b-de73-8a32">
               <comment>CJ#43</comment>
             </entryLink>
-            <entryLink import="true" name="Knightly Orders (WD#310(UK))" hidden="false" id="29cc-7184-aa01-dc85" type="selectionEntryGroup" targetId="7059-6d2b-6ed3-3527">
+            <entryLink import="true" name="Knightly Orders (WD#310-UK)" hidden="false" id="29cc-7184-aa01-dc85" type="selectionEntryGroup" targetId="7059-6d2b-6ed3-3527">
               <selectionEntryGroups>
                 <selectionEntryGroup name="Knightly Orders (EM-AB)" id="ef59-a7d3-a7d7-ec9c" hidden="true">
                   <entryLinks>
@@ -2933,7 +2953,7 @@
                 </selectionEntryGroup>
               </selectionEntryGroups>
             </entryLink>
-            <entryLink import="true" name="Custom Knightly Order (WD#310(UK)" hidden="true" id="7aee-75b1-2ead-25e7" type="selectionEntry" targetId="d96d-14b0-228e-3a86">
+            <entryLink import="true" name="Custom Knightly Order (WD#310-UK" hidden="true" id="7aee-75b1-2ead-25e7" type="selectionEntry" targetId="d96d-14b0-228e-3a86">
               <modifiers>
                 <modifier type="set" value="false" field="hidden">
                   <conditions>
@@ -4525,7 +4545,7 @@ Makes sense to allow it with the &quot;other&quot; Reiksguard, but it&apos;s not
           </conditions>
         </modifier>
       </modifiers>
-      <comment>WD#310(UK), only with Grand Order of the Reiksguard</comment>
+      <comment>WD#310-UK, only with Grand Order of the Reiksguard</comment>
       <modifierGroups>
         <modifierGroup type="and">
           <comment>The Emperor&apos;s Guard (EM-AB, p.78)</comment>
@@ -4661,7 +4681,7 @@ Crusader Army (EM-AB, p.79)</description>
       <selectionEntryGroups>
         <selectionEntryGroup name="Knightly Order" id="9671-dac7-b4be-4230" hidden="false">
           <entryLinks>
-            <entryLink import="true" name="Custom Knightly Order (WD#310(UK)" hidden="false" id="4c5d-bea4-cc68-ac61" type="selectionEntry" targetId="0bd1-8b50-44e0-6fc7"/>
+            <entryLink import="true" name="Custom Knightly Order (WD#310-UK" hidden="false" id="4c5d-bea4-cc68-ac61" type="selectionEntry" targetId="0bd1-8b50-44e0-6fc7"/>
           </entryLinks>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="self" shared="true" id="b2da-d0f2-aacb-6ce5" includeChildSelections="false"/>
@@ -4734,8 +4754,8 @@ Crusader Army (EM-AB, p.79)</description>
               </entryLinks>
               <comment>CJ#43</comment>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Knightly Orders (WD#310(UK))" id="8867-5a24-b11a-7319" hidden="false" sortIndex="3">
-              <comment>WD#310(UK)</comment>
+            <selectionEntryGroup name="Knightly Orders (WD#310-UK)" id="8867-5a24-b11a-7319" hidden="false" sortIndex="3">
+              <comment>WD#310-UK</comment>
               <entryLinks>
                 <entryLink import="true" name="Knights Griffon" hidden="false" id="77f0-c250-2ea7-d390" type="selectionEntry" targetId="2eb1-3844-71d9-22ab"/>
                 <entryLink import="true" name="Order of the Gold Lion" hidden="false" id="7466-07a1-e62e-a214" type="selectionEntry" targetId="c239-fa50-4cfc-f238"/>
@@ -5128,6 +5148,7 @@ Magic Resistance (3)
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dd2e-aed9-fd3a-1460" includeChildSelections="false"/>
           </constraints>
+          <comment>Karl Franz (SoC)</comment>
         </entryLink>
       </entryLinks>
       <costs>
@@ -5155,7 +5176,7 @@ All friendly units within 18&quot; of the Emperor can always use his Leadership 
         </rule>
       </rules>
     </selectionEntry>
-    <selectionEntry id="bf58-a05e-8ab6-c69d" name="Emperor Karl Franz, Prince of Altdorf (WD#288(UK))" hidden="false" collective="false" import="true" type="unit" publicationId="a1ae-b874-5b04-6cce" page="61">
+    <selectionEntry id="bf58-a05e-8ab6-c69d" name="Emperor Karl Franz, Prince of Altdorf (WD#288-UK)" hidden="false" collective="false" import="true" type="unit" publicationId="a1ae-b874-5b04-6cce" page="61">
       <profiles>
         <profile id="87b9-4461-5e6a-ea80" name="Karl Franz" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile" publicationId="a1ae-b874-5b04-6cce" page="61">
           <characteristics>
@@ -5277,7 +5298,9 @@ Magic Resistance (3)
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="25c9-899c-e14f-16e0" name="General" hidden="false" collective="false" import="true" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry"/>
+        <entryLink id="25c9-899c-e14f-16e0" name="General" hidden="false" collective="false" import="true" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry">
+          <comment>Karl Franz (WD)</comment>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="440"/>
@@ -5323,7 +5346,7 @@ All friendly units within 18&quot; of the Emperor can always use his Leadership 
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry id="75d7-bdb1-b746-3a66" name="Karl Franz, the Ruling Emperor (webGW(ES))" hidden="false" collective="false" import="true" type="unit" publicationId="a1ae-b874-5b04-6cce" page="61">
+    <selectionEntry id="75d7-bdb1-b746-3a66" name="Karl Franz, the Ruling Emperor (webGW-ES)" hidden="false" collective="false" import="true" type="unit" publicationId="a1ae-b874-5b04-6cce" page="61">
       <profiles>
         <profile id="a487-9aef-ff6c-d124" name="Karl Franz" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile" publicationId="a5f9-2079-90fd-253e" page="/imperio/adicional/karl.asp">
           <characteristics>
@@ -5916,11 +5939,18 @@ All friendly units within 18&quot; of the Emperor can always use his Leadership 
               </conditions>
             </modifier>
           </modifiers>
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="d26d-dff7-d02a-a2f1" shared="true" includeChildSelections="true">
-              <comment>Karl Franz (SoC) is the General</comment>
-            </condition>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="25c9-899c-e14f-16e0" shared="true" includeChildSelections="true">
+                  <comment>Karl Franz (WD) is the General</comment>
+                </condition>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="d26d-dff7-d02a-a2f1" shared="true" includeChildSelections="true">
+                  <comment>Karl Franz (SoC) is the General</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifierGroup>
       </modifierGroups>
     </selectionEntry>
@@ -6896,13 +6926,13 @@ All friendly units within 18&quot; of the Emperor can always use his Leadership 
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e629-be88-8d2a-4a3f" includeChildSelections="false"/>
       </constraints>
-      <comment>WD#310(UK)</comment>
+      <comment>WD#310-UK</comment>
       <infoLinks>
         <infoLink name="Wealthy" id="6710-521d-7d7b-872c" hidden="false" type="rule" targetId="4ecb-17fb-1a23-9ed5"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Order of the Blazing Sun" hidden="false" id="27de-d9a5-19f0-eba6">
-      <comment>WD#310(UK)</comment>
+      <comment>WD#310-UK</comment>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8bf8-9358-66f9-d99b" includeChildSelections="false"/>
       </constraints>
@@ -6919,10 +6949,10 @@ All friendly units within 18&quot; of the Emperor can always use his Leadership 
         <infoLink name="Jinxed" id="7229-277e-c2a2-43e3" hidden="false" type="rule" targetId="86d4-4f97-b708-a3b8"/>
         <infoLink name="Fearless" id="b59a-bfd8-7dfd-b746" hidden="false" type="rule" targetId="263b-f2ea-7045-79a4"/>
       </infoLinks>
-      <comment>WD#310(UK)</comment>
+      <comment>WD#310-UK</comment>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Grand Order of the Reiksguard" hidden="false" id="fadf-e269-2309-035c">
-      <comment>WD#310(UK)</comment>
+      <comment>WD#310-UK</comment>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3b12-8372-0b92-2525" includeChildSelections="false"/>
       </constraints>
@@ -6932,7 +6962,7 @@ All friendly units within 18&quot; of the Emperor can always use his Leadership 
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Order of the Black Bear" hidden="false" id="cf1a-543c-feed-d458">
-      <comment>WD#310(UK)</comment>
+      <comment>WD#310-UK</comment>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9339-b644-df57-1107" includeChildSelections="false"/>
       </constraints>
@@ -6942,7 +6972,7 @@ All friendly units within 18&quot; of the Emperor can always use his Leadership 
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Order of the Gold Lion" hidden="false" id="c239-fa50-4cfc-f238">
-      <comment>WD#310(UK)</comment>
+      <comment>WD#310-UK</comment>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ff74-0fc9-bd03-e520" includeChildSelections="false"/>
       </constraints>
@@ -6952,7 +6982,7 @@ All friendly units within 18&quot; of the Emperor can always use his Leadership 
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Knights Griffon" hidden="false" id="2eb1-3844-71d9-22ab">
-      <comment>WD#310(UK)</comment>
+      <comment>WD#310-UK</comment>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="588c-55f7-221a-bb69" includeChildSelections="false"/>
       </constraints>
@@ -6962,7 +6992,7 @@ All friendly units within 18&quot; of the Emperor can always use his Leadership 
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Blessed (Knights)" hidden="false" id="e252-623d-12ed-6efd">
-      <comment>WD#310(UK)</comment>
+      <comment>WD#310-UK</comment>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="407a-f9c7-b69d-9d28" includeChildSelections="false"/>
       </constraints>
@@ -6979,13 +7009,13 @@ All friendly units within 18&quot; of the Emperor can always use his Leadership 
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fd15-458b-1cea-a920" includeChildSelections="false"/>
       </constraints>
-      <comment>WD#310(UK)</comment>
+      <comment>WD#310-UK</comment>
       <infoLinks>
         <infoLink name="Disorderly" id="1a6c-7fbc-6ec6-acc8" hidden="false" type="rule" targetId="66de-7f8a-00a9-29ed"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Exemplars of Sigmar (Character)" hidden="false" id="114a-7085-9ece-3b4e">
-      <comment>WD#310(UK)</comment>
+      <comment>WD#310-UK</comment>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2428-08f3-265c-2829" includeChildSelections="false"/>
       </constraints>
@@ -6994,7 +7024,7 @@ All friendly units within 18&quot; of the Emperor can always use his Leadership 
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Fearless (Character)" hidden="false" id="cf75-7d24-c17e-e176">
-      <comment>WD#310(UK)</comment>
+      <comment>WD#310-UK</comment>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="23ea-47ea-0d66-da62" includeChildSelections="false"/>
       </constraints>
@@ -7003,7 +7033,7 @@ All friendly units within 18&quot; of the Emperor can always use his Leadership 
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Fractious (Character)" hidden="false" id="7a1b-6980-c309-2426">
-      <comment>WD#310(UK)</comment>
+      <comment>WD#310-UK</comment>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fa80-03c8-5519-e1ef" includeChildSelections="false"/>
       </constraints>
@@ -7012,7 +7042,7 @@ All friendly units within 18&quot; of the Emperor can always use his Leadership 
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Humility (Character)" hidden="false" id="9771-6807-dbae-c001">
-      <comment>WD#310(UK)</comment>
+      <comment>WD#310-UK</comment>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c8ba-4278-56d1-8472" includeChildSelections="false"/>
       </constraints>
@@ -7021,7 +7051,7 @@ All friendly units within 18&quot; of the Emperor can always use his Leadership 
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Jinxed (Character)" hidden="false" id="e2d2-d233-4b88-319a">
-      <comment>WD#310(UK)</comment>
+      <comment>WD#310-UK</comment>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="53e8-a0b1-dbd8-c9ea" includeChildSelections="false"/>
       </constraints>
@@ -7030,7 +7060,7 @@ All friendly units within 18&quot; of the Emperor can always use his Leadership 
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Pariahs (Character)" hidden="false" id="4899-d5f5-0aa1-5d5f">
-      <comment>WD#310(UK)</comment>
+      <comment>WD#310-UK</comment>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8391-5dd4-074e-11ef" includeChildSelections="false"/>
       </constraints>
@@ -7039,7 +7069,7 @@ All friendly units within 18&quot; of the Emperor can always use his Leadership 
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Pride (Character)" hidden="false" id="7c50-5941-d31d-8348">
-      <comment>WD#310(UK)</comment>
+      <comment>WD#310-UK</comment>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e2ed-30c2-fc58-8437" includeChildSelections="false"/>
       </constraints>
@@ -7048,7 +7078,7 @@ All friendly units within 18&quot; of the Emperor can always use his Leadership 
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Recklessness (Character)" hidden="false" id="9b09-1fba-d2a3-e216">
-      <comment>WD#310(UK)</comment>
+      <comment>WD#310-UK</comment>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1b94-c150-0933-b085" includeChildSelections="false"/>
       </constraints>
@@ -7057,7 +7087,7 @@ All friendly units within 18&quot; of the Emperor can always use his Leadership 
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Resolute (Character)" hidden="false" id="71a9-ebe0-e339-0566">
-      <comment>WD#310(UK)</comment>
+      <comment>WD#310-UK</comment>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a745-1da3-844c-9ac9" includeChildSelections="false"/>
       </constraints>
@@ -7066,7 +7096,7 @@ All friendly units within 18&quot; of the Emperor can always use his Leadership 
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Unquenchable Zeal (Character)" hidden="false" id="542d-f504-1dc3-3064">
-      <comment>WD#310(UK)</comment>
+      <comment>WD#310-UK</comment>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="60e4-b867-a18d-e420" includeChildSelections="false"/>
       </constraints>
@@ -7075,7 +7105,7 @@ All friendly units within 18&quot; of the Emperor can always use his Leadership 
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Wealthy (Character)" hidden="false" id="2d9e-16e5-c749-1091">
-      <comment>WD#310(UK)</comment>
+      <comment>WD#310-UK</comment>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8105-f89c-145c-9087" includeChildSelections="false"/>
       </constraints>
@@ -7084,7 +7114,7 @@ All friendly units within 18&quot; of the Emperor can always use his Leadership 
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Blessed (Character)" hidden="false" id="5a7d-0c2f-c246-964e">
-      <comment>WD#310(UK)</comment>
+      <comment>WD#310-UK</comment>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0895-d634-5901-2142" includeChildSelections="false"/>
       </constraints>
@@ -7101,13 +7131,13 @@ All friendly units within 18&quot; of the Emperor can always use his Leadership 
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c56d-7fc0-d038-fb07" includeChildSelections="false"/>
       </constraints>
-      <comment>WD#310(UK)</comment>
+      <comment>WD#310-UK</comment>
       <infoLinks>
         <infoLink name="Disorderly" id="2d55-4b6a-41d7-dea7" hidden="false" type="rule" targetId="66de-7f8a-00a9-29ed"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Exemplars of Sigmar (Knights)" hidden="false" id="8c35-c7e7-0a70-7a90">
-      <comment>WD#310(UK)</comment>
+      <comment>WD#310-UK</comment>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ee36-a6dc-84a1-51b7" includeChildSelections="false"/>
       </constraints>
@@ -7116,7 +7146,7 @@ All friendly units within 18&quot; of the Emperor can always use his Leadership 
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Fearless (Knights)" hidden="false" id="9ba1-0df4-965b-b58c">
-      <comment>WD#310(UK)</comment>
+      <comment>WD#310-UK</comment>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="db94-864d-f83c-5dde" includeChildSelections="false"/>
       </constraints>
@@ -7125,7 +7155,7 @@ All friendly units within 18&quot; of the Emperor can always use his Leadership 
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Fractious (Knights)" hidden="false" id="5fc2-bdc2-b4ab-c1db">
-      <comment>WD#310(UK)</comment>
+      <comment>WD#310-UK</comment>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8dc1-de25-a192-f03a" includeChildSelections="false"/>
       </constraints>
@@ -7134,7 +7164,7 @@ All friendly units within 18&quot; of the Emperor can always use his Leadership 
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Humility (Knights)" hidden="false" id="f4bc-df88-4c01-9477">
-      <comment>WD#310(UK)</comment>
+      <comment>WD#310-UK</comment>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8531-82a2-dc73-4321" includeChildSelections="false"/>
       </constraints>
@@ -7143,7 +7173,7 @@ All friendly units within 18&quot; of the Emperor can always use his Leadership 
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Jinxed (Knights)" hidden="false" id="852a-afa0-2b6b-d4cc">
-      <comment>WD#310(UK)</comment>
+      <comment>WD#310-UK</comment>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6f14-60a2-ef68-d792" includeChildSelections="false"/>
       </constraints>
@@ -7152,7 +7182,7 @@ All friendly units within 18&quot; of the Emperor can always use his Leadership 
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Pariahs (Knights)" hidden="false" id="449a-f003-3ec1-2d5c">
-      <comment>WD#310(UK)</comment>
+      <comment>WD#310-UK</comment>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aaa4-455a-a722-24a3" includeChildSelections="false"/>
       </constraints>
@@ -7161,7 +7191,7 @@ All friendly units within 18&quot; of the Emperor can always use his Leadership 
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Pride (Knights)" hidden="false" id="e735-7ffa-fb7f-d62a">
-      <comment>WD#310(UK)</comment>
+      <comment>WD#310-UK</comment>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="63c1-8860-4bce-d433" includeChildSelections="false"/>
       </constraints>
@@ -7170,7 +7200,7 @@ All friendly units within 18&quot; of the Emperor can always use his Leadership 
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Recklessness (Knights)" hidden="false" id="ee81-952b-d0ba-fc8a">
-      <comment>WD#310(UK)</comment>
+      <comment>WD#310-UK</comment>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8ce6-2d76-6149-71b5" includeChildSelections="false"/>
       </constraints>
@@ -7179,7 +7209,7 @@ All friendly units within 18&quot; of the Emperor can always use his Leadership 
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Resolute (Knights)" hidden="false" id="43cd-ae1d-e963-40cd">
-      <comment>WD#310(UK)</comment>
+      <comment>WD#310-UK</comment>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6a09-45ee-4b0a-b95a" includeChildSelections="false"/>
       </constraints>
@@ -7188,7 +7218,7 @@ All friendly units within 18&quot; of the Emperor can always use his Leadership 
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Unquenchable Zeal (Knights)" hidden="false" id="61ad-13d4-6e9a-eb67">
-      <comment>WD#310(UK)</comment>
+      <comment>WD#310-UK</comment>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f6e4-533b-f52e-f2f9" includeChildSelections="false"/>
       </constraints>
@@ -7197,7 +7227,7 @@ All friendly units within 18&quot; of the Emperor can always use his Leadership 
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Wealthy (Knights)" hidden="false" id="d77b-0cfd-1f44-5e33">
-      <comment>WD#310(UK)</comment>
+      <comment>WD#310-UK</comment>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="251c-b4c3-de83-a32c" includeChildSelections="false"/>
       </constraints>
@@ -7205,7 +7235,7 @@ All friendly units within 18&quot; of the Emperor can always use his Leadership 
         <infoLink name="Wealthy" id="e0ed-2a48-28e9-798a" hidden="false" type="rule" targetId="4ecb-17fb-1a23-9ed5"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Custom Knightly Order (WD#310(UK)" hidden="false" id="0bd1-8b50-44e0-6fc7">
+    <selectionEntry type="upgrade" import="true" name="Custom Knightly Order (WD#310-UK" hidden="false" id="0bd1-8b50-44e0-6fc7">
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Knightly advantages" hidden="false" id="e82b-32bf-6032-2d30">
           <entryLinks>
@@ -7386,7 +7416,7 @@ All friendly units within 18&quot; of the Emperor can always use his Leadership 
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Custom Knightly Order (WD#310(UK)" hidden="false" id="d96d-14b0-228e-3a86">
+    <selectionEntry type="upgrade" import="true" name="Custom Knightly Order (WD#310-UK" hidden="false" id="d96d-14b0-228e-3a86">
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Knightly advantages" hidden="false" id="9e15-4b01-6369-f11f">
           <entryLinks>
@@ -7939,8 +7969,8 @@ All friendly units within 18&quot; of the Emperor can always use his Leadership 
       </entryLinks>
       <comment>CJ#43</comment>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Knightly Orders (WD#310(UK))" id="4dfe-f8e3-0e1b-e859" hidden="false">
-      <comment>WD#310(UK)</comment>
+    <selectionEntryGroup name="Knightly Orders (WD#310-UK)" id="4dfe-f8e3-0e1b-e859" hidden="false">
+      <comment>WD#310-UK</comment>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8229-e22a-c17d-f16a" includeChildSelections="false"/>
       </constraints>
@@ -8040,8 +8070,8 @@ All friendly units within 18&quot; of the Emperor can always use his Leadership 
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ecdd-8e84-6a0e-c90b" includeChildSelections="false"/>
       </constraints>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Knightly Orders (WD#310(UK))" id="7059-6d2b-6ed3-3527" hidden="false">
-      <comment>GRAND TEMPLAR - WD#310(UK)</comment>
+    <selectionEntryGroup name="Knightly Orders (WD#310-UK)" id="7059-6d2b-6ed3-3527" hidden="false">
+      <comment>GRAND TEMPLAR - WD#310-UK</comment>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1f94-bceb-13ee-f93d" includeChildSelections="false"/>
       </constraints>
@@ -8597,67 +8627,67 @@ A unit of Knights Griffon may re-form at the beginning of the turn (as describe
       <description>The Black Knights of Morr are immune to the effects of Fear and Terror as described in the Warhammer Rulebook.</description>
     </rule>
     <rule name="Unquenchable Zeal" id="5aa1-6a46-598b-6553" hidden="false" page="117" publicationId="79ed-409e-ecd3-8f13">
-      <comment>&quot;Knightly advantages&quot;, from WD#310(UK), p.117</comment>
+      <comment>&quot;Knightly advantages&quot;, from WD#310-UK, p.117</comment>
       <description>Knights: 2 points/model, Characters: Free
 With this advantage, your Knightly units are always assumed to have a higher Unit Strength than their foes and always receive the +1 bonus for Outnumbering and will never be automatically broken by fear-causing foes.</description>
     </rule>
     <rule name="Resolute" id="74bb-20ef-56c1-19d7" hidden="false" page="117" publicationId="79ed-409e-ecd3-8f13">
-      <comment>&quot;Knightly advantages&quot;, from WD#310(UK), p.117</comment>
+      <comment>&quot;Knightly advantages&quot;, from WD#310-UK, p.117</comment>
       <description>Knights: 1 point/model, Characters: 5pts/model.
 They are Stubborn in the first round of every combat, but revert to their normal rules in subsequent rounds.</description>
     </rule>
     <rule name="Wealthy" id="4ecb-17fb-1a23-9ed5" hidden="false" page="117" publicationId="79ed-409e-ecd3-8f13">
-      <comment>&quot;Knightly advantages&quot;, from WD#310(UK), p.117</comment>
+      <comment>&quot;Knightly advantages&quot;, from WD#310-UK, p.117</comment>
       <description>Knights: 1 point/model, Characters: Free
 If you have chosen this advantage for your Order, up to half of your Knightly units (rounding up) may be upgraded to Inner Circle.</description>
     </rule>
     <rule name="Exemplars of Sigmar" id="2d0f-d9c8-7744-4364" hidden="false" page="117" publicationId="79ed-409e-ecd3-8f13">
-      <comment>&quot;Knightly advantages&quot;, from WD#310(UK), p.117</comment>
+      <comment>&quot;Knightly advantages&quot;, from WD#310-UK, p.117</comment>
       <description>Knights: 2 points/model, Characters: 10pts/model
 Any friendly units within 6&quot; of a member of this Knightly Order may re-roll any failed fear, terror or panic tests.</description>
     </rule>
     <rule name="Blessed" id="18b6-7216-7c38-d69e" hidden="false" page="117" publicationId="79ed-409e-ecd3-8f13">
-      <comment>&quot;Knightly advantages&quot;, from WD#310(UK), p.117</comment>
+      <comment>&quot;Knightly advantages&quot;, from WD#310-UK, p.117</comment>
       <description>Knights: 1 point/model, Characters: 5 pts/model
 Attacks made by members of this Knightly Order count as magical.</description>
     </rule>
     <rule name="Fearless" id="263b-f2ea-7045-79a4" hidden="false" page="117" publicationId="79ed-409e-ecd3-8f13">
-      <comment>&quot;Knightly advantages&quot;, from WD#310(UK), p.117</comment>
+      <comment>&quot;Knightly advantages&quot;, from WD#310-UK, p.117</comment>
       <description>Knights: 2 points/model, Characters: 10 pts/model
 Any Order with this advantage is immune to fear and terror.</description>
     </rule>
     <rule name="Jinxed" id="86d4-4f97-b708-a3b8" hidden="false" page="117" publicationId="79ed-409e-ecd3-8f13">
-      <comment>&quot;Knightly disadvantages&quot;, from WD#310(UK), p.117</comment>
+      <comment>&quot;Knightly disadvantages&quot;, from WD#310-UK, p.117</comment>
       <description>Knights: -2 points/model, Characters: -10 pts/model
 Once per game, your opponent can request each Knightly unit, or character, in your army to re-roll a single D6.</description>
     </rule>
     <rule name="Recklessness" id="868b-ead9-c5b0-81f8" hidden="false" page="117" publicationId="79ed-409e-ecd3-8f13">
-      <comment>&quot;Knightly disadvantages&quot;, from WD#310(UK), p.117</comment>
+      <comment>&quot;Knightly disadvantages&quot;, from WD#310-UK, p.117</comment>
       <description>Knights: -2 points/model, Characters: -10 pts/model
 If this disadvantage is chosen each Knightly unit must pass a Leadership test at the start of each Empire turn or move at full rate towards the nearest enemy, charging it if possible.</description>
     </rule>
     <rule name="Pariahs" id="c4fd-5296-9938-4c25" hidden="false" page="117" publicationId="79ed-409e-ecd3-8f13">
-      <comment>&quot;Knightly disadvantages&quot;, from WD#310(UK), p.117</comment>
+      <comment>&quot;Knightly disadvantages&quot;, from WD#310-UK, p.117</comment>
       <description>Knights: -1 point/model, Characters: -10 pts/model
  A Pariah Order may never use the Leadership of a character, nor may their Grand Master pass his Leadership onto non-Knightly units, even if he is the General of the army.</description>
     </rule>
     <rule name="Pride" id="248b-4b0a-ec14-e1df" hidden="false" page="117" publicationId="79ed-409e-ecd3-8f13">
-      <comment>&quot;Knightly disadvantages&quot;, from WD#310(UK), p.117</comment>
+      <comment>&quot;Knightly disadvantages&quot;, from WD#310-UK, p.117</comment>
       <description>Knights: -2 points/model, Characters: -10 pts/model
 Members of this Order may not flee from a charge and no character may refuse an issued challenge. In addition, they flee 2D6&quot;, rather than 3D6&quot;.</description>
     </rule>
     <rule name="Fractious" id="ae63-7275-284e-e8e1" hidden="false" page="117" publicationId="79ed-409e-ecd3-8f13">
-      <comment>&quot;Knightly disadvantages&quot;, from WD#310(UK), p.117</comment>
+      <comment>&quot;Knightly disadvantages&quot;, from WD#310-UK, p.117</comment>
       <description>Knights: -2 points/model, Characters: -5 pts/model
 If you select this disadvantage for your Order, roll a D6 for each of your Knightly units at the start of each Empire turn. On the roll of a &apos;1&apos; the unit may not move that turn.</description>
     </rule>
     <rule name="Humility" id="dca6-efc6-68ae-41d3" hidden="false" page="117" publicationId="79ed-409e-ecd3-8f13">
-      <comment>&quot;Knightly disadvantages&quot;, from WD#310(UK), p.117</comment>
+      <comment>&quot;Knightly disadvantages&quot;, from WD#310-UK, p.117</comment>
       <description>Knights: -1 point/model, Characters: Free
 This Order may not field Inner Circle Knights or Grand Masters.</description>
     </rule>
     <rule name="Disorderly" id="66de-7f8a-00a9-29ed" hidden="false" page="117" publicationId="79ed-409e-ecd3-8f13">
-      <comment>&quot;Knightly disadvantages&quot;, from WD#310(UK), p.117</comment>
+      <comment>&quot;Knightly disadvantages&quot;, from WD#310-UK, p.117</comment>
       <description>Knights: -2 points/model, Characters: Free
 Units of Knights with this disadvantage never receive rank bonuses, nor do they negate the rank bonus of an enemy.</description>
     </rule>
