@@ -604,6 +604,14 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="unit" childId="4e76-a459-9f69-a221" shared="true"/>
+          </conditions>
+          <comment>Cult of Ulric (CR-04)</comment>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="b22a-6be5-d4f9-7776" name="Staff of Sorcery" publicationId="315e-e3c4-08af-fd51" page="154" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
