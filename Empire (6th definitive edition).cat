@@ -13,6 +13,28 @@
       <constraints>
         <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="8e86-2566-cc80-a59f" type="max"/>
       </constraints>
+      <modifiers>
+        <modifier type="increment" value="1" field="8e86-2566-cc80-a59f">
+          <repeats>
+            <repeat value="2" repeats="1" field="selections" scope="force" childId="d77b-0cfd-1f44-5e33" shared="true" roundUp="false" includeChildSelections="true"/>
+          </repeats>
+        </modifier>
+        <modifier type="increment" value="1" field="8e86-2566-cc80-a59f">
+          <repeats>
+            <repeat value="2" repeats="1" field="selections" scope="force" childId="fadf-e269-2309-035c" shared="true" roundUp="false" includeChildSelections="true"/>
+            <repeat value="2" repeats="1" field="selections" scope="force" childId="e474-301b-4e41-61c6" shared="true" roundUp="false" includeChildSelections="true"/>
+          </repeats>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <comment>Karl Franz is the General (is included)</comment>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="d785-6307-78f9-4fc3" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="bf58-a05e-8ab6-c69d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </categoryEntry>
     <categoryEntry name="State troops" id="2067-05d1-55c9-f09f" hidden="false">
       <comment>State troops can be used as independent units, Parent units or Detachments (EM-AB, p.6)</comment>
@@ -540,15 +562,15 @@
           </conditions>
         </modifier>
         <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="cd47-f9b6-5a40-b4b2" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="d2eb-6fe3-7349-f03d" shared="true" includeChildSelections="true"/>
-          </conditions>
-          <comment>Cult of Ulric (CR-04)</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="cd47-f9b6-5a40-b4b2" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="d2eb-6fe3-7349-f03d" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="6b0d-2c9f-2d46-b330" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
     </selectionEntry>
@@ -1450,9 +1472,14 @@
           <comment>Crusader Army (EM-AB, p.79)</comment>
         </modifier>
         <modifier type="set" value="-1" field="6ab4-a498-bb59-3d63">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="d2eb-6fe3-7349-f03d" shared="true" includeChildSelections="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="6b0d-2c9f-2d46-b330" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="d2eb-6fe3-7349-f03d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
     </selectionEntry>
@@ -1716,7 +1743,7 @@
             <constraint field="ecfa-8486-4f6c-c249" scope="parent" value="50" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a93d-ae8b-5574-f4cb" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="d912-4946-e803-da32" name="Magic banners" hidden="false" collective="false" import="true" targetId="0624-aa91-f728-45b9" type="selectionEntryGroup"/>
+            <entryLink id="d912-4946-e803-da32" name="Magic Banners" hidden="false" collective="false" import="true" targetId="0624-aa91-f728-45b9" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="16"/>
@@ -1861,6 +1888,26 @@
                 <condition type="atLeast" value="1" field="selections" scope="parent" childId="8685-ea3d-4b1b-0f20" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
+            <modifier type="increment" value="1" field="abd1-90ab-2b66-ecff">
+              <repeats>
+                <repeat value="2" repeats="1" field="selections" scope="force" childId="d77b-0cfd-1f44-5e33" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" value="1" field="abd1-90ab-2b66-ecff">
+              <repeats>
+                <repeat value="2" repeats="1" field="selections" scope="force" childId="fadf-e269-2309-035c" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="2" repeats="1" field="selections" scope="force" childId="e474-301b-4e41-61c6" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <comment>Karl Franz is the General (is included)</comment>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d785-6307-78f9-4fc3" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="bf58-a05e-8ab6-c69d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5454-b1cf-abc3-042a" type="max"/>
@@ -1929,16 +1976,14 @@
           </conditions>
         </modifier>
         <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="d1ca-0d07-b9d2-0ff1" shared="true" includeChildSelections="true"/>
-          </conditions>
-          <comment>Marienburg Mercenary Army (EM-AB)</comment>
-        </modifier>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="d2eb-6fe3-7349-f03d" shared="true" includeChildSelections="true"/>
-          </conditions>
-          <comment>Cult of Ulric (CR-04)</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="d1ca-0d07-b9d2-0ff1" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="d2eb-6fe3-7349-f03d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <selectionEntryGroups>
@@ -1970,6 +2015,11 @@
                     <condition type="instanceOf" value="1" field="selections" scope="force" childId="d2eb-6fe3-7349-f03d" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="6b0d-2c9f-2d46-b330" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </entryLink>
           </entryLinks>
@@ -1999,6 +2049,13 @@
                   </constraints>
                 </entryLink>
               </entryLinks>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="6b0d-2c9f-2d46-b330" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <modifiers>
@@ -2369,6 +2426,9 @@
             </conditionGroup>
           </conditionGroups>
         </modifierGroup>
+        <modifierGroup type="and">
+          <comment>The Emperor&apos;s Guard (EM-AB, p.78)</comment>
+        </modifierGroup>
       </modifierGroups>
     </selectionEntry>
     <selectionEntry id="73e1-597e-1546-10f7" name="Knights Of the White Wolf" hidden="true" collective="false" import="true" type="unit">
@@ -2424,7 +2484,7 @@
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f9a-8bc8-34a1-9ec8" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="47ce-af68-306f-a572" name="Magic banners" hidden="false" collective="false" import="true" targetId="0624-aa91-f728-45b9" type="selectionEntryGroup">
+            <entryLink id="47ce-af68-306f-a572" name="Magic Banners" hidden="false" collective="false" import="true" targetId="0624-aa91-f728-45b9" type="selectionEntryGroup">
               <constraints>
                 <constraint field="ecfa-8486-4f6c-c249" scope="parent" value="50" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5ce7-aa08-05f5-b26f" type="max"/>
               </constraints>
@@ -2670,7 +2730,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="834a-0927-f289-48dc" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Magic banners" hidden="false" id="f3fb-a4e9-fe58-9fa0" collective="false" targetId="0624-aa91-f728-45b9" type="selectionEntryGroup">
+                <entryLink import="true" name="Magic Banners" hidden="false" id="f3fb-a4e9-fe58-9fa0" collective="false" targetId="0624-aa91-f728-45b9" type="selectionEntryGroup">
                   <constraints>
                     <constraint type="max" value="50" field="selections" scope="parent" shared="true" id="e14a-4db1-1952-1827" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
@@ -3683,10 +3743,15 @@
       </modifierGroups>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="d2eb-6fe3-7349-f03d" shared="true" includeChildSelections="true"/>
-          </conditions>
           <comment>Cult of Ulric (CR-04)</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="6b0d-2c9f-2d46-b330" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="d2eb-6fe3-7349-f03d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
     </selectionEntry>
@@ -4021,7 +4086,7 @@
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1919-41bf-7426-ce78" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="d938-67af-fe67-684c" name="Magic banners" hidden="false" collective="false" import="true" targetId="0624-aa91-f728-45b9" type="selectionEntryGroup"/>
+            <entryLink id="d938-67af-fe67-684c" name="Magic Banners" hidden="false" collective="false" import="true" targetId="0624-aa91-f728-45b9" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="25"/>
@@ -4229,10 +4294,15 @@
           </conditions>
         </modifier>
         <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="d2eb-6fe3-7349-f03d" shared="true" includeChildSelections="true"/>
-          </conditions>
           <comment>Cult of Ulric (CR-04)</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="6b0d-2c9f-2d46-b330" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="d2eb-6fe3-7349-f03d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
     </selectionEntry>
@@ -4348,21 +4418,16 @@
       </costs>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="fb55-f061-f6d9-9f27" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="802e-a5b7-4570-1e7e" shared="true" includeChildSelections="true"/>
-          </conditions>
-          <comment>Cult of Ulric</comment>
-        </modifier>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="d2eb-6fe3-7349-f03d" shared="true" includeChildSelections="true"/>
-          </conditions>
-          <comment>Cult of Ulric (CR-04)</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="6b0d-2c9f-2d46-b330" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="fb55-f061-f6d9-9f27" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="d2eb-6fe3-7349-f03d" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="802e-a5b7-4570-1e7e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
     </selectionEntry>
@@ -4890,7 +4955,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a204-5dcb-2643-5d56" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Magic banners" hidden="false" id="50a3-2193-8ff7-6cba" collective="false" targetId="0624-aa91-f728-45b9" type="selectionEntryGroup">
+                <entryLink import="true" name="Magic Banners" hidden="false" id="50a3-2193-8ff7-6cba" collective="false" targetId="0624-aa91-f728-45b9" type="selectionEntryGroup">
                   <constraints>
                     <constraint type="max" value="50" field="selections" scope="parent" shared="true" id="e128-edaf-3216-2487" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
@@ -5175,7 +5240,7 @@ Makes sense to allow it with the &quot;other&quot; Reiksguard, but it&apos;s not
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4bf3-d78e-ff82-4c69" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Magic banners" hidden="false" id="dec8-ad16-15a2-286b" collective="false" targetId="0624-aa91-f728-45b9" type="selectionEntryGroup">
+                <entryLink import="true" name="Magic Banners" hidden="false" id="dec8-ad16-15a2-286b" collective="false" targetId="0624-aa91-f728-45b9" type="selectionEntryGroup">
                   <constraints>
                     <constraint type="max" value="50" field="selections" scope="parent" shared="true" id="f4b7-9d36-5b6b-4ad8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
@@ -6332,7 +6397,7 @@ All friendly units within 18&quot; of the Emperor can always use his Leadership 
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7904-8dff-7377-b136" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Magic banners" hidden="false" id="0b9f-9901-3484-cd0b" collective="false" targetId="0624-aa91-f728-45b9" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Magic Banners" hidden="false" id="0b9f-9901-3484-cd0b" collective="false" targetId="0624-aa91-f728-45b9" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="25"/>
@@ -6346,9 +6411,14 @@ All friendly units within 18&quot; of the Emperor can always use his Leadership 
       </costs>
       <modifiers>
         <modifier type="set" value="false" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="d2eb-6fe3-7349-f03d" shared="true" includeChildSelections="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="6b0d-2c9f-2d46-b330" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="d2eb-6fe3-7349-f03d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <infoGroups>
@@ -6495,9 +6565,14 @@ All friendly units within 18&quot; of the Emperor can always use his Leadership 
       </costs>
       <modifiers>
         <modifier type="set" value="false" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="d2eb-6fe3-7349-f03d" shared="true" includeChildSelections="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="6b0d-2c9f-2d46-b330" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="d2eb-6fe3-7349-f03d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>
@@ -6817,9 +6892,14 @@ All friendly units within 18&quot; of the Emperor can always use his Leadership 
       </costs>
       <modifiers>
         <modifier type="set" value="false" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="d2eb-6fe3-7349-f03d" shared="true" includeChildSelections="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="6b0d-2c9f-2d46-b330" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="d2eb-6fe3-7349-f03d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <infoLinks>
@@ -7331,7 +7411,7 @@ All friendly units within 18&quot; of the Emperor can always use his Leadership 
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="65e9-d4cf-0b46-047f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Magic banners" hidden="false" id="53a7-4fca-bbd4-9d84" collective="false" targetId="0624-aa91-f728-45b9" type="selectionEntryGroup">
+                <entryLink import="true" name="Magic Banners" hidden="false" id="53a7-4fca-bbd4-9d84" collective="false" targetId="0624-aa91-f728-45b9" type="selectionEntryGroup">
                   <constraints>
                     <constraint type="max" value="50" field="selections" scope="parent" shared="true" id="74b3-f090-3d89-99ac" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
@@ -7859,7 +7939,7 @@ All friendly units within 18&quot; of the Emperor can always use his Leadership 
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0cda-8c44-bc6f-1e6a" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry id="2cbd-fee0-a336-0e5d" name="Knight of the Inner Circle" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="2cbd-fee0-a336-0e5d" name="Knights of the Inner Circle" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="abd1-90ab-2b66-ecff" type="max"/>
       </constraints>
@@ -8842,9 +8922,13 @@ All friendly units within 18&quot; of the Emperor can always use his Leadership 
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e629-be88-8d2a-4a3f" includeChildSelections="false"/>
       </constraints>
       <comment>WD#310(UK)</comment>
-      <infoLinks>
-        <infoLink name="Wealthy" id="6710-521d-7d7b-872c" hidden="false" type="rule" targetId="4ecb-17fb-1a23-9ed5"/>
-      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Wealthy (Knights)" hidden="false" id="39e6-77d2-1632-afd9" type="selectionEntry" targetId="d77b-0cfd-1f44-5e33">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fceb-b3b6-5d1f-23f4" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Order of the Blazing Sun" hidden="false" id="27de-d9a5-19f0-eba6">
       <comment>WD#310(UK)</comment>
@@ -8855,6 +8939,13 @@ All friendly units within 18&quot; of the Emperor can always use his Leadership 
         <infoLink name="Wealthy" id="ec91-ec41-249a-de18" hidden="false" type="rule" targetId="4ecb-17fb-1a23-9ed5"/>
         <infoLink name="Pariahs" id="003c-67db-92b7-0d30" hidden="false" type="rule" targetId="c4fd-5296-9938-4c25"/>
       </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Wealthy (Knights)" hidden="false" id="8662-fe56-38b3-5e0b" type="selectionEntry" targetId="d77b-0cfd-1f44-5e33">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c740-62ba-78f0-a803" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Templars of the Everlasting Light" hidden="false" id="8801-735a-084c-43b5">
       <constraints>
@@ -9147,7 +9238,7 @@ All friendly units within 18&quot; of the Emperor can always use his Leadership 
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="251c-b4c3-de83-a32c" includeChildSelections="false"/>
       </constraints>
       <infoLinks>
-        <infoLink name="Wealthy" id="e0ed-2a48-28e9-798a" hidden="false" type="rule" targetId="4ecb-17fb-1a23-9ed5"/>
+        <infoLink name="Wealthy" id="e695-0749-6150-0a5a" hidden="false" type="rule" targetId="4ecb-17fb-1a23-9ed5"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Custom Knightly Order (WD#310(UK)" hidden="false" id="0bd1-8b50-44e0-6fc7">
@@ -9321,7 +9412,7 @@ All friendly units within 18&quot; of the Emperor can always use his Leadership 
         </modifier>
       </modifiers>
     </selectionEntry>
-    <selectionEntry id="12c2-2826-c92f-4930" name="Knight of the Inner Circle (White Wolf)" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="12c2-2826-c92f-4930" name="Knights of the Inner Circle (White Wolf)" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="a3ff-4097-904b-d617" type="max"/>
       </constraints>
@@ -9597,7 +9688,7 @@ All friendly units within 18&quot; of the Emperor can always use his Leadership 
         <infoLink name="Ice Dagger(Talisman)" id="ff3a-4af6-efb0-bcc9" hidden="false" type="rule" targetId="2f3c-ac25-a701-928a"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry id="31f2-1ec1-5c7c-de5f" name="Knight of the Inner Circle (Teutogen Guard)" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="31f2-1ec1-5c7c-de5f" name="Knights of the Inner Circle (Teutogen Guard)" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="7b13-1b78-1cc9-b789" type="max"/>
       </constraints>
@@ -10147,6 +10238,11 @@ Wearer is immune to spells of the Lore of Light.</characteristic>
                 <condition type="equalTo" value="1" field="selections" scope="unit" childId="6e1d-9e41-114f-8128" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="6b0d-2c9f-2d46-b330" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <costs>
             <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
@@ -10168,6 +10264,11 @@ Wearer is immune to spells of the Lore of Light.</characteristic>
               </repeats>
               <conditions>
                 <condition type="equalTo" value="1" field="selections" scope="unit" childId="6e1d-9e41-114f-8128" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="6b0d-2c9f-2d46-b330" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -10193,10 +10294,33 @@ Wearer is immune to spells of the Lore of Light.</characteristic>
                 <condition type="equalTo" value="1" field="selections" scope="unit" childId="6e1d-9e41-114f-8128" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="1" field="7361-5b03-8534-4e60">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="6b0d-2c9f-2d46-b330" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="0" field="selections" scope="unit" childId="1396-882b-d841-bcbe" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="0" field="7361-5b03-8534-4e60">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="6b0d-2c9f-2d46-b330" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="1396-882b-d841-bcbe" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
           </modifiers>
           <costs>
             <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
           </costs>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="7361-5b03-8534-4e60" includeChildSelections="false"/>
+          </constraints>
         </entryLink>
         <entryLink import="true" name="Knights Jaguar" hidden="false" id="c6eb-54bd-7d9e-602d" type="selectionEntry" targetId="67d5-64ae-ed43-01ff">
           <modifiers>
@@ -10214,6 +10338,11 @@ Wearer is immune to spells of the Lore of Light.</characteristic>
               </repeats>
               <conditions>
                 <condition type="equalTo" value="1" field="selections" scope="unit" childId="6e1d-9e41-114f-8128" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="6b0d-2c9f-2d46-b330" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -10243,6 +10372,11 @@ Wearer is immune to spells of the Lore of Light.</characteristic>
               </conditions>
             </modifier>
             <modifier type="set" value="0" field="3658-92dd-1868-b6bf" scope="force"/>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="6b0d-2c9f-2d46-b330" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </entryLink>
         <entryLink import="true" name="Knights of the Twin-Tailed Orb" hidden="false" id="a16b-489c-929c-5c78" type="selectionEntry" targetId="c5d3-2192-223d-bb28">
@@ -10261,6 +10395,11 @@ Wearer is immune to spells of the Lore of Light.</characteristic>
               </repeats>
               <conditions>
                 <condition type="equalTo" value="1" field="selections" scope="unit" childId="6e1d-9e41-114f-8128" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="6b0d-2c9f-2d46-b330" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -10286,6 +10425,11 @@ Wearer is immune to spells of the Lore of Light.</characteristic>
                 <condition type="equalTo" value="1" field="selections" scope="unit" childId="6e1d-9e41-114f-8128" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="6b0d-2c9f-2d46-b330" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <costs>
             <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
@@ -10309,6 +10453,11 @@ Wearer is immune to spells of the Lore of Light.</characteristic>
                 <condition type="equalTo" value="1" field="selections" scope="unit" childId="6e1d-9e41-114f-8128" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="6b0d-2c9f-2d46-b330" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <costs>
             <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
@@ -10330,10 +10479,31 @@ Wearer is immune to spells of the Lore of Light.</characteristic>
                 <repeat value="1" repeats="1" field="selections" scope="unit" childId="7b8d-8405-0e74-9f46" shared="true" roundUp="false" includeChildSelections="true"/>
               </repeats>
             </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="6b0d-2c9f-2d46-b330" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Order of the Gold Lion" hidden="false" id="fbef-ab91-89b9-9205" type="selectionEntry" targetId="c239-fa50-4cfc-f238"/>
-        <entryLink import="true" name="Order of the Black Bear" hidden="false" id="178c-c2c1-c7b0-403e" type="selectionEntry" targetId="cf1a-543c-feed-d458"/>
+        <entryLink import="true" name="Order of the Gold Lion" hidden="false" id="fbef-ab91-89b9-9205" type="selectionEntry" targetId="c239-fa50-4cfc-f238">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="6b0d-2c9f-2d46-b330" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Order of the Black Bear" hidden="false" id="178c-c2c1-c7b0-403e" type="selectionEntry" targetId="cf1a-543c-feed-d458">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="6b0d-2c9f-2d46-b330" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
         <entryLink import="true" name="Grand Order of the Reiksguard" hidden="false" id="c9b6-d649-2517-db24" type="selectionEntry" targetId="fadf-e269-2309-035c">
           <modifiers>
             <modifier type="increment" value="3" field="ecfa-8486-4f6c-c249">
@@ -10341,10 +10511,31 @@ Wearer is immune to spells of the Lore of Light.</characteristic>
                 <repeat value="1" repeats="1" field="selections" scope="unit" childId="7b8d-8405-0e74-9f46" shared="true" roundUp="false" includeChildSelections="true"/>
               </repeats>
             </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="6b0d-2c9f-2d46-b330" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Templars of the Everlasting Light" hidden="false" id="1312-abc8-4aa5-113c" type="selectionEntry" targetId="8801-735a-084c-43b5"/>
-        <entryLink import="true" name="Order of the Blazing Sun" hidden="false" id="f657-4d6e-1f5e-cbc7" type="selectionEntry" targetId="27de-d9a5-19f0-eba6"/>
+        <entryLink import="true" name="Templars of the Everlasting Light" hidden="false" id="1312-abc8-4aa5-113c" type="selectionEntry" targetId="8801-735a-084c-43b5">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="6b0d-2c9f-2d46-b330" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Order of the Blazing Sun" hidden="false" id="f657-4d6e-1f5e-cbc7" type="selectionEntry" targetId="27de-d9a5-19f0-eba6">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="6b0d-2c9f-2d46-b330" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
         <entryLink import="true" name="Knights Panther" hidden="false" id="1396-882b-d841-bcbe" type="selectionEntry" targetId="7ed6-2858-667c-4d92">
           <modifiers>
             <modifier type="increment" value="1" field="ecfa-8486-4f6c-c249">
@@ -10352,7 +10543,30 @@ Wearer is immune to spells of the Lore of Light.</characteristic>
                 <repeat value="1" repeats="1" field="selections" scope="unit" childId="7b8d-8405-0e74-9f46" shared="true" roundUp="false" includeChildSelections="true"/>
               </repeats>
             </modifier>
+            <modifier type="set" value="1" field="35dd-3260-356d-1302">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="6b0d-2c9f-2d46-b330" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="0" field="selections" scope="unit" childId="4d61-5e19-b5b3-9e35" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="0" field="35dd-3260-356d-1302">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="6b0d-2c9f-2d46-b330" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="4d61-5e19-b5b3-9e35" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="35dd-3260-356d-1302" includeChildSelections="false"/>
+          </constraints>
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
@@ -10694,9 +10908,9 @@ Wearer is immune to spells of the Lore of Light.</characteristic>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8c20-3abb-d6ef-9e0c" type="max"/>
       </constraints>
       <entryLinks>
-        <entryLink import="true" name="Winter&apos;s Bite(Magic Weapon)" hidden="false" id="cef8-5b01-aab4-f89a" type="selectionEntry" targetId="9635-ef5a-52cb-be80"/>
+        <entryLink import="true" name="Winter&apos;s Bite (Magic Weapon)" hidden="false" id="cef8-5b01-aab4-f89a" type="selectionEntry" targetId="9635-ef5a-52cb-be80"/>
         <entryLink import="true" name="Blitzbeil(Magic Weapon)" hidden="false" id="8808-6564-988c-6608" type="selectionEntry" targetId="7d50-d060-9715-77b2"/>
-        <entryLink import="true" name="Storm Hammer(Magic Weapon)" hidden="false" id="b8bd-dc3a-1260-7d93" type="selectionEntry" targetId="8e83-853a-b85c-b6af"/>
+        <entryLink import="true" name="Storm Hammer (Magic Weapon)" hidden="false" id="b8bd-dc3a-1260-7d93" type="selectionEntry" targetId="8e83-853a-b85c-b6af"/>
       </entryLinks>
       <modifiers>
         <modifier type="set" value="false" field="hidden">
@@ -11605,6 +11819,24 @@ Before making a Dispel attempt, the player can declare he is using a Wolfshead E
         <categoryLink name="Special" hidden="false" id="4282-96dc-ecc8-8d06" targetId="43cc-fc3f-35a7-8d03" primary="false"/>
         <categoryLink name="Rare" hidden="false" id="e2bc-3cd9-a85e-7cbe" targetId="e94b-6a54-8779-cd60" primary="false"/>
         <categoryLink name="Regiment of Renown" hidden="false" id="1d51-2d1a-456d-a3b9" targetId="ee09-9a50-ad78-9c32"/>
+      </categoryLinks>
+    </forceEntry>
+    <forceEntry name="Army of Middenland (SoC)" id="6b0d-2c9f-2d46-b330" hidden="false" publicationId="cc59-6466-b62e-cf5b" page="43-51">
+      <categoryLinks>
+        <categoryLink name="Experimental rules" hidden="false" id="21a7-35ab-37f1-1db9" targetId="4fed-b911-e6e0-927b" primary="false"/>
+        <categoryLink name="Special list rules" hidden="false" id="501d-9fd8-f1be-d324" targetId="32f1-197f-d719-a393"/>
+        <categoryLink name="Special Characters" hidden="false" id="e9b0-2346-a37c-a8e5" targetId="0644-bfcd-32c2-21dc" primary="false"/>
+        <categoryLink name="Characters" hidden="false" id="d42a-ba11-75aa-93fc" targetId="7a1c-d611-c2dc-def1" primary="false">
+          <modifiers>
+            <modifier type="increment" value="1" field="75ab-5a0c-edbf-33d2"/>
+          </modifiers>
+        </categoryLink>
+        <categoryLink name="Lord" hidden="false" id="23d4-9252-a389-c417" targetId="d024-d25b-a9b4-73b6" primary="false"/>
+        <categoryLink name="Heroes" hidden="false" id="9fd5-3892-be69-6a41" targetId="c16b-f319-2c62-2c12" primary="false"/>
+        <categoryLink name="Core" hidden="false" id="5954-2067-df39-be35" targetId="64bf-efb4-9978-26df" primary="false"/>
+        <categoryLink name="Special" hidden="false" id="6683-d845-abb9-02aa" targetId="43cc-fc3f-35a7-8d03" primary="false"/>
+        <categoryLink name="Rare" hidden="false" id="b94a-8458-5ff4-8a66" targetId="e94b-6a54-8779-cd60" primary="false"/>
+        <categoryLink name="Regiment of Renown" hidden="false" id="d980-9103-d726-d7a6" targetId="ee09-9a50-ad78-9c32"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
