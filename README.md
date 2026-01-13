@@ -157,10 +157,10 @@ The main additions are:
 - [x] Knightly Orders rules from CJ#43 (p.11-13)
 - [x] Knightly Orders rules from WD#310
 - [x] Custom Knightly Orders rules from WD#310
-- [x] Reiksguard on Foot (WD#310, p.120)
+- [x] Reiksguard on Foot (WD#310-UK, p.120)
 - [x] Volkmar the Grim, Grand Theogonist (AN-02, p.60)
 - [x] Emperor Karl Franz, Prince of Altdorf (SoC, p.42)
-- [x] Emperor Karl Franz, Prince of Altdorf (WD#288, p.61)
+- [x] Emperor Karl Franz, Prince of Altdorf (WD#288-UK, p.61)
 - [x] Karl Franz, the Ruling Emperor (webGW-ES)
 - [x] Boris Todbringer, Elector Count of Middenland (SoC, p.43)
 - [x] Boris Todbringer, Elector Count of Middenland (webGW-UK)
@@ -169,6 +169,10 @@ The main additions are:
 - [x] Valmir von Raukov, Elector Count of Ostland (webGW-UK)
 - [x] Ludwig Schwarzhelm - Champion of Karl Franz (webGW-UK)
 - [x] Thyrus Gormann, Grand Master of the Bright Order (webGW-UK)
+- [x] Marius Leitdorf, Elector Count of Averland (webGW-UK)
+- [x] Valten, Champion of Sigmar (CR-04, p.73)
+- [x] Valten, Exalted of Sigmar (SoC, p.41)
+- [x] Valten, Chosen of Sigmar (WD#288-UK, p.63)
 
 ## Alternative lists included
 - [x] Clan Eshin (SKV-AB)

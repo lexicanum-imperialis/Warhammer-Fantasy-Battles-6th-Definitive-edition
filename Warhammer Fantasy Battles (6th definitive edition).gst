@@ -2138,9 +2138,8 @@ Using a Power Stone will bring any spell in play cast earlier by that Wizard to 
 
 As with scrolls, Power Stones are not unique items - they are prepared by a Wizard prior to battle and it is quite possible for several Wizards to carry Power Stones, and for a Wizard to carry more than one. However, only one Power Stone can be used to enhance a spell.
 
-Note that a spell cast with a Power Stone can never be cast with Irresistible Force
-, though it can be Miscast
-.</description>
+Note that a spell cast with a Power Stone can never be cast with Irresistible Force, though it can be Miscast
+</description>
     </rule>
     <rule id="f2d3-6ce8-88ad-7cad" name="War Banner(Magic Standard)" hidden="false">
       <description>+1 Combat Resolution. The War Banner carries powerful enchantments that fill all those who fight beneath it with heroic courage and determination. A unit, which has a War Banner adds a further +1. to its combat resolution when working out which side has won the combat.</description>
@@ -2215,7 +2214,7 @@ Note that troops armed with weapons which fight in ranks can fight with the extr
     </profile>
     <profile id="72aa-da68-2dae-4ab6" name="Additional Hand weapon" hidden="false" typeId="7889-42d9-70a0-3ea9" typeName="Weapon" page="88" publicationId="315e-e3c4-08af-fd51">
       <characteristics>
-        <characteristic name="Range" typeId="3107-4d1e-9a51-6564"/>
+        <characteristic name="Range" typeId="3107-4d1e-9a51-6564">CC</characteristic>
         <characteristic name="Strength" typeId="6fe4-1ebb-cb04-1378"/>
         <characteristic name="Damage" typeId="6f2f-d612-52ef-1633"/>
         <characteristic name="Special Rules" typeId="a21a-cdc0-4b13-b236">+1A</characteristic>
