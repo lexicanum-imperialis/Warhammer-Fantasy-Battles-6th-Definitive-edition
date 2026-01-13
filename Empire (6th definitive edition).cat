@@ -1148,25 +1148,30 @@
             <modifier type="add" value="43cc-fc3f-35a7-8d03" field="category"/>
           </modifiers>
         </modifierGroup>
+        <modifierGroup type="and">
+          <comment>Army of Middenland (SoC)</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="6b0d-2c9f-2d46-b330" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <modifiers>
+            <modifier type="set-primary" value="e94b-6a54-8779-cd60" field="category"/>
+            <modifier type="remove" value="43cc-fc3f-35a7-8d03" field="category"/>
+            <modifier type="add" value="e94b-6a54-8779-cd60" field="category"/>
+          </modifiers>
+        </modifierGroup>
       </modifierGroups>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="802e-a5b7-4570-1e7e" shared="true" includeChildSelections="true"/>
-          </conditions>
-          <comment>Cult of Ulric (EM-AB)</comment>
-        </modifier>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="cd47-f9b6-5a40-b4b2" shared="true" includeChildSelections="true"/>
-          </conditions>
-          <comment>Crusader Army (EM-AB, p.79)</comment>
-        </modifier>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="d2eb-6fe3-7349-f03d" shared="true" includeChildSelections="true"/>
-          </conditions>
-          <comment>Cult of Ulric (CR-04)</comment>
+          <comment>Several</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="802e-a5b7-4570-1e7e" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="cd47-f9b6-5a40-b4b2" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="d2eb-6fe3-7349-f03d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
     </selectionEntry>
@@ -1254,10 +1259,15 @@
       </costs>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="d2eb-6fe3-7349-f03d" shared="true" includeChildSelections="true"/>
-          </conditions>
           <comment>Cult of Ulric (CR-04)</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="d2eb-6fe3-7349-f03d" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="6b0d-2c9f-2d46-b330" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
     </selectionEntry>
@@ -1574,25 +1584,20 @@
       <modifierGroups>
         <modifierGroup type="and">
           <comment>Sigmarite Army (EM-AB, p.79)</comment>
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="fb55-f061-f6d9-9f27" shared="true" includeChildSelections="true"/>
-          </conditions>
           <modifiers>
             <modifier type="set-primary" value="43cc-fc3f-35a7-8d03" field="category"/>
             <modifier type="remove" value="64bf-efb4-9978-26df" field="category"/>
             <modifier type="add" value="43cc-fc3f-35a7-8d03" field="category"/>
           </modifiers>
-        </modifierGroup>
-        <modifierGroup type="and">
-          <modifiers>
-            <modifier type="add" value="43cc-fc3f-35a7-8d03" field="category"/>
-            <modifier type="remove" value="64bf-efb4-9978-26df" field="category"/>
-            <modifier type="set-primary" value="43cc-fc3f-35a7-8d03" field="category"/>
-          </modifiers>
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="802e-a5b7-4570-1e7e" shared="true" includeChildSelections="true"/>
-          </conditions>
-          <comment>Cult of Ulric (EM-AB, p.79)</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="6b0d-2c9f-2d46-b330" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="fb55-f061-f6d9-9f27" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="802e-a5b7-4570-1e7e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifierGroup>
       </modifierGroups>
       <modifiers>
@@ -1876,7 +1881,7 @@
             <infoLink name="Barding" id="a50f-bf37-1ada-669c" hidden="false" targetId="25e4-8f3a-a1a8-a7b6" type="profile"/>
           </infoLinks>
         </entryLink>
-        <entryLink id="6e1d-9e41-114f-8128" name="Knight of the Inner Circle" hidden="false" collective="false" import="true" targetId="2cbd-fee0-a336-0e5d" type="selectionEntry">
+        <entryLink id="6e1d-9e41-114f-8128" name="Knights of the Inner Circle" hidden="false" collective="false" import="true" targetId="2cbd-fee0-a336-0e5d" type="selectionEntry">
           <modifiers>
             <modifier type="increment" field="ecfa-8486-4f6c-c249" value="3">
               <repeats>
@@ -1916,7 +1921,7 @@
             <infoLink id="7dd2-08d1-2d5d-01e7" name="Knight of the Inner Circle" hidden="false" targetId="45f4-3adf-bde5-7f5f" type="rule"/>
           </infoLinks>
         </entryLink>
-        <entryLink id="8229-6f9b-ba74-c239" name="Knight of the Inner Circle (White Wolf)" hidden="true" collective="false" import="true" targetId="12c2-2826-c92f-4930" type="selectionEntry">
+        <entryLink id="8229-6f9b-ba74-c239" name="Knights of the Inner Circle (White Wolf)" hidden="true" collective="false" import="true" targetId="12c2-2826-c92f-4930" type="selectionEntry">
           <modifiers>
             <modifier type="increment" field="ecfa-8486-4f6c-c249" value="3">
               <repeats>
@@ -2550,7 +2555,7 @@
             <infoLink name="Barding" id="8b89-0f01-df98-6ff5" hidden="false" targetId="25e4-8f3a-a1a8-a7b6" type="profile"/>
           </infoLinks>
         </entryLink>
-        <entryLink id="d079-76e2-513e-323c" name="Knight of the Inner Circle" hidden="false" collective="false" import="true" targetId="2cbd-fee0-a336-0e5d" type="selectionEntry">
+        <entryLink id="d079-76e2-513e-323c" name="Knights of the Inner Circle" hidden="false" collective="false" import="true" targetId="2cbd-fee0-a336-0e5d" type="selectionEntry">
           <modifiers>
             <modifier type="increment" field="ecfa-8486-4f6c-c249" value="3">
               <repeats>
@@ -3003,22 +3008,17 @@
       </modifierGroups>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="802e-a5b7-4570-1e7e" shared="true" includeChildSelections="true"/>
-          </conditions>
-          <comment>Cult of Ulric</comment>
-        </modifier>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="cd47-f9b6-5a40-b4b2" shared="true" includeChildSelections="true"/>
-          </conditions>
-          <comment>Crusader Army (EM-AB, p.79)</comment>
-        </modifier>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="d2eb-6fe3-7349-f03d" shared="true" includeChildSelections="true"/>
-          </conditions>
-          <comment>Cult of Ulric (CR-04)</comment>
+          <comment>Several</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="802e-a5b7-4570-1e7e" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="6b0d-2c9f-2d46-b330" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="cd47-f9b6-5a40-b4b2" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="d2eb-6fe3-7349-f03d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
     </selectionEntry>
@@ -3087,22 +3087,16 @@
           </repeats>
         </modifier>
         <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="802e-a5b7-4570-1e7e" shared="true" includeChildSelections="true"/>
-          </conditions>
-          <comment>Cult of Ulric</comment>
-        </modifier>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="cd47-f9b6-5a40-b4b2" shared="true" includeChildSelections="true"/>
-          </conditions>
-          <comment>Crusader Army (EM-AB, p.79)</comment>
-        </modifier>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="d2eb-6fe3-7349-f03d" shared="true" includeChildSelections="true"/>
-          </conditions>
-          <comment>Cult of Ulric (CR-04)</comment>
+          <comment>Several</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="802e-a5b7-4570-1e7e" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="cd47-f9b6-5a40-b4b2" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="d2eb-6fe3-7349-f03d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <modifierGroups>
@@ -3119,15 +3113,20 @@
           <comment>The Artillery Train of Nuln (EM-AB, p.78)</comment>
         </modifierGroup>
         <modifierGroup type="and">
-          <comment>Sigmarite Army (EM-AB, p.79)</comment>
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="fb55-f061-f6d9-9f27" shared="true" includeChildSelections="true"/>
-          </conditions>
+          <comment>Sigmarite Army (AB) &amp; Middenland (SoC)</comment>
           <modifiers>
             <modifier type="set-primary" value="e94b-6a54-8779-cd60" field="category"/>
             <modifier type="remove" value="43cc-fc3f-35a7-8d03" field="category"/>
             <modifier type="add" value="e94b-6a54-8779-cd60" field="category"/>
           </modifiers>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="fb55-f061-f6d9-9f27" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="6b0d-2c9f-2d46-b330" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifierGroup>
       </modifierGroups>
     </selectionEntry>
@@ -3187,15 +3186,20 @@
           </conditions>
         </modifierGroup>
         <modifierGroup type="and">
-          <comment>Sigmarite Army (EM-AB, p.79)</comment>
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="fb55-f061-f6d9-9f27" shared="true" includeChildSelections="true"/>
-          </conditions>
+          <comment>Sigmarite Army (AB) &amp; Middenland (SoC)</comment>
           <modifiers>
             <modifier type="set-primary" value="e94b-6a54-8779-cd60" field="category"/>
             <modifier type="remove" value="43cc-fc3f-35a7-8d03" field="category"/>
             <modifier type="add" value="e94b-6a54-8779-cd60" field="category"/>
           </modifiers>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="fb55-f061-f6d9-9f27" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="6b0d-2c9f-2d46-b330" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifierGroup>
       </modifierGroups>
       <modifiers>
@@ -3217,22 +3221,16 @@
           </repeats>
         </modifier>
         <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="802e-a5b7-4570-1e7e" shared="true" includeChildSelections="true"/>
-          </conditions>
-          <comment>Cult of Ulric</comment>
-        </modifier>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="cd47-f9b6-5a40-b4b2" shared="true" includeChildSelections="true"/>
-          </conditions>
-          <comment>Crusader Army (EM-AB, p.79)</comment>
-        </modifier>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="d2eb-6fe3-7349-f03d" shared="true" includeChildSelections="true"/>
-          </conditions>
-          <comment>Cult of Ulric (CR-04)</comment>
+          <comment>Several</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="802e-a5b7-4570-1e7e" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="cd47-f9b6-5a40-b4b2" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="d2eb-6fe3-7349-f03d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>
@@ -3296,32 +3294,19 @@
       </modifierGroups>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="fb55-f061-f6d9-9f27" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="d1ca-0d07-b9d2-0ff1" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="802e-a5b7-4570-1e7e" shared="true" includeChildSelections="true"/>
-          </conditions>
-          <comment>Cult of Ulric</comment>
-        </modifier>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="cd47-f9b6-5a40-b4b2" shared="true" includeChildSelections="true"/>
-          </conditions>
-          <comment>Crusader Army (EM-AB, p.79)</comment>
-        </modifier>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="d2eb-6fe3-7349-f03d" shared="true" includeChildSelections="true"/>
-          </conditions>
-          <comment>Cult of Ulric (CR-04)</comment>
+          <comment>Several</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="d2eb-6fe3-7349-f03d" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="6b0d-2c9f-2d46-b330" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="fb55-f061-f6d9-9f27" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="d1ca-0d07-b9d2-0ff1" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="802e-a5b7-4570-1e7e" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="cd47-f9b6-5a40-b4b2" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
     </selectionEntry>
@@ -3416,10 +3401,15 @@
           </conditions>
         </modifier>
         <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="d2eb-6fe3-7349-f03d" shared="true" includeChildSelections="true"/>
-          </conditions>
           <comment>Cult of Ulric (CR-04)</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="d2eb-6fe3-7349-f03d" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="6b0d-2c9f-2d46-b330" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <modifierGroups>
@@ -3807,6 +3797,10 @@
             <entryLink id="4c69-bc2a-05f9-5b2c" name="Arcane Items" hidden="false" collective="false" import="true" targetId="4837-c50f-afe2-23e8" type="selectionEntryGroup"/>
             <entryLink id="e51a-e2f7-af8c-2cbf" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="e9a6-1d90-fba1-755e" type="selectionEntryGroup"/>
             <entryLink id="5529-5a78-5f69-6c51" name="Talismans" hidden="false" collective="false" import="true" targetId="7faf-c609-0b44-9a28" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Talismans (CoU)" hidden="false" id="ce8a-77d3-8733-33a4" collective="false" targetId="fe36-f178-d739-69d0" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Magic Weapons (CoU)" hidden="false" id="335c-3e6b-2e95-bac2" collective="false" targetId="07c6-b3a4-9f83-dc81" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Magic Armour (CoU)" hidden="false" id="f429-f914-d09b-4b2d" collective="false" targetId="8bd8-ae6d-ec74-1975" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Enchanted Items (CoU)" hidden="false" id="39c4-ac11-2882-5201" collective="false" targetId="573b-3e97-ed64-d1cb" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
@@ -3945,6 +3939,10 @@
             <entryLink id="1c33-9ffb-c0a6-fecb" name="Magic Armour" hidden="false" collective="false" import="true" targetId="4eac-745d-bb60-7cb6" type="selectionEntryGroup"/>
             <entryLink id="522e-2ec6-c64a-1448" name="Talismans" hidden="false" collective="false" import="true" targetId="7faf-c609-0b44-9a28" type="selectionEntryGroup"/>
             <entryLink id="6106-eae0-896b-7b1e" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="e9a6-1d90-fba1-755e" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Talismans (CoU)" hidden="false" id="1eff-609d-ce56-35b1" collective="false" targetId="fe36-f178-d739-69d0" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Magic Weapons (CoU)" hidden="false" id="36a3-4f46-cf09-1132" collective="false" targetId="07c6-b3a4-9f83-dc81" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Magic Armour (CoU)" hidden="false" id="92c6-590b-2bee-e349" collective="false" targetId="8bd8-ae6d-ec74-1975" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Enchanted Items (CoU)" hidden="false" id="34d7-76c9-d155-4473" collective="false" targetId="573b-3e97-ed64-d1cb" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
@@ -4482,6 +4480,10 @@
             <entryLink id="79b5-19b4-b3e8-432a" name="Arcane Items" hidden="false" collective="false" import="true" targetId="4837-c50f-afe2-23e8" type="selectionEntryGroup"/>
             <entryLink id="6cf5-037a-fa8b-889c" name="Talismans" hidden="false" collective="false" import="true" targetId="7faf-c609-0b44-9a28" type="selectionEntryGroup"/>
             <entryLink id="e704-d00b-9f8f-3b66" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="e9a6-1d90-fba1-755e" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Talismans (CoU)" hidden="false" id="92f1-14a6-9561-b8a2" collective="false" targetId="fe36-f178-d739-69d0" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Magic Weapons (CoU)" hidden="false" id="a412-1888-2fb4-8c2b" collective="false" targetId="07c6-b3a4-9f83-dc81" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Magic Armour (CoU)" hidden="false" id="cfef-9a39-7ce8-2995" collective="false" targetId="8bd8-ae6d-ec74-1975" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Enchanted Items (CoU)" hidden="false" id="4a82-95aa-e5be-9504" collective="false" targetId="573b-3e97-ed64-d1cb" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
@@ -4860,34 +4862,19 @@
 &quot;The Emperor&apos;s Guard&quot; (EM-AB, p.78)</comment>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="fb55-f061-f6d9-9f27" shared="true" includeChildSelections="true"/>
-          </conditions>
-          <comment>Because you can&apos;t field Engineers, it doesn&apos;t make sense</comment>
-        </modifier>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="d1ca-0d07-b9d2-0ff1" shared="true" includeChildSelections="true"/>
-          </conditions>
-          <comment>Marienburg has no Steam Tank, right?</comment>
-        </modifier>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="802e-a5b7-4570-1e7e" shared="true" includeChildSelections="true"/>
-          </conditions>
-          <comment>Cult of Ulric</comment>
-        </modifier>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="cd47-f9b6-5a40-b4b2" shared="true" includeChildSelections="true"/>
-          </conditions>
-          <comment>Crusader Army (EM-AB, p.79)</comment>
-        </modifier>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="d2eb-6fe3-7349-f03d" shared="true" includeChildSelections="true"/>
-          </conditions>
-          <comment>Cult of Ulric (CR-04)</comment>
+          <comment>Several</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="d2eb-6fe3-7349-f03d" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="6b0d-2c9f-2d46-b330" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="fb55-f061-f6d9-9f27" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="d1ca-0d07-b9d2-0ff1" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="802e-a5b7-4570-1e7e" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="cd47-f9b6-5a40-b4b2" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
     </selectionEntry>
@@ -6956,9 +6943,14 @@ All friendly units within 18&quot; of the Emperor can always use his Leadership 
       </costs>
       <modifiers>
         <modifier type="set" value="false" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="d2eb-6fe3-7349-f03d" shared="true" includeChildSelections="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="d2eb-6fe3-7349-f03d" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="6b0d-2c9f-2d46-b330" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <selectionEntryGroups>
@@ -7261,6 +7253,19 @@ All friendly units within 18&quot; of the Emperor can always use his Leadership 
           </modifiers>
         </profile>
       </profiles>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Army of Middenland (SoC)</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="6b0d-2c9f-2d46-b330" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <modifiers>
+            <modifier type="set-primary" value="43cc-fc3f-35a7-8d03" field="category"/>
+            <modifier type="remove" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="add" value="43cc-fc3f-35a7-8d03" field="category"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Hunting Hounds" hidden="true" id="5e75-4aec-fbe7-39d2" page="6" publicationId="cc59-6466-b62e-cf5b">
       <categoryLinks>
@@ -7353,11 +7358,29 @@ All friendly units within 18&quot; of the Emperor can always use his Leadership 
       </infoLinks>
       <modifiers>
         <modifier type="set" value="false" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="d2eb-6fe3-7349-f03d" shared="true" includeChildSelections="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="d2eb-6fe3-7349-f03d" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="6b0d-2c9f-2d46-b330" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Army of Middenland (SoC)</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="6b0d-2c9f-2d46-b330" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <modifiers>
+            <modifier type="set-primary" value="43cc-fc3f-35a7-8d03" field="category"/>
+            <modifier type="remove" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="add" value="43cc-fc3f-35a7-8d03" field="category"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry id="8e71-7b56-d389-516e" name="0-1 Teutogen Guard" hidden="true" collective="false" import="true" type="unit">
       <constraints>
@@ -7401,7 +7424,7 @@ All friendly units within 18&quot; of the Emperor can always use his Leadership 
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink import="true" name="Knight of the Inner Circle (Teutogen Guard)" hidden="false" id="da6f-28df-bd2a-bd40" collective="false" targetId="31f2-1ec1-5c7c-de5f" type="selectionEntry">
+        <entryLink import="true" name="Knights of the Inner Circle (Teutogen Guard)" hidden="false" id="da6f-28df-bd2a-bd40" collective="false" targetId="31f2-1ec1-5c7c-de5f" type="selectionEntry">
           <modifiers>
             <modifier type="increment" value="2" field="ecfa-8486-4f6c-c249">
               <repeats>
@@ -7512,11 +7535,29 @@ All friendly units within 18&quot; of the Emperor can always use his Leadership 
       </selectionEntryGroups>
       <modifiers>
         <modifier type="set" value="false" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="d2eb-6fe3-7349-f03d" shared="true" includeChildSelections="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="d2eb-6fe3-7349-f03d" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="6b0d-2c9f-2d46-b330" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Army of Middenland (SoC)</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="6b0d-2c9f-2d46-b330" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <modifiers>
+            <modifier type="set-primary" value="43cc-fc3f-35a7-8d03" field="category"/>
+            <modifier type="remove" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="add" value="43cc-fc3f-35a7-8d03" field="category"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry id="8171-59c2-3a07-94b5" name="Wolf-Kin" hidden="true" collective="false" import="true" type="unit" publicationId="cc59-6466-b62e-cf5b" page="12">
       <constraints>
@@ -7567,10 +7608,19 @@ All friendly units within 18&quot; of the Emperor can always use his Leadership 
       </costs>
       <modifiers>
         <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="6b0d-2c9f-2d46-b330" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="d2eb-6fe3-7349-f03d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="-1" field="9531-d7db-bbfa-ebf9">
           <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="d2eb-6fe3-7349-f03d" shared="true" includeChildSelections="true"/>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="6b0d-2c9f-2d46-b330" shared="true" includeChildSelections="true"/>
           </conditions>
-          <comment>Cult of Ulric (CR-04)</comment>
         </modifier>
       </modifiers>
       <selectionEntryGroups>
@@ -9966,7 +10016,20 @@ Wearer is immune to spells of the Lore of Light.</characteristic>
       <entryLinks>
         <entryLink id="9be7-5883-9fed-4962" name="War Banner" hidden="false" collective="false" import="true" targetId="f327-567f-ef99-0403" type="selectionEntry"/>
         <entryLink id="7146-6959-95fa-1643" name="Banner  Of Duty" hidden="false" collective="false" import="true" targetId="4660-c31b-2666-5a9d" type="selectionEntry"/>
-        <entryLink id="3d39-3690-893a-9db4" name="Griffon Standard" hidden="false" collective="false" import="true" targetId="08cc-22e0-9990-c4b3" type="selectionEntry"/>
+        <entryLink id="3d39-3690-893a-9db4" name="Griffon Standard" hidden="false" collective="false" import="true" targetId="08cc-22e0-9990-c4b3" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="d2eb-6fe3-7349-f03d" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="6b0d-2c9f-2d46-b330" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
         <entryLink id="54b3-692f-b951-a153" name="Banner Of Valour" hidden="false" collective="false" import="true" targetId="cab0-01da-cd90-05a0" type="selectionEntry"/>
         <entryLink id="496e-8c9a-70cb-b52c" name="Standard Of Arcane Warding" hidden="false" collective="false" import="true" targetId="d27a-0522-113b-8c7a" type="selectionEntry"/>
       </entryLinks>
@@ -9994,20 +10057,30 @@ Wearer is immune to spells of the Lore of Light.</characteristic>
         <entryLink id="efd8-566f-a350-a73c" name="Steel Standard" hidden="false" collective="false" import="true" targetId="9010-4241-4537-393d" type="selectionEntry">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="unit" childId="4e76-a459-9f69-a221" shared="true"/>
-              </conditions>
               <comment>Cult of Ulric (CR-04)</comment>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="d2eb-6fe3-7349-f03d" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="6b0d-2c9f-2d46-b330" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </entryLink>
         <entryLink id="8370-c36b-b365-484b" name="Banner Of Sigismund" hidden="false" collective="false" import="true" targetId="a14c-b60b-22f3-ce41" type="selectionEntry">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="unit" childId="4e76-a459-9f69-a221" shared="true"/>
-              </conditions>
               <comment>Cult of Ulric (CR-04)</comment>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="d2eb-6fe3-7349-f03d" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="6b0d-2c9f-2d46-b330" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </entryLink>
@@ -10015,10 +10088,15 @@ Wearer is immune to spells of the Lore of Light.</characteristic>
         <entryLink id="f359-e06a-2835-20b3" name="Griffon Standard" hidden="false" collective="false" import="true" targetId="08cc-22e0-9990-c4b3" type="selectionEntry">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="unit" childId="4e76-a459-9f69-a221" shared="true"/>
-              </conditions>
               <comment>Cult of Ulric (CR-04)</comment>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="d2eb-6fe3-7349-f03d" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="6b0d-2c9f-2d46-b330" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </entryLink>
@@ -10034,10 +10112,15 @@ Wearer is immune to spells of the Lore of Light.</characteristic>
         <entryLink id="c575-b63a-a7e2-02ed" name="Icon Of Magnus" hidden="false" collective="false" import="true" targetId="2421-a682-44f1-e756" type="selectionEntry">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="unit" childId="4e76-a459-9f69-a221" shared="true"/>
-              </conditions>
               <comment>Cult of Ulric (CR-04)</comment>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="d2eb-6fe3-7349-f03d" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="6b0d-2c9f-2d46-b330" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </entryLink>
@@ -10064,10 +10147,15 @@ Wearer is immune to spells of the Lore of Light.</characteristic>
         <entryLink id="1e3f-e0a6-a158-4cdd" name="The Mace Of Helstrum" hidden="false" collective="false" import="true" targetId="b4b5-d792-d3d1-4db1" type="selectionEntry">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="unit" childId="4e76-a459-9f69-a221" shared="true"/>
-              </conditions>
               <comment>Cult of Ulric (CR-04)</comment>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="d2eb-6fe3-7349-f03d" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="6b0d-2c9f-2d46-b330" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </entryLink>
@@ -10075,20 +10163,30 @@ Wearer is immune to spells of the Lore of Light.</characteristic>
         <entryLink id="72a5-4b55-6755-42d7" name="Sword of Sigismund" hidden="false" collective="false" import="true" targetId="3e7d-a682-bc22-6b37" type="selectionEntry">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="unit" childId="4e76-a459-9f69-a221" shared="true"/>
-              </conditions>
               <comment>Cult of Ulric (CR-04)</comment>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="d2eb-6fe3-7349-f03d" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="6b0d-2c9f-2d46-b330" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </entryLink>
         <entryLink id="5d1c-5fcd-dac3-6848" name="Sword of Righteous Steel" hidden="false" collective="false" import="true" targetId="02d0-c61c-1e6a-5ffa" type="selectionEntry">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="unit" childId="4e76-a459-9f69-a221" shared="true"/>
-              </conditions>
               <comment>Cult of Ulric (CR-04)</comment>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="d2eb-6fe3-7349-f03d" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="6b0d-2c9f-2d46-b330" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </entryLink>
@@ -10115,10 +10213,15 @@ Wearer is immune to spells of the Lore of Light.</characteristic>
         <entryLink id="3036-8a3f-8e25-6b16" name="The Gilded Armour" hidden="false" collective="false" import="true" targetId="021e-9397-7072-d2b6" type="selectionEntry">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="unit" childId="4e76-a459-9f69-a221" shared="true"/>
-              </conditions>
               <comment>Cult of Ulric (CR-04)</comment>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="d2eb-6fe3-7349-f03d" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="6b0d-2c9f-2d46-b330" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </entryLink>
@@ -10128,10 +10231,15 @@ Wearer is immune to spells of the Lore of Light.</characteristic>
         <entryLink id="74c9-afa6-6946-d05f" name="Armour of Meteoric Iron" hidden="false" collective="false" import="true" targetId="862d-0e44-597d-7044" type="selectionEntry">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="unit" childId="4e76-a459-9f69-a221" shared="true"/>
-              </conditions>
               <comment>Cult of Ulric (CR-04)</comment>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="d2eb-6fe3-7349-f03d" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="6b0d-2c9f-2d46-b330" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </entryLink>
@@ -10148,20 +10256,30 @@ Wearer is immune to spells of the Lore of Light.</characteristic>
         <entryLink id="3a69-5e6c-3657-9414" name="Shroud of Magnus" hidden="false" collective="false" import="true" targetId="6609-134c-2e7d-7c1f" type="selectionEntry">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="unit" childId="4e76-a459-9f69-a221" shared="true"/>
-              </conditions>
               <comment>Cult of Ulric (CR-04)</comment>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="d2eb-6fe3-7349-f03d" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="6b0d-2c9f-2d46-b330" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </entryLink>
         <entryLink id="523c-730d-30cd-f8b9" name="Jade Amulet" hidden="false" collective="false" import="true" targetId="cff5-466b-3bf7-dfc9" type="selectionEntry">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="unit" childId="4e76-a459-9f69-a221" shared="true"/>
-              </conditions>
               <comment>Cult of Ulric (CR-04)</comment>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="d2eb-6fe3-7349-f03d" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="6b0d-2c9f-2d46-b330" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </entryLink>
@@ -10170,16 +10288,15 @@ Wearer is immune to spells of the Lore of Light.</characteristic>
         <entryLink id="9323-991a-7d56-a333" name="Sigil of Sigmar" hidden="false" collective="false" import="true" targetId="841f-0a5d-fb81-2a71" type="selectionEntry">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="parent" childId="4e76-a459-9f69-a221" shared="true"/>
-              </conditions>
               <comment>Cult of Ulric (CR-04)</comment>
-            </modifier>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="unit" childId="4e76-a459-9f69-a221" shared="true"/>
-              </conditions>
-              <comment>Cult of Ulric (CR-04)</comment>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="d2eb-6fe3-7349-f03d" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="6b0d-2c9f-2d46-b330" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </entryLink>
@@ -10916,9 +11033,14 @@ Wearer is immune to spells of the Lore of Light.</characteristic>
       <comment>Only for Priests of Ulric and Ar-Ulric</comment>
       <modifiers>
         <modifier type="set" value="false" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="d2eb-6fe3-7349-f03d" shared="true" includeChildSelections="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="d2eb-6fe3-7349-f03d" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="6b0d-2c9f-2d46-b330" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
     </selectionEntryGroup>
@@ -10933,9 +11055,14 @@ Wearer is immune to spells of the Lore of Light.</characteristic>
       </entryLinks>
       <modifiers>
         <modifier type="set" value="false" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="d2eb-6fe3-7349-f03d" shared="true" includeChildSelections="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="d2eb-6fe3-7349-f03d" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="6b0d-2c9f-2d46-b330" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
     </selectionEntryGroup>
@@ -10947,9 +11074,14 @@ Wearer is immune to spells of the Lore of Light.</characteristic>
           </conditions>
         </modifier>
         <modifier type="set" value="false" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="d2eb-6fe3-7349-f03d" shared="true" includeChildSelections="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="d2eb-6fe3-7349-f03d" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="6b0d-2c9f-2d46-b330" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>
@@ -10971,9 +11103,14 @@ Wearer is immune to spells of the Lore of Light.</characteristic>
       </entryLinks>
       <modifiers>
         <modifier type="set" value="false" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="d2eb-6fe3-7349-f03d" shared="true" includeChildSelections="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="d2eb-6fe3-7349-f03d" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="6b0d-2c9f-2d46-b330" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
     </selectionEntryGroup>
@@ -10988,9 +11125,14 @@ Wearer is immune to spells of the Lore of Light.</characteristic>
       </entryLinks>
       <modifiers>
         <modifier type="set" value="false" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="d2eb-6fe3-7349-f03d" shared="true" includeChildSelections="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="d2eb-6fe3-7349-f03d" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="6b0d-2c9f-2d46-b330" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
     </selectionEntryGroup>
@@ -11013,9 +11155,14 @@ Wearer is immune to spells of the Lore of Light.</characteristic>
       </entryLinks>
       <modifiers>
         <modifier type="set" value="false" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="d2eb-6fe3-7349-f03d" shared="true" includeChildSelections="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="d2eb-6fe3-7349-f03d" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="6b0d-2c9f-2d46-b330" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
     </selectionEntryGroup>
