@@ -6890,9 +6890,27 @@ All friendly units within 18&quot; of the Emperor can always use his Leadership 
             <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
           </costs>
         </entryLink>
+        <entryLink import="true" name="Battle Standard Bearer" hidden="true" id="6feb-af2c-995d-933d" collective="false" targetId="e9ad-f1ce-aebf-6d23" type="selectionEntry">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="66d8-abe7-4fa0-e0c8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Magic Banners" hidden="false" id="f251-a4fa-76fe-a5eb" collective="false" targetId="0624-aa91-f728-45b9" type="selectionEntryGroup"/>
+          </entryLinks>
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="25"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="6b0d-2c9f-2d46-b330" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="50"/>
+        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="62"/>
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
@@ -6933,6 +6951,11 @@ All friendly units within 18&quot; of the Emperor can always use his Leadership 
           </costs>
           <modifiers>
             <modifier type="set" value="Warrior" field="name"/>
+            <modifier type="set" value="4" field="ecfa-8486-4f6c-c249">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="6b0d-2c9f-2d46-b330" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </selectionEntry>
       </selectionEntries>
@@ -7397,15 +7420,7 @@ All friendly units within 18&quot; of the Emperor can always use his Leadership 
             </modifier>
           </modifiers>
         </infoLink>
-        <infoLink id="7041-3204-3d67-86b5" name="Stubborn" hidden="false" targetId="410a-0d06-9044-665e" type="rule">
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="d1ca-0d07-b9d2-0ff1" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </infoLink>
+        <infoLink id="7041-3204-3d67-86b5" name="Stubborn" hidden="false" targetId="410a-0d06-9044-665e" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Cult of Ulric" hidden="false" id="e9d1-fe31-82aa-ff0f" targetId="4e76-a459-9f69-a221" primary="false"/>
@@ -7421,6 +7436,13 @@ All friendly units within 18&quot; of the Emperor can always use his Leadership 
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
+          <modifiers>
+            <modifier type="set" value="12" field="ecfa-8486-4f6c-c249">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="6b0d-2c9f-2d46-b330" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>

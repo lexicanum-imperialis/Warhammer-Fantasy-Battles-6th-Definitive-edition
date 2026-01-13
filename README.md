@@ -197,6 +197,7 @@ The main additions are:
 - [x] Cult of Ulric (EM-AB, p.79)
 - [x] Cult of Ulric (CR-04, p.2-13)
 - [x] Crusader Army (EM-AB, p.79)
+- [x] Army of Middenland (SoC, p.43-51)
 
 ## Sources consulted
 
