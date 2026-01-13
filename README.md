@@ -80,7 +80,7 @@ The main additions are:
 - [x] Kroak
 - [x] Sacred Hosts rules (WD#300-UK)
 - [x] Tehenhauin (LUS)
-- [x] Lord Mazdamundi (WD#290(USA))
+- [x] Lord Mazdamundi (WD#290-USA)
 - [x] Nakai (webGW)
 - [x] Xltep (webGW)
 - [x] Ten-zlati (webGW)
@@ -166,6 +166,7 @@ The main additions are:
 - [x] Boris Todbringer, Elector Count of Middenland (webGW-UK)
 - [x] Boris Todbringer, Elector Count of Middenland (webGW-ES)
 - [x] High Priest Ar-Ulric Emil Valgeir (SoC, p.43)
+- [x] Valmir von Raukov, Elector Count of Ostland (webGW-UK)
 
 ## Alternative lists included
 - [x] Clan Eshin (SKV-AB)
