@@ -1673,7 +1673,7 @@
     </selectionEntryGroup>
     <selectionEntryGroup id="ffc0-ed2b-71f0-b61c" name="Lore of Fire" hidden="false" collective="false" import="true">
       <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="66b0-4dd9-d762-4a59" type="max"/>
+        <constraint field="selections" scope="parent" value="6" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="66b0-4dd9-d762-4a59" type="max"/>
       </constraints>
       <entryLinks>
         <entryLink id="6023-4b87-86cd-a394" name="1. Fire Ball" hidden="false" collective="false" import="true" targetId="150a-d6ec-5f11-2985" type="selectionEntry"/>
@@ -1699,7 +1699,7 @@
     </selectionEntryGroup>
     <selectionEntryGroup id="892e-a8dd-8f70-373a" name="Lore of Beasts" hidden="false" collective="false" import="true">
       <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="434c-c9e9-29ef-085a" type="max"/>
+        <constraint field="selections" scope="parent" value="6" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="434c-c9e9-29ef-085a" type="max"/>
       </constraints>
       <entryLinks>
         <entryLink id="9313-9ff3-ec86-b986" name="1. The Oxen Stands" hidden="false" collective="false" import="true" targetId="3dd9-8115-89cc-09b1" type="selectionEntry"/>
@@ -1751,7 +1751,7 @@
     </selectionEntryGroup>
     <selectionEntryGroup id="0a76-fdab-0afb-3612" name="Lore of Death" hidden="false" collective="false" import="true">
       <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="28bc-2fcf-9c1f-785f" type="max"/>
+        <constraint field="selections" scope="parent" value="6" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="28bc-2fcf-9c1f-785f" type="max"/>
       </constraints>
       <entryLinks>
         <entryLink id="1388-0294-a21b-5913" name="1. Dark Hand of Death" hidden="false" collective="false" import="true" targetId="efe4-4420-d452-e5d9" type="selectionEntry"/>

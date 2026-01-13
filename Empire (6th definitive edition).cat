@@ -4720,20 +4720,6 @@
         </selectionEntryGroup>
         <selectionEntryGroup id="1c8f-110e-5bd5-c6af" name="Magic Items" hidden="false" collective="false" import="true">
           <selectionEntries>
-            <selectionEntry id="f0eb-03e2-c32d-becf" name="Staff of Volans" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1e4b-0f80-04ee-dae1" type="min"/>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5dd9-e44e-2068-98b8" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="cf7e-0339-9068-d776" name="Staff of Volans" hidden="false" targetId="eb6f-8672-88ab-dcf7" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
-              </costs>
-            </selectionEntry>
             <selectionEntry id="733c-8a88-975e-dee6" name="The Gleaming Robe" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="24dd-47a3-5b5b-49b2" type="min"/>
@@ -4763,6 +4749,13 @@
               </costs>
             </selectionEntry>
           </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Staff of Volans" hidden="false" id="3407-2477-1029-6db2" type="selectionEntry" targetId="f0eb-03e2-c32d-becf">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5896-6fe2-4822-d071" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -7977,8 +7970,7 @@ In addition, the Talisman is infused with the power and courage of Ulric, granti
                   <characteristics>
                     <characteristic name="Saving Throw Modifier" typeId="b600-e1ed-0765-27c1">4+</characteristic>
                     <characteristic name="Special rules" typeId="42c3-68ab-cfa5-203e">5+ Ws, Magic Resistance (1).
-In addition, Ar-Ulric and any unit he accompanies are immune to all fire based attacks, whether magical or not.
-</characteristic>
+In addition, Ar-Ulric and any unit he accompanies are immune to all fire based attacks, whether magical or not.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -8388,7 +8380,7 @@ In addition, the Talisman is infused with the power and courage of Ulric, granti
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="3be5-064a-dfc8-8da5" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry id="8695-0b45-8add-5bfa" name="Valmir von Raukov, Elector Count of Ostland (webGW-UK)" hidden="false" collective="false" import="true" type="unit" publicationId="a103-1e5b-e56e-45ae" page="empire/gaming/specialcharacters/valmir.htm">
+    <selectionEntry id="8695-0b45-8add-5bfa" name="Valmir von Raukov, Elector Count of Ostland" hidden="false" collective="false" import="true" type="unit" publicationId="a103-1e5b-e56e-45ae" page="empire/gaming/specialcharacters/valmir.htm">
       <profiles>
         <profile id="32e5-39a0-f3a6-ed7e" name="Von Raukov" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile" publicationId="a103-1e5b-e56e-45ae" page="empire/gaming/specialcharacters/valmir.htm">
           <characteristics>
@@ -8514,7 +8506,7 @@ In addition, the Talisman is infused with the power and courage of Ulric, granti
         </rule>
       </rules>
     </selectionEntry>
-    <selectionEntry id="0af4-328d-3eb5-f36a" name="Ludwig Schwarzhelm - Champion of Karl Franz (webGW-UK)" hidden="false" collective="false" import="true" type="unit" publicationId="a103-1e5b-e56e-45ae" page="empire/characters/4/">
+    <selectionEntry id="0af4-328d-3eb5-f36a" name="Ludwig Schwarzhelm - Champion of Karl Franz" hidden="false" collective="false" import="true" type="unit" publicationId="a103-1e5b-e56e-45ae" page="empire/characters/4/">
       <profiles>
         <profile id="6930-9fca-5d7a-013d" name="Ludwig Schwarzhelm" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile" publicationId="a103-1e5b-e56e-45ae" page="empire/gaming/specialcharacters/valmir.htm">
           <characteristics>
@@ -8662,6 +8654,215 @@ In addition to the normal rules that apply to the battle standard, any friendly 
           </costs>
         </selectionEntry>
       </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="4260-3f43-86d0-1063" name="Thyrus Gormann, Grand Master of the Bright Order" hidden="false" collective="false" import="true" type="unit" publicationId="a103-1e5b-e56e-45ae" page="empire/characters/4/">
+      <profiles>
+        <profile id="5012-da28-d78d-65b4" name="Thurys Gormann" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile" page="empire/characters/4/" publicationId="a103-1e5b-e56e-45ae">
+          <characteristics>
+            <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">4</characteristic>
+            <characteristic name="WS" typeId="f95b-da01-0578-3bdc">4</characteristic>
+            <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">3</characteristic>
+            <characteristic name="S" typeId="b690-4bc0-bb73-267b">4</characteristic>
+            <characteristic name="T" typeId="8712-f56f-5b22-a720">4</characteristic>
+            <characteristic name="W" typeId="253a-9b00-4fde-8ac2">3</characteristic>
+            <characteristic name="I" typeId="dfff-363e-f72a-5a59">4</characteristic>
+            <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">2</characteristic>
+            <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">9</characteristic>
+            <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+            <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">5+</characteristic>
+            <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="2a04-1ef0-24c5-38b6" name="Lord" hidden="false" targetId="d024-d25b-a9b4-73b6" primary="false"/>
+        <categoryLink id="8f8e-d30f-a7e3-2f83" name="Lord" hidden="false" targetId="d024-d25b-a9b4-73b6" primary="false"/>
+        <categoryLink id="4c57-6103-99ee-e19a" name="Characters" hidden="false" targetId="7a1c-d611-c2dc-def1" primary="false"/>
+        <categoryLink name="Special Characters" hidden="false" id="08fd-693c-f063-7d6f" targetId="0644-bfcd-32c2-21dc" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="extra Hero choice" hidden="false" id="514d-efad-69c7-f7ab" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="937f-c963-3351-22be" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8978-5be7-714c-1a70" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink name="Characters" hidden="false" id="1936-6a58-b54a-5991" targetId="7a1c-d611-c2dc-def1" primary="false"/>
+            <categoryLink name="Heroes" hidden="false" id="1e6d-d453-ea28-443c" targetId="c16b-f319-2c62-2c12" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="5963-19cc-f5f3-7bf1" name="Magic" hidden="false" collective="false" import="true" defaultSelectionEntryId="e237-8ffb-5cb1-601b">
+          <selectionEntries>
+            <selectionEntry id="48cb-247b-e2fa-0e54" name="Level 4" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4844-3168-e679-f38d" type="max"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a677-d26b-ef60-dbf3" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="35"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="4"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="2"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Lore of Fire" hidden="false" id="f622-567f-13d6-7470" type="selectionEntryGroup" targetId="ffc0-ed2b-71f0-b61c"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="22c0-b62a-2b34-d3b4" name="Mounts" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d289-0130-e4a6-1bb3" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="74b8-2e19-81c4-d1b4" name="Empire Warhorse" hidden="false" collective="false" import="true" targetId="a1e3-7f97-5fc6-abaa" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b934-3d79-ff77-5d30" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="e2dd-2717-793b-d365" name="Barding" hidden="false" collective="false" import="true" targetId="3211-d836-02f1-01d0" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="954a-0e49-a4ac-7c62" type="max"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6cbf-c09e-27d9-77ff" includeChildSelections="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="6"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="15"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Magic Items" id="093b-d911-fcdb-9d03" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Bright Sword" hidden="false" id="a3ed-04f6-a06a-5f83" page="empire/characters/4/" publicationId="a103-1e5b-e56e-45ae">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3c5b-2631-ac07-d0a2" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="61d7-ea82-635c-330f" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Bright Sword" typeId="7889-42d9-70a0-3ea9" typeName="Weapon" hidden="false" id="9715-0069-9f83-ea30" page="empire/characters/4/" publicationId="a103-1e5b-e56e-45ae">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3107-4d1e-9a51-6564">CC</characteristic>
+                    <characteristic name="Strength" typeId="6fe4-1ebb-cb04-1378"/>
+                    <characteristic name="Damage" typeId="6f2f-d612-52ef-1633"/>
+                    <characteristic name="Special Rules" typeId="a21a-cdc0-4b13-b236">Bright Sword</characteristic>
+                    <characteristic name="Saves" typeId="8014-a8b2-15c3-da95"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule name="Bright Sword" id="4f9d-7e82-bf45-ef9b" hidden="false" page="empire/characters/4/" publicationId="a103-1e5b-e56e-45ae">
+                  <description>This magic sword casts a Flaming Sword of Ruin spell at the beginning of each player&apos;s turn (the opponent cannot stop this at all). The spell can then be dispelled normally in each player&apos;s Magic phase, but that just temporarily quenches its fire and the sword automatically burst into new flames at the beginning of the next turn.
+Note that Thyrus cannot cast the Flaming Sword on himself (there are no cumulative effects).</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Fire Stone of Agni" hidden="false" id="20e8-8b43-bfb3-c513" page="empire/characters/4/" publicationId="a103-1e5b-e56e-45ae">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dae9-5308-3039-1205" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2589-734d-d32b-695b" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Fire Stone of Agni" typeId="a89b-d5a3-7805-c44e" typeName="Magic Items" hidden="false" id="b3bd-08e6-4dff-63b7" page="empire/characters/4/" publicationId="a103-1e5b-e56e-45ae">
+                  <characteristics>
+                    <characteristic name="Magic stuff" typeId="c7b5-c239-d6c1-0627">A holy stone that still burns with the volcanic fires used in its creation. This item works exactly like a Power Stone (Arcane Item), but it can be used once per bearer&apos;s Magic phase and not once per game.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Firebrand Staff" hidden="false" id="5691-5912-c1a6-e378" page="empire/characters/4/" publicationId="a103-1e5b-e56e-45ae">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ff89-bb07-1896-598a" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Firebrand Staff" typeId="a89b-d5a3-7805-c44e" typeName="Magic Items" hidden="false" id="eeed-59fa-6c22-e26b" page="empire/characters/4/" publicationId="a103-1e5b-e56e-45ae">
+                  <characteristics>
+                    <characteristic name="Magic stuff" typeId="c7b5-c239-d6c1-0627">This magic staff channels the energies of Fire Magic and extends the range of all of Thyrus&apos; spells by 12&quot;. Note that this allow Thyrus to cast the Flaming Sword of Ruin spell on any friendly Character within range.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <modifiers>
+                <modifier type="set" value="0" field="ff89-bb07-1896-598a">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="bc03-73e8-0e0c-33c7" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Blazing Ruby" hidden="false" id="445e-bb9a-01de-d9c0" page="empire/characters/4/" publicationId="a103-1e5b-e56e-45ae">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9cba-9efa-3c28-5b6f" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7399-d0b9-f7b6-40aa" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Blazing Ruby" typeId="a89b-d5a3-7805-c44e" typeName="Magic Items" hidden="false" id="bc26-0168-7e60-9edc" page="empire/characters/4/" publicationId="a103-1e5b-e56e-45ae">
+                  <characteristics>
+                    <characteristic name="Magic stuff" typeId="c7b5-c239-d6c1-0627">The energies of this powerful item manifest themselves as intense flames that envelop the wizard, protecting and sustaining him. It confers a 5+ Ward Save.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Staff of Volans" hidden="false" id="bc03-73e8-0e0c-33c7" type="selectionEntry" targetId="f0eb-03e2-c32d-becf">
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="70"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="7675-3379-bbf6-52da" name="Hand Weapon" hidden="false" collective="false" import="true" targetId="abdb-bbd0-41b2-5dff" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9f9e-af42-d5ee-3e9f" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8897-c69f-3c05-809e" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="d9a4-5b48-4361-1806" name="General" hidden="false" collective="false" import="true" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="cd47-f9b6-5a40-b4b2" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="444"/>
+        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="fb55-f061-f6d9-9f27" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="d2eb-6fe3-7349-f03d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <rules>
+        <rule name="Fire Lord" id="5e9f-5150-3512-effe" hidden="false" page="empire/characters/4/" publicationId="a103-1e5b-e56e-45ae">
+          <description>Thyrus knows all spells from the Lore of Fire.
+In addition, Fire Balls cast by Thyrus cause D6+1 hits and his Fiery Blasts cause 2D6+2.
+His Conflagration of Doom starts with D6+1 hits and Thyrus rolls D6+1 instead of the normal D6 to beat his opponent&apos;s score each time.</description>
+        </rule>
+      </rules>
     </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
@@ -10995,6 +11196,19 @@ Wearer is immune to spells of the Lore of Light.</characteristic>
           </characteristics>
         </profile>
       </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Staff of Volans" hidden="false" id="f0eb-03e2-c32d-becf" collective="false">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5dd9-e44e-2068-98b8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Staff of Volans" id="cf7e-0339-9068-d776" hidden="false" targetId="eb6f-8672-88ab-dcf7" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
