@@ -163,6 +163,7 @@ The main additions are:
 - [x] Emperor Karl Franz, Prince of Altdorf (WD#288, p.61)
 - [x] Karl Franz, the Ruling Emperor (webGW-ES)
 - [x] Boris Todbringer, Elector Count of Middenland (SoC, p.43)
+- [x] High Priest Ar-Ulric Emil Valgeir (SoC, p.43)
 
 ## Alternative lists included
 - [x] Clan Eshin (SKV-AB)
