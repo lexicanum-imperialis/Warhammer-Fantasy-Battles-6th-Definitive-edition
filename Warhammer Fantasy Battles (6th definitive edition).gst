@@ -799,7 +799,7 @@
         <infoLink id="4985-823b-e965-35fe" name="Barding" hidden="false" targetId="25e4-8f3a-a1a8-a7b6" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="6"/>
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
