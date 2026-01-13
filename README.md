@@ -167,6 +167,7 @@ The main additions are:
 - [x] Boris Todbringer, Elector Count of Middenland (webGW-ES)
 - [x] High Priest Ar-Ulric Emil Valgeir (SoC, p.43)
 - [x] Valmir von Raukov, Elector Count of Ostland (webGW-UK)
+- [x] Ludwig Schwarzhelm - Champion of Karl Franz (webGW-UK)
 
 ## Alternative lists included
 - [x] Clan Eshin (SKV-AB)
