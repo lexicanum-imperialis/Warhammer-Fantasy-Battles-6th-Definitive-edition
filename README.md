@@ -170,9 +170,11 @@ The main additions are:
 - [x] Ludwig Schwarzhelm - Champion of Karl Franz (webGW-UK)
 - [x] Thyrus Gormann, Grand Master of the Bright Order (webGW-UK)
 - [x] Marius Leitdorf, Elector Count of Averland (webGW-UK)
+- [x] Marius Leitdorf, Elector Count of Averland (WD#314-UK)
 - [x] Valten, Champion of Sigmar (CR-04, p.73)
 - [x] Valten, Exalted of Sigmar (SoC, p.41)
 - [x] Valten, Chosen of Sigmar (WD#288-UK, p.63)
+- [x] Arch Lector of Sigmar (WD#304-UK, p.85)
 
 ## Alternative lists included
 - [x] Clan Eshin (SKV-AB)
@@ -208,6 +210,7 @@ The main additions are:
 - [x] Cult of Ulric (EM-AB, p.79)
 - [x] Cult of Ulric (CR-04, p.2-13)
 - [x] Crusader Army (EM-AB, p.79)
+- [x] Crusader Army (CJ#43)
 - [x] Army of Middenland (SoC, p.43-51)
 
 ## Sources consulted
