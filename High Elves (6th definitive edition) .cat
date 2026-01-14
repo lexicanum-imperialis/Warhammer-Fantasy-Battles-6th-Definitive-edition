@@ -6,7 +6,7 @@
     <publication name="CJ#48" id="c659-7e88-cb23-5934" hidden="false" shortName="Citadel Journal #48" publisher="by Alessio Cavatore" publicationDate="2002"/>
     <publication name="webGW-ITA" id="8ae7-eff0-ee36-8b86" hidden="false" shortName="&quot;La Conquista del Nuovo Mondo - Campaign Weekend&quot;, in WebGW-ITA" publisherUrl="http:/it.games-workshop.com:80/doc/events/cw/cwfb2005_1.2.zip" publicationDate="2005-07" publisher="Games Workshop Italy"/>
     <publication name="WD#304-UK" id="6405-9b39-dd4f-07bd" hidden="false" shortName="&quot;The Slayer of Monsters&quot;, in White-Dwarf #304 UK" publicationDate="2005-04"/>
-    <publication name="webGW-DE" id="c570-b742-211c-067f" hidden="false" shortName="&quot;Thelarions Fluch - Sommer Kampagnen&quot;, in WebGW-DE" publisherUrl="" publicationDate="2002-07" publisher="Games Workshop Germany">
+    <publication name="webGW-DE" id="c570-b742-211c-067f" hidden="false" shortName="&quot;Thelarions Fluch - Sommer Kampagnen&quot;, in WebGW-DE" publicationDate="2002-07" publisher="Games Workshop Germany">
       <comment>TBA: Phythrion, der Auserwählte von Tor Yvresse</comment>
     </publication>
   </publications>
@@ -345,28 +345,23 @@ In addition, Aislinn rules his vessels with an iron hand; and is automatically t
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cbc0-bf03-8692-ff03" type="max"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5bf7-4146-aa26-a1ea" type="min"/>
           </constraints>
-          <selectionEntries>
-            <selectionEntry id="a4b8-ef05-84db-e0ab" name="Magic Level 3" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bd3b-520f-924f-fdc3" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
-                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="3"/>
-                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="2"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="b97a-153e-1c2e-abe1" name="Magic Level 4" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6dae-96db-4cc6-3e3f" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="35"/>
-                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="4"/>
-                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="2"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Magic Level 4" hidden="false" id="5fcd-5623-206d-45a7" type="selectionEntry" targetId="fc28-3af2-d37a-d07e"/>
+            <entryLink import="true" name="Magic Level 3" hidden="false" id="a134-ebd8-5ddb-9521" type="selectionEntry" targetId="cb6c-c69a-5c73-97e8"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Spells Lore" id="ecdb-055a-88f0-09d0" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Lore of Heavens" hidden="false" id="8a4c-86c6-3321-1372" type="selectionEntryGroup" targetId="e999-4d26-ec27-9cd0"/>
+            <entryLink import="true" name="Lore of Death" hidden="false" id="bfd1-384e-030e-59f5" type="selectionEntryGroup" targetId="0a76-fdab-0afb-3612"/>
+            <entryLink import="true" name="Lore of Fire" hidden="false" id="f306-48aa-52b7-fd6c" type="selectionEntryGroup" targetId="ffc0-ed2b-71f0-b61c"/>
+            <entryLink import="true" name="Lore of Life" hidden="false" id="db78-ae4f-f248-bde6" type="selectionEntryGroup" targetId="7814-b731-32d8-88be"/>
+            <entryLink import="true" name="Lore of Metal" hidden="false" id="656d-90c4-5530-a6e8" type="selectionEntryGroup" targetId="f679-dff7-370a-6050"/>
+            <entryLink import="true" name="Lore of Light" hidden="false" id="d170-ba1d-8f40-84a8" type="selectionEntryGroup" targetId="f6d6-76c8-90fe-ac07"/>
+            <entryLink import="true" name="Lore of Shadow" hidden="false" id="ad3c-46a5-7c50-0457" type="selectionEntryGroup" targetId="b0de-c735-e115-5c82"/>
+            <entryLink import="true" name="Lore of Beasts" hidden="false" id="c4fc-181d-4291-d302" type="selectionEntryGroup" targetId="892e-a8dd-8f70-373a"/>
+            <entryLink import="true" name="Lore of High Magic" hidden="false" id="fbf2-762b-6f0d-b482" type="selectionEntryGroup" targetId="71b4-fc3e-92cd-f192"/>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -376,7 +371,6 @@ In addition, Aislinn rules his vessels with an iron hand; and is automatically t
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8361-4f11-f165-2a39" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Lore of High Magic" hidden="false" id="39c4-a356-b21f-1293" type="selectionEntryGroup" targetId="71b4-fc3e-92cd-f192"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="220"/>
@@ -723,33 +717,28 @@ In addition, Aislinn rules his vessels with an iron hand; and is automatically t
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="c205-2dd4-ecfc-9047" name="Wizard Level" hidden="false" collective="false" import="true" defaultSelectionEntryId="3943-3e61-4454-68e3">
+        <selectionEntryGroup name="Wizard Level" id="aa2f-02df-529b-4d50" hidden="false" collective="false" import="true" defaultSelectionEntryId="a4b8-ef05-84db-e0ab">
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4c78-dd88-d2e5-2bd7" type="max"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="555c-554c-6248-6003" type="min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e39f-feaa-3590-b6fe" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1991-75bf-00a2-ed39" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
-          <selectionEntries>
-            <selectionEntry id="3943-3e61-4454-68e3" name="Magic Level 1" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="210d-5318-2f24-276d" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
-                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="1"/>
-                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="1"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="8050-01c0-95ea-8885" name="Magic Level 2" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e7ef-8108-4815-e57c" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="35"/>
-                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="2"/>
-                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="1"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Magic Level 2" hidden="false" id="36e2-cd01-cf3f-5baf" type="selectionEntry" targetId="fbc2-5115-f240-7367"/>
+            <entryLink import="true" name="Magic Level 1" hidden="false" id="c8f2-833d-a6a2-6f9d" type="selectionEntry" targetId="158f-d753-59e2-9ad2"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Spells Lore" id="ec1a-7681-ee02-f47b" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Lore of Heavens" hidden="false" id="3a57-3c28-6a80-bd7d" type="selectionEntryGroup" targetId="e999-4d26-ec27-9cd0"/>
+            <entryLink import="true" name="Lore of Death" hidden="false" id="3c6d-6031-85c7-a31a" type="selectionEntryGroup" targetId="0a76-fdab-0afb-3612"/>
+            <entryLink import="true" name="Lore of Fire" hidden="false" id="7dab-207a-395d-12bc" type="selectionEntryGroup" targetId="ffc0-ed2b-71f0-b61c"/>
+            <entryLink import="true" name="Lore of Life" hidden="false" id="95a5-733f-e327-1ca3" type="selectionEntryGroup" targetId="7814-b731-32d8-88be"/>
+            <entryLink import="true" name="Lore of Metal" hidden="false" id="958e-9e06-7847-a94d" type="selectionEntryGroup" targetId="f679-dff7-370a-6050"/>
+            <entryLink import="true" name="Lore of Light" hidden="false" id="4666-ab4b-a73e-558b" type="selectionEntryGroup" targetId="f6d6-76c8-90fe-ac07"/>
+            <entryLink import="true" name="Lore of Shadow" hidden="false" id="962a-1540-5f1e-924d" type="selectionEntryGroup" targetId="b0de-c735-e115-5c82"/>
+            <entryLink import="true" name="Lore of Beasts" hidden="false" id="ccdd-f290-cc5a-4478" type="selectionEntryGroup" targetId="892e-a8dd-8f70-373a"/>
+            <entryLink import="true" name="Lore of High Magic" hidden="false" id="c35b-669a-6717-3656" type="selectionEntryGroup" targetId="71b4-fc3e-92cd-f192"/>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -759,7 +748,6 @@ In addition, Aislinn rules his vessels with an iron hand; and is automatically t
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ac50-2ef7-8b5d-9e28" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Lore of High Magic" hidden="false" id="d7f8-9fcd-c4a7-6fab" type="selectionEntryGroup" targetId="71b4-fc3e-92cd-f192"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="95"/>
@@ -3090,23 +3078,6 @@ In addition, Aislinn rules his vessels with an iron hand; and is automatically t
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="3b07-d927-d45c-4b80" name="Wizard Level" hidden="false" collective="false" import="true" defaultSelectionEntryId="a4b8-ef05-84db-e0ab">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3b86-515d-8bfe-fe97" type="max"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5e91-d0c9-eb35-a0b0" type="min"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="0ab7-41ab-eb64-9b62" name="Magic Level 4" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f1ff-09ab-00b0-89e3" type="max"/>
-              </constraints>
-              <costs>
-                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="4"/>
-                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="2"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
         <selectionEntryGroup name="Equipment" id="ca69-b79b-610f-e21b" hidden="false">
           <constraints>
             <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="aec2-de8f-2522-4300" includeChildSelections="false"/>
@@ -3175,6 +3146,19 @@ In addition, once per battle, at the start of his own Magic phase, Teclis may dr
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
+        <selectionEntryGroup name="Spells Lore" id="5393-66fd-962b-a82d" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Lore of Heavens" hidden="false" id="7b6a-8f3e-f774-b2a6" type="selectionEntryGroup" targetId="e999-4d26-ec27-9cd0"/>
+            <entryLink import="true" name="Lore of Death" hidden="false" id="d43a-9d80-75d1-c714" type="selectionEntryGroup" targetId="0a76-fdab-0afb-3612"/>
+            <entryLink import="true" name="Lore of Fire" hidden="false" id="5be9-c9b9-508d-8451" type="selectionEntryGroup" targetId="ffc0-ed2b-71f0-b61c"/>
+            <entryLink import="true" name="Lore of Life" hidden="false" id="5ee4-b1ab-40d6-6197" type="selectionEntryGroup" targetId="7814-b731-32d8-88be"/>
+            <entryLink import="true" name="Lore of Metal" hidden="false" id="456f-214f-5660-90da" type="selectionEntryGroup" targetId="f679-dff7-370a-6050"/>
+            <entryLink import="true" name="Lore of Light" hidden="false" id="b5f6-448c-177b-32fc" type="selectionEntryGroup" targetId="f6d6-76c8-90fe-ac07"/>
+            <entryLink import="true" name="Lore of Shadow" hidden="false" id="1e75-48a3-b0d5-1b0b" type="selectionEntryGroup" targetId="b0de-c735-e115-5c82"/>
+            <entryLink import="true" name="Lore of Beasts" hidden="false" id="727e-8331-1f4c-6c37" type="selectionEntryGroup" targetId="892e-a8dd-8f70-373a"/>
+            <entryLink import="true" name="Lore of High Magic" hidden="false" id="c6fd-2ff7-19c1-d2a9" type="selectionEntryGroup" targetId="71b4-fc3e-92cd-f192"/>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="1338-7c21-4bdf-9473" name="Hand Weapon" hidden="false" collective="false" import="true" targetId="abdb-bbd0-41b2-5dff" type="selectionEntry">
@@ -3187,6 +3171,11 @@ In addition, once per battle, at the start of his own Magic phase, Teclis may dr
           <costs>
             <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
           </costs>
+        </entryLink>
+        <entryLink import="true" name="Magic Level 4" hidden="false" id="e51d-b7e4-b55d-96d0" type="selectionEntry" targetId="fc28-3af2-d37a-d07e" page="" sortIndex="1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a07d-8772-3a2a-8145" includeChildSelections="false"/>
+          </constraints>
         </entryLink>
       </entryLinks>
       <costs>
@@ -5920,23 +5909,6 @@ Once it is summoned, the Oceanid remains where it is until dispelled or until th
     <entryLink import="true" name="Tichi Huichi&apos;s Raiders" hidden="false" id="3b12-4fb8-e0fe-e0d9" type="selectionEntry" targetId="86b2-59ec-ed5a-cf74"/>
     <entryLink import="true" name="Vespero&apos;s Vendetta" hidden="false" id="f1ff-5282-d022-da1a" type="selectionEntry" targetId="a14c-79da-9d49-49b1"/>
     <entryLink import="true" name="Voland&apos;s Venators" hidden="false" id="d6f2-6aa2-914c-b47f" type="selectionEntry" targetId="41e8-0d1b-81fe-2013"/>
-    <entryLink import="true" name="Enchanted Shield" hidden="false" id="5040-9e60-20d7-ad3a" collective="false" targetId="c5c1-60aa-745f-c9d3" type="selectionEntry"/>
-    <entryLink import="true" name="Biting Blade" hidden="false" id="8c9f-6b20-f137-3785" collective="false" targetId="74fc-c90b-250e-6b87" type="selectionEntry"/>
-    <entryLink import="true" name="Sword of Battle" hidden="false" id="b453-e3d1-10a8-8821" collective="false" targetId="6e5a-eeea-ec67-3632" type="selectionEntry">
-      <modifiers>
-        <modifier type="set" value="20" field="ecfa-8486-4f6c-c249"/>
-      </modifiers>
-    </entryLink>
-    <entryLink import="true" name="Sword of Might" hidden="false" id="23e6-2533-7e6c-0cd9" collective="false" targetId="8c56-9be1-c4a9-5afe" type="selectionEntry">
-      <modifiers>
-        <modifier type="set" value="15" field="ecfa-8486-4f6c-c249"/>
-      </modifiers>
-    </entryLink>
-    <entryLink import="true" name="Sword of Striking" hidden="false" id="6ca2-1356-cad2-1c9e" collective="false" targetId="6b55-e847-311d-d6ca" type="selectionEntry">
-      <modifiers>
-        <modifier type="set" value="25" field="ecfa-8486-4f6c-c249"/>
-      </modifiers>
-    </entryLink>
   </entryLinks>
   <forceEntries>
     <forceEntry name="Standard (HE-AB)" id="c236-0d80-eff8-3cf9" hidden="false" publicationId="a40f-696a-94e8-ecfb" page="22">

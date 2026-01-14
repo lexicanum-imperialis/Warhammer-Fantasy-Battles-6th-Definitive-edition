@@ -671,20 +671,13 @@
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
           <entryLinks>
-            <entryLink import="true" name="Lore of Dark Magic" hidden="false" id="6f86-5f63-8d61-a29e" type="selectionEntryGroup" targetId="76d0-7d08-fd0a-c3a7"/>
-          </entryLinks>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Upgrade to Level 4" hidden="false" id="1926-a27d-16a5-8c6b" collective="false">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f533-5a17-8b3f-152a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
+            <entryLink import="true" name="Magic Level 4" hidden="false" id="d311-2f4b-f896-5462" type="selectionEntry" targetId="fc28-3af2-d37a-d07e">
               <costs>
                 <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="40"/>
-                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="1"/>
-                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
               </costs>
-            </selectionEntry>
-          </selectionEntries>
+            </entryLink>
+            <entryLink import="true" name="Magic Level 3" hidden="false" id="4cf5-fa1f-4b9d-f9c1" type="selectionEntry" targetId="cb6c-c69a-5c73-97e8"/>
+          </entryLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Character options" hidden="false" id="44c2-7f08-3cfb-4814" collective="false">
           <constraints>
@@ -809,11 +802,19 @@
             </modifier>
           </modifiers>
         </selectionEntryGroup>
+        <selectionEntryGroup name="Spells Lore" id="ecd7-1c34-4450-2a47" hidden="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6346-6eda-a460-78d4" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Lore of Death" hidden="false" id="ff2e-eaa8-6569-e1a2" type="selectionEntryGroup" targetId="0a76-fdab-0afb-3612"/>
+            <entryLink import="true" name="Lore of Dark Magic" hidden="false" id="2156-55d3-d784-0e1e" type="selectionEntryGroup" targetId="76d0-7d08-fd0a-c3a7"/>
+            <entryLink import="true" name="Lore of Shadow" hidden="false" id="fd64-1aeb-55b5-9f8d" type="selectionEntryGroup" targetId="b0de-c735-e115-5c82"/>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="215"/>
-        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="3"/>
-        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="2"/>
       </costs>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -1210,32 +1211,6 @@
         <categoryLink id="6028-d9fb-889f-f8f9" name="Characters" hidden="false" targetId="7a1c-d611-c2dc-def1" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="2af7-2408-4a5d-38fc" name="Magic" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d156-c7f1-b2ac-61e9" type="max"/>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="53ae-e1c0-ee58-71d0" includeChildSelections="false"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
-            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-          </costs>
-          <entryLinks>
-            <entryLink import="true" name="Lore of Dark Magic" hidden="false" id="82f2-df78-dbc4-fb7e" type="selectionEntryGroup" targetId="76d0-7d08-fd0a-c3a7"/>
-          </entryLinks>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Level 2" hidden="false" id="4650-6fd8-9504-5252" collective="false">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a7c8-2d7c-bc79-95a6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="40"/>
-                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="1"/>
-                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Character options" hidden="false" id="7423-8c05-d474-2ec1" collective="false">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1fee-22e6-6585-6570" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -1332,14 +1307,35 @@
             </modifier>
           </modifiers>
         </selectionEntryGroup>
+        <selectionEntryGroup name="Spells Lore" id="bf18-9479-5d3e-3ec9" hidden="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="48d0-6f3a-46ba-56fc" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Lore of Death" hidden="false" id="95f9-a269-fa68-6247" type="selectionEntryGroup" targetId="0a76-fdab-0afb-3612"/>
+            <entryLink import="true" name="Lore of Dark Magic" hidden="false" id="5c32-2433-5b5f-c96b" type="selectionEntryGroup" targetId="76d0-7d08-fd0a-c3a7"/>
+            <entryLink import="true" name="Lore of Shadow" hidden="false" id="e7c8-e765-b26a-5408" type="selectionEntryGroup" targetId="b0de-c735-e115-5c82"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Magic level" id="a23e-db28-f44a-cac7" hidden="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="30de-8367-7812-77a3" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Magic Level 2" hidden="false" id="661b-4056-da1f-55b0" type="selectionEntry" targetId="fbc2-5115-f240-7367">
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="40"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Magic Level 1" hidden="false" id="f75e-dbcd-8b67-4f65" type="selectionEntry" targetId="158f-d753-59e2-9ad2"/>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="f0dd-194b-58fd-d01e" name="General" hidden="false" collective="false" import="true" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="90"/>
-        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="1"/>
-        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="1"/>
       </costs>
       <modifiers>
         <modifier type="set" value="1" field="62f9-5cd4-ed5f-f0e1">
@@ -3610,7 +3606,7 @@ You may choose the type of Veteran Hydra that joins your forces for this battl
         </infoGroup>
       </infoGroups>
     </selectionEntry>
-    <selectionEntry id="1c9c-880c-43f5-a24a" name="Morathi, the Hag Sorceress" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="1c9c-880c-43f5-a24a" name="Morathi, the Hag Sorceress" hidden="false" collective="false" import="true" type="unit" page="52-53" publicationId="20b9-0ee7-8f6f-8d28">
       <profiles>
         <profile id="44ac-14bb-7e7e-8acf" name="Morathi" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile" page="52-53" publicationId="20b9-0ee7-8f6f-8d28">
           <characteristics>
@@ -3625,7 +3621,7 @@ You may choose the type of Veteran Hydra that joins your forces for this battl
             <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">9</characteristic>
             <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
             <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">4+</characteristic>
-            <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
+            <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -3635,16 +3631,6 @@ You may choose the type of Veteran Hydra that joins your forces for this battl
         <categoryLink name="Special Characters" hidden="false" id="733a-abe7-06a9-de5d" targetId="0644-bfcd-32c2-21dc" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="ae5c-a3d2-04c5-cd7d" name="Upgrade to Level 4" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c457-7fa9-12d7-12fc" type="max"/>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="57bb-9ce3-d3a0-9799" includeChildSelections="false"/>
-          </constraints>
-          <costs>
-            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="1"/>
-            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-          </costs>
-        </selectionEntry>
         <selectionEntry id="6e64-12c9-d6c1-8859" name="Magic" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d74c-caf3-fa29-6774" type="max"/>
@@ -3668,7 +3654,11 @@ You may choose the type of Veteran Hydra that joins your forces for this battl
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
           <entryLinks>
-            <entryLink import="true" name="Lore of Dark Magic" hidden="false" id="9ff3-806d-19dd-874c" type="selectionEntryGroup" targetId="76d0-7d08-fd0a-c3a7"/>
+            <entryLink import="true" name="Lore of Dark Magic" hidden="false" id="9ff3-806d-19dd-874c" type="selectionEntryGroup" targetId="76d0-7d08-fd0a-c3a7">
+              <modifiers>
+                <modifier type="set" value="4" field="b71f-df64-138f-8597"/>
+              </modifiers>
+            </entryLink>
           </entryLinks>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="High Sorceress (Morathi)" hidden="false" id="adea-36c3-a963-03db">
@@ -3763,11 +3753,14 @@ You may choose the type of Veteran Hydra that joins your forces for this battl
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="621b-9216-5c07-272d" name="General" hidden="false" collective="false" import="true" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry"/>
+        <entryLink import="true" name="Magic Level 4" hidden="false" id="57ce-6a9b-c890-614a" type="selectionEntry" targetId="fc28-3af2-d37a-d07e">
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+          </costs>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="415"/>
-        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="3"/>
-        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="2"/>
       </costs>
       <infoGroups>
         <infoGroup name="Special rules" id="4729-af0b-429d-8392" hidden="false">
@@ -4339,22 +4332,6 @@ In addition, a monster that is beaten in hand to hand combat by Rakarth is assum
         <categoryLink id="d257-5d5f-60b5-2024" name="Characters" hidden="false" targetId="7a1c-d611-c2dc-def1" primary="false"/>
         <categoryLink name="Special Characters" hidden="false" id="6627-737a-4946-6837" targetId="0644-bfcd-32c2-21dc" primary="true"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="9ba1-326d-1a49-87b3" name="Magic" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="29b9-ffa4-7b2d-35b8" type="max"/>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0e8d-3504-283b-246f" includeChildSelections="false"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
-            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-          </costs>
-          <entryLinks>
-            <entryLink import="true" name="Lore of Dark Magic" hidden="false" id="8843-435c-8325-ded3" type="selectionEntryGroup" targetId="76d0-7d08-fd0a-c3a7"/>
-          </entryLinks>
-        </selectionEntry>
-      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="f8e7-9c14-1092-bb9f" name="Mounts" hidden="false" collective="false" import="true">
           <constraints>

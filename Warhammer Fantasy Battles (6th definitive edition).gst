@@ -1656,11 +1656,95 @@
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Magic Level 4" hidden="false" id="fc28-3af2-d37a-d07e" page="134" publicationId="315e-e3c4-08af-fd51">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8975-9aca-1463-1a1f" includeChildSelections="false"/>
+      </constraints>
+      <costs>
+        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="35"/>
+        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="4"/>
+        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="2"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Magic Level 1" hidden="false" id="158f-d753-59e2-9ad2" page="134" publicationId="315e-e3c4-08af-fd51">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="105e-0c33-0099-b999" includeChildSelections="false"/>
+      </constraints>
+      <costs>
+        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="1"/>
+        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="1"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Magic Level 2" hidden="false" id="fbc2-5115-f240-7367" page="134" publicationId="315e-e3c4-08af-fd51">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0885-9b48-f6d0-241e" includeChildSelections="false"/>
+      </constraints>
+      <costs>
+        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="35"/>
+        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="2"/>
+        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="1"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Magic Level 3" hidden="false" id="cb6c-c69a-5c73-97e8" page="134" publicationId="315e-e3c4-08af-fd51">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8fb8-7bf0-d992-c1dd" includeChildSelections="false"/>
+      </constraints>
+      <costs>
+        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="3"/>
+        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="2"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Extra Lord choice" hidden="false" id="7619-47fa-a83d-70b0" collective="false">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0fcf-7f07-265b-5a40" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c904-411b-5013-411c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink name="Characters" hidden="false" id="2844-c939-cd6c-49b8" targetId="7a1c-d611-c2dc-def1" primary="false"/>
+        <categoryLink name="Lord" hidden="false" id="1b5e-fb7a-3c7a-9f2e" targetId="d024-d25b-a9b4-73b6" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Extra Hero choice" hidden="false" id="3e25-986a-693f-a975" collective="false">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b565-1f72-9590-cf93" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5d46-303d-cba5-3690" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink name="Characters" hidden="false" id="1b9a-aa53-e0a8-f323" targetId="7a1c-d611-c2dc-def1" primary="false"/>
+        <categoryLink name="Heroes" hidden="false" id="f53a-c384-311b-53ad" targetId="c16b-f319-2c62-2c12" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Extra Rare choice" hidden="false" id="dde8-eb28-cacb-34a3" collective="false">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8043-dec3-821f-23ba" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a22b-5aa8-c139-ab08" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink name="Rare" hidden="false" id="26a7-14c9-7b34-6464" targetId="e94b-6a54-8779-cd60" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="f679-dff7-370a-6050" name="Lore of Metal" hidden="false" collective="false" import="true">
       <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b83-4dbf-bb69-70c3" type="max"/>
+        <constraint field="selections" scope="parent" value="6" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b83-4dbf-bb69-70c3" type="max"/>
       </constraints>
       <entryLinks>
         <entryLink id="8962-bf7d-b57b-33d9" name="1. Rule of Burning Iron" hidden="false" collective="false" import="true" targetId="d59b-907c-2f4c-d3ba" type="selectionEntry"/>
@@ -1686,7 +1770,7 @@
     </selectionEntryGroup>
     <selectionEntryGroup id="b0de-c735-e115-5c82" name="Lore of Shadow" hidden="false" collective="false" import="true">
       <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="15f8-e0a5-258b-b90a" type="max"/>
+        <constraint field="selections" scope="parent" value="6" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="15f8-e0a5-258b-b90a" type="max"/>
       </constraints>
       <entryLinks>
         <entryLink id="5287-c0cb-03f1-3475" name="1. Steed of Shadows" hidden="false" collective="false" import="true" targetId="537f-b5b1-470e-0f8c" type="selectionEntry"/>
@@ -1712,7 +1796,7 @@
     </selectionEntryGroup>
     <selectionEntryGroup id="e999-4d26-ec27-9cd0" name="Lore of Heavens" hidden="false" collective="false" import="true">
       <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2421-146f-1336-e9d5" type="max"/>
+        <constraint field="selections" scope="parent" value="6" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2421-146f-1336-e9d5" type="max"/>
       </constraints>
       <entryLinks>
         <entryLink id="3cfc-55ff-a1a1-8b56" name="1. Second Sign of Amul (Revised)" hidden="false" collective="false" import="true" targetId="65ea-6de9-feef-d9ab" type="selectionEntry"/>
@@ -1725,7 +1809,7 @@
     </selectionEntryGroup>
     <selectionEntryGroup id="f6d6-76c8-90fe-ac07" name="Lore of Light" hidden="false" collective="false" import="true">
       <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bedb-6c11-660d-6501" type="max"/>
+        <constraint field="selections" scope="parent" value="6" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bedb-6c11-660d-6501" type="max"/>
       </constraints>
       <entryLinks>
         <entryLink id="5fc2-e709-fd0a-7032" name="1. Pha&apos;s Illumination" hidden="false" collective="false" import="true" targetId="63d1-ef97-c0df-b585" type="selectionEntry"/>
@@ -1738,7 +1822,7 @@
     </selectionEntryGroup>
     <selectionEntryGroup id="7814-b731-32d8-88be" name="Lore of Life" hidden="false" collective="false" import="true">
       <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="01f3-47f4-50ce-9a46" type="max"/>
+        <constraint field="selections" scope="parent" value="6" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="01f3-47f4-50ce-9a46" type="max"/>
       </constraints>
       <entryLinks>
         <entryLink id="68fc-1a1b-4523-ee15" name="1. Mistress of the Marsh (Revised)" hidden="false" collective="false" import="true" targetId="e0a5-6a7f-7f36-e20a" type="selectionEntry"/>
@@ -2138,8 +2222,7 @@ Using a Power Stone will bring any spell in play cast earlier by that Wizard to 
 
 As with scrolls, Power Stones are not unique items - they are prepared by a Wizard prior to battle and it is quite possible for several Wizards to carry Power Stones, and for a Wizard to carry more than one. However, only one Power Stone can be used to enhance a spell.
 
-Note that a spell cast with a Power Stone can never be cast with Irresistible Force, though it can be Miscast
-</description>
+Note that a spell cast with a Power Stone can never be cast with Irresistible Force, though it can be Miscast</description>
     </rule>
     <rule id="f2d3-6ce8-88ad-7cad" name="War Banner(Magic Standard)" hidden="false">
       <description>+1 Combat Resolution. The War Banner carries powerful enchantments that fill all those who fight beneath it with heroic courage and determination. A unit, which has a War Banner adds a further +1. to its combat resolution when working out which side has won the combat.</description>

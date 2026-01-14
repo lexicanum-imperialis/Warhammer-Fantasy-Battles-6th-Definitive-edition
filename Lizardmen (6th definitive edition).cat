@@ -56,7 +56,22 @@
   <selectionEntries>
     <selectionEntry id="64c4-4576-b4b0-0b87" name="Slann Mage Priest" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
-        <infoLink id="474d-f82a-a406-c6aa" name="Slann Mage Priest" hidden="false" targetId="5943-700c-955c-d22d" type="profile"/>
+        <infoLink id="474d-f82a-a406-c6aa" name="Slann Mage Priest" hidden="false" targetId="5943-700c-955c-d22d" type="profile">
+          <modifiers>
+            <modifier type="increment" value="1" field="253a-9b00-4fde-8ac2">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="8a9c-93be-97a0-a553" shared="true"/>
+              </conditions>
+              <comment>3rd gen. Slann</comment>
+            </modifier>
+            <modifier type="increment" value="2" field="253a-9b00-4fde-8ac2">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="ef98-a1b8-8c22-f031" shared="true"/>
+              </conditions>
+              <comment>2nd gen. Slann</comment>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink id="9ab3-dcbe-e8b5-fb40" name="Cold Blooded" hidden="false" targetId="da71-1c1e-ded6-959a" type="rule"/>
         <infoLink id="ec48-d964-8516-04dd" name="Large Target" hidden="false" targetId="25b1-e384-bfcb-beed" type="rule"/>
         <infoLink id="ca22-410b-2897-9791" name="Palanquin" hidden="false" targetId="1be8-a4e9-32f6-2589" type="rule"/>
@@ -71,47 +86,34 @@
         <categoryLink id="d81b-ac27-ce7e-3045" name="Characters" hidden="false" targetId="7a1c-d611-c2dc-def1" primary="false"/>
         <categoryLink id="fc7d-a4c3-e838-1714" name="Slann" hidden="false" targetId="5c12-eebd-de21-0b3d" primary="false"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="29e5-688d-7372-91af" name="Wizard Level 4" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d0a-bea1-2ccb-622e" type="max"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2215-7676-0a2d-5073" type="min"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
-            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="4"/>
-            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="2"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="7ad3-2507-2de7-7f96" name="Generation" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d60d-c035-651b-6c16" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="bcfe-90a2-3ac7-2c79" name="Fifth Generation" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="bcfe-90a2-3ac7-2c79" name="Fifth Generation" hidden="false" collective="false" import="true" type="upgrade" sortIndex="1">
               <infoLinks>
                 <infoLink id="a267-7e6a-59cf-1c0b" name="Fifth Generation" hidden="false" targetId="83ad-a932-c23a-7bc9" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
-                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="1"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="1"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="428e-de39-b693-0ba6" name="Fourth Generation" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="428e-de39-b693-0ba6" name="Fourth Generation" hidden="false" collective="false" import="true" type="upgrade" sortIndex="2">
               <infoLinks>
                 <infoLink id="65ed-0ad7-463b-d601" name="Fourth Generation" hidden="false" targetId="8a36-6b24-aada-3987" type="rule"/>
                 <infoLink id="7560-b338-2b30-4cab" name="Fifth Generation" hidden="false" targetId="83ad-a932-c23a-7bc9" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="40"/>
-                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="1"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="1"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="8a9c-93be-97a0-a553" name="Third Generation" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="8a9c-93be-97a0-a553" name="Third Generation" hidden="false" collective="false" import="true" type="upgrade" sortIndex="3">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditions>
@@ -129,11 +131,14 @@
               </categoryLinks>
               <costs>
                 <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="85"/>
-                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="1"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="1"/>
               </costs>
+              <entryLinks>
+                <entryLink import="true" name="Extra Hero choice" hidden="false" id="0b5d-82ff-e318-6d9a" type="selectionEntry" targetId="3e25-986a-693f-a975"/>
+              </entryLinks>
             </selectionEntry>
-            <selectionEntry id="ef98-a1b8-8c22-f031" name="Second Generation" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="ef98-a1b8-8c22-f031" name="Second Generation" hidden="false" collective="false" import="true" type="upgrade" sortIndex="4">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditions>
@@ -153,9 +158,13 @@
               </categoryLinks>
               <costs>
                 <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="135"/>
-                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="1"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="1"/>
               </costs>
+              <entryLinks>
+                <entryLink import="true" name="Extra Hero choice" hidden="false" id="d359-f931-7e09-c869" type="selectionEntry" targetId="3e25-986a-693f-a975"/>
+                <entryLink import="true" name="Extra Rare choice" hidden="false" id="f362-3d50-4f17-fff5" type="selectionEntry" targetId="dde8-eb28-cacb-34a3"/>
+              </entryLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -170,9 +179,19 @@
             <entryLink id="994d-8a68-1123-dd6d" name="Plaques" hidden="false" collective="false" import="true" targetId="6150-3dae-687d-6461" type="selectionEntryGroup"/>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="3883-77ed-06c3-74a0" name="Spells" hidden="false" collective="false" import="true">
+        <selectionEntryGroup name="Spells Lore" id="df79-946f-4a83-d030" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Lore of Heavens" hidden="false" id="3257-bb7d-0e8b-0d6f" type="selectionEntryGroup" targetId="e999-4d26-ec27-9cd0"/>
+            <entryLink import="true" name="Lore of Death" hidden="false" id="4b40-08cc-c43f-8270" type="selectionEntryGroup" targetId="0a76-fdab-0afb-3612"/>
+            <entryLink import="true" name="Lore of Fire" hidden="false" id="4d7d-fd4d-8fb4-3587" type="selectionEntryGroup" targetId="ffc0-ed2b-71f0-b61c"/>
+            <entryLink import="true" name="Lore of Life" hidden="false" id="d351-1fd2-ed5a-b03a" type="selectionEntryGroup" targetId="7814-b731-32d8-88be"/>
+            <entryLink import="true" name="Lore of Metal" hidden="false" id="b3cb-5d0f-5212-4007" type="selectionEntryGroup" targetId="f679-dff7-370a-6050"/>
+            <entryLink import="true" name="Lore of Light" hidden="false" id="b6ea-67a0-a71e-fed6" type="selectionEntryGroup" targetId="f6d6-76c8-90fe-ac07"/>
+            <entryLink import="true" name="Lore of Shadow" hidden="false" id="9459-9170-5fa7-c186" type="selectionEntryGroup" targetId="b0de-c735-e115-5c82"/>
+            <entryLink import="true" name="Lore of Beasts" hidden="false" id="f142-545d-57e5-c26d" type="selectionEntryGroup" targetId="892e-a8dd-8f70-373a"/>
+          </entryLinks>
           <infoLinks>
-            <infoLink id="02f3-6661-3e9f-6be0" name="Drain Magic" hidden="false" targetId="1d5e-afeb-df27-29dd" type="rule"/>
+            <infoLink name="Drain Magic" id="02f3-6661-3e9f-6be0" hidden="false" targetId="1d5e-afeb-df27-29dd" type="rule"/>
           </infoLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -183,6 +202,11 @@
           </entryLinks>
         </entryLink>
         <entryLink id="81fb-e616-f2cc-edfc" name="General" hidden="false" collective="false" import="true" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry"/>
+        <entryLink id="52cb-5c4a-3bd0-20da" name="Magic Level 4" hidden="false" collective="false" import="true" targetId="fc28-3af2-d37a-d07e" type="selectionEntry">
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+          </costs>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="325"/>
@@ -672,28 +696,10 @@
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="08f1-3494-28f8-f4dc" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f352-a665-9559-a931" type="max"/>
           </constraints>
-          <selectionEntries>
-            <selectionEntry id="2e7e-4d6a-7fe0-6900" name="Wizard Level 1" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a365-50c0-d213-545e" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
-                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="1"/>
-                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="1"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="72f2-18fa-c0bb-51a0" name="Wizard Level 2" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6b9b-9b41-8b8b-b63f" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="35"/>
-                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="2"/>
-                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="1"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Magic Level 2" hidden="false" id="ac57-1b7f-39d2-67a5" type="selectionEntry" targetId="fbc2-5115-f240-7367"/>
+            <entryLink import="true" name="Magic Level 1" hidden="false" id="5549-4420-5f61-f710" type="selectionEntry" targetId="158f-d753-59e2-9ad2"/>
+          </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="b6db-d0b5-8c34-6d79" name="Magic Items" hidden="false" collective="false" import="true">
           <constraints>
@@ -760,6 +766,7 @@
             <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="ce13-e799-f59d-b4d5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Lore of Heavens" hidden="false" id="9af4-e9d5-86a2-8687" type="selectionEntryGroup" targetId="e999-4d26-ec27-9cd0"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="65"/>
@@ -2477,6 +2484,7 @@ The Hand of Gods has a range of 8&quot; and strikes every enemy unit within line
           <entryLinks>
             <entryLink import="true" name="General" hidden="false" id="6a6d-f0ce-bf9d-be98" collective="false" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry"/>
             <entryLink import="true" name="Blessed Spawning (Skinks of the Southlands)" hidden="false" id="dd5d-d1ed-9f2e-4061" collective="false" targetId="62df-4048-7504-aed8" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Lore of Heavens" hidden="false" id="35fa-ae13-e250-acb4" type="selectionEntryGroup" targetId="e999-4d26-ec27-9cd0"/>
           </entryLinks>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Scout" hidden="false" id="b854-6c52-c23b-eae4" collective="false">
@@ -2522,33 +2530,15 @@ The Hand of Gods has a range of 8&quot; and strikes every enemy unit within line
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Wizard Level" id="5bcd-d07d-34dd-2894" hidden="false" collective="false" import="true" defaultSelectionEntryId="2e7e-4d6a-7fe0-6900">
+            <selectionEntryGroup name="Wizard Level" id="bd90-de1f-2a8e-ffbe" hidden="false" collective="false" import="true" defaultSelectionEntryId="2e7e-4d6a-7fe0-6900">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6f13-4cf0-1130-6543" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f772-fe2a-83c6-879d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3533-4360-54f7-9a8c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c3ad-a7c5-221e-dbba" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Wizard Level 1" hidden="false" id="05e1-d6a4-cc82-148f" collective="false">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="37ea-21a5-dbe0-fb64" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </constraints>
-                  <costs>
-                    <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
-                    <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="1"/>
-                    <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="1"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Wizard Level 2" hidden="false" id="f9b1-8767-222a-d581" collective="false">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="08b2-e230-e976-8501" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </constraints>
-                  <costs>
-                    <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="35"/>
-                    <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="2"/>
-                    <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="1"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
+              <entryLinks>
+                <entryLink import="true" name="Magic Level 2" hidden="false" id="29a1-48d2-5ebf-9d3f" type="selectionEntry" targetId="fbc2-5115-f240-7367"/>
+                <entryLink import="true" name="Magic Level 1" hidden="false" id="6f44-4eae-ff50-7301" type="selectionEntry" targetId="158f-d753-59e2-9ad2"/>
+              </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <constraints>
