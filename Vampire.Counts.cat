@@ -31,6 +31,13 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
+          <modifiers>
+            <modifier type="set" value="7" field="ecfa-8486-4f6c-c249">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="d3af-1add-4e99-b977" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry id="75c7-2672-8bad-b32e" name="Light Armour" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
@@ -137,6 +144,9 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
                     <characteristic name="I" typeId="dfff-363e-f72a-5a59">2</characteristic>
                     <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">2</characteristic>
                     <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">3</characteristic>
+                    <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+                    <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+                    <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -174,6 +184,13 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
+          <modifiers>
+            <modifier type="set" value="5" field="ecfa-8486-4f6c-c249">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="d3af-1add-4e99-b977" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry id="3ffe-062c-d448-a76a" name="Handweapon" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -279,6 +296,9 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
                     <characteristic name="I" typeId="dfff-363e-f72a-5a59">3</characteristic>
                     <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">3</characteristic>
                     <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">6</characteristic>
+                    <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+                    <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+                    <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -296,6 +316,19 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="91ad-b36a-5c77-c4b5" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="b1e4-e1cf-9bd6-2438" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="d3af-1add-4e99-b977" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="3161-6d02-8903-b0c4" name="Bat Swarm" hidden="false" collective="false" import="true" type="unit">
       <constraints>
@@ -328,6 +361,27 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="2" field="dc57-c7c0-f8d4-3407">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="b1e4-e1cf-9bd6-2438" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="d3af-1add-4e99-b977" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="91ad-b36a-5c77-c4b5" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="3c0f-28ce-0807-81fa" name="Dire Wolves" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -349,6 +403,13 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
+          <modifiers>
+            <modifier type="set" value="9" field="ecfa-8486-4f6c-c249">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="d3af-1add-4e99-b977" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry id="2f62-07d1-34ab-0856" name="Doom Wolf" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -366,6 +427,23 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set-primary" value="43cc-fc3f-35a7-8d03" field="category"/>
+            <modifier type="remove" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="add" value="43cc-fc3f-35a7-8d03" field="category"/>
+          </modifiers>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="d3af-1add-4e99-b977" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="91ad-b36a-5c77-c4b5" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry id="92ee-2ebf-c6c0-71ff" name="Grave Guard" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -386,6 +464,13 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
+          <modifiers>
+            <modifier type="set" value="10" field="ecfa-8486-4f6c-c249">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="d3af-1add-4e99-b977" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry id="3d69-3741-1b94-8e3e" name="Heavy Armour" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -498,6 +583,9 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
                     <characteristic name="I" typeId="dfff-363e-f72a-5a59">3</characteristic>
                     <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">2</characteristic>
                     <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">8</characteristic>
+                    <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+                    <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+                    <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -536,6 +624,13 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
+          <modifiers>
+            <modifier type="set" value="20" field="ecfa-8486-4f6c-c249">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="d3af-1add-4e99-b977" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry id="d1d2-2653-7ab0-fbb0" name="Heavy Armour" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -657,6 +752,9 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
                     <characteristic name="I" typeId="dfff-363e-f72a-5a59">3</characteristic>
                     <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">2</characteristic>
                     <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">8</characteristic>
+                    <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+                    <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+                    <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -694,6 +792,13 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
+          <modifiers>
+            <modifier type="set" value="17" field="ecfa-8486-4f6c-c249">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="d3af-1add-4e99-b977" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -701,8 +806,20 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="b1e4-e1cf-9bd6-2438" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <modifiers>
+            <modifier type="set-primary" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="remove" value="43cc-fc3f-35a7-8d03" field="category"/>
+            <modifier type="add" value="64bf-efb4-9978-26df" field="category"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
-    <selectionEntry id="41a3-61ff-bfd0-b4b1" name="Spirit Host" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="41a3-61ff-bfd0-b4b1" name="0-1 Spirit Host" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6041-13bc-4302-5d28" type="max"/>
       </constraints>
@@ -725,6 +842,13 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
+          <modifiers>
+            <modifier type="set" value="55" field="ecfa-8486-4f6c-c249">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="d3af-1add-4e99-b977" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -754,6 +878,13 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
+          <modifiers>
+            <modifier type="set" value="75" field="ecfa-8486-4f6c-c249">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="d3af-1add-4e99-b977" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -762,7 +893,7 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="dd09-e6e8-38ea-c6f4" name="Black Coach" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="dd09-e6e8-38ea-c6f4" name="0-1 Black Coach" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2274-81fb-2e22-c00c" type="max"/>
       </constraints>
@@ -830,16 +961,27 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
-    </selectionEntry>
-    <selectionEntry id="d30a-e6ac-3b72-0c99" name="Dogs of War" hidden="false" collective="false" import="true" type="unit">
-      <categoryLinks>
-        <categoryLink id="2bd2-e106-114c-890d" name="Rare" hidden="false" targetId="e94b-6a54-8779-cd60" primary="true"/>
-      </categoryLinks>
-      <costs>
-        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
-        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-      </costs>
+      <modifiers>
+        <modifier type="set" value="2" field="2274-81fb-2e22-c00c">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="b1e4-e1cf-9bd6-2438" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="0-2 Black Coach" field="name">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="b1e4-e1cf-9bd6-2438" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="d3af-1add-4e99-b977" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="4ee2-ac3a-3cc6-11af" name="Master Necromancer" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -968,12 +1110,29 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="5c57-5cd6-a17c-1d0c" name="General" hidden="false" collective="false" import="true" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry"/>
+        <entryLink import="true" name="Lore of Necromancy" hidden="false" id="5f6f-1ab9-6b0f-f8ce" type="selectionEntry" targetId="f7e9-c0a4-549e-33e0">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3a3b-42ce-451f-28b8" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="185"/>
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="91ad-b36a-5c77-c4b5" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="b1e4-e1cf-9bd6-2438" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="b9c6-93fb-ce3c-965a" name="Wight Lord" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -1098,6 +1257,15 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
                 <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="8"/>
               </costs>
             </entryLink>
+            <entryLink import="true" name="Winged Nightmare" hidden="true" id="035f-dcb0-1b71-7b85" type="selectionEntry" targetId="70f3-c286-d1ac-5942">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="91ad-b36a-5c77-c4b5" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -1122,6 +1290,13 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="50" field="ecfa-8486-4f6c-c249">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="d3af-1add-4e99-b977" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="038e-dd7b-f346-178d" name="Wraith" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -1167,6 +1342,15 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
                 <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="8"/>
               </costs>
             </entryLink>
+            <entryLink import="true" name="Winged Nightmare" hidden="true" id="f1a2-76dd-d225-1a9a" type="selectionEntry" targetId="70f3-c286-d1ac-5942">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="91ad-b36a-5c77-c4b5" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -1183,6 +1367,13 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="75" field="ecfa-8486-4f6c-c249">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="d3af-1add-4e99-b977" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="b5d8-db21-a4b7-9e94" name="Necromancer" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -1287,10 +1478,26 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
               </costs>
             </selectionEntry>
           </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Winged Nightmare" hidden="true" id="9228-8648-6ff9-0879" type="selectionEntry" targetId="70f3-c286-d1ac-5942">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="91ad-b36a-5c77-c4b5" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="509d-c95d-3792-4e44" name="General" hidden="false" collective="false" import="true" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry"/>
+        <entryLink import="true" name="Lore of Necromancy" hidden="false" id="1a26-f8db-c342-86d6" type="selectionEntry" targetId="f7e9-c0a4-549e-33e0">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f333-a81c-5cc3-a3ee" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="65"/>
@@ -1298,7 +1505,7 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b77b-88d5-5e80-e178" name="Vampire Lord " hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="b77b-88d5-5e80-e178" name="0-1 Vampire Lord " hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a7c9-5fec-592a-3716" type="max"/>
       </constraints>
@@ -1903,6 +2110,17 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="d3af-1add-4e99-b977" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="6822-0110-a7c9-cbb0" name="Vampire Count" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -2309,6 +2527,17 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="d3af-1add-4e99-b977" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="e37b-c827-99ac-b706" name="Vampire Thrall" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
@@ -2321,6 +2550,15 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
           <conditions>
             <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="32d0-a151-94a3-aa54" type="greaterThan"/>
           </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="d3af-1add-4e99-b977" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -2363,6 +2601,9 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
                     <characteristic name="I" typeId="dfff-363e-f72a-5a59">6</characteristic>
                     <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">3</characteristic>
                     <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">7</characteristic>
+                    <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+                    <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+                    <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2544,6 +2785,9 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
                     <characteristic name="I" typeId="dfff-363e-f72a-5a59">6</characteristic>
                     <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">3</characteristic>
                     <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">7</characteristic>
+                    <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+                    <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+                    <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2644,6 +2888,9 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
                     <characteristic name="I" typeId="dfff-363e-f72a-5a59">6</characteristic>
                     <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">3</characteristic>
                     <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">7</characteristic>
+                    <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+                    <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+                    <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2820,6 +3067,9 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
                     <characteristic name="I" typeId="dfff-363e-f72a-5a59">6</characteristic>
                     <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">4</characteristic>
                     <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">7</characteristic>
+                    <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+                    <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+                    <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2855,6 +3105,9 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
                     <characteristic name="I" typeId="dfff-363e-f72a-5a59">8</characteristic>
                     <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">3</characteristic>
                     <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">7</characteristic>
+                    <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+                    <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+                    <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2929,6 +3182,22 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
+        <selectionEntryGroup name="Mounts" id="c162-339a-f4a0-3377" hidden="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1c33-2df5-6646-a6a9" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Winged Nightmare" hidden="true" id="7614-bd8c-95d2-4461" type="selectionEntry" targetId="70f3-c286-d1ac-5942">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="91ad-b36a-5c77-c4b5" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="da79-b7c3-3a00-1979" name="Battle Standard Bearer" hidden="false" collective="false" import="true" targetId="e9ad-f1ce-aebf-6d23" type="selectionEntry">
@@ -2964,6 +3233,9 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
             <characteristic name="I" typeId="dfff-363e-f72a-5a59">8</characteristic>
             <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">5</characteristic>
             <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">10</characteristic>
+            <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+            <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+            <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
           </characteristics>
         </profile>
       </profiles>
@@ -3236,6 +3508,367 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
         </rule>
       </rules>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Lore of Necromancy" hidden="true" id="5fb5-64d3-ce79-ea0d" publicationId="8e66-3042-1d6b-fa6b" page="58">
+      <categoryLinks>
+        <categoryLink name="Special list rules" hidden="false" id="674e-aaca-afa0-2221" targetId="32f1-197f-d719-a393" primary="true"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="1. Invocation of Nehek" id="3520-27ac-1c76-c204" hidden="false" type="profile" targetId="6484-4a1a-e62b-2ce1"/>
+        <infoLink name="2. Hand of Dust" id="f7ca-1058-d204-1fb3" hidden="false" type="profile" targetId="a7cd-68fc-2832-8adf"/>
+        <infoLink name="3. Hellish Vigour" id="db7e-6ec2-53a2-534c" hidden="false" type="profile" targetId="32b6-46cb-ba57-077c"/>
+        <infoLink name="4. Gaze of Nagash" id="ef3d-d1c9-8efc-3596" hidden="false" type="profile" targetId="10e7-ce3a-c125-1e20"/>
+        <infoLink name="5. Vanhel&apos;s Danse Macabre" id="0f37-ae4d-695d-7aa3" hidden="false" type="profile" targetId="5c9e-4dbe-4e4c-fa6e"/>
+        <infoLink name="6. Curse of Years" id="c419-21ea-d76c-ca0b" hidden="false" type="profile" targetId="17b6-29e3-c2fe-a46c"/>
+      </infoLinks>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden"/>
+            <modifier type="set" value="1" field="86b5-e9e9-381f-8660"/>
+          </modifiers>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="f7e9-c0a4-549e-33e0" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifierGroup>
+      </modifierGroups>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a4b5-f81f-f524-08e3" includeChildSelections="false"/>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="86b5-e9e9-381f-8660" includeChildSelections="false"/>
+      </constraints>
+      <infoGroups>
+        <infoGroup name="Rules of the Spells of Necromancy" id="2963-9940-ccd8-a70c" hidden="false">
+          <infoLinks>
+            <infoLink name="6. Curse of Years" id="013d-de34-7953-ae1e" hidden="false" type="rule" targetId="c2e6-74ae-586c-34e7"/>
+            <infoLink name="5. Vanhel&apos;s Danse Macabre" id="e17a-a3a5-4106-99f6" hidden="false" type="rule" targetId="8fea-2977-d30c-36ea"/>
+            <infoLink name="4. Gaze of Nagash" id="c414-a0b1-daa2-ad9e" hidden="false" type="rule" targetId="3430-bd58-5b58-f522"/>
+            <infoLink name="3. Hellish Vigour" id="cc90-5b77-ce2c-0c35" hidden="false" type="rule" targetId="a2d6-be66-d8e6-e1dd"/>
+            <infoLink name="2. Hand of Dust" id="c360-9d97-dc7c-fbd1" hidden="false" type="rule" targetId="8e5f-9fdb-a3a7-6603"/>
+            <infoLink name="1. Invocation of Nehek" id="8338-5171-ec0f-6394" hidden="false" type="rule" targetId="cda0-abcc-e469-6e54"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Archers" hidden="true" id="b9f0-3daa-9c61-947d" collective="false">
+      <infoLinks>
+        <infoLink name="Sylvanian Levy" id="ff0b-86a0-95ad-9560" hidden="false" targetId="70f8-8773-8e33-e6b1" type="profile">
+          <modifiers>
+            <modifier type="set" value="Archer" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Skirmishers" id="df51-b58d-302e-336f" hidden="false" targetId="1945-ac89-9cc4-3537" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Core" hidden="false" id="a3b2-382b-6830-bc6b" targetId="64bf-efb4-9978-26df" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Archer" hidden="false" id="b092-c96f-0aa2-ac26" collective="false">
+          <constraints>
+            <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="4e74-19f7-95fe-6db2" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="20" field="selections" scope="parent" shared="true" id="79f8-69c2-0755-6919" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="8"/>
+            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Marksman" hidden="false" id="d26c-ec40-3337-c8ea" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2a19-2ab5-ee34-ab42" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="5"/>
+            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Marksman" id="3bf6-3304-caed-d6d6" hidden="false" type="profile" targetId="dc94-5078-5ad8-30f6"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Bow" hidden="false" id="56f4-ad9b-9ef6-b298" collective="false" targetId="9efb-2b02-f245-62f5" type="selectionEntry">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="19e4-be0b-36df-b30d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="147c-9cba-52a0-e93e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Hand Weapon" hidden="false" id="a9c2-c44b-a489-21dd" collective="false" targetId="abdb-bbd0-41b2-5dff" type="selectionEntry">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8639-ce55-52ce-3b4f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a012-1ca3-347e-37a2" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="b1e4-e1cf-9bd6-2438" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="0-1 Huntsmen" hidden="true" id="2599-8ce8-f00b-019e" collective="false">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="a95a-85bb-aec5-1f65" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Sylvanian Levy" id="8079-9bba-8c2d-8a87" hidden="false" targetId="70f8-8773-8e33-e6b1" type="profile">
+          <modifiers>
+            <modifier type="set" value="Huntsmen" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Scouts" id="63b9-f1d6-c426-9a54" hidden="false" targetId="889c-dfc3-95a5-2d30" type="rule"/>
+        <infoLink name="Skirmishers" id="56a6-31e3-864d-cc62" hidden="false" targetId="1945-ac89-9cc4-3537" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Core" hidden="false" id="1866-6cf4-b54e-b0a6" targetId="64bf-efb4-9978-26df" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Huntsman" hidden="false" id="8f9d-ae63-9629-7cc7" collective="false">
+          <constraints>
+            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="8d8b-7635-765f-b4aa" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="e725-599c-0363-61dc" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="10"/>
+            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Marksmen" hidden="false" id="4468-34ea-bb91-8b13" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4851-4a84-103f-f9e4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="5"/>
+            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Marksman" id="b998-1336-0e34-361d" hidden="false" type="profile" targetId="dc94-5078-5ad8-30f6"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Long Bow" hidden="false" id="4909-5d5f-4de8-3984" collective="false" targetId="f920-04d5-06c0-c2c9" type="selectionEntry">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c020-a0c3-c61c-f99b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e594-b421-5082-7572" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Hand Weapon" hidden="false" id="cdf6-69f7-814b-9299" collective="false" targetId="abdb-bbd0-41b2-5dff" type="selectionEntry">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1b79-3b7a-0945-a82c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="81c4-4f14-2bbe-0a69" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="b1e4-e1cf-9bd6-2438" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Free Company" hidden="true" id="b0a7-f1b8-c72e-5d09" collective="false">
+      <infoLinks>
+        <infoLink name="Sylvanian Levy" id="74a0-70a4-5440-5712" hidden="false" targetId="70f8-8773-8e33-e6b1" type="profile">
+          <modifiers>
+            <modifier type="set" value="Fighter" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Core" hidden="false" id="ef7e-92cc-46c5-9474" targetId="64bf-efb4-9978-26df" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Fighter" hidden="false" id="3845-edf5-c32b-748c" collective="false">
+          <constraints>
+            <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="ce8c-b4c6-3315-4426" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="5"/>
+            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Musician" hidden="false" id="b223-6aca-70c7-878f" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2014-a2ab-d10c-e067" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="5"/>
+            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Standard Bearer" hidden="false" id="51be-490c-ff91-e0dd" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="04e5-fc9a-f230-b1c8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="10"/>
+            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Sergeant" hidden="false" id="bcfa-630a-1c07-4f50" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d32c-b942-0df1-fcf2" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Sergeant" id="b2b7-2b06-04d0-255f" hidden="false" targetId="c326-5c22-e112-428c" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="10"/>
+            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Two Hand Weapons" hidden="false" id="3879-1f34-59cb-5e26" collective="false" targetId="36a8-7bbb-d204-0314" type="selectionEntry">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="42f3-40f5-d05f-2d2c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c85e-11f1-939c-cd18" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Light Armour" hidden="false" id="4843-f884-e0ff-f6e1" collective="false" targetId="055f-8e4e-f170-35d2" type="selectionEntry">
+          <modifiers>
+            <modifier type="increment" value="1" field="ecfa-8486-4f6c-c249">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="30d1-d708-cc85-f3db" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="b1e4-e1cf-9bd6-2438" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Crossbowmen" hidden="true" id="4bfb-e413-43cb-4cf5" collective="false">
+      <infoLinks>
+        <infoLink name="Sylvanian Levy" id="3f44-1219-79e8-bf21" hidden="false" targetId="70f8-8773-8e33-e6b1" type="profile">
+          <modifiers>
+            <modifier type="set" value="Crossbowmen" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Core" hidden="false" id="2857-42be-1569-0ee1" targetId="64bf-efb4-9978-26df" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Crossbowmen" hidden="false" id="e720-a435-ab69-c858" collective="false">
+          <constraints>
+            <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="ed17-c82d-fd41-2735" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="8"/>
+            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Marksmen" hidden="false" id="4ef3-68a1-7130-ef6d" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="818d-0e05-159a-6acc" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Marksmen" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="dfaa-aba2-8661-502f">
+              <characteristics>
+                <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">4</characteristic>
+                <characteristic name="WS" typeId="f95b-da01-0578-3bdc">3</characteristic>
+                <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">4</characteristic>
+                <characteristic name="S" typeId="b690-4bc0-bb73-267b">3</characteristic>
+                <characteristic name="T" typeId="8712-f56f-5b22-a720">3</characteristic>
+                <characteristic name="W" typeId="253a-9b00-4fde-8ac2">1</characteristic>
+                <characteristic name="I" typeId="dfff-363e-f72a-5a59">3</characteristic>
+                <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
+                <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">7</characteristic>
+                <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+                <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+                <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="5"/>
+            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Musician" hidden="false" id="e39e-b8ad-4b68-8754" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a7c5-cb34-f48e-45ee" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="5"/>
+            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Standard Bearer" hidden="false" id="bc95-17a5-2de9-0995" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a6b4-3626-897f-d8e0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="10"/>
+            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Crossbow" hidden="false" id="5257-7599-ae5b-50f5" collective="false" targetId="4c50-49fe-7ac2-4b3b" type="selectionEntry">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="778d-1174-684d-2f6b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aaf5-bca3-cd0c-1f6c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Hand Weapon" hidden="false" id="5895-2be0-88d3-1bf2" collective="false" targetId="abdb-bbd0-41b2-5dff" type="selectionEntry">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7aae-70ed-8fd5-f473" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2538-440d-f236-4a49" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="b1e4-e1cf-9bd6-2438" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
     <selectionEntry id="1c56-48e6-7c01-5ae9" name="Nightmare" hidden="false" collective="false" import="true" type="upgrade">
@@ -3273,7 +3906,7 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
         <infoLink id="eaa9-b56d-8706-2bb6" name="Scaly skin 5+" hidden="false" targetId="0d10-ca10-6b05-87dc" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="300"/>
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
@@ -3479,6 +4112,23 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
       <infoLinks>
         <infoLink name="6. Curse of Years" id="b9c8-e98b-647c-f440" hidden="false" type="rule" targetId="c2e6-74ae-586c-34e7"/>
       </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Lore of Necromancy" hidden="false" id="f7e9-c0a4-549e-33e0" page="58" publicationId="8e66-3042-1d6b-fa6b">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="17fe-00e4-f83e-ad6e" includeChildSelections="false"/>
+      </constraints>
+      <infoGroups>
+        <infoGroup name="Spells rules" id="4489-d8e2-ff78-1a27" hidden="false">
+          <infoLinks>
+            <infoLink name="6. Curse of Years" id="7c58-c5e4-de03-a9e5" hidden="false" type="rule" targetId="c2e6-74ae-586c-34e7"/>
+            <infoLink name="1. Invocation of Nehek" id="e612-0531-56f1-3eb1" hidden="false" type="rule" targetId="cda0-abcc-e469-6e54"/>
+            <infoLink name="2. Hand of Dust" id="4148-8030-c234-30bf" hidden="false" type="rule" targetId="8e5f-9fdb-a3a7-6603"/>
+            <infoLink name="3. Hellish Vigour" id="12aa-7e68-8a4f-3c3c" hidden="false" type="rule" targetId="a2d6-be66-d8e6-e1dd"/>
+            <infoLink name="4. Gaze of Nagash" id="2390-2204-333d-45ba" hidden="false" type="rule" targetId="3430-bd58-5b58-f522"/>
+            <infoLink name="5. Vanhel&apos;s Danse Macabre" id="723d-1bbe-6edb-380c" hidden="false" type="rule" targetId="8fea-2977-d30c-36ea"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -4839,7 +5489,7 @@ Once it has been cast, the spell remains in play. It lasts until it is dispelled
 Characters who are part of a unit affected by this spell stop suffering from its effects if they leave the unit.</description>
     </rule>
     <rule name="1. Invocation of Nehek" id="cda0-abcc-e469-6e54" hidden="false" page="58" publicationId="8e66-3042-1d6b-fa6b">
-      <description>Casting Value: 3+
+      <description>Casting Value: 3+/7+/11+
 This spell can be used in three different ways - to add models to an existing unit, to create a new unit or to restore lost Wounds to a model. In all cases, it has a range of 18&quot;. The caster must declare if he is using the spell on an existing unit (declare target unit), to create a new unit (declare whether Zombies or Skeletons) or to restore lost Wounds (declare target model), as well as the Casting Value he is attempting (3+, 7+ or 11+), before he rolls the dice to cast.
 
 The higher the Casting Value chosen, the more effective will be the result of the spell if cast successfully (see below).
@@ -4865,8 +5515,7 @@ Whilst the spell is in play, the caster is reduced to a single Attack in close c
     </rule>
     <rule name="3. Hellish Vigour" id="a2d6-be66-d8e6-e1dd" hidden="false" page="58" publicationId="8e66-3042-1d6b-fa6b">
       <description>Casting Value: 7+
-Target one of your own Undead units within 18&quot; and which is in close combat. In the next Close Combat phase all models in the unit attacks first, even if they have been charged, are armed with Great Weapons and so on (even Zombies! This is the only exception to the Braindead rule), and can re-roll any missed To Hit rolls.
-</description>
+Target one of your own Undead units within 18&quot; and which is in close combat. In the next Close Combat phase all models in the unit attacks first, even if they have been charged, are armed with Great Weapons and so on (even Zombies! This is the only exception to the Braindead rule), and can re-roll any missed To Hit rolls.</description>
     </rule>
     <rule name="4. Gaze of Nagash" id="3430-bd58-5b58-f522" hidden="false" page="58" publicationId="8e66-3042-1d6b-fa6b">
       <description>Casting Value: 8+
@@ -4884,31 +5533,39 @@ The unit can charge an enemy within 8&quot; if opportunity permits and the same 
       <characteristics>
         <characteristic name="Range" typeId="3107-4d1e-9a51-6564"/>
         <characteristic name="Strength" typeId="6fe4-1ebb-cb04-1378"/>
+        <characteristic name="Damage" typeId="6f2f-d612-52ef-1633"/>
         <characteristic name="Special Rules" typeId="a21a-cdc0-4b13-b236">No armour saves. Ward saves as normal.
 For everyb wound suffered test agaist toughness on d6. If failed killed outright.</characteristic>
+        <characteristic name="Saves" typeId="8014-a8b2-15c3-da95"/>
       </characteristics>
     </profile>
     <profile id="cea8-d01b-3cf4-1562" name="Blood Drinker" hidden="false" typeId="7889-42d9-70a0-3ea9" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="3107-4d1e-9a51-6564"/>
         <characteristic name="Strength" typeId="6fe4-1ebb-cb04-1378"/>
+        <characteristic name="Damage" typeId="6f2f-d612-52ef-1633"/>
         <characteristic name="Special Rules" typeId="a21a-cdc0-4b13-b236">Add 1 lost wound for each combat killed.</characteristic>
+        <characteristic name="Saves" typeId="8014-a8b2-15c3-da95"/>
       </characteristics>
     </profile>
     <profile id="12b3-d736-b59c-3b3d" name="Asp Bow " hidden="false" typeId="7889-42d9-70a0-3ea9" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="3107-4d1e-9a51-6564">24&quot;</characteristic>
         <characteristic name="Strength" typeId="6fe4-1ebb-cb04-1378">4</characteristic>
+        <characteristic name="Damage" typeId="6f2f-d612-52ef-1633"/>
         <characteristic name="Special Rules" typeId="a21a-cdc0-4b13-b236">target any model. -1 to hit modifier see rules
 Poisoned attacks</characteristic>
+        <characteristic name="Saves" typeId="8014-a8b2-15c3-da95"/>
       </characteristics>
     </profile>
     <profile id="0a91-b4b4-70dc-6c91" name="Sword of the Kings " hidden="false" typeId="7889-42d9-70a0-3ea9" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="3107-4d1e-9a51-6564"/>
         <characteristic name="Strength" typeId="6fe4-1ebb-cb04-1378"/>
+        <characteristic name="Damage" typeId="6f2f-d612-52ef-1633"/>
         <characteristic name="Special Rules" typeId="a21a-cdc0-4b13-b236">Killing blow on 5+
 Wights only</characteristic>
+        <characteristic name="Saves" typeId="8014-a8b2-15c3-da95"/>
       </characteristics>
     </profile>
     <profile id="0971-8485-8672-524a" name="Skeleton" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
@@ -4922,6 +5579,9 @@ Wights only</characteristic>
         <characteristic name="I" typeId="dfff-363e-f72a-5a59">2</characteristic>
         <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">3</characteristic>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+        <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+        <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
       </characteristics>
     </profile>
     <profile id="4051-6d4c-cfd5-b501" name="Zombie" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
@@ -4935,6 +5595,9 @@ Wights only</characteristic>
         <characteristic name="I" typeId="dfff-363e-f72a-5a59">0</characteristic>
         <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">2</characteristic>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+        <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+        <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
       </characteristics>
     </profile>
     <profile id="0615-62cf-143f-fbcb" name="Ghoul" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
@@ -4948,6 +5611,9 @@ Wights only</characteristic>
         <characteristic name="I" typeId="dfff-363e-f72a-5a59">3</characteristic>
         <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">2</characteristic>
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">6</characteristic>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+        <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+        <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
       </characteristics>
     </profile>
     <profile id="1568-50af-1f31-a164" name="Bat Swarm" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
@@ -4961,6 +5627,9 @@ Wights only</characteristic>
         <characteristic name="I" typeId="dfff-363e-f72a-5a59">1</characteristic>
         <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">5</characteristic>
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">10</characteristic>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+        <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+        <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
       </characteristics>
     </profile>
     <profile id="4b5a-3ca7-1ff5-3c0d" name="Dire Wolf" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
@@ -4974,6 +5643,9 @@ Wights only</characteristic>
         <characteristic name="I" typeId="dfff-363e-f72a-5a59">3</characteristic>
         <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">6</characteristic>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+        <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+        <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">2</characteristic>
       </characteristics>
     </profile>
     <profile id="b6e4-c268-5a16-378d" name="Grave Guard" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
@@ -4987,6 +5659,9 @@ Wights only</characteristic>
         <characteristic name="I" typeId="dfff-363e-f72a-5a59">3</characteristic>
         <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">8</characteristic>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+        <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+        <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
       </characteristics>
     </profile>
     <profile id="4da4-b3eb-74e1-352f" name="Fell Bat" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
@@ -5000,6 +5675,9 @@ Wights only</characteristic>
         <characteristic name="I" typeId="dfff-363e-f72a-5a59">3</characteristic>
         <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">2</characteristic>
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">6</characteristic>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+        <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+        <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
       </characteristics>
     </profile>
     <profile id="1342-aad0-121e-6543" name="Spirit Host" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
@@ -5013,6 +5691,9 @@ Wights only</characteristic>
         <characteristic name="I" typeId="dfff-363e-f72a-5a59">1</characteristic>
         <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">4</characteristic>
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">6</characteristic>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+        <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+        <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">3</characteristic>
       </characteristics>
     </profile>
     <profile id="e4a0-f197-1e0c-a7c8" name="Nightmare coach" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
@@ -5026,6 +5707,9 @@ Wights only</characteristic>
         <characteristic name="I" typeId="dfff-363e-f72a-5a59">2</characteristic>
         <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">5</characteristic>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+        <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+        <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
       </characteristics>
     </profile>
     <profile id="feac-c0a8-0243-181f" name="Nightmare" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
@@ -5039,6 +5723,9 @@ Wights only</characteristic>
         <characteristic name="I" typeId="dfff-363e-f72a-5a59">2</characteristic>
         <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">5</characteristic>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+        <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+        <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
       </characteristics>
     </profile>
     <profile id="6af2-c721-3c09-9335" name="Banshee" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
@@ -5052,6 +5739,9 @@ Wights only</characteristic>
         <characteristic name="I" typeId="dfff-363e-f72a-5a59">4</characteristic>
         <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">2</characteristic>
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">8</characteristic>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+        <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+        <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
       </characteristics>
     </profile>
     <profile id="30cb-d912-a0a9-009f" name="Black Coach" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
@@ -5065,6 +5755,9 @@ Wights only</characteristic>
         <characteristic name="I" typeId="dfff-363e-f72a-5a59"/>
         <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1d6</characteristic>
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">9</characteristic>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+        <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+        <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">5</characteristic>
       </characteristics>
     </profile>
     <profile id="cfe0-687d-b8bb-c2b9" name="Wraith coachmen" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
@@ -5078,6 +5771,9 @@ Wights only</characteristic>
         <characteristic name="I" typeId="dfff-363e-f72a-5a59">2</characteristic>
         <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">2</characteristic>
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113"/>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+        <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+        <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
       </characteristics>
     </profile>
     <profile id="b5ea-f1d3-5326-a24e" name="Wailing Helm" hidden="false" typeId="f681-9937-db53-f1d8" typeName="Armour">
@@ -5132,6 +5828,9 @@ Roll a D6 each time the Book is used. On a result of 1 its powers are temporaril
         <characteristic name="I" typeId="dfff-363e-f72a-5a59">8</characteristic>
         <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">5</characteristic>
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">10</characteristic>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+        <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+        <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
       </characteristics>
     </profile>
     <profile id="59fa-adda-8639-56e7" name="Winged Nightmare" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
@@ -5145,6 +5844,9 @@ Roll a D6 each time the Book is used. On a result of 1 its powers are temporaril
         <characteristic name="I" typeId="dfff-363e-f72a-5a59">2</characteristic>
         <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">3</characteristic>
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">5</characteristic>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+        <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+        <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">4</characteristic>
       </characteristics>
     </profile>
     <profile id="7301-6766-aff2-39bf" name="Zombie Dragon" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
@@ -5158,6 +5860,9 @@ Roll a D6 each time the Book is used. On a result of 1 its powers are temporaril
         <characteristic name="I" typeId="dfff-363e-f72a-5a59">1</characteristic>
         <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">4</characteristic>
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">4</characteristic>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">5+</characteristic>
+        <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+        <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">6</characteristic>
       </characteristics>
     </profile>
     <profile id="fabd-ef67-72f5-6b3f" name="Vampire Count" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
@@ -5171,6 +5876,9 @@ Roll a D6 each time the Book is used. On a result of 1 its powers are temporaril
         <characteristic name="I" typeId="dfff-363e-f72a-5a59">7</characteristic>
         <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">4</characteristic>
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">9</characteristic>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+        <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+        <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
       </characteristics>
     </profile>
     <profile id="b6e8-40e0-212e-1ad7" name="Master Necromancer" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
@@ -5184,6 +5892,9 @@ Roll a D6 each time the Book is used. On a result of 1 its powers are temporaril
         <characteristic name="I" typeId="dfff-363e-f72a-5a59">3</characteristic>
         <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">8</characteristic>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+        <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+        <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
       </characteristics>
     </profile>
     <profile id="a9a3-6760-b00e-bb3b" name="Wight Lord" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
@@ -5197,6 +5908,9 @@ Roll a D6 each time the Book is used. On a result of 1 its powers are temporaril
         <characteristic name="I" typeId="dfff-363e-f72a-5a59">4</characteristic>
         <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">3</characteristic>
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">9</characteristic>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+        <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+        <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
       </characteristics>
     </profile>
     <profile id="9660-6395-d3e4-7a12" name="Black Knight" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
@@ -5210,6 +5924,9 @@ Roll a D6 each time the Book is used. On a result of 1 its powers are temporaril
         <characteristic name="I" typeId="dfff-363e-f72a-5a59">3</characteristic>
         <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">8</characteristic>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+        <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+        <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1(2)</characteristic>
       </characteristics>
     </profile>
     <profile id="5d1b-f820-16d5-553f" name="Necromancer" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
@@ -5223,11 +5940,138 @@ Roll a D6 each time the Book is used. On a result of 1 its powers are temporaril
         <characteristic name="I" typeId="dfff-363e-f72a-5a59">3</characteristic>
         <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">8</characteristic>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+        <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+        <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="1. Invocation of Nehek" typeId="07eb-6084-5f84-a505" typeName="Spell" hidden="false" id="6484-4a1a-e62b-2ce1" page="58" publicationId="8e66-3042-1d6b-fa6b">
+      <characteristics>
+        <characteristic name="Name" typeId="8ccc-fcf0-ee2e-6445">Invocation of Nehek</characteristic>
+        <characteristic name="Cast" typeId="f1e6-8816-26e0-8a70">3+/7+/11+</characteristic>
+        <characteristic name="Range" typeId="42e6-553f-842f-0b91">18&quot;</characteristic>
+        <characteristic name="Type" typeId="194f-3dee-9698-7291">Invokation</characteristic>
+        <characteristic name="Effect" typeId="7d21-349e-b0a8-fc7d">Casting Value  |  Models Created                             | Wounds Restored
+           3+         | D6 Skeletons or D6+1 Zombies      | 1 Wound
+           7+         | 2D6 Skeletons or 2D6+2 Zombies  | 2 Wounds
+           11+       | 3D6 Skeletons or 3D6+3 Zombies   | 3 Wounds
+See 1. Invocation of Nehek</characteristic>
+        <characteristic name="CC" typeId="d360-4f33-c1a6-b3ab">NO</characteristic>
+        <characteristic name="Target" typeId="d1af-fdf7-8ed2-d6a3">Undead allied or New unit</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="2. Hand of Dust" typeId="07eb-6084-5f84-a505" typeName="Spell" hidden="false" id="a7cd-68fc-2832-8adf" page="58" publicationId="8e66-3042-1d6b-fa6b">
+      <characteristics>
+        <characteristic name="Name" typeId="8ccc-fcf0-ee2e-6445">Hand of Dust</characteristic>
+        <characteristic name="Cast" typeId="f1e6-8816-26e0-8a70">7+</characteristic>
+        <characteristic name="Range" typeId="42e6-553f-842f-0b91">-</characteristic>
+        <characteristic name="Type" typeId="194f-3dee-9698-7291">Remains in play</characteristic>
+        <characteristic name="Effect" typeId="7d21-349e-b0a8-fc7d">Whilst the spell is in play, the caster is reduced to a single Attack in close combat. If this attack hits, the enemy is killed automatically, with no armour saves allowed (this works exactly like a Killing Blow attack, with the only difference being that it can affect models of any size). The enemy can take a Ward save, if he has any, but if the wound is not saved the model is dead.</characteristic>
+        <characteristic name="CC" typeId="d360-4f33-c1a6-b3ab">YES</characteristic>
+        <characteristic name="Target" typeId="d1af-fdf7-8ed2-d6a3">CC</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="3. Hellish Vigour" typeId="07eb-6084-5f84-a505" typeName="Spell" hidden="false" id="32b6-46cb-ba57-077c" page="58" publicationId="8e66-3042-1d6b-fa6b">
+      <characteristics>
+        <characteristic name="Name" typeId="8ccc-fcf0-ee2e-6445">Hellish Vigour</characteristic>
+        <characteristic name="Cast" typeId="f1e6-8816-26e0-8a70">7+</characteristic>
+        <characteristic name="Range" typeId="42e6-553f-842f-0b91">18&quot;</characteristic>
+        <characteristic name="Type" typeId="194f-3dee-9698-7291">Buff</characteristic>
+        <characteristic name="Effect" typeId="7d21-349e-b0a8-fc7d">Target one of your own Undead units within 18&quot; and which is in close combat. In the next Close Combat phase all models in the unit attacks first, even if they have been charged, are armed with Great Weapons and so on (even Zombies! This is the only exception to the Braindead rule), and can re-roll any missed To Hit rolls.</characteristic>
+        <characteristic name="CC" typeId="d360-4f33-c1a6-b3ab">NO</characteristic>
+        <characteristic name="Target" typeId="d1af-fdf7-8ed2-d6a3">Undead allies</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="4. Gaze of Nagash" typeId="07eb-6084-5f84-a505" typeName="Spell" hidden="false" id="10e7-ce3a-c125-1e20" page="58" publicationId="8e66-3042-1d6b-fa6b">
+      <characteristics>
+        <characteristic name="Name" typeId="8ccc-fcf0-ee2e-6445">Gaze of Nagash</characteristic>
+        <characteristic name="Cast" typeId="f1e6-8816-26e0-8a70">8+</characteristic>
+        <characteristic name="Range" typeId="42e6-553f-842f-0b91">24&quot;</characteristic>
+        <characteristic name="Type" typeId="194f-3dee-9698-7291">Magic missile</characteristic>
+        <characteristic name="Effect" typeId="7d21-349e-b0a8-fc7d">2D6 Strength 4 hits.</characteristic>
+        <characteristic name="CC" typeId="d360-4f33-c1a6-b3ab">NO</characteristic>
+        <characteristic name="Target" typeId="d1af-fdf7-8ed2-d6a3">Enemy units</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="5. Vanhel&apos;s Danse Macabre" typeId="07eb-6084-5f84-a505" typeName="Spell" hidden="false" id="5c9e-4dbe-4e4c-fa6e" page="58" publicationId="8e66-3042-1d6b-fa6b">
+      <characteristics>
+        <characteristic name="Name" typeId="8ccc-fcf0-ee2e-6445">Vanhel&apos;s Danse Macabre</characteristic>
+        <characteristic name="Cast" typeId="f1e6-8816-26e0-8a70">9+</characteristic>
+        <characteristic name="Range" typeId="42e6-553f-842f-0b91">18&quot;</characteristic>
+        <characteristic name="Type" typeId="194f-3dee-9698-7291">Invokation</characteristic>
+        <characteristic name="Effect" typeId="7d21-349e-b0a8-fc7d">This spell can be cast on a friendly Undead unit that is within 18&quot;, and which is not already engaged in close combat. The unit can immediately make a move of up to 8&quot; in the same way as a normal move made in the Movement phase (it can wheel, turn, change formation or even reform).
+
+The unit can charge an enemy within 8&quot; if opportunity permits and the same rules apply as for a normal charge (except that if the charge is failed the Undead will still move the full 8&quot;). A unit that is charged by means of Vanhel&apos;s Danse Macabre can react to the charge as normal and must take the appropriate Psychology tests.</characteristic>
+        <characteristic name="CC" typeId="d360-4f33-c1a6-b3ab">NO</characteristic>
+        <characteristic name="Target" typeId="d1af-fdf7-8ed2-d6a3">Undead allies not in CC</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="6. Curse of Years" typeId="07eb-6084-5f84-a505" typeName="Spell" hidden="false" id="17b6-29e3-c2fe-a46c" page="58" publicationId="8e66-3042-1d6b-fa6b">
+      <characteristics>
+        <characteristic name="Name" typeId="8ccc-fcf0-ee2e-6445">Curse of Years</characteristic>
+        <characteristic name="Cast" typeId="f1e6-8816-26e0-8a70">10+</characteristic>
+        <characteristic name="Range" typeId="42e6-553f-842f-0b91">24&quot;</characteristic>
+        <characteristic name="Type" typeId="194f-3dee-9698-7291">Remains in play</characteristic>
+        <characteristic name="Effect" typeId="7d21-349e-b0a8-fc7d">If successfully cast, the enemy swiftly starts to age. Roll a dice for each model in the affected unit. A model will suffer a wound on the roll of a 6+. No armour saves are allowed.
+
+Once it has been cast, the spell remains in play. It lasts until it is dispelled, or until the Wizard decides to end it (which he can do at any time), attempts to cast another spell or is slain. If not dispelled, at the beginning of the caster&apos;s next Magic phase, models in the affected unit suffer a wound on a 5 +. In the caster&apos;s next Magic phase they will suffer a wound on a 4+ and so on, to a minimum of 2+. No armour saves are allowed.
+
+Characters who are part of a unit affected by this spell stop suffering from its effects if they leave the unit.</characteristic>
+        <characteristic name="CC" typeId="d360-4f33-c1a6-b3ab">NO</characteristic>
+        <characteristic name="Target" typeId="d1af-fdf7-8ed2-d6a3">Enemy unit in CC</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Sylvanian Levy" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="70f8-8773-8e33-e6b1" page="78" publicationId="8e66-3042-1d6b-fa6b">
+      <characteristics>
+        <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">4</characteristic>
+        <characteristic name="WS" typeId="f95b-da01-0578-3bdc">3</characteristic>
+        <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">3</characteristic>
+        <characteristic name="S" typeId="b690-4bc0-bb73-267b">3</characteristic>
+        <characteristic name="T" typeId="8712-f56f-5b22-a720">3</characteristic>
+        <characteristic name="W" typeId="253a-9b00-4fde-8ac2">1</characteristic>
+        <characteristic name="I" typeId="dfff-363e-f72a-5a59">3</characteristic>
+        <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
+        <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">7</characteristic>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+        <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+        <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Sergeant" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="c326-5c22-e112-428c" page="78" publicationId="8e66-3042-1d6b-fa6b">
+      <characteristics>
+        <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">4</characteristic>
+        <characteristic name="WS" typeId="f95b-da01-0578-3bdc">3</characteristic>
+        <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">3</characteristic>
+        <characteristic name="S" typeId="b690-4bc0-bb73-267b">3</characteristic>
+        <characteristic name="T" typeId="8712-f56f-5b22-a720">3</characteristic>
+        <characteristic name="W" typeId="253a-9b00-4fde-8ac2">1</characteristic>
+        <characteristic name="I" typeId="dfff-363e-f72a-5a59">3</characteristic>
+        <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">2</characteristic>
+        <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">7</characteristic>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+        <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+        <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Marksman" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="dc94-5078-5ad8-30f6" page="78" publicationId="8e66-3042-1d6b-fa6b">
+      <characteristics>
+        <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">4</characteristic>
+        <characteristic name="WS" typeId="f95b-da01-0578-3bdc">3</characteristic>
+        <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">4</characteristic>
+        <characteristic name="S" typeId="b690-4bc0-bb73-267b">3</characteristic>
+        <characteristic name="T" typeId="8712-f56f-5b22-a720">3</characteristic>
+        <characteristic name="W" typeId="253a-9b00-4fde-8ac2">1</characteristic>
+        <characteristic name="I" typeId="dfff-363e-f72a-5a59">3</characteristic>
+        <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
+        <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">7</characteristic>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+        <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+        <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
   <forceEntries>
-    <forceEntry name="Standard (VC-AB)" id="e989-15b8-7eb6-9668" hidden="false">
+    <forceEntry name="Standard (VC-AB)" id="e989-15b8-7eb6-9668" hidden="false" publicationId="8e66-3042-1d6b-fa6b" page="60-68">
       <categoryLinks>
         <categoryLink name="Experimental rules" hidden="false" id="eb3c-d2ab-3b2d-0f69" targetId="4fed-b911-e6e0-927b" primary="false"/>
         <categoryLink name="Special list rules" hidden="false" id="950e-cea9-64a9-25a1" targetId="32f1-197f-d719-a393" primary="false"/>
@@ -5241,8 +6085,70 @@ Roll a D6 each time the Book is used. On a result of 1 its powers are temporaril
         <categoryLink name="Regiment of Renown" hidden="false" id="2440-d8ee-aa7e-6049" targetId="ee09-9a50-ad78-9c32" primary="false"/>
       </categoryLinks>
     </forceEntry>
+    <forceEntry name="Von Carstein (VC-AB)" id="b1e4-e1cf-9bd6-2438" hidden="false" page="78" publicationId="8e66-3042-1d6b-fa6b">
+      <categoryLinks>
+        <categoryLink name="Experimental rules" hidden="false" id="be83-351a-6bcc-6ca3" targetId="4fed-b911-e6e0-927b" primary="false"/>
+        <categoryLink name="Special list rules" hidden="false" id="0c38-aa2b-b60b-9659" targetId="32f1-197f-d719-a393" primary="false"/>
+        <categoryLink name="Characters" hidden="false" id="a55b-0c8f-9b2f-6085" targetId="7a1c-d611-c2dc-def1" primary="false"/>
+        <categoryLink name="Special Characters" hidden="false" id="934b-4235-dedf-5376" targetId="0644-bfcd-32c2-21dc" primary="false"/>
+        <categoryLink name="Lord" hidden="false" id="e3e9-2ad7-012a-6ef2" targetId="d024-d25b-a9b4-73b6" primary="false"/>
+        <categoryLink name="Heroes" hidden="false" id="8028-8a05-8884-557e" targetId="c16b-f319-2c62-2c12" primary="false"/>
+        <categoryLink name="Core" hidden="false" id="def8-b2c9-e97f-bdfd" targetId="64bf-efb4-9978-26df" primary="false"/>
+        <categoryLink name="Special" hidden="false" id="bb98-8cea-dfe3-5372" targetId="43cc-fc3f-35a7-8d03" primary="false"/>
+        <categoryLink name="Rare" hidden="false" id="bab6-6ff3-a5c8-8caa" targetId="e94b-6a54-8779-cd60" primary="false"/>
+        <categoryLink name="Regiment of Renown" hidden="false" id="f155-133b-b809-47de" targetId="ee09-9a50-ad78-9c32" primary="false"/>
+      </categoryLinks>
+    </forceEntry>
+    <forceEntry name="Necrarchs (VC-AB)" id="91ad-b36a-5c77-c4b5" hidden="false" page="78" publicationId="8e66-3042-1d6b-fa6b">
+      <categoryLinks>
+        <categoryLink name="Experimental rules" hidden="false" id="200d-dd61-12c6-891a" targetId="4fed-b911-e6e0-927b" primary="false"/>
+        <categoryLink name="Special list rules" hidden="false" id="94f7-d040-3fac-360c" targetId="32f1-197f-d719-a393" primary="false"/>
+        <categoryLink name="Characters" hidden="false" id="190b-4d7d-7b03-649c" targetId="7a1c-d611-c2dc-def1" primary="false"/>
+        <categoryLink name="Special Characters" hidden="false" id="2b54-c24a-b977-5ffa" targetId="0644-bfcd-32c2-21dc" primary="false"/>
+        <categoryLink name="Lord" hidden="false" id="cd54-36cb-b841-374f" targetId="d024-d25b-a9b4-73b6" primary="false"/>
+        <categoryLink name="Heroes" hidden="false" id="c62d-ee5e-0d5a-dacb" targetId="c16b-f319-2c62-2c12" primary="false"/>
+        <categoryLink name="Core" hidden="false" id="a45d-4ff8-7e0f-d133" targetId="64bf-efb4-9978-26df" primary="false"/>
+        <categoryLink name="Special" hidden="false" id="72fe-9854-e1d8-e87e" targetId="43cc-fc3f-35a7-8d03" primary="false"/>
+        <categoryLink name="Rare" hidden="false" id="085f-a73a-3bfc-e7d1" targetId="e94b-6a54-8779-cd60" primary="false"/>
+        <categoryLink name="Regiment of Renown" hidden="false" id="91fd-fa9d-0d13-9d4a" targetId="ee09-9a50-ad78-9c32" primary="false"/>
+      </categoryLinks>
+    </forceEntry>
+    <forceEntry name="Necromancer&apos;s Army (VC-AB)" id="d3af-1add-4e99-b977" hidden="false" page="78" publicationId="8e66-3042-1d6b-fa6b">
+      <categoryLinks>
+        <categoryLink name="Experimental rules" hidden="false" id="69f3-6128-c694-d909" targetId="4fed-b911-e6e0-927b" primary="false"/>
+        <categoryLink name="Special list rules" hidden="false" id="f733-6cf7-e10f-b760" targetId="32f1-197f-d719-a393" primary="false"/>
+        <categoryLink name="Characters" hidden="false" id="b723-998e-9fbc-1e75" targetId="7a1c-d611-c2dc-def1" primary="false"/>
+        <categoryLink name="Special Characters" hidden="false" id="ebc5-9007-27e7-ef80" targetId="0644-bfcd-32c2-21dc" primary="false"/>
+        <categoryLink name="Lord" hidden="false" id="4b53-a952-fb59-0b6e" targetId="d024-d25b-a9b4-73b6" primary="false"/>
+        <categoryLink name="Heroes" hidden="false" id="74fe-6c8b-e392-a52d" targetId="c16b-f319-2c62-2c12" primary="false"/>
+        <categoryLink name="Core" hidden="false" id="b31d-af24-f6be-9eec" targetId="64bf-efb4-9978-26df" primary="false"/>
+        <categoryLink name="Special" hidden="false" id="4cf4-bc4c-67a6-816b" targetId="43cc-fc3f-35a7-8d03" primary="false"/>
+        <categoryLink name="Rare" hidden="false" id="f51a-edbe-bc41-8402" targetId="e94b-6a54-8779-cd60" primary="false"/>
+        <categoryLink name="Regiment of Renown" hidden="false" id="bb82-03fe-d34d-17cb" targetId="ee09-9a50-ad78-9c32" primary="false"/>
+      </categoryLinks>
+    </forceEntry>
   </forceEntries>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Mercenaries" id="ef73-f9bd-e250-54d2" targetId="fc47-8392-a6c8-452a"/>
   </catalogueLinks>
+  <entryLinks>
+    <entryLink import="true" name="Zombie Dragon" hidden="true" id="b2fb-d3e5-ebb4-063f" type="selectionEntry" targetId="1a86-7ed1-3c74-8d15">
+      <categoryLinks>
+        <categoryLink name="Rare" hidden="false" id="7f7c-5834-3e1f-3eb6" targetId="e94b-6a54-8779-cd60" primary="true"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="Unridden Zombie Dragons" field="name"/>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="91ad-b36a-5c77-c4b5" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <rules>
+        <rule name="Unridden Zombie Dragons" id="de16-0fbb-294d-fcaa" hidden="false" publicationId="8e66-3042-1d6b-fa6b" page="78">
+          <description>No need to test on the Monster Reaction table, do not count as Hero choices.</description>
+        </rule>
+      </rules>
+    </entryLink>
+  </entryLinks>
 </catalogue>

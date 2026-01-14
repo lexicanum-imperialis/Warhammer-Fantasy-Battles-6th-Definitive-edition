@@ -1941,19 +1941,6 @@ If there is a building or wall section directly underneath the place where this 
         <categoryLink id="3a96-b8a2-6496-10f9" name="Characters" hidden="false" targetId="7a1c-d611-c2dc-def1" primary="false"/>
         <categoryLink id="03d1-5550-53be-a0e7" name="Special Characters" hidden="false" targetId="0644-bfcd-32c2-21dc" primary="true"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="b03b-9143-4bb3-b482" name="Wizard Level 4" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7749-3b4f-fa8d-68f4" type="max"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d489-56c6-7a27-0450" type="min"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
-            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="4"/>
-            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="2"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="af7c-a3aa-7ce5-4627" name="Generation" hidden="false" collective="false" import="true" defaultSelectionEntryId="c54c-ac6d-a9df-3bcc">
           <selectionEntries>
@@ -1992,6 +1979,14 @@ If there is a building or wall section directly underneath the place where this 
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="03a2-9393-8262-c42f" name="General" hidden="false" collective="false" import="true" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry"/>
+        <entryLink import="true" name="Magic Level 4" hidden="false" id="51a2-ae19-4033-e3d6" type="selectionEntry" targetId="fc28-3af2-d37a-d07e">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cc4d-ef1d-072c-19ce" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+          </costs>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="1225"/>
@@ -2995,25 +2990,29 @@ These may take one of the following Blessed Spawning each:
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1512-d62c-bfbf-6569" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f1db-c424-e153-d302" type="max"/>
           </constraints>
-          <selectionEntries>
-            <selectionEntry id="239b-deca-8159-2640" name="Wizard Level 3" hidden="false" collective="false" import="true" type="upgrade">
+          <entryLinks>
+            <entryLink import="true" name="Magic Level 3" hidden="false" id="90da-54c2-5936-7143" type="selectionEntry" targetId="cb6c-c69a-5c73-97e8">
               <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fea3-56a4-529c-4a4c" type="max"/>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ff84-1fcc-9dc5-8c24" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e9e7-aebb-664a-5c9b" includeChildSelections="false"/>
               </constraints>
-              <costs>
-                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
-                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="3"/>
-                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="2"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="8615-5b0e-4eb9-b6be" name="Magic Items" hidden="false" collective="false" import="true">
           <entryLinks>
             <entryLink import="true" name="Blade of the Serpent&apos;s Tongue (Magic Weapon)" hidden="false" id="2baa-5234-2614-a4fe" type="selectionEntry" targetId="3739-4e47-e465-d8b6"/>
             <entryLink import="true" name="Totem of Sotek (Enchanted Item)" hidden="false" id="39b6-4ff0-23ab-cac9" type="selectionEntry" targetId="8a28-222c-1e99-5724"/>
             <entryLink import="true" name="Blessed Spawning of Sotek, the Serpent God" hidden="false" id="32e6-391f-c270-af3f" type="selectionEntry" targetId="6391-ef05-a9e0-9c09"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Spells lore" id="fbcd-87c4-edc1-9dcb" hidden="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e987-0aab-2469-25ed" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="aa0d-e4cd-2c77-f0d7" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Lore of Heavens" hidden="false" id="0660-98a3-1f15-8655" type="selectionEntryGroup" targetId="e999-4d26-ec27-9cd0"/>
+            <entryLink import="true" name="Lore of Beasts" hidden="false" id="80a1-5536-5229-f64f" type="selectionEntryGroup" targetId="892e-a8dd-8f70-373a"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -3076,7 +3075,6 @@ These may take one of the following Blessed Spawning each:
           <rules>
             <rule name="Tide of Serpents" id="e3e1-523f-d474-c394" hidden="false" page="61" publicationId="415d-9fbb-df83-ad27">
               <description>Tehenhauin is at all times surrounded by a swarm of serpents, the beasts of the jungle that are drawn to him as a child of Sotek. These serpents make D6 Poisoned Attacks, as noted on Tehenhauin&apos;s profile. They may not be targeted separately, and are killed should the Prophet be removed as a casualty.
-
 
 Tehenhauin may only join units of Jungle Swarms (not Lesser Swarms), and is counted as Unbreakable, and as a Skirmisher whilst with them. When on his own, Tehenhauin counts as a single model on foot. Tehenhauin and his tide of serpents have a Unit Strength of 3. The Lesser Swarms are able to make &quot;Look Out, Sir!&quot; rolls.</description>
             </rule>
@@ -3384,19 +3382,6 @@ Tehenhauin may only join units of Jungle Swarms (not Lesser Swarms), and is coun
         <categoryLink name="Heroes" hidden="false" id="839e-ecea-f520-bd02" targetId="c16b-f319-2c62-2c12" primary="false"/>
         <categoryLink name="Rare" hidden="false" id="4864-2792-07fc-77c8" targetId="e94b-6a54-8779-cd60" primary="false"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="fabb-70a4-5e14-dc13" name="Wizard Level 4" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="837a-d10d-5c16-2989" type="max"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a49c-533e-9575-8340" type="min"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
-            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="4"/>
-            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="2"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="0d4d-e985-80f2-02f4" name="Generation" hidden="false" collective="false" import="true">
           <constraints>
@@ -3404,29 +3389,26 @@ Tehenhauin may only join units of Jungle Swarms (not Lesser Swarms), and is coun
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8e9b-05b9-7c3b-e3a1" includeChildSelections="false"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="bbbf-2764-9ae1-80f1" name="Second Generation" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="hidden" value="true">
-                  <conditions>
-                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fe15-38b7-daea-2ec8" type="atLeast"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
+            <selectionEntry type="upgrade" import="true" name="Second Generation" hidden="false" id="0a1c-92c0-9abf-c63f" collective="false">
               <infoLinks>
-                <infoLink id="3683-8860-9ede-8c70" name="Second Generation" hidden="false" targetId="4df7-f4d8-ca3e-d30c" type="rule"/>
-                <infoLink id="8513-3cee-117a-5d6a" name="Third Generation" hidden="false" targetId="a819-9883-21a7-1448" type="rule"/>
-                <infoLink id="f7d3-58ec-1b1a-3233" name="Fourth Generation" hidden="false" targetId="8a36-6b24-aada-3987" type="rule"/>
-                <infoLink id="acbf-2178-148f-afca" name="Fifth Generation" hidden="false" targetId="83ad-a932-c23a-7bc9" type="rule"/>
+                <infoLink name="Second Generation" id="2042-801f-f808-0549" hidden="false" targetId="4df7-f4d8-ca3e-d30c" type="rule"/>
+                <infoLink name="Third Generation" id="1b36-2c88-a5e0-2555" hidden="false" targetId="a819-9883-21a7-1448" type="rule"/>
+                <infoLink name="Fourth Generation" id="28c0-4455-c046-b2f7" hidden="false" targetId="8a36-6b24-aada-3987" type="rule"/>
+                <infoLink name="Fifth Generation" id="f0c1-ea0b-1605-74b0" hidden="false" targetId="83ad-a932-c23a-7bc9" type="rule"/>
               </infoLinks>
               <categoryLinks>
-                <categoryLink id="170f-033f-d393-89a7" name="Heroes" hidden="false" targetId="c16b-f319-2c62-2c12" primary="false"/>
-                <categoryLink id="3b0a-bd6b-6e92-d039" name="Rare" hidden="false" targetId="e94b-6a54-8779-cd60" primary="false"/>
+                <categoryLink name="Heroes" hidden="false" id="1bc5-4730-24c8-a3fd" targetId="c16b-f319-2c62-2c12" primary="false"/>
+                <categoryLink name="Rare" hidden="false" id="54d7-8671-f031-4cdd" targetId="e94b-6a54-8779-cd60" primary="false"/>
               </categoryLinks>
               <costs>
                 <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
-                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="1"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="1"/>
               </costs>
+              <entryLinks>
+                <entryLink import="true" name="Extra Hero choice" hidden="false" id="4338-3420-4e31-e404" type="selectionEntry" targetId="3e25-986a-693f-a975"/>
+                <entryLink import="true" name="Extra Rare choice" hidden="false" id="5d10-135c-a414-fcb8" type="selectionEntry" targetId="dde8-eb28-cacb-34a3"/>
+              </entryLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -3491,6 +3473,14 @@ This spell is targeted at a single hill anywhere on the table. Any unit at leas
             </selectionEntry>
           </selectionEntries>
         </entryLink>
+        <entryLink import="true" name="Magic Level 4" hidden="false" id="16b1-6333-2746-14f1" type="selectionEntry" targetId="fc28-3af2-d37a-d07e">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5e40-4f37-440f-c655" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+          </costs>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="930"/>
@@ -3507,6 +3497,12 @@ This spell is targeted at a single hill anywhere on the table. Any unit at leas
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe15-38b7-daea-2ec8" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+          <comment>Southlands doesn&apos;t accept 2nd Gen</comment>
         </modifier>
       </modifiers>
       <profiles>
@@ -3792,17 +3788,9 @@ This spell is targeted at a single hill anywhere on the table. Any unit at leas
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="24df-03bf-c9e3-b14d" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="37c5-549e-9c65-02d0" type="max"/>
           </constraints>
-          <selectionEntries>
-            <selectionEntry id="ad82-f5e8-77a9-b9ca" name="Wizard Level 2" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="83a9-a661-2a80-b708" type="max"/>
-              </constraints>
-              <costs>
-                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="2"/>
-                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="1"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Magic Level 2" hidden="false" id="f546-1065-1b3f-c9e6" type="selectionEntry" targetId="fbc2-5115-f240-7367"/>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -3813,6 +3801,7 @@ This spell is targeted at a single hill anywhere on the table. Any unit at leas
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f419-912f-728d-36e6" includeChildSelections="false"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Lore of Heavens" hidden="false" id="0ac3-9dc6-e191-5023" type="selectionEntryGroup" targetId="e999-4d26-ec27-9cd0"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="65"/>

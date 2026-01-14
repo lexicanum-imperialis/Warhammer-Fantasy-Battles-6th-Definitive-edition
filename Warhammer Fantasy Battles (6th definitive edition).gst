@@ -51,6 +51,16 @@
         <characteristicType id="c7b5-c239-d6c1-0627" name="Magic stuff"/>
       </characteristicTypes>
     </profileType>
+    <profileType name="Spell" id="07eb-6084-5f84-a505" hidden="false" kind="spell">
+      <characteristicTypes>
+        <characteristicType name="Cast" id="f1e6-8816-26e0-8a70"/>
+        <characteristicType name="Range" id="42e6-553f-842f-0b91"/>
+        <characteristicType name="Type" id="194f-3dee-9698-7291"/>
+        <characteristicType name="CC" id="d360-4f33-c1a6-b3ab"/>
+        <characteristicType name="Target" id="d1af-fdf7-8ed2-d6a3"/>
+        <characteristicType name="Effect" id="7d21-349e-b0a8-fc7d"/>
+      </characteristicTypes>
+    </profileType>
   </profileTypes>
   <categoryEntries>
     <categoryEntry id="4fed-b911-e6e0-927b" name="Experimental rules" hidden="false"/>

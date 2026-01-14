@@ -215,6 +215,9 @@ The main additions are:
 - [x] Crusader Army (EM-AB, p.79)
 - [x] Crusader Army (CJ#43)
 - [x] Army of Middenland (SoC, p.43-51)
+- [x] Clan Von Carstein (VC-AB, p.78)
+- [x] Clan Necrarch (VC-AB, p.78)
+- [x] Necromancer's Army (VC-AB, p.78)
 
 ## Sources consulted
 
