@@ -176,6 +176,9 @@ The main additions are:
 - [x] Valten, Chosen of Sigmar (WD#288-UK, p.63)
 - [x] Arch Lector of Sigmar (WD#304-UK, p.85)
 
+### Vampire Counts
+- [x] Konrad von Carstein (WD#258-UK, p.91)
+
 ## Alternative lists included
 - [x] Clan Eshin (SKV-AB)
 - [x] Clan Eshin (SoC)
