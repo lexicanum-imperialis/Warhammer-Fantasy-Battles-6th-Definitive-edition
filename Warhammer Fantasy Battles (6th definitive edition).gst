@@ -1750,6 +1750,63 @@
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Spells of the Lore of Death" hidden="true" id="4db1-82d4-ddc7-366f" publicationId="315e-e3c4-08af-fd51" page="151">
+      <categoryLinks>
+        <categoryLink name="Special list rules" hidden="false" id="7412-36da-1722-12d5" targetId="32f1-197f-d719-a393" primary="true"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="1. Dark Hand of Death" id="1ad7-cc99-5440-52a2" hidden="false" type="profile" targetId="43ed-5f08-fbef-86f5"/>
+        <infoLink name="2. Death Dealer" id="950b-f294-d4f5-4915" hidden="false" type="profile" targetId="1924-9763-6322-9bab"/>
+        <infoLink name="3. Steal Soul" id="0be9-a61d-18c8-01ad" hidden="false" type="profile" targetId="e880-65a0-8613-e7b6"/>
+        <infoLink name="4. Wind of Death" id="c0f4-9e51-c4aa-6c1a" hidden="false" type="profile" targetId="3866-03c8-acf0-a7c8"/>
+        <infoLink name="5. Drain Life" id="d1b1-63c5-027b-a501" hidden="false" type="profile" targetId="f202-5fe5-1e6b-7c77"/>
+        <infoLink name="6. Doom and Darkness!" id="fc84-3069-e64b-3412" hidden="false" type="profile" targetId="9b2a-65c0-824f-dc67"/>
+      </infoLinks>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden"/>
+            <modifier type="set" value="1" field="4925-bdb0-be52-fc9e"/>
+          </modifiers>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2247-7779-2978-752c" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifierGroup>
+      </modifierGroups>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4484-6282-f48c-995f" includeChildSelections="false"/>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="4925-bdb0-be52-fc9e" includeChildSelections="false"/>
+      </constraints>
+      <infoGroups>
+        <infoGroup name="Rules of the Spells of Death" id="eaaa-3326-5b5a-e6fb" hidden="false">
+          <infoLinks>
+            <infoLink name="Doom and Darkness!" id="8c0e-cf58-5904-5ca8" hidden="false" type="rule" targetId="ea42-2df2-f47b-3578"/>
+            <infoLink name="Drain Life" id="28e9-b421-b6c5-fa48" hidden="false" type="rule" targetId="a171-3bf1-5423-ee49"/>
+            <infoLink name="Wind of Death" id="8c19-5856-1aa3-7607" hidden="false" type="rule" targetId="bac7-c263-d173-ac75"/>
+            <infoLink name="Steal Soul" id="f994-3890-6a69-bb1c" hidden="false" type="rule" targetId="04eb-7e9d-1a5d-cd4b"/>
+            <infoLink name="Death Dealer" id="33b7-3ab5-141d-c917" hidden="false" type="rule" targetId="d48a-a61b-34d8-50d0"/>
+            <infoLink name="Dark Hand of Death" id="0fe5-451c-5753-e5f7" hidden="false" type="rule" targetId="9fe7-c1dc-0e19-0809"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Lore of Death" hidden="false" id="2247-7779-2978-752c">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d24d-fd20-8c99-909f" includeChildSelections="false"/>
+      </constraints>
+      <infoGroups>
+        <infoGroup name="Spells rules" id="0611-8278-4eed-8b33" hidden="false">
+          <infoLinks>
+            <infoLink name="Doom and Darkness!" id="77db-3d22-2df0-c5ad" hidden="false" type="rule" targetId="ea42-2df2-f47b-3578"/>
+            <infoLink name="Dark Hand of Death" id="e455-c3ae-8e82-36db" hidden="false" type="rule" targetId="9fe7-c1dc-0e19-0809"/>
+            <infoLink name="Death Dealer" id="7d98-8fa3-5593-8639" hidden="false" type="rule" targetId="d48a-a61b-34d8-50d0"/>
+            <infoLink name="Steal Soul" id="914a-0ef7-5f2c-c2a0" hidden="false" type="rule" targetId="04eb-7e9d-1a5d-cd4b"/>
+            <infoLink name="Wind of Death" id="2665-598a-9fd0-12ca" hidden="false" type="rule" targetId="bac7-c263-d173-ac75"/>
+            <infoLink name="Drain Life" id="2385-0e61-8b50-bf4e" hidden="false" type="rule" targetId="a171-3bf1-5423-ee49"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="f679-dff7-370a-6050" name="Lore of Metal" hidden="false" collective="false" import="true">
@@ -2515,6 +2572,76 @@ Always Strikes Last</characteristic>
         <characteristic name="Damage" typeId="6f2f-d612-52ef-1633">D3</characteristic>
         <characteristic name="Special Rules" typeId="a21a-cdc0-4b13-b236"/>
         <characteristic name="Saves" typeId="8014-a8b2-15c3-da95">No armour save</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="1. Dark Hand of Death" typeId="07eb-6084-5f84-a505" typeName="Spell" hidden="false" id="43ed-5f08-fbef-86f5" publicationId="315e-e3c4-08af-fd51" page="151">
+      <characteristics>
+        <characteristic name="Cast" typeId="f1e6-8816-26e0-8a70">5+</characteristic>
+        <characteristic name="Range" typeId="42e6-553f-842f-0b91">24&quot;</characteristic>
+        <characteristic name="Type" typeId="194f-3dee-9698-7291">Magic missile</characteristic>
+        <characteristic name="CC" typeId="d360-4f33-c1a6-b3ab">NO</characteristic>
+        <characteristic name="Target" typeId="d1af-fdf7-8ed2-d6a3">Enemy unit</characteristic>
+        <characteristic name="Effect" typeId="7d21-349e-b0a8-fc7d">D6 Strength 4 hits.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="2. Death Dealer" typeId="07eb-6084-5f84-a505" typeName="Spell" hidden="false" id="1924-9763-6322-9bab" publicationId="315e-e3c4-08af-fd51" page="151">
+      <characteristics>
+        <characteristic name="Cast" typeId="f1e6-8816-26e0-8a70">5+</characteristic>
+        <characteristic name="Range" typeId="42e6-553f-842f-0b91">20&quot;</characteristic>
+        <characteristic name="Type" typeId="194f-3dee-9698-7291">Buff</characteristic>
+        <characteristic name="CC" typeId="d360-4f33-c1a6-b3ab">NO</characteristic>
+        <characteristic name="Target" typeId="d1af-fdf7-8ed2-d6a3">Friendly unit in CC</characteristic>
+        <characteristic name="Effect" typeId="7d21-349e-b0a8-fc7d">Fight the combat as normal. Any model in the affected unit which falls casualty during the combat may make one further attack with its basic Strength before it is removed - this is regardless of whether the model has already fought or not. In the case of mounted models, models riding chariots or monsters and so forth, only riders may strike back.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="3. Steal Soul" typeId="07eb-6084-5f84-a505" typeName="Spell" hidden="false" id="e880-65a0-8613-e7b6" publicationId="315e-e3c4-08af-fd51" page="151">
+      <characteristics>
+        <characteristic name="Cast" typeId="f1e6-8816-26e0-8a70">8+</characteristic>
+        <characteristic name="Range" typeId="42e6-553f-842f-0b91">12&quot;</characteristic>
+        <characteristic name="Type" typeId="194f-3dee-9698-7291">Hex</characteristic>
+        <characteristic name="CC" typeId="d360-4f33-c1a6-b3ab">NO</characteristic>
+        <characteristic name="Target" typeId="d1af-fdf7-8ed2-d6a3">Enemy unit</characteristic>
+        <characteristic name="Effect" typeId="7d21-349e-b0a8-fc7d">The enemy model loses 1 Wound. No armour save is allowed. In addition, the casting Wizard gains 1 Wound for the duration of the battle. This spell can be used to increase the caster&apos;s Wounds characteristic beyond its normal maximum level, and can be used several times to increase the caster&apos;s Wounds even further. At the end of the battle, any stolen Wounds are lost - if the Wizard has no Wounds left once stolen Wounds are removed, he is slain.
+
+
+The spell cannot affect Undead, Chaos Daemons, and similar units which don&apos;t have a soul!</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="4. Wind of Death" typeId="07eb-6084-5f84-a505" typeName="Spell" hidden="false" id="3866-03c8-acf0-a7c8" publicationId="315e-e3c4-08af-fd51" page="151">
+      <characteristics>
+        <characteristic name="Cast" typeId="f1e6-8816-26e0-8a70">8+</characteristic>
+        <characteristic name="Range" typeId="42e6-553f-842f-0b91">24&quot;</characteristic>
+        <characteristic name="Type" typeId="194f-3dee-9698-7291">Magic missile</characteristic>
+        <characteristic name="CC" typeId="d360-4f33-c1a6-b3ab">NO</characteristic>
+        <characteristic name="Target" typeId="d1af-fdf7-8ed2-d6a3">Enemy unit</characteristic>
+        <characteristic name="Effect" typeId="7d21-349e-b0a8-fc7d">2D6 Strength 4 hits.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="5. Drain Life" typeId="07eb-6084-5f84-a505" typeName="Spell" hidden="false" id="f202-5fe5-1e6b-7c77" publicationId="315e-e3c4-08af-fd51" page="151">
+      <characteristics>
+        <characteristic name="Cast" typeId="f1e6-8816-26e0-8a70">10+</characteristic>
+        <characteristic name="Range" typeId="42e6-553f-842f-0b91">12&quot;</characteristic>
+        <characteristic name="Type" typeId="194f-3dee-9698-7291">Hex</characteristic>
+        <characteristic name="CC" typeId="d360-4f33-c1a6-b3ab">NO</characteristic>
+        <characteristic name="Target" typeId="d1af-fdf7-8ed2-d6a3">Enemy unit</characteristic>
+        <characteristic name="Effect" typeId="7d21-349e-b0a8-fc7d">Each unit takes D6 Strength 3 hits. No armour saves are allowed against a Drain Life spell. These hits are distributed exactly like hits from shooting.
+
+
+The spell cannot affect Undead, Chaos Daemons, or buildings and similar models, as they are not truly alive.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="6. Doom and Darkness!" typeId="07eb-6084-5f84-a505" typeName="Spell" hidden="false" id="9b2a-65c0-824f-dc67" publicationId="315e-e3c4-08af-fd51" page="151">
+      <characteristics>
+        <characteristic name="Cast" typeId="f1e6-8816-26e0-8a70">12+</characteristic>
+        <characteristic name="Range" typeId="42e6-553f-842f-0b91">24&quot;</characteristic>
+        <characteristic name="Type" typeId="194f-3dee-9698-7291">Last One Turn</characteristic>
+        <characteristic name="CC" typeId="d360-4f33-c1a6-b3ab">NO</characteristic>
+        <characteristic name="Target" typeId="d1af-fdf7-8ed2-d6a3">Enemy unit</characteristic>
+        <characteristic name="Effect" typeId="7d21-349e-b0a8-fc7d">For the duration of the turn the affected unit will suffer a -3 penalty to any Leadership test (including Break tests) it is required to take. At the start of its following turn, the unit must take and pass a Leadership test (at -3), otherwise it remains affected for the duration of that turn as well. At the end of the affected unit&apos;s following turn, the spell ceases to have any effect.
+
+
+
+The spell cannot affect Undead targets, Chaos Daemons or Unbreakable units. Units, immune to psychology are not affected either.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
