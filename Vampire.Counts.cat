@@ -37,6 +37,11 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="d3af-1add-4e99-b977" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="10" field="ecfa-8486-4f6c-c249">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="5e95-7d57-2b9c-d77d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </selectionEntry>
         <selectionEntry id="75c7-2672-8bad-b32e" name="Light Armour" hidden="false" collective="false" import="true" type="upgrade">
@@ -45,6 +50,11 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
               <repeats>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
               </repeats>
+            </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="5e95-7d57-2b9c-d77d" shared="true" includeChildSelections="true"/>
+              </conditions>
             </modifier>
           </modifiers>
           <constraints>
@@ -72,6 +82,23 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
+          <modifiers>
+            <modifier type="set" value="0" field="21ec-7e0f-b1cb-c5dd">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="5e95-7d57-2b9c-d77d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="5e95-7d57-2b9c-d77d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="0" field="95ce-5daf-befe-b681">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="5e95-7d57-2b9c-d77d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry id="565b-37e6-290b-e040" name="Handweapon" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -93,6 +120,11 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
               <repeats>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
               </repeats>
+            </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="5e95-7d57-2b9c-d77d" shared="true" includeChildSelections="true"/>
+              </conditions>
             </modifier>
           </modifiers>
           <constraints>
@@ -164,6 +196,28 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <entryLinks>
+        <entryLink import="true" name="Bow" hidden="true" id="2be0-4a9e-7777-7920" type="selectionEntry" targetId="9efb-2b02-f245-62f5">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="5e95-7d57-2b9c-d77d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2717-7457-556b-556d" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fa3f-0ab6-1c70-db8f" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <modifiers>
+        <modifier type="set" value="Skeleton Bowmen" field="name">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="5e95-7d57-2b9c-d77d" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="749f-cf91-6317-7ac0" name="Zombies" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -238,6 +292,13 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="5e95-7d57-2b9c-d77d" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="6b45-b2ad-dcdf-d3f4" name="Ghouls" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -324,6 +385,7 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="91ad-b36a-5c77-c4b5" shared="true" includeChildSelections="true"/>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="b1e4-e1cf-9bd6-2438" shared="true" includeChildSelections="true"/>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="d3af-1add-4e99-b977" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="5e95-7d57-2b9c-d77d" shared="true" includeChildSelections="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -377,6 +439,7 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="d3af-1add-4e99-b977" shared="true" includeChildSelections="true"/>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="91ad-b36a-5c77-c4b5" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="5e95-7d57-2b9c-d77d" shared="true" includeChildSelections="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -444,6 +507,13 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
           </conditionGroups>
         </modifierGroup>
       </modifierGroups>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="5e95-7d57-2b9c-d77d" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="92ee-2ebf-c6c0-71ff" name="Grave Guard" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -603,6 +673,18 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="5e95-7d57-2b9c-d77d" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <modifiers>
+            <modifier type="set-primary" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="remove" value="43cc-fc3f-35a7-8d03" field="category"/>
+            <modifier type="add" value="64bf-efb4-9978-26df" field="category"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry id="115c-d87a-35e6-26c9" name="Black Knights" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -628,6 +710,11 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
             <modifier type="set" value="20" field="ecfa-8486-4f6c-c249">
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="d3af-1add-4e99-b977" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="Black Knight of Bretonnia" field="name">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="6afd-186f-15da-94e0" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -681,9 +768,15 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
+            <modifier type="set" value="1" field="eb39-4158-57ef-793c">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="5e95-7d57-2b9c-d77d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0ab6-fb56-48c2-fc6f" type="max"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="eb39-4158-57ef-793c" includeChildSelections="false"/>
           </constraints>
           <costs>
             <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
@@ -704,6 +797,21 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Black Knights of Bretonnia" hidden="false" id="6afd-186f-15da-94e0">
+          <infoLinks>
+            <infoLink name="Lance Formation" id="1a2d-de80-91bd-e842" hidden="true" type="rule" targetId="0aaf-14b6-409b-47a5"/>
+          </infoLinks>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="5e95-7d57-2b9c-d77d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="082a-e7cc-492d-1091" includeChildSelections="false"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -772,6 +880,25 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="Black Knights of Bretonnia" field="name">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="unit" childId="6afd-186f-15da-94e0" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="5e95-7d57-2b9c-d77d" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <modifiers>
+            <modifier type="set-primary" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="remove" value="43cc-fc3f-35a7-8d03" field="category"/>
+            <modifier type="add" value="64bf-efb4-9978-26df" field="category"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry id="a431-097d-4712-eb01" name="Fell Bats" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -1128,6 +1255,7 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="91ad-b36a-5c77-c4b5" shared="true" includeChildSelections="true"/>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="b1e4-e1cf-9bd6-2438" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="5e95-7d57-2b9c-d77d" shared="true" includeChildSelections="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -1373,6 +1501,11 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
             <condition type="instanceOf" value="1" field="selections" scope="force" childId="d3af-1add-4e99-b977" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="5e95-7d57-2b9c-d77d" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
     </selectionEntry>
     <selectionEntry id="b5d8-db21-a4b7-9e94" name="Necromancer" hidden="false" collective="false" import="true" type="unit">
@@ -1504,6 +1637,13 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="5e95-7d57-2b9c-d77d" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="b77b-88d5-5e80-e178" name="0-1 Vampire Lord " hidden="false" collective="false" import="true" type="unit">
       <constraints>
@@ -6085,7 +6225,7 @@ Characters who are part of a unit affected by this spell stop suffering from its
         <categoryLink name="Regiment of Renown" hidden="false" id="2440-d8ee-aa7e-6049" targetId="ee09-9a50-ad78-9c32" primary="false"/>
       </categoryLinks>
     </forceEntry>
-    <forceEntry name="Von Carstein (VC-AB)" id="b1e4-e1cf-9bd6-2438" hidden="false" page="78" publicationId="8e66-3042-1d6b-fa6b">
+    <forceEntry name="Clan Von Carstein (VC-AB)" id="b1e4-e1cf-9bd6-2438" hidden="false" page="78" publicationId="8e66-3042-1d6b-fa6b">
       <categoryLinks>
         <categoryLink name="Experimental rules" hidden="false" id="be83-351a-6bcc-6ca3" targetId="4fed-b911-e6e0-927b" primary="false"/>
         <categoryLink name="Special list rules" hidden="false" id="0c38-aa2b-b60b-9659" targetId="32f1-197f-d719-a393" primary="false"/>
@@ -6099,7 +6239,7 @@ Characters who are part of a unit affected by this spell stop suffering from its
         <categoryLink name="Regiment of Renown" hidden="false" id="f155-133b-b809-47de" targetId="ee09-9a50-ad78-9c32" primary="false"/>
       </categoryLinks>
     </forceEntry>
-    <forceEntry name="Necrarchs (VC-AB)" id="91ad-b36a-5c77-c4b5" hidden="false" page="78" publicationId="8e66-3042-1d6b-fa6b">
+    <forceEntry name="Clan Necrarch (VC-AB)" id="91ad-b36a-5c77-c4b5" hidden="false" page="78" publicationId="8e66-3042-1d6b-fa6b">
       <categoryLinks>
         <categoryLink name="Experimental rules" hidden="false" id="200d-dd61-12c6-891a" targetId="4fed-b911-e6e0-927b" primary="false"/>
         <categoryLink name="Special list rules" hidden="false" id="94f7-d040-3fac-360c" targetId="32f1-197f-d719-a393" primary="false"/>
@@ -6127,6 +6267,28 @@ Characters who are part of a unit affected by this spell stop suffering from its
         <categoryLink name="Regiment of Renown" hidden="false" id="bb82-03fe-d34d-17cb" targetId="ee09-9a50-ad78-9c32" primary="false"/>
       </categoryLinks>
     </forceEntry>
+    <forceEntry name="Clan Blood Dragons (VC-AB)" id="5e95-7d57-2b9c-d77d" hidden="false" page="79" publicationId="8e66-3042-1d6b-fa6b">
+      <categoryLinks>
+        <categoryLink name="Experimental rules" hidden="false" id="ae7a-3800-881f-f8fc" targetId="4fed-b911-e6e0-927b" primary="false"/>
+        <categoryLink name="Special list rules" hidden="false" id="9d8e-aa0c-a87c-9e51" targetId="32f1-197f-d719-a393" primary="false"/>
+        <categoryLink name="Characters" hidden="false" id="02a6-42fb-6440-292f" targetId="7a1c-d611-c2dc-def1" primary="false"/>
+        <categoryLink name="Special Characters" hidden="false" id="65a1-6dd0-d31b-aada" targetId="0644-bfcd-32c2-21dc" primary="false"/>
+        <categoryLink name="Lord" hidden="false" id="3095-8081-db57-b63a" targetId="d024-d25b-a9b4-73b6" primary="false"/>
+        <categoryLink name="Heroes" hidden="false" id="ca72-6035-08f9-e021" targetId="c16b-f319-2c62-2c12" primary="false"/>
+        <categoryLink name="Core" hidden="false" id="f05a-5bc4-7d43-43d0" targetId="64bf-efb4-9978-26df" primary="false"/>
+        <categoryLink name="Special" hidden="false" id="a4eb-208a-e2eb-42a3" targetId="43cc-fc3f-35a7-8d03" primary="false"/>
+        <categoryLink name="Rare" hidden="false" id="3331-1589-2737-9903" targetId="e94b-6a54-8779-cd60" primary="false"/>
+        <categoryLink name="Regiment of Renown" hidden="false" id="6948-84bc-be26-e39a" targetId="ee09-9a50-ad78-9c32" primary="false">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="6afd-186f-15da-94e0" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
   </forceEntries>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Mercenaries" id="ef73-f9bd-e250-54d2" targetId="fc47-8392-a6c8-452a"/>
@@ -6150,5 +6312,51 @@ Characters who are part of a unit affected by this spell stop suffering from its
         </rule>
       </rules>
     </entryLink>
+    <entryLink import="true" name="Al Muktar&apos;s Desert Dogs" hidden="false" id="ac91-d13f-c075-359d" type="selectionEntry" targetId="22e7-a415-2e0e-a39f"/>
+    <entryLink import="true" name="Voland&apos;s Venators" hidden="false" id="9762-8c06-98bb-6c86" type="selectionEntry" targetId="41e8-0d1b-81fe-2013"/>
+    <entryLink import="true" name="Bearmen of Urslo" hidden="false" id="ca0b-ba88-d5df-c24f" type="selectionEntry" targetId="ab79-9343-3a3d-ff06"/>
+    <entryLink import="true" name="Braganza&apos;s Besiegers" hidden="false" id="55fd-cdb5-f2c0-8966" type="selectionEntry" targetId="63b1-1724-ee36-fa68"/>
+    <entryLink import="true" name="Bronzino&apos;s Galloper Guns" hidden="false" id="bcef-0c3a-18c9-c2d4" type="selectionEntry" targetId="3f74-0a3b-478e-bac3"/>
+    <entryLink import="true" name="Golgfag&apos;s Ogres" hidden="false" id="d44c-2a86-3bd5-9dfe" type="selectionEntry" targetId="db7e-cfeb-cef5-d034"/>
+    <entryLink import="true" name="Leopold&apos;s Leopard Company" hidden="false" id="4e96-4b75-a393-7896" type="selectionEntry" targetId="8848-c408-d8ff-97d9"/>
+    <entryLink import="true" name="Long Drong&apos;s Slayer Pirates" hidden="false" id="2558-7f4b-75bb-6a4d" type="selectionEntry" targetId="8ebf-e19f-adea-1f75"/>
+    <entryLink import="true" name="Lumpin Croop&apos;s Fighting Cocks" hidden="false" id="2362-daa8-a858-ec83" type="selectionEntry" targetId="2a88-f6ee-0aee-21d9"/>
+    <entryLink import="true" name="Marksmen of Miragliano" hidden="false" id="f388-5529-44b5-0d7c" type="selectionEntry" targetId="8086-f18f-e1b0-4ae5"/>
+    <entryLink import="true" name="Oglah Khan&apos;s Wolfboys" hidden="false" id="ee16-1b67-0138-ea1f" type="selectionEntry" targetId="52ae-0b6a-da3c-c860"/>
+    <entryLink import="true" name="Ricco&apos;s Republican Guard" hidden="false" id="4d0a-a8c7-59bc-b722" type="selectionEntry" targetId="30d3-b878-f633-045a"/>
+    <entryLink import="true" name="Ruglud&apos;s Armoured Orcs" hidden="false" id="e1fb-d505-8e77-b321" type="selectionEntry" targetId="bddc-2940-a680-e5be"/>
+    <entryLink import="true" name="The Alcantani Fellowship" hidden="false" id="97ed-5657-dd78-94c3" type="selectionEntry" targetId="1cbf-33eb-3a1b-5887"/>
+    <entryLink import="true" name="Vespero&apos;s Vendetta" hidden="false" id="0cac-fec3-1331-9b5a" type="selectionEntry" targetId="a14c-79da-9d49-49b1"/>
   </entryLinks>
+  <rules>
+    <rule name="Lance Formation" id="0aaf-14b6-409b-47a5" hidden="false" page="BR-AB, 40" publicationId="143d-ca87-8001-00a0">
+      <description>Bretonnian Knights often form up into a powerful formation called the &apos;Lance&apos;. This formation enables the Knights to charge deep into enemy units, angled so as to maximise the number of attacking Knights.
+
+
+**Forming the Lance**
+Knights in Lance formation form up into ranks only three models wide. The unit gets a rank bonus for each complete rank of three models, rather than four. For movement it is treated like any other unit, and has flanks and rears just like other units.
+
+
+Any unit of Knights may start the game in the Lance formation. During the game, any unit of Knights may form the Lance formation, either by reforming, or by adding or subtracting ranks to form a unit three models wide. In effect, if by any means a unit of Bretonnian Knights is formed into a unit three models wide, it is treated as being in Lance formation.
+
+
+Characters must be placed in the front rank, if at all possible, displacing Champions, Standard Bearers or Musicians into the second rank (or third if necessary). Standard Bearers and Musicians operate as normal even if not in the front rank.
+
+
+A Damsel or Prophetess may be placed in the centre of the second rank of the Lance formation rather than the front rank, as the Knights form up protectively around her. Note that she remains fully in play even if she is not in the front rank (so the unit may use her Leadership, she may cast magic, etc.). If a second Damsel or Prophetess joins the unit, she may be placed in the centre of the third rank, and so on. If the rank in front of the Damsel or Prophetess ever falls below three models, she will move forward to take up the empty space. However, a Damsel or Prophetess that is not in the front rank obviously has no line of sight.
+
+
+**The Lance in Combat**
+On the turn that a unit of Knights in Lance formation charge, all models in the front rank fight as normal. In addition to this, every Knight model in the flanks of the unit is allowed to fight, as long as they are directly behind a model in the front rank which is engaged in close combat to its front (see diagram below).
+
+
+_Caption: The unit of Bretonnian Knights is in Lance formation and has charged enemy unit. As a result, all the Knight models shaded darker grey in this diagram can fight this turn._
+
+
+The enemy may only attack back against models that are in base-to-base contact. Note that any Knight that is in a position to fight, but is not actually in base contact with an enemy, cannot target specific models to attack. When removing casualties from the Lance formation, models are always removed from the centre of the back rank (unless the centre model is a character) before removing those on the flanks. After casualties have been removed, the models in an incomplete back rank are not automatically moved to the centre of that back rank, but can stay on the edges (so that they can still fight if the Lance charges).
+
+
+A Champion (or character for that matter) that is in the second (or third) rank may attack as normal on the charge so long as he is in a position to do so (see above), although he cannot issue or accept challenges unless he is actually in the fighting rank.</description>
+    </rule>
+  </rules>
 </catalogue>

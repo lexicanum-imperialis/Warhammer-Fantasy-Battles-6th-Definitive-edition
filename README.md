@@ -218,6 +218,7 @@ The main additions are:
 - [x] Clan Von Carstein (VC-AB, p.78)
 - [x] Clan Necrarch (VC-AB, p.78)
 - [x] Necromancer's Army (VC-AB, p.78)
+- [x] Clan Blood Dragons (VC-AB, p.79)
 
 ## Sources consulted
 
