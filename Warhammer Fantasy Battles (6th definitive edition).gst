@@ -568,7 +568,7 @@
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b76c-6bad-4650-dbb0" name="Dispel Scroll" publicationId="315e-e3c4-08af-fd51" page="154" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="b76c-6bad-4650-dbb0" name="Dispel Scroll (one use only)" publicationId="315e-e3c4-08af-fd51" page="154" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="79f1-a038-de96-4b13" name="Dispel Scroll(Arcane Item)" hidden="false" targetId="c9bc-2907-97ae-5e43" type="rule"/>
       </infoLinks>
@@ -592,7 +592,7 @@
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0ed5-eacf-d55a-5e9e" name="Power Stone" publicationId="315e-e3c4-08af-fd51" page="154" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="0ed5-eacf-d55a-5e9e" name="Power Stone (one use only)" publicationId="315e-e3c4-08af-fd51" page="154" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="37f8-1882-3c5b-96cb" name="Power Stone(Arcane Item)" hidden="false" targetId="ba52-fca2-87b6-72c7" type="rule"/>
       </infoLinks>
@@ -1911,6 +1911,20 @@
         <entryLink id="7c24-5c21-33a9-4434" name="4. Wind of Death" hidden="false" collective="false" import="true" targetId="ffdd-5119-cffe-f85a" type="selectionEntry"/>
         <entryLink id="056d-8420-cfca-35ae" name="5. Drain Life" hidden="false" collective="false" import="true" targetId="d54f-1c26-3dff-6094" type="selectionEntry"/>
         <entryLink id="bcbb-db2d-4a76-0a82" name="6. Doom and Darkness!" hidden="false" collective="false" import="true" targetId="7caf-d4f2-8210-fa58" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Common Magic Items" id="c16c-a0f1-1ae2-8b57" hidden="false" page="154" publicationId="315e-e3c4-08af-fd51">
+      <entryLinks>
+        <entryLink import="true" name="Sword of Striking" hidden="false" id="94f9-e553-f996-340e" type="selectionEntry" targetId="6b55-e847-311d-d6ca"/>
+        <entryLink import="true" name="Sword of Battle" hidden="false" id="5db2-cc28-4718-d0ff" type="selectionEntry" targetId="6e5a-eeea-ec67-3632"/>
+        <entryLink import="true" name="Sword of Might" hidden="false" id="88a3-5b15-a625-32c3" type="selectionEntry" targetId="8c56-9be1-c4a9-5afe"/>
+        <entryLink import="true" name="Biting Blade" hidden="false" id="4b91-07db-55ec-b019" type="selectionEntry" targetId="74fc-c90b-250e-6b87"/>
+        <entryLink import="true" name="Enchanted Shield" hidden="false" id="1ea5-e851-27cd-ad45" type="selectionEntry" targetId="c5c1-60aa-745f-c9d3"/>
+        <entryLink import="true" name="Staff of Sorcery" hidden="false" id="3bc4-082d-e44e-7f1a" type="selectionEntry" targetId="b22a-6be5-d4f9-7776"/>
+        <entryLink import="true" name="Power Stone (one use only)" hidden="false" id="f969-0b28-b1cf-bb02" type="selectionEntry" targetId="0ed5-eacf-d55a-5e9e"/>
+        <entryLink import="true" name="Talisman of Protection" hidden="false" id="bc5a-4f31-3425-4b2c" type="selectionEntry" targetId="c7cc-76a3-c413-ddb8"/>
+        <entryLink import="true" name="Dispel Scroll (one use only)" hidden="false" id="989e-9d22-7fea-19b5" type="selectionEntry" targetId="b76c-6bad-4650-dbb0"/>
+        <entryLink import="true" name="War Banner" hidden="false" id="f7d8-220a-ed04-28ef" type="selectionEntry" targetId="f327-567f-ef99-0403"/>
       </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
