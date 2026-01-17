@@ -1660,31 +1660,6 @@
           </characteristics>
         </profile>
       </profiles>
-      <rules>
-        <rule id="80de-b6d6-bc1e-983f" name="Curse of Queen Khalida" publicationId="04f9-cede-fdb3-1e6c" page="69" hidden="false">
-          <description>Any model or unit responsible for the death of Queen Khalida (see the Tomb Kings&apos; Curse) is affected by her curse on the dice roll of 4+. If affected, then roll a D6 for each model/unit, and on the dice roll of a 6, the model loses a wound that cannot be saved in any way (including Ward saves) nor Regenerated. Roll again at the start of each of your opponent&apos;s turns for the rest of the game, and they take a further wound on a roll of 6.</description>
-        </rule>
-        <rule id="1f23-eec0-5c23-ef6b" name="Incarnation of the Asp Goddess" publicationId="04f9-cede-fdb3-1e6c" page="69" hidden="false">
-          <description>All attacks made by her count as magical attacks and Poisoned Attacks, and she herself is immune to poison. In addition to this, any of her attacks that count as poisoned (so any 6s to hit), will inflict D3 wounds rather than 1 as well as wounding automatically.
-
-
-The Queen moves with the swiftness of a striking asp, and will always strikes first in combat, even if she was charged. If her opponent also has this ability, resolve their attacks in Initiative order.</description>
-        </rule>
-        <rule id="e06b-87af-3ce8-887b" name="The Queen&apos;s Command" publicationId="04f9-cede-fdb3-1e6c" page="69" hidden="false">
-          <description>Khalid may cast Horekhah&apos;s Incantation of Righteous Smiting once per Magic phase. It is automatically cast, and cannot be dispelled.</description>
-        </rule>
-        <rule id="20e8-b54c-0776-f35e" name="Army of the Queen" publicationId="04f9-cede-fdb3-1e6c" page="69" hidden="false">
-          <description>An army that includes Khalida must contain at least one unit of Skeleton Warriors armed with bows.</description>
-        </rule>
-      </rules>
-      <infoLinks>
-        <infoLink id="6d20-e041-c75e-a456" name="Undead" hidden="false" targetId="97a4-d2a9-5b16-f0c3" type="rule"/>
-        <infoLink id="4569-ffd1-f0b1-3961" name="Flammable" hidden="false" targetId="ff92-e6dd-2f5d-dcca" type="rule"/>
-        <infoLink id="4549-7eb2-01c1-28fe" name="My Will be Done" hidden="false" targetId="1856-55bd-bacc-9964" type="rule"/>
-        <infoLink id="9bc3-c86e-e879-9c02" name="Poisoned Attacks" hidden="false" targetId="2738-27d5-f4af-4722" type="rule"/>
-        <infoLink id="6f44-202a-ef3a-51aa" name="Regeneration" hidden="false" targetId="59c1-8a35-5a25-ebe1" type="rule"/>
-        <infoLink id="8a8c-af11-44cc-0536" name="Terror" hidden="false" targetId="96f0-c50f-e59e-85fa" type="rule"/>
-      </infoLinks>
       <categoryLinks>
         <categoryLink id="fb45-1fcb-8bc9-ac47" name="Tomb kings General" hidden="false" targetId="4e75-e0b6-8eb7-7d6c" primary="false"/>
         <categoryLink id="7587-0e43-4817-7496" name="Heroes" hidden="false" targetId="c16b-f319-2c62-2c12" primary="false"/>
@@ -1694,13 +1669,22 @@ The Queen moves with the swiftness of a striking asp, and will always strikes fi
       <selectionEntries>
         <selectionEntry id="d9e7-8e42-44c4-ef50" name="Magic" hidden="false" collective="false" import="true" type="upgrade">
           <entryLinks>
-            <entryLink id="7ac3-40d6-d71c-8978" name="2. Horekhah&apos;s Incantation of Righteous Smiting (Bound Spell)" hidden="false" collective="false" import="true" targetId="d851-d47f-063e-11cd" type="selectionEntry"/>
+            <entryLink id="7ac3-40d6-d71c-8978" name="2. Horekhah&apos;s Incantation of Righteous Smiting (Bound Spell)" hidden="false" collective="false" import="true" targetId="d851-d47f-063e-11cd" type="selectionEntry">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="943e-a536-61c2-c5c4" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e438-a04c-5675-ac36" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a915-ca6d-02c7-eb20" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6130-4f39-53eb-44e6" includeChildSelections="false"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -1718,6 +1702,10 @@ The Queen moves with the swiftness of a striking asp, and will always strikes fi
                 <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
                 <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
               </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6d96-3b0d-e910-e579" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ae2a-8341-4b6f-446f" includeChildSelections="false"/>
+              </constraints>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -1740,6 +1728,35 @@ The Queen moves with the swiftness of a striking asp, and will always strikes fi
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <infoGroups>
+        <infoGroup name="Special rules" id="473f-bc9b-e984-d68c" hidden="false">
+          <infoLinks>
+            <infoLink name="Undead" id="6d20-e041-c75e-a456" hidden="false" targetId="97a4-d2a9-5b16-f0c3" type="rule"/>
+            <infoLink name="Flammable" id="4569-ffd1-f0b1-3961" hidden="false" targetId="ff92-e6dd-2f5d-dcca" type="rule"/>
+            <infoLink name="My Will be Done" id="4549-7eb2-01c1-28fe" hidden="false" targetId="1856-55bd-bacc-9964" type="rule"/>
+            <infoLink name="Poisoned Attacks" id="9bc3-c86e-e879-9c02" hidden="false" targetId="2738-27d5-f4af-4722" type="rule"/>
+            <infoLink name="Regeneration" id="6f44-202a-ef3a-51aa" hidden="false" targetId="59c1-8a35-5a25-ebe1" type="rule"/>
+            <infoLink name="Terror" id="8a8c-af11-44cc-0536" hidden="false" targetId="96f0-c50f-e59e-85fa" type="rule"/>
+          </infoLinks>
+          <rules>
+            <rule name="Army of the Queen" id="20e8-b54c-0776-f35e" hidden="false" publicationId="04f9-cede-fdb3-1e6c" page="69">
+              <description>An army that includes Khalida must contain at least one unit of Skeleton Warriors armed with bows.</description>
+            </rule>
+            <rule name="Curse of Queen Khalida" id="80de-b6d6-bc1e-983f" hidden="false" publicationId="04f9-cede-fdb3-1e6c" page="69">
+              <description>Any model or unit responsible for the death of Queen Khalida (see the Tomb Kings&apos; Curse) is affected by her curse on the dice roll of 4+. If affected, then roll a D6 for each model/unit, and on the dice roll of a 6, the model loses a wound that cannot be saved in any way (including Ward saves) nor Regenerated. Roll again at the start of each of your opponent&apos;s turns for the rest of the game, and they take a further wound on a roll of 6.</description>
+            </rule>
+            <rule name="Incarnation of the Asp Goddess" id="1f23-eec0-5c23-ef6b" hidden="false" publicationId="04f9-cede-fdb3-1e6c" page="69">
+              <description>All attacks made by her count as magical attacks and Poisoned Attacks, and she herself is immune to poison. In addition to this, any of her attacks that count as poisoned (so any 6s to hit), will inflict D3 wounds rather than 1 as well as wounding automatically.
+
+
+The Queen moves with the swiftness of a striking asp, and will always strikes first in combat, even if she was charged. If her opponent also has this ability, resolve their attacks in Initiative order.</description>
+            </rule>
+            <rule name="The Queen&apos;s Command" id="e06b-87af-3ce8-887b" hidden="false" publicationId="04f9-cede-fdb3-1e6c" page="69">
+              <description>Khalid may cast Horekhah&apos;s Incantation of Righteous Smiting once per Magic phase. It is automatically cast, and cannot be dispelled.</description>
+            </rule>
+          </rules>
+        </infoGroup>
+      </infoGroups>
     </selectionEntry>
     <selectionEntry id="c8db-db77-83e2-b1e1" name="Settra the Imperishable" publicationId="04f9-cede-fdb3-1e6c" page="66-67" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
@@ -1758,14 +1775,7 @@ The Queen moves with the swiftness of a striking asp, and will always strikes fi
         <constraint field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b420-f9ff-73c2-a7e7" type="max"/>
       </constraints>
       <infoLinks>
-        <infoLink id="e386-503b-5ef7-2b16" name="Undead" hidden="false" targetId="97a4-d2a9-5b16-f0c3" type="rule"/>
-        <infoLink id="630b-a7ba-f606-1568" name="Flammable" hidden="false" targetId="ff92-e6dd-2f5d-dcca" type="rule"/>
-        <infoLink id="908f-6471-286e-57fd" name="The Curse of Settra" hidden="false" targetId="b8a8-840a-2c31-e5dd" type="rule"/>
-        <infoLink id="28bb-d50a-3706-a5f9" name="The Will of Settra" hidden="false" targetId="aebb-c17d-b917-64c6" type="rule"/>
         <infoLink id="cba0-a48d-10bf-3663" name="Setttra" hidden="false" targetId="bb5e-b02c-a717-0824" type="profile"/>
-        <infoLink id="8046-3304-8d85-44ea" name="Settra the Great" hidden="false" targetId="6cb0-7aee-0ddb-34b5" type="rule"/>
-        <infoLink id="8c76-8704-c22f-f918" name="Settra&apos;s Army" hidden="false" targetId="cb8a-c041-ca3d-d32e" type="rule"/>
-        <infoLink id="4a07-a6e5-c688-73d7" name="Chariot of the Gods " hidden="false" targetId="e741-5740-04e5-1479" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="3064-5f26-298f-7296" name="Lord" hidden="false" targetId="d024-d25b-a9b4-73b6" primary="false"/>
@@ -1775,9 +1785,10 @@ The Queen moves with the swiftness of a striking asp, and will always strikes fi
         <categoryLink id="32bd-2db0-014a-16b4" name="Special Characters" hidden="false" targetId="0644-bfcd-32c2-21dc" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="1d6c-cc8b-dbe5-08bf" name="Chariot" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="1d6c-cc8b-dbe5-08bf" name="Chariot of the Gods" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0ce7-c02b-d986-ae86" type="max"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fcb9-19e5-767a-d344" includeChildSelections="false"/>
           </constraints>
           <infoLinks>
             <infoLink id="f4af-be09-29c7-9f3a" name="Chariot" hidden="false" targetId="6b85-43b7-6ea0-90b0" type="profile">
@@ -1788,35 +1799,12 @@ The Queen moves with the swiftness of a striking asp, and will always strikes fi
                 <modifier type="set" field="fa44-51dd-e69c-8d6a" value="6"/>
               </modifiers>
             </infoLink>
+            <infoLink name="Chariot of the Gods " id="a416-63af-dff2-d010" hidden="false" type="rule" targetId="e741-5740-04e5-1479"/>
           </infoLinks>
-          <entryLinks>
-            <entryLink id="6582-3139-ee7d-b0aa" name="Spear (Mounted)" hidden="false" collective="false" import="true" targetId="027b-31d2-b3e2-23a4" type="selectionEntry">
-              <costs>
-                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="3"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
           <costs>
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
             <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="013e-2189-0724-9782" name="Magic" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="ecfa-8486-4f6c-c249" scope="parent" value="100" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0472-f4b5-7bbf-14ba" type="max"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8bd9-3a49-4fc8-1ce7" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="696d-a7fd-0fd6-353d" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="9d9b-ec5a-84b4-13af" type="selectionEntryGroup"/>
-            <entryLink id="aa66-9d2e-5d99-fc55" name="Magic Armour" hidden="false" collective="false" import="true" targetId="4080-991e-70af-33c5" type="selectionEntryGroup"/>
-            <entryLink id="b4cf-7aac-baa0-c619" name="Talismans" hidden="false" collective="false" import="true" targetId="03ae-d536-7464-8097" type="selectionEntryGroup"/>
-            <entryLink id="ad43-82c4-6fc5-6e44" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="0e6a-2df1-e29d-3de1" type="selectionEntryGroup"/>
-          </entryLinks>
-          <costs>
-            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
-            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Additional Lord slot" hidden="false" id="390e-d8f8-6786-80d5">
@@ -1831,36 +1819,33 @@ The Queen moves with the swiftness of a striking asp, and will always strikes fi
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="f27c-ddb2-e01a-c7af" name="Additional Weapons" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e4f6-3ebe-9928-1488" type="max"/>
-          </constraints>
+        <selectionEntryGroup name="Magic Items" id="3b95-9007-67e7-53b1" hidden="false">
           <entryLinks>
-            <entryLink id="47e4-dd18-0869-632b" name="Blessed Blade of Ptra" hidden="false" collective="false" import="true" targetId="b3c9-1f9c-ef2e-e611" type="selectionEntry">
+            <entryLink import="true" name="The Crown of Nehekhara" hidden="false" id="50dd-6bcc-f4bb-2dbb" collective="false" targetId="bc2d-3c4e-d3a7-520f" type="selectionEntry">
               <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dc0f-3e26-2b2f-c02c" type="min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6774-7b92-70e8-56a7" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d3ef-0f6d-e5cf-e29f" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Blessed Blade of Ptra" hidden="false" id="47e4-dd18-0869-632b" collective="false" targetId="b3c9-1f9c-ef2e-e611" type="selectionEntry">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dc0f-3e26-2b2f-c02c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f5ad-4522-9653-19bb" includeChildSelections="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Blessed Blade of Ptra" id="d960-be72-4c25-aa6f" hidden="false" type="rule" targetId="1952-ede4-9d62-79d0"/>
+              </infoLinks>
+            </entryLink>
+            <entryLink import="true" name="The Armour of Golden Magnificence" hidden="false" id="b532-78fb-4dec-fbee" collective="false" targetId="0afd-fdf3-750a-25f1" type="selectionEntry">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a2cf-55c6-5822-bec5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2332-3975-4984-6f7e" includeChildSelections="false"/>
               </constraints>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="0ae5-e430-458f-7753" name="Hand Weapon" hidden="false" collective="false" import="true" targetId="abdb-bbd0-41b2-5dff" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9348-bdde-5e79-c29b" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f741-4e82-6c0d-35e0" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="b532-78fb-4dec-fbee" name="The Armour of Golden Magnificence" hidden="false" collective="false" import="true" targetId="0afd-fdf3-750a-25f1" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a2cf-55c6-5822-bec5" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="50dd-6bcc-f4bb-2dbb" name="The Crown of Nehekhara" hidden="false" collective="false" import="true" targetId="bc2d-3c4e-d3a7-520f" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="26da-180c-a3a8-759e" type="max"/>
-          </constraints>
-        </entryLink>
         <entryLink id="518f-fa15-ac03-2f73" name="General" hidden="false" collective="false" import="true" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry">
           <modifiers>
             <modifier type="decrement" field="fcec-2340-6368-a2ba" value="2"/>
@@ -1872,6 +1857,18 @@ The Queen moves with the swiftness of a striking asp, and will always strikes fi
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <infoGroups>
+        <infoGroup name="Special rules" id="262e-2a15-d509-8cb1" hidden="false">
+          <infoLinks>
+            <infoLink name="Undead" id="e386-503b-5ef7-2b16" hidden="false" targetId="97a4-d2a9-5b16-f0c3" type="rule"/>
+            <infoLink name="Flammable" id="630b-a7ba-f606-1568" hidden="false" targetId="ff92-e6dd-2f5d-dcca" type="rule"/>
+            <infoLink name="Settra the Great" id="8046-3304-8d85-44ea" hidden="false" targetId="6cb0-7aee-0ddb-34b5" type="rule"/>
+            <infoLink name="Settra&apos;s Army" id="8c76-8704-c22f-f918" hidden="false" targetId="cb8a-c041-ca3d-d32e" type="rule"/>
+            <infoLink name="The Curse of Settra" id="908f-6471-286e-57fd" hidden="false" targetId="b8a8-840a-2c31-e5dd" type="rule"/>
+            <infoLink name="The Will of Settra" id="28bb-d50a-3706-a5f9" hidden="false" targetId="aebb-c17d-b917-64c6" type="rule"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
     </selectionEntry>
     <selectionEntry id="7f0e-8291-c3f1-3ff6" name="Sehenesmet, Vizier of Quatar" publicationId="31e0-a609-b995-133f" page="3" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
@@ -1900,18 +1897,8 @@ The Queen moves with the swiftness of a striking asp, and will always strikes fi
         <constraint field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="95c6-755c-c26e-e018" type="max"/>
         <constraint field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5a6c-99d4-303a-a085" type="min"/>
       </constraints>
-      <rules>
-        <rule id="169b-fa8d-42e1-e0ba" name="Liche Giant (Sehenesmet)" publicationId="31e0-a609-b995-133f" page="3" hidden="false">
-          <description>Sehenesmet combines the physical power of a Bone Giant with the mystical arts of a Liche Priest. All of the rules for both Bone Giants and Liche High Priests apply to Sehenesmet</description>
-        </rule>
-      </rules>
       <infoLinks>
         <infoLink id="5d55-c6b7-eb5a-d686" name="Bone Giant" hidden="false" targetId="3537-7a82-2a80-32d4" type="profile"/>
-        <infoLink id="1939-5814-496d-61c1" name="Undead Constructs" hidden="false" targetId="149b-a988-a985-bb71" type="rule"/>
-        <infoLink id="1773-4954-f327-3df2" name="Large Target" hidden="false" targetId="4463-1b38-aa4d-e03c" type="rule"/>
-        <infoLink id="e199-b998-9dab-805a" name="Terror" hidden="false" targetId="96f0-c50f-e59e-85fa" type="rule"/>
-        <infoLink id="e5a0-2622-79fd-016c" name="Unstoppable Assault" hidden="false" targetId="3809-6570-311e-36a4" type="rule"/>
-        <infoLink id="c0f9-11af-ff81-0930" name="Magical Resistance (2)" hidden="false" targetId="df8d-7c05-c47b-9cd6" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="c86c-b882-5dc8-e160" name="Rare" hidden="false" targetId="e94b-6a54-8779-cd60" primary="false"/>
@@ -1925,6 +1912,7 @@ The Queen moves with the swiftness of a striking asp, and will always strikes fi
             <entryLink id="7f79-c252-ddfa-02f7" name="The Sacred Crook of Shapesh" hidden="false" collective="false" import="true" targetId="ce3e-4c01-1bb1-54de" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a0d9-0c4e-f299-8453" type="min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b1fa-1ef2-8417-3ba2" includeChildSelections="false"/>
               </constraints>
             </entryLink>
           </entryLinks>
@@ -1951,6 +1939,22 @@ The Queen moves with the swiftness of a striking asp, and will always strikes fi
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="2"/>
       </costs>
+      <infoGroups>
+        <infoGroup name="Special rules" id="5e4a-c42a-142c-f1b7" hidden="false">
+          <infoLinks>
+            <infoLink name="Unstoppable Assault" id="e5a0-2622-79fd-016c" hidden="false" targetId="3809-6570-311e-36a4" type="rule"/>
+            <infoLink name="Large Target" id="1773-4954-f327-3df2" hidden="false" targetId="4463-1b38-aa4d-e03c" type="rule"/>
+            <infoLink name="Magical Resistance (2)" id="c0f9-11af-ff81-0930" hidden="false" targetId="df8d-7c05-c47b-9cd6" type="rule"/>
+            <infoLink name="Terror" id="e199-b998-9dab-805a" hidden="false" targetId="96f0-c50f-e59e-85fa" type="rule"/>
+            <infoLink name="Undead Constructs" id="1939-5814-496d-61c1" hidden="false" targetId="149b-a988-a985-bb71" type="rule"/>
+          </infoLinks>
+          <rules>
+            <rule name="Liche Giant (Sehenesmet)" id="169b-fa8d-42e1-e0ba" hidden="false" publicationId="31e0-a609-b995-133f" page="3">
+              <description>Sehenesmet combines the physical power of a Bone Giant with the mystical arts of a Liche Priest. All of the rules for both Bone Giants and Liche High Priests apply to Sehenesmet</description>
+            </rule>
+          </rules>
+        </infoGroup>
+      </infoGroups>
     </selectionEntry>
   </selectionEntries>
   <entryLinks>
@@ -2589,8 +2593,8 @@ The Queen moves with the swiftness of a striking asp, and will always strikes fi
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="efd0-b637-6543-4330" type="max"/>
       </constraints>
       <entryLinks>
-        <entryLink id="15df-d8c0-1bf2-0602" name="Dispel Scroll" hidden="false" collective="false" import="true" targetId="b76c-6bad-4650-dbb0" type="selectionEntry"/>
-        <entryLink id="d2f8-23d9-1194-ca26" name="Power Stone" hidden="false" collective="false" import="true" targetId="0ed5-eacf-d55a-5e9e" type="selectionEntry"/>
+        <entryLink id="15df-d8c0-1bf2-0602" name="Dispel Scroll (one use only)" hidden="false" collective="false" import="true" targetId="b76c-6bad-4650-dbb0" type="selectionEntry"/>
+        <entryLink id="d2f8-23d9-1194-ca26" name="Power Stone (one use only)" hidden="false" collective="false" import="true" targetId="0ed5-eacf-d55a-5e9e" type="selectionEntry"/>
         <entryLink id="8dfd-54fd-00d0-1b11" name="Staff of Ravening" hidden="false" collective="false" import="true" targetId="41d4-3709-0119-eeb9" type="selectionEntry"/>
         <entryLink id="81ac-c2dd-b19d-6bed" name="Neferra&apos;s Plaques of Mighty Incantations" hidden="false" collective="false" import="true" targetId="fe28-1e60-a5c4-be59" type="selectionEntry"/>
         <entryLink id="6bd9-34f9-4f03-4143" name="Staff of Sorcery" hidden="false" collective="false" import="true" targetId="b22a-6be5-d4f9-7776" type="selectionEntry"/>
@@ -2979,6 +2983,9 @@ The unit suffers a number of Strength 4 hits equal to the number of wounds curr
     </rule>
     <rule id="5cc2-ec0f-19c1-690e" name="Venom Staff (L5)" publicationId="04f9-cede-fdb3-1e6c" page="69" hidden="false">
       <description>Bound Spell, Power Level 5. The staff contains a Bound magic missile with a range of 24&quot;, causing 2D6 Strength 4 hits. If a unit takes any wounds from the staff, it may not move in its next Movement phase.</description>
+    </rule>
+    <rule name="Blessed Blade of Ptra" id="1952-ede4-9d62-79d0" hidden="false" page="67" publicationId="04f9-cede-fdb3-1e6c">
+      <description>Settra always strikes first in close combat, even if charged. If an enemy also has the ability to strikes first, then they strike in normal Initiative order. If this is also equal, roll a dice to see who strikes first (re-roll ties). Keep track of the number of hits Settra scores with his weapon. After his attacks have been resolved, any enemy unit in base contact with Settra must take a Leadership test, with a negative modifier equal to the number of hits caused by Settra. If the test is passed. the enemy avert their gaze and suffer no ill effects. If the enemy fail the test then they are reduced to Weapon Skill 1 for the remainder of that combat round. If they roll double or more than their modified Leadership value then in addition to being reduced to Weapon Skill 1, the unit suffers D6 Strength 4 hits (distributed as shooting hits). For example, if Settra hits a unit with Leadership 7 three times, a Leadership test of 4 or less is no effect, a roll of 5 to 7 reduces them to Weapon Skill 1, and a roll of 8 or more means they also suffer hits.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
