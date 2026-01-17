@@ -179,16 +179,16 @@
             <entryLink id="994d-8a68-1123-dd6d" name="Plaques" hidden="false" collective="false" import="true" targetId="6150-3dae-687d-6461" type="selectionEntryGroup"/>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Spells Lore" id="df79-946f-4a83-d030" hidden="false">
+        <selectionEntryGroup name="Spells Lore" id="df79-946f-4a83-d030" hidden="false" collapsible="true">
           <entryLinks>
-            <entryLink import="true" name="Lore of Heavens" hidden="false" id="3257-bb7d-0e8b-0d6f" type="selectionEntryGroup" targetId="e999-4d26-ec27-9cd0"/>
-            <entryLink import="true" name="Lore of Death" hidden="false" id="4b40-08cc-c43f-8270" type="selectionEntryGroup" targetId="0a76-fdab-0afb-3612"/>
-            <entryLink import="true" name="Lore of Fire" hidden="false" id="4d7d-fd4d-8fb4-3587" type="selectionEntryGroup" targetId="ffc0-ed2b-71f0-b61c"/>
-            <entryLink import="true" name="Lore of Life" hidden="false" id="d351-1fd2-ed5a-b03a" type="selectionEntryGroup" targetId="7814-b731-32d8-88be"/>
-            <entryLink import="true" name="Lore of Metal" hidden="false" id="b3cb-5d0f-5212-4007" type="selectionEntryGroup" targetId="f679-dff7-370a-6050"/>
-            <entryLink import="true" name="Lore of Light" hidden="false" id="b6ea-67a0-a71e-fed6" type="selectionEntryGroup" targetId="f6d6-76c8-90fe-ac07"/>
-            <entryLink import="true" name="Lore of Shadow" hidden="false" id="9459-9170-5fa7-c186" type="selectionEntryGroup" targetId="b0de-c735-e115-5c82"/>
-            <entryLink import="true" name="Lore of Beasts" hidden="false" id="f142-545d-57e5-c26d" type="selectionEntryGroup" targetId="892e-a8dd-8f70-373a"/>
+            <entryLink import="true" name="Lore of Heavens" hidden="false" id="3257-bb7d-0e8b-0d6f" type="selectionEntryGroup" targetId="e999-4d26-ec27-9cd0" collapsible="true"/>
+            <entryLink import="true" name="Lore of Death" hidden="false" id="4b40-08cc-c43f-8270" type="selectionEntryGroup" targetId="0a76-fdab-0afb-3612" collapsible="true"/>
+            <entryLink import="true" name="Lore of Fire" hidden="false" id="4d7d-fd4d-8fb4-3587" type="selectionEntryGroup" targetId="ffc0-ed2b-71f0-b61c" collapsible="true"/>
+            <entryLink import="true" name="Lore of Life" hidden="false" id="d351-1fd2-ed5a-b03a" type="selectionEntryGroup" targetId="7814-b731-32d8-88be" collapsible="true"/>
+            <entryLink import="true" name="Lore of Metal" hidden="false" id="b3cb-5d0f-5212-4007" type="selectionEntryGroup" targetId="f679-dff7-370a-6050" collapsible="true"/>
+            <entryLink import="true" name="Lore of Light" hidden="false" id="b6ea-67a0-a71e-fed6" type="selectionEntryGroup" targetId="f6d6-76c8-90fe-ac07" collapsible="true"/>
+            <entryLink import="true" name="Lore of Shadow" hidden="false" id="9459-9170-5fa7-c186" type="selectionEntryGroup" targetId="b0de-c735-e115-5c82" collapsible="true"/>
+            <entryLink import="true" name="Lore of Beasts" hidden="false" id="f142-545d-57e5-c26d" type="selectionEntryGroup" targetId="892e-a8dd-8f70-373a" collapsible="true"/>
           </entryLinks>
           <infoLinks>
             <infoLink name="Drain Magic" id="02f3-6661-3e9f-6be0" hidden="false" targetId="1d5e-afeb-df27-29dd" type="rule"/>
@@ -330,19 +330,16 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="c11c-ef59-7755-8f48" name="Oldblood Blessed Spawning" hidden="false" collective="false" import="true" targetId="a9b0-85eb-cc4b-5f8d" type="selectionEntry">
+        <entryLink id="a3df-841c-2478-a463" name="General" hidden="false" collective="false" import="true" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry"/>
+        <entryLink import="true" name="Blessed Spawning (Oldblood)" hidden="false" id="5642-5b07-b2a4-1f03" type="selectionEntryGroup" targetId="37a8-e49e-d4b1-c361">
           <modifiers>
-            <modifier type="set" field="9979-1f79-69c6-7f24" value="1">
+            <modifier type="set" value="1" field="9979-1f79-69c6-7f24">
               <conditions>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5ff-0687-4b30-f367" type="atLeast"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="b5ff-0687-4b30-f367" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </modifier>
           </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9979-1f79-69c6-7f24" type="min"/>
-          </constraints>
         </entryLink>
-        <entryLink id="a3df-841c-2478-a463" name="General" hidden="false" collective="false" import="true" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="145"/>
@@ -766,7 +763,7 @@
             <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="ce13-e799-f59d-b4d5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Lore of Heavens" hidden="false" id="9af4-e9d5-86a2-8687" type="selectionEntryGroup" targetId="e999-4d26-ec27-9cd0"/>
+        <entryLink import="true" name="Lore of Heavens" hidden="false" id="9af4-e9d5-86a2-8687" type="selectionEntryGroup" targetId="e999-4d26-ec27-9cd0" collapsible="true"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="65"/>
@@ -2061,26 +2058,6 @@ If Kroq-Gar is wounded in close combat and does not pass his Ward save, then who
             <infoLink id="fe7c-9c3e-1ff4-8644" name="Cold Blooded" hidden="false" targetId="da71-1c1e-ded6-959a" type="rule"/>
           </infoLinks>
         </infoGroup>
-        <infoGroup id="6371-b034-2b9c-2348" name="Magic Items" hidden="false">
-          <profiles>
-            <profile id="1e4f-9316-1ee9-ed90" name="Revered Spear of Tlanxla" publicationId="3a49-dd2e-fcaa-cdb1" page="69" hidden="false" typeId="a89b-d5a3-7805-c44e" typeName="Magic Items">
-              <characteristics>
-                <characteristic name="Magic stuff" typeId="c7b5-c239-d6c1-0627">The Revered Spear of Tlanxla gives Kroq-Gar +1 Strength on the turn he charges.
-
-Any unit that suffers wounds from the Revered Blade of Tlanxla must take a Leadership test at the end of the combat. This Leadership test is taken before combat resolution is calculated. If the test is failed, the unit counts as automatically losing the combat and failing its Break test. Kroq-Gar may elect to pursue or restrain pursuit as normal. If Kroq-Gar caused wounds on more than one unit, each must take a separate Leadership test; units which fail this test are not counted towards outnumbering when calculating combat resolution and any other Break tests, which are otherwise resolved as normal.
-
-Against units that are Immune to Psychology, the weapon simply counts as a magical spear.</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="20c1-cdfa-37c6-c3c8" name="Hand of Gods" publicationId="3a49-dd2e-fcaa-cdb1" page="69" hidden="false" typeId="a89b-d5a3-7805-c44e" typeName="Magic Items">
-              <characteristics>
-                <characteristic name="Magic stuff" typeId="c7b5-c239-d6c1-0627">In the Shooting phase, Kroq-Gar may direct the energy from the Hand of Gods at any targets he can see, following all the normal restrictions for targeting.
-
-The Hand of Gods has a range of 8&quot; and strikes every enemy unit within line of sight and range. Any unit struck suffers D6 Strength 4 hits with no Armour saves allowed.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </infoGroup>
       </infoGroups>
       <categoryLinks>
         <categoryLink id="a95a-54cd-6069-0f90" name="Characters" hidden="false" targetId="7a1c-d611-c2dc-def1" primary="false"/>
@@ -2098,6 +2075,50 @@ The Hand of Gods has a range of 8&quot; and strikes every enemy unit within line
               </constraints>
             </entryLink>
           </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Magic Items" id="1f90-9ab5-9755-475e" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Hand of Gods" hidden="false" id="6dc2-5c7d-f71a-eb7c" page="69" publicationId="3a49-dd2e-fcaa-cdb1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1cf4-57de-0fc0-1d1f" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="148c-a765-c142-b32e" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Hand of Gods" typeId="7889-42d9-70a0-3ea9" typeName="Weapon" hidden="false" id="20c1-cdfa-37c6-c3c8" publicationId="3a49-dd2e-fcaa-cdb1" page="69">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3107-4d1e-9a51-6564">8&quot;</characteristic>
+                    <characteristic name="Strength" typeId="6fe4-1ebb-cb04-1378">S4</characteristic>
+                    <characteristic name="Damage" typeId="6f2f-d612-52ef-1633"/>
+                    <characteristic name="Special Rules" typeId="a21a-cdc0-4b13-b236">Auto-hits every enemy in sight and range.</characteristic>
+                    <characteristic name="Saves" typeId="8014-a8b2-15c3-da95">No armour saves</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Revered Spear of Tlanxla" id="e47d-0036-3e22-ecc2" hidden="false" type="rule" targetId="4778-f6cb-b6a5-fc61"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Revered Spear of Tlanxla (Magic Weapon)" hidden="false" id="433b-a5d3-f680-c735" page="69" publicationId="3a49-dd2e-fcaa-cdb1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9f34-f57d-bbce-b9c1" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0f6e-91cd-12eb-4674" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Revered Spear of Tlanxla" typeId="7889-42d9-70a0-3ea9" typeName="Weapon" hidden="false" id="0d02-2f14-d7f9-13ea" publicationId="3a49-dd2e-fcaa-cdb1" page="69">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3107-4d1e-9a51-6564">CC</characteristic>
+                    <characteristic name="Strength" typeId="6fe4-1ebb-cb04-1378">+1S in charge</characteristic>
+                    <characteristic name="Damage" typeId="6f2f-d612-52ef-1633"/>
+                    <characteristic name="Special Rules" typeId="a21a-cdc0-4b13-b236">If wounds, cause Ld test.</characteristic>
+                    <characteristic name="Saves" typeId="8014-a8b2-15c3-da95"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Revered Spear of Tlanxla" id="7710-5d84-a0d2-f699" hidden="false" type="rule" targetId="4467-6796-fa51-0252"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -3409,6 +3430,10 @@ Tehenhauin may only join units of Jungle Swarms (not Lesser Swarms), and is coun
                 <entryLink import="true" name="Extra Hero choice" hidden="false" id="4338-3420-4e31-e404" type="selectionEntry" targetId="3e25-986a-693f-a975"/>
                 <entryLink import="true" name="Extra Rare choice" hidden="false" id="5d10-135c-a414-fcb8" type="selectionEntry" targetId="dde8-eb28-cacb-34a3"/>
               </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1f6a-8b18-b38c-c0cd" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ea1b-0b57-fccf-bf3d" includeChildSelections="false"/>
+              </constraints>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -3693,12 +3718,20 @@ This spell is targeted at a single hill anywhere on the table. Any unit at leas
                 <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
                 <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
               </costs>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e95c-222e-95f3-c960" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2b1f-a829-0e5b-6c5e" includeChildSelections="false"/>
+              </constraints>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup id="d88f-8007-dbf2-796e" name="Magic Items" hidden="false" collective="false" import="true">
           <entryLinks>
-            <entryLink import="true" name="Plaque of Tepok, the Inscrutable" hidden="false" id="87dd-f9ad-6a40-c71c" type="selectionEntry" targetId="3ceb-3da3-41cd-917a"/>
+            <entryLink import="true" name="Plaque of Tepok, the Inscrutable" hidden="false" id="87dd-f9ad-6a40-c71c" type="selectionEntry" targetId="3ceb-3da3-41cd-917a">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5949-3651-aaa5-fd82" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Coils of Sotek" hidden="false" id="ebdc-08cc-2a4f-966e">
@@ -3789,7 +3822,11 @@ This spell is targeted at a single hill anywhere on the table. Any unit at leas
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="37c5-549e-9c65-02d0" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Magic Level 2" hidden="false" id="f546-1065-1b3f-c9e6" type="selectionEntry" targetId="fbc2-5115-f240-7367"/>
+            <entryLink import="true" name="Magic Level 2" hidden="false" id="f546-1065-1b3f-c9e6" type="selectionEntry" targetId="fbc2-5115-f240-7367">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2d2e-3254-b7ee-c0c4" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -3953,231 +3990,6 @@ This spell is targeted at a single hill anywhere on the table. Any unit at leas
         <infoLink id="234d-7549-c3e6-0e2c" name="Immune to Panic" hidden="false" targetId="ab76-c582-4154-09fb" type="rule"/>
         <infoLink id="a44b-ce07-5814-8732" name="Poisoned Attacks" hidden="false" targetId="c42e-9dc4-8229-5abe" type="rule"/>
       </infoLinks>
-      <costs>
-        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
-        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="a9b0-85eb-cc4b-5f8d" name="Oldblood Blessed Spawning" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6b15-5db5-64d5-8632" type="max"/>
-      </constraints>
-      <selectionEntries>
-        <selectionEntry id="fca0-75a5-66c7-6032" name="Blessed Mark of the Old Ones" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e575-7d9b-dbb9-953e" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="92d0-e3d9-77dc-bdd0" name="Blesssed Mark of the Old Ones" hidden="false" targetId="4cc1-35fc-92c0-dd94" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="35"/>
-            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="5090-4554-70ce-bb23" name="Blessed Spawning of Chotec, the Solar God" hidden="false" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="6d41-eed3-02f4-0d83" value="1">
-              <conditions>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b18a-25a7-2af9-00d3" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="21a9-dab3-6168-a1a5" type="max"/>
-            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d41-eed3-02f4-0d83" type="min"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="3bf9-7788-fb66-0d86" name="Blesssed Spawning of Chotec, the Solar God" hidden="false" targetId="9b0f-2665-1cc0-cb7a" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="15"/>
-            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="a381-e0a0-76ab-3af4" name="Blessed Spawning of Huanchi, the Jaguar God" hidden="false" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="15ef-190e-3389-cccb" value="1">
-              <conditions>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4c79-b87d-aae5-600c" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="687c-b6ad-5846-461b" type="max"/>
-            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="15ef-190e-3389-cccb" type="min"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="d86a-4cfb-2c00-3370" name="Blesssed Spawning of Huanchi, the Jaguar God" hidden="false" targetId="e1fd-08c6-2aa0-fd20" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="20"/>
-            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="6dec-fac4-bc23-6b10" name="Blessed Spawning of Itzl, the Rider God" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="65ee-851b-7ca8-4c6e" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="e24c-6089-1b3b-b353" name="Blesssed Spawning of Itzl, the Rider God" hidden="false" targetId="28f1-98c9-61a1-ff34" type="rule"/>
-          </infoLinks>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="698b-3618-42d9-61a2" name="Oldblood mount" hidden="false" collective="false" import="true">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8777-913a-8098-87d5" type="max"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="1b68-bd48-424f-6014" name="Cold One" hidden="false" collective="false" import="true" type="upgrade">
-                  <infoLinks>
-                    <infoLink id="57b6-f897-541c-807b" name="Cold One" hidden="false" targetId="7d3c-1d69-5f1c-711f" type="profile"/>
-                    <infoLink id="e2be-b6a6-fdc1-2bda" name="Stupidity" hidden="false" targetId="6541-7811-4171-a837" type="rule"/>
-                    <infoLink id="1144-23c4-023b-4451" name="Fear" hidden="false" targetId="1524-2372-4aa0-6881" type="rule"/>
-                    <infoLink id="216e-27ec-9745-eeb1" name="Thick Skinned" hidden="false" targetId="d430-8369-52da-6fb1" type="rule"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="37"/>
-                    <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-                    <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="6554-2d46-850f-49c7" name="Carnosaur" hidden="false" collective="false" import="true" type="upgrade">
-                  <infoLinks>
-                    <infoLink id="8c8f-482a-532e-aab0" name="Carnosaur" hidden="false" targetId="2acc-06f2-7d4d-7db3" type="profile"/>
-                    <infoLink id="8585-4561-156a-2f2f" name="Terror" hidden="false" targetId="756a-1071-031a-2158" type="rule"/>
-                    <infoLink id="1c31-a982-7dac-f06f" name="Blood-frenzy" hidden="false" targetId="2d3d-6ad5-90d3-3b84" type="rule"/>
-                    <infoLink id="9e87-1454-e202-d90f" name="Ultimate Predator" hidden="false" targetId="bde7-57df-dd14-3ae8" type="rule"/>
-                    <infoLink id="e4c8-521d-b25e-1cca" name="Scaly Skin 4+" hidden="false" targetId="d9b3-2f25-faa4-a7fb" type="rule"/>
-                  </infoLinks>
-                  <categoryLinks>
-                    <categoryLink id="c7a8-4654-8ecb-d07c" name="Heroes" hidden="false" targetId="c16b-f319-2c62-2c12" primary="false"/>
-                    <categoryLink id="4a96-bd4b-0976-4e8a" name="Characters" hidden="false" targetId="7a1c-d611-c2dc-def1" primary="false"/>
-                  </categoryLinks>
-                  <costs>
-                    <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="210"/>
-                    <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-                    <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <costs>
-            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="5"/>
-            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="6767-d667-d13d-0a2f" name="Blessed Spawning of Tzunki, the Water God" hidden="false" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="7661-7f9f-719a-93ff" value="1">
-              <conditions>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e7e5-d37e-55ea-fc4c" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2af7-f475-7778-6efc" type="max"/>
-            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7661-7f9f-719a-93ff" type="min"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="c2e6-a031-00bb-3566" name="Blesssed Spawning of Tzunki, the Water God" hidden="false" targetId="49d9-40fc-b608-87a2" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="5"/>
-            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="3c49-4f0f-3130-1124" name="Blessed Spawning of Quetzl, the Protector God" hidden="false" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="005b-139a-33db-8bfd" value="1">
-              <conditions>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cb3a-3d23-dd43-44fb" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f69-4f67-7485-fe4c" type="max"/>
-            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="005b-139a-33db-8bfd" type="min"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="e008-5b18-28e7-4b96" name="Blesssed Spawning of Quetzl, the Protector God" hidden="false" targetId="1c8b-3c91-c79e-853e" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="15"/>
-            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="a3ce-255a-61bc-d364" name="Blessed Spawning of Sotek, the Serpent God" hidden="false" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="fb00-0f90-a749-a39c" value="1">
-              <conditions>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a5ce-d1da-5d2e-e051" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6cac-4999-46ba-0c9a" type="max"/>
-            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb00-0f90-a749-a39c" type="min"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="ae9f-e233-88d1-d13a" name="Blesssed Spawning of Sotek, the Serpent God" hidden="false" targetId="d93f-c967-c856-d295" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="20"/>
-            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="bb6e-8aed-be52-d253" name="Blessed Spawning of Tepok, the Inscrutable" hidden="false" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="e836-f012-0b30-19d0" value="1">
-              <conditions>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="42bf-2d83-4069-2172" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2a10-7e21-6f3e-b280" type="max"/>
-            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e836-f012-0b30-19d0" type="min"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="f8d0-32d6-ea3a-a8ca" name="Blesssed Spawning of Tepok, the Inscrutable" hidden="false" targetId="4fda-2623-4a50-2dee" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="20"/>
-            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="a581-9f31-387f-9569" name="Blessed Spawning of Tlazcotl, the Impassive" hidden="false" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="7b4d-8808-6171-e932" value="1">
-              <conditions>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3207-d96b-cff7-8ec0" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fcd1-0cb1-b22d-3281" type="max"/>
-            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7b4d-8808-6171-e932" type="min"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="1622-d85d-994d-4ad7" name="Blesssed Spawning of Tlazcotl, the Impassive" hidden="false" targetId="4995-80be-43e2-c907" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="20"/>
-            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
@@ -4736,7 +4548,7 @@ In addition, the bearer causes Fear in Skaven.</characteristic>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
-    <selectionEntryGroup id="4cfd-b3c7-a3ea-68f1" name="Arcane Items" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="4cfd-b3c7-a3ea-68f1" name="Arcane Items" hidden="false" collective="false" import="true" collapsible="true">
       <modifiers>
         <modifier type="increment" field="8b18-6469-1fcd-fcaf" value="1">
           <repeats>
@@ -4824,11 +4636,11 @@ This may be used with the exact sam effects as a Dispel Scroll. In addtion, all 
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="eea7-904b-10a1-2c0d" name="Dispel Scroll" hidden="false" collective="false" import="true" targetId="b76c-6bad-4650-dbb0" type="selectionEntry"/>
-        <entryLink id="1567-fb3c-9fb9-d3a0" name="Power Stone" hidden="false" collective="false" import="true" targetId="0ed5-eacf-d55a-5e9e" type="selectionEntry"/>
+        <entryLink id="eea7-904b-10a1-2c0d" name="Dispel Scroll (one use only)" hidden="false" collective="false" import="true" targetId="b76c-6bad-4650-dbb0" type="selectionEntry"/>
+        <entryLink id="1567-fb3c-9fb9-d3a0" name="Power Stone (one use only)" hidden="false" collective="false" import="true" targetId="0ed5-eacf-d55a-5e9e" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="ad6e-3337-4672-ae7b" name="Magic Armour" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="ad6e-3337-4672-ae7b" name="Magic Armour" hidden="false" collective="false" import="true" collapsible="true">
       <constraints>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb63-77e5-995d-2dea" type="max"/>
       </constraints>
@@ -4911,7 +4723,7 @@ This may be used with the exact sam effects as a Dispel Scroll. In addtion, all 
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="bf9b-10c2-4821-9fee" name="Talismans" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="bf9b-10c2-4821-9fee" name="Talismans" hidden="false" collective="false" import="true" collapsible="true">
       <constraints>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="38c3-fb6b-3017-bb7e" type="max"/>
       </constraints>
@@ -4962,7 +4774,7 @@ This may be used with the exact sam effects as a Dispel Scroll. In addtion, all 
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="a2c9-7abf-3316-b089" name="Magic Weapons" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="a2c9-7abf-3316-b089" name="Magic Weapons" hidden="false" collective="false" import="true" collapsible="true">
       <constraints>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="521b-533d-f82f-14d7" type="max"/>
       </constraints>
@@ -5240,7 +5052,7 @@ In addition, the bearer causes Fear in Skaven.</characteristic>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="bbd0-c163-1cc8-5edf" name="Enchanted Items" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="bbd0-c163-1cc8-5edf" name="Enchanted Items" hidden="false" collective="false" import="true" collapsible="true">
       <constraints>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="80ea-6f95-eb7f-a019" type="max"/>
       </constraints>
@@ -5335,7 +5147,7 @@ In addition, the bearer causes Fear in Skaven.</characteristic>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="106e-cbcc-35b6-ec13" name="Magic Banners" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="106e-cbcc-35b6-ec13" name="Magic Banners" hidden="false" collective="false" import="true" collapsible="true">
       <constraints>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7375-b8e9-10e8-e87f" type="max"/>
       </constraints>
@@ -5397,7 +5209,7 @@ In addition, the bearer causes Fear in Skaven.</characteristic>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="6150-3dae-687d-6461" name="Plaques" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="6150-3dae-687d-6461" name="Plaques" hidden="false" collective="false" import="true" collapsible="true">
       <entryLinks>
         <entryLink id="0656-2392-966e-365c" name="Cupped Hands of the Old Ones" hidden="false" collective="false" import="true" targetId="70ac-f325-7ce2-eb0f" type="selectionEntry"/>
         <entryLink id="c9e1-cae4-6b72-0b88" name="Plaque of Dominion" hidden="false" collective="false" import="true" targetId="a164-635a-a7e5-7c55" type="selectionEntry"/>
@@ -5481,7 +5293,7 @@ In addition, the bearer causes Fear in Skaven.</characteristic>
         </modifierGroup>
       </modifierGroups>
     </selectionEntryGroup>
-    <selectionEntryGroup id="b5f1-cbfb-ba4b-490e" name="Scar Vet Blessed spawnings" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="b5f1-cbfb-ba4b-490e" name="Blessed spawnings (Scar Vet)" hidden="false" collective="false" import="true">
       <entryLinks>
         <entryLink id="8176-4d84-0727-915c" name="Blessed Mark of the Old Ones" hidden="false" collective="false" import="true" targetId="9425-66a8-ef0e-bc7a" type="selectionEntry">
           <costs>
@@ -5751,6 +5563,226 @@ In addition, the bearer causes Fear in Skaven.</characteristic>
           </costs>
         </entryLink>
       </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Blessed Spawning (Oldblood)" id="37a8-e49e-d4b1-c361" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Blessed Mark of the Old Ones" hidden="false" id="f04d-a487-1e04-dfa1" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0c3c-693a-aaff-2e15" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Blesssed Mark of the Old Ones" id="3767-aae4-03ef-d091" hidden="false" targetId="4cc1-35fc-92c0-dd94" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="35"/>
+            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Blessed Spawning of Chotec, the Solar God" hidden="false" id="afee-9d7b-2faf-846f" collective="false">
+          <modifiers>
+            <modifier type="set" value="1" field="2b0e-b95e-ce59-2185">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="b18a-25a7-2af9-00d3" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a1fe-dd9b-50b7-34e5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="2b0e-b95e-ce59-2185" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Blesssed Spawning of Chotec, the Solar God" id="ee45-96ab-8cc2-7f1b" hidden="false" targetId="9b0f-2665-1cc0-cb7a" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="15"/>
+            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Blessed Spawning of Huanchi, the Jaguar God" hidden="false" id="af3a-437d-bc20-4361" collective="false">
+          <modifiers>
+            <modifier type="set" value="1" field="de9c-aa33-39c2-476c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="4c79-b87d-aae5-600c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ca73-091b-f2b5-6efa" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="de9c-aa33-39c2-476c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Blesssed Spawning of Huanchi, the Jaguar God" id="30f8-7bba-6c3e-337e" hidden="false" targetId="e1fd-08c6-2aa0-fd20" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="20"/>
+            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Blessed Spawning of Itzl, the Rider God" hidden="false" id="f437-6aea-e272-2614" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b096-2a6e-a6cd-03aa" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Blesssed Spawning of Itzl, the Rider God" id="a17e-e6d7-98f4-bbc3" hidden="false" targetId="28f1-98c9-61a1-ff34" type="rule"/>
+          </infoLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Oldblood mount" id="527e-33e0-3119-5843" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8d2f-3f31-bc86-315e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Cold One" hidden="false" id="f4ad-1ebb-f49b-5ef1" collective="false">
+                  <infoLinks>
+                    <infoLink name="Cold One" id="5004-cf71-8119-1c1b" hidden="false" targetId="7d3c-1d69-5f1c-711f" type="profile"/>
+                    <infoLink name="Stupidity" id="c215-170f-d07b-411a" hidden="false" targetId="6541-7811-4171-a837" type="rule"/>
+                    <infoLink name="Fear" id="4d8a-fd34-105b-f6ba" hidden="false" targetId="1524-2372-4aa0-6881" type="rule"/>
+                    <infoLink name="Thick Skinned" id="6ba5-49d4-f0c7-b4b9" hidden="false" targetId="d430-8369-52da-6fb1" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="37"/>
+                    <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                    <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Carnosaur" hidden="false" id="7ef3-636a-7dc4-7e6a" collective="false">
+                  <infoLinks>
+                    <infoLink name="Carnosaur" id="3924-a99b-4fa3-af1f" hidden="false" targetId="2acc-06f2-7d4d-7db3" type="profile"/>
+                    <infoLink name="Terror" id="1c3b-56d2-adbb-bf19" hidden="false" targetId="756a-1071-031a-2158" type="rule"/>
+                    <infoLink name="Blood-frenzy" id="bc67-5f26-a5d8-1915" hidden="false" targetId="2d3d-6ad5-90d3-3b84" type="rule"/>
+                    <infoLink name="Ultimate Predator" id="d479-ee27-a8c2-d234" hidden="false" targetId="bde7-57df-dd14-3ae8" type="rule"/>
+                    <infoLink name="Scaly Skin 4+" id="7806-f4c6-98c7-ae92" hidden="false" targetId="d9b3-2f25-faa4-a7fb" type="rule"/>
+                  </infoLinks>
+                  <categoryLinks>
+                    <categoryLink name="Heroes" hidden="false" id="1152-5924-f7c0-8e32" targetId="c16b-f319-2c62-2c12" primary="false"/>
+                    <categoryLink name="Characters" hidden="false" id="366a-1c20-19ec-6d5c" targetId="7a1c-d611-c2dc-def1" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="210"/>
+                    <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                    <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="5"/>
+            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Blessed Spawning of Quetzl, the Protector God" hidden="false" id="136e-c408-a0ec-1432" collective="false">
+          <modifiers>
+            <modifier type="set" value="1" field="0188-0ab2-5693-ab71">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="cb3a-3d23-dd43-44fb" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="738f-394d-ede6-ce10" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="0188-0ab2-5693-ab71" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Blesssed Spawning of Quetzl, the Protector God" id="755c-efbb-ba7f-2398" hidden="false" targetId="1c8b-3c91-c79e-853e" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="15"/>
+            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Blessed Spawning of Sotek, the Serpent God" hidden="false" id="d475-3d75-7405-5df0" collective="false">
+          <modifiers>
+            <modifier type="set" value="1" field="3ba9-a987-4f1f-ae00">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="a5ce-d1da-5d2e-e051" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e31b-dd2a-5ba1-0cc3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="3ba9-a987-4f1f-ae00" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Blesssed Spawning of Sotek, the Serpent God" id="b1c6-23ca-3ed3-2918" hidden="false" targetId="d93f-c967-c856-d295" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="20"/>
+            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Blessed Spawning of Tepok, the Inscrutable" hidden="false" id="12b9-7e78-f4c6-fc7f" collective="false">
+          <modifiers>
+            <modifier type="set" value="1" field="0033-5a07-b89a-b8ac">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="42bf-2d83-4069-2172" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a58e-2b64-02bc-d018" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="0033-5a07-b89a-b8ac" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Blesssed Spawning of Tepok, the Inscrutable" id="9a56-b17b-2f63-eb26" hidden="false" targetId="4fda-2623-4a50-2dee" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="20"/>
+            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Blessed Spawning of Tlazcotl, the Impassive" hidden="false" id="a2c0-f0d5-232c-a9ef" collective="false">
+          <modifiers>
+            <modifier type="set" value="1" field="f9af-10af-0b32-2685">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="3207-d96b-cff7-8ec0" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a405-b418-4734-0f75" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="f9af-10af-0b32-2685" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Blesssed Spawning of Tlazcotl, the Impassive" id="4fb2-999e-0779-ab82" hidden="false" targetId="4995-80be-43e2-c907" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="20"/>
+            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Blessed Spawning of Tzunki, the Water God" hidden="false" id="dc4f-7f04-a980-4130" collective="false">
+          <modifiers>
+            <modifier type="set" value="1" field="a281-75e6-dfd5-e80c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="e7e5-d37e-55ea-fc4c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cfe5-2894-6c87-2e35" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="a281-75e6-dfd5-e80c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Blesssed Spawning of Tzunki, the Water God" id="940e-a1a7-1925-0a05" hidden="false" targetId="49d9-40fc-b608-87a2" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="5"/>
+            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="bf95-da3b-f5e0-c8af" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
@@ -6049,6 +6081,20 @@ of Quetzl using the following amendments:
 Mazdamundi can declare that he is chewing the grubs at the start of
 his Magic Phase. He then adds a further +1 to all attempts to cast
 and dispel spells until the start of his next Magic Phase.</description>
+    </rule>
+    <rule name="Hand of Gods" id="4778-f6cb-b6a5-fc61" hidden="false" page="69" publicationId="3a49-dd2e-fcaa-cdb1">
+      <description>In the Shooting phase, Kroq-Gar may direct the energy from the Hand of Gods at any targets he can see, following all the normal restrictions for targeting.
+
+The Hand of Gods has a range of 8&quot; and strikes every enemy unit within line of sight and range. Any unit struck suffers D6 Strength 4 hits with no Armour saves allowed.</description>
+    </rule>
+    <rule name="Revered Spear of Tlanxla" id="4467-6796-fa51-0252" hidden="false" page="69" publicationId="3a49-dd2e-fcaa-cdb1">
+      <description>The Revered Spear of Tlanxla gives Kroq-Gar +1 Strength on the turn he charges.
+
+
+Any unit that suffers wounds from the Revered Blade of Tlanxla must take a Leadership test at the end of the combat. This Leadership test is taken before combat resolution is calculated. If the test is failed, the unit counts as automatically losing the combat and failing its Break test. Kroq-Gar may elect to pursue or restrain pursuit as normal. If Kroq-Gar caused wounds on more than one unit, each must take a separate Leadership test; units which fail this test are not counted towards outnumbering when calculating combat resolution and any other Break tests, which are otherwise resolved as normal.
+
+
+Against units that are Immune to Psychology, the weapon simply counts as a magical spear.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>

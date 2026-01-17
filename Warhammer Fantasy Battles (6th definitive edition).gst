@@ -1913,7 +1913,7 @@
         <entryLink id="bcbb-db2d-4a76-0a82" name="6. Doom and Darkness!" hidden="false" collective="false" import="true" targetId="7caf-d4f2-8210-fa58" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Common Magic Items" id="c16c-a0f1-1ae2-8b57" hidden="false" page="154" publicationId="315e-e3c4-08af-fd51">
+    <selectionEntryGroup name="Common Magic Items" id="c16c-a0f1-1ae2-8b57" hidden="false" page="154" publicationId="315e-e3c4-08af-fd51" collapsible="true">
       <entryLinks>
         <entryLink import="true" name="Sword of Striking" hidden="false" id="94f9-e553-f996-340e" type="selectionEntry" targetId="6b55-e847-311d-d6ca"/>
         <entryLink import="true" name="Sword of Battle" hidden="false" id="5db2-cc28-4718-d0ff" type="selectionEntry" targetId="6e5a-eeea-ec67-3632"/>
