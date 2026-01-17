@@ -7433,8 +7433,8 @@
       <selectionEntries>
         <selectionEntry type="unit" import="true" name="Bodyguards" hidden="false" id="b04a-76ec-acaf-6a3f" collective="false">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="cd6f-fa1c-7bfb-1bf7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="65b2-ea15-048a-a731" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="37bc-1376-e511-3b4d" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9742-5a17-7fba-8f6a" includeChildSelections="false"/>
           </constraints>
           <profiles>
             <profile name="Black Orcs" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="d1ea-af4c-f9d8-cf3b">
@@ -8147,10 +8147,6 @@ Bound Spells are cast at a Power Level of 4 and can be used once per game on the
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup name="Magic Items" id="56b9-4749-ec2a-083e" hidden="false">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ffe0-a11b-3a9e-57ad" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="811c-693d-59af-5a4f" includeChildSelections="false"/>
-          </constraints>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="&apos;Ardlad&apos;s Axe o&apos; Doom (Magic Weapon)" hidden="false" id="6519-2254-fb86-0314">
               <rules>
@@ -8172,10 +8168,19 @@ Bound Spells are cast at a Power Level of 4 and can be used once per game on the
                   </characteristics>
                 </profile>
               </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a593-36ff-f50a-a915" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b607-5105-8638-5548" includeChildSelections="false"/>
+              </constraints>
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
-            <entryLink import="true" name="Drog&apos;s Dead &apos;Ard Armour " hidden="false" id="fdb4-9931-89b4-44bf" type="selectionEntry" targetId="4217-6223-abd4-1fda"/>
+            <entryLink import="true" name="Drog&apos;s Dead &apos;Ard Armour " hidden="false" id="fdb4-9931-89b4-44bf" type="selectionEntry" targetId="4217-6223-abd4-1fda">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f1e6-ac77-cef9-b3b7" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="51bc-bb7c-2819-f30d" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -8289,6 +8294,7 @@ Normally, a character is not able to use mundane weapons in addition to magic we
         <selectionEntry id="629d-c255-f863-784f" name="Light Armour" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d2eb-6974-0b1e-5407" type="max"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="983d-ca4d-c879-12f0" includeChildSelections="false"/>
           </constraints>
           <infoLinks>
             <infoLink id="99f3-9e12-4bbb-8d6b" name="Light Armour" hidden="false" targetId="752a-95b9-343a-8f75" type="profile"/>
@@ -8328,6 +8334,7 @@ Normally, a character is not able to use mundane weapons in addition to magic we
             <selectionEntry type="upgrade" import="true" name="Light Armour" hidden="false" id="c579-4343-56ca-a8a6" collective="false">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3437-327d-f416-7fb8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c365-4bac-ce1c-e5b4" includeChildSelections="false"/>
               </constraints>
               <infoLinks>
                 <infoLink name="Light Armour" id="122b-f01c-6a25-7cb4" hidden="false" targetId="752a-95b9-343a-8f75" type="profile"/>
@@ -9116,6 +9123,7 @@ In addition, Grom would never tolerate the presence of anybody who might threat
         <selectionEntry type="upgrade" import="true" name="Boar" hidden="false" id="c0f6-25f9-8847-5d82" collective="false">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3dc3-d9db-a911-0363" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fa45-57d7-97ff-d0de" includeChildSelections="false"/>
           </constraints>
           <infoLinks>
             <infoLink name="Boar" id="e1d0-b833-2569-6800" hidden="false" targetId="de91-b5e9-a96d-1f5a" type="profile"/>
@@ -9730,7 +9738,11 @@ Treat the Prodder&apos;s blasts as bound spells with a Power Level of 3. Each bl
       <selectionEntryGroups>
         <selectionEntryGroup name="Equipment" id="4456-d1c2-1e1b-fbec" hidden="false">
           <entryLinks>
-            <entryLink import="true" name="Heavy Armour" hidden="false" id="3035-8b0d-6a59-7bbc" type="selectionEntry" targetId="dde4-0ba8-7b3c-57b7"/>
+            <entryLink import="true" name="Heavy Armour" hidden="false" id="3035-8b0d-6a59-7bbc" type="selectionEntry" targetId="dde4-0ba8-7b3c-57b7">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e2d7-d98a-7879-dae0" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
             <entryLink import="true" name="Great Weapon" hidden="false" id="bd9a-38c7-280b-5238" type="selectionEntry" targetId="1eb7-3f36-8cf7-e0ba">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="513f-495c-a42f-cfa9" includeChildSelections="false"/>
@@ -10905,8 +10917,8 @@ Treat the Prodder&apos;s blasts as bound spells with a Power Level of 3. Each bl
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8c44-1e38-e587-56cf" type="max"/>
       </constraints>
       <entryLinks>
-        <entryLink id="04ff-5fc7-7bf3-ef90" name="Dispel Scroll" hidden="false" collective="false" import="true" targetId="b76c-6bad-4650-dbb0" type="selectionEntry"/>
-        <entryLink id="1bd7-dae0-aaac-a26a" name="Power Stone" hidden="false" collective="false" import="true" targetId="0ed5-eacf-d55a-5e9e" type="selectionEntry"/>
+        <entryLink id="04ff-5fc7-7bf3-ef90" name="Dispel Scroll (one use only)" hidden="false" collective="false" import="true" targetId="b76c-6bad-4650-dbb0" type="selectionEntry"/>
+        <entryLink id="1bd7-dae0-aaac-a26a" name="Power Stone (one use only)" hidden="false" collective="false" import="true" targetId="0ed5-eacf-d55a-5e9e" type="selectionEntry"/>
         <entryLink id="ca1f-3345-b109-b3da" name="Staff of Sorcery" hidden="false" collective="false" import="true" targetId="b22a-6be5-d4f9-7776" type="selectionEntry"/>
         <entryLink id="99ed-8337-b602-d233" name="Buzgob&apos;s Knobbly Staff " hidden="false" collective="false" import="true" targetId="6a95-95ff-7763-bd6d" type="selectionEntry"/>
         <entryLink id="4a92-7199-230b-6852" name="Dangly Wotnotz " hidden="false" collective="false" import="true" targetId="704c-1121-5a10-174e" type="selectionEntry"/>
@@ -10983,8 +10995,8 @@ Treat the Prodder&apos;s blasts as bound spells with a Power Level of 3. Each bl
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5d20-7d0e-bd61-db6a" type="max"/>
       </constraints>
       <entryLinks>
-        <entryLink id="4e93-529a-c4db-9dc3" name="Dispel Scroll" hidden="false" collective="false" import="true" targetId="b76c-6bad-4650-dbb0" type="selectionEntry"/>
-        <entryLink id="39a6-7329-7a7b-0f7d" name="Power Stone" hidden="false" collective="false" import="true" targetId="0ed5-eacf-d55a-5e9e" type="selectionEntry"/>
+        <entryLink id="4e93-529a-c4db-9dc3" name="Dispel Scroll (one use only)" hidden="false" collective="false" import="true" targetId="b76c-6bad-4650-dbb0" type="selectionEntry"/>
+        <entryLink id="39a6-7329-7a7b-0f7d" name="Power Stone (one use only)" hidden="false" collective="false" import="true" targetId="0ed5-eacf-d55a-5e9e" type="selectionEntry"/>
         <entryLink id="2943-9715-78fe-6111" name="Staff of Sorcery" hidden="false" collective="false" import="true" targetId="b22a-6be5-d4f9-7776" type="selectionEntry"/>
         <entryLink id="1f09-6a89-d798-9385" name="Buzgob&apos;s Knobbly Staff " hidden="false" collective="false" import="true" targetId="6a95-95ff-7763-bd6d" type="selectionEntry"/>
         <entryLink id="3d5b-9fff-e0e2-27cd" name="Dangly Wotnotz " hidden="false" collective="false" import="true" targetId="704c-1121-5a10-174e" type="selectionEntry"/>
