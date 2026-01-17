@@ -4920,14 +4920,11 @@
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="c5ab-ffa9-d6c4-65bb" name="Magic Level" hidden="false" collective="false" import="true" defaultSelectionEntryId="662d-33cf-0945-afb9">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b987-eead-e179-f80f" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bd28-7050-18bc-aa6b" type="max"/>
-          </constraints>
           <selectionEntries>
             <selectionEntry id="662d-33cf-0945-afb9" name="Level 4" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5def-73bb-3ea0-bb02" type="max"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0b40-cf4f-aefc-c61b" includeChildSelections="false"/>
               </constraints>
               <costs>
                 <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="4"/>
@@ -5240,103 +5237,31 @@
       </categoryLinks>
       <constraints>
         <constraint type="max" value="0" field="selections" scope="force" shared="true" id="52fd-514a-c02d-d851" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="587f-e69e-a68e-06ab" includeChildSelections="false"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8c00-fce6-a9f2-9b3f" includeChildSelections="false"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Kurt Helborg" hidden="false" id="0c75-8b7f-ea45-3aa6" page="15" publicationId="9eb2-99ea-4657-d0a4">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="587f-e69e-a68e-06ab" includeChildSelections="false"/>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8c00-fce6-a9f2-9b3f" includeChildSelections="false"/>
-          </constraints>
-          <profiles>
-            <profile name="Kurt Helborg" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="886f-fdd4-bf27-b830" page="15" publicationId="9eb2-99ea-4657-d0a4">
-              <characteristics>
-                <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">4</characteristic>
-                <characteristic name="WS" typeId="f95b-da01-0578-3bdc">7</characteristic>
-                <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">3</characteristic>
-                <characteristic name="S" typeId="b690-4bc0-bb73-267b">4</characteristic>
-                <characteristic name="T" typeId="8712-f56f-5b22-a720">4</characteristic>
-                <characteristic name="W" typeId="253a-9b00-4fde-8ac2">3</characteristic>
-                <characteristic name="I" typeId="dfff-363e-f72a-5a59">6</characteristic>
-                <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">4</characteristic>
-                <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">9</characteristic>
-                <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">2+</characteristic>
-                <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
-                <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <selectionEntryGroups>
-            <selectionEntryGroup name="Magic Items" id="f0fd-a5a0-d4bb-c211" hidden="false">
-              <constraints>
-                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="bde2-c1b4-a5bf-698c" includeChildSelections="false"/>
-                <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="de2c-4851-5d01-3881" includeChildSelections="false"/>
-              </constraints>
-              <entryLinks>
-                <entryLink import="true" name="Runefang" hidden="false" id="21d1-dc32-6f65-1344" type="selectionEntry" targetId="564c-7f8a-80ed-b526">
-                  <costs>
-                    <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
-                  </costs>
-                </entryLink>
-                <entryLink import="true" name="Dawn Armour" hidden="false" id="8391-c6fa-6dd7-10df" type="selectionEntry" targetId="02c3-9b9e-e15d-38c3">
-                  <costs>
-                    <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
-                  </costs>
-                </entryLink>
-                <entryLink import="true" name="Sigil of Sigmar" hidden="false" id="de6e-09ba-1d16-c180" type="selectionEntry" targetId="841f-0a5d-fb81-2a71">
-                  <costs>
-                    <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
-                  </costs>
-                </entryLink>
-                <entryLink import="true" name="Rod of Command" hidden="false" id="b62a-a8d2-de9c-c347" type="selectionEntry" targetId="c321-03a3-1f8b-eab1">
-                  <costs>
-                    <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
-                  </costs>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
+        <selectionEntry type="upgrade" import="true" name="Empire Warhorse" hidden="false" id="7eed-6c73-cfd5-b3c5" collective="false">
+          <infoLinks>
+            <infoLink name="Warhorse" id="b705-6d11-163f-f2c3" hidden="false" targetId="6d52-59d7-9b29-042b" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+          </costs>
           <entryLinks>
-            <entryLink import="true" name="General" hidden="false" id="2d4d-2aaf-1e41-a1d8" type="selectionEntry" targetId="1b7c-2c90-6d96-28c9">
+            <entryLink import="true" name="Barding" hidden="false" id="5464-70f8-f8cb-161b" type="selectionEntry" targetId="3211-d836-02f1-01d0">
               <constraints>
-                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="5134-4fd8-4e58-c4d8" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="146a-f057-59cc-ae1d" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="aed2-fefa-eb54-97fa" includeChildSelections="false"/>
               </constraints>
-              <modifiers>
-                <modifier type="set" value="1" field="5134-4fd8-4e58-c4d8">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="9d76-5d25-ce1d-1d12" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
             </entryLink>
           </entryLinks>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Empire Warhorse" hidden="false" id="7eed-6c73-cfd5-b3c5" collective="false">
-              <infoLinks>
-                <infoLink name="Warhorse" id="b705-6d11-163f-f2c3" hidden="false" targetId="6d52-59d7-9b29-042b" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
-                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-              </costs>
-              <entryLinks>
-                <entryLink import="true" name="Barding" hidden="false" id="5464-70f8-f8cb-161b" type="selectionEntry" targetId="3211-d836-02f1-01d0">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="146a-f057-59cc-ae1d" includeChildSelections="false"/>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="aed2-fefa-eb54-97fa" includeChildSelections="false"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="358f-17f5-b4f4-65b9" includeChildSelections="false"/>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6d83-791f-3124-ce36" includeChildSelections="false"/>
-              </constraints>
-            </selectionEntry>
-          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="358f-17f5-b4f4-65b9" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6d83-791f-3124-ce36" includeChildSelections="false"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -5361,6 +5286,80 @@
           </conditions>
         </modifier>
       </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="General" hidden="false" id="2d4d-2aaf-1e41-a1d8" type="selectionEntry" targetId="1b7c-2c90-6d96-28c9">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="5134-4fd8-4e58-c4d8" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="1" field="5134-4fd8-4e58-c4d8">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="9d76-5d25-ce1d-1d12" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Magic Items" id="f0fd-a5a0-d4bb-c211" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Runefang" hidden="false" id="21d1-dc32-6f65-1344" type="selectionEntry" targetId="564c-7f8a-80ed-b526">
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="81e9-8214-69a3-305a" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Dawn Armour" hidden="false" id="8391-c6fa-6dd7-10df" type="selectionEntry" targetId="02c3-9b9e-e15d-38c3">
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="473e-b9c3-4e2c-adda" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Sigil of Sigmar" hidden="false" id="de6e-09ba-1d16-c180" type="selectionEntry" targetId="841f-0a5d-fb81-2a71">
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2ba2-91f3-7415-3480" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Rod of Command" hidden="false" id="b62a-a8d2-de9c-c347" type="selectionEntry" targetId="c321-03a3-1f8b-eab1">
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dcf1-991c-fae7-ce06" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <profiles>
+        <profile name="Kurt Helborg" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="886f-fdd4-bf27-b830" page="15" publicationId="9eb2-99ea-4657-d0a4">
+          <characteristics>
+            <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">4</characteristic>
+            <characteristic name="WS" typeId="f95b-da01-0578-3bdc">7</characteristic>
+            <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">3</characteristic>
+            <characteristic name="S" typeId="b690-4bc0-bb73-267b">4</characteristic>
+            <characteristic name="T" typeId="8712-f56f-5b22-a720">4</characteristic>
+            <characteristic name="W" typeId="253a-9b00-4fde-8ac2">3</characteristic>
+            <characteristic name="I" typeId="dfff-363e-f72a-5a59">6</characteristic>
+            <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">4</characteristic>
+            <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">9</characteristic>
+            <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">2+</characteristic>
+            <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+            <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry id="3e32-8a9d-c6c8-7a86" name="0-1 Reiksguard on Foot (WD#310 UK)" hidden="false" collective="false" import="true" type="unit">
       <constraints>
@@ -12698,8 +12697,8 @@ Wearer is immune to spells of the Lore of Light.</characteristic>
       </constraints>
       <entryLinks>
         <entryLink id="e10d-a553-c8c2-bf84" name="Grey Wand" hidden="false" collective="false" import="true" targetId="c522-e81e-0e48-08b5" type="selectionEntry"/>
-        <entryLink id="60a2-a77b-179e-a84b" name="Power Stone" hidden="false" collective="false" import="true" targetId="0ed5-eacf-d55a-5e9e" type="selectionEntry"/>
-        <entryLink id="3e6b-fb45-1ba3-3d9b" name="Dispel Scroll" hidden="false" collective="false" import="true" targetId="b76c-6bad-4650-dbb0" type="selectionEntry"/>
+        <entryLink id="60a2-a77b-179e-a84b" name="Power Stone (one use only)" hidden="false" collective="false" import="true" targetId="0ed5-eacf-d55a-5e9e" type="selectionEntry"/>
+        <entryLink id="3e6b-fb45-1ba3-3d9b" name="Dispel Scroll (one use only)" hidden="false" collective="false" import="true" targetId="b76c-6bad-4650-dbb0" type="selectionEntry"/>
         <entryLink id="39dc-0a3e-47aa-990b" name="Staff of Sorcery" hidden="false" collective="false" import="true" targetId="b22a-6be5-d4f9-7776" type="selectionEntry"/>
         <entryLink id="ba5c-7971-cffb-a57d" name="Seal of Destruction" hidden="false" collective="false" import="true" targetId="eec6-6c8b-0532-a3dc" type="selectionEntry"/>
         <entryLink id="4729-a7c5-e7a8-6885" name="Rod of Power" hidden="false" collective="false" import="true" targetId="c8fa-6454-dcce-2681" type="selectionEntry"/>
