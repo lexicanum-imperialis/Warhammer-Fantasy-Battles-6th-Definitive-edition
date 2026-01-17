@@ -3395,8 +3395,16 @@ In addition it confers a 5+ Ward save.</characteristic>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3912-eede-a153-7ab0" includeChildSelections="false"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Radiant Gem of Hoeth" hidden="false" id="3d1d-0a29-6ffa-6d5c" type="selectionEntry" targetId="11a3-971a-d756-8581"/>
-            <entryLink import="true" name="Heavy Armour" hidden="false" id="2ebd-91fb-7af3-e9b6" type="selectionEntry" targetId="dde4-0ba8-7b3c-57b7"/>
+            <entryLink import="true" name="Radiant Gem of Hoeth" hidden="false" id="3d1d-0a29-6ffa-6d5c" type="selectionEntry" targetId="11a3-971a-d756-8581">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="416e-3b6c-d3f0-82a0" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Heavy Armour" hidden="false" id="2ebd-91fb-7af3-e9b6" type="selectionEntry" targetId="dde4-0ba8-7b3c-57b7">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="57e3-07a3-7284-abe8" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -3485,10 +3493,6 @@ If he is in combat with Grom, the fury of Eltharion&apos;s blows is such that h
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Equipment" id="7bb3-7516-793c-7dc0" hidden="false">
-          <constraints>
-            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="378c-cc10-b20f-e999" includeChildSelections="false"/>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="7757-17f2-9a79-39c0" includeChildSelections="false"/>
-          </constraints>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="The White Sword" hidden="false" id="4605-a08e-c3be-6323" page="75" publicationId="cc59-6466-b62e-cf5b">
               <constraints>
@@ -3522,18 +3526,14 @@ If he is in combat with Grom, the fury of Eltharion&apos;s blows is such that h
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
-            <entryLink import="true" name="Light Armour" hidden="false" id="ec1a-1c5b-33bc-78c3" type="selectionEntry" targetId="055f-8e4e-f170-35d2"/>
+            <entryLink import="true" name="Light Armour" hidden="false" id="ec1a-1c5b-33bc-78c3" type="selectionEntry" targetId="055f-8e4e-f170-35d2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c2e9-ed0b-ad99-7113" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="4a0e-0d3c-db88-4490" name="Hand Weapon" hidden="false" collective="false" import="true" targetId="abdb-bbd0-41b2-5dff" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="84cb-a0ed-4f3b-2bf2" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d3f-6304-5e73-fc79" type="max"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="255"/>
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
@@ -3593,14 +3593,11 @@ If he is in combat with Grom, the fury of Eltharion&apos;s blows is such that h
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="7e2c-c97a-726b-b486" name="Wizard Level" hidden="false" collective="false" import="true" defaultSelectionEntryId="a4b8-ef05-84db-e0ab">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="42b4-c3e3-f461-ebb0" type="max"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bdb5-ce59-8079-612d" type="min"/>
-          </constraints>
           <selectionEntries>
             <selectionEntry id="b0c4-db68-6351-6013" name="Magic Level 4" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="894c-9def-ad14-c43e" type="max"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7817-00b6-4518-6a6c" includeChildSelections="false"/>
               </constraints>
               <costs>
                 <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="4"/>
@@ -3914,78 +3911,6 @@ If Alarielle is with her Handmaidens then the whole unit becomes Unbreakable</de
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="b649-b1af-027a-604c" name="Command Group" hidden="false" collective="false" import="true">
-          <selectionEntries>
-            <selectionEntry id="fedb-0817-47fa-dc6c" name="Musician" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4fd5-f209-4e16-2938" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="7"/>
-                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="b837-41d3-757e-a906" name="Standard Bearer" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="01da-faa5-c1a7-67ad" type="max"/>
-              </constraints>
-              <entryLinks>
-                <entryLink id="0631-77c8-03c9-34da" name="Magic Banners" hidden="false" collective="false" import="true" targetId="c1c3-239d-926d-d504" type="selectionEntryGroup">
-                  <constraints>
-                    <constraint field="ecfa-8486-4f6c-c249" scope="parent" value="50" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d7d8-e93a-d8ed-2b11" type="max"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="14"/>
-                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="e78b-22af-b49f-10e1" name="Guardian" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f3b1-2013-c97d-8fc0" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="a623-9915-4d35-5e10" name="Guardian" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
-                  <characteristics>
-                    <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">5</characteristic>
-                    <characteristic name="WS" typeId="f95b-da01-0578-3bdc">5</characteristic>
-                    <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">4</characteristic>
-                    <characteristic name="S" typeId="b690-4bc0-bb73-267b">4</characteristic>
-                    <characteristic name="T" typeId="8712-f56f-5b22-a720">3</characteristic>
-                    <characteristic name="W" typeId="253a-9b00-4fde-8ac2">1</characteristic>
-                    <characteristic name="I" typeId="dfff-363e-f72a-5a59">5</characteristic>
-                    <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">2</characteristic>
-                    <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">8</characteristic>
-                    <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
-                    <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
-                    <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <selectionEntryGroups>
-                <selectionEntryGroup id="21bb-f952-f604-94be" name="Magic Items" hidden="false" collective="false" import="true">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="25" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="101e-2288-d331-31ea" type="max"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink id="b18a-9e8c-0f83-806f" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="776e-c590-48d5-4bce" type="selectionEntryGroup"/>
-                    <entryLink id="87cd-b440-971e-c4f7" name="Magic Armour" hidden="false" collective="false" import="true" targetId="3532-01ee-3728-ecc6" type="selectionEntryGroup"/>
-                    <entryLink id="0bb5-592c-1517-ff7f" name="Talismans" hidden="false" collective="false" import="true" targetId="f948-c838-ba2d-07c5" type="selectionEntryGroup"/>
-                    <entryLink id="ab1d-f333-bbb8-b91a" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="39ab-c370-3f13-7d60" type="selectionEntryGroup"/>
-                  </entryLinks>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-              <costs>
-                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="14"/>
-                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
         <selectionEntryGroup name="Magic Items" id="1d69-e5fa-fac5-379a" hidden="false">
           <constraints>
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="c38d-38db-6230-5697" includeChildSelections="false"/>
@@ -4018,7 +3943,7 @@ If Alarielle is with her Handmaidens then the whole unit becomes Unbreakable</de
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ef1c-96fd-7b06-fa6f" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="The Pelt of Charandis (Magic Armour)" typeId="f681-9937-db53-f1d8" typeName="Armour" hidden="false" id="1bd5-658f-d9fe-31b9" page="12" publicationId="c659-7e88-cb23-5934">
+                <profile name="The Pelt of Charandis" typeId="f681-9937-db53-f1d8" typeName="Armour" hidden="false" id="1bd5-658f-d9fe-31b9" page="12" publicationId="c659-7e88-cb23-5934">
                   <characteristics>
                     <characteristic name="Saving Throw Modifier" typeId="b600-e1ed-0765-27c1">3+/4+</characteristic>
                     <characteristic name="Special rules" typeId="42c3-68ab-cfa5-203e">The Pelt of Charandis</characteristic>
@@ -4456,12 +4381,12 @@ Range 36&quot;, causes one wound per shot and grants Armour Rolls as normal, can
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Equipment" id="b5f7-efa2-5f99-87fd" hidden="false">
-          <constraints>
-            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="f242-cb58-8519-80ae" includeChildSelections="false"/>
-            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="da0f-a7b4-392c-316e" includeChildSelections="false"/>
-          </constraints>
           <entryLinks>
-            <entryLink import="true" name="Shadow Armour" hidden="false" id="0ba9-1ed3-a6c7-d0ba" type="selectionEntry" targetId="99ed-1035-323e-a2f6"/>
+            <entryLink import="true" name="Shadow Armour" hidden="false" id="0ba9-1ed3-a6c7-d0ba" type="selectionEntry" targetId="99ed-1035-323e-a2f6">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6e5e-cf7a-07a7-02dc" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
             <entryLink import="true" name="Shield" hidden="false" id="6ff7-6f1b-4800-e56f" type="selectionEntry" targetId="50e2-1873-a856-03e7">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1e56-9776-6c69-4c24" includeChildSelections="false"/>
@@ -4471,18 +4396,20 @@ Range 36&quot;, causes one wound per shot and grants Armour Rolls as normal, can
                 <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="2"/>
               </costs>
             </entryLink>
-            <entryLink import="true" name="Foe Bane" hidden="false" id="721f-85cc-a0a2-33aa" type="selectionEntry" targetId="8c5f-946f-58c5-ef6e"/>
+            <entryLink import="true" name="Foe Bane" hidden="false" id="721f-85cc-a0a2-33aa" type="selectionEntry" targetId="8c5f-946f-58c5-ef6e">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cfb3-22ea-df5f-84c6" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="cf9a-7f72-3759-fd86" collective="false" targetId="abdb-bbd0-41b2-5dff" type="selectionEntry">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="14d3-00de-9ae8-5540" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ae41-65d5-9c4e-7be4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="cf9a-7f72-3759-fd86" name="Hand Weapon" hidden="false" collective="false" import="true" targetId="abdb-bbd0-41b2-5dff" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="14d3-00de-9ae8-5540" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae41-65d5-9c4e-7be4" type="max"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="70"/>
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
@@ -5257,12 +5184,12 @@ Range 36&quot;, causes one wound per shot and grants Armour Rolls as normal, can
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a73b-f7e0-bf3f-46a9" type="max"/>
       </constraints>
       <entryLinks>
-        <entryLink id="75cb-50ba-1eca-259a" name="Dispel Scroll" hidden="false" collective="false" import="true" targetId="b76c-6bad-4650-dbb0" type="selectionEntry">
+        <entryLink id="75cb-50ba-1eca-259a" name="Dispel Scroll (one use only)" hidden="false" collective="false" import="true" targetId="b76c-6bad-4650-dbb0" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="ecfa-8486-4f6c-c249" value="20"/>
           </modifiers>
         </entryLink>
-        <entryLink id="5e6e-2abb-3eb7-f7c7" name="Power Stone" hidden="false" collective="false" import="true" targetId="0ed5-eacf-d55a-5e9e" type="selectionEntry">
+        <entryLink id="5e6e-2abb-3eb7-f7c7" name="Power Stone (one use only)" hidden="false" collective="false" import="true" targetId="0ed5-eacf-d55a-5e9e" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="ecfa-8486-4f6c-c249" value="20"/>
           </modifiers>
