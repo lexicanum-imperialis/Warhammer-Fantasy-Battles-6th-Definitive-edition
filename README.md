@@ -180,6 +180,7 @@ The main additions are:
 - [x] Konrad von Carstein (WD#258-UK, p.91)
 - [x] Zacharias, the Everliving (VC-AB, p.72-73)
 - [x] Lahmian Swines (Heroes from other armies)
+- [x] Sylvanian Militia (SoC, p.89)
 
 ## Alternative lists included
 - [x] Clan Eshin (SKV-AB)
@@ -223,6 +224,7 @@ The main additions are:
 - [x] Clan Blood Dragons (VC-AB, p.79)
 - [x] Clan Strigoi (VC-AB, p.79)
 - [x] Clan Lahmia (VC-AB, p.79)
+- [ ] Army of Sylvania (TdC, p.88-89)
 
 ## Sources consulted
 
