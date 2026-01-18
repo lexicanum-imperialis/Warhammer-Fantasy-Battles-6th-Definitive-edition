@@ -178,6 +178,7 @@ The main additions are:
 
 ### Vampire Counts
 - [x] Konrad von Carstein (WD#258-UK, p.91)
+- [x] Manfred von Carstein (VC-AB, p.70-71)
 - [x] Zacharias, the Everliving (VC-AB, p.72-73)
 - [x] Lahmian Swines (Heroes from other armies)
 - [x] Sylvanian Militia (SoC, p.89)
@@ -227,6 +228,8 @@ The main additions are:
 - [x] Clan Strigoi (VC-AB, p.79)
 - [x] Clan Lahmia (VC-AB, p.79)
 - [x] Army of Sylvania (TdC, p.88-89)
+- [ ] Vampire Coast
+- [ ] Army of the Lichmaster
 
 ## Sources consulted
 

@@ -2938,9 +2938,9 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
             <characteristic name="I" typeId="dfff-363e-f72a-5a59">8</characteristic>
             <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">5</characteristic>
             <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">10</characteristic>
-            <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
-            <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
-            <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
+            <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">5+</characteristic>
+            <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">3+</characteristic>
+            <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -3088,6 +3088,13 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="1" field="40b5-5aa7-295e-9949">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="6411-4be3-864f-a963" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="3b79-f6b5-5b0d-142f" name="Konrad von Carstein" hidden="false" collective="false" import="true" type="unit" publicationId="3813-abc7-2dcb-380c" page="91">
       <categoryLinks>
@@ -9129,6 +9136,7 @@ Warp Lightning is a magic missile with a range of 24&quot; It can be cast at a c
     <selectionEntry id="4e78-1810-377f-1283" name="Sword of Unholy Power " hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="3cf0-7d69-ac46-9a89" name="Sword of Unholy Power " hidden="false" targetId="06ab-f240-7bdf-f765" type="rule"/>
+        <infoLink name="Sword of Unholy Power" id="2290-6210-1e29-fc61" hidden="false" type="profile" targetId="dccf-7c07-7066-a107"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="40"/>
@@ -9139,6 +9147,7 @@ Warp Lightning is a magic missile with a range of 24&quot; It can be cast at a c
     <selectionEntry id="9c64-4ca4-d637-15b9" name="Ebony Staff" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="9905-973b-e206-d37d" name="Ebony Staff" hidden="false" targetId="312c-1181-ed11-14e0" type="rule"/>
+        <infoLink name="Ebony Staff" id="fc1e-0af1-0af4-6aa1" hidden="false" type="profile" targetId="d91b-d2dd-acf4-2ab3"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
@@ -9149,6 +9158,7 @@ Warp Lightning is a magic missile with a range of 24&quot; It can be cast at a c
     <selectionEntry id="94a6-28ad-be89-ba97" name="Cloak of Darkness" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="0d38-d57c-cb2c-3c6a" name="Cloak of Darkness" hidden="false" targetId="548d-25d4-1f96-0880" type="rule"/>
+        <infoLink name="Cloak of Darkness" id="8ca9-f07e-b6f4-58a9" hidden="false" type="profile" targetId="cafa-3bf5-a991-825c"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
@@ -19391,7 +19401,7 @@ Failed the model will be affected by the power and the vampire can choose anothe
 In the case of chariots, ridden monster/chariotsns and similar models, take the test using the best leadership value available. If the test is failed, the result will affect the entire model (crew steeds. monster and riding character). Impact hits are applied before these tests are taken.
 Challenges are issued and accepted before these tests, and if the Vampire is involved in a challenge she can only use these powers on her own turn. In this case a chariot&apos;s crew and steeds would be allowed to exchange blows with the vampires unit, even if the character riding in the chariot has been seduced, dominated. etc.</description>
     </rule>
-    <rule id="312c-1181-ed11-14e0" name="Ebony Staff" hidden="false">
+    <rule id="312c-1181-ed11-14e0" name="Ebony Staff" hidden="false" page="70" publicationId="8e66-3042-1d6b-fa6b">
       <description>The Ebony Staff also known as the Black Staff of Undone, is a powerful tool of evil Mannfred risked everything to retrieve it from a Chaos servant&apos;s fortress.
 This staff allows Mannfred to cast one spell for free in each of his Magic phases. The spell is cast with a Power level equal to its casting value and can he dispelled normally.</description>
     </rule>
@@ -23352,6 +23362,21 @@ mount) is immune to fire based attacks and spells</characteristic>
         <characteristic name="CC" typeId="d360-4f33-c1a6-b3ab">-</characteristic>
         <characteristic name="Target" typeId="d1af-fdf7-8ed2-d6a3">Anywhere 6&quot; from the site of a Grave marker</characteristic>
         <characteristic name="Effect" typeId="7d21-349e-b0a8-fc7d">New units of Skeletons or Zombies raised in this way are Sylvanian Militia and Sylvanian Levy respectively and may be raised with any weapons and armour allowed by their unit entry.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Ebony Staff" typeId="a89b-d5a3-7805-c44e" typeName="Magic Items" hidden="false" id="d91b-d2dd-acf4-2ab3" page="70" publicationId="8e66-3042-1d6b-fa6b">
+      <characteristics>
+        <characteristic name="Magic stuff" typeId="c7b5-c239-d6c1-0627">cast one spell for free in each of his Magic phases. The spell is cast with a Power level equal to its casting value and can he dispelled normally.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Cloak of Darkness" typeId="a89b-d5a3-7805-c44e" typeName="Magic Items" hidden="false" id="cafa-3bf5-a991-825c" page="70" publicationId="8e66-3042-1d6b-fa6b">
+      <characteristics>
+        <characteristic name="Magic stuff" typeId="c7b5-c239-d6c1-0627">3+ Ward save</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Sword of Unholy Power" typeId="a89b-d5a3-7805-c44e" typeName="Magic Items" hidden="false" id="dccf-7c07-7066-a107" page="70" publicationId="8e66-3042-1d6b-fa6b">
+      <characteristics>
+        <characteristic name="Magic stuff" typeId="c7b5-c239-d6c1-0627">For each unsaved wound caused by the blade, the player may immediately get a magic dice. This dice is added to his pool of Power or Dispel dice in the following Magic phase. (Depending on whether it is his own turn or his enemy&apos;s).</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
