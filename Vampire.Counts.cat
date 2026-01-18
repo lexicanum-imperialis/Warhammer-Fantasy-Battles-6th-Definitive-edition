@@ -1190,7 +1190,15 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Black Knights of Bretonnia" hidden="true" id="6afd-186f-15da-94e0">
           <infoLinks>
-            <infoLink name="Lance Formation" id="1a2d-de80-91bd-e842" hidden="true" type="rule" targetId="0aaf-14b6-409b-47a5"/>
+            <infoLink name="Lance Formation" id="1a2d-de80-91bd-e842" hidden="true" type="rule" targetId="0aaf-14b6-409b-47a5">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="5e95-7d57-2b9c-d77d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
           </infoLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -9065,6 +9073,253 @@ Warp Lightning is a magic missile with a range of 24&quot; It can be cast at a c
         </entryLink>
       </entryLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Vlad &amp; Isabella von Carstein" hidden="false" id="dc7a-be66-35c9-d9ff">
+      <categoryLinks>
+        <categoryLink name="Special Characters" hidden="false" id="748e-38f9-5761-2fcf" targetId="0644-bfcd-32c2-21dc" primary="true"/>
+        <categoryLink name="Characters" hidden="false" id="06dc-d5a4-dc2d-fb96" targetId="7a1c-d611-c2dc-def1" primary="false"/>
+        <categoryLink name="Lord" hidden="false" id="115d-a5c9-142f-361b" targetId="d024-d25b-a9b4-73b6" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Extra Hero choice" hidden="false" id="4e40-073a-3467-00d5" type="selectionEntry" targetId="3e25-986a-693f-a975">
+          <modifiers>
+            <modifier type="set" value="3" field="5d46-303d-cba5-3690"/>
+            <modifier type="set" value="3" field="b565-1f72-9590-cf93"/>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Isabella" hidden="false" id="3e43-c6f3-4a9b-f7f5">
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="175"/>
+            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="198b-914c-77c7-0d53" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="df17-93de-a601-5fbe" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Isabella" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="ef96-323b-4ef9-6335">
+              <characteristics>
+                <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">6</characteristic>
+                <characteristic name="WS" typeId="f95b-da01-0578-3bdc">6</characteristic>
+                <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">4</characteristic>
+                <characteristic name="S" typeId="b690-4bc0-bb73-267b">5</characteristic>
+                <characteristic name="T" typeId="8712-f56f-5b22-a720">4</characteristic>
+                <characteristic name="W" typeId="253a-9b00-4fde-8ac2">2</characteristic>
+                <characteristic name="I" typeId="dfff-363e-f72a-5a59">6</characteristic>
+                <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">3</characteristic>
+                <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">8</characteristic>
+                <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+                <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+                <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <entryLinks>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="9bd4-e647-8a2b-cbef" type="selectionEntry" targetId="abdb-bbd0-41b2-5dff">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="716c-4e2e-2d9f-53e5" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6bc4-3ba2-a959-ff99" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Bloodline powers" id="6a64-fbf9-9255-c157" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Transfix" hidden="false" id="b98a-1a16-5e75-1d4f" type="selectionEntry" targetId="91d3-9729-5ef5-bad0">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1caf-eeab-a52d-6eb2" includeChildSelections="false"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="0" field="ecfa-8486-4f6c-c249"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Call Winds" hidden="false" id="c5bc-d7d5-29c2-b007" type="selectionEntry" targetId="39bc-4b20-5e7c-202f">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d046-c206-79d6-5737" includeChildSelections="false"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="0" field="ecfa-8486-4f6c-c249"/>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Magic Items" id="1cb1-2621-b3cc-256d" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Unholy Chalice" hidden="false" id="b682-eb02-e92e-252c">
+                  <profiles>
+                    <profile name="Wailing Blade" typeId="a89b-d5a3-7805-c44e" typeName="Magic Items" hidden="false" id="e06c-b513-f510-c6ec" page="61" publicationId="1ec0-3b22-5b99-e411">
+                      <characteristics>
+                        <characteristic name="Magic stuff" typeId="c7b5-c239-d6c1-0627">4+ Ward save against ranged attacks (missiles and spells)</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8708-7198-8bff-30f5" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6eb3-4b64-077a-b8c9" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Vlad" hidden="false" id="2539-a903-c0fa-fd43">
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="800"/>
+            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9457-f4bc-91e2-a536" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4bcc-dfe9-12ed-86b1" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Vlad" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="a23b-52e1-5b54-d761">
+              <characteristics>
+                <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">6</characteristic>
+                <characteristic name="WS" typeId="f95b-da01-0578-3bdc">9</characteristic>
+                <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">6</characteristic>
+                <characteristic name="S" typeId="b690-4bc0-bb73-267b">5</characteristic>
+                <characteristic name="T" typeId="8712-f56f-5b22-a720">5</characteristic>
+                <characteristic name="W" typeId="253a-9b00-4fde-8ac2">4</characteristic>
+                <characteristic name="I" typeId="dfff-363e-f72a-5a59">8</characteristic>
+                <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">5</characteristic>
+                <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">10</characteristic>
+                <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+                <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+                <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <entryLinks>
+            <entryLink import="true" name="Magic Level 3" hidden="false" id="54e5-26a4-f148-3cd7" type="selectionEntry" targetId="cb6c-c69a-5c73-97e8">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="73a3-bd88-eb17-d2b3" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Bloodline powers" id="b159-8a79-fb2b-860a" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Wolf Form" hidden="false" id="24c7-e5a0-7f73-5c65" type="selectionEntry" targetId="b26e-223c-6153-0790">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b814-0d57-dcb8-f8d2" includeChildSelections="false"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="0" field="ecfa-8486-4f6c-c249"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Summon Bats" hidden="false" id="3d21-942e-a513-3995" type="selectionEntry" targetId="7d8c-bbf1-f504-9ca6">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ca99-a78f-8371-6e5f" includeChildSelections="false"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="0" field="ecfa-8486-4f6c-c249"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Call Winds" hidden="false" id="1b16-d250-1152-72ae" type="selectionEntry" targetId="39bc-4b20-5e7c-202f">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ab4b-ecea-9037-4722" includeChildSelections="false"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="0" field="ecfa-8486-4f6c-c249"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Summon Wolves" hidden="false" id="2c77-49f0-8cda-51c9" type="selectionEntry" targetId="066a-7964-6f74-a981">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0490-31e9-8422-ea3b" includeChildSelections="false"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="0" field="ecfa-8486-4f6c-c249"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Aura of Dark Majesty " hidden="false" id="f7ea-09ce-496e-41d8" type="selectionEntry" targetId="47a5-c70d-a43b-5fe4">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9960-2b50-9b6d-0ae7" includeChildSelections="false"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="0" field="ecfa-8486-4f6c-c249"/>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Walking Death (Vlad)" hidden="false" id="c69e-d5f3-c1db-ebb0">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9d6c-263d-c479-d0ff" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b774-c72f-ee6e-bccc" includeChildSelections="false"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink name="Walking Death (Vlad)" id="6536-536e-b5f3-a6f4" hidden="false" type="rule" targetId="4361-becd-627d-106b"/>
+                  </infoLinks>
+                  <modifiers>
+                    <modifier type="set" value="0" field="ecfa-8486-4f6c-c249"/>
+                  </modifiers>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Lores of Magic" id="eb02-f7f6-9047-03e0" hidden="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="26df-c9ea-110e-8002" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Lore of Necromancy" hidden="false" id="30f7-cf45-5e39-e675" type="selectionEntry" targetId="f7e9-c0a4-549e-33e0">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="99b5-31b6-67e8-d77e" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Lore of Death" hidden="false" id="2244-1301-e585-a3a1" type="selectionEntry" targetId="2247-7779-2978-752c">
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden"/>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Magic Items" id="45b2-af69-296b-83b2" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="The Carstein Ring" hidden="false" id="cb79-5fcc-2a7b-a2ac" type="selectionEntry" targetId="e857-f264-1c2a-2b13">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9cfa-7945-1b76-e001" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7fad-99ee-1eb5-38b1" includeChildSelections="false"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="0" field="ecfa-8486-4f6c-c249"/>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Wailing Blade (Magic Weapon)" hidden="false" id="1e3a-75b1-79f0-7efc">
+                  <profiles>
+                    <profile name="Wailing Blade" typeId="7889-42d9-70a0-3ea9" typeName="Weapon" hidden="false" id="8b19-f912-2fdb-1516" page="61" publicationId="1ec0-3b22-5b99-e411">
+                      <characteristics>
+                        <characteristic name="Range" typeId="3107-4d1e-9a51-6564">CC</characteristic>
+                        <characteristic name="Strength" typeId="6fe4-1ebb-cb04-1378"/>
+                        <characteristic name="Damage" typeId="6f2f-d612-52ef-1633"/>
+                        <characteristic name="Special Rules" typeId="a21a-cdc0-4b13-b236">Causes terror</characteristic>
+                        <characteristic name="Saves" typeId="8014-a8b2-15c3-da95">No armour saves</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c15b-53b2-ae1e-12d4" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fb3c-86db-98f8-f5ff" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="force" shared="true" id="670d-757d-63ac-c6e6" includeChildSelections="false"/>
+      </constraints>
+      <rules>
+        <rule name="Undying Love" id="6046-b4a5-a8d9-6318" hidden="false" page="61" publicationId="1ec0-3b22-5b99-e411">
+          <description>If Isabella is killed, Vlad will be overcome by grief and go into a berserk fury. For the rest of the battle he will be subject to both Hatred and Frenzy.
+If Vlad is killed then exactly the same special rules apply to Isabella: ie, she becomes subject to Frenzy and Hatred.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
     <selectionEntry id="1c56-48e6-7c01-5ae9" name="Nightmare" hidden="false" collective="false" import="true" type="upgrade">
@@ -16029,7 +16284,7 @@ They benefit from Talismanic Tattoos, Fury Of Kurnous and Forest Spirit Special 
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="7242-a784-0c9c-ee74" includeChildSelections="false"/>
       </constraints>
       <infoLinks>
-        <infoLink name="The Drakenhof Banner (Magic Standard)" id="b543-cb36-ebfc-4e0a" hidden="false" type="rule" targetId="fe7b-353a-df25-1202"/>
+        <infoLink name="Drakenhof Banner (Magic Standard)" id="b543-cb36-ebfc-4e0a" hidden="false" type="rule" targetId="fe7b-353a-df25-1202"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="50"/>
@@ -16053,7 +16308,7 @@ They benefit from Talismanic Tattoos, Fury Of Kurnous and Forest Spirit Special 
         <entryLink import="true" name="Banner of Doom" hidden="false" id="1d14-3769-608e-1427" type="selectionEntry" targetId="aceb-8d67-d17e-b596"/>
         <entryLink import="true" name="Banner of the Barrows " hidden="false" id="cf8a-cb85-91fa-96a4" type="selectionEntry" targetId="0eb3-d26c-b1d0-cafe"/>
         <entryLink import="true" name="Screaming Banner" hidden="false" id="1933-756c-da33-5906" type="selectionEntry" targetId="de00-7f16-33b8-6c1e"/>
-        <entryLink import="true" name="Drakenhof Banner" hidden="false" id="cb6d-2bab-291e-8352" type="selectionEntry" targetId="2050-5939-fe82-ed47"/>
+        <entryLink import="true" name="Drakenhof Banner (Magic Standard)" hidden="false" id="cb6d-2bab-291e-8352" type="selectionEntry" targetId="2050-5939-fe82-ed47"/>
       </entryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ffa7-0f2f-7f2e-8781" includeChildSelections="false"/>
@@ -21550,6 +21805,10 @@ In addition, any Vampire using either the Summon Bats or Summon Wolves Bloodline
 When all the Grave markers have been placed, the Sylvanian player rolls a Scatter dice for each. If a Hit is rolled, the marker remains where it was placed. If the result is an arrow, the Grave marker moves 2D6&quot; in the direction shown. Grave markers that scatter off the table are lost and have no further effect on the game. The Army of Sylvania player may cast From Death Awakened from each Grave marker during each of his own Magic phases.
 
 The army of Sylvania follows all of the Laws of Undeath, unless stated elsewhere.</description>
+    </rule>
+    <rule id="4361-becd-627d-106b" name="Walking Death (Vlad)" hidden="false">
+      <description>So powerful is the unholy presence of the Vampire that mere mortals are forced to flee in terror
+The presence of one or more von Carstein Vampires with this power in a combat adds +2 to their side&apos;s combat resolution.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
