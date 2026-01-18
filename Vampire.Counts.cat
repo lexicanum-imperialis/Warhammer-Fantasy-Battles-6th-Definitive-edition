@@ -379,7 +379,15 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
     </selectionEntry>
     <selectionEntry id="749f-cf91-6317-7ac0" name="Zombies" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
-        <infoLink id="1445-9b71-7b01-f7c5" name="Zombie" hidden="false" targetId="4051-6d4c-cfd5-b501" type="profile"/>
+        <infoLink id="1445-9b71-7b01-f7c5" name="Zombie" hidden="false" targetId="4051-6d4c-cfd5-b501" type="profile">
+          <modifiers>
+            <modifier type="set" value="Zombie Levy" field="name">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="4072-c3b8-84c4-a097" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink id="5102-e74f-72e3-aff3" name="Braindead" hidden="false" targetId="729f-673e-ce42-1f4c" type="rule"/>
       </infoLinks>
       <categoryLinks>
@@ -402,6 +410,11 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="d3af-1add-4e99-b977" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="8" field="ecfa-8486-4f6c-c249">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="4072-c3b8-84c4-a097" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </selectionEntry>
         <selectionEntry id="3ffe-062c-d448-a76a" name="Handweapon" hidden="false" collective="false" import="true" type="upgrade">
@@ -417,6 +430,13 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="4072-c3b8-84c4-a097" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -444,6 +464,151 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
+        <selectionEntryGroup name="Armour" id="daef-3921-e971-8d99" hidden="true">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Light Armour" hidden="false" id="3c11-22a3-78bf-7927" collective="false">
+              <modifiers>
+                <modifier type="increment" value="2" field="ecfa-8486-4f6c-c249">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="parent" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </repeats>
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="4072-c3b8-84c4-a097" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="5e95-7d57-2b9c-d77d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="1" field="c744-316a-9aad-f10d">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="4072-c3b8-84c4-a097" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6109-4441-b7ae-1ee6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="c744-316a-9aad-f10d" includeChildSelections="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Light Armour" id="2209-b396-fd16-7efe" hidden="false" targetId="752a-95b9-343a-8f75" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Shield" hidden="false" id="5694-b8f2-88cd-3e6f" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e16f-ffa5-30a7-3875" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a848-036f-df00-845a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Shield" id="1f06-2c07-1221-43a7" hidden="false" targetId="3d79-7984-991a-8b67" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="0" field="e16f-ffa5-30a7-3875">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="5e95-7d57-2b9c-d77d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="ce00-67cf-caf7-8b3d" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="0" field="a848-036f-df00-845a">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="5e95-7d57-2b9c-d77d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+          </selectionEntries>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="4072-c3b8-84c4-a097" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Weapons" id="ced9-661e-af2a-120c" hidden="true">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Spears" hidden="false" id="6d1e-d792-a94d-f03a" collective="false">
+              <modifiers>
+                <modifier type="increment" value="1" field="ecfa-8486-4f6c-c249">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="parent" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </repeats>
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="4072-c3b8-84c4-a097" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="5e95-7d57-2b9c-d77d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6905-19b4-f93b-f136" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="8603-0b58-ab39-121c" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Handweapon" hidden="false" id="4de6-f2a7-b81a-9d2b" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c5f5-333d-e70a-0aa0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8b97-ef59-1049-3925" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Hand Weapon" id="3e63-f6e6-d835-ef39" hidden="false" targetId="5556-38ea-b278-4a8f" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Halberds" hidden="true" id="ce00-67cf-caf7-8b3d" type="selectionEntry" targetId="b3f3-a133-2869-0be8">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="167b-58bd-6711-da8d" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="4072-c3b8-84c4-a097" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="2a8c-9bf9-95cb-5f63" includeChildSelections="false"/>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="3d7a-cfda-8792-b579" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="4072-c3b8-84c4-a097" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
@@ -458,10 +623,14 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="3c87-8c5f-3741-0e88" shared="true" includeChildSelections="true"/>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="5e95-7d57-2b9c-d77d" shared="true" includeChildSelections="true"/>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="2102-34f1-c876-98c5" shared="true" includeChildSelections="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="4072-c3b8-84c4-a097" shared="true" includeChildSelections="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="set" value="Sylvanian Levy" field="name">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="4072-c3b8-84c4-a097" shared="true" includeChildSelections="true"/>
+          </conditions>
         </modifier>
       </modifiers>
     </selectionEntry>
@@ -610,9 +779,14 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
             <modifier type="set" value="2" field="dc57-c7c0-f8d4-3407"/>
             <modifier type="set" value="0-2 Bat Swarm" field="name"/>
           </modifiers>
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="b1e4-e1cf-9bd6-2438" shared="true" includeChildSelections="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="4072-c3b8-84c4-a097" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="b1e4-e1cf-9bd6-2438" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifierGroup>
       </modifierGroups>
     </selectionEntry>
@@ -892,7 +1066,15 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
     <selectionEntry id="115c-d87a-35e6-26c9" name="Black Knights" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
         <infoLink id="6077-75d6-fb16-04a0" name="Wight Blades" hidden="false" targetId="8c78-c9d9-e5ea-0507" type="rule"/>
-        <infoLink id="5264-2a0e-6f3b-9325" name="Black Knight" hidden="false" targetId="9660-6395-d3e4-7a12" type="profile"/>
+        <infoLink id="5264-2a0e-6f3b-9325" name="Black Knight" hidden="false" targetId="9660-6395-d3e4-7a12" type="profile">
+          <modifiers>
+            <modifier type="set" value="Drakenhof Templar" field="name">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="4072-c3b8-84c4-a097" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink id="2ef4-e689-8389-a637" name="Nightmare" hidden="false" targetId="feac-c0a8-0243-181f" type="profile"/>
       </infoLinks>
       <categoryLinks>
@@ -913,6 +1095,11 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
             <modifier type="set" value="20" field="ecfa-8486-4f6c-c249">
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="d3af-1add-4e99-b977" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="Drakenhof Templars" field="name">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="4072-c3b8-84c4-a097" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
             <modifier type="set" value="Black Knight of Bretonnia" field="name">
@@ -1001,7 +1188,7 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Black Knights of Bretonnia" hidden="false" id="6afd-186f-15da-94e0">
+        <selectionEntry type="upgrade" import="true" name="Black Knights of Bretonnia" hidden="true" id="6afd-186f-15da-94e0">
           <infoLinks>
             <infoLink name="Lance Formation" id="1a2d-de80-91bd-e842" hidden="true" type="rule" targetId="0aaf-14b6-409b-47a5"/>
           </infoLinks>
@@ -1065,8 +1252,15 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
                     <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">8</characteristic>
                     <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
                     <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
-                    <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
+                    <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
                   </characteristics>
+                  <modifiers>
+                    <modifier type="set" value="Templar Champion" field="name">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="4072-c3b8-84c4-a097" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </profile>
               </profiles>
               <costs>
@@ -1074,6 +1268,13 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
                 <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
                 <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
               </costs>
+              <modifiers>
+                <modifier type="set" value="Templar Champion" field="name">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="4072-c3b8-84c4-a097" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -1109,6 +1310,19 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
             <modifier type="remove" value="43cc-fc3f-35a7-8d03" field="category"/>
             <modifier type="add" value="64bf-efb4-9978-26df" field="category"/>
           </modifiers>
+          <comment>Blood Dragons</comment>
+        </modifierGroup>
+        <modifierGroup type="and">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="4072-c3b8-84c4-a097" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <modifiers>
+            <modifier type="set-primary" value="e94b-6a54-8779-cd60" field="category"/>
+            <modifier type="remove" value="43cc-fc3f-35a7-8d03" field="category"/>
+            <modifier type="add" value="e94b-6a54-8779-cd60" field="category"/>
+            <modifier type="set" value="0-1 Drakenhof Templars" field="name"/>
+          </modifiers>
+          <comment>Sylvania</comment>
         </modifierGroup>
       </modifierGroups>
     </selectionEntry>
@@ -1147,14 +1361,19 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
       </costs>
       <modifierGroups>
         <modifierGroup type="and">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="b1e4-e1cf-9bd6-2438" shared="true" includeChildSelections="true"/>
-          </conditions>
           <modifiers>
             <modifier type="set-primary" value="64bf-efb4-9978-26df" field="category"/>
             <modifier type="remove" value="43cc-fc3f-35a7-8d03" field="category"/>
             <modifier type="add" value="64bf-efb4-9978-26df" field="category"/>
           </modifiers>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="4072-c3b8-84c4-a097" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="b1e4-e1cf-9bd6-2438" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifierGroup>
       </modifierGroups>
       <modifiers>
@@ -1321,16 +1540,6 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
       <modifiers>
-        <modifier type="set" value="2" field="2274-81fb-2e22-c00c">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="b1e4-e1cf-9bd6-2438" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" value="0-2 Black Coach" field="name">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="b1e4-e1cf-9bd6-2438" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
         <modifier type="set" value="true" field="hidden">
           <conditionGroups>
             <conditionGroup type="or">
@@ -1341,7 +1550,40 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" value="175" field="ecfa-8486-4f6c-c249">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="4072-c3b8-84c4-a097" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Clan Von Carstein</comment>
+          <modifiers>
+            <modifier type="set" value="2" field="2274-81fb-2e22-c00c"/>
+            <modifier type="set" value="0-2 Black Coach" field="name"/>
+          </modifiers>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="4072-c3b8-84c4-a097" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="b1e4-e1cf-9bd6-2438" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifierGroup>
+        <modifierGroup type="and">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="4072-c3b8-84c4-a097" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <modifiers>
+            <modifier type="set-primary" value="43cc-fc3f-35a7-8d03" field="category"/>
+            <modifier type="remove" value="e94b-6a54-8779-cd60" field="category"/>
+            <modifier type="add" value="43cc-fc3f-35a7-8d03" field="category"/>
+          </modifiers>
+          <comment>Army of Sylvania</comment>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry id="4ee2-ac3a-3cc6-11af" name="Master Necromancer" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -8698,6 +8940,124 @@ Warp Lightning is a magic missile with a range of 24&quot; It can be cast at a c
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
+    <selectionEntry id="6a0c-31f2-6943-e4a9" name="Drakenhof Guard" hidden="true" collective="false" import="true" type="unit">
+      <infoLinks>
+        <infoLink id="13fc-dcf1-8d42-fe3e" name="Grave Guard" hidden="false" targetId="b6e4-c268-5a16-378d" type="profile">
+          <modifiers>
+            <modifier type="set" value="Drakenhof Guard" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="9110-d1bd-5ec6-bcae" name="Wight Blades" hidden="false" targetId="8c78-c9d9-e5ea-0507" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="c8da-d1c4-fbb7-cc43" name="Special" hidden="false" targetId="43cc-fc3f-35a7-8d03" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="1757-5bfb-9e44-e636" name="Grave Guard" hidden="false" collective="false" import="true" type="model" sortIndex="1">
+          <constraints>
+            <constraint field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="20a0-9fb6-5b04-a90c" type="min"/>
+            <constraint field="selections" scope="parent" value="30" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="01f0-ba5a-81e9-889a" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="15"/>
+            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="59be-abb0-7811-2298" name="Command" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="9113-e5b0-a693-9037" name="Musician" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="794c-ed7f-6ffc-2ed9" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="6"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="1511-53c5-8cd6-d41e" name="Standard Bearer" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a101-42ba-e890-430b" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="c328-8668-cbf4-c508" name="Magic Standards" hidden="false" collective="false" import="true" targetId="0937-a1bc-b331-8ce1" type="selectionEntryGroup">
+                  <constraints>
+                    <constraint field="ecfa-8486-4f6c-c249" scope="parent" value="50" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e5c1-ba69-bdf5-eb2c" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="12"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="bc39-d098-845e-cb0b" name="Champion of the Guard" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f2b9-db38-65b3-623d" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="de6f-6d60-d819-8558" name="Champion of the Guard" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
+                  <characteristics>
+                    <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">4</characteristic>
+                    <characteristic name="WS" typeId="f95b-da01-0578-3bdc">3</characteristic>
+                    <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">3</characteristic>
+                    <characteristic name="S" typeId="b690-4bc0-bb73-267b">4</characteristic>
+                    <characteristic name="T" typeId="8712-f56f-5b22-a720">4</characteristic>
+                    <characteristic name="W" typeId="253a-9b00-4fde-8ac2">1</characteristic>
+                    <characteristic name="I" typeId="dfff-363e-f72a-5a59">3</characteristic>
+                    <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">2</characteristic>
+                    <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">8</characteristic>
+                    <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+                    <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+                    <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="12"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="4072-c3b8-84c4-a097" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="7464-5732-5430-242d" includeChildSelections="false"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Full Plate Armour [THE EMPIRE]" hidden="false" id="7bc1-e74b-14d8-cc4f" type="selectionEntry" targetId="c49c3d9f-b78d-48d8-87d0-b624fb51affb">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="58d9-4b86-5b8a-f4ad" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="Full Plate Armour" field="name"/>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Great Weapon" hidden="false" id="f8bd-a67d-c1d7-63a2" type="selectionEntry" targetId="1eb7-3f36-8cf7-e0ba">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3fe2-3481-63f5-1c2c" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7f85-f577-05e4-ae6e" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
     <selectionEntry id="1c56-48e6-7c01-5ae9" name="Nightmare" hidden="false" collective="false" import="true" type="upgrade">
@@ -9740,13 +10100,6 @@ Warp Lightning is a magic missile with a range of 24&quot; It can be cast at a c
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
-      <modifiers>
-        <modifier type="set" value="false" field="hidden">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="9fd9-e05c-ffcb-2c4d" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Necrarch additional casting dice" hidden="true" id="68c7-4c56-8f0b-ad91">
       <costs>

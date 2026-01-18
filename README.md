@@ -181,6 +181,8 @@ The main additions are:
 - [x] Zacharias, the Everliving (VC-AB, p.72-73)
 - [x] Lahmian Swines (Heroes from other armies)
 - [x] Sylvanian Militia (SoC, p.89)
+- [x] Sylvanian Levy (SoC, p.89)
+- [x] Drakenhof Guard and Templars (SoC, p.89)
 
 ## Alternative lists included
 - [x] Clan Eshin (SKV-AB)
@@ -224,7 +226,7 @@ The main additions are:
 - [x] Clan Blood Dragons (VC-AB, p.79)
 - [x] Clan Strigoi (VC-AB, p.79)
 - [x] Clan Lahmia (VC-AB, p.79)
-- [ ] Army of Sylvania (TdC, p.88-89)
+- [x] Army of Sylvania (TdC, p.88-89)
 
 ## Sources consulted
 
