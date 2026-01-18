@@ -1807,6 +1807,20 @@
         </infoGroup>
       </infoGroups>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Extra Special choice" hidden="false" id="3100-f6cf-d7f4-9e5a" collective="false">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dfc8-a2d0-c817-83a3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7f4b-a95f-f81c-9a0b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink name="Special" hidden="false" id="3eb7-94cc-ced4-80cf" targetId="43cc-fc3f-35a7-8d03" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="f679-dff7-370a-6050" name="Lore of Metal" hidden="false" collective="false" import="true" collapsible="true">
