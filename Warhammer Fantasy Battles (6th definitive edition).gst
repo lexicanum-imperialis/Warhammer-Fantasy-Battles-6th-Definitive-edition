@@ -1808,7 +1808,7 @@
         </modifier>
       </modifiers>
       <infoLinks>
-        <infoLink name="Power Stone(Arcane Item)" id="37f8-1882-3c5b-96cb" hidden="false" targetId="ba52-fca2-87b6-72c7" type="rule"/>
+        <infoLink name="Power Stone" id="37f8-1882-3c5b-96cb" hidden="false" targetId="ba52-fca2-87b6-72c7" type="rule"/>
       </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -2300,7 +2300,7 @@ As with all scrolls, Dispel Scrolls are not unique items - they are prepared by 
 Note that a Dispel Scroll will not help if the spell has been cast with Irresistible Force
 . Any spell that is successfully cast with two or more 6s is Irresistible and no Dispel roll is permitted.</description>
     </rule>
-    <rule id="ba52-fca2-87b6-72c7" name="Power Stone(Arcane Item)" hidden="false">
+    <rule id="ba52-fca2-87b6-72c7" name="Power Stone" hidden="false">
       <description>The Power Stone is imbued with a powerful magical invocation. When it is held out by a Wizard before he casts a spell, the effect is to enhance the efficacy of the magic. A further two dice are added to the Casting roll. Note that using a Power Stone will allow a Wizard to use more Power dice than he is normally permitted. For example, a First Level Wizard may read a Power Stone and thus use four Power dice to cast a spell (2 basic + 2 from a Power Stone). A Power Stone can only be used once - after one use its power is exhausted.
 
 Using a Power Stone will bring any spell in play cast earlier by that Wizard to an end in the same way as casting a new spell by ordinary means.
