@@ -185,6 +185,7 @@ The main additions are:
 - [x] Sylvanian Levy (SoC, p.89)
 - [x] Drakenhof Guard and Templars (SoC, p.89)
 - [x] Vlad & Isabella von Carstein (AN-02, p.61)
+- [x] Heinrich Kemmler, the Lichemaster (webGW-UK)
 
 ## Alternative lists included
 - [x] Clan Eshin (SKV-AB)
