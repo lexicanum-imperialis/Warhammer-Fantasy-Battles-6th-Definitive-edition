@@ -592,42 +592,6 @@
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0ed5-eacf-d55a-5e9e" name="Power Stone (one use only)" publicationId="315e-e3c4-08af-fd51" page="154" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="37f8-1882-3c5b-96cb" name="Power Stone(Arcane Item)" hidden="false" targetId="ba52-fca2-87b6-72c7" type="rule"/>
-      </infoLinks>
-      <selectionEntries>
-        <selectionEntry id="696a-648d-c842-4c6a" name="Power Stones" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e44e-74a9-e4a4-6939" type="max"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2041-7b18-f68a-41a7" type="min"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="25"/>
-            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <costs>
-        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
-        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-      </costs>
-      <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <comment>Cult of Ulric (CR-04)</comment>
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="d2eb-6fe3-7349-f03d" shared="true" includeChildSelections="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="6b0d-2c9f-2d46-b330" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-    </selectionEntry>
     <selectionEntry id="b22a-6be5-d4f9-7776" name="Staff of Sorcery" publicationId="315e-e3c4-08af-fd51" page="154" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="097e-f756-67e6-9b20" type="max"/>
@@ -1821,6 +1785,33 @@
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Power Stone (only one use)" hidden="false" id="696a-648d-c842-4c6a" collective="false">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e44e-74a9-e4a4-6939" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2041-7b18-f68a-41a7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
+      <costs>
+        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="25"/>
+        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Cult of Ulric (CR-04)</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="d2eb-6fe3-7349-f03d" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="6b0d-2c9f-2d46-b330" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Power Stone(Arcane Item)" id="37f8-1882-3c5b-96cb" hidden="false" targetId="ba52-fca2-87b6-72c7" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="f679-dff7-370a-6050" name="Lore of Metal" hidden="false" collective="false" import="true" collapsible="true">
@@ -1935,7 +1926,7 @@
         <entryLink import="true" name="Biting Blade" hidden="false" id="4b91-07db-55ec-b019" type="selectionEntry" targetId="74fc-c90b-250e-6b87"/>
         <entryLink import="true" name="Enchanted Shield" hidden="false" id="1ea5-e851-27cd-ad45" type="selectionEntry" targetId="c5c1-60aa-745f-c9d3"/>
         <entryLink import="true" name="Staff of Sorcery" hidden="false" id="3bc4-082d-e44e-7f1a" type="selectionEntry" targetId="b22a-6be5-d4f9-7776"/>
-        <entryLink import="true" name="Power Stone (one use only)" hidden="false" id="f969-0b28-b1cf-bb02" type="selectionEntry" targetId="0ed5-eacf-d55a-5e9e"/>
+        <entryLink import="true" name="Power Stone (only one use)" hidden="false" id="f969-0b28-b1cf-bb02" type="selectionEntry" targetId="696a-648d-c842-4c6a"/>
         <entryLink import="true" name="Talisman of Protection" hidden="false" id="bc5a-4f31-3425-4b2c" type="selectionEntry" targetId="c7cc-76a3-c413-ddb8"/>
         <entryLink import="true" name="Dispel Scroll (one use only)" hidden="false" id="989e-9d22-7fea-19b5" type="selectionEntry" targetId="b76c-6bad-4650-dbb0"/>
         <entryLink import="true" name="War Banner" hidden="false" id="f7d8-220a-ed04-28ef" type="selectionEntry" targetId="f327-567f-ef99-0403"/>
