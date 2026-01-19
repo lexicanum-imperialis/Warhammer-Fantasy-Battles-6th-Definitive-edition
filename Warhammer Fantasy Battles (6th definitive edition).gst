@@ -1785,10 +1785,9 @@
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Power Stone (only one use)" hidden="false" id="696a-648d-c842-4c6a" collective="false">
+    <selectionEntry type="upgrade" import="true" name="Power Stone (only one use)" hidden="false" id="696a-648d-c842-4c6a" collective="false" defaultAmount="0">
       <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e44e-74a9-e4a4-6939" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2041-7b18-f68a-41a7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="e44e-74a9-e4a4-6939" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
       </constraints>
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="25"/>
