@@ -188,6 +188,7 @@ The main additions are:
 - [x] Heinrich Kemmler, the Lichemaster (webGW-UK)
 - [x] Krell, the King of Wights (webGW-UK)
 - [x] Melkhior the Ancient (webGW-US)
+- [x] Neferata, the Queen of Mysteries (webGW-US)
 
 ## Alternative lists included
 - [x] Clan Eshin (SKV-AB)
