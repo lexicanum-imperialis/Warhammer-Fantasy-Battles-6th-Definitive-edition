@@ -189,6 +189,7 @@ The main additions are:
 - [x] Krell, the King of Wights (webGW-UK)
 - [x] Melkhior the Ancient (webGW-US)
 - [x] Neferata, the Queen of Mysteries (webGW-US)
+- [x] Sethep, the Merciless (WD#258, p.89)
 
 ## Alternative lists included
 - [x] Clan Eshin (SKV-AB)
