@@ -186,7 +186,9 @@ The main additions are:
 - [x] Drakenhof Guard and Templars (SoC, p.89)
 - [x] Vlad & Isabella von Carstein (AN-02, p.61)
 - [x] Heinrich Kemmler, the Lichemaster (webGW-UK)
-- [x] Krell, the King of Wights (webGW-UK)
+- [x] Heinrich Kemmler, the Lichemaster (WD#309-UK)
+- [x] Krell, King of Wights (webGW-UK)
+- [x] Krell, King of Wights (WD#309-UK)
 - [x] Melkhior the Ancient (webGW-US)
 - [x] Neferata, the Queen of Mysteries (webGW-US)
 - [x] Sethep, the Merciless (WD#258, p.89)
@@ -235,7 +237,7 @@ The main additions are:
 - [x] Clan Lahmia (VC-AB, p.79)
 - [x] Army of Sylvania (TdC, p.88-89)
 - [ ] Vampire Coast
-- [ ] Army of the Lichmaster
+- [x] Army of the LICHEMASTER (WD#309-UK)
 
 ## Sources consulted
 

@@ -67,15 +67,18 @@
     <categoryEntry id="32f1-197f-d719-a393" name="Special list rules" hidden="false"/>
     <categoryEntry id="0644-bfcd-32c2-21dc" name="Special Characters" hidden="false"/>
     <categoryEntry id="d024-d25b-a9b4-73b6" name="Lord" hidden="false">
+      <constraints>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="25bc-03aa-523f-f058" type="max"/>
+      </constraints>
       <modifierGroups>
         <modifierGroup type="and">
           <modifiers>
-            <modifier type="set" value="0" field="df04-208d-fddd-8111">
+            <modifier type="set" value="0" field="25bc-03aa-523f-f058">
               <conditions>
                 <condition type="lessThan" value="2000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </modifier>
-            <modifier type="set" value="1" field="df04-208d-fddd-8111">
+            <modifier type="set" value="1" field="name">
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
@@ -85,7 +88,7 @@
                 </conditionGroup>
               </conditionGroups>
             </modifier>
-            <modifier type="set" value="2" field="df04-208d-fddd-8111">
+            <modifier type="set" value="2" field="25bc-03aa-523f-f058">
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
@@ -95,7 +98,7 @@
                 </conditionGroup>
               </conditionGroups>
             </modifier>
-            <modifier type="set" value="3" field="df04-208d-fddd-8111">
+            <modifier type="set" value="3" field="25bc-03aa-523f-f058">
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
@@ -105,7 +108,7 @@
                 </conditionGroup>
               </conditionGroups>
             </modifier>
-            <modifier type="set" value="4" field="df04-208d-fddd-8111">
+            <modifier type="set" value="4" field="25bc-03aa-523f-f058">
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
@@ -115,7 +118,7 @@
                 </conditionGroup>
               </conditionGroups>
             </modifier>
-            <modifier type="set" value="5" field="df04-208d-fddd-8111">
+            <modifier type="set" value="5" field="25bc-03aa-523f-f058">
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
@@ -125,7 +128,7 @@
                 </conditionGroup>
               </conditionGroups>
             </modifier>
-            <modifier type="set" value="6" field="df04-208d-fddd-8111">
+            <modifier type="set" value="6" field="25bc-03aa-523f-f058">
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
@@ -135,7 +138,7 @@
                 </conditionGroup>
               </conditionGroups>
             </modifier>
-            <modifier type="set" value="7" field="df04-208d-fddd-8111">
+            <modifier type="set" value="7" field="25bc-03aa-523f-f058">
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
@@ -145,7 +148,7 @@
                 </conditionGroup>
               </conditionGroups>
             </modifier>
-            <modifier type="set" value="8" field="df04-208d-fddd-8111">
+            <modifier type="set" value="8" field="25bc-03aa-523f-f058">
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
@@ -158,9 +161,6 @@
           </modifiers>
         </modifierGroup>
       </modifierGroups>
-      <constraints>
-        <constraint field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="df04-208d-fddd-8111" type="max"/>
-      </constraints>
     </categoryEntry>
     <categoryEntry id="c16b-f319-2c62-2c12" name="Heroes" hidden="false"/>
     <categoryEntry id="64bf-efb4-9978-26df" name="Core" hidden="false">
@@ -1810,6 +1810,11 @@
       <infoLinks>
         <infoLink name="Power Stone" id="37f8-1882-3c5b-96cb" hidden="false" targetId="ba52-fca2-87b6-72c7" type="rule"/>
       </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Lore of Shadow" hidden="false" id="3937-30ed-8e1a-d8e9">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7e33-907f-4232-38d6" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
