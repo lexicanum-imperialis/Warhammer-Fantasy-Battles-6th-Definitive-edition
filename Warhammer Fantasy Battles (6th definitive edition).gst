@@ -947,7 +947,8 @@
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="2"/>
       </costs>
       <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fc6d-21e4-3da5-17f9"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="fc6d-21e4-3da5-17f9" includeChildSelections="true"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a830-88fc-15ba-9584"/>
       </constraints>
     </selectionEntry>
     <selectionEntry id="5f8c-ee59-3060-16c4" name="Javelin" hidden="false" collective="false" import="true" type="upgrade">
@@ -1950,7 +1951,17 @@
       <description>Unit causes Fear</description>
     </rule>
     <rule id="96f0-c50f-e59e-85fa" name="Terror" publicationId="315e-e3c4-08af-fd51" page="81" hidden="false">
-      <description>Unit causes Terror</description>
+      <description>Unit causes Terror.
+Troops who are confronted by monsters or situations that cause terror must test to see whether they overcome their terror. If they fail, they are completely terrified and are reduced to gibbering wrecks. Troops only ever test for terror once in a battle. Once they&apos;ve overcome their terror they are not affected again.
+
+
+If a creature causes terror then it automatically causes fear as well, and all the rules described for fear apply. However, you never have to take a Terror and a Fear test from the same enemy or situation - just take a Terror test: if you pass the Terror test then you automatically pass the Fear test, too. As any unit of Troops only ever takes one Terror test in a battle, any subsequent encounters with terrifying monsters or situations will simply count as fear.
+
+
+A unit must make a Terror test if charged by or wishing to charge an enemy that causes terror.
+
+
+A unit must make a Terror test at the start of its turn if there is an enemy which causes terror within 6&quot;.</description>
     </rule>
     <rule id="5d6f-7b4d-6093-4922" name="Stupidity" publicationId="315e-e3c4-08af-fd51" page="82" hidden="false">
       <description>Subject to Stupidity</description>

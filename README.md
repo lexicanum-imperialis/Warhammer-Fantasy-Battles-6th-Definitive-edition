@@ -241,6 +241,8 @@ The main additions are:
 
 ### Beasts of Chaos
 - [x] Khazrak the One-Eye (BC-AB, p.68-69)
+- [x] Gorthor the Beastlord (BC-AB, p.70-71)
+- [x] Morghur, Master of Skulls (BC-AB, p.72-73)
 
 ## Sources consulted
 

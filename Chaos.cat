@@ -1761,6 +1761,16 @@
       <infoLinks>
         <infoLink id="1f95-fb53-70cc-b9d9" name="Bestigor" hidden="false" targetId="526e-1568-ad54-34d7" type="profile"/>
         <infoLink id="16e4-3b9b-0fdf-574e" name="Gouge Horn" hidden="false" targetId="99e0-837b-5da8-8668" type="profile"/>
+        <infoLink name="Raiders" id="0d05-f500-d03b-ef51" hidden="true" type="rule" targetId="94df-5354-54cd-c16e">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1d54-5b22-90c0-96c4" shared="true" includeChildSelections="true"/>
+              </conditions>
+              <comment>The Hordes of Morghur</comment>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="8eeb-ea20-3176-0763" name="Special" hidden="false" targetId="43cc-fc3f-35a7-8d03" primary="true"/>
@@ -1944,21 +1954,18 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="e941-8cf0-bd4b-4624" name="Warhounds of Chaos" hidden="false" collective="false" import="true" type="unit">
-      <modifiers>
-        <modifier type="remove" field="category" value="43cc-fc3f-35a7-8d03">
-          <conditions>
-            <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="93e0-99b6-0014-7c7a" type="greaterThan"/>
-          </conditions>
-        </modifier>
-        <modifier type="set-primary" field="category" value="64bf-efb4-9978-26df">
-          <conditions>
-            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="93e0-99b6-0014-7c7a" type="greaterThan"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <infoLinks>
         <infoLink id="16a0-2b4e-1863-fc48" name="Beastmen Ambush" hidden="false" targetId="171a-a558-c27b-9cc9" type="rule"/>
-        <infoLink id="e0b3-3479-d7d1-9668" name="Warhound" hidden="false" targetId="22f5-f64d-ed46-53cb" type="profile"/>
+        <infoLink id="e0b3-3479-d7d1-9668" name="Warhound" hidden="false" targetId="22f5-f64d-ed46-53cb" type="profile">
+          <modifiers>
+            <modifier type="set" value="6" field="2d45-18fe-9eb3-b113">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="6880-84b4-7e4d-c31a" shared="true" includeChildSelections="true"/>
+              </conditions>
+              <comment>Packmaster</comment>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="07c0-f546-2825-746f" name="Special" hidden="false" targetId="43cc-fc3f-35a7-8d03" primary="true"/>
@@ -1991,6 +1998,19 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <conditions>
+            <condition type="greaterThan" value="0" field="selections" scope="force" childId="93e0-99b6-0014-7c7a" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+          <modifiers>
+            <modifier type="set-primary" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="remove" value="43cc-fc3f-35a7-8d03" field="category"/>
+            <modifier type="add" value="64bf-efb4-9978-26df" field="category"/>
+          </modifiers>
+          <comment>General is Beast</comment>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry id="28aa-3d73-c5f0-b418" name="Centigor" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -2368,6 +2388,15 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1d54-5b22-90c0-96c4" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
       <infoLinks>
         <infoLink id="d6fa-d569-b721-e7d9" name="Lord of Chaos" hidden="false" targetId="337b-9f3a-7db4-6e41" type="profile"/>
@@ -2586,6 +2615,15 @@
             <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a878-7899-6700-e5fb" type="greaterThan"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1d54-5b22-90c0-96c4" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
       <infoLinks>
         <infoLink id="f040-0856-713f-05ae" name="Warrior" hidden="false" targetId="d091-568c-de35-80af" type="profile"/>
@@ -2775,6 +2813,15 @@
             <conditionGroup type="and">
               <conditions>
                 <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="1b7c-2c90-6d96-28c9" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1d54-5b22-90c0-96c4" shared="true" includeChildSelections="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -3001,6 +3048,15 @@
             <conditionGroup type="and">
               <conditions>
                 <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="1b7c-2c90-6d96-28c9" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1d54-5b22-90c0-96c4" shared="true" includeChildSelections="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -3244,6 +3300,17 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1d54-5b22-90c0-96c4" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="5252-98c3-f35f-1a92" name="Keeper of Secrets" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -3311,6 +3378,17 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1d54-5b22-90c0-96c4" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="d39b-3793-b7a0-d2be" name="Lord of Change" hidden="false" collective="false" import="true" type="unit">
       <rules>
@@ -3391,6 +3469,17 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1d54-5b22-90c0-96c4" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="b7d1-f7cd-d942-9232" name="Great Unclean One" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -3458,6 +3547,17 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1d54-5b22-90c0-96c4" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="caeb-32d6-b0ea-9160" name="Exalted Champion of Chaos" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
@@ -3505,6 +3605,15 @@
             <conditionGroup type="and">
               <conditions>
                 <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="1b7c-2c90-6d96-28c9" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1d54-5b22-90c0-96c4" shared="true" includeChildSelections="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -3746,6 +3855,15 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1d54-5b22-90c0-96c4" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
       <infoLinks>
         <infoLink id="1efb-7495-fa09-aa40" name="Exalted Demon" hidden="false" targetId="036d-b05e-c866-11c3" type="profile"/>
@@ -3965,6 +4083,15 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1d54-5b22-90c0-96c4" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
       <infoLinks>
         <infoLink id="e148-e599-08b7-071a" name="Aspiring Champion" hidden="false" targetId="ef49-d749-1c40-60f5" type="profile"/>
@@ -4141,6 +4268,15 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1d54-5b22-90c0-96c4" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
       <infoLinks>
         <infoLink id="2493-6e46-8a54-31f7" name="Sorcerer" hidden="false" targetId="c035-4eec-56ad-366b" type="profile"/>
@@ -4288,6 +4424,15 @@
             <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a878-7899-6700-e5fb" type="greaterThan"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1d54-5b22-90c0-96c4" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
       <infoLinks>
         <infoLink id="cb7c-6470-df0a-be77" name="Marauder" hidden="false" targetId="c5cb-47f2-78e3-78d9" type="profile"/>
@@ -4410,6 +4555,15 @@
           <conditions>
             <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a878-7899-6700-e5fb" type="greaterThan"/>
           </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1d54-5b22-90c0-96c4" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <infoLinks>
@@ -4549,6 +4703,15 @@
           <conditions>
             <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a878-7899-6700-e5fb" type="greaterThan"/>
           </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1d54-5b22-90c0-96c4" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <infoLinks>
@@ -4721,6 +4884,15 @@
             <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a878-7899-6700-e5fb" type="greaterThan"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1d54-5b22-90c0-96c4" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
       <infoLinks>
         <infoLink id="7bf2-d1be-618b-b608" name="Chaos Chariot" hidden="false" targetId="350f-e021-ee35-afd3" type="profile"/>
@@ -4790,6 +4962,15 @@
           <conditions>
             <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="b86c-bc98-ff0c-a5fe" type="greaterThan"/>
           </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1d54-5b22-90c0-96c4" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <rules>
@@ -4924,6 +5105,15 @@
             <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="b86c-bc98-ff0c-a5fe" type="greaterThan"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1d54-5b22-90c0-96c4" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
       <infoLinks>
         <infoLink id="0f35-a9e0-22c0-69eb" name="Plague Bearer" hidden="false" targetId="0031-7ac7-0984-1f9f" type="profile"/>
@@ -4964,6 +5154,15 @@
           <conditions>
             <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="b86c-bc98-ff0c-a5fe" type="greaterThan"/>
           </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1d54-5b22-90c0-96c4" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>
@@ -5008,6 +5207,15 @@
           <conditions>
             <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="b86c-bc98-ff0c-a5fe" type="greaterThan"/>
           </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1d54-5b22-90c0-96c4" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <infoLinks>
@@ -5114,6 +5322,15 @@
             <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="b86c-bc98-ff0c-a5fe" type="greaterThan"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1d54-5b22-90c0-96c4" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4477-5c4f-ed97-6148" type="max"/>
@@ -5158,6 +5375,15 @@
           <conditions>
             <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="b86c-bc98-ff0c-a5fe" type="greaterThan"/>
           </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1d54-5b22-90c0-96c4" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <infoLinks>
@@ -5307,10 +5533,21 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1d54-5b22-90c0-96c4" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Khazrak the One-Eye" hidden="false" id="6880-84b4-7e4d-c31a" page="69" publicationId="7f4a-e6ae-d049-ee56">
       <profiles>
-        <profile name="Khazrak the One-Eye" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="67b4-8c68-6914-8457" page="69" publicationId="7f4a-e6ae-d049-ee56">
+        <profile name="Khazrak" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="67b4-8c68-6914-8457" page="69" publicationId="7f4a-e6ae-d049-ee56">
           <characteristics>
             <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">5</characteristic>
             <characteristic name="WS" typeId="f95b-da01-0578-3bdc">7</characteristic>
@@ -5321,7 +5558,7 @@
             <characteristic name="I" typeId="dfff-363e-f72a-5a59">6</characteristic>
             <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">4</characteristic>
             <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">8</characteristic>
-            <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+            <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">2+</characteristic>
             <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
             <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
           </characteristics>
@@ -5339,7 +5576,7 @@
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e649-42f8-cbb4-2f65" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="Scourge (Magic Weapon)" typeId="f681-9937-db53-f1d8" typeName="Armour" hidden="false" id="f84f-9934-b789-dcc2" page="69" publicationId="7f4a-e6ae-d049-ee56">
+                <profile name="The Dark Mail" typeId="f681-9937-db53-f1d8" typeName="Armour" hidden="false" id="f84f-9934-b789-dcc2" page="69" publicationId="7f4a-e6ae-d049-ee56">
                   <characteristics>
                     <characteristic name="Saving Throw Modifier" typeId="b600-e1ed-0765-27c1">2+</characteristic>
                     <characteristic name="Special rules" typeId="42c3-68ab-cfa5-203e">Magic Resistance (1).
@@ -5387,7 +5624,6 @@ Note that these extra wounds can only ever hit the model that was the original t
             </rule>
             <rule name="Packmaster" id="31aa-c4cc-e6d7-47b0" hidden="false" page="69" publicationId="7f4a-e6ae-d049-ee56">
               <description>Any Warhounds in Khazrak&apos;s army have a Leadership characteristic of 6, rather than the usual 5.</description>
-              <comment>TO IMPLEMENT !!!!!!!!!!!!!!!!!!!!!!!!!</comment>
             </rule>
           </rules>
         </infoGroup>
@@ -5412,6 +5648,388 @@ Note that these extra wounds can only ever hit the model that was the original t
         <categoryLink name="Special Characters" hidden="false" id="9f89-ea85-67d3-e1be" targetId="0644-bfcd-32c2-21dc" primary="true"/>
         <categoryLink name="Beast General" hidden="false" id="35d7-03bb-0534-f657" targetId="93e0-99b6-0014-7c7a" primary="false"/>
       </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="292"/>
+        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Gorthor the Beastlord" hidden="false" id="8e81-b7bc-04d2-9129" page="70-71" publicationId="7f4a-e6ae-d049-ee56">
+      <profiles>
+        <profile name="Gorthor" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="a5fb-096e-877e-56d5" page="71" publicationId="7f4a-e6ae-d049-ee56">
+          <characteristics>
+            <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">5</characteristic>
+            <characteristic name="WS" typeId="f95b-da01-0578-3bdc">7</characteristic>
+            <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">3</characteristic>
+            <characteristic name="S" typeId="b690-4bc0-bb73-267b">5</characteristic>
+            <characteristic name="T" typeId="8712-f56f-5b22-a720">4</characteristic>
+            <characteristic name="W" typeId="253a-9b00-4fde-8ac2">3</characteristic>
+            <characteristic name="I" typeId="dfff-363e-f72a-5a59">6</characteristic>
+            <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">4</characteristic>
+            <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">9</characteristic>
+            <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+            <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">*</characteristic>
+            <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="f5a4-c236-633c-f455" includeChildSelections="false"/>
+      </constraints>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Magic Items" id="a2d4-0685-7597-7c6f" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Cloak of the Beastlord (Talisman)" hidden="false" id="2b93-7ca5-57ee-92a4" page="71" publicationId="7f4a-e6ae-d049-ee56">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="737b-8ea3-c799-f3e4" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c7bc-d519-c546-d1d7" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Cloak of the Beastlord" typeId="a89b-d5a3-7805-c44e" typeName="Magic Items" hidden="false" id="41bc-3a06-0ac3-7803" page="71" publicationId="7f4a-e6ae-d049-ee56">
+                  <characteristics>
+                    <characteristic name="Magic stuff" typeId="c7b5-c239-d6c1-0627">This talisman gives Gorthor a Ward save equal to the Strength of the attack that hit him. For example, a Strength 3 hit would grant a 3+ Ward save, a Strength 5 hit would grant a 5+ Ward save, etc. This save applies only to Gorthor himself, not to his Chariot. Note that the minimum Ward save is 6+; this does not normally matter because the Skull of Mugrar means that hits will not usually exceed Strength 5. However, certain magic items and spells may nullify the Skull of Mugrar, or Gorthor may survive after his Chariot is destroyed. If this is the case, the Cloak of the Beastlord will always grant a Ward save of at least 6+ regardless of the Strength of the attack.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Impaler (Magic Weapon)" hidden="false" id="f88a-b187-5f09-d2ec" page="71" publicationId="7f4a-e6ae-d049-ee56">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6435-4976-c54e-92fa" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f616-a321-7b43-dbce" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Impaler" typeId="7889-42d9-70a0-3ea9" typeName="Weapon" hidden="false" id="e3f3-12d2-c1c5-f301" page="71" publicationId="7f4a-e6ae-d049-ee56">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3107-4d1e-9a51-6564">CC</characteristic>
+                    <characteristic name="Strength" typeId="6fe4-1ebb-cb04-1378">+1S on charge (Spear)</characteristic>
+                    <characteristic name="Damage" typeId="6f2f-d612-52ef-1633"/>
+                    <characteristic name="Special Rules" typeId="a21a-cdc0-4b13-b236">Spear.
+In addition, if any of Gorthor&apos;s to hit rolls are doubles, triples or quadruples, each of those attacks will wound automatically, even if they would normally have missed. For example, if you roll three is to hit, you will score three automatic wounds in addition to the result of the fourth attack.</characteristic>
+                    <characteristic name="Saves" typeId="8014-a8b2-15c3-da95"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Skull of Mugrar (Enchanted Item)" hidden="false" id="ed7b-7c7a-f260-890b" page="71" publicationId="7f4a-e6ae-d049-ee56">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0e3f-e7df-16db-1400" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4fd0-c3cf-14a6-62f8" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Skull of Mugrar" typeId="a89b-d5a3-7805-c44e" typeName="Magic Items" hidden="false" id="17cf-75d9-125e-5e08" page="71" publicationId="7f4a-e6ae-d049-ee56">
+                  <characteristics>
+                    <characteristic name="Magic stuff" typeId="c7b5-c239-d6c1-0627">Hits against Gorthor or his Chariot with a Strength of greater than 5 count as Strength 5 instead, and can only inflict 1 wound per hit even if they would normally inflict more. Attacks that automatically wound, or score wounds on a fixed dice roll, will still do so. Note that since this item is part of Gorthor&apos;s Chariot, it will be lost if the Chariot is destroyed.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Mounts" id="09b7-a48f-9c89-91b8" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Tuskgor Chariot (altered)" hidden="false" id="8703-cdea-860e-f5fb" collective="false" page="71" publicationId="7f4a-e6ae-d049-ee56">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9e4f-ab3b-6de3-6ed4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="37c0-bb15-e12c-8b6d" includeChildSelections="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Tuskgor " id="083d-ae63-6e09-8358" hidden="false" type="profile" targetId="0c49-3e3d-b040-a0ca">
+                  <modifiers>
+                    <modifier type="set" value="4" field="b690-4bc0-bb73-267b"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Tuskgor Charge" id="d908-f6f3-4d68-c694" hidden="false" type="rule" targetId="5dde-c27b-c0ef-7bc9"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink name="Core" hidden="false" id="09a2-8e7e-bb7e-ae4c" targetId="64bf-efb4-9978-26df" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Chariot" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="d12e-8f1e-d751-7fa2" publicationId="7f4a-e6ae-d049-ee56" page="71">
+                  <characteristics>
+                    <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">-</characteristic>
+                    <characteristic name="WS" typeId="f95b-da01-0578-3bdc">-</characteristic>
+                    <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">-</characteristic>
+                    <characteristic name="S" typeId="b690-4bc0-bb73-267b">5</characteristic>
+                    <characteristic name="T" typeId="8712-f56f-5b22-a720">5</characteristic>
+                    <characteristic name="W" typeId="253a-9b00-4fde-8ac2">4</characteristic>
+                    <characteristic name="I" typeId="dfff-363e-f72a-5a59">-</characteristic>
+                    <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">-</characteristic>
+                    <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">-</characteristic>
+                    <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">4+</characteristic>
+                    <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+                    <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">(4)</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <comment>Gothor&apos;s Chariot</comment>
+              <rules>
+                <rule name="Chariot (Gorthor)" id="3a7d-1c55-e46f-eda5" hidden="false" page="71" publicationId="7f4a-e6ae-d049-ee56">
+                  <description>Gorthor rides a Chariot, which has the altered profile given above and a 4+ Armour save. The Chariot is crewed by Gorthor himself and Bagrar, his charioteer. Although Bagrar is a named model he is not a character, and cannot be attacked separately from the Chariot.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Mark of Chaos" id="76ab-77cb-7bf2-efa1" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Lord of Slaanesh" hidden="false" id="fe19-0f04-111f-b728" type="selectionEntry" targetId="0aa1-edf9-6a31-417e">
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ad13-c06a-6621-20a5" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Lord Of Tzeentch" hidden="false" id="4671-cb3e-85f0-d6a0" type="selectionEntry" targetId="d8b7-ff7c-2879-8db9">
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="11b8-86f4-4936-9f00" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Lord of Nurgle" hidden="false" id="537b-118a-41a7-a6cf" type="selectionEntry" targetId="9d4e-2569-e41a-32ae">
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a6f2-211f-fd22-f435" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Lord of Khorne" hidden="false" id="a5d1-1194-e938-b033" type="selectionEntry" targetId="7349-3243-effe-59d8">
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a335-db48-9733-1085" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <infoGroups>
+        <infoGroup name="Special rules" id="b25e-3f9f-dd67-2362" hidden="false"/>
+      </infoGroups>
+      <entryLinks>
+        <entryLink import="true" name="Mark of Chaos Undivided" hidden="false" id="7f42-3063-0ee0-45cf" type="selectionEntry" targetId="c7ff-31af-939e-0fbd">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="15c3-eef0-fff2-16fa" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Extra Hero choice" hidden="false" id="243a-d9f2-4797-a732" type="selectionEntry" targetId="3e25-986a-693f-a975"/>
+        <entryLink import="true" name="General" hidden="false" id="0da3-2fbb-8ae6-a401" type="selectionEntry" targetId="1b7c-2c90-6d96-28c9">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6896-0b58-21be-0fde" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Lore of Death" hidden="false" id="743d-3f4d-5db9-ec6d" type="selectionEntry" targetId="2247-7779-2978-752c">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dfb3-b579-1816-2947" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink name="Lord" hidden="false" id="6414-f353-214b-1105" targetId="d024-d25b-a9b4-73b6" primary="false"/>
+        <categoryLink name="Characters" hidden="false" id="00b3-4482-74b4-1edb" targetId="7a1c-d611-c2dc-def1" primary="false"/>
+        <categoryLink name="Special Characters" hidden="false" id="55d7-7d3a-83e7-c133" targetId="0644-bfcd-32c2-21dc" primary="true"/>
+        <categoryLink name="Beast General" hidden="false" id="904b-bb35-b057-a7d2" targetId="93e0-99b6-0014-7c7a" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="463"/>
+        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Bagrar the Tamer" hidden="false" id="6f10-6e83-39ed-3706" page="71" publicationId="7f4a-e6ae-d049-ee56">
+          <profiles>
+            <profile name="Bagrar" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="de2f-35e6-4f5f-b72a" page="71" publicationId="7f4a-e6ae-d049-ee56">
+              <characteristics>
+                <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">-</characteristic>
+                <characteristic name="WS" typeId="f95b-da01-0578-3bdc">4</characteristic>
+                <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">3</characteristic>
+                <characteristic name="S" typeId="b690-4bc0-bb73-267b">4</characteristic>
+                <characteristic name="T" typeId="8712-f56f-5b22-a720">-</characteristic>
+                <characteristic name="W" typeId="253a-9b00-4fde-8ac2">-</characteristic>
+                <characteristic name="I" typeId="dfff-363e-f72a-5a59">4</characteristic>
+                <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">2</characteristic>
+                <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">7</characteristic>
+                <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+                <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+                <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <entryLinks>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="50e9-b738-42e4-0f13" type="selectionEntry" targetId="abdb-bbd0-41b2-5dff"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="183c-ea44-4d36-ba81" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="db58-ae44-a94b-8f41" includeChildSelections="false"/>
+          </constraints>
+          <rules>
+            <rule name="Bagrar the Tamer" id="36b5-1909-8b0b-7989" hidden="false" page="71" publicationId="7f4a-e6ae-d049-ee56">
+              <description>Bagrar is Gorthor&apos;s loyal charioteer, expert at taming and driving the Tuskgors to full effect. To represent this, Gorthor&apos;s Chariot may re-roll all Fleeing and Pursuit distance rolls.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+      </selectionEntries>
+      <rules>
+        <rule name="Beloved of the Gods" id="f4be-169d-b21d-5d3d" hidden="false" page="71" publicationId="7f4a-e6ae-d049-ee56">
+          <description>Gorthor&apos;s presence on the battlefield adds one dice to the Dispel pool of the army. In addition, at the start of each Magic phase roll a D6 on the Lore of Death magic table. Gorthor may use the spell rolled during this Chaos Magic phase as a Bound spell, with a Power Level equal to the casting value of the spell. Gorthor may not exchange the result for the first spell on the table, as a Wizard could. If Gorthor cannot use the spell for any reason (for example, if it is out of range or if he rolls a magic missile while engaged in hand to hand combat) the roll is wasted.</description>
+        </rule>
+        <rule name="The Favoured of Chaos" id="1750-a1c5-2094-80cd" hidden="false" page="71" publicationId="7f4a-e6ae-d049-ee56">
+          <description>Gorthor&apos;s favour and renown is such that creatures of Chaos from across the Old World flock to join his warherd. To represent this, Gorthor&apos;s army may include 1 more Rare unit than it would normally be allowed (for example, 3 Rare units at 2,000 points, 4 at 3,000 points, etc).</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Raiders" id="3c97-fe1a-2063-a8dd" hidden="false" type="rule" targetId="94df-5354-54cd-c16e"/>
+        <infoLink name="Beastmen Ambush" id="e942-8a2c-d096-4bc3" hidden="false" type="rule" targetId="171a-a558-c27b-9cc9"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Morghur, Master of Skulls" hidden="false" id="1d54-5b22-90c0-96c4" page="72-73" publicationId="7f4a-e6ae-d049-ee56">
+      <profiles>
+        <profile name="Morghur" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="50d3-d51c-8992-c678" page="73" publicationId="7f4a-e6ae-d049-ee56">
+          <characteristics>
+            <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">5</characteristic>
+            <characteristic name="WS" typeId="f95b-da01-0578-3bdc">7</characteristic>
+            <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">1</characteristic>
+            <characteristic name="S" typeId="b690-4bc0-bb73-267b">5</characteristic>
+            <characteristic name="T" typeId="8712-f56f-5b22-a720">4</characteristic>
+            <characteristic name="W" typeId="253a-9b00-4fde-8ac2">3</characteristic>
+            <characteristic name="I" typeId="dfff-363e-f72a-5a59">6</characteristic>
+            <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">4</characteristic>
+            <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">8</characteristic>
+            <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+            <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+            <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="6a1e-db45-8416-766b" includeChildSelections="false"/>
+      </constraints>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Magic Items" id="81f4-4886-5b6d-265f" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Skull-Weave (Talisman)" hidden="false" id="6d9f-41ca-4715-5ae6" page="73" publicationId="7f4a-e6ae-d049-ee56">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1048-af80-1728-b010" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c208-ebe8-f5cc-6cb8" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Skull-Weave" typeId="a89b-d5a3-7805-c44e" typeName="Magic Items" hidden="false" id="aacb-2af9-3817-6ecf" page="69" publicationId="7f4a-e6ae-d049-ee56">
+                  <characteristics>
+                    <characteristic name="Magic stuff" typeId="c7b5-c239-d6c1-0627">Morghur causes Terror.
+Any model attempting to attack Morghur Close Combat suffers -1 to hit.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Terror" id="bf29-274f-7a31-ad45" hidden="false" type="rule" targetId="96f0-c50f-e59e-85fa"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Bray-Staff of Morghur &amp; the Stones of the Skull Cave (Magic Weapon)" hidden="false" id="17a4-3b91-b425-3a01" page="73" publicationId="7f4a-e6ae-d049-ee56">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8a47-3c6e-c97c-9e83" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="80bb-c0b5-f0ae-d871" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Bray-Staff of Morghur" typeId="7889-42d9-70a0-3ea9" typeName="Weapon" hidden="false" id="d725-279e-d2b9-08fc" page="73" publicationId="7f4a-e6ae-d049-ee56">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3107-4d1e-9a51-6564">CC</characteristic>
+                    <characteristic name="Strength" typeId="6fe4-1ebb-cb04-1378">+2S*</characteristic>
+                    <characteristic name="Damage" typeId="6f2f-d612-52ef-1633"/>
+                    <characteristic name="Special Rules" typeId="a21a-cdc0-4b13-b236">Braystaff (+2S and Strikes Last OR +2 Sv).
+If a Wizard (friend or enemy) rolls a double when rolling on the Miscast Table then is turned into a Chaos Spawn.
+In addition, Morghur generates two Dispel dice to be added to the Beastmen player&apos;s Dispel dice pool.</characteristic>
+                    <characteristic name="Saves" typeId="8014-a8b2-15c3-da95"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="2"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Braystaff" id="79f0-80cc-b1e3-a63b" hidden="false" type="rule" targetId="b0f1-3cb9-9ec7-06fa"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <infoGroups>
+        <infoGroup name="Special rules" id="26cd-f597-2f41-07b8" hidden="false">
+          <infoLinks>
+            <infoLink name="Immune to Psycology " id="7a95-81e3-daf3-2bf9" hidden="false" type="rule" targetId="ff2b-8db6-64fa-e9ca"/>
+            <infoLink name="Hatred" id="ce00-5a0d-f2f8-cf0a" hidden="false" type="rule" targetId="1e6c-d634-a65c-78eb"/>
+            <infoLink name="Unbreakable" id="bd95-7016-29e3-06e5" hidden="false" type="rule" targetId="8ae3-9724-980f-7308"/>
+          </infoLinks>
+          <rules>
+            <rule name="The Hordes of Morghur" id="923b-f194-4d69-f32b" hidden="false" page="73" publicationId="7f4a-e6ae-d049-ee56">
+              <description>An army that contains Morghur has no General. Chaos Marks tor units and additional characters may be chose freely as if the army was led by a character with the Mark or Chaos Undivided. An army that contains Morghur cannot include any Mortal or
+Daemon units. Every unit in an army that contains Morghur suffers from the Unruly special rule. Bestigors in an army containing Morghur use the Raiders special rule.</description>
+            </rule>
+            <rule name="Spirit-Essence of Chaos" id="4272-83a2-1470-688a" hidden="false" page="73" publicationId="7f4a-e6ae-d049-ee56">
+              <description>In the Beastmen Shooting phase. any unit (including friends) within 8&quot; or Morghur take a Leadership test. If failed, the unit suffers D6 Strength 4 hits with no Armour saves allowed. It one or more wounds are caused, then a Spawn of Chaos is created under the control of the Beastmen player (so long as you have appropriate model - if not, no Spawn is created). The Spawn has a Starting number of Wounds equal to the number of Wounds that were caused. This newly created unit does not award Victory points.
+
+If created from an enemy unit, the Spawn is placed into base contact with the centre of the unit&apos;s front if possible, and counts as charging in the following Close Combat phase. Friendly units test for panic if sustaining 25% casualties due to the Spirit-Essence. The Spawn is placed 1&quot; away from the unit as Close as possible to Morghur.
+
+Beastmen instinctively keep their distance from Morghur, and so Morghur may never join any unit.
+
+Any model, friend or foe, in base contact with Morghur at the start of any Close Combat phase suffers an immediate Strength 4 hit with no Armour save allowed. This occurs before any other attacks are made, including Chariot impact hits and models that always strikes first. Note that these wounds do not create Spawn of Chaos.
+
+Any missile attack or spell targeted at Morghur will never effect him unless the shooting unit or spellcaster is within 12&quot; of him. In the case of templates, if the template would touch Morghur, then the whole shot/spell is ignored (though it from a war machine, then it may still misfire).</description>
+            </rule>
+            <rule name="Unruly" id="88c3-7e73-8589-a96c" hidden="false" page="73" publicationId="7f4a-e6ae-d049-ee56">
+              <description>At the start of each Chaos Compulsory Movement phase, roll a 1D6 for each Unruly unit. On a roll of a 1, the unit&apos;s headstrong nature has got the better of it. If there is an enemy unit that can be charged using the normal rules, the Beastmen must charge (charging the closest unit if there is more than one legal target). If no charges are possible, the unit moves as quickly and directly as possible towards the nearest enemy.</description>
+            </rule>
+            <rule name="The Taint" id="e069-796f-3208-0dda" hidden="false" page="73" publicationId="7f4a-e6ae-d049-ee56">
+              <description>The enemy must take Fear tests to enter or move though a forest or wood - if this is failed, they stop at the edge or the forest. If the unit is already within the forest and fails this Fear it takes D6 Strength 3 hits, and can&apos;t move or shoot that turn.</description>
+            </rule>
+            <rule name="Insane Wanderer" id="1fa5-a6d8-726c-0a34" hidden="false" page="73" publicationId="7f4a-e6ae-d049-ee56">
+              <description>Morghur moves and will engage enemies in exactly the same fashion as Spawn of Chaos.</description>
+            </rule>
+            <rule name="The Beast-Roar" id="b405-e6ca-6637-4f4d" hidden="false">
+              <description>Morghur counts as having the brayhorn. In addition. when he sounds the brayhorn, any fleeing troops in the Beastmen army automatically rally.</description>
+            </rule>
+          </rules>
+        </infoGroup>
+      </infoGroups>
+      <entryLinks>
+        <entryLink import="true" name="Hand Weapon" hidden="false" id="f4b6-251f-f79c-2e4c" type="selectionEntry" targetId="abdb-bbd0-41b2-5dff"/>
+        <entryLink import="true" name="Mark of Chaos Undivided" hidden="false" id="2302-de8d-13ea-d6ab" type="selectionEntry" targetId="c7ff-31af-939e-0fbd">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9102-5bc4-432d-e728" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Extra Hero choice" hidden="false" id="4f19-901a-9f6f-7b58" type="selectionEntry" targetId="3e25-986a-693f-a975"/>
+        <entryLink import="true" name="General" hidden="false" id="b99e-a634-a9b2-d5c8" type="selectionEntry" targetId="1b7c-2c90-6d96-28c9">
+          <modifiers>
+            <modifier type="set" value="0" field="fc6d-21e4-3da5-17f9">
+              <comment>&quot;The Hordes of Morghur&quot;, BC-AB, p.73</comment>
+            </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <comment>&quot;The Hordes of Morghur&quot;, BC-AB, p.73</comment>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink name="Lord" hidden="false" id="4ea7-d85b-2c96-0d66" targetId="d024-d25b-a9b4-73b6" primary="false"/>
+        <categoryLink name="Characters" hidden="false" id="03aa-fb81-9c8b-86e8" targetId="7a1c-d611-c2dc-def1" primary="false"/>
+        <categoryLink name="Special Characters" hidden="false" id="7eb1-2b6f-9ca5-4b5d" targetId="0644-bfcd-32c2-21dc" primary="true"/>
+        <categoryLink name="Beast General" hidden="false" id="3a26-884c-e423-e567" targetId="93e0-99b6-0014-7c7a" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="378"/>
+        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+      </costs>
     </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
@@ -9232,9 +9850,9 @@ Each enemy slain by this spell is turned into a Horror and added to the Horrors 
         <characteristic name="I" typeId="dfff-363e-f72a-5a59">-</characteristic>
         <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">-</characteristic>
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">-</characteristic>
-        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">4+</characteristic>
         <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
-        <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
+        <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">(4)</characteristic>
       </characteristics>
     </profile>
     <profile id="6105-cc4f-5e3e-983c" name="Bestigor Rider" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
@@ -9282,7 +9900,7 @@ Each enemy slain by this spell is turned into a Horror and added to the Horrors 
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">-</characteristic>
         <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
         <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
-        <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
+        <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
       </characteristics>
     </profile>
     <profile id="0874-a97d-c005-213d" name="Bloodkine" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
@@ -10128,7 +10746,16 @@ Each enemy slain by this spell is turned into a Horror and added to the Horrors 
         <categoryLink name="Heroes" hidden="false" id="7fc3-08e2-bf65-b6d5" targetId="c16b-f319-2c62-2c12" primary="false"/>
         <categoryLink name="Core" hidden="false" id="c0f1-8480-4b7b-3c4e" targetId="64bf-efb4-9978-26df" primary="false"/>
         <categoryLink name="Special" hidden="false" id="2860-eae1-ce88-79c4" targetId="43cc-fc3f-35a7-8d03" primary="false"/>
-        <categoryLink name="Rare" hidden="false" id="9b50-1dd5-3ae3-7192" targetId="e94b-6a54-8779-cd60" primary="false"/>
+        <categoryLink name="Rare" hidden="false" id="9b50-1dd5-3ae3-7192" targetId="e94b-6a54-8779-cd60" primary="false">
+          <modifiers>
+            <modifier type="increment" value="1" field="f13a-0c3f-2d8a-4dd0">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="8e81-b7bc-04d2-9129" shared="true" includeChildSelections="true"/>
+              </conditions>
+              <comment>&quot;The Favoured of Chaos&quot;, BC-AB, p.71</comment>
+            </modifier>
+          </modifiers>
+        </categoryLink>
         <categoryLink name="Regiment of Renown" hidden="false" id="3cfc-bb28-6da9-979f" targetId="ee09-9a50-ad78-9c32" primary="false"/>
       </categoryLinks>
     </forceEntry>
