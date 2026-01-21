@@ -239,6 +239,9 @@ The main additions are:
 - [ ] Vampire Coast
 - [x] Army of the LICHEMASTER (WD#309-UK)
 
+### Beasts of Chaos
+- [x] Khazrak the One-Eye (BC-AB, p.68-69)
+
 ## Sources consulted
 
 |Short-n   |Title of the source                               |Year   |Author(s)                             |
