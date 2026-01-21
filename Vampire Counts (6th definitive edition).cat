@@ -9703,7 +9703,7 @@ If Vlad is killed then exactly the same special rules apply to Isabella: ie, sh
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
       <profiles>
-        <profile name="Heinrich Kemmler" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="7ee8-17eb-3f5b-1109">
+        <profile name="Heinrich Kemmler" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="7ee8-17eb-3f5b-1109" page="56">
           <characteristics>
             <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">4</characteristic>
             <characteristic name="WS" typeId="f95b-da01-0578-3bdc">3</characteristic>
@@ -9722,9 +9722,97 @@ If Vlad is killed then exactly the same special rules apply to Isabella: ie, sh
       </profiles>
       <selectionEntryGroups>
         <selectionEntryGroup name="Weapons and Armour" id="3680-d477-d9b4-c618" hidden="false"/>
+        <selectionEntryGroup name="Magic Items" id="0705-b3f3-a57c-4d42" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Black Periapt" hidden="false" id="9b5b-d479-992d-3db9" type="selectionEntry" targetId="3013-1494-ee91-1cf8">
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8afc-6249-ca78-881d" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Skull Staff" hidden="false" id="3895-827f-7240-ba6d" type="selectionEntry" targetId="a5d0-7e6e-5ef5-e09f">
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="91ab-8ba6-23f9-6c06" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Power Familiar" hidden="false" id="249c-2c10-58f5-46a7" type="selectionEntry" targetId="94dc-9b20-f845-34ba">
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bcf6-5cdc-29f3-a505" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Cloak of Mist and Shadows " hidden="false" id="0dbd-5875-0980-b800" type="selectionEntry" targetId="72ba-8771-2926-3354">
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f8a6-f6f8-27f6-60d6" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Spells of Protection" hidden="false" id="8e9d-5049-6967-5b9a" publicationId="5dfb-1d05-9140-09b5" page="56">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0278-bad8-5097-a935" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c55a-6071-d632-8ff2" includeChildSelections="false"/>
+              </constraints>
+              <rules>
+                <rule name="Spells of Protection" id="e216-e2e5-260b-8692" hidden="false" page="56" publicationId="5dfb-1d05-9140-09b5">
+                  <description>Kemmler has spent many long weeks hidden, preparing for this moment of grand triumph, and has woven powerful magical defences about himself. As a result, he has a 5+ Ward Save. In addition, Kemmler (and any unit he joins) suffers one less wound than they normally would when defeated in combat.</description>
+                </rule>
+              </rules>
+              <profiles>
+                <profile name="Spells of Protection" typeId="a89b-d5a3-7805-c44e" typeName="Magic Items" hidden="false" id="6fae-a6ed-4c57-a363" publicationId="5dfb-1d05-9140-09b5" page="56">
+                  <characteristics>
+                    <characteristic name="Magic stuff" typeId="c7b5-c239-d6c1-0627">5+ Ward Save.
+Kemmler (and any unit he joins) suffers one less wound than they normally would when defeated in combat.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Chaos Tomb Blade" hidden="false" id="ed20-d1a6-0904-2de8" publicationId="5dfb-1d05-9140-09b5" page="56">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5595-2e3f-951a-9d0d" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d24b-eefe-114d-1e5c" includeChildSelections="false"/>
+              </constraints>
+              <rules>
+                <rule name="Chaos Tomb Blade" id="fb0f-3bc9-9f30-9d93" hidden="false">
+                  <description>This magic weapon allows Kemmler to re-roll failed rolls to wound in close combat.</description>
+                </rule>
+              </rules>
+              <profiles>
+                <profile name="Chaos Tomb Blade" typeId="7889-42d9-70a0-3ea9" typeName="Weapon" hidden="false" id="a935-f9a8-39cc-2648" publicationId="5dfb-1d05-9140-09b5" page="56">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3107-4d1e-9a51-6564">CC</characteristic>
+                    <characteristic name="Strength" typeId="6fe4-1ebb-cb04-1378"/>
+                    <characteristic name="Damage" typeId="6f2f-d612-52ef-1633"/>
+                    <characteristic name="Special Rules" typeId="a21a-cdc0-4b13-b236">Re-roll failed to wound.</characteristic>
+                    <characteristic name="Saves" typeId="8014-a8b2-15c3-da95"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <infoGroups>
-        <infoGroup name="Lore of the Lichemaster" id="e138-8d3c-86ae-9735" hidden="false" publicationId="5dfb-1d05-9140-09b5"/>
+        <infoGroup name="Spells rules (Lore of the Lichemaster)" id="e059-e312-c1fe-7385" hidden="false">
+          <infoLinks>
+            <infoLink name="Doom and Darkness!" id="c910-746c-fbee-3655" hidden="false" type="rule" targetId="ea42-2df2-f47b-3578"/>
+            <infoLink name="Dark Hand of Death" id="eb46-b382-ad53-3174" hidden="false" type="rule" targetId="9fe7-c1dc-0e19-0809"/>
+            <infoLink name="Death Dealer" id="a284-5484-42e0-a5cd" hidden="false" type="rule" targetId="d48a-a61b-34d8-50d0"/>
+            <infoLink name="Steal Soul" id="27be-6b73-742b-b715" hidden="false" type="rule" targetId="04eb-7e9d-1a5d-cd4b"/>
+            <infoLink name="Wind of Death" id="2649-3de9-d455-4aae" hidden="false" type="rule" targetId="bac7-c263-d173-ac75"/>
+            <infoLink name="Drain Life" id="6b20-74cd-16e4-72ca" hidden="false" type="rule" targetId="a171-3bf1-5423-ee49"/>
+          </infoLinks>
+        </infoGroup>
       </infoGroups>
       <modifiers>
         <modifier type="set" value="false" field="hidden">
@@ -9741,6 +9829,11 @@ If Vlad is killed then exactly the same special rules apply to Isabella: ie, sh
       <constraints>
         <constraint type="min" value="0" field="selections" scope="force" shared="true" id="8461-3eab-e5ac-1636" includeChildSelections="false"/>
       </constraints>
+      <rules>
+        <rule name="The Master of Necromancy" id="477c-5355-5932-c76c" hidden="false" publicationId="5dfb-1d05-9140-09b5" page="56">
+          <description>As long as he has enough Power dice, Kemmler can cast any of his spells, even one that has been cast already in the same Magic phase.</description>
+        </rule>
+      </rules>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Heinrich Kemmler" hidden="false" id="4e8d-44d9-7dba-b3d0" publicationId="220d-e537-101d-55dd" page="vampirecounts/gaming/special_characters/heinrich_kemmler.htm">
       <categoryLinks>
@@ -11285,7 +11378,7 @@ Undead cause fear.</description>
         </modifier>
       </modifiers>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Krell, King of Wights (WD#309-UK)" hidden="true" id="2d17-c7be-5fd6-f1a3" publicationId="5dfb-1d05-9140-09b5">
+    <selectionEntry type="upgrade" import="true" name="Krell, King of Wights (WD#309-UK)" hidden="true" id="2d17-c7be-5fd6-f1a3" publicationId="5dfb-1d05-9140-09b5" page="57">
       <categoryLinks>
         <categoryLink name="Heroes" hidden="false" id="3d3f-d8ce-039d-3f5a" targetId="c16b-f319-2c62-2c12" primary="false"/>
         <categoryLink name="Characters" hidden="false" id="62d0-fce1-66c2-08fe" targetId="7a1c-d611-c2dc-def1" primary="false"/>
@@ -11296,7 +11389,7 @@ Undead cause fear.</description>
         <constraint type="min" value="1" field="selections" scope="force" shared="true" id="60a8-5b49-6b81-7c84" includeChildSelections="false"/>
       </constraints>
       <profiles>
-        <profile name="Krell" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="41cd-3e43-981f-9b66" publicationId="220d-e537-101d-55dd" page="vampirecounts/gaming/special_characters/krell.htm">
+        <profile name="Krell" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="41cd-3e43-981f-9b66" publicationId="5dfb-1d05-9140-09b5" page="57">
           <characteristics>
             <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">4</characteristic>
             <characteristic name="WS" typeId="f95b-da01-0578-3bdc">5</characteristic>
@@ -11306,7 +11399,7 @@ Undead cause fear.</description>
             <characteristic name="W" typeId="253a-9b00-4fde-8ac2">3</characteristic>
             <characteristic name="I" typeId="dfff-363e-f72a-5a59">4</characteristic>
             <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">4</characteristic>
-            <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">10</characteristic>
+            <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">6</characteristic>
             <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">4+</characteristic>
             <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">4+</characteristic>
             <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
@@ -11350,7 +11443,7 @@ Undead cause fear.</description>
         <infoLink name="King of Wights (Krell)" id="2f0b-0a59-88f0-b713" hidden="false" type="rule" targetId="ff91-ada3-9fd8-b149"/>
       </infoLinks>
       <costs>
-        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="215"/>
+        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="190"/>
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
@@ -12064,6 +12157,7 @@ Undead cause fear.</description>
     <selectionEntry type="upgrade" import="true" name="Black Axe of Krell" hidden="false" id="8569-0a6f-3d66-7daf" collective="false">
       <infoLinks>
         <infoLink name="Black Axe of Krell" id="4b87-c950-f31e-a523" hidden="false" targetId="efeb-f403-e28d-1873" type="rule"/>
+        <infoLink name="Black Axe of Krell" id="ace4-c8ce-1662-2a52" hidden="false" type="profile" targetId="0f17-502b-04ef-2f43"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="50"/>
@@ -26181,6 +26275,16 @@ If a wound is saved in this way, the model is subject to Frenzy for the rest of 
         <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
         <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Black Axe of Krell" typeId="7889-42d9-70a0-3ea9" typeName="Weapon" hidden="false" id="0f17-502b-04ef-2f43" publicationId="5dfb-1d05-9140-09b5">
+      <characteristics>
+        <characteristic name="Range" typeId="3107-4d1e-9a51-6564"/>
+        <characteristic name="Strength" typeId="6fe4-1ebb-cb04-1378"/>
+        <characteristic name="Damage" typeId="6f2f-d612-52ef-1633"/>
+        <characteristic name="Special Rules" typeId="a21a-cdc0-4b13-b236">Great Weapon.
+Any model which suffers 1 or more wounds must roll a d6 at the start of both its own and its enemy&apos;s Magic phases for the test of the game. On a roll of I or 2 it suffers 1 more wound with no armour save allowed (a Ward save can be taken as normal).</characteristic>
+        <characteristic name="Saves" typeId="8014-a8b2-15c3-da95"/>
       </characteristics>
     </profile>
   </sharedProfiles>

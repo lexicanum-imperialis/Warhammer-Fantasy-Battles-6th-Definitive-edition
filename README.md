@@ -24,14 +24,14 @@ The main additions are:
 - [x] Lizardmen
 - [x] Orcs and Goblins
 - [x] High Elves
-- [ ] The Empire
+- [x] The Empire
+- [x] Vampire Counts
 - [ ] Beast of Chaos
 - [ ] Hordes of Chaos (maybe with the Beast of Chaos)
 - [ ] Daemons of Chaos (with the Hordes of Chaos)
 - [ ] Dwarfs (at least the second ArmyBook)
-- [ ] Vampire Counts
 - [ ] Kislev
-- [ ] Dogs of War
+- [x] Dogs of War (WIP)
 
 ## Characters and units added
 
