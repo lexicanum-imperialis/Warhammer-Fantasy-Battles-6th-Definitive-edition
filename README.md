@@ -244,6 +244,9 @@ The main additions are:
 - [x] Gorthor the Beastlord (BC-AB, p.70-71)
 - [x] Morghur, Master of Skulls (BC-AB, p.72-73)
 
+### Hordes of Chaos
+- [x] Hellcannon (SoC, p.16-17)
+
 ## Sources consulted
 
 |Short-n   |Title of the source                               |Year   |Author(s)                             |

@@ -6605,6 +6605,136 @@ Any missile attack or spell targeted at Morghur will never effect him unless the
         </modifier>
       </modifiers>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="0-1 Hellcannon of Chaos" hidden="true" id="3c83-ca03-5f02-2f23">
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="f1d2-edba-0f35-030a" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="Rare" hidden="false" id="e094-88f8-ecf5-e1f2" targetId="e94b-6a54-8779-cd60" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Extra Rare choice" hidden="false" id="7cd3-e151-9dbc-d191" type="selectionEntry" targetId="dde8-eb28-cacb-34a3"/>
+        <entryLink import="true" name="Daemonic Gift" hidden="false" id="a42e-aa95-a841-2338" type="selectionEntryGroup" targetId="ceff-6d16-8c0e-81b1">
+          <constraints>
+            <constraint type="max" value="50" field="ecfa-8486-4f6c-c249" scope="parent" shared="true" id="7d9a-c4b2-6af4-1a7c"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <infoGroups>
+        <infoGroup name="Special rules" id="9c6b-a7ad-d4c4-a4b1" hidden="false">
+          <infoLinks>
+            <infoLink name="Unbreakable" id="ee94-6a59-7a03-04f0" hidden="false" type="rule" targetId="8ae3-9724-980f-7308"/>
+            <infoLink name="Terror" id="d17f-9817-3fff-3ad1" hidden="false" type="rule" targetId="96f0-c50f-e59e-85fa"/>
+            <infoLink name="Large Target" id="4262-4548-3d32-4aa3" hidden="false" type="rule" targetId="4463-1b38-aa4d-e03c"/>
+            <infoLink name="Daemonic Aura" id="f409-a7a9-4068-5f5e" hidden="false" type="rule" targetId="3c43-59c1-6cb0-968d"/>
+            <infoLink name="Daemonic attacks" id="3e43-7c06-8c30-c995" hidden="false" type="rule" targetId="ab04-c24e-f729-0987"/>
+          </infoLinks>
+          <rules>
+            <rule name="Mixed Unit (Hellcannon)" id="cb85-7983-00ef-63bd" hidden="false" page="16" publicationId="d2ec-1dc7-f0d5-acbb">
+              <description>The Hellcannon is treated as a war machine with the exceptions below. The three crew form a unit with the Hellcannon. The unit has a 360° arc of sight. The Chaos Dwarfs act as war machine crew in combat, but will line up on either side of the Hellcannon instead of in front of it.
+
+When moving normally, the unit uses the Chaos Dwarfs&apos; Movement rate. When rampaging, the whole unit moves 2D6&quot;.</description>
+            </rule>
+            <rule name="Unpredictable" id="2f8f-0bdd-6027-5caf" hidden="false" page="17" publicationId="d2ec-1dc7-f0d5-acbb">
+              <description>On any roll of a Misfire, the Hellcannon does not fire as intended. Roll on the following chart:
+
+
+|D6|Result|
+|---|---|
+|1|The Hellcannon breaks its bonds, kills its crew and attempts to charge the nearest unit (see Rampage).|
+|2|The Hellcannon fights against its chains, shaking itself apart. It takes D6 wounds with no Armour or Ward saves allowed.|
+|3|The Daemon within the Hellcannon goes berserk. Remove all of its crew. It may immediately Spew Ichor.|
+|4|A massive backdraft from the Hellcannon sucks one of its crew into its furnace. Remove him.|
+|5|The Hellcannon&apos;s arcane workings snarl and grind; it loses its Daemonic Aura and any other ward saves for the rest of the battle.|
+|6|The Hellcannon&apos;s Chaotic energies go haywire, inflicting a wound on every magic user on the battlefield with no Armour or Ward saves allowed.|
+
+</description>
+            </rule>
+            <rule name="Rampage" id="0e7e-dff9-dceb-fe09" hidden="false" page="17" publicationId="d2ec-1dc7-f0d5-acbb">
+              <description>The Hellcannon may not declare charges. However, in the Compulsory Moves phase, roll 2D6. If the number rolled is equal to or greater than the distance between the Hellcannon and the nearest enemy unit, the Hellcannon will immediately charge into combat with that unit if possible.
+
+The charged unit may react as usual - treat the number rolled on the 2D6 as both the Hellcannon&apos;s maximum and failed charge range. When the Hellcannon is rampaging or in combat it may only Spew Ichor in the Shooting phase. It may never pursue.
+
+**Loss of Crew**
+If all crew are lost, the test for rampaging must be checked against all units, not just the enemy&apos;s - it may therefore charge friendly units. Furthermore, it will move the 2D6 result rolled towards the nearest unit even if it does not make contact with it.</description>
+            </rule>
+            <rule name="Firing the Hellcannon" id="fe84-df5f-ccfd-698e" hidden="false" page="17" publicationId="d2ec-1dc7-f0d5-acbb">
+              <description>The Hellcannon has a range of 60&quot;, and fires in exactly the same manner as a stone thrower, with the exceptions below. Because of its malign intellect, the first roll of the Scatter dice may be re-rolled each turn. Once the point of impact has been resolved any unit that is not Immune to Psychology and would be hit by the Hellcannon may elect to flee directly away from the Hellcannon before the hit is resolved.
+
+
+Place the small template with the central hole over the point of impact. Anything under the template takes a S10 hit, suffering D6 wounds (D6+2 against buildings and castle sections). Determine partial hits by rolling a dice, on a 4+ the model is affected. Then place the large template with the central hole over the same point. Any unit (friend or foe) with a model even partially under the large template must immediately pass a Leadership test or flee directly away from the Hellcannon. This does not affect troops which are Immune to Psychology.</description>
+            </rule>
+            <rule name="Spew Ichor" id="a64f-4fbc-2cb0-7dd9" hidden="false" page="17" publicationId="d2ec-1dc7-f0d5-acbb">
+              <description>Instead of firing normally, the Hellcannon can opt to spew out a great gout of body parts and daemonic ichor. Place the Flame template with the narrow end touching the Hellcannon&apos;s maw and the large end aimed at the target. Determine which models are hit as per a breath weapon, these take a Strength 6 hit. Any unit with a model even partially under the template must take a Terror test.</description>
+            </rule>
+          </rules>
+        </infoGroup>
+      </infoGroups>
+      <profiles>
+        <profile name="Hellcannon" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="b25e-ccb6-ae97-d8e4" publicationId="d2ec-1dc7-f0d5-acbb" page="16-17">
+          <characteristics>
+            <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">-</characteristic>
+            <characteristic name="WS" typeId="f95b-da01-0578-3bdc">4</characteristic>
+            <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">4</characteristic>
+            <characteristic name="S" typeId="b690-4bc0-bb73-267b">6</characteristic>
+            <characteristic name="T" typeId="8712-f56f-5b22-a720">7</characteristic>
+            <characteristic name="W" typeId="253a-9b00-4fde-8ac2">6</characteristic>
+            <characteristic name="I" typeId="dfff-363e-f72a-5a59">1</characteristic>
+            <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">4</characteristic>
+            <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">9</characteristic>
+            <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">3+</characteristic>
+            <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">5+</characteristic>
+            <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">6+3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Chaos Dwarf" hidden="false" id="6dc9-0fdd-fb8b-612a" subType="crew" page="16" publicationId="d2ec-1dc7-f0d5-acbb">
+          <profiles>
+            <profile name="Chaos Dwarf" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="96ce-a79a-a21a-4d85">
+              <characteristics>
+                <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">3</characteristic>
+                <characteristic name="WS" typeId="f95b-da01-0578-3bdc">4</characteristic>
+                <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">3</characteristic>
+                <characteristic name="S" typeId="b690-4bc0-bb73-267b">3</characteristic>
+                <characteristic name="T" typeId="8712-f56f-5b22-a720">4</characteristic>
+                <characteristic name="W" typeId="253a-9b00-4fde-8ac2">1</characteristic>
+                <characteristic name="I" typeId="dfff-363e-f72a-5a59">2</characteristic>
+                <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
+                <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">9</characteristic>
+                <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">5+</characteristic>
+                <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+                <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="b20f-33cc-bbf3-90ed" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="4ed5-49e1-ec35-e385" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Heavy Armour" hidden="false" id="f27b-3b0f-f2ee-fb6d" type="selectionEntry" targetId="dde4-0ba8-7b3c-57b7">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c3e7-58a7-d9da-d196" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="0f8e-7419-a770-4480" type="selectionEntry" targetId="abdb-bbd0-41b2-5dff"/>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="270"/>
+        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="6d80-f271-325a-4d92" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
     <selectionEntry id="a768-25ef-0845-6e1c" name="Braystaff" hidden="false" collective="false" import="true" type="upgrade">
