@@ -6605,7 +6605,7 @@ Any missile attack or spell targeted at Morghur will never effect him unless the
         </modifier>
       </modifiers>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="0-1 Hellcannon of Chaos" hidden="true" id="3c83-ca03-5f02-2f23">
+    <selectionEntry type="unit" import="true" name="0-1 Hellcannon of Chaos" hidden="true" id="3c83-ca03-5f02-2f23">
       <modifiers>
         <modifier type="set" value="false" field="hidden">
           <conditions>
@@ -6734,6 +6734,101 @@ Place the small template with the central hole over the point of impact. Anythin
       <constraints>
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="6d80-f271-325a-4d92" includeChildSelections="false"/>
       </constraints>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Flayerkin" hidden="true" id="bbb1-8b94-f9c7-cc8d" page="19" publicationId="d2ec-1dc7-f0d5-acbb">
+      <categoryLinks>
+        <categoryLink name="Special" hidden="false" id="ba19-8981-ff2e-f709" targetId="43cc-fc3f-35a7-8d03" primary="true"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="f1d2-edba-0f35-030a" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Flayerkin" hidden="false" id="ba93-c083-bcc4-d022">
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="13"/>
+            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="20" field="selections" scope="parent" shared="true" id="fc3e-44b8-84ea-20df" includeChildSelections="false"/>
+            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="e1d1-de50-60d2-e340" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Marauder" id="8497-fcd5-3fa7-a2d6" hidden="false" type="profile" targetId="c5cb-47f2-78e3-78d9">
+              <modifiers>
+                <modifier type="set" value="4" field="b690-4bc0-bb73-267b"/>
+                <modifier type="set" value="Flayerkin" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Command group" id="fddf-ec32-4c78-5ee3" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Wallcreeper" hidden="false" id="5428-651a-0f94-0a46">
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="14"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ea51-de50-8093-ca7d" includeChildSelections="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Chieftan" id="5646-12e0-cc2d-c790" hidden="false" type="profile" targetId="f04a-0250-eb10-8618">
+                  <modifiers>
+                    <modifier type="set" value="Wallcreeper" field="name"/>
+                    <modifier type="set" value="8" field="2d45-18fe-9eb3-b113"/>
+                    <modifier type="set" value="4" field="b690-4bc0-bb73-267b"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Weapons and Armour" id="043b-c4b3-bdb4-6383" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="5aa0-bb37-e823-eb26" type="selectionEntry" targetId="abdb-bbd0-41b2-5dff">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="81dc-fd0c-9bb1-7c6a" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6a81-a301-a118-73a5" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Two Hand Weapons" hidden="false" id="b942-6beb-d422-1312" type="selectionEntry" targetId="36a8-7bbb-d204-0314">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b026-d6ed-58d9-f9cc" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8c83-43bf-25a7-ea48" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Grappling Hooks" hidden="false" id="f3df-0637-a72b-e979" type="selectionEntry" targetId="6eac-4ed9-4511-ff14">
+              <modifiers>
+                <modifier type="set" value="0" field="ecfa-8486-4f6c-c249"/>
+              </modifiers>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2418-89de-0f49-4cd4" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <infoLinks>
+        <infoLink name="Scouts" id="db1d-23e0-70a9-c064" hidden="false" type="rule" targetId="889c-dfc3-95a5-2d30"/>
+        <infoLink name="Skirmishers" id="d7e0-eb89-e768-5409" hidden="false" type="rule" targetId="1945-ac89-9cc4-3537"/>
+        <infoLink name="Killing Blow" id="9a81-e1df-94af-286c" hidden="false" type="rule" targetId="e08e-1c7b-a667-f05b"/>
+      </infoLinks>
+      <rules>
+        <rule name="Human Chains" id="1c0a-f111-93f2-c1b3" hidden="false" page="19" publicationId="d2ec-1dc7-f0d5-acbb">
+          <description>Flayerkin may scale walls as if equipped with grappling hooks. If any non-mounted model reaches any wall or tower section that has had at least five Flayerkin scale its walls, it may climb up as if it was equipped with up to five ladders. Flayerkin ignore the penalty for attacking over a defended obstacle.</description>
+        </rule>
+      </rules>
     </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
@@ -10758,7 +10853,7 @@ Each enemy slain by this spell is turned into a Horror and added to the Horrors 
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">7</characteristic>
         <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
         <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
-        <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
+        <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
       </characteristics>
     </profile>
     <profile id="c035-4eec-56ad-366b" name="Sorcerer" publicationId="d750-ac7f-7465-d6d1" page="26" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
@@ -11293,5 +11388,20 @@ Each enemy slain by this spell is turned into a Horror and added to the Horrors 
         <categoryLink name="Core" hidden="false" id="5e2d-6596-31fc-df69" targetId="64bf-efb4-9978-26df" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink import="true" name="Vespero&apos;s Vendetta" hidden="false" id="b33e-7493-e7a6-ceb8" type="selectionEntry" targetId="a14c-79da-9d49-49b1"/>
+    <entryLink import="true" name="Al Muktar&apos;s Desert Dogs" hidden="false" id="b312-27a4-fd1b-f3d1" type="selectionEntry" targetId="22e7-a415-2e0e-a39f"/>
+    <entryLink import="true" name="Braganza&apos;s Besiegers" hidden="false" id="8b3e-cb15-3dae-3997" type="selectionEntry" targetId="63b1-1724-ee36-fa68"/>
+    <entryLink import="true" name="Bronzino&apos;s Galloper Guns" hidden="false" id="580d-2912-c65e-4388" type="selectionEntry" targetId="3f74-0a3b-478e-bac3"/>
+    <entryLink import="true" name="Golgfag&apos;s Ogres" hidden="false" id="3036-0b14-cc83-5148" type="selectionEntry" targetId="db7e-cfeb-cef5-d034"/>
+    <entryLink import="true" name="Leopold&apos;s Leopard Company" hidden="false" id="9a1e-b4a0-ecf9-aad9" type="selectionEntry" targetId="8848-c408-d8ff-97d9"/>
+    <entryLink import="true" name="Voland&apos;s Venators" hidden="false" id="aa76-7069-0de2-bc94" type="selectionEntry" targetId="41e8-0d1b-81fe-2013"/>
+    <entryLink import="true" name="The Alcantani Fellowship" hidden="false" id="8c7b-bb34-bc7a-fbe1" type="selectionEntry" targetId="1cbf-33eb-3a1b-5887"/>
+    <entryLink import="true" name="Ruglud&apos;s Armoured Orcs" hidden="false" id="43c8-c69a-bddb-8920" type="selectionEntry" targetId="bddc-2940-a680-e5be"/>
+    <entryLink import="true" name="Ricco&apos;s Republican Guard" hidden="false" id="db30-6af2-a055-0b38" type="selectionEntry" targetId="30d3-b878-f633-045a"/>
+    <entryLink import="true" name="Pirazzo&apos;s Lost Legion" hidden="false" id="2124-3df9-e265-75ea" type="selectionEntry" targetId="5351-f58d-361f-7a9d"/>
+    <entryLink import="true" name="Long Drong&apos;s Slayer Pirates" hidden="false" id="892e-e86e-1041-cc07" type="selectionEntry" targetId="8ebf-e19f-adea-1f75"/>
+    <entryLink import="true" name="Lumpin Croop&apos;s Fighting Cocks" hidden="false" id="a25b-e116-ef07-5f4b" type="selectionEntry" targetId="2a88-f6ee-0aee-21d9"/>
+    <entryLink import="true" name="Marksmen of Miragliano" hidden="false" id="cbc3-22ad-d028-b325" type="selectionEntry" targetId="8086-f18f-e1b0-4ae5"/>
+    <entryLink import="true" name="Oglah Khan&apos;s Wolfboys" hidden="false" id="aa65-8ad5-fc62-1b6e" type="selectionEntry" targetId="52ae-0b6a-da3c-c860"/>
   </entryLinks>
 </catalogue>

@@ -1821,6 +1821,21 @@
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7e33-907f-4232-38d6" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Grappling Hooks" hidden="false" id="6eac-4ed9-4511-ff14">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5eeb-1234-13f4-dba5" includeChildSelections="false"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Grappling Hooks" id="8fe8-c778-f37a-4429" hidden="false" type="rule" targetId="d189-8243-f5e2-a7be"/>
+      </infoLinks>
+      <modifiers>
+        <modifier type="increment" value="1" field="ecfa-8486-4f6c-c249">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="f679-dff7-370a-6050" name="Lore of Metal" hidden="false" collective="false" import="true" collapsible="true">
@@ -2388,6 +2403,21 @@ In order to employ all of its additional ranks as described, a unit must not hav
 
 
 Note that troops armed with weapons which fight in ranks can fight with the extra ranks only against opponents engaged to their front, not against enemies fighting in the formation&apos;s flank or rear.</description>
+    </rule>
+    <rule name="Grappling Hooks" id="d189-8243-f5e2-a7be" hidden="false" page="256" publicationId="315e-e3c4-08af-fd51">
+      <description>Grappling hooks with ropes are used by every race in the Warhammer world. They consist of a metal hook with a rope attached, often wound with steel cord to prevent it from being cut whilst the attacker is climbing up.
+
+Skirmishers, such as Skaven Gutter Runners, have made great use of grappling hooks in the past. The hooks are particularly suitable for smaller regiments for whom heavy and clumsy ladders would be impractical.
+
+**Carrying Grappling Hooks**
+Any infantry model that can skirmish may carry a grappling hook and rope. All models are restricted to one hook and rope each. This does not affect their movement in any way.
+
+**Scaling Walls**
+Only one model may climb up the rope to the battlements per grappling hook. This makes them less useful for big regiments, but small units of elite troops will find hooks and ropes ideal. See the special rules for assaulting ramparts for details.
+
+You must equip all the models in a unit with grappling hooks; you cannot choose to provide only part of the unit with them. Only units that can skirmish may buy grappling hooks and ropes.
+
+Points cost: 1 point per grappling book and rope.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>

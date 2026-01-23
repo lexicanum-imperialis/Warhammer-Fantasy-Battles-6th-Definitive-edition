@@ -246,6 +246,7 @@ The main additions are:
 
 ### Hordes of Chaos
 - [x] Hellcannon (SoC, p.16-17)
+- [x] Flayerkin (SoC, p.19)
 
 ## Sources consulted
 
