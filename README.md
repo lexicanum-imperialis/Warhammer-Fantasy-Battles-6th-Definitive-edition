@@ -26,7 +26,7 @@ The main additions are:
 - [x] High Elves
 - [x] The Empire
 - [x] Vampire Counts
-- [ ] Beast of Chaos
+- [x] Beast of Chaos
 - [ ] Hordes of Chaos (maybe with the Beast of Chaos)
 - [ ] Daemons of Chaos (with the Hordes of Chaos)
 - [ ] Dwarfs (at least the second ArmyBook)
