@@ -5443,6 +5443,21 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" value="-1" field="7f35-5f3f-42c9-be19">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="93f4-7522-86e9-7d45" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <comment>If NOT Daemonic Legion (SoC)</comment>
+        </modifier>
+        <modifier type="set" value="1" field="7f35-5f3f-42c9-be19">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="93f4-7522-86e9-7d45" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="force" childId="7dc4-fb32-003b-c289" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+          </repeats>
+          <comment>If Daemonic Legion (SoC)</comment>
+        </modifier>
       </modifiers>
       <infoLinks>
         <infoLink id="a82c-2bc3-00ec-2cc2" name="Flesh Hound" hidden="false" targetId="38eb-5cac-eaf2-4530" type="profile"/>
@@ -5489,6 +5504,9 @@
           </modifiers>
         </modifierGroup>
       </modifierGroups>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="force" shared="true" id="7f35-5f3f-42c9-be19" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry id="c417-3a98-07c2-08dd" name="Plague Bearers" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
@@ -5714,7 +5732,7 @@
         <categoryLink id="4b98-b796-6373-daa4" name="Tzeentch" hidden="false" targetId="9f21-dc73-dcc0-cb19" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="ac43-5816-8843-c323" name="Horrors" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry id="ac43-5816-8843-c323" name="Horrors" hidden="false" collective="false" import="true" type="model" sortIndex="1">
           <constraints>
             <constraint field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9742-a0c3-9b22-5ce4" type="min"/>
           </constraints>
@@ -7191,7 +7209,7 @@ Place the small template with the central hole over the point of impact. Anythin
         </rule>
       </rules>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Galrauch, First of the Chaos Dragons" hidden="false" id="1e7f-cdc1-418a-6f81" page="100-101" publicationId="d750-ac7f-7465-d6d1">
+    <selectionEntry type="unit" import="true" name="Galrauch, First of the Chaos Dragons" hidden="false" id="1e7f-cdc1-418a-6f81" page="100-101" publicationId="d750-ac7f-7465-d6d1">
       <categoryLinks>
         <categoryLink name="Special Characters" hidden="false" id="c745-b111-51e1-73bc" targetId="0644-bfcd-32c2-21dc" primary="true"/>
         <categoryLink name="Lord" hidden="false" id="74af-176e-c9bd-93b6" targetId="d024-d25b-a9b4-73b6" primary="false"/>
@@ -7292,6 +7310,32 @@ At the start of the Chaos player&apos;s turn, the Dragon must take another Leade
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Flamer unit" hidden="false" id="cbd5-d7df-e058-a9a8">
+      <categoryLinks>
+        <categoryLink name="Core" hidden="false" id="b2ad-2489-95a1-613f" targetId="64bf-efb4-9978-26df" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Flamer" hidden="true" id="285f-c47a-4e7d-d288" collective="false" targetId="4fff-782b-f3b0-1e10" type="selectionEntry">
+          <infoLinks>
+            <infoLink name="Skirmishers" id="d36c-523f-2837-2f43" hidden="false" targetId="1945-ac89-9cc4-3537" type="rule"/>
+          </infoLinks>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="93f4-7522-86e9-7d45" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="20" field="ec2b-d77f-3dba-84ae"/>
+          </modifiers>
+          <categoryLinks>
+            <categoryLink name="Core" hidden="false" id="5e2d-6596-31fc-df69" targetId="64bf-efb4-9978-26df" primary="true"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="b686-37bd-ef0a-c005" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
@@ -9418,13 +9462,45 @@ At the start of the Chaos player&apos;s turn, the Dragon must take another Leade
     </selectionEntry>
     <selectionEntry id="4fff-782b-f3b0-1e10" name="Flamer" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b686-37bd-ef0a-c005" type="max"/>
+        <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="ec2b-d77f-3dba-84ae"/>
       </constraints>
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="25"/>
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <infoLinks>
+        <infoLink name="Flamer" id="5bbe-11a5-c928-66ef" hidden="false" type="profile" targetId="45b5-0006-08f3-9c5e">
+          <modifiers>
+            <modifier type="increment" value="1" field="2d45-18fe-9eb3-b113">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="93f4-7522-86e9-7d45" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Accompany Horrors" id="ceae-d981-36bc-5dfa" hidden="false" type="rule" targetId="234c-7559-7bdf-a9b9">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="93f4-7522-86e9-7d45" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Daemonic attacks" id="ff72-024d-12a4-7f8d" hidden="false" type="rule" targetId="ab04-c24e-f729-0987"/>
+        <infoLink name="Daemonic Aura" id="33ac-588c-16ed-6bde" hidden="false" type="rule" targetId="3c43-59c1-6cb0-968d"/>
+        <infoLink name="Single Model" id="56f0-04d3-2ca9-028b" hidden="false" type="rule" targetId="3205-dd5a-47ba-daee">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="93f4-7522-86e9-7d45" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Flames of Tzeentch" id="d731-2f7c-13a3-04c7" hidden="false" targetId="5287-249b-1fcd-46af" type="rule"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry id="c79c-63cd-a01f-2152" name="Exalted Daemon of Khorne" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -10722,6 +10798,12 @@ Each enemy slain by this spell is turned into a Horror and added to the Horrors 
     <rule id="d63d-9043-54ca-3d2e" name="Tongue Attack" hidden="false">
       <description>Attacks from the mount count as poisoned attacks. In addition the mount always strikes first in combat. If both combatitent have this ability then Iniative order. These rules are for the mount only, not the rider.</description>
     </rule>
+    <rule name="Accompany Horrors" id="234c-7559-7bdf-a9b9" hidden="false" publicationId="d750-ac7f-7465-d6d1" page="40">
+      <description>Flamers must be deployed at the same time and within 5&quot; of the unit of Horrors they have been bought with. After that they are free to move as they like, and each counts as a separate unit for the rest of the game (including for the purpose of calculating Victory points). If a Flamer is more than 5&quot; away from a unit of Horrors at the end of any Chaos turn, it must immediately take a Leadership test. If the test is failed, the daemon is destroyed.</description>
+    </rule>
+    <rule name="Single Model" id="3205-dd5a-47ba-daee" hidden="false" publicationId="d750-ac7f-7465-d6d1" page="40">
+      <description>This model is treated as a character model on foot for the purposes of movement and targeting it with missiles. Models have a Unit Strength of 1 and can never join unit or characters.</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="d2eb-d24c-e0f5-f716" name="Beastlord" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
@@ -11727,8 +11809,8 @@ Each enemy slain by this spell is turned into a Horror and added to the Horrors 
         <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">8</characteristic>
         <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
-        <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
-        <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
+        <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">5+</characteristic>
+        <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
       </characteristics>
     </profile>
     <profile id="45b5-0006-08f3-9c5e" name="Flamer" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
@@ -11743,8 +11825,8 @@ Each enemy slain by this spell is turned into a Horror and added to the Horrors 
         <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">2</characteristic>
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">8</characteristic>
         <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
-        <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
-        <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
+        <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">5+</characteristic>
+        <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
       </characteristics>
     </profile>
     <profile id="d361-81b3-6817-4de0" name="Screamers of Tzeentch" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
@@ -11863,21 +11945,6 @@ Each enemy slain by this spell is turned into a Horror and added to the Horrors 
     <catalogueLink type="catalogue" name="Mercenaries" id="b824-6470-4943-f4bc" targetId="fc47-8392-a6c8-452a"/>
   </catalogueLinks>
   <entryLinks>
-    <entryLink import="true" name="Flamer" hidden="true" id="285f-c47a-4e7d-d288" collective="false" targetId="4fff-782b-f3b0-1e10" type="selectionEntry">
-      <infoLinks>
-        <infoLink name="Flames of Tzeentch" id="d36c-523f-2837-2f43" hidden="false" targetId="5287-249b-1fcd-46af" type="rule"/>
-      </infoLinks>
-      <modifiers>
-        <modifier type="set" value="false" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="93f4-7522-86e9-7d45" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <categoryLinks>
-        <categoryLink name="Core" hidden="false" id="5e2d-6596-31fc-df69" targetId="64bf-efb4-9978-26df" primary="true"/>
-      </categoryLinks>
-    </entryLink>
     <entryLink import="true" name="Vespero&apos;s Vendetta" hidden="false" id="b33e-7493-e7a6-ceb8" type="selectionEntry" targetId="a14c-79da-9d49-49b1"/>
     <entryLink import="true" name="Al Muktar&apos;s Desert Dogs" hidden="false" id="b312-27a4-fd1b-f3d1" type="selectionEntry" targetId="22e7-a415-2e0e-a39f"/>
     <entryLink import="true" name="Braganza&apos;s Besiegers" hidden="false" id="8b3e-cb15-3dae-3997" type="selectionEntry" targetId="63b1-1724-ee36-fa68"/>
