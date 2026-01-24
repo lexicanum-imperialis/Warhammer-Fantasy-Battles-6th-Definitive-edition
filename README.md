@@ -247,6 +247,7 @@ The main additions are:
 ### Hordes of Chaos
 - [x] Hellcannon (SoC, p.16-17)
 - [x] Flayerkin (SoC, p.19)
+- [x] Archaon, Lord of the End of Times (HC-AB, p.98-99)
 
 ## Sources consulted
 
