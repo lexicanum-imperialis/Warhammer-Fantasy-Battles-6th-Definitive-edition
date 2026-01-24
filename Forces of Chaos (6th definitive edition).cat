@@ -32,8 +32,15 @@
     </categoryEntry>
     <categoryEntry id="45de-113d-9cae-681f" name="Chosen" hidden="false">
       <constraints>
-        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="804a-c59b-9d63-07a1" type="max"/>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="804a-c59b-9d63-07a1" type="max"/>
       </constraints>
+      <modifiers>
+        <modifier type="set" value="-1" field="804a-c59b-9d63-07a1">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="f1d2-edba-0f35-030a" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </categoryEntry>
     <categoryEntry id="bcee-5517-54d0-5b21" name="Chosen Knights" hidden="false">
       <constraints>
@@ -2899,10 +2906,14 @@
           <entryLinks>
             <entryLink import="true" name="Chaos Armour*" hidden="true" id="a493-3566-ca83-5d55" collective="false" targetId="9b37-1817-ce12-f693" type="selectionEntry">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e3e9-77cc-0637-fe2b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2797-4704-ed67-bf60" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="e3e9-77cc-0637-fe2b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
               <modifiers>
+                <modifier type="set" value="1" field="e3e9-77cc-0637-fe2b">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="1782-3791-0254-736f" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
                 <modifier type="set" value="false" field="hidden">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="parent" childId="1782-3791-0254-736f" shared="true" includeChildSelections="true"/>
@@ -2910,7 +2921,7 @@
                 </modifier>
               </modifiers>
             </entryLink>
-            <entryLink import="true" name="Heavy Armour" hidden="false" id="478e-4eaa-b2c4-4242" collective="false" targetId="dde4-0ba8-7b3c-57b7" type="selectionEntry">
+            <entryLink import="true" name="Heavy Armour" hidden="false" id="478e-4eaa-b2c4-4242" collective="false" targetId="dde4-0ba8-7b3c-57b7" type="selectionEntry" sortIndex="1">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="aed9-1bec-f69f-3fb1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="72b3-15fa-0fe4-83c8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -5127,8 +5138,7 @@
           <entryLinks>
             <entryLink import="true" name="Chaos Armour*" hidden="true" id="39f2-93f1-c530-c4d2" collective="false" targetId="9b37-1817-ce12-f693" type="selectionEntry">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0fde-41a8-85bf-520f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f34c-caf7-a8e0-a2f2" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="0fde-41a8-85bf-520f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
               <modifiers>
                 <modifier type="set" value="false" field="hidden">
@@ -5136,9 +5146,14 @@
                     <condition type="atLeast" value="1" field="selections" scope="parent" childId="95c3-133e-8f42-88b9" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="1" field="0fde-41a8-85bf-520f">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="95c3-133e-8f42-88b9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </entryLink>
-            <entryLink import="true" name="Heavy Armour" hidden="false" id="4438-dbbf-7ab2-d870" collective="false" targetId="dde4-0ba8-7b3c-57b7" type="selectionEntry">
+            <entryLink import="true" name="Heavy Armour" hidden="false" id="4438-dbbf-7ab2-d870" collective="false" targetId="dde4-0ba8-7b3c-57b7" type="selectionEntry" sortIndex="2">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dd58-66c7-a976-f0c2" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3ef6-81a8-b722-5cd9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -5157,7 +5172,7 @@
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b7be-ac55-cb73-f772" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Hand Weapon" hidden="false" id="67b7-cc57-8904-52fb" collective="false" targetId="abdb-bbd0-41b2-5dff" type="selectionEntry">
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="67b7-cc57-8904-52fb" collective="false" targetId="abdb-bbd0-41b2-5dff" type="selectionEntry" sortIndex="1">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="80c2-5552-f844-f11a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2ca8-5bda-6d25-56ff" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -9088,6 +9103,11 @@ Place the small template with the central hole over the point of impact. Anythin
     <selectionEntry type="upgrade" import="true" name="Chosen" hidden="false" id="365d-3b3c-4094-b18a" collective="false">
       <modifiers>
         <modifier type="add" value="45de-113d-9cae-681f" field="category"/>
+        <modifier type="set" value="-1" field="ae32-f72f-3b11-74af">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="f1d2-edba-0f35-030a" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2053-92ec-4a16-012c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
