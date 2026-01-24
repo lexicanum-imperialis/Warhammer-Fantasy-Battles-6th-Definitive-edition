@@ -567,6 +567,13 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="0" field="01a5-106d-f6e8-560b">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="1b7c-2c90-6d96-28c9" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="b76c-6bad-4650-dbb0" name="Dispel Scroll (one use only)" publicationId="315e-e3c4-08af-fd51" page="154" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
@@ -1836,6 +1843,14 @@
         </modifier>
       </modifiers>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Scythed weels" hidden="false" id="a142-2140-f96b-fd34">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a227-dcf6-3004-f1c6" includeChildSelections="false"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Scythed weels" id="7cab-8397-1431-78d1" hidden="false" type="profile" targetId="98ec-08ab-4968-e9ef"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="f679-dff7-370a-6050" name="Lore of Metal" hidden="false" collective="false" import="true" collapsible="true">
@@ -1982,7 +1997,8 @@ A unit must make a Terror test at the start of its turn if there is an enemy whi
       <description>Subject to Stupidity</description>
     </rule>
     <rule id="e930-0b71-2fef-3937" name="Fly" hidden="false">
-      <description>Unit can fly</description>
+      <description>Unit can fly
+https://6th.whfb.app/flyers</description>
     </rule>
     <rule id="494d-d57a-c1fa-b48e" name="Scaly Skin 3+" hidden="false">
       <description>Scaly Skin gives 3+ saving throw</description>
@@ -2719,6 +2735,15 @@ The spell cannot affect Undead, Chaos Daemons, or buildings and similar models, 
 
 
 The spell cannot affect Undead targets, Chaos Daemons or Unbreakable units. Units, immune to psychology are not affected either.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Scythed weels" typeId="7889-42d9-70a0-3ea9" typeName="Weapon" hidden="false" id="98ec-08ab-4968-e9ef" page="128" publicationId="315e-e3c4-08af-fd51">
+      <characteristics>
+        <characteristic name="Range" typeId="3107-4d1e-9a51-6564">CC</characteristic>
+        <characteristic name="Strength" typeId="6fe4-1ebb-cb04-1378"/>
+        <characteristic name="Damage" typeId="6f2f-d612-52ef-1633">D6</characteristic>
+        <characteristic name="Special Rules" typeId="a21a-cdc0-4b13-b236"/>
+        <characteristic name="Saves" typeId="8014-a8b2-15c3-da95"/>
       </characteristics>
     </profile>
   </sharedProfiles>
