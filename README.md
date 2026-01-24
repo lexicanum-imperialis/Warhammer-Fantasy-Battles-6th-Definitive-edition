@@ -26,9 +26,9 @@ The main additions are:
 - [x] High Elves
 - [x] The Empire
 - [x] Vampire Counts
-- [x] Beast of Chaos
-- [ ] Hordes of Chaos (maybe with the Beast of Chaos)
-- [ ] Daemons of Chaos (with the Hordes of Chaos)
+- [x] Beast of Chaos (inside `Forces of Chaos`)
+- [x] Hordes of Chaos (inside `Forces of Chaos`)
+- [x] Daemons of Chaos (inside `Forces of Chaos`)
 - [ ] Dwarfs (at least the second ArmyBook)
 - [ ] Kislev
 - [x] Dogs of War (WIP)
@@ -193,6 +193,27 @@ The main additions are:
 - [x] Neferata, the Queen of Mysteries (webGW-US)
 - [x] Sethep, the Merciless (WD#258, p.89)
 
+### Beasts of Chaos
+- [x] Khazrak the One-Eye (BC-AB, p.68-69)
+- [x] Gorthor the Beastlord (BC-AB, p.70-71)
+- [x] Morghur, Master of Skulls (BC-AB, p.72-73)
+
+### Hordes of Chaos
+- [x] Hellcannon (SoC, p.16-17)
+- [x] Flayerkin (SoC, p.19)
+- [x] Archaon, Lord of the End of Times (HC-AB, p.98-99)
+- [x] Galrauch, First pf the Chaos Dragons (HC-AB, p.100-101)
+- [x] BloodCrusher (SoC, p.30)
+- [x] PlagueRider (SoC, p.30)
+- [x] ChangeBringer (SoC, p.30)
+- [x] PleasureSeeker (SoC, p.30)
+- [x] Daemonic Chariot of Khorne (SoC, p.31)
+- [x] Daemonic Chariot of Nurgle (SoC, p.31)
+- [x] Daemonic Chariot of Tzeentch (SoC, p.31)
+- [x] Daemonic Chariot of Slaanesh (SoC, p.31)
+- [x] Daemonic Herald (SoC, p.28)
+- [x] Daemon-beast of Nurgle (SoC, p.29)
+
 ## Alternative lists included
 - [x] Clan Eshin (SKV-AB)
 - [x] Clan Eshin (SoC)
@@ -238,17 +259,9 @@ The main additions are:
 - [x] Army of Sylvania (TdC, p.88-89)
 - [ ] Vampire Coast
 - [x] Army of the LICHEMASTER (WD#309-UK)
+- [x] Archaon's Horde (SoC, p.18-23)
+- [x] Daemonic Legion (SoC, p.27-32)
 
-### Beasts of Chaos
-- [x] Khazrak the One-Eye (BC-AB, p.68-69)
-- [x] Gorthor the Beastlord (BC-AB, p.70-71)
-- [x] Morghur, Master of Skulls (BC-AB, p.72-73)
-
-### Hordes of Chaos
-- [x] Hellcannon (SoC, p.16-17)
-- [x] Flayerkin (SoC, p.19)
-- [x] Archaon, Lord of the End of Times (HC-AB, p.98-99)
-- [x] Galrauch, First pf the Chaos Dragons (HC-AB, p.100-101)
 
 ## Sources consulted
 
