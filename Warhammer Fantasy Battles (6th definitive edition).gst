@@ -2419,6 +2419,15 @@ You must equip all the models in a unit with grappling hooks; you cannot choose 
 
 Points cost: 1 point per grappling book and rope.</description>
     </rule>
+    <rule name="Breath Weapons" id="c61b-e026-e2af-20de" hidden="false" page="114" publicationId="315e-e3c4-08af-fd51">
+      <description>Fiery Dragons and the dreaded Hydras and Chimeras of the Chaos Wastes, as well as some even more bizarre creatures, have the ability to breathe fire, noxious gas, lightning or even stranger breath weapons.
+
+A model with a breath weapon may use it in the Shooting phase. Use the Flame template, placing the broad end over your intended target as you wish and the narrow end next to the creature&apos;s head. Any model that lies completely under the template is hit automatically - models whose bases lie partially under the template are hit on a 4+. The strength and any special effects of the breath weapon will be detailed in the entry for each individual creature. Characters under the template are eligible for &apos;Look out, Sir!&apos; rolls if they are in a unit.
+
+Diagram &lt;breath-attacks&gt;: _The teardrop-shaped template is placed with the thin end at the Dragon&apos;s mouth and the wide end over the target unit. In this example, four models are completely under the template and are hit automatically. Eleven models are partially covered and are hit on a 4+._
+
+Breath weapons may not be used as a stand &amp; shoot charge reaction, and neither can they be used in close combat. A creature with a breath weapon needs time to belch forth its flames!</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="5556-38ea-b278-4a8f" name="Hand Weapon" hidden="false" typeId="7889-42d9-70a0-3ea9" typeName="Weapon" page="91" publicationId="315e-e3c4-08af-fd51">

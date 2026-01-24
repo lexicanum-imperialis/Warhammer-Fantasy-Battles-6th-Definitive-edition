@@ -5916,10 +5916,6 @@
           </characteristics>
         </profile>
       </profiles>
-      <infoLinks>
-        <infoLink name="Magical Resistance (2)" id="23f5-7d54-a651-be0b" hidden="false" type="rule" targetId="df8d-7c05-c47b-9cd6"/>
-        <infoLink name="Immune to Psycology " id="551b-0cfa-81b5-50be" hidden="false" type="rule" targetId="ff2b-8db6-64fa-e9ca"/>
-      </infoLinks>
       <categoryLinks>
         <categoryLink id="c592-942b-c88f-167e" name="Special Characters" hidden="false" targetId="0644-bfcd-32c2-21dc" primary="true"/>
         <categoryLink id="6d4f-7fc5-58b3-61b2" name="Lord" hidden="false" targetId="d024-d25b-a9b4-73b6" primary="false"/>
@@ -5927,28 +5923,6 @@
         <categoryLink id="62be-9613-0be5-14d7" name="Chaos Undivided" hidden="false" targetId="6fdb-6843-6499-2a04" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="42a4-7843-8279-9ac4" name="Level 2 Sorcer of Tzeentch" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae3a-a2bf-0d17-2d0c" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f0f2-2fed-6ccf-8fe7" type="max"/>
-          </constraints>
-          <costs>
-            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="2"/>
-            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="1"/>
-            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="d123-be07-7731-ae05" name="Nurgles resistance to attacks" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0e22-0363-e099-acfe" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="97b3-a4d1-2380-5cc6" type="max"/>
-          </constraints>
-          <costs>
-            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
-          </costs>
-        </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Dorghar, Steed of the Apocalypse" hidden="false" id="a621-aa59-873d-ecb2">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="915a-f4c5-0a55-75ef" includeChildSelections="false"/>
@@ -5983,7 +5957,7 @@
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="ccaa-3a47-ca4c-2528" name="General" hidden="false" collective="false" import="true" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry">
+        <entryLink id="ccaa-3a47-ca4c-2528" name="General" hidden="false" collective="false" import="true" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry" sortIndex="1">
           <modifiers>
             <modifier type="set" field="5b30-f604-aa3b-1c34" value="0">
               <conditions>
@@ -6008,22 +5982,12 @@
             <categoryLink id="f4c7-a806-9486-48d5" name="General" hidden="false" targetId="a37e-7207-de6d-acb0" primary="false"/>
             <categoryLink id="232e-5d69-96d0-0260" name="Mortal General" hidden="false" targetId="a878-7899-6700-e5fb" primary="false"/>
           </categoryLinks>
-          <selectionEntries>
-            <selectionEntry id="0b65-f972-6a07-e4c5" name="Extra hero slot" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="455a-c193-85fe-db32" type="min"/>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5064-5a23-ce53-eeb3" type="max"/>
-              </constraints>
-              <categoryLinks>
-                <categoryLink id="b88c-6111-7676-a372" name="Heroes" hidden="false" targetId="c16b-f319-2c62-2c12" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
+        </entryLink>
+        <entryLink import="true" name="Extra Hero choice" hidden="false" id="5935-1212-fbce-9241" type="selectionEntry" targetId="3e25-986a-693f-a975" sortIndex="2">
+          <modifiers>
+            <modifier type="set" value="2" field="5d46-303d-cba5-3690"/>
+            <modifier type="set" value="2" field="b565-1f72-9590-cf93"/>
+          </modifiers>
         </entryLink>
       </entryLinks>
       <costs>
@@ -6044,7 +6008,7 @@
         </modifier>
       </modifiers>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Magic Items" id="2de3-9ffb-37cc-699f" hidden="false">
+        <selectionEntryGroup name="Magic Items" id="2de3-9ffb-37cc-699f" hidden="false" sortIndex="3">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Crown of Domination (Enchanted Item)" hidden="false" id="6b3b-a71e-c2d2-17ab" page="99" publicationId="d750-ac7f-7465-d6d1">
               <constraints>
@@ -6117,11 +6081,21 @@ Attacks that wound automatically, always 2+, etc, will still need a 3+ to wound 
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup name="The Sword of Chaos (Warband)" id="bcc6-cb7e-c3f9-653f" hidden="false">
+        <selectionEntryGroup name="The Sword of Chaos (Warband)" id="bcc6-cb7e-c3f9-653f" hidden="false" collapsible="true">
           <selectionEntries>
             <selectionEntry type="unit" import="true" name="Knights of Chaos" hidden="false" id="9bef-0af9-180a-756c" collective="false">
               <modifiers>
                 <modifier type="set" value="The Sword of Chaos (Knights of Chaos)" field="name"/>
+                <modifier type="add" value="43cc-fc3f-35a7-8d03" field="category">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="f1d2-edba-0f35-030a" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="add" value="64bf-efb4-9978-26df" field="category">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="f1d2-edba-0f35-030a" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <infoLinks>
                 <infoLink name="Knight" id="e181-428a-7c23-eea4" hidden="false" targetId="9bae-a61e-8098-343d" type="profile">
@@ -6134,9 +6108,6 @@ Attacks that wound automatically, always 2+, etc, will still need a 3+ to wound 
                   </modifiers>
                 </infoLink>
               </infoLinks>
-              <categoryLinks>
-                <categoryLink name="Special" hidden="false" id="5869-3b12-0bb3-aed4" targetId="43cc-fc3f-35a7-8d03" primary="true"/>
-              </categoryLinks>
               <selectionEntries>
                 <selectionEntry type="model" import="true" name="Knights of Chaos" hidden="false" id="f6a7-41c5-1ec3-87b3" collective="false">
                   <constraints>
@@ -6150,7 +6121,7 @@ Attacks that wound automatically, always 2+, etc, will still need a 3+ to wound 
                 </selectionEntry>
               </selectionEntries>
               <entryLinks>
-                <entryLink import="true" name="Chaos Steed" hidden="false" id="cb73-04dc-4760-b2fc" collective="false" targetId="d878-485c-365a-29ae" type="selectionEntry">
+                <entryLink import="true" name="Chaos Steed" hidden="false" id="cb73-04dc-4760-b2fc" collective="false" targetId="d878-485c-365a-29ae" type="selectionEntry" collapsible="true">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c97f-6ba3-97c1-4386" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4d0c-2924-b79a-42f7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -6197,7 +6168,7 @@ Attacks that wound automatically, always 2+, etc, will still need a 3+ to wound 
                 <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
               </costs>
               <selectionEntryGroups>
-                <selectionEntryGroup name="Weapons and Armour" id="2438-d430-530d-0191" hidden="false">
+                <selectionEntryGroup name="Weapons and Armour" id="2438-d430-530d-0191" hidden="false" collapsible="true">
                   <entryLinks>
                     <entryLink import="true" name="Chaos Armour*" hidden="false" id="7317-5a23-9c51-fab1" collective="false" targetId="9b37-1817-ce12-f693" type="selectionEntry">
                       <constraints>
@@ -6219,7 +6190,7 @@ Attacks that wound automatically, always 2+, etc, will still need a 3+ to wound 
                     </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
-                <selectionEntryGroup name="Command group" id="4321-fbb0-3745-8b6a" hidden="false">
+                <selectionEntryGroup name="Command group" id="4321-fbb0-3745-8b6a" hidden="false" collapsible="true">
                   <selectionEntries>
                     <selectionEntry type="upgrade" import="true" name="Standard Bearer" hidden="false" id="5bb2-f615-831d-2c0d" collective="false">
                       <constraints>
@@ -6284,18 +6255,48 @@ Attacks that wound automatically, always 2+, etc, will still need a 3+ to wound 
             </rule>
           </rules>
         </selectionEntryGroup>
-      </selectionEntryGroups>
-      <rules>
-        <rule name="Chosen of the Gods" id="5f11-17b4-b46b-8d9f" hidden="false" page="99" publicationId="d750-ac7f-7465-d6d1">
-          <description>He counts as having the Marks of all the Chaos gods for the purposes of choosing his army (ie, you can include units with any of the Marks, or any Daemonic troop , etc).
+        <selectionEntryGroup name="Chosen of the gods" id="99d8-c23c-38d3-c21a" hidden="false">
+          <infoLinks>
+            <infoLink name="Magical Resistance (2)" id="23f5-7d54-a651-be0b" hidden="false" type="rule" targetId="df8d-7c05-c47b-9cd6"/>
+            <infoLink name="Immune to Psycology " id="551b-0cfa-81b5-50be" hidden="false" type="rule" targetId="ff2b-8db6-64fa-e9ca"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Level 2 Sorcer of Tzeentch" hidden="false" id="42a4-7843-8279-9ac4" collective="false">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ae3a-a2bf-0d17-2d0c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f0f2-2fed-6ccf-8fe7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="2"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="1"/>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Nurgles resistance to attacks" hidden="false" id="d123-be07-7731-ae05" collective="false">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0e22-0363-e099-acfe" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="97b3-a4d1-2380-5cc6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <rules>
+            <rule name="Chosen of the Gods" id="5f11-17b4-b46b-8d9f" hidden="false" page="99" publicationId="d750-ac7f-7465-d6d1">
+              <description>He counts as having the Marks of all the Chaos gods for the purposes of choosing his army (ie, you can include units with any of the Marks, or any Daemonic troop , etc).
 ln addition, he has the following special rules:
 - Magic Resistance (2);
 - Level 2 Tzeentch Sorcerer;
 - Immune to Psychology.
 
 Attacks, spell effects and anything that does not affect or has a reduced effect against followers of Nurgle (for example, the Skaven Plague Censer) also have no effect or reduced effect on Archaon.</description>
-        </rule>
-      </rules>
+            </rule>
+          </rules>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <modifierGroups>
         <modifierGroup type="and">
           <modifiers>
@@ -7189,6 +7190,101 @@ Place the small template with the central hole over the point of impact. Anythin
           <description>Flayerkin may scale walls as if equipped with grappling hooks. If any non-mounted model reaches any wall or tower section that has had at least five Flayerkin scale its walls, it may climb up as if it was equipped with up to five ladders. Flayerkin ignore the penalty for attacking over a defended obstacle.</description>
         </rule>
       </rules>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Galrauch, First pf the Chaos Dragons" hidden="false" id="1e7f-cdc1-418a-6f81" page="100-101" publicationId="d750-ac7f-7465-d6d1">
+      <categoryLinks>
+        <categoryLink name="Special Characters" hidden="false" id="c745-b111-51e1-73bc" targetId="0644-bfcd-32c2-21dc" primary="true"/>
+        <categoryLink name="Lord" hidden="false" id="74af-176e-c9bd-93b6" targetId="d024-d25b-a9b4-73b6" primary="false"/>
+        <categoryLink name="Characters" hidden="false" id="a67a-d48a-055e-e0ef" targetId="7a1c-d611-c2dc-def1" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="696"/>
+        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+      </costs>
+      <profiles>
+        <profile name="Galrauch" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="88d1-5a51-d0b1-eed7" page="100-101" publicationId="d750-ac7f-7465-d6d1">
+          <characteristics>
+            <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">6</characteristic>
+            <characteristic name="WS" typeId="f95b-da01-0578-3bdc">6</characteristic>
+            <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">0</characteristic>
+            <characteristic name="S" typeId="b690-4bc0-bb73-267b">6</characteristic>
+            <characteristic name="T" typeId="8712-f56f-5b22-a720">6</characteristic>
+            <characteristic name="W" typeId="253a-9b00-4fde-8ac2">6</characteristic>
+            <characteristic name="I" typeId="dfff-363e-f72a-5a59">6</characteristic>
+            <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">6</characteristic>
+            <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">10</characteristic>
+            <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">3+</characteristic>
+            <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+            <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">6</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Fly" id="2907-80eb-80e6-b18d" hidden="false" targetId="e930-0b71-2fef-3937" type="rule"/>
+        <infoLink name="Scaly Skin 3+" id="c9f9-5dbb-80ae-3670" hidden="false" targetId="494d-d57a-c1fa-b48e" type="rule"/>
+        <infoLink name="Terror" id="d671-be44-3d36-f942" hidden="false" targetId="96f0-c50f-e59e-85fa" type="rule"/>
+        <infoLink name="Two Breath Weapons" id="dc5b-9687-9015-aed0" hidden="false" targetId="b0f1-feca-2a7b-feba" type="rule"/>
+        <infoLink name="Large Target" id="1fb8-65be-678b-4b3f" hidden="false" type="rule" targetId="4463-1b38-aa4d-e03c"/>
+        <infoLink name="Breath Weapons" id="03d9-4eac-b21c-2dd0" hidden="false" type="rule" targetId="c61b-e026-e2af-20de"/>
+        <infoLink name="Daemonic Aura" id="10c2-df78-b9bd-af14" hidden="false" type="rule" targetId="3c43-59c1-6cb0-968d"/>
+      </infoLinks>
+      <rules>
+        <rule name="Spirit of Galrauch" id="00ca-3c22-f1ed-9669" hidden="false" page="101" publicationId="d750-ac7f-7465-d6d1">
+          <description>At the beginning of each turn of the controlling player, Galrauch must take a Leadership test. If the test is passed, Galrauch will be controlled as normal, but if the test is failed, the ancient spirit of the Dragon will surface again for an instant.
+
+**The test failed by rolling an 11 (or less, if any modifier applies): Struggle.**
+
+
+The Dragon will not move, cast spells or use his Breath Weapons. In the Close Combat phase he will direct half of his attack against himself. If the Dragon is already engaged in close combat, the remaining half of his attacks are carried out as normal, as decided by the controlling player. The wounds caused by the Dragon against himself are added to the enemy&apos;s score when working out the combat&apos;s resolution.
+
+**The test failed by rolling a natural 12 (ie, double 6, regardless of modifiers): Revenge!**
+
+The Dragon will not move, cast spells or use his breath weapons. In the Close Combat phase he will not attack at all.
+
+In his opponent&apos;s turn, the Dragon will be controlled by his opponent exactly as if he was his own. If the Dragon was already engaged in close combat with his opponent&apos;s troops, he can be moved out of combat freely.
+
+He cannot use the Breath of Change when controlled by an opponent in this way.
+
+
+At the start of the Chaos player&apos;s turn, the Dragon must take another Leadership test as normal, and he will return to the original owner&apos;s control if he passes.</description>
+        </rule>
+      </rules>
+      <entryLinks>
+        <entryLink import="true" name="Magic Level 4" hidden="false" id="c2af-26ab-0b30-ff07" type="selectionEntry" targetId="fc28-3af2-d37a-d07e"/>
+        <entryLink import="true" name="Extra Hero choice" hidden="false" id="a25b-92fa-dc4d-31e6" type="selectionEntry" targetId="3e25-986a-693f-a975"/>
+        <entryLink import="true" name="Extra Rare choice" hidden="false" id="dd32-6ec2-b823-383e" type="selectionEntry" targetId="dde8-eb28-cacb-34a3"/>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Daemonic Gifts" id="7859-c8d0-8980-077c" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Tzeentch&apos;s Will" hidden="false" id="8018-63bc-df36-4a61" type="selectionEntry" targetId="3fce-f975-0d09-6e14">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5bb7-0c02-b0d3-9fe7" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Master of Sorcery" hidden="false" id="9ab0-9e66-9936-36f3" type="selectionEntry" targetId="80a7-fe28-6041-19dd">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e2fe-6cc5-a2cb-f5ab" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Spell Destroyer" hidden="false" id="9e8c-bef4-492d-3374" type="selectionEntry" targetId="df40-9cb2-ef99-51c2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f447-b30e-4c57-e5d1" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
@@ -8674,7 +8770,7 @@ Place the small template with the central hole over the point of impact. Anythin
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="d878-485c-365a-29ae" name="Chaos Steed" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="d878-485c-365a-29ae" name="Chaos Steed" hidden="false" collective="false" import="true" type="upgrade" collapsible="true">
       <constraints>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d8bd-f4b2-0b44-45bc" type="max"/>
       </constraints>
@@ -8697,6 +8793,8 @@ Place the small template with the central hole over the point of impact. Anythin
         <infoLink id="0d8b-eb20-5d18-a962" name="Fly" hidden="false" targetId="e930-0b71-2fef-3937" type="rule"/>
         <infoLink id="bd53-cc27-3b83-2131" name="Scaly Skin 3+" hidden="false" targetId="494d-d57a-c1fa-b48e" type="rule"/>
         <infoLink id="0d00-bcb6-feef-a318" name="Two Breath Weapons" hidden="false" targetId="b0f1-feca-2a7b-feba" type="rule"/>
+        <infoLink name="Large Target" id="a814-98ce-b682-fd75" hidden="false" type="rule" targetId="4463-1b38-aa4d-e03c"/>
+        <infoLink name="Breath Weapons" id="5af8-ddc4-9446-176f" hidden="false" type="rule" targetId="c61b-e026-e2af-20de"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
@@ -10479,7 +10577,7 @@ The banner contains a bound magic missile with range 24&quot;, causing D6 Streng
 The model and any unit he is with count as having the Daemonic Gift - Soporific Musk.</description>
     </rule>
     <rule id="b0f1-feca-2a7b-feba" name="Two Breath Weapons" hidden="false">
-      <description>Chaos Dragons have two different Breath weapons (page 114 MRB). A chaos Dragon may use both breath weapons in the same turn. one breathes fire S4 hit and the other breathes a cloud of acid Strength 2 (-3Sv)</description>
+      <description>Chaos Dragons have two different Breath Weapons (page 114 BRB). A chaos Dragon may use both breath weapons in the same turn. One breathes fire S4 hit and the other breathes a Cloud of Acid Strength 2 (-3Sv)</description>
     </rule>
     <rule id="971d-0f4d-9259-fcb2" name="Floats 15&quot;" hidden="false">
       <description>In movement the Disc can move up to 15&quot;. For LOS purposes only the character counts as a large target.</description>
@@ -11388,9 +11486,9 @@ Each enemy slain by this spell is turned into a Horror and added to the Horrors 
         <characteristic name="I" typeId="dfff-363e-f72a-5a59">3</characteristic>
         <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">6</characteristic>
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">8</characteristic>
-        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">3+</characteristic>
         <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
-        <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
+        <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">6</characteristic>
       </characteristics>
     </profile>
     <profile id="3063-d549-0ef6-74c3" name="Warrior C" publicationId="d750-ac7f-7465-d6d1" page="24" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
