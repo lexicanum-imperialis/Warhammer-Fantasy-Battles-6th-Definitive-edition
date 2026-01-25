@@ -214,6 +214,7 @@ The main additions are:
 - [x] Daemonic Herald (SoC, p.28)
 - [x] Daemon-beast of Nurgle (SoC, p.29)
 - [x] Arbaal, the Undefeated (CJ#50, p.8-9)
+- [x] Egrimm van Horstman, Sorcerer of Tzeentch (CJ#50, p.10-12)
 
 ## Alternative lists included
 - [x] Clan Eshin (SKV-AB)

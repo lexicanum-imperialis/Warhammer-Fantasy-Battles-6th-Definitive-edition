@@ -7971,6 +7971,7 @@ At the start of the Chaos player&apos;s turn, the Dragon must take another Leade
         <categoryLink name="Lord" hidden="false" id="a690-e1c1-2a10-eb03" targetId="d024-d25b-a9b4-73b6" primary="false"/>
         <categoryLink name="Characters" hidden="false" id="f434-c29c-c338-42cc" targetId="7a1c-d611-c2dc-def1" primary="false"/>
         <categoryLink name="Special Characters" hidden="false" id="0a90-97eb-5128-fd6b" targetId="0644-bfcd-32c2-21dc" primary="true"/>
+        <categoryLink name="Experimental rules" hidden="false" id="33ba-8e8f-4ebe-0c3a" targetId="4fed-b911-e6e0-927b" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Extra Hero choice" hidden="false" id="75d6-d35e-530f-ca63" type="selectionEntry" targetId="3e25-986a-693f-a975"/>
@@ -8088,6 +8089,141 @@ In addition, Arbaal will never lose his Frenzy, even if he is defeated in comb
           <description>Arbaal must always issue a challenge if possible. If a challenge is issued to Arbaal or a unit he is with then he must meet it if at all possible.</description>
         </rule>
       </rules>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="93f4-7522-86e9-7d45" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1d54-5b22-90c0-96c4" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Egrimm van Horstman, Sorcerer of Tzeentch" hidden="false" id="a237-41f9-1567-9159" page="10-12" publicationId="eef3-24a3-1f08-2597">
+      <categoryLinks>
+        <categoryLink name="Experimental rules" hidden="false" id="1e86-81d6-87b9-0631" targetId="4fed-b911-e6e0-927b" primary="false"/>
+        <categoryLink name="Special Characters" hidden="false" id="5f82-91fd-ce1d-7422" targetId="0644-bfcd-32c2-21dc" primary="false"/>
+        <categoryLink name="Lord" hidden="false" id="3707-2b7a-154b-0616" targetId="d024-d25b-a9b4-73b6" primary="false"/>
+        <categoryLink name="Characters" hidden="false" id="a626-43fd-63e0-6aa2" targetId="7a1c-d611-c2dc-def1" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Extra Hero choice" hidden="false" id="b861-0710-711a-c1a9" type="selectionEntry" targetId="3e25-986a-693f-a975" sortIndex="1"/>
+        <entryLink import="true" name="Lord Of Tzeentch" hidden="false" id="d746-18f3-d0e3-289a" type="selectionEntry" targetId="d8b7-ff7c-2879-8db9">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="da12-8dd6-1b12-b542" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+      <profiles>
+        <profile name="Egrimm" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="5bbf-7fd9-5b6a-33de" page="10">
+          <characteristics>
+            <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">4</characteristic>
+            <characteristic name="WS" typeId="f95b-da01-0578-3bdc">8+1</characteristic>
+            <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">3</characteristic>
+            <characteristic name="S" typeId="b690-4bc0-bb73-267b">5+1</characteristic>
+            <characteristic name="T" typeId="8712-f56f-5b22-a720">5</characteristic>
+            <characteristic name="W" typeId="253a-9b00-4fde-8ac2">3</characteristic>
+            <characteristic name="I" typeId="dfff-363e-f72a-5a59">8</characteristic>
+            <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">5+1</characteristic>
+            <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">9</characteristic>
+            <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">4+</characteristic>
+            <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+            <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Baudros (Chaos Dragon)" hidden="false" id="8b65-6991-c20c-bb6a">
+          <profiles>
+            <profile name="Baudros" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="64e2-84bf-0e5c-4a89" page="10" publicationId="eef3-24a3-1f08-2597">
+              <characteristics>
+                <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">6</characteristic>
+                <characteristic name="WS" typeId="f95b-da01-0578-3bdc">7</characteristic>
+                <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">0</characteristic>
+                <characteristic name="S" typeId="b690-4bc0-bb73-267b">6</characteristic>
+                <characteristic name="T" typeId="8712-f56f-5b22-a720">6</characteristic>
+                <characteristic name="W" typeId="253a-9b00-4fde-8ac2">6</characteristic>
+                <characteristic name="I" typeId="dfff-363e-f72a-5a59">3</characteristic>
+                <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">6</characteristic>
+                <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">8</characteristic>
+                <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">3+</characteristic>
+                <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+                <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">6</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="496b-f169-47ff-3ac9" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b6bc-7418-ab2f-278a" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="365"/>
+            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Scaly Skin 3+" id="e39d-9a54-8a2f-d0c6" hidden="false" type="rule" targetId="494d-d57a-c1fa-b48e"/>
+            <infoLink name="Large Target" id="ba2c-8da5-9980-0c8b" hidden="false" type="rule" targetId="4463-1b38-aa4d-e03c"/>
+            <infoLink name="Terror" id="9729-a33f-9f42-d60c" hidden="false" type="rule" targetId="96f0-c50f-e59e-85fa"/>
+            <infoLink name="Two Breath Weapons" id="aff7-41db-5768-088d" hidden="false" type="rule" targetId="b0f1-feca-2a7b-feba"/>
+            <infoLink name="Fly" id="71b3-6809-f6e1-bece" hidden="false" type="rule" targetId="e930-0b71-2fef-3937"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="525"/>
+        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+      </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Equipment" id="b8d6-bcf3-b459-ec5e" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Chaos Armour*" hidden="false" id="76ca-0f48-5fe8-2753" type="selectionEntry" targetId="9b37-1817-ce12-f693">
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="df81-54aa-8a67-e53f" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Chaos Runesword" hidden="false" id="9245-b8ce-43e8-aaf3" type="selectionEntry" targetId="8010-335c-9d17-fc4e">
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="21ee-df88-6e8d-ee51" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Skull of Katam" hidden="false" id="112f-9ce0-f078-3951" type="selectionEntry" targetId="6dac-37fe-0ee2-afe5">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7f8f-9540-9d1d-aa6d" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Spell Familiar" hidden="false" id="e7b0-2a1c-e2f5-0a5f" type="selectionEntry" targetId="e85e-f40e-4830-414c">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="57ae-3ef9-33bd-98d9" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <rules>
+        <rule name="Cunning of Tzeentch" id="6b11-73f2-ca27-7a85" hidden="false" page="10" publicationId="eef3-24a3-1f08-2597">
+          <description>Any army led by Egrimm gets +1 on its dice when rolling to see which player gets to choose table sides, and when rolling to determine who gets the first turn.</description>
+        </rule>
+      </rules>
     </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
@@ -8129,8 +8265,6 @@ In addition, Arbaal will never lose his Frenzy, even if he is defeated in comb
       </infoLinks>
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="140"/>
-        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="4"/>
-        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="2"/>
       </costs>
       <modifiers>
         <modifier type="set" value="1" field="6435-c754-72ba-50c4">
@@ -8161,6 +8295,16 @@ In addition, Arbaal will never lose his Frenzy, even if he is defeated in comb
       <categoryLinks>
         <categoryLink name="Tzeentch" hidden="false" id="177f-5f34-7dae-e776" targetId="9f21-dc73-dcc0-cb19" primary="false"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Magic Level 4" hidden="false" id="75b9-9ceb-e56d-b514" type="selectionEntry" targetId="fc28-3af2-d37a-d07e">
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8631-9dd4-ec27-0577" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry id="b510-e39d-1948-f49a" name="Shaggoth Of Tzeentch" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -9507,7 +9651,6 @@ In addition, Arbaal will never lose his Frenzy, even if he is defeated in comb
       </infoLinks>
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="50"/>
-        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
     </selectionEntry>
@@ -11327,7 +11470,7 @@ Roll a 1D6 for each Centigor unit at the start of each of their turns, before ch
     <rule id="ac0c-1a00-3030-9706" name="Scaly Skin 4+" hidden="false">
       <description>The Shaggoth&apos;s tough scales give it a Scaly Skin save of 4+.</description>
     </rule>
-    <rule id="0540-9668-5221-67d7" name="Scaly Skin +5" hidden="false">
+    <rule id="0540-9668-5221-67d7" name="Scaly Skin 5+" hidden="false">
       <description>Dragon Ogres gain a 5+ Scaly Skin save from their tough hides.</description>
     </rule>
     <rule id="2bc0-51ef-94ff-08a3" name="Storm Rage Shaggoth" hidden="false">
