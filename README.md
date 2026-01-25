@@ -213,6 +213,7 @@ The main additions are:
 - [x] Daemonic Chariot of Slaanesh (SoC, p.31)
 - [x] Daemonic Herald (SoC, p.28)
 - [x] Daemon-beast of Nurgle (SoC, p.29)
+- [x] Arbaal, the Undefeated (CJ#50, p.8-9)
 
 ## Alternative lists included
 - [x] Clan Eshin (SKV-AB)
