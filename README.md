@@ -215,7 +215,8 @@ The main additions are:
 - [x] Daemon-beast of Nurgle (SoC, p.29)
 - [x] Arbaal, the Undefeated (CJ#50, p.8-9)
 - [x] Egrimm van Horstman, Sorcerer of Tzeentch (CJ#50, p.10-12)
-- [x] Aekold Helbrass, Champion of Tzeentch (CJ#50, p.13-14)
+- [x] Aekold Helbrass, Champion of Tzeentch (CJ#50, p.13)
+- [x] Scyla Anfinngrim, Chaos Spawn  (CJ#50, p.14-15)
 
 ## Alternative lists included
 - [x] Clan Eshin (SKV-AB)
