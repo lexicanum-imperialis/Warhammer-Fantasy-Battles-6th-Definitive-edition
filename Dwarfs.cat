@@ -245,7 +245,7 @@
         <categoryLink id="1d4f-21c5-d0a7-3666" name="Characters" hidden="false" targetId="7a1c-d611-c2dc-def1" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="f78e-71bf-9338-dfb2" name="Armour" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="f78e-71bf-9338-dfb2" name="Armour" hidden="false" collective="false" import="true" sortIndex="4">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="47d1-e2ac-8aac-380a" type="max"/>
           </constraints>
@@ -267,16 +267,11 @@
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="e110-0fbe-3965-abdd" name="Weapons" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="e110-0fbe-3965-abdd" name="Weapons" hidden="false" collective="false" import="true" sortIndex="3">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7b61-e859-21b7-bae4" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="087d-fb5d-7941-051a" name="Anvil of Doom" hidden="false" collective="false" import="true" targetId="f003-bab0-b27d-6acd" type="selectionEntry">
-              <costs>
-                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="200"/>
-              </costs>
-            </entryLink>
             <entryLink id="f91b-c87c-19a1-ade5" name="Great Weapon" hidden="false" collective="false" import="true" targetId="1eb7-3f36-8cf7-e0ba" type="selectionEntry">
               <costs>
                 <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="6"/>
@@ -284,7 +279,7 @@
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="66b3-eb96-8660-4199" name="Runes" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="66b3-eb96-8660-4199" name="Runes" hidden="false" collective="false" import="true" sortIndex="6">
           <constraints>
             <constraint field="ecfa-8486-4f6c-c249" scope="parent" value="150" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6f9c-a2be-64fc-09f7" type="max"/>
           </constraints>
@@ -311,7 +306,7 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="0f2f-56a0-1d1e-7d63" name="Shield" hidden="false" collective="false" import="true" targetId="50e2-1873-a856-03e7" type="selectionEntry">
+        <entryLink id="0f2f-56a0-1d1e-7d63" name="Shield" hidden="false" collective="false" import="true" targetId="50e2-1873-a856-03e7" type="selectionEntry" sortIndex="5">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed1e-1f12-a55e-b590" type="max"/>
           </constraints>
@@ -319,12 +314,18 @@
             <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="3"/>
           </costs>
         </entryLink>
-        <entryLink id="c71c-91cb-77c1-8160" name="General" hidden="false" collective="false" import="true" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry">
+        <entryLink id="c71c-91cb-77c1-8160" name="General" hidden="false" collective="false" import="true" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry" sortIndex="1">
           <modifiers>
             <modifier type="decrement" field="fcec-2340-6368-a2ba" value="2"/>
           </modifiers>
           <costs>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="4"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Rune Lore" hidden="false" id="9db4-bd18-e403-6033" type="selectionEntry" targetId="2212-3f36-aa4a-73c1" sortIndex="2"/>
+        <entryLink import="true" name="Anvil of Doom" hidden="false" id="087d-fb5d-7941-051a" collective="false" targetId="f003-bab0-b27d-6acd" type="selectionEntry">
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="200"/>
           </costs>
         </entryLink>
       </entryLinks>
@@ -563,6 +564,7 @@
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="4"/>
           </costs>
         </entryLink>
+        <entryLink import="true" name="Rune Lore" hidden="false" id="60d8-f2d7-bfe5-196f" type="selectionEntry" targetId="2212-3f36-aa4a-73c1"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="70"/>
@@ -1924,9 +1926,155 @@
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Thorek Ironbrow, Dwarf Runelord" hidden="false" id="11e0-5134-1ed2-82e8" page="50-51" publicationId="6265-1d51-76e2-4fe2">
+      <costs>
+        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="505"/>
+        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Special Characters" hidden="false" id="05ca-7371-b674-ac40" targetId="0644-bfcd-32c2-21dc" primary="true"/>
+        <categoryLink name="Lord" hidden="false" id="bd74-ccc7-6a54-7a18" targetId="d024-d25b-a9b4-73b6" primary="false"/>
+        <categoryLink name="Characters" hidden="false" id="8be7-2577-1df6-0d04" targetId="7a1c-d611-c2dc-def1" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Extra Hero choice" hidden="false" id="297f-29c5-6aae-8338" type="selectionEntry" targetId="3e25-986a-693f-a975"/>
+        <entryLink import="true" name="Anvil of Doom" hidden="false" id="efd0-cc5a-3e75-38ad" type="selectionEntry" targetId="f003-bab0-b27d-6acd">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8a5f-bf56-4114-bbca" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Kraggi" hidden="false" id="bdf8-05b9-a7f8-a0c8">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8c45-16de-c744-670e" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f9fe-2a38-5ad7-dea2" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Kraggi" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="099d-2156-1f08-b095">
+              <characteristics>
+                <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">3</characteristic>
+                <characteristic name="WS" typeId="f95b-da01-0578-3bdc">4</characteristic>
+                <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">3</characteristic>
+                <characteristic name="S" typeId="b690-4bc0-bb73-267b">3</characteristic>
+                <characteristic name="T" typeId="8712-f56f-5b22-a720">4</characteristic>
+                <characteristic name="W" typeId="253a-9b00-4fde-8ac2">1</characteristic>
+                <characteristic name="I" typeId="dfff-363e-f72a-5a59">2</characteristic>
+                <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
+                <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">9</characteristic>
+                <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">6+</characteristic>
+                <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+                <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="1"/>
+            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+          </costs>
+          <entryLinks>
+            <entryLink import="true" name="Light Armour" hidden="false" id="fc3c-2c56-f1ec-77fc" type="selectionEntry" targetId="055f-8e4e-f170-35d2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3cb6-ab72-1aa7-9c0a" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="64af-7c81-4fd4-c878" type="selectionEntry" targetId="abdb-bbd0-41b2-5dff"/>
+          </entryLinks>
+          <rules>
+            <rule name="Assistant at the Forge" id="5536-b6f5-e527-9129" hidden="false" page="51" publicationId="6265-1d51-76e2-4fe2">
+              <description>Kraggi is treated as a unit Champion and fights with his forge tongs (counts as a hand weapon) and wears an apron to protect him from the intense heat (light armour).
+
+While Kraggi is alive Thorek gains one extra dice per turn to cast runes with. However, it&apos;s important to keep track of which one this is (by using a different coloured dice, for example) because if this extra dice rolls a 1 Kraggi has done something wrong and the rune is miscast.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+      </selectionEntries>
+      <profiles>
+        <profile name="Thorek" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="81d9-01b3-a66a-9082" publicationId="6265-1d51-76e2-4fe2" page="51">
+          <characteristics>
+            <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">3</characteristic>
+            <characteristic name="WS" typeId="f95b-da01-0578-3bdc">6</characteristic>
+            <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">4</characteristic>
+            <characteristic name="S" typeId="b690-4bc0-bb73-267b">4</characteristic>
+            <characteristic name="T" typeId="8712-f56f-5b22-a720">5</characteristic>
+            <characteristic name="W" typeId="253a-9b00-4fde-8ac2">3</characteristic>
+            <characteristic name="I" typeId="dfff-363e-f72a-5a59">3</characteristic>
+            <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">2+1</characteristic>
+            <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">10</characteristic>
+            <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">1+</characteristic>
+            <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+            <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Magic Items" id="de97-f617-12dc-7ed1" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Klad Brakak (Magic Weapon)" hidden="false" id="a8ba-d48e-2294-027e">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b5e1-c2c8-a5ac-725e" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7e95-d2e4-ec8c-a4d5" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Klad Brakak" typeId="7889-42d9-70a0-3ea9" typeName="Weapon" hidden="false" id="f840-49c6-4d15-84cd" page="51" publicationId="6265-1d51-76e2-4fe2">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3107-4d1e-9a51-6564"/>
+                    <characteristic name="Strength" typeId="6fe4-1ebb-cb04-1378"/>
+                    <characteristic name="Damage" typeId="6f2f-d612-52ef-1633"/>
+                    <characteristic name="Special Rules" typeId="a21a-cdc0-4b13-b236">Rune of Fury
+If target fails Ward save (or have none) the armour and shield are destroyed (even magical).</characteristic>
+                    <characteristic name="Saves" typeId="8014-a8b2-15c3-da95">No armour saves allowed</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <entryLinks>
+                <entryLink import="true" name="RUNE OF FURY" hidden="false" id="8d84-55f9-b319-26b2" type="selectionEntry" targetId="414f-36f4-7e3a-0b92">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9c09-318a-6b1e-650c" includeChildSelections="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" value="1" field="3cc9-ccbf-f651-1ac2"/>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Thorek&apos;s rune-armour (Magic Armour)" hidden="false" id="2a64-926a-2f99-f1b5" page="51" publicationId="6265-1d51-76e2-4fe2">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9eed-8b98-cf73-61e2" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d29d-d399-6f33-1b0a" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="MASTER RUNE OF GROMRIL " hidden="false" id="4587-2f3c-1527-51a2" type="selectionEntry" targetId="33d5-be99-5ec4-b2f3">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6c91-ef71-52ab-aee5" includeChildSelections="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <infoGroups>
+        <infoGroup name="Special rules" id="c202-e08c-4c84-ce70" hidden="false">
+          <infoLinks>
+            <infoLink name="Ancestral Grudge (hate greenskins)" id="c539-dc5f-f3e6-ca60" hidden="false" type="rule" targetId="ea43-a0b7-193c-7837"/>
+            <infoLink name="Relentless" id="9e75-efd4-e857-282c" hidden="false" type="rule" targetId="9538-687f-3457-3e77"/>
+            <infoLink name="Resolute" id="d2d4-9e31-1fee-325b" hidden="false" type="rule" targetId="f134-5d8c-292e-70d0"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+    </selectionEntry>
   </selectionEntries>
   <rules>
-    <rule id="ea43-a0b7-193c-7837" name="Ancestral Grudge" publicationId="6265-1d51-76e2-4fe2" page="6" hidden="false">
+    <rule id="ea43-a0b7-193c-7837" name="Ancestral Grudge (hate greenskins)" publicationId="6265-1d51-76e2-4fe2" page="6" hidden="false">
       <description>Dwarfs hold grudges for a long time. Possibly forever They have never forgiven the fall of their strongholds at the hands of the Orcish enemy. Dwarfs base all types of Ores, Goblins and SnotlIngs. including Night Goblins, Black Orcs, hobgoblins.. in fact all greenskins of any description!</description>
     </rule>
     <rule id="9538-687f-3457-3e77" name="Relentless" publicationId="6265-1d51-76e2-4fe2" page="6" hidden="false">
@@ -2688,13 +2836,13 @@
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="f003-bab0-b27d-6acd" name="Anvil of Doom" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="f003-bab0-b27d-6acd" name="Anvil of Doom" hidden="false" collective="false" import="true" type="unit">
       <constraints>
-        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fae4-e66a-4ac0-8cd4" type="max"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="1461-3586-155f-a8da" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6fa1-0f75-eb21-10c5" includeChildSelections="false"/>
       </constraints>
       <infoLinks>
-        <infoLink id="9dea-3c4b-41c9-a10f" name="Anvil Guard" hidden="false" targetId="504d-03f5-6794-040f" type="profile"/>
-        <infoLink id="ce77-a52a-ffde-f8e3" name="Anvil of Doom" hidden="false" targetId="5029-0755-1a5a-b8ce" type="rule"/>
+        <infoLink id="ce77-a52a-ffde-f8e3" name="Anvil of Doom" hidden="false" targetId="5029-0755-1a5a-b8ce" type="rule" page="9" publicationId="6265-1d51-76e2-4fe2"/>
       </infoLinks>
       <selectionEntries>
         <selectionEntry id="b430-f404-20f4-affe" name="Anvil Guard" hidden="false" collective="false" import="true" type="upgrade">
@@ -2727,13 +2875,118 @@
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
+          <infoLinks>
+            <infoLink name="Anvil Guard" id="9dea-3c4b-41c9-a10f" hidden="false" targetId="504d-03f5-6794-040f" type="profile"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
-        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Runic powers" id="995f-8ede-0f64-f31a" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="2. Rune of Air" hidden="false" id="70d6-5197-4316-2b21" type="selectionEntry" targetId="640d-ca9d-f920-d9ba"/>
+            <entryLink import="true" name="1. Rune of Water" hidden="false" id="a600-5708-88db-45d6" type="selectionEntry" targetId="b578-f49c-441f-52bd"/>
+            <entryLink import="true" name="3. Rune of Fire" hidden="false" id="4d28-0ce2-3739-5e40" type="selectionEntry" targetId="30b2-b50b-b3d3-48b3"/>
+            <entryLink import="true" name="4. Rune of EArth" hidden="false" id="6b8e-3df6-33d2-8221" type="selectionEntry" targetId="1cd3-2971-0862-a6f1"/>
+            <entryLink import="true" name="5. Rune of Doom" hidden="false" id="48a6-bcac-d813-a890" type="selectionEntry" targetId="b937-1590-c17c-30ff"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <categoryLinks>
+        <categoryLink name="Anvil of Doom" hidden="false" id="154b-010b-ce39-af05" targetId="02f3-9b72-35c9-fe61" primary="false"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Rune Lore" hidden="false" id="2212-3f36-aa4a-73c1">
+      <costs>
+        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="1"/>
+      </costs>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="167a-a525-d521-ca2a" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="1. Rune of Water" hidden="false" id="b578-f49c-441f-52bd">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="edcc-16db-b014-0715" includeChildSelections="false"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d228-d401-eba8-b4e6" includeChildSelections="false"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="1. Rune of Water" id="11a6-1533-1340-aef2" hidden="false" type="profile" targetId="4eb0-6ddd-bd3d-a834"/>
+        <infoLink name="1. Rune of Water (Bound Spell)" id="d968-050d-9b92-77a5" hidden="false" type="rule" targetId="d2f8-f269-ba22-642a"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="2. Rune of Air" hidden="false" id="640d-ca9d-f920-d9ba">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="18de-467a-7966-89b0" includeChildSelections="false"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e12f-ecec-13ae-c4d9" includeChildSelections="false"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="2. Rune of Air" id="3250-e059-ce78-770b" hidden="false" type="profile" targetId="dd6c-77f6-264e-394f"/>
+        <infoLink name="2. Rune of Air (Bound Spell)" id="980c-ed29-a7d2-4d3d" hidden="false" type="rule" targetId="8dff-7cd5-7fee-cc19"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="5. Rune of Doom" hidden="true" id="b937-1590-c17c-30ff">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="98c5-833c-afb8-e726" includeChildSelections="false"/>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="fc66-9628-bde6-078e" includeChildSelections="false"/>
+      </constraints>
+      <rules>
+        <rule name="5. Rune of Doom" id="1dc2-bb68-a5fe-29e0" hidden="false" publicationId="6265-1d51-76e2-4fe2" page="51">
+          <description>All the Dwarfs in the army cause fear.
+
+Once cast the effects of the Rune of Doom last until it is dispelled, until Thorek chooses to end it (which he can do at any time), uses another rune, or is slain.
+
+However, if you miscast when rolling to cast the Rune of Doom then disaster has struck. The power of the rune tears the Anvil asunder. Thorek, Kraggi and any surviving Anvil Guard each take a single Strength 7 hit from the blast. The Anvil is destroyed and the survivors form a skirmishing unit.</description>
+        </rule>
+      </rules>
+      <profiles>
+        <profile name="5. Rune of Doom" typeId="07eb-6084-5f84-a505" typeName="Spell" hidden="false" id="ddc1-a706-567d-d376" page="51" publicationId="6265-1d51-76e2-4fe2">
+          <characteristics>
+            <characteristic name="Cast" typeId="f1e6-8816-26e0-8a70">12+</characteristic>
+            <characteristic name="Range" typeId="42e6-553f-842f-0b91">ALL</characteristic>
+            <characteristic name="Type" typeId="194f-3dee-9698-7291">Bound Spell</characteristic>
+            <characteristic name="CC" typeId="d360-4f33-c1a6-b3ab">NO</characteristic>
+            <characteristic name="Target" typeId="d1af-fdf7-8ed2-d6a3">All the Dwarfs in the army</characteristic>
+            <characteristic name="Effect" typeId="7d21-349e-b0a8-fc7d">Fear</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="0644-bfcd-32c2-21dc" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="1" field="fc66-9628-bde6-078e">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="0644-bfcd-32c2-21dc" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="3. Rune of Fire" hidden="false" id="30b2-b50b-b3d3-48b3">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e7e2-ff35-1a5f-06a0" includeChildSelections="false"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f28c-cc6d-c606-9f0f" includeChildSelections="false"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="3. Rune of Fire (Bound Spell)" id="8a9e-a67a-b39a-0c36" hidden="false" type="rule" targetId="3ed4-726b-ee6a-440d"/>
+        <infoLink name="3. Rune of Fire" id="0d50-9368-c142-bda2" hidden="false" type="profile" targetId="7b68-b9ed-f217-b734"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="4. Rune of EArth" hidden="false" id="1cd3-2971-0862-a6f1">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2d6e-7844-94fe-c545" includeChildSelections="false"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ed38-4ea4-1ab9-b483" includeChildSelections="false"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="4. Rune of Earth (Bound Spell)" id="3dce-18f4-4f9e-733d" hidden="false" type="rule" targetId="5096-34fc-02ab-1852"/>
+        <infoLink name="4. Rune of Earth" id="ac2f-bbc1-f6af-50c5" hidden="false" type="profile" targetId="8016-95cd-5ad0-fb4b"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -3204,32 +3457,19 @@ This rune adds a dice to any attempt to dispel enemy spells cast against the cha
 The hearer of this rune is immune to fire and cannot be affected by fire attacks (including magical tire. the flames of a Skaven warpfire thrower, etc).</description>
     </rule>
     <rule id="5029-0755-1a5a-b8ce" name="Anvil of Doom" publicationId="6265-1d51-76e2-4fe2" page="9" hidden="false">
-      <description>ANVIL OF DOOM
-M WS BS S T W I ALd
-Anvil Guard 3 5 3 4 4 1 2 2 10
-THE ANVIL IN THE GAME
-A Dwarf army may have one and only one Anvil of Doom. In gaming terms, the Anvil is treated as a piece of terrain; it cannot be moved or attacked at all (no more than you can move or attack a hill!).
-The Runelord and the two Anvil Guards would rather give their lives before abandoning this most ancient artefact. and must remain for all the battle on the platform. They are Unbreakable, may not declare charges and will never pursue beaten foes. The Anvil and crew have a Unit Strength of 3.
+      <description>**The Anvil in the Game**
+A Dwarf army may have one and only one Anvil of Doom. In gaming terms, the Anvil is treated a a piece of terrain; it cannot be moved or attacked at all (no more than you can move or attack a hill!).
+
+The Runelord and the two Anvil Guards would rather give their lives before abandoning this most ancient artefact, and must remain for all the battle on the platform. They are Unbreakable, may not declare charges and will never pursue beaten foes. The Anvil and crew have a Unit Strength of 3.
+
 Enemy units which charge the Anvil model are placed in base contact with the platform. The Runelord and the Guards place themselves between the enemy and the anvil, without leaving the Anvil&apos;s platform. The Anvil and crew count as a unit with a 60mm wide frontage for the purposes of who can fight who (this is the width of the Anvil&apos;s base).
-When shooting at the Anvil of Doom, randomise hits evenly between the remaining Dwarfs. To take into account the protection offered by the Anvil, the Runelord gains a 4+ Ward save against any form of missile (this includes magic missiles as well as normal missiles).
-If the Runelord and Guards are killed, the enemy scores the points of the Anvil (plus an extra 100 Victory points if they are killed in close combat). If the Runelord is killed but there is still at least one Guard alive at the end of the game, the enemy scores the points for the Runelord, but not the points for the Anvil.
-THE ANVIL AND
-THE DWARF MAGIC PHASE
-During his own Magic phase the Dwarf player receives D6+2 Power dice. During the enemy&apos;s Magic phase everything is as normal. though the Anvil adds an extra dice to the Dwarfs&apos; Dispel pool.
-The Runelord uses the powers of the Anvil of Doom 
-by striking the appropriate elemental rune upon it. 
-In gaming terms. the Runelord may cast each of the
- 
-four runic powers one per Magic phase using the Power dice provided by the Anvil. lie may use a maximum of four dice to power a runic spell. If the Runelord is fighting in close combat, he will not be able to cast runic spells. If the spell is miscast, the Runelord does not have to roll on the Miscast table, but the Dwarf Magic phase ends immediately and all remaining dice are discarded.
-RUNIC POWERS	casting While
-Rune of Water	6+
-When struck properly, the Anvil&apos;s magic pulses out into the ground. drawing water from underground lakes and rivers and causing it to swell up onto the battlefield to create a mire. This power can be east on any enemy unit on the tabletop. The unit&apos;s Movement is halved until the end of its own following turn. If forced to flee, for whatever reason, the unit flees at half speed (determine the flee distance of the unit as normal and then halve the score, rounding up). This spell has no effect on flyers or ethereal creatures.
-Rune of Air	7+
-If successfully struck. this tune causes a dark cloud to gather over the battlefield and a storm of lightning cascades down upon an enemy unit. &apos;this spell can be cast on any enemy unit on the tabletop. causing D6 Strength 4 hits. &apos;these hits are distributed exactly like hits from shooting.
-Rune of Fire	8+
-Each blow of the Runelord&apos;s hammer causes a fiery ball to explode into his foes. This rune releases a magic missile with a range of 30&quot;. If successfully cast, the fireball causes 2D6 Strength 4 hits.
-Rune of Earth	9+
-The clang of hammer on rune reverberates across the battlefield, causing the ground to tremble before exploding under the enemy in a hail of rocky shards. This spell can be cast on any enemy unit within line of sight. The Anvil causes 1)6 Strength 5 hits on any one enemy unit on the tabletop, plus a further 1)6 Strength 5 hits if the unit is partially or wholly within a rocky feature (all hills, rocky outcrops, ruins, or any similar area which has been identified as high ground, rocky or ruinous before the game).</description>
+
+When shooting at the Anvil of Doom, randomise hits evenly between the Dwarfs and the Anvil (discounting any hits against the Anvil itself). To take into account the protection offered by the Anvil, the Runelord gains a 4+ Ward save against any form of missile (including magic missiles).
+
+**The Anvil and the Dwarf Magic Phase**
+During his own Magic phase the Dwarf player receives D6+2 Power dice. During the enemy&apos;s Magic phase everything is as normal, though the Anvil adds an extra dice to the Dwarfs&apos; Dispel pool.
+
+The Runelord uses the powers of the Anvil of Doom by striking the appropriate elemental rune upon it. In gaming terms, the Runelord may cast each of the four runic powers one per Magic phase using the Power dice provided by the Anvil. He may use a maximum of four dice to power a runic spell. If the Runelord is fighting in close combat, he will not be able to cast runic spells. If the spell is miscast, the Runelord does not have to roll on the Miscast table, but the Dwarf Magic phase ends immediately and all remaining dice are discarded.</description>
     </rule>
     <rule id="6b50-2309-78f5-fbbd" name="Artillery Master" hidden="false">
       <description>A Cannon or a Stone Thrower (but not a Flame Cannon) which has been joined by an Engineer may make two guesses when declaring the range they are firing at (one for the crew, one for the Engineer). Measure the two points you have guessed and then decide which one you want to use for that shot before rolling any dice.
@@ -3252,6 +3492,22 @@ In the Movement phase of the turn when they arrive, Miners can enter the battlef
     </rule>
     <rule id="e258-aa45-975c-6184" name="Immune to panic" hidden="false">
       <description>Still take break tests.</description>
+    </rule>
+    <rule name="4. Rune of Earth (Bound Spell)" id="5096-34fc-02ab-1852" hidden="false" page="9" publicationId="6265-1d51-76e2-4fe2">
+      <description>Casting Value: 9+
+The clang of hammer on rune reverberates across the battlefield, causing the ground to tremble before exploding under the enemy in a hail of rocky shards. This spell can be cast on any enemy unit within line of sight. The Anvil causes D6 Strength 5 hits on any one enemy unit on the tabletop, plus a further D6 Strength 5 hits if the unit is partially or wholly within a rocky feature (all hills, rocky outcrops, ruins, or any similar area which has been identified as high ground, rocky or ruinous before the game).</description>
+    </rule>
+    <rule name="1. Rune of Water (Bound Spell)" id="d2f8-f269-ba22-642a" hidden="false" page="9" publicationId="6265-1d51-76e2-4fe2">
+      <description>Casting Value: 6+
+When struck properly, the Anvil&apos;s magic pulses out into the ground, drawing water from underground Lakes and rivers and causing it to swell up onto the battlefield to create a mire. This power can be cast on any enemy unit on the tabletop. The unit&apos;s Movement is halved until the end of its own following tum. If forced to flee, for whatever reason, the unit flees at half speed (determine the flee distance of the unit as normal and then halve the score, rounding up). This spell has no effect on flyers or ethereal creatures.</description>
+    </rule>
+    <rule name="2. Rune of Air (Bound Spell)" id="8dff-7cd5-7fee-cc19" hidden="false" page="9" publicationId="6265-1d51-76e2-4fe2">
+      <description>Casting Value: 7+
+If successfully struck, this rune causes a dark cloud to gather over the battlefield and a storm of lightning cascade down upon an enemy unit. This spell can be cast on any enemy unit on the tabletop, causing D6 Strength 4 hits. These hits are distributed exactly like hits from shooting.</description>
+    </rule>
+    <rule name="3. Rune of Fire (Bound Spell)" id="3ed4-726b-ee6a-440d" hidden="false" page="9" publicationId="6265-1d51-76e2-4fe2">
+      <description>Casting Value: 8+
+Each blow of the Runelord&apos;s hammer causes a fiery ball to explode into his foes. This rune releases a magic missile with a range of 30&quot;. If successfully cast, the fireball causes 2D6 Strength 4 hits.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
@@ -3412,6 +3668,47 @@ Dwarf Hanguns get a +1 to hit at short range</characteristic>
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">9</characteristic>
       </characteristics>
     </profile>
+    <profile name="4. Rune of Earth" typeId="07eb-6084-5f84-a505" typeName="Spell" hidden="false" id="8016-95cd-5ad0-fb4b" page="9" publicationId="6265-1d51-76e2-4fe2">
+      <characteristics>
+        <characteristic name="Cast" typeId="f1e6-8816-26e0-8a70">9+</characteristic>
+        <characteristic name="Range" typeId="42e6-553f-842f-0b91">30&quot;</characteristic>
+        <characteristic name="Type" typeId="194f-3dee-9698-7291">Magic Missile</characteristic>
+        <characteristic name="CC" typeId="d360-4f33-c1a6-b3ab">NO</characteristic>
+        <characteristic name="Target" typeId="d1af-fdf7-8ed2-d6a3">Any enemy unit on sight.</characteristic>
+        <characteristic name="Effect" typeId="7d21-349e-b0a8-fc7d">D6 S5 hits
+2D6 S5 if the enemy is partially/wholly withing a rocky feature.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="1. Rune of Water" typeId="07eb-6084-5f84-a505" typeName="Spell" hidden="false" id="4eb0-6ddd-bd3d-a834" page="9" publicationId="6265-1d51-76e2-4fe2">
+      <characteristics>
+        <characteristic name="Cast" typeId="f1e6-8816-26e0-8a70">6+</characteristic>
+        <characteristic name="Range" typeId="42e6-553f-842f-0b91">ALL</characteristic>
+        <characteristic name="Type" typeId="194f-3dee-9698-7291">Bound Spell</characteristic>
+        <characteristic name="CC" typeId="d360-4f33-c1a6-b3ab">NO</characteristic>
+        <characteristic name="Target" typeId="d1af-fdf7-8ed2-d6a3">Any enemy unit on the tabletop</characteristic>
+        <characteristic name="Effect" typeId="7d21-349e-b0a8-fc7d">The unit&apos;s Movement is halved until the end of its own following turn</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="2. Rune of Air" typeId="07eb-6084-5f84-a505" typeName="Spell" hidden="false" id="dd6c-77f6-264e-394f" page="9" publicationId="6265-1d51-76e2-4fe2">
+      <characteristics>
+        <characteristic name="Cast" typeId="f1e6-8816-26e0-8a70">7+</characteristic>
+        <characteristic name="Range" typeId="42e6-553f-842f-0b91">ALL</characteristic>
+        <characteristic name="Type" typeId="194f-3dee-9698-7291">Bound Spell</characteristic>
+        <characteristic name="CC" typeId="d360-4f33-c1a6-b3ab">NO</characteristic>
+        <characteristic name="Target" typeId="d1af-fdf7-8ed2-d6a3">Any enemy unit on the tabletop</characteristic>
+        <characteristic name="Effect" typeId="7d21-349e-b0a8-fc7d">D6 S4 hits</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="3. Rune of Fire" typeId="07eb-6084-5f84-a505" typeName="Spell" hidden="false" id="7b68-b9ed-f217-b734" page="9" publicationId="6265-1d51-76e2-4fe2">
+      <characteristics>
+        <characteristic name="Cast" typeId="f1e6-8816-26e0-8a70">8+</characteristic>
+        <characteristic name="Range" typeId="42e6-553f-842f-0b91">30&quot;</characteristic>
+        <characteristic name="Type" typeId="194f-3dee-9698-7291">Magic Missile</characteristic>
+        <characteristic name="CC" typeId="d360-4f33-c1a6-b3ab">NO</characteristic>
+        <characteristic name="Target" typeId="d1af-fdf7-8ed2-d6a3">Any enemy unit on the tabletop</characteristic>
+        <characteristic name="Effect" typeId="7d21-349e-b0a8-fc7d">2D6 S4 hits</characteristic>
+      </characteristics>
+    </profile>
   </sharedProfiles>
   <forceEntries>
     <forceEntry name="Standard (DW1-AB)" id="c44a-8c7f-c41a-75e6" hidden="false" publicationId="20b9-0ee7-8f6f-8d28">
@@ -3448,4 +3745,11 @@ Dwarf Hanguns get a +1 to hit at short range</characteristic>
     <entryLink import="true" name="Vespero&apos;s Vendetta" hidden="false" id="bad5-fa47-839d-885e" type="selectionEntry" targetId="a14c-79da-9d49-49b1"/>
     <entryLink import="true" name="Voland&apos;s Venators" hidden="false" id="d424-4054-7016-266b" type="selectionEntry" targetId="41e8-0d1b-81fe-2013"/>
   </entryLinks>
+  <categoryEntries>
+    <categoryEntry name="Anvil of Doom" id="02f3-9b72-35c9-fe61" hidden="false">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="7a3e-c33a-02a0-dd67" includeChildSelections="true"/>
+      </constraints>
+    </categoryEntry>
+  </categoryEntries>
 </catalogue>
