@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <catalogue id="731d-5b13-2a92-5427" name="Ogre Kingdoms" revision="1" battleScribeVersion="2.03" authorName="Lexicanum Imperialis" authorContact="lexicanum.imperialis@gmail.com" library="false" gameSystemId="0d13-7737-ea86-4662" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <publications>
-    <publication id="49a5-e8f7-aa09-ad96" name="OK-AB" publicationDate="2005" shortName="Warhammer Armies: Ogre Kingdoms (6th Edition)" publisher="by Phil Kelly"/>
+    <publication id="49a5-e8f7-aa09-ad96" name="OK-AB" publicationDate="2005" shortName="Warhammer Armies: Ogre Kingdoms (6th Edition)" publisher="by Phil Kelly">
+      <comment>Ogre Kingdoms</comment>
+    </publication>
   </publications>
   <categoryEntries>
     <categoryEntry id="735e-2da1-6356-2fdb" name="Bully Bully" hidden="false"/>
@@ -695,22 +697,102 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="81b9-e978-56c2-e942" name="Gorger" hidden="false" collective="false" import="true" type="unit">
-      <infoLinks>
-        <infoLink id="15c3-00ef-a6c2-d0f2" name="Gorger" hidden="false" targetId="6da8-29d9-b039-8f97" type="profile"/>
-        <infoLink id="05c1-479c-4e56-8097" name="Fear" hidden="false" targetId="1524-2372-4aa0-6881" type="rule"/>
-        <infoLink id="9279-a194-eb1f-2764" name="Unbreakable" hidden="false" targetId="8ae3-9724-980f-7308" type="rule"/>
-        <infoLink id="1b32-5699-2c19-c99d" name="Killing Blow" hidden="false" targetId="e08e-1c7b-a667-f05b" type="rule"/>
-        <infoLink id="18f0-c93e-8b55-39d8" name="Ravenous" hidden="false" targetId="c16d-b4a0-7cdf-44a9" type="rule"/>
-        <infoLink id="5801-0ca7-13f8-8e83" name="Bloodscent" hidden="false" targetId="b4de-3155-1eaf-159e" type="rule"/>
-      </infoLinks>
       <categoryLinks>
         <categoryLink id="4ef3-a189-c656-5efe" name="Rare" hidden="false" targetId="e94b-6a54-8779-cd60" primary="true"/>
       </categoryLinks>
       <costs>
-        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="75"/>
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set-primary" value="43cc-fc3f-35a7-8d03" field="category"/>
+            <modifier type="remove" value="e94b-6a54-8779-cd60" field="category"/>
+            <modifier type="add" value="43cc-fc3f-35a7-8d03" field="category"/>
+          </modifiers>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="82a9-0281-ffa1-2290" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <comment>&quot;Army of the Slaughterer&quot;, OK-AB, p.77</comment>
+        </modifierGroup>
+      </modifierGroups>
+      <entryLinks>
+        <entryLink import="true" name="Gorger" hidden="false" id="7908-07bf-ccc6-d650" type="selectionEntry" targetId="ece1-a86f-38f9-304e"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Skrag the Slaughterer, Prohet of the Great Maw" hidden="false" id="82a9-0281-ffa1-2290" page="76-77" publicationId="49a5-e8f7-aa09-ad96">
+      <categoryLinks>
+        <categoryLink name="Special Characters" hidden="false" id="35e9-ec9f-2fb5-29df" targetId="0644-bfcd-32c2-21dc" primary="false"/>
+        <categoryLink name="Lord" hidden="false" id="3eb9-e2d4-8559-0fcd" targetId="d024-d25b-a9b4-73b6" primary="false"/>
+        <categoryLink name="Characters" hidden="false" id="f722-e9ac-a2cd-6ffc" targetId="7a1c-d611-c2dc-def1" primary="false"/>
+        <categoryLink name="Special" hidden="false" id="9804-3509-ab4a-94ed" targetId="43cc-fc3f-35a7-8d03" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="General" hidden="false" id="136e-49c4-582a-dc5b" type="selectionEntry" targetId="1b7c-2c90-6d96-28c9">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="32e9-e69f-e757-5793" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Two Hand Weapons" hidden="false" id="b114-993a-4b70-201a" type="selectionEntry" targetId="36a8-7bbb-d204-0314">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="eff6-afce-1ff3-abf8" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8e8c-65b7-cc41-8930" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Gorger" hidden="false" id="4983-51a9-3fef-ddf1" type="selectionEntry" targetId="ece1-a86f-38f9-304e">
+          <modifiers>
+            <modifier type="set" value="2" field="e998-b2d3-1333-a37d"/>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="400"/>
+        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+      </costs>
+      <profiles>
+        <profile name="Skrag" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="fca5-ec53-a987-39cd" page="77">
+          <characteristics>
+            <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">6</characteristic>
+            <characteristic name="WS" typeId="f95b-da01-0578-3bdc">5</characteristic>
+            <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">3</characteristic>
+            <characteristic name="S" typeId="b690-4bc0-bb73-267b">5</characteristic>
+            <characteristic name="T" typeId="8712-f56f-5b22-a720">6</characteristic>
+            <characteristic name="W" typeId="253a-9b00-4fde-8ac2">5</characteristic>
+            <characteristic name="I" typeId="dfff-363e-f72a-5a59">3</characteristic>
+            <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">4+1</characteristic>
+            <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">9</characteristic>
+            <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+            <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+            <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">6</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Killing Blow" id="a2e1-6807-deac-bc96" hidden="false" type="rule" targetId="e08e-1c7b-a667-f05b"/>
+        <infoLink name="Terror" id="f648-4216-b415-f828" hidden="false" type="rule" targetId="96f0-c50f-e59e-85fa"/>
+        <infoLink name="Frenzy" id="2256-0a45-608f-c9e2" hidden="false" type="rule" targetId="ab5d-dda1-bffc-a027"/>
+      </infoLinks>
+      <rules>
+        <rule name="The Blessings of the Great Maw" id="7bef-5e6a-fe1f-e5ec" hidden="false" page="76" publicationId="49a5-e8f7-aa09-ad96">
+          <description>Skrag and his Gorgers receive the blessings of their ever-hungry god according to the table below. The &apos;Models Killed&apos; column refers to the number of models killed by Skrag in combat. Models killed by Gut Magic or from running down fleeing units do not count towards this total. When a new level on the table is reached, the bonuses take effect immediately and are cumulative, although Skrag is only ever automatically restored to his starting number of Wounds after his first kill.
+
+
+| Models killed | Effect on Skrag | Effect on Gorgers |
+|-----------------------|-----------|---|
+|1+ |Skrag is automatically restored to his starting number of wounds, and gains Regeneration. |All Gorgers that have not entered play will enter play in the next Ogre Kingdoms turn.|
+|5+ |Skrag gains + 1 Attack.| All Gorgers gain + 1 Attack. |
+|10+ |Skrag may re-roll failed rolls to hit in combat.|Gorgers may re-roll failed rolls to hit in combat.|
+|15+|Skrag becomes Unbreakable.|All Gorgers gain Regeneration.|</description>
+        </rule>
+        <rule name="Chosen of the Great Maw" id="14c5-f0e2-f631-0adf" hidden="false" page="76" publicationId="49a5-e8f7-aa09-ad96">
+          <description>Skrag is a crazed, gore-splattered killing-machine driven on by the will of his god. He causes Terror and is subject to Frenzy.</description>
+        </rule>
+        <rule name="Army of the Slaughterer" id="f476-f7dd-5a13-a85a" hidden="false" publicationId="49a5-e8f7-aa09-ad96" page="77">
+          <description>In an army led by Skrag the Slaughterer, Gorgers are a Special choice, and in addition 2 Gorgers may be taken for each Special choice (rather than just 1). Skrag MUST be accompanied by at least 2 Gorgers (therefore using up 1 Special choice).</description>
+        </rule>
+      </rules>
     </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
@@ -1338,6 +1420,32 @@
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry type="model" import="true" name="Gorger" hidden="false" id="ece1-a86f-38f9-304e">
+      <costs>
+        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="75"/>
+        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e446-2340-8cfb-8997" includeChildSelections="false"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e998-b2d3-1333-a37d" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="2" field="e446-2340-8cfb-8997">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="82a9-0281-ffa1-2290" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Gorger" id="0a69-ba13-bc5c-198e" hidden="false" targetId="6da8-29d9-b039-8f97" type="profile"/>
+        <infoLink name="Bloodscent" id="acdd-2245-5a6a-7788" hidden="false" targetId="b4de-3155-1eaf-159e" type="rule"/>
+        <infoLink name="Fear" id="eb0a-e085-ad0d-53c4" hidden="false" targetId="1524-2372-4aa0-6881" type="rule"/>
+        <infoLink name="Killing Blow" id="491a-70c2-31e3-f620" hidden="false" targetId="e08e-1c7b-a667-f05b" type="rule"/>
+        <infoLink name="Ravenous" id="03b1-583e-c7e9-5401" hidden="false" targetId="c16d-b4a0-7cdf-44a9" type="rule"/>
+        <infoLink name="Unbreakable" id="bdb0-ffe1-6fa5-e799" hidden="false" targetId="8ae3-9724-980f-7308" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="5ce7-8d31-6eb4-ba22" name="Magic Banners" hidden="false" collective="false" import="true">
@@ -1905,6 +2013,9 @@ Thrown weapon</characteristic>
         <characteristic name="I" typeId="dfff-363e-f72a-5a59">2</characteristic>
         <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">4</characteristic>
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">8</characteristic>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+        <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+        <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">3</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

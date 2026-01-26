@@ -1984,12 +1984,9 @@
       <description>Unit causes Terror.
 Troops who are confronted by monsters or situations that cause terror must test to see whether they overcome their terror. If they fail, they are completely terrified and are reduced to gibbering wrecks. Troops only ever test for terror once in a battle. Once they&apos;ve overcome their terror they are not affected again.
 
-
 If a creature causes terror then it automatically causes fear as well, and all the rules described for fear apply. However, you never have to take a Terror and a Fear test from the same enemy or situation - just take a Terror test: if you pass the Terror test then you automatically pass the Fear test, too. As any unit of Troops only ever takes one Terror test in a battle, any subsequent encounters with terrifying monsters or situations will simply count as fear.
 
-
 A unit must make a Terror test if charged by or wishing to charge an enemy that causes terror.
-
 
 A unit must make a Terror test at the start of its turn if there is an enemy which causes terror within 6&quot;.</description>
     </rule>

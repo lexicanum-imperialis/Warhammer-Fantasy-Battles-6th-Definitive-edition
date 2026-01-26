@@ -220,6 +220,9 @@ The main additions are:
 - [x] Dechala, the Denied One (CJ#50, p.15-16)
 - [x] Azazel, Prince of Damnation (CJ#50, p.16-17)
 
+### Ogre Kingdoms
+- [x] Skrag the Slaughterer, Prohet of the Great Maw (OK-AB, p.76-77)
+
 ## Alternative lists included
 - [x] Clan Eshin (SKV-AB)
 - [x] Clan Eshin (SoC)
