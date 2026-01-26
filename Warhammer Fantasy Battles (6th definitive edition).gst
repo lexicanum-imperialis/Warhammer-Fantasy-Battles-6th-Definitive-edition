@@ -567,13 +567,6 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
-      <modifiers>
-        <modifier type="set" value="0" field="01a5-106d-f6e8-560b">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="parent" childId="1b7c-2c90-6d96-28c9" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
     </selectionEntry>
     <selectionEntry id="b76c-6bad-4650-dbb0" name="Dispel Scroll (one use only)" publicationId="315e-e3c4-08af-fd51" page="154" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
