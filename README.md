@@ -218,6 +218,7 @@ The main additions are:
 - [x] Aekold Helbrass, Champion of Tzeentch (CJ#50, p.13)
 - [x] Scyla Anfinngrim, Chaos Spawn  (CJ#50, p.14-15)
 - [x] Dechala, the Denied One (CJ#50, p.15-16)
+- [x] Azazel, Prince of Damnation (CJ#50, p.16-17)
 
 ## Alternative lists included
 - [x] Clan Eshin (SKV-AB)
