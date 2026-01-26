@@ -721,9 +721,9 @@
         <entryLink import="true" name="Gorger" hidden="false" id="7908-07bf-ccc6-d650" type="selectionEntry" targetId="ece1-a86f-38f9-304e"/>
       </entryLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Skrag the Slaughterer, Prohet of the Great Maw" hidden="false" id="82a9-0281-ffa1-2290" page="76-77" publicationId="49a5-e8f7-aa09-ad96">
+    <selectionEntry type="unit" import="true" name="Skrag the Slaughterer, Prohet of the Great Maw" hidden="false" id="82a9-0281-ffa1-2290" page="76-77" publicationId="49a5-e8f7-aa09-ad96">
       <categoryLinks>
-        <categoryLink name="Special Characters" hidden="false" id="35e9-ec9f-2fb5-29df" targetId="0644-bfcd-32c2-21dc" primary="false"/>
+        <categoryLink name="Special Characters" hidden="false" id="35e9-ec9f-2fb5-29df" targetId="0644-bfcd-32c2-21dc" primary="true"/>
         <categoryLink name="Lord" hidden="false" id="3eb9-e2d4-8559-0fcd" targetId="d024-d25b-a9b4-73b6" primary="false"/>
         <categoryLink name="Characters" hidden="false" id="f722-e9ac-a2cd-6ffc" targetId="7a1c-d611-c2dc-def1" primary="false"/>
         <categoryLink name="Special" hidden="false" id="9804-3509-ab4a-94ed" targetId="43cc-fc3f-35a7-8d03" primary="false"/>
@@ -793,6 +793,16 @@
           <description>In an army led by Skrag the Slaughterer, Gorgers are a Special choice, and in addition 2 Gorgers may be taken for each Special choice (rather than just 1). Skrag MUST be accompanied by at least 2 Gorgers (therefore using up 1 Special choice).</description>
         </rule>
       </rules>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="force" shared="true" id="2e16-3ee1-477f-acf5" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="1" field="2e16-3ee1-477f-acf5">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="9e50-7486-65ab-c449" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
@@ -2074,5 +2084,7 @@ Thrown weapon</characteristic>
         </modifierGroup>
       </modifierGroups>
     </entryLink>
+    <entryLink import="true" name="Allow special characters?" hidden="false" id="9e50-7486-65ab-c449" type="selectionEntry" targetId="8923-5946-7b10-8957"/>
+    <entryLink import="true" name="Allow experimental rules?" hidden="false" id="9a0b-4d97-1625-919f" type="selectionEntry" targetId="8b76-92c4-23f9-54b1"/>
   </entryLinks>
 </catalogue>
