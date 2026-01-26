@@ -137,6 +137,7 @@ The main additions are:
 - [x] Gorfang Rotgut (webGW-US and T#25-ES)
 - [x] Skarsnik and Gobbla (CJ#46, p.28)
 - [x] Badruk 'Eadsplitta (webGW-US)
+- [x] The Black Gobbo (webGW-US)
 
 ### High Elves
 - [x] Imrik, Dragon Prince of Caledor (HE-AB, p.64)
