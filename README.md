@@ -220,6 +220,9 @@ The main additions are:
 - [x] Dechala, the Denied One (CJ#50, p.15-16)
 - [x] Azazel, Prince of Damnation (CJ#50, p.16-17)
 
+### Dwarfs (2000)
+- [x] Thorek Ironbrow, Dwarf Runelord (DW1-AB, p.50-51)
+
 ### Ogre Kingdoms
 - [x] Skrag the Slaughterer, Prohet of the Great Maw (OK-AB, p.76-77)
 - [x] Rhynox Riders (WD#309, p.76-83)
