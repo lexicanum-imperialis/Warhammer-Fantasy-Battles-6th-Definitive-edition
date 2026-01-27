@@ -3280,9 +3280,6 @@ Troops who hate their enemy must always pursue them if they flee. They cannot at
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Ogre Bulls" hidden="false" id="7754-8b3d-df99-d2d5" collective="false">
-      <constraints>
-        <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="8469-51b4-75c9-4402" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-      </constraints>
       <infoLinks>
         <infoLink name="Ogre Bull" id="92fa-17b0-33bf-854a" hidden="false" targetId="0827-0dad-f5b2-fea5" type="profile"/>
         <infoLink name="Bull Charge" id="cb5a-c6f2-4e4e-ff1c" hidden="false" targetId="8953-90f3-edab-81fe" type="rule"/>
@@ -3595,6 +3592,27 @@ Troops who hate their enemy must always pursue them if they flee. They cannot at
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Extra Rare choice" hidden="false" id="ea59-6ea6-b3c9-c34a" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0799-afbf-f13f-bdac" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="9e9f-e78d-6390-accc" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink name="Rare" hidden="false" id="5aae-e21a-8a0e-e2c0" targetId="e94b-6a54-8779-cd60" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="1" field="9e9f-e78d-6390-accc">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="731d-5b13-2a92-5427" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup name="Weapons Selection" id="e5fc-7138-3778-150d" hidden="false" collective="false" import="true">
@@ -3618,6 +3636,9 @@ Troops who hate their enemy must always pursue them if they flee. They cannot at
               <costs>
                 <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="6"/>
               </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="739d-97a2-a542-061c" includeChildSelections="false"/>
+              </constraints>
             </entryLink>
             <entryLink import="true" name="Brace of Hanguns" hidden="false" id="f89a-f0cf-a71a-aca8" collective="false" targetId="02c0-d227-1ebd-f328" type="selectionEntry">
               <costs>
@@ -3648,15 +3669,6 @@ Troops who hate their enemy must always pursue them if they flee. They cannot at
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="70c0-91a3-6044-4d8b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Extra Rare choice" hidden="false" id="7a40-c4f8-6dbd-4d46" type="selectionEntry" targetId="dde8-eb28-cacb-34a3">
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="731d-5b13-2a92-5427" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
@@ -3673,6 +3685,9 @@ Troops who hate their enemy must always pursue them if they flee. They cannot at
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dc3b-0c35-52de-b354" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry id="8768-377c-88da-c3e8" name="Ogre Club" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
@@ -3726,6 +3741,9 @@ Troops who hate their enemy must always pursue them if they flee. They cannot at
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="16a8-cacb-c8e8-fe62" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Bull Standard" hidden="false" id="9a5a-c75e-2166-7fbe" collective="false">
       <constraints>
