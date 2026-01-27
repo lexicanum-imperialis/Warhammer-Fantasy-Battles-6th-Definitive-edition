@@ -29,7 +29,7 @@ The main additions are:
 - [x] Beast of Chaos (inside `Forces of Chaos`)
 - [x] Hordes of Chaos (inside `Forces of Chaos`)
 - [x] Daemons of Chaos (inside `Forces of Chaos`)
-- [ ] Dwarfs (at least the second ArmyBook)
+- [ ] Dwarfs (at least the first ArmyBook)
 - [ ] Kislev
 - [x] Dogs of War (WIP)
 
