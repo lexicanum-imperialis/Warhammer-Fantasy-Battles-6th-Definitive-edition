@@ -598,7 +598,7 @@
         <categoryLink name="State troops" hidden="false" id="e778-3261-d604-f8b4" targetId="2067-05d1-55c9-f09f" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="4fe5-0c22-a5f2-c78a" name="Spearmen" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry id="4fe5-0c22-a5f2-c78a" name="Spearmen" hidden="false" collective="false" import="true" type="model" sortIndex="1">
           <constraints>
             <constraint field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4fea-f580-57cf-2c62" type="min"/>
           </constraints>
@@ -617,37 +617,7 @@
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="5504-77fa-0e65-e08f" name="Hand Weapon" hidden="false" collective="false" import="true" targetId="abdb-bbd0-41b2-5dff" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="62b5-6f2f-073b-b459" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f4f-ef35-c70f-b500" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="4861-9617-be15-eaab" name="Light Armour" hidden="false" collective="false" import="true" targetId="055f-8e4e-f170-35d2" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2b30-666d-5404-c4ac" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d1ac-8d67-2f9f-03ae" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="d062-364e-8f4d-f112" name="Spear Infantry" hidden="false" collective="false" import="true" targetId="104f-5817-4bda-9382" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1522-4d38-1628-9d87" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ade7-7607-ee28-5552" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="1fc6-5884-838b-4274" name="Shield" hidden="false" collective="false" import="true" targetId="50e2-1873-a856-03e7" type="selectionEntry">
-          <modifiers>
-            <modifier type="increment" field="ecfa-8486-4f6c-c249" value="1">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a2c8-857f-255a-d537" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="5b7a-85d5-81fc-8f74" name="Detachments" hidden="false" collective="false" import="true" targetId="392f-5b21-9e42-6988" type="selectionEntryGroup"/>
+        <entryLink id="5b7a-85d5-81fc-8f74" name="Detachments" hidden="false" collective="false" import="true" targetId="392f-5b21-9e42-6988" type="selectionEntryGroup" sortIndex="4"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
@@ -681,7 +651,7 @@
         </modifier>
       </modifiers>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Command group" id="e5da-f3da-4fc3-e0b9" hidden="false">
+        <selectionEntryGroup name="Command group" id="e5da-f3da-4fc3-e0b9" hidden="false" sortIndex="3">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Standard Bearer" hidden="false" id="e490-0915-7e4f-32e1" collective="false" sortIndex="3">
               <constraints>
@@ -890,6 +860,40 @@
               </constraints>
             </selectionEntry>
           </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Weapons and Armour" id="9cdd-a1d9-1cb0-2d34" hidden="false" sortIndex="2">
+          <entryLinks>
+            <entryLink import="true" name="Spear Infantry" hidden="false" id="d062-364e-8f4d-f112" collective="false" targetId="104f-5817-4bda-9382" type="selectionEntry">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1522-4d38-1628-9d87" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ade7-7607-ee28-5552" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="5504-77fa-0e65-e08f" collective="false" targetId="abdb-bbd0-41b2-5dff" type="selectionEntry">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="62b5-6f2f-073b-b459" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4f4f-ef35-c70f-b500" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Light Armour" hidden="false" id="4861-9617-be15-eaab" collective="false" targetId="055f-8e4e-f170-35d2" type="selectionEntry">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2b30-666d-5404-c4ac" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d1ac-8d67-2f9f-03ae" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Shield" hidden="false" id="1fc6-5884-838b-4274" collective="false" targetId="50e2-1873-a856-03e7" type="selectionEntry">
+              <modifiers>
+                <modifier type="increment" value="1" field="ecfa-8486-4f6c-c249">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="parent" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a2c8-857f-255a-d537" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
@@ -12387,7 +12391,7 @@ Wearer is immune to spells of the Lore of Light.</characteristic>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
-    <selectionEntryGroup id="7e1a-728d-7c04-6dc8" name="State Magic Banners" hidden="true" collective="false" import="true">
+    <selectionEntryGroup id="7e1a-728d-7c04-6dc8" name="State Magic Banners" hidden="true" collective="false" import="true" collapsible="true">
       <constraints>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3312-7878-b146-9d31" type="max"/>
         <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a6df-d756-164c-5eb0" type="max"/>
@@ -12709,7 +12713,7 @@ Wearer is immune to spells of the Lore of Light.</characteristic>
         <entryLink id="1914-192c-463b-136c" name="Wizard’s Staff" hidden="false" collective="false" import="true" targetId="a187-d1e1-3a4e-1db6" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="392f-5b21-9e42-6988" name="Detachments" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="392f-5b21-9e42-6988" name="Detachments" hidden="false" collective="false" import="true" collapsible="true">
       <constraints>
         <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dad7-3172-dc2f-03a2" type="max"/>
       </constraints>
