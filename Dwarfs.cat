@@ -289,10 +289,18 @@
         <entryLink id="e644-f0e3-ee1e-d942" name="General" hidden="false" collective="false" import="true" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry">
           <modifiers>
             <modifier type="decrement" field="fcec-2340-6368-a2ba" value="2"/>
+            <modifier type="set" value="1" field="e13d-c45e-59aa-2ec4">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="085a-3f04-80fe-9d96" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <costs>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="2"/>
           </costs>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="e13d-c45e-59aa-2ec4" includeChildSelections="false"/>
+          </constraints>
         </entryLink>
       </entryLinks>
       <costs>
@@ -499,6 +507,7 @@
             <conditionGroup type="or">
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="7fc1-ad3b-54c8-70b9" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="085a-3f04-80fe-9d96" shared="true" includeChildSelections="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -952,6 +961,7 @@
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="085a-3f04-80fe-9d96" shared="true" includeChildSelections="true"/>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="7fc1-ad3b-54c8-70b9" shared="true" includeChildSelections="true"/>
               </conditions>
             </conditionGroup>
@@ -1090,6 +1100,17 @@
             <modifier type="add" value="e94b-6a54-8779-cd60" field="category"/>
           </modifiers>
         </modifierGroup>
+        <modifierGroup type="and">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="085a-3f04-80fe-9d96" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <comment>Royal Clan</comment>
+          <modifiers>
+            <modifier type="set-primary" value="43cc-fc3f-35a7-8d03" field="category"/>
+            <modifier type="remove" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="add" value="43cc-fc3f-35a7-8d03" field="category"/>
+          </modifiers>
+        </modifierGroup>
       </modifierGroups>
     </selectionEntry>
     <selectionEntry id="cfef-95f1-4748-be92" name="Thunderers" hidden="false" collective="false" import="true" type="unit">
@@ -1224,6 +1245,17 @@
             <modifier type="add" value="e94b-6a54-8779-cd60" field="category"/>
           </modifiers>
         </modifierGroup>
+        <modifierGroup type="and">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="085a-3f04-80fe-9d96" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <comment>Royal Clan</comment>
+          <modifiers>
+            <modifier type="set-primary" value="43cc-fc3f-35a7-8d03" field="category"/>
+            <modifier type="remove" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="add" value="43cc-fc3f-35a7-8d03" field="category"/>
+          </modifiers>
+        </modifierGroup>
       </modifierGroups>
     </selectionEntry>
     <selectionEntry id="5199-12e4-5dc0-5722" name="0-1 Miners" hidden="false" collective="false" import="true" type="unit">
@@ -1338,6 +1370,19 @@
           </conditionGroups>
         </modifier>
       </modifiers>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="085a-3f04-80fe-9d96" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <comment>Royal Clan</comment>
+          <modifiers>
+            <modifier type="set-primary" value="43cc-fc3f-35a7-8d03" field="category"/>
+            <modifier type="remove" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="add" value="43cc-fc3f-35a7-8d03" field="category"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry id="c6c2-4eae-6812-a220" name="0-1 Rangers" hidden="false" collective="false" import="true" type="unit">
       <constraints>
@@ -1479,6 +1524,17 @@
             <modifier type="add" value="e94b-6a54-8779-cd60" field="category"/>
           </modifiers>
         </modifierGroup>
+        <modifierGroup type="and">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="085a-3f04-80fe-9d96" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <comment>Royal Clan</comment>
+          <modifiers>
+            <modifier type="set-primary" value="43cc-fc3f-35a7-8d03" field="category"/>
+            <modifier type="remove" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="add" value="43cc-fc3f-35a7-8d03" field="category"/>
+          </modifiers>
+        </modifierGroup>
       </modifierGroups>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -1499,6 +1555,16 @@
       <infoLinks>
         <infoLink id="71fe-a6b8-a80b-4765" name="Dwarf Elite" hidden="false" targetId="ee95-5f34-1b74-72d3" type="profile"/>
         <infoLink id="be03-7a04-f8d1-522e" name="Bodyguard" hidden="false" targetId="5bdc-3b63-a913-2c0a" type="rule"/>
+        <infoLink name="Stubborn" id="1a2c-6f26-3d62-7b61" hidden="true" type="rule" targetId="410a-0d06-9044-665e">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="085a-3f04-80fe-9d96" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <comment>Royal Clan</comment>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="77f6-ce87-8764-e9fb" name="Special" hidden="false" targetId="43cc-fc3f-35a7-8d03" primary="true"/>
@@ -1633,6 +1699,21 @@
           <comment>If no Slayer King</comment>
         </modifier>
       </modifiers>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="085a-3f04-80fe-9d96" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <comment>Royal Clan</comment>
+          <modifiers>
+            <modifier type="set-primary" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="remove" value="43cc-fc3f-35a7-8d03" field="category"/>
+            <modifier type="add" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="set" value="-1" field="27d5-9afd-91d8-964f"/>
+            <modifier type="set" value="Hammerers" field="name"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry id="1752-d383-a279-4088" name="Longbeards" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -1756,6 +1837,19 @@
             <modifier type="add" value="e94b-6a54-8779-cd60" field="category"/>
           </modifiers>
         </modifierGroup>
+        <modifierGroup type="and">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="085a-3f04-80fe-9d96" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <comment>Royal Clan</comment>
+          <modifiers>
+            <modifier type="set-primary" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="remove" value="43cc-fc3f-35a7-8d03" field="category"/>
+            <modifier type="add" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="set" value="1" field="dc92-ff32-0256-7c20"/>
+            <modifier type="set" value="0-1 Longbeards" field="name"/>
+          </modifiers>
+        </modifierGroup>
       </modifierGroups>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -1768,6 +1862,9 @@
           </conditionGroups>
         </modifier>
       </modifiers>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="dc92-ff32-0256-7c20" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry id="9742-7edf-a5fa-37fa" name="Ironbreakers" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -1892,6 +1989,24 @@
           </conditionGroups>
         </modifier>
       </modifiers>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="085a-3f04-80fe-9d96" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <comment>Royal Clan</comment>
+          <modifiers>
+            <modifier type="set-primary" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="remove" value="43cc-fc3f-35a7-8d03" field="category"/>
+            <modifier type="add" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="set" value="1" field="9845-fc74-87ac-bcdc"/>
+            <modifier type="set" value="0-1 Ironbreakers" field="name"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="9845-fc74-87ac-bcdc" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry id="86bd-ed33-1528-bd13" name="0-1 Slayers" hidden="false" collective="false" import="true" type="unit">
       <constraints>
@@ -1991,6 +2106,7 @@
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="085a-3f04-80fe-9d96" shared="true" includeChildSelections="true"/>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="7fc1-ad3b-54c8-70b9" shared="true" includeChildSelections="true"/>
               </conditions>
             </conditionGroup>
@@ -2064,6 +2180,17 @@
             <modifier type="set-primary" value="64bf-efb4-9978-26df" field="category"/>
             <modifier type="remove" value="43cc-fc3f-35a7-8d03" field="category"/>
             <modifier type="add" value="64bf-efb4-9978-26df" field="category"/>
+          </modifiers>
+        </modifierGroup>
+        <modifierGroup type="and">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="085a-3f04-80fe-9d96" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <comment>Royal Clan</comment>
+          <modifiers>
+            <modifier type="set-primary" value="e94b-6a54-8779-cd60" field="category"/>
+            <modifier type="remove" value="43cc-fc3f-35a7-8d03" field="category"/>
+            <modifier type="add" value="e94b-6a54-8779-cd60" field="category"/>
           </modifiers>
         </modifierGroup>
       </modifierGroups>
@@ -2147,6 +2274,17 @@
             <modifier type="add" value="64bf-efb4-9978-26df" field="category"/>
           </modifiers>
         </modifierGroup>
+        <modifierGroup type="and">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="085a-3f04-80fe-9d96" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <comment>Royal Clan</comment>
+          <modifiers>
+            <modifier type="set-primary" value="e94b-6a54-8779-cd60" field="category"/>
+            <modifier type="remove" value="43cc-fc3f-35a7-8d03" field="category"/>
+            <modifier type="add" value="e94b-6a54-8779-cd60" field="category"/>
+          </modifiers>
+        </modifierGroup>
       </modifierGroups>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -2211,6 +2349,17 @@
             <modifier type="set-primary" value="64bf-efb4-9978-26df" field="category"/>
             <modifier type="remove" value="43cc-fc3f-35a7-8d03" field="category"/>
             <modifier type="add" value="64bf-efb4-9978-26df" field="category"/>
+          </modifiers>
+        </modifierGroup>
+        <modifierGroup type="and">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="085a-3f04-80fe-9d96" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <comment>Royal Clan</comment>
+          <modifiers>
+            <modifier type="set-primary" value="e94b-6a54-8779-cd60" field="category"/>
+            <modifier type="remove" value="43cc-fc3f-35a7-8d03" field="category"/>
+            <modifier type="add" value="e94b-6a54-8779-cd60" field="category"/>
           </modifiers>
         </modifierGroup>
       </modifierGroups>
@@ -2279,6 +2428,7 @@
             <conditionGroup type="or">
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="ff20-01b3-b099-d019" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="085a-3f04-80fe-9d96" shared="true" includeChildSelections="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -2379,6 +2529,7 @@
             <conditionGroup type="or">
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="ff20-01b3-b099-d019" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="085a-3f04-80fe-9d96" shared="true" includeChildSelections="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -2451,6 +2602,7 @@
             <conditionGroup type="or">
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="ff20-01b3-b099-d019" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="085a-3f04-80fe-9d96" shared="true" includeChildSelections="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -4627,6 +4779,20 @@ Dwarf Hanguns get a +1 to hit at short range</characteristic>
         <categoryLink name="Core" hidden="false" id="c698-d4ca-8b2b-46d0" targetId="64bf-efb4-9978-26df" primary="false"/>
         <categoryLink name="Special" hidden="false" id="4cd7-8dff-686b-5efd" targetId="43cc-fc3f-35a7-8d03" primary="false"/>
         <categoryLink name="Rare" hidden="false" id="1219-4dc9-b1b2-26fd" targetId="e94b-6a54-8779-cd60" primary="false"/>
+      </categoryLinks>
+    </forceEntry>
+    <forceEntry name="Royal Clan (DW1-AB)" id="085a-3f04-80fe-9d96" hidden="false" publicationId="6265-1d51-76e2-4fe2" page="79">
+      <categoryLinks>
+        <categoryLink name="Experimental rules" hidden="false" id="4971-9341-42b0-6034" targetId="4fed-b911-e6e0-927b" primary="false"/>
+        <categoryLink name="Special list rules" hidden="false" id="c62c-f45a-61e7-5bbc" targetId="32f1-197f-d719-a393" primary="false"/>
+        <categoryLink name="Special Characters" hidden="false" id="b6ec-e463-1504-1e4c" targetId="0644-bfcd-32c2-21dc" primary="false"/>
+        <categoryLink name="Characters" hidden="false" id="5b3c-2b14-cada-b95a" targetId="7a1c-d611-c2dc-def1" primary="false"/>
+        <categoryLink name="Lord" hidden="false" id="4930-50ec-d944-c022" targetId="d024-d25b-a9b4-73b6" primary="false"/>
+        <categoryLink name="Heroes" hidden="false" id="ef08-dca2-afff-3999" targetId="c16b-f319-2c62-2c12" primary="false"/>
+        <categoryLink name="Core" hidden="false" id="b388-4e5d-ec32-5d00" targetId="64bf-efb4-9978-26df" primary="false"/>
+        <categoryLink name="Special" hidden="false" id="133e-4b99-a57a-6b87" targetId="43cc-fc3f-35a7-8d03" primary="false"/>
+        <categoryLink name="Rare" hidden="false" id="26a2-ddd7-a17f-ddf1" targetId="e94b-6a54-8779-cd60" primary="false"/>
+        <categoryLink name="Regiment of Renown" hidden="false" id="da6d-a02b-936f-42dc" targetId="ee09-9a50-ad78-9c32" primary="false"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
