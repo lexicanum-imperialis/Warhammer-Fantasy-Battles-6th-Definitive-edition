@@ -147,6 +147,19 @@
           </conditions>
         </modifier>
       </modifiers>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="ff20-01b3-b099-d019" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <comment>Throng of Karak Kadrin</comment>
+          <modifiers>
+            <modifier type="set-primary" value="43cc-fc3f-35a7-8d03" field="category"/>
+            <modifier type="remove" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="add" value="43cc-fc3f-35a7-8d03" field="category"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry id="9e9f-fed1-3b64-cfdd" name="Dwarf Lord" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -1065,6 +1078,19 @@
           </conditionGroups>
         </modifier>
       </modifiers>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="ff20-01b3-b099-d019" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <comment>Throng of Karak Kadrin</comment>
+          <modifiers>
+            <modifier type="set-primary" value="e94b-6a54-8779-cd60" field="category"/>
+            <modifier type="remove" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="add" value="e94b-6a54-8779-cd60" field="category"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry id="cfef-95f1-4748-be92" name="Thunderers" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -1186,8 +1212,21 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="ff20-01b3-b099-d019" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <comment>Throng of Karak Kadrin</comment>
+          <modifiers>
+            <modifier type="set-primary" value="e94b-6a54-8779-cd60" field="category"/>
+            <modifier type="remove" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="add" value="e94b-6a54-8779-cd60" field="category"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
-    <selectionEntry id="5199-12e4-5dc0-5722" name="Miners" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="5199-12e4-5dc0-5722" name="0-1 Miners" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1dcd-896b-72d7-6c70" type="max"/>
       </constraints>
@@ -1293,13 +1332,14 @@
             <conditionGroup type="or">
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="7fc1-ad3b-54c8-70b9" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="ff20-01b3-b099-d019" shared="true" includeChildSelections="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
       </modifiers>
     </selectionEntry>
-    <selectionEntry id="c6c2-4eae-6812-a220" name="Rangers" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="c6c2-4eae-6812-a220" name="0-1 Rangers" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="192f-77fb-02ed-e70d" type="max"/>
       </constraints>
@@ -1440,10 +1480,21 @@
           </modifiers>
         </modifierGroup>
       </modifierGroups>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="ff20-01b3-b099-d019" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
-    <selectionEntry id="540f-cc1a-378d-a547" name="Hammerers" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="540f-cc1a-378d-a547" name="0-1 Hammerers" hidden="false" collective="false" import="true" type="unit">
       <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="27d5-9afd-91d8-964f" type="max"/>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="27d5-9afd-91d8-964f" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="71fe-a6b8-a80b-4765" name="Dwarf Elite" hidden="false" targetId="ee95-5f34-1b74-72d3" type="profile"/>
@@ -1570,6 +1621,17 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" value="0" field="27d5-9afd-91d8-964f">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="ff20-01b3-b099-d019" shared="true" includeChildSelections="true"/>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="b3e3-29e2-29ee-8211" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+          <comment>If no Slayer King</comment>
+        </modifier>
       </modifiers>
     </selectionEntry>
     <selectionEntry id="1752-d383-a279-4088" name="Longbeards" hidden="false" collective="false" import="true" type="unit">
@@ -1695,6 +1757,17 @@
           </modifiers>
         </modifierGroup>
       </modifierGroups>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="ff20-01b3-b099-d019" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="9742-7edf-a5fa-37fa" name="Ironbreakers" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -1809,11 +1882,20 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="ff20-01b3-b099-d019" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
     </selectionEntry>
-    <selectionEntry id="86bd-ed33-1528-bd13" name="Slayers" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="86bd-ed33-1528-bd13" name="0-1 Slayers" hidden="false" collective="false" import="true" type="unit">
       <constraints>
-        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5047-5117-10e1-7d65" type="max"/>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5047-5117-10e1-7d65" type="max"/>
       </constraints>
       <profiles>
         <profile id="98a4-d17b-7d12-fc7b" name="Giant Slayer" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
@@ -1915,6 +1997,21 @@
           </conditionGroups>
         </modifier>
       </modifiers>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="ff20-01b3-b099-d019" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <comment>Throng of Karak Kadrin</comment>
+          <modifiers>
+            <modifier type="set-primary" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="remove" value="43cc-fc3f-35a7-8d03" field="category"/>
+            <modifier type="add" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="set" value="-1" field="5047-5117-10e1-7d65"/>
+            <modifier type="set" value="Slayers" field="name"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry id="407e-bc33-742f-61b0" name="Cannon" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -1970,6 +2067,17 @@
           </modifiers>
         </modifierGroup>
       </modifierGroups>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="ff20-01b3-b099-d019" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="c967-bbb6-03c1-0018" name="Bolt Throwers" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
@@ -2040,6 +2148,17 @@
           </modifiers>
         </modifierGroup>
       </modifierGroups>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="ff20-01b3-b099-d019" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="ca0c-af6e-1b0c-ac60" name="Stone Thrower" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -2095,6 +2214,17 @@
           </modifiers>
         </modifierGroup>
       </modifierGroups>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="ff20-01b3-b099-d019" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="79c9-6f85-479d-909a" name="Organ Gun" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -2143,6 +2273,15 @@
             <condition type="atLeast" value="1" field="selections" scope="force" childId="e4c5-f4d5-a169-aaa7" shared="true" includeChildSelections="true"/>
           </conditions>
           <comment>&quot;Traditional Army&quot;, DW1-AB, p.53</comment>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="ff20-01b3-b099-d019" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <modifierGroups>
@@ -2235,6 +2374,15 @@
           </conditions>
           <comment>&quot;Traditional Army&quot;, DW1-AB, p.53</comment>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="ff20-01b3-b099-d019" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
       <modifierGroups>
         <modifierGroup type="and">
@@ -2297,6 +2445,15 @@
             <condition type="atLeast" value="1" field="selections" scope="force" childId="e4c5-f4d5-a169-aaa7" shared="true" includeChildSelections="true"/>
           </conditions>
           <comment>&quot;Traditional Army&quot;, DW1-AB, p.53</comment>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="ff20-01b3-b099-d019" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <modifierGroups>

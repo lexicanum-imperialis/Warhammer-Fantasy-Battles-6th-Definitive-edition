@@ -278,6 +278,7 @@ The main additions are:
 - [x] Archaon's Horde (SoC, p.18-23)
 - [x] Daemonic Legion (SoC, p.27-32)
 - [x] Guild Expedition (DW1-AB, p.78)
+- [x] Throng of Karak Kadrin (DW1-AB, p.78)
 
 
 ## Sources consulted
