@@ -4419,10 +4419,14 @@
       </costs>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="d2eb-6fe3-7349-f03d" shared="true" includeChildSelections="true"/>
-          </conditions>
           <comment>Cult of Ulric (CR-04)</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="d2eb-6fe3-7349-f03d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
         <modifier type="set" value="Knight-Captain" field="name">
           <conditions>
@@ -6725,6 +6729,13 @@ All friendly units within 18&quot; of the Emperor can always use his Leadership 
           <costs>
             <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="25"/>
           </costs>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="d2eb-6fe3-7349-f03d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </entryLink>
       </entryLinks>
       <costs>
@@ -7206,24 +7217,6 @@ All friendly units within 18&quot; of the Emperor can always use his Leadership 
           <costs>
             <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
           </costs>
-        </entryLink>
-        <entryLink import="true" name="Battle Standard Bearer" hidden="true" id="6feb-af2c-995d-933d" collective="false" targetId="e9ad-f1ce-aebf-6d23" type="selectionEntry">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="66d8-abe7-4fa0-e0c8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-          <entryLinks>
-            <entryLink import="true" name="Magic Banners" hidden="false" id="f251-a4fa-76fe-a5eb" collective="false" targetId="0624-aa91-f728-45b9" type="selectionEntryGroup"/>
-          </entryLinks>
-          <costs>
-            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="25"/>
-          </costs>
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="6b0d-2c9f-2d46-b330" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </entryLink>
       </entryLinks>
       <costs>
