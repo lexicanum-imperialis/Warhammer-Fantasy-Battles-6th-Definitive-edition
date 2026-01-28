@@ -14,7 +14,6 @@ The main additions are:
   - All the experimental rules of the 6th edition!
 
 ## Factions included
-
 - [x] Skaven
 - [x] Wood Elves
 - [x] Tomb kings
@@ -29,8 +28,9 @@ The main additions are:
 - [x] Beast of Chaos (inside `Forces of Chaos`)
 - [x] Hordes of Chaos (inside `Forces of Chaos`)
 - [x] Daemons of Chaos (inside `Forces of Chaos`)
-- [ ] Dwarfs (at least the first ArmyBook)
-- [ ] Kislev
+- [x] Dwarfs (at least the first ArmyBook) (WIP)
+- [x] Ogre Kingdoms (WIP)
+- [x] Kislev
 - [x] Dogs of War (WIP)
 
 ## Characters and units added
