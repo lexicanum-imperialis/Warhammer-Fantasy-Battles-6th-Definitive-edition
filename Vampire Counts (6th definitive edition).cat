@@ -12254,6 +12254,9 @@ Undead cause fear.</description>
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <infoLinks>
+        <infoLink name="The Gem of Blood" id="af23-48d7-7ba8-c456" hidden="false" type="rule" targetId="6707-fcf0-3bc2-e791"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Wristbands of Black Gold " hidden="false" id="506c-e3a5-3ba6-191a" collective="false">
       <constraints>
@@ -18960,9 +18963,21 @@ They benefit from Talismanic Tattoos, Fury Of Kurnous and Forest Spirit Special 
           </modifiers>
         </entryLink>
         <entryLink import="true" name="The Gem of Blood (one use only)" hidden="false" id="a226-9e88-b4fc-19db" type="selectionEntry" targetId="6708-0064-73df-37b6"/>
-        <entryLink import="true" name="Ring of the Night" hidden="false" id="ae63-2d80-02c8-15c6" type="selectionEntry" targetId="797b-2638-136a-0081"/>
-        <entryLink import="true" name="Wristbands of Black Gold " hidden="false" id="d6f8-611f-3b85-5284" type="selectionEntry" targetId="506c-e3a5-3ba6-191a"/>
-        <entryLink import="true" name="Obsidian Amulet" hidden="false" id="59d5-6e94-2a6f-cc84" type="selectionEntry" targetId="8307-3b9f-89bc-b89a"/>
+        <entryLink import="true" name="Ring of the Night" hidden="false" id="ae63-2d80-02c8-15c6" type="selectionEntry" targetId="797b-2638-136a-0081">
+          <infoLinks>
+            <infoLink name="Ring of the Night" id="bda4-5c2f-7030-df69" hidden="false" type="rule" targetId="7884-7017-4cfd-c00c"/>
+          </infoLinks>
+        </entryLink>
+        <entryLink import="true" name="Wristbands of Black Gold " hidden="false" id="d6f8-611f-3b85-5284" type="selectionEntry" targetId="506c-e3a5-3ba6-191a">
+          <infoLinks>
+            <infoLink name="Wristbands of Black Gold" id="fab2-23a2-3fb4-0d16" hidden="false" type="rule" targetId="8fa6-09dd-5167-7427"/>
+          </infoLinks>
+        </entryLink>
+        <entryLink import="true" name="Obsidian Amulet" hidden="false" id="59d5-6e94-2a6f-cc84" type="selectionEntry" targetId="8307-3b9f-89bc-b89a">
+          <infoLinks>
+            <infoLink name="Obsidian Amulet" id="4456-5ca0-bb0e-54eb" hidden="false" type="rule" targetId="e307-bc6f-6bff-f0c3"/>
+          </infoLinks>
+        </entryLink>
         <entryLink import="true" name="Crown of the Damned" hidden="false" id="fc0c-bc28-5c6f-4f6a" type="selectionEntry" targetId="0722-32ab-cd8c-2b72"/>
       </entryLinks>
       <comment>VC</comment>
@@ -19201,7 +19216,7 @@ They benefit from Talismanic Tattoos, Fury Of Kurnous and Forest Spirit Special 
         <entryLink import="true" name="5. Vanhel&apos;s Danse Macabre" hidden="false" id="0a13-882e-e4c7-971d" type="selectionEntry" targetId="b665-b7cc-a0a8-5d10"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Enchanted Items" id="5ba4-0afd-8c5f-d3e2" hidden="false" collapsible="true">
+    <selectionEntryGroup name="Enchanted Items" id="454b8032-d15e-4a74-a103-c204aa1ac002" hidden="false" collapsible="true">
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="476b-27eb-5596-c485" includeChildSelections="false"/>
       </constraints>
@@ -19353,7 +19368,7 @@ They benefit from Talismanic Tattoos, Fury Of Kurnous and Forest Spirit Special 
       </entryLinks>
       <comment>VC</comment>
     </selectionEntryGroup>
-    <selectionEntryGroup id="454b8032-d15e-4a74-a103-c204aa1ac002" name="Enchanted Items" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="5ba4-0afd-8c5f-d3e2" name="Enchanted Items" hidden="false" collective="false" import="true">
       <constraints>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fec88f1d-e3de-4646-8e4c-3c9282bfe89d" type="max"/>
       </constraints>
@@ -24370,6 +24385,18 @@ At the start of each of Kemmler’s turns, before charges have been declared, 
       <description>Ghosts do not attack in the conventional sense, though their chill presence is a danger to all who fear them.
 At the start of each Combat phase, roll 2D6+2 for any unit in base contact with a Ghost. For each point by which the roll beats the unit’s Leadership, it suffers 1 wound (allocated exactly like shooting hits). No Armour Saving throws are allowed against these hits and they do count towards Combat Resolution.
 Units that are Immune to Psychology are not affected by this attack.</description>
+    </rule>
+    <rule name="Obsidian Amulet" id="e307-bc6f-6bff-f0c3" hidden="false">
+      <description>The bearer has a 4+ Ward save against wounds caused by magic weapons, spells or indeed any form of magical attack. In addition, the ring confers Magic Resistance (1).</description>
+    </rule>
+    <rule name="Ring of the Night" id="7884-7017-4cfd-c00c" hidden="false">
+      <description>5+ Ward save</description>
+    </rule>
+    <rule name="The Gem of Blood" id="6707-fcf0-3bc2-e791" hidden="false">
+      <description>One use only. When the wearer suffers its first wound in close combat, the gem is activated. Roll a dice. On a result of 2+, the wound is saved and rebounded on the model who caused it, with no armour saves allowed. On a result of 1, the wound is not saved and the bearer suffers 1 additional wound, with no amour saves allowed.</description>
+    </rule>
+    <rule name="Wristbands of Black Gold" id="8fa6-09dd-5167-7427" hidden="false">
+      <description>3+ Ward save against missile fire of any kind (including hits from war machines, template attacks, magic missiles, etc).</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
