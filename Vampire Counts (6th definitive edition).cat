@@ -1945,6 +1945,13 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
             <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="dde4-9bc3-f762-d6cb" includeChildSelections="false"/>
             <constraint type="max" value="100" field="ecfa-8486-4f6c-c249" scope="parent" shared="true" id="e4ef-628f-fae9-f0db"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="f37a-a93e-fa22-61a8" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <comment>Vampire Counts</comment>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -12064,9 +12071,6 @@ Undead cause fear.</description>
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
-      <infoLinks>
-        <infoLink name="Casket of Ages" id="7c88-e382-6b0d-effa" hidden="false" type="rule" targetId="c87d-5f4b-ba95-88c1"/>
-      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Cloak of Mist and Shadows " hidden="false" id="72ba-8771-2926-3354" collective="false">
       <constraints>
@@ -12082,6 +12086,16 @@ Undead cause fear.</description>
         <infoLink name="Ethereal" id="0cb5-b418-5f10-568c" hidden="false" type="rule" targetId="6d98-35cb-09d5-9cf1"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Cursed Book" hidden="false" id="f26b-8b1c-b3cc-57b7" collective="false">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="71ad-c7ea-1916-3c28" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
+      <costs>
+        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="50"/>
+        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+      </costs>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Rod of Flaming Death " hidden="false" id="5095-e258-cf55-78fc" collective="false">
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="e309-8c5f-eab3-204a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -12091,9 +12105,6 @@ Undead cause fear.</description>
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
-      <infoLinks>
-        <infoLink name="Rod of Flaming Death" id="353d-754f-2d49-4609" hidden="false" type="rule" targetId="1d70-b54e-7b52-012c"/>
-      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Talon of Death" hidden="false" id="dbc8-8204-b238-c315" collective="false">
       <constraints>
@@ -12104,9 +12115,6 @@ Undead cause fear.</description>
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
-      <infoLinks>
-        <infoLink name="Talon of Death" id="13f3-e07e-5d3d-9501" hidden="false" type="rule" targetId="222d-b8bb-f2d4-2d28"/>
-      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="The Cursed Shield of Mousillon" hidden="false" id="da9c-a03d-dbcf-4bac" collective="false">
       <constraints>
@@ -12253,9 +12261,6 @@ Undead cause fear.</description>
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
-      <infoLinks>
-        <infoLink name="The Gem of Blood" id="af23-48d7-7ba8-c456" hidden="false" type="rule" targetId="6707-fcf0-3bc2-e791"/>
-      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Wristbands of Black Gold " hidden="false" id="506c-e3a5-3ba6-191a" collective="false">
       <constraints>
@@ -14926,7 +14931,7 @@ Wearer is immune to spells of the Lore of Light.</characteristic>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="bfa6ca95-6c68-4b24-9fd2-521a1da1df32" name="Seal of Ghrond [DARK ELVES]" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="bfa6ca95-6c68-4b24-9fd2-521a1da1df32" name="Seal of Ghrond" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cdc938df-5e6d-4240-b47c-2beac1830874" type="max"/>
         <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5bf718e5-c8e0-478f-98c1-cd490b0ab159" type="max"/>
@@ -14982,7 +14987,7 @@ Wearer is immune to spells of the Lore of Light.</characteristic>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="9ffd9b93-1560-4646-9b10-7ebc02d47259" name="Heart-Stone of Darkness [DARK ELVES]" publicationId="460266fa-650d-40a7-a2ce-e436a207189c" page="86" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="9ffd9b93-1560-4646-9b10-7ebc02d47259" name="Heart-Stone of Darkness" publicationId="460266fa-650d-40a7-a2ce-e436a207189c" page="86" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4e142227-13fc-4b55-b856-9e204c716122" type="max"/>
         <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="e2378a87-9b55-4216-ac05-44bf590fcab7" type="max"/>
@@ -15080,7 +15085,7 @@ Wearer is immune to spells of the Lore of Light.</characteristic>
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="57aa2dd4-cd62-4dab-aecc-6d469aa720ab" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Mystic Shield of Light (Talisman) [DARK ELVES]" hidden="false" id="aad49fc9-3fd7-4071-9b79-345ace643846">
+    <selectionEntry type="upgrade" import="true" name="Mystic Shield of Light" hidden="false" id="aad49fc9-3fd7-4071-9b79-345ace643846">
       <constraints>
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="54cbda34-91d9-4bca-bc36-473584614d52" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="edd5517d-5636-4643-9068-243c231986b2" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -15098,7 +15103,7 @@ Wearer is immune to spells of the Lore of Light.</characteristic>
         <infoLink name="Divine Eye (Enchanted Item)" id="983253f8-b341-4fdd-8f05-8018e29064fc" hidden="false" type="rule" targetId="01abab9d-d4fa-444a-a213-c5db17016d7a"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Ring of Hotek [DARK ELVES]" hidden="false" id="8c86b062-2220-4c8a-bdd9-d943261a7a26" collective="false">
+    <selectionEntry type="upgrade" import="true" name="Ring of Hotek" hidden="false" id="8c86b062-2220-4c8a-bdd9-d943261a7a26" collective="false">
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="db7e637e-6265-41aa-bbfb-10bfb1cb05d0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="4fecb984-e689-4160-a43e-46b90a09f32c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -18670,7 +18675,6 @@ They benefit from Talismanic Tattoos, Fury Of Kurnous and Forest Spirit Special 
       </constraints>
       <infoLinks>
         <infoLink name="Cursed Book" id="06d4-8113-12a8-5b3d" hidden="false" type="profile" targetId="b1d3-309b-0dc1-6136"/>
-        <infoLink name="Cursed Book" id="5d14-e570-944e-e57b" hidden="false" type="rule" targetId="6236-4785-1d0b-49a8"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry id="2bb2b1c1-49b9-4368-8c6d-c002eeffc2f2" name="Standard of the Sands [LICHEMASTER]" publicationId="45f90b65-a376-4386-a851-8ff7d914ba9b" page="39" hidden="false" collective="false" import="true" type="upgrade">
@@ -18963,21 +18967,9 @@ They benefit from Talismanic Tattoos, Fury Of Kurnous and Forest Spirit Special 
           </modifiers>
         </entryLink>
         <entryLink import="true" name="The Gem of Blood (one use only)" hidden="false" id="a226-9e88-b4fc-19db" type="selectionEntry" targetId="6708-0064-73df-37b6"/>
-        <entryLink import="true" name="Ring of the Night" hidden="false" id="ae63-2d80-02c8-15c6" type="selectionEntry" targetId="797b-2638-136a-0081">
-          <infoLinks>
-            <infoLink name="Ring of the Night" id="bda4-5c2f-7030-df69" hidden="false" type="rule" targetId="7884-7017-4cfd-c00c"/>
-          </infoLinks>
-        </entryLink>
-        <entryLink import="true" name="Wristbands of Black Gold " hidden="false" id="d6f8-611f-3b85-5284" type="selectionEntry" targetId="506c-e3a5-3ba6-191a">
-          <infoLinks>
-            <infoLink name="Wristbands of Black Gold" id="fab2-23a2-3fb4-0d16" hidden="false" type="rule" targetId="8fa6-09dd-5167-7427"/>
-          </infoLinks>
-        </entryLink>
-        <entryLink import="true" name="Obsidian Amulet" hidden="false" id="59d5-6e94-2a6f-cc84" type="selectionEntry" targetId="8307-3b9f-89bc-b89a">
-          <infoLinks>
-            <infoLink name="Obsidian Amulet" id="4456-5ca0-bb0e-54eb" hidden="false" type="rule" targetId="e307-bc6f-6bff-f0c3"/>
-          </infoLinks>
-        </entryLink>
+        <entryLink import="true" name="Ring of the Night" hidden="false" id="ae63-2d80-02c8-15c6" type="selectionEntry" targetId="797b-2638-136a-0081"/>
+        <entryLink import="true" name="Wristbands of Black Gold " hidden="false" id="d6f8-611f-3b85-5284" type="selectionEntry" targetId="506c-e3a5-3ba6-191a"/>
+        <entryLink import="true" name="Obsidian Amulet" hidden="false" id="59d5-6e94-2a6f-cc84" type="selectionEntry" targetId="8307-3b9f-89bc-b89a"/>
         <entryLink import="true" name="Crown of the Damned" hidden="false" id="fc0c-bc28-5c6f-4f6a" type="selectionEntry" targetId="0722-32ab-cd8c-2b72"/>
       </entryLinks>
       <comment>VC</comment>
@@ -19881,6 +19873,9 @@ They benefit from Talismanic Tattoos, Fury Of Kurnous and Forest Spirit Special 
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
+          <infoLinks>
+            <infoLink name="Terror" id="41d3-5a75-7c2f-2dc8" hidden="false" type="rule" targetId="96f0-c50f-e59e-85fa"/>
+          </infoLinks>
         </selectionEntry>
         <selectionEntry id="704143f0-6e7a-4bb4-8dbf-f023938bd675" name="Crown of Black Iron" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -19896,9 +19891,9 @@ They benefit from Talismanic Tattoos, Fury Of Kurnous and Forest Spirit Special 
       </selectionEntries>
       <entryLinks>
         <entryLink id="032d700a-bb83-47b0-9a54-f21f8400b79d" name="Seal of Ghrond [DARK ELVES]" hidden="false" collective="false" import="true" targetId="bfa6ca95-6c68-4b24-9fd2-521a1da1df32" type="selectionEntry"/>
-        <entryLink id="e999dc0c-9b7c-4e0c-983f-e55cd69e6446" name="Heart-Stone of Darkness [DARK ELVES]" hidden="false" collective="false" import="true" targetId="9ffd9b93-1560-4646-9b10-7ebc02d47259" type="selectionEntry"/>
-        <entryLink import="true" name="Mystic Shield of Light (Talisman) [DARK ELVES]" hidden="false" id="1616a4fa-116f-4a00-a97c-ab087bfcd63f" type="selectionEntry" targetId="aad49fc9-3fd7-4071-9b79-345ace643846"/>
-        <entryLink import="true" name="Ring of Hotek [DARK ELVES]" hidden="false" id="a107b9a2-8d62-42e6-9c1b-73678c589512" type="selectionEntry" targetId="8c86b062-2220-4c8a-bdd9-d943261a7a26"/>
+        <entryLink id="e999dc0c-9b7c-4e0c-983f-e55cd69e6446" name="Heart-Stone of Darkness" hidden="false" collective="false" import="true" targetId="9ffd9b93-1560-4646-9b10-7ebc02d47259" type="selectionEntry"/>
+        <entryLink import="true" name="Mystic Shield of Light" hidden="false" id="1616a4fa-116f-4a00-a97c-ab087bfcd63f" type="selectionEntry" targetId="aad49fc9-3fd7-4071-9b79-345ace643846"/>
+        <entryLink import="true" name="Ring of Hotek" hidden="false" id="a107b9a2-8d62-42e6-9c1b-73678c589512" type="selectionEntry" targetId="8c86b062-2220-4c8a-bdd9-d943261a7a26"/>
         <entryLink import="true" name="Black Amulet (Talisman) [DARK ELVES]" hidden="false" id="306eaff5-ea9c-4a94-bf30-3bd510db2555" type="selectionEntry" targetId="d0a689ca-148a-4060-801f-7506ea9d1e1c"/>
       </entryLinks>
       <comment>DARK ELVES</comment>
@@ -24386,37 +24381,6 @@ At the start of each of Kemmler’s turns, before charges have been declared, 
       <description>Ghosts do not attack in the conventional sense, though their chill presence is a danger to all who fear them.
 At the start of each Combat phase, roll 2D6+2 for any unit in base contact with a Ghost. For each point by which the roll beats the unit’s Leadership, it suffers 1 wound (allocated exactly like shooting hits). No Armour Saving throws are allowed against these hits and they do count towards Combat Resolution.
 Units that are Immune to Psychology are not affected by this attack.</description>
-    </rule>
-    <rule name="Obsidian Amulet" id="e307-bc6f-6bff-f0c3" hidden="false">
-      <description>The bearer has a 4+ Ward save against wounds caused by magic weapons, spells or indeed any form of magical attack. In addition, the ring confers Magic Resistance (1).</description>
-    </rule>
-    <rule name="Ring of the Night" id="7884-7017-4cfd-c00c" hidden="false">
-      <description>5+ Ward save</description>
-    </rule>
-    <rule name="The Gem of Blood" id="6707-fcf0-3bc2-e791" hidden="false">
-      <description>One use only. When the wearer suffers its first wound in close combat, the gem is activated. Roll a dice. On a result of 2+, the wound is saved and rebounded on the model who caused it, with no armour saves allowed. On a result of 1, the wound is not saved and the bearer suffers 1 additional wound, with no amour saves allowed.</description>
-    </rule>
-    <rule name="Wristbands of Black Gold" id="8fa6-09dd-5167-7427" hidden="false">
-      <description>3+ Ward save against missile fire of any kind (including hits from war machines, template attacks, magic missiles, etc).</description>
-    </rule>
-    <rule name="Casket of Ages" id="c87d-5f4b-ba95-88c1" hidden="false">
-      <description>Bound Spell, Power Level 3. One use only. The Casket may cast its spell once during the battle. The spell requires no Power dice to cast; all the power required is provided by the Casket itself.
-
-When the Casket&apos;s spell is cast, a model in base contact with the bearer (chosen by the bearer) suffers one wound. No armour save is allowed. If the wound is not saved, the victim must also take a Toughness test or die immediately, with no saves allowed whatsoever, not even Ward saves.</description>
-    </rule>
-    <rule name="Cursed Book" id="6236-4785-1d0b-49a8" hidden="false">
-      <description>All enemy models within 6&quot; of the Book&apos;s bearer suffer a -1 penalty on their rolls to hit in close combat.</description>
-    </rule>
-    <rule name="Rod of Flaming Death" id="1d70-b54e-7b52-012c" hidden="false">
-      <description>Bound Spell, Power Level 4. The bearer can cast the Rod&apos;s spell once in his Magic phase. The spell requires no Power dice to cast.
-
-A flaming magic missile with a range of 24&quot; and causing D3 Strength 4 hits spews from the staff. A unit taking at least one casualty must take a Panic test.</description>
-    </rule>
-    <rule name="Talon of Death" id="222d-b8bb-f2d4-2d28" hidden="false">
-      <description>All enemy models in base contact with the bearer of the Talon of Death automatically suffer 1 Strength 5 hit at the end of each of the bearer&apos;s Movement phases.
-
-
-If a character riding a monster/chariot is touching the bearer then both rider and the mount/chariot suffer 1 Strength 5 hit.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
