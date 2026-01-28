@@ -60,7 +60,7 @@
         <categoryLink name="State troops" hidden="false" id="e573-67c0-2d4e-f646" targetId="2067-05d1-55c9-f09f" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="744d-a00d-b16c-3713" name="Halberdiers" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry id="744d-a00d-b16c-3713" name="Halberdiers" hidden="false" collective="false" import="true" type="model" sortIndex="1">
           <constraints>
             <constraint field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d96c-c95f-8224-7c87" type="min"/>
           </constraints>
@@ -72,37 +72,7 @@
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="1e3d-8d21-49e0-224e" name="Hand Weapon" hidden="false" collective="false" import="true" targetId="abdb-bbd0-41b2-5dff" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fd29-ff37-42e8-ea6b" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e2f5-77a5-195f-f0bf" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="09eb-c22e-73f5-08b3" name="Light Armour" hidden="false" collective="false" import="true" targetId="055f-8e4e-f170-35d2" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2631-870d-59d3-547b" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b5b9-7462-f649-0932" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="ddc3-c66b-ac3b-b97b" name="Halberds" hidden="false" collective="false" import="true" targetId="b3f3-a133-2869-0be8" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c82-78ee-132f-90ee" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="abf5-f4a7-5e8b-756e" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="c536-46ef-c606-862f" name="Shield" hidden="false" collective="false" import="true" targetId="50e2-1873-a856-03e7" type="selectionEntry">
-          <modifiers>
-            <modifier type="increment" field="ecfa-8486-4f6c-c249" value="1">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5ce6-208c-ca86-4d18" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="a2ab-5c27-fac0-4332" name="Detachments" hidden="false" collective="false" import="true" targetId="392f-5b21-9e42-6988" type="selectionEntryGroup">
+        <entryLink id="a2ab-5c27-fac0-4332" name="Detachments" hidden="false" collective="false" import="true" targetId="392f-5b21-9e42-6988" type="selectionEntryGroup" sortIndex="4">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
@@ -144,7 +114,7 @@
         </modifier>
       </modifiers>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Command group" id="4977-67de-81a6-bf8e" hidden="false">
+        <selectionEntryGroup name="Command group" id="4977-67de-81a6-bf8e" hidden="false" sortIndex="3">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Musician" hidden="false" id="488a-faae-0167-b3a0" collective="false" sortIndex="2">
               <constraints>
@@ -353,6 +323,40 @@
               </constraints>
             </selectionEntry>
           </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Weapons and Armour" id="5a05-1095-c2ef-434c" hidden="false" sortIndex="2">
+          <entryLinks>
+            <entryLink import="true" name="Shield" hidden="false" id="c536-46ef-c606-862f" collective="false" targetId="50e2-1873-a856-03e7" type="selectionEntry">
+              <modifiers>
+                <modifier type="increment" value="1" field="ecfa-8486-4f6c-c249">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="parent" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5ce6-208c-ca86-4d18" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Halberds" hidden="false" id="ddc3-c66b-ac3b-b97b" collective="false" targetId="b3f3-a133-2869-0be8" type="selectionEntry">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7c82-78ee-132f-90ee" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="abf5-f4a7-5e8b-756e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="1e3d-8d21-49e0-224e" collective="false" targetId="abdb-bbd0-41b2-5dff" type="selectionEntry">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fd29-ff37-42e8-ea6b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e2f5-77a5-195f-f0bf" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Light Armour" hidden="false" id="09eb-c22e-73f5-08b3" collective="false" targetId="055f-8e4e-f170-35d2" type="selectionEntry">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2631-870d-59d3-547b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b5b9-7462-f649-0932" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
@@ -921,7 +925,7 @@
         <categoryLink name="State troops" hidden="false" id="568f-4904-1235-c238" targetId="2067-05d1-55c9-f09f" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="54b6-a718-d953-242f" name="Swordsmen" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry id="54b6-a718-d953-242f" name="Swordsmen" hidden="false" collective="false" import="true" type="model" sortIndex="1">
           <constraints>
             <constraint field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="25eb-2489-1583-7b53" type="min"/>
           </constraints>
@@ -931,82 +935,9 @@
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="aadf-4378-0d96-abb6" name="Musician" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6186-7a68-744d-ea89" type="max"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="5"/>
-            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="b189-0c6b-2176-00ef" name="Standard Bearer" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1d24-e295-90de-f51a" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink import="true" name="State Magic Banners" hidden="false" id="452c-2894-7f8d-5f09" collective="false" targetId="7e1a-728d-7c04-6dc8" type="selectionEntryGroup">
-              <infoLinks>
-                <infoLink name="Magic Banner" id="8cdf-0260-4dee-37a9" hidden="false" targetId="c044-7bdd-9520-1958" type="rule"/>
-              </infoLinks>
-            </entryLink>
-          </entryLinks>
-          <costs>
-            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="10"/>
-            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="a038-b7d5-7d05-98f8" name="Duelist" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8743-1cde-c8f0-f42c" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="0cc2-e950-7c80-fd71" name="Duelist" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
-              <characteristics>
-                <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">4</characteristic>
-                <characteristic name="WS" typeId="f95b-da01-0578-3bdc">4</characteristic>
-                <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">3</characteristic>
-                <characteristic name="S" typeId="b690-4bc0-bb73-267b">3</characteristic>
-                <characteristic name="T" typeId="8712-f56f-5b22-a720">3</characteristic>
-                <characteristic name="W" typeId="253a-9b00-4fde-8ac2">1</characteristic>
-                <characteristic name="I" typeId="dfff-363e-f72a-5a59">4</characteristic>
-                <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">2</characteristic>
-                <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">7</characteristic>
-                <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
-                <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
-                <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="10"/>
-            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-          </costs>
-        </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="9f58-4293-0fb3-9b57" name="Hand Weapon" hidden="false" collective="false" import="true" targetId="abdb-bbd0-41b2-5dff" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f86a-5611-be0c-2c62" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9ad6-8ab9-7177-9799" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="de47-d76e-8b18-b2e1" name="Light Armour" hidden="false" collective="false" import="true" targetId="055f-8e4e-f170-35d2" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="249b-313b-f4bd-e0d6" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a354-54d9-eb89-ded9" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="c0c9-cc76-4ede-1219" name="Shield" hidden="false" collective="false" import="true" targetId="50e2-1873-a856-03e7" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a5e2-961d-8e7e-741a" type="max"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8aec-33ed-9578-f85e" type="min"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="0531-2fdf-a21e-c339" name="Detachments" hidden="false" collective="false" import="true" targetId="392f-5b21-9e42-6988" type="selectionEntryGroup"/>
+        <entryLink id="0531-2fdf-a21e-c339" name="Detachments" hidden="false" collective="false" import="true" targetId="392f-5b21-9e42-6988" type="selectionEntryGroup" sortIndex="4"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
@@ -1055,6 +986,89 @@
       <constraints>
         <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="5406-8f12-8023-d382" includeChildSelections="false"/>
       </constraints>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Command group" id="726e-6084-662a-36e6" hidden="false" sortIndex="3">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Standard Bearer" hidden="false" id="b189-0c6b-2176-00ef" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1d24-e295-90de-f51a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="State Magic Banners" hidden="false" id="452c-2894-7f8d-5f09" collective="false" targetId="7e1a-728d-7c04-6dc8" type="selectionEntryGroup">
+                  <infoLinks>
+                    <infoLink name="Magic Banner" id="8cdf-0260-4dee-37a9" hidden="false" targetId="c044-7bdd-9520-1958" type="rule"/>
+                  </infoLinks>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="10"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Musician" hidden="false" id="aadf-4378-0d96-abb6" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6186-7a68-744d-ea89" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="5"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Duelist" hidden="false" id="a038-b7d5-7d05-98f8" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8743-1cde-c8f0-f42c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Duelist" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="0cc2-e950-7c80-fd71">
+                  <characteristics>
+                    <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">4</characteristic>
+                    <characteristic name="WS" typeId="f95b-da01-0578-3bdc">4</characteristic>
+                    <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">3</characteristic>
+                    <characteristic name="S" typeId="b690-4bc0-bb73-267b">3</characteristic>
+                    <characteristic name="T" typeId="8712-f56f-5b22-a720">3</characteristic>
+                    <characteristic name="W" typeId="253a-9b00-4fde-8ac2">1</characteristic>
+                    <characteristic name="I" typeId="dfff-363e-f72a-5a59">4</characteristic>
+                    <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">2</characteristic>
+                    <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">7</characteristic>
+                    <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+                    <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+                    <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="10"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Weapons and Armour" id="a830-64b2-752f-a0b8" hidden="false" sortIndex="2">
+          <entryLinks>
+            <entryLink import="true" name="Shield" hidden="false" id="c0c9-cc76-4ede-1219" collective="false" targetId="50e2-1873-a856-03e7" type="selectionEntry">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a5e2-961d-8e7e-741a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8aec-33ed-9578-f85e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="9f58-4293-0fb3-9b57" collective="false" targetId="abdb-bbd0-41b2-5dff" type="selectionEntry">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f86a-5611-be0c-2c62" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9ad6-8ab9-7177-9799" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Light Armour" hidden="false" id="de47-d76e-8b18-b2e1" collective="false" targetId="055f-8e4e-f170-35d2" type="selectionEntry">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="249b-313b-f4bd-e0d6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a354-54d9-eb89-ded9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="7132-9fc6-7b3f-6b11" name="Handgunners" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -1069,7 +1083,7 @@
         <categoryLink name="State troops" hidden="false" id="18f7-5833-78f0-aa9d" targetId="2067-05d1-55c9-f09f" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="bee1-0bdd-2d66-e17f" name="Handgunners" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry id="bee1-0bdd-2d66-e17f" name="Handgunners" hidden="false" collective="false" import="true" type="model" sortIndex="1">
           <constraints>
             <constraint field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d2ab-cce6-74f4-8e19" type="min"/>
           </constraints>
@@ -1079,96 +1093,9 @@
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="de58-05f0-5db1-33cd" name="Musician" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8a4c-d148-93ef-384d" type="max"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="5"/>
-            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="1b46-0fd9-ec8f-ee83" name="Standard Bearer" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e8b5-e330-4618-79e3" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink import="true" name="State Magic Banners" hidden="false" id="7f7a-448e-43d0-ad50" collective="false" targetId="7e1a-728d-7c04-6dc8" type="selectionEntryGroup"/>
-          </entryLinks>
-          <costs>
-            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="10"/>
-            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="b083-769a-0069-4551" name="Marksman" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cbce-1709-6f5c-82af" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="d31c-f993-b4df-fda4" name="Marksman" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
-              <characteristics>
-                <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">4</characteristic>
-                <characteristic name="WS" typeId="f95b-da01-0578-3bdc">3</characteristic>
-                <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">4</characteristic>
-                <characteristic name="S" typeId="b690-4bc0-bb73-267b">3</characteristic>
-                <characteristic name="T" typeId="8712-f56f-5b22-a720">3</characteristic>
-                <characteristic name="W" typeId="253a-9b00-4fde-8ac2">1</characteristic>
-                <characteristic name="I" typeId="dfff-363e-f72a-5a59">3</characteristic>
-                <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
-                <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">7</characteristic>
-                <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
-                <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
-                <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
-              </characteristics>
-            </profile>
-          </profiles>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="04c7-0be1-4c5f-7c89" name="Weapons (replaces Handgun)" hidden="false" collective="false" import="true">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="675d-e553-2594-0c53" type="max"/>
-              </constraints>
-              <entryLinks>
-                <entryLink id="2def-b6c4-dfa7-31bf" name="Hocbland long rifle " hidden="false" collective="false" import="true" targetId="42ca-6650-2617-8bc3" type="selectionEntry">
-                  <costs>
-                    <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="20"/>
-                  </costs>
-                </entryLink>
-                <entryLink id="ae82-64be-7570-bba7" name="Brace Of Pistols" hidden="false" collective="false" import="true" targetId="bd00-7ec3-0e5b-0d52" type="selectionEntry">
-                  <costs>
-                    <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="4"/>
-                  </costs>
-                </entryLink>
-                <entryLink id="332f-6e68-128e-e868" name="Repeater Handgun " hidden="false" collective="false" import="true" targetId="ec58-81df-307e-7e4c" type="selectionEntry">
-                  <costs>
-                    <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="15"/>
-                  </costs>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <costs>
-            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="5"/>
-            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-          </costs>
-        </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="f6e4-1977-6c88-7f11" name="Hand Weapon" hidden="false" collective="false" import="true" targetId="abdb-bbd0-41b2-5dff" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d8dc-e2a3-0a4b-e4e7" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0745-9cf6-a283-60d3" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="e3ab-a373-eea0-3cc9" name="Empire handgun" hidden="false" collective="false" import="true" targetId="5360-4088-4cb8-8081" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f11-62c4-c2bf-2b66" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eb0d-c47c-cf4e-6b0e" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="7f8e-0f0f-da7f-2678" name="Detachments" hidden="false" collective="false" import="true" targetId="392f-5b21-9e42-6988" type="selectionEntryGroup"/>
+        <entryLink id="7f8e-0f0f-da7f-2678" name="Detachments" hidden="false" collective="false" import="true" targetId="392f-5b21-9e42-6988" type="selectionEntryGroup" sortIndex="4"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
@@ -1214,21 +1141,111 @@
           </conditionGroups>
         </modifier>
       </modifiers>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Command group" id="a69e-2893-e101-16c0" hidden="false" sortIndex="3">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Standard Bearer" hidden="false" id="1b46-0fd9-ec8f-ee83" collective="false" sortIndex="3">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e8b5-e330-4618-79e3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="State Magic Banners" hidden="false" id="7f7a-448e-43d0-ad50" collective="false" targetId="7e1a-728d-7c04-6dc8" type="selectionEntryGroup"/>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="10"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Marksman" hidden="false" id="b083-769a-0069-4551" collective="false" sortIndex="1">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cbce-1709-6f5c-82af" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Marksman" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="d31c-f993-b4df-fda4">
+                  <characteristics>
+                    <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">4</characteristic>
+                    <characteristic name="WS" typeId="f95b-da01-0578-3bdc">3</characteristic>
+                    <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">4</characteristic>
+                    <characteristic name="S" typeId="b690-4bc0-bb73-267b">3</characteristic>
+                    <characteristic name="T" typeId="8712-f56f-5b22-a720">3</characteristic>
+                    <characteristic name="W" typeId="253a-9b00-4fde-8ac2">1</characteristic>
+                    <characteristic name="I" typeId="dfff-363e-f72a-5a59">3</characteristic>
+                    <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
+                    <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">7</characteristic>
+                    <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+                    <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+                    <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapons (replaces Handgun)" id="04c7-0be1-4c5f-7c89" hidden="false" collective="false" import="true">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="675d-e553-2594-0c53" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Hocbland long rifle " hidden="false" id="2def-b6c4-dfa7-31bf" collective="false" targetId="42ca-6650-2617-8bc3" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="20"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Brace Of Pistols" hidden="false" id="ae82-64be-7570-bba7" collective="false" targetId="bd00-7ec3-0e5b-0d52" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="4"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Repeater Handgun " hidden="false" id="332f-6e68-128e-e868" collective="false" targetId="ec58-81df-307e-7e4c" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="15"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="5"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Musician" hidden="false" id="de58-05f0-5db1-33cd" collective="false" sortIndex="2">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8a4c-d148-93ef-384d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="5"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Weapons and Armour" id="61c5-537a-05b2-be6e" hidden="false" sortIndex="2">
+          <entryLinks>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="f6e4-1977-6c88-7f11" collective="false" targetId="abdb-bbd0-41b2-5dff" type="selectionEntry">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d8dc-e2a3-0a4b-e4e7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0745-9cf6-a283-60d3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Empire handgun" hidden="false" id="e3ab-a373-eea0-3cc9" collective="false" targetId="5360-4088-4cb8-8081" type="selectionEntry">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8f11-62c4-c2bf-2b66" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eb0d-c47c-cf4e-6b0e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="70a8-8502-8782-e725" name="Free Company" hidden="false" collective="false" import="true" type="unit">
-      <infoLinks>
-        <infoLink id="5408-97a0-c5d3-694b" name="Empire soldier" hidden="false" targetId="b777-4b66-0f67-d717" type="profile">
-          <modifiers>
-            <modifier type="set" field="name" value="Fighter"/>
-          </modifiers>
-        </infoLink>
-      </infoLinks>
       <categoryLinks>
         <categoryLink id="d229-ad0d-db5b-7833" name="Core" hidden="false" targetId="64bf-efb4-9978-26df" primary="true"/>
         <categoryLink name="Militia" hidden="false" id="d2ad-a7fc-c807-ead2" targetId="bdb0-067d-c73e-2eb2" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="9e84-31d4-577f-d85d" name="Fighter" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry id="9e84-31d4-577f-d85d" name="Fighter" hidden="false" collective="false" import="true" type="model" sortIndex="1">
           <constraints>
             <constraint field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="edf5-396d-b15f-07b6" type="min"/>
           </constraints>
@@ -1237,61 +1254,15 @@
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
-        </selectionEntry>
-        <selectionEntry id="0f24-f227-3d42-60c3" name="Musician" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="27cb-7e55-2c47-a62a" type="max"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="5"/>
-            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="f736-ce61-cf6a-f699" name="Standard Bearer" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b253-f30a-0897-ac6d" type="max"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="10"/>
-            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="acd2-86b8-853b-97f2" name="Sergeant" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="57de-f34c-fe4d-0517" type="max"/>
-          </constraints>
           <infoLinks>
-            <infoLink id="27b8-8194-1ec3-7279" name="Sergeant" hidden="false" targetId="67e6-c078-b852-ecdc" type="profile"/>
+            <infoLink name="Empire soldier" id="5408-97a0-c5d3-694b" hidden="false" targetId="b777-4b66-0f67-d717" type="profile">
+              <modifiers>
+                <modifier type="set" value="Fighter" field="name"/>
+              </modifiers>
+            </infoLink>
           </infoLinks>
-          <costs>
-            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="10"/>
-            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-          </costs>
         </selectionEntry>
       </selectionEntries>
-      <entryLinks>
-        <entryLink id="08e2-6382-3a33-df56" name="Two Hand Weapons" hidden="false" collective="false" import="true" targetId="36a8-7bbb-d204-0314" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f796-b3d8-8b73-19e2" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5db0-0dd1-6cdc-e646" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="3644-44e8-7ae6-c1ea" name="Light Armour" hidden="false" collective="false" import="true" targetId="055f-8e4e-f170-35d2" type="selectionEntry">
-          <modifiers>
-            <modifier type="increment" field="ecfa-8486-4f6c-c249" value="1">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d73-f0c3-3192-b470" type="max"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
@@ -1323,6 +1294,67 @@
           </modifiers>
         </modifierGroup>
       </modifierGroups>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Command group" id="f10d-d41c-e3a4-b592" hidden="false" sortIndex="3">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Standard Bearer" hidden="false" id="f736-ce61-cf6a-f699" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b253-f30a-0897-ac6d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="10"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Musician" hidden="false" id="0f24-f227-3d42-60c3" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="27cb-7e55-2c47-a62a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="5"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Sergeant" hidden="false" id="acd2-86b8-853b-97f2" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="57de-f34c-fe4d-0517" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Sergeant" id="27b8-8194-1ec3-7279" hidden="false" targetId="67e6-c078-b852-ecdc" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="10"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Weapons and Armour" id="00ca-9db8-55ec-4b50" hidden="false" sortIndex="2">
+          <entryLinks>
+            <entryLink import="true" name="Light Armour" hidden="false" id="3644-44e8-7ae6-c1ea" collective="false" targetId="055f-8e4e-f170-35d2" type="selectionEntry">
+              <modifiers>
+                <modifier type="increment" value="1" field="ecfa-8486-4f6c-c249">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="parent" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4d73-f0c3-3192-b470" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Two Hand Weapons" hidden="false" id="08e2-6382-3a33-df56" collective="false" targetId="36a8-7bbb-d204-0314" type="selectionEntry">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f796-b3d8-8b73-19e2" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5db0-0dd1-6cdc-e646" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="de5e-a11d-80c4-7ceb" name="Archers" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -1356,49 +1388,7 @@
             </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry id="9931-8229-390e-0960" name="Marksmen" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5220-80a6-03e2-509a" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="c9ba-c115-c7b6-91cd" name="Marksmen" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
-              <characteristics>
-                <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">4</characteristic>
-                <characteristic name="WS" typeId="f95b-da01-0578-3bdc">3</characteristic>
-                <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">4</characteristic>
-                <characteristic name="S" typeId="b690-4bc0-bb73-267b">3</characteristic>
-                <characteristic name="T" typeId="8712-f56f-5b22-a720">3</characteristic>
-                <characteristic name="W" typeId="253a-9b00-4fde-8ac2">1</characteristic>
-                <characteristic name="I" typeId="dfff-363e-f72a-5a59">3</characteristic>
-                <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
-                <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">7</characteristic>
-                <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
-                <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
-                <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="5"/>
-            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-          </costs>
-        </selectionEntry>
       </selectionEntries>
-      <entryLinks>
-        <entryLink id="3151-14bb-a059-7121" name="Bow" hidden="false" collective="false" import="true" targetId="9efb-2b02-f245-62f5" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6676-fce2-55da-c9b5" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1c4e-8572-95b8-4d71" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="8b6d-41d1-2227-5818" name="Hand Weapon" hidden="false" collective="false" import="true" targetId="abdb-bbd0-41b2-5dff" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f874-c147-af5d-b74e" type="max"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f398-4427-d579-9eff" type="min"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
@@ -1445,17 +1435,62 @@
       <constraints>
         <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="e86e-d91a-1c0e-99de" includeChildSelections="false"/>
       </constraints>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Command group" id="1524-d24c-c51a-f1da" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Marksmen" hidden="false" id="9931-8229-390e-0960" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5220-80a6-03e2-509a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Marksmen" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="c9ba-c115-c7b6-91cd">
+                  <characteristics>
+                    <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">4</characteristic>
+                    <characteristic name="WS" typeId="f95b-da01-0578-3bdc">3</characteristic>
+                    <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">4</characteristic>
+                    <characteristic name="S" typeId="b690-4bc0-bb73-267b">3</characteristic>
+                    <characteristic name="T" typeId="8712-f56f-5b22-a720">3</characteristic>
+                    <characteristic name="W" typeId="253a-9b00-4fde-8ac2">1</characteristic>
+                    <characteristic name="I" typeId="dfff-363e-f72a-5a59">3</characteristic>
+                    <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
+                    <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">7</characteristic>
+                    <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+                    <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+                    <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="5"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Weapons and Armour" id="9e39-524f-72b2-86ec" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="8b6d-41d1-2227-5818" collective="false" targetId="abdb-bbd0-41b2-5dff" type="selectionEntry">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f874-c147-af5d-b74e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f398-4427-d579-9eff" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Bow" hidden="false" id="3151-14bb-a059-7121" collective="false" targetId="9efb-2b02-f245-62f5" type="selectionEntry">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6676-fce2-55da-c9b5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1c4e-8572-95b8-4d71" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="e13c-7d2b-e2f1-4c21" name="Huntsmen" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6ab4-a498-bb59-3d63" type="max"/>
       </constraints>
       <infoLinks>
-        <infoLink id="5229-b8da-9ea5-dc68" name="Empire soldier" hidden="false" targetId="b777-4b66-0f67-d717" type="profile">
-          <modifiers>
-            <modifier type="set" field="name" value="Huntsmen"/>
-          </modifiers>
-        </infoLink>
         <infoLink id="707d-199d-49e5-7cc5" name="Scouts" hidden="false" targetId="889c-dfc3-95a5-2d30" type="rule"/>
         <infoLink id="7e28-14a1-0dff-611d" name="Skirmishers" hidden="false" targetId="1945-ac89-9cc4-3537" type="rule"/>
       </infoLinks>
@@ -1481,50 +1516,15 @@
               </conditions>
             </modifier>
           </modifiers>
-        </selectionEntry>
-        <selectionEntry id="505e-bc84-0d75-6421" name="Marksmen" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a777-662e-9a72-d892" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="6aad-05c9-56f9-febe" name="Marksmen" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
-              <characteristics>
-                <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">4</characteristic>
-                <characteristic name="WS" typeId="f95b-da01-0578-3bdc">3</characteristic>
-                <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">4</characteristic>
-                <characteristic name="S" typeId="b690-4bc0-bb73-267b">3</characteristic>
-                <characteristic name="T" typeId="8712-f56f-5b22-a720">3</characteristic>
-                <characteristic name="W" typeId="253a-9b00-4fde-8ac2">1</characteristic>
-                <characteristic name="I" typeId="dfff-363e-f72a-5a59">3</characteristic>
-                <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
-                <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">7</characteristic>
-                <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
-                <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
-                <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="6"/>
-            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-          </costs>
+          <infoLinks>
+            <infoLink name="Empire soldier" id="5229-b8da-9ea5-dc68" hidden="false" targetId="b777-4b66-0f67-d717" type="profile">
+              <modifiers>
+                <modifier type="set" value="Huntsmen" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
-      <entryLinks>
-        <entryLink id="6e6f-ea32-d8a5-0be4" name="Long Bow" hidden="false" collective="false" import="true" targetId="f920-04d5-06c0-c2c9" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a4bd-bbca-908c-a327" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="027a-07ec-718c-e06d" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="8662-09cf-cb54-9418" name="Hand Weapon" hidden="false" collective="false" import="true" targetId="abdb-bbd0-41b2-5dff" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8c11-07eb-efc4-b2be" type="max"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="811d-cf4b-f164-7d19" type="min"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
@@ -1571,15 +1571,58 @@
           </conditionGroups>
         </modifier>
       </modifiers>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Command group" id="440a-952a-6ed8-33cf" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Marksmen" hidden="false" id="505e-bc84-0d75-6421" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a777-662e-9a72-d892" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Marksmen" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="6aad-05c9-56f9-febe">
+                  <characteristics>
+                    <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">4</characteristic>
+                    <characteristic name="WS" typeId="f95b-da01-0578-3bdc">3</characteristic>
+                    <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">4</characteristic>
+                    <characteristic name="S" typeId="b690-4bc0-bb73-267b">3</characteristic>
+                    <characteristic name="T" typeId="8712-f56f-5b22-a720">3</characteristic>
+                    <characteristic name="W" typeId="253a-9b00-4fde-8ac2">1</characteristic>
+                    <characteristic name="I" typeId="dfff-363e-f72a-5a59">3</characteristic>
+                    <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
+                    <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">7</characteristic>
+                    <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+                    <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+                    <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="6"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Weapons and Armour" id="f0a1-548f-610c-813f" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Long Bow" hidden="false" id="6e6f-ea32-d8a5-0be4" collective="false" targetId="f920-04d5-06c0-c2c9" type="selectionEntry">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a4bd-bbca-908c-a327" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="027a-07ec-718c-e06d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="8662-09cf-cb54-9418" collective="false" targetId="abdb-bbd0-41b2-5dff" type="selectionEntry">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8c11-07eb-efc4-b2be" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="811d-cf4b-f164-7d19" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="ac89-8c06-dbda-aec8" name="Crossbowmen" hidden="false" collective="false" import="true" type="unit">
-      <infoLinks>
-        <infoLink id="2e5b-7015-b59c-ec42" name="Empire soldier" hidden="false" targetId="b777-4b66-0f67-d717" type="profile">
-          <modifiers>
-            <modifier type="set" field="name" value="Crossbowmen"/>
-          </modifiers>
-        </infoLink>
-      </infoLinks>
       <categoryLinks>
         <categoryLink id="4c6b-488d-50c8-b41c" name="Core" hidden="false" targetId="64bf-efb4-9978-26df" primary="true"/>
         <categoryLink name="Militia" hidden="false" id="e6ee-31cd-9323-6b9d" targetId="bdb0-067d-c73e-2eb2" primary="false"/>
@@ -1594,70 +1637,15 @@
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
-        </selectionEntry>
-        <selectionEntry id="91d3-a7cb-b761-c08d" name="Marksmen" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d619-4794-8a7f-b572" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="9817-a5bc-d12c-b4b9" name="Marksmen" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
-              <characteristics>
-                <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">4</characteristic>
-                <characteristic name="WS" typeId="f95b-da01-0578-3bdc">3</characteristic>
-                <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">4</characteristic>
-                <characteristic name="S" typeId="b690-4bc0-bb73-267b">3</characteristic>
-                <characteristic name="T" typeId="8712-f56f-5b22-a720">3</characteristic>
-                <characteristic name="W" typeId="253a-9b00-4fde-8ac2">1</characteristic>
-                <characteristic name="I" typeId="dfff-363e-f72a-5a59">3</characteristic>
-                <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
-                <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">7</characteristic>
-                <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
-                <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
-                <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="5"/>
-            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="6649-02f4-8510-90db" name="Musician" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="94dc-cbd0-5857-b011" type="max"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="5"/>
-            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="3b2f-3480-fa53-f645" name="Standard Bearer" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5b88-996f-1788-7ad5" type="max"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="10"/>
-            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-          </costs>
+          <infoLinks>
+            <infoLink name="Empire soldier" id="2e5b-7015-b59c-ec42" hidden="false" targetId="b777-4b66-0f67-d717" type="profile">
+              <modifiers>
+                <modifier type="set" value="Crossbowmen" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
-      <entryLinks>
-        <entryLink id="ea56-216a-1e43-f924" name="Crossbow" hidden="false" collective="false" import="true" targetId="4c50-49fe-7ac2-4b3b" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7e23-a5ae-0c0a-e657" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="657e-11f7-81a3-cc82" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="c9e3-64ae-6ecf-7ff0" name="Hand Weapon" hidden="false" collective="false" import="true" targetId="abdb-bbd0-41b2-5dff" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="58e0-d337-cbf0-9558" type="max"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="56a3-5252-5bea-55c7" type="min"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
@@ -1691,6 +1679,76 @@
           <comment>Cult of Ulric (CR-04)</comment>
         </modifier>
       </modifiers>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Command group" id="78ae-d568-c412-3a42" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Standard Bearer" hidden="false" id="3b2f-3480-fa53-f645" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5b88-996f-1788-7ad5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="10"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Marksmen" hidden="false" id="91d3-a7cb-b761-c08d" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d619-4794-8a7f-b572" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Marksmen" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="9817-a5bc-d12c-b4b9">
+                  <characteristics>
+                    <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">4</characteristic>
+                    <characteristic name="WS" typeId="f95b-da01-0578-3bdc">3</characteristic>
+                    <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">4</characteristic>
+                    <characteristic name="S" typeId="b690-4bc0-bb73-267b">3</characteristic>
+                    <characteristic name="T" typeId="8712-f56f-5b22-a720">3</characteristic>
+                    <characteristic name="W" typeId="253a-9b00-4fde-8ac2">1</characteristic>
+                    <characteristic name="I" typeId="dfff-363e-f72a-5a59">3</characteristic>
+                    <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
+                    <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">7</characteristic>
+                    <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+                    <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+                    <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="5"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Musician" hidden="false" id="6649-02f4-8510-90db" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="94dc-cbd0-5857-b011" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="5"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Weapons and Armour" id="3461-43e4-d8c3-27fb" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Crossbow" hidden="false" id="ea56-216a-1e43-f924" collective="false" targetId="4c50-49fe-7ac2-4b3b" type="selectionEntry">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7e23-a5ae-0c0a-e657" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="657e-11f7-81a3-cc82" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="c9e3-64ae-6ecf-7ff0" collective="false" targetId="abdb-bbd0-41b2-5dff" type="selectionEntry">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="58e0-d337-cbf0-9558" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="56a3-5252-5bea-55c7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="1d77-9e6e-a6ab-573f" name="Knights of the Knightly Orders" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -2564,7 +2622,7 @@
         <categoryLink name="Cult of Ulric" hidden="false" id="82b4-ac69-e4f7-dbb3" targetId="4e76-a459-9f69-a221" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="7e66-ab0f-acf7-8cc1" name="Knight" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry id="7e66-ab0f-acf7-8cc1" name="Knight" hidden="false" collective="false" import="true" type="model" sortIndex="1">
           <constraints>
             <constraint field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b5e4-c098-7620-3ed2" type="min"/>
           </constraints>
@@ -2581,73 +2639,9 @@
             </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry id="15b0-764f-8b8a-c08d" name="Musician" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="821a-701a-c367-fd25" type="max"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="8"/>
-            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="917f-61f6-eafc-8031" name="Standard Bearer" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f9a-8bc8-34a1-9ec8" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="47ce-af68-306f-a572" name="Magic Banners" hidden="false" collective="false" import="true" targetId="0624-aa91-f728-45b9" type="selectionEntryGroup">
-              <constraints>
-                <constraint field="ecfa-8486-4f6c-c249" scope="parent" value="50" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5ce7-aa08-05f5-b26f" type="max"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
-          <costs>
-            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="16"/>
-            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="d823-73d0-7e93-409c" name="First Knight" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0cec-5ba6-8117-71ca" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="b331-57ce-daee-c1c1" name="Elite Champion" hidden="false" targetId="73cc-0129-e7fe-ea53" type="profile">
-              <modifiers>
-                <modifier type="set" field="name" value="First Knight"/>
-                <modifier type="set" value="4" field="b690-4bc0-bb73-267b">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="73e1-597e-1546-10f7" childId="d079-76e2-513e-323c" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </infoLink>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="16"/>
-            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-          </costs>
-        </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="4593-b9e9-aa04-62f4" name="Cavalry hammer " hidden="false" collective="false" import="true" targetId="9c55-fbdf-3b4c-f808" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0ab6-c1a2-ae7a-92e4" type="max"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a18-4d54-68b3-6941" type="min"/>
-          </constraints>
-          <modifiers>
-            <modifier type="set" value="White Wolf hammer" field="name"/>
-          </modifiers>
-        </entryLink>
-        <entryLink id="7c59-e2d0-d6ef-8373" name="Full Plate Armour" hidden="false" collective="false" import="true" targetId="199f-b4b9-aaca-490f" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2159-f0c0-0a2d-d818" type="max"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eb32-612a-1245-5578" type="min"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="0aba-6af7-9a37-8221" name="Empire Warhorse" hidden="false" collective="false" import="true" targetId="a1e3-7f97-5fc6-abaa" type="selectionEntry">
+        <entryLink id="0aba-6af7-9a37-8221" name="Empire Warhorse" hidden="false" collective="false" import="true" targetId="a1e3-7f97-5fc6-abaa" type="selectionEntry" sortIndex="2">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a97-0dc0-6591-cdf8" type="max"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="688c-64d1-813f-3e19" type="min"/>
@@ -2656,7 +2650,7 @@
             <infoLink name="Barding" id="8b89-0f01-df98-6ff5" hidden="false" targetId="25e4-8f3a-a1a8-a7b6" type="profile"/>
           </infoLinks>
         </entryLink>
-        <entryLink id="d079-76e2-513e-323c" name="Knights of the Inner Circle" hidden="false" collective="false" import="true" targetId="2cbd-fee0-a336-0e5d" type="selectionEntry">
+        <entryLink id="d079-76e2-513e-323c" name="Knights of the Inner Circle" hidden="false" collective="false" import="true" targetId="2cbd-fee0-a336-0e5d" type="selectionEntry" sortIndex="3">
           <modifiers>
             <modifier type="increment" field="ecfa-8486-4f6c-c249" value="3">
               <repeats>
@@ -2699,6 +2693,80 @@
           </conditionGroups>
         </modifier>
       </modifiers>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Command group" id="3f15-efc0-6187-0725" hidden="false" sortIndex="5">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Standard Bearer" hidden="false" id="917f-61f6-eafc-8031" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5f9a-8bc8-34a1-9ec8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Magic Banners" hidden="false" id="47ce-af68-306f-a572" collective="false" targetId="0624-aa91-f728-45b9" type="selectionEntryGroup">
+                  <constraints>
+                    <constraint type="max" value="50" field="ecfa-8486-4f6c-c249" scope="parent" shared="true" id="5ce7-aa08-05f5-b26f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="16"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Musician" hidden="false" id="15b0-764f-8b8a-c08d" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="821a-701a-c367-fd25" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="8"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="First Knight" hidden="false" id="d823-73d0-7e93-409c" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0cec-5ba6-8117-71ca" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Elite Champion" id="b331-57ce-daee-c1c1" hidden="false" targetId="73cc-0129-e7fe-ea53" type="profile">
+                  <modifiers>
+                    <modifier type="set" value="First Knight" field="name"/>
+                    <modifier type="set" value="4" field="b690-4bc0-bb73-267b">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="73e1-597e-1546-10f7" childId="d079-76e2-513e-323c" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="16"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Weapons and Armour" id="4bd8-47e7-446a-238a" hidden="false" sortIndex="4">
+          <entryLinks>
+            <entryLink import="true" name="Full Plate Armour" hidden="false" id="7c59-e2d0-d6ef-8373" collective="false" targetId="199f-b4b9-aaca-490f" type="selectionEntry">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2159-f0c0-0a2d-d818" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="eb32-612a-1245-5578" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Cavalry hammer " hidden="false" id="4593-b9e9-aa04-62f4" collective="false" targetId="9c55-fbdf-3b4c-f808" type="selectionEntry">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0ab6-c1a2-ae7a-92e4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3a18-4d54-68b3-6941" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="White Wolf hammer" field="name"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="c976-7d43-b55c-3e12" name="0-1 Greatswords" hidden="false" collective="false" import="true" type="unit">
       <constraints>
@@ -2995,11 +3063,6 @@
     </selectionEntry>
     <selectionEntry id="f6b7-e6b5-074d-2b78" name="Pistoliers" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
-        <infoLink id="ef2d-c291-19bd-5ab4" name="Empire soldier" hidden="false" targetId="b777-4b66-0f67-d717" type="profile">
-          <modifiers>
-            <modifier type="set" field="name" value="Pistolier"/>
-          </modifiers>
-        </infoLink>
         <infoLink id="2c8b-034c-f0e2-2ceb" name="Warhorse" hidden="false" targetId="6d52-59d7-9b29-042b" type="profile"/>
         <infoLink id="5b4d-0011-e6c6-fec1" name="Fast Cavalry" hidden="false" targetId="6a56-df83-e623-2218" type="rule"/>
         <infoLink id="b262-ed84-e7ed-cc42" name="Fusillade" hidden="false" targetId="f155-21b9-01ac-2c5a" type="rule"/>
@@ -3018,75 +3081,15 @@
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
-        </selectionEntry>
-        <selectionEntry id="d150-d178-cac1-cdc7" name="Marksman" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="213d-e269-af5a-9ae9" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="5b49-c91f-7aee-f2ce" name="Marksman" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
-              <characteristics>
-                <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">4</characteristic>
-                <characteristic name="WS" typeId="f95b-da01-0578-3bdc">3</characteristic>
-                <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">4</characteristic>
-                <characteristic name="S" typeId="b690-4bc0-bb73-267b">3</characteristic>
-                <characteristic name="T" typeId="8712-f56f-5b22-a720">3</characteristic>
-                <characteristic name="W" typeId="253a-9b00-4fde-8ac2">1</characteristic>
-                <characteristic name="I" typeId="dfff-363e-f72a-5a59">3</characteristic>
-                <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
-                <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">7</characteristic>
-                <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
-                <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
-                <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
-              </characteristics>
-            </profile>
-          </profiles>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="1a27-db14-379c-c368" name="Weapons (replaces Pistols)" hidden="false" collective="false" import="true">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b1f-a610-a881-4a51" type="max"/>
-              </constraints>
-              <entryLinks>
-                <entryLink id="58bd-de74-a200-0f4f" name="Repeater Pistol " hidden="false" collective="false" import="true" targetId="a52d-aaeb-0794-440b" type="selectionEntry">
-                  <costs>
-                    <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="10"/>
-                  </costs>
-                </entryLink>
-                <entryLink id="2d28-00cb-996f-14e2" name="Repeater Handgun " hidden="false" collective="false" import="true" targetId="ec58-81df-307e-7e4c" type="selectionEntry">
-                  <costs>
-                    <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="15"/>
-                  </costs>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <costs>
-            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="7"/>
-            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-          </costs>
+          <infoLinks>
+            <infoLink name="Empire soldier" id="ef2d-c291-19bd-5ab4" hidden="false" targetId="b777-4b66-0f67-d717" type="profile">
+              <modifiers>
+                <modifier type="set" value="Pistolier" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
-      <entryLinks>
-        <entryLink id="4099-08ed-2313-1b6c" name="Hand Weapon" hidden="false" collective="false" import="true" targetId="abdb-bbd0-41b2-5dff" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6993-6424-11c9-f5ef" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a50a-210d-a480-6164" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="78e7-9183-95f8-6631" name="Brace Of Pistols" hidden="false" collective="false" import="true" targetId="bd00-7ec3-0e5b-0d52" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6c61-f4c5-9c63-40ee" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="08f3-a048-788b-19c1" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="047f-7bee-5fe2-822a" name="Light Armour" hidden="false" collective="false" import="true" targetId="055f-8e4e-f170-35d2" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5b1c-2a3f-2405-0ba4" type="max"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f0d6-5ac6-0564-df7c" type="min"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
@@ -3121,6 +3124,81 @@
           </conditionGroups>
         </modifier>
       </modifiers>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapons and Armour" id="d377-17a0-b835-0d5e" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Light Armour" hidden="false" id="047f-7bee-5fe2-822a" collective="false" targetId="055f-8e4e-f170-35d2" type="selectionEntry">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5b1c-2a3f-2405-0ba4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f0d6-5ac6-0564-df7c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Brace Of Pistols" hidden="false" id="78e7-9183-95f8-6631" collective="false" targetId="bd00-7ec3-0e5b-0d52" type="selectionEntry">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6c61-f4c5-9c63-40ee" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="08f3-a048-788b-19c1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="4099-08ed-2313-1b6c" collective="false" targetId="abdb-bbd0-41b2-5dff" type="selectionEntry">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6993-6424-11c9-f5ef" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a50a-210d-a480-6164" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Command group" id="20dc-240b-89c7-60b0" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Marksman" hidden="false" id="d150-d178-cac1-cdc7" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="213d-e269-af5a-9ae9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Marksman" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="5b49-c91f-7aee-f2ce">
+                  <characteristics>
+                    <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">4</characteristic>
+                    <characteristic name="WS" typeId="f95b-da01-0578-3bdc">3</characteristic>
+                    <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">4</characteristic>
+                    <characteristic name="S" typeId="b690-4bc0-bb73-267b">3</characteristic>
+                    <characteristic name="T" typeId="8712-f56f-5b22-a720">3</characteristic>
+                    <characteristic name="W" typeId="253a-9b00-4fde-8ac2">1</characteristic>
+                    <characteristic name="I" typeId="dfff-363e-f72a-5a59">3</characteristic>
+                    <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
+                    <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">7</characteristic>
+                    <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+                    <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+                    <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapons (replaces Pistols)" id="1a27-db14-379c-c368" hidden="false" collective="false" import="true">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9b1f-a610-a881-4a51" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Repeater Pistol " hidden="false" id="58bd-de74-a200-0f4f" collective="false" targetId="a52d-aaeb-0794-440b" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="10"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Repeater Handgun " hidden="false" id="2d28-00cb-996f-14e2" collective="false" targetId="ec58-81df-307e-7e4c" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="15"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="7"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="d3f0-a597-6023-0c70" name="Great Cannon" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
