@@ -2651,11 +2651,7 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
-            <entryLink import="true" name="Full Plate Armour" hidden="false" id="7444-fade-d336-53b9" type="selectionEntry" targetId="3869-2f40-dd21-6971">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e176-dccd-0c10-8c9b" includeChildSelections="false"/>
-              </constraints>
-            </entryLink>
+            <entryLink import="true" name="Full Plate Armour" hidden="false" id="7444-fade-d336-53b9" type="selectionEntry" targetId="3869-2f40-dd21-6971"/>
             <entryLink import="true" name="Shield" hidden="true" id="5ba1-e1ed-fc7e-edf1" type="selectionEntry" targetId="50e2-1873-a856-03e7">
               <modifiers>
                 <modifier type="set" value="false" field="hidden">
@@ -2737,11 +2733,7 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
             <constraint type="max" value="100" field="ecfa-8486-4f6c-c249" scope="parent" shared="true" id="24d7-1057-3824-68d5"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Necrarch additional casting dice" hidden="false" id="b71c-a60d-b956-74bc" type="selectionEntry" targetId="68c7-4c56-8f0b-ad91">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7fde-6818-4e0c-e207" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
+        <entryLink import="true" name="Necrarch additional casting dice" hidden="false" id="b71c-a60d-b956-74bc" type="selectionEntry" targetId="68c7-4c56-8f0b-ad91"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="285"/>
@@ -2894,11 +2886,7 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
-            <entryLink import="true" name="Full Plate Armour" hidden="false" id="a4d1-6e85-bee8-55d1" type="selectionEntry" targetId="3869-2f40-dd21-6971">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c86a-c4b4-5433-84a0" includeChildSelections="false"/>
-              </constraints>
-            </entryLink>
+            <entryLink import="true" name="Full Plate Armour" hidden="false" id="a4d1-6e85-bee8-55d1" type="selectionEntry" targetId="3869-2f40-dd21-6971"/>
             <entryLink import="true" name="Shield" hidden="true" id="071e-7d5a-a22f-3ba7" type="selectionEntry" targetId="50e2-1873-a856-03e7">
               <modifiers>
                 <modifier type="set" value="false" field="hidden">
@@ -4459,7 +4447,7 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
         </modifier>
       </modifiers>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Swine" hidden="true" id="b920-b398-dc26-7f4d">
+    <selectionEntry type="unit" import="true" name="Swine" hidden="true" id="b920-b398-dc26-7f4d">
       <categoryLinks>
         <categoryLink name="Heroes" hidden="false" id="e0ab-de73-3b89-9373" targetId="c16b-f319-2c62-2c12" primary="true"/>
         <categoryLink name="Characters" hidden="false" id="bfa2-7b7b-011a-04d3" targetId="7a1c-d611-c2dc-def1" primary="false"/>
@@ -12719,6 +12707,7 @@ Undead cause fear.</description>
     <selectionEntry type="upgrade" import="true" name="Full Plate Armour" hidden="true" id="3869-2f40-dd21-6971" collective="false">
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="42ba-ae25-6a46-243e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="b381-5bd3-4720-6f9a" includeChildSelections="false"/>
       </constraints>
       <infoLinks>
         <infoLink name="Full Plate Armour" id="04cb-9c29-8690-38be" hidden="false" targetId="6678-72fb-ad9e-0d17" type="rule"/>
@@ -12729,6 +12718,17 @@ Undead cause fear.</description>
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="9fd9-e05c-ffcb-2c4d" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden"/>
+            <modifier type="set" value="1" field="b381-5bd3-4720-6f9a"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Necrarch additional casting dice" hidden="true" id="68c7-4c56-8f0b-ad91">
       <costs>
@@ -12738,14 +12738,19 @@ Undead cause fear.</description>
       </costs>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="07af-27f2-a2b3-7859" includeChildSelections="false"/>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="c30e-56ff-1881-340f" includeChildSelections="false"/>
       </constraints>
-      <modifiers>
-        <modifier type="set" value="false" field="hidden">
+      <modifierGroups>
+        <modifierGroup type="and">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="force" childId="5017-296d-edef-4562" shared="true" includeChildSelections="true"/>
           </conditions>
-        </modifier>
-      </modifiers>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden"/>
+            <modifier type="set" value="1" field="c30e-56ff-1881-340f"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry id="1b0c00a7-4638-4c7d-b4f3-169d9c11ef46" name="Icon Of Magnus [THE EMPIRE]" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -19890,7 +19895,7 @@ They benefit from Talismanic Tattoos, Fury Of Kurnous and Forest Spirit Special 
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="032d700a-bb83-47b0-9a54-f21f8400b79d" name="Seal of Ghrond [DARK ELVES]" hidden="false" collective="false" import="true" targetId="bfa6ca95-6c68-4b24-9fd2-521a1da1df32" type="selectionEntry"/>
+        <entryLink id="032d700a-bb83-47b0-9a54-f21f8400b79d" name="Seal of Ghrond" hidden="false" collective="false" import="true" targetId="bfa6ca95-6c68-4b24-9fd2-521a1da1df32" type="selectionEntry"/>
         <entryLink id="e999dc0c-9b7c-4e0c-983f-e55cd69e6446" name="Heart-Stone of Darkness" hidden="false" collective="false" import="true" targetId="9ffd9b93-1560-4646-9b10-7ebc02d47259" type="selectionEntry"/>
         <entryLink import="true" name="Mystic Shield of Light" hidden="false" id="1616a4fa-116f-4a00-a97c-ab087bfcd63f" type="selectionEntry" targetId="aad49fc9-3fd7-4071-9b79-345ace643846"/>
         <entryLink import="true" name="Ring of Hotek" hidden="false" id="a107b9a2-8d62-42e6-9c1b-73678c589512" type="selectionEntry" targetId="8c86b062-2220-4c8a-bdd9-d943261a7a26"/>
