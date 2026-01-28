@@ -12064,6 +12064,9 @@ Undead cause fear.</description>
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <infoLinks>
+        <infoLink name="Casket of Ages" id="7c88-e382-6b0d-effa" hidden="false" type="rule" targetId="c87d-5f4b-ba95-88c1"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Cloak of Mist and Shadows " hidden="false" id="72ba-8771-2926-3354" collective="false">
       <constraints>
@@ -12079,16 +12082,6 @@ Undead cause fear.</description>
         <infoLink name="Ethereal" id="0cb5-b418-5f10-568c" hidden="false" type="rule" targetId="6d98-35cb-09d5-9cf1"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Cursed Book" hidden="false" id="f26b-8b1c-b3cc-57b7" collective="false">
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="71ad-c7ea-1916-3c28" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-      </constraints>
-      <costs>
-        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="50"/>
-        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Rod of Flaming Death " hidden="false" id="5095-e258-cf55-78fc" collective="false">
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="e309-8c5f-eab3-204a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -12098,6 +12091,9 @@ Undead cause fear.</description>
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <infoLinks>
+        <infoLink name="Rod of Flaming Death" id="353d-754f-2d49-4609" hidden="false" type="rule" targetId="1d70-b54e-7b52-012c"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Talon of Death" hidden="false" id="dbc8-8204-b238-c315" collective="false">
       <constraints>
@@ -12108,6 +12104,9 @@ Undead cause fear.</description>
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <infoLinks>
+        <infoLink name="Talon of Death" id="13f3-e07e-5d3d-9501" hidden="false" type="rule" targetId="222d-b8bb-f2d4-2d28"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="The Cursed Shield of Mousillon" hidden="false" id="da9c-a03d-dbcf-4bac" collective="false">
       <constraints>
@@ -18671,6 +18670,7 @@ They benefit from Talismanic Tattoos, Fury Of Kurnous and Forest Spirit Special 
       </constraints>
       <infoLinks>
         <infoLink name="Cursed Book" id="06d4-8113-12a8-5b3d" hidden="false" type="profile" targetId="b1d3-309b-0dc1-6136"/>
+        <infoLink name="Cursed Book" id="5d14-e570-944e-e57b" hidden="false" type="rule" targetId="6236-4785-1d0b-49a8"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry id="2bb2b1c1-49b9-4368-8c6d-c002eeffc2f2" name="Standard of the Sands [LICHEMASTER]" publicationId="45f90b65-a376-4386-a851-8ff7d914ba9b" page="39" hidden="false" collective="false" import="true" type="upgrade">
@@ -19222,7 +19222,7 @@ They benefit from Talismanic Tattoos, Fury Of Kurnous and Forest Spirit Special 
       </constraints>
       <entryLinks>
         <entryLink import="true" name="Rod of Flaming Death " hidden="false" id="dd0b-9e1f-40a7-6527" type="selectionEntry" targetId="5095-e258-cf55-78fc"/>
-        <entryLink import="true" name="Cursed Book" hidden="false" id="f853-bd81-285e-e58d" type="selectionEntry" targetId="f26b-8b1c-b3cc-57b7"/>
+        <entryLink import="true" name="Cursed Book" hidden="false" id="f853-bd81-285e-e58d" type="selectionEntry" targetId="da76-fa5d-dacd-905a"/>
         <entryLink import="true" name="Cloak of Mist and Shadows " hidden="false" id="8d02-3714-c307-01ac" type="selectionEntry" targetId="72ba-8771-2926-3354"/>
         <entryLink import="true" name="Talon of Death" hidden="false" id="5bf0-3407-3cde-1000" type="selectionEntry" targetId="dbc8-8204-b238-c315"/>
         <entryLink import="true" name="Casket of Ages" hidden="false" id="d28e-ac41-2266-ae2c" type="selectionEntry" targetId="a46f-b46b-2efc-0283"/>
@@ -24398,6 +24398,25 @@ Units that are Immune to Psychology are not affected by this attack.</descripti
     </rule>
     <rule name="Wristbands of Black Gold" id="8fa6-09dd-5167-7427" hidden="false">
       <description>3+ Ward save against missile fire of any kind (including hits from war machines, template attacks, magic missiles, etc).</description>
+    </rule>
+    <rule name="Casket of Ages" id="c87d-5f4b-ba95-88c1" hidden="false">
+      <description>Bound Spell, Power Level 3. One use only. The Casket may cast its spell once during the battle. The spell requires no Power dice to cast; all the power required is provided by the Casket itself.
+
+When the Casket&apos;s spell is cast, a model in base contact with the bearer (chosen by the bearer) suffers one wound. No armour save is allowed. If the wound is not saved, the victim must also take a Toughness test or die immediately, with no saves allowed whatsoever, not even Ward saves.</description>
+    </rule>
+    <rule name="Cursed Book" id="6236-4785-1d0b-49a8" hidden="false">
+      <description>All enemy models within 6&quot; of the Book&apos;s bearer suffer a -1 penalty on their rolls to hit in close combat.</description>
+    </rule>
+    <rule name="Rod of Flaming Death" id="1d70-b54e-7b52-012c" hidden="false">
+      <description>Bound Spell, Power Level 4. The bearer can cast the Rod&apos;s spell once in his Magic phase. The spell requires no Power dice to cast.
+
+A flaming magic missile with a range of 24&quot; and causing D3 Strength 4 hits spews from the staff. A unit taking at least one casualty must take a Panic test.</description>
+    </rule>
+    <rule name="Talon of Death" id="222d-b8bb-f2d4-2d28" hidden="false">
+      <description>All enemy models in base contact with the bearer of the Talon of Death automatically suffer 1 Strength 5 hit at the end of each of the bearer&apos;s Movement phases.
+
+
+If a character riding a monster/chariot is touching the bearer then both rider and the mount/chariot suffer 1 Strength 5 hit.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
