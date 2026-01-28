@@ -640,7 +640,11 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="c4de-681a-931d-51c8" name="Battle Standard Bearer" hidden="false" collective="false" import="true" targetId="e9ad-f1ce-aebf-6d23" type="selectionEntry"/>
+        <entryLink id="c4de-681a-931d-51c8" name="Battle Standard Bearer" hidden="false" collective="false" import="true" targetId="e9ad-f1ce-aebf-6d23" type="selectionEntry">
+          <entryLinks>
+            <entryLink import="true" name="Magic Banners" hidden="false" id="ebd6-2e34-7715-6181" type="selectionEntryGroup" targetId="106e-cbcc-35b6-ec13"/>
+          </entryLinks>
+        </entryLink>
         <entryLink id="61a8-de4f-44fa-4bbc" name="Blessed spawnings (Scar Vet)" hidden="false" collective="false" import="true" targetId="b5f1-cbfb-ba4b-490e" type="selectionEntryGroup">
           <modifiers>
             <modifier type="set" field="c174-d241-5f23-3e19" value="1">
@@ -5212,6 +5216,10 @@ In addition, the bearer causes Fear in Skaven.</characteristic>
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
+          <infoLinks>
+            <infoLink name="Totem of Prophecy" id="2028-3cad-a6b8-d7fc" hidden="false" type="rule" targetId="5340-5913-ab32-b566"/>
+            <infoLink name="Fear" id="2db4-ca27-fa7d-3d0d" hidden="false" type="rule" targetId="1524-2372-4aa0-6881"/>
+          </infoLinks>
         </selectionEntry>
         <selectionEntry id="f240-b576-060a-718f" name="Jaguar Standard" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -5223,17 +5231,9 @@ In addition, the bearer causes Fear in Skaven.</characteristic>
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
-        </selectionEntry>
-        <selectionEntry id="883a-cfa4-2fbb-6c56" name="War Banner" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d9e-325b-61ca-008b" type="max"/>
-            <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="057b-d25a-df88-316b" type="max"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="25"/>
-            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-          </costs>
+          <infoLinks>
+            <infoLink name="Jaguar Standard" id="b5dc-8875-228e-a369" hidden="false" type="rule" targetId="8161-9aaa-e501-227a"/>
+          </infoLinks>
         </selectionEntry>
         <selectionEntry id="78eb-0b3d-888c-777a" name="Huanchi&apos;s Blessed Totem" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -5245,8 +5245,11 @@ In addition, the bearer causes Fear in Skaven.</characteristic>
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
+          <infoLinks>
+            <infoLink name="Huanchi&apos;s Blessed Totem" id="8927-0497-438a-d5c4" hidden="false" type="rule" targetId="2146-4413-9b6c-9cda"/>
+          </infoLinks>
         </selectionEntry>
-        <selectionEntry id="b6a2-837d-ed39-5f0b" name="Sun Standard of Chotec, the Solar God" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="b6a2-837d-ed39-5f0b" name="Sun Standard of Chotec" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="996f-0ad6-4f75-a43e" type="max"/>
             <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="35ec-d1b0-d154-d35e" type="max"/>
@@ -5256,8 +5259,14 @@ In addition, the bearer causes Fear in Skaven.</characteristic>
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
+          <infoLinks>
+            <infoLink name="Sun Standard of Chotec" id="f1c0-d7d9-330f-1303" hidden="false" type="rule" targetId="b1ca-9c29-6977-e145"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="War Banner" hidden="false" id="ba6b-f333-7da8-5ffa" type="selectionEntry" targetId="f327-567f-ef99-0403"/>
+      </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="6150-3dae-687d-6461" name="Plaques" hidden="false" collective="false" import="true" collapsible="true">
       <entryLinks>
@@ -6195,6 +6204,19 @@ The entire unit that is accompanying the Slann gains a 5+ Ward save. Note, howev
     </rule>
     <rule name="Glyph Necklace" id="e1c5-8cf3-5aa9-b354" hidden="false">
       <description>The character wearing this has a 5 + Ward save</description>
+    </rule>
+    <rule name="Huanchi&apos;s Blessed Totem" id="2146-4413-9b6c-9cda" hidden="false">
+      <description>One use only.
+The unit may use this banner once per game, at the start of any Lizardmen Magic phase. The unit moves directly forwards up to D6&quot;. If it runs into an enemy unit, it counts as charging in the next Close Combat phase. The enemy may not make any charge reaction.</description>
+    </rule>
+    <rule name="Jaguar Standard" id="8161-9aaa-e501-227a" hidden="false">
+      <description>The unit pursues an extra D6&quot;.</description>
+    </rule>
+    <rule name="Sun Standard of Chotec" id="b1ca-9c29-6977-e145" hidden="false">
+      <description>Missiles fired at the unit suffer -1 to hit.</description>
+    </rule>
+    <rule name="Totem of Prophecy" id="5340-5913-ab32-b566" hidden="false">
+      <description>The unit causes fear.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
