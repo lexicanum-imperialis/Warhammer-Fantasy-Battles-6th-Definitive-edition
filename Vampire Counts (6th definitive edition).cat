@@ -332,7 +332,6 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
           </entryLinks>
           <constraints>
             <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="9b27-05dd-08f5-339d" includeChildSelections="false"/>
-            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="93c2-fa6a-3e83-a351" includeChildSelections="false"/>
           </constraints>
           <modifiers>
             <modifier type="set" value="1" field="93c2-fa6a-3e83-a351">
@@ -381,7 +380,7 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
             <selectionEntry type="upgrade" import="true" name="Shield" hidden="false" id="4e59-f64e-4315-1d48" collective="false">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="21ec-7e0f-b1cb-c5dd" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="95ce-5daf-befe-b681" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="95ce-5daf-befe-b681" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
               <infoLinks>
                 <infoLink name="Shield" id="dfb2-1086-e629-b93d" hidden="false" targetId="3d79-7984-991a-8b67" type="profile"/>
@@ -409,9 +408,9 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
                     </conditionGroup>
                   </conditionGroups>
                 </modifier>
-                <modifier type="set" value="0" field="95ce-5daf-befe-b681">
+                <modifier type="set" value="1" field="95ce-5daf-befe-b681">
                   <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="5e95-7d57-2b9c-d77d" shared="true" includeChildSelections="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="5e95-7d57-2b9c-d77d" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
