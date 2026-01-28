@@ -277,6 +277,7 @@ The main additions are:
 - [x] Army of the LICHEMASTER (WD#309-UK)
 - [x] Archaon's Horde (SoC, p.18-23)
 - [x] Daemonic Legion (SoC, p.27-32)
+- [x] Guild Expedition (DW1-AB, p.78)
 
 
 ## Sources consulted

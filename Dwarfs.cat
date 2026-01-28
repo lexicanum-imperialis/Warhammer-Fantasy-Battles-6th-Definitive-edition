@@ -132,10 +132,59 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="force" shared="true" id="e006-96f3-e24b-9e2b" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="increment" value="1" field="e006-96f3-e24b-9e2b">
+          <repeats>
+            <repeat value="2" repeats="1" field="selections" scope="force" childId="ca0c-af6e-1b0c-ac60" shared="true" roundUp="false" includeChildSelections="true"/>
+            <repeat value="2" repeats="1" field="selections" scope="force" childId="407e-bc33-742f-61b0" shared="true" roundUp="false" includeChildSelections="true"/>
+            <repeat value="2" repeats="1" field="selections" scope="force" childId="c967-bbb6-03c1-0018" shared="true" roundUp="false" includeChildSelections="true"/>
+          </repeats>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="7fc1-ad3b-54c8-70b9" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="9e9f-fed1-3b64-cfdd" name="Dwarf Lord" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
-        <infoLink id="c739-8fc4-fe4c-8601" name="Dwarf Lord" hidden="false" targetId="e1c0-c508-7a93-bf91" type="profile"/>
+        <infoLink id="c739-8fc4-fe4c-8601" name="Dwarf Lord" hidden="false" targetId="e1c0-c508-7a93-bf91" type="profile">
+          <modifiers>
+            <modifier type="set" value="Guild Master" field="name">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="7fc1-ad3b-54c8-70b9" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Artillery Master" id="d22b-37d6-15bc-3324" hidden="true" type="rule" targetId="6b50-2309-78f5-fbbd">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="7fc1-ad3b-54c8-70b9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Extra Crewman" id="c5ab-7fcd-7f38-3b6b" hidden="true" type="rule" targetId="bc78-a350-0c73-b7d5">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="7fc1-ad3b-54c8-70b9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="4bcf-f31e-ee73-bd99" name="Lord" hidden="false" targetId="d024-d25b-a9b4-73b6" primary="true"/>
@@ -238,6 +287,18 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="Guild Master" field="name">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="7fc1-ad3b-54c8-70b9" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="45" field="ecfa-8486-4f6c-c249">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="7fc1-ad3b-54c8-70b9" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="1054-de9c-9038-ecd1" name="Rune Lord" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
@@ -317,6 +378,15 @@
         <entryLink id="c71c-91cb-77c1-8160" name="General" hidden="false" collective="false" import="true" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry" sortIndex="1">
           <modifiers>
             <modifier type="decrement" field="fcec-2340-6368-a2ba" value="2"/>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="7fc1-ad3b-54c8-70b9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
           </modifiers>
           <costs>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="4"/>
@@ -390,10 +460,55 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="7fc1-ad3b-54c8-70b9" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="3823-e6f4-243d-c79d" name="Thane" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
-        <infoLink id="7835-afe6-ee31-0403" name="Dwarf Thane" hidden="false" targetId="933d-4855-0020-be09" type="profile"/>
+        <infoLink id="7835-afe6-ee31-0403" name="Dwarf Thane" hidden="false" targetId="933d-4855-0020-be09" type="profile">
+          <modifiers>
+            <modifier type="set" value="Master Engineer" field="name">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="7fc1-ad3b-54c8-70b9" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Artillery Master" id="eeef-f4ec-3e41-9787" hidden="true" type="rule" targetId="6b50-2309-78f5-fbbd">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="7fc1-ad3b-54c8-70b9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Extra Crewman" id="6def-69df-3227-4984" hidden="true" type="rule" targetId="bc78-a350-0c73-b7d5">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="7fc1-ad3b-54c8-70b9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="2942-82b3-a0e6-c476" name="Characters" hidden="false" targetId="7a1c-d611-c2dc-def1" primary="false"/>
@@ -497,6 +612,18 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Guild Expedition</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="7fc1-ad3b-54c8-70b9" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <modifiers>
+            <modifier type="set" value="Master Engineer" field="name"/>
+            <modifier type="increment" value="35" field="ecfa-8486-4f6c-c249"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry id="ae11-5c38-0585-ce6c" name="Rune Smith" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
@@ -563,6 +690,17 @@
           <costs>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="4"/>
           </costs>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="7fc1-ad3b-54c8-70b9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </entryLink>
         <entryLink import="true" name="Rune Lore" hidden="false" id="60d8-f2d7-bfe5-196f" type="selectionEntry" targetId="2212-3f36-aa4a-73c1"/>
       </entryLinks>
@@ -743,6 +881,17 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="7fc1-ad3b-54c8-70b9" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="59e6-66a7-3314-4bd7" name="Crossbowmen" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -3940,6 +4089,20 @@ Dwarf Hanguns get a +1 to hit at short range</characteristic>
         <categoryLink name="Special" hidden="false" id="3d12-df85-a406-bdcf" targetId="43cc-fc3f-35a7-8d03" primary="false"/>
         <categoryLink name="Rare" hidden="false" id="dd11-db5d-cd88-76a4" targetId="e94b-6a54-8779-cd60" primary="false"/>
         <categoryLink name="Regiment of Renown" hidden="false" id="e6d2-8932-4654-1a9e" targetId="ee09-9a50-ad78-9c32" primary="false"/>
+      </categoryLinks>
+    </forceEntry>
+    <forceEntry name="Guild Expedition (DW1-AB)" id="7fc1-ad3b-54c8-70b9" hidden="false" publicationId="6265-1d51-76e2-4fe2" page="78">
+      <categoryLinks>
+        <categoryLink name="Experimental rules" hidden="false" id="5f5a-3a74-cdbe-9718" targetId="4fed-b911-e6e0-927b" primary="false"/>
+        <categoryLink name="Special list rules" hidden="false" id="b8d2-fb5e-3162-b79f" targetId="32f1-197f-d719-a393" primary="false"/>
+        <categoryLink name="Special Characters" hidden="false" id="e2bb-5557-fa9a-8aa5" targetId="0644-bfcd-32c2-21dc" primary="false"/>
+        <categoryLink name="Characters" hidden="false" id="aea1-d18d-465c-aa47" targetId="7a1c-d611-c2dc-def1" primary="false"/>
+        <categoryLink name="Lord" hidden="false" id="24b4-3c96-60a4-3095" targetId="d024-d25b-a9b4-73b6" primary="false"/>
+        <categoryLink name="Heroes" hidden="false" id="7a72-be34-2b48-5cb7" targetId="c16b-f319-2c62-2c12" primary="false"/>
+        <categoryLink name="Core" hidden="false" id="92e7-0ff0-2efb-782b" targetId="64bf-efb4-9978-26df" primary="false"/>
+        <categoryLink name="Special" hidden="false" id="3ab8-d2a1-2905-8df4" targetId="43cc-fc3f-35a7-8d03" primary="false"/>
+        <categoryLink name="Rare" hidden="false" id="d720-b426-7571-1496" targetId="e94b-6a54-8779-cd60" primary="false"/>
+        <categoryLink name="Regiment of Renown" hidden="false" id="9d29-86f7-bd2a-63ec" targetId="ee09-9a50-ad78-9c32" primary="false"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
