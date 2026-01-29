@@ -6836,6 +6836,9 @@ In addition, a monster that is beaten in hand to hand combat by Rakarth is assum
         </modifier>
         <modifier type="add" value="4990-1770-2328-effd" field="category" scope="unit"/>
       </modifiers>
+      <categoryLinks>
+        <categoryLink name="Slaanesh" hidden="false" id="d33f-65f1-8ba3-84d1" targetId="4990-1770-2328-effd" primary="false"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Power Familiar" hidden="false" id="d5dc-d99d-61d2-2462" collective="false">
       <constraints>
@@ -7082,6 +7085,9 @@ In addition, a monster that is beaten in hand to hand combat by Rakarth is assum
         </modifier>
         <modifier type="add" value="4990-1770-2328-effd" field="category" scope="unit"/>
       </modifiers>
+      <categoryLinks>
+        <categoryLink name="Slaanesh" hidden="false" id="f758-8f9a-a877-00ca" targetId="4990-1770-2328-effd" primary="false"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Amulet of Chaos" hidden="false" id="b90a-a938-9901-641f" collective="false">
       <constraints>
@@ -7402,7 +7408,11 @@ In addition, a monster that is beaten in hand to hand combat by Rakarth is assum
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
       <modifiers>
-        <modifier type="set" value="true" field="hidden"/>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="unit" childId="4990-1770-2328-effd" shared="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Quickening Blood" hidden="false" id="b553-aaff-c411-0f64" publicationId="d2ec-1dc7-f0d5-acbb" page="86">
@@ -7473,6 +7483,9 @@ In addition, a monster that is beaten in hand to hand combat by Rakarth is assum
         </modifier>
         <modifier type="add" value="4990-1770-2328-effd" field="category" scope="unit"/>
       </modifiers>
+      <categoryLinks>
+        <categoryLink name="Slaanesh" hidden="false" id="61d7-6322-8bd7-238a" targetId="4990-1770-2328-effd" primary="false"/>
+      </categoryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -7946,9 +7959,21 @@ Spell still fails</characteristic>
     </selectionEntryGroup>
     <selectionEntryGroup name="Daemonic Gifts (Slaanesh)" id="3e7f-2c6b-b220-e467" hidden="false" page="49" publicationId="d67c-4221-e6fc-7951" collapsible="true">
       <entryLinks>
-        <entryLink import="true" name="Aura of Slaanesh" hidden="false" id="9e65-9e70-519f-d55b" type="selectionEntry" targetId="6447-2be5-418d-f269"/>
-        <entryLink import="true" name="Sporofic Musk" hidden="false" id="64bd-07f9-d863-0fd3" type="selectionEntry" targetId="fcd2-0873-158e-34c9"/>
-        <entryLink import="true" name="Gaze of Acquiescence" hidden="false" id="dfa3-09e1-b64e-8f51" type="selectionEntry" targetId="c528-7a70-2837-4072"/>
+        <entryLink import="true" name="Aura of Slaanesh" hidden="false" id="9e65-9e70-519f-d55b" type="selectionEntry" targetId="6447-2be5-418d-f269">
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="30"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Sporofic Musk" hidden="false" id="64bd-07f9-d863-0fd3" type="selectionEntry" targetId="fcd2-0873-158e-34c9">
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="30"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Gaze of Acquiescence" hidden="false" id="dfa3-09e1-b64e-8f51" type="selectionEntry" targetId="c528-7a70-2837-4072">
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="20"/>
+          </costs>
+        </entryLink>
       </entryLinks>
       <modifiers>
         <modifier type="set" value="false" field="hidden">
