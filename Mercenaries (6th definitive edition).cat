@@ -11,6 +11,12 @@
     <publication name="WD#308-UK" id="d94f-49fc-2e27-f067" hidden="false" shortName="&quot;Mistresses, a band of deadly warriors for hire&quot;, in White-Dwarf #308 UK, p.44-47" publisher="by Andy Hoare" publicationDate="2005-08">
       <comment>Anakonda&apos;s Amazons</comment>
     </publication>
+    <publication name="WebGW" id="9d1b-de49-ff19-ea19" hidden="false" shortName="&quot;Additional (non-official) Amazon Rules&quot;, by Andy Hoare" publisher="by Andy Hoare" publicationDate="2005" publisherUrl="MISSING REFERENCE">
+      <comment>EXTRA AMAZONS</comment>
+    </publication>
+    <publication name="WD#307-UK" id="5607-d1af-87fe-3515" hidden="false" shortName="&quot;Handmaids of the Gods&quot;, in White-Dwarf #307 UK, p.32-35" publisher="by Andy Hoare" publicationDate="2005-07">
+      <comment>Anakonda&apos;s Amazons</comment>
+    </publication>
   </publications>
   <categoryEntries>
     <categoryEntry id="bb6b-cda8-b237-4dfd" name="DOW" hidden="false"/>
@@ -3251,7 +3257,7 @@ The Cursed Company and Richter cause fear.</description>
                   </constraints>
                 </entryLink>
                 <entryLink import="true" name="Heavy Armour" hidden="false" id="d867-bc7c-2af5-4e53" type="selectionEntry" targetId="dde4-0ba8-7b3c-57b7"/>
-                <entryLink import="true" name="Repeater crossbow (Mengil&apos;s Manflayers)" hidden="false" id="f624-4cf2-fbe0-05f0" type="selectionEntry" targetId="ca95-bad2-2abc-c868"/>
+                <entryLink import="true" name="Repeater crossbow (Manflayers)" hidden="false" id="f624-4cf2-fbe0-05f0" type="selectionEntry" targetId="ca95-bad2-2abc-c868"/>
               </entryLinks>
               <constraints>
                 <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="c621-218c-e6a1-1428" includeChildSelections="false"/>
@@ -4159,7 +4165,8 @@ Troops who hate their enemy must always pursue them if they flee. They cannot at
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Anakonda&apos;s Amazons" hidden="false" id="ebf9-c112-3cb4-1f02">
       <infoLinks>
-        <infoLink name="Skirmishers" id="a1d2-07e0-5d63-4a69" hidden="false" type="rule" targetId="1945-ac89-9cc4-3537"/>
+        <infoLink name="Native (Lustria)" id="a1d2-07e0-5d63-4a69" hidden="false" type="rule" targetId="9e5f-2e1d-4b45-b079"/>
+        <infoLink name="Skirmishers" id="d323-f622-1565-87e6" hidden="false" type="rule" targetId="1945-ac89-9cc4-3537"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Experimental rules" hidden="false" id="a6b7-aa47-63c1-27b5" targetId="4fed-b911-e6e0-927b" primary="false"/>
@@ -4292,11 +4299,386 @@ Missile 12&quot; S3</characteristic>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <rules>
-        <rule name="Native (Lustria)" id="9ac8-f5d3-6049-9112" hidden="false" page="45" publicationId="d94f-49fc-2e27-f067">
-          <description>The Amazons are native to Lustria and the jungles hold no peril for them. When using the jungle-fighting rules presented in Warhammer Realms: Lustria, they are immune to the same Encounters as the Lizardmen.</description>
-        </rule>
-      </rules>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Amazon Cold One Riders" hidden="false" id="9e4d-c653-35ec-1d09" publicationId="9d1b-de49-ff19-ea19">
+      <categoryLinks>
+        <categoryLink name="Special" hidden="false" id="74cd-f291-b22d-0d33" targetId="43cc-fc3f-35a7-8d03" primary="false"/>
+        <categoryLink name="Experimental rules" hidden="false" id="333e-3a0f-ae17-03a2" targetId="4fed-b911-e6e0-927b" primary="false"/>
+        <categoryLink name="Regiment of Renown" hidden="false" id="a594-96a5-853f-e372" targetId="ee09-9a50-ad78-9c32" primary="true"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="force" shared="true" id="264b-4c6a-defa-2b3e" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="1" field="264b-4c6a-defa-2b3e">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="8b76-92c4-23f9-54b1" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Noblewoman" hidden="false" id="c113-0228-0463-892d">
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="21"/>
+            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Amazon" id="08ce-8501-a92b-c73a" hidden="false" type="profile" targetId="0db4-314f-7419-19d7">
+              <modifiers>
+                <modifier type="set" value="4" field="f95b-da01-0578-3bdc"/>
+                <modifier type="set" value="Noblewoman" field="name"/>
+                <modifier type="set" value="8" field="2d45-18fe-9eb3-b113"/>
+                <modifier type="set" value="2+" field="d4a9-0ed4-d041-e54b">
+                  <comment>+1 Mounted
++2 Thick-skinned
++1 shield</comment>
+                </modifier>
+                <modifier type="set" value="-" field="f1be-e66c-d5e1-673c"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="4b82-c697-cc92-f2db" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Command group" id="9a1d-c988-66d3-4f67" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Musician" hidden="false" id="80fb-dd98-7df5-8c68">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="08bd-e998-b99d-576c" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="7"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Headwoman (Champion)" hidden="false" id="ca8a-1783-d4b0-c1e5">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="044d-9740-870b-6962" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="14"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Amazon" id="d5e9-a11d-a5c1-b8d1" hidden="false" type="profile" targetId="0db4-314f-7419-19d7">
+                  <modifiers>
+                    <modifier type="set" value="4" field="f95b-da01-0578-3bdc"/>
+                    <modifier type="set" value="Headwoman" field="name"/>
+                    <modifier type="set" value="2" field="6b9f-c8fe-8998-27e3"/>
+                    <modifier type="set" value="-" field="d4a9-0ed4-d041-e54b"/>
+                    <modifier type="set" value="2+" field="f1be-e66c-d5e1-673c"/>
+                    <modifier type="set" value="8" field="2d45-18fe-9eb3-b113"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Standard Bearer" hidden="false" id="4ecf-916f-377c-7a75">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8a06-bbfb-4b2e-ac42" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="14"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Weapons and Armour" id="fa29-fc5c-cbd4-f538" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Spear (Mounted)" hidden="false" id="d1ff-dfad-fe3b-6638" type="selectionEntry" targetId="027b-31d2-b3e2-23a4">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3a0b-bfda-3caa-db97" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="959c-8756-e02e-c28b" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Shield" hidden="false" id="6955-7253-8cb2-5395" type="selectionEntry" targetId="50e2-1873-a856-03e7">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e453-0760-8afd-25cb" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c706-7169-4b3e-fcce" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="b3c4-cbf0-bdc2-173d" type="selectionEntry" targetId="abdb-bbd0-41b2-5dff">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="29ca-464c-779f-cfd0" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="16df-9140-637f-90cc" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Mounts" id="6c42-29dc-3684-d728" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Cold One" hidden="false" id="4795-db29-0fe7-1834">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="76e7-456b-94f4-a493" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3f0d-c438-2626-2799" includeChildSelections="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Fear" id="e7d3-89b8-5732-465b" hidden="false" type="rule" targetId="1524-2372-4aa0-6881"/>
+                <infoLink name="Cold one" id="c4e9-3c1b-4d30-a72f" hidden="false" type="profile" targetId="95a0-203c-0eca-c6d5"/>
+                <infoLink name="Stupidity" id="fdb7-ad72-6634-a7d4" hidden="false" type="rule" targetId="5d6f-7b4d-6093-4922"/>
+              </infoLinks>
+              <rules>
+                <rule name="Thick-skinned" id="a890-5d2b-cb1e-b0b8" hidden="false" publicationId="9d1b-de49-ff19-ea19">
+                  <description>+2 Armour save</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <infoLinks>
+        <infoLink name="Fast Cavalry" id="8127-9d4c-ed3c-a0d2" hidden="false" type="rule" targetId="6a56-df83-e623-2218"/>
+        <infoLink name="Native (Lustria)" id="7199-c863-dc85-0643" hidden="false" type="rule" targetId="9e5f-2e1d-4b45-b079"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Amazon Totem Warriors" hidden="false" id="345f-b2a8-4641-038d" publicationId="9d1b-de49-ff19-ea19">
+      <categoryLinks>
+        <categoryLink name="Special" hidden="false" id="ee11-67a3-8982-6bf2" targetId="43cc-fc3f-35a7-8d03" primary="false"/>
+        <categoryLink name="Experimental rules" hidden="false" id="b116-4385-2aa6-b2e4" targetId="4fed-b911-e6e0-927b" primary="false"/>
+        <categoryLink name="Regiment of Renown" hidden="false" id="823c-0bbd-7e35-937b" targetId="ee09-9a50-ad78-9c32" primary="true"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="force" shared="true" id="c509-81bf-1fec-3e95" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="1" field="c509-81bf-1fec-3e95">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="8b76-92c4-23f9-54b1" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Totem Warrior" hidden="false" id="8555-436f-7f72-4de2">
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="13"/>
+            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Amazon" id="e02f-58ac-5226-f4e0" hidden="false" type="profile" targetId="0db4-314f-7419-19d7">
+              <modifiers>
+                <modifier type="set" value="4" field="f95b-da01-0578-3bdc"/>
+                <modifier type="set" value="Totem Warrior" field="name"/>
+                <modifier type="set" value="5" field="0e92-d038-82bf-fb41"/>
+                <modifier type="set" value="4" field="dfff-363e-f72a-5a59"/>
+                <modifier type="set" value="-" field="d4a9-0ed4-d041-e54b"/>
+                <modifier type="set" value="-" field="f1be-e66c-d5e1-673c"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="9e15-7ad2-15a9-ccf5" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Command group" id="bf76-5f89-217c-6073" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Musician" hidden="false" id="9de6-c084-d397-9352">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a830-329e-b3bb-caa2" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="6"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Devout (Champion)" hidden="false" id="379d-95da-c65b-412c">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5b03-2f1c-e9e0-209a" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="12"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Amazon" id="1975-8939-0485-f3fc" hidden="false" type="profile" targetId="0db4-314f-7419-19d7">
+                  <modifiers>
+                    <modifier type="set" value="4" field="f95b-da01-0578-3bdc"/>
+                    <modifier type="set" value="Devout" field="name"/>
+                    <modifier type="set" value="5" field="0e92-d038-82bf-fb41"/>
+                    <modifier type="set" value="2" field="6b9f-c8fe-8998-27e3"/>
+                    <modifier type="set" value="-" field="d4a9-0ed4-d041-e54b"/>
+                    <modifier type="set" value="-" field="f1be-e66c-d5e1-673c"/>
+                    <modifier type="set" value="4" field="dfff-363e-f72a-5a59"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Standard Bearer" hidden="false" id="bab5-708f-9206-e2bb">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7b64-f26b-5bfd-a690" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="12"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <infoLinks>
+        <infoLink name="Poisoned Attacks" id="3952-dbf1-391c-6dfb" hidden="false" type="rule" targetId="2738-27d5-f4af-4722"/>
+        <infoLink name="Hatred" id="c83a-ad73-f97a-6e0d" hidden="false" type="rule" targetId="1e6c-d634-a65c-78eb"/>
+        <infoLink name="Frenzy" id="0b4e-b8af-1af2-1509" hidden="false" type="rule" targetId="ab5d-dda1-bffc-a027"/>
+        <infoLink name="Skirmishers" id="087d-58db-7574-85a8" hidden="false" type="rule" targetId="1945-ac89-9cc4-3537"/>
+        <infoLink name="Native (Lustria)" id="d0bc-b420-fefd-b98c" hidden="false" type="rule" targetId="9e5f-2e1d-4b45-b079"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Two Hand Weapons" hidden="false" id="cfb3-57e4-a314-b6f7" type="selectionEntry" targetId="36a8-7bbb-d204-0314">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1d02-7ebf-e8b1-14e1" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="32ed-5a6b-1ef5-09b7" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Amazon Serpent Priestess" hidden="false" id="9ddd-69c8-644d-abc2" publicationId="5607-d1af-87fe-3515">
+      <costs>
+        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="235"/>
+        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Special Characters" hidden="false" id="944d-9ca1-f22f-7760" targetId="0644-bfcd-32c2-21dc" primary="false"/>
+        <categoryLink name="Regiment of Renown" hidden="false" id="df0c-36cf-ea24-1509" targetId="ee09-9a50-ad78-9c32" primary="true"/>
+        <categoryLink name="Heroes" hidden="false" id="3c9a-ad27-a010-27d1" targetId="c16b-f319-2c62-2c12" primary="false"/>
+        <categoryLink name="Characters" hidden="false" id="69ab-70a1-eb86-61ff" targetId="7a1c-d611-c2dc-def1" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Extra Rare choice" hidden="false" id="33a7-55f3-7a3a-606c" type="selectionEntry" targetId="dde8-eb28-cacb-34a3"/>
+      </entryLinks>
+      <profiles>
+        <profile name="Serpent Priestess" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="c2b0-8143-1134-5894" publicationId="5607-d1af-87fe-3515" page="35">
+          <characteristics>
+            <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">4</characteristic>
+            <characteristic name="WS" typeId="f95b-da01-0578-3bdc">4</characteristic>
+            <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">3</characteristic>
+            <characteristic name="S" typeId="b690-4bc0-bb73-267b">4(5)</characteristic>
+            <characteristic name="T" typeId="8712-f56f-5b22-a720">4</characteristic>
+            <characteristic name="W" typeId="253a-9b00-4fde-8ac2">3</characteristic>
+            <characteristic name="I" typeId="dfff-363e-f72a-5a59">4</characteristic>
+            <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">2</characteristic>
+            <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">9</characteristic>
+            <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+            <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">4+</characteristic>
+            <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Native (Lustria)" id="f072-3278-d57b-b155" hidden="false" type="rule" targetId="9e5f-2e1d-4b45-b079"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Equipment" id="70db-e50e-e3b9-b7b5" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Amulet of the Moons" hidden="false" id="55f7-1259-245b-1d66" page="35" publicationId="5607-d1af-87fe-3515">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ec21-89a4-bcbb-8700" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d3c5-74aa-de6d-83a8" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Amulet of the Moons" typeId="a89b-d5a3-7805-c44e" typeName="Magic Items" hidden="false" id="40f7-3c93-1fc1-56dd" page="35" publicationId="5607-d1af-87fe-3515">
+                  <characteristics>
+                    <characteristic name="Magic stuff" typeId="c7b5-c239-d6c1-0627">4+ Ward save</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Claw of the Old Ones" hidden="false" id="aca7-1e2f-b305-4226" page="35" publicationId="5607-d1af-87fe-3515">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6809-de9f-a72b-f830" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c8bc-a0b2-a63c-239a" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Claw of the Old Ones" typeId="7889-42d9-70a0-3ea9" typeName="Weapon" hidden="false" id="5bbf-59a2-7848-0e80" page="35" publicationId="5607-d1af-87fe-3515">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3107-4d1e-9a51-6564">CC</characteristic>
+                    <characteristic name="Strength" typeId="6fe4-1ebb-cb04-1378">+1</characteristic>
+                    <characteristic name="Damage" typeId="6f2f-d612-52ef-1633"/>
+                    <characteristic name="Special Rules" typeId="a21a-cdc0-4b13-b236"/>
+                    <characteristic name="Saves" typeId="8014-a8b2-15c3-da95">No Armour saves allowed</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Lore of the Serpent" id="2f75-ab6e-547e-4259" hidden="false">
+          <profiles>
+            <profile name="1. Singing Wind" typeId="07eb-6084-5f84-a505" typeName="Spell" hidden="false" id="6dd7-332d-469c-c593" page="35" publicationId="5607-d1af-87fe-3515">
+              <characteristics>
+                <characteristic name="Cast" typeId="f1e6-8816-26e0-8a70">5+</characteristic>
+                <characteristic name="Range" typeId="42e6-553f-842f-0b91">Flame template</characteristic>
+                <characteristic name="Type" typeId="194f-3dee-9698-7291">Breath Weapon</characteristic>
+                <characteristic name="CC" typeId="d360-4f33-c1a6-b3ab">NO</characteristic>
+                <characteristic name="Target" typeId="d1af-fdf7-8ed2-d6a3">Enemy unit in reach</characteristic>
+                <characteristic name="Effect" typeId="7d21-349e-b0a8-fc7d">S4 Breath Weapon</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="2. Serpent&apos;s Strength" typeId="07eb-6084-5f84-a505" typeName="Spell" hidden="false" id="538e-f4d7-a005-29e9" page="35" publicationId="5607-d1af-87fe-3515">
+              <characteristics>
+                <characteristic name="Cast" typeId="f1e6-8816-26e0-8a70">6+</characteristic>
+                <characteristic name="Range" typeId="42e6-553f-842f-0b91">6&quot;</characteristic>
+                <characteristic name="Type" typeId="194f-3dee-9698-7291">Buff</characteristic>
+                <characteristic name="CC" typeId="d360-4f33-c1a6-b3ab">NO</characteristic>
+                <characteristic name="Target" typeId="d1af-fdf7-8ed2-d6a3">Friendly unit</characteristic>
+                <characteristic name="Effect" typeId="7d21-349e-b0a8-fc7d">+1S until end of turn</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="5. The Living Jungle" typeId="07eb-6084-5f84-a505" typeName="Spell" hidden="false" id="8401-665a-f2c6-ce8f" page="35" publicationId="5607-d1af-87fe-3515">
+              <characteristics>
+                <characteristic name="Cast" typeId="f1e6-8816-26e0-8a70">8+</characteristic>
+                <characteristic name="Range" typeId="42e6-553f-842f-0b91">12&quot;</characteristic>
+                <characteristic name="Type" typeId="194f-3dee-9698-7291">Magic missile</characteristic>
+                <characteristic name="CC" typeId="d360-4f33-c1a6-b3ab">NO</characteristic>
+                <characteristic name="Target" typeId="d1af-fdf7-8ed2-d6a3">Enemy unit</characteristic>
+                <characteristic name="Effect" typeId="7d21-349e-b0a8-fc7d">4D6 S2 hits</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="6. Siren&apos;s Dream" typeId="07eb-6084-5f84-a505" typeName="Spell" hidden="false" id="7caa-8cfb-ae02-b353" page="35" publicationId="5607-d1af-87fe-3515">
+              <characteristics>
+                <characteristic name="Cast" typeId="f1e6-8816-26e0-8a70">9+</characteristic>
+                <characteristic name="Range" typeId="42e6-553f-842f-0b91">12&quot;</characteristic>
+                <characteristic name="Type" typeId="194f-3dee-9698-7291"/>
+                <characteristic name="CC" typeId="d360-4f33-c1a6-b3ab">NO</characteristic>
+                <characteristic name="Target" typeId="d1af-fdf7-8ed2-d6a3">All enemies (except ItP)</characteristic>
+                <characteristic name="Effect" typeId="7d21-349e-b0a8-fc7d">-1A, -1S, -1 M (min 1) until EoT</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="4. Shield of Thorns" typeId="07eb-6084-5f84-a505" typeName="Spell" hidden="false" id="6636-8268-71b3-4a78" page="35" publicationId="5607-d1af-87fe-3515">
+              <characteristics>
+                <characteristic name="Cast" typeId="f1e6-8816-26e0-8a70">8+</characteristic>
+                <characteristic name="Range" typeId="42e6-553f-842f-0b91">-</characteristic>
+                <characteristic name="Type" typeId="194f-3dee-9698-7291">Remains in Play</characteristic>
+                <characteristic name="CC" typeId="d360-4f33-c1a6-b3ab">NO</characteristic>
+                <characteristic name="Target" typeId="d1af-fdf7-8ed2-d6a3">Charging enemy unit</characteristic>
+                <characteristic name="Effect" typeId="7d21-349e-b0a8-fc7d">S4 attack</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="3. Wendala&apos;s Maelstrom" typeId="07eb-6084-5f84-a505" typeName="Spell" hidden="false" id="113d-ea61-6d82-ad98" page="35" publicationId="5607-d1af-87fe-3515">
+              <characteristics>
+                <characteristic name="Cast" typeId="f1e6-8816-26e0-8a70">7+</characteristic>
+                <characteristic name="Range" typeId="42e6-553f-842f-0b91">0&quot;</characteristic>
+                <characteristic name="Type" typeId="194f-3dee-9698-7291">Remains in Play</characteristic>
+                <characteristic name="CC" typeId="d360-4f33-c1a6-b3ab">NO</characteristic>
+                <characteristic name="Target" typeId="d1af-fdf7-8ed2-d6a3">Self and her unit.</characteristic>
+                <characteristic name="Effect" typeId="7d21-349e-b0a8-fc7d">-1 to be hit by missiles (even magic)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
@@ -4358,6 +4740,9 @@ Ogres in the unit are immune to Ice Magic</description>
     </rule>
     <rule name="Cannibal Totem" id="9c04-e5ef-39d3-91f3" hidden="false" publicationId="49a5-e8f7-aa09-ad96" page="65">
       <description>When fighting unit with same base size, can reroll failed to hit and wound rolls in first round of combat but may not Overrun but must pursue if they do.</description>
+    </rule>
+    <rule name="Native (Lustria)" id="9e5f-2e1d-4b45-b079" hidden="false" page="45" publicationId="d94f-49fc-2e27-f067">
+      <description>The Amazons are native to Lustria and the jungles hold no peril for them. When using the jungle-fighting rules presented in Warhammer Realms: Lustria, they are immune to the same Encounters as the Lizardmen.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
@@ -4473,6 +4858,9 @@ Ogres in the unit are immune to Ice Magic</description>
         <characteristic name="I" typeId="dfff-363e-f72a-5a59">2</characteristic>
         <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">3</characteristic>
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">8</characteristic>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+        <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+        <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
       </characteristics>
     </profile>
     <profile id="fa24-e2ea-1ac8-15a1" name="Gutlord" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
@@ -4486,6 +4874,9 @@ Ogres in the unit are immune to Ice Magic</description>
         <characteristic name="I" typeId="dfff-363e-f72a-5a59">2</characteristic>
         <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">4</characteristic>
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">8</characteristic>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+        <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+        <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
       </characteristics>
     </profile>
     <profile id="e220-e7cf-c695-52aa" name="Maneaters" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
@@ -4499,6 +4890,9 @@ Ogres in the unit are immune to Ice Magic</description>
         <characteristic name="I" typeId="dfff-363e-f72a-5a59">3</characteristic>
         <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">4</characteristic>
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">8</characteristic>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+        <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+        <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
       </characteristics>
     </profile>
     <profile id="9aa0-6c50-cbee-b6c9" name="Leadbelcher" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
@@ -4512,6 +4906,9 @@ Ogres in the unit are immune to Ice Magic</description>
         <characteristic name="I" typeId="dfff-363e-f72a-5a59">2</characteristic>
         <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">3</characteristic>
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">7</characteristic>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+        <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+        <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
       </characteristics>
     </profile>
     <profile id="0827-0dad-f5b2-fea5" name="Ogre Bull" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
@@ -4525,6 +4922,9 @@ Ogres in the unit are immune to Ice Magic</description>
         <characteristic name="I" typeId="dfff-363e-f72a-5a59">2</characteristic>
         <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">3</characteristic>
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">7</characteristic>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+        <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+        <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
       </characteristics>
     </profile>
     <profile id="f6eb-be17-0a89-89e7" name="Crusher" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
@@ -4538,6 +4938,9 @@ Ogres in the unit are immune to Ice Magic</description>
         <characteristic name="I" typeId="dfff-363e-f72a-5a59">2</characteristic>
         <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">4</characteristic>
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">7</characteristic>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+        <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+        <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
       </characteristics>
     </profile>
     <profile id="111a-379e-61c0-f0e0" name="Thunderfist" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
@@ -4551,6 +4954,9 @@ Ogres in the unit are immune to Ice Magic</description>
         <characteristic name="I" typeId="dfff-363e-f72a-5a59">2</characteristic>
         <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">4</characteristic>
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">4</characteristic>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+        <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+        <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
       </characteristics>
     </profile>
     <profile name="Bull Rhinox" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="8197-786d-1090-3484">
@@ -4620,16 +5026,32 @@ Ogres in the unit are immune to Ice Magic</description>
     <profile name="Amazon" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="0db4-314f-7419-19d7" publicationId="d94f-49fc-2e27-f067" page="48">
       <characteristics>
         <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">4</characteristic>
-        <characteristic name="WS" typeId="f95b-da01-0578-3bdc">4</characteristic>
+        <characteristic name="WS" typeId="f95b-da01-0578-3bdc">3</characteristic>
         <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">3</characteristic>
         <characteristic name="S" typeId="b690-4bc0-bb73-267b">3</characteristic>
         <characteristic name="T" typeId="8712-f56f-5b22-a720">3</characteristic>
         <characteristic name="W" typeId="253a-9b00-4fde-8ac2">1</characteristic>
         <characteristic name="I" typeId="dfff-363e-f72a-5a59">3</characteristic>
-        <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">3</characteristic>
+        <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">7</characteristic>
         <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">6+</characteristic>
         <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">6+</characteristic>
+        <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Cold one" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="95a0-203c-0eca-c6d5" publicationId="9d1b-de49-ff19-ea19">
+      <characteristics>
+        <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">7</characteristic>
+        <characteristic name="WS" typeId="f95b-da01-0578-3bdc">3</characteristic>
+        <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">0</characteristic>
+        <characteristic name="S" typeId="b690-4bc0-bb73-267b">4</characteristic>
+        <characteristic name="T" typeId="8712-f56f-5b22-a720">4</characteristic>
+        <characteristic name="W" typeId="253a-9b00-4fde-8ac2">1</characteristic>
+        <characteristic name="I" typeId="dfff-363e-f72a-5a59">3</characteristic>
+        <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
+        <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">3</characteristic>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">5+</characteristic>
+        <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
       </characteristics>
     </profile>

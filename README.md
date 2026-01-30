@@ -108,6 +108,10 @@ The main additions are:
 - [x] Ruglud's Armoured Orc
 - [x] Mengil's Manflayers
 - [x] The Cursed Company
+- [x] Amazon Serpent Priestess (WD#307-UK)
+- [x] Anakonda's Amazons (WD#308-UK)
+- [x] Amazon Totem Warriors (by Andy Hoare)
+- [x] Amazon Cold One Riders (by Andy Hoare)
 
 ### Dark Elves
 - [x] Malekith, the Witch King
