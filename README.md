@@ -285,6 +285,7 @@ The main additions are:
 - [x] Throng of Karak Kadrin (DW1-AB, p.78)
 - [x] Royal Clan (DW1-AB, p.79)
 - [x] Overground Defence (DW1-AB, p.79)
+- [x] Undgrin Ankor Force (DW1-AB, p.79)
 
 
 ## Sources consulted
