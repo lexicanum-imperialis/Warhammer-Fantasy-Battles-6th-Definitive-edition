@@ -120,6 +120,8 @@ The main additions are:
 - [x] Ghazak Khan, Terror of the East (CR-03, p.112)
 - [x] Lorenzo Lupo, Merchant Prince of Luccini (CR-03, p.113)
 - [x] Marco Colombo (WD#103-ES, p.7)
+- [x] Gotrek Gurnisson & Felix Jaeger (AN-02, p.64)
+- [x] Dark Emissary (CR-03, p.14)
 
 ### Dark Elves
 - [x] Malekith, the Witch King
