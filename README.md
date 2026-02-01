@@ -115,6 +115,7 @@ The main additions are:
 - [x] Torston Treehaka's Sea Axes (WD#307, p.48)
 - [x] Giant (WD#316-UK, p.20-43)
 - [x] Mydas the Mean (CR-03, p.110)
+- [x] Lucrezzia Belladonna (CR-03, p.111)
 
 ### Dark Elves
 - [x] Malekith, the Witch King
