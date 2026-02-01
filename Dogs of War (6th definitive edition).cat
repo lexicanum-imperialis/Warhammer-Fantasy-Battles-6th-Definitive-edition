@@ -28,10 +28,11 @@
   <selectionEntries>
     <selectionEntry id="bb61-113e-cd28-26f7" name="Paymaster" hidden="false" collective="false" import="true" type="unit">
       <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c0e6-c3ab-203e-9bca" type="min">
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dc48-ee6d-0cf9-edf4" type="min">
           <comment>A Dogs of Was army must include a paymaster. Paymaster may not be the the army&apos;s general</comment>
         </constraint>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dc48-ee6d-0cf9-edf4" type="max">
+        <constraint type="min" value="1" field="selections" scope="force" shared="true" id="d703-f473-ef66-cdec" includeChildSelections="false"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6325-b994-998e-c6ad" type="max">
           <comment>A Dogs of Was army must include a paymaster. Paymaster may not be the the army&apos;s general</comment>
         </constraint>
       </constraints>
@@ -242,6 +243,18 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="0" field="d703-f473-ef66-cdec">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="947b-cfdf-dfc5-53f9" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="0" field="dc48-ee6d-0cf9-edf4">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="947b-cfdf-dfc5-53f9" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="8ccf-0c2b-1e09-998e" name="Mercenary General" hidden="false" collective="false" import="true" type="unit">
       <profiles>
@@ -2359,6 +2372,292 @@
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Mydas the Mean" hidden="false" id="947b-cfdf-dfc5-53f9" page="110" publicationId="91c2-b862-8010-87bb" subType="unit-group">
+      <infoGroups>
+        <infoGroup name="Special rules" id="4376-70cc-34da-7582" hidden="false">
+          <infoLinks>
+            <infoLink name="Paymaster" id="0af3-1408-2d76-3ead" hidden="false" type="rule" targetId="2ef0-8af1-060e-fece"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <costs>
+        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="291"/>
+        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Special Characters" hidden="false" id="aabe-52bb-8d1b-ed56" targetId="0644-bfcd-32c2-21dc" primary="true"/>
+        <categoryLink name="Heroes" hidden="false" id="fe51-97eb-7dc2-8187" targetId="c16b-f319-2c62-2c12" primary="false"/>
+        <categoryLink name="Characters" hidden="false" id="ee4b-7e68-8fe6-ef7b" targetId="7a1c-d611-c2dc-def1" primary="false"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Warhorse" id="1e8b-c4a3-e579-5bd9" hidden="false" type="profile" targetId="2ed2-6b46-07d6-3c75">
+          <modifiers>
+            <modifier type="set" value="6" field="2d45-18fe-9eb3-b113"/>
+            <modifier type="set" value="Horse" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry type="unit" import="true" name="Pay Chest" hidden="false" id="b775-e845-adde-3449" sortIndex="2">
+          <infoLinks>
+            <infoLink name="Chariots" id="65a4-aa9b-d82a-d093" hidden="false" type="rule" targetId="9306-4fc7-4348-ed06"/>
+            <infoLink name="Pay Chest" id="5c46-188e-9055-e35c" hidden="false" type="profile" targetId="a794-bf02-dcc3-f48d"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Sheikh Yadosh" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="320e-92fb-d667-b5fe" page="110" publicationId="91c2-b862-8010-87bb">
+              <characteristics>
+                <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">4</characteristic>
+                <characteristic name="WS" typeId="f95b-da01-0578-3bdc">2</characteristic>
+                <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">2</characteristic>
+                <characteristic name="S" typeId="b690-4bc0-bb73-267b">3</characteristic>
+                <characteristic name="T" typeId="8712-f56f-5b22-a720">3</characteristic>
+                <characteristic name="W" typeId="253a-9b00-4fde-8ac2">1</characteristic>
+                <characteristic name="I" typeId="dfff-363e-f72a-5a59">2</characteristic>
+                <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
+                <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">7</characteristic>
+                <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+                <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+                <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="The Pay Chest" id="710b-978a-c3d0-f2ea" hidden="false" page="110" publicationId="91c2-b862-8010-87bb">
+              <description>The pay chest counts as a chariot in all respects, with the following exceptions:
+- When the pay chest charges into combat, it inflicts only D3 impact hits.
+- Also, any friendly units within 6&quot; of the pay chest may re-roll any failed Psychology tests.
+- The pay chest has an armour save of 5+.
+- The pay chest may act as a separate unit from Mydas and his bodyguard on the battlefield.</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5b40-db8a-6ffc-d7db" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fd0e-0835-9fd4-a702" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Mydas the Mean" hidden="false" id="2e1a-7656-6208-6675" sortIndex="1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="37f2-79a6-16b6-a450" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1507-545a-0487-a8d2" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Mydas the Mean" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="3ee7-187a-e051-f83f" page="110" publicationId="91c2-b862-8010-87bb">
+              <characteristics>
+                <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">-</characteristic>
+                <characteristic name="WS" typeId="f95b-da01-0578-3bdc">-</characteristic>
+                <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">-</characteristic>
+                <characteristic name="S" typeId="b690-4bc0-bb73-267b">4</characteristic>
+                <characteristic name="T" typeId="8712-f56f-5b22-a720">4</characteristic>
+                <characteristic name="W" typeId="253a-9b00-4fde-8ac2">3</characteristic>
+                <characteristic name="I" typeId="dfff-363e-f72a-5a59">-</characteristic>
+                <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">-</characteristic>
+                <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">-</characteristic>
+                <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">4+</characteristic>
+                <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+                <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Weapons and Armour" id="8789-95be-58f8-f424" hidden="false" sortIndex="1">
+              <entryLinks>
+                <entryLink import="true" name="Shield" hidden="false" id="f4b4-f8cb-880f-a5a5" type="selectionEntry" targetId="50e2-1873-a856-03e7">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fb1a-2946-3c71-44dd" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6b1a-4632-4bea-0a3a" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Heavy Armour" hidden="false" id="9b7e-0894-2355-3d26" type="selectionEntry" targetId="dde4-0ba8-7b3c-57b7">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="12ce-3b75-1b7d-2300" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Hand Weapon" hidden="false" id="95c0-32a8-e890-7725" type="selectionEntry" targetId="abdb-bbd0-41b2-5dff">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d9b3-b3c2-52c3-a884" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Magic Items and Abilities" id="1f57-0fe6-f24e-aad2" hidden="false" sortIndex="2">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Treasure Map (Enchanted Item)" hidden="false" id="d89e-ae37-c39c-0bb0" page="110">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2bca-b3c3-5a08-50d7" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c219-8e6b-aaa5-de18" includeChildSelections="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Treasure Map" typeId="a89b-d5a3-7805-c44e" typeName="Magic Items" hidden="false" id="1329-1a8c-4538-d277" page="110" publicationId="91c2-b862-8010-87bb">
+                      <characteristics>
+                        <characteristic name="Magic stuff" typeId="c7b5-c239-d6c1-0627">The map has different effects for each battle; roll a D6 to determine the effect.
+
+|D6|Result|
+|---|---|
+|1-2|Mydas&apos;s Bodyguards add + 1 to their combat resolution.|
+|3-4|Any friendly unit may use Mydas&apos;s Paymaster Battle Standard ability up to 18&quot; from Mydas instead of the normal 12&quot;.|
+|5-6|One friendly unit chosen at the start of the battle has a +1 to hit in close combat for the rest of the battle.|</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Crest of Mydas (Enchanted Item)" hidden="false" id="573e-fa3a-302e-e823" page="110" publicationId="91c2-b862-8010-87bb">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="617d-891c-ef31-1677" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6906-8abc-3d21-2a2a" includeChildSelections="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Crest of Mydas" typeId="a89b-d5a3-7805-c44e" typeName="Magic Items" hidden="false" id="9b34-1c92-6e7f-017b">
+                      <characteristics>
+                        <characteristic name="Magic stuff" typeId="c7b5-c239-d6c1-0627">A priest of Myrmidia forged the runes on the Crest of Mydas. Mydas the Mean mounted this item onto the lock of his pay chest as a good luck charm. When he goes into battle his weapons and those of his men glow with a dull golden light.
+To represent this, every attack from this unit counts as magical, thus able to wound ethereal creatures and so on.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Mydas&apos; Bodyguard" hidden="false" id="63c6-393d-8425-5760" collective="false" sortIndex="3">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d8a6-3270-b010-eaf7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6e47-84e9-ca25-642d" includeChildSelections="false"/>
+          </constraints>
+          <rules>
+            <rule name="Paymasters Bodyguard" id="abe3-f5f5-f5bc-1818" hidden="false" publicationId="24dc-55f2-f387-3bc6" page="71">
+              <description>As long as the Paymaster is alive and with the unit, the Bodyguard are stubborn</description>
+            </rule>
+            <rule name="Mydas&apos; Bodyguard" id="f410-be76-b1dd-3afd" hidden="false" publicationId="91c2-b862-8010-87bb" page="110">
+              <description>The following rules apply:
+- The bodyguards must be at least 9 models strong, not including Mydas and Sheikh Yadosh. The points cost for the first 9 models are included in the points cost above. You may add up to 15 more models at 11 points, for each additional model.
+- The Bodyguards are equipped with heavy armour, halberds, and hand weapons.
+- The Bodyguards have a Standard Bearer and a Musician.
+- The entire Bodyguard unit is stubborn as long as Paymaster Mydas is alive.
+- No other character in the army may join Mydas&apos; Bodyguards.
+- When setting up, deploy Mydas and his Bodyguards at the same time as other characters.</description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink name="Special" hidden="false" id="0f1e-e459-0b83-6dcb" targetId="43cc-fc3f-35a7-8d03" primary="true"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Bodyguard" hidden="false" id="9e3b-dd43-928e-1944" collective="false">
+              <constraints>
+                <constraint type="min" value="9" field="selections" scope="parent" shared="true" id="014c-1e61-5451-41db" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="15" field="selections" scope="parent" shared="true" id="a4ec-bfdf-63b8-1cad" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="11"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Bodyguard" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="ae16-0829-7ab9-23eb" page="110" publicationId="91c2-b862-8010-87bb">
+                  <characteristics>
+                    <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">4</characteristic>
+                    <characteristic name="WS" typeId="f95b-da01-0578-3bdc">4</characteristic>
+                    <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">3</characteristic>
+                    <characteristic name="S" typeId="b690-4bc0-bb73-267b">3</characteristic>
+                    <characteristic name="T" typeId="8712-f56f-5b22-a720">3</characteristic>
+                    <characteristic name="W" typeId="253a-9b00-4fde-8ac2">1</characteristic>
+                    <characteristic name="I" typeId="dfff-363e-f72a-5a59">3</characteristic>
+                    <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
+                    <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">8</characteristic>
+                    <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">5+</characteristic>
+                    <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+                    <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
+                  </characteristics>
+                  <modifiers>
+                    <modifier type="set" value="4" field="b690-4bc0-bb73-267b"/>
+                  </modifiers>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Command group" id="298c-aae2-a7cd-d0b5" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Musician" hidden="false" id="ea99-3502-4634-72ed" collective="false">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6b7c-c462-2119-dfea" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="10"/>
+                    <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                    <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Standard Bearer" hidden="false" id="9eb7-d7f4-175a-f355" collective="false">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c6ef-afe7-a403-f727" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="10"/>
+                    <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                    <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Champion" hidden="false" id="4dba-70f2-7051-0c00" collective="false">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7e4b-1d94-2b99-3e30" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Champion" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="b44c-5b1b-c9fd-41b4">
+                      <characteristics>
+                        <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">4</characteristic>
+                        <characteristic name="WS" typeId="f95b-da01-0578-3bdc">4</characteristic>
+                        <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">3</characteristic>
+                        <characteristic name="S" typeId="b690-4bc0-bb73-267b">3</characteristic>
+                        <characteristic name="T" typeId="8712-f56f-5b22-a720">3</characteristic>
+                        <characteristic name="W" typeId="253a-9b00-4fde-8ac2">1</characteristic>
+                        <characteristic name="I" typeId="dfff-363e-f72a-5a59">3</characteristic>
+                        <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">2</characteristic>
+                        <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">8</characteristic>
+                        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+                        <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+                        <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="10"/>
+                    <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                    <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Weapons and Armour" id="ae1b-0c42-fb6a-7083" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Halberds" hidden="false" id="f620-ab27-0380-174b" collective="false" targetId="b3f3-a133-2869-0be8" type="selectionEntry">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7a65-7df0-0b4b-a247" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9606-536d-7a49-91f2" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Hand Weapon" hidden="false" id="2d5f-0d81-f499-d6e5" collective="false" targetId="abdb-bbd0-41b2-5dff" type="selectionEntry">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cf44-e74a-28fb-388c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="41e9-33df-903b-f6c3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Heavy Armour" hidden="false" id="fefb-7f21-c7d3-a979" collective="false" targetId="dde4-0ba8-7b3c-57b7" type="selectionEntry">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d061-29a2-1347-6ffe" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
   </selectionEntries>
   <entryLinks>
     <entryLink id="cd91-d764-b15b-2fcc" name="Al Muktar&apos;s Desert Dogs" hidden="false" collective="false" import="true" targetId="22e7-a415-2e0e-a39f" type="selectionEntry">
@@ -3080,6 +3379,22 @@ All these special rules cannot be used against enemy fighting the pikemen&apos;s
         <characteristic name="Damage" typeId="6f2f-d612-52ef-1633"/>
         <characteristic name="Special Rules" typeId="a21a-cdc0-4b13-b236">Fights in four ranks, always strikes first</characteristic>
         <characteristic name="Saves" typeId="8014-a8b2-15c3-da95"/>
+      </characteristics>
+    </profile>
+    <profile name="Pay Chest" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="a794-bf02-dcc3-f48d">
+      <characteristics>
+        <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">-</characteristic>
+        <characteristic name="WS" typeId="f95b-da01-0578-3bdc">-</characteristic>
+        <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">-</characteristic>
+        <characteristic name="S" typeId="b690-4bc0-bb73-267b">4</characteristic>
+        <characteristic name="T" typeId="8712-f56f-5b22-a720">4</characteristic>
+        <characteristic name="W" typeId="253a-9b00-4fde-8ac2">3</characteristic>
+        <characteristic name="I" typeId="dfff-363e-f72a-5a59">-</characteristic>
+        <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">-</characteristic>
+        <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">-</characteristic>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">5+</characteristic>
+        <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+        <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">-</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

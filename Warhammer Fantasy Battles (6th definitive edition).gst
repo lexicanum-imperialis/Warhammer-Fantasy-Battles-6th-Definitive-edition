@@ -2034,7 +2034,7 @@
   <sharedRules>
     <rule id="3d6b-9611-a257-ad03" name="Infantry" hidden="false"/>
     <rule id="4463-1b38-aa4d-e03c" name="Large Target" publicationId="315e-e3c4-08af-fd51" hidden="false">
-      <description>Add +1 to hit for shooting</description>
+      <description>Add +1 to be hit for shooting</description>
     </rule>
     <rule id="1524-2372-4aa0-6881" name="Fear" publicationId="315e-e3c4-08af-fd51" page="81" hidden="false">
       <description>Unit causes Fear</description>
@@ -2499,6 +2499,10 @@ A model with a breath weapon may use it in the Shooting phase. Use the Flame tem
 Diagram &lt;breath-attacks&gt;: _The teardrop-shaped template is placed with the thin end at the Dragon&apos;s mouth and the wide end over the target unit. In this example, four models are completely under the template and are hit automatically. Eleven models are partially covered and are hit on a 4+._
 
 Breath weapons may not be used as a stand &amp; shoot charge reaction, and neither can they be used in close combat. A creature with a breath weapon needs time to belch forth its flames!</description>
+    </rule>
+    <rule name="Chariots" id="9306-4fc7-4348-ed06" hidden="false" publicationId="315e-e3c4-08af-fd51" page="126">
+      <description>Unit is a Chariot.
+See https://6th.whfb.app/chariots</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
