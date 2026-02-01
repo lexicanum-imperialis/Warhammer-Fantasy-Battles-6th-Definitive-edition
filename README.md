@@ -117,6 +117,7 @@ The main additions are:
 - [x] Mydas the Mean (CR-03, p.110)
 - [x] Lucrezzia Belladonna (CR-03, p.111)
 - [x] Borgio the Besieger, Merchant Prince of Miragliano (CR-03, p.112)
+- [x] Ghazak Khan, Terror of the East (CR-03, p.112)
 
 ### Dark Elves
 - [x] Malekith, the Witch King
