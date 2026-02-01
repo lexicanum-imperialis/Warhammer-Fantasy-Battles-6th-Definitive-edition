@@ -116,6 +116,7 @@ The main additions are:
 - [x] Giant (WD#316-UK, p.20-43)
 - [x] Mydas the Mean (CR-03, p.110)
 - [x] Lucrezzia Belladonna (CR-03, p.111)
+- [x] Borgio the Besieger, Merchant Prince of Miragliano (CR-03, p.112)
 
 ### Dark Elves
 - [x] Malekith, the Witch King
