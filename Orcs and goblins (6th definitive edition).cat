@@ -5144,23 +5144,6 @@
       </modifierGroups>
     </selectionEntry>
     <selectionEntry id="5066-8da5-dc89-003b" name="Giant" hidden="false" collective="false" import="true" type="unit">
-      <modifiers>
-        <modifier type="remove" field="category" value="e94b-6a54-8779-cd60">
-          <conditions>
-            <condition field="selections" scope="a2fa-6a0e-8c17-373c" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="instanceOf"/>
-          </conditions>
-        </modifier>
-        <modifier type="set-primary" field="category" value="43cc-fc3f-35a7-8d03">
-          <conditions>
-            <condition field="selections" scope="a2fa-6a0e-8c17-373c" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="instanceOf"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="1f55-c922-66d8-08ef" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <infoLinks>
         <infoLink id="5551-a55f-a547-a856" name="Ignore Greenskin Panic: " hidden="false" targetId="47bc-b420-0136-87a8" type="rule"/>
         <infoLink id="9406-7d10-252e-7517" name="Large Target" hidden="false" targetId="4463-1b38-aa4d-e03c" type="rule"/>
@@ -12378,11 +12361,35 @@ This magic item may only be used with the army list below. Only one character i
     <entryLink import="true" name="Amazon Serpent Priestess" hidden="false" id="338f-d678-568d-8d6b" type="selectionEntry" targetId="9ddd-69c8-644d-abc2"/>
     <entryLink import="true" name="Amazon Totem Warriors" hidden="false" id="0c4f-9418-b3a8-97f8" type="selectionEntry" targetId="345f-b2a8-4641-038d"/>
     <entryLink import="true" name="Anakonda&apos;s Amazons" hidden="false" id="e77f-4d58-a0ed-4f99" type="selectionEntry" targetId="ebf9-c112-3cb4-1f02"/>
-    <entryLink import="true" name="Torston Treekaha&apos;s Sea Axes" hidden="false" id="f708-67b6-673e-69ca" type="selectionEntry" targetId="4fbd-f8c0-e2da-80f8">
+    <entryLink import="true" name="Torston Treehaka&apos;s Sea Axes" hidden="false" id="f708-67b6-673e-69ca" type="selectionEntry" targetId="4fbd-f8c0-e2da-80f8">
       <modifierGroups>
         <modifierGroup type="and">
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="force" childId="5318-2e71-89f6-5a7c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+          <modifiers>
+            <modifier type="add" value="43cc-fc3f-35a7-8d03" field="category"/>
+            <modifier type="remove" value="e94b-6a54-8779-cd60" field="category"/>
+            <modifier type="set-primary" value="43cc-fc3f-35a7-8d03" field="category"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+    </entryLink>
+    <entryLink import="true" name="Giant" hidden="false" id="f6b3-0b56-7a09-2dc5" type="selectionEntry" targetId="7645ed71-72bd-4b72-89ab-22571a0a8b0c" publicationId="ddaeee33-4c15-43a3-939b-8795499d9519">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="1f55-c922-66d8-08ef" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="remove" value="ee09-9a50-ad78-9c32" field="category"/>
+        <modifier type="set-primary" value="e94b-6a54-8779-cd60" field="category"/>
+      </modifiers>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Mountain or Troll Country Waaagh!</comment>
+          <conditions>
+            <condition type="instanceOf" value="0" field="selections" scope="a2fa-6a0e-8c17-373c" childId="any" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </conditions>
           <modifiers>
             <modifier type="add" value="43cc-fc3f-35a7-8d03" field="category"/>

@@ -112,7 +112,8 @@ The main additions are:
 - [x] Anakonda's Amazons (WD#308-UK)
 - [x] Amazon Totem Warriors (by Andy Hoare)
 - [x] Amazon Cold One Riders (by Andy Hoare)
-- [x] Torston Treehaka's Sea Axes (WD#307, p.48) 
+- [x] Torston Treehaka's Sea Axes (WD#307, p.48)
+- [x] Giant (WD#316-UK, p.20-43)
 
 ### Dark Elves
 - [x] Malekith, the Witch King
