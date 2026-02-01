@@ -1397,13 +1397,18 @@
                 <entryLink import="true" name="Magic Banners" hidden="true" id="0132-a7c0-8366-be6e" type="selectionEntryGroup" targetId="a35a-56fa-5680-eaad">
                   <modifiers>
                     <modifier type="set" value="false" field="hidden">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="force" childId="1f94-4080-e84f-6184" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                      <comment>Magic Banner (Borgio the Besieger)</comment>
+                      <comment>Magic Banner (Borgio OR Lupo)</comment>
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="force" childId="5b5c-70cc-f180-c6e3" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="force" childId="1f94-4080-e84f-6184" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                   </modifiers>
-                  <comment>Magic Banner (Borgio the Besieger)</comment>
+                  <comment>Magic Banner (Borgio OR Lupo)</comment>
                 </entryLink>
               </entryLinks>
             </selectionEntry>
@@ -2478,13 +2483,18 @@
                 <entryLink import="true" name="Magic Banners" hidden="true" id="c9dd-1f8d-915d-a592" type="selectionEntryGroup" targetId="a35a-56fa-5680-eaad">
                   <modifiers>
                     <modifier type="set" value="false" field="hidden">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="force" childId="1f94-4080-e84f-6184" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                      <comment>Magic Banner (Borgio the Besieger)</comment>
+                      <comment>Magic Banner (Borgio OR Lupo)</comment>
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="force" childId="5b5c-70cc-f180-c6e3" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="force" childId="1f94-4080-e84f-6184" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                   </modifiers>
-                  <comment>Magic Banner (Borgio the Besieger)</comment>
+                  <comment>Magic Banner (Borgio OR Lupo)</comment>
                 </entryLink>
               </entryLinks>
             </selectionEntry>
@@ -3241,6 +3251,101 @@ At the end of the phase, roll a D6. On a 1-3, he is removed as a casualty as nor
         <rule name="War Cry of the Steppes" id="1f60-f92e-d506-2a75" hidden="false" publicationId="91c2-b862-8010-87bb" page="112">
           <description>When Gazhak Khan charges, he lets out a mighty war cry that freezes the hearts of his enemies.
 To represent this, any unit that he charges will not be able to stand and fire or flee as a Charge response. This does not affect a unit that is immune to psychology.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Lorenzo Lupo, Merchant Prince of Luccini" hidden="false" id="5b5c-70cc-f180-c6e3" page="113" publicationId="91c2-b862-8010-87bb">
+      <categoryLinks>
+        <categoryLink name="Special Characters" hidden="false" id="1610-8605-c7a1-4c55" targetId="0644-bfcd-32c2-21dc" primary="true"/>
+        <categoryLink name="Lord" hidden="false" id="4703-740f-e7d7-7a23" targetId="d024-d25b-a9b4-73b6" primary="false"/>
+        <categoryLink name="Characters" hidden="false" id="cf48-1211-669c-c4e3" targetId="7a1c-d611-c2dc-def1" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="General" hidden="false" id="6d1b-3c45-28bd-71d2" type="selectionEntry" targetId="1b7c-2c90-6d96-28c9">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9f2b-edc0-3043-1f32" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Extra Hero choice" hidden="false" id="4160-7ff5-e5c1-4af1" type="selectionEntry" targetId="3e25-986a-693f-a975"/>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Equipment" id="55c8-0920-9372-4042" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Heavy Armour" hidden="false" id="5fc8-d6d0-6a64-aaac" type="selectionEntry" targetId="dde4-0ba8-7b3c-57b7">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0bf1-7c1f-505c-12df" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Shield of Myrmidia (Magic Armour)" hidden="false" id="a7b3-11d9-1949-f054" page="113" publicationId="91c2-b862-8010-87bb">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ce7e-7aad-4100-38c5" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a757-2fc0-fc09-cf71" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Shield of Myrmidia" typeId="f681-9937-db53-f1d8" typeName="Armour" hidden="false" id="8c72-0a17-6bde-fca4" page="113" publicationId="91c2-b862-8010-87bb">
+                  <characteristics>
+                    <characteristic name="Saving Throw Modifier" typeId="b600-e1ed-0765-27c1">6+</characteristic>
+                    <characteristic name="Special rules" typeId="42c3-68ab-cfa5-203e">Every enemy model in base-to-base contact loses 1 Attack.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Sword of Lucan (Magic Weapon)" hidden="false" id="b05f-47e5-3bcc-795b" page="113" publicationId="91c2-b862-8010-87bb">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6dbd-6fc4-5605-00f2" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b481-b4dd-e845-5f06" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Sword of Lucan" typeId="7889-42d9-70a0-3ea9" typeName="Weapon" hidden="false" id="eec8-9e24-9312-5a49" page="113" publicationId="91c2-b862-8010-87bb">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3107-4d1e-9a51-6564"/>
+                    <characteristic name="Strength" typeId="6fe4-1ebb-cb04-1378"/>
+                    <characteristic name="Damage" typeId="6f2f-d612-52ef-1633"/>
+                    <characteristic name="Special Rules" typeId="a21a-cdc0-4b13-b236"/>
+                    <characteristic name="Saves" typeId="8014-a8b2-15c3-da95">Ignore armour saves</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <profiles>
+        <profile name="Lorenzo Lupo" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="e642-77bc-0352-adb0" page="113" publicationId="91c2-b862-8010-87bb">
+          <characteristics>
+            <characteristic name="Mv" typeId="0e92-d038-82bf-fb41"/>
+            <characteristic name="WS" typeId="f95b-da01-0578-3bdc"/>
+            <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901"/>
+            <characteristic name="S" typeId="b690-4bc0-bb73-267b"/>
+            <characteristic name="T" typeId="8712-f56f-5b22-a720"/>
+            <characteristic name="W" typeId="253a-9b00-4fde-8ac2"/>
+            <characteristic name="I" typeId="dfff-363e-f72a-5a59"/>
+            <characteristic name="A" typeId="6b9f-c8fe-8998-27e3"/>
+            <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113"/>
+            <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">4+</characteristic>
+            <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+            <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Magic Banner (Lorenzo Lupo)" id="6434-a7bc-e1c6-e675" hidden="false" page="113" publicationId="91c2-b862-8010-87bb">
+          <description>Lorenzo Lupo is the Merchant Prince of Luccini, and, because of this, one unit of Pikemen or Heavy Cavalry may carry a 50 point Magic Standard. This rule does not apply to Regiments of Renown.</description>
+        </rule>
+        <rule name="Fights on Foot" id="ee34-2e0f-02ef-6da5" hidden="false" page="113" publicationId="91c2-b862-8010-87bb">
+          <description>Lorenzo is a very eccentric man, in that he prefers to fight on foot in the style of his ancestors. He always takes his place at the front ranks of his pikemen or leads his soldiers on his men-of-war. This is very inspiring to his men, and they are eager to fight for and defend their Merchant Prince.
+To represent this, when Lorenzo is in the front rank of any infantry regiment (including Regiments of Renown) he adds +1 to the combat resolution for that unit. If, for any reason he leaves the front rank, they lose that bonus.</description>
+        </rule>
+        <rule name="Mighty Athlete" id="38f1-cab0-9fce-7840" hidden="false" page="113" publicationId="91c2-b862-8010-87bb">
+          <description>Lorenzo follows many of the classical athletic pursuits that his ancestors practised, and as a result he is a very well-built, muscular man. He regularly rows across the Tilean Sea, wrestles the mightiest opponents or runs from one end of his princedom to the other. To represent this, roll a D6 to determine which pursuit he has been following prior to joining the army.
+
+|D6|Pursuit|Effect|
+|---|---|---|
+|1-2|Running|+1 Toughness|
+|3-4|Wrestling|+1 Attack|
+|5-6|Rowing|+1 Strength|</description>
         </rule>
       </rules>
     </selectionEntry>

@@ -118,6 +118,7 @@ The main additions are:
 - [x] Lucrezzia Belladonna (CR-03, p.111)
 - [x] Borgio the Besieger, Merchant Prince of Miragliano (CR-03, p.112)
 - [x] Ghazak Khan, Terror of the East (CR-03, p.112)
+- [x] Lorenzo Lupo, Merchant Prince of Luccini (CR-03, p.113)
 
 ### Dark Elves
 - [x] Malekith, the Witch King
