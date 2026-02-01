@@ -112,6 +112,7 @@ The main additions are:
 - [x] Anakonda's Amazons (WD#308-UK)
 - [x] Amazon Totem Warriors (by Andy Hoare)
 - [x] Amazon Cold One Riders (by Andy Hoare)
+- [x] Torston Treehaka's Sea Axes (WD#307, p.48) 
 
 ### Dark Elves
 - [x] Malekith, the Witch King
@@ -286,6 +287,7 @@ The main additions are:
 - [x] Royal Clan (DW1-AB, p.79)
 - [x] Overground Defence (DW1-AB, p.79)
 - [x] Undgrin Ankor Force (DW1-AB, p.79)
+- [x] War of Vengeance (DW1-AB, p.79)
 
 
 ## Sources consulted
