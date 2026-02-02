@@ -123,6 +123,7 @@ The main additions are:
 - [x] Gotrek Gurnisson & Felix Jaeger (AN-02, p.64)
 - [x] Dark Emissary (CR-03, p.14)
 - [x] Truthsayer (CR-03, p.15)
+- [x] Fenbeasts (CR-03, p.16)
 - [x] Johann van Hal & Wilhelm Hasburg (AN-02, p.119)
 
 ### Dark Elves

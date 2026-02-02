@@ -5558,7 +5558,7 @@ If fighting alongside a Dwarf army containing an Anvil of Doom, make two separat
                 <characteristic name="Effect" typeId="7d21-349e-b0a8-fc7d">T test ot insta-death, no saves.</characteristic>
               </characteristics>
             </profile>
-            <profile name="0. Elemental Power (Signature Spell)" typeId="07eb-6084-5f84-a505" typeName="Spell" hidden="false" id="d73a-eba5-f722-e0ee" page="14" publicationId="91c2-b862-8010-87bb">
+            <profile name="0. Elemental Power (Signature Spell)" typeId="07eb-6084-5f84-a505" typeName="Spell" hidden="true" id="d73a-eba5-f722-e0ee" page="14" publicationId="91c2-b862-8010-87bb">
               <characteristics>
                 <characteristic name="Cast" typeId="f1e6-8816-26e0-8a70">6+</characteristic>
                 <characteristic name="Range" typeId="42e6-553f-842f-0b91">18&quot;</characteristic>
@@ -5567,6 +5567,13 @@ If fighting alongside a Dwarf army containing an Anvil of Doom, make two separat
                 <characteristic name="Target" typeId="d1af-fdf7-8ed2-d6a3">1 Fenbeast</characteristic>
                 <characteristic name="Effect" typeId="7d21-349e-b0a8-fc7d">Recovers 1D3 W</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="6beb-e2b0-bf8d-ae62" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </profile>
             <profile name="1. Bolt of Dark Light" typeId="07eb-6084-5f84-a505" typeName="Spell" hidden="false" id="36d0-a896-56f4-969e" page="14" publicationId="91c2-b862-8010-87bb">
               <characteristics>
@@ -5747,7 +5754,7 @@ If fighting alongside a Dwarf army containing an Anvil of Doom make two separate
                 <characteristic name="Effect" typeId="7d21-349e-b0a8-fc7d">Ld test or can not move in his next Mv phase, nor Shoot.</characteristic>
               </characteristics>
             </profile>
-            <profile name="0. Elemental Power (Signature Spell)" typeId="07eb-6084-5f84-a505" typeName="Spell" hidden="false" id="1f87-f7dd-795c-cb01" page="15" publicationId="91c2-b862-8010-87bb">
+            <profile name="0. Elemental Power (Signature Spell)" typeId="07eb-6084-5f84-a505" typeName="Spell" hidden="true" id="1f87-f7dd-795c-cb01" page="15" publicationId="91c2-b862-8010-87bb">
               <characteristics>
                 <characteristic name="Cast" typeId="f1e6-8816-26e0-8a70">6+</characteristic>
                 <characteristic name="Range" typeId="42e6-553f-842f-0b91">18&quot;</characteristic>
@@ -5756,6 +5763,13 @@ If fighting alongside a Dwarf army containing an Anvil of Doom make two separate
                 <characteristic name="Target" typeId="d1af-fdf7-8ed2-d6a3">1 Fenbeast</characteristic>
                 <characteristic name="Effect" typeId="7d21-349e-b0a8-fc7d">Recovers 1D3 W</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="6beb-e2b0-bf8d-ae62" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </profile>
             <profile name="1. Wings of Fate" typeId="07eb-6084-5f84-a505" typeName="Spell" hidden="false" id="37df-525f-27db-db5e" page="15" publicationId="91c2-b862-8010-87bb">
               <characteristics>
@@ -6075,6 +6089,91 @@ Vampires dies when wounded, no regeneration.</characteristic>
       <infoLinks>
         <infoLink name="Blessings of Sigmar" id="fcb8b9aa-d7cf-40ae-b3fd-e6281ba2f015" hidden="false" type="rule" targetId="3b0dbbad-c7e0-4bc6-b0c1-15b508c972e9"/>
       </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Fenbeasts" hidden="false" id="6beb-e2b0-bf8d-ae62" subType="unit-group">
+      <categoryLinks>
+        <categoryLink name="Rare" hidden="false" id="3c6d-3cfa-4ca4-4e60" targetId="e94b-6a54-8779-cd60" primary="false"/>
+        <categoryLink name="Regiment of Renown" hidden="false" id="c23d-4a43-e36c-6ad9" targetId="ee09-9a50-ad78-9c32" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="unit" import="true" name="Fenbeast" hidden="false" id="7f6e-67e0-2c1a-97ef">
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="20ec-e253-6e5e-d353" includeChildSelections="false"/>
+            <constraint type="max" value="0" field="selections" scope="force" shared="true" id="160b-8498-228b-f12a" includeChildSelections="true"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="85db-05fb-870c-068a" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="85"/>
+            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="Fenbeast" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="a249-d05d-af2f-738c" page="16" publicationId="91c2-b862-8010-87bb">
+              <characteristics>
+                <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">6</characteristic>
+                <characteristic name="WS" typeId="f95b-da01-0578-3bdc">3</characteristic>
+                <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">-</characteristic>
+                <characteristic name="S" typeId="b690-4bc0-bb73-267b">5</characteristic>
+                <characteristic name="T" typeId="8712-f56f-5b22-a720">5</characteristic>
+                <characteristic name="W" typeId="253a-9b00-4fde-8ac2">4</characteristic>
+                <characteristic name="I" typeId="dfff-363e-f72a-5a59">2</characteristic>
+                <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">3</characteristic>
+                <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">10</characteristic>
+                <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+                <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+                <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">4</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <modifiers>
+            <modifier type="set" value="3" field="160b-8498-228b-f12a">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="4e84-1f82-dc21-18cc" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="0184-b923-7df3-ae7b" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="add" value="{this} requires 1+ selections of Truthsayer or Dark Emissary" field="error">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="4e84-1f82-dc21-18cc" shared="true" includeChildSelections="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="0184-b923-7df3-ae7b" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+      </selectionEntries>
+      <infoGroups>
+        <infoGroup name="Special rules" id="28f8-fb81-a862-b04c" hidden="false">
+          <rules>
+            <rule name="Special Regenerate" id="8da7-0539-da43-c581" hidden="false" page="16" publicationId="91c2-b862-8010-87bb">
+              <description>Fenbeasts can tap into the energy of Albion through marshes and fens, rebuilding themselves from its substance. They have the Regeneration special rule when in marshes, fens, morasses, and similar swampy terrain features. Note that this does not include lakes, rivers or other types of pure&apos; water feature. They are vulnerable to magical attack, however, and so in addition to fire attacks they may not regenerate magically inflicted wounds (from spells, magic items, etc).</description>
+            </rule>
+            <rule name="For Hire (Fenbeast)" id="5c77-cebc-fda0-be7d" hidden="false" page="16" publicationId="91c2-b862-8010-87bb">
+              <description>Any army that includes a Truthsayer or Dark Emissary may field one or more Fenbeasts as Dogs of War. Up to 3 Fenbeasts may be included as a single Rare choice. No army may include more than 3 Fenbeasts.</description>
+            </rule>
+            <rule name="Single Model (Fenbeast)" id="e9ec-6a4c-4767-9022" hidden="false" page="16" publicationId="91c2-b862-8010-87bb">
+              <description>Fenbeasts never form units and cannot be joined by characters - they always operate as units of one model with a Unit Strength of 4.</description>
+            </rule>
+            <rule name="Fen-walker" id="cb14-e501-6471-a719" hidden="false" page="16" publicationId="91c2-b862-8010-87bb">
+              <description>Fenbeasts are completely at home in marshes and bogs, able to move with effortless speed. For the purposes of movement, they treat fens, marshes, morasses and similarly swampy terrain as open ground.</description>
+            </rule>
+            <rule name="No Will" id="d65b-e25a-c11e-6eb4" hidden="false" page="16" publicationId="91c2-b862-8010-87bb">
+              <description>The Dark Emissary or Truthsayer controls the Fenbeast, if they should fall casualty then the magic that binds it to the world is released. If the Truthsayer or Dark Emissary in the army is slain, any Fenbeasts in the army immediately collapse and are removed.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink name="Fear" id="db7f-1fd7-d23a-cec3" hidden="false" type="rule" targetId="1524-2372-4aa0-6881"/>
+            <infoLink name="Unbreakable" id="a352-ff55-ebd9-f154" hidden="false" type="rule" targetId="8ae3-9724-980f-7308"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
