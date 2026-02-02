@@ -4061,7 +4061,7 @@ Troops who hate their enemy must always pursue them if they flee. They cannot at
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Rhinox Riders" hidden="false" id="5e33-e510-ba45-933e" collective="false" publicationId="721f-b0e1-4e4e-c0d7">
+    <selectionEntry type="unit" import="true" name="Rhinox Riders" hidden="false" id="5e33-e510-ba45-933e" collective="false" publicationId="721f-b0e1-4e4e-c0d7" page="79">
       <categoryLinks>
         <categoryLink name="Rare" hidden="false" id="7a46-8a4a-a23c-cc91" targetId="e94b-6a54-8779-cd60" primary="false"/>
         <categoryLink name="Regiment of Renown" hidden="false" id="abed-21d3-2539-e782" targetId="ee09-9a50-ad78-9c32" primary="true"/>
@@ -4082,31 +4082,55 @@ Troops who hate their enemy must always pursue them if they flee. They cannot at
             <infoLink name="Rhinox" id="b81f-25ec-31e2-2db3" hidden="false" type="profile" targetId="004e-6a72-604b-f8a0"/>
           </infoLinks>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Extra Rare choice" hidden="false" id="78b1-e12b-4946-d24d" collective="false" sortIndex="3">
+        <selectionEntry type="upgrade" import="true" name="Extra Special choice" hidden="true" id="6c8d-f6f3-823e-e6a5" collective="false" sortIndex="3">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6f11-b9cd-2af9-a35c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="861b-b2e8-3f32-8e46" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f873-6cfe-911e-2c46" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="b830-0538-045e-ee90" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <categoryLinks>
-            <categoryLink name="Rare" hidden="false" id="04c3-cad9-45b7-03a0" targetId="e94b-6a54-8779-cd60" primary="false"/>
+            <categoryLink name="Special" hidden="false" id="1e1e-8b9b-50f2-6565" targetId="43cc-fc3f-35a7-8d03" primary="false"/>
           </categoryLinks>
           <costs>
             <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
-          <modifiers>
-            <modifier type="set" value="1" field="861b-b2e8-3f32-8e46">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="731d-5b13-2a92-5427" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="true" field="hidden">
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="1" field="b830-0538-045e-ee90"/>
+                <modifier type="set" value="false" field="hidden"/>
+              </modifiers>
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="731d-5b13-2a92-5427" shared="true"/>
               </conditions>
-            </modifier>
-          </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Extra Rare choice" hidden="true" id="a97e-5cc9-264b-74f4" collective="false" sortIndex="2">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="18c5-ec9f-0857-c0de" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="e575-a5af-7fb3-5930" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink name="Rare" hidden="false" id="45cc-3a08-b583-977f" targetId="e94b-6a54-8779-cd60" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+          </costs>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="1" field="e575-a5af-7fb3-5930"/>
+                <modifier type="set" value="false" field="hidden"/>
+              </modifiers>
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="731d-5b13-2a92-5427" shared="true"/>
+              </conditions>
+            </modifierGroup>
+          </modifierGroups>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -4215,22 +4239,6 @@ Troops who hate their enemy must always pursue them if they flee. They cannot at
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks>
-        <entryLink import="true" name="Extra Special choice" hidden="true" id="4457-efeb-f339-4f20" type="selectionEntry" targetId="3100-f6cf-d7f4-9e5a" sortIndex="2">
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="731d-5b13-2a92-5427" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="0" field="7f4b-a95f-f81c-9a0b">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="731d-5b13-2a92-5427" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </entryLink>
-      </entryLinks>
       <costs>
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
@@ -4247,6 +4255,9 @@ Troops who hate their enemy must always pursue them if they flee. They cannot at
             </rule>
             <rule name="Single Minded" id="cd1c-ad32-06e8-274a" hidden="false">
               <description>May not reform and can only wheel once.</description>
+            </rule>
+            <rule name="Dogs of War" id="3c87-934f-1498-7fa3" hidden="false" publicationId="721f-b0e1-4e4e-c0d7" page="79">
+              <description>Though rarer even tban the most far-travelled Maneaters, Rhinox Riders are mercenaries and sell-swords to a man. Units of Rhinox Riders may be included in nonIronskin Ogre Kingdoms armies, taking up a Rare and a Special choice. A single unit may be included in non-Ogre Kingdoms armies too (tbis includes Dogs of War armies), but will take up two Rare choices instead.</description>
             </rule>
           </rules>
           <infoLinks>
@@ -5419,7 +5430,8 @@ To represent this, Gotrek and Felix have a 4+ Ward save and Magic Resistance (2)
                         <characteristic name="Range" typeId="3107-4d1e-9a51-6564"/>
                         <characteristic name="Strength" typeId="6fe4-1ebb-cb04-1378"/>
                         <characteristic name="Damage" typeId="6f2f-d612-52ef-1633"/>
-                        <characteristic name="Special Rules" typeId="a21a-cdc0-4b13-b236"/>
+                        <characteristic name="Special Rules" typeId="a21a-cdc0-4b13-b236">+2A
+Wyrmslayer Blade</characteristic>
                         <characteristic name="Saves" typeId="8014-a8b2-15c3-da95"/>
                       </characteristics>
                     </profile>
