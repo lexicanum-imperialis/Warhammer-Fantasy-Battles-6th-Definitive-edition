@@ -20,6 +20,11 @@
             <repeat field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="735e-2da1-6356-2fdb" repeats="1" roundUp="false"/>
           </repeats>
         </modifier>
+        <modifier type="add" value="You cannot have more units of {this} than you have units of Ogre Bulls" field="error">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="735e-2da1-6356-2fdb" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a177-82fc-0b76-5b73" type="max"/>
@@ -77,6 +82,19 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="8711-ed16-2a44-7251" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <comment>Ironskin Tribe</comment>
+          <modifiers>
+            <modifier type="remove" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="add" value="43cc-fc3f-35a7-8d03" field="category"/>
+            <modifier type="set-primary" value="43cc-fc3f-35a7-8d03" field="category"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry id="041b-7d95-6ff9-754a" name="Gnoblar Trappers" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
@@ -143,6 +161,19 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="8711-ed16-2a44-7251" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <comment>Ironskin Tribe</comment>
+          <modifiers>
+            <modifier type="remove" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="add" value="43cc-fc3f-35a7-8d03" field="category"/>
+            <modifier type="set-primary" value="43cc-fc3f-35a7-8d03" field="category"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry id="7ec6-83de-2dc3-82e9" name="Slave Giant" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
@@ -293,6 +324,17 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="8711-ed16-2a44-7251" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="9cb5-fe07-22d4-22de" name="Yhetees" hidden="false" collective="false" import="true" type="unit">
       <constraints>
@@ -352,6 +394,15 @@
           <conditions>
             <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2679-58f4-1771-662d" type="greaterThan"/>
           </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="8711-ed16-2a44-7251" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>
@@ -530,6 +581,17 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="8711-ed16-2a44-7251" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="478d-eeb4-9e02-c6b2" name="Hunter" hidden="false" collective="false" import="true" type="unit">
       <constraints>
@@ -593,6 +655,17 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="8711-ed16-2a44-7251" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="8933-af8e-e780-6f48" name="Butcher" hidden="false" collective="false" import="true" type="unit">
       <constraints>
@@ -650,6 +723,17 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="2"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="1"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="8711-ed16-2a44-7251" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="ab2c-30b1-9eaa-2306" name="Gnoblar Scraplauncher" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
@@ -695,6 +779,19 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="8711-ed16-2a44-7251" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <comment>Ironskin Tribe</comment>
+          <modifiers>
+            <modifier type="remove" value="43cc-fc3f-35a7-8d03" field="category"/>
+            <modifier type="add" value="e94b-6a54-8779-cd60" field="category"/>
+            <modifier type="set-primary" value="e94b-6a54-8779-cd60" field="category"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry id="81b9-e978-56c2-e942" name="Gorger" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
@@ -807,6 +904,15 @@
             <condition type="lessThan" value="1" field="selections" scope="force" childId="8923-5946-7b10-8957" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="8711-ed16-2a44-7251" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Greasus Goldtooth, Overtyrant of the Ogre Kingdoms" hidden="false" id="47f3-befb-e32e-0b4a" page="78-79" publicationId="49a5-e8f7-aa09-ad96">
@@ -820,6 +926,15 @@
           <conditions>
             <condition type="lessThan" value="1" field="selections" scope="force" childId="8923-5946-7b10-8957" shared="true" includeChildSelections="true"/>
           </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="8711-ed16-2a44-7251" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>
@@ -938,6 +1053,144 @@
           <description>At the start of each of his opponent&apos;s turns, the Ogre player can nominate D3 enemy units within Greasus&apos;s line of sight. These units become subject to Stupidity for the remainder of the turn (this ability has no effect on units that are Immune to Psychology).</description>
         </rule>
       </rules>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Ghark Ironskin, Tyrant of the Ironskin Tribe" hidden="true" id="ef84-6ec7-d1a9-2df9" page="78" publicationId="721f-b0e1-4e4e-c0d7">
+      <costs>
+        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="485"/>
+        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Ghark Ironskin" hidden="false" id="39ad-7cb5-005f-600c" sortIndex="1">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="66df-bf49-2c4b-a09d" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7986-56d3-1ead-7465" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Ghark Ironskin" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="2c18-791b-f4ea-dd58" page="78" publicationId="721f-b0e1-4e4e-c0d7">
+              <characteristics>
+                <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">6</characteristic>
+                <characteristic name="WS" typeId="f95b-da01-0578-3bdc">6</characteristic>
+                <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">3</characteristic>
+                <characteristic name="S" typeId="b690-4bc0-bb73-267b">5</characteristic>
+                <characteristic name="T" typeId="8712-f56f-5b22-a720">5</characteristic>
+                <characteristic name="W" typeId="253a-9b00-4fde-8ac2">5</characteristic>
+                <characteristic name="I" typeId="dfff-363e-f72a-5a59">3</characteristic>
+                <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">5</characteristic>
+                <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">9</characteristic>
+                <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+                <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+                <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">(8)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Mounts" id="00d0-6f8d-2ca3-b48f" hidden="false" sortIndex="4">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="The Iron Rhinox" hidden="false" id="ef2c-3115-c499-f197">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d7fb-2f50-d830-7c55" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="af2f-519c-5214-1fc9" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="The Iron Rhinox" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="de0b-9861-9687-1da9" page="78" publicationId="721f-b0e1-4e4e-c0d7">
+                  <characteristics>
+                    <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">7</characteristic>
+                    <characteristic name="WS" typeId="f95b-da01-0578-3bdc">4</characteristic>
+                    <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">0</characteristic>
+                    <characteristic name="S" typeId="b690-4bc0-bb73-267b">6</characteristic>
+                    <characteristic name="T" typeId="8712-f56f-5b22-a720">5</characteristic>
+                    <characteristic name="W" typeId="253a-9b00-4fde-8ac2">5</characteristic>
+                    <characteristic name="I" typeId="dfff-363e-f72a-5a59">2</characteristic>
+                    <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">5</characteristic>
+                    <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">9</characteristic>
+                    <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">3+</characteristic>
+                    <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+                    <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
+                  </characteristics>
+                </profile>
+                <profile name="Steam attack" typeId="7889-42d9-70a0-3ea9" typeName="Weapon" hidden="false" id="463f-8b88-612b-96f8" page="78" publicationId="721f-b0e1-4e4e-c0d7">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3107-4d1e-9a51-6564">Breath attack</characteristic>
+                    <characteristic name="Strength" typeId="6fe4-1ebb-cb04-1378">S3</characteristic>
+                    <characteristic name="Damage" typeId="6f2f-d612-52ef-1633"/>
+                    <characteristic name="Special Rules" typeId="a21a-cdc0-4b13-b236"/>
+                    <characteristic name="Saves" typeId="8014-a8b2-15c3-da95">-2 Armour save</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Terror" id="8db9-fe72-ebd9-54d4" hidden="false" type="rule" targetId="96f0-c50f-e59e-85fa"/>
+                <infoLink name="Monster Mounts" id="03a6-ce06-4c94-b054" hidden="false" type="rule" targetId="0ffd-48e7-f69d-138d"/>
+                <infoLink name="Magical attacks" id="bddd-5ac5-8b40-f626" hidden="false" type="rule" targetId="08b6-0c27-dc2a-95fa"/>
+                <infoLink name="Large Target" id="be09-41b6-404b-47e1" hidden="false" type="rule" targetId="4463-1b38-aa4d-e03c"/>
+                <infoLink name="Bad Tempered" id="259c-03e8-9316-a8c9" hidden="false" type="rule" targetId="0946-8f34-2b05-4171"/>
+              </infoLinks>
+              <rules>
+                <rule name="Steam Attack" id="2b5c-7dbe-6492-f344" hidden="false" page="78" publicationId="721f-b0e1-4e4e-c0d7">
+                  <description>The Iron Rhinox constantly snorts evil-smelling, sulphurous steam from its armoured snout. The Iron Rhinox has a S3 breath weapon that imposes a -2 Armour Save</description>
+                </rule>
+                <rule name="Thunderous charge" id="0728-0e5d-62dc-a15f" hidden="false">
+                  <description>If more than 7&quot; away from enemy, on charge model gets D3 impact hts</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Equipment" id="5cce-3c5e-a2c7-70ae" hidden="false" sortIndex="3">
+          <entryLinks>
+            <entryLink import="true" name="Iron Fist" hidden="false" id="011a-6846-f3d1-b716" type="selectionEntry" targetId="e8af-b809-5b5d-d33c">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b91a-1e1d-46d4-738b" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e63b-9e95-5e38-803e" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="0b56-c59b-0884-ca05" type="selectionEntry" targetId="abdb-bbd0-41b2-5dff">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6f75-b91c-d7ad-06ea" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="86a5-da6a-051d-07a0" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Ironskin Armour" hidden="false" id="d302-6152-bc2d-66ae">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fdcb-1d7c-484c-5930" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="90b7-b7f3-694e-2834" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Ironskin Armour" typeId="f681-9937-db53-f1d8" typeName="Armour" hidden="false" id="a9c5-73ed-a7e8-d2f5" page="78" publicationId="721f-b0e1-4e4e-c0d7">
+                  <characteristics>
+                    <characteristic name="Saving Throw Modifier" typeId="b600-e1ed-0765-27c1">3+</characteristic>
+                    <characteristic name="Special rules" typeId="42c3-68ab-cfa5-203e"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <categoryLinks>
+        <categoryLink name="Special Characters" hidden="false" id="a3c3-2536-07a5-64ad" targetId="0644-bfcd-32c2-21dc" primary="true"/>
+        <categoryLink name="Lord" hidden="false" id="bdf5-04ea-8859-f2b5" targetId="d024-d25b-a9b4-73b6" primary="false"/>
+        <categoryLink name="Characters" hidden="false" id="cff7-8470-d3ab-c4a4" targetId="7a1c-d611-c2dc-def1" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="General" hidden="false" id="43fe-a721-0763-b560" type="selectionEntry" targetId="1b7c-2c90-6d96-28c9" sortIndex="2">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c6d8-0e56-cca1-2389" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="8711-ed16-2a44-7251" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
@@ -1936,6 +2189,9 @@ Turn 3  3+
 Turn 4  2+
 Turn 5  Automatically enters</description>
     </rule>
+    <rule name="Bad Tempered" id="0946-8f34-2b05-4171" hidden="false" page="45">
+      <description>If there is an enemy model that is an eligible target for the Scraplauncher to charge during the Declare Charges part of the Movement phase, it must immediately pass a Leadership test or declare a charge - if there is a choice of models to charge, then the controlling player may choose freely between them.</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="6efd-d96c-c358-d0c8" name="Tyrant" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
@@ -2250,6 +2506,19 @@ Thrown weapon</characteristic>
         <categoryLink name="Regiment of Renown" hidden="false" id="f78c-c639-4655-0461" targetId="ee09-9a50-ad78-9c32" primary="false"/>
       </categoryLinks>
     </forceEntry>
+    <forceEntry name="Ironskin Tribe (WD#309-UK)" id="8711-ed16-2a44-7251" hidden="false" publicationId="721f-b0e1-4e4e-c0d7" page="76-83">
+      <categoryLinks>
+        <categoryLink name="Experimental rules" hidden="false" id="d1d0-2ebe-51d9-b1ab" targetId="4fed-b911-e6e0-927b" primary="false"/>
+        <categoryLink name="Special list rules" hidden="false" id="3638-ea83-7469-ae24" targetId="32f1-197f-d719-a393" primary="false"/>
+        <categoryLink name="Special Characters" hidden="false" id="bd63-d1ea-9772-5dd4" targetId="0644-bfcd-32c2-21dc" primary="false"/>
+        <categoryLink name="Characters" hidden="false" id="1a86-ccc7-d66f-7a48" targetId="7a1c-d611-c2dc-def1" primary="false"/>
+        <categoryLink name="Lord" hidden="false" id="7995-48f2-a933-4f29" targetId="d024-d25b-a9b4-73b6" primary="false"/>
+        <categoryLink name="Heroes" hidden="false" id="3007-1d8c-161d-2e01" targetId="c16b-f319-2c62-2c12" primary="false"/>
+        <categoryLink name="Core" hidden="false" id="6a19-fae1-1d57-a4a5" targetId="64bf-efb4-9978-26df" primary="false"/>
+        <categoryLink name="Special" hidden="false" id="1b8b-422a-d54f-904a" targetId="43cc-fc3f-35a7-8d03" primary="false"/>
+        <categoryLink name="Rare" hidden="false" id="9993-9762-af81-7424" targetId="e94b-6a54-8779-cd60" primary="false"/>
+      </categoryLinks>
+    </forceEntry>
   </forceEntries>
   <entryLinks>
     <entryLink import="true" name="Ogre Bulls" hidden="false" id="d82e-111e-89b9-2be1" type="selectionEntry" targetId="7754-8b3d-df99-d2d5">
@@ -2259,12 +2528,31 @@ Thrown weapon</characteristic>
             <modifier type="set-primary" value="64bf-efb4-9978-26df" field="category"/>
             <modifier type="remove" value="e94b-6a54-8779-cd60" field="category"/>
             <modifier type="add" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="set" value="1" field="32ed-26da-3f27-5c04"/>
+          </modifiers>
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8711-ed16-2a44-7251" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <comment>Standard</comment>
+        </modifierGroup>
+        <modifierGroup type="and">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="8711-ed16-2a44-7251" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <comment>Ironskin Tribe</comment>
+          <modifiers>
+            <modifier type="remove" value="e94b-6a54-8779-cd60" field="category"/>
+            <modifier type="add" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="set-primary" value="64bf-efb4-9978-26df" field="category"/>
           </modifiers>
         </modifierGroup>
       </modifierGroups>
       <constraints>
-        <constraint type="min" value="1" field="selections" scope="force" shared="true" id="32ed-26da-3f27-5c04" includeChildSelections="false"/>
+        <constraint type="min" value="0" field="selections" scope="force" shared="true" id="32ed-26da-3f27-5c04" includeChildSelections="false"/>
       </constraints>
+      <modifiers>
+        <modifier type="add" value="735e-2da1-6356-2fdb" field="category"/>
+      </modifiers>
     </entryLink>
     <entryLink import="true" name="Leadbelchers" hidden="false" id="c487-0350-e5cf-0c0a" type="selectionEntry" targetId="da30-4b49-acc3-21a7">
       <modifierGroups>
@@ -2273,6 +2561,21 @@ Thrown weapon</characteristic>
             <modifier type="set-primary" value="43cc-fc3f-35a7-8d03" field="category"/>
             <modifier type="remove" value="e94b-6a54-8779-cd60" field="category"/>
             <modifier type="add" value="43cc-fc3f-35a7-8d03" field="category"/>
+          </modifiers>
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8711-ed16-2a44-7251" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <comment>Standard</comment>
+        </modifierGroup>
+        <modifierGroup type="and">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="8711-ed16-2a44-7251" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <comment>Ironskin Tribe</comment>
+          <modifiers>
+            <modifier type="remove" value="e94b-6a54-8779-cd60" field="category"/>
+            <modifier type="add" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="set-primary" value="64bf-efb4-9978-26df" field="category"/>
           </modifiers>
         </modifierGroup>
       </modifierGroups>
@@ -2290,7 +2593,23 @@ Thrown weapon</characteristic>
       <modifierGroups>
         <modifierGroup type="and">
           <modifiers>
-            <modifier type="set-primary" value="e94b-6a54-8779-cd60" field="category"/>
+            <modifier type="set-primary" value="e94b-6a54-8779-cd60" field="category">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8711-ed16-2a44-7251" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+        <modifierGroup type="and">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="8711-ed16-2a44-7251" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <comment>Ironskin Tribe</comment>
+          <modifiers>
+            <modifier type="remove" value="e94b-6a54-8779-cd60" field="category"/>
+            <modifier type="add" value="43cc-fc3f-35a7-8d03" field="category"/>
+            <modifier type="set-primary" value="43cc-fc3f-35a7-8d03" field="category"/>
+            <modifier type="add" value="7ff5-9e55-c594-4b40" field="category"/>
           </modifiers>
         </modifierGroup>
       </modifierGroups>
@@ -2302,6 +2621,21 @@ Thrown weapon</characteristic>
             <modifier type="set-primary" value="64bf-efb4-9978-26df" field="category"/>
             <modifier type="remove" value="e94b-6a54-8779-cd60" field="category"/>
             <modifier type="add" value="64bf-efb4-9978-26df" field="category"/>
+          </modifiers>
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8711-ed16-2a44-7251" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <comment>Standard</comment>
+        </modifierGroup>
+        <modifierGroup type="and">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="8711-ed16-2a44-7251" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <comment>Ironskin Tribe</comment>
+          <modifiers>
+            <modifier type="remove" value="e94b-6a54-8779-cd60" field="category"/>
+            <modifier type="add" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="set-primary" value="64bf-efb4-9978-26df" field="category"/>
           </modifiers>
         </modifierGroup>
       </modifierGroups>

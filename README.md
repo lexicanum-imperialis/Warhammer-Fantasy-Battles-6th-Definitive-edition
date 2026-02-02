@@ -246,6 +246,7 @@ The main additions are:
 - [x] Skrag the Slaughterer, Prohet of the Great Maw (OK-AB, p.76-77)
 - [x] Rhynox Riders (WD#309, p.76-83)
 - [x] Greasus Goldtooth, Overtyrant of the Ogre Kingdoms (OK-AB, p.78-79)
+- [x] Ghark Ironskin, Tyrant of the Ironskin Tribe (WD#309, p.78)
 
 ## Alternative lists included
 - [x] Clan Eshin (SKV-AB)

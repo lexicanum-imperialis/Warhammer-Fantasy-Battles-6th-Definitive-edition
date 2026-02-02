@@ -1910,6 +1910,7 @@
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="" hidden="false" id="659c-d43b-875f-e6b7"/>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="f679-dff7-370a-6050" name="Lore of Metal" hidden="false" collective="false" import="true">
@@ -2503,6 +2504,70 @@ Breath weapons may not be used as a stand &amp; shoot charge reaction, and neith
     <rule name="Chariots" id="9306-4fc7-4348-ed06" hidden="false" publicationId="315e-e3c4-08af-fd51" page="126">
       <description>Unit is a Chariot.
 See https://6th.whfb.app/chariots</description>
+    </rule>
+    <rule name="Magical attacks" id="08b6-0c27-dc2a-95fa" hidden="false" publicationId="315e-e3c4-08af-fd51">
+      <description>The unit attacks are considered magical.</description>
+    </rule>
+    <rule name="Monster Mounts" id="0ffd-48e7-f69d-138d" hidden="false" page="103" publicationId="315e-e3c4-08af-fd51">
+      <description>If a mount has 2 or more Wounds then it is classed as a monster and the following rules are used for riders and mounts. These rules would therefore apply to a Hero riding a Griffon, a Wizard mounted on a Wyvern, a Dragon and its lordly rider, and so on. No additional +1 is added to the rider&apos;s saving throw, as the advantages of riding the monster are worked out in other ways instead.
+
+**Shooting at a Monster Mount**
+As a single model, the monster and its rider are considered to be a single target. It is not possible to shoot specifically at either the rider or the mount. All shots are taken against the whole model and any hits are randomised between the rider and monster as described here.
+
+**Shooting at Character Riders**
+When you shoot at a character riding a monster the usual restrictions for shooting at characters apply, as explained in the section on Heroes and Wizards. However, some monsters are so big that the chance of being able to find a unit of comparably sized creatures to shelter inside or nearby is rather slim. A character riding a monster is therefore easy to pick out as a target. If the monster is large target, the enemy adds +1 to his &apos;to hit&apos; score.
+
+
+The normal -1 to hit that applies to man-sized characters on foot does not apply to characters who are riding steeds or monsters. The whole target is simply so obvious that there is no doubt as to where the character is! You might wish to re-read the rules for shooting at characters in the Characters section to clarify this.
+
+
+**Randomise Hits (Monsters)**
+When shooting at a monster and its rider, roll to hit the model as normal, adding +1 if the monster is a large target. Once you have established bow many hits have been scored you must apportion them between the rider and the monster. For each hit scored roll a D6; on a roll of 1-4 the monster has been hit. Roll to wound the monster as normal. On a roll of 5 or 6 the rider has been hit. Roll to wound the rider as normal.
+
+
+Work out wounds separately on the rider and his mount. Take any saving throws due to the target as normal. Most monsters do not have an armour saving throw as they have no armour, but some have scaly hide which confers an equivalent save. Riders are permitted saves for their armour, but remember that they do not receive the additional +1 save as cavalry troops do when riding smaller creatures.
+
+
+If a monster has two or more riders (a very unusual combination) then randomise hits to see which rider is hit and work out any resultant wounds on that individual. If models are glued in place (as is likely) it will be necessary to make a note of any casualties suffered.
+
+**Excess Wounds (Monsters)**
+If a rider is slain and suffers more wounds than he has on his characteristic profile, excess wounds are discounted. They are not carried through onto the monster, nor onto a second rider if the monster has two riders. Similarly, any excess wounds inflicted on the monster are discounted, they are not carried over onto the rider.
+
+
+
+**Close Combat (Monsters)**
+In close combat, the enemy is faced with a deadly monster and, more often than not, a potent Hero as well. The monster will attack using its own characteristics, and the rider attacks separately using his characteristics. As the monster and rider are likely to have different Initiative values they might strike their blows at different times. These attacks are worked out entirely normally, one batch for the rider and one batch for the monster.
+
+
+**Enemy Attacks**
+When it comes to attacking back, the enemy will be faced with two potential targets, the rider and the monster. The enemy can choose to direct his attacks against either the rider or the monster, and can distribute attacks between them in any way he likes.
+
+
+The opposing player must state how many attacks are against the monster and how many are against the rider before he rolls any dice, otherwise all attacks are assumed to be against the rider.
+
+
+Attacks are worked out exactly as normal, and the score required to hit will depend upon the relative values of the monster or the rider&apos;s Weapon Skill, like all hand-to-hand fighting.
+
+
+**Slain Riders &amp; Monsters**
+Wounds must be recorded separately for the rider and his mount. If the mount is slain the rider may continue to fight on foot if you have a separate model to represent him. If the rider is slain, the monster will behave in an erratic fashion, possibly going wild and attacking either its own side or running rampant amongst both armies. Remember that these big monsters are often hand reared by their masters, and are likely to go uncontrollably wild if their rider is slain. Take a Leadership test against the monster&apos;s own Leadership (you may not use the Leadership value of the General for this even if he is within 12&quot;).
+
+
+If successful, the player may control the monster as normal for the rest of the game. If the test is failed, roll a D6 and consult the Monster Reaction chart. Note that if the monster&apos;s rider is killed in close combat, you should resolve the combat first (ie, fight the combat until one side is broken or destroyed, resolve fleeing and rallying, etc.). If the monster is victorious than make the Leadership test on the first turn when the monster would be free to move and act normally.
+
+
+**Monster Reaction Chart**
+|D6|Reaction|
+|---|---|
+|1-2|The monster makes for the nearest table edge as fast as it can and tries to leave the battlefield. The monster will avoid any troops or scenery blocking its way and will attempt to go round them to find an escape route. If attacked, the monster will fight back, but it will not charge of its own volition unless it is forced to do so by a Psychology rule. It will not use any breath or other range weapon. Once it has left the table, the monster will not return.|
+|3-4|The monster attacks the nearest target that it can see, favouring enemy if there is a choice of two equally distant targets. It must charge if able to do so, and if unable to charge must move towards the nearest target it can see as fast as possible. Once in close combat it will fight, pursue, etc, normally. It will use any breath or other range weapon to attack the nearest troops if able to do so.|
+|5-6|The monster remains steadfastly where it is, guarding the fallen body of its beloved master. The monster will not move but it will face towards and use any breath or similar ranged weapon to attack enemy who approach within range. If the monster is engaged in close combat it will fight, but it will not pursue fleeing enemy. It is unbreakable and immune to Psychology. The monster will remain by its master to the end, faithfully protecting him against harm or capture.|
+
+
+**Victory Points (Monsters)**
+Victory points are rewarded separately for the monster and the character riding it.
+
+https://6th.whfb.app/monsters/monster-mounts</description>
     </rule>
   </sharedRules>
   <sharedProfiles>

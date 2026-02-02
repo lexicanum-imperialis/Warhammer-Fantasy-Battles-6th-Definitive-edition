@@ -33,6 +33,7 @@
         <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="b2b1-c21e-046a-187a"/>
       </constraints>
     </categoryEntry>
+    <categoryEntry name="Ironskin" id="7ff5-9e55-c594-4b40" hidden="false"/>
   </categoryEntries>
   <sharedSelectionEntries>
     <selectionEntry id="bffc-5d6b-4c7a-c7ec" name="Pegasus" hidden="false" collective="false" import="true" type="upgrade">
@@ -65,6 +66,9 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="894a-aef3-fc20-097f" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry id="06d8-4f39-2490-f9d4" name="Grimacing Death Mask (Enchanted Item)" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -4102,9 +4106,14 @@ Troops who hate their enemy must always pursue them if they flee. They cannot at
                 <modifier type="set" value="1" field="b830-0538-045e-ee90"/>
                 <modifier type="set" value="false" field="hidden"/>
               </modifiers>
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="731d-5b13-2a92-5427" shared="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="7ff5-9e55-c594-4b40" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="731d-5b13-2a92-5427" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifierGroup>
           </modifierGroups>
         </selectionEntry>
@@ -4249,7 +4258,7 @@ Troops who hate their enemy must always pursue them if they flee. They cannot at
         <infoGroup name="Special rules" id="4882-533f-2180-e145" hidden="false">
           <rules>
             <rule name="Thunderous charge" id="0de1-7eee-d812-1459" hidden="false">
-              <description>If more than 7&quot; away from enemy, on charge model gets D3 impact hts</description>
+              <description>If more than 7&quot; away from enemy, on charge model gets D3 impact hits</description>
             </rule>
             <rule name="Bad Tempered" id="35ea-3879-7fe7-b619" hidden="false">
               <description>Must charge enemy if fail leadership test</description>
