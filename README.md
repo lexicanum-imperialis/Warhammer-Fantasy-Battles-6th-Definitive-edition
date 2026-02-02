@@ -301,6 +301,7 @@ The main additions are:
 - [x] Overground Defence (DW1-AB, p.79)
 - [x] Undgrin Ankor Force (DW1-AB, p.79)
 - [x] War of Vengeance (DW1-AB, p.79)
+- [x] Ironskin Tribe (WD#309-UK, p-76-83)
 
 
 ## Sources consulted
