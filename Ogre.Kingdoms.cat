@@ -1192,6 +1192,173 @@
         </modifier>
       </modifiers>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Braugh the Slavelord" hidden="false" id="bf08-ffb8-87ce-ff27" publicationId="9d1b-de49-ff19-ea19" subType="unit-group">
+      <categoryLinks>
+        <categoryLink name="Experimental rules" hidden="false" id="0bd2-d4e1-ee21-cd44" targetId="4fed-b911-e6e0-927b" primary="false"/>
+        <categoryLink name="Special Characters" hidden="false" id="0c53-8233-a66f-9c44" targetId="0644-bfcd-32c2-21dc" primary="true"/>
+        <categoryLink name="Characters" hidden="false" id="5b27-e439-f79c-a215" targetId="7a1c-d611-c2dc-def1" primary="false"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="8711-ed16-2a44-7251" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="1" field="d454-91b6-b576-0acc">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="8b76-92c4-23f9-54b1" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="9e50-7486-65ab-c449" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="add" value="Please enable &quot;Allow experimental rules?&quot;" field="error">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="8b76-92c4-23f9-54b1" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="Please enable &quot;Allow special characters?&quot;" field="error">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="8923-5946-7b10-8957" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <costs>
+        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="445"/>
+        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Braugh" hidden="false" id="1d9d-4b74-e706-48c2">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8fca-24e6-fe22-af39" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bfa7-effa-a61d-3f7a" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Braugh" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="10bd-4bcf-38ca-0e82">
+              <characteristics>
+                <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">6</characteristic>
+                <characteristic name="WS" typeId="f95b-da01-0578-3bdc">6</characteristic>
+                <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">3</characteristic>
+                <characteristic name="S" typeId="b690-4bc0-bb73-267b">6</characteristic>
+                <characteristic name="T" typeId="8712-f56f-5b22-a720">5</characteristic>
+                <characteristic name="W" typeId="253a-9b00-4fde-8ac2">3</characteristic>
+                <characteristic name="I" typeId="dfff-363e-f72a-5a59">3</characteristic>
+                <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">5(6)</characteristic>
+                <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">9</characteristic>
+                <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+                <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+                <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">3</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Slaves" hidden="false" id="4ca3-73be-43ae-580b">
+          <constraints>
+            <constraint type="max" value="12" field="selections" scope="parent" shared="true" id="6c45-177b-5768-8ea3" includeChildSelections="false"/>
+            <constraint type="min" value="12" field="selections" scope="parent" shared="true" id="1477-a2c1-52b9-ebfb" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Slaves" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="6177-0725-095d-9eaa">
+              <characteristics>
+                <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">4</characteristic>
+                <characteristic name="WS" typeId="f95b-da01-0578-3bdc">2</characteristic>
+                <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">2</characteristic>
+                <characteristic name="S" typeId="b690-4bc0-bb73-267b">3</characteristic>
+                <characteristic name="T" typeId="8712-f56f-5b22-a720">3</characteristic>
+                <characteristic name="W" typeId="253a-9b00-4fde-8ac2">1</characteristic>
+                <characteristic name="I" typeId="dfff-363e-f72a-5a59">2</characteristic>
+                <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
+                <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">6</characteristic>
+                <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+                <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+                <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <infoLinks>
+        <infoLink name="Fear" id="df8e-a607-a0f4-d05b" hidden="false" type="rule" targetId="1524-2372-4aa0-6881"/>
+        <infoLink name="Stubborn" id="39ae-cf4b-1f90-6580" hidden="false" type="rule" targetId="410a-0d06-9044-665e"/>
+        <infoLink name="Bull Charge" id="ef9e-110e-9228-8c46" hidden="false" type="rule" targetId="8953-90f3-edab-81fe"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Equipment" id="2f45-095c-620d-8acd" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="d5cf-30ab-88a5-8ade" type="selectionEntry" targetId="abdb-bbd0-41b2-5dff">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7ec2-9fdc-5b1c-14b0" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0d87-ebad-b22e-3063" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="The Great Bullplate (Magic Armour)" hidden="false" id="325e-54d8-8331-e58f">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a185-b2f1-dd2a-56e8" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b082-cde9-1160-b3e3" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="The Great Bullplate" typeId="f681-9937-db53-f1d8" typeName="Armour" hidden="false" id="11d9-7cb3-a687-c941">
+                  <characteristics>
+                    <characteristic name="Saving Throw Modifier" typeId="b600-e1ed-0765-27c1"/>
+                    <characteristic name="Special rules" typeId="42c3-68ab-cfa5-203e">Charge at 12&quot; instead of 8&quot;.
+Bull charge.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Soul-binder Chains (Magical Weapon)" hidden="false" id="d1b9-dded-5f39-8199">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="03f6-033f-a603-2d19" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0bc6-6108-1c91-dca6" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Soul-binder chains" typeId="7889-42d9-70a0-3ea9" typeName="Weapon" hidden="false" id="dae9-e5b1-7927-32fb">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3107-4d1e-9a51-6564"/>
+                    <characteristic name="Strength" typeId="6fe4-1ebb-cb04-1378"/>
+                    <characteristic name="Damage" typeId="6f2f-d612-52ef-1633"/>
+                    <characteristic name="Special Rules" typeId="a21a-cdc0-4b13-b236">+1A
+Magic attacks.
+Enemy in contact loses D3 attacks until EoT.</characteristic>
+                    <characteristic name="Saves" typeId="8014-a8b2-15c3-da95"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <rules>
+        <rule name="The Great Bullplate" id="78af-9daa-72d4-7b9d" hidden="false">
+          <description>Braugh Slavelord&apos;s gutplate is chained directly into his flesh. Bearing the skull of a sacred cavebeast and enchanted by the Slaughtermaster of Braugh&apos;s former tribe this artifact bestows speed and ferocity on those around it.
+The Great Bullplate allows Braugh and his minions to charge 12&quot; instead of the 8&quot; normally allowed by a Movement of 4.
+Despite not being in a unit of three or more Ogres Braugh may still make a Bull Charge if the other criteria are met.</description>
+        </rule>
+        <rule name="Soul-binder chains" id="a51d-c281-cf51-ff98" hidden="false">
+          <description>These chains flail and writhe with necromantic sigils, lashing out and entangling those who seek to harm Braugh while he throttles them to death.
+The soul-binder chains count as paired magical close combat weapons, granting Braugh an extra attack. They count as magical. At the beginning of each combat phase Braugh may nominate an enemy model in base contact. That model loses a D3 attacks for that phase.</description>
+        </rule>
+        <rule name="Slavelord" id="7257-20b8-ee04-814c" hidden="false">
+          <description>Braugh is surrounded by those who he has enchanted, many still attached to him by the chains he took from the necromancer&apos;s dungeon.
+Braugh begins the game with 12 slaves, these must form up with Braugh at the centre of the unit. This acts as a normal unit but with the exceptions listed below:
+- These can be represented by virtually any humanoid model that can be mounted on a 20mm base although Braugh is invariably accompanied by a zombie or two.
+- Such is the massive magic surrounding Braugh that these undead do not follow the usual rules for undead, but instead act as normal.
+- Braugh benefits from a &quot;Look Out Sir!&quot; roll as long as there are at least 5 slaves in his unit. He may not voluntarily leave his unit under any circumstances.</description>
+        </rule>
+      </rules>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="force" shared="true" id="d454-91b6-b576-0acc" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
     <selectionEntry id="4cfa-372e-2156-3a16" name="Luck Gnoblar" hidden="false" collective="false" import="true" type="upgrade">
