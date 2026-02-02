@@ -122,6 +122,8 @@ The main additions are:
 - [x] Marco Colombo (WD#103-ES, p.7)
 - [x] Gotrek Gurnisson & Felix Jaeger (AN-02, p.64)
 - [x] Dark Emissary (CR-03, p.14)
+- [x] Truthsayer (CR-03, p.15)
+- [x] Johann van Hal & Wilhelm Hasburg (AN-02, p.119)
 
 ### Dark Elves
 - [x] Malekith, the Witch King
