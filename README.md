@@ -237,6 +237,8 @@ The main additions are:
 - [x] Scyla Anfinngrim, Chaos Spawn  (CJ#50, p.14-15)
 - [x] Dechala, the Denied One (CJ#50, p.15-16)
 - [x] Azazel, Prince of Damnation (CJ#50, p.16-17)
+- [x] Marauder Lord of Skeggi (WD#309-UK, p.75)
+- [x] Marauder Aspiring Champion of Skeggi (WD#309-UK, p.75)
 
 ### Dwarfs (2000)
 - [x] Thorek Ironbrow, Dwarf Runelord (DW1-AB, p.50-51)
