@@ -2760,7 +2760,7 @@ Always Strikes Last</characteristic>
         <characteristic name="Range" typeId="3107-4d1e-9a51-6564">8</characteristic>
         <characteristic name="Strength" typeId="6fe4-1ebb-cb04-1378">As user</characteristic>
         <characteristic name="Damage" typeId="6f2f-d612-52ef-1633"/>
-        <characteristic name="Special Rules" typeId="a21a-cdc0-4b13-b236">Thrown weapon, ST +1</characteristic>
+        <characteristic name="Special Rules" typeId="a21a-cdc0-4b13-b236">Thrown Weapons, ST +1</characteristic>
         <characteristic name="Saves" typeId="8014-a8b2-15c3-da95"/>
       </characteristics>
     </profile>
