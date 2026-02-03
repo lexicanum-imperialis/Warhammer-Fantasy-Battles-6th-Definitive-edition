@@ -23,7 +23,7 @@
     </publication>
     <publication name="WD#103-ES" id="017b-60fc-1895-274a" hidden="false" shortName="White-Dwarf #103 ES"/>
     <publication id="40c259e5-394b-4f0b-86e4-71098cffd0cf" name="EM-AB" shortName="Warhammer Armies: The Empire (6th Edition)" publisher="by Alessio Cavatore" publicationDate="2000-10"/>
-    <publication name="WD#310-UK" id="050e-a3e4-dbfc-438a" hidden="false" shortName="&quot;&quot;, in White-Dwarf #310 UK, p." publisher="" publicationDate="">
+    <publication name="WD#310-UK" id="050e-a3e4-dbfc-438a" hidden="false" shortName="&quot;&quot;, in White-Dwarf #310 UK, p.">
       <comment>Gnoblar Horde</comment>
     </publication>
   </publications>
@@ -4448,7 +4448,7 @@ Missile 12&quot; S3</characteristic>
         <constraint type="max" value="0" field="selections" scope="force" shared="true" id="264b-4c6a-defa-2b3e" includeChildSelections="false"/>
       </constraints>
       <modifiers>
-        <modifier type="set" value="1" field="264b-4c6a-defa-2b3e">
+        <modifier type="set" value="-1" field="264b-4c6a-defa-2b3e">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="force" childId="8b76-92c4-23f9-54b1" shared="true" includeChildSelections="true"/>
           </conditions>
@@ -4560,24 +4560,13 @@ Missile 12&quot; S3</characteristic>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup name="Mounts" id="6c42-29dc-3684-d728" hidden="false">
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Cold One" hidden="false" id="4795-db29-0fe7-1834">
+          <entryLinks>
+            <entryLink import="true" name="Cold One" hidden="false" id="6239-a5c6-0208-8671" type="selectionEntry" targetId="4795-db29-0fe7-1834">
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="76e7-456b-94f4-a493" includeChildSelections="false"/>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3f0d-c438-2626-2799" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5d7d-488d-2e4a-c07e" includeChildSelections="false"/>
               </constraints>
-              <infoLinks>
-                <infoLink name="Fear" id="e7d3-89b8-5732-465b" hidden="false" type="rule" targetId="1524-2372-4aa0-6881"/>
-                <infoLink name="Cold one" id="c4e9-3c1b-4d30-a72f" hidden="false" type="profile" targetId="95a0-203c-0eca-c6d5"/>
-                <infoLink name="Stupidity" id="fdb7-ad72-6634-a7d4" hidden="false" type="rule" targetId="5d6f-7b4d-6093-4922"/>
-              </infoLinks>
-              <rules>
-                <rule name="Thick-skinned" id="a890-5d2b-cb1e-b0b8" hidden="false" publicationId="9d1b-de49-ff19-ea19">
-                  <description>+2 Armour save</description>
-                </rule>
-              </rules>
-            </selectionEntry>
-          </selectionEntries>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <infoLinks>
@@ -4595,7 +4584,7 @@ Missile 12&quot; S3</characteristic>
         <constraint type="max" value="0" field="selections" scope="force" shared="true" id="c509-81bf-1fec-3e95" includeChildSelections="false"/>
       </constraints>
       <modifiers>
-        <modifier type="set" value="1" field="c509-81bf-1fec-3e95">
+        <modifier type="set" value="-1" field="c509-81bf-1fec-3e95">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="force" childId="8b76-92c4-23f9-54b1" shared="true" includeChildSelections="true"/>
           </conditions>
@@ -6186,6 +6175,21 @@ Vampires dies when wounded, no regeneration.</characteristic>
           </infoLinks>
         </infoGroup>
       </infoGroups>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Cold One" hidden="false" id="4795-db29-0fe7-1834">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="76e7-456b-94f4-a493" includeChildSelections="false"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Fear" id="e7d3-89b8-5732-465b" hidden="false" type="rule" targetId="1524-2372-4aa0-6881"/>
+        <infoLink name="Cold one" id="c4e9-3c1b-4d30-a72f" hidden="false" type="profile" targetId="95a0-203c-0eca-c6d5"/>
+        <infoLink name="Stupidity" id="fdb7-ad72-6634-a7d4" hidden="false" type="rule" targetId="5d6f-7b4d-6093-4922"/>
+      </infoLinks>
+      <rules>
+        <rule name="Thick-skinned" id="a890-5d2b-cb1e-b0b8" hidden="false" publicationId="9d1b-de49-ff19-ea19">
+          <description>+2 Armour save</description>
+        </rule>
+      </rules>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>

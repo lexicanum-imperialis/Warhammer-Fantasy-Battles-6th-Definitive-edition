@@ -597,6 +597,7 @@
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="54c9-b217-e67c-bd60" type="max"/>
       </constraints>
     </categoryEntry>
+    <categoryEntry name="Battle standard bearer" id="2ef7-3efe-a448-423f" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="b893-4403-5590-827a" name="." hidden="true"/>
@@ -612,6 +613,9 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <categoryLinks>
+        <categoryLink name="Battle standard bearer" hidden="false" id="9968-62a6-6d39-ac81" targetId="2ef7-3efe-a448-423f" primary="false"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry id="b76c-6bad-4650-dbb0" name="Dispel Scroll (one use only)" publicationId="315e-e3c4-08af-fd51" page="154" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -1910,7 +1914,7 @@
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="" hidden="false" id="659c-d43b-875f-e6b7"/>
+    <selectionEntry type="upgrade" import="true" hidden="false" id="659c-d43b-875f-e6b7"/>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="f679-dff7-370a-6050" name="Lore of Metal" hidden="false" collective="false" import="true">
@@ -2019,16 +2023,45 @@
     </selectionEntryGroup>
     <selectionEntryGroup id="c16c-a0f1-1ae2-8b57" name="Common Magic Items" publicationId="315e-e3c4-08af-fd51" page="154" hidden="false" collective="false" import="true">
       <entryLinks>
-        <entryLink id="94f9-e553-f996-340e" name="Sword of Striking" hidden="false" collective="false" import="true" targetId="6b55-e847-311d-d6ca" type="selectionEntry"/>
-        <entryLink id="5db2-cc28-4718-d0ff" name="Sword of Battle" hidden="false" collective="false" import="true" targetId="6e5a-eeea-ec67-3632" type="selectionEntry"/>
-        <entryLink id="88a3-5b15-a625-32c3" name="Sword of Might" hidden="false" collective="false" import="true" targetId="8c56-9be1-c4a9-5afe" type="selectionEntry"/>
-        <entryLink id="4b91-07db-55ec-b019" name="Biting Blade" hidden="false" collective="false" import="true" targetId="74fc-c90b-250e-6b87" type="selectionEntry"/>
-        <entryLink id="1ea5-e851-27cd-ad45" name="Enchanted Shield" hidden="false" collective="false" import="true" targetId="c5c1-60aa-745f-c9d3" type="selectionEntry"/>
-        <entryLink id="3bc4-082d-e44e-7f1a" name="Staff of Sorcery" hidden="false" collective="false" import="true" targetId="b22a-6be5-d4f9-7776" type="selectionEntry"/>
-        <entryLink id="f969-0b28-b1cf-bb02" name="Power Stone (only one use)" hidden="false" collective="false" import="true" targetId="696a-648d-c842-4c6a" type="selectionEntry"/>
-        <entryLink id="bc5a-4f31-3425-4b2c" name="Talisman of Protection" hidden="false" collective="false" import="true" targetId="c7cc-76a3-c413-ddb8" type="selectionEntry"/>
-        <entryLink id="989e-9d22-7fea-19b5" name="Dispel Scroll (one use only)" hidden="false" collective="false" import="true" targetId="b76c-6bad-4650-dbb0" type="selectionEntry"/>
-        <entryLink id="f7d8-220a-ed04-28ef" name="War Banner" hidden="false" collective="false" import="true" targetId="f327-567f-ef99-0403" type="selectionEntry"/>
+        <entryLink import="true" name="Talismans (Common)" hidden="false" id="8358-2a3f-a36f-2eab" type="selectionEntryGroup" page="common" targetId="7dcf-8a09-c9b8-9a88"/>
+        <entryLink import="true" name="Magic Armour (Common)" hidden="false" id="db61-4ae1-43c1-f799" type="selectionEntryGroup" page="common" targetId="ed11-243d-9671-7f1c"/>
+        <entryLink import="true" name="Arcane Items" hidden="false" id="0405-8249-f303-b540" type="selectionEntryGroup" page="common" targetId="0d3f-389c-02b2-bb34"/>
+        <entryLink import="true" name="Magic Banners (Common)" hidden="false" id="f7f3-7037-2d87-c0a4" type="selectionEntryGroup" page="common" targetId="4e89-9bb4-1aeb-e34f"/>
+        <entryLink import="true" name="Magic Weapons (Common)" hidden="false" id="fb4e-d01f-0dcf-7701" type="selectionEntryGroup" page="common" targetId="8171-d883-19d8-6450"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Magic Banners (Common)" id="4e89-9bb4-1aeb-e34f" hidden="false">
+      <entryLinks>
+        <entryLink import="true" name="War Banner" hidden="false" id="f7d8-220a-ed04-28ef" collective="false" targetId="f327-567f-ef99-0403" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Magic Weapons (Common)" id="8171-d883-19d8-6450" hidden="false">
+      <entryLinks>
+        <entryLink import="true" name="Sword of Striking" hidden="false" id="94f9-e553-f996-340e" collective="false" targetId="6b55-e847-311d-d6ca" type="selectionEntry"/>
+        <entryLink import="true" name="Sword of Battle" hidden="false" id="5db2-cc28-4718-d0ff" collective="false" targetId="6e5a-eeea-ec67-3632" type="selectionEntry"/>
+        <entryLink import="true" name="Sword of Might" hidden="false" id="88a3-5b15-a625-32c3" collective="false" targetId="8c56-9be1-c4a9-5afe" type="selectionEntry"/>
+        <entryLink import="true" name="Biting Blade" hidden="false" id="4b91-07db-55ec-b019" collective="false" targetId="74fc-c90b-250e-6b87" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Talismans (Common)" id="7dcf-8a09-c9b8-9a88" hidden="false">
+      <entryLinks>
+        <entryLink import="true" name="Talisman of Protection" hidden="false" id="bc5a-4f31-3425-4b2c" collective="false" targetId="c7cc-76a3-c413-ddb8" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Magic Armour (Common)" id="ed11-243d-9671-7f1c" hidden="false">
+      <entryLinks>
+        <entryLink import="true" name="Enchanted Shield" hidden="false" id="100f-8a0c-49aa-78f3" collective="false" targetId="c5c1-60aa-745f-c9d3" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Arcane Items" id="0d3f-389c-02b2-bb34" hidden="false">
+      <entryLinks>
+        <entryLink import="true" name="Dispel Scroll (one use only)" hidden="false" id="989e-9d22-7fea-19b5" collective="false" targetId="b76c-6bad-4650-dbb0" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden"/>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Power Stone (only one use)" hidden="false" id="f969-0b28-b1cf-bb02" collective="false" targetId="696a-648d-c842-4c6a" type="selectionEntry"/>
+        <entryLink import="true" name="Staff of Sorcery" hidden="false" id="3bc4-082d-e44e-7f1a" collective="false" targetId="b22a-6be5-d4f9-7776" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
