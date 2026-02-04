@@ -2132,9 +2132,8 @@ might be. This could be because of the troops&apos;
 extreme bravery, or because the creatures fighting are not truly alive.
 These troops never break in close combat, and they are also immune to panic, terror and fear or any other Psychology rules. If defeated in close combat (even by fear-causing creatures that outnumber them) unbreakable troops continue to fight on regardless of results. They may never, however. declare that they are fleeing as a charge reaction, as they will literally die fighting under any circumstances.</description>
     </rule>
-    <rule id="ff2b-8db6-64fa-e9ca" name="Immune to Psycology " publicationId="315e-e3c4-08af-fd51" page="112" hidden="false">
-      <description>Some warriors and creatures in the Warhammer world are almost completely fearless, or such grizzled veterans that scenes which would make lesser troops panic have no effect on them.
-Troops that are immune to psychology are never affected by fear terror, frenzy or any other Psychology rules. Troops immune to Psychology may never flee as a charge reaction - they are far too proud and brave to do this! These troops still have to take Break tests as normal.</description>
+    <rule id="ff2b-8db6-64fa-e9ca" name="Immune to Panic" publicationId="315e-e3c4-08af-fd51" page="112" hidden="false">
+      <description>The unit do not take Panic tests.</description>
     </rule>
     <rule id="e5ce-0262-e817-adc2" name="Brace Of Pistols" hidden="false">
       <description>In first round of combat (H-T-H) the model counts as having two handweapons. In the first turn only these have STR4 and Armour Piercing.</description>
@@ -2604,6 +2603,13 @@ If successful, the player may control the monster as normal for the rest of the 
 Victory points are rewarded separately for the monster and the character riding it.
 
 https://6th.whfb.app/monsters/monster-mounts</description>
+    </rule>
+    <rule id="2acc-e985-cc4e-e123" name="Immune to Psycology " publicationId="315e-e3c4-08af-fd51" page="112" hidden="false">
+      <description>Some warriors and creatures in the Warhammer world are almost completely fearless, or such grizzled veterans that scenes which would make lesser troops panic have no effect on them.
+Troops that are immune to psychology are never affected by fear terror, frenzy or any other Psychology rules. Troops immune to Psychology may never flee as a charge reaction - they are far too proud and brave to do this! These troops still have to take Break tests as normal.</description>
+    </rule>
+    <rule id="39b8-b067-c6d9-901e" name="Scaly Skin 2+" hidden="false">
+      <description>Scaly Skin gives 2+ saving throw</description>
     </rule>
   </sharedRules>
   <sharedProfiles>

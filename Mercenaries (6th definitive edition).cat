@@ -26,6 +26,7 @@
     <publication name="WD#310-UK" id="050e-a3e4-dbfc-438a" hidden="false" shortName="&quot;&quot;, in White-Dwarf #310 UK, p.">
       <comment>Gnoblar Horde</comment>
     </publication>
+    <publication name="FW" id="046d-88bc-e852-2147" hidden="false" publisherUrl="http://www.forgeworld.co.uk/" publicationDate="2005-10 (consulted)" shortName="Forge World website UK"/>
   </publications>
   <categoryEntries>
     <categoryEntry id="bb6b-cda8-b237-4dfd" name="DOW" hidden="false"/>
@@ -6196,6 +6197,94 @@ Vampires dies when wounded, no regeneration.</characteristic>
           <description>+2 Armour save</description>
         </rule>
       </rules>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Emperor Fire Dragon" hidden="false" id="d7e3-ae46-6606-7806" publicationId="046d-88bc-e852-2147" page="PDF/dragemp.pdf">
+      <costs>
+        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="960"/>
+        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+      </costs>
+      <rules>
+        <rule name="Unit Size 30" id="6ea1-4fbe-1acd-b288" hidden="false" page="PDF/dragemp.pdf" publicationId="046d-88bc-e852-2147">
+          <description>An Emperor Dragon counts as having a unit size of 30</description>
+        </rule>
+        <rule name="Designers Notes" id="8072-98fd-274f-59e6" hidden="false" page="PDF/dragemp.pdf" publicationId="046d-88bc-e852-2147">
+          <description>An Emperor Fire Dragon isn’t really a troop type for any army, it is an army in its own right! If offered enough gold and plunder an Emperor Dragon will fight for just about anybody, against just about anybody. </description>
+        </rule>
+        <rule name="Points" id="e588-33f6-df7d-3064" hidden="false" page="PDF/dragemp.pdf" publicationId="046d-88bc-e852-2147">
+          <description>960 points. The Emperor Fire Dragon counts as three Rare choices, as a Dogs of War unit for any Army. For a High Elf army the Emperor Fire Dragon counts as two Rare choices. </description>
+        </rule>
+        <rule name="Breathe Fire" id="62bd-1adb-8e1f-8a7a" hidden="false">
+          <description>The fiery breathe of Dragons is legendary. It is terribly destructive. In battle it is used as any other breathe weapon.
+Those hit by it suffer a Strength 5 hit.
+In addition any unit that suffers casualties from Dragon’s breath must take an immediate Panic test. </description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink name="Experimental rules" hidden="false" id="aab6-e498-dc77-1dee" targetId="4fed-b911-e6e0-927b" primary="false"/>
+        <categoryLink name="Rare" hidden="false" id="ce03-ecab-9add-293d" targetId="e94b-6a54-8779-cd60" primary="false"/>
+        <categoryLink name="Regiment of Renown" hidden="false" id="52b6-7a7f-acd1-a347" targetId="ee09-9a50-ad78-9c32" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Extra Rare choice" hidden="false" id="2833-4102-d476-67b1" collective="false">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="4371-d9b6-044e-0be2" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="a9cf-9606-0444-3649" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink name="Rare" hidden="false" id="c8b7-db43-70ba-92af" targetId="e94b-6a54-8779-cd60" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+          </costs>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="3" field="a9cf-9606-0444-3649"/>
+                <modifier type="set" value="3" field="4371-d9b6-044e-0be2"/>
+              </modifiers>
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b59c-7ff5-fb34-405e" shared="true"/>
+              </conditions>
+            </modifierGroup>
+          </modifierGroups>
+        </selectionEntry>
+      </selectionEntries>
+      <infoLinks>
+        <infoLink name="Immune to Panic" id="1b5f-3afd-ac68-8074" hidden="false" type="rule" targetId="ff2b-8db6-64fa-e9ca"/>
+        <infoLink name="Scaly Skin 2+" id="3772-44d6-dd97-500a" hidden="false" type="rule" targetId="39b8-b067-c6d9-901e"/>
+        <infoLink name="Fly" id="9ec3-6e8b-9e68-1a2b" hidden="false" type="rule" targetId="e930-0b71-2fef-3937"/>
+        <infoLink name="Large Target" id="cc6b-cd92-0971-9945" hidden="false" type="rule" targetId="4463-1b38-aa4d-e03c"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Breathe Fire" typeId="7889-42d9-70a0-3ea9" typeName="Weapon" hidden="false" id="4fac-b3e3-ce44-2872" publicationId="046d-88bc-e852-2147" page="PDF/dragemp.pdf">
+          <characteristics>
+            <characteristic name="Range" typeId="3107-4d1e-9a51-6564">Breath template</characteristic>
+            <characteristic name="Strength" typeId="6fe4-1ebb-cb04-1378">S5</characteristic>
+            <characteristic name="Damage" typeId="6f2f-d612-52ef-1633"/>
+            <characteristic name="Special Rules" typeId="a21a-cdc0-4b13-b236">Take Panic test if suffers 1W</characteristic>
+            <characteristic name="Saves" typeId="8014-a8b2-15c3-da95"/>
+          </characteristics>
+        </profile>
+        <profile name="Emperor Fire Dragon" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="4b13-2e81-5ab2-ecbb" page="PDF/dragemp.pdf" publicationId="046d-88bc-e852-2147">
+          <characteristics>
+            <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">6</characteristic>
+            <characteristic name="WS" typeId="f95b-da01-0578-3bdc">8</characteristic>
+            <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">0</characteristic>
+            <characteristic name="S" typeId="b690-4bc0-bb73-267b">8</characteristic>
+            <characteristic name="T" typeId="8712-f56f-5b22-a720">8</characteristic>
+            <characteristic name="W" typeId="253a-9b00-4fde-8ac2">10</characteristic>
+            <characteristic name="I" typeId="dfff-363e-f72a-5a59">6</characteristic>
+            <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">8</characteristic>
+            <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">10</characteristic>
+            <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">2+</characteristic>
+            <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+            <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">10</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
