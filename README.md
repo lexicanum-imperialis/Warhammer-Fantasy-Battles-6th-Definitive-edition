@@ -244,6 +244,7 @@ The main additions are:
 - [x] Giant Chaos Spawn (FW)
 - [x] Giant Spined Chaos Beast (FW)
 - [x] Great Chaos Dragon (FW)
+- [x] Vardek Crom, Herald of Archaon (SoC)
 
 ### Dwarfs (2000)
 - [x] Thorek Ironbrow, Dwarf Runelord (DW1-AB, p.50-51)
