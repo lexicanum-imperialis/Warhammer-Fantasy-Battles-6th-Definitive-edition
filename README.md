@@ -245,6 +245,7 @@ The main additions are:
 - [x] Giant Spined Chaos Beast (FW)
 - [x] Great Chaos Dragon (FW)
 - [x] Vardek Crom, Herald of Archaon (SoC)
+- [x] Be'lakor, the Dark Master (SoC)
 
 ### Dwarfs (2000)
 - [x] Thorek Ironbrow, Dwarf Runelord (DW1-AB, p.50-51)
