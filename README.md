@@ -126,6 +126,8 @@ The main additions are:
 - [x] Fenbeasts (CR-03, p.16)
 - [x] Johann van Hal & Wilhelm Hasburg (AN-02, p.119)
 - [x] Emperor Fire Dragon (FW)
+- [x] 'Kathleen' Halftank (WD#314-UK, p.93)
+- [x] Toxote's Hellmounts (CJ#41, p.24-27)
 
 ### Dark Elves
 - [x] Malekith, the Witch King
