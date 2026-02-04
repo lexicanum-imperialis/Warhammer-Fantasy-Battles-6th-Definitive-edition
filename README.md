@@ -125,6 +125,7 @@ The main additions are:
 - [x] Truthsayer (CR-03, p.15)
 - [x] Fenbeasts (CR-03, p.16)
 - [x] Johann van Hal & Wilhelm Hasburg (AN-02, p.119)
+- [x] Emperor Fire Dragon (FW)
 
 ### Dark Elves
 - [x] Malekith, the Witch King
@@ -242,7 +243,7 @@ The main additions are:
 - [x] Angkor, The Father of Mammoths (FW)
 - [x] Giant Chaos Spawn (FW)
 - [x] Giant Spined Chaos Beast (FW)
-- [x] Emperor Fire Dragon (FW)
+- [x] Great Chaos Dragon (FW)
 
 ### Dwarfs (2000)
 - [x] Thorek Ironbrow, Dwarf Runelord (DW1-AB, p.50-51)
