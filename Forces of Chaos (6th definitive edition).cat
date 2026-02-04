@@ -685,7 +685,7 @@
         <infoLink id="b7a1-84d7-4c70-f3e0" name="Terror" hidden="false" targetId="96f0-c50f-e59e-85fa" type="rule"/>
         <infoLink id="a224-c548-96e0-7a03" name="Large Target" hidden="false" targetId="4463-1b38-aa4d-e03c" type="rule"/>
         <infoLink id="546a-f7de-4afb-19e6" name="Scaly Skin 4+" hidden="false" targetId="ac0c-1a00-3030-9706" type="rule"/>
-        <infoLink id="9aca-3e66-7f45-3643" name="Immune to Psycology " hidden="false" targetId="ff2b-8db6-64fa-e9ca" type="rule"/>
+        <infoLink id="9aca-3e66-7f45-3643" name="Immune to Panic" hidden="false" targetId="ff2b-8db6-64fa-e9ca" type="rule"/>
         <infoLink id="3c7a-afdb-1b56-a094" name="Unit Strength" hidden="false" targetId="d096-8ca3-94ed-0c40" type="rule"/>
         <infoLink id="2478-d234-5ca5-ec5d" name="Storm Rage Shaggoth" hidden="false" targetId="2bc0-51ef-94ff-08a3" type="rule"/>
         <infoLink id="febe-c647-c10b-e510" name="Shaggoth Champions" hidden="false" targetId="9045-7422-5774-167a" type="rule"/>
@@ -2458,6 +2458,18 @@
             <modifier type="add" value="64bf-efb4-9978-26df" field="category"/>
           </modifiers>
         </modifierGroup>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set-primary" value="e94b-6a54-8779-cd60" field="category"/>
+            <modifier type="add" value="e94b-6a54-8779-cd60" field="category"/>
+            <modifier type="remove" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="remove" value="43cc-fc3f-35a7-8d03" field="category"/>
+          </modifiers>
+          <comment>CROM</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="6432-08e1-c763-9b47" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifierGroup>
       </modifierGroups>
     </selectionEntry>
     <selectionEntry id="e48d-fa90-46c8-0189" name="Lord of Chaos" hidden="false" collective="false" import="true" type="unit">
@@ -2802,16 +2814,20 @@
           <entryLinks>
             <entryLink import="true" name="Chaos Armour" hidden="true" id="a493-3566-ca83-5d55" collective="false" targetId="9b37-1817-ce12-f693" type="selectionEntry">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e3e9-77cc-0637-fe2b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2797-4704-ed67-bf60" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="f19c-4259-d078-9224" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
-              <modifiers>
-                <modifier type="set" value="false" field="hidden">
+              <modifierGroups>
+                <modifierGroup type="and">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="parent" childId="1782-3791-0254-736f" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-              </modifiers>
+                  <modifiers>
+                    <modifier type="set" value="1" field="f19c-4259-d078-9224"/>
+                    <modifier type="set" value="false" field="hidden"/>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </entryLink>
             <entryLink import="true" name="Heavy Armour" hidden="false" id="478e-4eaa-b2c4-4242" collective="false" targetId="dde4-0ba8-7b3c-57b7" type="selectionEntry">
               <constraints>
@@ -2958,6 +2974,59 @@
             <modifier type="set-primary" value="43cc-fc3f-35a7-8d03" field="category"/>
             <modifier type="add" value="43cc-fc3f-35a7-8d03" field="category"/>
           </modifiers>
+        </modifierGroup>
+        <modifierGroup type="and">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="6432-08e1-c763-9b47" type="atLeast"/>
+                <condition field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c7ff-31af-939e-0fbd" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+          <modifiers>
+            <modifier type="set-primary" field="category" value="64bf-efb4-9978-26df"/>
+            <modifier type="add" field="category" value="64bf-efb4-9978-26df"/>
+            <modifier type="remove" field="category" value="43cc-fc3f-35a7-8d03"/>
+            <modifier type="remove" field="category" value="e94b-6a54-8779-cd60"/>
+          </modifiers>
+          <comment>CROM</comment>
+        </modifierGroup>
+        <modifierGroup type="and">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="6432-08e1-c763-9b47" type="atLeast"/>
+                <condition field="selections" scope="self" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c7ff-31af-939e-0fbd" type="equalTo"/>
+                <condition field="selections" scope="self" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1782-3791-0254-736f" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+          <modifiers>
+            <modifier type="set-primary" field="category" value="43cc-fc3f-35a7-8d03"/>
+            <modifier type="add" field="category" value="43cc-fc3f-35a7-8d03"/>
+            <modifier type="remove" field="category" value="64bf-efb4-9978-26df"/>
+            <modifier type="remove" field="category" value="e94b-6a54-8779-cd60"/>
+          </modifiers>
+          <comment>CROM</comment>
+        </modifierGroup>
+        <modifierGroup type="and">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="6432-08e1-c763-9b47" type="atLeast"/>
+                <condition field="selections" scope="self" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c7ff-31af-939e-0fbd" type="equalTo"/>
+                <condition field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1782-3791-0254-736f" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+          <modifiers>
+            <modifier type="set-primary" field="category" value="e94b-6a54-8779-cd60"/>
+            <modifier type="add" field="category" value="e94b-6a54-8779-cd60"/>
+            <modifier type="remove" field="category" value="64bf-efb4-9978-26df"/>
+            <modifier type="remove" field="category" value="43cc-fc3f-35a7-8d03"/>
+          </modifiers>
+          <comment>CROM</comment>
         </modifierGroup>
       </modifierGroups>
     </selectionEntry>
@@ -4896,20 +4965,35 @@
       </costs>
       <modifierGroups>
         <modifierGroup type="and">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="6432-08e1-c763-9b47" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="equalTo" value="0" field="selections" scope="self" childId="c7ff-31af-939e-0fbd" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="95c3-133e-8f42-88b9" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+          <modifiers>
+            <modifier type="set-primary" value="e94b-6a54-8779-cd60" field="category"/>
+            <modifier type="add" value="e94b-6a54-8779-cd60" field="category"/>
+            <modifier type="remove" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="remove" value="43cc-fc3f-35a7-8d03" field="category"/>
+          </modifiers>
+          <comment>CROM</comment>
+        </modifierGroup>
+        <modifierGroup type="and">
           <comment>CORE</comment>
           <conditionGroups>
             <conditionGroup type="or">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="a878-7899-6700-e5fb" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="force" childId="f1d2-edba-0f35-030a" shared="true" includeChildSelections="true"/>
-                    <condition type="lessThan" value="1" field="selections" scope="self" childId="365d-3b3c-4094-b18a" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="greaterThan" value="0" field="selections" scope="force" childId="a878-7899-6700-e5fb" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="f1d2-edba-0f35-030a" shared="true" includeChildSelections="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="self" childId="95c3-133e-8f42-88b9" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -4927,7 +5011,8 @@
             <conditionGroup type="and">
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="f1d2-edba-0f35-030a" shared="true" includeChildSelections="true"/>
-                <condition type="atLeast" value="1" field="selections" scope="self" childId="1782-3791-0254-736f" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="95c3-133e-8f42-88b9" shared="true" includeChildSelections="true"/>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="6432-08e1-c763-9b47" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -4937,22 +5022,60 @@
             <modifier type="add" value="43cc-fc3f-35a7-8d03" field="category"/>
           </modifiers>
         </modifierGroup>
+        <modifierGroup type="and">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="6432-08e1-c763-9b47" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="c7ff-31af-939e-0fbd" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+          <modifiers>
+            <modifier type="set-primary" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="add" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="remove" value="43cc-fc3f-35a7-8d03" field="category"/>
+            <modifier type="remove" value="e94b-6a54-8779-cd60" field="category"/>
+          </modifiers>
+          <comment>CROM</comment>
+        </modifierGroup>
+        <modifierGroup type="and">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="6432-08e1-c763-9b47" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="equalTo" value="0" field="selections" scope="self" childId="c7ff-31af-939e-0fbd" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="0" field="selections" scope="self" childId="95c3-133e-8f42-88b9" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+          <modifiers>
+            <modifier type="set-primary" value="43cc-fc3f-35a7-8d03" field="category"/>
+            <modifier type="add" value="43cc-fc3f-35a7-8d03" field="category"/>
+            <modifier type="remove" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="remove" value="e94b-6a54-8779-cd60" field="category"/>
+          </modifiers>
+          <comment>CROM</comment>
+        </modifierGroup>
       </modifierGroups>
       <selectionEntryGroups>
         <selectionEntryGroup name="Weapons and Armour" id="326b-3d61-6c84-948b" hidden="false">
           <entryLinks>
             <entryLink import="true" name="Chaos Armour" hidden="true" id="39f2-93f1-c530-c4d2" collective="false" targetId="9b37-1817-ce12-f693" type="selectionEntry">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0fde-41a8-85bf-520f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f34c-caf7-a8e0-a2f2" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="0fde-41a8-85bf-520f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
-              <modifiers>
-                <modifier type="set" value="false" field="hidden">
+              <modifierGroups>
+                <modifierGroup type="and">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="parent" childId="95c3-133e-8f42-88b9" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-              </modifiers>
+                  <modifiers>
+                    <modifier type="set" value="1" field="0fde-41a8-85bf-520f"/>
+                    <modifier type="set" value="false" field="hidden"/>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </entryLink>
             <entryLink import="true" name="Heavy Armour" hidden="false" id="4438-dbbf-7ab2-d870" collective="false" targetId="dde4-0ba8-7b3c-57b7" type="selectionEntry">
               <constraints>
@@ -5204,6 +5327,18 @@
             <modifier type="add" value="64bf-efb4-9978-26df" field="category"/>
           </modifiers>
         </modifierGroup>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set-primary" value="e94b-6a54-8779-cd60" field="category"/>
+            <modifier type="add" value="e94b-6a54-8779-cd60" field="category"/>
+            <modifier type="remove" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="remove" value="43cc-fc3f-35a7-8d03" field="category"/>
+          </modifiers>
+          <comment>CROM</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="6432-08e1-c763-9b47" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifierGroup>
       </modifierGroups>
       <selectionEntryGroups>
         <selectionEntryGroup name="Command group" id="effd-31bc-dc85-8554" hidden="false">
@@ -5316,6 +5451,18 @@
             <modifier type="add" value="64bf-efb4-9978-26df" field="category"/>
           </modifiers>
         </modifierGroup>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set-primary" value="e94b-6a54-8779-cd60" field="category"/>
+            <modifier type="add" value="e94b-6a54-8779-cd60" field="category"/>
+            <modifier type="remove" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="remove" value="43cc-fc3f-35a7-8d03" field="category"/>
+          </modifiers>
+          <comment>CROM</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="6432-08e1-c763-9b47" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifierGroup>
       </modifierGroups>
       <constraints>
         <constraint type="max" value="0" field="selections" scope="force" shared="true" id="7f35-5f3f-42c9-be19" includeChildSelections="false"/>
@@ -5377,6 +5524,18 @@
             <modifier type="set-primary" value="64bf-efb4-9978-26df" field="category"/>
             <modifier type="add" value="64bf-efb4-9978-26df" field="category"/>
           </modifiers>
+        </modifierGroup>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set-primary" value="e94b-6a54-8779-cd60" field="category"/>
+            <modifier type="add" value="e94b-6a54-8779-cd60" field="category"/>
+            <modifier type="remove" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="remove" value="43cc-fc3f-35a7-8d03" field="category"/>
+          </modifiers>
+          <comment>CROM</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="6432-08e1-c763-9b47" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
         </modifierGroup>
       </modifierGroups>
       <selectionEntryGroups>
@@ -5504,6 +5663,18 @@
             <modifier type="add" value="64bf-efb4-9978-26df" field="category"/>
           </modifiers>
         </modifierGroup>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set-primary" value="e94b-6a54-8779-cd60" field="category"/>
+            <modifier type="add" value="e94b-6a54-8779-cd60" field="category"/>
+            <modifier type="remove" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="remove" value="43cc-fc3f-35a7-8d03" field="category"/>
+          </modifiers>
+          <comment>CROM</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="6432-08e1-c763-9b47" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifierGroup>
       </modifierGroups>
     </selectionEntry>
     <selectionEntry id="3fd7-9be0-aaef-e2d1" name="Daemonettes" hidden="false" collective="false" import="true" type="unit">
@@ -5566,6 +5737,18 @@
             <modifier type="set-primary" value="64bf-efb4-9978-26df" field="category"/>
             <modifier type="add" value="64bf-efb4-9978-26df" field="category"/>
           </modifiers>
+        </modifierGroup>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set-primary" value="e94b-6a54-8779-cd60" field="category"/>
+            <modifier type="add" value="e94b-6a54-8779-cd60" field="category"/>
+            <modifier type="remove" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="remove" value="43cc-fc3f-35a7-8d03" field="category"/>
+          </modifiers>
+          <comment>CROM</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="6432-08e1-c763-9b47" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
         </modifierGroup>
       </modifierGroups>
       <selectionEntryGroups>
@@ -5712,6 +5895,18 @@
             <modifier type="add" value="64bf-efb4-9978-26df" field="category"/>
           </modifiers>
         </modifierGroup>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set-primary" value="e94b-6a54-8779-cd60" field="category"/>
+            <modifier type="add" value="e94b-6a54-8779-cd60" field="category"/>
+            <modifier type="remove" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="remove" value="43cc-fc3f-35a7-8d03" field="category"/>
+          </modifiers>
+          <comment>CROM</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="6432-08e1-c763-9b47" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifierGroup>
       </modifierGroups>
       <selectionEntryGroups>
         <selectionEntryGroup name="Command group" id="d483-2f7e-aebe-5687" hidden="true">
@@ -5833,6 +6028,18 @@
             <modifier type="add" value="64bf-efb4-9978-26df" field="category"/>
           </modifiers>
         </modifierGroup>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set-primary" value="e94b-6a54-8779-cd60" field="category"/>
+            <modifier type="add" value="e94b-6a54-8779-cd60" field="category"/>
+            <modifier type="remove" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="remove" value="43cc-fc3f-35a7-8d03" field="category"/>
+          </modifiers>
+          <comment>CROM</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="6432-08e1-c763-9b47" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifierGroup>
       </modifierGroups>
       <entryLinks>
         <entryLink import="true" name="Screamers" hidden="false" id="2de8-062b-cca1-e312" type="selectionEntry" targetId="ab2a-3ab5-5eac-2f3e">
@@ -5914,6 +6121,18 @@
             <modifier type="set-primary" value="64bf-efb4-9978-26df" field="category"/>
             <modifier type="add" value="64bf-efb4-9978-26df" field="category"/>
           </modifiers>
+        </modifierGroup>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set-primary" value="e94b-6a54-8779-cd60" field="category"/>
+            <modifier type="add" value="e94b-6a54-8779-cd60" field="category"/>
+            <modifier type="remove" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="remove" value="43cc-fc3f-35a7-8d03" field="category"/>
+          </modifiers>
+          <comment>CROM</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="6432-08e1-c763-9b47" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
         </modifierGroup>
       </modifierGroups>
       <constraints>
@@ -6301,7 +6520,7 @@ Attacks that wound automatically, always 2+, etc, will still need a 3+ to wound 
         <selectionEntryGroup name="Chosen of the gods" id="99d8-c23c-38d3-c21a" hidden="false">
           <infoLinks>
             <infoLink name="Magical Resistance (2)" id="23f5-7d54-a651-be0b" hidden="false" type="rule" targetId="df8d-7c05-c47b-9cd6"/>
-            <infoLink name="Immune to Psycology " id="551b-0cfa-81b5-50be" hidden="false" type="rule" targetId="ff2b-8db6-64fa-e9ca"/>
+            <infoLink name="Immune to Panic" id="551b-0cfa-81b5-50be" hidden="false" type="rule" targetId="ff2b-8db6-64fa-e9ca"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Level 2 Sorcer of Tzeentch" hidden="false" id="42a4-7843-8279-9ac4" collective="false">
@@ -6800,7 +7019,7 @@ In addition, Morghur generates two Dispel dice to be added to the Beastmen playe
       <infoGroups>
         <infoGroup name="Special rules" id="26cd-f597-2f41-07b8" hidden="false">
           <infoLinks>
-            <infoLink name="Immune to Psycology " id="7a95-81e3-daf3-2bf9" hidden="false" type="rule" targetId="ff2b-8db6-64fa-e9ca"/>
+            <infoLink name="Immune to Panic" id="7a95-81e3-daf3-2bf9" hidden="false" type="rule" targetId="ff2b-8db6-64fa-e9ca"/>
             <infoLink name="Hatred" id="ce00-5a0d-f2f8-cf0a" hidden="false" type="rule" targetId="1e6c-d634-a65c-78eb"/>
             <infoLink name="Unbreakable" id="bd95-7016-29e3-06e5" hidden="false" type="rule" targetId="8ae3-9724-980f-7308"/>
           </infoLinks>
@@ -7388,7 +7607,7 @@ At the start of the Chaos player&apos;s turn, the Dragon must take another Leade
         <constraint type="max" value="0" field="selections" scope="force" shared="true" id="aa1b-4d76-b9b4-d22e" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Flamer unit" hidden="false" id="cbd5-d7df-e058-a9a8">
+    <selectionEntry type="unit" import="true" name="Flamer unit" hidden="true" id="cbd5-d7df-e058-a9a8">
       <categoryLinks>
         <categoryLink name="Core" hidden="false" id="b2ad-2489-95a1-613f" targetId="64bf-efb4-9978-26df" primary="true"/>
       </categoryLinks>
@@ -7424,6 +7643,11 @@ At the start of the Chaos player&apos;s turn, the Dragon must take another Leade
           <repeats>
             <repeat value="1" repeats="1" field="selections" scope="force" childId="c539-4c54-33b5-47c3" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
+        </modifier>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="93f4-7522-86e9-7d45" shared="true" includeChildSelections="true"/>
+          </conditions>
         </modifier>
       </modifiers>
     </selectionEntry>
@@ -8491,7 +8715,7 @@ If Aekold is killed during a battle, roll a dice at the end of the game. On a 4
         </modifier>
       </modifiers>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Scyla Anfinngrim, Chaos Spawn" hidden="false" id="1fdd-e11d-5d88-ddaf" page="14-15">
+    <selectionEntry type="unit" import="true" name="Scyla Anfinngrim, Chaos Spawn" hidden="false" id="1fdd-e11d-5d88-ddaf" page="14-15" publicationId="eef3-24a3-1f08-2597">
       <constraints>
         <constraint type="max" value="0" field="selections" scope="force" shared="true" id="6934-c9a0-9c3a-b721" includeChildSelections="false"/>
       </constraints>
@@ -8553,6 +8777,11 @@ If Aekold is killed during a battle, roll a dice at the end of the game. On a 4
           </conditions>
         </modifier>
       </modifiers>
+      <costs>
+        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="135"/>
+        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Dechala, the Denied One" hidden="false" id="1e06-513b-55f8-3114" page="15-16" publicationId="eef3-24a3-1f08-2597">
       <constraints>
@@ -8574,6 +8803,7 @@ If Aekold is killed during a battle, roll a dice at the end of the game. On a 4
             <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
             <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
           </characteristics>
+          <comment>Are the extra weapons already in the profile&apos;s Attacks?</comment>
         </profile>
       </profiles>
       <categoryLinks>
@@ -8623,7 +8853,6 @@ If Aekold is killed during a battle, roll a dice at the end of the game. On a 4
 - **Daggerdance:** She gains a 5+ Ward save.</description>
         </rule>
       </rules>
-      <comment>Are the extra weapons already in the profile&apos;s Attacks?</comment>
       <modifiers>
         <modifier type="set" value="1" field="7f09-3420-b056-32c0">
           <conditionGroups>
@@ -9228,10 +9457,10 @@ If the model has no friendly models in base contact, it will not attack that r
         </rule>
         <rule name="Breathe Attacks" id="691d-6ac1-12eb-43a4" hidden="false" page="PDF/dragchaos.pdf" publicationId="046d-88bc-e852-2147">
           <description>The Chaos Dragon’s has two different breath attacks. It may use both in the same turn.
-Each turn, one head breathes fire, with a Strength of 4 and the other breathes a cloud of corrosive gas, resolved at Strength 2 with a -3 to Armour saves. </description>
+Each turn, one head breathes fire, with a Strength of 4 and the other breathes a cloud of corrosive gas, resolved at Strength 2 with a -3 to Armour saves.</description>
         </rule>
         <rule name="Points" id="4b0f-231c-3df7-e888" hidden="false" page="PDF/dragchaos.pdf" publicationId="046d-88bc-e852-2147">
-          <description>960 points. The Great Chaos Dragon counts as three Rare choices for a Hordes of Chaos army. </description>
+          <description>960 points. The Great Chaos Dragon counts as three Rare choices for a Hordes of Chaos army.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -10427,7 +10656,7 @@ In addition, if he fights with sword and shield in a challenge, any special rule
         <infoLink id="b031-cc25-a785-1a2e" name="Daemonic Aura" hidden="false" targetId="3c43-59c1-6cb0-968d" type="rule"/>
         <infoLink id="b0b7-31af-0be0-282e" name="Daemonic attacks" hidden="false" targetId="ab04-c24e-f729-0987" type="rule"/>
         <infoLink id="daaf-82ab-823d-c888" name="Fear" hidden="false" targetId="1524-2372-4aa0-6881" type="rule"/>
-        <infoLink id="298c-e0c1-fb4f-c695" name="Immune to Psycology " hidden="false" targetId="ff2b-8db6-64fa-e9ca" type="rule"/>
+        <infoLink id="298c-e0c1-fb4f-c695" name="Immune to Panic" hidden="false" targetId="ff2b-8db6-64fa-e9ca" type="rule"/>
         <infoLink id="34dc-90e6-197d-e38c" name="Daemonic Mount" hidden="false" targetId="cd35-ebef-197b-e333" type="rule"/>
       </infoLinks>
       <costs>
@@ -10445,7 +10674,7 @@ In addition, if he fights with sword and shield in a challenge, any special rule
         <infoLink id="fd14-3fb3-4be9-6c6c" name="Daemonic Aura" hidden="false" targetId="3c43-59c1-6cb0-968d" type="rule"/>
         <infoLink id="0341-8fe7-b41e-713a" name="Daemonic attacks" hidden="false" targetId="ab04-c24e-f729-0987" type="rule"/>
         <infoLink id="3116-c4bd-e226-49dc" name="Fear" hidden="false" targetId="1524-2372-4aa0-6881" type="rule"/>
-        <infoLink id="edb5-3c55-7fbe-0f7a" name="Immune to Psycology " hidden="false" targetId="ff2b-8db6-64fa-e9ca" type="rule"/>
+        <infoLink id="edb5-3c55-7fbe-0f7a" name="Immune to Panic" hidden="false" targetId="ff2b-8db6-64fa-e9ca" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
@@ -11522,7 +11751,7 @@ In addition, if he fights with sword and shield in a challenge, any special rule
       </constraints>
       <infoLinks>
         <infoLink id="02b6-b0a8-5f01-8423" name="Hero of Slaanesh" hidden="false" targetId="6f80-0873-a3aa-5cb7" type="rule"/>
-        <infoLink name="Immune to Psycology " id="0de3-d4d5-d7a5-92fa" hidden="false" type="rule" targetId="ff2b-8db6-64fa-e9ca"/>
+        <infoLink name="Immune to Panic" id="0de3-d4d5-d7a5-92fa" hidden="false" type="rule" targetId="ff2b-8db6-64fa-e9ca"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="20"/>
@@ -11718,7 +11947,7 @@ In addition, if he fights with sword and shield in a challenge, any special rule
         <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="34ef-50c4-3742-6cf7" type="max"/>
       </constraints>
       <infoLinks>
-        <infoLink id="00ca-bbb4-d716-48e2" name="Immune to Psycology " hidden="false" targetId="ff2b-8db6-64fa-e9ca" type="rule"/>
+        <infoLink id="00ca-bbb4-d716-48e2" name="Immune to Panic" hidden="false" targetId="ff2b-8db6-64fa-e9ca" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="26ae-222e-2383-5fe9" name="Slaanesh" hidden="false" targetId="9333-d169-d123-1353" primary="false"/>
@@ -12194,7 +12423,7 @@ In addition, if he fights with sword and shield in a challenge, any special rule
         <infoGroup name="Special rules" id="a335-55b8-6055-ab31" hidden="false">
           <infoLinks>
             <infoLink name="Terror" id="e659-f69d-dc9e-4f14" hidden="false" type="rule" targetId="96f0-c50f-e59e-85fa"/>
-            <infoLink name="Immune to Psycology " id="8ac2-411a-9ceb-7b62" hidden="false" type="rule" targetId="ff2b-8db6-64fa-e9ca"/>
+            <infoLink name="Immune to Panic" id="8ac2-411a-9ceb-7b62" hidden="false" type="rule" targetId="ff2b-8db6-64fa-e9ca"/>
             <infoLink name="Large Target" id="8ae7-13ae-f083-61f3" hidden="false" type="rule" targetId="4463-1b38-aa4d-e03c"/>
           </infoLinks>
           <rules>
@@ -12257,12 +12486,14 @@ Treat any obstacles that are not higher than the Mammoths knees as open ground.
     <selectionEntryGroup id="6493-36be-1169-e364" name="Marks of Chaos (Regiments)" hidden="false" collective="false" import="true" defaultSelectionEntryId="85bd-d5ea-9ff2-48d6">
       <constraints>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6a12-ca25-2996-601d" type="max"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b7ed-0ab4-a3bd-e6fd" includeChildSelections="false"/>
       </constraints>
       <entryLinks>
         <entryLink import="true" name="Regiment of Tzeentch" hidden="false" id="674e-ca13-0bb4-f158" type="selectionEntry" targetId="1bbf-25a9-fd0b-8317"/>
         <entryLink import="true" name="Regiment of Khorne" hidden="false" id="d59b-098d-ddd9-7d0f" type="selectionEntry" targetId="3484-989a-dcbb-cb53"/>
         <entryLink import="true" name="Regiment of Nurgle" hidden="false" id="1f17-bcae-52c7-df1f" type="selectionEntry" targetId="dccb-9c38-8ca6-3ad7"/>
         <entryLink import="true" name="Regiment of Slaanesh" hidden="false" id="bc9b-eafb-ce6b-6254" type="selectionEntry" targetId="0f8d-ad08-9225-26a3"/>
+        <entryLink import="true" name="Mark of Chaos Undivided" hidden="false" id="7373-4eba-2b49-acfb" type="selectionEntry" targetId="c7ff-31af-939e-0fbd"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="d635-ce9a-7f5d-b1fe" name="Magic Weapons (BoC)" hidden="false" collective="false" import="true">
@@ -12357,6 +12588,7 @@ Treat any obstacles that are not higher than the Mammoths knees as open ground.
       <constraints>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5019-dc01-d78c-dbbd" type="max"/>
         <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="c43d-7bd6-3b30-e119" type="max"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f355-26c8-1be1-36f9" includeChildSelections="false"/>
       </constraints>
       <selectionEntries>
         <selectionEntry id="799b-6786-b613-4ecd" name="Khorngors Mark Of Khorne" hidden="false" collective="false" import="true" type="upgrade">
@@ -12457,6 +12689,7 @@ Treat any obstacles that are not higher than the Mammoths knees as open ground.
     <selectionEntryGroup id="2db2-ffac-d2b2-d0f7" name="Marks of Chaos (Minotaurs)" hidden="false" collective="false" import="true" defaultSelectionEntryId="b793-caff-1f6a-846b">
       <constraints>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="076f-b4f7-4260-0998" type="max"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8bd9-b693-f437-5e94" includeChildSelections="false"/>
       </constraints>
       <entryLinks>
         <entryLink id="d5c3-0791-a87d-e833" name="Minotaurs of Khorne" hidden="false" collective="false" import="true" targetId="ab4a-0362-891d-a013" type="selectionEntry"/>
@@ -12517,6 +12750,7 @@ Treat any obstacles that are not higher than the Mammoths knees as open ground.
     <selectionEntryGroup id="d61d-4d6e-4a5f-37a6" name="Marks of Chaos (Lord)" hidden="false" collective="false" import="true" defaultSelectionEntryId="3955-d700-01cc-6d7e">
       <constraints>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5622-9b85-d691-7f4c" type="max"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="965e-9f6b-8db2-e1d4" includeChildSelections="false"/>
       </constraints>
       <entryLinks>
         <entryLink id="3d1f-7ba8-3d83-52e4" name="Lord Of Tzeentch" hidden="false" collective="false" import="true" targetId="d8b7-ff7c-2879-8db9" type="selectionEntry"/>
@@ -12671,6 +12905,7 @@ Treat any obstacles that are not higher than the Mammoths knees as open ground.
       <constraints>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="84e4-844f-6d16-8975" type="max"/>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5134-e12a-ff12-4a3d" type="min"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3478-2dc1-f816-d6d7" includeChildSelections="false"/>
       </constraints>
       <entryLinks>
         <entryLink id="837b-b1a5-5756-9f7d" name="Mark of Chaos Undivided" hidden="false" collective="false" import="true" targetId="c7ff-31af-939e-0fbd" type="selectionEntry" sortIndex="1">
@@ -12730,6 +12965,7 @@ Treat any obstacles that are not higher than the Mammoths knees as open ground.
     <selectionEntryGroup id="f7a7-cb27-a1b0-a0b2" name="Marks of Chaos (Shaggoth)" hidden="false" collective="false" import="true">
       <constraints>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5b6b-5574-10e5-3c32" type="max"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8a84-6fe1-83ed-53c7" includeChildSelections="false"/>
       </constraints>
       <entryLinks>
         <entryLink id="15c7-9330-2b1d-7e05" name="Mark of Chaos Undivided" hidden="false" collective="false" import="true" targetId="c7ff-31af-939e-0fbd" type="selectionEntry"/>
