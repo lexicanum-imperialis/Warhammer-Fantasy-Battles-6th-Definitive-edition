@@ -241,6 +241,7 @@ The main additions are:
 - [x] Marauder Aspiring Champion of Skeggi (WD#309-UK, p.75)
 - [x] Angkor, The Father of Mammoths (FW)
 - [x] Giant Chaos Spawn (FW)
+- [x] Giant Spined Chaos Beast (FW)
 
 ### Dwarfs (2000)
 - [x] Thorek Ironbrow, Dwarf Runelord (DW1-AB, p.50-51)

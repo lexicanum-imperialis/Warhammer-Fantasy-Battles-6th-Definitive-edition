@@ -8999,7 +8999,15 @@ If the model has no friendly models in base contact, it will not attack that r
                 <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="6"/>
               </costs>
             </entryLink>
-            <entryLink import="true" name="War Mammoth" hidden="false" id="48fb-e677-b3d1-055a" type="selectionEntry" targetId="0aeb-0d00-5181-5a23" sortIndex="3"/>
+            <entryLink import="true" name="War Mammoth" hidden="true" id="bd5c-38a1-7bf0-79cc" type="selectionEntry" targetId="0aeb-0d00-5181-5a23" sortIndex="3">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="parent" childId="2ef7-3efe-a448-423f" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -9078,6 +9086,61 @@ If the model has no friendly models in base contact, it will not attack that r
             <characteristic name="I" typeId="dfff-363e-f72a-5a59">2</characteristic>
             <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">D6+1</characteristic>
             <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">10</characteristic>
+            <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+            <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+            <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">6</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="93f4-7522-86e9-7d45" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Giant Spined Chaos Beast" hidden="false" id="9276-1275-7021-4954" page="PDF/warhammerchaosbeast.pdf" publicationId="be5b-2ad1-4ab5-bc1e">
+      <costs>
+        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="250"/>
+        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Rare" hidden="false" id="a35c-d83d-6d5e-c198" targetId="e94b-6a54-8779-cd60" primary="true"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="93f4-7522-86e9-7d45" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Large Target" id="fd2b-ebf3-7dfe-1cca" hidden="false" type="rule" targetId="4463-1b38-aa4d-e03c"/>
+        <infoLink name="Terror" id="c732-3d2b-8a08-de0c" hidden="false" type="rule" targetId="96f0-c50f-e59e-85fa"/>
+        <infoLink name="Unbreakable" id="8a31-452d-b18d-513d" hidden="false" type="rule" targetId="8ae3-9724-980f-7308"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Giant Spined Chaos Beast" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="c684-4341-240a-2f42" page="PDF/warhammerchaosbeast.pdf" publicationId="be5b-2ad1-4ab5-bc1e">
+          <characteristics>
+            <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">6</characteristic>
+            <characteristic name="WS" typeId="f95b-da01-0578-3bdc">4</characteristic>
+            <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">0</characteristic>
+            <characteristic name="S" typeId="b690-4bc0-bb73-267b">7</characteristic>
+            <characteristic name="T" typeId="8712-f56f-5b22-a720">5</characteristic>
+            <characteristic name="W" typeId="253a-9b00-4fde-8ac2">6</characteristic>
+            <characteristic name="I" typeId="dfff-363e-f72a-5a59">3</characteristic>
+            <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">5</characteristic>
+            <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">5</characteristic>
             <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
             <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
             <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">6</characteristic>
