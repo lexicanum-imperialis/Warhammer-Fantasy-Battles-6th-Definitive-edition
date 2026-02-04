@@ -239,6 +239,8 @@ The main additions are:
 - [x] Azazel, Prince of Damnation (CJ#50, p.16-17)
 - [x] Marauder Lord of Skeggi (WD#309-UK, p.75)
 - [x] Marauder Aspiring Champion of Skeggi (WD#309-UK, p.75)
+- [x] Angkor, The Father of Mammoths (FW)
+- [x] Giant Chaos Spawn (FW)
 
 ### Dwarfs (2000)
 - [x] Thorek Ironbrow, Dwarf Runelord (DW1-AB, p.50-51)
