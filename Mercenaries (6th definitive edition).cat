@@ -6286,6 +6286,21 @@ In addition any unit that suffers casualties from Dragon’s breath must take a
           </characteristics>
         </profile>
       </profiles>
+      <modifiers>
+        <modifier type="set" value="1" field="c119-268d-86ad-9c9b">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="8b76-92c4-23f9-54b1" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="Please enable &quot;Allow experimental rules?&quot;" field="error">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="8b76-92c4-23f9-54b1" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="c119-268d-86ad-9c9b"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Toxote&apos;s Hellmounts" hidden="false" id="1a52-2060-f39b-38ee" publicationId="3637-81a7-ae18-030f" page="25">
       <costs>
@@ -6464,6 +6479,11 @@ At the start of the third turn the opposing player rolls a D6 and consults the f
         <modifier type="set" value="1" field="9595-a908-74bc-94bc">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="force" childId="8b76-92c4-23f9-54b1" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="Please enable &quot;Allow experimental rules?&quot;" field="error">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="8b76-92c4-23f9-54b1" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
