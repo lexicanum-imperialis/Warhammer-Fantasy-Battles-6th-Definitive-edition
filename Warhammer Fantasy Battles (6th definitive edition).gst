@@ -2028,7 +2028,7 @@
       <entryLinks>
         <entryLink import="true" name="Talismans (Common)" hidden="false" id="8358-2a3f-a36f-2eab" type="selectionEntryGroup" page="common" targetId="7dcf-8a09-c9b8-9a88"/>
         <entryLink import="true" name="Magic Armour (Common)" hidden="false" id="db61-4ae1-43c1-f799" type="selectionEntryGroup" page="common" targetId="ed11-243d-9671-7f1c"/>
-        <entryLink import="true" name="Arcane Items" hidden="false" id="0405-8249-f303-b540" type="selectionEntryGroup" page="common" targetId="0d3f-389c-02b2-bb34"/>
+        <entryLink import="true" name="Arcane Items (Common)" hidden="false" id="0405-8249-f303-b540" type="selectionEntryGroup" page="common" targetId="0d3f-389c-02b2-bb34"/>
         <entryLink import="true" name="Magic Banners (Common)" hidden="false" id="f7f3-7037-2d87-c0a4" type="selectionEntryGroup" page="common" targetId="4e89-9bb4-1aeb-e34f"/>
         <entryLink import="true" name="Magic Weapons (Common)" hidden="false" id="fb4e-d01f-0dcf-7701" type="selectionEntryGroup" page="common" targetId="8171-d883-19d8-6450"/>
       </entryLinks>
@@ -2126,11 +2126,10 @@ Troops that are able to can regenerate damage if not too badly hurt. Work this o
 The results of combat, panic, etc are worked out after creatures have regenerated (the number of wounds inflicted does not include any that arc regenerated).</description>
     </rule>
     <rule id="8ae3-9724-980f-7308" name="Unbreakable" hidden="false">
-      <description>Some creatures are utterly fearless and will never give 
-up a battle, no matter how hopeless the situation 
-might be. This could be because of the troops&apos;
-extreme bravery, or because the creatures fighting are not truly alive.
-These troops never break in close combat, and they are also immune to panic, terror and fear or any other Psychology rules. If defeated in close combat (even by fear-causing creatures that outnumber them) unbreakable troops continue to fight on regardless of results. They may never, however. declare that they are fleeing as a charge reaction, as they will literally die fighting under any circumstances.</description>
+      <description>Some creatures are utterly fearless and will never give up a battle, no matter how hopeless the situation might be. This could be because of the troops&apos; extreme bravery, or because the creatures fighting are not truly alive.
+These troops never break in close combat, and they are also immune to panic, terror and fear or any other Psychology rules.
+If defeated in close combat (even by fear-causing creatures that outnumber them) unbreakable troops continue to fight on regardless of results.
+They may never, however. declare that they are fleeing as a charge reaction, as they will literally die fighting under any circumstances.</description>
     </rule>
     <rule id="ff2b-8db6-64fa-e9ca" name="Immune to Panic" publicationId="315e-e3c4-08af-fd51" page="112" hidden="false">
       <description>The unit do not take Panic tests.</description>
@@ -2914,4 +2913,10 @@ The spell cannot affect Undead targets, Chaos Daemons or Unbreakable units. Unit
       </characteristics>
     </profile>
   </sharedProfiles>
+  <rules>
+    <rule name="Armour Piercing" id="e411-1a48-8fd0-9a95" hidden="false" page="90" publicationId="315e-e3c4-08af-fd51">
+      <description>Certain weapons, most notably blackpowder weapons such as handguns, are even better at penetrating armour than their Strength value suggests.
+Therefore, the enemy Armour save is reduced by an additional -1. For example, an Armour piercing weapon that has Strength 4 would have a -2 Armour save modifier rather than -1.</description>
+    </rule>
+  </rules>
 </gameSystem>

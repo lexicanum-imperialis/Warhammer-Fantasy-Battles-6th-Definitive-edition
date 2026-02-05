@@ -254,6 +254,8 @@ The main additions are:
 ### Dwarfs (2000)
 - [x] Thorek Ironbrow, Dwarf Runelord (DW1-AB, p.50-51)
 - [x] Dwarf King Alrik Ranulfsson of Karak-Hirn (DW1-AB, p.52-53)
+- [x] Slayer Doomseekers (SoC, p.)
+- [x] Malakai Makaisson's Goblin-Hewer (Soc, p.66)
 
 ### Ogre Kingdoms
 - [x] Skrag the Slaughterer, Prohet of the Great Maw (OK-AB, p.76-77)
