@@ -255,6 +255,7 @@ The main additions are:
 - [x] Thorek Ironbrow, Dwarf Runelord (DW1-AB, p.50-51)
 - [x] Dwarf King Alrik Ranulfsson of Karak-Hirn (DW1-AB, p.52-53)
 - [x] Slayer Doomseekers (SoC, p.64)
+- [x] Brotherhood of Grimnir (Soc, p.69)
 - [x] Malakai Makaisson's Goblin-Hewer (Soc, p.66)
 
 ### Ogre Kingdoms
