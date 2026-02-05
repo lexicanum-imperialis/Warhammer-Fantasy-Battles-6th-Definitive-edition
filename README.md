@@ -129,6 +129,7 @@ The main additions are:
 - [x] 'Kathleen' Halftank (WD#314-UK, p.93)
 - [x] Toxote's Hellmounts (CJ#41, p.24-27)
 - [x] Manbiters (WD#310-UK, p.95 & )
+- [x] Giants of Albion (CR-04, p.67)
 
 ### Dark Elves
 - [x] Malekith, the Witch King
