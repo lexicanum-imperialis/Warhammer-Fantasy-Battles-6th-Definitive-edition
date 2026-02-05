@@ -128,6 +128,7 @@ The main additions are:
 - [x] Emperor Fire Dragon (FW)
 - [x] 'Kathleen' Halftank (WD#314-UK, p.93)
 - [x] Toxote's Hellmounts (CJ#41, p.24-27)
+- [x] Manbiters (WD#310-UK, p.95 & )
 
 ### Dark Elves
 - [x] Malekith, the Witch King
