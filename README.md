@@ -24,14 +24,14 @@ The main additions are:
 - [x] Orcs and Goblins
 - [x] High Elves
 - [x] The Empire
-- [x] Vampire Counts
+- [x] Vampire Counts (WIP)
 - [x] Beast of Chaos (inside `Forces of Chaos`)
 - [x] Hordes of Chaos (inside `Forces of Chaos`)
 - [x] Daemons of Chaos (inside `Forces of Chaos`)
-- [x] Dwarfs (at least the first ArmyBook) (WIP)
+- [x] Dogs of War
 - [x] Ogre Kingdoms (WIP)
 - [x] Kislev
-- [x] Dogs of War (WIP)
+- [x] Dwarfs (at least the first ArmyBook) (WIP)
 
 ## Characters and units added
 
