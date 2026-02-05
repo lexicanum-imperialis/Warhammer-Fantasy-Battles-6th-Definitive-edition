@@ -1380,6 +1380,14 @@
               </costs>
             </entryLink>
           </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="2ef7-3efe-a448-423f" shared="true" includeChildSelections="true"/>
+              </conditions>
+              <comment>BSB</comment>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
         <selectionEntryGroup id="3bb2-1da5-1d3b-7ecf" name="Armour" hidden="false" collective="false" import="true">
           <modifiers>
@@ -1400,6 +1408,14 @@
               <costs>
                 <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="2"/>
               </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="2ef7-3efe-a448-423f" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                  <comment>BSB</comment>
+                </modifier>
+              </modifiers>
             </entryLink>
             <entryLink id="621f-680d-2033-ec85" name="Light Armour" hidden="false" collective="false" import="true" targetId="055f-8e4e-f170-35d2" type="selectionEntry">
               <constraints>
@@ -1519,6 +1535,14 @@
               </constraints>
             </entryLink>
           </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="884b-f15c-0cb1-b627" shared="true"/>
+              </conditions>
+              <comment>BSB</comment>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -1529,13 +1553,20 @@
           </constraints>
         </entryLink>
         <entryLink id="3433-434d-8c68-d936" name="Battle Standard Bearer" hidden="false" collective="false" import="true" targetId="e9ad-f1ce-aebf-6d23" type="selectionEntry">
-          <entryLinks>
-            <entryLink id="7aea-a0e8-fefb-3bb0" name="Magical Banners (BoC)" hidden="false" collective="false" import="true" targetId="9ba2-ac34-9580-5e79" type="selectionEntryGroup"/>
-            <entryLink import="true" name="War Banner" hidden="false" id="fd8b-865c-6223-b1f6" type="selectionEntry" targetId="f327-567f-ef99-0403"/>
-          </entryLinks>
           <costs>
             <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="25"/>
           </costs>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Magical Banners" hidden="false" id="884b-f15c-0cb1-b627">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7c76-83a7-2210-09a2" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="War Banner" hidden="false" id="fd8b-865c-6223-b1f6" type="selectionEntry" targetId="f327-567f-ef99-0403"/>
+                <entryLink import="true" name="Magical Banners (BoC)" hidden="false" id="7aea-a0e8-fefb-3bb0" collective="false" targetId="9ba2-ac34-9580-5e79" type="selectionEntryGroup"/>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
         </entryLink>
         <entryLink id="311f-9a3d-23ca-b7d4" name="General" hidden="false" collective="false" import="true" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry">
           <modifiers>
@@ -4257,6 +4288,14 @@
               </costs>
             </entryLink>
           </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="2ef7-3efe-a448-423f" shared="true" includeChildSelections="true"/>
+              </conditions>
+              <comment>BSB</comment>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
         <selectionEntryGroup id="abd7-96d2-d082-02fe" name="Magic Items selection" hidden="false" collective="false" import="true">
           <constraints>
@@ -4280,6 +4319,14 @@
               </constraints>
             </entryLink>
           </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="a979-ec7a-7a45-f11b" shared="true"/>
+              </conditions>
+              <comment>BSB</comment>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
         <selectionEntryGroup id="591e-89c1-1249-57f6" name="Mounts" hidden="false" collective="false" import="true">
           <constraints>
@@ -4375,6 +4422,14 @@
           <costs>
             <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="2"/>
           </costs>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="2ef7-3efe-a448-423f" shared="true" includeChildSelections="true"/>
+              </conditions>
+              <comment>BSB</comment>
+            </modifier>
+          </modifiers>
         </entryLink>
         <entryLink id="474a-bae2-db57-be00" name="Marks of Chaos (Heroes)" hidden="false" collective="false" import="true" targetId="1539-8a40-dc3e-c64f" type="selectionEntryGroup"/>
         <entryLink id="0c1c-b835-63a1-14fc" name="Battle Standard Bearer" hidden="false" collective="false" import="true" targetId="e9ad-f1ce-aebf-6d23" type="selectionEntry">
@@ -9178,6 +9233,14 @@ If the model has no friendly models in base contact, it will not attack that r
               <costs>
                 <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="3"/>
               </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="2ef7-3efe-a448-423f" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                  <comment>BSB</comment>
+                </modifier>
+              </modifiers>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -9196,6 +9259,14 @@ If the model has no friendly models in base contact, it will not attack that r
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="910a-f3f8-edb0-effc" includeChildSelections="false"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="2ef7-3efe-a448-423f" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                  <comment>BSB</comment>
+                </modifier>
+              </modifiers>
             </entryLink>
             <entryLink import="true" name="Great Weapon" hidden="false" id="af3f-266f-b5e9-2d9f" type="selectionEntry" targetId="1eb7-3f36-8cf7-e0ba">
               <costs>
@@ -9204,6 +9275,14 @@ If the model has no friendly models in base contact, it will not attack that r
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3738-7800-1fbc-5e9c" includeChildSelections="false"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="2ef7-3efe-a448-423f" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                  <comment>BSB</comment>
+                </modifier>
+              </modifiers>
             </entryLink>
             <entryLink import="true" name="Two Hand Weapons" hidden="false" id="72e1-6acd-edb6-a5cc" type="selectionEntry" targetId="36a8-7bbb-d204-0314">
               <costs>
@@ -9212,6 +9291,14 @@ If the model has no friendly models in base contact, it will not attack that r
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9c33-d3ea-4382-5895" includeChildSelections="false"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="2ef7-3efe-a448-423f" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                  <comment>BSB</comment>
+                </modifier>
+              </modifiers>
             </entryLink>
           </entryLinks>
           <constraints>
@@ -9228,6 +9315,14 @@ If the model has no friendly models in base contact, it will not attack that r
           <constraints>
             <constraint type="max" value="50" field="ecfa-8486-4f6c-c249" scope="parent" shared="true" id="cc2b-3248-7222-4bc5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="a979-ec7a-7a45-f11b" shared="true"/>
+              </conditions>
+              <comment>BSB</comment>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
         <selectionEntryGroup name="Mounts" id="a213-092a-e298-488e" hidden="false" sortIndex="7">
           <constraints>
@@ -9264,7 +9359,11 @@ If the model has no friendly models in base contact, it will not attack that r
       </selectionEntryGroups>
       <entryLinks>
         <entryLink import="true" name="Marks of Chaos (Heroes)" hidden="false" id="ae7d-25d3-4712-bda7" type="selectionEntryGroup" targetId="1539-8a40-dc3e-c64f" sortIndex="3"/>
-        <entryLink import="true" name="Battle Standard Bearer" hidden="false" id="1d8b-61be-1c53-db8d" type="selectionEntry" targetId="e9ad-f1ce-aebf-6d23" sortIndex="2"/>
+        <entryLink import="true" name="Battle Standard Bearer" hidden="false" id="1d8b-61be-1c53-db8d" type="selectionEntry" targetId="e9ad-f1ce-aebf-6d23" sortIndex="2">
+          <entryLinks>
+            <entryLink import="true" name="Magic Banners" hidden="false" id="4e78-1e0c-21c8-1565" type="selectionEntryGroup" targetId="a979-ec7a-7a45-f11b"/>
+          </entryLinks>
+        </entryLink>
         <entryLink import="true" name="General" hidden="false" id="7ede-d559-eb40-9711" collective="false" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry" sortIndex="1">
           <modifiers>
             <modifier type="remove" value="a878-7899-6700-e5fb" field="category">

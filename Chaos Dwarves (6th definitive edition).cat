@@ -594,6 +594,14 @@ A single character in the front rank will not effect the unit’s fire</characte
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e5d6-91f5-b417-b506" shared="true"/>
+              </conditions>
+              <comment>BSB</comment>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -611,6 +619,14 @@ A single character in the front rank will not effect the unit’s fire</characte
                 <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
                 <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
               </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="e5d6-91f5-b417-b506" shared="true"/>
+                  </conditions>
+                  <comment>BSB</comment>
+                </modifier>
+              </modifiers>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Great Weapon" hidden="false" id="9bc2-c307-c8d8-3ca8" collective="false">
               <constraints>
@@ -624,8 +640,24 @@ A single character in the front rank will not effect the unit’s fire</characte
                 <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
                 <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
               </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="e5d6-91f5-b417-b506" shared="true"/>
+                  </conditions>
+                  <comment>BSB</comment>
+                </modifier>
+              </modifiers>
             </selectionEntry>
           </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="7ba2-631a-9959-99ca" type="selectionEntry" targetId="abdb-bbd0-41b2-5dff">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0e82-db5d-a807-2a2b" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0b79-60ac-4fd5-fc88" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup name="Armour" id="3f0b-08aa-e562-0db3" hidden="false" collective="false" import="true">
           <constraints>
@@ -669,6 +701,14 @@ A single character in the front rank will not effect the unit’s fire</characte
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="force" shared="true" id="c7a7-7e5a-0f36-94b5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="e5d6-91f5-b417-b506" shared="true"/>
+                  </conditions>
+                  <comment>BSB</comment>
+                </modifier>
+              </modifiers>
             </entryLink>
             <entryLink import="true" name="Battle Standard Bearer" hidden="false" id="a0b1-a1c4-d390-7aba" collective="false" targetId="e9ad-f1ce-aebf-6d23" type="selectionEntry">
               <constraints>
@@ -681,10 +721,18 @@ A single character in the front rank will not effect the unit’s fire</characte
                   </constraints>
                 </entryLink>
               </entryLinks>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="a37e-7207-de6d-acb0" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                  <comment>General</comment>
+                </modifier>
+              </modifiers>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Magic Items" id="69b0-8142-f996-b8e3" hidden="false" collective="false" import="true">
+        <selectionEntryGroup name="Magic Items" id="69b0-8142-f996-b8e3" hidden="false" collective="false" import="true" collapsible="true">
           <constraints>
             <constraint type="max" value="100" field="ecfa-8486-4f6c-c249" scope="parent" shared="true" id="ba5b-c298-97d5-20b4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
@@ -694,6 +742,14 @@ A single character in the front rank will not effect the unit’s fire</characte
             <entryLink import="true" name="Magic Talismans" hidden="false" id="dfba-4530-54a7-1b32" collective="false" targetId="02f6-b8ab-303d-7102" type="selectionEntryGroup"/>
             <entryLink import="true" name="Magic Talismans" hidden="false" id="0431-1e60-8613-033f" collective="false" targetId="02f6-b8ab-303d-7102" type="selectionEntryGroup"/>
           </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="e5d6-91f5-b417-b506" shared="true" includeChildSelections="true"/>
+              </conditions>
+              <comment>BSB</comment>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
@@ -742,6 +798,14 @@ A single character in the front rank will not effect the unit’s fire</characte
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="2ef7-3efe-a448-423f" shared="true" includeChildSelections="true"/>
+              </conditions>
+              <comment>BSB</comment>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -759,6 +823,14 @@ A single character in the front rank will not effect the unit’s fire</characte
                 <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
                 <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
               </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="2ef7-3efe-a448-423f" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                  <comment>BSB</comment>
+                </modifier>
+              </modifiers>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Great Weapon" hidden="false" id="eb18-0ad1-10d1-6449" collective="false">
               <constraints>
@@ -772,8 +844,24 @@ A single character in the front rank will not effect the unit’s fire</characte
                 <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
                 <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
               </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="2ef7-3efe-a448-423f" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                  <comment>BSB</comment>
+                </modifier>
+              </modifiers>
             </selectionEntry>
           </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="d0f2-3938-b1e3-263f" type="selectionEntry" targetId="abdb-bbd0-41b2-5dff">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2c7d-1295-a810-e46b" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7347-85e2-7ffd-271f" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup name="Armour" id="4aae-72cb-f103-e724" hidden="false" collective="false" import="true">
           <constraints>
@@ -818,6 +906,14 @@ A single character in the front rank will not effect the unit’s fire</characte
             <entryLink import="true" name="Magic Talismans" hidden="false" id="ec7c-043c-9fad-5520" collective="false" targetId="02f6-b8ab-303d-7102" type="selectionEntryGroup"/>
             <entryLink import="true" name="Enchanted Items" hidden="false" id="1ff0-b48a-a118-45cc" collective="false" targetId="7568-1332-fc3f-9164" type="selectionEntryGroup"/>
           </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e5d6-91f5-b417-b506" shared="true"/>
+              </conditions>
+              <comment>BSB</comment>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
         <selectionEntryGroup name="Role" id="96fa-8b1b-b406-d72d" hidden="false" collective="false" import="true">
           <constraints>

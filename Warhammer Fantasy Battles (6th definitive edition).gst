@@ -2056,7 +2056,7 @@
         <entryLink import="true" name="Enchanted Shield" hidden="false" id="100f-8a0c-49aa-78f3" collective="false" targetId="c5c1-60aa-745f-c9d3" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Arcane Items" id="0d3f-389c-02b2-bb34" hidden="false">
+    <selectionEntryGroup name="Arcane Items (Common)" id="0d3f-389c-02b2-bb34" hidden="false">
       <entryLinks>
         <entryLink import="true" name="Dispel Scroll (one use only)" hidden="false" id="989e-9d22-7fea-19b5" collective="false" targetId="b76c-6bad-4650-dbb0" type="selectionEntry">
           <modifiers>
