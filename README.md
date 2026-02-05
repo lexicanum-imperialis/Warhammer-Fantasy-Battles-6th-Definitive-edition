@@ -318,6 +318,7 @@ The main additions are:
 - [x] Undgrin Ankor Force (DW1-AB, p.79)
 - [x] War of Vengeance (DW1-AB, p.79)
 - [x] Ironskin Tribe (WD#309-UK, p-76-83)
+- [x] Slayers of Karak Kadrin (SoC, p.61-70)
 
 
 ## Sources consulted
