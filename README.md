@@ -253,7 +253,8 @@ The main additions are:
 
 ### Dwarfs (2000)
 - [x] Thorek Ironbrow, Dwarf Runelord (DW1-AB, p.50-51)
-- [x] Dwarf King Alrik Ranulfsson of Karak-Hirn (DW1-AB, p.52-53)
+- [x] King Alrik Ranulfsson of Karak-Hirn (DW1-AB, p.52-53)
+- [x] King Alrik Ranulfsson of Karak-Hirn (WD#315-UK, p.104)
 - [x] Slayer Doomseekers (SoC, p.64)
 - [x] Brotherhood of Grimnir (Soc, p.69)
 - [x] Malakai Makaisson's Goblin-Hewer (Soc, p.66)
