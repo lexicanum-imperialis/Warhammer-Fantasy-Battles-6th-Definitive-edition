@@ -2274,7 +2274,7 @@
                 <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
               </costs>
               <profiles>
-                <profile name="Slayers" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="d172-038d-8232-0d29">
+                <profile name="Troll Slayers" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="d172-038d-8232-0d29">
                   <characteristics>
                     <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">3</characteristic>
                     <characteristic name="WS" typeId="f95b-da01-0578-3bdc">4</characteristic>
@@ -2287,7 +2287,7 @@
                     <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">10</characteristic>
                     <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
                     <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
-                    <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
+                    <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -3420,7 +3420,7 @@ MASTER RUNE OF BREAKING</characteristic>
         </modifier>
       </modifiers>
       <rules>
-        <rule name="Hate (Elves)" id="f89a-a211-7a4d-a034" hidden="false">
+        <rule name="Ancestral Grudge (hate Elves)" id="f89a-a211-7a4d-a034" hidden="false">
           <description>All units in the army hate Elves (any type) instead of Greenskins.
 No model may have a Dwarf handgun or Pistol</description>
         </rule>
@@ -3431,6 +3431,16 @@ No model may have a Dwarf handgun or Pistol</description>
         <constraint type="min" value="1" field="selections" scope="force" shared="true" id="f44b-e46f-3f1c-8753" includeChildSelections="false"/>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="decd-e35d-6a94-9fd1" includeChildSelections="false"/>
       </constraints>
+      <costs>
+        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="2"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Resolute" id="8c36-803c-18d5-9c0e" hidden="false" type="rule" targetId="f134-5d8c-292e-70d0"/>
+        <infoLink name="Relentless" id="5f5f-eaa6-c9cc-f53d" hidden="false" type="rule" targetId="9538-687f-3457-3e77"/>
+        <infoLink name="Dwarfs (Dispelling)" id="6878-92da-2f5d-4dc2" hidden="false" type="rule" targetId="fccd-374f-6234-9383"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Slayer Doomseeker" hidden="true" id="dffe-dd31-9654-e0b9" page="64" publicationId="d2ec-1dc7-f0d5-acbb">
       <selectionEntries>
@@ -3657,7 +3667,7 @@ Against units consisting of only a single model (including mounted monsters and 
                 <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
               </costs>
               <profiles>
-                <profile name="Slayers" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="d71b-aaeb-145a-abba">
+                <profile name="Troll Slayers" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="d71b-aaeb-145a-abba">
                   <characteristics>
                     <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">3</characteristic>
                     <characteristic name="WS" typeId="f95b-da01-0578-3bdc">4</characteristic>
@@ -3670,7 +3680,7 @@ Against units consisting of only a single model (including mounted monsters and 
                     <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">10</characteristic>
                     <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
                     <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
-                    <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
+                    <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
                   </characteristics>
                   <modifiers>
                     <modifier type="set" value="4" field="b690-4bc0-bb73-267b"/>
@@ -3702,7 +3712,7 @@ Against units consisting of only a single model (including mounted monsters and 
                     <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">10</characteristic>
                     <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
                     <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
-                    <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
+                    <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
                   </characteristics>
                   <modifiers>
                     <modifier type="set" value="4" field="b690-4bc0-bb73-267b"/>
@@ -3795,17 +3805,220 @@ This includes impact hits from chariots or monsters with similar attacks, but n
           </modifiers>
         </selectionEntry>
       </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="2"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Resolute" id="ffc0-25be-e9cc-edfc" hidden="false" type="rule" targetId="f134-5d8c-292e-70d0"/>
+        <infoLink name="Ancestral Grudge (hate greenskins)" id="78f9-f3c5-713b-5e5a" hidden="false" type="rule" targetId="ea43-a0b7-193c-7837"/>
+        <infoLink name="Relentless" id="14eb-ee43-0538-da1f" hidden="false" type="rule" targetId="9538-687f-3457-3e77"/>
+        <infoLink name="Dwarfs (Dispelling)" id="3aa4-9c18-e9a9-2dad" hidden="false" type="rule" targetId="fccd-374f-6234-9383"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Forces of Dwarfs&apos; Army Rules" hidden="false" id="1e9c-3230-a66c-f4d6" page="6" publicationId="6265-1d51-76e2-4fe2">
+      <categoryLinks>
+        <categoryLink name="Special list rules" hidden="false" id="befb-f546-9bde-60d0" targetId="32f1-197f-d719-a393" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="2"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Dwarfs (Dispelling)" id="a845-f8c0-b5b5-f89b" hidden="false" type="rule" targetId="fccd-374f-6234-9383"/>
+        <infoLink name="Ancestral Grudge (hate greenskins)" id="fd61-5067-b911-2cef" hidden="false" type="rule" targetId="ea43-a0b7-193c-7837"/>
+        <infoLink name="Relentless" id="ce6f-d263-47af-86c9" hidden="false" type="rule" targetId="9538-687f-3457-3e77"/>
+        <infoLink name="Resolute" id="aa1b-3259-d6d5-e8f9" hidden="false" type="rule" targetId="f134-5d8c-292e-70d0"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1090-ef2f-f81f-e311" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0aae-6627-5893-0516" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="a72f-0361-c328-6be0" includeChildSelections="false"/>
+        <constraint type="min" value="1" field="selections" scope="force" shared="true" id="e4e5-f987-9634-343d" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="4f36-662f-50dd-55fe" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="d4ff-5f6e-2a21-c392" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="High King Thorgrim Grudgebearer" hidden="false" id="78e1-1221-447b-6f3d" publicationId="1ec0-3b22-5b99-e411" page="65">
+      <costs>
+        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="535"/>
+        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Special Characters" hidden="false" id="06b4-a297-fb0c-03f8" targetId="0644-bfcd-32c2-21dc" primary="true"/>
+        <categoryLink name="Lord" hidden="false" id="af7c-dcbf-e9df-1059" targetId="d024-d25b-a9b4-73b6" primary="false"/>
+        <categoryLink name="Characters" hidden="false" id="c1d1-ba32-8551-c54a" targetId="7a1c-d611-c2dc-def1" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Extra Lord choice" hidden="false" id="b619-ac28-d9a7-da5c" type="selectionEntry" targetId="7619-47fa-a83d-70b0"/>
+        <entryLink import="true" name="General" hidden="false" id="6fdb-4b32-aa5c-d3d4" type="selectionEntry" targetId="1b7c-2c90-6d96-28c9">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e5cc-32dd-dc5e-57ac" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <profiles>
+        <profile name="Thorgrim Grudgebearer" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="1904-1538-1e7e-15de" page="65" publicationId="1ec0-3b22-5b99-e411">
+          <characteristics>
+            <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">3</characteristic>
+            <characteristic name="WS" typeId="f95b-da01-0578-3bdc">8</characteristic>
+            <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">4</characteristic>
+            <characteristic name="S" typeId="b690-4bc0-bb73-267b">4</characteristic>
+            <characteristic name="T" typeId="8712-f56f-5b22-a720">5</characteristic>
+            <characteristic name="W" typeId="253a-9b00-4fde-8ac2">4</characteristic>
+            <characteristic name="I" typeId="dfff-363e-f72a-5a59">4</characteristic>
+            <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">4+1</characteristic>
+            <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">10</characteristic>
+            <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">1+</characteristic>
+            <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">4+</characteristic>
+            <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Equipment" id="e631-21de-4a2a-f6bb" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Armour of Skaldour (Magic Armour)" hidden="false" id="c0a8-e509-cab2-60cd">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e1af-700d-abc7-5a2d" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="77f7-c098-5d4b-d0cc" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Armour of Skaldour" typeId="f681-9937-db53-f1d8" typeName="Armour" hidden="false" id="cc37-30a7-1d65-505e" page="65" publicationId="1ec0-3b22-5b99-e411">
+                  <characteristics>
+                    <characteristic name="Saving Throw Modifier" typeId="b600-e1ed-0765-27c1">1+</characteristic>
+                    <characteristic name="Special rules" typeId="42c3-68ab-cfa5-203e">Master Rune of Gromril (1+ armour save)
+Master Rune of Spite (4+ Ward save)
+Rune of the Furnace (immune to fire attacks).</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule name="Throne of Power" id="64f4-428c-c893-1808" hidden="false" page="65" publicationId="1ec0-3b22-5b99-e411">
+                  <description>The Throne of Power is carried by four sturdy veterans, which give Thorgrim an additional four normal WS5, S4 attacks. Any attacks against the Throne must be resolved against Thorgrim himself. When joining a unit, the Throne takes up the same space as ordinary rank-and-file models for the purposes of formation, rank bonus and so on. The Throne has Magic Resistance (2).</description>
+                </rule>
+              </rules>
+              <infoLinks>
+                <infoLink name="MASTER RUNE OF GROMRIL " id="fe43-479e-541b-31cd" hidden="false" type="rule" targetId="fc72-1e7d-0526-ab5c"/>
+                <infoLink name="MASTER RUNE OF SPITE" id="f69f-b485-7305-2a9f" hidden="false" type="rule" targetId="528a-522d-c737-1c3b"/>
+                <infoLink name="RUNE OF THE FURNACE" id="9967-53ae-4f69-1fa7" hidden="false" type="rule" targetId="7436-61b1-a7cd-d85e"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Throne of Power (Enchanted Item)" hidden="false" id="1c49-8325-f0ef-d5ec">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="df69-fcca-970b-7cea" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e038-893d-b953-4095" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Throne of Power" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="e15a-51f8-6105-0459" page="65" publicationId="1ec0-3b22-5b99-e411">
+                  <characteristics>
+                    <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">-</characteristic>
+                    <characteristic name="WS" typeId="f95b-da01-0578-3bdc">5</characteristic>
+                    <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">-</characteristic>
+                    <characteristic name="S" typeId="b690-4bc0-bb73-267b">4</characteristic>
+                    <characteristic name="T" typeId="8712-f56f-5b22-a720">-</characteristic>
+                    <characteristic name="W" typeId="253a-9b00-4fde-8ac2">-</characteristic>
+                    <characteristic name="I" typeId="dfff-363e-f72a-5a59">-</characteristic>
+                    <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">4</characteristic>
+                    <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">-</characteristic>
+                    <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">-</characteristic>
+                    <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">-</characteristic>
+                    <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">4</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule name="Throne of Power" id="e356-3d55-503d-77ef" hidden="false" page="65" publicationId="1ec0-3b22-5b99-e411">
+                  <description>The Throne of Power is carried by four sturdy veterans, which give Thorgrim an additional four normal WS5, S4 attacks. Any attacks against the Throne must be resolved against Thorgrim himself. When joining a unit, the Throne takes up the same space as ordinary rank-and-file models for the purposes of formation, rank bonus and so on. The Throne has Magic Resistance (2).</description>
+                </rule>
+              </rules>
+              <infoLinks>
+                <infoLink name="Magical Resistance (2)" id="e22f-4285-c028-a76a" hidden="false" type="rule" targetId="df8d-7c05-c47b-9cd6"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Axe of Grimnir (Magic Weapon)" hidden="false" id="6f4f-f7c2-49fb-febb">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1929-d1f2-05e5-131a" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="98aa-9368-5620-112e" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Axe of Grimnir" typeId="7889-42d9-70a0-3ea9" typeName="Weapon" hidden="false" id="614e-1e1e-b71d-771e" page="65" publicationId="1ec0-3b22-5b99-e411">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3107-4d1e-9a51-6564">CC</characteristic>
+                    <characteristic name="Strength" typeId="6fe4-1ebb-cb04-1378"/>
+                    <characteristic name="Damage" typeId="6f2f-d612-52ef-1633"/>
+                    <characteristic name="Special Rules" typeId="a21a-cdc0-4b13-b236">Master Rune of Skalf Blackhammer (automatically wounds),
+Rune of Fury (+1 Attack),
+Grudge Rune (nominate a character or monster, re-roll to hit against this model).</characteristic>
+                    <characteristic name="Saves" typeId="8014-a8b2-15c3-da95">No armour saves but Ward saves</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="GRUDGE RUNE" id="e67e-44ce-f7cb-b177" hidden="false" type="rule" targetId="fed9-7381-268c-42e5"/>
+                <infoLink name="MASTER RUNE OF SKALF BLACKHAMMER" id="d1ab-d6e8-ba9a-7140" hidden="false" type="rule" targetId="5df1-6029-58e7-143b"/>
+                <infoLink name="RUNE OF FURY" id="5188-e36f-c5dd-d5d2" hidden="false" type="rule" targetId="4703-3421-14b3-22fe"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Dammaz Kron, the Great Book of Grudges (Enchanted Item)" hidden="false" id="db28-5a07-cc2f-ebe0" page="65" publicationId="1ec0-3b22-5b99-e411">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b106-c7a1-8225-8e13" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ba19-efa2-9e06-4bce" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Dammaz Kron" typeId="a89b-d5a3-7805-c44e" typeName="Magic Items" hidden="false" id="b1c5-1fff-4621-0ad5" page="65" publicationId="1ec0-3b22-5b99-e411">
+                  <characteristics>
+                    <characteristic name="Magic stuff" typeId="c7b5-c239-d6c1-0627">The Great Book of Grudges means that Thorgrim and any unit within 12&quot; of him hate all foes.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Hatred" id="84e2-e4d5-6824-37a2" hidden="false" type="rule" targetId="1e6c-d634-a65c-78eb"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Dragon Crown of Karaz (Talisman)" hidden="false" id="07ad-d67b-d6e7-b437" page="65" publicationId="1ec0-3b22-5b99-e411">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d542-15dc-a193-d0f3" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a37d-e27a-e0a4-7faa" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Dragon Crown of Karaz" typeId="a89b-d5a3-7805-c44e" typeName="Magic Items" hidden="false" id="50db-ef40-a50f-9335" page="65" publicationId="1ec0-3b22-5b99-e411">
+                  <characteristics>
+                    <characteristic name="Magic stuff" typeId="c7b5-c239-d6c1-0627">Thorgrim and any unit he is with is Immune to Psycology except Hatred and becoming Stubborn.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Immune to Psycology " id="9b99-b4bc-3167-0297" hidden="false" type="rule" targetId="2acc-e985-cc4e-e123"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
   </selectionEntries>
   <rules>
-    <rule id="ea43-a0b7-193c-7837" name="Ancestral Grudge (hate greenskins)" publicationId="6265-1d51-76e2-4fe2" page="6" hidden="false">
+    <rule id="ea43-a0b7-193c-7837" name="Ancestral Grudge (hate Greenskins)" publicationId="6265-1d51-76e2-4fe2" page="6" hidden="false">
       <description>Dwarfs hold grudges for a long time. Possibly forever They have never forgiven the fall of their strongholds at the hands of the Orcish enemy. Dwarfs base all types of Ores, Goblins and SnotlIngs. including Night Goblins, Black Orcs, hobgoblins.. in fact all greenskins of any description!</description>
     </rule>
     <rule id="9538-687f-3457-3e77" name="Relentless" publicationId="6265-1d51-76e2-4fe2" page="6" hidden="false">
-      <description>A Dwarf on the march is as implacable as the turning of the years and just as impossible to halt. Dwarf units may march even if there are enemy within 8”.</description>
+      <description>Dwarf units may march even if there are enemy within 8&quot;.</description>
     </rule>
     <rule id="f134-5d8c-292e-70d0" name="Resolute" publicationId="6265-1d51-76e2-4fe2" page="6" hidden="false">
-      <description>Dwarfs fight with grim determination and are slow to abandon their position Dwarfs flee and pursue 2D6-1&quot; instead of the normal 2D6&quot;.</description>
+      <description>Dwarfs (including Chaos Dwarfs) flee and pursue 2D6-1&quot; Instead of the normal 2D6&quot;.</description>
     </rule>
     <rule name="Skavenslayer" id="11e8-23ff-f528-1959" hidden="false" page="67" publicationId="d2ec-1dc7-f0d5-acbb">
       <description>The number of Attacks the Slayer has is multiplied by the number of enemy models in base contact, up to a maximum of 10 (this may not be further increased with an additional hand weapon, Runes, etc). There is no effect if the Slayer is involved in a challenge.</description>
@@ -3821,6 +4034,10 @@ This includes impact hits from chariots or monsters with similar attacks, but n
     </rule>
     <rule name="Vampireslayer" id="358f-ac21-4f12-a4ad" hidden="false" page="67" publicationId="d2ec-1dc7-f0d5-acbb">
       <description>Against enemies with Toughness 5 or higher, any unsaved wound inflicted by the Slayer becomes D6 wounds.</description>
+    </rule>
+    <rule name="Dwarfs (Dispelling)" id="fccd-374f-6234-9383" hidden="false" page="138" publicationId="315e-e3c4-08af-fd51">
+      <description>Dwarfs are legendarily resistant to magic and a Dwarf army always adds two extra Dispel dice to its pile.
+A Dwarf army therefore starts with four dice plus one per Runesmith or Runelord in the army.</description>
     </rule>
   </rules>
   <sharedSelectionEntries>

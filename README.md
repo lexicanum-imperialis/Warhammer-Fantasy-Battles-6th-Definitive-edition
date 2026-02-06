@@ -257,6 +257,7 @@ The main additions are:
 - [x] Slayer Doomseekers (SoC, p.64)
 - [x] Brotherhood of Grimnir (Soc, p.69)
 - [x] Malakai Makaisson's Goblin-Hewer (Soc, p.66)
+- [x] High King Thorgrim Grudgebearer (AN-02, p.65)
 
 ### Ogre Kingdoms
 - [x] Skrag the Slaughterer, Prohet of the Great Maw (OK-AB, p.76-77)
