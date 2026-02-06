@@ -1918,6 +1918,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" hidden="false" id="659c-d43b-875f-e6b7"/>
+    <selectionEntry type="upgrade" import="true" name="Extra dispel dice" hidden="false" id="5adc-bab1-d9cf-a348">
+      <costs>
+        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="1"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="f679-dff7-370a-6050" name="Lore of Metal" hidden="false" collective="false" import="true">
