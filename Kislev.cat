@@ -577,7 +577,7 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Tzarina Katarin, the Ice Queen" hidden="false" id="5dc1-cd4e-6130-919f">
+    <selectionEntry type="unit" import="true" name="Tzarina Katarin, the Ice Queen" hidden="false" id="5dc1-cd4e-6130-919f" page="13" publicationId="000c-fbf9-7091-f7db">
       <categoryLinks>
         <categoryLink name="Special Characters" hidden="false" id="8086-37d0-dda3-d69c" targetId="0644-bfcd-32c2-21dc" primary="true"/>
         <categoryLink name="Lord" hidden="false" id="7d2a-57ab-00dc-701c" targetId="d024-d25b-a9b4-73b6" primary="false"/>
@@ -671,6 +671,15 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
+        <selectionEntryGroup name="Mounts" id="5f60-4115-5adf-3997" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Warhorse" hidden="false" id="b9df-6d8f-c42e-17a8" type="selectionEntry" targetId="313455d3-3643-49fe-b5e6-a2260731f465">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="231b-a30e-005f-57f3" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="35ed-3e5e-f84a-94de" includeChildSelections="false"/>
@@ -681,9 +690,14 @@
             <condition type="atLeast" value="1" field="selections" scope="force" childId="75a2-3b98-aff3-27b4" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
+        <modifier type="add" value="{this} can not be selected with Boris Ursus" field="error">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="75a2-3b98-aff3-27b4" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Boros" hidden="false" id="75a2-3b98-aff3-27b4">
+    <selectionEntry type="unit" import="true" name="Boris Ursus, the Red Tzar" hidden="false" id="75a2-3b98-aff3-27b4" page="15" publicationId="000c-fbf9-7091-f7db">
       <entryLinks>
         <entryLink import="true" name="General" hidden="false" id="b2b7-7459-813d-e162" type="selectionEntry" targetId="1b7c-2c90-6d96-28c9">
           <constraints>
@@ -700,12 +714,149 @@
             <condition type="atLeast" value="1" field="selections" scope="force" childId="5dc1-cd4e-6130-919f" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
+        <modifier type="add" value="{this} can not be selected with Katarin" field="error">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="5dc1-cd4e-6130-919f" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink name="Lord" hidden="false" id="0f2d-7685-039f-d1c6" targetId="d024-d25b-a9b4-73b6" primary="false"/>
-        <categoryLink name="Special Characters" hidden="false" id="a74c-4a8d-c214-4a1e" targetId="0644-bfcd-32c2-21dc" primary="false"/>
+        <categoryLink name="Special Characters" hidden="false" id="a74c-4a8d-c214-4a1e" targetId="0644-bfcd-32c2-21dc" primary="true"/>
         <categoryLink name="Characters" hidden="false" id="3ba7-b011-38ee-420a" targetId="7a1c-d611-c2dc-def1" primary="false"/>
       </categoryLinks>
+      <profiles>
+        <profile name="Boris Ursus" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="31bb-f6fe-1122-f31d" page="15" publicationId="000c-fbf9-7091-f7db">
+          <characteristics>
+            <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">4</characteristic>
+            <characteristic name="WS" typeId="f95b-da01-0578-3bdc">5</characteristic>
+            <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">4</characteristic>
+            <characteristic name="S" typeId="b690-4bc0-bb73-267b">5</characteristic>
+            <characteristic name="T" typeId="8712-f56f-5b22-a720">4</characteristic>
+            <characteristic name="W" typeId="253a-9b00-4fde-8ac2">3</characteristic>
+            <characteristic name="I" typeId="dfff-363e-f72a-5a59">3</characteristic>
+            <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">4</characteristic>
+            <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">10</characteristic>
+            <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+            <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+            <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Mounts" id="33ad-bd29-a7cf-1a3a" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Urskin, the Bear" hidden="false" id="7e12-a7a1-997a-63eb">
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="90"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8311-8871-b37e-320d" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="340c-588c-25f7-f667" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Urskin" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="2848-dbd2-941b-418f" page="15" publicationId="000c-fbf9-7091-f7db">
+                  <characteristics>
+                    <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">6</characteristic>
+                    <characteristic name="WS" typeId="f95b-da01-0578-3bdc">4</characteristic>
+                    <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">0</characteristic>
+                    <characteristic name="S" typeId="b690-4bc0-bb73-267b">6</characteristic>
+                    <characteristic name="T" typeId="8712-f56f-5b22-a720">5</characteristic>
+                    <characteristic name="W" typeId="253a-9b00-4fde-8ac2">3</characteristic>
+                    <characteristic name="I" typeId="dfff-363e-f72a-5a59">4</characteristic>
+                    <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">4</characteristic>
+                    <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">7</characteristic>
+                    <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">5+</characteristic>
+                    <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+                    <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">3</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Fear" id="9681-08e6-3b14-912c" hidden="false" type="rule" targetId="1524-2372-4aa0-6881"/>
+              </infoLinks>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Winter Coat" hidden="false" id="0b45-0e15-2b75-17c5" page="15" publicationId="000c-fbf9-7091-f7db">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c96b-aa60-79f3-9173" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8ed6-8c2f-d386-b960" includeChildSelections="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Winter Coat" typeId="f681-9937-db53-f1d8" typeName="Armour" hidden="false" id="b37b-2c74-ca1a-6512" page="15" publicationId="000c-fbf9-7091-f7db">
+                      <characteristics>
+                        <characteristic name="Saving Throw Modifier" typeId="b600-e1ed-0765-27c1">5+</characteristic>
+                        <characteristic name="Special rules" typeId="42c3-68ab-cfa5-203e"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
+              <rules>
+                <rule name="Fury of Ursun" id="4fd3-650e-8ac9-cf80" hidden="false" page="15" publicationId="000c-fbf9-7091-f7db">
+                  <description>The ferocity of Urskin is such that should a unit fighting him break, he must always pursue it regardless of the wishes of his rider.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Equipment" id="2983-2715-8548-9597" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Armour of Ursun (Magic Armour)" hidden="false" id="2e0b-b93c-d8aa-97a8" page="15" publicationId="000c-fbf9-7091-f7db">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="506f-15c4-2105-6e23" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="884c-65d9-abc5-f8cc" includeChildSelections="false"/>
+              </constraints>
+              <rules>
+                <rule name="Armour of Ursun" id="2806-776a-d0ad-c336" hidden="false" page="15" publicationId="000c-fbf9-7091-f7db">
+                  <description>The Armour of Ursun counts as full plate (4+ Armour save). In addition, for each hit caused by his enemies in close combat, the Tzar may make an additional attack back after his enemies&apos; attacks have been resolved (and assuming he&apos;s still alive!). He may make these bonus attacks even if he has already attacked that phase.</description>
+                </rule>
+              </rules>
+              <profiles>
+                <profile name="Armour of Ursun" typeId="f681-9937-db53-f1d8" typeName="Armour" hidden="false" id="ecbf-0c88-1611-b8f6" page="15" publicationId="000c-fbf9-7091-f7db">
+                  <characteristics>
+                    <characteristic name="Saving Throw Modifier" typeId="b600-e1ed-0765-27c1">4+</characteristic>
+                    <characteristic name="Special rules" typeId="42c3-68ab-cfa5-203e">Additional attack after resolution</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Shard Blade (Magic Weapon)" hidden="false" id="ed15-ed59-daa8-f035" page="15" publicationId="000c-fbf9-7091-f7db">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="38a9-a52d-b06a-5b4e" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="47cf-a21a-0eb6-0932" includeChildSelections="false"/>
+              </constraints>
+              <rules>
+                <rule name="Shard Blade" id="c4c7-5746-09f2-295d" hidden="false" page="15" publicationId="000c-fbf9-7091-f7db">
+                  <description>When using the Shard Blade, Boris adds + 2 to his Strength.
+In addition, any models who suffer a wound (after saving throws, etc) must take an immediate Toughness test.
+If this test is failed, they suffer an additional wound, with no Armour or Ward save possible. Remember, a roll of a 6 is always a failure, no matter the Toughness of the opponent.</description>
+                </rule>
+              </rules>
+              <profiles>
+                <profile name="Shard Blade (Magic Weapon)" typeId="7889-42d9-70a0-3ea9" typeName="Weapon" hidden="false" id="816e-6111-2360-84c3" page="15" publicationId="000c-fbf9-7091-f7db">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3107-4d1e-9a51-6564">CC</characteristic>
+                    <characteristic name="Strength" typeId="6fe4-1ebb-cb04-1378">+2S</characteristic>
+                    <characteristic name="Damage" typeId="6f2f-d612-52ef-1633"/>
+                    <characteristic name="Special Rules" typeId="a21a-cdc0-4b13-b236">Toughness test, if failed take additional Wound</characteristic>
+                    <characteristic name="Saves" typeId="8014-a8b2-15c3-da95">Failed T test take no armour/ward saves</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="285"/>
+        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Kin of the Bear God" id="4749-ac5f-e82b-a177" hidden="false" type="rule" targetId="f619-6fcf-2f76-4cfb"/>
+      </infoLinks>
     </selectionEntry>
   </selectionEntries>
   <sharedProfiles>

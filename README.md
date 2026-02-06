@@ -29,8 +29,8 @@ The main additions are:
 - [x] Hordes of Chaos (inside `Forces of Chaos`)
 - [x] Daemons of Chaos (inside `Forces of Chaos`)
 - [x] Dogs of War
-- [x] Ogre Kingdoms (WIP)
 - [x] Kislev
+- [x] Ogre Kingdoms (WIP)
 - [x] Dwarfs (at least the first ArmyBook) (WIP)
 
 ## Characters and units added
@@ -274,8 +274,8 @@ The main additions are:
 - [x] Braugh the Slavelord (Special from GW)
 
 ### Kislev
-- [ ] Tzarina Katarin, the Ice Queen (KS-AB)
-- [ ] Boris Ursus, the Red Tzar (KS-AB)
+- [x] Tzarina Katarin, the Ice Queen (KS-AB)
+- [x] Boris Ursus, the Red Tzar (KS-AB)
 
 ## Alternative lists included
 - [x] Clan Eshin (SKV-AB)
