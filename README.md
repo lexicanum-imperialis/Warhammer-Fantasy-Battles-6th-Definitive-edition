@@ -274,6 +274,8 @@ The main additions are:
 - [x] Braugh the Slavelord (Special from GW)
 
 ### Kislev
+- [ ] Tzarina Katarin, the Ice Queen (KS-AB)
+- [ ] Boris Ursus, the Red Tzar (KS-AB)
 
 ## Alternative lists included
 - [x] Clan Eshin (SKV-AB)
