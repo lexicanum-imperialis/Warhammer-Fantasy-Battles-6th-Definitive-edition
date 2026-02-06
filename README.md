@@ -260,8 +260,7 @@ The main additions are:
 - [x] Malakai Makaisson's Goblin-Hewer (Soc, p.66)
 - [x] High King Thorgrim Grudgebearer (AN-02, p.65)
 - [x] Runesmith Kadrin Redmane (WD#254-UK, p.31)
-- [x] Runelord Kragg the Grim (WD#315-UK, p.103)
-- [x] King Kazador of Karak Azul (WD#315-UK, p.103)
+- [x] Grombrindal, the White Dwarf (WD#100-ES, p.22-24)
 
 ### Ogre Kingdoms
 - [x] Skrag the Slaughterer, Prohet of the Great Maw (OK-AB, p.76-77)
