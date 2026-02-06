@@ -273,6 +273,8 @@ The main additions are:
 - [x] Ghark Ironskin, Tyrant of the Ironskin Tribe (WD#309, p.78)
 - [x] Braugh the Slavelord (Special from GW)
 
+### Kislev
+
 ## Alternative lists included
 - [x] Clan Eshin (SKV-AB)
 - [x] Clan Eshin (SoC)
