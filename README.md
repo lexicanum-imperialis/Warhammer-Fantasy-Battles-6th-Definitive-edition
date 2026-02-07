@@ -266,6 +266,7 @@ The main additions are:
 - [x] King Kazador of Karak Azul (WD#315-UK, p.103)
 - [x] King Alrik Ranulfsson of Karak-Hirn (WD#315-UK, p.104)
 - [x] Ungrim Ironfist, Slayer King of Karak Kadrin (SoC, p.62)
+- [x] Garagrim Ironfist, War-mourner of Karak Kadrin (SoC, p.63)
 
 ### Ogre Kingdoms
 - [x] Skrag the Slaughterer, Prohet of the Great Maw (OK-AB, p.76-77)

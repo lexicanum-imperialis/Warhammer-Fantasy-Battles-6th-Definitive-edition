@@ -2329,6 +2329,24 @@
                   </characteristics>
                 </profile>
               </profiles>
+              <entryLinks>
+                <entryLink import="true" name="Weapon Runes" hidden="true" id="30a4-8207-db7b-f9da" type="selectionEntryGroup" targetId="43b9-1aa2-9342-95d6">
+                  <infoLinks>
+                    <infoLink name="The War-mourner" id="e584-e0d8-cc85-4c2f" hidden="false" type="rule" targetId="4732-f40e-b632-700e"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="max" value="25" field="ecfa-8486-4f6c-c249" scope="parent" shared="true" id="966a-b2cc-a15e-3db0"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="1e4d-f110-5878-6c43" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="1" field="c4c1-70d3-4447-916d"/>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -3472,16 +3490,9 @@ see Whirlwind of Death</characteristic>
               </characteristics>
             </profile>
           </profiles>
-          <rules>
-            <rule name="Whirlwind of Death" id="cd74-448e-8673-f061" hidden="false" page="64" publicationId="d2ec-1dc7-f0d5-acbb">
-              <description>Doomseekers plough recklessly into the enemy, whirling their weapons madly around their heads.
-They do not attack normally in close combat.
-Instead, before any attacks are made (even if the enemy charged, and including chariot impact hits and other special attacks that always go first) every enemy model in base contact with one or more Doomseekers takes an automatic hit.
-Other enemy touching one or more models in base contact with a Doomseeker each take a hit on a roll of a 4+. Resolve rolls to wound and so on as usual. Survivors may attack the Doomseeker as normal, except that his whirling blades always mean the enemy are at -1 to hit.
-
-Against units consisting of only a single model (including mounted monsters and chariots) the Doomseeker inflicts D3 automatic hits on each such unit in contact.</description>
-            </rule>
-          </rules>
+          <infoLinks>
+            <infoLink name="Whirlwind of Death" id="6dac-3d42-faa9-e32a" hidden="false" type="rule" targetId="cd74-448e-8673-f061"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
@@ -3730,6 +3741,24 @@ Against units consisting of only a single model (including mounted monsters and 
                   </modifiers>
                 </profile>
               </profiles>
+              <entryLinks>
+                <entryLink import="true" name="Weapon Runes" hidden="true" id="cd4f-3015-3506-71ad" type="selectionEntryGroup" targetId="43b9-1aa2-9342-95d6">
+                  <infoLinks>
+                    <infoLink name="The War-mourner" id="c61a-6109-71c1-a290" hidden="false" type="rule" targetId="4732-f40e-b632-700e"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="max" value="25" field="ecfa-8486-4f6c-c249" scope="parent" shared="true" id="e5b6-a5b7-557f-d59f"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="1e4d-f110-5878-6c43" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="1" field="c4c1-70d3-4447-916d"/>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -4611,6 +4640,11 @@ This armor grants the White Dwarf a 1+ armor save and a 4+ special save.</descr
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Extra Hero choice" hidden="false" id="38f4-97a4-9728-727a" type="selectionEntry" targetId="3e25-986a-693f-a975"/>
+        <entryLink import="true" name="General" hidden="false" id="8708-9d6e-2155-7605" type="selectionEntry" targetId="1b7c-2c90-6d96-28c9">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5c94-a3f8-d50a-c2ef" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <profiles>
         <profile name="Ungrim Ironfist, Slayer King of Karak Kadrin" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="d149-6c8e-1717-25f7" page="62" publicationId="d2ec-1dc7-f0d5-acbb">
@@ -4689,7 +4723,7 @@ Rune of Parrying (chose 1 enemy in contact, losses 1 attack)</characteristic>
               <profiles>
                 <profile name="Slayer Crown" typeId="f681-9937-db53-f1d8" typeName="Armour" hidden="false" id="417f-da03-21a8-e6ea" page="62" publicationId="d2ec-1dc7-f0d5-acbb">
                   <characteristics>
-                    <characteristic name="Saving Throw Modifier" typeId="b600-e1ed-0765-27c1">3+</characteristic>
+                    <characteristic name="Saving Throw Modifier" typeId="b600-e1ed-0765-27c1">1+</characteristic>
                     <characteristic name="Special rules" typeId="42c3-68ab-cfa5-203e">Rune of Fortitude (+1W)
 Rune of Stone (3+)</characteristic>
                   </characteristics>
@@ -4701,8 +4735,130 @@ Rune of Stone (3+)</characteristic>
               </infoLinks>
             </selectionEntry>
           </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Gromril Armour" hidden="false" id="b0b8-145c-7849-248c" type="selectionEntry" targetId="df2a-f063-5ca3-2381">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="114a-3656-a8f7-30b3" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="29e6-b01c-cfad-7f4f" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Garagrim Ironfist, War-mourner of Karak Kadrin" hidden="false" id="a8e4-3d2c-7416-9110" publicationId="d2ec-1dc7-f0d5-acbb" page="63">
+      <categoryLinks>
+        <categoryLink name="Special Characters" hidden="false" id="a5ea-d7a1-7b70-6e87" targetId="0644-bfcd-32c2-21dc" primary="true"/>
+        <categoryLink name="Characters" hidden="false" id="57db-78a0-efbb-9a64" targetId="7a1c-d611-c2dc-def1" primary="false"/>
+        <categoryLink name="Lord" hidden="false" id="5967-4c4d-687e-aba7" targetId="d024-d25b-a9b4-73b6" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="305"/>
+        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+      </costs>
+      <entryLinks>
+        <entryLink import="true" name="General" hidden="false" id="1e4d-f110-5878-6c43" type="selectionEntry" targetId="1b7c-2c90-6d96-28c9">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="ff20-01b3-b099-d019" shared="true" includeChildSelections="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="4f36-662f-50dd-55fe" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="1" field="a989-9402-e5e1-2b14">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="b16c-1699-8a05-68a3" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="force" shared="true" id="a989-9402-e5e1-2b14" includeChildSelections="false"/>
+          </constraints>
+          <comment>Garagrim</comment>
+        </entryLink>
+      </entryLinks>
+      <profiles>
+        <profile name="Garagrim" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="ac63-cb79-c2e6-f3d4" page="63" publicationId="d2ec-1dc7-f0d5-acbb">
+          <characteristics>
+            <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">3</characteristic>
+            <characteristic name="WS" typeId="f95b-da01-0578-3bdc">6</characteristic>
+            <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">3</characteristic>
+            <characteristic name="S" typeId="b690-4bc0-bb73-267b">4</characteristic>
+            <characteristic name="T" typeId="8712-f56f-5b22-a720">5</characteristic>
+            <characteristic name="W" typeId="253a-9b00-4fde-8ac2">3</characteristic>
+            <characteristic name="I" typeId="dfff-363e-f72a-5a59">3</characteristic>
+            <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">4(5)</characteristic>
+            <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">10</characteristic>
+            <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+            <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+            <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Slayer skills" id="e2a2-d798-ef5a-ae39" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Vampireslayer" hidden="false" id="9774-ab87-001e-36b3" type="selectionEntry" targetId="f6da-8303-b404-eff8">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fb0f-edb2-72cc-8ecd" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Beastslayer" hidden="false" id="338d-d6a7-ed20-2ec1" type="selectionEntry" targetId="fe23-10ca-8057-ccff">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="23a0-d056-ca0e-4cf7" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Deathblow" hidden="false" id="3d14-c020-f8f1-9f9e" type="selectionEntry" targetId="079e-34be-50f6-9436">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="955a-e0a2-77d6-2830" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Equipment" id="eddb-f967-159e-0d60" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Axes of Kadrin" hidden="false" id="3f0b-4172-4725-a210" page="63" publicationId="d2ec-1dc7-f0d5-acbb">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1c9f-7f70-2ff1-30fe" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cb97-224a-d1db-add5" includeChildSelections="false"/>
+              </constraints>
+              <rules>
+                <rule name="Axes of Kadrin" id="1880-b7ec-f7a9-b6e8" hidden="false" page="63" publicationId="d2ec-1dc7-f0d5-acbb">
+                  <description>Chained to Garagrim&apos;s wrists so he will never lose them, these twin axes were given to him by his father on his coming-of-age. Each is inscribed with a Grudge Rune and the Master Rune of Skalf Blackhammer.
+
+If you wish, when Garagrim makes a charge he may attack like a Doomseeker rather than normally (including the effects of the axes&apos; runes and his Slayer skills).
+
+In subsequent rounds he can only attack normally, though he gains one extra attack for carrying the paired axes, as noted in his profile. He makes his normal attacks for the purposes of Deathblow.</description>
+                </rule>
+              </rules>
+              <infoLinks>
+                <infoLink name="MASTER RUNE OF SKALF BLACKHAMMER" id="2bfd-e544-ffa5-d9d0" hidden="false" type="rule" targetId="5df1-6029-58e7-143b"/>
+                <infoLink name="GRUDGE RUNE" id="6c4f-7068-15da-5247" hidden="false" type="rule" targetId="fed9-7381-268c-42e5"/>
+                <infoLink name="MASTER RUNE OF SKALF BLACKHAMMER" id="43f6-6b13-ccdf-6a9f" hidden="false" type="rule" targetId="5df1-6029-58e7-143b"/>
+                <infoLink name="Whirlwind of Death" id="4d33-b959-6b23-0f90" hidden="false" type="rule" targetId="cd74-448e-8673-f061"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <infoLinks>
+        <infoLink name="Slayer" id="6235-107b-3e4c-f43e" hidden="false" type="rule" targetId="a55d-16f1-2e62-2725"/>
+        <infoLink name="The War-mourner" id="1313-d015-f281-ebea" hidden="false" type="rule" targetId="4732-f40e-b632-700e"/>
+      </infoLinks>
     </selectionEntry>
   </selectionEntries>
   <rules>
@@ -6011,7 +6167,11 @@ However, if you miscast when rolling to cast the Rune of Doom then disaster has 
       <description>Daemon Slayers and Dragon Slayers may only fight alone or join a Slayers unit. Daemon and Dragon Slayers can never be the army&apos;s General.</description>
     </rule>
     <rule id="a55d-16f1-2e62-2725" name="Slayer" publicationId="6265-1d51-76e2-4fe2" page="7" hidden="false">
-      <description>All Slayers have an uncanny ability which makes them particularly effective against especially tough opponents. When rolling to wound, a Slayer&apos;s Strength, including any modifiers for weapons (eg, a Great Axe), is increased until it is equal to the Toughness of his opponent, up to a maximum of Strength 6. If the opponent&apos;s Toughness is lower than the Slayer&apos;s Strength, including any modifiers for weapons, the Slayer does not receive any Strength bonus. For example, a Slayer armed with a Great Axe (S5) is fighting a Dragon (T6): normally he needs a 5+ to wound, but because of the Slayer skill his Strength is increased to 6 and he therefore wounds on a 4+. Note that the armour save modifier is calculated at the modified Strength score, in this case it is -3 for a Strength 6 hit. If the Slayer were fighting a weedy Goblin (13). he would use his normal Strength of 5 and would therefore wound the Goblin on a 2+, with an armour save modifier of -2.</description>
+      <description>All Slayers have an uncanny ability which makes them particularly effective against especially tough opponents. When rolling to wound, a Slayer&apos;s Strength, including any modifiers for weapons (eg, a Great Axe), is increased until it is equal to the Toughness of his opponent, up to a maximum of Strength 6.
+If the opponent&apos;s Toughness is lower than the Slayer&apos;s Strength, including any modifiers for weapons, the Slayer does not receive any Strength bonus.
+For example, a Slayer armed with a Great Axe (S5) is fighting a Dragon (T6): normally he needs a 5+ to wound, but because of the Slayer skill his Strength is increased to 6 and he therefore wounds on a 4+.
+Note that the armour save modifier is calculated at the modified Strength score, in this case it is -3 for a Strength 6 hit.
+If the Slayer were fighting a weedy Goblin (13). he would use his normal Strength of 5 and would therefore wound the Goblin on a 2+, with an armour save modifier of -2.</description>
     </rule>
     <rule id="a839-4454-9f5d-5e00" name="MASTER RUNE OF SNORRI SPANGELHELM " publicationId="6265-1d51-76e2-4fe2" page="20" hidden="false">
       <description>Runesmith to the High King in Karaz-a-Karak
@@ -6324,6 +6484,19 @@ Any friendly unit within 12&quot; of the standard gains a 5+ Ward save against 
     </rule>
     <rule name="RUNE OF PARRYING" id="89ef-5506-789b-e7af" hidden="false" page="62" publicationId="d2ec-1dc7-f0d5-acbb">
       <description>one model in base contact (chosen by the Dwarf player) loses 1 Attack in close combat. This has no effect against special attacks, such as a Night Goblin Fanatic, or a Treeman&apos;s Tree Whack.</description>
+    </rule>
+    <rule name="Whirlwind of Death" id="cd74-448e-8673-f061" hidden="false" page="64" publicationId="d2ec-1dc7-f0d5-acbb">
+      <description>Doomseekers plough recklessly into the enemy, whirling their weapons madly around their heads.
+They do not attack normally in close combat.
+Instead, before any attacks are made (even if the enemy charged, and including chariot impact hits and other special attacks that always go first) every enemy model in base contact with one or more Doomseekers takes an automatic hit.
+Other enemy touching one or more models in base contact with a Doomseeker each take a hit on a roll of a 4+. Resolve rolls to wound and so on as usual. Survivors may attack the Doomseeker as normal, except that his whirling blades always mean the enemy are at -1 to hit.
+
+Against units consisting of only a single model (including mounted monsters and chariots) the Doomseeker inflicts D3 automatic hits on each such unit in contact.</description>
+    </rule>
+    <rule name="The War-mourner" id="4732-f40e-b632-700e" hidden="false" page="63" publicationId="d2ec-1dc7-f0d5-acbb">
+      <description>Giant Slayers in an army led by Garagrim may be given a single weapon rune worth no more than 25 points. The Rule of Pride still applies to these weapons.
+
+Remember that a model with a rune axe loses the normal benefits of a great weapon or additional hand weapon.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
