@@ -161,6 +161,7 @@ The main additions are:
 - [x] Badruk 'Eadsplitta (webGW-US)
 - [x] The Black Gobbo (webGW-US)
 - [x] Grotsnag, Scourge of da Black Mountins (WD#298-UK, p.23)
+- [x] Grabnatz & Gulag (WD#299-UK, p.16)
 
 ### High Elves
 - [x] Imrik, Dragon Prince of Caledor (HE-AB, p.64)
