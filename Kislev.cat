@@ -304,7 +304,7 @@ In addition, if the enemy are outside half of their normal charge distance, the 
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Mark of the Bear God" hidden="false" id="27c5-95c8-55e8-f2cc">
+        <selectionEntry type="upgrade" import="true" name="Mark of the Bear God" hidden="true" id="27c5-95c8-55e8-f2cc">
           <costs>
             <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="30"/>
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
@@ -316,6 +316,13 @@ In addition, if the enemy are outside half of their normal charge distance, the 
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e000-2a60-f9d0-1482" includeChildSelections="false"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="75a2-3b98-aff3-27b4" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
