@@ -162,6 +162,7 @@ The main additions are:
 - [x] The Black Gobbo (webGW-US)
 - [x] Grotsnag, Scourge of da Black Mountins (WD#298-UK, p.23)
 - [x] Grabnatz & Gulag (WD#299-UK, p.16)
+- [x] Kap'n Skabend & Slygit (WD#300-UK, p.44-45)
 
 ### High Elves
 - [x] Imrik, Dragon Prince of Caledor (HE-AB, p.64)
