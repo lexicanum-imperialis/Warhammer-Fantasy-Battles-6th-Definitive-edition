@@ -160,6 +160,7 @@ The main additions are:
 - [x] Skarsnik and Gobbla (CJ#46, p.28)
 - [x] Badruk 'Eadsplitta (webGW-US)
 - [x] The Black Gobbo (webGW-US)
+- [x] Grotsnag, Scourge of da Black Mountins (WD#298-UK, p.23)
 
 ### High Elves
 - [x] Imrik, Dragon Prince of Caledor (HE-AB, p.64)
