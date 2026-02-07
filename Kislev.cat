@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="76c3-5045-220d-1e64" name="Kislev" gameSystemId="0d13-7737-ea86-4662" gameSystemRevision="1" revision="1" authorUrl="" authorName="Lexicanum Imperialis" authorContact="lexicanum.imperialis@gmail.com" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="76c3-5045-220d-1e64" name="Kislev" gameSystemId="0d13-7737-ea86-4662" gameSystemRevision="1" revision="1" authorName="Lexicanum Imperialis" authorContact="lexicanum.imperialis@gmail.com" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication name="KS-AB" id="000c-fbf9-7091-f7db" hidden="false" publicationDate="2003-12" shortName="Warhammer Armies: Kislev (6th Edition)" publisher="by Gab Thorpe &amp; Graham McNeill"/>
   </publications>
@@ -14,13 +14,15 @@
       <description>Any Kislevite unit joined by the Tzarina becomes Stubborn, and all Kislevite units within 12&quot; of the Tzarina may re-roll failed Psychology tests.</description>
     </rule>
     <rule name="Kin of the Bear God" id="f619-6fcf-2f76-4cfb" hidden="false" page="15" publicationId="000c-fbf9-7091-f7db">
-      <description>If Boris Bokha is taken as the leader of your Allied Contingent, then any units of Kossars present in the army may be designated Kin of the Bear God at a cost of + 30 points per unit. Models with the mark of the Bear God gain + 1 Attack in the turn they charge.</description>
+      <description>If Boris Bokha is taken as the leader of your Allied Contingent, then any units of Kossars present in the army may be designated Kin of the Bear God at a cost of + 30 points per unit.
+Models with the mark of the Bear God gain + 1 Attack in the turn they charge.</description>
     </rule>
     <rule name="Protectors of the Khan-queen" id="4608-3060-d94c-3808" hidden="false" page="13" publicationId="000c-fbf9-7091-f7db">
       <description>If the Tzarina Katarin is taken as the leader of your Allied Contingent, then the 0-1 restriction on Gryphon Legion units is waived.</description>
     </rule>
     <rule name="Steady in the Ranks" id="36e4-6076-a867-37ec" hidden="false" page="8" publicationId="000c-fbf9-7091-f7db">
-      <description>Kossars may stand &amp; shoot as a charge reaction even if the enemy are within half their normal charge distance. In addition, if the enemy are outside half of their normal charge distance, the Kossars do not suffer the normal -1 penalty on their To Hit rolls.</description>
+      <description>Kossars may stand &amp; shoot as a charge reaction even if the enemy are within half their normal charge distance.
+In addition, if the enemy are outside half of their normal charge distance, the Kossars do not suffer the normal -1 penalty on their To Hit rolls.</description>
     </rule>
     <rule name="Stubborn (Boyars)" id="adff-99d2-6ad6-96ea" hidden="false" page="8" publicationId="000c-fbf9-7091-f7db">
       <description>A Boyar is Stubborn as is any unit the Boyar leads.</description>
@@ -301,6 +303,19 @@
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Mark of the Bear God" hidden="false" id="27c5-95c8-55e8-f2cc">
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="30"/>
+            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Kin of the Bear God" id="cead-7fea-7e6e-3f5c" hidden="false" type="rule" targetId="f619-6fcf-2f76-4cfb"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e000-2a60-f9d0-1482" includeChildSelections="false"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -726,7 +741,7 @@
         <categoryLink name="Characters" hidden="false" id="3ba7-b011-38ee-420a" targetId="7a1c-d611-c2dc-def1" primary="false"/>
       </categoryLinks>
       <profiles>
-        <profile name="Boris Ursus" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="31bb-f6fe-1122-f31d" page="15" publicationId="000c-fbf9-7091-f7db">
+        <profile name="Boris Bokha" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="31bb-f6fe-1122-f31d" page="15" publicationId="000c-fbf9-7091-f7db">
           <characteristics>
             <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">4</characteristic>
             <characteristic name="WS" typeId="f95b-da01-0578-3bdc">5</characteristic>
@@ -737,7 +752,7 @@
             <characteristic name="I" typeId="dfff-363e-f72a-5a59">3</characteristic>
             <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">4</characteristic>
             <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">10</characteristic>
-            <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+            <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">4+</characteristic>
             <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
             <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
           </characteristics>
@@ -810,7 +825,8 @@
               </constraints>
               <rules>
                 <rule name="Armour of Ursun" id="2806-776a-d0ad-c336" hidden="false" page="15" publicationId="000c-fbf9-7091-f7db">
-                  <description>The Armour of Ursun counts as full plate (4+ Armour save). In addition, for each hit caused by his enemies in close combat, the Tzar may make an additional attack back after his enemies&apos; attacks have been resolved (and assuming he&apos;s still alive!). He may make these bonus attacks even if he has already attacked that phase.</description>
+                  <description>The Armour of Ursun counts as full plate (4+ Armour save).
+In addition, for each hit caused by his enemies in close combat, the Tzar may make an additional attack back after his enemies&apos; attacks have been resolved (and assuming he&apos;s still alive!). He may make these bonus attacks even if he has already attacked that phase.</description>
                 </rule>
               </rules>
               <profiles>
