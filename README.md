@@ -267,6 +267,7 @@ The main additions are:
 - [x] Dwarf Seadogs (WD#300-UK, p.43)
 - [x] Grim 'Dead Eye' Grunnson (WD#300-UK, p.43)
 - [x] Josef Bugman (Young) (WD#300-UK. p.44)
+- [x] Durzak Dragonback (WD#302-UK, p.54)
 
 ### Dwarfs (2006)
 - [x] Runelord Kragg the Grim (WD#315-UK, p.103)
