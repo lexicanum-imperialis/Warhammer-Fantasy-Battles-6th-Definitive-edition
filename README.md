@@ -261,6 +261,7 @@ The main additions are:
 - [x] High King Thorgrim Grudgebearer (AN-02, p.65)
 - [x] Runesmith Kadrin Redmane (WD#254-UK, p.31)
 - [x] Grombrindal, the White Dwarf (WD#100-ES, p.22-24)
+- [x] Skeggi Threkkson (WD#299-UK, p.15)
 
 ### Dwarfs (2006)
 - [x] Runelord Kragg the Grim (WD#315-UK, p.103)

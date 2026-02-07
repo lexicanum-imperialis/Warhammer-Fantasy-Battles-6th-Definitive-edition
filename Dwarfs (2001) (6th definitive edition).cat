@@ -17,6 +17,9 @@
     <publication name="WD#298-UK" id="0f95-0362-7369-d3a0" hidden="false" shortName="&quot;Bugsman&apos;s Lament I&quot;, in White-Dwarf #298-UK, p.16-29" publisher="by Nick Kyme" publicationDate="2004-10">
       <comment>Bugsman&apos;s Lament I</comment>
     </publication>
+    <publication name="WD#299-UK" id="5ac0-5937-5e97-a7c9" hidden="false" shortName="&quot;Bugsman&apos;s Lament II&quot;, in White-Dwarf #299-UK, p.12-19" publisher="by Nick Kyme" publicationDate="2004-11">
+      <comment>Bugsman&apos;s Lament I|</comment>
+    </publication>
   </publications>
   <selectionEntries>
     <selectionEntry id="854e-2332-3c9f-5eda" name="Warriors" hidden="false" collective="false" import="true" type="unit">
@@ -5189,6 +5192,288 @@ All drunk Dwarfs are immune to panic but suffer a -1 to hit in close combat and
           </rules>
         </infoGroup>
       </infoGroups>
+      <entryLinks>
+        <entryLink import="true" name="General" hidden="false" id="18e7-ae4b-68c5-098a" type="selectionEntry" targetId="1b7c-2c90-6d96-28c9">
+          <comment>Bolgan</comment>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="0-1 Mountain Rangers" hidden="false" id="fdcd-df4f-cc5e-3d8f">
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="force" shared="true" id="3b63-34ab-266a-50cd" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="1" field="3b63-34ab-266a-50cd">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="18e7-ae4b-68c5-098a" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <comment>Bolgan</comment>
+        </modifier>
+        <modifier type="add" value="{this} require Bolgan as General" field="error">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="18e7-ae4b-68c5-098a" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="Rare" hidden="false" id="2c9d-c323-4a37-c64c" targetId="e94b-6a54-8779-cd60" primary="true"/>
+        <categoryLink name="Experimental rules" hidden="false" id="7391-a67f-87a1-3966" targetId="4fed-b911-e6e0-927b" primary="false"/>
+      </categoryLinks>
+      <rules>
+        <rule name="Mountain Rangers" id="4d85-aa63-80c2-a385" hidden="false" page="24" publicationId="0f95-0362-7369-d3a0">
+          <description>Mountain Rangers guard the lofty passes and treacherous pathways of the Dwarf mountain realms. They are well-equipped to deal with the hazardous conditions in the mountains, their short-range blunderbusses a deadly deterrant to the creatures that dwell there. The Mountain Rangers also carry the fabled Dwarf mountain horn, which when blown emits a terrible booming noise, sending unruly beasts to flight.
+
+Mountain Rangers are a Rare choice and only one unit of them may be taken in a Dwarf army. They are also a special unit only available in this scenario and if the Dwarfs are victorious, in the final battle, The Battle for Bugman&apos;s Brewery.</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Ranger" hidden="false" id="e85f-8050-bcff-a306">
+          <constraints>
+            <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="1285-9d38-b28d-1b0f" includeChildSelections="false"/>
+            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="7ca7-e6e8-f777-a731" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Mountain Ranger" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="a106-3359-593f-84f3" publicationId="0f95-0362-7369-d3a0" page="24">
+              <characteristics>
+                <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">3</characteristic>
+                <characteristic name="WS" typeId="f95b-da01-0578-3bdc">4</characteristic>
+                <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">3</characteristic>
+                <characteristic name="S" typeId="b690-4bc0-bb73-267b">3</characteristic>
+                <characteristic name="T" typeId="8712-f56f-5b22-a720">4</characteristic>
+                <characteristic name="W" typeId="253a-9b00-4fde-8ac2">1</characteristic>
+                <characteristic name="I" typeId="dfff-363e-f72a-5a59">2</characteristic>
+                <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
+                <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">9</characteristic>
+                <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">6+</characteristic>
+                <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+                <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="15"/>
+            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Command group" id="5955-f307-0d37-0f40" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Musician" hidden="false" id="2e3b-1a42-5c6b-5603">
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="6"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="74d1-60b2-6d56-f0bb" includeChildSelections="false"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Mountain Horn" hidden="false" id="c43e-7b0a-2fa7-c833">
+                  <costs>
+                    <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="10"/>
+                    <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                    <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c234-9941-150f-ecc1" includeChildSelections="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Mountain Horn" typeId="a89b-d5a3-7805-c44e" typeName="Magic Items" hidden="false" id="f476-da78-82d7-84c4" page="24" publicationId="0f95-0362-7369-d3a0">
+                      <characteristics>
+                        <characteristic name="Magic stuff" typeId="c7b5-c239-d6c1-0627">All cavalry units within 24&quot; must take an immediate Panic test</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <rules>
+                    <rule name="Mountain Horn" id="b581-6104-19eb-b654" hidden="false" page="24" publicationId="0f95-0362-7369-d3a0">
+                      <description>The mountain horn may be sounded once per battle, after which the bearer counts as a normal musician.
+All cavalry units within 24&quot; must take an immediate Panic test as they are dismayed by the eerie blast.</description>
+                    </rule>
+                  </rules>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Pathfinder (Champion)" hidden="false" id="2c0d-b9da-65aa-b0f9">
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="12"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c4b1-84ba-78da-dd27" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Pathfinder" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="c807-8cf4-4cc4-c877" page="24" publicationId="0f95-0362-7369-d3a0">
+                  <characteristics>
+                    <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">3</characteristic>
+                    <characteristic name="WS" typeId="f95b-da01-0578-3bdc">4</characteristic>
+                    <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">3</characteristic>
+                    <characteristic name="S" typeId="b690-4bc0-bb73-267b">3</characteristic>
+                    <characteristic name="T" typeId="8712-f56f-5b22-a720">4</characteristic>
+                    <characteristic name="W" typeId="253a-9b00-4fde-8ac2">1</characteristic>
+                    <characteristic name="I" typeId="dfff-363e-f72a-5a59">2</characteristic>
+                    <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">2</characteristic>
+                    <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">9</characteristic>
+                    <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">6+</characteristic>
+                    <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+                    <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Missile weapons" id="cc0e-c944-5218-4a5c" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Blunderbuss" hidden="false" id="1a84-da6f-12cb-0cbd">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="252b-42b6-0e49-ab65" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Blunderbuss" typeId="7889-42d9-70a0-3ea9" typeName="Weapon" hidden="false" id="2dcd-8201-a89d-cd36" page="24" publicationId="0f95-0362-7369-d3a0">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3107-4d1e-9a51-6564">12&quot;</characteristic>
+                    <characteristic name="Strength" typeId="6fe4-1ebb-cb04-1378">3</characteristic>
+                    <characteristic name="Damage" typeId="6f2f-d612-52ef-1633"/>
+                    <characteristic name="Special Rules" typeId="a21a-cdc0-4b13-b236">Blunderbuss,
+Armour Piercing</characteristic>
+                    <characteristic name="Saves" typeId="8014-a8b2-15c3-da95">-1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule name="Blunderbuss" id="35b6-c4d7-c2be-3978" hidden="false" page="24" publicationId="0f95-0362-7369-d3a0">
+                  <description>The blunderbuss is a deadly short-range weapon, which is based on a similar principle to cannon grapeshot. The blunderbuss barrel is crammed with all manner of shot including, nails, bolts, old forks and other scrap, then discharged at close quarters to devastating effect.
+
+Maximum Range: 12&quot;; Strength: 3
+Rules: Armour piercing.</description>
+                </rule>
+                <rule name="Barrage" id="06ac-6916-298f-8f35" hidden="false" page="24" publicationId="0f95-0362-7369-d3a0">
+                  <description>When shooting with a Dwarf blunderbuss roll an artillery dice and halve the result to determine how many shots are generated by the blast. Each shot hits automatically. Any roll of a misfire means the blunderbuss has jammed and can no longer fire for the rest of the battle, furthermore the firer takes a Strength 3 hit as if he had been hit by the blunderbuss himself.
+
+As soon as a blunderbuss has been fired it takes an entire turn to reload in which the firer can do nothing.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Dwarf Handgun" hidden="false" id="e507-58b4-f30a-db96" type="selectionEntry" targetId="9b97-ecfd-1dae-dd26">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="023d-35ef-287b-7dd6" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="19e6-80c7-835c-4dfa" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6252-28d6-cba8-edbb" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Armour" id="d2b7-486e-1d19-4ac4" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Light Armour" hidden="false" id="8823-b9b2-765f-71ef" type="selectionEntry" targetId="055f-8e4e-f170-35d2">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3e1b-dafa-696b-9f15" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fe8a-4e72-38e0-3c0f" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Shield" hidden="false" id="4d22-f34c-1891-e12c" type="selectionEntry" targetId="50e2-1873-a856-03e7">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9ebb-f1a2-3091-3567" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="ecfa-8486-4f6c-c249">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="parent" childId="model" shared="true" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Hand Weapon" hidden="false" id="6931-0646-6a95-32d3" type="selectionEntry" targetId="abdb-bbd0-41b2-5dff"/>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="Skirmishers" id="ffb7-4ffe-847e-332b" hidden="false" type="rule" targetId="1945-ac89-9cc4-3537"/>
+        <infoLink name="Scouts" id="39b6-f5de-c558-e836" hidden="false" type="rule" targetId="889c-dfc3-95a5-2d30"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Skeggi Threkkson" hidden="false" id="1e0a-b7cc-7eb1-dcef" page="15" publicationId="5ac0-5937-5e97-a7c9">
+      <categoryLinks>
+        <categoryLink name="Experimental rules" hidden="false" id="a1ba-cb37-e5a5-4100" targetId="4fed-b911-e6e0-927b" primary="false"/>
+        <categoryLink name="Special Characters" hidden="false" id="45ab-2eb5-0599-670c" targetId="0644-bfcd-32c2-21dc" primary="true"/>
+        <categoryLink name="Characters" hidden="false" id="83e0-bbca-5ac7-4b8b" targetId="7a1c-d611-c2dc-def1" primary="false"/>
+        <categoryLink name="Heroes" hidden="false" id="d098-4739-6493-e12f" targetId="c16b-f319-2c62-2c12" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="129"/>
+        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+      </costs>
+      <profiles>
+        <profile name="Skeggi Threkkson" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="9393-eb20-1650-b756" page="15" publicationId="5ac0-5937-5e97-a7c9">
+          <characteristics>
+            <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">3</characteristic>
+            <characteristic name="WS" typeId="f95b-da01-0578-3bdc">6</characteristic>
+            <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">4</characteristic>
+            <characteristic name="S" typeId="b690-4bc0-bb73-267b">4*</characteristic>
+            <characteristic name="T" typeId="8712-f56f-5b22-a720">4</characteristic>
+            <characteristic name="W" typeId="253a-9b00-4fde-8ac2">2</characteristic>
+            <characteristic name="I" typeId="dfff-363e-f72a-5a59">3+1</characteristic>
+            <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">3+1</characteristic>
+            <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">9</characteristic>
+            <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">5+</characteristic>
+            <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+            <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Equipment" id="555f-b621-e7e2-2022" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Shield" hidden="false" id="106b-e080-ff26-25d4" type="selectionEntry" targetId="50e2-1873-a856-03e7">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f97d-0cc2-5060-99ff" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="50c7-4459-7e74-1b53" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Crossbow" hidden="false" id="ffa6-31f4-ec55-cf43" type="selectionEntry" targetId="4c50-49fe-7ac2-4b3b">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="24ef-5c76-a169-5fcd" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cb85-8b53-f168-b776" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Light Armour" hidden="false" id="76ca-a49b-ddff-fce2" type="selectionEntry" targetId="055f-8e4e-f170-35d2">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="409b-7b2f-336d-e4f3" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c351-d6dd-3262-c537" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Forest Hewer (Runic Weapon)" hidden="false" id="2f5c-a1ed-5cfa-786c">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6135-95c7-2310-ecd9" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="383f-4521-c962-8193" includeChildSelections="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="RUNE OF SPEED" id="d184-dbea-ac3a-69d0" hidden="false" type="rule" targetId="a8b8-577b-14cf-14bb"/>
+                <infoLink name="RUNE OF MIGHT" id="9605-52a9-bf45-074b" hidden="false" type="rule" targetId="f7bb-4496-2ad1-c74a"/>
+                <infoLink name="RUNE OF FURY" id="b42f-eb71-f65d-fe03" hidden="false" type="rule" targetId="4703-3421-14b3-22fe"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <rules>
+        <rule name="Eagle Eyed:" id="7db3-8fb6-a345-30c3" hidden="false" page="15" publicationId="5ac0-5937-5e97-a7c9">
+          <description>Skeggi has incredibly keen eye-sight, despite his injury. He has been hunting in the forests around the Dragonback settlement for many years.
+As such he may add +D6&quot; to the maximum range of his crossbow at the start of each Shooting phase, which may alter the to hit roll if it takes his crossbow below long range. He may also re-roll any oll any miss each time he shoots.</description>
+        </rule>
+      </rules>
     </selectionEntry>
   </selectionEntries>
   <rules>
@@ -6550,7 +6835,6 @@ Nominate one enemy character or monster at the beginning of the game. The wielde
       <description>The properties of this rune enable the weapon&apos;s wielder to find an enemy&apos;s weak points with ease.
 The wielder of this weapon may add + 1 to his Weapon Skill.</description>
     </rule>
-    <rule id="4ce1-81af-b3c6-3368" name="RUNE OF SPEED" hidden="false"/>
     <rule id="a8b8-577b-14cf-14bb" name="RUNE OF SPEED" publicationId="6265-1d51-76e2-4fe2" page="20" hidden="false">
       <description>This rune enhances the Dwarfs awareness. The wielder of this weapon adds +1 to his Initiative</description>
     </rule>
