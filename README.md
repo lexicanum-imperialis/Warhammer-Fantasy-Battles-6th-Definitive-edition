@@ -267,6 +267,7 @@ The main additions are:
 - [x] King Alrik Ranulfsson of Karak-Hirn (WD#315-UK, p.104)
 - [x] Ungrim Ironfist, Slayer King of Karak Kadrin (SoC, p.62)
 - [x] Garagrim Ironfist, War-mourner of Karak Kadrin (SoC, p.63)
+- [x] King Byrrnoth Grundadrakk of Barak Varr (WD#307-UK, p.46)
 
 ### Ogre Kingdoms
 - [x] Skrag the Slaughterer, Prohet of the Great Maw (OK-AB, p.76-77)
