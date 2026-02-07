@@ -253,7 +253,7 @@ The main additions are:
 - [x] Vardek Crom, Herald of Archaon (SoC)
 - [x] Be'lakor, the Dark Master (SoC)
 
-### Dwarfs (2000)
+### Dwarfs (2001)
 - [x] Thorek Ironbrow, Dwarf Runelord (DW1-AB, p.50-51)
 - [x] King Alrik Ranulfsson of Karak-Hirn (DW1-AB, p.52-53)
 - [x] Slayer Doomseekers (SoC, p.64)
@@ -263,7 +263,8 @@ The main additions are:
 - [x] Runesmith Kadrin Redmane (WD#254-UK, p.31)
 - [x] Grombrindal, the White Dwarf (WD#100-ES, p.22-24)
 - [x] Skeggi Threkkson (WD#299-UK, p.15)
-- [x] Dwarf Seadogs (WD#300, p.43)
+- [x] Dwarf Seadogs (WD#300-UK, p.43)
+- [x] Grim 'Dead Eye' Grunnson (WD#300-UK, p.43)
 
 ### Dwarfs (2006)
 - [x] Runelord Kragg the Grim (WD#315-UK, p.103)
