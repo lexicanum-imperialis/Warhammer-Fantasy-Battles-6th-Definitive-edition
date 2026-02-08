@@ -274,6 +274,7 @@ The main additions are:
 - [x] Josef Bugman (Young) (WD#300-UK. p.44)
 - [x] Durzak Dragonback (WD#302-UK, p.54)
 - [x] Brewmaster (WD#302-UK, p.56)
+- [x] Fire Thrower (WD#302-UK, p.57)
 
 ### Dwarfs (2006)
 - [x] Runelord Kragg the Grim (WD#315-UK, p.103)
