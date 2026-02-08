@@ -1752,8 +1752,8 @@
     </selectionEntry>
     <selectionEntry id="3e25-986a-693f-a975" name="Extra Hero choice" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b565-1f72-9590-cf93" type="max"/>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5d46-303d-cba5-3690" type="min"/>
+        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b565-1f72-9590-cf93" type="max"/>
+        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5d46-303d-cba5-3690" type="min"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="1b9a-aa53-e0a8-f323" name="Characters" hidden="false" targetId="7a1c-d611-c2dc-def1" primary="false"/>
@@ -1767,8 +1767,8 @@
     </selectionEntry>
     <selectionEntry id="dde8-eb28-cacb-34a3" name="Extra Rare choice" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8043-dec3-821f-23ba" type="max"/>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a22b-5aa8-c139-ab08" type="min"/>
+        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8043-dec3-821f-23ba" type="max"/>
+        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a22b-5aa8-c139-ab08" type="min"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="26a7-14c9-7b34-6464" name="Rare" hidden="false" targetId="e94b-6a54-8779-cd60" primary="false"/>

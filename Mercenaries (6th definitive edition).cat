@@ -28,6 +28,9 @@
     </publication>
     <publication name="FW" id="046d-88bc-e852-2147" hidden="false" publisherUrl="http://www.forgeworld.co.uk/" publicationDate="2005-10 (consulted)" shortName="Forge World website UK"/>
     <publication name="CJ#41" id="3637-81a7-ae18-030f" hidden="false" shortName="&quot;Regiments of Renown: Toxote&apos;s Hellmounts&quot;, in Citadel Journal #41, p.24-27" publisher="by Darren Evans" publicationDate="2000"/>
+    <publication name="CJ#44" id="2774-7faa-fcfc-e6a3" hidden="false" shortName="&quot;Dwarfs archive&quot; and &quot;Dwarf Lords&quot;, in Citadel Journal #44" publisher="by Gav Thorpe and Warwick Kinrade" publicationDate="2000">
+      <comment>Dwarfs</comment>
+    </publication>
   </publications>
   <categoryEntries>
     <categoryEntry id="bb6b-cda8-b237-4dfd" name="DOW" hidden="false"/>
@@ -8611,6 +8614,516 @@ If a machine with an Engineer attached to it misfires and explodes, the Engineer
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="e616-30b1-5e42-1f30" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Josef Bugman (CJ#44)" hidden="false" id="b59a-a8c4-f9d1-b09f" publicationId="2774-7faa-fcfc-e6a3" page="13-14">
+      <categoryLinks>
+        <categoryLink name="Experimental rules" hidden="false" id="b72e-a26e-b6e8-eef7" targetId="4fed-b911-e6e0-927b" primary="false"/>
+        <categoryLink name="Regiment of Renown" hidden="false" id="8bd8-2ba5-cd9e-30db" targetId="ee09-9a50-ad78-9c32" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Extra Hero choice" hidden="true" id="eeb4-991c-6796-26a7" type="selectionEntry" targetId="3e25-986a-693f-a975">
+          <modifierGroups>
+            <modifierGroup type="and">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="3a5f-213a-5ffc-4ec1" shared="true"/>
+              </conditions>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden"/>
+                <modifier type="set" value="2" field="5d46-303d-cba5-3690"/>
+                <modifier type="set" value="2" field="b565-1f72-9590-cf93"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </entryLink>
+        <entryLink import="true" name="Extra Rare choice" hidden="true" id="0de4-0160-acaa-33bf" type="selectionEntry" targetId="dde8-eb28-cacb-34a3">
+          <modifierGroups>
+            <modifierGroup type="and">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="3a5f-213a-5ffc-4ec1" shared="true"/>
+              </conditions>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden"/>
+                <modifier type="set" value="1" field="8043-dec3-821f-23ba"/>
+                <modifier type="set" value="1" field="a22b-5aa8-c139-ab08"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </entryLink>
+      </entryLinks>
+      <profiles>
+        <profile name="Josef Bugman" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="68dd-89f8-9cb7-98da" publicationId="2774-7faa-fcfc-e6a3" page="13-14">
+          <characteristics>
+            <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">3</characteristic>
+            <characteristic name="WS" typeId="f95b-da01-0578-3bdc">6</characteristic>
+            <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">4</characteristic>
+            <characteristic name="S" typeId="b690-4bc0-bb73-267b">4(5)</characteristic>
+            <characteristic name="T" typeId="8712-f56f-5b22-a720">4</characteristic>
+            <characteristic name="W" typeId="253a-9b00-4fde-8ac2">2</characteristic>
+            <characteristic name="I" typeId="dfff-363e-f72a-5a59">4</characteristic>
+            <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">3(4)</characteristic>
+            <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">10</characteristic>
+            <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">5+</characteristic>
+            <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+            <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Rangers of Bugman" id="5dbb-d612-9b7b-ea90" hidden="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2638-337c-6e9d-8ed1" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2258-bc3f-7eee-0413" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="unit" import="true" name="Rangers" hidden="false" id="2868-3c87-b47a-d29c" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="e7f9-a80e-b9d3-f727" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Dwarf Warrior" id="9479-d2ec-8a28-7c64" hidden="false" targetId="1102-87aa-71c7-aadc" type="profile"/>
+                <infoLink name="Scouts" id="9bc5-4b23-fb09-f5d9" hidden="false" targetId="889c-dfc3-95a5-2d30" type="rule"/>
+              </infoLinks>
+              <selectionEntries>
+                <selectionEntry type="model" import="true" name="Ranger" hidden="false" id="20fa-fe36-738d-02dc" collective="false">
+                  <constraints>
+                    <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="712c-a1b9-8bde-6d7b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="20" field="selections" scope="parent" shared="true" id="d0a1-c12f-cc18-95ae" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="12"/>
+                    <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                    <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Command" id="fd2e-4711-244f-1f53" hidden="false" collective="false" import="true">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Musician" hidden="false" id="dc1c-ad0a-01a8-6a98" collective="false">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e594-92eb-cb89-ba98" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="6"/>
+                        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Standard Bearer" hidden="false" id="b13f-cfbd-1680-1e23" collective="false">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4c32-a54b-900f-6cb5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="12"/>
+                        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Veteran" hidden="false" id="9c44-b4c0-315d-ff33" collective="false">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2755-ba0a-7629-ab04" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <profiles>
+                        <profile name="Veteran" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="7660-ef25-e060-6738">
+                          <characteristics>
+                            <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">3</characteristic>
+                            <characteristic name="WS" typeId="f95b-da01-0578-3bdc">4</characteristic>
+                            <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">3</characteristic>
+                            <characteristic name="S" typeId="b690-4bc0-bb73-267b">3</characteristic>
+                            <characteristic name="T" typeId="8712-f56f-5b22-a720">4</characteristic>
+                            <characteristic name="W" typeId="253a-9b00-4fde-8ac2">1</characteristic>
+                            <characteristic name="I" typeId="dfff-363e-f72a-5a59">2</characteristic>
+                            <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">2</characteristic>
+                            <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">9</characteristic>
+                            <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+                            <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+                            <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <costs>
+                        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="12"/>
+                        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Missile Weapons" id="d20a-386d-ffc5-85da" hidden="false" collective="false" import="true">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3b4e-42fa-2f9a-98b5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Crossbow" hidden="false" id="3979-10ec-cad8-b5c0" collective="false" targetId="4c50-49fe-7ac2-4b3b" type="selectionEntry">
+                      <modifiers>
+                        <modifier type="increment" value="5" field="ecfa-8486-4f6c-c249">
+                          <repeats>
+                            <repeat value="1" repeats="1" field="selections" scope="parent" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                          </repeats>
+                        </modifier>
+                      </modifiers>
+                    </entryLink>
+                    <entryLink import="true" name="Throwing Axe" hidden="false" id="4149-bc37-dcc5-59ac" collective="false" targetId="bddd-26a2-7b14-c3fa" type="selectionEntry">
+                      <modifiers>
+                        <modifier type="increment" value="3" field="ecfa-8486-4f6c-c249">
+                          <repeats>
+                            <repeat value="1" repeats="1" field="selections" scope="parent" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                          </repeats>
+                        </modifier>
+                      </modifiers>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink import="true" name="Light Armour" hidden="false" id="7825-99af-7c72-8de6" collective="false" targetId="055f-8e4e-f170-35d2" type="selectionEntry">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6941-ba25-0145-e73b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3c34-5c72-b375-87e1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Great Weapon" hidden="false" id="b89e-70a5-e15c-25ba" collective="false" targetId="1eb7-3f36-8cf7-e0ba" type="selectionEntry">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9323-efb1-6237-0b87" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="596e-d6c4-e5c1-ea73" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Shield" hidden="false" id="b211-5c71-315b-2549" collective="false" targetId="50e2-1873-a856-03e7" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="increment" value="1" field="ecfa-8486-4f6c-c249">
+                      <repeats>
+                        <repeat value="1" repeats="1" field="selections" scope="parent" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+              </costs>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="7fc1-ad3b-54c8-70b9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                  <comment>Guild Expedition</comment>
+                  <modifiers>
+                    <modifier type="set-primary" value="e94b-6a54-8779-cd60" field="category"/>
+                    <modifier type="remove" value="64bf-efb4-9978-26df" field="category"/>
+                    <modifier type="add" value="e94b-6a54-8779-cd60" field="category"/>
+                  </modifiers>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <comment>Royal Clan</comment>
+                  <modifiers>
+                    <modifier type="set-primary" value="43cc-fc3f-35a7-8d03" field="category"/>
+                    <modifier type="remove" value="64bf-efb4-9978-26df" field="category"/>
+                    <modifier type="add" value="43cc-fc3f-35a7-8d03" field="category"/>
+                  </modifiers>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="085a-3f04-80fe-9d96" shared="true" includeChildSelections="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="d4ff-5f6e-2a21-c392" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="7a5c-b3a3-73e5-efa6" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                  <comment>Overground defence</comment>
+                  <modifiers>
+                    <modifier type="set" value="Rangers" field="name"/>
+                    <modifier type="set" value="-1" field="e7f9-a80e-b9d3-f727"/>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="ff20-01b3-b099-d019" shared="true" includeChildSelections="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="1b87-7821-87be-e47a" shared="true" includeChildSelections="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="4f36-662f-50dd-55fe" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry type="unit" import="true" name="Mountain Rangers" hidden="false" id="7834-5814-fb43-da07">
+              <categoryLinks>
+                <categoryLink name="Experimental rules" hidden="false" id="71f8-08f8-1dec-9415" targetId="4fed-b911-e6e0-927b" primary="false"/>
+              </categoryLinks>
+              <rules>
+                <rule name="Mountain Rangers" id="1110-a006-b8e0-e43f" hidden="false" page="24" publicationId="0f95-0362-7369-d3a0">
+                  <description>Mountain Rangers guard the lofty passes and treacherous pathways of the Dwarf mountain realms. They are well-equipped to deal with the hazardous conditions in the mountains, their short-range blunderbusses a deadly deterrant to the creatures that dwell there. The Mountain Rangers also carry the fabled Dwarf mountain horn, which when blown emits a terrible booming noise, sending unruly beasts to flight.
+
+Mountain Rangers are a Rare choice and only one unit of them may be taken in a Dwarf army. They are also a special unit only available in this scenario and if the Dwarfs are victorious, in the final battle, The Battle for Bugman&apos;s Brewery.</description>
+                </rule>
+              </rules>
+              <selectionEntries>
+                <selectionEntry type="model" import="true" name="Ranger" hidden="false" id="8e86-37be-a477-415a">
+                  <constraints>
+                    <constraint type="max" value="20" field="selections" scope="parent" shared="true" id="e419-9fd3-6964-8e48" includeChildSelections="false"/>
+                    <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="0667-0131-3f6c-90f6" includeChildSelections="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Mountain Ranger" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="a615-876f-ed6d-c9e0" publicationId="0f95-0362-7369-d3a0" page="24">
+                      <characteristics>
+                        <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">3</characteristic>
+                        <characteristic name="WS" typeId="f95b-da01-0578-3bdc">4</characteristic>
+                        <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">3</characteristic>
+                        <characteristic name="S" typeId="b690-4bc0-bb73-267b">3</characteristic>
+                        <characteristic name="T" typeId="8712-f56f-5b22-a720">4</characteristic>
+                        <characteristic name="W" typeId="253a-9b00-4fde-8ac2">1</characteristic>
+                        <characteristic name="I" typeId="dfff-363e-f72a-5a59">2</characteristic>
+                        <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
+                        <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">9</characteristic>
+                        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">6+</characteristic>
+                        <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+                        <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="15"/>
+                    <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                    <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Command group" id="3949-9a33-6b44-4f90" hidden="false">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Musician" hidden="false" id="6287-c5f2-aa60-85ef">
+                      <costs>
+                        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="6"/>
+                        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8911-69b8-13b7-09c7" includeChildSelections="false"/>
+                      </constraints>
+                      <selectionEntries>
+                        <selectionEntry type="upgrade" import="true" name="Mountain Horn" hidden="false" id="d871-25a3-859d-0fb5">
+                          <costs>
+                            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="10"/>
+                            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+                          </costs>
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5594-4283-4e3d-51cb" includeChildSelections="false"/>
+                          </constraints>
+                          <profiles>
+                            <profile name="Mountain Horn" typeId="a89b-d5a3-7805-c44e" typeName="Magic Items" hidden="false" id="35b8-8701-5211-9a55" page="24" publicationId="0f95-0362-7369-d3a0">
+                              <characteristics>
+                                <characteristic name="Magic stuff" typeId="c7b5-c239-d6c1-0627">All cavalry units within 24&quot; must take an immediate Panic test</characteristic>
+                              </characteristics>
+                            </profile>
+                          </profiles>
+                          <rules>
+                            <rule name="Mountain Horn" id="a926-5941-ee7f-864f" hidden="false" page="24" publicationId="0f95-0362-7369-d3a0">
+                              <description>The mountain horn may be sounded once per battle, after which the bearer counts as a normal musician.
+All cavalry units within 24&quot; must take an immediate Panic test as they are dismayed by the eerie blast.</description>
+                            </rule>
+                          </rules>
+                        </selectionEntry>
+                      </selectionEntries>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Pathfinder (Champion)" hidden="false" id="1695-eca0-cfce-ec3f">
+                      <costs>
+                        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="12"/>
+                        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1217-42b1-a6b5-faea" includeChildSelections="false"/>
+                      </constraints>
+                      <profiles>
+                        <profile name="Pathfinder" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="fb3a-b4bd-c796-75a0" page="24" publicationId="0f95-0362-7369-d3a0">
+                          <characteristics>
+                            <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">3</characteristic>
+                            <characteristic name="WS" typeId="f95b-da01-0578-3bdc">4</characteristic>
+                            <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">3</characteristic>
+                            <characteristic name="S" typeId="b690-4bc0-bb73-267b">3</characteristic>
+                            <characteristic name="T" typeId="8712-f56f-5b22-a720">4</characteristic>
+                            <characteristic name="W" typeId="253a-9b00-4fde-8ac2">1</characteristic>
+                            <characteristic name="I" typeId="dfff-363e-f72a-5a59">2</characteristic>
+                            <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">2</characteristic>
+                            <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">9</characteristic>
+                            <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">6+</characteristic>
+                            <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+                            <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Missile weapons" id="6fe4-1ea1-a56a-b093" hidden="false">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Blunderbuss" hidden="false" id="2f0c-9c10-b094-aaa0">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c137-081b-d540-bf33" includeChildSelections="false"/>
+                      </constraints>
+                      <profiles>
+                        <profile name="Blunderbuss" typeId="7889-42d9-70a0-3ea9" typeName="Weapon" hidden="false" id="8065-e739-5e8c-8b19" page="24" publicationId="0f95-0362-7369-d3a0">
+                          <characteristics>
+                            <characteristic name="Range" typeId="3107-4d1e-9a51-6564">12&quot;</characteristic>
+                            <characteristic name="Strength" typeId="6fe4-1ebb-cb04-1378">3</characteristic>
+                            <characteristic name="Damage" typeId="6f2f-d612-52ef-1633"/>
+                            <characteristic name="Special Rules" typeId="a21a-cdc0-4b13-b236">Blunderbuss,
+Armour Piercing</characteristic>
+                            <characteristic name="Saves" typeId="8014-a8b2-15c3-da95">-1</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <rules>
+                        <rule name="Blunderbuss" id="acb2-422b-acb8-8df3" hidden="false" page="24" publicationId="0f95-0362-7369-d3a0">
+                          <description>The blunderbuss is a deadly short-range weapon, which is based on a similar principle to cannon grapeshot. The blunderbuss barrel is crammed with all manner of shot including, nails, bolts, old forks and other scrap, then discharged at close quarters to devastating effect.
+
+Maximum Range: 12&quot;; Strength: 3
+Rules: Armour piercing.</description>
+                        </rule>
+                        <rule name="Barrage" id="9aa0-f757-3d7f-de6d" hidden="false" page="24" publicationId="0f95-0362-7369-d3a0">
+                          <description>When shooting with a Dwarf blunderbuss roll an artillery dice and halve the result to determine how many shots are generated by the blast. Each shot hits automatically. Any roll of a misfire means the blunderbuss has jammed and can no longer fire for the rest of the battle, furthermore the firer takes a Strength 3 hit as if he had been hit by the blunderbuss himself.
+
+As soon as a blunderbuss has been fired it takes an entire turn to reload in which the firer can do nothing.</description>
+                        </rule>
+                      </rules>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Dwarf Handgun" hidden="false" id="469d-6516-4ba8-b318" collective="false">
+                      <infoLinks>
+                        <infoLink name="Dwarf Handgun" id="374b-a959-8f44-d987" hidden="false" targetId="5f85-c05a-0249-3c8e" type="rule"/>
+                        <infoLink name="Dwarf Hangun" id="28b7-118d-20ff-b5d8" hidden="false" targetId="0751-e242-b118-f1d1" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+                        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2aca-d992-b234-82c5" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c74e-3e9e-9f76-93db" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Armour" id="9091-c676-9069-dc00" hidden="false">
+                  <entryLinks>
+                    <entryLink import="true" name="Light Armour" hidden="false" id="5fee-6675-ac1a-087b" type="selectionEntry" targetId="055f-8e4e-f170-35d2">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="501b-9a60-532d-02aa" includeChildSelections="false"/>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4f30-5a9b-5523-a4d5" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Shield" hidden="false" id="8202-c423-20c9-43b2" type="selectionEntry" targetId="50e2-1873-a856-03e7">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5a25-f638-7d48-3c4f" includeChildSelections="false"/>
+                      </constraints>
+                      <modifiers>
+                        <modifier type="increment" value="1" field="ecfa-8486-4f6c-c249">
+                          <repeats>
+                            <repeat value="1" repeats="1" field="selections" scope="parent" childId="model" shared="true" roundUp="false"/>
+                          </repeats>
+                        </modifier>
+                      </modifiers>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink import="true" name="Hand Weapon" hidden="false" id="a422-efb8-8a07-d59c" type="selectionEntry" targetId="abdb-bbd0-41b2-5dff"/>
+              </entryLinks>
+              <infoLinks>
+                <infoLink name="Skirmishers" id="8abe-aa32-a708-bc4f" hidden="false" type="rule" targetId="1945-ac89-9cc4-3537"/>
+                <infoLink name="Scouts" id="08e9-5f6d-08b7-fb1b" hidden="false" type="rule" targetId="889c-dfc3-95a5-2d30"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Equipment" id="457d-7a85-606c-193e" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Light Armour" hidden="false" id="0089-1ea8-f525-8407" type="selectionEntry" targetId="055f-8e4e-f170-35d2">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8cb2-adb6-f9ec-d1db" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fe9f-1ac8-9371-5a10" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Crossbow" hidden="false" id="32c5-3248-64a1-ba36" type="selectionEntry" targetId="4c50-49fe-7ac2-4b3b">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cb4c-de2c-502d-353c" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="86d1-674e-14bd-1e11" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Shield" hidden="false" id="baba-fb17-cccc-104e" type="selectionEntry" targetId="50e2-1873-a856-03e7">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5b47-def8-79a4-0fd1" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6cd6-f922-913e-fc91" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Josef&apos;s Axe (Runic Weapon)" hidden="false" id="015e-9581-489c-2b83">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="27a0-f7d4-2b0b-388e" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4f8b-879e-3232-a82b" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Josef&apos;s Axe" typeId="7889-42d9-70a0-3ea9" typeName="Weapon" hidden="false" id="fd95-eeea-3812-d986">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3107-4d1e-9a51-6564">CC</characteristic>
+                    <characteristic name="Strength" typeId="6fe4-1ebb-cb04-1378"/>
+                    <characteristic name="Damage" typeId="6f2f-d612-52ef-1633"/>
+                    <characteristic name="Special Rules" typeId="a21a-cdc0-4b13-b236">Rune of Cleaving (+1S)
+Rune of Fury (+1 A)</characteristic>
+                    <characteristic name="Saves" typeId="8014-a8b2-15c3-da95"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Bugman&apos;s Tankard" hidden="false" id="0586-9701-b06c-2d83">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1170-9b5c-09d5-91a3" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8a16-d5d0-0d3b-5933" includeChildSelections="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Regeneration" id="a284-08c4-8532-8040" hidden="false" type="rule" targetId="59c1-8a35-5a25-ebe1"/>
+              </infoLinks>
+              <profiles>
+                <profile name="Bugman&apos;s Tankard" typeId="a89b-d5a3-7805-c44e" typeName="Magic Items" hidden="false" id="1e6c-6baa-5244-be09">
+                  <characteristics>
+                    <characteristic name="Magic stuff" typeId="c7b5-c239-d6c1-0627">The invigorating effects of Bugman&apos;s beer, in combination with the tankard&apos;s magical properties, mean that Josef can Regenerate.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="165"/>
+        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+      </costs>
+      <infoGroups>
+        <infoGroup name="Special rules" id="3da5-9f5d-d5b1-51c7" hidden="false">
+          <rules>
+            <rule name="Greenskin Grudge" id="997a-3775-3291-2f35" hidden="false" page="14" publicationId="2774-7faa-fcfc-e6a3">
+              <description>Josef and his Rangers have sworn to slay all of goblinkind for the destruction of their brewery. He and his unit re-roll missed attacks against greenskins in all rounds of combat, not just the first.</description>
+            </rule>
+            <rule name="Ranger Leader" id="d3d6-8bb1-e87b-2a9a" hidden="false" page="14" publicationId="2774-7faa-fcfc-e6a3">
+              <description>Josef Bugman leads the most famous Ranger regiment in the Dwarf realms. He must be accompanied by a unit of 5-20 Dwarf Rangers, who do not use up any of the army &apos;slots&apos; and are in addition to the normal 0-1 unit of Rangers the Dwarf army is allowed. He may not leave this unit or join another unit if they are slain.</description>
+            </rule>
+          </rules>
+        </infoGroup>
+      </infoGroups>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
     <rule name="Black Banner of Muktarhin" id="6f3a-c4b4-800e-cee4" hidden="false">
@@ -8714,6 +9227,10 @@ Once per Empire Magic phase, a Warrior Priest is allowed to use ONE prayer chose
     </rule>
     <rule name="Mercenaries (Gryphon Legion)" id="3216-c595-9a71-7204" hidden="false" page="8" publicationId="000c-fbf9-7091-f7db">
       <description>If an Empire army does not take a Kislev allies contingent, it may instead take a single unit of the Gryphon Legion as a Rare unit. In this case, the unit is not counted as an allies unit and is treated as part of the army just like any Empire unit.</description>
+    </rule>
+    <rule name="Dwarf Handgun" id="5f85-c05a-0249-3c8e" hidden="false">
+      <description>Dwarf Handgun
+The handguns of Dwarf Thunderers, called dragon belchers by the more superstitious Goblin tribes, feature many improvements over the crude devices used by other races. These features include rifled barrels, finer powder grain and more reliable firing mechanisms.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
@@ -9090,6 +9607,16 @@ Fires X3</characteristic>
         <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">+1</characteristic>
         <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Dwarf Hangun" typeId="7889-42d9-70a0-3ea9" typeName="Weapon" hidden="false" id="0751-e242-b118-f1d1">
+      <characteristics>
+        <characteristic name="Range" typeId="3107-4d1e-9a51-6564">24&quot;</characteristic>
+        <characteristic name="Strength" typeId="6fe4-1ebb-cb04-1378">4</characteristic>
+        <characteristic name="Damage" typeId="6f2f-d612-52ef-1633"/>
+        <characteristic name="Special Rules" typeId="a21a-cdc0-4b13-b236">Armour piercing (so -2 save)
+Dwarf Hanguns get a +1 to hit at short range</characteristic>
+        <characteristic name="Saves" typeId="8014-a8b2-15c3-da95">-2</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

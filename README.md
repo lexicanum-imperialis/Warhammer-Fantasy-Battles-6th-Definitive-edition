@@ -130,6 +130,7 @@ The main additions are:
 - [x] Toxote's Hellmounts (CJ#41, p.24-27)
 - [x] Manbiters (WD#310-UK, p.95 & )
 - [x] Giants of Albion (CR-04, p.67)
+- [x] Josef Bugman (CJ#44)
 
 ### Dark Elves
 - [x] Malekith, the Witch King
@@ -262,6 +263,7 @@ The main additions are:
 - [x] Brotherhood of Grimnir (Soc, p.69)
 - [x] Malakai Makaisson's Goblin-Hewer (Soc, p.66)
 - [x] High King Thorgrim Grudgebearer (AN-02, p.65)
+- [x] High King Thorgrim Grudgebearer (CJ#44)
 - [x] Ungrim Ironfist, Slayer King of Karak Kadrin (SoC, p.62)
 - [x] Garagrim Ironfist, War-mourner of Karak Kadrin (SoC, p.63)
 - [x] Runesmith Kadrin Redmane (WD#254-UK, p.31)
