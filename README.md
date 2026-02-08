@@ -275,6 +275,7 @@ The main additions are:
 - [x] Durzak Dragonback (WD#302-UK, p.54)
 - [x] Brewmaster (WD#302-UK, p.56)
 - [x] Fire Thrower (WD#302-UK, p.57)
+- [x] King Kazador of Karak Azul (CJ#44)
 
 ### Dwarfs (2006)
 - [x] Runelord Kragg the Grim (WD#315-UK, p.103)
