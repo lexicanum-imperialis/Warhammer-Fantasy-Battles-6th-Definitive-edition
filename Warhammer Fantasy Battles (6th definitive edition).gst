@@ -2053,7 +2053,7 @@
         <entryLink import="true" name="Biting Blade" hidden="false" id="4b91-07db-55ec-b019" collective="false" targetId="74fc-c90b-250e-6b87" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Talismans (Common)" id="7dcf-8a09-c9b8-9a88" hidden="false">
+    <selectionEntryGroup name="Magic Talismans (Common)" id="7dcf-8a09-c9b8-9a88" hidden="false">
       <entryLinks>
         <entryLink import="true" name="Talisman of Protection" hidden="false" id="bc5a-4f31-3425-4b2c" collective="false" targetId="c7cc-76a3-c413-ddb8" type="selectionEntry"/>
       </entryLinks>
