@@ -1767,8 +1767,8 @@
     </selectionEntry>
     <selectionEntry id="dde8-eb28-cacb-34a3" name="Extra Rare choice" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8043-dec3-821f-23ba" type="max"/>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a22b-5aa8-c139-ab08" type="min"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8043-dec3-821f-23ba" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a22b-5aa8-c139-ab08" type="min"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="26a7-14c9-7b34-6464" name="Rare" hidden="false" targetId="e94b-6a54-8779-cd60" primary="false"/>
@@ -2033,7 +2033,7 @@
     </selectionEntryGroup>
     <selectionEntryGroup id="c16c-a0f1-1ae2-8b57" name="Common Magic Items" publicationId="315e-e3c4-08af-fd51" page="154" hidden="false" collective="false" import="true">
       <entryLinks>
-        <entryLink import="true" name="Talismans (Common)" hidden="false" id="8358-2a3f-a36f-2eab" type="selectionEntryGroup" page="common" targetId="7dcf-8a09-c9b8-9a88"/>
+        <entryLink import="true" name="Magic Talismans (Common)" hidden="false" id="8358-2a3f-a36f-2eab" type="selectionEntryGroup" page="common" targetId="7dcf-8a09-c9b8-9a88"/>
         <entryLink import="true" name="Magic Armour (Common)" hidden="false" id="db61-4ae1-43c1-f799" type="selectionEntryGroup" page="common" targetId="ed11-243d-9671-7f1c"/>
         <entryLink import="true" name="Arcane Items (Common)" hidden="false" id="0405-8249-f303-b540" type="selectionEntryGroup" page="common" targetId="0d3f-389c-02b2-bb34"/>
         <entryLink import="true" name="Magic Banners (Common)" hidden="false" id="f7f3-7037-2d87-c0a4" type="selectionEntryGroup" page="common" targetId="4e89-9bb4-1aeb-e34f"/>
