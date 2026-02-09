@@ -62,23 +62,11 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
     <categoryEntry id="6bd92b14-cb77-4c58-a685-d99fe1e04799" name="Clan Skryre [SKAVEN]" hidden="false"/>
     <categoryEntry id="a853fa2a-9464-45b9-b056-22f8b0232435" name="Clan Moulder [SKAVEN]" hidden="false"/>
     <categoryEntry id="9c4b2070-2261-4652-bc26-1f7cdeb1f18f" name="Clan Pestilens [SKAVEN]" hidden="false"/>
-    <categoryEntry id="ae06fee2-bf02-42c6-9013-fd6313bb7acb" name="Tomb kings General [KHEMRI]" hidden="false">
-      <constraints>
-        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff629226-39e7-463e-907b-0b3ef8b31f60" type="min"/>
-      </constraints>
-    </categoryEntry>
-    <categoryEntry id="8abcb308-d791-43a2-8dd0-07490d3bb520" name="Hierophant [KHEMRI]" hidden="false">
-      <constraints>
-        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c9874187-a439-4ef9-bd3a-365fd14e33b5" type="min"/>
-      </constraints>
-    </categoryEntry>
+    <categoryEntry id="ae06fee2-bf02-42c6-9013-fd6313bb7acb" name="Tomb kings General [KHEMRI]" hidden="false"/>
+    <categoryEntry id="8abcb308-d791-43a2-8dd0-07490d3bb520" name="Hierophant [KHEMRI]" hidden="false"/>
     <categoryEntry id="572ebc5c-bbf3-4d62-b235-d0fef4a9f1d1" name="Highborn general [WOOD ELVES]" hidden="false"/>
     <categoryEntry id="af8eb63c-3854-434b-a646-f1598a669e46" name="Non_forest_spirit [WOOD ELVES]" hidden="true"/>
-    <categoryEntry id="3e48624b-850d-45f0-95ad-3105274e6503" name="Tomb kings General [LICHEMASTER]" hidden="false">
-      <constraints>
-        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bef901cd-9c14-46a7-91d7-c4461099fced" type="min"/>
-      </constraints>
-    </categoryEntry>
+    <categoryEntry id="3e48624b-850d-45f0-95ad-3105274e6503" name="Tomb kings General [LICHEMASTER]" hidden="false"/>
   </categoryEntries>
   <selectionEntries>
     <selectionEntry id="9ac2-f4c1-bcc3-3aee" name="Skeletons" hidden="false" collective="false" import="true" type="unit">
@@ -4418,7 +4406,7 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
         <categoryLink id="b33f-1220-6ad0-fc9a" name="Lord" hidden="false" targetId="d024-d25b-a9b4-73b6" primary="false"/>
         <categoryLink id="32b7-a963-5e10-d6c1" name="Characters" hidden="false" targetId="7a1c-d611-c2dc-def1" primary="false"/>
         <categoryLink name="Special Characters" hidden="false" id="86e1-fd59-75dc-8797" targetId="0644-bfcd-32c2-21dc" primary="true"/>
-        <categoryLink name="Necrach" hidden="false" id="0bd0-68cf-ce56-d83a" targetId="fc4b-a86d-5897-9e4c" primary="false"/>
+        <categoryLink name="Necrarch" hidden="false" id="0bd0-68cf-ce56-d83a" targetId="fc4b-a86d-5897-9e4c" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Mounts" id="27a2-9be0-e461-1e25" hidden="false">
@@ -18625,7 +18613,6 @@ They benefit from Talismanic Tattoos, Fury Of Kurnous and Forest Spirit Special 
       <constraints>
         <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e0b1278-7efd-4c96-a00a-cdea1c382a96" type="max"/>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c2858049-39d2-4b57-ab80-12b14b22a947" type="max"/>
-        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="56883cf8-03ae-4a65-9595-5ee1a1cc0da9" type="min"/>
       </constraints>
       <infoLinks>
         <infoLink id="392ae618-7de6-4b67-96f7-ec682c36696b" name="Pure of Heart" hidden="false" targetId="7a2468e0-71a0-4f82-9040-71877ce0473b" type="rule"/>
@@ -27036,8 +27023,15 @@ Regeneration</characteristic>
         <categoryLink name="Rare" hidden="false" id="45a8-840d-bfcb-4390" targetId="e94b-6a54-8779-cd60" primary="false"/>
       </categoryLinks>
       <constraints>
-        <constraint type="min" value="2000" field="ecfa-8486-4f6c-c249" scope="force" shared="true" id="8f3f-ffa8-387b-0bf9" includeChildSelections="true"/>
+        <constraint type="min" value="0" field="ecfa-8486-4f6c-c249" scope="force" shared="true" id="8f3f-ffa8-387b-0bf9" includeChildSelections="true"/>
       </constraints>
+      <modifiers>
+        <modifier type="set" value="2000" field="8f3f-ffa8-387b-0bf9">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="f37a-a93e-fa22-61a8" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </forceEntry>
   </forceEntries>
   <catalogueLinks>
