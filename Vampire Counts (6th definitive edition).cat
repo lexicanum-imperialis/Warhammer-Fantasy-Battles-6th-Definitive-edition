@@ -2532,9 +2532,14 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
           </modifierGroups>
           <modifiers>
             <modifier type="set" value="0-1 Vampire Lady" field="name">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="2102-34f1-c876-98c5" shared="true" includeChildSelections="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="2102-34f1-c876-98c5" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="4f07-e982-6665-70b7" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </infoLink>
@@ -2759,9 +2764,14 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
           </conditionGroups>
         </modifier>
         <modifier type="set" value="0-1 Vampire Lady" field="name">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="2102-34f1-c876-98c5" shared="true" includeChildSelections="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="2102-34f1-c876-98c5" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="4f07-e982-6665-70b7" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <modifierGroups>
@@ -2878,9 +2888,14 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
           </modifierGroups>
           <modifiers>
             <modifier type="set" value="Vampire Countess" field="name">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="2102-34f1-c876-98c5" shared="true" includeChildSelections="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="2102-34f1-c876-98c5" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="4f07-e982-6665-70b7" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </infoLink>
@@ -3070,9 +3085,14 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
           </conditionGroups>
         </modifier>
         <modifier type="set" value="Vampire Countess" field="name">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="2102-34f1-c876-98c5" shared="true" includeChildSelections="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="2102-34f1-c876-98c5" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="4f07-e982-6665-70b7" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <modifierGroups>
@@ -13190,7 +13210,7 @@ Undead cause fear.</description>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
       <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="07af-27f2-a2b3-7859" includeChildSelections="false"/>
+        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="07af-27f2-a2b3-7859" includeChildSelections="false"/>
         <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="c30e-56ff-1881-340f" includeChildSelections="false"/>
       </constraints>
       <modifierGroups>
@@ -13200,6 +13220,7 @@ Undead cause fear.</description>
           </conditions>
           <modifiers>
             <modifier type="set" value="false" field="hidden"/>
+            <modifier type="set" value="1" field="07af-27f2-a2b3-7859"/>
             <modifier type="set" value="1" field="c30e-56ff-1881-340f"/>
           </modifiers>
         </modifierGroup>
