@@ -255,6 +255,7 @@ The main additions are:
 - [x] Great Chaos Dragon (FW)
 - [x] Vardek Crom, Herald of Archaon (SoC)
 - [x] Be'lakor, the Dark Master (SoC)
+- [x] Chaos Mutations (CR-04, p.88-91)
 
 ### Dwarfs (2001)
 - [x] Thorek Ironbrow, Dwarf Runelord (DW1-AB, p.50-51)
