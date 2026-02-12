@@ -1134,7 +1134,7 @@
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2619-1e49-4d4c-f32c" name="Stormvermin" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="2619-1e49-4d4c-f32c" name="0-1 Stormvermin" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -1268,7 +1268,7 @@
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="9141-8a9b-5f0f-48f4" name="Rat Swarm Unit" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="9141-8a9b-5f0f-48f4" name="0-1 Rat Swarm Unit" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="4013-c030-dcdc-2bec" name="Core" hidden="false" targetId="64bf-efb4-9978-26df" primary="true"/>
       </categoryLinks>
@@ -1316,9 +1316,15 @@
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fe72-9a50-1ec2-4c8e" type="atLeast"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="1" field="75dc-8519-2fbd-3e77">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="adc6-cd5d-19cc-1bf3" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="593e-99eb-99a9-f4a9" type="max"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="75dc-8519-2fbd-3e77" includeChildSelections="false"/>
           </constraints>
           <infoLinks>
             <infoLink id="f6b5-008b-eb16-7ca8" name="Poisoned Attacks" hidden="false" targetId="2738-27d5-f4af-4722" type="rule"/>
@@ -1372,6 +1378,35 @@
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
       </costs>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="remove" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="add" value="43cc-fc3f-35a7-8d03" field="category"/>
+            <modifier type="set-primary" value="43cc-fc3f-35a7-8d03" field="category"/>
+          </modifiers>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="0903-619f-ec8b-1c7a" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="cc17-8b29-821a-0677" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifierGroup>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="2" field="e5fe-8c3b-5438-5112"/>
+            <modifier type="set" value="0-2 Rat Swarm Unit" field="name"/>
+          </modifiers>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="0903-619f-ec8b-1c7a" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifierGroup>
+      </modifierGroups>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="e5fe-8c3b-5438-5112" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry id="f2c6-e214-f683-c0d7" name="Giant Rats" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
@@ -4718,10 +4753,16 @@ Warp Lightning is a magic missile with a range of 24&quot; It can be cast at a c
             <constraint field="ecfa-8486-4f6c-c249" scope="parent" value="50" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="352a-b19a-1500-ce7a" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="5ff0-b251-326e-69ee" name="Clan Moulder Magical Weapons" hidden="false" collective="false" import="true" targetId="37fc-6827-558c-6ade" type="selectionEntryGroup"/>
-            <entryLink id="a999-6d64-1d1f-7c67" name="Magic Armour" hidden="false" collective="false" import="true" targetId="3aa2-a354-e221-9114" type="selectionEntryGroup"/>
-            <entryLink id="0c32-0b68-ffdb-7211" name="Talismans" hidden="false" collective="false" import="true" targetId="e52c-c54c-35bc-9c8e" type="selectionEntryGroup"/>
+            <entryLink id="5ff0-b251-326e-69ee" name="Magic Weapons (Common)" hidden="false" collective="false" import="true" targetId="8171-d883-19d8-6450" type="selectionEntryGroup"/>
+            <entryLink id="a999-6d64-1d1f-7c67" name="Magic Armour (Common)" hidden="false" collective="false" import="true" targetId="ed11-243d-9671-7f1c" type="selectionEntryGroup"/>
+            <entryLink id="0c32-0b68-ffdb-7211" name="Magic Talismans (Common)" hidden="false" collective="false" import="true" targetId="7dcf-8a09-c9b8-9a88" type="selectionEntryGroup"/>
             <entryLink id="d29a-4f30-a78a-7daa" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="dbce-3caf-2139-09ee" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Arcane Items (Common)" hidden="false" id="8102-4984-4091-de7d" type="selectionEntryGroup" targetId="0d3f-389c-02b2-bb34"/>
+            <entryLink import="true" name="Arcane Items" hidden="false" id="dae5-f1d7-89f2-c51a" type="selectionEntryGroup" targetId="5317-e91e-bd46-d862"/>
+            <entryLink id="5eb4-853a-a8a8-5e70" name="Magic Armour" hidden="false" collective="false" import="true" targetId="3aa2-a354-e221-9114" type="selectionEntryGroup"/>
+            <entryLink id="edac-5614-bd77-76b9" name="Talismans" hidden="false" collective="false" import="true" targetId="e52c-c54c-35bc-9c8e" type="selectionEntryGroup"/>
+            <entryLink id="cc51-2d33-3b0a-5677" name="Clan Moulder Magical Weapons" hidden="false" collective="false" import="true" targetId="37fc-6827-558c-6ade" type="selectionEntryGroup"/>
+            <entryLink id="c8de-5afe-46df-37c2" name="Magical Weapons" hidden="false" collective="false" import="true" targetId="e4b1-5857-9d82-17de" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
@@ -8672,7 +8713,7 @@ no armour saves.</description>
         <entryLink id="38a5-2773-e29f-d938" name="Cautious Shield" hidden="false" collective="false" import="true" targetId="bd51-738b-7ddb-c827" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="e52c-c54c-35bc-9c8e" name="Talismans" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="e52c-c54c-35bc-9c8e" name="Magic Talismans" hidden="false" collective="false" import="true">
       <constraints>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9446-266b-b418-ca89" type="max"/>
       </constraints>
