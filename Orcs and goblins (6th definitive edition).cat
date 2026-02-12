@@ -5357,25 +5357,6 @@
         </modifierGroup>
       </modifierGroups>
     </selectionEntry>
-    <selectionEntry id="5066-8da5-dc89-003b" name="Giant" hidden="false" collective="false" import="true" type="unit">
-      <infoLinks>
-        <infoLink id="5551-a55f-a547-a856" name="Ignore Greenskin Panic: " hidden="false" targetId="47bc-b420-0136-87a8" type="rule"/>
-        <infoLink id="9406-7d10-252e-7517" name="Large Target" hidden="false" targetId="4463-1b38-aa4d-e03c" type="rule"/>
-        <infoLink id="f244-06d9-3e72-b8ae" name="Terror" hidden="false" targetId="96f0-c50f-e59e-85fa" type="rule"/>
-        <infoLink id="4c5e-803e-5eb8-811c" name="Move (Giants)" hidden="false" targetId="cf9d-173b-a26c-5142" type="rule"/>
-        <infoLink id="5971-3de7-5561-88ac" name="Fall Over(Giants)" hidden="false" targetId="6ac3-2766-f5b4-3e55" type="rule"/>
-        <infoLink id="e7a5-d4b8-c3bf-666f" name="Giant Special Attacks" hidden="false" targetId="62d5-76e9-a504-a1cb" type="rule"/>
-        <infoLink id="8765-359c-4cfa-63c6" name="Giant" hidden="false" targetId="52b0-1b66-112b-941d" type="profile"/>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink id="67ee-b663-ba6f-f77c" name="Rare" hidden="false" targetId="e94b-6a54-8779-cd60" primary="true"/>
-      </categoryLinks>
-      <costs>
-        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="205"/>
-        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="d3b5-d1b1-c175-b8d1" name="Goblin Doom Diver Catapult" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
         <infoLink id="1064-4c5f-4ebf-cc98" name="Doom Diver Catapult" hidden="false" targetId="4c5c-8b37-197f-7918" type="rule"/>
@@ -6335,10 +6316,11 @@
     </selectionEntry>
     <selectionEntry id="8787-293e-965a-f8c2" name="Orc Big &apos;uns Boar Boyz" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
-        <modifier type="increment" field="4ebf-ca55-1ef8-9431" value="1">
+        <modifier type="increment" field="4ebf-ca55-1ef8-9431" value="0">
           <repeats>
             <repeat field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="375d-151a-4ba1-a4e6" repeats="1" roundUp="false"/>
           </repeats>
+          <comment>DISABLED BECAUSE I THINK THIS IS NOT NECESARY</comment>
         </modifier>
         <modifier type="set" field="hidden" value="true">
           <conditionGroups>
@@ -6356,7 +6338,9 @@
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="4ebf-ca55-1ef8-9431" type="max"/>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="4ebf-ca55-1ef8-9431" type="max">
+          <comment>IT MAY BE 1, NEED TO CHECK</comment>
+        </constraint>
       </constraints>
       <infoLinks>
         <infoLink id="9459-f37f-05ce-89ec" name="Orc Big Uns" hidden="false" targetId="25cf-7a47-8e60-e1d9" type="profile">
@@ -7710,7 +7694,6 @@
         <categoryLink id="cec1-52d7-e082-451b" name="Orc" hidden="false" targetId="d4a7-5999-8207-4efe" primary="false"/>
         <categoryLink name="Special Characters" hidden="false" id="75ca-08dd-6e8a-9adf" targetId="0644-bfcd-32c2-21dc" primary="true"/>
         <categoryLink name="Heroes" hidden="false" id="6d68-0dfd-5d95-5fb6" targetId="c16b-f319-2c62-2c12" primary="false"/>
-        <categoryLink name="Special" hidden="false" id="5660-f2a6-0f35-97d6" targetId="43cc-fc3f-35a7-8d03" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="unit" import="true" name="Bodyguards" hidden="false" id="b04a-76ec-acaf-6a3f" collective="false">
