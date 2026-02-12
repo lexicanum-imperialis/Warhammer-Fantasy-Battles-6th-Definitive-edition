@@ -165,6 +165,7 @@ The main additions are:
 - [x] Grabnatz & Gulag (WD#299-UK, p.16)
 - [x] Kap'n Skabend & Slygit (WD#300-UK, p.44-45)
 - [x] Git Guzzler, the Goblin King (WD#302, p,55)
+- [ ] Breeds of Goblins (Dust, Fire, etc)
 
 ### High Elves
 - [x] Imrik, Dragon Prince of Caledor (HE-AB, p.64)
@@ -225,6 +226,7 @@ The main additions are:
 - [x] Khazrak the One-Eye (BC-AB, p.68-69)
 - [x] Gorthor the Beastlord (BC-AB, p.70-71)
 - [x] Morghur, Master of Skulls (BC-AB, p.72-73)
+- [x] Chaos Mutations (CR-04, p.88-91)
 
 ### Hordes of Chaos
 - [x] Hellcannon (SoC, p.16-17)
