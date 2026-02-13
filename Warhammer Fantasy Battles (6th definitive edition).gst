@@ -29,6 +29,7 @@
         <characteristicType id="f1be-e66c-d5e1-673c" name="Sv"/>
         <characteristicType id="d4a9-0ed4-d041-e54b" name="Sv+"/>
         <characteristicType id="fa44-51dd-e69c-8d6a" name="US"/>
+        <characteristicType name="Base" id="2cad-bb76-8a5a-1607"/>
       </characteristicTypes>
     </profileType>
     <profileType id="7889-42d9-70a0-3ea9" name="Weapon">
@@ -2403,6 +2404,7 @@ Always Strikes Last</characteristic>
         <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
         <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
+        <characteristic name="Base" typeId="2cad-bb76-8a5a-1607"/>
       </characteristics>
     </profile>
     <profile id="6c75-5af6-cc63-e80a" name="Bolt-Thrower" publicationId="315e-e3c4-08af-fd51" page="124" hidden="false" typeId="7889-42d9-70a0-3ea9" typeName="Weapon">
