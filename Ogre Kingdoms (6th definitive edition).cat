@@ -1445,6 +1445,83 @@ Special Rules  2 x Multiple Shots, Thrown Weapon.</description>
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="6657-ec2b-77c9-2ccf" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="&apos;Kathleen&apos; Halftank" hidden="false" id="331a-3634-095a-574a" page="93" publicationId="dd0b-d116-f039-1182">
+      <costs>
+        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="150"/>
+        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+      </costs>
+      <profiles>
+        <profile name="Halftank" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="25df-e261-3dac-e60f" page="93" publicationId="dd0b-d116-f039-1182">
+          <characteristics>
+            <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">6</characteristic>
+            <characteristic name="WS" typeId="f95b-da01-0578-3bdc">1</characteristic>
+            <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">4</characteristic>
+            <characteristic name="S" typeId="b690-4bc0-bb73-267b">5</characteristic>
+            <characteristic name="T" typeId="8712-f56f-5b22-a720">6</characteristic>
+            <characteristic name="W" typeId="253a-9b00-4fde-8ac2">6</characteristic>
+            <characteristic name="I" typeId="dfff-363e-f72a-5a59">0</characteristic>
+            <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">0</characteristic>
+            <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">10</characteristic>
+            <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+            <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+            <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">6</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Impacts" typeId="7889-42d9-70a0-3ea9" typeName="Weapon" hidden="false" id="2c79-6c80-a5cd-da36" page="93" publicationId="dd0b-d116-f039-1182">
+          <characteristics>
+            <characteristic name="Range" typeId="3107-4d1e-9a51-6564">CC</characteristic>
+            <characteristic name="Strength" typeId="6fe4-1ebb-cb04-1378">S5</characteristic>
+            <characteristic name="Damage" typeId="6f2f-d612-52ef-1633"/>
+            <characteristic name="Special Rules" typeId="a21a-cdc0-4b13-b236">D3 (D6 on charge)
+Nearly Irresistible Force</characteristic>
+            <characteristic name="Saves" typeId="8014-a8b2-15c3-da95">NO</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Soup Cannon" typeId="7889-42d9-70a0-3ea9" typeName="Weapon" hidden="false" id="facf-6d65-38ad-7124" page="93" publicationId="dd0b-d116-f039-1182">
+          <characteristics>
+            <characteristic name="Range" typeId="3107-4d1e-9a51-6564">Breath template</characteristic>
+            <characteristic name="Strength" typeId="6fe4-1ebb-cb04-1378">5</characteristic>
+            <characteristic name="Damage" typeId="6f2f-d612-52ef-1633"/>
+            <characteristic name="Special Rules" typeId="a21a-cdc0-4b13-b236">The Soup Cannon</characteristic>
+            <characteristic name="Saves" typeId="8014-a8b2-15c3-da95">NO</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Large Target" id="66c6-2f4b-9363-6ce1" hidden="false" type="rule" targetId="4463-1b38-aa4d-e03c"/>
+        <infoLink name="Unbreakable" id="afd1-f1d5-f2b7-5bac" hidden="false" type="rule" targetId="8ae3-9724-980f-7308"/>
+        <infoLink name="Fear" id="79b6-7b6b-aa42-68a2" hidden="false" type="rule" targetId="1524-2372-4aa0-6881"/>
+      </infoLinks>
+      <rules>
+        <rule name="Nearly Irresistible Force" id="d0e3-bb7c-9abd-5faf" hidden="false" publicationId="dd0b-d116-f039-1182" page="93">
+          <description>Such is the weight of the Kathleen that it may never march. However, on the tum in which the Kathleen charges into combat it inflicts D6 impact hits in the same way as a chariot. In other turns, it inflicts D3 Strength 5 hits as the Halflings inside desperately grind the Halftank over whatever it has got stuck upon</description>
+        </rule>
+        <rule name="The Soup Cannon" id="bd2e-45e4-dbc5-e988" hidden="false" page="93" publicationId="dd0b-d116-f039-1182">
+          <description>The Soup Cannon has a firing arc of 45° from the front of the Halftank. Place the flame template touching the cannon and roll Artillery dice - move the template this many inches forwards. Models completely under the template suffer a single Strength 5 hit with no Armour Save allowed. Models partially covered are hit on a 4+.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink name="Rare" hidden="false" id="0d39-6f7d-aa1c-0e55" targetId="e94b-6a54-8779-cd60" primary="true"/>
+        <categoryLink name="Experimental rules" hidden="false" id="2b1c-4315-ae1b-9098" targetId="4fed-b911-e6e0-927b" primary="false"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="1" field="99ea-c7dd-2a0b-ff10">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="8b76-92c4-23f9-54b1" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="Please enable &quot;Allow experimental rules?&quot;" field="error">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="8b76-92c4-23f9-54b1" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set-primary" value="ee09-9a50-ad78-9c32" field="category"/>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="99ea-c7dd-2a0b-ff10"/>
+      </constraints>
+    </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
     <selectionEntry id="4cfa-372e-2156-3a16" name="Luck Gnoblar" hidden="false" collective="false" import="true" type="upgrade">
