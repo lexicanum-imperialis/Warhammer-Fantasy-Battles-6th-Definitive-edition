@@ -1679,7 +1679,7 @@ https://6th.whfb.app/flyers</description>
       <description>Scaly Skin gives 3+ saving throw</description>
     </rule>
     <rule id="6a56-df83-e623-2218" name="Fast Cavalry" hidden="false">
-      <description>See rulebook</description>
+      <description>See rulebook or https://6th.whfb.app/fast-cavalry</description>
     </rule>
     <rule id="889c-dfc3-95a5-2d30" name="Scouts" hidden="false">
       <description>These troops are skilled at sneaking forwards to scout out the enemy before the main force arrives. By making the best use of cover, advancing at night, or with other troops providing a diversion, they are able to deploy ahead of the rest of the army.
@@ -2404,7 +2404,7 @@ Always Strikes Last</characteristic>
         <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
         <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
-        <characteristic name="Base" typeId="2cad-bb76-8a5a-1607"/>
+        <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">40x40</characteristic>
       </characteristics>
     </profile>
     <profile id="6c75-5af6-cc63-e80a" name="Bolt-Thrower" publicationId="315e-e3c4-08af-fd51" page="124" hidden="false" typeId="7889-42d9-70a0-3ea9" typeName="Weapon">
