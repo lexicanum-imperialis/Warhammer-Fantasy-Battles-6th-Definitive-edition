@@ -67,104 +67,13 @@
     <categoryEntry id="4fed-b911-e6e0-927b" name="Experimental rules" hidden="false"/>
     <categoryEntry id="32f1-197f-d719-a393" name="Special list rules" hidden="false"/>
     <categoryEntry id="0644-bfcd-32c2-21dc" name="Special Characters" hidden="false"/>
-    <categoryEntry id="d024-d25b-a9b4-73b6" name="Lord" hidden="false">
-      <constraints>
-        <constraint type="max" value="0" field="selections" scope="force" shared="true" id="25bc-03aa-523f-f058" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-      </constraints>
-      <modifiers>
-        <modifier type="increment" value="1" field="25bc-03aa-523f-f058">
-          <repeats>
-            <repeat value="1000" repeats="1" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
-          </repeats>
-          <conditions>
-            <condition type="atLeast" value="2000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" value="-1" field="25bc-03aa-523f-f058">
-          <conditions>
-            <condition type="lessThan" value="0" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </conditions>
-        </modifier>
-        <modifier type="decrement" value="1" field="25bc-03aa-523f-f058"/>
-      </modifiers>
-    </categoryEntry>
+    <categoryEntry id="d024-d25b-a9b4-73b6" name="Lord" hidden="false"/>
     <categoryEntry id="c16b-f319-2c62-2c12" name="Heroes" hidden="false"/>
-    <categoryEntry id="64bf-efb4-9978-26df" name="Core" hidden="false">
-      <constraints>
-        <constraint type="min" value="1" field="selections" scope="force" shared="true" id="3b3e-fb79-8158-d599" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-      </constraints>
-      <modifiers>
-        <modifier type="increment" value="1" field="3b3e-fb79-8158-d599">
-          <repeats>
-            <repeat value="1000" repeats="1" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
-          </repeats>
-          <conditions>
-            <condition type="atLeast" value="2000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-    </categoryEntry>
-    <categoryEntry id="43cc-fc3f-35a7-8d03" name="Special" hidden="false">
-      <constraints>
-        <constraint type="max" value="2" field="selections" scope="force" shared="true" id="5c22-e72c-6e57-5b45" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
-      </constraints>
-      <modifiers>
-        <modifier type="increment" value="1" field="5c22-e72c-6e57-5b45">
-          <repeats>
-            <repeat value="1000" repeats="1" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
-          </repeats>
-          <conditions>
-            <condition type="atLeast" value="2000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" value="-1" field="5c22-e72c-6e57-5b45">
-          <conditions>
-            <condition type="lessThan" value="0" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-    </categoryEntry>
-    <categoryEntry id="e94b-6a54-8779-cd60" name="Rare" hidden="false">
-      <constraints>
-        <constraint type="max" value="0" field="selections" scope="force" shared="true" id="f13a-0c3f-2d8a-4dd0" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-      </constraints>
-      <modifiers>
-        <modifier type="increment" value="1" field="f13a-0c3f-2d8a-4dd0">
-          <repeats>
-            <repeat value="1000" repeats="1" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
-          </repeats>
-          <conditions>
-            <condition type="atLeast" value="2000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" value="-1" field="f13a-0c3f-2d8a-4dd0">
-          <conditions>
-            <condition type="lessThan" value="0" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-    </categoryEntry>
+    <categoryEntry id="64bf-efb4-9978-26df" name="Core" hidden="false"/>
+    <categoryEntry id="43cc-fc3f-35a7-8d03" name="Special" hidden="false"/>
+    <categoryEntry id="e94b-6a54-8779-cd60" name="Rare" hidden="false"/>
     <categoryEntry id="b0b1-5266-2bcd-f592" name="Detachment" hidden="false"/>
-    <categoryEntry id="7a1c-d611-c2dc-def1" name="Characters" hidden="false">
-      <modifiers>
-        <modifier type="set" value="-1" field="75ab-5a0c-edbf-33d2">
-          <conditions>
-            <condition type="lessThan" value="0" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </conditions>
-        </modifier>
-        <modifier type="increment" value="1" field="75ab-5a0c-edbf-33d2">
-          <repeats>
-            <repeat value="1000" repeats="1" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
-          </repeats>
-          <conditions>
-            <condition type="atLeast" value="2000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint type="max" value="2" field="selections" scope="force" shared="true" id="75ab-5a0c-edbf-33d2" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-      </constraints>
-    </categoryEntry>
+    <categoryEntry id="7a1c-d611-c2dc-def1" name="Characters" hidden="false"/>
     <categoryEntry id="a37e-7207-de6d-acb0" name="General" hidden="false">
       <constraints>
         <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="d818-c60d-b1f8-8aaa" type="max"/>
@@ -172,7 +81,12 @@
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="54c9-b217-e67c-bd60" type="max"/>
       </constraints>
     </categoryEntry>
-    <categoryEntry name="Battle standard bearer" id="2ef7-3efe-a448-423f" hidden="false"/>
+    <categoryEntry name="Battle standard bearer" id="2ef7-3efe-a448-423f" hidden="false">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6935-5f06-39d4-5f45" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="2a1d-03a1-b48c-64ad" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="b893-4403-5590-827a" name="." hidden="true"/>
