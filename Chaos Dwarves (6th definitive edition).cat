@@ -98,20 +98,6 @@
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Heavy Armour" hidden="false" id="f73d-a07f-f4a2-34de" collective="false">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1df6-ce01-adbc-e761" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4dcb-0465-1cab-0e7f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-          <infoLinks>
-            <infoLink name="Heavy Armour" id="b2ff-e0ae-1a4d-0927" hidden="false" targetId="3dd5-f228-98a7-453a" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
-            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-          </costs>
-        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup name="Command Group" id="d9d7-43d8-d12a-484f" hidden="false" collective="false" import="true">
@@ -173,64 +159,94 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Weapons" id="1c3c-f79a-fcb4-d937" hidden="false" collective="false" import="true" defaultSelectionEntryId="512c-634c-15ad-36c2">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a08a-c72c-17af-86f5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="037d-bde3-3cb4-d139" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-          <infoLinks>
-            <infoLink name="Hand Weapon" id="6cd5-064a-5ce9-253c" hidden="false" targetId="5556-38ea-b278-4a8f" type="profile"/>
-          </infoLinks>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Great Axe" hidden="false" id="1a24-3693-f258-6483" collective="false">
-              <modifiers>
-                <modifier type="increment" value="2" field="ecfa-8486-4f6c-c249">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="parent" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
+        <selectionEntryGroup name="Weapons and Armour" id="a8a2-c780-482e-ac57" hidden="false">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Weapons" id="1c3c-f79a-fcb4-d937" hidden="false" collective="false" import="true" defaultSelectionEntryId="512c-634c-15ad-36c2">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a08a-c72c-17af-86f5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="037d-bde3-3cb4-d139" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
               <infoLinks>
-                <infoLink name="Great Weapon" id="57c5-3736-1ce0-80d9" hidden="false" targetId="97d4-ed3b-5f76-5a23" type="profile"/>
-                <infoLink name="Shield" id="2853-75da-0f5c-84fd" hidden="false" targetId="3d79-7984-991a-8b67" type="profile"/>
+                <infoLink name="Hand Weapon" id="6cd5-064a-5ce9-253c" hidden="false" targetId="5556-38ea-b278-4a8f" type="profile"/>
               </infoLinks>
-              <costs>
-                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
-                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Blunderbuss" hidden="false" id="e510-d517-2e25-c185" publicationId="756d-4758-8a13-1d8a" collective="false">
-              <comment>Swap shield for Blunderbuss</comment>
-              <modifiers>
-                <modifier type="increment" value="3" field="ecfa-8486-4f6c-c249">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="parent" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <profiles>
-                <profile name="Blunderbuss (replaces shield)" typeId="7889-42d9-70a0-3ea9" typeName="Weapon" hidden="false" id="9e07-692b-97ea-08d2">
-                  <characteristics>
-                    <characteristic name="Range" typeId="3107-4d1e-9a51-6564"/>
-                    <characteristic name="Strength" typeId="6fe4-1ebb-cb04-1378"/>
-                    <characteristic name="Damage" typeId="6f2f-d612-52ef-1633"/>
-                    <characteristic name="Special Rules" typeId="a21a-cdc0-4b13-b236">Blunderbuss: The Chaos Dwarfs can use blunderbusses. A unit with blunderbusses may move and fire in the same turn. When they shoot they project a ‘fire zone’ the width of the unit and 12&quot; straight forward. Any model within this is a potential target and is hit on a 4+. The only exceptions are models behind extremely substantial cover such as a hill or a building. Models behind walls or in woods are hit as normal. Hits are resolved at S3 plus 1 per extra rank up to S5. Ranks count if at least 4 wide.
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Great Axe" hidden="false" id="1a24-3693-f258-6483" collective="false" sortIndex="2">
+                  <modifiers>
+                    <modifier type="increment" value="2" field="ecfa-8486-4f6c-c249">
+                      <repeats>
+                        <repeat value="1" repeats="1" field="selections" scope="parent" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                  <infoLinks>
+                    <infoLink name="Great Weapon" id="57c5-3736-1ce0-80d9" hidden="false" targetId="97d4-ed3b-5f76-5a23" type="profile"/>
+                    <infoLink name="Shield" id="2853-75da-0f5c-84fd" hidden="false" targetId="3d79-7984-991a-8b67" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+                    <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                    <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f1fc-861e-85db-2f57" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Blunderbuss" hidden="false" id="e510-d517-2e25-c185" publicationId="756d-4758-8a13-1d8a" collective="false" sortIndex="3">
+                  <comment>Swap shield for Blunderbuss</comment>
+                  <modifiers>
+                    <modifier type="increment" value="3" field="ecfa-8486-4f6c-c249">
+                      <repeats>
+                        <repeat value="1" repeats="1" field="selections" scope="parent" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                  <profiles>
+                    <profile name="Blunderbuss (replaces shield)" typeId="7889-42d9-70a0-3ea9" typeName="Weapon" hidden="false" id="9e07-692b-97ea-08d2">
+                      <characteristics>
+                        <characteristic name="Range" typeId="3107-4d1e-9a51-6564"/>
+                        <characteristic name="Strength" typeId="6fe4-1ebb-cb04-1378"/>
+                        <characteristic name="Damage" typeId="6f2f-d612-52ef-1633"/>
+                        <characteristic name="Special Rules" typeId="a21a-cdc0-4b13-b236">Blunderbuss: The Chaos Dwarfs can use blunderbusses. A unit with blunderbusses may move and fire in the same turn. When they shoot they project a ‘fire zone’ the width of the unit and 12&quot; straight forward. Any model within this is a potential target and is hit on a 4+. The only exceptions are models behind extremely substantial cover such as a hill or a building. Models behind walls or in woods are hit as normal. Hits are resolved at S3 plus 1 per extra rank up to S5. Ranks count if at least 4 wide.
 
 A single character in the front rank will not effect the unit’s fire</characteristic>
-                    <characteristic name="Saves" typeId="8014-a8b2-15c3-da95"/>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
-                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Hand weapon and shield" hidden="false" id="512c-634c-15ad-36c2" collective="false">
+                        <characteristic name="Saves" typeId="8014-a8b2-15c3-da95"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+                    <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                    <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d5d5-3c97-0fee-3695" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Hand weapon and shield" hidden="false" id="512c-634c-15ad-36c2" collective="false" sortIndex="1">
+                  <infoLinks>
+                    <infoLink name="Shield" id="f87d-9f1b-89e3-1784" hidden="false" targetId="3d79-7984-991a-8b67" type="profile"/>
+                    <infoLink name="Hand Weapon" id="8ec2-d958-4b9a-0e82" hidden="false" type="profile" targetId="5556-38ea-b278-4a8f"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+                    <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                    <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c448-3a92-fb3d-10d4" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Heavy Armour" hidden="false" id="f73d-a07f-f4a2-34de" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1df6-ce01-adbc-e761" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4dcb-0465-1cab-0e7f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
               <infoLinks>
-                <infoLink name="Shield" id="f87d-9f1b-89e3-1784" hidden="false" targetId="3d79-7984-991a-8b67" type="profile"/>
+                <infoLink name="Heavy Armour" id="b2ff-e0ae-1a4d-0927" hidden="false" targetId="3dd5-f228-98a7-453a" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
@@ -567,31 +583,8 @@ A single character in the front rank will not effect the unit’s fire</characte
         <categoryLink name="Characters" hidden="false" id="0977-3e2d-28ba-2c63" targetId="7a1c-d611-c2dc-def1" primary="false"/>
         <categoryLink name="Heroes" hidden="false" id="a2e9-a9b2-261b-86dc" targetId="c16b-f319-2c62-2c12" primary="true"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Shield" hidden="false" id="c567-74fd-beb3-693c" collective="false">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9729-012c-e271-cc15" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-          <infoLinks>
-            <infoLink name="Shield" id="59a3-83a0-21b5-083d" hidden="false" targetId="3d79-7984-991a-8b67" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="2"/>
-            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-          </costs>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e5d6-91f5-b417-b506" shared="true"/>
-              </conditions>
-              <comment>BSB</comment>
-            </modifier>
-          </modifiers>
-        </selectionEntry>
-      </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Weapons" id="f125-cfba-19ea-b80d" hidden="false" collective="false" import="true">
+        <selectionEntryGroup name="Weapons" id="f125-cfba-19ea-b80d" hidden="false" collective="false" import="true" sortIndex="2">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Additional hand weapon" hidden="false" id="c1d3-563c-9eb2-321f" collective="false">
               <constraints>
@@ -645,9 +638,10 @@ A single character in the front rank will not effect the unit’s fire</characte
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Armour" id="3f0b-08aa-e562-0db3" hidden="false" collective="false" import="true">
+        <selectionEntryGroup name="Armour" id="3f0b-08aa-e562-0db3" hidden="false" collective="false" import="true" sortIndex="3">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f30f-946b-b126-09e3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1495-1f79-d99a-8767" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Light Armour" hidden="false" id="4807-55c5-1dcf-c729" collective="false">
@@ -677,8 +671,22 @@ A single character in the front rank will not effect the unit’s fire</characte
               </costs>
             </selectionEntry>
           </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Shield" hidden="false" id="7906-3626-c70a-59e8" type="selectionEntry" targetId="50e2-1873-a856-03e7">
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="2"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <modifiers>
+            <modifier type="increment" value="1" field="1495-1f79-d99a-8767">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="50e2-1873-a856-03e7" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Role" id="85c1-2084-52de-71d4" hidden="false" collective="false" import="true">
+        <selectionEntryGroup name="Role" id="85c1-2084-52de-71d4" hidden="false" collective="false" import="true" sortIndex="1">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1dae-baed-4626-ba54" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
@@ -718,7 +726,7 @@ A single character in the front rank will not effect the unit’s fire</characte
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Magic Items" id="69b0-8142-f996-b8e3" hidden="false" collective="false" import="true" collapsible="true">
+        <selectionEntryGroup name="Magic Items" id="69b0-8142-f996-b8e3" hidden="false" collective="false" import="true" collapsible="true" sortIndex="4">
           <constraints>
             <constraint type="max" value="100" field="ecfa-8486-4f6c-c249" scope="parent" shared="true" id="ba5b-c298-97d5-20b4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
@@ -729,6 +737,7 @@ A single character in the front rank will not effect the unit’s fire</characte
             <entryLink import="true" name="Magic Armour (Common)" hidden="false" id="6831-4e29-1889-76b9" collective="false" targetId="ed11-243d-9671-7f1c" type="selectionEntryGroup"/>
             <entryLink import="true" name="Magic Talismans (Common)" hidden="false" id="be32-cf1c-15af-f905" type="selectionEntryGroup" targetId="7dcf-8a09-c9b8-9a88"/>
             <entryLink import="true" name="Magic Weapons (Common)" hidden="false" id="4fac-7332-9d42-9c46" type="selectionEntryGroup" targetId="8171-d883-19d8-6450"/>
+            <entryLink import="true" name="Enchanted Items" hidden="false" id="b3cc-acf2-eb5a-9684" collective="false" targetId="7568-1332-fc3f-9164" type="selectionEntryGroup"/>
           </entryLinks>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
@@ -756,31 +765,8 @@ A single character in the front rank will not effect the unit’s fire</characte
         <categoryLink name="Characters" hidden="false" id="b6f3-01a3-7c45-180a" targetId="7a1c-d611-c2dc-def1" primary="false"/>
         <categoryLink name="Heroes" hidden="false" id="f495-3093-b9db-1054" targetId="c16b-f319-2c62-2c12" primary="true"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Shield" hidden="false" id="1dd1-a460-5a5a-4213" collective="false">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="53ee-7222-a9f0-3a93" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-          <infoLinks>
-            <infoLink name="Shield" id="daf5-6228-3c5f-ce9d" hidden="false" targetId="3d79-7984-991a-8b67" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="2"/>
-            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-          </costs>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="unit" childId="2ef7-3efe-a448-423f" shared="true" includeChildSelections="true"/>
-              </conditions>
-              <comment>BSB</comment>
-            </modifier>
-          </modifiers>
-        </selectionEntry>
-      </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Weapons" id="dd7f-b52a-3788-28a3" hidden="false" collective="false" import="true">
+        <selectionEntryGroup name="Weapons" id="dd7f-b52a-3788-28a3" hidden="false" collective="false" import="true" sortIndex="2">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Additional hand weapon" hidden="false" id="1afa-d409-2fc1-2667" collective="false">
               <constraints>
@@ -834,7 +820,7 @@ A single character in the front rank will not effect the unit’s fire</characte
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Armour" id="4aae-72cb-f103-e724" hidden="false" collective="false" import="true">
+        <selectionEntryGroup name="Armour" id="4aae-72cb-f103-e724" hidden="false" collective="false" import="true" sortIndex="3">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="84d2-4308-487d-7c35" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
@@ -866,8 +852,22 @@ A single character in the front rank will not effect the unit’s fire</characte
               </costs>
             </selectionEntry>
           </selectionEntries>
+          <modifiers>
+            <modifier type="increment" value="1" field="84d2-4308-487d-7c35">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="50e2-1873-a856-03e7" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <entryLinks>
+            <entryLink import="true" name="Shield" hidden="false" id="e967-88d9-2386-d6fd" type="selectionEntry" targetId="50e2-1873-a856-03e7">
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="2"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Magic Items" id="db26-4849-af22-beeb" hidden="false" collective="false" import="true" collapsible="true">
+        <selectionEntryGroup name="Magic Items" id="db26-4849-af22-beeb" hidden="false" collective="false" import="true" collapsible="true" sortIndex="4">
           <constraints>
             <constraint type="max" value="100" field="ecfa-8486-4f6c-c249" scope="parent" shared="true" id="8e5e-350a-e2fb-c1ab" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
@@ -889,7 +889,7 @@ A single character in the front rank will not effect the unit’s fire</characte
             </modifier>
           </modifiers>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Role" id="96fa-8b1b-b406-d72d" hidden="false" collective="false" import="true">
+        <selectionEntryGroup name="Role" id="96fa-8b1b-b406-d72d" hidden="false" collective="false" import="true" sortIndex="1">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3e1a-fbc6-e79f-c54a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
@@ -914,20 +914,6 @@ A single character in the front rank will not effect the unit’s fire</characte
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks>
-        <entryLink import="true" name="Battle Standard Bearer" hidden="false" id="51bc-42dd-c9a2-4289" collective="false" targetId="e9ad-f1ce-aebf-6d23" type="selectionEntry">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="7e21-5ab3-838f-1040" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-          <entryLinks>
-            <entryLink import="true" name="Magical Standard" hidden="false" id="fed1-9eb1-e150-d3b7" collective="false" targetId="e5d6-91f5-b417-b506" type="selectionEntryGroup">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ddc1-53f2-e29f-534d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
-        </entryLink>
-      </entryLinks>
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="60"/>
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
@@ -945,7 +931,7 @@ A single character in the front rank will not effect the unit’s fire</characte
         <categoryLink name="Heroes" hidden="false" id="241d-f315-ff39-3f6a" targetId="c16b-f319-2c62-2c12" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Magic Items" id="91a7-c4da-cd7b-365f" hidden="false" collective="false" import="true" collapsible="true">
+        <selectionEntryGroup name="Magic Items" id="91a7-c4da-cd7b-365f" hidden="false" collective="false" import="true" collapsible="true" sortIndex="3">
           <constraints>
             <constraint type="max" value="50" field="ecfa-8486-4f6c-c249" scope="parent" shared="true" id="91f3-1527-3c97-0d5c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
@@ -960,7 +946,7 @@ A single character in the front rank will not effect the unit’s fire</characte
             <entryLink import="true" name="Magic Weapons (Common)" hidden="false" id="2675-e202-4b69-7ec5" type="selectionEntryGroup" targetId="8171-d883-19d8-6450"/>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Magic Level" id="306f-b251-57d8-d18b" hidden="false" collective="false" import="true" defaultSelectionEntryId="eb20-c898-6345-c1b3">
+        <selectionEntryGroup name="Magic Level" id="306f-b251-57d8-d18b" hidden="false" collective="false" import="true" defaultSelectionEntryId="eb20-c898-6345-c1b3" sortIndex="2">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="176c-71c0-8781-d96e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7123-e9d6-edb5-1185" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -970,20 +956,20 @@ A single character in the front rank will not effect the unit’s fire</characte
             <entryLink import="true" name="Magic Level 1" hidden="false" id="6f2c-283a-cb52-a51a" type="selectionEntry" targetId="158f-d753-59e2-9ad2"/>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Spells Lore" id="a554-bd57-82c4-da9d" hidden="false">
+        <selectionEntryGroup name="Spells Lore" id="a554-bd57-82c4-da9d" hidden="false" collapsible="true" sortIndex="4">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="691e-389c-085d-61c8" includeChildSelections="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Lore of Death" hidden="false" id="98a8-39fc-d1cd-4a63" type="selectionEntryGroup" targetId="0a76-fdab-0afb-3612"/>
-            <entryLink import="true" name="Lore of Fire" hidden="false" id="4e80-fb2e-8abd-d357" type="selectionEntryGroup" targetId="ffc0-ed2b-71f0-b61c"/>
-            <entryLink import="true" name="Lore of Metal" hidden="false" id="f7cd-05e1-db42-4c6f" type="selectionEntryGroup" targetId="f679-dff7-370a-6050"/>
-            <entryLink import="true" name="Lore of Shadow" hidden="false" id="fb0b-05ac-babb-4c21" type="selectionEntryGroup" targetId="b0de-c735-e115-5c82"/>
+            <entryLink import="true" name="Lore of Death" hidden="false" id="98a8-39fc-d1cd-4a63" type="selectionEntryGroup" targetId="0a76-fdab-0afb-3612" collapsible="true"/>
+            <entryLink import="true" name="Lore of Fire" hidden="false" id="4e80-fb2e-8abd-d357" type="selectionEntryGroup" targetId="ffc0-ed2b-71f0-b61c" collapsible="true"/>
+            <entryLink import="true" name="Lore of Metal" hidden="false" id="f7cd-05e1-db42-4c6f" type="selectionEntryGroup" targetId="f679-dff7-370a-6050" collapsible="true"/>
+            <entryLink import="true" name="Lore of Shadow" hidden="false" id="fb0b-05ac-babb-4c21" type="selectionEntryGroup" targetId="b0de-c735-e115-5c82" collapsible="true"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink import="true" name="General" hidden="false" id="0126-23c8-0406-8a99" collective="false" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry">
+        <entryLink import="true" name="General" hidden="false" id="0126-23c8-0406-8a99" collective="false" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry" sortIndex="1">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="force" shared="true" id="8ee7-5ea4-8f51-d057" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
@@ -1001,20 +987,7 @@ A single character in the front rank will not effect the unit’s fire</characte
         <categoryLink name="Heroes" hidden="false" id="ea8a-5fe6-f2e0-b2db" targetId="c16b-f319-2c62-2c12" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Shield" hidden="false" id="423f-8931-ecb1-1329" collective="false">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c964-a3c2-3c75-23e7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-          <infoLinks>
-            <infoLink name="Shield" id="8509-86d1-e427-7540" hidden="false" targetId="3d79-7984-991a-8b67" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="2"/>
-            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Wolf" hidden="false" id="4104-1080-9488-fc99" collective="false">
+        <selectionEntry type="upgrade" import="true" name="Wolf" hidden="false" id="4104-1080-9488-fc99" collective="false" sortIndex="5">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="97a5-d436-85c0-8acc" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
@@ -1029,7 +1002,7 @@ A single character in the front rank will not effect the unit’s fire</characte
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Weapons" id="f3cf-f0c8-08e9-ffe9" hidden="false" collective="false" import="true">
+        <selectionEntryGroup name="Weapons" id="f3cf-f0c8-08e9-ffe9" hidden="false" collective="false" import="true" sortIndex="2">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Additional hand weapon" hidden="false" id="4f8b-8530-83fa-cee4" collective="false">
               <constraints>
@@ -1059,9 +1032,9 @@ A single character in the front rank will not effect the unit’s fire</characte
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Armour" id="4cb0-43db-e587-c4fe" hidden="false" collective="false" import="true">
+        <selectionEntryGroup name="Armour" id="4cb0-43db-e587-c4fe" hidden="false" collective="false" import="true" sortIndex="3">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8fd1-1b1e-a461-5e12" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="79f1-0f33-ef26-27bf" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Light Armour" hidden="false" id="123c-2434-b7d7-2a32" collective="false">
@@ -1091,8 +1064,22 @@ A single character in the front rank will not effect the unit’s fire</characte
               </costs>
             </selectionEntry>
           </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Shield" hidden="false" id="ad08-f302-6d42-e454" type="selectionEntry" targetId="50e2-1873-a856-03e7">
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="2"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <modifiers>
+            <modifier type="increment" value="1" field="79f1-0f33-ef26-27bf">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="50e2-1873-a856-03e7" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Magic Items" id="ee74-a9b4-16a3-4d2d" hidden="false" collective="false" import="true">
+        <selectionEntryGroup name="Magic Items" id="ee74-a9b4-16a3-4d2d" hidden="false" collective="false" import="true" sortIndex="4">
           <constraints>
             <constraint type="max" value="100" field="ecfa-8486-4f6c-c249" scope="parent" shared="true" id="bd45-22a6-0827-cc77" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
@@ -1108,7 +1095,7 @@ A single character in the front rank will not effect the unit’s fire</characte
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink import="true" name="General" hidden="false" id="2ac0-82fa-bae1-49d6" collective="false" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry"/>
+        <entryLink import="true" name="General" hidden="false" id="2ac0-82fa-bae1-49d6" collective="false" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry" sortIndex="1"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="40"/>
@@ -1132,23 +1119,8 @@ A single character in the front rank will not effect the unit’s fire</characte
         <categoryLink name="Characters" hidden="false" id="36c8-017d-f2c7-6b04" targetId="7a1c-d611-c2dc-def1" primary="false"/>
         <categoryLink name="Lord" hidden="false" id="7f5d-fe1f-447f-16d7" targetId="d024-d25b-a9b4-73b6" primary="true"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Shield" hidden="false" id="6ea5-b7a0-3f0d-2625" collective="false">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0815-c33f-7795-0958" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-          <infoLinks>
-            <infoLink name="Shield" id="52c7-3e3f-b6f4-9e17" hidden="false" targetId="3d79-7984-991a-8b67" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="3"/>
-            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Weapons" id="15b6-8537-b4fb-11be" hidden="false" collective="false" import="true">
+        <selectionEntryGroup name="Weapons" id="15b6-8537-b4fb-11be" hidden="false" collective="false" import="true" sortIndex="2">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Additional hand weapon" hidden="false" id="c1a2-3687-cd75-474c" collective="false">
               <constraints>
@@ -1178,9 +1150,9 @@ A single character in the front rank will not effect the unit’s fire</characte
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Armour" id="ed64-48cb-ebc1-7709" hidden="false" collective="false" import="true">
+        <selectionEntryGroup name="Armour" id="ed64-48cb-ebc1-7709" hidden="false" collective="false" import="true" sortIndex="3">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="039d-3e48-4152-bedb" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="515f-41f6-e5e6-31a8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Light Armour" hidden="false" id="8d7e-70cf-235b-9fbd" collective="false">
@@ -1210,8 +1182,22 @@ A single character in the front rank will not effect the unit’s fire</characte
               </costs>
             </selectionEntry>
           </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Shield" hidden="false" id="6e03-1a3a-02b6-d947" type="selectionEntry" targetId="50e2-1873-a856-03e7">
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="3"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <modifiers>
+            <modifier type="increment" value="1" field="515f-41f6-e5e6-31a8">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="50e2-1873-a856-03e7" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Magic Items" id="743f-2fed-7700-7fff" hidden="false" collective="false" import="true" collapsible="true">
+        <selectionEntryGroup name="Magic Items" id="743f-2fed-7700-7fff" hidden="false" collective="false" import="true" collapsible="true" sortIndex="4">
           <constraints>
             <constraint type="max" value="100" field="ecfa-8486-4f6c-c249" scope="parent" shared="true" id="c59e-37a0-0294-4d86" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
@@ -1227,7 +1213,7 @@ A single character in the front rank will not effect the unit’s fire</characte
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink import="true" name="General" hidden="false" id="7034-4830-7f70-3ed9" collective="false" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry">
+        <entryLink import="true" name="General" hidden="false" id="7034-4830-7f70-3ed9" collective="false" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry" sortIndex="1">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="force" shared="true" id="6a8a-ea4f-85b8-519d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
@@ -1253,20 +1239,7 @@ A single character in the front rank will not effect the unit’s fire</characte
         <categoryLink name="Lord" hidden="false" id="5bfc-a6f5-fef8-000a" targetId="d024-d25b-a9b4-73b6" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Shield" hidden="false" id="99b4-fea8-67e1-f751" collective="false">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3229-42ee-0a74-8764" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-          <infoLinks>
-            <infoLink name="Shield" id="66a4-93ca-9472-c380" hidden="false" targetId="3d79-7984-991a-8b67" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="3"/>
-            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Great Taurus" hidden="false" id="3774-21f3-7566-456a" collective="false">
+        <selectionEntry type="upgrade" import="true" name="Great Taurus" hidden="false" id="3774-21f3-7566-456a" collective="false" sortIndex="5">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="79ee-4c9d-9dac-9866" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
@@ -1307,7 +1280,7 @@ A single character in the front rank will not effect the unit’s fire</characte
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Weapons" id="4d5d-18a3-321b-fe93" hidden="false" collective="false" import="true">
+        <selectionEntryGroup name="Weapons" id="4d5d-18a3-321b-fe93" hidden="false" collective="false" import="true" sortIndex="2">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Additional hand weapon" hidden="false" id="7356-1afa-5aff-338d" collective="false">
               <constraints>
@@ -1337,7 +1310,7 @@ A single character in the front rank will not effect the unit’s fire</characte
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Armour" id="dd30-dcd7-339c-7a49" hidden="false" collective="false" import="true">
+        <selectionEntryGroup name="Armour" id="dd30-dcd7-339c-7a49" hidden="false" collective="false" import="true" sortIndex="3">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1def-5d28-a6c0-8428" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
@@ -1369,8 +1342,22 @@ A single character in the front rank will not effect the unit’s fire</characte
               </costs>
             </selectionEntry>
           </selectionEntries>
+          <modifiers>
+            <modifier type="increment" value="1" field="1def-5d28-a6c0-8428">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="50e2-1873-a856-03e7" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <entryLinks>
+            <entryLink import="true" name="Shield" hidden="false" id="8082-bf74-8151-b6d7" type="selectionEntry" targetId="50e2-1873-a856-03e7">
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="3"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Magic Items" id="56c5-ad57-7ec6-d69c" hidden="false" collective="false" import="true" collapsible="true">
+        <selectionEntryGroup name="Magic Items" id="56c5-ad57-7ec6-d69c" hidden="false" collective="false" import="true" collapsible="true" sortIndex="4">
           <constraints>
             <constraint type="max" value="100" field="ecfa-8486-4f6c-c249" scope="parent" shared="true" id="d8c1-a76b-c627-ab08" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
@@ -1386,7 +1373,7 @@ A single character in the front rank will not effect the unit’s fire</characte
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink import="true" name="General" hidden="false" id="9bed-97ed-6ff6-e55a" collective="false" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry">
+        <entryLink import="true" name="General" hidden="false" id="9bed-97ed-6ff6-e55a" collective="false" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry" sortIndex="1">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="force" shared="true" id="146a-2cd0-ab8f-de92" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
@@ -1409,7 +1396,7 @@ A single character in the front rank will not effect the unit’s fire</characte
         <categoryLink name="Lord" hidden="false" id="c724-d045-98c0-e23a" targetId="d024-d25b-a9b4-73b6" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Lammasu" hidden="false" id="a474-26ca-b8eb-8715" collective="false">
+        <selectionEntry type="upgrade" import="true" name="Lammasu" hidden="false" id="a474-26ca-b8eb-8715" collective="false" sortIndex="4">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="929b-f295-7393-723c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
@@ -1450,7 +1437,7 @@ A single character in the front rank will not effect the unit’s fire</characte
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Magic Items" id="db20-336e-0f9d-d43e" hidden="false" collective="false" import="true" collapsible="true">
+        <selectionEntryGroup name="Magic Items" id="db20-336e-0f9d-d43e" hidden="false" collective="false" import="true" collapsible="true" sortIndex="3">
           <constraints>
             <constraint type="max" value="100" field="ecfa-8486-4f6c-c249" scope="parent" shared="true" id="a13c-0c31-58fd-4d3a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
@@ -1464,7 +1451,7 @@ A single character in the front rank will not effect the unit’s fire</characte
             <entryLink import="true" name="Magic Talismans (Common)" hidden="false" id="b351-8f92-6416-36f6" type="selectionEntryGroup" targetId="7dcf-8a09-c9b8-9a88"/>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Magic Level" id="107f-ac43-e883-f2fe" hidden="false" collective="false" import="true">
+        <selectionEntryGroup name="Magic Level" id="107f-ac43-e883-f2fe" hidden="false" collective="false" import="true" sortIndex="2">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1386-f500-2d71-0f45" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="20ad-aa90-7c64-4e89" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -1494,7 +1481,7 @@ A single character in the front rank will not effect the unit’s fire</characte
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink import="true" name="General" hidden="false" id="aa00-da78-ad91-592e" collective="false" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry">
+        <entryLink import="true" name="General" hidden="false" id="aa00-da78-ad91-592e" collective="false" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry" sortIndex="1">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="force" shared="true" id="5801-3f90-3e75-6c96" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
@@ -1510,7 +1497,6 @@ A single character in the front rank will not effect the unit’s fire</characte
       <infoLinks>
         <infoLink name="Ignore Orc &amp; Goblins panic" id="82ca-fcc4-b2fc-e3fa" hidden="false" targetId="5322-be33-9974-a502" type="rule"/>
         <infoLink name="Ignore Hobgoblin panic" id="41e2-4d4b-40da-ced3" hidden="false" targetId="9a9f-687b-fb6a-b6b0" type="rule"/>
-        <infoLink name="Shield" id="7173-0d79-dfb2-2e54" hidden="false" targetId="3d79-7984-991a-8b67" type="profile"/>
         <infoLink name="Hand Weapon" id="2904-5f4b-5707-b00f" hidden="false" targetId="5556-38ea-b278-4a8f" type="profile"/>
         <infoLink id="0ed4dd79-9491-428e-95c8-dbb9dc9d20e3" name="Bull Centaur" hidden="false" targetId="0286-f16f-935d-24ad" type="profile"/>
       </infoLinks>
@@ -1591,8 +1577,7 @@ A single character in the front rank will not effect the unit’s fire</characte
         </selectionEntryGroup>
         <selectionEntryGroup name="Armour" id="34ef-69dd-2e64-1dc9" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d2b7-1d8f-9292-f284" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ef53-9d8b-df7a-fb4d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6ecf-2282-ec55-2782" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Heavy Armour" hidden="false" id="dacf-26dc-5509-d9bf" collective="false">
@@ -1629,11 +1614,21 @@ A single character in the front rank will not effect the unit’s fire</characte
               </costs>
             </selectionEntry>
           </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Shield" hidden="false" id="838e-a133-6170-173e" type="selectionEntry" targetId="50e2-1873-a856-03e7"/>
+          </entryLinks>
+          <modifiers>
+            <modifier type="increment" value="1" field="6ecf-2282-ec55-2782">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="50e2-1873-a856-03e7" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
         <selectionEntryGroup name="Weapons" id="e694-8f17-974a-2b53" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="49fc-a878-15bc-8713" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d341-fb73-aa8e-25a4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="49fc-a878-15bc-8713" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="d341-fb73-aa8e-25a4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Great axe" hidden="false" id="2f2e-b46a-4378-9756" collective="false">
@@ -1663,6 +1658,9 @@ A single character in the front rank will not effect the unit’s fire</characte
               </costs>
             </selectionEntry>
           </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="d2ba-aab1-494e-d5c1" type="selectionEntry" targetId="abdb-bbd0-41b2-5dff"/>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
@@ -2124,9 +2122,6 @@ A single character in the front rank will not effect the unit’s fire</characte
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="85e0-c68d-5a8a-af1d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="c907-f312-a35e-2e4b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink name="Special" hidden="false" id="13f3-263f-e2e3-621a" targetId="43cc-fc3f-35a7-8d03" primary="true"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Bolt Thrower" hidden="false" id="3c9c-2599-4b53-a955" collective="false">
               <constraints>
