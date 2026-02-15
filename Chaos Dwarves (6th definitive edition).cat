@@ -9,53 +9,14 @@
   <categoryEntries>
     <categoryEntry id="9e4b-9820-49b3-f820" name="Chaos Dwarf Warrior" hidden="false">
       <modifiers>
-        <modifier type="set" field="55e5-24b0-7b00-8922" value="3">
-          <conditions>
-            <condition field="limit::ecfa-8486-4f6c-c249" scope="roster" value="1999" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" type="greaterThan"/>
-          </conditions>
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition field="limit::ecfa-8486-4f6c-c249" scope="roster" value="3000" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" type="lessThan"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="set" field="55e5-24b0-7b00-8922" value="4">
-          <conditions>
-            <condition field="limit::ecfa-8486-4f6c-c249" scope="roster" value="2999" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" type="greaterThan"/>
-          </conditions>
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition field="limit::ecfa-8486-4f6c-c249" scope="roster" value="4000" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" type="lessThan"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="set" field="55e5-24b0-7b00-8922" value="6">
+        <modifier type="increment" value="1" field="35e0-8bc4-4112-c868">
           <repeats>
-            <repeat field="limit::ecfa-8486-4f6c-c249" scope="roster" value="1000" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+            <repeat value="1000" repeats="1" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </repeats>
-          <conditions>
-            <condition field="limit::ecfa-8486-4f6c-c249" scope="roster" value="4999" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" type="greaterThan"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" field="55e5-24b0-7b00-8922" value="5">
-          <conditions>
-            <condition field="limit::ecfa-8486-4f6c-c249" scope="roster" value="3999" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" type="greaterThan"/>
-          </conditions>
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition field="limit::ecfa-8486-4f6c-c249" scope="roster" value="5000" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" type="lessThan"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="roster" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="55e5-24b0-7b00-8922" type="min"/>
+        <constraint type="min" value="1" field="selections" scope="force" shared="true" id="35e0-8bc4-4112-c868" includeChildSelections="true"/>
       </constraints>
     </categoryEntry>
   </categoryEntries>
@@ -163,7 +124,7 @@
           <selectionEntryGroups>
             <selectionEntryGroup name="Weapons" id="1c3c-f79a-fcb4-d937" hidden="false" collective="false" import="true" defaultSelectionEntryId="512c-634c-15ad-36c2">
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a08a-c72c-17af-86f5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="a08a-c72c-17af-86f5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="037d-bde3-3cb4-d139" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
               <infoLinks>
@@ -222,39 +183,44 @@ A single character in the front rank will not effect the unit’s fire</characte
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d5d5-3c97-0fee-3695" includeChildSelections="false"/>
                   </constraints>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Hand weapon and shield" hidden="false" id="512c-634c-15ad-36c2" collective="false" sortIndex="1">
+              </selectionEntries>
+              <entryLinks>
+                <entryLink import="true" name="Hand Weapon" hidden="false" id="703d-b1bc-fd53-9387" type="selectionEntry" targetId="abdb-bbd0-41b2-5dff" sortIndex="1"/>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Armour" id="2586-acfe-a93a-2f02" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Heavy Armour" hidden="false" id="f73d-a07f-f4a2-34de" collective="false">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1df6-ce01-adbc-e761" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4dcb-0465-1cab-0e7f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
                   <infoLinks>
-                    <infoLink name="Shield" id="f87d-9f1b-89e3-1784" hidden="false" targetId="3d79-7984-991a-8b67" type="profile"/>
-                    <infoLink name="Hand Weapon" id="8ec2-d958-4b9a-0e82" hidden="false" type="profile" targetId="5556-38ea-b278-4a8f"/>
+                    <infoLink name="Heavy Armour" id="b2ff-e0ae-1a4d-0927" hidden="false" targetId="3dd5-f228-98a7-453a" type="profile"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
                     <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
                     <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
                   </costs>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c448-3a92-fb3d-10d4" includeChildSelections="false"/>
-                  </constraints>
                 </selectionEntry>
               </selectionEntries>
+              <entryLinks>
+                <entryLink import="true" name="Shield" hidden="false" id="4050-cd66-73f4-0a99" type="selectionEntry" targetId="50e2-1873-a856-03e7">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cc7a-27b8-c08b-3653" includeChildSelections="false"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="e510-d517-2e25-c185" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Heavy Armour" hidden="false" id="f73d-a07f-f4a2-34de" collective="false">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1df6-ce01-adbc-e761" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4dcb-0465-1cab-0e7f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-              <infoLinks>
-                <infoLink name="Heavy Armour" id="b2ff-e0ae-1a4d-0927" hidden="false" targetId="3dd5-f228-98a7-453a" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
-                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
@@ -263,7 +229,7 @@ A single character in the front rank will not effect the unit’s fire</characte
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Hobgoblin Wolfboyz" hidden="false" id="3517-0b15-c769-7814" collective="false">
+    <selectionEntry type="unit" import="true" name="Hobgoblin Wolfboyz" hidden="false" id="3517-0b15-c769-7814" collective="false" publicationId="ddaeee33-4c15-43a3-939b-8795499d9519" page="43">
       <infoLinks>
         <infoLink name="Animosity" id="3415-9992-a645-86f7" hidden="false" targetId="44d7-6c38-6927-1d0e" type="rule"/>
       </infoLinks>
@@ -297,12 +263,8 @@ A single character in the front rank will not effect the unit’s fire</characte
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup name="Weapons" id="3ef7-3312-4d0d-346a" hidden="false" collective="false" import="true">
-          <infoLinks>
-            <infoLink name="Hand Weapon" id="b9bf-0649-2109-dacc" hidden="false" targetId="5556-38ea-b278-4a8f" type="profile"/>
-          </infoLinks>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Bows" hidden="false" id="4016-b663-31d8-8cdb" collective="false">
-              <comment>Swap shield for shortbow</comment>
+          <entryLinks>
+            <entryLink import="true" name="Bow" hidden="false" id="5e6b-9bd0-2d21-51ee" type="selectionEntry" targetId="9efb-2b02-f245-62f5">
               <modifiers>
                 <modifier type="increment" value="3" field="ecfa-8486-4f6c-c249">
                   <repeats>
@@ -310,19 +272,13 @@ A single character in the front rank will not effect the unit’s fire</characte
                   </repeats>
                 </modifier>
               </modifiers>
+              <comment>Swap shield for shortbow</comment>
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1c38-4f56-e6be-d65f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="df6f-7ad3-7dda-dd24" includeChildSelections="false"/>
               </constraints>
-              <infoLinks>
-                <infoLink name="Bow" id="5ebc-c514-69e7-e6bb" hidden="false" targetId="ec76-323e-c09d-eae4" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
-                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
+            </entryLink>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="8307-73bc-3399-0563" type="selectionEntry" targetId="abdb-bbd0-41b2-5dff"/>
+          </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup name="Command Group" id="9df8-58e0-7a71-7905" hidden="false" collective="false" import="true">
           <selectionEntries>
@@ -378,49 +334,27 @@ A single character in the front rank will not effect the unit’s fire</characte
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup name="Armour" id="9b74-f69a-3a0a-c87a" hidden="false" collective="false" import="true">
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Shields" hidden="false" id="cab2-1a5c-0bfc-1770" collective="false">
+          <entryLinks>
+            <entryLink import="true" name="Light Armour" hidden="false" id="62c7-c64a-2e08-d96f" type="selectionEntry" targetId="055f-8e4e-f170-35d2">
+              <modifiers>
+                <modifier type="increment" value="1" field="ecfa-8486-4f6c-c249">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="parent" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Shield" hidden="false" id="eca8-dfbb-5f79-c763" type="selectionEntry" targetId="50e2-1873-a856-03e7">
+              <modifiers>
+                <modifier type="increment" value="1" field="ecfa-8486-4f6c-c249">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="parent" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
               <comment>Swap shield for shortbow</comment>
-              <modifiers>
-                <modifier type="increment" value="1" field="ecfa-8486-4f6c-c249">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="parent" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9c24-c480-169d-6654" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-              <infoLinks>
-                <infoLink name="Shield" id="ce14-3db8-0a44-f0b1" hidden="false" targetId="3d79-7984-991a-8b67" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
-                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Light Armour" hidden="false" id="c069-b191-8a87-f2af" collective="false">
-              <modifiers>
-                <modifier type="increment" value="1" field="ecfa-8486-4f6c-c249">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="parent" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2928-122a-026a-9393" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-              <infoLinks>
-                <infoLink name="Light Armour" id="2496-3ac4-d606-efd1" hidden="false" targetId="752a-95b9-343a-8f75" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
-                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
