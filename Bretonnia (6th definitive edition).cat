@@ -2203,10 +2203,69 @@
           </constraints>
           <entryLinks>
             <entryLink id="f7b3-3016-5fe2-006d" name="Virtues" hidden="false" collective="false" import="true" targetId="1935-adfb-63e1-b051" type="selectionEntryGroup"/>
-            <entryLink id="40a2-3771-3535-8cbe" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="0b8f-c716-0330-48b4" type="selectionEntryGroup"/>
-            <entryLink id="01d7-a927-3b06-ff5d" name="Magic Armour" hidden="false" collective="false" import="true" targetId="9248-e2fa-0591-a09d" type="selectionEntryGroup"/>
-            <entryLink id="1c84-1593-deac-9b5a" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="f6ea-09d5-9cfb-d988" type="selectionEntryGroup"/>
-            <entryLink id="0d7a-2740-4a8d-21f5" name="Magic Talismans" hidden="false" collective="false" import="true" targetId="4d0b-5656-3082-c8e9" type="selectionEntryGroup"/>
+            <entryLink id="40a2-3771-3535-8cbe" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="0b8f-c716-0330-48b4" type="selectionEntryGroup">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="aa8a-1030-2887-5840" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="01d7-a927-3b06-ff5d" name="Magic Armour (Common)" hidden="false" collective="false" import="true" targetId="ed11-243d-9671-7f1c" type="selectionEntryGroup">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="aa8a-1030-2887-5840" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="1c84-1593-deac-9b5a" name="Magic Weapons (Common)" hidden="false" collective="false" import="true" targetId="8171-d883-19d8-6450" type="selectionEntryGroup">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="aa8a-1030-2887-5840" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="0d7a-2740-4a8d-21f5" name="Magic Talismans (Common)" hidden="false" collective="false" import="true" targetId="7dcf-8a09-c9b8-9a88" type="selectionEntryGroup">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="aa8a-1030-2887-5840" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="f020-c91b-277e-137c" name="Magic Armour" hidden="false" collective="false" import="true" targetId="9248-e2fa-0591-a09d" type="selectionEntryGroup">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="aa8a-1030-2887-5840" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="b2ed-ac78-2a75-d7ee" name="Magic Talismans" hidden="false" collective="false" import="true" targetId="4d0b-5656-3082-c8e9" type="selectionEntryGroup">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="aa8a-1030-2887-5840" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="0273-bf2c-2476-9e8c" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="f6ea-09d5-9cfb-d988" type="selectionEntryGroup">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="aa8a-1030-2887-5840" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="9e31-9ef0-c80e-9f13" name="Mounts" hidden="false" collective="false" import="true" defaultSelectionEntryId="1c57-1f3b-1548-9c09">
@@ -2276,10 +2335,16 @@
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d3ae-da4f-41e3-76c1" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="eedc-4096-de6b-bad6" name="Magic Banners" hidden="false" collective="false" import="true" targetId="aa8a-1030-2887-5840" type="selectionEntryGroup">
+        <entryLink import="true" name="Battle Standard Bearer" hidden="false" id="266c-d6c8-c9cf-4ec6" type="selectionEntry" targetId="e9ad-f1ce-aebf-6d23">
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+          </costs>
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ca9d-313b-ba92-f87e" type="max"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e1ff-e836-5a85-1e4f" includeChildSelections="false"/>
           </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Magic Banners" hidden="false" id="0741-cae3-b4a4-0858" type="selectionEntryGroup" targetId="aa8a-1030-2887-5840"/>
+          </entryLinks>
         </entryLink>
       </entryLinks>
       <costs>
