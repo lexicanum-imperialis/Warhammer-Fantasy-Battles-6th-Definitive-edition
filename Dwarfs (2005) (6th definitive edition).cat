@@ -150,14 +150,12 @@ While the owning Runelord lives, an Anvil adds an extra dice to the Dwarfs&apos;
       <description>The Master Engineer is adept at operating artillery.
 - If he joins a Bolt Thrower, you may use his BS.
 - If he joins a Grudge Thrower, you may re-roll the Artillery dice (but not the Scatter dice) when firing it.
-- If he joins a Cannon, it inflicts D6 wounds on enemy hit rather than the normal D3.
-</description>
+- If he joins a Cannon, it inflicts D6 wounds on enemy hit rather than the normal D3.</description>
     </rule>
     <rule name="Artillery Specialist" id="ad29-e8df-0065-f452" hidden="false" publicationId="45c1-a503-0feb-507a" page="38">
       <description>Some Dwarf war machines may additionally include an Engineer.
 - If he part of a Bolt Thrower&apos;s crew you may use his BS when firing the Bolt Thrower.
-- If he is part of a Grudge Thrower or Cannon&apos;s crew and the war machine suffers a Misfire you may re-roll a result on the Misfire chart for that weapon.
-</description>
+- If he is part of a Grudge Thrower or Cannon&apos;s crew and the war machine suffers a Misfire you may re-roll a result on the Misfire chart for that weapon.</description>
     </rule>
     <rule name="Flame Cannon Misfire Chart" id="ae0d-506d-6940-951b" hidden="false" publicationId="45c1-a503-0feb-507a" page="39">
       <description>|D6|Result|
@@ -621,12 +619,42 @@ Superior design (+1 to hit)</characteristic>
                       </repeats>
                     </modifier>
                   </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bc02-83bc-436c-01fa" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Throwing Axe" hidden="true" id="cc29-919b-4ec6-e74b" type="selectionEntry" targetId="bddd-26a2-7b14-c3fa">
+                  <modifiers>
+                    <modifier type="increment" value="1" field="ecfa-8486-4f6c-c249">
+                      <repeats>
+                        <repeat value="1" repeats="1" field="selections" scope="parent" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+                      </repeats>
+                    </modifier>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="f313-b9fe-8695-8278" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ffde-d024-342c-9acb" includeChildSelections="false"/>
+                  </constraints>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Rangers" hidden="false" id="cc59-0487-5ba5-87ef" type="selectionEntry" targetId="c1d2-8346-6f4d-73ee"/>
+      </entryLinks>
+      <modifiers>
+        <modifier type="append" value="Rangers" field="name" join=" ">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="self" childId="f313-b9fe-8695-8278" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Longbeards" hidden="false" id="9480-e0c0-aa92-f829" publicationId="45c1-a503-0feb-507a">
       <categoryLinks>
@@ -748,6 +776,26 @@ Superior design (+1 to hit)</characteristic>
                       </repeats>
                     </modifier>
                   </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="36f8-5ccd-af5a-6718" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Throwing Axe" hidden="true" id="f805-33c1-813d-9acf" type="selectionEntry" targetId="bddd-26a2-7b14-c3fa">
+                  <modifiers>
+                    <modifier type="increment" value="1" field="ecfa-8486-4f6c-c249">
+                      <repeats>
+                        <repeat value="1" repeats="1" field="selections" scope="parent" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+                      </repeats>
+                    </modifier>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="f313-b9fe-8695-8278" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8bf3-74c9-acab-a39e" includeChildSelections="false"/>
+                  </constraints>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
@@ -763,7 +811,15 @@ Superior design (+1 to hit)</characteristic>
             <repeat value="1" repeats="1" field="selections" scope="force" childId="0cea-8641-a1ca-ae06" shared="true" roundUp="false" includeChildSelections="true"/>
           </repeats>
         </modifier>
+        <modifier type="append" value="Rangers" field="name" join=" ">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="self" childId="f313-b9fe-8695-8278" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Rangers" hidden="false" id="30a3-7aa9-903d-dc0f" type="selectionEntry" targetId="c1d2-8346-6f4d-73ee"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Thunderers" hidden="false" id="7f30-b025-c845-5308" publicationId="45c1-a503-0feb-507a">
       <categoryLinks>
@@ -993,6 +1049,9 @@ Superior design (+1 to hit)</characteristic>
                       </repeats>
                     </modifier>
                   </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e94e-cdfc-a0b6-c546" includeChildSelections="false"/>
+                  </constraints>
                 </entryLink>
                 <entryLink import="true" name="Hand Weapon" hidden="false" id="ffa4-e0b2-46d3-8729" type="selectionEntry" targetId="abdb-bbd0-41b2-5dff">
                   <constraints>
@@ -1005,6 +1064,16 @@ Superior design (+1 to hit)</characteristic>
           </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Rangers" hidden="false" id="3f2e-6b02-8f9f-843a" type="selectionEntry" targetId="c1d2-8346-6f4d-73ee"/>
+      </entryLinks>
+      <modifiers>
+        <modifier type="append" value="Rangers" field="name" join=" ">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="self" childId="f313-b9fe-8695-8278" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntryGroups>
@@ -1035,8 +1104,46 @@ Superior design (+1 to hit)</characteristic>
         <infoLink name="Pistol" id="c303-6254-9607-a259" hidden="false" type="profile" targetId="e6ab-509a-9826-7080"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Rangers" hidden="false" id="c1d2-8346-6f4d-73ee">
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="0e99-a277-2e5a-a1e2" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="4b52-99b7-d208-e128" includeChildSelections="false"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Scouts" id="3e4d-1026-3b9f-6f9f" hidden="false" type="rule" targetId="889c-dfc3-95a5-2d30"/>
+      </infoLinks>
+      <modifiers>
+        <modifier type="increment" value="1" field="ecfa-8486-4f6c-c249">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="parent" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+          </repeats>
+        </modifier>
+        <modifier type="set" value="1" field="0e99-a277-2e5a-a1e2">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="1eb7-3f36-8cf7-e0ba" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="{this} require Great Weapons" field="error">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="parent" childId="1eb7-3f36-8cf7-e0ba" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="c1d2-8346-6f4d-73ee" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="Rangers" hidden="false" id="8afd-e20f-cac2-d73d" targetId="f313-b9fe-8695-8278" primary="false"/>
+      </categoryLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <categoryEntries>
-    <categoryEntry name="Rangers" id="f313-b9fe-8695-8278" hidden="false" page="53" publicationId="45c1-a503-0feb-507a"/>
+    <categoryEntry name="Rangers" id="f313-b9fe-8695-8278" hidden="false" page="53" publicationId="45c1-a503-0feb-507a">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="3138-4c35-065b-1b2a" includeChildSelections="true"/>
+      </constraints>
+    </categoryEntry>
   </categoryEntries>
 </catalogue>
