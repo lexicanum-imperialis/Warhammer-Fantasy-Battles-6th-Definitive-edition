@@ -2106,6 +2106,12 @@ Troops that are immune to psychology are never affected by fear terror, frenzy o
     <rule id="39b8-b067-c6d9-901e" name="Scaly Skin 2+" hidden="false">
       <description>Scaly Skin gives 2+ saving throw</description>
     </rule>
+    <rule name="Flaming Attacks*" id="aeba-8177-ee4a-9271" hidden="false" page="114" publicationId="315e-e3c4-08af-fd51">
+      <description>Any attack made by a model or weapon designated as having Flaming Attacks (such as Flaming Arrows or a Fire Ball spell) follows the normal rules for shooting or close combat with the following additions:
+- **Against Flammable Targets**: Some creatures, such as Mummies or Treemen, are exceptionally susceptible to fire. If a model with the Flammable special rule suffers an unsaved wound from a Flaming Attack, the wound is doubled to 2 (or the result of a D6/D3 wound roll is doubled).
+- **Against Regeneration**: The supernatural ability to knit flesh back together is often thwarted by fire. If a creature with Regeneration sustains one or more wounds from a Flaming Attack, it cannot use its Regeneration for the remainder of that phase. Furthermore, in many cases (such as with Trolls), once a unit has been wounded by fire, it loses the ability to Regenerate for the rest of the entire battle.
+- **Non-Magical Nature**: Unless the source of the fire is a Magic Item or a Spell, Flaming Attacks are not considered Magical Attacks. Therefore, mundane fire (like brazier-lit arrows) cannot harm Ethereal creatures.</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="5556-38ea-b278-4a8f" name="Hand Weapon" publicationId="315e-e3c4-08af-fd51" page="91" hidden="false" typeId="7889-42d9-70a0-3ea9" typeName="Weapon">
