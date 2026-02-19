@@ -31,7 +31,8 @@ The main additions are:
 - [x] Dogs of War
 - [x] Kislev
 - [x] Ogre Kingdoms (WIP)
-- [x] Dwarfs (at least the first ArmyBook) (WIP)
+- [x] Dwarfs (Original book)
+- [x] Dwarfs (Revised book) (WIP)
 
 ## Characters and units added
 
@@ -288,6 +289,7 @@ The main additions are:
 ### Dwarfs (2006)
 - [x] Thorgrim Grudgebearer (DW2-AB, p.58-59)
 - [x] Thorek Ironbrow, Dwarf Runelord (DW2-AB, p.60-61)
+- [x] Josef Bugman (DW2-AB, p.62)
 - [x] Runelord Kragg the Grim (WD#315-UK, p.103)
 - [x] King Kazador of Karak Azul (WD#315-UK, p.103)
 - [x] King Alrik Ranulfsson of Karak-Hirn (WD#315-UK, p.104)
