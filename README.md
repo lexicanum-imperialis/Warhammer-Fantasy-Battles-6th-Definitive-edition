@@ -287,6 +287,7 @@ The main additions are:
 
 ### Dwarfs (2006)
 - [x] Thorgrim Grudgebearer (DW2-AB, p.58-59)
+- [x] Thorek Ironbrow, Dwarf Runelord (DW2-AB, p.60-61)
 - [x] Runelord Kragg the Grim (WD#315-UK, p.103)
 - [x] King Kazador of Karak Azul (WD#315-UK, p.103)
 - [x] King Alrik Ranulfsson of Karak-Hirn (WD#315-UK, p.104)
