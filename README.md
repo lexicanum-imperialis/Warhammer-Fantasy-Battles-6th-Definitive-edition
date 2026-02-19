@@ -294,6 +294,8 @@ The main additions are:
 - [x] King Kazador of Karak Azul (WD#315-UK, p.103)
 - [x] King Alrik Ranulfsson of Karak-Hirn (WD#315-UK, p.104)
 - [x] Burlok Damminson (WD#315-UK, p.105)
+- [x] Ungrim Ironfist, Slayer King of Karak Kadrin (SoC, p.62)
+- [x] Garagrim Ironfist, War-mourner of Karak Kadrin (SoC, p.63)
 
 ### Ogre Kingdoms
 - [x] Skrag the Slaughterer, Prohet of the Great Maw (OK-AB, p.76-77)
@@ -353,14 +355,21 @@ The main additions are:
 - [x] Army of the LICHEMASTER (WD#309-UK)
 - [x] Archaon's Horde (SoC, p.18-23)
 - [x] Daemonic Legion (SoC, p.27-32)
-- [x] Guild Expedition (DW1-AB, p.78)
-- [x] Throng of Karak Kadrin (DW1-AB, p.78)
-- [x] Royal Clan (DW1-AB, p.79)
-- [x] Overground Defence (DW1-AB, p.79)
-- [x] Undgrin Ankor Force (DW1-AB, p.79)
-- [x] War of Vengeance (DW1-AB, p.79)
 - [x] Ironskin Tribe (WD#309-UK, p-76-83)
-- [x] Slayers of Karak Kadrin (SoC, p.61-70)
+- [x] Slayers of Karak Kadrin (SoC, p.61-70) for DW1-AB
+- [x] Slayers of Karak Kadrin (SoC, p.61-70) for DW2-AB
+- [x] Guild Expedition (DW1-AB, p.78) for DW1-AB
+- [x] Guild Expedition (DW1-AB, p.78) for DW2-AB
+- [x] Throng of Karak Kadrin (DW1-AB, p.78) for DW1-AB
+- [x] Throng of Karak Kadrin (DW1-AB, p.78) for DW2-AB
+- [x] Royal Clan (DW1-AB, p.79) for DW1-AB
+- [x] Royal Clan (DW1-AB, p.79) for DW2-AB
+- [x] Overground Defence (DW1-AB, p.79) for DW1-AB
+- [x] Overground Defence (DW1-AB, p.79) for DW2-AB
+- [x] Undgrin Ankor Force (DW1-AB, p.79) for DW1-AB
+- [x] Undgrin Ankor Force (DW1-AB, p.79) for DW2-AB
+- [x] War of Vengeance (DW1-AB, p.79) for DW1-AB
+- [x] War of Vengeance (DW1-AB, p.79) for DW2-AB
 
 
 ## Sources consulted
