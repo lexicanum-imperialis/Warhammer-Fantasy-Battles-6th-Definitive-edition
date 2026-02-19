@@ -286,6 +286,7 @@ The main additions are:
 - [x] Goblobber (Stone Thrower) (CJ#44)
 
 ### Dwarfs (2006)
+- [x] Thorgrim Grudgebearer (DW2-AB, p.58-59)
 - [x] Runelord Kragg the Grim (WD#315-UK, p.103)
 - [x] King Kazador of Karak Azul (WD#315-UK, p.103)
 - [x] King Alrik Ranulfsson of Karak-Hirn (WD#315-UK, p.104)
