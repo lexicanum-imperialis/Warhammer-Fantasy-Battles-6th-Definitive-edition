@@ -307,6 +307,7 @@ The main additions are:
 ### Kislev
 - [x] Tzarina Katarin, the Ice Queen (KS-AB)
 - [x] Boris Ursus, the Red Tzar (KS-AB)
+- [x] Kislevite Shaman (GLWL)
 
 ## Alternative lists included
 - [x] Clan Eshin (SKV-AB)
@@ -334,8 +335,9 @@ The main additions are:
 - [x] Grimgor'Ardboyz (SoC, p.58)
 - [x] Night Goblin Horde (C#46, p.24-27)
 - [x] High Elf Sea Patrol (SoC, 9.94-95)
-- [x] War of the Beard (CR-03, High Elves)
-- [ ] War of the Beard (CR-03, Dwarfs)
+- [x] War of the Beard (CR-03)
+- [ ] War of Vengeance (CR-03, for 1st Book)
+- [ ] War of Vengeance (CR-03, for 2st Book)
 - [x] The Emperor's Guard (EM-AB, p.78)
 - [x] The Artillery Train of Nuln (EM-AB, p.78)
 - [x] Sigmarite Army (EM-AB, p.79)

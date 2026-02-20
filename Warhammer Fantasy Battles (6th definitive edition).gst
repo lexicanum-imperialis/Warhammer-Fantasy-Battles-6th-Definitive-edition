@@ -1554,11 +1554,7 @@
     </selectionEntryGroup>
     <selectionEntryGroup name="Arcane Items (Common)" id="0d3f-389c-02b2-bb34" hidden="false">
       <entryLinks>
-        <entryLink import="true" name="Dispel Scroll (one use only)" hidden="false" id="989e-9d22-7fea-19b5" collective="false" targetId="b76c-6bad-4650-dbb0" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" value="true" field="hidden"/>
-          </modifiers>
-        </entryLink>
+        <entryLink import="true" name="Dispel Scroll (one use only)" hidden="false" id="989e-9d22-7fea-19b5" collective="false" targetId="b76c-6bad-4650-dbb0" type="selectionEntry"/>
         <entryLink import="true" name="Power Stone (only one use)" hidden="false" id="f969-0b28-b1cf-bb02" collective="false" targetId="696a-648d-c842-4c6a" type="selectionEntry"/>
         <entryLink import="true" name="Staff of Sorcery" hidden="false" id="3bc4-082d-e44e-7f1a" collective="false" targetId="b22a-6be5-d4f9-7776" type="selectionEntry"/>
       </entryLinks>
