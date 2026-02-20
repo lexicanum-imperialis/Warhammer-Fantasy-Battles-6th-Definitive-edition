@@ -334,7 +334,8 @@ The main additions are:
 - [x] Grimgor'Ardboyz (SoC, p.58)
 - [x] Night Goblin Horde (C#46, p.24-27)
 - [x] High Elf Sea Patrol (SoC, 9.94-95)
-- [ ] War of the Beard
+- [x] War of the Beard (CR-03, High Elves)
+- [ ] War of the Beard (CR-03, Dwarfs)
 - [x] The Emperor's Guard (EM-AB, p.78)
 - [x] The Artillery Train of Nuln (EM-AB, p.78)
 - [x] Sigmarite Army (EM-AB, p.79)

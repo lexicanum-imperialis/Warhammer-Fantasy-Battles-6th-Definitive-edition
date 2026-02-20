@@ -26,7 +26,7 @@
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="498b-f5a6-6390-1b7d" type="max"/>
           </constraints>
           <selectionEntryGroups>
-            <selectionEntryGroup id="a686-83d6-bfa2-3535" name="Magic and Honors" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="a686-83d6-bfa2-3535" name="Magic and Honors" hidden="false" collective="false" import="true" collapsible="true">
               <constraints>
                 <constraint field="ecfa-8486-4f6c-c249" scope="parent" value="100" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4032-ebc4-25ba-aea7" type="max"/>
               </constraints>
@@ -68,6 +68,13 @@ In addition, Aislinn rules his vessels with an iron hand; and is automatically t
                 <entryLink import="true" name="Magic Weapons (Common)" hidden="false" id="7378-ccc8-c184-0bf6" type="selectionEntryGroup" targetId="8171-d883-19d8-6450"/>
                 <entryLink id="de78-6c14-f4c7-fb50" name="Magic Armour" hidden="false" collective="false" import="true" targetId="3532-01ee-3728-ecc6" type="selectionEntryGroup"/>
               </entryLinks>
+              <modifiers>
+                <modifier type="set" value="150" field="4032-ebc4-25ba-aea7">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="de56-fe9d-6d66-d2a2" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <costs>
@@ -150,6 +157,20 @@ In addition, Aislinn rules his vessels with an iron hand; and is automatically t
               <costs>
                 <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="320"/>
               </costs>
+              <entryLinks>
+                <entryLink import="true" name="Magic Level 1" hidden="true" id="8673-eff6-7ba7-c7c7" type="selectionEntry" targetId="158f-d753-59e2-9ad2">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="de56-fe9d-6d66-d2a2" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <costs>
+                    <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="50"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
             </entryLink>
             <entryLink import="true" name="Tiranoc Chariot" hidden="false" id="5adb-f54a-1ff5-1cc2" type="selectionEntry" targetId="3f6e-c751-4eb2-f2fd"/>
           </entryLinks>
@@ -287,6 +308,13 @@ In addition, Aislinn rules his vessels with an iron hand; and is automatically t
                 <entryLink import="true" name="Magic Talismans (Common)" hidden="false" id="7d47-b345-9e36-06ac" type="selectionEntryGroup" targetId="7dcf-8a09-c9b8-9a88"/>
                 <entryLink import="true" name="Arcane Items (Common)" hidden="false" id="e216-9b64-331a-fe74" type="selectionEntryGroup" targetId="0d3f-389c-02b2-bb34"/>
               </entryLinks>
+              <modifiers>
+                <modifier type="set" value="150" field="c912-ad72-4b11-b18d">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="de56-fe9d-6d66-d2a2" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <costs>
@@ -391,7 +419,7 @@ In addition, Aislinn rules his vessels with an iron hand; and is automatically t
                 <constraint field="ecfa-8486-4f6c-c249" scope="parent" value="50" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5a6d-3a9e-993a-9553" type="max"/>
               </constraints>
               <selectionEntryGroups>
-                <selectionEntryGroup id="8177-f848-0b45-9b3f" name="Magical Items" hidden="false" collective="false" import="true">
+                <selectionEntryGroup id="8177-f848-0b45-9b3f" name="Magical Items" hidden="false" collective="false" import="true" collapsible="true">
                   <modifiers>
                     <modifier type="set" field="7463-7381-5544-20d8" value="0">
                       <conditions>
@@ -422,6 +450,13 @@ In addition, Aislinn rules his vessels with an iron hand; and is automatically t
               <entryLinks>
                 <entryLink id="6892-0e07-bfa5-348d" name="Honours" hidden="false" collective="false" import="true" targetId="45a3-3e65-6c49-5cc0" type="selectionEntryGroup"/>
               </entryLinks>
+              <modifiers>
+                <modifier type="set" value="75" field="5a6d-3a9e-993a-9553">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="de56-fe9d-6d66-d2a2" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <costs>
@@ -534,7 +569,7 @@ In addition, Aislinn rules his vessels with an iron hand; and is automatically t
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="d8ed-1db8-eb15-b425" name="Mounts" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="d8ed-1db8-eb15-b425" name="Mounts" hidden="false" collective="false" import="true" defaultSelectionEntryId="none">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e0d1-38f2-96cd-605d" type="max"/>
           </constraints>
@@ -710,6 +745,13 @@ In addition, Aislinn rules his vessels with an iron hand; and is automatically t
                 <entryLink import="true" name="Magic Talismans (Common)" hidden="false" id="de87-ec12-2c7f-12e9" type="selectionEntryGroup" targetId="7dcf-8a09-c9b8-9a88"/>
                 <entryLink import="true" name="Magic Weapons (Common)" hidden="false" id="8d5f-5798-594d-7552" type="selectionEntryGroup" targetId="8171-d883-19d8-6450"/>
               </entryLinks>
+              <modifiers>
+                <modifier type="set" value="75" field="82cd-c660-9a7e-1c4c">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="de56-fe9d-6d66-d2a2" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <costs>
@@ -958,11 +1000,16 @@ In addition, Aislinn rules his vessels with an iron hand; and is automatically t
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b665-efc4-e54c-284a" type="max"/>
               </constraints>
               <entryLinks>
-                <entryLink id="2abd-50d3-1af1-4190" name="Magic Banners" hidden="false" collective="false" import="true" targetId="c1c3-239d-926d-d504" type="selectionEntryGroup">
+                <entryLink id="2abd-50d3-1af1-4190" name="Magic Banners" hidden="false" collective="false" import="true" targetId="c1c3-239d-926d-d504" type="selectionEntryGroup" collapsible="true">
                   <modifiers>
                     <modifier type="increment" field="e048-382c-808f-d5d2" value="1">
                       <conditions>
                         <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ccdc-f2fe-7d5e-fde7" type="greaterThan"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="50" field="c730-ca1e-368a-3aca">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="de56-fe9d-6d66-d2a2" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -1005,6 +1052,29 @@ In addition, Aislinn rules his vessels with an iron hand; and is automatically t
                 <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
                 <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
               </costs>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Magic Items" id="02be-4309-3751-3a10" hidden="true" collapsible="true">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="de56-fe9d-6d66-d2a2" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <entryLinks>
+                    <entryLink import="true" name="Magic Talismans (Common)" hidden="false" id="725e-02a0-185f-f09c" type="selectionEntryGroup" targetId="7dcf-8a09-c9b8-9a88"/>
+                    <entryLink import="true" name="Enchanted Items" hidden="false" id="4233-1b7d-a182-0642" type="selectionEntryGroup" targetId="39ab-c370-3f13-7d60"/>
+                    <entryLink import="true" name="Magic Armour" hidden="false" id="b2a2-6141-1d5e-cfd8" type="selectionEntryGroup" targetId="3532-01ee-3728-ecc6"/>
+                    <entryLink import="true" name="Magic Armour (Common)" hidden="false" id="e931-583d-dd3d-32de" type="selectionEntryGroup" targetId="ed11-243d-9671-7f1c"/>
+                    <entryLink import="true" name="Magic Weapons" hidden="false" id="8ae8-a1f6-3dca-e985" type="selectionEntryGroup" targetId="776e-c590-48d5-4bce"/>
+                    <entryLink import="true" name="Magic Weapons (Common)" hidden="false" id="27f7-a1ec-e42e-9e59" type="selectionEntryGroup" targetId="8171-d883-19d8-6450"/>
+                    <entryLink import="true" name="Magic Talismans" hidden="false" id="cfa2-e30a-af53-b15f" type="selectionEntryGroup" targetId="f948-c838-ba2d-07c5"/>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="25" field="ecfa-8486-4f6c-c249" scope="parent" shared="true" id="e817-26bb-c06c-59ab"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -1101,7 +1171,7 @@ In addition, Aislinn rules his vessels with an iron hand; and is automatically t
                 <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
               </costs>
               <selectionEntryGroups>
-                <selectionEntryGroup name="Magic Banner" id="bdb0-194f-3dbd-ec2d" hidden="true">
+                <selectionEntryGroup name="Magic Banner" id="bdb0-194f-3dbd-ec2d" hidden="true" collapsible="true">
                   <selectionEntries>
                     <selectionEntry type="upgrade" import="true" name="Banner of Arcane Protection " hidden="false" id="6e21-9f41-3fbe-a3e6" collective="false">
                       <constraints>
@@ -1212,11 +1282,19 @@ In addition, Aislinn rules his vessels with an iron hand; and is automatically t
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="force" shared="true" id="4ae8-c9c0-5488-f8e9" includeChildSelections="true" includeChildForces="true"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dcd4-c779-8082-3abf" includeChildSelections="false"/>
+                    <constraint type="max" value="-1" field="ecfa-8486-4f6c-c249" scope="parent" shared="true" id="dc3d-5f69-a184-4eb3">
+                      <comment>TODO: VERIFY</comment>
+                    </constraint>
                   </constraints>
                   <modifiers>
                     <modifier type="set" value="false" field="hidden">
                       <conditions>
                         <condition type="instanceOf" value="1" field="selections" scope="force" childId="1951-b0c9-254a-bcff" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="50" field="4ae8-c9c0-5488-f8e9">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="de56-fe9d-6d66-d2a2" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -1251,24 +1329,26 @@ In addition, Aislinn rules his vessels with an iron hand; and is automatically t
                 <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
               </costs>
               <selectionEntryGroups>
-                <selectionEntryGroup name="Magic Items" id="d1e1-f5a8-59d2-b35b" hidden="false">
-                  <entryLinks>
-                    <entryLink import="true" name="Arcane Items" hidden="false" id="a2c2-edd4-a0a7-7347" type="selectionEntryGroup" targetId="eb6e-ca9e-213d-506a"/>
-                    <entryLink import="true" name="Enchanted Items" hidden="false" id="726a-5ccf-b140-54f7" type="selectionEntryGroup" targetId="39ab-c370-3f13-7d60"/>
-                    <entryLink import="true" name="Magic Armour" hidden="false" id="7b67-c675-cef9-e221" type="selectionEntryGroup" targetId="3532-01ee-3728-ecc6"/>
-                    <entryLink import="true" name="Magic Weapons" hidden="false" id="d878-e4dd-1737-f688" type="selectionEntryGroup" targetId="776e-c590-48d5-4bce"/>
-                    <entryLink import="true" name="Magic Talismans" hidden="false" id="f6c9-7b86-612a-ca34" type="selectionEntryGroup" targetId="f948-c838-ba2d-07c5"/>
-                  </entryLinks>
-                  <constraints>
-                    <constraint type="max" value="25" field="ecfa-8486-4f6c-c249" scope="parent" shared="true" id="2877-d9c4-6fb3-33de"/>
-                  </constraints>
+                <selectionEntryGroup name="Magic Items" id="6fd1-d79a-2b35-810a" hidden="true" collapsible="true">
                   <modifiers>
                     <modifier type="set" value="false" field="hidden">
                       <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="1951-b0c9-254a-bcff" shared="true" includeChildSelections="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="de56-fe9d-6d66-d2a2" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </modifier>
                   </modifiers>
+                  <entryLinks>
+                    <entryLink import="true" name="Magic Talismans (Common)" hidden="false" id="95d9-c30c-5b82-03e2" type="selectionEntryGroup" targetId="7dcf-8a09-c9b8-9a88"/>
+                    <entryLink import="true" name="Enchanted Items" hidden="false" id="ee5a-2b1a-bd01-b277" type="selectionEntryGroup" targetId="39ab-c370-3f13-7d60"/>
+                    <entryLink import="true" name="Magic Armour" hidden="false" id="a485-e037-764f-60f3" type="selectionEntryGroup" targetId="3532-01ee-3728-ecc6"/>
+                    <entryLink import="true" name="Magic Armour (Common)" hidden="false" id="95f5-a51f-8f50-3eb2" type="selectionEntryGroup" targetId="ed11-243d-9671-7f1c"/>
+                    <entryLink import="true" name="Magic Weapons" hidden="false" id="076e-86d7-4f4f-f44d" type="selectionEntryGroup" targetId="776e-c590-48d5-4bce"/>
+                    <entryLink import="true" name="Magic Weapons (Common)" hidden="false" id="d619-71c3-6e1c-9498" type="selectionEntryGroup" targetId="8171-d883-19d8-6450"/>
+                    <entryLink import="true" name="Magic Talismans" hidden="false" id="e019-ab5b-0037-45b3" type="selectionEntryGroup" targetId="f948-c838-ba2d-07c5"/>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="25" field="ecfa-8486-4f6c-c249" scope="parent" shared="true" id="9920-e566-3f36-91eb"/>
+                  </constraints>
                 </selectionEntryGroup>
               </selectionEntryGroups>
             </selectionEntry>
@@ -1468,11 +1548,16 @@ In addition, Aislinn rules his vessels with an iron hand; and is automatically t
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="19b3-8ecb-19b5-e999" type="max"/>
               </constraints>
               <entryLinks>
-                <entryLink id="09ab-2953-1e3c-0ed6" name="Magic Banners" hidden="false" collective="false" import="true" targetId="c1c3-239d-926d-d504" type="selectionEntryGroup">
+                <entryLink id="09ab-2953-1e3c-0ed6" name="Magic Banners" hidden="false" collective="false" import="true" targetId="c1c3-239d-926d-d504" type="selectionEntryGroup" collapsible="true">
                   <modifiers>
                     <modifier type="increment" field="7e79-8f07-e9d4-2355" value="1">
                       <conditions>
                         <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ccdc-f2fe-7d5e-fde7" type="greaterThan"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="50" field="89cd-03f3-437f-b4ac">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="de56-fe9d-6d66-d2a2" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -1515,6 +1600,29 @@ In addition, Aislinn rules his vessels with an iron hand; and is automatically t
                 <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
                 <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
               </costs>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Magic Items" id="3fbb-946e-288c-7158" hidden="true" collapsible="true">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="de56-fe9d-6d66-d2a2" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <entryLinks>
+                    <entryLink import="true" name="Magic Talismans (Common)" hidden="false" id="e6e7-03bf-74db-c678" type="selectionEntryGroup" targetId="7dcf-8a09-c9b8-9a88"/>
+                    <entryLink import="true" name="Enchanted Items" hidden="false" id="4999-9bc6-3982-dab2" type="selectionEntryGroup" targetId="39ab-c370-3f13-7d60"/>
+                    <entryLink import="true" name="Magic Armour" hidden="false" id="715b-b1c9-8a86-c4b0" type="selectionEntryGroup" targetId="3532-01ee-3728-ecc6"/>
+                    <entryLink import="true" name="Magic Armour (Common)" hidden="false" id="88c2-8dd1-ed0e-aab1" type="selectionEntryGroup" targetId="ed11-243d-9671-7f1c"/>
+                    <entryLink import="true" name="Magic Weapons" hidden="false" id="85d3-a9d4-3910-3117" type="selectionEntryGroup" targetId="776e-c590-48d5-4bce"/>
+                    <entryLink import="true" name="Magic Weapons (Common)" hidden="false" id="fd33-97f6-4ef4-e6b9" type="selectionEntryGroup" targetId="8171-d883-19d8-6450"/>
+                    <entryLink import="true" name="Magic Talismans" hidden="false" id="ae4c-51d6-731a-a2ee" type="selectionEntryGroup" targetId="f948-c838-ba2d-07c5"/>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="25" field="ecfa-8486-4f6c-c249" scope="parent" shared="true" id="87f9-759f-695f-a31e"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -1880,15 +1988,20 @@ In addition, Aislinn rules his vessels with an iron hand; and is automatically t
       </costs>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="1951-b0c9-254a-bcff" shared="true" includeChildSelections="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="de56-fe9d-6d66-d2a2" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="1951-b0c9-254a-bcff" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
     </selectionEntry>
-    <selectionEntry id="bc8a-38ff-bbda-e627" name="Swordmasters of Hoeth" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="bc8a-38ff-bbda-e627" name="0-1 Swordmasters of Hoeth" hidden="false" collective="false" import="true" type="unit">
       <constraints>
-        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="276b-395f-783d-3690" type="max"/>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="276b-395f-783d-3690" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="646a-acbd-c57b-8f18" name="Swordmaster" hidden="false" targetId="4d9c-f48b-6872-4fc7" type="rule"/>
@@ -1932,6 +2045,13 @@ In addition, Aislinn rules his vessels with an iron hand; and is automatically t
                   <constraints>
                     <constraint field="ecfa-8486-4f6c-c249" scope="parent" value="50" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="274f-edd8-2087-c8a2" type="max"/>
                   </constraints>
+                  <modifiers>
+                    <modifier type="set" value="100" field="274f-edd8-2087-c8a2">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="de56-fe9d-6d66-d2a2" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </entryLink>
               </entryLinks>
               <costs>
@@ -2016,6 +2136,18 @@ In addition, Aislinn rules his vessels with an iron hand; and is automatically t
           </conditions>
         </modifier>
       </modifiers>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>WAR OF THE BEARD</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="de56-fe9d-6d66-d2a2" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <modifiers>
+            <modifier type="set" value="0-2 Swordmasters of Hoeth" field="name"/>
+            <modifier type="set" value="2" field="276b-395f-783d-3690"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry id="9898-7d83-d981-d81b" name="Shadow Warriors" publicationId="a40f-696a-94e8-ecfb" page="29" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -2150,9 +2282,9 @@ In addition, Aislinn rules his vessels with an iron hand; and is automatically t
         <entryLink import="true" name="Tiranoc Chariot" hidden="false" id="9587-a5af-c0dc-349b" type="selectionEntry" targetId="3f6e-c751-4eb2-f2fd"/>
       </entryLinks>
     </selectionEntry>
-    <selectionEntry id="e8ff-777b-a0e1-bfbd" name="Phoenix Guard" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="e8ff-777b-a0e1-bfbd" name="0-1 Phoenix Guard" hidden="false" collective="false" import="true" type="unit">
       <constraints>
-        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="211a-086e-fd8e-4a6f" type="max"/>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="211a-086e-fd8e-4a6f" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="8454-f824-7201-b440" name="Fear" hidden="false" targetId="1524-2372-4aa0-6881" type="rule"/>
@@ -2197,6 +2329,13 @@ In addition, Aislinn rules his vessels with an iron hand; and is automatically t
                   <constraints>
                     <constraint field="ecfa-8486-4f6c-c249" scope="parent" value="50" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4920-17b4-44a9-2ce4" type="max"/>
                   </constraints>
+                  <modifiers>
+                    <modifier type="set" value="100" field="4920-17b4-44a9-2ce4">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="de56-fe9d-6d66-d2a2" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </entryLink>
               </entryLinks>
               <costs>
@@ -2276,6 +2415,18 @@ In addition, Aislinn rules his vessels with an iron hand; and is automatically t
           </conditions>
         </modifier>
       </modifiers>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>WAR OF THE BEARD</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="de56-fe9d-6d66-d2a2" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <modifiers>
+            <modifier type="set" value="0-2 Phoenix Guard" field="name"/>
+            <modifier type="set" value="2" field="211a-086e-fd8e-4a6f"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry id="6049-bd02-b650-3391" name="Repeater Bolt Thrower" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
@@ -2353,7 +2504,7 @@ In addition, Aislinn rules his vessels with an iron hand; and is automatically t
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0473-bad0-2ec9-d49b" name="White Lions" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="0473-bad0-2ec9-d49b" name="0-1 White Lions" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set-primary" field="category" value="43cc-fc3f-35a7-8d03">
           <conditions>
@@ -2377,7 +2528,7 @@ In addition, Aislinn rules his vessels with an iron hand; and is automatically t
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="343d-842d-c436-770a" type="max"/>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="343d-842d-c436-770a" type="max"/>
         <constraint type="min" value="0" field="selections" scope="force" shared="true" id="8e38-83b0-7bb8-dbe8" includeChildSelections="false"/>
       </constraints>
       <infoLinks>
@@ -2438,6 +2589,13 @@ In addition, Aislinn rules his vessels with an iron hand; and is automatically t
                   <constraints>
                     <constraint field="ecfa-8486-4f6c-c249" scope="parent" value="50" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ce9c-c245-b4e5-4f64" type="max"/>
                   </constraints>
+                  <modifiers>
+                    <modifier type="set" value="100" field="ce9c-c245-b4e5-4f64">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="de56-fe9d-6d66-d2a2" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </entryLink>
               </entryLinks>
               <costs>
@@ -2515,6 +2673,18 @@ In addition, Aislinn rules his vessels with an iron hand; and is automatically t
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>WAR OF THE BEARD</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="de56-fe9d-6d66-d2a2" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <modifiers>
+            <modifier type="set" value="0-2 White Lions" field="name"/>
+            <modifier type="set" value="2" field="343d-842d-c436-770a"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry id="58e7-96aa-75e7-edb1" name="Great Eagle" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -4813,7 +4983,7 @@ Range 36&quot;, causes one wound per shot and grants Armour Rolls as normal, can
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="Tiranoc Chariot" hidden="false" id="3f6e-c751-4eb2-f2fd" collective="false">
+    <selectionEntry type="upgrade" import="true" name="Tiranoc Chariot" hidden="false" id="3f6e-c751-4eb2-f2fd" collective="false">
       <constraints>
         <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="05c5-e8ad-327c-89cc" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c25c-b542-bad9-a998" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -6657,9 +6827,6 @@ Should the mage be slain, the Merwyrm must test on its own Leadership each turn,
         <categoryLink name="Special Characters" hidden="false" id="703f-b562-fbb6-2f5e" targetId="0644-bfcd-32c2-21dc" primary="false"/>
         <categoryLink name="Characters" hidden="false" id="1753-3b7a-c49c-188f" targetId="7a1c-d611-c2dc-def1" primary="false">
           <modifiers>
-            <modifier type="increment" value="1" field="75ab-5a0c-edbf-33d2">
-              <comment>War of the Beard</comment>
-            </modifier>
             <modifier type="increment" value="1" field="c4a6-bf7d-3a34-87e2">
               <repeats>
                 <repeat value="1000" repeats="1" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
@@ -6675,14 +6842,11 @@ Should the mage be slain, the Merwyrm must test on its own Leadership each turn,
             </modifier>
           </modifiers>
           <constraints>
-            <constraint type="max" value="2" field="selections" scope="force" shared="true" id="c4a6-bf7d-3a34-87e2" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <constraint type="max" value="4" field="selections" scope="force" shared="true" id="c4a6-bf7d-3a34-87e2" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
         </categoryLink>
         <categoryLink name="Lord" hidden="false" id="743c-124b-0b50-2644" targetId="d024-d25b-a9b4-73b6" primary="false">
           <modifiers>
-            <modifier type="increment" value="1" field="25bc-03aa-523f-f058">
-              <comment>War of the Beard</comment>
-            </modifier>
             <modifier type="decrement" value="1" field="6092-828e-944f-9517"/>
             <modifier type="increment" value="1" field="6092-828e-944f-9517">
               <repeats>
@@ -6699,13 +6863,13 @@ Should the mage be slain, the Merwyrm must test on its own Leadership each turn,
             </modifier>
           </modifiers>
           <constraints>
-            <constraint type="max" value="0" field="selections" scope="force" shared="true" id="6092-828e-944f-9517" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="6092-828e-944f-9517" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
         </categoryLink>
         <categoryLink name="Heroes" hidden="false" id="f77a-fc8c-52d1-8e54" targetId="c16b-f319-2c62-2c12" primary="false"/>
         <categoryLink name="Core" hidden="false" id="a236-cd01-1247-b770" targetId="64bf-efb4-9978-26df" primary="false">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="9dce-e25f-1215-d390" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <constraint type="min" value="0" field="selections" scope="force" shared="true" id="9dce-e25f-1215-d390" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
           <modifiers>
             <modifier type="increment" value="1" field="9dce-e25f-1215-d390">
@@ -6720,9 +6884,6 @@ Should the mage be slain, the Merwyrm must test on its own Leadership each turn,
         </categoryLink>
         <categoryLink name="Special" hidden="false" id="97ee-abf4-1327-3c3f" targetId="43cc-fc3f-35a7-8d03" primary="false">
           <modifiers>
-            <modifier type="increment" value="1" field="5c22-e72c-6e57-5b45">
-              <comment>War of the Beard</comment>
-            </modifier>
             <modifier type="increment" value="1" field="3cf5-ccb5-d28f-cd9f">
               <repeats>
                 <repeat value="1000" repeats="1" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
@@ -6738,14 +6899,11 @@ Should the mage be slain, the Merwyrm must test on its own Leadership each turn,
             </modifier>
           </modifiers>
           <constraints>
-            <constraint type="max" value="2" field="selections" scope="force" shared="true" id="3cf5-ccb5-d28f-cd9f" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+            <constraint type="max" value="3" field="selections" scope="force" shared="true" id="3cf5-ccb5-d28f-cd9f" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
           </constraints>
         </categoryLink>
         <categoryLink name="Rare" hidden="false" id="bd46-4198-9b09-cb95" targetId="e94b-6a54-8779-cd60" primary="false">
           <modifiers>
-            <modifier type="increment" value="1" field="f13a-0c3f-2d8a-4dd0">
-              <comment>War of the Beard</comment>
-            </modifier>
             <modifier type="increment" value="1" field="ad07-8592-0c39-0da0">
               <repeats>
                 <repeat value="1000" repeats="1" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
@@ -6761,7 +6919,7 @@ Should the mage be slain, the Merwyrm must test on its own Leadership each turn,
             </modifier>
           </modifiers>
           <constraints>
-            <constraint type="max" value="0" field="selections" scope="force" shared="true" id="ad07-8592-0c39-0da0" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="ad07-8592-0c39-0da0" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
