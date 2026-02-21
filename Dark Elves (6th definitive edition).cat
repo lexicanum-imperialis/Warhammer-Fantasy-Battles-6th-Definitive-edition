@@ -2789,6 +2789,17 @@ You may choose the type of Veteran Hydra that joins your forces for this battle.
           <categoryLinks>
             <categoryLink name="Experimental rules" hidden="false" id="fc40-7563-596c-0b7c" targetId="4fed-b911-e6e0-927b" primary="false"/>
           </categoryLinks>
+          <modifiers>
+            <modifier type="add" value="{this} is an experimental rule that requires permission from your opponen!
+Check &quot;Allow experimental rules?&quot; to disable this message." field="warning">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="e28d-f278-f209-63bd" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="656d-017e-a719-4a57" includeChildSelections="false"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry id="d78e-d405-73e7-d3f5" name="Beastmaster Apprentices" hidden="false" collective="true" import="true" type="upgrade">
           <constraints>
