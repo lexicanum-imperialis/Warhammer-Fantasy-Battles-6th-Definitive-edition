@@ -64,6 +64,7 @@ The main additions are:
 - [x] Khalida (TK-AB)
 - [x] Settra (TK-AB)
 - [x] Sehenesmet (WebGW)
+- [ ] Tutankhanut*
 
 ### Bretonnia
 - [x] The Green Knight
@@ -71,6 +72,8 @@ The main additions are:
 - [x] Louen Leoncoeur, King of Bretonnia
 - [x] Sir Amalric of Gaudaron (WD#310-UK)
 - [x] Tristan and Jules (WD#303-UK)
+- [ ] Tancred, Duke of Quenelles* (CR-03),
+- [ ] Bagrian* (CR-03),
 
 ### Chaos Dwarfs
 - [x] Orc Arrer Boyz
@@ -179,6 +182,9 @@ The main additions are:
 - [x] Korhil, Hunter Captain of the White Lions (CJ#48, p.12)
 - [x] Alith Anar, the Shadow King (webGW-ITA, p.27)
 - [x] Selafyn of the Annulii (WD#304-UK, p.112-113)
+- [ ] Salendor of Tor Achare* (CR-03)
+- [ ] Liandra Athinol* (CR-03)
+- [ ] Phythrion, der Auserwählte von Tor Yvresse* (Thelarion's Curse)
 
 ### The Empire
 - [x] Balthazar Gelt (EM-AB)
@@ -259,6 +265,8 @@ The main additions are:
 - [x] Vardek Crom, Herald of Archaon (SoC)
 - [x] Be'lakor, the Dark Master (SoC)
 - [x] Chaos Mutations (CR-04, p.88-91)
+- [ ] Hrothgar Daemonaxe* (Games Day 2002)
+- [ ] Lorkar Bjoergir* ("Thelarion's Curse 2002", GW-DE)
 
 ### Dwarfs (2001)
 - [x] Thorek Ironbrow, Dwarf Runelord (DW1-AB, p.50-51)
@@ -285,6 +293,8 @@ The main additions are:
 - [x] Runelord Kragg the Grim (CJ#44)
 - [x] Burlok Damminson (CJ#44)
 - [x] Goblobber (Stone Thrower) (CJ#44)
+- [ ] Brok Stonefist* (CR-03)
+- [ ] Khargrim the Mad* (CR-03)
 
 ### Dwarfs (2006)
 - [x] Thorgrim Grudgebearer (DW2-AB, p.58-59)
@@ -296,6 +306,8 @@ The main additions are:
 - [x] Burlok Damminson (WD#315-UK, p.105)
 - [x] Ungrim Ironfist, Slayer King of Karak Kadrin (SoC, p.62)
 - [x] Garagrim Ironfist, War-mourner of Karak Kadrin (SoC, p.63)
+- [ ] Brok Stonefist* (CR-03)
+- [ ] Khargrim the Mad* (CR-03)
 
 ### Ogre Kingdoms
 - [x] Skrag the Slaughterer, Prohet of the Great Maw (OK-AB, p.76-77)
