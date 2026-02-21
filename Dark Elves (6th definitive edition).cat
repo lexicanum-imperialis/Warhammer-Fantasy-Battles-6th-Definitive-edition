@@ -2784,29 +2784,30 @@ You may choose the type of Veteran Hydra that joins your forces for this battle.
                   </infoGroups>
                 </selectionEntry>
               </selectionEntries>
+              <modifiers>
+                <modifier type="add" value="{this} is an experimental rule that requires permission from your opponen!
+Check &quot;Allow experimental rules?&quot; to disable this message." field="warning">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="self" childId="any" shared="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="force" childId="e28d-f278-f209-63bd" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <categoryLinks>
             <categoryLink name="Experimental rules" hidden="false" id="fc40-7563-596c-0b7c" targetId="4fed-b911-e6e0-927b" primary="false"/>
           </categoryLinks>
-          <modifiers>
-            <modifier type="add" value="{this} is an experimental rule that requires permission from your opponen!
-Check &quot;Allow experimental rules?&quot; to disable this message." field="warning">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="3bfb-7e21-80b0-3b13" shared="true" includeChildSelections="true"/>
-                    <condition type="lessThan" value="1" field="selections" scope="force" childId="e28d-f278-f209-63bd" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="656d-017e-a719-4a57" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="547a-41b7-dff9-d382" includeChildSelections="false"/>
           </constraints>
         </selectionEntry>
-        <selectionEntry id="d78e-d405-73e7-d3f5" name="Beastmaster Apprentices" hidden="false" collective="true" import="true" type="upgrade">
+        <selectionEntry id="d78e-d405-73e7-d3f5" name="Beastmaster Apprentices" hidden="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a75b-49a6-1dde-c444" type="min"/>
             <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d4f4-51a7-906f-0c42" type="max"/>
