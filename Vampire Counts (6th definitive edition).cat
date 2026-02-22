@@ -3198,16 +3198,6 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
     </selectionEntry>
     <selectionEntry id="e37b-c827-99ac-b706" name="Vampire Thrall" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
-        <modifier type="increment" field="fcec-2340-6368-a2ba" value="1">
-          <conditions>
-            <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="32d0-a151-94a3-aa54" type="greaterThan"/>
-          </conditions>
-        </modifier>
-        <modifier type="increment" field="6001-b2bf-4529-c07d" value="1">
-          <conditions>
-            <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="32d0-a151-94a3-aa54" type="greaterThan"/>
-          </conditions>
-        </modifier>
         <modifier type="set" value="true" field="hidden">
           <conditionGroups>
             <conditionGroup type="or">
@@ -3301,6 +3291,12 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
                       </conditions>
                       <comment>BSB</comment>
                     </modifier>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="fc4b-a86d-5897-9e4c" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                      <comment>Necrarch</comment>
+                    </modifier>
                   </modifiers>
                 </entryLink>
                 <entryLink import="true" name="Great Weapon" hidden="false" id="cbd9-0b5f-9a0e-37a1" type="selectionEntry" targetId="1eb7-3f36-8cf7-e0ba">
@@ -3317,6 +3313,12 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
                       </conditions>
                       <comment>BSB</comment>
                     </modifier>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="fc4b-a86d-5897-9e4c" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                      <comment>Necrarch</comment>
+                    </modifier>
                   </modifiers>
                 </entryLink>
                 <entryLink import="true" name="Lance" hidden="false" id="8edf-e72a-9f77-0d90" type="selectionEntry" targetId="8649-8ac8-5a6f-fd8d">
@@ -3332,6 +3334,12 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
                         <condition type="atLeast" value="1" field="selections" scope="unit" childId="2ef7-3efe-a448-423f" shared="true" includeChildSelections="true"/>
                       </conditions>
                       <comment>BSB</comment>
+                    </modifier>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="fc4b-a86d-5897-9e4c" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                      <comment>Necrarch</comment>
                     </modifier>
                   </modifiers>
                 </entryLink>
@@ -3362,11 +3370,27 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
                   <costs>
                     <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="4"/>
                   </costs>
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="fc4b-a86d-5897-9e4c" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                      <comment>Necrarch</comment>
+                    </modifier>
+                  </modifiers>
                 </entryLink>
                 <entryLink import="true" name="Light Armour" hidden="false" id="e2fe-3bf5-bfb7-d37c" type="selectionEntry" targetId="055f-8e4e-f170-35d2">
                   <costs>
                     <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="2"/>
                   </costs>
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="fc4b-a86d-5897-9e4c" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                      <comment>Necrarch</comment>
+                    </modifier>
+                  </modifiers>
                 </entryLink>
                 <entryLink import="true" name="Shield" hidden="true" id="2bd8-02c6-d5a4-31b3" type="selectionEntry" targetId="50e2-1873-a856-03e7">
                   <modifiers>
@@ -3380,6 +3404,12 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
                         <condition type="atLeast" value="1" field="selections" scope="unit" childId="2ef7-3efe-a448-423f" shared="true" includeChildSelections="true"/>
                       </conditions>
                       <comment>BSB</comment>
+                    </modifier>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="fc4b-a86d-5897-9e4c" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                      <comment>Necrarch</comment>
                     </modifier>
                   </modifiers>
                   <costs>
@@ -3446,12 +3476,12 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="5017-296d-edef-4562" shared="true" includeChildSelections="true"/>
+                <condition type="greaterThan" value="0" field="selections" scope="parent" childId="32d0-a151-94a3-aa54" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </modifier>
             <modifier type="set" value="1" field="c195-d40a-1c54-f572">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="5017-296d-edef-4562" shared="true" includeChildSelections="true"/>
+                <condition type="greaterThan" value="0" field="selections" scope="parent" childId="32d0-a151-94a3-aa54" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </modifier>
           </modifiers>
