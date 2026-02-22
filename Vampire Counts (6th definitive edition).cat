@@ -2559,49 +2559,6 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="b8ff-7e47-2614-1ecd" name="Wizard Level" hidden="false" collective="false" import="true" defaultSelectionEntryId="42d9-cebe-18d5-cdbd">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c66-4f74-2201-82ec" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="efbf-d87a-fa58-aa0f" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink import="true" name="Magic Level 2" hidden="false" id="8df1-1351-08f4-4fe1" type="selectionEntry" targetId="fbc2-5115-f240-7367">
-              <costs>
-                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
-              </costs>
-              <constraints>
-                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="7cc4-9f61-3b52-af3e" includeChildSelections="false"/>
-              </constraints>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="75e7-b83e-a2b3-13af" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </entryLink>
-            <entryLink import="true" name="Magic Level 3" hidden="false" id="dee1-81f4-f893-499a" type="selectionEntry" targetId="cb6c-c69a-5c73-97e8">
-              <costs>
-                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="50"/>
-              </costs>
-              <constraints>
-                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="5cb5-d720-6aaa-78b3" includeChildSelections="false"/>
-              </constraints>
-              <modifierGroups>
-                <modifierGroup type="and">
-                  <comment>Nehekara&apos;s Noble Blood</comment>
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="75e7-b83e-a2b3-13af" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                  <modifiers>
-                    <modifier type="set" value="0" field="ecfa-8486-4f6c-c249"/>
-                    <modifier type="set" value="1" field="5cb5-d720-6aaa-78b3"/>
-                  </modifiers>
-                </modifierGroup>
-              </modifierGroups>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
         <selectionEntryGroup name="Mounts" id="212e-af66-2d81-aa6a" hidden="false">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2d77-2a14-82ab-696f" includeChildSelections="false"/>
@@ -2726,6 +2683,63 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
               <modifiers>
                 <modifier type="set" value="true" field="hidden"/>
               </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Wizard Level" id="43b8-dacd-f09f-37c3" hidden="false" collective="false" import="true" defaultSelectionEntryId="3c1a-3350-04ae-7a3f">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="769e-ff2d-6795-86cb" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f66f-32f7-5f65-14a7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Magic Level 3" hidden="false" id="9dc7-b9d7-4e92-4cda" type="selectionEntry" targetId="cb6c-c69a-5c73-97e8">
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Nehekara&apos;s Noble Blood</comment>
+                  <modifiers>
+                    <modifier type="set" value="0" field="ecfa-8486-4f6c-c249"/>
+                    <modifier type="set" value="1" field="4d5e-8101-e8d4-d7ad"/>
+                  </modifiers>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="unit" childId="fc28-3af2-d37a-d07e" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="32d0-a151-94a3-aa54" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifierGroup>
+              </modifierGroups>
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="4d5e-8101-e8d4-d7ad" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="50"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Magic Level 2" hidden="false" id="54fc-2ba6-00ed-76ac" type="selectionEntry" targetId="fbc2-5115-f240-7367">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="32d0-a151-94a3-aa54" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Magic Level 4" hidden="true" id="c5d1-4b7d-c96b-2fb9" type="selectionEntry" targetId="fc28-3af2-d37a-d07e">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="32d0-a151-94a3-aa54" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="50"/>
+              </costs>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -2908,13 +2922,18 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
               <modifierGroups>
                 <modifierGroup type="and">
                   <comment>Nehekara&apos;s Noble Blood</comment>
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="32d0-a151-94a3-aa54" shared="true" includeChildSelections="true"/>
-                  </conditions>
                   <modifiers>
                     <modifier type="set" value="0" field="ecfa-8486-4f6c-c249"/>
                     <modifier type="set" value="1" field="5e9b-7594-02cb-0bad"/>
                   </modifiers>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="unit" childId="cb6c-c69a-5c73-97e8" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="32d0-a151-94a3-aa54" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifierGroup>
               </modifierGroups>
               <constraints>
@@ -2929,6 +2948,18 @@ The Necrach Thrall can only be general if you choose the noble blood trait.</rea
                   </conditions>
                 </modifier>
               </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Magic Level 3" hidden="true" id="15f0-88b7-5fcc-061b" type="selectionEntry" targetId="cb6c-c69a-5c73-97e8">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="32d0-a151-94a3-aa54" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="35"/>
+              </costs>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
