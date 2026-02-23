@@ -133,7 +133,6 @@
       <infoLinks>
         <infoLink name="Ignore Orc &amp; Goblins panic" id="0718-cee8-aaa6-6ea9" hidden="false" targetId="5322-be33-9974-a502" type="rule"/>
         <infoLink name="Ignore Hobgoblin panic" id="e5fe-c0fd-808c-b011" hidden="false" targetId="9a9f-687b-fb6a-b6b0" type="rule"/>
-        <infoLink name="Chaos Dwarf" id="b384-a8a1-88c8-19df" hidden="false" publicationId="756d-4758-8a13-1d8a" page="32" targetId="06aa-1bc8-f015-6cb1" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Core" hidden="false" id="c7b5-c913-0608-e04a" targetId="64bf-efb4-9978-26df" primary="true"/>
@@ -149,6 +148,9 @@
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
+          <infoLinks>
+            <infoLink name="Chaos Dwarf" id="b384-a8a1-88c8-19df" hidden="false" publicationId="756d-4758-8a13-1d8a" page="32" targetId="06aa-1bc8-f015-6cb1" type="profile"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -340,16 +342,18 @@ A single character in the front rank will not effect the unit’s fire</characte
           <infoLinks>
             <infoLink name="Hobgoblin" id="8783-96f9-ea10-50e9" hidden="false" publicationId="756d-4758-8a13-1d8a" page="32" targetId="98fe-fcb0-3c5d-8937" type="profile"/>
           </infoLinks>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Wolf" hidden="false" id="7a84-404f-7d7e-fd78">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f9a4-c704-c736-42bc" includeChildSelections="false"/>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="adab-39d1-d08f-eb22" includeChildSelections="false"/>
-          </constraints>
-          <infoLinks>
-            <infoLink name="Wolf" id="11da-cc55-fd3c-c757" hidden="false" publicationId="756d-4758-8a13-1d8a" page="32" targetId="6236-be6a-b588-b9bd" type="profile"/>
-            <infoLink name="Fast Cavalry" id="68e0-c884-e435-1f02" hidden="false" type="rule" targetId="6a56-df83-e623-2218"/>
-          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Wolf" hidden="false" id="7a84-404f-7d7e-fd78">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f9a4-c704-c736-42bc" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="adab-39d1-d08f-eb22" includeChildSelections="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Wolf" id="11da-cc55-fd3c-c757" hidden="false" publicationId="756d-4758-8a13-1d8a" page="32" targetId="6236-be6a-b588-b9bd" type="profile"/>
+                <infoLink name="Fast Cavalry" id="68e0-c884-e435-1f02" hidden="false" type="rule" targetId="6a56-df83-e623-2218"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -457,7 +461,6 @@ A single character in the front rank will not effect the unit’s fire</characte
     <selectionEntry type="unit" import="true" name="Hobgoblins" hidden="false" id="7c71-fb41-785a-c4f7" collective="false">
       <infoLinks>
         <infoLink name="Animosity" id="e6b6-924a-514f-d4f0" hidden="false" targetId="44d7-6c38-6927-1d0e" type="rule"/>
-        <infoLink name="Hobgoblin" id="0fe5-ab74-8fe3-c394" hidden="false" publicationId="756d-4758-8a13-1d8a" page="32" targetId="98fe-fcb0-3c5d-8937" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Core" hidden="false" id="14fa-edbd-0ec3-82bb" targetId="64bf-efb4-9978-26df" primary="true"/>
@@ -472,13 +475,13 @@ A single character in the front rank will not effect the unit’s fire</characte
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
+          <infoLinks>
+            <infoLink name="Hobgoblin" id="0fe5-ab74-8fe3-c394" hidden="false" publicationId="756d-4758-8a13-1d8a" page="32" targetId="98fe-fcb0-3c5d-8937" type="profile"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup name="Weapons" id="af62-ebf6-eb3f-502d" hidden="false" collective="false" import="true">
-          <infoLinks>
-            <infoLink name="Hand Weapon" id="4d41-9e3f-2f80-288e" hidden="false" targetId="5556-38ea-b278-4a8f" type="profile"/>
-          </infoLinks>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Bows" hidden="false" id="2709-c0c4-2d3b-3d3c" collective="false">
               <comment>Swap shield for shortbow</comment>
@@ -502,6 +505,9 @@ A single character in the front rank will not effect the unit’s fire</characte
               </costs>
             </selectionEntry>
           </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="2260-8254-1019-883a" type="selectionEntry" targetId="abdb-bbd0-41b2-5dff"/>
+          </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup name="Command Group" id="469a-8e4a-1cf9-15f6" hidden="false" collective="false" import="true">
           <selectionEntries>
@@ -1988,13 +1994,16 @@ A single character in the front rank will not effect the unit’s fire</characte
           </constraints>
           <infoLinks>
             <infoLink name="Chaos Dwarf" id="d8c1-cb37-a6d6-bbdc" hidden="false" targetId="06aa-1bc8-f015-6cb1" type="profile"/>
-            <infoLink name="Heavy Armour" id="1c2b-d4e0-d8a4-2c33" hidden="false" targetId="3dd5-f228-98a7-453a" type="profile"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
+          <entryLinks>
+            <entryLink import="true" name="Heavy Armour" hidden="false" id="1f32-e1e0-aa33-7e73" type="selectionEntry" targetId="dde4-0ba8-7b3c-57b7"/>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="d14d-6d91-5fb5-3937" type="selectionEntry" targetId="abdb-bbd0-41b2-5dff"/>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -2667,26 +2676,22 @@ A single character in the front rank will not effect the unit’s fire</characte
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Hobgoblin Bolt Thrower" id="89f5-56c5-eb61-d295" hidden="false">
-          <entryLinks>
-            <entryLink import="true" name="Bolt Thrower" hidden="false" id="b8be-41ae-97af-071b" type="selectionEntry" targetId="2138-5273-4858-7ca4">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="97ec-d42d-e1d7-d2ad" includeChildSelections="false"/>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="634c-8910-7415-8842" includeChildSelections="false"/>
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Bolt Thrower (additional)" hidden="false" id="73ae-dff3-9c7d-ef94" type="selectionEntry" targetId="356a-3edb-d846-0d17">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1a10-a554-de37-a7f0" includeChildSelections="false"/>
-              </constraints>
-              <modifiers>
-                <modifier type="set" value="Bolt Thrower" field="name"/>
-              </modifiers>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Bolt Thrower" hidden="false" id="b8be-41ae-97af-071b" type="selectionEntry" targetId="2138-5273-4858-7ca4">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="97ec-d42d-e1d7-d2ad" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="634c-8910-7415-8842" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Bolt Thrower (additional)" hidden="false" id="73ae-dff3-9c7d-ef94" type="selectionEntry" targetId="356a-3edb-d846-0d17">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1a10-a554-de37-a7f0" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="Bolt Thrower" field="name"/>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
   </selectionEntries>
   <entryLinks>
@@ -2844,6 +2849,7 @@ A single character in the front rank will not effect the unit’s fire</characte
       </constraints>
       <infoLinks>
         <infoLink name="Armour of Gazrakh" id="348b-d657-0a84-1db3" hidden="false" targetId="f762-69df-178c-5e86" type="profile"/>
+        <infoLink name="Armour of Gazrakh" id="d1b2-f56b-bc26-07f7" hidden="false" type="rule" targetId="773c-621d-5013-06df"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="30"/>
@@ -2993,7 +2999,7 @@ A single character in the front rank will not effect the unit’s fire</characte
                 <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">-</characteristic>
                 <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
                 <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
-                <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">2 (one per crewman)</characteristic>
+                <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">2</characteristic>
                 <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">50x50</characteristic>
               </characteristics>
             </profile>
@@ -3017,6 +3023,9 @@ A single character in the front rank will not effect the unit’s fire</characte
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
+          <entryLinks>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="e8c8-4313-8b97-f093" type="selectionEntry" targetId="abdb-bbd0-41b2-5dff"/>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -3046,7 +3055,7 @@ A single character in the front rank will not effect the unit’s fire</characte
                 <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">-</characteristic>
                 <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
                 <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
-                <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">2 (one per crewman)</characteristic>
+                <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">2</characteristic>
                 <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">50x50</characteristic>
               </characteristics>
             </profile>
@@ -3070,6 +3079,9 @@ A single character in the front rank will not effect the unit’s fire</characte
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
+          <entryLinks>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="b7c6-40b7-9e01-66ec" type="selectionEntry" targetId="abdb-bbd0-41b2-5dff"/>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -3201,6 +3213,9 @@ You may only guess between 12&quot; and 48&quot; for range. Use the cannon misfi
     <rule name="Death Rocket" id="a501-f3bd-beb4-38f7" hidden="false">
       <description>Treat as a stone thrower in the rulebook with the following exceptions. You may only guess up to 48&quot; for range. 
 Use the cannon misfire table if you roll a misfire and an arrow. However, if you roll a hit and a misfire the rocket hits the ground where you aimed and then shoots off in a random direction before exploding. Roll 4D6&quot; for the distance the rocket moves (in the direction of the arrow on the hit symbol), and resolve the explosion there. It does no damage where it lands originally</description>
+    </rule>
+    <rule name="Armour of Gazrakh" id="773c-621d-5013-06df" hidden="false">
+      <description>Gives wearer a 1+ armour save that cannot be improved.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
@@ -3388,14 +3403,13 @@ wound.</characteristic>
     <profile name="Armour of the Furnace" typeId="f681-9937-db53-f1d8" typeName="Armour" hidden="false" id="fc87-b213-77c1-af16">
       <characteristics>
         <characteristic name="Saving Throw Modifier" typeId="b600-e1ed-0765-27c1">Counts as wearing armour (4+ armour save). 5+ ward save.</characteristic>
-        <characteristic name="Special rules" typeId="42c3-68ab-cfa5-203e">Wearer (and his
-mount) is immune to fire based attacks and spells</characteristic>
+        <characteristic name="Special rules" typeId="42c3-68ab-cfa5-203e">Wearer (and his mount) is immune to fire based attacks and spells</characteristic>
       </characteristics>
     </profile>
     <profile name="Armour of Gazrakh" typeId="f681-9937-db53-f1d8" typeName="Armour" hidden="false" id="f762-69df-178c-5e86">
       <characteristics>
-        <characteristic name="Saving Throw Modifier" typeId="b600-e1ed-0765-27c1">Gives wearer a 1+ armour save that cannot be improved.</characteristic>
-        <characteristic name="Special rules" typeId="42c3-68ab-cfa5-203e"/>
+        <characteristic name="Saving Throw Modifier" typeId="b600-e1ed-0765-27c1">1+</characteristic>
+        <characteristic name="Special rules" typeId="42c3-68ab-cfa5-203e">Gives wearer a 1+ armour save that cannot be improved.</characteristic>
       </characteristics>
     </profile>
     <profile name="Chaos Dwarf" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="06aa-1bc8-f015-6cb1" publicationId="756d-4758-8a13-1d8a" page="32">

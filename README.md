@@ -1,436 +1,83 @@
-# Warhammer: Fantasy Battles - 6th Definitive Edition
+# Warhammer Fantasy 6th Definitive edition
 
-This project intends to collect all the rules published for the 6th edition of Warhammer: Fantasy Battles. This include everything published in rulebooks, supplements, magazines and the GW old website.
-It also tries to add the references to all the rules written here, so any player can both check their legitimacy and consult the original material instead.
+A complete, machine-readable data repository for Warhammer Fantasy Battles 6th Edition, formatted for BattleScribe and perfectly compatible with New Recruit.
 
-Ideally we will also apply F.A.Q.s, erratas and any other patch, update or change in the rules during the 6th edition.
+This project digitizes the complete 6th Edition experience into a modern list-building format. It includes the official rules, integrated FAQs, and the community contributions required to play the game today.
 
-The data is heavily based on [Ergofarg's work](https://github.com/Ergofarg/Warhammer-Fantasy-6th-edition/), which was the first stone. Everything else has been built over his work.
+---
 
-The main additions are:
-  - Options for the alternative lists!
-  - Special characters!
-  - More references to the rules!
-  - All the experimental rules of the 6th edition!
+## 🛠️ How to Use (Installation)
 
-## Factions included
-- [x] Skaven
-- [x] Wood Elves
-- [x] Tomb kings
-- [x] Bretonnia
-- [x] Chaos Dwarfs
-- [x] Dark Elves
-- [x] Lizardmen
-- [x] Orcs and Goblins
-- [x] High Elves
-- [x] The Empire
-- [x] Vampire Counts (WIP)
-- [x] Beast of Chaos (inside `Forces of Chaos`)
-- [x] Hordes of Chaos (inside `Forces of Chaos`)
-- [x] Daemons of Chaos (inside `Forces of Chaos`)
-- [x] Dogs of War
-- [x] Kislev
-- [x] Ogre Kingdoms (WIP)
-- [x] Dwarfs (Original book)
-- [x] Dwarfs (Revised book) (WIP)
+To use this data for list building, you do not need to download the files manually. Simply add this repository to your app of choice:
 
-## Characters and units added
+### For New Recruit (Recommended)
+1. Open [New Recruit](https://www.newrecruit.eu/).
+2. Go to your **System / Data** settings.
+3. Add a Custom Gallery by pasting this exact URL:
+   `https://raw.githubusercontent.com/lexicanum-imperialis/Warhammer-Fantasy-Battles-6th-Definitive-edition/main/index.xml`
+4. Update your data.
 
-### Skaven
-- [x] Grey Seer Thanquol (SKV-AB)
-- [x] ~Throt the Unclean (SKV-AB)~
-- [x] Throt the Unclean (CR-03)
-- [x] Warlord Queet, Head-Taker (CR-03)
-- [x] Snikch, Deathlord (WD#296-UK)
-- [x] Ghoritch, Castellan of HellPit (WD#311-UK)
-- [x] Ikit Claw, Chief Warlock (CJ#49)
-- [x] Lord Skrolk, Lord of Plague (CJ#49)
-- [x] Arch Plague Lord Nurglitch (LUS)
-- [x] Klawmuncast, Warlock Engineer (WebGW)
-- [x] Morbus, Lord of Plague (WebGW)
-- [x] Doomwheel (CJ#49)
-- [x] Vermin Lord (CJ#49)
-- [x] Rat Tank (WebGW)
-- [x] Rat Riders (WebGW)
+### For BattleScribe (WIP)
+1. Go to **Manage Data**.
+2. Tap **Add Data Repository** (or the `+` icon).
+3. Paste the `index.xml` URL provided above.
+4. Update your data.
 
-### Wood Elves
-- [x] Orion, King in the Woods (WE-AB)
-- [x] Drycha (WE-AB)
-- [x] Twilight Sisters (WE-AB)
-- [x] Ariel, Queen of Athel Loren (WebGW)
-- [x] Skaw the Falconer (WebGW)
+---
 
-### Tomb Kings
-- [x] Khalida (TK-AB)
-- [x] Settra (TK-AB)
-- [x] Sehenesmet (WebGW)
-- [ ] Tutankhanut*
+## 📚 Repository Contents
 
-### Bretonnia
-- [x] The Green Knight
-- [x] The Fay Enchantress
-- [x] Louen Leoncoeur, King of Bretonnia
-- [x] Sir Amalric of Gaudaron (WD#310-UK)
-- [x] Tristan and Jules (WD#303-UK)
-- [ ] Tancred, Duke of Quenelles* (CR-03),
-- [ ] Bagrian* (CR-03),
+This repository is heavily expanded from the legacy 6th Edition files and currently contains the complete rule sets and unit profiles for the following:
 
-### Chaos Dwarfs
-- [x] Orc Arrer Boyz
-- [x] FAQ
+**Core Game System & Expansions:**
+* WHFB 6th Edition Core Rules
+* Official Games Workshop Errata & FAQs incorporated directly into unit profiles
+* +230 Special Characters and named units
+* +60 Alternative Army Lists (Appendix lists, Campaign lists, etc.)
+* Regiments of Renown & Dogs of War
+* Optional and Experimental Rules
 
-### Lizarmen
-- [x] Kroq-gar
-- [x] Kroak
-- [x] Sacred Hosts rules (WD#300-UK)
-- [x] Tehenhauin (LUS)
-- [x] Lord Mazdamundi (WD#290-USA)
-- [x] Nakai (webGW)
-- [x] Xltep (webGW)
-- [x] Ten-zlati (webGW)
-- [ ] Quatl (CR-04)
+**Official Armies & Specific Features:**
+* **Beastmen**
+* **Bretonnia**
+* **Chaos Dwarfs** *(Ravening Hordes / White Dwarf)*
+* **Dark Elves** *(Fully updated Druchii revisions)*
+* **Dogs of War**
+* **Dwarfs**
+* **High Elves**
+* **Hordes of Chaos**
+* **Lizardmen** *(Includes Sacred Hosts rules)*
+* **Ogre Kingdoms**
+* **Orcs and Goblins**
+* **Skaven**
+* **The Empire** *(Includes Knightly Orders)*
+* **Tomb Kings**
+* **Vampire Counts**
+* **Wood Elves**
 
-### Dogs of War
-- [x] Al Muktar's Desert Dogs
-- [x] Asarnil the Dragonlord
-- [x] Bearman of Urslo
-- [x] Birdman of Catrazza
-- [x] Braganza's Besiegers
-- [x] Bronzino's Galloper Gun
-- [x] Golgfag's Ogres
-- [x] Leopold's Leopard Company
-- [x] Long Drong's Slayer Pirate
-- [x] Lumpin Croop's Fighting Cock
-- [x] Marksmen of Miragliano
-- [x] Ogla Khan's Wolfboy
-- [x] Pirazzo's Lost Legion
-- [x] Ricco's Republican Guard
-- [x] The Alcantani Fellowship
-- [x] Tichi Huichi's Raiders
-- [x] Vespero's Vendetta
-- [x] Voland's Venators
-- [x] Ruglud's Armoured Orc
-- [x] Mengil's Manflayers
-- [x] The Cursed Company
-- [x] Amazon Serpent Priestess (WD#307-UK)
-- [x] Anakonda's Amazons (WD#308-UK)
-- [x] Amazon Totem Warriors (by Andy Hoare)
-- [x] Amazon Cold One Riders (by Andy Hoare)
-- [x] Torston Treehaka's Sea Axes (WD#307, p.48)
-- [x] Giant (WD#316-UK, p.20-43)
-- [x] Mydas the Mean (CR-03, p.110)
-- [x] Lucrezzia Belladonna (CR-03, p.111)
-- [x] Borgio the Besieger, Merchant Prince of Miragliano (CR-03, p.112)
-- [x] Ghazak Khan, Terror of the East (CR-03, p.112)
-- [x] Lorenzo Lupo, Merchant Prince of Luccini (CR-03, p.113)
-- [x] Marco Colombo (WD#103-ES, p.7)
-- [x] Gotrek Gurnisson & Felix Jaeger (AN-02, p.64)
-- [x] Dark Emissary (CR-03, p.14)
-- [x] Truthsayer (CR-03, p.15)
-- [x] Fenbeasts (CR-03, p.16)
-- [x] Johann van Hal & Wilhelm Hasburg (AN-02, p.119)
-- [x] Emperor Fire Dragon (FW)
-- [x] 'Kathleen' Halftank (WD#314-UK, p.93)
-- [x] Toxote's Hellmounts (CJ#41, p.24-27)
-- [x] Manbiters (WD#310-UK, p.95 & )
-- [x] Giants of Albion (CR-04, p.67)
-- [x] Josef Bugman (CJ#44)
+*(Note: All sources from Army Books, White Dwarf magazines, and other official GW materials have been meticulously documented within the data files).*
 
-### Dark Elves
-- [x] Malekith, the Witch King
-- [x] Morathi, the Hag Sorceress
-- [x] Malus Darkblade
-- [x] Rakarth (CR-04)
-- [x] Shadowblade (CR-04)
-- [x] Crone Hellebron (WebGW)
-- [x] Kuoran (WebGW)
-- [x] Tullaris (WebGW)
-- [x] Patched to WD#287-UK (all lists)
-- [x] Magic objects from 'Albion' Campaign (WD#263-UK)
-- [x] Magic objects from 'Storm of Chaos' Campaign (SoC)
-- [x] Optional rules for upgrading the War Hydras (AN-02)
+---
 
-### Orcs and Goblins
-- [x] Goblin Spider Riders (only Savage Orcs Horde, OG-AB, p.77)
-- [x] Spider Swarm (only Savage Orcs Horde, OG-AB, p.77)
-- [x] Savage Orcs Chariot (only Savage Orcs Horde, OG-AB, p.77)
-- [x] Snotling Warboss (only Snotling Horde, OG-AB, p.77)
-- [x] Grimgor Ironhide (OG-AB, p.67)
-- [x] Wurrzag (OG-AB, p.69)
-- [x] Borgut Facebeater (SoC, p.57)
-- [x] Grom the Paunch (CR-04, p.80-81)
-- [x] Azhag the Slaughterer (AN-02, p.81-82)
-- [x] Morglum Necksnapper (webGW-US and T#25-ES)
-- [x] Gorfang Rotgut (webGW-US and T#25-ES)
-- [x] Skarsnik and Gobbla (CJ#46, p.28)
-- [x] Badruk 'Eadsplitta (webGW-US)
-- [x] The Black Gobbo (webGW-US)
-- [x] Grotsnag, Scourge of da Black Mountins (WD#298-UK, p.23)
-- [x] Grabnatz & Gulag (WD#299-UK, p.16)
-- [x] Kap'n Skabend & Slygit (WD#300-UK, p.44-45)
-- [x] Git Guzzler, the Goblin King (WD#302, p,55)
-- [ ] Breeds of Goblins (Dust, Fire, etc)
+## ⚖️ Rules Philosophy and Community Contributions
 
-### High Elves
-- [x] Imrik, Dragon Prince of Caledor (HE-AB, p.64)
-- [x] Tyrion, Defender of Ulthuan (HE-AB, p.70)
-- [x] Teclis, High Loremaster of the White Tower (HE-AB, p.72-73)
-- [x] Eltharion the Grim (CR-04, p.74-75)
-- [x] Eltharion, the Swordmaster (CR-04, p.76)
-- [x] Alarielle, the Everqueen (CR-03, p.114)
-- [x] Handmaidens of the Everqueen (CR-03, p.115)
-- [x] Korhil, Hunter Captain of the White Lions (CJ#48, p.12)
-- [x] Alith Anar, the Shadow King (webGW-ITA, p.27)
-- [x] Selafyn of the Annulii (WD#304-UK, p.112-113)
-- [ ] Salendor of Tor Achare* (CR-03)
-- [ ] Liandra Athinol* (CR-03)
-- [ ] Phythrion, der Auserwählte von Tor Yvresse* (Thelarion's Curse)
+This database is built primarily on **Rules-As-Written (RAW)** and the official Games Workshop FAQs. However, 6th Edition was left with several unpatched bugs, paradoxes, and unbalanced mechanics. 
 
-### The Empire
-- [x] Balthazar Gelt (EM-AB)
-- [x] Luthor Huss (EM-AB)
-- [x] Reiksmarshall Kurt Helborg, Captain of the Reiksguard (CJ#43, p.15)
-- [x] Knightly Orders rules from CJ#43 (p.11-13)
-- [x] Knightly Orders rules from WD#310
-- [x] Custom Knightly Orders rules from WD#310
-- [x] Reiksguard on Foot (WD#310-UK, p.120)
-- [x] Volkmar the Grim, Grand Theogonist (AN-02, p.60)
-- [x] Emperor Karl Franz, Prince of Altdorf (SoC, p.42)
-- [x] Emperor Karl Franz, Prince of Altdorf (WD#288-UK, p.61)
-- [x] Karl Franz, the Ruling Emperor (webGW-ES)
-- [x] Boris Todbringer, Elector Count of Middenland (SoC, p.43)
-- [x] Boris Todbringer, Elector Count of Middenland (webGW-UK)
-- [x] Boris Todbringer, Elector Count of Middenland (webGW-ES)
-- [x] High Priest Ar-Ulric Emil Valgeir (SoC, p.43)
-- [x] Valmir von Raukov, Elector Count of Ostland (webGW-UK)
-- [x] Ludwig Schwarzhelm - Champion of Karl Franz (webGW-UK)
-- [x] Thyrus Gormann, Grand Master of the Bright Order (webGW-UK)
-- [x] Marius Leitdorf, Elector Count of Averland (webGW-UK)
-- [x] Marius Leitdorf, Elector Count of Averland (WD#314-UK)
-- [x] Valten, Champion of Sigmar (CR-04, p.73)
-- [x] Valten, Exalted of Sigmar (SoC, p.41)
-- [x] Valten, Chosen of Sigmar (WD#288-UK, p.63)
-- [x] Arch Lector of Sigmar (WD#304-UK, p.85)
+To make the game fully playable in a modern setting, this engine incorporates specific, widely accepted community contributions. 
 
-### Vampire Counts
-- [x] Konrad von Carstein (WD#258-UK, p.91)
-- [x] Manfred von Carstein (VC-AB, p.70-71)
-- [x] Zacharias, the Everliving (VC-AB, p.72-73)
-- [x] Lahmian Swines (Heroes from other armies)
-- [x] Sylvanian Militia (SoC, p.89)
-- [x] Sylvanian Levy (SoC, p.89)
-- [x] Drakenhof Guard and Templars (SoC, p.89)
-- [x] Vlad & Isabella von Carstein (AN-02, p.61)
-- [x] Heinrich Kemmler, the Lichemaster (webGW-UK)
-- [x] Heinrich Kemmler, the Lichemaster (WD#309-UK)
-- [x] Krell, King of Wights (webGW-UK)
-- [x] Krell, King of Wights (WD#309-UK)
-- [x] Melkhior the Ancient (webGW-US)
-- [x] Neferata, the Queen of Mysteries (webGW-US)
-- [x] Sethep, the Merciless (WD#258, p.89)
+Our mechanical framework relies on:
+* **The Official Rules & Errata:** The foundational baseline of the engine.
+* **The Direwolf FAQ:** The historical, global standard for resolving 6th Edition rules conflicts.
+* **Standardized Community Rules:** A curated selection of extremely common fixes and standardized rulings that are widely played by the international 6th Edition community today to balance the game.
+* **The Karak Norn Consensus:** Our documented resolutions for specific army-builder mechanics, phase-sequence logic, and trait stacking. 
 
-### Beasts of Chaos
-- [x] Khazrak the One-Eye (BC-AB, p.68-69)
-- [x] Gorthor the Beastlord (BC-AB, p.70-71)
-- [x] Morghur, Master of Skulls (BC-AB, p.72-73)
-- [x] Chaos Mutations (CR-04, p.88-91)
+*(For complete transparency, design dilemmas, community rules, errata, and edge-case resolutions used in this engine are heavily documented in the `/precedents/` folder and the GitHub Issues section of this repository, so you know exactly how your list is being calculated.)*
 
-### Hordes of Chaos
-- [x] Hellcannon (SoC, p.16-17)
-- [x] Flayerkin (SoC, p.19)
-- [x] Archaon, Lord of the End of Times (HC-AB, p.98-99)
-- [x] Galrauch, First pf the Chaos Dragons (HC-AB, p.100-101)
-- [x] BloodCrusher (SoC, p.30)
-- [x] PlagueRider (SoC, p.30)
-- [x] ChangeBringer (SoC, p.30)
-- [x] PleasureSeeker (SoC, p.30)
-- [x] Daemonic Chariot of Khorne (SoC, p.31)
-- [x] Daemonic Chariot of Nurgle (SoC, p.31)
-- [x] Daemonic Chariot of Tzeentch (SoC, p.31)
-- [x] Daemonic Chariot of Slaanesh (SoC, p.31)
-- [x] Daemonic Herald (SoC, p.28)
-- [x] Daemon-beast of Nurgle (SoC, p.29)
-- [x] Arbaal, the Undefeated (CJ#50, p.8-9)
-- [x] Egrimm van Horstman, Sorcerer of Tzeentch (CJ#50, p.10-12)
-- [x] Aekold Helbrass, Champion of Tzeentch (CJ#50, p.13)
-- [x] Scyla Anfinngrim, Chaos Spawn  (CJ#50, p.14-15)
-- [x] Dechala, the Denied One (CJ#50, p.15-16)
-- [x] Azazel, Prince of Damnation (CJ#50, p.16-17)
-- [x] Marauder Lord of Skeggi (WD#309-UK, p.75)
-- [x] Marauder Aspiring Champion of Skeggi (WD#309-UK, p.75)
-- [x] Angkor, The Father of Mammoths (FW)
-- [x] Giant Chaos Spawn (FW)
-- [x] Giant Spined Chaos Beast (FW)
-- [x] Great Chaos Dragon (FW)
-- [x] Vardek Crom, Herald of Archaon (SoC)
-- [x] Be'lakor, the Dark Master (SoC)
-- [x] Chaos Mutations (CR-04, p.88-91)
-- [ ] Hrothgar Daemonaxe* (Games Day 2002)
-- [ ] Lorkar Bjoergir* ("Thelarion's Curse 2002", GW-DE)
+---
 
-### Dwarfs (2001)
-- [x] Thorek Ironbrow, Dwarf Runelord (DW1-AB, p.50-51)
-- [x] King Alrik Ranulfsson of Karak-Hirn (DW1-AB, p.52-53)
-- [x] Slayer Doomseekers (SoC, p.64)
-- [x] Brotherhood of Grimnir (Soc, p.69)
-- [x] Malakai Makaisson's Goblin-Hewer (Soc, p.66)
-- [x] High King Thorgrim Grudgebearer (AN-02, p.65)
-- [x] High King Thorgrim Grudgebearer (CJ#44)
-- [x] Ungrim Ironfist, Slayer King of Karak Kadrin (SoC, p.62)
-- [x] Garagrim Ironfist, War-mourner of Karak Kadrin (SoC, p.63)
-- [x] Runesmith Kadrin Redmane (WD#254-UK, p.31)
-- [x] Grombrindal, the White Dwarf (WD#100-ES, p.22-24)
-- [x] Skeggi Threkkson (WD#299-UK, p.15)
-- [x] Dwarf Seadogs (WD#300-UK, p.43)
-- [x] Grim 'Dead Eye' Grunnson (WD#300-UK, p.43)
-- [x] King Byrrnoth Grundadrakk of Barak Varr (WD#307-UK, p.46)
-- [x] Bazrak Bolgan, Brewmaster (WD#298-UK, p.21)
-- [x] Josef Bugman (Young) (WD#300-UK. p.44)
-- [x] Durzak Dragonback (WD#302-UK, p.54)
-- [x] Brewmaster (WD#302-UK, p.56)
-- [x] Fire Thrower (WD#302-UK, p.57)
-- [x] King Kazador of Karak Azul (CJ#44)
-- [x] Runelord Kragg the Grim (CJ#44)
-- [x] Burlok Damminson (CJ#44)
-- [x] Goblobber (Stone Thrower) (CJ#44)
-- [ ] Brok Stonefist* (CR-03)
-- [ ] Khargrim the Mad* (CR-03)
+## 🤝 Acknowledgments and Gratitude
+We want to thank first to the team from [Las _Tablillas Sagradas_](https://lastablillassagradas.blogspot.com/), that has inspired this whole project. Special mention to Antonio, who possess the knowledge of Tzeentch and the wisdom of Teclis.
 
-### Dwarfs (2006)
-- [x] Thorgrim Grudgebearer (DW2-AB, p.58-59)
-- [x] Thorek Ironbrow, Dwarf Runelord (DW2-AB, p.60-61)
-- [x] Josef Bugman (DW2-AB, p.62)
-- [x] Runelord Kragg the Grim (WD#315-UK, p.103)
-- [x] King Kazador of Karak Azul (WD#315-UK, p.103)
-- [x] King Alrik Ranulfsson of Karak-Hirn (WD#315-UK, p.104)
-- [x] Burlok Damminson (WD#315-UK, p.105)
-- [x] Ungrim Ironfist, Slayer King of Karak Kadrin (SoC, p.62)
-- [x] Garagrim Ironfist, War-mourner of Karak Kadrin (SoC, p.63)
-- [ ] Brok Stonefist* (CR-03)
-- [ ] Khargrim the Mad* (CR-03)
+Second, but not least, to [Ergofarg](https://github.com/Ergofarg/Warhammer-Fantasy-6th-edition/) and his collaborators, to whom we owe a lot of hours saved from their pre-existing effort. We have learned a lot studying their files.
 
-### Ogre Kingdoms
-- [x] Skrag the Slaughterer, Prohet of the Great Maw (OK-AB, p.76-77)
-- [x] Rhynox Riders (WD#309, p.76-83)
-- [x] Greasus Goldtooth, Overtyrant of the Ogre Kingdoms (OK-AB, p.78-79)
-- [x] Ghark Ironskin, Tyrant of the Ironskin Tribe (WD#309, p.78)
-- [x] Braugh the Slavelord (Special from GW)
-
-### Kislev
-- [x] Tzarina Katarin, the Ice Queen (KS-AB)
-- [x] Boris Ursus, the Red Tzar (KS-AB)
-- [x] Kislevite Shaman (GLWL)
-
-## Alternative lists included
-- [x] Clan Eshin (SKV-AB)
-- [x] Clan Eshin (SoC)
-- [x] Clan Moulder (SKV-AB)
-- [x] Clan Skryre (SKV-AB)
-- [x] Clan Pestilens (SKV-AB)
-- [x] Bubonic Court of Nurglitch (LUS)
-- [x] Hell Pit (WD-311)
-- [x] Quatar's Army (WebGW)
-- [x] Errantry War (SoC)
-- [x] Raiding Army (DE-AB)
-- [x] City Garrison (AN-02)
-- [x] Watchtower Patrol (WK#259-UK)
-- [x] Cult of Slaanesh (SoC)
-- [x] Southlands (LM-AB)
-- [x] Red Host (LUS)
-- [ ] Lost valley of the Carnosaurs (CR-04)
-- [x] Night Goblin Horde (OG-AB), p.76
-- [x] Common Goblin Horde (OG-AB), p.76
-- [x] Savage Orc Horde (OG-AB), p.76
-- [x] Mountain or Troll Country Waaagh! Horde (OG-AB), p.77
-- [x] Nomadic Badlands Waaagh! Horde (OG-AB), p.77
-- [x] Snotling Horde (OG-AB), p.77
-- [x] Grimgor'Ardboyz (SoC, p.58)
-- [x] Night Goblin Horde (C#46, p.24-27)
-- [x] High Elf Sea Patrol (SoC, 9.94-95)
-- [x] War of the Beard (CR-03)
-- [ ] War of Vengeance (CR-03, for 1st Book)
-- [ ] War of Vengeance (CR-03, for 2st Book)
-- [x] The Emperor's Guard (EM-AB, p.78)
-- [x] The Artillery Train of Nuln (EM-AB, p.78)
-- [x] Sigmarite Army (EM-AB, p.79)
-- [x] Marienburger Mercenary Army (EM-AB, p.79)
-- [x] Cult of Ulric (EM-AB, p.79)
-- [x] Cult of Ulric (CR-04, p.2-13)
-- [x] Crusader Army (EM-AB, p.79)
-- [x] Crusader Army (CJ#43)
-- [x] Army of Middenland (SoC, p.43-51)
-- [x] Clan Von Carstein (VC-AB, p.78)
-- [x] Clan Necrarch (VC-AB, p.78)
-- [x] Necromancer's Army (VC-AB, p.78)
-- [x] Clan Blood Dragons (VC-AB, p.79)
-- [x] Clan Strigoi (VC-AB, p.79)
-- [x] Clan Lahmia (VC-AB, p.79)
-- [x] Army of Sylvania (TdC, p.88-89)
-- [ ] Vampire Coast
-- [x] Army of the LICHEMASTER (WD#309-UK)
-- [x] Archaon's Horde (SoC, p.18-23)
-- [x] Daemonic Legion (SoC, p.27-32)
-- [x] Ironskin Tribe (WD#309-UK, p-76-83)
-- [x] Slayers of Karak Kadrin (SoC, p.61-70) for DW1-AB
-- [x] Slayers of Karak Kadrin (SoC, p.61-70) for DW2-AB
-- [x] Guild Expedition (DW1-AB, p.78) for DW1-AB
-- [x] Guild Expedition (DW1-AB, p.78) for DW2-AB
-- [x] Throng of Karak Kadrin (DW1-AB, p.78) for DW1-AB
-- [x] Throng of Karak Kadrin (DW1-AB, p.78) for DW2-AB
-- [x] Royal Clan (DW1-AB, p.79) for DW1-AB
-- [x] Royal Clan (DW1-AB, p.79) for DW2-AB
-- [x] Overground Defence (DW1-AB, p.79) for DW1-AB
-- [x] Overground Defence (DW1-AB, p.79) for DW2-AB
-- [x] Undgrin Ankor Force (DW1-AB, p.79) for DW1-AB
-- [x] Undgrin Ankor Force (DW1-AB, p.79) for DW2-AB
-- [x] War of Vengeance (DW1-AB, p.79) for DW1-AB
-- [x] War of Vengeance (DW1-AB, p.79) for DW2-AB
-
-
-## Sources consulted
-
-|Short-n   |Title of the source                               |Year   |Author(s)                             |
-|:--------:|:-------------------------------------------------|:-----:|:-------------------------------------|
-|BRB       |"Warhammer Rulebook 6th Edition"                  |2000   |by Rick Priestly and Tuomas Pirinen   |
-|AN-02     |"Warhammer Annual"                                |2002   |by Gav Thorpe                         |
-|CR-03     |"Warhammer Chronicles"                            |2003   |by Jake Thornton & Alessio Cavatore   |
-|CR-04     |"Warhammer Chronicles"                            |2004   |by Jake Thornton & Alessio Cavatore   |
-|Lustria   |"Warhammer: Lustria"                              |2004   |by Andy Hoare & Graham McNeil         |
-|SoC       |"Warhammer: Storm of Chaos"                       |2004   |by Gav Thorpe                         |
-|RH        |"Warhammer Armies: Ravening Hordes (6th Edition)" |2000   |by Jake Thornton with Alessio Cavatore|
-|OG-AB     |"Warhammer Armies: Orcs & Goblins (6th Edition)"  |2000   |by Rick Priestly and Jake Thornton    |
-|DE-AB     |"Warhammer Armies: Dark Elves (6th Edition)"      |2001-06|by Gav Thorpe y Space McQuirk and Tuomas Pirinen|
-|SKV-AB    |"Warhammer Armies: Skaven (6th Edition)"          |2002   |by Alessio Cavatore                   | 
-|HC-AB     |"Warhammer Armies: Hordes of Chaos (6th Edition)" |2002   |by Gav Thorpe, Rick Priestly, Anthony Reynolds and Alessio Cavatore|
-|BR-AB     |"Warhammer Armies: Bretonnia (6th Edition)"       |2003   |by Anthony Reynolds                   |
-|TK-AB     |"Warhammer Armies: Tomb Kings (6th Edition)"      |2003   |by Alessio Cavatore                   |
-|WE-AB     |"Warhammer Armies: Wood Elves (6th Edition)"      |2005   |by Anthony Reynolds and Matthew Ward  | 
-|LM-AB     |"Warhammer Armies: Lizardmen (6th Edition)"       |2003   |by Anthony Reynolds                   |
-|CJ#48     |Citadel Journal #48                               |2002   |by Alessio Cavatore, Rick Preistley and Nigel Stillman |
-|CJ#49     |Citadel Journal #49                               |2002   |by Alessio Cavatore and Andy Chambers |
-|WD#250-US|White-Dwarf #250 US                               |2000-11|by Gav Thorpe                         |
-|WD#258-US|White-Dwarf #258 US                               |2001-07|by Gav Thorpe                         |
-|WD#259-UK|White-Dwarf #259 UK                               |       |                                      |
-|WD#296-UK|White-Dwarf #296 UK                               |2004-08|by Anthony Reynolds                   |
-|WD#298-UK|White-Dwarf #298 UK                               |       |                                      |
-|WD#300-UK|White-Dwarf #300 UK                               |2004-12|by Andy Hoare                         |
-|WD#303-UK|White-Dwarf #303 UK                               |       |                                      |
-|WD#310-UK|White-Dwarf #310 UK                               |       |                                      |
-|WD#311-UK|White-Dwarf #311 UK                               |2005-11|by Phil Kelly                         |
-|WD#317-UK|White-Dwarf #317 UK                               |2006-05|by Gareth Hamilton                    |
-|WebGW-UK |["Warpstone - A Skaven civil war scenario"](http:/uk.games-workshop.com/warhammerworld/warhammer/skaven/SK-articles/warpstone-scenerio/)|2004-03-14 (consulted)|by Jonathan Green|
-|WebGW-US |["Character - Ariel"](http://us.games-workshop.com/games/warhammer/woodelves/gaming/ariel/default.htm)     |2006-07 (consulted)| |
-|WebGW-US |["Character - Skaw"](http:/us.games-workshop.com/games/warhammer/woodelves/gaming/skaw/default.htm)        |2006-07 (consulted)| |
-|WebGW-OZ |["Giant Warriors of Khemri"](http://oz.games-workshop.com/news/oz/journal/assets/GiantWarriorsofKhemri.pdf)|2003-05 (consulted)|by Gav Thorpe|
-|WebGW-UK |["Masters of the Druchii"](http://uk.games-workshop.com/darkelves/special-characters/)                     |2006-05 (consulted)||
-|WebGW-US |["Lizardmen characters"](http:/us.games-workshop.com/games/warhammer/lizardmen/gaming/campaign/characters/)|2005-08 (consulted)||
-|WebGW-US |[""](http://us.games-workshop.com/games/warhammer/orcs/gaming/special_characters/morglum.htm) | 2007-01 (consulted) |
-|WebGW-US |[""](http://us.games-workshop.com/games/warhammer/orcs/gaming/special_characters/gorfang.htm) | 2007-01 (consulted) |
-|WebGW-US |[""](http://us.games-workshop.com/games/warhammer/orcs/assets/badruk.pdf)                     | 2004-07 (consulted) |
-|WebWG-ITA|[""](http:/it.games-workshop.com:80/doc/events/cw/cwfb2005_1.2.zip)                           | 2005-07 |
-## Acknowledge and gratitudes
-I want to thank first to the team from [Las _Tablillas Sagradas_](https://lastablillassagradas.blogspot.com/), who made their fabulous _Warhammer Compendium_ that has inspired this whole project. Special mention to Antonio, who possess the knowledge of Tzeentch and the wisdom of Teclis.
-
-In second but not least, [Ergofarg](https://github.com/Ergofarg/Warhammer-Fantasy-6th-edition/) and his collaborators, whom I owe a lot of hours saved from their preexisten effort. I have learned a lot studying their files.
-
-Also many thanks to all who offer eyes or ears to discuss and improve the project.
+Also, many thanks to all who offer eyes or ears to discuss and improve the project.
