@@ -1129,6 +1129,8 @@
     <selectionEntry id="8b76-92c4-23f9-54b1" name="Allow experimental rules?" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="b302-93b6-3d1d-13d6" type="max"/>
+        <constraint type="min" value="0" field="selections" scope="force" shared="true" id="badf-a1a1-372c-9baf" includeChildSelections="false"/>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="d67f-4b65-a832-1e1b" includeChildSelections="false"/>
       </constraints>
       <infoLinks>
         <infoLink id="a873-a572-3da0-2573" name="Experimental rules" hidden="false" targetId="e29e-22d4-5752-b23d" type="rule"/>
@@ -1143,10 +1145,24 @@
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="0" field="d67f-4b65-a832-1e1b">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="4fed-b911-e6e0-927b" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="0" field="badf-a1a1-372c-9baf">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="4fed-b911-e6e0-927b" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="8923-5946-7b10-8957" name="Allow special characters?" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="5036-e10c-2fd8-f135" type="max"/>
+        <constraint type="min" value="0" field="selections" scope="force" shared="true" id="3d91-4deb-faa0-9996" includeChildSelections="false"/>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="77da-4055-647c-6978" includeChildSelections="false"/>
       </constraints>
       <infoLinks>
         <infoLink id="5bf6-245f-e93b-eb11" name="Special characters" hidden="false" targetId="3be4-7ba4-c28d-154b" type="rule"/>
@@ -1159,6 +1175,18 @@
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="0" field="77da-4055-647c-6978">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="0644-bfcd-32c2-21dc" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="0" field="3d91-4deb-faa0-9996">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="0644-bfcd-32c2-21dc" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="62e0-5a1d-ff7c-31dd" name="Bolt Thrower" publicationId="315e-e3c4-08af-fd51" page="124" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
@@ -1987,7 +2015,6 @@ Note that a spell cast with a Power Stone can never be cast with Irresistible Fo
     </rule>
     <rule id="e281-de89-db38-9504" name="Multiple Shots" publicationId="315e-e3c4-08af-fd51" page="90" hidden="false">
       <description>Some missile weapons enable their users to shoot several times in each Shooting phase - known as multiple shots. The number of times the weapon can fire is given as part of its description. Eg, a Dark Elf repeater crossbow can fire two shots in each Shooting phase so is noted as having 2x multiple shots. These weapons can either fire once without penalty, or several times with a -1 to hit penalty for each shot.
-
 
 Note that a model&apos;s Attacks characteristic has no effect on the number of shots it can make. The Attacks characteristic refers to close combat attacks only.</description>
     </rule>
