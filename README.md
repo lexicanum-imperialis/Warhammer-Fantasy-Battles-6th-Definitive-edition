@@ -27,15 +27,20 @@ To use this data for list building, you do not need to download the files manual
 
 ## 📚 Repository Contents
 
-This repository is heavily expanded from the legacy 6th Edition files and currently contains the complete rule sets and unit profiles for the following:
+This repository provides a consolidated, machine-readable data layer for Warhammer Fantasy 6th Edition. It digitizes unit profiles and mechanical logic into a standardized format, integrating widely-accepted community standards as peer-level benchmarks for structural consistency:
 
-**Core Game System & Expansions:**
-* WHFB 6th Edition Core Rules
-* Official Games Workshop Errata & FAQs incorporated directly into unit profiles
-* +230 Special Characters and named units
-* +60 Alternative Army Lists (Appendix lists, Campaign lists, etc.)
-* Regiments of Renown & Dogs of War
-* Optional and Experimental Rules
+* The Direwolf Archive: Historical community standard for rules interpretation and FAQ consolidation.
+* The GLWL (Great Lakes Warhammer League): Historical tournament precedents for standardized competitive play.
+* The Norn Consensus: Historical mechanical precedents (2003–2006) provided by the Karak Norn Wargaming Club to resolve structural logic gaps for digital play.
+
+### Core Game System & Expansions:
+
+* WHFB 6th Edition Core Rules: The primary architectural baseline.
+* Official Errata & FAQs: Integrated directly into unit profiles and special rules.
+* +230 Special Characters: Named units and legendary heroes with codified traits.
+* +60 Alternative Army Lists: Appendix lists, Campaign variants, and White Dwarf supplements.
+* Mercenary Units: Full data for Regiments of Renown and Dogs of War.
+* Optional Logic: Toggles for experimental and trial rules.
 
 **Official Armies & Specific Features:**
 * **Beastmen**
@@ -68,8 +73,8 @@ To make the game fully playable in a modern setting, this engine incorporates sp
 Our mechanical framework relies on:
 * **The Official Rules & Errata:** The foundational baseline of the engine.
 * **The Direwolf FAQ:** The historical, global standard for resolving 6th Edition rules conflicts.
+* **The Norn Consensus Historical Precedent:** Documented resolutions for specific army-builder mechanics, phase-sequence logic, and rules interaction, provided by the **Karak Norn Wargaming Club** (Est. 2003, Switzerland).
 * **Standardized Community Rules:** A curated selection of extremely common fixes and standardized rulings that are widely played by the international 6th Edition community today to balance the game.
-* **The Norn Consensus:** Documented resolutions for specific army-builder mechanics, phase-sequence logic, and trait stacking, provided by the **Karak Norn Wargaming Club** (Est. 2003, Switzerland).
 
 *(For complete transparency, design dilemmas, community rules, errata, and edge-case resolutions used in this engine are heavily documented in the `/errata` and `/faq/` folder and the GitHub Issues section of this repository, so you know exactly how your list is being calculated.)*
 

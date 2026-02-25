@@ -7518,14 +7518,14 @@ S. Warhammer Chronicles 2004 page 12
 
 ## ⛰️ Part 3: The Norn Consensus
 
-*Context: Established in 2003, The Norn Consensus community provides standardized tournament errata for Warhammer 6th Edition. This section documents their structural resolutions, translating unresolved tabletop edge-cases into the strict mechanical logic required by digital list-builders. (Note: The digitization of the historical archive is an ongoing process. Additional rulings will be indexed here as they are translated for engine compatibility.)*
+*Context: Established in 2003, The Karak Norn Wargaming Club provides the Norn Consensus: a compilation of rules resolutions and tournament precedents debated by the Karak Norn Longbeard circle during the original 6th Edition era (2003-2006). This section documents their structural resolutions, translating unresolved tabletop edge-cases into the strict mechanical logic required by digital list-builders. (Note: The digitization of the historical archive is an ongoing process. Additional rulings will be indexed here as they are translated for engine compatibility.)*
 
 ### BRETONNIA
 **Q:** Can a Bretonnian Character benefit from both *Stubborn* and *Immune to Psychology* at the same time through the Virtue of the Penitent and the Grail Vow?
 **Ruling:** Yes. Break tests are not Psychology tests. Because the Virtue and the Vow are inherent, non-magical traits granted by the character's devotion, they completely bypass the Magic vs. Mundane conflict outlined in the official Banner of Sigismund FAQ. The character takes Break tests on unmodified Leadership while ignoring Fear, Terror, and Panic.
-**Source:** `[Rulebook pages 85 & 112 / Bretonnia Army Book / The Norn Consensus Precedent]`
+**Source:** `[Rulebook pages 85 & 112 / Bretonnia Army Book / The Norn Consensus Historical Precedent]`
 
 ### WOOD ELVES
 **Q:** Does a Treeman natively benefit from both *Stubborn* and *Immune to Psychology* (via the Forest Spirit rule) in close combat?
 **Ruling:** Yes. Because both rules are innate to the creature's profile and not the result of a Magic Item, they do not trigger the Magic vs. Mundane cancellation clause. The Treeman takes Stubborn Break tests on unmodified Leadership while simultaneously ignoring Psychology tests.
-**Source:** `[Rulebook pages 85 & 112 / Wood Elves Army Book / The Norn Consensus Precedent]`
+**Source:** `[Rulebook pages 85 & 112 / Wood Elves Army Book / The Norn Consensus Historical Precedent]`
