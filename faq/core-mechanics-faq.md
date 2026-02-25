@@ -1,6 +1,6 @@
 # 📜 Warhammer Fantasy Battles (6th Edition): Core Rules & Mechanics Archive
 
-This document serves as the definitive digital ledger for the core rules of Warhammer Fantasy Battles 6th Edition. It compiles official Games Workshop Rulebook Errata, the historical Direwolf Core FAQ, Great Lakes Warhammer League (GLWL) tournament precedents, and the Karak Norn Consensus required for engine compatibility (e.g., New Recruit, BattleScribe).
+This document serves as the definitive digital ledger for the core rules of Warhammer Fantasy Battles 6th Edition. It compiles official Games Workshop Rulebook Errata, the historical Direwolf Core FAQ, Great Lakes Warhammer League (GLWL) tournament precedents, and The Norn Consensus required for engine compatibility (e.g., New Recruit, BattleScribe).
 
 ---
 
@@ -3450,12 +3450,12 @@ END
 
 ---
 
-## ⛰️ Part 3: The Karak Norn Consensus
+## ⛰️ Part 3: The Norn Consensus
 
-*Context: Established in 2003, the Karak Norn community provides standardized tournament errata for Warhammer 6th Edition. This section documents their structural resolutions, translating unresolved tabletop edge-cases into the strict mechanical logic required by digital list-builders. (Note: The digitization of the historical archive is an ongoing process. Additional rulings will be indexed here as they are translated for engine compatibility.)*
+*Context: Established in 2003, The Norn Consensus community provides standardized tournament errata for Warhammer 6th Edition. This section documents their structural resolutions, translating unresolved tabletop edge-cases into the strict mechanical logic required by digital list-builders. (Note: The digitization of the historical archive is an ongoing process. Additional rulings will be indexed here as they are translated for engine compatibility.)*
 
 ### 1. Stacking "Stubborn" and "Immune to Psychology" (Native Traits Bypass)
 **Q:** Can a model or unit benefit from both the *Stubborn* and *Immune to Psychology* special rules at the same time if they are innate traits?
 **Ruling:** Yes, provided both rules are innate to the model's profile or granted by non-magical traits. Break tests are not Psychology tests. Therefore, a model that natively possesses both rules will take its Break tests on its unmodified Leadership while simultaneously ignoring tests for Fear, Terror, and Panic.
 **Important Exception:** This native stacking does not contradict the official ruling regarding the Banner of Sigismund. The core reasoning provided in that FAQ is that "there is no magic vs. mundane trump anymore." Because innate traits are inherent, non-magical abilities, they completely bypass the Magic vs. Mundane conflict.
-**Source:** `[Rulebook pages 85 & 112 / Warhammer Chronicles 2004 page 116 / Karak Norn Consensus Precedent]`
+**Source:** `[Rulebook pages 85 & 112 / Warhammer Chronicles 2004 page 116 / The Norn Consensus Precedent]`

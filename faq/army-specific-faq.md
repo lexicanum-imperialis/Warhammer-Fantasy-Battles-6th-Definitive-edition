@@ -1,6 +1,6 @@
 # 📜 Warhammer Fantasy Battles (6th Edition): Army Books & Faction FAQ Archive
 
-This document serves as the definitive digital ledger for faction-specific rules in Warhammer Fantasy Battles 6th Edition. It compiles official Games Workshop Army Book Errata, the historical Direwolf Armies FAQ, the Great Lakes Warhammer League (GLWL) tournament precedents, and the Karak Norn Consensus required to resolve faction edge-cases for engine compatibility.
+This document serves as the definitive digital ledger for faction-specific rules in Warhammer Fantasy Battles 6th Edition. It compiles official Games Workshop Army Book Errata, the historical Direwolf Armies FAQ, the Great Lakes Warhammer League (GLWL) tournament precedents, and The Norn Consensus required to resolve faction edge-cases for engine compatibility.
 
 ---
 
@@ -56,7 +56,7 @@ Psychology is Immune to Psychology. If it were otherwise,
 you’d get situations where a player could say "My Dread Banner
 is a magical fear and so therefore overrules your mundane
 immunity," which of course is not the case.
-[Digital Engine Note: The Karak Norn Consensus has further clarified this interaction. While the Banner of Sigismund (Magic Item) does not stack with ItP, innate abilities like Marks, Sacred Spawnings, Virtues and Vows do. Refer to the Karak Norn Consensus in Part 3 for the specific mechanical resolution.]
+[Digital Engine Note: The Norn Consensus has further clarified this interaction. While the Banner of Sigismund (Magic Item) does not stack with ItP, innate abilities like Marks, Sacred Spawnings, Virtues and Vows do. Refer to The Norn Consensus in Part 3 for the specific mechanical resolution.]
 S. Warhammer Chronicles 2004 page 116
 
 *****
@@ -7516,16 +7516,16 @@ S. Warhammer Chronicles 2004 page 12
 
 ---
 
-## ⛰️ Part 3: The Karak Norn Consensus
+## ⛰️ Part 3: The Norn Consensus
 
-*Context: Established in 2003, the Karak Norn community provides standardized tournament errata for Warhammer 6th Edition. This section documents their structural resolutions, translating unresolved tabletop edge-cases into the strict mechanical logic required by digital list-builders. (Note: The digitization of the historical archive is an ongoing process. Additional rulings will be indexed here as they are translated for engine compatibility.)*
+*Context: Established in 2003, The Norn Consensus community provides standardized tournament errata for Warhammer 6th Edition. This section documents their structural resolutions, translating unresolved tabletop edge-cases into the strict mechanical logic required by digital list-builders. (Note: The digitization of the historical archive is an ongoing process. Additional rulings will be indexed here as they are translated for engine compatibility.)*
 
 ### BRETONNIA
 **Q:** Can a Bretonnian Character benefit from both *Stubborn* and *Immune to Psychology* at the same time through the Virtue of the Penitent and the Grail Vow?
 **Ruling:** Yes. Break tests are not Psychology tests. Because the Virtue and the Vow are inherent, non-magical traits granted by the character's devotion, they completely bypass the Magic vs. Mundane conflict outlined in the official Banner of Sigismund FAQ. The character takes Break tests on unmodified Leadership while ignoring Fear, Terror, and Panic.
-**Source:** `[Rulebook pages 85 & 112 / Bretonnia Army Book / Karak Norn Consensus Precedent]`
+**Source:** `[Rulebook pages 85 & 112 / Bretonnia Army Book / The Norn Consensus Precedent]`
 
 ### WOOD ELVES
 **Q:** Does a Treeman natively benefit from both *Stubborn* and *Immune to Psychology* (via the Forest Spirit rule) in close combat?
 **Ruling:** Yes. Because both rules are innate to the creature's profile and not the result of a Magic Item, they do not trigger the Magic vs. Mundane cancellation clause. The Treeman takes Stubborn Break tests on unmodified Leadership while simultaneously ignoring Psychology tests.
-**Source:** `[Rulebook pages 85 & 112 / Wood Elves Army Book / Karak Norn Consensus Precedent]`
+**Source:** `[Rulebook pages 85 & 112 / Wood Elves Army Book / The Norn Consensus Precedent]`

@@ -8,7 +8,8 @@ This document serves as the definitive digital ledger for the official Games Wor
 
 ## 🏛️ Official Faction Errata
 
-Dark Elves
+### Dark Elves
+
 Page 7 - BLACK GUARD - Special Rules - Hatred
 Replace paragraph with: "Eternal Hatred: Black Guard are vicious killers and hate everybody and everything. In addition, hatred continues to have an effect in second and subsequent rounds of a combat."
 
@@ -73,7 +74,8 @@ Replace entires. Replace "Hatred" with "Eternal Hatred" for Black Guard unit.
 Page 80 - DARK MAGIC Summary
 Replace Chillwind & Doombolt entries: Chillwind should be 5+ to cast and Doombolt should be 6+ to cast.
 
-Dwarfs
+### Dwarfs
+
 Page 9 - ANVIL OF DOOM - The Anvil in the Game
 Replace 4th paragraph with: "When shooting at the Anvil of Doom, randomise hits evenly between the Dwarfs and the Anvil (discounting any hits against the Anvil itself). To take into account the protection offered by the Anvil, the Runelord gains a 4+ Ward save against any form of missile (including magic missiles)."
 
@@ -100,14 +102,16 @@ Replace the second paragraph with: "The war machine can shoot every turn, as lon
 Page 23 - FLAKKSON'S RUNE OF SEEKING
 Replace second paragraph with: "Bolt throwers only. Each rune adds +1 to the bolt thrower To Hit rolls against targets with the Fly special ability."
 
-The Empire
+### The Empire
+
 Page 14 - MASTER ENGINEER
 Replace Master Engineer profile. Replace BS value of 3 with 4.
 
 Page 26 - CHARACTERS' STEEDS
 Replace Warhorse profile. Replace M value of 4 with 8.
 
-High Elves
+### High Elves
+
 Page 15 - HIGH ELF HONOURS - SWORDMASTER
 Replace second paragraph with: "The character is equipped with a great weapon and may not take a magic weapon. Instead of striking last in any turn he does not charge, the character will strike in Initiative order, as explained on page 68 of the Warhammer rules. The character also has the Killing Blow special rule."
 
@@ -117,18 +121,21 @@ Replace paragraph below characteristics profile with: "* Note that 1-2 Repeater 
 Page 73 - WAR CROWN OF SAPHERY
 Replace second paragraph with: "Any spell which is normally limited to a specific range in inches is now of unlimited range. Spells that only affect the caster, all units within a certain range of the caster or may already be cast anywhere are not altered. Note that this does not mean that he can cast spells at targets that are out of sight if the spell normally requires line of sight."
 
-Hordes of Chaos
+### Hordes of Chaos
+
 Page 40 - FLAMERS OF TZEENTCH
 Replace second paragraph of 'Special Rules' with: "Accompany Horrors: Flamers must be deployed at the same time and within 5" of the unit of Horrors they have been bought with. After that they are free to move as they like, and each counts as a separate unit for the rest of the game (including for the purpose of calculating Victory points). If a Flamer is more than 5" away from a unit of Horrors at the end of any Chaos turn, it must immediately take a Leadership test. If the test is failed, the daemon is destroyed."
 
 Page 52 - STAFF OF CHANGE
 Replace rules paragraph with: "The bearer can make a Single re-roll of one or more dice rolled to cast or dispel a spell. The second result(s) stand. This can negate the effects of a Miscast and cause an Irresistible Force (and the equivalent results when dispelling). If the bearer casts a spell with Irresistible Force using the staff's re-roll ability, the staff will exhaust its power and cease working for the rest of the battle."
 
-Lizardmen
+### Lizardmen
+
 Page 31 - STEGADONS - Special Rules - Giant Bow
 Replace entire Giant Bow paragraph with: "Giant Bow: The giant bow is a Bolt Thrower, using all the rules for Bolt Throwers on pages 124-125 of the Warhammer rulebook with the following exceptions: The giant bow is fired using the Skinks' Ballistic Skill, and inflicts a single Strength 5 hit that does D3 wounds. The giant bow can move and fire, although it can only fire in the arc of sight of the Stegadon itself. It takes two crew to fire the giant bow (so two Skinks can't throw javelins if they are crewing the giant bow). As the Stegadon is a large target, the giant bow may shoot over normal sized units and interposing terrain that large targets can see over."
 
-Ogre Kingdoms
+### Ogre Kingdoms
+
 Page 64 - SKULLMANTLE
 Replace the final two words of text "....their Leadership" with "....the Leadership test".
 
@@ -138,19 +145,23 @@ Under * Army Battle Standard, replace text of "....but he cannot carry any other
 Page 41 - SLAVE GIANT - Throttle with Chain
 Insert the following sentence: "The Giant must nominate one enemy model for this attack".
 
-Orcs & Goblins
+### Orcs & Goblins
+
 Page 67 - GRIMGOR IRONHIDE
 Replace 1st line of 'Special Rules' with: "Ignore Greenskin Panic; Quell Animosity."
 
-Skaven
+### Skaven
+
 Page 39 - STORM BANNER
 Replace second paragraph with: "The banner can be activated at the beginning of any player's turn. No flying movement is allowed and all missile fire is at -2 to hit. All war machines and other ranged attacks that do not use BS may only fire if the player first rolls a 4+ on a D6 (roll for each model). Magic missiles and other ranged spells are not affected. Roll a D6 at the beginning of each player's subsequent turns - on a roll of 1 or 2, the power of the banner is exhausted and it no longer has any effect for the remainder of the battle."
 
-Vampire Counts
+### Vampire Counts
+
 Page 52 - BLOOD DRAGON
 Replace third paragraph with: "The Blood Dragon with the highest Leadership in a combat must always issue challenges and must always accept enemy challenges if possible."
 
-Storm of Chaos
+### Storm of Chaos
+
 Page 94 - HIGH ELF SEA PATROL - SPECIAL UNITS
 Add "Great Eagles" to Special Unit options.
 
