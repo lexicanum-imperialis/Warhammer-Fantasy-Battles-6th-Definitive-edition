@@ -10925,6 +10925,572 @@ It gives him a 4+ Armour Save, which when combined with his shield is 3+. Due t
         <infoLink id="7c4e957e-51f4-49e9-9ffa-ef457da39573" name="Git Guzzler" hidden="false" targetId="d3c9-c4d4-ad96-20d2" type="profile"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Fire Kobold" hidden="false" id="8087-11ca-dbe9-1f8e" publicationId="91c2-b862-8010-87bb" page="43">
+      <categoryLinks>
+        <categoryLink name="Experimental rules" hidden="false" id="9632-e3cf-d531-faf5" targetId="4fed-b911-e6e0-927b" primary="false"/>
+        <categoryLink name="Core" hidden="false" id="470f-2e30-65dd-5d73" targetId="64bf-efb4-9978-26df" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Fire Kobold" hidden="false" id="678d-990a-72ac-b8d9">
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="3"/>
+            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="20" field="selections" scope="parent" shared="true" id="a005-c911-8ea9-e194" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Goblin" id="8366-ec5a-a6d9-2782" hidden="false" type="profile" targetId="6c5f-716b-8044-a797">
+              <modifiers>
+                <modifier type="set" value="Fire Kobold" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapons and Armour" id="feb8-4cf6-3435-f4d8" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Shield" hidden="false" id="1371-77c2-210d-2773" type="selectionEntry" targetId="50e2-1873-a856-03e7">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8cb0-e8ea-0ee6-7ec5" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b00e-39d7-61af-bf19" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="56d0-9f02-e97b-80c0" type="selectionEntry" targetId="abdb-bbd0-41b2-5dff">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ee0a-4311-5e64-6624" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6577-5679-64b2-3aba" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Light Armour" hidden="false" id="fee5-287f-f212-8d8f" type="selectionEntry" targetId="055f-8e4e-f170-35d2">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bfe9-bb5a-88b8-6705" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="ecfa-8486-4f6c-c249">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="parent" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Spear Infantry" hidden="false" id="cf15-b8a2-f611-3478" type="selectionEntry" targetId="104f-5817-4bda-9382">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="96e1-5e02-7a90-50cd" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="ecfa-8486-4f6c-c249">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="parent" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Spit Fire" hidden="false" id="7252-ad2d-e7cb-b944">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="416b-eea8-2298-0f8d" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="294d-df3a-4d1b-b7a9" includeChildSelections="false"/>
+              </constraints>
+              <rules>
+                <rule name="Spit Fire" id="ce10-26db-cab2-ec28" hidden="false" page="43" publicationId="91c2-b862-8010-87bb">
+                  <description>Fire Kobolds may spit tiny streams of fire at enemies during the Shooting phase. This attack counts as a thrown weapon. All Spit Fire attacks count as Fire attacks, of course!</description>
+                </rule>
+              </rules>
+              <infoLinks>
+                <infoLink name="Flaming Attacks*" id="96ac-ee25-5557-67e4" hidden="false" type="rule" targetId="aeba-8177-ee4a-9271"/>
+                <infoLink name="Thrown Weapons" id="9737-9b71-cb3b-73e3" hidden="false" type="rule" targetId="eecc-4ed0-db8a-f6dc"/>
+              </infoLinks>
+              <profiles>
+                <profile name="Spit Fire" typeId="7889-42d9-70a0-3ea9" typeName="Weapon" hidden="false" id="67dd-b99f-af58-cdd7">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3107-4d1e-9a51-6564">8&quot;</characteristic>
+                    <characteristic name="Strength" typeId="6fe4-1ebb-cb04-1378">4</characteristic>
+                    <characteristic name="Damage" typeId="6f2f-d612-52ef-1633"/>
+                    <characteristic name="Special Rules" typeId="a21a-cdc0-4b13-b236">Flaming Attacks*
+Thrown Weapons</characteristic>
+                    <characteristic name="Saves" typeId="8014-a8b2-15c3-da95"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Command Group" id="c6f8-5dea-307f-e443" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Boss" hidden="false" id="a521-229f-97a6-06a2" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="264b-83ca-33d8-349e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Goblin Boss" id="81d9-bc82-1158-126c" hidden="false" targetId="dbc8-1632-0c07-ca46" type="profile">
+                  <modifiers>
+                    <modifier type="set" value="Kobold Boss" field="name"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="8"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Musician" hidden="false" id="12a5-5f02-2b62-6fcf" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e95f-f31d-81ee-0935" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="4"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Standard Bearer" hidden="false" id="7f46-1f1e-b1dd-bcac" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c4dd-c1b2-56b6-0fe9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="8"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+              </costs>
+              <entryLinks>
+                <entryLink import="true" name="Magical Standard (Goblins)" hidden="true" id="665a-275f-e5e7-c2c5" type="selectionEntryGroup" targetId="150f-e2fe-acfb-6092">
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <modifiers>
+                        <modifier type="set" value="false" field="hidden"/>
+                        <modifier type="set" value="1" field="afbd-e39c-d57d-c871"/>
+                      </modifiers>
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="b26c-6f4c-34a5-dc0c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </modifierGroup>
+                  </modifierGroups>
+                  <constraints>
+                    <constraint type="max" value="0" field="selections" scope="force" shared="true" id="afbd-e39c-d57d-c871" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <infoLinks>
+        <infoLink name="Animosity" id="5c03-bae9-0641-0e93" hidden="false" type="rule" targetId="23f9-c5d1-7c15-0c4c"/>
+        <infoLink name="Fear Elves" id="ad76-fed0-4329-206b" hidden="false" type="rule" targetId="b9cb-9cdd-44c3-ba52"/>
+      </infoLinks>
+      <rules>
+        <rule name="Fire Resistant" id="34db-52f4-1831-ac45" hidden="false" page="43" publicationId="91c2-b862-8010-87bb">
+          <description>Fire Kobolds live in and along mountainous volcanoes and fire pits, this has affected their Goblinoid physiology with several fiery traits.
+All fire-based attacks (ie, fire balls, Skaven Warpfire Throwers, Dragon Breath, etc) suffer a -1 Strength penalty when rolling to wound Fire Kobolds.
+For example, a fire ball (normally S4) would be lowered to S3 when rolling to wound a Fire Kobold.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Dust Goblins" hidden="false" id="1fc3-bd71-9dc2-689a" publicationId="91c2-b862-8010-87bb" page="45">
+      <categoryLinks>
+        <categoryLink name="Experimental rules" hidden="false" id="615e-ff9a-f002-95db" targetId="4fed-b911-e6e0-927b" primary="false"/>
+        <categoryLink name="Rare" hidden="false" id="8086-4721-9b4b-dfeb" targetId="e94b-6a54-8779-cd60" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Dust Goblin" hidden="false" id="cf88-39aa-1178-0e93">
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="8"/>
+            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="20" field="selections" scope="parent" shared="true" id="8e12-9770-03ee-4bfc" includeChildSelections="false"/>
+            <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="8fd7-5b0b-84db-8807" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Goblin" id="0795-9985-8067-d1e4" hidden="false" type="profile" targetId="6c5f-716b-8044-a797">
+              <modifiers>
+                <modifier type="set" value="Dust Goblin" field="name"/>
+                <modifier type="set" value="2" field="2d45-18fe-9eb3-b113"/>
+                <modifier type="set" value="1" field="f95b-da01-0578-3bdc"/>
+                <modifier type="set" value="1" field="dfff-363e-f72a-5a59"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapons and Armour" id="bb0f-28c4-dc9c-9db7" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="bb90-5ae1-911a-7141" type="selectionEntry" targetId="abdb-bbd0-41b2-5dff">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="de7b-c6f4-67a6-db4d" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ec81-7b2b-b8df-d018" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Blowpipe" hidden="false" id="8bfe-f2a0-62b2-f9dc" page="LZ-AB, p. 23">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2d2a-8869-aefa-f342" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d105-c498-243c-c861" includeChildSelections="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Poisoned Attacks" id="c76c-f6c9-bf50-7cb9" hidden="false" type="rule" targetId="2738-27d5-f4af-4722"/>
+                <infoLink name="Multiple Shots" id="fcaf-4d41-3cd0-2f6b" hidden="false" type="rule" targetId="e281-de89-db38-9504"/>
+              </infoLinks>
+              <profiles>
+                <profile name="Blowpipe" typeId="7889-42d9-70a0-3ea9" typeName="Weapon" hidden="false" id="ebb2-930f-cfc0-fa55" page="LZ-AB, p.23">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3107-4d1e-9a51-6564">12&quot;</characteristic>
+                    <characteristic name="Strength" typeId="6fe4-1ebb-cb04-1378">3</characteristic>
+                    <characteristic name="Damage" typeId="6f2f-d612-52ef-1633"/>
+                    <characteristic name="Special Rules" typeId="a21a-cdc0-4b13-b236">2x Multiple Shots
+Poisoned Attacks</characteristic>
+                    <characteristic name="Saves" typeId="8014-a8b2-15c3-da95"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Command Group" id="0366-eecb-bdbf-50a8" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Boss" hidden="false" id="a186-b3b4-183b-83df" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="de26-b3b4-0257-99b7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Troglagob" id="2c5d-8de2-6459-13a6" hidden="false" targetId="dbc8-1632-0c07-ca46" type="profile">
+                  <modifiers>
+                    <modifier type="set" value="Morbif" field="name"/>
+                    <modifier type="set" value="2" field="2d45-18fe-9eb3-b113"/>
+                    <modifier type="set" value="1" field="f95b-da01-0578-3bdc"/>
+                    <modifier type="set" value="1" field="dfff-363e-f72a-5a59"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="10"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <infoLinks>
+        <infoLink name="Fear Elves" id="ab8a-d55a-a2a0-f57b" hidden="false" type="rule" targetId="b9cb-9cdd-44c3-ba52"/>
+        <infoLink name="Animosity" id="afe9-19ae-a651-5f5b" hidden="false" type="rule" targetId="23f9-c5d1-7c15-0c4c"/>
+        <infoLink name="Undead (Regiments of Renown)" id="23df-1c9c-791b-9980" hidden="false" type="rule" targetId="9e34-92c9-330e-e8d9"/>
+      </infoLinks>
+      <rules>
+        <rule name="Aquatic" id="188d-acbc-62f6-2111" hidden="false" page="44" publicationId="91c2-b862-8010-87bb">
+          <description>Troglagobs are sea dwelling Goblins, making them experts at swimming and moving speedily through aquatic features. Troglagobs may count marshes, rivers, streams, lakes and any other water terrain feature as open ground and so can move through water terrain without any of the normal penalties. Also, when in such terrain Troglagobs benefit from soft cover.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="0-1 Hill Goblins" hidden="false" id="f23f-1816-93a7-3059" publicationId="91c2-b862-8010-87bb" page="44">
+      <categoryLinks>
+        <categoryLink name="Experimental rules" hidden="false" id="9f08-ea0f-db11-50e1" targetId="4fed-b911-e6e0-927b" primary="false"/>
+        <categoryLink name="Core" hidden="false" id="eb7a-c8c7-7e2b-c9e7" targetId="64bf-efb4-9978-26df" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Hill Goblin" hidden="false" id="1479-4429-cbd1-4d34">
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="4"/>
+            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="20" field="selections" scope="parent" shared="true" id="a982-f944-22a4-db6f" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Goblin" id="3e0b-87b5-cddb-296b" hidden="false" type="profile" targetId="6c5f-716b-8044-a797">
+              <modifiers>
+                <modifier type="set" value="Hill Goblin" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapons and Armour" id="5d74-793d-feb7-900a" hidden="false">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Armour" id="5d09-4f41-8ddf-179d" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Light Armour" hidden="false" id="6a11-f495-c392-e87e" type="selectionEntry" targetId="055f-8e4e-f170-35d2">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d6c0-5059-58d6-e041" includeChildSelections="false"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="ecfa-8486-4f6c-c249">
+                      <repeats>
+                        <repeat value="1" repeats="1" field="selections" scope="parent" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Shield" hidden="false" id="3b96-6604-8370-0915" type="selectionEntry" targetId="50e2-1873-a856-03e7">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6563-267c-10ce-474e" includeChildSelections="false"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="ecfa-8486-4f6c-c249">
+                      <repeats>
+                        <repeat value="1" repeats="1" field="selections" scope="parent" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Weapons" id="a328-ac12-36ff-4873" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Great Weapon" hidden="false" id="f2be-db6c-d27f-7698" type="selectionEntry" targetId="1eb7-3f36-8cf7-e0ba">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2bc1-bd63-9144-ec3a" includeChildSelections="false"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="increment" value="2" field="ecfa-8486-4f6c-c249">
+                      <repeats>
+                        <repeat value="1" repeats="1" field="selections" scope="parent" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Hand Weapon" hidden="false" id="642a-7409-f1c0-4bd5" type="selectionEntry" targetId="abdb-bbd0-41b2-5dff">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="71d0-eb66-c3d1-d61e" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6b0d-282e-d857-92da" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Two Hand Weapons" hidden="false" id="2119-b7e8-908d-ed2f" type="selectionEntry" targetId="36a8-7bbb-d204-0314">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c463-099d-e755-014e" includeChildSelections="false"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="increment" value="2" field="ecfa-8486-4f6c-c249">
+                      <repeats>
+                        <repeat value="1" repeats="1" field="selections" scope="parent" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="cb14-9030-bce5-e9d2" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2042-fb39-de91-0ddb" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Command Group" id="4a47-8a6b-e180-6db6" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Boss" hidden="false" id="a534-b295-d552-dadd" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="edc5-bdf1-24a8-d938" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Goblin Boss" id="87aa-5d23-6c0a-87fa" hidden="false" targetId="dbc8-1632-0c07-ca46" type="profile">
+                  <modifiers>
+                    <modifier type="set" value="Kobold Boss" field="name"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="8"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Musician" hidden="false" id="8b3a-6b97-0cb8-b04e" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="303a-987c-783d-6b00" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="4"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Standard Bearer" hidden="false" id="4e79-0d62-e8e1-e899" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d8ee-3cf9-9470-66a9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="8"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+              </costs>
+              <entryLinks>
+                <entryLink import="true" name="Magical Standard (Goblins)" hidden="true" id="6298-0231-8457-da10" type="selectionEntryGroup" targetId="150f-e2fe-acfb-6092">
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <modifiers>
+                        <modifier type="set" value="false" field="hidden"/>
+                        <modifier type="set" value="1" field="23fc-aa1f-e560-d24e"/>
+                      </modifiers>
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="b26c-6f4c-34a5-dc0c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </modifierGroup>
+                  </modifierGroups>
+                  <constraints>
+                    <constraint type="max" value="0" field="selections" scope="force" shared="true" id="23fc-aa1f-e560-d24e" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <infoLinks>
+        <infoLink name="Animosity" id="74fc-4e58-372e-ca2c" hidden="false" type="rule" targetId="23f9-c5d1-7c15-0c4c"/>
+        <infoLink name="Fear Elves" id="44e2-12c7-066e-d454" hidden="false" type="rule" targetId="b9cb-9cdd-44c3-ba52"/>
+      </infoLinks>
+      <rules>
+        <rule name="Big Bullies" id="0bc1-122a-4fad-43be" hidden="false" page="44" publicationId="91c2-b862-8010-87bb">
+          <description>Hill Goblins are especially nasty and aggressive, and love nothing better then showing off and bullying smaller Goblinoids such as Kobolds and Night Goblins. To represent this, if your army includes any other types of Goblins (including Hobgoblins) then the Hill Goblins will fail their Animosity tests on a 1 or a 2 rather than just a 1 (see pages 8-9 of the Orc &amp; Goblin army for details of Animosity). Note this rule only applies if your army does NOT include any Orc units. Even Hill Goblins know their place and will avoid getting into a brawl with an Orc!</description>
+        </rule>
+      </rules>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="ce0d-ee76-dc79-4827" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Troglagob" hidden="false" id="3055-5692-b76a-1968" publicationId="91c2-b862-8010-87bb" page="44">
+      <categoryLinks>
+        <categoryLink name="Experimental rules" hidden="false" id="781a-719d-ecf3-dc15" targetId="4fed-b911-e6e0-927b" primary="false"/>
+        <categoryLink name="Rare" hidden="false" id="ad85-a066-cfa4-7547" targetId="e94b-6a54-8779-cd60" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Troglagob" hidden="false" id="4b54-05a8-1a2b-b3f2">
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="5"/>
+            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="15" field="selections" scope="parent" shared="true" id="c563-97a8-2d2c-bc9f" includeChildSelections="false"/>
+            <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="3b4d-2e60-994d-a43e" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Goblin" id="1479-9ee5-a142-467a" hidden="false" type="profile" targetId="6c5f-716b-8044-a797">
+              <modifiers>
+                <modifier type="set" value="Troglagob" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapons and Armour" id="a5a9-a544-e791-7d37" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Javelin" hidden="false" id="cf1d-1364-a5f8-a566" type="selectionEntry" targetId="5f8c-ee59-3060-16c4">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6427-ef8f-622d-80f2" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="26b4-3a9d-b904-fb51" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="0" field="26b4-3a9d-b904-fb51">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="9fec-75d9-68c1-5fd1" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="9fec-75d9-68c1-5fd1" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="4506-673a-4ffc-63be" type="selectionEntry" targetId="abdb-bbd0-41b2-5dff">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="95a7-1390-8ae0-ea38" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4138-2754-dcbc-5097" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Short Bow" hidden="false" id="9fec-75d9-68c1-5fd1" type="selectionEntry" targetId="3428-8f18-865a-44cd">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="75a0-78a5-a098-6e06" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="ecfa-8486-4f6c-c249">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="parent" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Spit Fire" hidden="false" id="6181-9c2a-c4ba-5b47">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6a84-c2ef-d70e-71b7" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ae32-7d37-ee7b-57ec" includeChildSelections="false"/>
+              </constraints>
+              <rules>
+                <rule name="Spit Fire" id="31ff-1f93-1695-8f90" hidden="false" page="43" publicationId="91c2-b862-8010-87bb">
+                  <description>Fire Kobolds may spit tiny streams of fire at enemies during the Shooting phase. This attack counts as a thrown weapon. All Spit Fire attacks count as Fire attacks, of course!</description>
+                </rule>
+              </rules>
+              <infoLinks>
+                <infoLink name="Flaming Attacks*" id="81b9-b611-fe30-ecc1" hidden="false" type="rule" targetId="aeba-8177-ee4a-9271"/>
+                <infoLink name="Thrown Weapons" id="f858-fcc0-cd85-0aa0" hidden="false" type="rule" targetId="eecc-4ed0-db8a-f6dc"/>
+              </infoLinks>
+              <profiles>
+                <profile name="Spit Fire" typeId="7889-42d9-70a0-3ea9" typeName="Weapon" hidden="false" id="726a-8756-958a-3f17">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3107-4d1e-9a51-6564">8&quot;</characteristic>
+                    <characteristic name="Strength" typeId="6fe4-1ebb-cb04-1378">4</characteristic>
+                    <characteristic name="Damage" typeId="6f2f-d612-52ef-1633"/>
+                    <characteristic name="Special Rules" typeId="a21a-cdc0-4b13-b236">Flaming Attacks*
+Thrown Weapons</characteristic>
+                    <characteristic name="Saves" typeId="8014-a8b2-15c3-da95"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Command Group" id="9578-064e-29ba-683c" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Boss" hidden="false" id="3ebb-c606-5c59-4111" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c31e-f20d-a248-e3db" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Goblin Boss" id="e5e1-5961-d5c7-d67c" hidden="false" targetId="dbc8-1632-0c07-ca46" type="profile">
+                  <modifiers>
+                    <modifier type="set" value="Troglagob" field="name"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="8"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <infoLinks>
+        <infoLink name="Fear Elves" id="a0c1-7bdb-02bd-67cc" hidden="false" type="rule" targetId="b9cb-9cdd-44c3-ba52"/>
+        <infoLink name="Poisoned Attacks" id="2a60-ea8a-5264-a4b4" hidden="false" type="rule" targetId="2738-27d5-f4af-4722">
+          <modifiers>
+            <modifier type="set" value="Posioned Attacks (shooting)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Skirmishers" id="df58-932b-7b40-49b4" hidden="false" type="rule" targetId="1945-ac89-9cc4-3537"/>
+        <infoLink name="Animosity" id="848f-950e-4aca-5a9e" hidden="false" type="rule" targetId="23f9-c5d1-7c15-0c4c"/>
+      </infoLinks>
+      <rules>
+        <rule name="Aquatic" id="dec5-71db-c790-f5ac" hidden="false" page="44" publicationId="91c2-b862-8010-87bb">
+          <description>Troglagobs are sea dwelling Goblins, making them experts at swimming and moving speedily through aquatic features. Troglagobs may count marshes, rivers, streams, lakes and any other water terrain feature as open ground and so can move through water terrain without any of the normal penalties. Also, when in such terrain Troglagobs benefit from soft cover.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
     <selectionEntry id="b184-b03c-693b-53b1" name="Wyvern" hidden="false" collective="false" import="true" type="upgrade">

@@ -133,7 +133,10 @@
 - [x] Grabnatz & Gulag (WD#299-UK, p.16)
 - [x] Kap'n Skabend & Slygit (WD#300-UK, p.44-45)
 - [x] Git Guzzler, the Goblin King (WD#302, p,55)
-- [ ] Breeds of Goblins (Dust, Fire, etc)
+- [x] Fire Kobolds (CR-03, p.43)
+- [x] Troglagobs (CR-03, p.44)
+- [x] Hill Goblins (CR-03, p.44)
+- [x] Dust Goblins (CR-03, p.45)
 
 ### High Elves
 - [x] Imrik, Dragon Prince of Caledor (HE-AB, p.64)
