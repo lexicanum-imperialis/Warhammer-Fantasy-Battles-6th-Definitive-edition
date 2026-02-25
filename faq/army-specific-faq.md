@@ -56,6 +56,7 @@ Psychology is Immune to Psychology. If it were otherwise,
 you’d get situations where a player could say "My Dread Banner
 is a magical fear and so therefore overrules your mundane
 immunity," which of course is not the case.
+[Digital Engine Note: The Karak Norn Consensus has further clarified this interaction. While the Banner of Sigismund (Magic Item) does not stack with ItP, innate abilities like Marks, Sacred Spawnings, Virtues and Vows do. Refer to the Karak Norn Consensus in Part 3 for the specific mechanical resolution.]
 S. Warhammer Chronicles 2004 page 116
 
 *****
@@ -7522,9 +7523,9 @@ S. Warhammer Chronicles 2004 page 12
 ### BRETONNIA
 **Q:** Can a Bretonnian Character benefit from both *Stubborn* and *Immune to Psychology* at the same time through the Virtue of the Penitent and the Grail Vow?
 **Ruling:** Yes. Break tests are not Psychology tests. Because the Virtue and the Vow are inherent, non-magical traits granted by the character's devotion, they completely bypass the Magic vs. Mundane conflict outlined in the official Banner of Sigismund FAQ. The character takes Break tests on unmodified Leadership while ignoring Fear, Terror, and Panic.
-**Source:** `[Rulebook pages 85 & 112 / Bretonnia Army Book / Karak Norn Digital Resolution]`
+**Source:** `[Rulebook pages 85 & 112 / Bretonnia Army Book / Karak Norn Consensus Precedent]`
 
 ### WOOD ELVES
 **Q:** Does a Treeman natively benefit from both *Stubborn* and *Immune to Psychology* (via the Forest Spirit rule) in close combat?
 **Ruling:** Yes. Because both rules are innate to the creature's profile and not the result of a Magic Item, they do not trigger the Magic vs. Mundane cancellation clause. The Treeman takes Stubborn Break tests on unmodified Leadership while simultaneously ignoring Psychology tests.
-**Source:** `[Rulebook pages 85 & 112 / Wood Elves Army Book / Karak Norn Digital Resolution]`
+**Source:** `[Rulebook pages 85 & 112 / Wood Elves Army Book / Karak Norn Consensus Precedent]`

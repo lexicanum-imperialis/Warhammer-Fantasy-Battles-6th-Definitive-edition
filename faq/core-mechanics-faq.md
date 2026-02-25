@@ -3458,4 +3458,4 @@ END
 **Q:** Can a model or unit benefit from both the *Stubborn* and *Immune to Psychology* special rules at the same time if they are innate traits?
 **Ruling:** Yes, provided both rules are innate to the model's profile or granted by non-magical traits. Break tests are not Psychology tests. Therefore, a model that natively possesses both rules will take its Break tests on its unmodified Leadership while simultaneously ignoring tests for Fear, Terror, and Panic.
 **Important Exception:** This native stacking does not contradict the official ruling regarding the Banner of Sigismund. The core reasoning provided in that FAQ is that "there is no magic vs. mundane trump anymore." Because innate traits are inherent, non-magical abilities, they completely bypass the Magic vs. Mundane conflict.
-**Source:** `[Rulebook pages 85 & 112 / Warhammer Chronicles 2004 page 116 / Karak Norn Digital Resolution]`
+**Source:** `[Rulebook pages 85 & 112 / Warhammer Chronicles 2004 page 116 / Karak Norn Consensus Precedent]`
