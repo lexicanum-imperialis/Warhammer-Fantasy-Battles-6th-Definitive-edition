@@ -83,6 +83,10 @@ Our mechanical framework relies on:
 ## 🤝 Acknowledgments and Gratitude
 We want to thank first to the team from [Las _Tablillas Sagradas_](https://lastablillassagradas.blogspot.com/), that has inspired this whole project. Special mention to Antonio, who possess the knowledge of Tzeentch and the wisdom of Teclis.
 
-Second, but not least, to [Ergofarg](https://github.com/Ergofarg/Warhammer-Fantasy-6th-edition/) and his collaborators, to whom we owe a lot of hours saved from their pre-existing effort. We have learned a lot studying their files.
+Second, to [Ergofarg](https://github.com/Ergofarg/Warhammer-Fantasy-6th-edition/) and his collaborators, to whom we owe a lot of hours saved from their pre-existing effort. We have learned a lot studying their files.
+
+Also to the Direwolf Council, who made an awesome work collecting material and chasing the designers to get the responses the community needed.
+
+And last but not least, to the [Karak Norn Wargaming Club](https://karaknornwargaming.blogspot.com/), for the trust, advise and collaboration with The Norn Consensus, and the will to test and improve the project.
 
 Also, many thanks to all who offer eyes or ears to discuss and improve the project.
