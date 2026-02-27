@@ -11161,7 +11161,7 @@ Poisoned Attacks</characteristic>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="de26-b3b4-0257-99b7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
               <infoLinks>
-                <infoLink name="Troglagob" id="2c5d-8de2-6459-13a6" hidden="false" targetId="dbc8-1632-0c07-ca46" type="profile">
+                <infoLink name="Goblin Boss" id="2c5d-8de2-6459-13a6" hidden="false" targetId="dbc8-1632-0c07-ca46" type="profile">
                   <modifiers>
                     <modifier type="set" value="Morbif" field="name"/>
                     <modifier type="set" value="2" field="2d45-18fe-9eb3-b113"/>
@@ -11490,6 +11490,98 @@ Thrown Weapons</characteristic>
           <description>Troglagobs are sea dwelling Goblins, making them experts at swimming and moving speedily through aquatic features. Troglagobs may count marshes, rivers, streams, lakes and any other water terrain feature as open ground and so can move through water terrain without any of the normal penalties. Also, when in such terrain Troglagobs benefit from soft cover.</description>
         </rule>
       </rules>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Army composition rules" hidden="true" id="6fcf-b33d-3cf5-b56a">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Ruleset restriction" id="43b3-35c6-d7cc-e3c6" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Tournament rules: Uprising (2026)" hidden="true" id="4bc4-8781-2091-d9df">
+              <modifiers>
+                <modifier type="add" value="No more than 2 of the same Special Choice are allowed!
+See [PDF, p.X]" field="error">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="2bfa-e64a-7123-895f" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition type="greaterThan" value="1" field="selections" scope="roster" childId="c679-3389-ca76-2ea1" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                                <condition type="greaterThan" value="1" field="selections" scope="roster" childId="4112-026b-500a-b6fd" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </conditionGroup>
+                      </conditionGroups>
+                      <comment>TODO</comment>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="add" value="No more than 10 power die are allowed!
+See [PDF, p.X]" field="error">
+                  <conditions>
+                    <condition type="greaterThan" value="10" field="fcec-2340-6368-a2ba" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="add" value="No Special Characters are allowed!
+See [PDF, p.X]" field="error">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="0644-bfcd-32c2-21dc" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="2000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="atMost" value="2500" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" value="1" field="00f6-c1b3-ee85-5c02">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="2000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="atMost" value="2500" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="add" value="No more than 2 Large Targets are allowed!
+See [PDF, p.X]" field="error">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="greaterThan" value="1" field="selections" scope="roster" childId="7645ed71-72bd-4b72-89ab-22571a0a8b0c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="greaterThan" value="1" field="selections" scope="roster" childId="b184-b03c-693b-53b1" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="greaterThan" value="0" field="selections" scope="roster" childId="b184-b03c-693b-53b1" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                            <condition type="greaterThan" value="0" field="selections" scope="roster" childId="7645ed71-72bd-4b72-89ab-22571a0a8b0c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="force" shared="true" id="00f6-c1b3-ee85-5c02" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <categoryLinks>
+        <categoryLink name="Special list rules" hidden="false" id="3da4-efb0-d2dc-3dba" targetId="32f1-197f-d719-a393" primary="true"/>
+      </categoryLinks>
     </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
@@ -12593,6 +12685,14 @@ Thrown Weapons</characteristic>
             <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b76c-6bad-4650-dbb0" type="greaterThan"/>
           </conditions>
         </modifier>
+        <modifier type="increment" value="1" field="8c44-1e38-e587-56cf">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="parent" childId="696a-648d-c842-4c6a" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </repeats>
+          <conditions>
+            <condition type="greaterThan" value="0" field="selections" scope="parent" childId="696a-648d-c842-4c6a" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8c44-1e38-e587-56cf" type="max"/>
@@ -12669,6 +12769,14 @@ Thrown Weapons</characteristic>
           </repeats>
           <conditions>
             <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b76c-6bad-4650-dbb0" type="greaterThan"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="1" field="5d20-7d0e-bd61-db6a">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="parent" childId="696a-648d-c842-4c6a" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </repeats>
+          <conditions>
+            <condition type="greaterThan" value="0" field="selections" scope="parent" childId="696a-648d-c842-4c6a" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -12763,6 +12871,26 @@ Thrown Weapons</characteristic>
         <entryLink id="7d27-aeb4-c7dc-f075" name="5. Gorks Warpath" hidden="false" collective="false" import="true" targetId="3fc8-b2b7-7d41-eb2b" type="selectionEntry"/>
         <entryLink id="3608-191f-8052-60fa" name="6. Waaagh!" hidden="false" collective="false" import="true" targetId="c02d-ce51-6db0-e0da" type="selectionEntry"/>
       </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Arcane Items (XX + Common)" id="87c2-9e36-88d8-7892" hidden="false">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3c2b-446a-13ad-d9ba" includeChildSelections="false"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Arcane Items (Common)" hidden="false" id="aa6f-958a-2347-e192" type="selectionEntryGroup" targetId="0d3f-389c-02b2-bb34"/>
+      </entryLinks>
+      <modifiers>
+        <modifier type="increment" value="1" field="3c2b-446a-13ad-d9ba">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="parent" childId="f969-0b28-b1cf-bb02" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </repeats>
+        </modifier>
+        <modifier type="increment" value="1" field="3c2b-446a-13ad-d9ba">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="parent" childId="989e-9d22-7fea-19b5" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>

@@ -2146,6 +2146,14 @@ Enemy in contact loses D3 attacks until EoT.</characteristic>
             <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b76c-6bad-4650-dbb0" type="greaterThan"/>
           </conditions>
         </modifier>
+        <modifier type="increment" value="1" field="188e-3808-4b37-c8d9">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="parent" childId="696a-648d-c842-4c6a" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </repeats>
+          <conditions>
+            <condition type="greaterThan" value="0" field="selections" scope="parent" childId="696a-648d-c842-4c6a" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="188e-3808-4b37-c8d9" type="max"/>
@@ -2196,6 +2204,26 @@ Enemy in contact loses D3 attacks until EoT.</characteristic>
         <entryLink id="60b6-bc4f-ec60-519e" name="Rock eye" hidden="false" collective="false" import="true" targetId="1356-8bf8-3474-9ebe" type="selectionEntry"/>
         <entryLink id="29bf-ce60-85ac-00ff" name="Fistful of laurels" hidden="false" collective="false" import="true" targetId="41e3-f7f0-434f-87b9" type="selectionEntry"/>
       </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Arcane Items (XX + Common)" id="d502-9cf6-2232-202c" hidden="false">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7855-e50e-e607-015e" includeChildSelections="false"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Arcane Items (Common)" hidden="false" id="a8d2-cc08-f449-6ad6" type="selectionEntryGroup" targetId="0d3f-389c-02b2-bb34"/>
+      </entryLinks>
+      <modifiers>
+        <modifier type="increment" value="1" field="7855-e50e-e607-015e">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="parent" childId="f969-0b28-b1cf-bb02" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </repeats>
+        </modifier>
+        <modifier type="increment" value="1" field="7855-e50e-e607-015e">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="parent" childId="989e-9d22-7fea-19b5" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>

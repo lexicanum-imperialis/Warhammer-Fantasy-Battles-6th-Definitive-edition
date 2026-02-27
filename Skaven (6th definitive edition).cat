@@ -9129,6 +9129,14 @@ no armour saves.</description>
             <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="093e-504e-b5cf-5ca4" type="greaterThan"/>
           </conditions>
         </modifier>
+        <modifier type="increment" value="1" field="0cdb-837f-311c-80ca">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="parent" childId="696a-648d-c842-4c6a" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </repeats>
+          <conditions>
+            <condition type="greaterThan" value="0" field="selections" scope="parent" childId="696a-648d-c842-4c6a" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0cdb-837f-311c-80ca" type="max"/>
@@ -9236,6 +9244,26 @@ no armour saves.</description>
         <entryLink id="4e80-dcf0-3906-5854" name="5. Death Frenzy" hidden="false" collective="false" import="true" targetId="0bb7-0b73-8408-cc47" type="selectionEntry"/>
         <entryLink id="9350-7deb-993a-9683" name="6. Plague" hidden="false" collective="false" import="true" targetId="0e16-b607-44f9-c413" type="selectionEntry"/>
       </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Arcane Items (XX + Common)" id="a18f-f748-fc50-5097" hidden="false">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6643-1946-ce0f-35b8" includeChildSelections="false"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Arcane Items (Common)" hidden="false" id="0615-3f64-79ed-12f7" type="selectionEntryGroup" targetId="0d3f-389c-02b2-bb34"/>
+      </entryLinks>
+      <modifiers>
+        <modifier type="increment" value="1" field="6643-1946-ce0f-35b8">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="parent" childId="f969-0b28-b1cf-bb02" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </repeats>
+        </modifier>
+        <modifier type="increment" value="1" field="6643-1946-ce0f-35b8">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="parent" childId="989e-9d22-7fea-19b5" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>

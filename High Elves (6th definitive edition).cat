@@ -5426,6 +5426,14 @@ Range 36&quot;, causes one wound per shot and grants Armour Rolls as normal, can
             <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="75cb-50ba-1eca-259a" repeats="1" roundUp="false"/>
           </repeats>
         </modifier>
+        <modifier type="set" value="1" field="a73b-f7e0-bf3f-46a9">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="parent" childId="5e6e-2abb-3eb7-f7c7" shared="true" roundUp="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </repeats>
+          <conditions>
+            <condition type="greaterThan" value="0" field="selections" scope="parent" childId="696a-648d-c842-4c6a" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a73b-f7e0-bf3f-46a9" type="max"/>
@@ -5709,6 +5717,26 @@ Range 36&quot;, causes one wound per shot and grants Armour Rolls as normal, can
         <entryLink import="true" name="Magic Banners (Common)" hidden="false" id="25fd-eec2-899b-90a2" type="selectionEntryGroup" targetId="4e89-9bb4-1aeb-e34f"/>
         <entryLink import="true" name="Magic Talismans (Common)" hidden="false" id="e5b0-bd22-18a3-aeb9" type="selectionEntryGroup" targetId="7dcf-8a09-c9b8-9a88"/>
       </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Arcane Items (XX + Common)" id="4210-3f71-54e6-0a75" hidden="false">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4033-85e0-10dc-c00b" includeChildSelections="false"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Arcane Items (Common)" hidden="false" id="ad91-0704-21bf-4265" type="selectionEntryGroup" targetId="0d3f-389c-02b2-bb34"/>
+      </entryLinks>
+      <modifiers>
+        <modifier type="increment" value="1" field="4033-85e0-10dc-c00b">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="parent" childId="f969-0b28-b1cf-bb02" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </repeats>
+        </modifier>
+        <modifier type="increment" value="1" field="4033-85e0-10dc-c00b">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="parent" childId="989e-9d22-7fea-19b5" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>

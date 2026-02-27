@@ -12156,6 +12156,14 @@ No model in base contact may cast spells (including friendly models) or use Boun
             <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3e6b-fb45-1ba3-3d9b" type="greaterThan"/>
           </conditions>
         </modifier>
+        <modifier type="increment" value="1" field="c654-e9fb-1831-51f0">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="parent" childId="696a-648d-c842-4c6a" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </repeats>
+          <conditions>
+            <condition type="greaterThan" value="0" field="selections" scope="parent" childId="696a-648d-c842-4c6a" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c654-e9fb-1831-51f0" type="max"/>
@@ -13020,6 +13028,26 @@ No model in base contact may cast spells (including friendly models) or use Boun
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Arcane Items (XX + Common)" id="5e97-d20f-aa0f-4147" hidden="false">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7e05-ce96-021c-4f17" includeChildSelections="false"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Arcane Items (Common)" hidden="false" id="996e-aaeb-af74-96ff" type="selectionEntryGroup" targetId="0d3f-389c-02b2-bb34"/>
+      </entryLinks>
+      <modifiers>
+        <modifier type="increment" value="1" field="7e05-ce96-021c-4f17">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="parent" childId="f969-0b28-b1cf-bb02" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </repeats>
+        </modifier>
+        <modifier type="increment" value="1" field="7e05-ce96-021c-4f17">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="parent" childId="989e-9d22-7fea-19b5" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </repeats>
         </modifier>
       </modifiers>
     </selectionEntryGroup>

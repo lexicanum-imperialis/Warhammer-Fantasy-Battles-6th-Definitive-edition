@@ -4791,6 +4791,14 @@ This spell is targeted at a single hill anywhere on the table. Any unit at leas
             <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="b76c-6bad-4650-dbb0" repeats="1" roundUp="false"/>
           </repeats>
         </modifier>
+        <modifier type="increment" value="1" field="8b18-6469-1fcd-fcaf">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="parent" childId="696a-648d-c842-4c6a" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </repeats>
+          <conditions>
+            <condition type="greaterThan" value="0" field="selections" scope="parent" childId="696a-648d-c842-4c6a" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8b18-6469-1fcd-fcaf" type="max"/>
@@ -6054,6 +6062,26 @@ In addition, the bearer causes Fear in Skaven.</characteristic>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="bf95-da3b-f5e0-c8af" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
       </constraints>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Arcane Items (XX + Common)" id="fcbd-0a43-0a83-bb68" hidden="false">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="27c6-a6c2-a15f-bc79" includeChildSelections="false"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Arcane Items (Common)" hidden="false" id="0c9b-47e8-06f0-41da" type="selectionEntryGroup" targetId="0d3f-389c-02b2-bb34"/>
+      </entryLinks>
+      <modifiers>
+        <modifier type="increment" value="1" field="27c6-a6c2-a15f-bc79">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="parent" childId="f969-0b28-b1cf-bb02" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </repeats>
+        </modifier>
+        <modifier type="increment" value="1" field="27c6-a6c2-a15f-bc79">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="parent" childId="989e-9d22-7fea-19b5" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>

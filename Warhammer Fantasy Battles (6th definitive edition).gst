@@ -12,6 +12,9 @@
     <costType id="ecfa-8486-4f6c-c249" name="pts" defaultCostLimit="-1" hidden="false"/>
     <costType id="fcec-2340-6368-a2ba" name=" Casting Dice" defaultCostLimit="-1" hidden="false"/>
     <costType id="6001-b2bf-4529-c07d" name=" Dispel Dice" defaultCostLimit="-1" hidden="false"/>
+    <costType name="Army Composition" id="ce6e-afde-2ed1-aac2" defaultCostLimit="-1"/>
+    <costType name="SC Dispel Dice" id="410e-ed97-ecf8-cfa4" defaultCostLimit="-1" hidden="false"/>
+    <costType name="SC Power Dice" id="2db8-4138-44f2-f6eb" defaultCostLimit="-1" hidden="false"/>
   </costTypes>
   <profileTypes>
     <profileType id="a54a-7f00-29bf-12b1" name="Profile">
@@ -1442,6 +1445,265 @@
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="1"/>
       </costs>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Swedish Comp System" hidden="false" id="7fd2-3000-523b-3bc2">
+      <categoryLinks>
+        <categoryLink name="Special list rules" hidden="false" id="f7a5-60c6-b60a-21b0" targetId="32f1-197f-d719-a393" primary="true"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ef2e-99e9-ac64-0383" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="c43c-49d0-dd76-abbd" includeChildSelections="false"/>
+      </constraints>
+      <rules>
+        <rule name="Swedish Comp System" id="e690-2cbf-57c4-7f98" hidden="false">
+          <description>&gt; Denna kompositionsbedömningsmall är i grunden baserad på en mall framtagen av The Warhammer Players Society och sedan har den förändrats under tidens gång av många personer och föreningar. Vi är bara de sista i raden. De spelare som har åsikter angående denna mall får mycket gärna höra av sig till tävlingsledningen med dessa. Efter tävlingen kommer mallen att utvärderas inför nästa RTO Fantasy. (Dokumentet uppdaterat 28 April 2009)
+
+## Army composition system
+
+No army can score over 6.000 or less than 0 for Army Composition (AC). 
+
+The system is quite simple to use. Find your army’s entry in the lists on the following pages and start with 
+
+
+the basic **3.000** AC points. To this number you then either add bonuses or deduct penalties as shown in the 
+Magic Capacity and Army Specific Points sections. Finally divide this score by 200. 
+The final total is your AC score and is added to your overall Score for the Tournament. 
+
+When sending your army list to the event organizers, make sure your army’s AC score is listed either at the 
+top of page one or on the last page, after the army list itself. 
+
+Please read all sections carefully. 
+
+We expect that no player scores less than 2.000pts and that the majority of players would look to score 
+3.000-4.000 pts as a balanced army.
+
+### Terminology / Clarifications 
+
+-  “&gt;” More Than, and “&lt;” Less Than. 
+- Every time a bonus is subject to “&gt;X”, the highest pointed unit(s) are ignored first. 
+- (FC) Denotes the bonus rewarded is worth either: Equal to the points cost of the unit without a “standard bearer” OR Double the points cost of the unit with a “standard bearer”. To receive the double points for a “FC” you must take the available upgrade (e.g. Standards). 
+Example: A 20-man Empire Spearmen unit with Shields, costs 140pts and would therefore only receive 140pts bonus. However if a “standard bearer” is taken, at 10pts (150pts total), the bonus is doubled to 300pts. If the unit then takes a War Banner (25pts), the bonus stays the same as the cost for the Magical Banner is not added and/or doubled. 
+- (FC) is only added for a maximum of three (3) units; for the fourth unit and so on you receive only (Pts).  
+- (Pts) Denotes that the bonus you receive for taking the unit is the same as the points cost for the unit, regardless of whether you take a “Full Command” or not. So, using The Empire again, a unit of 10 Free Company would get 50pts and if they took a FC, they would get 75pts, as this is not doubled like the (FC) above.
+- (Pts) x 2 Denotes the same as above, however you get DOUBLE the points cost.
+Note: The multiplier can be some other number, though 2 is the most common. 
+- (FC) &gt;1 The most expensive unit is still ignored, whether it has a Full Command (FC) or not. 
+- (BR) Denotes that the bonus you receive for taking the unit is the same as the point cost for the unit, but to receive it the unit must have a banner.
+
+NOTE: All bonuses exclude points for Magical Banners, Magic items, and other upgrades, like Skaven Weapon Teams &amp; Night Goblin Fanatics &amp; Marks for Warriors Of Chaos, Assasins etc.</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+        <cost name="Army Composition" typeId="ce6e-afde-2ed1-aac2" value="3000"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Magic Capacity" hidden="false" id="243d-1c28-19dc-41a5">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5369-b62f-e462-a86d" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3ac2-538c-254e-4141" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Power Stone" hidden="false" id="cbaf-e79c-c4d5-dcbd" sortIndex="3">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="235b-f87b-f4cb-79bc" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a7f1-7d76-1feb-83a2" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="decrement" value="1" field="2db8-4138-44f2-f6eb">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="696a-648d-c842-4c6a" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="2" field="2db8-4138-44f2-f6eb">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="6001-b2bf-4529-c07d" scope="roster" childId="696a-648d-c842-4c6a" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Dispell Scrolls" hidden="false" id="5f46-2400-989f-fe70" sortIndex="2">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="80b0-939f-8a89-cf8e" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="edc2-c80b-386b-69de" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="decrement" value="1" field="410e-ed97-ecf8-cfa4">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="b76c-6bad-4650-dbb0" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="2" field="410e-ed97-ecf8-cfa4">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="6001-b2bf-4529-c07d" scope="roster" childId="b76c-6bad-4650-dbb0" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Total of die" hidden="false" id="9a94-32eb-a773-4a57" sortIndex="1">
+              <modifiers>
+                <modifier type="increment" value="1" field="2db8-4138-44f2-f6eb">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="fcec-2340-6368-a2ba" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+                  </repeats>
+                </modifier>
+                <modifier type="increment" value="1" field="410e-ed97-ecf8-cfa4">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="6001-b2bf-4529-c07d" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="72f4-05e8-7983-6550" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="af9f-7de5-a0cb-63b3" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Dispel Dice Calculation" hidden="false" id="c5cc-730f-c28d-5abb" sortIndex="5">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="96f8-b2fb-64a9-3af1" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f89e-fb8d-2984-dec9" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="50" field="ce6e-afde-2ed1-aac2" scope="roster">
+                  <conditions>
+                    <condition type="equalTo" value="3" field="410e-ed97-ecf8-cfa4" scope="force" childId="any" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="100" field="ce6e-afde-2ed1-aac2" scope="roster">
+                  <conditions>
+                    <condition type="equalTo" value="2" field="410e-ed97-ecf8-cfa4" scope="force" childId="any" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="3000" field="ce6e-afde-2ed1-aac2" scope="roster">
+                  <conditions>
+                    <condition type="greaterThan" value="10" field="410e-ed97-ecf8-cfa4" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="decrement" value="50" field="ce6e-afde-2ed1-aac2" scope="roster">
+                  <conditions>
+                    <condition type="equalTo" value="5" field="410e-ed97-ecf8-cfa4" scope="force" childId="any" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="decrement" value="100" field="ce6e-afde-2ed1-aac2" scope="roster">
+                  <conditions>
+                    <condition type="equalTo" value="6" field="410e-ed97-ecf8-cfa4" scope="force" childId="any" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="decrement" value="200" field="ce6e-afde-2ed1-aac2" scope="roster">
+                  <conditions>
+                    <condition type="equalTo" value="7" field="410e-ed97-ecf8-cfa4" scope="force" childId="any" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="decrement" value="350" field="ce6e-afde-2ed1-aac2" scope="roster">
+                  <conditions>
+                    <condition type="equalTo" value="8" field="410e-ed97-ecf8-cfa4" scope="force" childId="any" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="decrement" value="550" field="ce6e-afde-2ed1-aac2" scope="roster">
+                  <conditions>
+                    <condition type="equalTo" value="9" field="410e-ed97-ecf8-cfa4" scope="force" childId="any" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="decrement" value="800" field="ce6e-afde-2ed1-aac2" scope="roster">
+                  <conditions>
+                    <condition type="atLeast" value="10" field="410e-ed97-ecf8-cfa4" scope="force" childId="any" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="decrement" value="300" field="ce6e-afde-2ed1-aac2" scope="roster">
+                  <conditions>
+                    <condition type="greaterThan" value="10" field="410e-ed97-ecf8-cfa4" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                  <repeats>
+                    <repeat value="1" repeats="1" field="410e-ed97-ecf8-cfa4" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Bonus for 2:2" hidden="false" id="a8c8-2f49-80e5-b750" sortIndex="4">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="87c1-eb79-7f7d-f536" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6a6c-d250-b835-977a" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="200" field="ce6e-afde-2ed1-aac2">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="equalTo" value="2" field="410e-ed97-ecf8-cfa4" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="equalTo" value="2" field="2db8-4138-44f2-f6eb" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <comment>Does not apply to Daemons of Chaos</comment>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Power Dice Calculation" hidden="false" id="2a30-c8c1-7f91-d93f" sortIndex="6">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="59f3-63c6-b419-323a" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3991-e537-8943-fbea" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="50" field="ce6e-afde-2ed1-aac2" scope="roster">
+                  <conditions>
+                    <condition type="equalTo" value="3" field="2db8-4138-44f2-f6eb" scope="force" childId="any" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="100" field="ce6e-afde-2ed1-aac2" scope="roster">
+                  <conditions>
+                    <condition type="equalTo" value="2" field="2db8-4138-44f2-f6eb" scope="force" childId="any" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="decrement" value="300" field="ce6e-afde-2ed1-aac2" scope="roster">
+                  <conditions>
+                    <condition type="greaterThan" value="10" field="2db8-4138-44f2-f6eb" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                  <repeats>
+                    <repeat value="1" repeats="1" field="2db8-4138-44f2-f6eb" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+                  </repeats>
+                </modifier>
+                <modifier type="decrement" value="50" field="ce6e-afde-2ed1-aac2" scope="roster">
+                  <conditions>
+                    <condition type="equalTo" value="5" field="2db8-4138-44f2-f6eb" scope="force" childId="any" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="decrement" value="100" field="ce6e-afde-2ed1-aac2" scope="roster">
+                  <conditions>
+                    <condition type="equalTo" value="6" field="2db8-4138-44f2-f6eb" scope="force" childId="any" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="decrement" value="200" field="ce6e-afde-2ed1-aac2" scope="roster">
+                  <conditions>
+                    <condition type="equalTo" value="7" field="2db8-4138-44f2-f6eb" scope="force" childId="any" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="decrement" value="350" field="ce6e-afde-2ed1-aac2" scope="roster">
+                  <conditions>
+                    <condition type="equalTo" value="8" field="2db8-4138-44f2-f6eb" scope="force" childId="any" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="decrement" value="550" field="ce6e-afde-2ed1-aac2" scope="roster">
+                  <conditions>
+                    <condition type="equalTo" value="9" field="2db8-4138-44f2-f6eb" scope="force" childId="any" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="decrement" value="800" field="ce6e-afde-2ed1-aac2" scope="roster">
+                  <conditions>
+                    <condition type="atLeast" value="10" field="2db8-4138-44f2-f6eb" scope="force" childId="any" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="3000" field="ce6e-afde-2ed1-aac2" scope="roster">
+                  <conditions>
+                    <condition type="greaterThan" value="10" field="2db8-4138-44f2-f6eb" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="f679-dff7-370a-6050" name="Lore of Metal" hidden="false" collective="false" import="true">
@@ -1582,8 +1844,12 @@
     </selectionEntryGroup>
     <selectionEntryGroup name="Arcane Items (Common)" id="0d3f-389c-02b2-bb34" hidden="false">
       <entryLinks>
-        <entryLink import="true" name="Dispel Scroll (one use only)" hidden="false" id="989e-9d22-7fea-19b5" collective="false" targetId="b76c-6bad-4650-dbb0" type="selectionEntry"/>
-        <entryLink import="true" name="Power Stone (only one use)" hidden="false" id="f969-0b28-b1cf-bb02" collective="false" targetId="696a-648d-c842-4c6a" type="selectionEntry"/>
+        <entryLink import="true" name="Dispel Scroll (one use only)" hidden="false" id="989e-9d22-7fea-19b5" collective="false" targetId="b76c-6bad-4650-dbb0" type="selectionEntry">
+          <comment>THIS IS THE GOOD ONE</comment>
+        </entryLink>
+        <entryLink import="true" name="Power Stone (only one use)" hidden="false" id="f969-0b28-b1cf-bb02" collective="false" targetId="696a-648d-c842-4c6a" type="selectionEntry">
+          <comment>THIS IS THE GOOD ONE</comment>
+        </entryLink>
         <entryLink import="true" name="Staff of Sorcery" hidden="false" id="3bc4-082d-e44e-7f1a" collective="false" targetId="b22a-6be5-d4f9-7776" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
