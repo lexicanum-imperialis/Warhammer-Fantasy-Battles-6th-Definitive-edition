@@ -8341,6 +8341,9 @@ no armour saves.</description>
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="614f-692d-5e7a-0916" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry id="bf5f-a9d4-26e0-e575" name="Warp Scroll" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
@@ -8351,6 +8354,9 @@ no armour saves.</description>
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="d0f5-89b7-4367-18fe" includeChildSelections="true"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry id="448a-cd0f-6ff5-cb0e" name="Storm Daemon" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -9016,19 +9022,8 @@ no armour saves.</description>
       <modifiers>
         <modifier type="increment" field="0cdb-837f-311c-80ca" value="1">
           <repeats>
-            <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3d73-cedc-a3c5-b238" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="093e-504e-b5cf-5ca4" repeats="1" roundUp="false"/>
           </repeats>
-          <conditions>
-            <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3d73-cedc-a3c5-b238" type="greaterThan"/>
-          </conditions>
-        </modifier>
-        <modifier type="increment" field="0cdb-837f-311c-80ca" value="1">
-          <repeats>
-            <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="093e-504e-b5cf-5ca4" repeats="1" roundUp="false"/>
-          </repeats>
-          <conditions>
-            <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="093e-504e-b5cf-5ca4" type="greaterThan"/>
-          </conditions>
         </modifier>
       </modifiers>
       <constraints>
@@ -9147,6 +9142,16 @@ no armour saves.</description>
         <modifier type="increment" value="1" field="6643-1946-ce0f-35b8">
           <repeats>
             <repeat value="1" repeats="1" field="selections" scope="parent" childId="989e-9d22-7fea-19b5" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </repeats>
+        </modifier>
+        <modifier type="increment" value="1" field="6643-1946-ce0f-35b8">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="parent" childId="093e-504e-b5cf-5ca4" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </repeats>
+        </modifier>
+        <modifier type="increment" value="1" field="6643-1946-ce0f-35b8">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="parent" childId="2826-14c7-a0e9-287b" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </repeats>
         </modifier>
       </modifiers>
