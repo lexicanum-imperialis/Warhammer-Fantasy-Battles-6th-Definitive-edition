@@ -12,9 +12,9 @@
     <costType id="ecfa-8486-4f6c-c249" name="pts" defaultCostLimit="-1" hidden="false"/>
     <costType id="fcec-2340-6368-a2ba" name=" Casting Dice" defaultCostLimit="-1" hidden="false"/>
     <costType id="6001-b2bf-4529-c07d" name=" Dispel Dice" defaultCostLimit="-1" hidden="false"/>
-    <costType name="Army Composition" id="ce6e-afde-2ed1-aac2" defaultCostLimit="-1" hidden="false"/>
-    <costType name="SC Dispel Dice" id="410e-ed97-ecf8-cfa4" defaultCostLimit="-1" hidden="false"/>
-    <costType name="SC Power Dice" id="2db8-4138-44f2-f6eb" defaultCostLimit="-1" hidden="false"/>
+    <costType name="Army Composition" id="ce6e-afde-2ed1-aac2" defaultCostLimit="-1" hidden="true"/>
+    <costType name="SC Dispel Dice" id="410e-ed97-ecf8-cfa4" defaultCostLimit="-1" hidden="true"/>
+    <costType name="SC Power Dice" id="2db8-4138-44f2-f6eb" defaultCostLimit="-1" hidden="true"/>
   </costTypes>
   <profileTypes>
     <profileType id="a54a-7f00-29bf-12b1" name="Profile">
