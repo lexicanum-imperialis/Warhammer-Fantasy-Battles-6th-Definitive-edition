@@ -2420,6 +2420,10 @@ Troops that are immune to psychology are never affected by fear terror, frenzy o
 - **Against Regeneration**: The supernatural ability to knit flesh back together is often thwarted by fire. If a creature with Regeneration sustains one or more wounds from a Flaming Attack, it cannot use its Regeneration for the remainder of that phase. Furthermore, in many cases (such as with Trolls), once a unit has been wounded by fire, it loses the ability to Regenerate for the rest of the entire battle.
 - **Non-Magical Nature**: Unless the source of the fire is a Magic Item or a Spell, Flaming Attacks are not considered Magical Attacks. Therefore, mundane fire (like brazier-lit arrows) cannot harm Ethereal creatures.</description>
     </rule>
+    <rule name="Armour Piercing" id="e411-1a48-8fd0-9a95" hidden="false" page="90" publicationId="315e-e3c4-08af-fd51">
+      <description>Certain weapons, most notably blackpowder weapons such as handguns, are even better at penetrating armour than their Strength value suggests.
+Therefore, the enemy Armour save is reduced by an additional -1. For example, an Armour piercing weapon that has Strength 4 would have a -2 Armour save modifier rather than -1.</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="5556-38ea-b278-4a8f" name="Hand Weapon" publicationId="315e-e3c4-08af-fd51" page="91" hidden="false" typeId="7889-42d9-70a0-3ea9" typeName="Weapon">
@@ -2724,10 +2728,4 @@ The spell cannot affect Undead targets, Chaos Daemons or Unbreakable units. Unit
       </characteristics>
     </profile>
   </sharedProfiles>
-  <rules>
-    <rule name="Armour Piercing" id="e411-1a48-8fd0-9a95" hidden="false" page="90" publicationId="315e-e3c4-08af-fd51">
-      <description>Certain weapons, most notably blackpowder weapons such as handguns, are even better at penetrating armour than their Strength value suggests.
-Therefore, the enemy Armour save is reduced by an additional -1. For example, an Armour piercing weapon that has Strength 4 would have a -2 Armour save modifier rather than -1.</description>
-    </rule>
-  </rules>
 </gameSystem>
