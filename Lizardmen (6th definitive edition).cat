@@ -442,7 +442,7 @@
             <constraint field="ecfa-8486-4f6c-c249" scope="parent" value="100" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="74e2-6941-ea2e-405d" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="d747-4e1e-b5f2-6966" name="Arcane Items" hidden="false" collective="false" import="true" targetId="4cfd-b3c7-a3ea-68f1" type="selectionEntryGroup"/>
+            <entryLink id="d747-4e1e-b5f2-6966" name="Arcane Items (XX + Common)" hidden="false" collective="false" import="true" targetId="fcbd-0a43-0a83-bb68" type="selectionEntryGroup"/>
             <entryLink id="16b2-132f-9320-4638" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="bbd0-c163-1cc8-5edf" type="selectionEntryGroup"/>
             <entryLink id="ee6c-ad79-f907-8a07" name="Talismans" hidden="false" collective="false" import="true" targetId="bf9b-10c2-4821-9fee" type="selectionEntryGroup"/>
             <entryLink id="994d-8a68-1123-dd6d" name="Plaques" hidden="false" collective="false" import="true" targetId="6150-3dae-687d-6461" type="selectionEntryGroup"/>
@@ -1024,7 +1024,7 @@
             <entryLink id="6278-8e18-d46a-d682" name="Magic Armour" hidden="false" collective="false" import="true" targetId="ad6e-3337-4672-ae7b" type="selectionEntryGroup"/>
             <entryLink id="a41e-13a0-3af0-599c" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="a2c9-7abf-3316-b089" type="selectionEntryGroup"/>
             <entryLink id="24fa-eda6-6540-1a31" name="Talismans" hidden="false" collective="false" import="true" targetId="bf9b-10c2-4821-9fee" type="selectionEntryGroup"/>
-            <entryLink id="4293-1445-c8e8-74e8" name="Arcane Items" hidden="false" collective="false" import="true" targetId="4cfd-b3c7-a3ea-68f1" type="selectionEntryGroup"/>
+            <entryLink id="4293-1445-c8e8-74e8" name="Arcane Items (XX + Common)" hidden="false" collective="false" import="true" targetId="fcbd-0a43-0a83-bb68" type="selectionEntryGroup"/>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="eb13-c5b7-e74e-7c96" name="Mount" hidden="false" collective="false" import="true">
@@ -2816,7 +2816,7 @@ If Kroq-Gar is wounded in close combat and does not pass his Ward save, then who
                 <entryLink import="true" name="Magic Armour" hidden="false" id="3b6e-563e-d51a-4b62" collective="false" targetId="ad6e-3337-4672-ae7b" type="selectionEntryGroup"/>
                 <entryLink import="true" name="Magic Weapons" hidden="false" id="155e-746c-3889-3a3d" collective="false" targetId="a2c9-7abf-3316-b089" type="selectionEntryGroup"/>
                 <entryLink import="true" name="Talismans" hidden="false" id="40d6-0d83-2a6e-f912" collective="false" targetId="bf9b-10c2-4821-9fee" type="selectionEntryGroup"/>
-                <entryLink import="true" name="Arcane Items" hidden="false" id="836c-4a4d-659c-bf17" collective="false" targetId="4cfd-b3c7-a3ea-68f1" type="selectionEntryGroup"/>
+                <entryLink import="true" name="Arcane Items (XX + Common)" hidden="false" id="836c-4a4d-659c-bf17" collective="false" targetId="fcbd-0a43-0a83-bb68" type="selectionEntryGroup"/>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup name="Mount" id="ad54-30ab-6165-3cec" hidden="false" collective="false" import="true">
@@ -4784,22 +4784,7 @@ This spell is targeted at a single hill anywhere on the table. Any unit at leas
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
-    <selectionEntryGroup id="4cfd-b3c7-a3ea-68f1" name="Arcane Items" hidden="false" collective="false" import="true" collapsible="true">
-      <modifiers>
-        <modifier type="increment" field="8b18-6469-1fcd-fcaf" value="1">
-          <repeats>
-            <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="b76c-6bad-4650-dbb0" repeats="1" roundUp="false"/>
-          </repeats>
-        </modifier>
-        <modifier type="increment" value="1" field="8b18-6469-1fcd-fcaf">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="parent" childId="696a-648d-c842-4c6a" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-          <conditions>
-            <condition type="greaterThan" value="0" field="selections" scope="parent" childId="696a-648d-c842-4c6a" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </conditions>
-        </modifier>
-      </modifiers>
+    <selectionEntryGroup id="4cfd-b3c7-a3ea-68f1" name="Arcane Items (LZ-AB)" hidden="false" collective="false" import="true" collapsible="true">
       <constraints>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8b18-6469-1fcd-fcaf" type="max"/>
       </constraints>
@@ -4860,29 +4845,7 @@ This may be used with the exact sam effects as a Dispel Scroll. In addtion, all 
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="48fa-a15c-23ad-d51b" name="Staff of Sorcery" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ebb5-5231-7759-9798" type="max"/>
-            <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3850-c0ee-0e58-a88e" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="c33c-9828-0eaa-75b2" name="Staff of Sorcery" publicationId="315e-e3c4-08af-fd51" page="154" hidden="false" typeId="a89b-d5a3-7805-c44e" typeName="Magic Items">
-              <characteristics>
-                <characteristic name="Magic stuff" typeId="c7b5-c239-d6c1-0627">Whenever he dispels a spell, the score required for this wizard to make a successful dispel is reduced by 1</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="50"/>
-            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-          </costs>
-        </selectionEntry>
       </selectionEntries>
-      <entryLinks>
-        <entryLink id="eea7-904b-10a1-2c0d" name="Dispel Scroll (one use only)" hidden="false" collective="false" import="true" targetId="b76c-6bad-4650-dbb0" type="selectionEntry"/>
-        <entryLink id="1567-fb3c-9fb9-d3a0" name="Power Stone (only one use)" hidden="false" collective="false" import="true" targetId="696a-648d-c842-4c6a" type="selectionEntry"/>
-      </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="ad6e-3337-4672-ae7b" name="Magic Armour" hidden="false" collective="false" import="true" collapsible="true">
       <constraints>
@@ -6063,12 +6026,13 @@ In addition, the bearer causes Fear in Skaven.</characteristic>
         <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="bf95-da3b-f5e0-c8af" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
       </constraints>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Arcane Items (XX + Common)" id="fcbd-0a43-0a83-bb68" hidden="false">
+    <selectionEntryGroup name="Arcane Items (LZ-AB + Common)" id="fcbd-0a43-0a83-bb68" hidden="false" collapsible="true">
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="27c6-a6c2-a15f-bc79" includeChildSelections="false"/>
       </constraints>
       <entryLinks>
-        <entryLink import="true" name="Arcane Items (Common)" hidden="false" id="0c9b-47e8-06f0-41da" type="selectionEntryGroup" targetId="0d3f-389c-02b2-bb34"/>
+        <entryLink import="true" name="Arcane Items" hidden="false" id="0c9b-47e8-06f0-41da" type="selectionEntryGroup" targetId="4cfd-b3c7-a3ea-68f1"/>
+        <entryLink import="true" name="Arcane Items (Common)" hidden="false" id="0677-7ddb-9031-073f" type="selectionEntryGroup" targetId="0d3f-389c-02b2-bb34"/>
       </entryLinks>
       <modifiers>
         <modifier type="increment" value="1" field="27c6-a6c2-a15f-bc79">

@@ -389,7 +389,7 @@
             <entryLink import="true" name="Magic Armour (Common)" hidden="false" id="7afb-975a-ffdd-deec" collective="false" targetId="ed11-243d-9671-7f1c" type="selectionEntryGroup"/>
             <entryLink import="true" name="Magic Talismans (Common)" hidden="false" id="eacf-5688-d522-a102" collective="false" targetId="7dcf-8a09-c9b8-9a88" type="selectionEntryGroup"/>
             <entryLink import="true" name="Magic Weapons (Common)" hidden="false" id="98a4-7a9f-66c0-8270" collective="false" targetId="8171-d883-19d8-6450" type="selectionEntryGroup"/>
-            <entryLink id="3b2e-736e-e466-7dd4" name="Arcane Items" hidden="false" collective="false" import="true" targetId="0182-4c8b-d929-1f21" type="selectionEntryGroup"/>
+            <entryLink id="3b2e-736e-e466-7dd4" name="Arcane Items (TK-AB + Common)" hidden="false" collective="false" import="true" targetId="740c-b21c-2870-a34d" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
@@ -821,7 +821,7 @@
             <entryLink import="true" name="Magic Armour (Common)" hidden="false" id="8479-25e2-f388-fb51" collective="false" targetId="ed11-243d-9671-7f1c" type="selectionEntryGroup"/>
             <entryLink import="true" name="Magic Talismans (Common)" hidden="false" id="0d94-7617-88df-cb7b" collective="false" targetId="7dcf-8a09-c9b8-9a88" type="selectionEntryGroup"/>
             <entryLink import="true" name="Magic Weapons (Common)" hidden="false" id="d346-33c9-99d1-8e9b" collective="false" targetId="8171-d883-19d8-6450" type="selectionEntryGroup"/>
-            <entryLink id="7985-1248-15be-6dbd" name="Arcane Items" hidden="false" collective="false" import="true" targetId="0182-4c8b-d929-1f21" type="selectionEntryGroup"/>
+            <entryLink id="740c-b21c-2870-a34d" name="Arcane Items" hidden="false" collective="false" import="true" targetId="0182-4c8b-d929-1f21" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
@@ -2933,21 +2933,6 @@ The Queen moves with the swiftness of a striking asp, and will always strikes fi
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="0182-4c8b-d929-1f21" name="Arcane Items" hidden="false" collective="false" import="true">
-      <modifiers>
-        <modifier type="increment" field="efd0-b637-6543-4330" value="1">
-          <repeats>
-            <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="15df-d8c0-1bf2-0602" repeats="1" roundUp="false"/>
-          </repeats>
-        </modifier>
-        <modifier type="increment" value="1" field="efd0-b637-6543-4330">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="parent" childId="696a-648d-c842-4c6a" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-          <conditions>
-            <condition type="greaterThan" value="0" field="selections" scope="parent" childId="696a-648d-c842-4c6a" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="efd0-b637-6543-4330" type="max"/>
       </constraints>
@@ -3046,12 +3031,13 @@ The Queen moves with the swiftness of a striking asp, and will always strikes fi
         <entryLink id="7eca-8c0f-55a3-c4d8" name="Icon of Rakaph" hidden="false" collective="false" import="true" targetId="9007-1a8a-7d3a-96c5" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Arcane Items (XX + Common)" id="740c-b21c-2870-a34d" hidden="false">
+    <selectionEntryGroup name="Arcane Items (TK-AB + Common)" id="740c-b21c-2870-a34d" hidden="false">
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3c8f-8fa1-2934-b32f" includeChildSelections="false"/>
       </constraints>
       <entryLinks>
-        <entryLink import="true" name="Arcane Items (Common)" hidden="false" id="049d-f4fe-fe40-6fbc" type="selectionEntryGroup" targetId="0d3f-389c-02b2-bb34"/>
+        <entryLink import="true" name="Arcane Items" hidden="false" id="049d-f4fe-fe40-6fbc" type="selectionEntryGroup" targetId="0182-4c8b-d929-1f21"/>
+        <entryLink import="true" name="Arcane Items (Common)" hidden="false" id="ad9a-184d-63d6-b158" type="selectionEntryGroup" targetId="0d3f-389c-02b2-bb34"/>
       </entryLinks>
       <modifiers>
         <modifier type="increment" value="1" field="3c8f-8fa1-2934-b32f">
