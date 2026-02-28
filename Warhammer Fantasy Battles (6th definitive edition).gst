@@ -13,8 +13,8 @@
     <costType id="fcec-2340-6368-a2ba" name=" Casting Dice" defaultCostLimit="-1" hidden="false"/>
     <costType id="6001-b2bf-4529-c07d" name=" Dispel Dice" defaultCostLimit="-1" hidden="false"/>
     <costType name="Army Composition" id="ce6e-afde-2ed1-aac2" defaultCostLimit="-1" hidden="false"/>
-    <costType name="SC Dispel Dice" id="410e-ed97-ecf8-cfa4" defaultCostLimit="-1" hidden="true"/>
-    <costType name="SC Power Dice" id="2db8-4138-44f2-f6eb" defaultCostLimit="-1" hidden="true"/>
+    <costType name="SC Dispel Dice" id="410e-ed97-ecf8-cfa4" defaultCostLimit="-1" hidden="false"/>
+    <costType name="SC Power Dice" id="2db8-4138-44f2-f6eb" defaultCostLimit="-1" hidden="false"/>
   </costTypes>
   <profileTypes>
     <profileType id="a54a-7f00-29bf-12b1" name="Profile">
@@ -1852,6 +1852,21 @@ NOTE: All bonuses exclude points for Magical Banners, Magic items, and other upg
         </entryLink>
         <entryLink import="true" name="Staff of Sorcery" hidden="false" id="3bc4-082d-e44e-7f1a" collective="false" targetId="b22a-6be5-d4f9-7776" type="selectionEntry"/>
       </entryLinks>
+      <modifiers>
+        <modifier type="increment" value="1" field="7ed8-2807-ba7d-fe27">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="parent" childId="f969-0b28-b1cf-bb02" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </repeats>
+        </modifier>
+        <modifier type="increment" value="1" field="7ed8-2807-ba7d-fe27">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="parent" childId="989e-9d22-7fea-19b5" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7ed8-2807-ba7d-fe27" includeChildSelections="false"/>
+      </constraints>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
