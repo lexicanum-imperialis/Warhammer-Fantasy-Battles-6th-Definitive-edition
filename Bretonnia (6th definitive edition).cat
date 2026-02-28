@@ -714,6 +714,10 @@
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+        <cost name="Army Composition" typeId="ce6e-afde-2ed1-aac2" value="0"/>
+        <cost name="SC Dispel Dice" typeId="410e-ed97-ecf8-cfa4" value="0"/>
+        <cost name="SC Power Dice" typeId="2db8-4138-44f2-f6eb" value="0"/>
+        <cost name="SC Infantry Pts" typeId="4055-9b3e-989c-dbd8" value="0"/>
       </costs>
       <constraints>
         <constraint type="min" value="0" field="selections" scope="force" shared="true" id="2118-9889-ee00-6a58" includeChildSelections="false"/>
@@ -1012,6 +1016,10 @@
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+        <cost name="Army Composition" typeId="ce6e-afde-2ed1-aac2" value="0"/>
+        <cost name="SC Dispel Dice" typeId="410e-ed97-ecf8-cfa4" value="0"/>
+        <cost name="SC Power Dice" typeId="2db8-4138-44f2-f6eb" value="0"/>
+        <cost name="SC Infantry Pts" typeId="4055-9b3e-989c-dbd8" value="0"/>
       </costs>
       <modifiers>
         <modifier type="set" value="0" field="f9c2-08f7-b725-fc4f">
@@ -1271,6 +1279,20 @@
           </modifiers>
           <comment>The Army of the King (BR-AB, p.79)</comment>
         </modifierGroup>
+        <modifierGroup type="and">
+          <comment>Swedish Comp</comment>
+          <modifiers>
+            <modifier type="increment" value="1" field="4055-9b3e-989c-dbd8">
+              <comment>Swedish Comp</comment>
+            </modifier>
+            <modifier type="increment" value="2" field="ce6e-afde-2ed1-aac2">
+              <comment>Swedish Comp</comment>
+            </modifier>
+          </modifiers>
+          <repeats>
+            <repeat value="1" repeats="1" field="ecfa-8486-4f6c-c249" scope="parent" childId="any" shared="true" roundUp="false"/>
+          </repeats>
+        </modifierGroup>
       </modifierGroups>
     </selectionEntry>
     <selectionEntry id="9572-ac32-c59e-134c" name="Peasant Bowmen" hidden="false" collective="false" import="true" type="unit">
@@ -1384,6 +1406,23 @@
           </modifiers>
           <comment>The Army of the King (BR-AB, p.79)</comment>
         </modifierGroup>
+        <modifierGroup type="and">
+          <comment>Swedish Comp</comment>
+          <modifiers>
+            <modifier type="increment" value="1" field="4055-9b3e-989c-dbd8">
+              <comment>Swedish Comp</comment>
+            </modifier>
+            <modifier type="increment" value="2" field="ce6e-afde-2ed1-aac2">
+              <comment>Swedish Comp</comment>
+            </modifier>
+          </modifiers>
+          <repeats>
+            <repeat value="1" repeats="1" field="ecfa-8486-4f6c-c249" scope="parent" childId="any" shared="true" roundUp="false"/>
+          </repeats>
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="parent" childId="c99b-4aa8-27e0-d471" shared="true"/>
+          </conditions>
+        </modifierGroup>
       </modifierGroups>
       <selectionEntryGroups>
         <selectionEntryGroup name="Command group" id="53a5-a51e-0063-b696" hidden="false">
@@ -1489,6 +1528,10 @@
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+        <cost name="Army Composition" typeId="ce6e-afde-2ed1-aac2" value="0"/>
+        <cost name="SC Dispel Dice" typeId="410e-ed97-ecf8-cfa4" value="0"/>
+        <cost name="SC Power Dice" typeId="2db8-4138-44f2-f6eb" value="0"/>
+        <cost name="SC Infantry Pts" typeId="4055-9b3e-989c-dbd8" value="0"/>
       </costs>
       <selectionEntryGroups>
         <selectionEntryGroup name="Command group" id="3b89-3d2f-575e-e01c" hidden="false">
@@ -2130,6 +2173,10 @@
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+        <cost name="Army Composition" typeId="ce6e-afde-2ed1-aac2" value="0"/>
+        <cost name="SC Dispel Dice" typeId="410e-ed97-ecf8-cfa4" value="0"/>
+        <cost name="SC Power Dice" typeId="2db8-4138-44f2-f6eb" value="0"/>
+        <cost name="SC Infantry Pts" typeId="4055-9b3e-989c-dbd8" value="0"/>
       </costs>
       <modifierGroups>
         <modifierGroup type="and">
@@ -5316,7 +5363,235 @@ A Champion (or character for that matter) that is in the second (or third) rank 
     <entryLink import="true" name="Truthsayer" hidden="false" id="addc-aa4a-280e-3ec0" type="selectionEntry" targetId="4e84-1f82-dc21-18cc"/>
     <entryLink import="true" name="Fenbeasts" hidden="false" id="292e-e458-c32a-d9da" type="selectionEntry" targetId="6beb-e2b0-bf8d-ae62"/>
     <entryLink import="true" name="Emperor Fire Dragon" hidden="false" id="98b9-2ca9-afa3-58d3" type="selectionEntry" targetId="d7e3-ae46-6606-7806"/>
-    <entryLink import="true" name="Swedish Comp System" hidden="false" id="c95b-4570-aaa4-f6cc" type="selectionEntry" targetId="7fd2-3000-523b-3bc2"/>
+    <entryLink import="true" name="Swedish Comp System" hidden="true" id="c95b-4570-aaa4-f6cc" type="selectionEntry" targetId="7fd2-3000-523b-3bc2">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Bretonnia" id="4299-464c-5616-42ae" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Magic Items restrictions" hidden="false" id="8519-fd79-47b7-4d14" sortIndex="3">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f76a-9ce4-4daf-fe24" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c206-effe-c876-9560" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="decrement" value="100" field="ce6e-afde-2ed1-aac2">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="324d-b75a-577f-15e8" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="decrement" value="100" field="ce6e-afde-2ed1-aac2">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="6dba-31c1-aa6d-2fdd" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="decrement" value="100" field="ce6e-afde-2ed1-aac2">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="e650-2a76-133b-dd93" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="decrement" value="100" field="ce6e-afde-2ed1-aac2">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d978-9cf1-a186-81bb" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="decrement" value="100" field="ce6e-afde-2ed1-aac2">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="76ee-2d01-c510-d8e9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="decrement" value="100" field="ce6e-afde-2ed1-aac2">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="f327-567f-ef99-0403" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <rules>
+                <rule name="Magic Items restrictions (Bretonnia)" id="0f1b-508b-6bc3-2789" hidden="false">
+                  <description>### Magic Items restrictions
+- Silver mirror counts as a dispel scroll 
+- Sacrament of the lady counts as two power dice 
+-100 Tress of Isoulde 
+-100 Virtue of duty 
+-100 Virtue of confidence 
+-100 Virtue of Discipline (if used by a monster rider) 
+-100 Banner of the Lady 
+-100 Virtue of the Impetuous Knight  
+-100 War banner </description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Calculate SC Knights Unit" hidden="false" id="1fef-8f69-27cb-6514" sortIndex="4">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6297-c7dc-9c26-0923" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a944-a37d-c05d-268b" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="e7ae-d4ed-abfe-3f11">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="roster" childId="129d-6f70-2b8a-2cf0" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+                  </repeats>
+                </modifier>
+                <modifier type="increment" value="1" field="e7ae-d4ed-abfe-3f11">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="roster" childId="3f3b-a058-295e-9046" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+                  </repeats>
+                </modifier>
+                <modifier type="increment" value="1" field="e7ae-d4ed-abfe-3f11">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="roster" childId="7336-0d12-d395-239f" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+                  </repeats>
+                </modifier>
+                <modifier type="increment" value="1" field="e7ae-d4ed-abfe-3f11">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="roster" childId="6566-bd4f-e769-2999" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Bonuses" hidden="false" id="09d3-74c3-51af-7e8c" sortIndex="1">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="474a-1cb4-aeef-9f11" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2e86-78ba-98c1-6f0e" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="200" field="ce6e-afde-2ed1-aac2" scope="roster">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="d024-d25b-a9b4-73b6" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                  <comment>No Lord</comment>
+                </modifier>
+              </modifiers>
+              <rules>
+                <rule name="Bonuses (Bretonnia)" id="a648-b41b-9aff-2e8d" hidden="false">
+                  <description>### Bonuses
+- +200 No Lord 
+- +(Pts)*2 Each Man-at-arms unit 
+- +(Pts)*2 Bowmen unit without skirmish 
+- +(Pts) One Errant Knights unit 
+- +(Pts) One Knight of the Realm unit 
+- +(FC) Grail Reliquae </description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Penalties" hidden="false" id="fe4f-bf23-1112-925a" sortIndex="2">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="61d7-17e8-30f5-f645" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cc1b-737e-a7bb-c1d2" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="decrement" value="200" field="ce6e-afde-2ed1-aac2" scope="roster">
+                  <conditions>
+                    <condition type="atLeast" value="5" field="selections" scope="force" childId="7a1c-d611-c2dc-def1" shared="true" includeChildSelections="true">
+                      <comment>Character Spam</comment>
+                    </condition>
+                  </conditions>
+                </modifier>
+                <modifier type="decrement" value="400" field="ce6e-afde-2ed1-aac2" scope="roster">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="5990-c1ff-bcab-6ef7" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <rules>
+                <rule name="Penalties (Bretonnia)" id="d0ee-7e0c-0124-7587" hidden="false">
+                  <description>### Penalties
+
+- -1000 Less than 75 pts non-skirmish infantry 
+- -400 Less than 150 pts non-skirmish infantry 
+- -200 Less than 250 pts non-skirmish infantry 
+- -400 Hippogriff 
+- -200 Taking 5 or more characters 
+- -50 3rd knight unit* 
+- -150 4th knight unit* 
+- -250 5th knight unit* 
+- -600 Each unit of knights &gt;5* 
+- -200 Each Pegasus Knight &gt;5 
+
+* Which includes Knights of the Realm, Knight Errants, Questing Knights, Pegasus Knights and Grail Knights.
+
+Note :The minus for having few pts non-skirmish infantry are not cumulative, use only the largest modifier. </description>
+                </rule>
+              </rules>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Knight Unit Escalating Penalties</comment>
+                  <modifiers>
+                    <modifier type="decrement" value="600" field="ce6e-afde-2ed1-aac2" scope="roster">
+                      <conditions>
+                        <condition type="greaterThan" value="5" field="e7ae-d4ed-abfe-3f11" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                      <repeats>
+                        <repeat value="1" repeats="1" field="e7ae-d4ed-abfe-3f11" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+                      </repeats>
+                    </modifier>
+                    <modifier type="decrement" value="50" field="ce6e-afde-2ed1-aac2" scope="roster">
+                      <conditions>
+                        <condition type="atLeast" value="3" field="e7ae-d4ed-abfe-3f11" scope="force" childId="7a1c-d611-c2dc-def1" shared="true" includeChildSelections="true">
+                          <comment>Character Spam</comment>
+                        </condition>
+                      </conditions>
+                    </modifier>
+                    <modifier type="decrement" value="100" field="ce6e-afde-2ed1-aac2" scope="roster">
+                      <conditions>
+                        <condition type="atLeast" value="4" field="e7ae-d4ed-abfe-3f11" scope="force" childId="7a1c-d611-c2dc-def1" shared="true" includeChildSelections="true">
+                          <comment>Character Spam</comment>
+                        </condition>
+                      </conditions>
+                    </modifier>
+                    <modifier type="decrement" value="100" field="ce6e-afde-2ed1-aac2" scope="roster">
+                      <conditions>
+                        <condition type="atLeast" value="5" field="e7ae-d4ed-abfe-3f11" scope="force" childId="7a1c-d611-c2dc-def1" shared="true" includeChildSelections="true">
+                          <comment>Character Spam</comment>
+                        </condition>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <comment>Non-Skirmish Infantry Penalties</comment>
+                  <modifiers>
+                    <modifier type="decrement" value="1000" field="ce6e-afde-2ed1-aac2" scope="roster">
+                      <conditions>
+                        <condition type="lessThan" value="75" field="4055-9b3e-989c-dbd8" scope="force" childId="7a1c-d611-c2dc-def1" shared="true" includeChildSelections="true">
+                          <comment>Character Spam</comment>
+                        </condition>
+                      </conditions>
+                    </modifier>
+                    <modifier type="decrement" value="200" field="ce6e-afde-2ed1-aac2" scope="roster">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="150" field="4055-9b3e-989c-dbd8" scope="force" childId="7a1c-d611-c2dc-def1" shared="true" includeChildSelections="true">
+                              <comment>Character Spam</comment>
+                            </condition>
+                            <condition type="lessThan" value="250" field="4055-9b3e-989c-dbd8" scope="force" childId="7a1c-d611-c2dc-def1" shared="true" includeChildSelections="true">
+                              <comment>Character Spam</comment>
+                            </condition>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                    <modifier type="decrement" value="400" field="ce6e-afde-2ed1-aac2" scope="roster">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="75" field="4055-9b3e-989c-dbd8" scope="force" childId="7a1c-d611-c2dc-def1" shared="true" includeChildSelections="true">
+                              <comment>Character Spam</comment>
+                            </condition>
+                            <condition type="lessThan" value="150" field="4055-9b3e-989c-dbd8" scope="force" childId="7a1c-d611-c2dc-def1" shared="true" includeChildSelections="true">
+                              <comment>Character Spam</comment>
+                            </condition>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </entryLink>
   </entryLinks>
   <categoryEntries>
     <categoryEntry name="Core" id="c9e4-8f23-e5ff-cd89" hidden="false" publicationId="d2ec-1dc7-f0d5-acbb" page="90">
@@ -5326,4 +5601,8 @@ A Champion (or character for that matter) that is in the second (or third) rank 
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Mercenaries" id="99a3-c59a-d610-9847" targetId="fc47-8392-a6c8-452a"/>
   </catalogueLinks>
+  <costTypes>
+    <costType name="SC Knight Units" id="e7ae-d4ed-abfe-3f11" defaultCostLimit="-1" hidden="true"/>
+    <costType name="SC Infantry Pts" id="4055-9b3e-989c-dbd8" defaultCostLimit="-1" hidden="true"/>
+  </costTypes>
 </catalogue>
