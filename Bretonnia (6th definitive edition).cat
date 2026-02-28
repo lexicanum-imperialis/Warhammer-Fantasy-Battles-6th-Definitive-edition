@@ -5375,11 +5375,6 @@ A Champion (or character for that matter) that is in the second (or third) rank 
               <modifiers>
                 <modifier type="decrement" value="100" field="ce6e-afde-2ed1-aac2">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="force" childId="324d-b75a-577f-15e8" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="decrement" value="100" field="ce6e-afde-2ed1-aac2">
-                  <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="6dba-31c1-aa6d-2fdd" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
@@ -5390,8 +5385,16 @@ A Champion (or character for that matter) that is in the second (or third) rank 
                 </modifier>
                 <modifier type="decrement" value="100" field="ce6e-afde-2ed1-aac2">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d978-9cf1-a186-81bb" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="95b8-f74e-dcc8-aaf3" shared="true" includeChildSelections="true"/>
                   </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="bfa3-6734-c03f-3594" shared="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="5990-c1ff-bcab-6ef7" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
                 <modifier type="decrement" value="100" field="ce6e-afde-2ed1-aac2">
                   <conditions>
@@ -5401,6 +5404,31 @@ A Champion (or character for that matter) that is in the second (or third) rank 
                 <modifier type="decrement" value="100" field="ce6e-afde-2ed1-aac2">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="f327-567f-ef99-0403" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="decrement" value="100" field="ce6e-afde-2ed1-aac2">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d978-9cf1-a186-81bb" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="decrement" value="100" field="ce6e-afde-2ed1-aac2">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="324d-b75a-577f-15e8" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="2" field="2db8-4138-44f2-f6eb">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="c4fd-03c7-4bdd-e9e2" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="2" field="410e-ed97-ecf8-cfa4">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="6001-b2bf-4529-c07d" scope="roster" childId="c4fd-03c7-4bdd-e9e2" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+                  </repeats>
+                </modifier>
+                <modifier type="decrement" value="1" field="410e-ed97-ecf8-cfa4">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="c4fd-03c7-4bdd-e9e2" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -5445,6 +5473,11 @@ A Champion (or character for that matter) that is in the second (or third) rank 
                     <repeat value="1" repeats="1" field="selections" scope="roster" childId="6566-bd4f-e769-2999" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
                   </repeats>
                 </modifier>
+                <modifier type="increment" value="1" field="e7ae-d4ed-abfe-3f11">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="roster" childId="ff3a-61e9-e154-92cc" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+                  </repeats>
+                </modifier>
               </modifiers>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Bonuses" hidden="false" id="09d3-74c3-51af-7e8c" sortIndex="1">
@@ -5480,14 +5513,25 @@ A Champion (or character for that matter) that is in the second (or third) rank 
               <modifiers>
                 <modifier type="decrement" value="200" field="ce6e-afde-2ed1-aac2" scope="roster">
                   <conditions>
-                    <condition type="atLeast" value="5" field="selections" scope="force" childId="7a1c-d611-c2dc-def1" shared="true" includeChildSelections="true">
+                    <condition type="greaterThan" value="5" field="selections" scope="force" childId="ff3a-61e9-e154-92cc" shared="true" includeChildSelections="true">
                       <comment>Character Spam</comment>
                     </condition>
                   </conditions>
+                  <comment>LU Pegasus Knights</comment>
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="parent" childId="ff3a-61e9-e154-92cc" shared="true" roundUp="false"/>
+                  </repeats>
                 </modifier>
                 <modifier type="decrement" value="400" field="ce6e-afde-2ed1-aac2" scope="roster">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="5990-c1ff-bcab-6ef7" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="decrement" value="200" field="ce6e-afde-2ed1-aac2" scope="roster">
+                  <conditions>
+                    <condition type="atLeast" value="5" field="selections" scope="force" childId="7a1c-d611-c2dc-def1" shared="true" includeChildSelections="true">
+                      <comment>Character Spam</comment>
+                    </condition>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -5587,6 +5631,37 @@ Note :The minus for having few pts non-skirmish infantry are not cumulative, us
                   </modifiers>
                 </modifierGroup>
               </modifierGroups>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Calculate SC Infantry Pts" hidden="false" id="1b13-a5bc-c7d1-8bf3" sortIndex="5">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a5ac-82c9-724c-b42b" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b32d-b7ef-71e1-8c53" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="4055-9b3e-989c-dbd8">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="ecfa-8486-4f6c-c249" scope="roster" childId="9572-ac32-c59e-134c" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+                  </repeats>
+                </modifier>
+                <modifier type="increment" value="1" field="4055-9b3e-989c-dbd8">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="ecfa-8486-4f6c-c249" scope="roster" childId="fcdd-429a-3b79-7e8d" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Grail Reliquae" hidden="false" id="54c4-c12c-ea70-5a20">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="32a2-b131-248c-f066" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="673f-f1bc-0c59-323d" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="4055-9b3e-989c-dbd8">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="ecfa-8486-4f6c-c249" scope="parent" childId="0227-ea15-966b-4a20" shared="true" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
