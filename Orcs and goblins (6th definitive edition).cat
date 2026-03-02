@@ -9018,6 +9018,14 @@ Against any Elves, Grom&apos;s Axe will cause a Killing Blow on a 5+ instead of
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <comment>Swedish Comp System</comment>
+              <modifiers>
+                <modifier type="decrement" value="100" field="ce6e-afde-2ed1-aac2"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -9160,6 +9168,46 @@ Against any Elves, Grom&apos;s Axe will cause a Killing Blow on a 5+ instead of
           </conditionGroups>
         </modifier>
       </modifiers>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Swedish Comp System</comment>
+          <modifiers>
+            <modifier type="increment" value="100" field="ce6e-afde-2ed1-aac2">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="45" field="selections" scope="parent" childId="18f4-ad33-69ca-e327" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="3" field="selections" scope="parent" childId="7b95-cfde-8c59-78c3" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+              <comment>Refund 3</comment>
+            </modifier>
+            <modifier type="increment" value="100" field="ce6e-afde-2ed1-aac2">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="15" field="selections" scope="parent" childId="18f4-ad33-69ca-e327" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="7b95-cfde-8c59-78c3" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+              <comment>Refund 1</comment>
+            </modifier>
+            <modifier type="increment" value="100" field="ce6e-afde-2ed1-aac2">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="30" field="selections" scope="parent" childId="18f4-ad33-69ca-e327" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="2" field="selections" scope="parent" childId="7b95-cfde-8c59-78c3" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+              <comment>Refund 2</comment>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry id="fde7-8ba8-08c8-7504" name="Orc Warboss" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
