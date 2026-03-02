@@ -9027,6 +9027,13 @@ Against any Elves, Grom&apos;s Axe will cause a Killing Blow on a 5+ instead of
             </modifierGroup>
           </modifierGroups>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Apply SC Bonus" hidden="true" id="9268-daf9-d59a-5e26">
+          <comment>Swedish Comp System</comment>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1ee4-c352-a947-870d" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="force" shared="true" id="98cb-6ecd-4dfb-d84b" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="ff58-295b-f79f-7a5d" name="Weapons" hidden="false" collective="false" import="true">
@@ -12270,6 +12277,14 @@ See [PDF, p.X]" field="error">
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="increment" value="1" field="410e-ed97-ecf8-cfa4">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="2ef7-3efe-a448-423f" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <comment>Swedish Comp</comment>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="ee33-35b6-e118-a5b8" name="Rowdy Grott&apos;s Big Red Raggedy Banner " hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -15099,6 +15114,33 @@ If two or more barrels set around the tower go off at the same time, roll for 
                   <repeats>
                     <repeat value="1" repeats="1" field="selections" scope="force" childId="4088-6860-cd8e-287f" shared="true" roundUp="false" includeChildSelections="true"/>
                   </repeats>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Magic Items" hidden="false" id="f481-8a53-a8da-a9cd">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ef7d-f00d-a676-b2e9" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="decrement" value="100" field="ce6e-afde-2ed1-aac2">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="648e-1b65-a83f-c81f" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="decrement" value="100" field="ce6e-afde-2ed1-aac2">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="f327-567f-ef99-0403" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="2" field="410e-ed97-ecf8-cfa4">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="a038-6d17-2707-62c4" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="2" field="410e-ed97-ecf8-cfa4">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="4a8f-1002-5a67-df41" shared="true" includeChildSelections="true"/>
+                  </conditions>
                 </modifier>
               </modifiers>
             </selectionEntry>

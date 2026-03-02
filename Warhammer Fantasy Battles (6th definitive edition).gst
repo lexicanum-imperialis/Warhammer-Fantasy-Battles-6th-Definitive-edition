@@ -1747,6 +1747,9 @@ NOTE: All bonuses exclude points for Magical Banners, Magic items, and other upg
           </rules>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="fd8c-4572-e7bb-a140" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
