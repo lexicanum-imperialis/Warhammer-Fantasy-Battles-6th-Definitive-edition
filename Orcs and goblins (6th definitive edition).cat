@@ -11672,6 +11672,9 @@ See [PDF, p.X]" field="error">
           </conditions>
         </modifier>
       </modifiers>
+      <categoryLinks>
+        <categoryLink name="Wyvern" hidden="false" id="ce21-91b0-de4f-da29" targetId="4088-6860-cd8e-287f" primary="false"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry id="6a95-95ff-7763-bd6d" name="Buzgob&apos;s Knobbly Staff " hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -14742,10 +14745,312 @@ If two or more barrels set around the tower go off at the same time, roll for 
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5c48-fac3-22b5-3a01" includeChildSelections="false"/>
               </constraints>
               <modifiers>
+                <modifier type="increment" value="200" field="ce6e-afde-2ed1-aac2">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="0051-137b-cb70-0e20" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
                 <modifier type="increment" value="400" field="ce6e-afde-2ed1-aac2">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="force" childId="any" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="40b3-8a64-d24a-2ce3" shared="true" includeChildSelections="true"/>
                   </conditions>
+                </modifier>
+                <modifier type="increment" value="200" field="ce6e-afde-2ed1-aac2">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="3625-85e5-69d2-3459" scope="force" childId="any" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Escalating Penalties" hidden="false" id="f9b3-51ab-d0b1-eff2">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="76e1-5786-de67-800a" includeChildSelections="false"/>
+              </constraints>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>CHARIOTS</comment>
+                  <modifiers>
+                    <modifier type="decrement" value="100" field="ce6e-afde-2ed1-aac2">
+                      <conditions>
+                        <condition type="atLeast" value="2" field="ac6f-d834-ef96-2cda" scope="force" childId="any" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="decrement" value="200" field="ce6e-afde-2ed1-aac2">
+                      <conditions>
+                        <condition type="atLeast" value="4" field="ac6f-d834-ef96-2cda" scope="force" childId="any" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="decrement" value="100" field="ce6e-afde-2ed1-aac2">
+                      <conditions>
+                        <condition type="atLeast" value="3" field="ac6f-d834-ef96-2cda" scope="force" childId="any" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="decrement" value="500" field="ce6e-afde-2ed1-aac2">
+                      <conditions>
+                        <condition type="greaterThan" value="4" field="ac6f-d834-ef96-2cda" scope="force" childId="any" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                      <repeats>
+                        <repeat value="1" repeats="1" field="ac6f-d834-ef96-2cda" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <comment>HEAVY CAV (Boar Boyz)</comment>
+                  <modifiers>
+                    <modifier type="decrement" value="150" field="ce6e-afde-2ed1-aac2">
+                      <conditions>
+                        <condition type="atLeast" value="3" field="4669-5c24-ce04-72aa" scope="force" childId="any" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="decrement" value="300" field="ce6e-afde-2ed1-aac2">
+                      <conditions>
+                        <condition type="greaterThan" value="3" field="4669-5c24-ce04-72aa" scope="force" childId="any" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                      <repeats>
+                        <repeat value="1" repeats="1" field="f818-d883-ff0d-dfb1" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <comment>WARMACHINES</comment>
+                  <modifiers>
+                    <modifier type="decrement" value="50" field="ce6e-afde-2ed1-aac2">
+                      <conditions>
+                        <condition type="atLeast" value="3" field="ac6f-d834-ef96-2cda" scope="force" childId="any" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="decrement" value="100" field="ce6e-afde-2ed1-aac2">
+                      <conditions>
+                        <condition type="atLeast" value="4" field="ac6f-d834-ef96-2cda" scope="force" childId="any" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="decrement" value="500" field="ce6e-afde-2ed1-aac2">
+                      <conditions>
+                        <condition type="greaterThan" value="4" field="3625-85e5-69d2-3459" scope="force" childId="any" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                      <repeats>
+                        <repeat value="1" repeats="1" field="ac6f-d834-ef96-2cda" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <comment>FAST CAVALRY</comment>
+                  <modifiers>
+                    <modifier type="decrement" value="50" field="ce6e-afde-2ed1-aac2">
+                      <conditions>
+                        <condition type="atLeast" value="3" field="f818-d883-ff0d-dfb1" scope="force" childId="any" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="decrement" value="100" field="ce6e-afde-2ed1-aac2">
+                      <conditions>
+                        <condition type="atLeast" value="4" field="f818-d883-ff0d-dfb1" scope="force" childId="any" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="decrement" value="500" field="ce6e-afde-2ed1-aac2">
+                      <conditions>
+                        <condition type="greaterThan" value="4" field="f818-d883-ff0d-dfb1" scope="force" childId="any" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                      <repeats>
+                        <repeat value="1" repeats="1" field="f818-d883-ff0d-dfb1" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <comment>SNOTLINGS</comment>
+                  <modifiers>
+                    <modifier type="increment" value="200" field="ce6e-afde-2ed1-aac2">
+                      <comment>SNOTLING offset</comment>
+                      <conditions>
+                        <condition type="atLeast" value="3" field="selections" scope="force" childId="f6b3-0b56-7a09-2dc5" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="decrement" value="100" field="ce6e-afde-2ed1-aac2">
+                      <comment>SNOTLING</comment>
+                      <conditions>
+                        <condition type="atLeast" value="3" field="selections" scope="force" childId="f6b3-0b56-7a09-2dc5" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <comment>PUMP WAGON OR SQUIG HOPPERS</comment>
+                  <modifiers>
+                    <modifier type="decrement" value="200" field="ce6e-afde-2ed1-aac2">
+                      <conditions>
+                        <condition type="atLeast" value="2" field="selections" scope="force" childId="6f66-9a74-cae1-2443" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                      <repeats>
+                        <repeat value="1" repeats="1" field="selections" scope="force" childId="6f66-9a74-cae1-2443" shared="true" roundUp="false" includeChildSelections="true"/>
+                      </repeats>
+                    </modifier>
+                    <modifier type="increment" value="400" field="ce6e-afde-2ed1-aac2">
+                      <comment>offset</comment>
+                      <conditions>
+                        <condition type="atLeast" value="2" field="selections" scope="force" childId="6f66-9a74-cae1-2443" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="400" field="ce6e-afde-2ed1-aac2">
+                      <conditions>
+                        <condition type="atLeast" value="2" field="selections" scope="force" childId="9d60-0225-349a-a76d" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                      <comment>offset</comment>
+                    </modifier>
+                    <modifier type="decrement" value="200" field="ce6e-afde-2ed1-aac2">
+                      <conditions>
+                        <condition type="atLeast" value="2" field="selections" scope="force" childId="9d60-0225-349a-a76d" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                      <repeats>
+                        <repeat value="1" repeats="1" field="selections" scope="force" childId="9d60-0225-349a-a76d" shared="true" roundUp="false" includeChildSelections="true"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <comment>GIANT</comment>
+                  <modifiers>
+                    <modifier type="increment" value="600" field="ce6e-afde-2ed1-aac2">
+                      <comment>GIANT offset</comment>
+                      <conditions>
+                        <condition type="atLeast" value="2" field="selections" scope="force" childId="f6b3-0b56-7a09-2dc5" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="decrement" value="600" field="ce6e-afde-2ed1-aac2">
+                      <comment>GIANT [M]</comment>
+                      <conditions>
+                        <condition type="atLeast" value="2" field="selections" scope="force" childId="7645ed71-72bd-4b72-89ab-22571a0a8b0c" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="600" field="ce6e-afde-2ed1-aac2">
+                      <comment>GIANT [M] offset</comment>
+                      <conditions>
+                        <condition type="atLeast" value="2" field="selections" scope="force" childId="7645ed71-72bd-4b72-89ab-22571a0a8b0c" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="decrement" value="600" field="ce6e-afde-2ed1-aac2">
+                      <comment>GIANT</comment>
+                      <conditions>
+                        <condition type="atLeast" value="2" field="selections" scope="force" childId="f6b3-0b56-7a09-2dc5" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Calculate Counters" hidden="false" id="17cf-69cd-ce91-2683">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5252-ef49-1245-6e30" includeChildSelections="false"/>
+              </constraints>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>WARMACHINES</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="3625-85e5-69d2-3459">
+                      <repeats>
+                        <repeat value="1" repeats="1" field="selections" scope="force" childId="1beb-9007-1c33-7589" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+                      </repeats>
+                    </modifier>
+                    <modifier type="increment" value="2" field="3625-85e5-69d2-3459">
+                      <repeats>
+                        <repeat value="1" repeats="1" field="selections" scope="force" childId="d3b5-d1b1-c175-b8d1" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+                      </repeats>
+                    </modifier>
+                    <modifier type="increment" value="1" field="3625-85e5-69d2-3459">
+                      <repeats>
+                        <repeat value="1" repeats="1" field="selections" scope="force" childId="1d77-ded1-ed42-4858" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <comment>CHARIOTS</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="ac6f-d834-ef96-2cda">
+                      <repeats>
+                        <repeat value="1" repeats="1" field="selections" scope="force" childId="ca2a-ff41-6666-8155" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+                      </repeats>
+                    </modifier>
+                    <modifier type="increment" value="1" field="ac6f-d834-ef96-2cda">
+                      <repeats>
+                        <repeat value="1" repeats="1" field="selections" scope="force" childId="a462-dc3d-4e19-0833" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+                      </repeats>
+                    </modifier>
+                    <modifier type="increment" value="1" field="ac6f-d834-ef96-2cda">
+                      <repeats>
+                        <repeat value="1" repeats="1" field="selections" scope="force" childId="5943-b878-61dd-7620" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <comment>BOAR UNITS</comment>
+                  <modifiers>
+                    <modifier type="decrement" value="2" field="4669-5c24-ce04-72aa">
+                      <conditions>
+                        <condition type="greaterThan" value="2" field="selections" scope="force" childId="c679-3389-ca76-2ea1" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                      <comment>Big &apos;Uns offset</comment>
+                    </modifier>
+                    <modifier type="increment" value="1" field="4669-5c24-ce04-72aa">
+                      <repeats>
+                        <repeat value="1" repeats="1" field="selections" scope="force" childId="faf0-2158-5450-f8ef" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+                      </repeats>
+                    </modifier>
+                    <modifier type="increment" value="1" field="4669-5c24-ce04-72aa">
+                      <repeats>
+                        <repeat value="1" repeats="1" field="selections" scope="force" childId="8787-293e-965a-f8c2" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+                      </repeats>
+                    </modifier>
+                    <modifier type="increment" value="1" field="4669-5c24-ce04-72aa">
+                      <repeats>
+                        <repeat value="1" repeats="1" field="selections" scope="force" childId="a25f-0865-f401-61ba" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+                      </repeats>
+                    </modifier>
+                    <modifier type="increment" value="1" field="4669-5c24-ce04-72aa">
+                      <repeats>
+                        <repeat value="1" repeats="1" field="selections" scope="force" childId="c679-3389-ca76-2ea1" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+                      </repeats>
+                    </modifier>
+                    <modifier type="increment" value="1" field="4669-5c24-ce04-72aa">
+                      <repeats>
+                        <repeat value="1" repeats="1" field="selections" scope="force" childId="8787-293e-965a-f8c2" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+                      </repeats>
+                      <conditions>
+                        <condition type="greaterThan" value="2" field="selections" scope="force" childId="8787-293e-965a-f8c2" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                      <comment>Big &apos;Uns</comment>
+                    </modifier>
+                    <modifier type="increment" value="1" field="4669-5c24-ce04-72aa">
+                      <repeats>
+                        <repeat value="1" repeats="1" field="selections" scope="force" childId="8787-293e-965a-f8c2" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+                      </repeats>
+                      <conditions>
+                        <condition type="greaterThan" value="2" field="selections" scope="force" childId="8787-293e-965a-f8c2" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                      <comment>Big &apos;Uns</comment>
+                    </modifier>
+                    <modifier type="decrement" value="2" field="4669-5c24-ce04-72aa">
+                      <conditions>
+                        <condition type="greaterThan" value="2" field="selections" scope="force" childId="c679-3389-ca76-2ea1" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                      <comment>Big &apos;Uns offset</comment>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Flat Penalties" hidden="false" id="8dce-7d0c-93ba-e672">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3f0e-cffe-5461-9b92" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="decrement" value="600" field="ce6e-afde-2ed1-aac2">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="force" childId="4088-6860-cd8e-287f" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
                 </modifier>
               </modifiers>
             </selectionEntry>
