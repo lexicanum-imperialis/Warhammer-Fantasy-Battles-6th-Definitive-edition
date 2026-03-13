@@ -4101,7 +4101,7 @@ Missile 12&quot; S3</characteristic>
         </modifier>
       </modifiers>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Amazon Cold One Riders" hidden="false" id="9e4d-c653-35ec-1d09" publicationId="9d1b-de49-ff19-ea19">
+    <selectionEntry type="unit" import="true" name="Amazon Cold One Riders" hidden="true" id="9e4d-c653-35ec-1d09" publicationId="9d1b-de49-ff19-ea19">
       <categoryLinks>
         <categoryLink name="Experimental rules" hidden="false" id="333e-3a0f-ae17-03a2" targetId="4fed-b911-e6e0-927b" primary="false"/>
         <categoryLink name="Regiment of Renown" hidden="false" id="a594-96a5-853f-e372" targetId="ee09-9a50-ad78-9c32" primary="true"/>
@@ -4119,6 +4119,11 @@ Missile 12&quot; S3</characteristic>
         <modifier type="add" value="Please enable &quot;Allow experimental rules?&quot;" field="error">
           <conditions>
             <condition type="lessThan" value="1" field="selections" scope="force" childId="8b76-92c4-23f9-54b1" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="7d87-7436-5341-bbc0" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -4237,7 +4242,7 @@ Missile 12&quot; S3</characteristic>
         <infoLink name="Native (Lustria)" id="7199-c863-dc85-0643" hidden="false" type="rule" targetId="9e5f-2e1d-4b45-b079"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Amazon Totem Warriors" hidden="false" id="345f-b2a8-4641-038d" publicationId="9d1b-de49-ff19-ea19">
+    <selectionEntry type="unit" import="true" name="Amazon Totem Warriors" hidden="true" id="345f-b2a8-4641-038d" publicationId="9d1b-de49-ff19-ea19">
       <categoryLinks>
         <categoryLink name="Special" hidden="false" id="ee11-67a3-8982-6bf2" targetId="43cc-fc3f-35a7-8d03" primary="false"/>
         <categoryLink name="Experimental rules" hidden="false" id="b116-4385-2aa6-b2e4" targetId="4fed-b911-e6e0-927b" primary="false"/>
@@ -4255,6 +4260,11 @@ Missile 12&quot; S3</characteristic>
         <modifier type="add" value="Please enable &quot;Allow experimental rules?&quot;" field="error">
           <conditions>
             <condition type="lessThan" value="1" field="selections" scope="force" childId="8b76-92c4-23f9-54b1" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="7d87-7436-5341-bbc0" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -4442,16 +4452,23 @@ Missile 12&quot; S3</characteristic>
             <modifier type="add" value="You need to provide another {this} for your opponent at no cost too (still takes Hero+Rare choice)" field="warning"/>
           </modifiers>
           <conditionGroups>
-            <conditionGroup type="or">
+            <conditionGroup type="and">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4d73-5ab0-9020-403c" shared="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="c817-890f-8aac-4ea5" shared="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="d4c0-4f0c-4a89-40fc" shared="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6b83-a975-a500-41c3" shared="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4049-c46d-7f80-44fb" shared="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="cac6-5f02-f95d-a403" shared="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="9945-8537-0944-c67b" shared="true"/>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="7d87-7436-5341-bbc0" shared="true" includeChildSelections="true"/>
               </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4d73-5ab0-9020-403c" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="c817-890f-8aac-4ea5" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="d4c0-4f0c-4a89-40fc" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6b83-a975-a500-41c3" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4049-c46d-7f80-44fb" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="cac6-5f02-f95d-a403" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="9945-8537-0944-c67b" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </conditionGroup>
           </conditionGroups>
         </modifierGroup>

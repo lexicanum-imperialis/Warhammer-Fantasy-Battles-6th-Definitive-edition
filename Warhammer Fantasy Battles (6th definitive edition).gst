@@ -1157,6 +1157,28 @@
           </conditions>
         </modifier>
       </modifiers>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Allow experimental rules from Chronicles/Annual/ArmyBooks" hidden="false" id="2c79-c59f-f1d8-8f6d">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="767a-1d58-779d-7a6b" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Allow experimental rules from ForgeWorld" hidden="false" id="8836-291a-d05c-a889">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4779-c19a-b42d-fbbe" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Allow experimental rules from GW-website" hidden="false" id="5dac-1d03-5bb7-730b">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4e25-69c5-5071-1e6e" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Allow experimental rules from White-Dwarf and Citadel Journal issues" hidden="false" id="cc03-e8fe-c143-6863">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e4f3-9b1d-5233-2db0" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry id="8923-5946-7b10-8957" name="Allow special characters?" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -1434,13 +1456,51 @@
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" hidden="false" id="659c-d43b-875f-e6b7"/>
     <selectionEntry type="upgrade" import="true" name="Extra dispel dice" hidden="false" id="5adc-bab1-d9cf-a348">
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="1"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Campaign/Scenario rules" hidden="false" id="4b25-4c70-afd8-5729">
+      <categoryLinks>
+        <categoryLink name="Special list rules" hidden="false" id="0734-3149-3f25-0518" targetId="32f1-197f-d719-a393" primary="true"/>
+        <categoryLink name="Experimental rules" hidden="false" id="48fe-ed63-877c-054d" targetId="4fed-b911-e6e0-927b" primary="false"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="7548-ef65-d5b0-7ab1" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7719-5f14-33f4-dd5c" includeChildSelections="false"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Campaign: A Dark Conspiracy - 30th anniversary" hidden="false" id="14fb-dd39-08e7-cbde" type="selectionEntry" targetId="7d87-7436-5341-bbc0"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Campaign: Bugman&apos;s Lament (WD#297-300-UK)" hidden="true" id="22b1-4841-84c1-7c98">
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4049-c46d-7f80-44fb" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="3a5f-213a-5ffc-4ec1" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="a505-6b65-703b-4976" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a9bb-907e-c983-db05" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="f6fa-9460-3cd9-00c6" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Campaign: A Dark Conspiracy - 30th anniversary" hidden="false" id="7d87-7436-5341-bbc0">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1dce-916d-88c8-bada" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="c654-8498-0ed5-e41a" includeChildSelections="false"/>
+      </constraints>
+      <comment>ORIGINAL ENTRY!</comment>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
