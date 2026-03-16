@@ -12,16 +12,21 @@ To use this data for list building, you do not need to download the files manual
 
 ### For New Recruit (Recommended)
 1. Open [New Recruit](https://www.newrecruit.eu/).
-2. Go to your **System / Data** settings.
-3. Add a Custom Gallery by pasting this exact URL:
-   `https://raw.githubusercontent.com/lexicanum-imperialis/Warhammer-Fantasy-Battles-6th-Definitive-edition/`
-4. Update your data.
+![alt text](image.png)
+2. Go to your **Click here to try it now!** settings.
+![alt text](image-1.png)
+3. Click in Add more games.
+At the bottom, search for `Add from GitHub`
+![alt text](image-2.png)
+4. Add the version `Latests Commut (Head)` if you want the hotests updates
+Add the version `Latests Release` if you want the last stable version
+![alt text](image-4.png)
+5. Add this exact URL:
+   `lexicanum-imperialis/Warhammer-Fantasy-Battles-6th-Definitive-edition`
+ 6. Now select the WHFB 6th Gamesystem and create your lists!
 
 ### For BattleScribe (WIP)
-1. Go to **Manage Data**.
-2. Tap **Add Data Repository** (or the `+` icon).
-3. Paste the `index.xml` URL provided above.
-4. Update your data.
+Work in Progress
 
 ---
 
