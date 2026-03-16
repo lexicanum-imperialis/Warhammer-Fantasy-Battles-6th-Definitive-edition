@@ -14,7 +14,7 @@ To use this data for list building, you do not need to download the files manual
 1. Open [New Recruit](https://www.newrecruit.eu/).
 2. Go to your **System / Data** settings.
 3. Add a Custom Gallery by pasting this exact URL:
-   `https://raw.githubusercontent.com/lexicanum-imperialis/Warhammer-Fantasy-Battles-6th-Definitive-edition/main/index.xml`
+   `https://raw.githubusercontent.com/lexicanum-imperialis/Warhammer-Fantasy-Battles-6th-Definitive-edition/`
 4. Update your data.
 
 ### For BattleScribe (WIP)
