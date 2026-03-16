@@ -1356,7 +1356,7 @@
                 <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
                 <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
                 <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
-                <characteristic name="Base" typeId="2cad-bb76-8a5a-1607"/>
+                <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">20x20</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1489,17 +1489,6 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <modifiers>
-        <modifier type="increment" value="1" field="4055-9b3e-989c-dbd8">
-          <repeats>
-            <repeat value="1" repeats="1" field="ecfa-8486-4f6c-c249" scope="roster" childId="9572-ac32-c59e-134c" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
-          </repeats>
-          <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="parent" childId="c99b-4aa8-27e0-d471" shared="true" includeChildSelections="true"/>
-          </conditions>
-          <comment>Swedish Comp</comment>
-        </modifier>
-      </modifiers>
     </selectionEntry>
     <selectionEntry id="6566-bd4f-e769-2999" name="Questing Knights" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -3193,6 +3182,56 @@
         <infoLink id="55a1df37-b8af-412f-b0f6-2dbce3452005" name="Sir Tristan (mounted)" hidden="false" targetId="7583-7180-87b3-b952" type="profile"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Errantry War" hidden="true" id="b460-3ebf-cb3a-b3da">
+      <categoryLinks>
+        <categoryLink name="Special list rules" hidden="false" id="ff72-0d39-fe58-68f4" targetId="32f1-197f-d719-a393" primary="true"/>
+        <categoryLink name="army_list_SoC" hidden="false" id="469f-d18d-3cad-3fc7" targetId="76d5-dcdf-1fae-ab1e" primary="false"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="af2e-8949-faeb-2ae8" includeChildSelections="false"/>
+        <constraint type="min" value="1" field="selections" scope="force" shared="true" id="53c3-9863-cee2-a39b" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="90ff-c295-ab24-44f3" includeChildSelections="false"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4d5b-3f78-0049-b577" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="10e2-baf2-e758-c27e" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <rules>
+        <rule name="Errantry War" id="eae6-42b8-2b7d-3415" hidden="false">
+          <description>Unsurprisingly, an Errantry War army consists mainly of young Knights Errant. Knights Errant are the only unit that counts for the minimum number of Core units in the army - ie, in a 2,000 points army, the army must include a minimum of three units of Knights Errant.
+
+Grail Knights will often join the ranks of the young Knights Errant to give them some inspirational leadership - an ideal for them to aim for. Instead of taking a normal unit Champion, Knights Errant may take a Grail Knight as their Champion for +22 points.
+
+***
+
+**Lords**
+- Bretonnian Lord
+
+**Heroes**
+- Damsel
+- Paladin
+
+**Core**
+- 1+ Knights Errant
+- Knights of the Realm
+- Men-at-arms
+- Peasant Bowmen
+
+**Special**
+- Questing Knights
+- Mounted Yeomen
+- 0-1 Pegasus Knights
+
+**Rare**
+- 0-1 Trebuchet
+- Battle Pilgrims</description>
+        </rule>
+      </rules>
+    </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
     <selectionEntry id="9baa-5682-a28d-8c4e" name="Grail Vow" hidden="false" collective="false" import="true" type="upgrade">
@@ -4681,10 +4720,8 @@ In addition, so reckless are the Knights Errant, that whenever they charge, the 
     </rule>
     <rule id="44b1-0886-65a0-ae6b" name="Defensive Stakes" publicationId="143d-ca87-8001-00a0" page="54" hidden="false">
       <description>Set up the stakes at the start of the game when the unit is deployed. Every model in the front rank has a stake base placed in front of it (these stakes must also be set up within the army&apos;s deployment zone).
-If the unit makes any movement at any point in the 
-game (including reforms, wheels, turning, or fleeing), 
-then the stakes are removed for the rest of the game.
-Enemy units charging the bowmen measure the distance to the front of the stakes rather than to the peasants themselves - at all other times, any distance is measured to the peasants. Models may attack through bases of stakes in the same manner as the second rank of spears (ic, a model may attack any model that the stake in front of it is touching).
+If the unit makes any movement at any point in the game (including reforms, wheels, turning, or fleeing), then the stakes are removed for the rest of the game.
+Enemy units charging the bowmen measure the distance to the front of the stakes rather than to the peasants themselves - at all other times, any distance is measured to the peasants. Models may attack through bases of stakes in the same manner as the second rank of spears (i.e., a model may attack any model that the stake in front of it is touching).
 No unit gains any charge bonus when they charge the unit&apos;s front. For example, lances do not gain their +2 Strength bonus, great weapons will strike last, chariots will not inflict any impact hits. Special attacks that require the unit to charge for it to take effect (like the Bone Giant&apos;s Furious Assault) cannot use their special rules. In addition, the charging unit does not count as charging for determining who gets to fight first - the Initiative value of the models involved in the fight determines this - in the case of a tie, roll a dice to determine who attacks first. Characters may join the unit or leave it freely - add or remove a stake base as necessary.</description>
     </rule>
     <rule id="f115-0c89-2e61-8f72" name="Grail Reliquae" publicationId="143d-ca87-8001-00a0" page="52" hidden="false">
@@ -5402,7 +5439,11 @@ A Champion (or character for that matter) that is in the second (or third) rank 
     <entryLink import="true" name="Truthsayer" hidden="false" id="addc-aa4a-280e-3ec0" type="selectionEntry" targetId="4e84-1f82-dc21-18cc"/>
     <entryLink import="true" name="Fenbeasts" hidden="false" id="292e-e458-c32a-d9da" type="selectionEntry" targetId="6beb-e2b0-bf8d-ae62"/>
     <entryLink import="true" name="Emperor Fire Dragon" hidden="false" id="98b9-2ca9-afa3-58d3" type="selectionEntry" targetId="d7e3-ae46-6606-7806"/>
-    <entryLink import="true" name="Campaign/Scenario rules" hidden="false" id="8d77-c04d-8bb8-abd9" type="selectionEntry" targetId="4b25-4c70-afd8-5729"/>
+    <entryLink import="true" name="Campaign/Scenario rules" hidden="false" id="8d77-c04d-8bb8-abd9" type="selectionEntry" targetId="4b25-4c70-afd8-5729">
+      <entryLinks>
+        <entryLink import="true" name="Campaign: The Return of the Lichemaster (WD#309-310-UK)" hidden="false" id="12cc-71fb-b715-620d" type="selectionEntry" targetId="16ec-3170-c552-6824"/>
+      </entryLinks>
+    </entryLink>
     <entryLink import="true" name="Amazon Cold One Riders" hidden="false" id="5adb-9225-4d52-e3fc" type="selectionEntry" targetId="9e4d-c653-35ec-1d09"/>
     <entryLink import="true" name="Amazon Serpent Priestess" hidden="false" id="cd22-d56d-07ef-3ad1" type="selectionEntry" targetId="9ddd-69c8-644d-abc2">
       <modifiers>
