@@ -1668,16 +1668,15 @@ _S. Wood Elf Army Book page 62_</description>
             <conditionGroup type="and">
               <conditions>
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8923-5946-7b10-8957" type="equalTo"/>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8b76-92c4-23f9-54b1" type="equalTo"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b9d7-ca83-f39e-a3f0" type="equalTo"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="add" value="Please enable &quot;Allow special characters?&quot;" field="error">
-          <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="force" childId="8923-5946-7b10-8957" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
+        <modifier type="add" value="{this} is not allowed.
+Please 
+
+" field="error"/>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="bc3a-6eae-b0f4-8685" type="max"/>
@@ -1720,7 +1719,7 @@ _S. Wood Elf Army Book page 62_</description>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b2e0-658d-81a0-aa0b" name="Skaw the Falconer" publicationId="fae0-621c-1260-a754" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="b2e0-658d-81a0-aa0b" name="Skaw the Falconer" publicationId="fae0-621c-1260-a754" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="e2db-07d7-6413-af98" value="1">
           <conditionGroups>
@@ -1735,6 +1734,11 @@ _S. Wood Elf Army Book page 62_</description>
         <modifier type="add" value="Please enable &quot;Allow special characters?&quot;" field="error">
           <conditions>
             <condition type="lessThan" value="1" field="selections" scope="force" childId="8923-5946-7b10-8957" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="5dac-1d03-5bb7-730b" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -1827,7 +1831,7 @@ _S. Wood Elf Army Book page 62_</description>
         <infoLink id="28e152e9-0d64-4cbf-b089-b12c9ddb9458" name="The Falconer" hidden="false" targetId="66b7-330c-fc0e-0936" type="rule"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry id="ba4f-c55a-3967-c34b" name="Ariel, Queen of Athel Loren" publicationId="e947-0dac-ff90-bd9f" page="WE" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="ba4f-c55a-3967-c34b" name="Ariel, Queen of Athel Loren" publicationId="e947-0dac-ff90-bd9f" page="WE" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="eed9-1bda-5410-9f14" value="1">
           <conditionGroups>
@@ -1842,6 +1846,11 @@ _S. Wood Elf Army Book page 62_</description>
         <modifier type="add" value="Please enable &quot;Allow special characters?&quot;" field="error">
           <conditions>
             <condition type="lessThan" value="1" field="selections" scope="force" childId="8923-5946-7b10-8957" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="5dac-1d03-5bb7-730b" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2311,7 +2320,7 @@ The first time Orion declares a charge, he sounds the Horn of the Wild Hunt. All
   </selectionEntries>
   <entryLinks>
     <entryLink id="f42a-becf-7f6f-30bf" name="Allow experimental rules?" hidden="false" collective="false" import="true" targetId="8b76-92c4-23f9-54b1" type="selectionEntry"/>
-    <entryLink id="0bd6-9259-fc8f-5f61" name="Allow special characters?" hidden="false" collective="false" import="true" targetId="8923-5946-7b10-8957" type="selectionEntry"/>
+    <entryLink id="0bd6-9259-fc8f-5f61" name="Allow special characters?" hidden="false" collective="false" import="true" targetId="8923-5946-7b10-8957" type="selectionEntry" defaultAmount="1"/>
     <entryLink id="6e70-e1ba-9144-f192" name="Leopold&apos;s Leopard Company" hidden="false" collective="false" import="true" targetId="8848-c408-d8ff-97d9" type="selectionEntry"/>
     <entryLink import="true" name="Asarnil the Dragonlord" hidden="false" id="0b5c-e31e-3844-de95" type="selectionEntry" targetId="5854-6f84-521e-9c14"/>
     <entryLink import="true" name="Tichi Huichi&apos;s Raiders" hidden="false" id="2288-168a-ed27-8e16" type="selectionEntry" targetId="86b2-59ec-ed5a-cf74"/>
@@ -2363,6 +2372,7 @@ The first time Orion declares a charge, he sounds the Horn of the Wild Hunt. All
     <entryLink import="true" name="Ogres" hidden="false" id="1618-5a46-14b4-8163" type="selectionEntry" targetId="7db1-21db-c287-f50d"/>
     <entryLink import="true" name="Josef Bugman (CJ#44)" hidden="false" id="7870-4c11-6b50-1467" type="selectionEntry" targetId="b59a-a8c4-f9d1-b09f"/>
     <entryLink import="true" name="Campaign/Scenario rules" hidden="false" id="9ff8-bafb-0a4f-1f60" type="selectionEntry" targetId="4b25-4c70-afd8-5729"/>
+    <entryLink import="true" name="Mercenaries and Regiments of Renown" hidden="false" id="307a-b4f1-7e98-fe69" type="selectionEntry" targetId="6a7d-7d85-8d7e-cbce" defaultAmount="1"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="4bef-a28f-d72e-fe2a" name="The Spirit Sword" hidden="false" collective="false" import="true" type="upgrade">

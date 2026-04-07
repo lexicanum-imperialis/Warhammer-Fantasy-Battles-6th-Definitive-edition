@@ -34,7 +34,15 @@
   </publications>
   <categoryEntries>
     <categoryEntry id="bb6b-cda8-b237-4dfd" name="DOW" hidden="false"/>
-    <categoryEntry id="ee09-9a50-ad78-9c32" name="Regiment of Renown" hidden="false"/>
+    <categoryEntry id="ee09-9a50-ad78-9c32" name="Regiment of Renown" hidden="false">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="3d35-6b18-262f-6503" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </categoryEntry>
     <categoryEntry name="Tilean" id="55e5-f875-1ce2-25c1" hidden="false"/>
     <categoryEntry name="Belladonna" id="9559-81ed-6d25-42b6" hidden="false" publicationId="91c2-b862-8010-87bb" page="111">
       <constraints>
@@ -42,7 +50,15 @@
       </constraints>
     </categoryEntry>
     <categoryEntry name="Ironskin" id="7ff5-9e55-c594-4b40" hidden="false"/>
-    <categoryEntry name="Mercenaries" id="b640-7e9c-3054-c1ce" hidden="false"/>
+    <categoryEntry name="Mercenaries" id="b640-7e9c-3054-c1ce" hidden="false">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="fda5-49b9-b74c-aaf4" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </categoryEntry>
     <categoryEntry name="Borgio the Besieger" id="e2e7-728c-baca-ec7d" hidden="false"/>
     <categoryEntry name="Lorenzo Lupo" id="f0e9-ded0-0019-31e9" hidden="false"/>
   </categoryEntries>
@@ -8568,6 +8584,24 @@ Rune of Fury (+1 A)</characteristic>
         <modifier type="set" value="false" field="hidden">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="force" childId="cc03-e8fe-c143-6863" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Border Patrol (500pts)" hidden="false" id="2066-082d-a465-4baf">
+      <comment>ARMY LIST RULES</comment>
+      <categoryLinks>
+        <categoryLink name="Special list rules" hidden="false" id="145d-18ab-7467-6240" targetId="32f1-197f-d719-a393" primary="true"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ac2c-85cb-fdd9-9fe0" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="73ff-2023-7f30-cefa" includeChildSelections="false"/>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="1a97-1579-ab05-a6d7" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="1" field="1a97-1579-ab05-a6d7">
+          <conditions>
+            <condition type="equalTo" value="500" field="limit::ecfa-8486-4f6c-c249" scope="force" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>

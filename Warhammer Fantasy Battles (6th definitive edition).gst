@@ -66,7 +66,15 @@
   <categoryEntries>
     <categoryEntry id="4fed-b911-e6e0-927b" name="Experimental rules" hidden="false"/>
     <categoryEntry id="32f1-197f-d719-a393" name="Special list rules" hidden="false"/>
-    <categoryEntry id="0644-bfcd-32c2-21dc" name="Special Characters" hidden="false"/>
+    <categoryEntry id="0644-bfcd-32c2-21dc" name="Special Characters" hidden="false">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="8923-5946-7b10-8957" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </categoryEntry>
     <categoryEntry id="d024-d25b-a9b4-73b6" name="Lord" hidden="false"/>
     <categoryEntry id="c16b-f319-2c62-2c12" name="Heroes" hidden="false"/>
     <categoryEntry id="64bf-efb4-9978-26df" name="Core" hidden="false"/>
@@ -1166,17 +1174,17 @@ Quatar</comment>
         </modifier>
       </modifiers>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Allow experimental rules from ForgeWorld" hidden="false" id="8836-291a-d05c-a889">
+        <selectionEntry type="upgrade" import="true" name="Allow experimental rules from ForgeWorld" hidden="false" id="8836-291a-d05c-a889" sortIndex="5">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4779-c19a-b42d-fbbe" includeChildSelections="false"/>
           </constraints>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Allow experimental rules from GW-website" hidden="false" id="5dac-1d03-5bb7-730b">
+        <selectionEntry type="upgrade" import="true" name="Allow experimental rules from GW-website" hidden="false" id="5dac-1d03-5bb7-730b" sortIndex="4">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4e25-69c5-5071-1e6e" includeChildSelections="false"/>
           </constraints>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Allow experimental rules from White-Dwarf and Citadel Journal issues" hidden="false" id="cc03-e8fe-c143-6863">
+        <selectionEntry type="upgrade" import="true" name="Allow experimental rules from White-Dwarf and Citadel Journal issues" hidden="false" id="cc03-e8fe-c143-6863" sortIndex="3">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e4f3-9b1d-5233-2db0" includeChildSelections="false"/>
             <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="4de8-720c-9d60-5ea0" includeChildSelections="false"/>
@@ -1193,7 +1201,7 @@ Quatar</comment>
             </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Allow experimental rules from Chronicles/Annual/AB(appendix)" hidden="false" id="cace-490c-a31c-b8b5">
+        <selectionEntry type="upgrade" import="true" name="Allow experimental rules from Chronicles/Annual/AB(appendix)" hidden="false" id="cace-490c-a31c-b8b5" defaultAmount="1" sortIndex="1">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2253-835f-736d-3ce6" includeChildSelections="false"/>
             <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="1eb6-b856-1ff3-80a2" includeChildSelections="false"/>
@@ -1212,7 +1220,7 @@ Quatar</comment>
           <comment>Appendix lists from ArmyBooks
 Chronicles/Annual</comment>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Allow experimental rules from official Campaign Supplements (SoC/LUS/Albion)" hidden="false" id="f71a-269c-62d8-1621">
+        <selectionEntry type="upgrade" import="true" name="Allow experimental rules from official Campaign Supplements (SoC/LUS/Albion)" hidden="false" id="f71a-269c-62d8-1621" defaultAmount="1" sortIndex="2">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="61dd-9f9a-1c45-d3ce" includeChildSelections="false"/>
             <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="e188-f07a-65ec-97d5" includeChildSelections="false"/>
@@ -1261,6 +1269,66 @@ Chronicles/Annual</comment>
           </conditions>
         </modifier>
       </modifiers>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Special Characters from ArmyBooks" hidden="false" id="3c7a-8752-c9bc-c68c" defaultAmount="1" sortIndex="1">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="10ea-af2b-c3ab-2000" includeChildSelections="false"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="897e-4ab4-9306-640f" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Special Characters (Experimental) from Chronicles/Annual" hidden="false" id="b8b6-acff-664b-1ea4" defaultAmount="1" sortIndex="4">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8186-38c1-ef10-ff51" includeChildSelections="false"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="dee4-a4cb-8e74-a6ba" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Special Characters from GW-website" hidden="false" id="2902-de5d-814e-8be0" sortIndex="6">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8ef3-3c1e-f082-1fe9" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Special Characters from White-Dwarf and Citadel Journal issues" hidden="false" id="3071-044f-e1b9-c8be" sortIndex="5">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0f62-c6fa-7a15-028b" includeChildSelections="false"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="5305-9d36-caa4-c907" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="1" field="5305-9d36-caa4-c907">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="22b1-4841-84c1-7c98" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Special Characters from official Campaign Supplements (SoC/LUS/Albion)" hidden="false" id="f22c-d590-fe34-75be" defaultAmount="1" sortIndex="2">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0e04-025b-f0b9-eab0" includeChildSelections="false"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="6e60-e3de-86b4-f1bb" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="1" field="6e60-e3de-86b4-f1bb">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="6771-bf67-e180-ca90" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="76d5-dcdf-1fae-ab1e" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Special Characters (Official) from Chronicles/Annual" hidden="false" id="b299-772e-aa83-148f" defaultAmount="1" sortIndex="3">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1027-7d78-6d93-5eb6" includeChildSelections="false"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="43a3-454c-89f3-a6a6" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry id="62e0-5a1d-ff7c-31dd" name="Bolt Thrower" publicationId="315e-e3c4-08af-fd51" page="124" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
@@ -1526,7 +1594,9 @@ Chronicles/Annual</comment>
       </constraints>
       <entryLinks>
         <entryLink import="true" name="Campaign: A Dark Conspiracy - 30th anniversary" hidden="false" id="14fb-dd39-08e7-cbde" type="selectionEntry" targetId="7d87-7436-5341-bbc0"/>
-        <entryLink import="true" name="Campaign: Dark Shadows" hidden="false" id="868f-efce-7d41-7da7" type="selectionEntry" targetId="1c41-fe61-5a49-668a"/>
+        <entryLink import="true" name="Campaign: Dark Shadows" hidden="false" id="868f-efce-7d41-7da7" type="selectionEntry" targetId="f9a4-b445-8b7a-e31b"/>
+        <entryLink import="true" name="Campaign: Storm of Chaos" hidden="false" id="bf66-8b92-30f2-b98c" type="selectionEntry" targetId="5c9d-5afc-8dee-589a"/>
+        <entryLink import="true" name="Campaign: Lustria" hidden="false" id="4cc1-9e37-3b0b-6e6a" type="selectionEntry" targetId="1c41-fe61-5a49-668a"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Campaign: Bugman&apos;s Lament (WD#297-300-UK)" hidden="true" id="22b1-4841-84c1-7c98">
@@ -1574,10 +1644,74 @@ Chronicles/Annual</comment>
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="515f-ef69-db86-2ea6" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Campaign: Dark Shadows" hidden="false" id="1c41-fe61-5a49-668a">
+    <selectionEntry type="upgrade" import="true" name="Campaign: Lustria" hidden="false" id="1c41-fe61-5a49-668a">
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="542d-aede-b01a-6408" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="08ed-7a42-656d-f20b" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Mercenaries and Regiments of Renown" hidden="false" id="6a7d-7d85-8d7e-cbce">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Allow Regiments of Renown" hidden="false" id="3d35-6b18-262f-6503" defaultAmount="1">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b536-105e-b1da-d5c5" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Allow Mercenaries" hidden="false" id="fda5-49b9-b74c-aaf4" defaultAmount="1">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="self" shared="true" id="714b-5314-33d4-dd68" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1df9-8159-156a-641f" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="House rule: All generic DoW are Special" hidden="true" id="713c-28b1-0861-1ffd" defaultAmount="0">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="046e-1c8a-1c6d-ae5f" includeChildSelections="false"/>
+              </constraints>
+              <comment>TODO</comment>
+              <rules>
+                <rule name="House rule: All generic DoW are Special" id="e8cf-65f4-00e8-4b5f" hidden="false">
+                  <description>&quot;Conversely, if players wish to add more colour and variety to their armies then they may wish to employ more of these spectacular units. If both players agree beforehand, Dogs of War units can be included as Special unit choices as well as Rare ones&quot;
+Warhammer Armies: Dark Elves (page 25)
+Warhammer Armies: Skaven (page 41)
+Warhammer Armies: Vampire Counts (page 61)</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="House rule: Category Upgrade" hidden="true" id="698e-c660-5c99-d481" defaultAmount="0">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c522-d36c-d18d-c7ec" includeChildSelections="false"/>
+              </constraints>
+              <comment>TODO</comment>
+              <rules>
+                <rule name="House rule: Category Upgrade" id="9adc-93c2-ebbb-4972" hidden="false">
+                  <description>&quot;Conversely, if players wish to add more colour and variety to their armies then they may wish to employ more of these spectacular units. If both players agree beforehand, Dogs of War units can be included as Special unit choices as well as Rare ones&quot;
+Warhammer Armies: Dark Elves (page 25)
+Warhammer Armies: Skaven (page 41)
+Warhammer Armies: Vampire Counts (page 61)</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fae4-595f-7b39-1909" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="993f-eb11-5986-8b3e" includeChildSelections="false"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink name="Special list rules" hidden="false" id="4cbe-48ad-8126-05f2" targetId="32f1-197f-d719-a393" primary="true"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Campaign: Dark Shadows" hidden="false" id="f9a4-b445-8b7a-e31b">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d749-4c07-3bf3-4dd4" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="1ede-2414-be5e-2c3e" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Campaign: Storm of Chaos" hidden="false" id="5c9d-5afc-8dee-589a">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f6c0-4e52-ad57-19f6" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="260c-1cbd-0217-721c" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
   </sharedSelectionEntries>

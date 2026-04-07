@@ -95,3 +95,6 @@ Also to the Direwolf Council, who made an awesome work collecting material and c
 And last but not least, to the [Karak Norn Wargaming Club](https://karaknornwargaming.blogspot.com/), for the trust, advise and collaboration with The Norn Consensus, and the will to test and improve the project.
 
 Also, many thanks to all who offer eyes or ears to discuss and improve the project.
+
+
+Maintained by the Archivists of the Karak Norn Wargaming Club (Zürich, Switzerland).
