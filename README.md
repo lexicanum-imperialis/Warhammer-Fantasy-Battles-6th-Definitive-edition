@@ -1,8 +1,21 @@
-# Warhammer Fantasy 6th Definitive edition
+# Warhammer Fantasy Battles 6th Edition: List-Building Data Repository
 
-A complete, machine-readable data repository for Warhammer Fantasy Battles 6th Edition, formatted for BattleScribe and perfectly compatible with New Recruit.
+This repository provides machine-readable data files for Warhammer Fantasy Battles (WHFB) 6th Edition. The files are formatted for standard compatibility with **BattleScribe** and **New Recruit**.
 
-This project digitizes the complete 6th Edition experience into a modern list-building format. It includes the official rules, integrated FAQs, and the community contributions required to play the game today.
+Maintained by the **[Karak Norn Wargaming Club](https://karaknornwargaming.blogspot.com/)**, the objective of this project is to compile a functional list-building environment that accurately integrates the core rules, official army books, and final official FAQs.
+
+### Project Status: Playable / Active Refinement
+This archive is fully playable and estimated at **95% complete**. It was initiated because existing legacy repositories for 6th Edition are largely abandoned and lack the final integrated errata.
+
+While the vast majority of units and army books are fully transcribed and functional, active refinement is ongoing. Users may occasionally encounter unlinked edge-case rule interactions or minor data entry discrepancies.
+
+**Current Implementation**:
+- **Core Engine**: Fully operational.
+- **Army Books**: Fully operational.
+- **White Dwarf Experimental Lists**: ~95% complete and playable. (Please refer to the List of Contents within the repository tree for the exact status of specific factions).
+- **Specific Campaigns and Scenarios**: ~60% complete and playable. (Please refer to the List of Contents within the repository tree for the exact status of specific factions).
+
+*Note: Always verify point costs and rules against the physical books prior to matched play.*
 
 ---
 
@@ -15,37 +28,36 @@ To use this data for list building, you do not need to download the files manual
 ![alt text](tutorial/image-0.png)
 2. Go to your **Click here to try it now!** settings.
 ![alt text](tutorial/image-1.png)
-3. Click in Add more games.
-At the bottom, search for `Add from GitHub`
+3. Click on **Add more games**. At the bottom, search for `Add from GitHub`.
 ![alt text](tutorial/image-2.png)
-4. Add the version `Latests Commut (Head)` if you want the hotests updates
-Add the version `Latests Release` if you want the last stable version
+4. Add the version `Latest Commit (Head)` if you want the newest updates. 
+   Add the version `Latest Release` if you want the last stable version.
 ![alt text](tutorial/image-3.png)
 5. Add this exact URL:
    `lexicanum-imperialis/Warhammer-Fantasy-Battles-6th-Definitive-edition`
- 6. Now select the WHFB 6th Gamesystem and create your lists!
+6. Now select the **WHFB 6th** game system and create your lists!
 
 ### For BattleScribe (WIP)
-Work in Progress
+*Work in Progress*
 
 ---
 
 ## 📚 Repository Contents
 
-This repository provides a consolidated, machine-readable data layer for Warhammer Fantasy 6th Edition. It digitizes unit profiles and mechanical logic into a standardized format, integrating widely-accepted community standards as peer-level benchmarks for structural consistency:
+This repository provides a consolidated, machine-readable data layer for WHFB 6th Edition. It digitizes unit profiles and mechanical logic into a standardized format, integrating widely-accepted community standards as peer-level benchmarks for structural consistency:
 
-* The Direwolf Archive: Historical community standard for rules interpretation and FAQ consolidation.
-* The GLWL (Great Lakes Warhammer League): Historical tournament precedents for standardized competitive play.
-* The Norn Consensus: Historical mechanical precedents (2003–2006) provided by the Karak Norn Wargaming Club to resolve structural logic gaps for digital play.
+* **The Direwolf Archive**: Historical community standard for rules interpretation and FAQ consolidation.
+* **The GLWL (Great Lakes Warhammer League)**: Historical tournament precedents for standardized competitive play.
+* **The Norn Consensus**: Historical mechanical precedents (2003–2006) provided by the Karak Norn Wargaming Club to resolve structural logic gaps for digital play.
 
 ### Core Game System & Expansions:
 
-* WHFB 6th Edition Core Rules: The primary architectural baseline.
-* Official Errata & FAQs: Integrated directly into unit profiles and special rules.
-* +230 Special Characters: Named units and legendary heroes with codified traits.
-* +60 Alternative Army Lists: Appendix lists, Campaign variants, and White Dwarf supplements.
-* Mercenary Units: Full data for Regiments of Renown and Dogs of War.
-* Optional Logic: Toggles for experimental and trial rules.
+* **WHFB 6th Edition Core Rules**: The primary architectural baseline.
+* **Official Errata & FAQs**: Integrated directly into unit profiles and special rules.
+* **+230 Special Characters**: Named units and legendary heroes with codified traits.
+* **+60 Alternative Army Lists**: Appendix lists, Campaign variants, and White Dwarf supplements.
+* **Mercenary Units**: Full data for Regiments of Renown and Dogs of War.
+* **Optional Logic**: Toggles for experimental and trial rules.
 
 **Official Armies & Specific Features:**
 * **Beastmen**
@@ -81,20 +93,30 @@ Our mechanical framework relies on:
 * **The Norn Consensus Historical Precedent:** Documented resolutions for specific army-builder mechanics, phase-sequence logic, and rules interaction, provided by the **Karak Norn Wargaming Club** (Est. 2003, Switzerland).
 * **Standardized Community Rules:** A curated selection of extremely common fixes and standardized rulings that are widely played by the international 6th Edition community today to balance the game.
 
-*(For complete transparency, design dilemmas, community rules, errata, and edge-case resolutions used in this engine are heavily documented in the `/errata` and `/faq/` folder and the GitHub Issues section of this repository, so you know exactly how your list is being calculated.)*
+*(For complete transparency, design dilemmas, community rules, errata, and edge-case resolutions used in this engine are heavily documented in the `/errata` and `/faq/` folders and the GitHub Issues section of this repository, so you know exactly how your list is being calculated.)*
+
+---
+
+## 🐛 Issue Tracking & Errata Submissions
+
+The Karak Norn Wargaming Club actively maintains this repository and processes bug fixes regularly. To ensure the absolute accuracy of this archive, we encourage community cross-referencing against the official 6th Edition physical texts.
+
+If you identify a data entry error, point cost discrepancy, or missing rule interaction, please report it so it can be rectified:
+- **GitHub Issue Tracker (Preferred)**: Open a new issue directly in this repository for transparent tracking and version control.
+- **Direct Contact**: Email the Archivists at [karaknornwargaming@gmail.com](mailto:karaknornwargaming@gmail.com).
+
+*When submitting a correction, please cite the specific Army Book page number or official FAQ document to expedite the fix.*
 
 ---
 
 ## 🤝 Acknowledgments and Gratitude
-We want to thank first to the team from [Las _Tablillas Sagradas_](https://lastablillassagradas.blogspot.com/), that has inspired this whole project. Special mention to Antonio, who possess the knowledge of Tzeentch and the wisdom of Teclis.
 
-Second, to [Ergofarg](https://github.com/Ergofarg/Warhammer-Fantasy-6th-edition/) and his collaborators, to whom we owe a lot of hours saved from their pre-existing effort. We have learned a lot studying their files.
+We must first thank the team from [Las Tablillas Sagradas](https://lastablillassagradas.blogspot.com/), which inspired this entire project. Special mention to Antonio, who possesses the knowledge of Tzeentch and the wisdom of Teclis.
 
-Also to the Direwolf Council, who made an awesome work collecting material and chasing the designers to get the responses the community needed.
+Second, to [Ergofarg](https://github.com/Ergofarg/Warhammer-Fantasy-6th-edition/) and his collaborators, to whom we owe countless hours saved from their pre-existing efforts. We have learned a great deal by studying their files.
 
-And last but not least, to the [Karak Norn Wargaming Club](https://karaknornwargaming.blogspot.com/), for the trust, advise and collaboration with The Norn Consensus, and the will to test and improve the project.
+Also, to the Direwolf Council, who did incredible work collecting material and chasing the game designers to get the responses the community needed.
 
-Also, many thanks to all who offer eyes or ears to discuss and improve the project.
+And last but not least, to the **[Karak Norn Wargaming Club](https://karaknornwargaming.blogspot.com/)**, for the trust, advice, and collaboration with The Norn Consensus, and the will to test and improve the project.
 
-
-Maintained by the Archivists of the Karak Norn Wargaming Club (Zürich, Switzerland).
+Finally, many thanks to all who offer eyes or ears to discuss and refine the archive.
