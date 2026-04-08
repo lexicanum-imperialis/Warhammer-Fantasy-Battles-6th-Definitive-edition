@@ -7,6 +7,7 @@
     <publication id="cc59-6466-b62e-cf5b" name="CR-04" shortName="Warhammer Chronicles (2004)" publisher="Jake Thornton &amp; Alessio Cavatore" publicationDate="2004" publisherUrl="Games-Workshop"/>
     <publication id="415d-9fbb-df83-ad27" name="LUS" shortName="Lustria (Campaign)" publisher="Andy Hoare &amp; Graham McNeil" publicationDate="2004" publisherUrl="Games-Workshop"/>
     <publication id="d2ec-1dc7-f0d5-acbb" name="SoC" shortName="Storm of Chaos (Campaign)" publisher="Gav Thorpe" publicationDate="2004" publisherUrl="Games-Workshop"/>
+    <publication name="KN-WC*" id="7efd-a538-1d4c-e99f" hidden="false" shortName="Karak Norn Wargaming Club" publisherUrl="https://karaknornwargaming.blogspot.com/"/>
   </publications>
   <costTypes>
     <costType id="ecfa-8486-4f6c-c249" name="pts" defaultCostLimit="-1" hidden="false"/>
@@ -81,7 +82,7 @@
     <categoryEntry id="43cc-fc3f-35a7-8d03" name="Special" hidden="false"/>
     <categoryEntry id="e94b-6a54-8779-cd60" name="Rare" hidden="false"/>
     <categoryEntry id="b0b1-5266-2bcd-f592" name="Detachment" hidden="false"/>
-    <categoryEntry id="7a1c-d611-c2dc-def1" name="Characters" hidden="true"/>
+    <categoryEntry id="7a1c-d611-c2dc-def1" name="Characters" hidden="false"/>
     <categoryEntry id="a37e-7207-de6d-acb0" name="General" hidden="false">
       <constraints>
         <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="d818-c60d-b1f8-8aaa" type="max"/>
