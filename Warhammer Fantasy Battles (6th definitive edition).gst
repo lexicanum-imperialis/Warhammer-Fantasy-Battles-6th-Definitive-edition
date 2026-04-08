@@ -1717,7 +1717,7 @@ Warhammer Armies: Vampire Counts (page 61)</description>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
-    <selectionEntryGroup id="f679-dff7-370a-6050" name="Lore of Metal" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="f679-dff7-370a-6050" name="Lore of Metal" hidden="false" collective="false" import="true" collapsible="true">
       <constraints>
         <constraint field="selections" scope="parent" value="6" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b83-4dbf-bb69-70c3" type="max"/>
       </constraints>
@@ -1730,7 +1730,7 @@ Warhammer Armies: Vampire Counts (page 61)</description>
         <entryLink id="1e42-9bd3-76c7-17b8" name="6. Bane of Forged Steel" hidden="false" collective="false" import="true" targetId="c13c-300b-9487-3f74" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="ffc0-ed2b-71f0-b61c" name="Lore of Fire" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="ffc0-ed2b-71f0-b61c" name="Lore of Fire" hidden="false" collective="false" import="true" collapsible="true">
       <constraints>
         <constraint field="selections" scope="parent" value="6" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="66b0-4dd9-d762-4a59" type="max"/>
       </constraints>
@@ -1743,7 +1743,7 @@ Warhammer Armies: Vampire Counts (page 61)</description>
         <entryLink id="7f75-868e-91f5-42c4" name="6. Wall of Fire" hidden="false" collective="false" import="true" targetId="11ff-c209-6eca-a620" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="b0de-c735-e115-5c82" name="Lore of Shadow" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="b0de-c735-e115-5c82" name="Lore of Shadow" hidden="false" collective="false" import="true" collapsible="true">
       <constraints>
         <constraint field="selections" scope="parent" value="6" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="15f8-e0a5-258b-b90a" type="max"/>
       </constraints>
@@ -1756,7 +1756,7 @@ Warhammer Armies: Vampire Counts (page 61)</description>
         <entryLink id="652e-ef44-16e3-ca1f" name="6. Pit of Shades" hidden="false" collective="false" import="true" targetId="892c-7bf1-9202-66fe" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="892e-a8dd-8f70-373a" name="Lore of Beasts" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="892e-a8dd-8f70-373a" name="Lore of Beasts" hidden="false" collective="false" import="true" collapsible="true">
       <constraints>
         <constraint field="selections" scope="parent" value="6" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="434c-c9e9-29ef-085a" type="max"/>
       </constraints>
@@ -1769,7 +1769,7 @@ Warhammer Armies: Vampire Counts (page 61)</description>
         <entryLink id="50c1-f00b-e2a4-b0d5" name="6. The Wolf Hunts" hidden="false" collective="false" import="true" targetId="8a75-3157-3b27-00c8" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="e999-4d26-ec27-9cd0" name="Lore of Heavens" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="e999-4d26-ec27-9cd0" name="Lore of Heavens" hidden="false" collective="false" import="true" collapsible="true">
       <constraints>
         <constraint field="selections" scope="parent" value="6" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2421-146f-1336-e9d5" type="max"/>
       </constraints>
@@ -1782,7 +1782,7 @@ Warhammer Armies: Vampire Counts (page 61)</description>
         <entryLink id="8be8-74d0-2823-d9c7" name="6. The Comet of Casandora (Revised)" hidden="false" collective="false" import="true" targetId="aa1c-07f8-7974-58a2" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="f6d6-76c8-90fe-ac07" name="Lore of Light" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="f6d6-76c8-90fe-ac07" name="Lore of Light" hidden="false" collective="false" import="true" collapsible="true">
       <constraints>
         <constraint field="selections" scope="parent" value="6" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bedb-6c11-660d-6501" type="max"/>
       </constraints>
@@ -1795,7 +1795,7 @@ Warhammer Armies: Vampire Counts (page 61)</description>
         <entryLink id="99f5-d35f-3a44-1564" name="6. Blinding Light" hidden="false" collective="false" import="true" targetId="d062-d04d-4a9a-80ba" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="7814-b731-32d8-88be" name="Lore of Life" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="7814-b731-32d8-88be" name="Lore of Life" hidden="false" collective="false" import="true" collapsible="true">
       <constraints>
         <constraint field="selections" scope="parent" value="6" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="01f3-47f4-50ce-9a46" type="max"/>
       </constraints>
@@ -1808,7 +1808,7 @@ Warhammer Armies: Vampire Counts (page 61)</description>
         <entryLink id="7263-7d09-53ce-a30d" name="6. The Rain Lord (Revised)" hidden="false" collective="false" import="true" targetId="5ae2-e2a8-98e8-0f48" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="0a76-fdab-0afb-3612" name="Lore of Death" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="0a76-fdab-0afb-3612" name="Lore of Death" hidden="false" collective="false" import="true" collapsible="true">
       <constraints>
         <constraint field="selections" scope="parent" value="6" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="28bc-2fcf-9c1f-785f" type="max"/>
       </constraints>
@@ -1821,7 +1821,7 @@ Warhammer Armies: Vampire Counts (page 61)</description>
         <entryLink id="bcbb-db2d-4a76-0a82" name="6. Doom and Darkness!" hidden="false" collective="false" import="true" targetId="7caf-d4f2-8210-fa58" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="c16c-a0f1-1ae2-8b57" name="Common Magic Items" publicationId="315e-e3c4-08af-fd51" page="154" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="c16c-a0f1-1ae2-8b57" name="Common Magic Items" publicationId="315e-e3c4-08af-fd51" page="154" hidden="false" collective="false" import="true" collapsible="true">
       <entryLinks>
         <entryLink import="true" name="Magic Talismans (Common)" hidden="false" id="8358-2a3f-a36f-2eab" type="selectionEntryGroup" page="common" targetId="7dcf-8a09-c9b8-9a88"/>
         <entryLink import="true" name="Magic Armour (Common)" hidden="false" id="db61-4ae1-43c1-f799" type="selectionEntryGroup" page="common" targetId="ed11-243d-9671-7f1c"/>
@@ -1830,12 +1830,12 @@ Warhammer Armies: Vampire Counts (page 61)</description>
         <entryLink import="true" name="Magic Weapons (Common)" hidden="false" id="fb4e-d01f-0dcf-7701" type="selectionEntryGroup" page="common" targetId="8171-d883-19d8-6450"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Magic Banners (Common)" id="4e89-9bb4-1aeb-e34f" hidden="false">
+    <selectionEntryGroup name="Magic Banners (Common)" id="4e89-9bb4-1aeb-e34f" hidden="false" collapsible="true">
       <entryLinks>
         <entryLink import="true" name="War Banner" hidden="false" id="f7d8-220a-ed04-28ef" collective="false" targetId="f327-567f-ef99-0403" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Magic Weapons (Common)" id="8171-d883-19d8-6450" hidden="false">
+    <selectionEntryGroup name="Magic Weapons (Common)" id="8171-d883-19d8-6450" hidden="false" collapsible="true">
       <entryLinks>
         <entryLink import="true" name="Sword of Striking" hidden="false" id="94f9-e553-f996-340e" collective="false" targetId="6b55-e847-311d-d6ca" type="selectionEntry"/>
         <entryLink import="true" name="Sword of Battle" hidden="false" id="5db2-cc28-4718-d0ff" collective="false" targetId="6e5a-eeea-ec67-3632" type="selectionEntry"/>
@@ -1843,17 +1843,17 @@ Warhammer Armies: Vampire Counts (page 61)</description>
         <entryLink import="true" name="Biting Blade" hidden="false" id="4b91-07db-55ec-b019" collective="false" targetId="74fc-c90b-250e-6b87" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Magic Talismans (Common)" id="7dcf-8a09-c9b8-9a88" hidden="false">
+    <selectionEntryGroup name="Magic Talismans (Common)" id="7dcf-8a09-c9b8-9a88" hidden="false" collapsible="true">
       <entryLinks>
         <entryLink import="true" name="Talisman of Protection" hidden="false" id="bc5a-4f31-3425-4b2c" collective="false" targetId="c7cc-76a3-c413-ddb8" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Magic Armour (Common)" id="ed11-243d-9671-7f1c" hidden="false">
+    <selectionEntryGroup name="Magic Armour (Common)" id="ed11-243d-9671-7f1c" hidden="false" collapsible="true">
       <entryLinks>
         <entryLink import="true" name="Enchanted Shield" hidden="false" id="100f-8a0c-49aa-78f3" collective="false" targetId="c5c1-60aa-745f-c9d3" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Arcane Items (Common)" id="0d3f-389c-02b2-bb34" hidden="false">
+    <selectionEntryGroup name="Arcane Items (Common)" id="0d3f-389c-02b2-bb34" hidden="false" collapsible="true">
       <entryLinks>
         <entryLink import="true" name="Dispel Scroll (one use only)" hidden="false" id="989e-9d22-7fea-19b5" collective="false" targetId="b76c-6bad-4650-dbb0" type="selectionEntry">
           <comment>THIS IS THE GOOD ONE</comment>
