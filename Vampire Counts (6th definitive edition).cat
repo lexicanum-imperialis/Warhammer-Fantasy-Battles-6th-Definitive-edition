@@ -19166,7 +19166,7 @@ The unit can charge an enemy within 8&quot; if opportunity permits and the same
       </constraints>
       <comment>VC</comment>
     </selectionEntryGroup>
-    <selectionEntryGroup id="1bf0-c096-8a65-b43b" name="Magic Armour" hidden="false" collective="false" import="true" collapsible="true">
+    <selectionEntryGroup id="1bf0-c096-8a65-b43b" name="Magic Armour (VC)" hidden="false" collective="false" import="true" collapsible="true">
       <entryLinks>
         <entryLink import="true" name="Wailing Helm" hidden="false" id="f17c-69a2-0166-44aa" type="selectionEntry" targetId="313c-1547-cd35-593f"/>
         <entryLink import="true" name="The Cursed Shield of Mousillon" hidden="false" id="64c6-e8a3-d159-622c" type="selectionEntry" targetId="da9c-a03d-dbcf-4bac">
@@ -19200,9 +19200,17 @@ The unit can charge an enemy within 8&quot; if opportunity permits and the same
         <entryLink import="true" name="Armour of Bone" hidden="false" id="1bf2-b55f-873d-e0e3" type="selectionEntry" targetId="da7a-2986-b2fb-f27f">
           <comment>VC</comment>
         </entryLink>
+        <entryLink import="true" name="Magic Armour (Relics of Lustria)" hidden="false" id="f03f-dfdb-441a-2d12" type="selectionEntryGroup" targetId="d8b2-93bf-2e16-7896"/>
       </entryLinks>
+      <modifiers>
+        <modifier type="append" value="Relics of Lustria" field="name" join="  + ">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="7d87-7436-5341-bbc0" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntryGroup>
-    <selectionEntryGroup id="70c0-82cd-31ec-e269" name="Magic Talismans" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="70c0-82cd-31ec-e269" name="Magic Talismans (VC)" hidden="false" collective="false" import="true">
       <constraints>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="62f3-ac1a-658e-48a6" type="max"/>
       </constraints>
@@ -19221,8 +19229,16 @@ The unit can charge an enemy within 8&quot; if opportunity permits and the same
         <entryLink import="true" name="Wristbands of Black Gold " hidden="false" id="d6f8-611f-3b85-5284" type="selectionEntry" targetId="506c-e3a5-3ba6-191a"/>
         <entryLink import="true" name="Obsidian Amulet" hidden="false" id="59d5-6e94-2a6f-cc84" type="selectionEntry" targetId="8307-3b9f-89bc-b89a"/>
         <entryLink import="true" name="Crown of the Damned" hidden="false" id="fc0c-bc28-5c6f-4f6a" type="selectionEntry" targetId="0722-32ab-cd8c-2b72"/>
+        <entryLink import="true" name="Magic Talismans (Relics of Lustria)" hidden="false" id="68fe-e8aa-3a4c-0d92" type="selectionEntryGroup" targetId="dbf5-90ca-b928-d111"/>
       </entryLinks>
       <comment>VC</comment>
+      <modifiers>
+        <modifier type="append" value="Relics of Lustria" field="name" join="  + ">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="7d87-7436-5341-bbc0" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntryGroup>
     <selectionEntryGroup id="b1a2-07df-1a18-9bf9" name="Vampiric Powers" hidden="false" collective="false" import="true">
       <infoLinks>
@@ -19317,7 +19333,7 @@ The unit can charge an enemy within 8&quot; if opportunity permits and the same
       </modifiers>
       <comment>Clan Lahmia</comment>
     </selectionEntryGroup>
-    <selectionEntryGroup id="bf27-6ca6-5c3a-3449" name="Magic Weapons" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="bf27-6ca6-5c3a-3449" name="Magic Weapons (VC)" hidden="false" collective="false" import="true">
       <entryLinks>
         <entryLink import="true" name="Frostblade" hidden="false" id="506f-3f9c-a66a-b9fc" type="selectionEntry" targetId="1a6a-193c-1cfa-d730">
           <constraints>
@@ -19389,10 +19405,18 @@ The unit can charge an enemy within 8&quot; if opportunity permits and the same
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4986-a84b-8630-43e6" includeChildSelections="false"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Magic Weapons (Relics of Lustria)" hidden="false" id="4f42-15c8-57d9-48e0" type="selectionEntryGroup" targetId="11e7-7d5d-b0fa-1f34"/>
       </entryLinks>
       <comment>VC</comment>
+      <modifiers>
+        <modifier type="append" value="Relics of Lustria" field="name" join="  + ">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="7d87-7436-5341-bbc0" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntryGroup>
-    <selectionEntryGroup id="2f34-a145-911a-fa00" name="Arcane Items" hidden="false" collective="false" import="true" collapsible="true">
+    <selectionEntryGroup id="2f34-a145-911a-fa00" name="Arcane Items (VC)" hidden="false" collective="false" import="true" collapsible="true">
       <modifiers>
         <modifier type="increment" field="fa59-e6b8-9523-3510" value="1">
           <repeats>
@@ -19403,6 +19427,11 @@ The unit can charge an enemy within 8&quot; if opportunity permits and the same
           <repeats>
             <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a7ac-677c-c302-3837" repeats="1" roundUp="false"/>
           </repeats>
+        </modifier>
+        <modifier type="append" value="Relics of Lustria" field="name" join="  + ">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="7d87-7436-5341-bbc0" shared="true" includeChildSelections="true"/>
+          </conditions>
         </modifier>
       </modifiers>
       <constraints>
@@ -19442,6 +19471,7 @@ The unit can charge an enemy within 8&quot; if opportunity permits and the same
             </modifier>
           </modifiers>
         </entryLink>
+        <entryLink import="true" name="Arcane Items (Relics of Lustria)" hidden="false" id="3cc9-0066-e05d-4505" type="selectionEntryGroup" targetId="9bff-59ad-43df-a403"/>
       </entryLinks>
       <comment>VC</comment>
     </selectionEntryGroup>
@@ -19458,7 +19488,7 @@ The unit can charge an enemy within 8&quot; if opportunity permits and the same
         <entryLink import="true" name="5. Vanhel&apos;s Danse Macabre" hidden="false" id="0a13-882e-e4c7-971d" type="selectionEntry" targetId="b665-b7cc-a0a8-5d10"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Enchanted Items" id="454b8032-d15e-4a74-a103-c204aa1ac002" hidden="false" collapsible="true">
+    <selectionEntryGroup name="Enchanted Items (VC)" id="454b8032-d15e-4a74-a103-c204aa1ac002" hidden="false" collapsible="true">
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="476b-27eb-5596-c485" includeChildSelections="false"/>
       </constraints>
@@ -19468,8 +19498,16 @@ The unit can charge an enemy within 8&quot; if opportunity permits and the same
         <entryLink import="true" name="Cloak of Mist and Shadows " hidden="false" id="8d02-3714-c307-01ac" type="selectionEntry" targetId="72ba-8771-2926-3354"/>
         <entryLink import="true" name="Talon of Death" hidden="false" id="5bf0-3407-3cde-1000" type="selectionEntry" targetId="dbc8-8204-b238-c315"/>
         <entryLink import="true" name="Casket of Ages" hidden="false" id="d28e-ac41-2266-ae2c" type="selectionEntry" targetId="a46f-b46b-2efc-0283"/>
+        <entryLink import="true" name="Enchanted Items (Relics of Lustria)" hidden="false" id="695d-8b75-90bb-994b" type="selectionEntryGroup" targetId="b77d-ca97-7903-6bc6"/>
       </entryLinks>
       <comment>VAMPIRE COUNTS</comment>
+      <modifiers>
+        <modifier type="append" value="Relics of Lustria" field="name" join="  + ">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="7d87-7436-5341-bbc0" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntryGroup>
     <selectionEntryGroup name="Bloodline" id="0719-24b8-19d4-c832" hidden="false">
       <entryLinks>
@@ -19524,7 +19562,7 @@ The unit can charge an enemy within 8&quot; if opportunity permits and the same
       <comment>VC</comment>
       <entryLinks>
         <entryLink import="true" name="Enchanted Items" hidden="false" id="e067-9271-8d45-7469" type="selectionEntryGroup" targetId="454b8032-d15e-4a74-a103-c204aa1ac002"/>
-        <entryLink import="true" name="Magic Weapons" hidden="false" id="afe1-9a75-ceba-5949" type="selectionEntryGroup" targetId="bf27-6ca6-5c3a-3449"/>
+        <entryLink import="true" name="Magic Weapons " hidden="false" id="afe1-9a75-ceba-5949" type="selectionEntryGroup" targetId="bf27-6ca6-5c3a-3449"/>
         <entryLink import="true" name="Magic Armour" hidden="false" id="3497-a9d2-58aa-20be" type="selectionEntryGroup" targetId="1bf0-c096-8a65-b43b"/>
         <entryLink import="true" name="Magic Weapons (Common)" hidden="false" id="fd23-452f-acf9-b3d5" type="selectionEntryGroup" targetId="8171-d883-19d8-6450"/>
         <entryLink import="true" name="Magic Armour (Common)" hidden="false" id="8af0-a5ee-c7d6-de37" type="selectionEntryGroup" targetId="ed11-243d-9671-7f1c"/>
@@ -22070,22 +22108,49 @@ In addition, the bearer causes Fear in Skaven.</characteristic>
         <entryLink import="true" name="Sky Chariot" hidden="false" id="472e-d107-b0dc-c51a" type="selectionEntry" targetId="33bd-1a1e-a286-60ac"/>
         <entryLink import="true" name="Charm of Destruction" hidden="false" id="aee4-c729-4126-693c" type="selectionEntry" targetId="d8de-7ff5-c221-cb2b"/>
         <entryLink import="true" name="Casket of Shadows" hidden="false" id="b7ca-dba9-dc32-0a0b" type="selectionEntry" targetId="c472-90e3-a4f1-bbfa"/>
+        <entryLink import="true" name="Enchanted Items (Relics of Lustria)" hidden="false" id="2091-4352-e1fc-afc8" type="selectionEntryGroup" targetId="b77d-ca97-7903-6bc6"/>
       </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7ef4-7ce1-e1da-22ea" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="append" value="Relics of Lustria" field="name" join="  + ">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="7d87-7436-5341-bbc0" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntryGroup>
     <selectionEntryGroup name="Magic Talismans (Lichemaster)" id="fefe-ea0d-0da8-16dc" hidden="false" page="101" publicationId="5dfb-1d05-9140-09b5">
       <entryLinks>
         <entryLink import="true" name="Hide of Retribution" hidden="false" id="8fb2-9d64-c901-38bc" type="selectionEntry" targetId="2f07-308c-0ae5-fd29"/>
         <entryLink import="true" name="Ring of the Cailledh" hidden="false" id="0e2c-90cd-b6b9-8428" type="selectionEntry" targetId="763c-e586-645a-ae7d"/>
+        <entryLink import="true" name="Magic Talismans (Relics of Lustria)" hidden="false" id="0bc4-e541-7a17-ecb1" type="selectionEntryGroup" targetId="dbf5-90ca-b928-d111"/>
       </entryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="820a-c06f-cba9-b06c" includeChildSelections="false"/>
       </constraints>
+      <modifiers>
+        <modifier type="append" value="Relics of Lustria" field="name" join="  + ">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="7d87-7436-5341-bbc0" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntryGroup>
     <selectionEntryGroup name="Arcane Items (Lichemaster)" id="d7e9-3f1d-d0bc-e0d0" hidden="false" page="101" publicationId="5dfb-1d05-9140-09b5">
       <entryLinks>
         <entryLink import="true" name="Storm Cauldron" hidden="false" id="bb21-3289-2a1b-6d80" type="selectionEntry" targetId="c9f2-9a9e-b78a-42c2"/>
         <entryLink import="true" name="Ring of the Cailledh" hidden="false" id="73c0-46b1-b867-7949" type="selectionEntry" targetId="763c-e586-645a-ae7d"/>
+        <entryLink import="true" name="Arcane Items (Relics of Lustria)" hidden="false" id="22d7-3810-490f-b4e1" type="selectionEntryGroup" targetId="9bff-59ad-43df-a403"/>
       </entryLinks>
+      <modifiers>
+        <modifier type="append" value="Relics of Lustria" field="name" join="  + ">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="7d87-7436-5341-bbc0" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntryGroup>
     <selectionEntryGroup name="Magic Weapons (Lichemaster)" id="ef8e-7072-e233-5087" hidden="false" publicationId="5dfb-1d05-9140-09b5" page="101">
       <constraints>
@@ -22093,7 +22158,15 @@ In addition, the bearer causes Fear in Skaven.</characteristic>
       </constraints>
       <entryLinks>
         <entryLink import="true" name="Stormsword of Medhe" hidden="false" id="ad6e-f3e3-ef5a-6347" type="selectionEntry" targetId="4b4d-50bc-30aa-ef6f"/>
+        <entryLink import="true" name="Magic Weapons (Relics of Lustria)" hidden="false" id="df22-8a3f-9435-5ce7" type="selectionEntryGroup" targetId="11e7-7d5d-b0fa-1f34"/>
       </entryLinks>
+      <modifiers>
+        <modifier type="append" value="Relics of Lustria" field="name" join="  + ">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="7d87-7436-5341-bbc0" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntryGroup>
     <selectionEntryGroup name="Magic Armour (Lichemaster)" id="d8c4-aac3-8b1e-442b" hidden="false" publicationId="5dfb-1d05-9140-09b5" page="101">
       <constraints>
@@ -28118,9 +28191,9 @@ Wearer is immune to spells of the Lore of Light.</characteristic>
     <entryLink import="true" name="Leadbelchers" hidden="false" id="65a6-c4b8-916b-5303" type="selectionEntry" targetId="da30-4b49-acc3-21a7"/>
     <entryLink import="true" name="Maneaters" hidden="false" id="e58d-9561-8347-126e" type="selectionEntry" targetId="b360-ce9c-85d7-ff03"/>
     <entryLink import="true" name="Rhinox Riders" hidden="false" id="7fd7-c08c-b5bf-86eb" type="selectionEntry" targetId="5e33-e510-ba45-933e"/>
-    <entryLink import="true" name="Amazon Cold One Riders" hidden="false" id="3eee-527f-ef4a-dc11" type="selectionEntry" targetId="9e4d-c653-35ec-1d09"/>
-    <entryLink import="true" name="Amazon Serpent Priestess" hidden="false" id="b62c-48eb-842f-63ff" type="selectionEntry" targetId="9ddd-69c8-644d-abc2"/>
-    <entryLink import="true" name="Amazon Totem Warriors" hidden="false" id="4448-1a85-c7dc-bb5e" type="selectionEntry" targetId="345f-b2a8-4641-038d"/>
+    <entryLink import="true" name="Amazon Cold One Outriders" hidden="false" id="3eee-527f-ef4a-dc11" type="selectionEntry" targetId="9e4d-c653-35ec-1d09"/>
+    <entryLink import="true" name="0-1 Amazon Serpent Priestess" hidden="false" id="b62c-48eb-842f-63ff" type="selectionEntry" targetId="9ddd-69c8-644d-abc2"/>
+    <entryLink import="true" name="Amazon Serpent Warriors (Totem Warriors)" hidden="false" id="4448-1a85-c7dc-bb5e" type="selectionEntry" targetId="345f-b2a8-4641-038d"/>
     <entryLink import="true" name="Anakonda&apos;s Amazons" hidden="false" id="fb05-fdac-2da6-ba44" type="selectionEntry" targetId="ebf9-c112-3cb4-1f02"/>
     <entryLink import="true" name="Torston Treehaka&apos;s Sea Axes" hidden="false" id="b77c-8817-8235-b81f" type="selectionEntry" targetId="4fbd-f8c0-e2da-80f8">
       <modifierGroups>
