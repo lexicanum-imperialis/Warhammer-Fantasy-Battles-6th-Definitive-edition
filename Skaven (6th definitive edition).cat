@@ -8597,9 +8597,9 @@ no armour saves.</description>
     <entryLink import="true" name="Leadbelchers" hidden="false" id="1c7e-3509-0d79-0130" type="selectionEntry" targetId="da30-4b49-acc3-21a7"/>
     <entryLink import="true" name="Maneaters" hidden="false" id="a15f-888b-42d0-6607" type="selectionEntry" targetId="b360-ce9c-85d7-ff03"/>
     <entryLink import="true" name="Rhinox Riders" hidden="false" id="2125-0ccf-86d7-a3bf" type="selectionEntry" targetId="5e33-e510-ba45-933e"/>
-    <entryLink import="true" name="Amazon Cold One Riders" hidden="false" id="1e7c-2077-3fc1-230b" type="selectionEntry" targetId="9e4d-c653-35ec-1d09"/>
-    <entryLink import="true" name="Amazon Serpent Priestess" hidden="false" id="12df-264c-6422-2e82" type="selectionEntry" targetId="9ddd-69c8-644d-abc2"/>
-    <entryLink import="true" name="Amazon Totem Warriors" hidden="false" id="328b-cb23-f1f0-970f" type="selectionEntry" targetId="345f-b2a8-4641-038d"/>
+    <entryLink import="true" name="Amazon Cold One Outriders" hidden="false" id="1e7c-2077-3fc1-230b" type="selectionEntry" targetId="9e4d-c653-35ec-1d09"/>
+    <entryLink import="true" name="0-1 Amazon Serpent Priestess" hidden="false" id="12df-264c-6422-2e82" type="selectionEntry" targetId="9ddd-69c8-644d-abc2"/>
+    <entryLink import="true" name="Amazon Serpent Warriors (Totem Warriors)" hidden="false" id="328b-cb23-f1f0-970f" type="selectionEntry" targetId="345f-b2a8-4641-038d"/>
     <entryLink import="true" name="Anakonda&apos;s Amazons" hidden="false" id="5617-aee2-46f7-5480" type="selectionEntry" targetId="ebf9-c112-3cb4-1f02"/>
     <entryLink import="true" name="Torston Treehaka&apos;s Sea Axes" hidden="false" id="e305-d870-9bd9-fa28" type="selectionEntry" targetId="4fbd-f8c0-e2da-80f8">
       <modifierGroups>
@@ -9544,7 +9544,15 @@ no armour saves.</description>
       </constraints>
       <entryLinks>
         <entryLink id="c8cc-ec10-6a11-287e" name="Storm Daemon" hidden="false" collective="false" import="true" targetId="448a-cd0f-6ff5-cb0e" type="selectionEntry"/>
+        <entryLink import="true" name="Arcane Items (Relics of Lustria)" hidden="false" id="8d22-387f-b565-06a0" type="selectionEntryGroup" targetId="9bff-59ad-43df-a403"/>
       </entryLinks>
+      <modifiers>
+        <modifier type="append" value="Relics of Lustria" field="name" join="  + ">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="7d87-7436-5341-bbc0" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntryGroup>
     <selectionEntryGroup id="77a4-916d-8b96-b97a" name="Magic Weapons (Clan Eshin)" hidden="false" collective="false" import="true">
       <constraints>
@@ -9566,13 +9574,26 @@ no armour saves.</description>
         <entryLink id="e9e8-9595-bdee-6ba8" name="Dwarf-Slayer" hidden="false" collective="false" import="true" targetId="110e-be37-05d0-4804" type="selectionEntry"/>
         <entryLink id="3dc1-31ec-844b-514b" name="Languishers Sword" hidden="false" collective="false" import="true" targetId="57ab-30ea-e8a1-1386" type="selectionEntry"/>
         <entryLink id="23c9-b4c0-2092-c854" name="Blade of Nurglitch" hidden="false" collective="false" import="true" targetId="35d6-b422-3e9e-e2a5" type="selectionEntry"/>
+        <entryLink import="true" name="Magic Weapons (Relics of Lustria)" hidden="false" id="fd77-cc36-db42-1445" type="selectionEntryGroup" targetId="11e7-7d5d-b0fa-1f34"/>
       </entryLinks>
+      <modifiers>
+        <modifier type="append" value="Relics of Lustria" field="name" join="  + ">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="7d87-7436-5341-bbc0" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntryGroup>
     <selectionEntryGroup id="3aa2-a354-e221-9114" name="Magic Armour" hidden="false" collective="false" import="true">
       <modifiers>
         <modifier type="increment" field="33b5-9d10-ccd5-569a" value="1">
           <conditions>
             <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c5c1-60aa-745f-c9d3" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="Relics of Lustria" field="name" join="  + ">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="7d87-7436-5341-bbc0" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -9584,6 +9605,7 @@ no armour saves.</description>
         <entryLink id="55f8-4431-3a08-5022" name="Rust Armour" hidden="false" collective="false" import="true" targetId="85a2-511a-8f89-eb07" type="selectionEntry"/>
         <entryLink id="d2c1-33bf-752a-456e" name="Warpstone Armour " hidden="false" collective="false" import="true" targetId="c46a-2486-c070-f7f7" type="selectionEntry"/>
         <entryLink id="38a5-2773-e29f-d938" name="Cautious Shield" hidden="false" collective="false" import="true" targetId="bd51-738b-7ddb-c827" type="selectionEntry"/>
+        <entryLink import="true" name="Magic Armour (Relics of Lustria)" hidden="false" id="8255-b167-6001-e35f" type="selectionEntryGroup" targetId="d8b2-93bf-2e16-7896"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="e52c-c54c-35bc-9c8e" name="Magic Talismans" hidden="false" collective="false" import="true">
@@ -9597,7 +9619,15 @@ no armour saves.</description>
         <entryLink id="9dae-f7af-b091-138f" name="The Foul Pendant" hidden="false" collective="false" import="true" targetId="3be2-2334-720d-55a0" type="selectionEntry"/>
         <entryLink id="9735-4f87-b4d6-901d" name="Warpstone Amulet" hidden="false" collective="false" import="true" targetId="0f90-649b-02aa-68e6" type="selectionEntry"/>
         <entryLink id="3f0b-84b4-131a-ac06" name="Ring of Darkness" hidden="false" collective="false" import="true" targetId="701f-6399-c401-2354" type="selectionEntry"/>
+        <entryLink import="true" name="Magic Talismans (Relics of Lustria)" hidden="false" id="d507-375e-0927-9e83" type="selectionEntryGroup" targetId="dbf5-90ca-b928-d111"/>
       </entryLinks>
+      <modifiers>
+        <modifier type="append" value="Relics of Lustria" field="name" join="  + ">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="7d87-7436-5341-bbc0" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntryGroup>
     <selectionEntryGroup id="07e7-1605-444d-4069" name="Enchanted Items (Clan Eshin)" hidden="false" collective="false" import="true" collapsible="true">
       <constraints>
@@ -9610,7 +9640,15 @@ no armour saves.</description>
         <entryLink id="f4be-83a7-6198-00a0" name="Skavenbrew" hidden="false" collective="false" import="true" targetId="737c-bc28-3ad3-e9e3" type="selectionEntry"/>
         <entryLink id="8cf7-e641-5c51-6bf0" name="Bands of Power" hidden="false" collective="false" import="true" targetId="bf8a-6ccf-5aa3-64ab" type="selectionEntry"/>
         <entryLink id="58b5-cb67-1e21-2500" name="Warpstone Charm" hidden="false" collective="false" import="true" targetId="b031-1773-1c04-d5b1" type="selectionEntry"/>
+        <entryLink import="true" name="Enchanted Items (Relics of Lustria)" hidden="false" id="9641-075d-f6c9-095e" type="selectionEntryGroup" targetId="b77d-ca97-7903-6bc6"/>
       </entryLinks>
+      <modifiers>
+        <modifier type="append" value="Relics of Lustria" field="name" join="  + ">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="7d87-7436-5341-bbc0" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntryGroup>
     <selectionEntryGroup id="6100-dfd7-c6bd-f62c" name="Magic Banners" hidden="false" collective="false" import="true">
       <constraints>
@@ -9624,7 +9662,15 @@ no armour saves.</description>
         <entryLink id="e658-fcb5-7b16-3b95" name="Banner of the Four Black Winds" hidden="false" collective="false" import="true" targetId="42ce-8f3f-35c1-166a" type="selectionEntry"/>
         <entryLink id="a294-8709-61cd-d7ca" name="Banner of Burning Hatred" hidden="false" collective="false" import="true" targetId="717e-196d-ae76-938b" type="selectionEntry"/>
         <entryLink id="02b2-4e82-7d37-83df" name="Banner of the Swarm" hidden="false" collective="false" import="true" targetId="f29b-564e-bcfa-ff81" type="selectionEntry"/>
+        <entryLink import="true" name="Magic Banners (Relics of Lustria)" hidden="false" id="7233-dcab-510f-8fce" type="selectionEntryGroup" targetId="6747-35dd-32ed-961a"/>
       </entryLinks>
+      <modifiers>
+        <modifier type="append" value="Relics of Lustria" field="name" join="  + ">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="7d87-7436-5341-bbc0" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntryGroup>
     <selectionEntryGroup id="e4b1-5857-9d82-17de" name="Magic Weapons" hidden="false" collective="false" import="true">
       <constraints>
@@ -9645,7 +9691,15 @@ no armour saves.</description>
         <entryLink id="a36a-e34f-f7c6-3391" name="Dwarf-Slayer" hidden="false" collective="false" import="true" targetId="110e-be37-05d0-4804" type="selectionEntry"/>
         <entryLink id="9e43-4926-1673-5499" name="Languishers Sword" hidden="false" collective="false" import="true" targetId="57ab-30ea-e8a1-1386" type="selectionEntry"/>
         <entryLink id="541e-6d4e-1c4e-00f5" name="Blade of Nurglitch" hidden="false" collective="false" import="true" targetId="35d6-b422-3e9e-e2a5" type="selectionEntry"/>
+        <entryLink import="true" name="Magic Weapons (Relics of Lustria)" hidden="false" id="1bac-3271-abd0-ffca" type="selectionEntryGroup" targetId="11e7-7d5d-b0fa-1f34"/>
       </entryLinks>
+      <modifiers>
+        <modifier type="append" value="Relics of Lustria" field="name" join="  + ">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="7d87-7436-5341-bbc0" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntryGroup>
     <selectionEntryGroup id="dbce-3caf-2139-09ee" name="Enchanted Items" hidden="false" collective="false" import="true" collapsible="true">
       <constraints>
@@ -9657,7 +9711,15 @@ no armour saves.</description>
         <entryLink id="8e64-8f81-d792-ed19" name="Skavenbrew" hidden="false" collective="false" import="true" targetId="737c-bc28-3ad3-e9e3" type="selectionEntry"/>
         <entryLink id="a78c-45c8-6484-5543" name="Bands of Power" hidden="false" collective="false" import="true" targetId="bf8a-6ccf-5aa3-64ab" type="selectionEntry"/>
         <entryLink id="48a0-3d0e-595a-2785" name="Warpstone Charm" hidden="false" collective="false" import="true" targetId="b031-1773-1c04-d5b1" type="selectionEntry"/>
+        <entryLink import="true" name="Enchanted Items (Relics of Lustria)" hidden="false" id="b68f-07f4-1db5-8cfb" type="selectionEntryGroup" targetId="b77d-ca97-7903-6bc6"/>
       </entryLinks>
+      <modifiers>
+        <modifier type="append" value="Relics of Lustria" field="name" join="  + ">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="7d87-7436-5341-bbc0" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntryGroup>
     <selectionEntryGroup id="5317-e91e-bd46-d862" name="Arcane Items" hidden="false" collective="false" import="true">
       <modifiers>
@@ -9697,7 +9759,15 @@ no armour saves.</description>
         <entryLink id="427c-e4ad-9b22-50b5" name="Blade of Corruption" hidden="false" collective="false" import="true" targetId="98a6-7697-1dba-3f6d" type="selectionEntry"/>
         <entryLink id="893e-9f77-6469-9d62" name="Languishers Sword" hidden="false" collective="false" import="true" targetId="57ab-30ea-e8a1-1386" type="selectionEntry"/>
         <entryLink id="2bce-1c5c-0ffd-646f" name="Blade of Nurglitch" hidden="false" collective="false" import="true" targetId="35d6-b422-3e9e-e2a5" type="selectionEntry"/>
+        <entryLink import="true" name="Magic Weapons (Relics of Lustria)" hidden="false" id="6044-7241-c41b-931d" type="selectionEntryGroup" targetId="11e7-7d5d-b0fa-1f34"/>
       </entryLinks>
+      <modifiers>
+        <modifier type="append" value="Relics of Lustria" field="name" join="  + ">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="7d87-7436-5341-bbc0" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntryGroup>
     <selectionEntryGroup id="178c-0a4a-4edc-43df" name="Enchanted Items (Clan Pestilens)" hidden="false" collective="false" import="true" collapsible="true">
       <constraints>
@@ -9710,7 +9780,15 @@ no armour saves.</description>
         <entryLink id="5bc1-52e1-850e-4331" name="Liber Bubonicus" hidden="false" collective="false" import="true" targetId="dfde-a958-b396-5fb3" type="selectionEntry"/>
         <entryLink id="8917-08bd-e85b-a28e" name="Bands of Power" hidden="false" collective="false" import="true" targetId="bf8a-6ccf-5aa3-64ab" type="selectionEntry"/>
         <entryLink id="2c8a-eead-ec5f-7e83" name="Warpstone Charm" hidden="false" collective="false" import="true" targetId="b031-1773-1c04-d5b1" type="selectionEntry"/>
+        <entryLink import="true" name="Enchanted Items (Relics of Lustria)" hidden="false" id="c594-2fe5-7108-d6c5" type="selectionEntryGroup" targetId="b77d-ca97-7903-6bc6"/>
       </entryLinks>
+      <modifiers>
+        <modifier type="append" value="Relics of Lustria" field="name" join="  + ">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="7d87-7436-5341-bbc0" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntryGroup>
     <selectionEntryGroup id="37fc-6827-558c-6ade" name="Magic Weapons (Clan Moulder)" hidden="false" collective="false" import="true">
       <constraints>
@@ -9732,7 +9810,15 @@ no armour saves.</description>
         <entryLink id="1412-ede1-8f40-f5ea" name="Languishers Sword" hidden="false" collective="false" import="true" targetId="57ab-30ea-e8a1-1386" type="selectionEntry"/>
         <entryLink id="d7bf-8555-10e7-e748" name="Blade of Nurglitch" hidden="false" collective="false" import="true" targetId="35d6-b422-3e9e-e2a5" type="selectionEntry"/>
         <entryLink id="1488-0b85-a66a-1686" name="Things-Catcher" hidden="false" collective="false" import="true" targetId="dce8-e74a-bc8f-83a9" type="selectionEntry"/>
+        <entryLink import="true" name="Magic Weapons (Relics of Lustria)" hidden="false" id="cb44-4dfb-6d90-a5d9" type="selectionEntryGroup" targetId="11e7-7d5d-b0fa-1f34"/>
       </entryLinks>
+      <modifiers>
+        <modifier type="append" value="Relics of Lustria" field="name" join="  + ">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="7d87-7436-5341-bbc0" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntryGroup>
     <selectionEntryGroup id="c1a7-b413-07a6-d5fe" name="Magic Weapons (Clan Skryre)" hidden="false" collective="false" import="true">
       <constraints>
@@ -9754,7 +9840,15 @@ no armour saves.</description>
         <entryLink id="b2ce-3374-f515-3c9c" name="Languishers Sword" hidden="false" collective="false" import="true" targetId="57ab-30ea-e8a1-1386" type="selectionEntry"/>
         <entryLink id="858d-31ee-51e2-6f58" name="Death Globes" hidden="false" collective="false" import="true" targetId="1350-673e-49ca-df44" type="selectionEntry"/>
         <entryLink id="5d7e-703e-b690-9a5d" name="Blade of Nurglitch" hidden="false" collective="false" import="true" targetId="35d6-b422-3e9e-e2a5" type="selectionEntry"/>
+        <entryLink import="true" name="Magic Weapons (Relics of Lustria)" hidden="false" id="e868-474d-fb26-8755" type="selectionEntryGroup" targetId="11e7-7d5d-b0fa-1f34"/>
       </entryLinks>
+      <modifiers>
+        <modifier type="append" value="Relics of Lustria" field="name" join="  + ">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="7d87-7436-5341-bbc0" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntryGroup>
     <selectionEntryGroup id="a178-48ca-5c29-af2a" name="Lore of the Horned Rat" publicationId="f804-741f-2593-2dec" page="34" hidden="false" collective="false" import="true">
       <entryLinks>
@@ -9773,6 +9867,7 @@ no armour saves.</description>
       <entryLinks>
         <entryLink import="true" name="Arcane Items (Common)" hidden="false" id="0615-3f64-79ed-12f7" type="selectionEntryGroup" targetId="0d3f-389c-02b2-bb34"/>
         <entryLink import="true" name="Arcane Items" hidden="false" id="6b3b-5903-af11-0014" type="selectionEntryGroup" targetId="5317-e91e-bd46-d862"/>
+        <entryLink import="true" name="Arcane Items (Relics of Lustria)" hidden="false" id="600b-3020-6935-83a5" type="selectionEntryGroup" targetId="9bff-59ad-43df-a403"/>
       </entryLinks>
       <modifiers>
         <modifier type="increment" value="1" field="6643-1946-ce0f-35b8">
@@ -9789,6 +9884,11 @@ no armour saves.</description>
           <repeats>
             <repeat value="1" repeats="1" field="selections" scope="parent" childId="093e-504e-b5cf-5ca4" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </repeats>
+        </modifier>
+        <modifier type="append" value="Relics of Lustria" field="name" join="  + ">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="7d87-7436-5341-bbc0" shared="true" includeChildSelections="true"/>
+          </conditions>
         </modifier>
       </modifiers>
     </selectionEntryGroup>
