@@ -2258,9 +2258,9 @@ The Queen moves with the swiftness of a striking asp, and will always strikes fi
     <entryLink import="true" name="Leadbelchers" hidden="false" id="2b42-03d6-d683-ad51" type="selectionEntry" targetId="da30-4b49-acc3-21a7"/>
     <entryLink import="true" name="Maneaters" hidden="false" id="b96f-6ccf-aaf4-e756" type="selectionEntry" targetId="b360-ce9c-85d7-ff03"/>
     <entryLink import="true" name="Rhinox Riders" hidden="false" id="aee4-2367-4bc5-5415" type="selectionEntry" targetId="5e33-e510-ba45-933e"/>
-    <entryLink import="true" name="Amazon Cold One Riders" hidden="false" id="af2b-844f-0414-168f" type="selectionEntry" targetId="9e4d-c653-35ec-1d09"/>
-    <entryLink import="true" name="Amazon Serpent Priestess" hidden="false" id="b2c4-ef7e-34ef-7a82" type="selectionEntry" targetId="9ddd-69c8-644d-abc2"/>
-    <entryLink import="true" name="Amazon Totem Warriors" hidden="false" id="f633-79a2-1f2a-8dcc" type="selectionEntry" targetId="345f-b2a8-4641-038d"/>
+    <entryLink import="true" name="Amazon Cold One Outriders" hidden="false" id="af2b-844f-0414-168f" type="selectionEntry" targetId="9e4d-c653-35ec-1d09"/>
+    <entryLink import="true" name="0-1 Amazon Serpent Priestess" hidden="false" id="b2c4-ef7e-34ef-7a82" type="selectionEntry" targetId="9ddd-69c8-644d-abc2"/>
+    <entryLink import="true" name="Amazon Serpent Warriors (Totem Warriors)" hidden="false" id="f633-79a2-1f2a-8dcc" type="selectionEntry" targetId="345f-b2a8-4641-038d"/>
     <entryLink import="true" name="Anakonda&apos;s Amazons" hidden="false" id="ec62-1752-fff7-c326" type="selectionEntry" targetId="ebf9-c112-3cb4-1f02"/>
     <entryLink import="true" name="Torston Treehaka&apos;s Sea Axes" hidden="false" id="4878-57c5-e827-90a0" type="selectionEntry" targetId="4fbd-f8c0-e2da-80f8">
       <modifierGroups>
@@ -2963,13 +2963,26 @@ The Queen moves with the swiftness of a striking asp, and will always strikes fi
         <entryLink id="c066-6ca2-7a0d-803c" name="Flail of Skulls" hidden="false" collective="false" import="true" targetId="2bc6-48ca-9356-6561" type="selectionEntry"/>
         <entryLink id="49a3-4b66-fc5d-4a1b" name="Spear of Antarhak" hidden="false" collective="false" import="true" targetId="0983-d552-ce9b-7308" type="selectionEntry"/>
         <entryLink id="a235-a4b1-4c10-a5f1" name="Serpent Staff" hidden="false" collective="false" import="true" targetId="3f6a-153a-8c1b-e53b" type="selectionEntry"/>
+        <entryLink import="true" name="Magic Weapons (Relics of Lustria)" hidden="false" id="607e-7af1-93a0-db39" type="selectionEntryGroup" targetId="11e7-7d5d-b0fa-1f34"/>
       </entryLinks>
+      <modifiers>
+        <modifier type="append" value="Relics of Lustria" field="name" join="  + ">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="7d87-7436-5341-bbc0" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntryGroup>
     <selectionEntryGroup id="4080-991e-70af-33c5" name="Magic Armour" hidden="false" collective="false" import="true">
       <modifiers>
         <modifier type="increment" field="5f3e-4131-432c-74c1" value="1">
           <conditions>
             <condition field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="c5c1-60aa-745f-c9d3" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="Relics of Lustria" field="name" join="  + ">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="7d87-7436-5341-bbc0" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2981,6 +2994,7 @@ The Queen moves with the swiftness of a striking asp, and will always strikes fi
         <entryLink id="c98c-6095-3ff8-8be5" name="Scorpion Armour" hidden="false" collective="false" import="true" targetId="230c-d090-80d6-bb2c" type="selectionEntry"/>
         <entryLink id="363e-42b9-f509-8737" name="Enchanted Shield" hidden="false" collective="false" import="true" targetId="c5c1-60aa-745f-c9d3" type="selectionEntry"/>
         <entryLink id="72bb-1c5b-12b7-df17" name="Armour of the Ages" hidden="false" collective="false" import="true" targetId="dcfb-b0e7-2c45-18cf" type="selectionEntry"/>
+        <entryLink import="true" name="Magic Armour (Relics of Lustria)" hidden="false" id="d86d-abdc-a5db-0f56" type="selectionEntryGroup" targetId="d8b2-93bf-2e16-7896"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="03ae-d536-7464-8097" name="Magic Talismans" hidden="false" collective="false" import="true">
@@ -2993,13 +3007,26 @@ The Queen moves with the swiftness of a striking asp, and will always strikes fi
         <entryLink id="fcfc-37ba-c68b-150b" name="Crown of Kings" hidden="false" collective="false" import="true" targetId="dd5b-ca6e-bdff-24b9" type="selectionEntry"/>
         <entryLink id="c441-2e7c-67de-96b3" name="Collar of Shapesh" hidden="false" collective="false" import="true" targetId="0ae7-3dd4-bdf9-3b2a" type="selectionEntry"/>
         <entryLink id="c01f-91c9-cb34-2162" name="Golden Eye of Rah-Nutt" hidden="false" collective="false" import="true" targetId="24c8-6961-0ce2-c939" type="selectionEntry"/>
+        <entryLink import="true" name="Magic Talismans (Relics of Lustria)" hidden="false" id="2f61-6f10-ff65-d5e0" type="selectionEntryGroup" targetId="dbf5-90ca-b928-d111"/>
       </entryLinks>
+      <modifiers>
+        <modifier type="append" value="Relics of Lustria" field="name" join="  + ">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="7d87-7436-5341-bbc0" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntryGroup>
     <selectionEntryGroup id="0e6a-2df1-e29d-3de1" name="Enchanted Items" hidden="false" collective="false" import="true">
       <modifiers>
         <modifier type="increment" field="28aa-9a78-3af8-427f" value="1">
           <conditions>
             <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d3d7-06b7-64b2-6d70" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="Relics of Lustria" field="name" join="  + ">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="7d87-7436-5341-bbc0" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -3014,6 +3041,7 @@ The Queen moves with the swiftness of a striking asp, and will always strikes fi
         <entryLink id="e5ae-0e2c-7e46-7626" name="Cloak of the Dunes" hidden="false" collective="false" import="true" targetId="e4f6-712d-29f4-705c" type="selectionEntry"/>
         <entryLink id="c2a3-2316-8d14-29fd" name="Icon of Rulership" hidden="false" collective="false" import="true" targetId="d3d7-06b7-64b2-6d70" type="selectionEntry"/>
         <entryLink id="44bb-e82b-e91d-0578" name="Vambraces of the Sun" hidden="false" collective="false" import="true" targetId="f708-b8f1-b729-998c" type="selectionEntry"/>
+        <entryLink import="true" name="Enchanted Items (Relics of Lustria)" hidden="false" id="f778-ac1e-3753-1759" type="selectionEntryGroup" targetId="b77d-ca97-7903-6bc6"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="d2d2-c5fc-be18-d9a6" name="Magic Banners" hidden="false" collective="false" import="true">
@@ -3029,7 +3057,15 @@ The Queen moves with the swiftness of a striking asp, and will always strikes fi
         <entryLink id="9369-b765-861f-90e3" name="Icon of the Sacred Eye" hidden="false" collective="false" import="true" targetId="c7f4-7125-ab32-7b17" type="selectionEntry"/>
         <entryLink id="4a1d-307b-bd38-6aec" name="Mirage Standard" hidden="false" collective="false" import="true" targetId="7138-50d5-c3ee-f6d8" type="selectionEntry"/>
         <entryLink id="7eca-8c0f-55a3-c4d8" name="Icon of Rakaph" hidden="false" collective="false" import="true" targetId="9007-1a8a-7d3a-96c5" type="selectionEntry"/>
+        <entryLink import="true" name="Magic Banners (Relics of Lustria)" hidden="false" id="f2de-8b4b-e11e-2e02" type="selectionEntryGroup" targetId="6747-35dd-32ed-961a"/>
       </entryLinks>
+      <modifiers>
+        <modifier type="append" value="Relics of Lustria" field="name" join="  + ">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="7d87-7436-5341-bbc0" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntryGroup>
     <selectionEntryGroup name="Arcane Items (TK-AB + Common)" id="055d-708c-86b2-25c7" hidden="false">
       <constraints>
@@ -3038,6 +3074,7 @@ The Queen moves with the swiftness of a striking asp, and will always strikes fi
       <entryLinks>
         <entryLink import="true" name="Arcane Items" hidden="false" id="049d-f4fe-fe40-6fbc" type="selectionEntryGroup" targetId="0182-4c8b-d929-1f21"/>
         <entryLink import="true" name="Arcane Items (Common)" hidden="false" id="ad9a-184d-63d6-b158" type="selectionEntryGroup" targetId="0d3f-389c-02b2-bb34"/>
+        <entryLink import="true" name="Arcane Items (Relics of Lustria)" hidden="false" id="0198-8c2c-026c-0e50" type="selectionEntryGroup" targetId="9bff-59ad-43df-a403"/>
       </entryLinks>
       <modifiers>
         <modifier type="increment" value="1" field="3c8f-8fa1-2934-b32f">
@@ -3049,6 +3086,11 @@ The Queen moves with the swiftness of a striking asp, and will always strikes fi
           <repeats>
             <repeat value="1" repeats="1" field="selections" scope="parent" childId="989e-9d22-7fea-19b5" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </repeats>
+        </modifier>
+        <modifier type="append" value="Relics of Lustria" field="name" join="  + ">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="7d87-7436-5341-bbc0" shared="true" includeChildSelections="true"/>
+          </conditions>
         </modifier>
       </modifiers>
     </selectionEntryGroup>

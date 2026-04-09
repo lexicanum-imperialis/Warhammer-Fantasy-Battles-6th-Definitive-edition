@@ -11875,6 +11875,7 @@ No model in base contact may cast spells (including friendly models) or use Boun
         </entryLink>
         <entryLink id="54b3-692f-b951-a153" name="Banner Of Valour" hidden="false" collective="false" import="true" targetId="cab0-01da-cd90-05a0" type="selectionEntry"/>
         <entryLink id="496e-8c9a-70cb-b52c" name="Standard Of Arcane Warding" hidden="false" collective="false" import="true" targetId="d27a-0522-113b-8c7a" type="selectionEntry"/>
+        <entryLink import="true" name="Magic Banners (Relics of Lustria)" hidden="false" id="0b56-ba95-ccdd-8773" type="selectionEntryGroup" targetId="6747-35dd-32ed-961a"/>
       </entryLinks>
       <modifiers>
         <modifier type="set" value="false" field="hidden">
@@ -11886,6 +11887,11 @@ No model in base contact may cast spells (including friendly models) or use Boun
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="append" value="Relics of Lustria" field="name" join="  + ">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="7d87-7436-5341-bbc0" shared="true" includeChildSelections="true"/>
+          </conditions>
         </modifier>
       </modifiers>
     </selectionEntryGroup>
@@ -11945,7 +11951,15 @@ No model in base contact may cast spells (including friendly models) or use Boun
         </entryLink>
         <entryLink id="811d-88d6-9235-a6be" name="Banner Of Valour" hidden="false" collective="false" import="true" targetId="cab0-01da-cd90-05a0" type="selectionEntry"/>
         <entryLink id="4367-6fd0-61c0-0adb" name="Standard Of Arcane Warding" hidden="false" collective="false" import="true" targetId="d27a-0522-113b-8c7a" type="selectionEntry"/>
+        <entryLink import="true" name="Magic Banners (Relics of Lustria)" hidden="false" id="6c52-7ba9-3c4a-c149" type="selectionEntryGroup" targetId="6747-35dd-32ed-961a"/>
       </entryLinks>
+      <modifiers>
+        <modifier type="append" value="Relics of Lustria" field="name" join="  + ">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="7d87-7436-5341-bbc0" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntryGroup>
     <selectionEntryGroup id="e9a6-1d90-fba1-755e" name="Enchanted Items" hidden="false" collective="false" import="true">
       <constraints>
@@ -11975,7 +11989,15 @@ No model in base contact may cast spells (including friendly models) or use Boun
         <entryLink id="8d76-f860-84b8-0bec" name="The Silver Horn" hidden="false" collective="false" import="true" targetId="e054-4a66-6c9a-15ff" type="selectionEntry"/>
         <entryLink id="37de-31fe-06d8-0fa4" name="The Orb of Thunder" hidden="false" collective="false" import="true" targetId="f86a-9115-77e1-d29e" type="selectionEntry"/>
         <entryLink id="ffed-c4d1-5126-5f15" name="Aldred’s Casket of Sorcery" hidden="false" collective="false" import="true" targetId="2215-fd63-8438-8600" type="selectionEntry"/>
+        <entryLink import="true" name="Enchanted Items (Relics of Lustria)" hidden="false" id="ece4-acd8-798b-f0c4" type="selectionEntryGroup" targetId="b77d-ca97-7903-6bc6"/>
       </entryLinks>
+      <modifiers>
+        <modifier type="append" value="Relics of Lustria" field="name" join="  + ">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="7d87-7436-5341-bbc0" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntryGroup>
     <selectionEntryGroup id="c071-eb48-3009-9ec1" name="Magic Weapons" hidden="false" collective="false" import="true">
       <constraints>
@@ -12038,13 +12060,26 @@ No model in base contact may cast spells (including friendly models) or use Boun
         <entryLink id="dd3b-a0f2-aa83-885f" name="Dragon Bow" hidden="false" collective="false" import="true" targetId="e0c2-5b00-62e2-0ac4" type="selectionEntry"/>
         <entryLink id="6216-4762-bd32-0c49" name="Sword of Justice" hidden="false" collective="false" import="true" targetId="5d55-8714-bbda-ee95" type="selectionEntry"/>
         <entryLink id="9ba6-c57c-414b-6e7f" name="Wyrmslayer Sword " hidden="false" collective="false" import="true" targetId="6091-9738-3c6b-9ef7" type="selectionEntry"/>
+        <entryLink import="true" name="Magic Weapons (Relics of Lustria)" hidden="false" id="8cbd-548b-34fd-8b5d" type="selectionEntryGroup" targetId="11e7-7d5d-b0fa-1f34"/>
       </entryLinks>
+      <modifiers>
+        <modifier type="append" value="Relics of Lustria" field="name" join="  + ">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="7d87-7436-5341-bbc0" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntryGroup>
     <selectionEntryGroup id="4eac-745d-bb60-7cb6" name="Magic Armour" hidden="false" collective="false" import="true">
       <modifiers>
         <modifier type="increment" field="d7bf-bd0e-7dc0-097d" value="1">
           <conditions>
             <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c5c1-60aa-745f-c9d3" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="Relics of Lustria" field="name" join="  + ">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="7d87-7436-5341-bbc0" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -12088,6 +12123,7 @@ No model in base contact may cast spells (including friendly models) or use Boun
         </entryLink>
         <entryLink id="fd79-0e7c-0e82-24f5" name="Bronze Shield" hidden="false" collective="false" import="true" targetId="90a9-05d5-b096-1ea9" type="selectionEntry"/>
         <entryLink id="18a5-eb37-11a6-d6e1" name="Helm of the Skaven Slayer" hidden="false" collective="false" import="true" targetId="3b8b-d4a3-73f1-f88c" type="selectionEntry"/>
+        <entryLink import="true" name="Magic Armour (Relics of Lustria)" hidden="false" id="e1f8-1961-d664-9243" type="selectionEntryGroup" targetId="d8b2-93bf-2e16-7896"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="7faf-c609-0b44-9a28" name="Talismans" hidden="false" collective="false" import="true">
@@ -12144,7 +12180,15 @@ No model in base contact may cast spells (including friendly models) or use Boun
           </modifiers>
         </entryLink>
         <entryLink id="d09e-e46d-46ee-aa4a" name="The Crimson Amulet" hidden="false" collective="false" import="true" targetId="47b1-0270-1cc9-2f56" type="selectionEntry"/>
+        <entryLink import="true" name="Magic Talismans (Relics of Lustria)" hidden="false" id="6010-1428-98d3-a2c0" type="selectionEntryGroup" targetId="dbf5-90ca-b928-d111"/>
       </entryLinks>
+      <modifiers>
+        <modifier type="append" value="Relics of Lustria" field="name" join="  + ">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="7d87-7436-5341-bbc0" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntryGroup>
     <selectionEntryGroup id="4837-c50f-afe2-23e8" name="Arcane Items" hidden="false" collective="false" import="true">
       <modifiers>
@@ -12917,6 +12961,7 @@ No model in base contact may cast spells (including friendly models) or use Boun
         <entryLink import="true" name="Winter&apos;s Bite (Magic Weapon)" hidden="false" id="cef8-5b01-aab4-f89a" type="selectionEntry" targetId="9635-ef5a-52cb-be80"/>
         <entryLink import="true" name="Blitzbeil(Magic Weapon)" hidden="false" id="8808-6564-988c-6608" type="selectionEntry" targetId="7d50-d060-9715-77b2"/>
         <entryLink import="true" name="Storm Hammer (Magic Weapon)" hidden="false" id="b8bd-dc3a-1260-7d93" type="selectionEntry" targetId="8e83-853a-b85c-b6af"/>
+        <entryLink import="true" name="Magic Weapons (Relics of Lustria)" hidden="false" id="e8a9-5968-e1cb-0799" type="selectionEntryGroup" targetId="11e7-7d5d-b0fa-1f34"/>
       </entryLinks>
       <modifiers>
         <modifier type="set" value="false" field="hidden">
@@ -12928,6 +12973,11 @@ No model in base contact may cast spells (including friendly models) or use Boun
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="append" value="Relics of Lustria" field="name" join="  + ">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="7d87-7436-5341-bbc0" shared="true" includeChildSelections="true"/>
+          </conditions>
         </modifier>
       </modifiers>
     </selectionEntryGroup>
@@ -12948,6 +12998,11 @@ No model in base contact may cast spells (including friendly models) or use Boun
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="append" value="Relics of Lustria" field="name" join="  + ">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="7d87-7436-5341-bbc0" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1787-1a66-c140-c20e" type="max"/>
@@ -12955,6 +13010,7 @@ No model in base contact may cast spells (including friendly models) or use Boun
       <entryLinks>
         <entryLink import="true" name="Wolf Helm of the Teutogens (Magic Armour)" hidden="false" id="de6c-7bc4-6c68-d7b2" type="selectionEntry" targetId="e990-464e-9cbf-b4d3"/>
         <entryLink import="true" name="Armour of Skoll (Magic Armour)" hidden="false" id="6598-328e-ed93-ee02" type="selectionEntry" targetId="f195-a3d0-0b2c-ed5a"/>
+        <entryLink import="true" name="Magic Armour (Relics of Lustria)" hidden="false" id="3c93-15bd-c5d6-799c" type="selectionEntryGroup" targetId="d8b2-93bf-2e16-7896"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="573b-3e97-ed64-d1cb" name="Enchanted Items (CoU)" hidden="true" collective="false" import="true" publicationId="cc59-6466-b62e-cf5b" page="13">
@@ -12965,6 +13021,7 @@ No model in base contact may cast spells (including friendly models) or use Boun
         <entryLink import="true" name="Claw Totem (Enchanted Item)" hidden="false" id="b0ee-3e01-1ea9-e863" type="selectionEntry" targetId="3afc-39c9-d464-c5f1"/>
         <entryLink import="true" name="Bane of the Craven (Enchanted Item)" hidden="false" id="3f3f-2cb2-0b50-2f5d" type="selectionEntry" targetId="b201-c2cb-83dc-dcfa"/>
         <entryLink import="true" name="Pelt of Horros (Enchanted Item)" hidden="false" id="2cd3-aadb-34ff-bb99" type="selectionEntry" targetId="f787-f064-1be1-fc37"/>
+        <entryLink import="true" name="Enchanted Items (Relics of Lustria)" hidden="false" id="43b1-7fbd-78c6-e712" type="selectionEntryGroup" targetId="b77d-ca97-7903-6bc6"/>
       </entryLinks>
       <modifiers>
         <modifier type="set" value="false" field="hidden">
@@ -12977,6 +13034,11 @@ No model in base contact may cast spells (including friendly models) or use Boun
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="append" value="Relics of Lustria" field="name" join="  + ">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="7d87-7436-5341-bbc0" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
     </selectionEntryGroup>
     <selectionEntryGroup id="e588-f090-a02a-45d4" name="Magic Banners (CoU)" hidden="true" collective="false" import="true">
@@ -12987,6 +13049,7 @@ No model in base contact may cast spells (including friendly models) or use Boun
         <entryLink id="b7ea-72ef-06f5-afb3" name="Banner of the Warrior True (Magic Standard)" hidden="false" collective="false" import="true" targetId="23be-458d-a1f9-3587" type="selectionEntry"/>
         <entryLink id="944b-7ec0-846e-3911" name="Standard of the White Wolf (Magic Standard)" hidden="false" collective="false" import="true" targetId="2c8e-409a-c123-79dd" type="selectionEntry"/>
         <entryLink id="7b77-57e3-700b-4bbb" name="Banner of Middenheim (Magic Standard)" hidden="false" collective="false" import="true" targetId="5db1-4323-ac8e-d14b" type="selectionEntry"/>
+        <entryLink import="true" name="Magic Banners (Relics of Lustria)" hidden="false" id="7081-3f67-5ded-2582" type="selectionEntryGroup" targetId="6747-35dd-32ed-961a"/>
       </entryLinks>
       <modifiers>
         <modifier type="set" value="false" field="hidden">
@@ -12998,6 +13061,11 @@ No model in base contact may cast spells (including friendly models) or use Boun
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="append" value="Relics of Lustria" field="name" join="  + ">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="7d87-7436-5341-bbc0" shared="true" includeChildSelections="true"/>
+          </conditions>
         </modifier>
       </modifiers>
     </selectionEntryGroup>
@@ -13017,6 +13085,7 @@ No model in base contact may cast spells (including friendly models) or use Boun
           </modifiers>
         </entryLink>
         <entryLink id="b318-27a3-7970-170b" name="Heart of Middenheim (Talisman)" hidden="false" collective="false" import="true" targetId="56d6-a90d-53aa-5909" type="selectionEntry"/>
+        <entryLink import="true" name="Magic Talismans (Relics of Lustria)" hidden="false" id="7177-a3e6-46f8-ce3d" type="selectionEntryGroup" targetId="dbf5-90ca-b928-d111"/>
       </entryLinks>
       <modifiers>
         <modifier type="set" value="false" field="hidden">
@@ -13029,6 +13098,11 @@ No model in base contact may cast spells (including friendly models) or use Boun
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="append" value="Relics of Lustria" field="name" join="  + ">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="7d87-7436-5341-bbc0" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
     </selectionEntryGroup>
     <selectionEntryGroup name="Arcane Items (XX + Common)" id="5e97-d20f-aa0f-4147" hidden="false">
@@ -13037,6 +13111,7 @@ No model in base contact may cast spells (including friendly models) or use Boun
       </constraints>
       <entryLinks>
         <entryLink import="true" name="Arcane Items (Common)" hidden="false" id="996e-aaeb-af74-96ff" type="selectionEntryGroup" targetId="0d3f-389c-02b2-bb34"/>
+        <entryLink import="true" name="Arcane Items (Relics of Lustria)" hidden="false" id="01bc-779e-c246-ef0f" type="selectionEntryGroup" targetId="9bff-59ad-43df-a403"/>
       </entryLinks>
       <modifiers>
         <modifier type="increment" value="1" field="7e05-ce96-021c-4f17">
@@ -13048,6 +13123,11 @@ No model in base contact may cast spells (including friendly models) or use Boun
           <repeats>
             <repeat value="1" repeats="1" field="selections" scope="parent" childId="989e-9d22-7fea-19b5" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </repeats>
+        </modifier>
+        <modifier type="append" value="Relics of Lustria" field="name" join="  + ">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="7d87-7436-5341-bbc0" shared="true" includeChildSelections="true"/>
+          </conditions>
         </modifier>
       </modifiers>
     </selectionEntryGroup>
@@ -15881,9 +15961,9 @@ Wearer is immune to spells of the Lore of Light.</characteristic>
     <entryLink import="true" name="Leadbelchers" hidden="false" id="9b3b-6628-d789-d136" type="selectionEntry" targetId="da30-4b49-acc3-21a7"/>
     <entryLink import="true" name="Maneaters" hidden="false" id="e2df-fc3c-0285-87b9" type="selectionEntry" targetId="b360-ce9c-85d7-ff03"/>
     <entryLink import="true" name="Rhinox Riders" hidden="false" id="fcdb-ef5a-7bc5-2a44" type="selectionEntry" targetId="5e33-e510-ba45-933e"/>
-    <entryLink import="true" name="Amazon Cold One Riders" hidden="false" id="81ab-8f9a-8d90-0b23" type="selectionEntry" targetId="9e4d-c653-35ec-1d09"/>
-    <entryLink import="true" name="Amazon Serpent Priestess" hidden="false" id="d34a-f885-80f2-8317" type="selectionEntry" targetId="9ddd-69c8-644d-abc2"/>
-    <entryLink import="true" name="Amazon Totem Warriors" hidden="false" id="6bc9-2837-03d2-fd2f" type="selectionEntry" targetId="345f-b2a8-4641-038d"/>
+    <entryLink import="true" name="Amazon Cold One Outriders" hidden="false" id="81ab-8f9a-8d90-0b23" type="selectionEntry" targetId="9e4d-c653-35ec-1d09"/>
+    <entryLink import="true" name="0-1 Amazon Serpent Priestess" hidden="false" id="d34a-f885-80f2-8317" type="selectionEntry" targetId="9ddd-69c8-644d-abc2"/>
+    <entryLink import="true" name="Amazon Serpent Warriors (Totem Warriors)" hidden="false" id="6bc9-2837-03d2-fd2f" type="selectionEntry" targetId="345f-b2a8-4641-038d"/>
     <entryLink import="true" name="Anakonda&apos;s Amazons" hidden="false" id="301a-d2b2-fc59-2e27" type="selectionEntry" targetId="ebf9-c112-3cb4-1f02"/>
     <entryLink import="true" name="Torston Treehaka&apos;s Sea Axes" hidden="false" id="679c-4f22-95a5-d517" type="selectionEntry" targetId="4fbd-f8c0-e2da-80f8">
       <modifierGroups>
