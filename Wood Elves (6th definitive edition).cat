@@ -2351,10 +2351,10 @@ The first time Orion declares a charge, he sounds the Horn of the Wild Hunt. All
     <entryLink import="true" name="Leadbelchers" hidden="false" id="5ea1-4cae-a1f2-b3e4" type="selectionEntry" targetId="da30-4b49-acc3-21a7"/>
     <entryLink import="true" name="Maneaters" hidden="false" id="62b1-ca36-b0b8-7984" type="selectionEntry" targetId="b360-ce9c-85d7-ff03"/>
     <entryLink import="true" name="Rhinox Riders" hidden="false" id="aefc-86f7-6c9a-ac7d" type="selectionEntry" targetId="5e33-e510-ba45-933e"/>
-    <entryLink import="true" name="Amazon Totem Warriors" hidden="false" id="5324-6296-f788-40aa" type="selectionEntry" targetId="345f-b2a8-4641-038d"/>
+    <entryLink import="true" name="Amazon Serpent Warriors (Totem Warriors)" hidden="false" id="5324-6296-f788-40aa" type="selectionEntry" targetId="345f-b2a8-4641-038d"/>
     <entryLink import="true" name="Anakonda&apos;s Amazons" hidden="false" id="5658-4133-ac9f-577e" type="selectionEntry" targetId="ebf9-c112-3cb4-1f02"/>
-    <entryLink import="true" name="Amazon Cold One Riders" hidden="false" id="4c8f-9a20-6038-a5b4" type="selectionEntry" targetId="9e4d-c653-35ec-1d09"/>
-    <entryLink import="true" name="Amazon Serpent Priestess" hidden="false" id="b0a7-56d7-40a5-6df7" type="selectionEntry" targetId="9ddd-69c8-644d-abc2"/>
+    <entryLink import="true" name="Amazon Cold One Outriders" hidden="false" id="4c8f-9a20-6038-a5b4" type="selectionEntry" targetId="9e4d-c653-35ec-1d09"/>
+    <entryLink import="true" name="0-1 Amazon Serpent Priestess" hidden="false" id="b0a7-56d7-40a5-6df7" type="selectionEntry" targetId="9ddd-69c8-644d-abc2"/>
     <entryLink import="true" name="Marco Colombo" hidden="false" id="07d7-fde3-c9a8-6ac0" type="selectionEntry" targetId="f51e-2e40-a1a6-10aa"/>
     <entryLink import="true" name="Truthsayer" hidden="false" id="5fe6-8db8-aab1-d7b2" type="selectionEntry" targetId="4e84-1f82-dc21-18cc"/>
     <entryLink import="true" name="Johann van Hal &amp; Wilhelm Hasburg" hidden="false" id="8839-d045-12f6-975a" type="selectionEntry" targetId="0ee0-a38a-2ece-4e14"/>
@@ -3340,13 +3340,26 @@ The first time Orion declares a charge, he sounds the Horn of the Wild Hunt. All
         </entryLink>
         <entryLink id="b787-f0f1-17f9-4c0f" name="Rageth’s Wildfire Blades" hidden="false" collective="false" import="true" targetId="08b0-9e28-f1b8-1f33" type="selectionEntry"/>
         <entryLink id="3afd-ab3d-67d6-9599" name="Asyendi’s Bane" hidden="false" collective="false" import="true" targetId="e5d0-1a2f-5ae7-87b2" type="selectionEntry"/>
+        <entryLink import="true" name="Magic Weapons (Relics of Lustria)" hidden="false" id="5e52-d5b4-54a5-c734" type="selectionEntryGroup" targetId="11e7-7d5d-b0fa-1f34"/>
       </entryLinks>
+      <modifiers>
+        <modifier type="append" value="Relics of Lustria" field="name" join="  + ">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="7d87-7436-5341-bbc0" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntryGroup>
     <selectionEntryGroup id="2f4c-c766-7fd2-e7e6" name="Magic Armour" hidden="false" collective="false" import="true" collapsible="true">
       <modifiers>
         <modifier type="increment" field="73ed-a110-14e0-0550" value="1">
           <conditions>
             <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c5c1-60aa-745f-c9d3" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="Relics of Lustria" field="name" join="  + ">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="7d87-7436-5341-bbc0" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -3360,6 +3373,7 @@ The first time Orion declares a charge, he sounds the Horn of the Wild Hunt. All
         <entryLink id="10d2-a6d1-6869-1922" name="Armour of the Fey" hidden="false" collective="false" import="true" targetId="c8b3-5d76-2392-2179" type="selectionEntry"/>
         <entryLink id="2b40-f013-de03-a429" name="The Helm of the Hunt" hidden="false" collective="false" import="true" targetId="a313-2819-af74-219b" type="selectionEntry"/>
         <entryLink id="4491-e86d-3475-df8d" name="Briarsheath" hidden="false" collective="false" import="true" targetId="d9be-7de5-5642-37a3" type="selectionEntry"/>
+        <entryLink import="true" name="Magic Armour (Relics of Lustria)" hidden="false" id="b770-5c86-e1d1-03b0" type="selectionEntryGroup" targetId="d8b2-93bf-2e16-7896"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="a664-c8f8-1595-c50a" name="Magic Talismans" hidden="false" collective="false" import="true" collapsible="true">
@@ -3376,7 +3390,15 @@ The first time Orion declares a charge, he sounds the Horn of the Wild Hunt. All
         <entryLink id="87b3-2d3e-d6d2-3093" name="The Stone of Rebirth" hidden="false" collective="false" import="true" targetId="2b53-c47f-9302-cab0" type="selectionEntry"/>
         <entryLink id="0fe9-4ca7-94cb-03d6" name="The Fimbulwinter Shard" hidden="false" collective="false" import="true" targetId="5bcc-69a8-74da-eed6" type="selectionEntry"/>
         <entryLink id="8c33-87d5-0a64-1872" name="Merciw’s Locus" hidden="false" collective="false" import="true" targetId="cdf1-2e4f-9e25-a3de" type="selectionEntry"/>
+        <entryLink import="true" name="Magic Talismans (Relics of Lustria)" hidden="false" id="bbd9-5f9d-195e-0e03" type="selectionEntryGroup" targetId="dbf5-90ca-b928-d111"/>
       </entryLinks>
+      <modifiers>
+        <modifier type="append" value="Relics of Lustria" field="name" join="  + ">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="7d87-7436-5341-bbc0" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntryGroup>
     <selectionEntryGroup id="0cdd-7730-57c2-09cf" name="Magic Banners" hidden="false" collective="false" import="true" collapsible="true">
       <constraints>
@@ -3389,7 +3411,15 @@ The first time Orion declares a charge, he sounds the Horn of the Wild Hunt. All
         <entryLink id="3ce4-884e-1e0c-b69c" name="Faoghir – the Banner of Dwindling" hidden="false" collective="false" import="true" targetId="8c50-2625-65aa-3581" type="selectionEntry"/>
         <entryLink id="3303-37c0-a490-309d" name="Saemrath – the Banner of the Zenith" hidden="false" collective="false" import="true" targetId="3abc-2563-63d2-6a84" type="selectionEntry"/>
         <entryLink id="381c-ff97-c9bf-b77d" name="Aech - the Banner of Springtide" hidden="false" collective="false" import="true" targetId="0945-c88d-16cc-ee5e" type="selectionEntry"/>
+        <entryLink import="true" name="Magic Banners (Relics of Lustria)" hidden="false" id="cb8c-c05c-36f9-b130" type="selectionEntryGroup" targetId="6747-35dd-32ed-961a"/>
       </entryLinks>
+      <modifiers>
+        <modifier type="append" value="Relics of Lustria" field="name" join="  + ">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="7d87-7436-5341-bbc0" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntryGroup>
     <selectionEntryGroup id="580f-1d21-16a7-c3f4" name="Enchanted Items" hidden="false" collective="false" import="true" collapsible="true">
       <constraints>
@@ -3406,7 +3436,15 @@ The first time Orion declares a charge, he sounds the Horn of the Wild Hunt. All
         <entryLink id="0f3f-196d-f3a1-ec2b" name="Elynett’s Brooch" hidden="false" collective="false" import="true" targetId="7868-9593-0e3b-1561" type="selectionEntry"/>
         <entryLink id="a58f-c88c-739b-fe54" name="Dragontooth Arrows" hidden="false" collective="false" import="true" targetId="665d-4f7f-3f6e-0772" type="selectionEntry"/>
         <entryLink id="668a-77bb-abd1-6f46" name="Gwytherc’s Horn" hidden="false" collective="false" import="true" targetId="0215-2ac1-7cdd-b790" type="selectionEntry"/>
+        <entryLink import="true" name="Enchanted Items (Relics of Lustria)" hidden="false" id="2efd-8a29-e043-9ca4" type="selectionEntryGroup" targetId="b77d-ca97-7903-6bc6"/>
       </entryLinks>
+      <modifiers>
+        <modifier type="append" value="Relics of Lustria" field="name" join="  + ">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="7d87-7436-5341-bbc0" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntryGroup>
     <selectionEntryGroup id="9141-e557-c558-91a9" name="Spites" hidden="false" collective="false" import="true" collapsible="true">
       <constraints>
@@ -3495,7 +3533,15 @@ The first time Orion declares a charge, he sounds the Horn of the Wild Hunt. All
         <entryLink id="d0cc-5c1f-81b4-e578" name="Gaemrath – the Banner of Midwinter" hidden="false" collective="false" import="true" targetId="28ae-2768-d06b-a624" type="selectionEntry"/>
         <entryLink id="973a-b6d1-73c9-500d" name="Saemrath – the Banner of the Zenith" hidden="false" collective="false" import="true" targetId="3abc-2563-63d2-6a84" type="selectionEntry"/>
         <entryLink id="a8db-4c43-48e2-1508" name="Aech - the Banner of Springtide" hidden="false" collective="false" import="true" targetId="0945-c88d-16cc-ee5e" type="selectionEntry"/>
+        <entryLink import="true" name="Magic Banners (Relics of Lustria)" hidden="false" id="ed32-4110-a877-fd94" type="selectionEntryGroup" targetId="6747-35dd-32ed-961a"/>
       </entryLinks>
+      <modifiers>
+        <modifier type="append" value="Relics of Lustria" field="name" join="  + ">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="7d87-7436-5341-bbc0" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntryGroup>
     <selectionEntryGroup id="4cc8-e25f-5392-6a11" name="Mounts" hidden="false" collective="false" import="true">
       <entryLinks>
@@ -3517,6 +3563,7 @@ The first time Orion declares a charge, he sounds the Horn of the Wild Hunt. All
       <entryLinks>
         <entryLink import="true" name="Arcane Items" hidden="false" id="07ed-b5e7-7953-40ff" type="selectionEntryGroup" targetId="052f-5a92-5e7c-307a"/>
         <entryLink import="true" name="Arcane Items (Common)" hidden="false" id="f49e-85ad-9c21-158f" type="selectionEntryGroup" targetId="0d3f-389c-02b2-bb34"/>
+        <entryLink import="true" name="Arcane Items (Relics of Lustria)" hidden="false" id="d41c-56e2-2f6d-18c1" type="selectionEntryGroup" targetId="9bff-59ad-43df-a403"/>
       </entryLinks>
       <modifiers>
         <modifier type="increment" value="1" field="1949-63dc-4b89-2c54">
@@ -3528,6 +3575,11 @@ The first time Orion declares a charge, he sounds the Horn of the Wild Hunt. All
           <repeats>
             <repeat value="1" repeats="1" field="selections" scope="parent" childId="989e-9d22-7fea-19b5" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </repeats>
+        </modifier>
+        <modifier type="append" value="Relics of Lustria" field="name" join="  + ">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="7d87-7436-5341-bbc0" shared="true" includeChildSelections="true"/>
+          </conditions>
         </modifier>
       </modifiers>
     </selectionEntryGroup>
