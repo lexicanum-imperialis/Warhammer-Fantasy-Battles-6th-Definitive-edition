@@ -142,14 +142,15 @@
             <constraint field="ecfa-8486-4f6c-c249" scope="parent" value="50" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5b1d-972f-bd80-2cfb" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="5ff7-758e-092c-dc93" name="Magic Armour (Common)" hidden="false" collective="false" import="true" targetId="9ec4-7d00-6bb0-6b68" type="selectionEntryGroup"/>
+            <entryLink id="5ff7-758e-092c-dc93" name="Enchanted Items (Relics of Lustria)" hidden="false" collective="false" import="true" targetId="b77d-ca97-7903-6bc6" type="selectionEntryGroup"/>
             <entryLink id="4fbd-d109-7e5a-31fe" name="Magic Weapons (Common)" hidden="false" collective="false" import="true" targetId="419c-63bf-e887-06c7" type="selectionEntryGroup"/>
             <entryLink id="c260-e11a-52e0-b8d1" name="Magic Talismans (Common)" hidden="false" collective="false" import="true" targetId="b59d-d5be-988b-d10f" type="selectionEntryGroup"/>
             <entryLink import="true" name="Potion of Pavona [DOGS OF WAR]" hidden="false" id="8215-1985-3c99-55b5" type="selectionEntry" targetId="cf056eb4-904d-48f0-a67c-1a7f53e27b64"/>
             <entryLink import="true" name="Lucrezzia&apos;s Kiss [DOGS OF WAR]" hidden="false" id="eccd-fe3a-c4ed-cf6f" type="selectionEntry" targetId="ed4a50ea-a688-403f-a9d2-3ce4486a5ad7"/>
             <entryLink import="true" name="Magic Armour (Relics of Lustria)" hidden="false" id="e0c7-9c4a-931c-9c09" type="selectionEntryGroup" targetId="d8b2-93bf-2e16-7896"/>
-            <entryLink import="true" name="Magic Banners (Relics of Lustria)" hidden="false" id="1401-10ed-2963-cd56" type="selectionEntryGroup" targetId="6747-35dd-32ed-961a"/>
             <entryLink import="true" name="Magic Weapons (Relics of Lustria)" hidden="false" id="12ba-222a-7580-b716" type="selectionEntryGroup" targetId="11e7-7d5d-b0fa-1f34"/>
+            <entryLink id="7772-6a08-c1c1-933f" name="Magic Talismans (Relics of Lustria)" hidden="false" collective="false" import="true" targetId="dbf5-90ca-b928-d111" type="selectionEntryGroup"/>
+            <entryLink id="521d-a52c-f309-2639" name="Magic Armour (Common)" hidden="false" collective="false" import="true" targetId="9ec4-7d00-6bb0-6b68" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
@@ -3038,6 +3039,9 @@ We have tested them in the Prologue tournament and we think they are balanced as
         </modifier>
       </modifiers>
       <comment>HOUSE RULE</comment>
+      <entryLinks>
+        <entryLink import="true" name="General" hidden="false" id="9b24-950a-d637-686c" type="selectionEntry" targetId="1b7c-2c90-6d96-28c9"/>
+      </entryLinks>
     </selectionEntry>
   </selectionEntries>
   <entryLinks>
@@ -3402,6 +3406,26 @@ We have tested them in the Prologue tournament and we think they are balanced as
     <entryLink import="true" name="0-1 Amazon Serpent Priestess" hidden="false" id="8290-4cf4-81f7-f1ff" type="selectionEntry" targetId="9ddd-69c8-644d-abc2">
       <modifierGroups>
         <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set-primary" value="d024-d25b-a9b4-73b6" field="category"/>
+          </modifiers>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="5318-2e71-89f6-5a7c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="3" field="selections" scope="force" childId="892e-1d2b-85e9-47f5" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="7d87-7436-5341-bbc0" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifierGroup>
+        <modifierGroup type="and">
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="force" childId="5318-2e71-89f6-5a7c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
@@ -3410,6 +3434,17 @@ We have tested them in the Prologue tournament and we think they are balanced as
           </modifiers>
         </modifierGroup>
       </modifierGroups>
+      <entryLinks>
+        <entryLink import="true" name="General" hidden="true" id="c897-7072-473f-9b66" type="selectionEntry" targetId="1b7c-2c90-6d96-28c9">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="e2c6-72d9-a389-e118" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
     </entryLink>
     <entryLink import="true" name="Amazon Serpent Warriors (Totem Warriors)" hidden="false" id="069e-8e6b-7f26-186a" type="selectionEntry" targetId="345f-b2a8-4641-038d">
       <modifierGroups>
@@ -3826,7 +3861,7 @@ We have tested them in the Prologue tournament and we think they are balanced as
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
-    <selectionEntryGroup id="b5c7-4bd0-8497-7c99" name="Arcane Items (Common)" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="b5c7-4bd0-8497-7c99" name="Arcane Items (Common)" hidden="false" collective="false" import="true" collapsible="true">
       <modifiers>
         <modifier type="increment" field="3fac-dfda-40c1-2ec7" value="1">
           <repeats>
@@ -3856,7 +3891,7 @@ We have tested them in the Prologue tournament and we think they are balanced as
         <entryLink id="ca5c-7b3c-f50f-6534" name="Staff of Sorcery" hidden="false" collective="false" import="true" targetId="b22a-6be5-d4f9-7776" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="9ec4-7d00-6bb0-6b68" name="Magic Armour (Common)" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="9ec4-7d00-6bb0-6b68" name="Magic Armour (Common)" hidden="false" collective="false" import="true" collapsible="true">
       <constraints>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9fa7-bd08-f663-3403" type="max"/>
       </constraints>
@@ -3864,7 +3899,7 @@ We have tested them in the Prologue tournament and we think they are balanced as
         <entryLink id="a56f-916e-fc76-2fe4" name="Enchanted Shield" hidden="false" collective="false" import="true" targetId="c5c1-60aa-745f-c9d3" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="419c-63bf-e887-06c7" name="Magic Weapons (Common)" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="419c-63bf-e887-06c7" name="Magic Weapons (Common)" hidden="false" collective="false" import="true" collapsible="true">
       <constraints>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d021-e36f-2165-b285" type="max"/>
       </constraints>
@@ -3875,7 +3910,7 @@ We have tested them in the Prologue tournament and we think they are balanced as
         <entryLink id="d509-00ac-c295-19f2" name="Biting Blade" hidden="false" collective="false" import="true" targetId="74fc-c90b-250e-6b87" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="a35a-56fa-5680-eaad" name="Magic Banners (Common)" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="a35a-56fa-5680-eaad" name="Magic Banners (Common)" hidden="false" collective="false" import="true" collapsible="true">
       <constraints>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c34f-4e0f-f973-ebaf" type="max"/>
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="0ee4-71cf-7194-b202" includeChildSelections="true"/>
@@ -3884,7 +3919,7 @@ We have tested them in the Prologue tournament and we think they are balanced as
         <entryLink id="e4f7-1b30-90fe-27b9" name="War Banner" hidden="false" collective="false" import="true" targetId="f327-567f-ef99-0403" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="b59d-d5be-988b-d10f" name="Magic Talismans (Common)" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="b59d-d5be-988b-d10f" name="Magic Talismans (Common)" hidden="false" collective="false" import="true" collapsible="true">
       <constraints>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="454e-722b-42e5-163e" type="max"/>
       </constraints>
