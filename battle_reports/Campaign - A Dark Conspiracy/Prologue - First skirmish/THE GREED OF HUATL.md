@@ -46,6 +46,8 @@
     * **Poison Rule:** 6 darts needing 6+ to hit -> Rolls: 2, 5, 6, 3, 4, 1 -> 1 auto-wound.
     * **Armour Save:** Base 2+ -> Roll: 3 -> Saved.
 
+![Turn 1](https://blogger.googleusercontent.com/img/a/AVvXsEg4Y3jsUbbaRfltZ5GffaZ7gQ2htbaRMR1NKOtuW-R8mIPgjw6SI69xtmQI2Y-Y1_VT50aiVUSWE2LagiP4hi5XhNvsmwyrJX0v41bltK7TnTjCyEZutPd7qBy1MsFeH-0ZeNBHVXNVz0CJn-OvGL_qHDkhGPblU1jwXhOVxyLdPMrbPrWgMi8IwUkhGjc)
+
 ---
 
 ## TURN 2: Rainforest of Arrows
@@ -73,21 +75,23 @@
     * **To Wound:** S3 vs T4 = Needing 5+ -> Rolls: 6, 2, 1 -> 1 wound. 
     * **Armour Save:** Saurus Base 4+ (Unmodified by S3) -> Roll: Pass -> 0 wounds suffered.
 
-| Combat Resolution Factor  | Bretonnian Vanguard | Lizardmen Bronze Shields |
-| :---                      | :---                | :---                     |
-| **Wounds Inflicted**      | +3                  | 0                        |
-| **Rank Bonus**            | +1                  | +3                       |
-| **Standard Bearer**       | +1                  | +1                       |
-| **Battle Standard Bearer**| 0                   | +1                       |
-| **Outnumbering**          | 0                   | +1                       |
-| **Overkill**              | 0                   | +1                       |
-| **TOTAL SCORE**           | 5                   | **7**                    |
+| Combat Resolution Factor   | Bretonnian Vanguard | Lizardmen Bronze Shields |
+| :---                       | :---                | :---                     |
+| **Wounds Inflicted**       | +3                  | 0                        |
+| **Rank Bonus**             | +1                  | +3                       |
+| **Standard Bearer**        | +1                  | +1                       |
+| **Battle Standard Bearer** | 0                   | +1                       |
+| **Outnumbering**           | 0                   | +1                       |
+| **Overkill**               | 0                   | +1                       |
+| **TOTAL SCORE**            | 5                   | **7**                    |
 
 * **Break Test:** Bretonnians test at -2 Ld -> Roll 10 (Fail) -> Re-roll from BSB: Roll 4 -> Hold.
 * *Bowmen of Bordeleaux* shoot at *Northern Jaw*. 
     * **To Hit:** BS3 (4+) + **Short Range** + **Soft Cover** (-1) + **Skirmishers** (-1) = Needing 6+ -> 6 shots: 1, 2, 1, 1, 5, 6 -> 1 hit. 
     * **To Wound:** S3 vs T2 = Needing 3+ -> 1 wound -> Skink dies.
 * **Securing the Loot:** 3 markers generate 3x25 VPs.
+
+![Turn 2 (mid)](https://blogger.googleusercontent.com/img/a/AVvXsEg-FGe8ulc-Y8YpB7xTvHjPziVwI33g9sg0vgQEdxI95Lc055YW4u8l7itLj5q2x6Cw3mWekeKeQSbjoLHgw5mJtCn4IG4SXQD4nJNrPFPPsFZ769xlCq4TqL0Szz2M9oC92iFbTCD_oTaA4ARq6i-Ib07eOf7i_axf_mq7banuyLPbw5nmqlc07jhHhUU)
 
 ### Lizardmen
 * *Eastern Jaw* passes **Cold-Blooded Leadership** test -> 3D6: 1, 2, 6 (Result 3) < Ld 5 -> Rallies.
@@ -136,6 +140,8 @@
 
 * **Break Test:** Knights test with -7 penalty -> Roll 11 -> Re-roll with BSB: Roll 12 -> Unit **Flees**.
 
+![Turn 2 (end)](https://blogger.googleusercontent.com/img/a/AVvXsEgYR1rlrKV1HVGgeH1k3uB2eer8zzvTU7_XUfLITbS0oPHK50lsFcpAGGLWId-egdDtMr4v9G5jtyUh87Gsm3qN8I0B15wybiWsfl69jZIYFypVLOjClYxwep2ObkDLUZaBNUELjKOlz7h5p20MIAWzQkh0L_0lXfb1XRPP8mkhvNfNo3D3wP2NO5Tv87s)
+
 ---
 
 ## TURN 3: The Heavens Fall
@@ -154,6 +160,8 @@
 * *Hunters* move into the forest to **March Block** the Saurus. 
 * Bretonnians successfully **Dispel** the building Comet (Roll 11).
 * **Securing the Loot:** 2 markers generate 2x25 VPs.
+
+![Turn 3 (mid)](https://blogger.googleusercontent.com/img/a/AVvXsEhbluQrh7PdEedi2sBZGcU3Q_-axNJfNIRn3MDa088sniv8WU5-gvWFkBcvU5x5Ddwo7bxYkXDKA3V-MWpmW8zsmtSzv8AB8pgEe3rJFKXrYwbGo28mlnQcW2sBy6qgMl6EnsrI7SDPmx223x_qwSO8XN6U_1MWRqVYeodrpB3Bv8EbZC4mC3QXiOYDdtY)
 
 ### Lizardmen
 * Xiin casts another *Comet of Casandora* with 4 dice -> Rolls: 3, 3, 4, 3 (Result 13) -> Marker placed on *Bowmen of Bordeleaux*.
@@ -179,6 +187,8 @@
 | **TOTAL SCORE**          | **3**              | 0                     |
 
 * **Break Test:** Skinks test (Ld 5) = Roll 8 -> Re-roll with BSB: Fail -> **Flee** 9", *Hunters* **Pursue** 8".
+
+![Turn 3 (end)](https://blogger.googleusercontent.com/img/a/AVvXsEiPzOQkcSwyUg4YHzrvfDjeznMHh1pfzIhiyvHUtWdnOnqwLPCiFWDgKUIJOgbHc7bwHcXYaDc8FOwfnpnfPaUlLE4lZsO773lQq9JBWGe_mHUekX282FW_wUWDZfswX2a9lhClyKZ1vHs357U6CGQXMcfPyd0bzjUXECTMPDRSoNiQcgDbwYAUCMd9Avg)
 
 ---
 
@@ -214,6 +224,8 @@
 
 * *Hunters of Bordeleaux* and *The Duc* **March** to escape the board.
 
+![Turn 4 (mid)](https://blogger.googleusercontent.com/img/a/AVvXsEhAKlfl2-XbAL2mMLjV4lk2jwjEM3KOEYe6v9Pyz-dIpUflUr3wVDcy-IoRu6szZFI6mHj9JhFzQ7BjhpfgWcx__zIyBM_zPRxIRpvh-J9zvPCEOU8FHRx0jsxccAzBGxfyZVc1DYTs1metsLmEYuvw9oQph83gILm7P8ikJIhqYjNKLbDGwKVtYDBLxnE)
+
 ### Lizardmen
 * *Eastern Jaw* **Rallies**.
 * *Northern Jaw* shoots fleeing *Bowmen*. 
@@ -227,6 +239,8 @@
     * **To Hit:** WS4 vs WS5 = Needing 4+ -> Rolls: 6, 2 -> 1 hit. 
     * **To Wound:** S3 vs T4 = Needing 5+ -> Roll: 5 -> 1 wound. 
     * **Armour Save:** Quntael Base 4+ -> Fail -> Quntael dies. Saurus wipe out remaining Knights.
+
+![Turn 4 (end)](https://blogger.googleusercontent.com/img/a/AVvXsEgZ0A4Bxnm452B4V9fMdFJU-CIwU8OD0rgehoG_rO-KSbkYPR9ssVINId1vcuKqJlbe7MuoeV3JqU8EDfT7JN0XSRfmqCpeixeBUH8EmhmqdMDnp83J9A6j7em56GORiv0vKlaEbVRI3_gPZnnMhltuxqa2MVgvOzW8E5jhIcMVue3R_XrARc_38AwBsMA)
 
 ---
 
@@ -251,22 +265,22 @@ Game concludes.
 **Victory Conditions:** Standard 6th Edition Victory Points + Scenario Objectives
 
 ### Bretonnian Expedition (The Duc d'Lorrain)
-| Target / Objective            | Mechanical Condition                                                  | Victory Points (VP) |
-| :---                          | :---                                                                  | :---                |
-| *The Loot* (Scenario Markers) | **Scenario Objective** (Held 4 in Turn 1, 3 in Turn 2, 2 in Turn 3)   | 225                 |
-| *Scar-Veteran Quntael*        | **Slain Character** (Close Combat)                                    | 142                 |
-| *Western Jaw Skinks*          | **Destroyed Unit** (Run down in Close Combat)                         | 60                  |
-| *Eastern Jaw Skinks*          | **Below Half Strength** (Casualties from **Stand & Shoot** and Melee) | 30                  |
-| **BRETONNIAN TOTAL**          |                                                                       | **457**             |
+| Target / Objective            | Mechanical Condition                                                    | Victory Points (VP) |
+| :---                          | :---                                                                    | :---                |
+| *The Loot* (Scenario Markers) | **Scenario Objective** (Held 4 in Turn 1, 3 in Turn 2, 2 in Turn 3)     | 225                 |
+| *Scar-Veteran Quntael*        | **Slain Character** (Close Combat)                                      | 142                 |
+| *Western Jaw Skinks*          | **Destroyed Unit** (Run down in Close Combat)                           | 60                  |
+| *Eastern Jaw Skinks*          | **Below Half Strength** (Casualties from **Stand & Shoot** and Melee)   | 30                  |
+| **BRETONNIAN TOTAL**          |                                                                         | **457**             |
 
 ### Guardians of Huatl (Xiin the Skink Priest)
-| Target / Objective     | Mechanical Condition                                        | Victory Points (VP) |
-| :---                   | :---                                                        | :---                |
-| *The Duc's Vanguard*   | **Destroyed Unit** (Massacred in Close Combat)              | 168                 |
-| *The Duc's Vanguard*   | **Captured Standard** (Acquired during Close Combat)        | 100                 |
-| *Looters of the Duc*   | **Below Half Strength** (Casualties from Poison and Magic)  | 84                  |
-| *Bowmen of Bordeleaux* | **Fled the Battlefield** (Panicked by *Comet of Casandora*) | 77                  |
-| **LIZARDMEN TOTAL**    |                                                             | **429**             |
+| Target / Objective     | Mechanical Condition                                                    | Victory Points (VP) |
+| :---                   | :---                                                                    | :---                |
+| *The Duc's Vanguard*   | **Destroyed Unit** (Massacred in Close Combat)                          | 168                 |
+| *The Duc's Vanguard*   | **Captured Standard** (Acquired during Close Combat)                    | 100                 |
+| *Looters of the Duc*   | **Below Half Strength** (Casualties from Poison and Magic)              | 84                  |
+| *Bowmen of Bordeleaux* | **Fled the Battlefield** (Panicked by *Comet of Casandora*)             | 77                  |
+| **LIZARDMEN TOTAL**    |                                                                         | **429**             |
 
 ### FINAL RESULT: BLOODY DRAW
 ---
