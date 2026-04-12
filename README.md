@@ -23,6 +23,14 @@ While the vast majority of units and army books are fully transcribed and functi
 
 To use this data for list building, you do not need to download the files manually. Simply add this repository to your app of choice:
 
+> ⚠️ **SYSTEM REQUIREMENTS NOTICE: NEW RECRUIT EXCLUSIVE** ⚠️
+> *Please note that the Karak Norn 6th Edition Definitive Archive has been engineered specifically to utilize the advanced logic, narrative campaign features, and modern architecture of the **NewRecruit** platform.*
+>
+> *Due to the massive expansion of units (~60 extra forces), alternative lists, and complex mechanical integrations, **these files exceed the capabilities of the legacy BattleScribe engine and are not compatible.** Attempting to load this repository in BattleScribe will result in fatal database errors. We highly recommend all generals migrate to NewRecruit for the definitive mechanical experience.*
+
+### Official Integration: New Recruit
+To use this data for list building, you do not need to download the files manually. Simply add this repository to your app of choice:
+
 ### For New Recruit (Recommended)
 1. Open [New Recruit](https://www.newrecruit.eu/).
 ![alt text](tutorial/image-0.png)
@@ -36,9 +44,6 @@ To use this data for list building, you do not need to download the files manual
 5. Add this exact URL:
    `lexicanum-imperialis/Warhammer-Fantasy-Battles-6th-Definitive-edition`
 6. Now select the **WHFB 6th** game system and create your lists!
-
-### For BattleScribe (WIP)
-*Work in Progress*
 
 ---
 
