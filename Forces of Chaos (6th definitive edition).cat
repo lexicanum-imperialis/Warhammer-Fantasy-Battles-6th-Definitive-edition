@@ -9632,6 +9632,39 @@ There&apos;s no guarantee of balance.
 REQUEST YOUR OPPONENT FOR PERMISSION." field="warning"/>
       </modifiers>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="The Chaos General" hidden="false" id="5a27-b4af-c3d0-3e22" publicationId="d750-ac7f-7465-d6d1" page="55">
+      <categoryLinks>
+        <categoryLink name="Special list rules" hidden="false" id="743d-cba5-8067-4554" targetId="32f1-197f-d719-a393" primary="true"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="51f2-7e87-26a3-a268" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c112-f7f6-31dd-ba85" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="0174-a0e3-0d6e-c3cd" includeChildSelections="false"/>
+      </constraints>
+      <rules>
+        <rule name="The Chaos General" id="0f6b-ab04-89be-991b" hidden="false" page="55" publicationId="d750-ac7f-7465-d6d1">
+          <description>The character you nominate as your General is very important with a Chaos army. This is because he affects what other characters and units you can have in the rest of your army.
+
+Firstly, you must decide if your General is Beast, Mortal or Daemonic. A character from Beast of Chaos is a Beasts character, any character with the Daemonic special rule is a Daemonic character, and all other characters are regarded as Mortal.
+
+If your General is a Beasts character then Beast units count as Core, and Mortal and Daemonic units may be included as Special choices. If your General is Mortal then the Mortal units count as Core choices and Daemonic and Beast units count as Special choices. If the General is Daemonic, then this is reversed, with Daemonic units for your Core units, and Special choices made from the Mortal and Beast units. Units included in the army list as Special or Rare remain so regardless of who your General is.
+
+In addition, whether your General has a Mark of Chaos or not affects your army composition. If your General is sworn to a particular god, his choices will be more restricted than if he worships Chaos Undivided.
+- If your General has the Mark of Khorne, Nurgle, Slaanesh or Tzeentch, then other characters and units in the army may only have the same Mark (or be Chaos Undivided).
+- If your General worships Chaos Undivided then you may mix other Marks in your army freely, with the following exception - you may only give a Mark to a character if the army also contains a unit or Chariot with the same Mark (other than a Spawn of Chaos).
+- All Daemons and Spawn of Chaos of one of the four Greater Powers are assumed to have the Mark of their god, although they may not necessarily have the exact rules benefit associated with that Mark. For example, an army led by a Bloodthirster of Khorne may include only Undivided units and units with the Mark of Khorne (this includes Bloodletters, Flesh Hounds and Bloodbeasts).</description>
+        </rule>
+      </rules>
+      <modifiers>
+        <modifier type="add" value="You must select your General before selecting any core units!
+The General determines the composition of the whole army.
+See The Chaos General for more info." field="warning">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="a37e-7207-de6d-acb0" shared="true" includeChildSelections="true" childName="General"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
     <selectionEntry id="a768-25ef-0845-6e1c" name="Braystaff" hidden="false" collective="false" import="true" type="upgrade">
