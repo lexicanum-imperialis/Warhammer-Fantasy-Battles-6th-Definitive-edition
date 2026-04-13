@@ -1145,7 +1145,7 @@ Quatar</comment>
     </selectionEntry>
     <selectionEntry id="8b76-92c4-23f9-54b1" name="Allow experimental rules?" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="b302-93b6-3d1d-13d6" type="max"/>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="b302-93b6-3d1d-13d6" type="max"/>
         <constraint type="min" value="0" field="selections" scope="force" shared="true" id="badf-a1a1-372c-9baf" includeChildSelections="false"/>
         <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="d67f-4b65-a832-1e1b" includeChildSelections="false"/>
       </constraints>
