@@ -83,16 +83,16 @@
         </characteristicType>
         <characteristicType id="f1be-e66c-d5e1-673c" name="Sv" defaultValue="-">
           <formatRules>
-            <formatRule name="New Format Rule" id="f8ac-4740-5767-8f63" hidden="false" type="regex" match="^0$" replace="-">
-              <comment>0 → -</comment>
-            </formatRule>
             <formatRule name="New Format Rule" id="369e-0bd4-4377-98fb" hidden="false" type="regex" match="^$" replace="-">
               <comment>Empty → -</comment>
             </formatRule>
             <formatRule name="New Format Rule" id="70d9-d1d4-626a-8b17" hidden="false" type="regex" match="^7$" replace="-">
               <comment>7 → -</comment>
             </formatRule>
-            <formatRule name="New Format Rule" id="338f-76da-0cd5-fdb5" hidden="false" type="regex" match="^(\d+)$" replace="$1+">
+            <formatRule name="New Format Rule" id="4e39-eef7-14be-b336" hidden="false" type="regex" match="^7+$" replace="-">
+              <comment>Empty → -</comment>
+            </formatRule>
+            <formatRule name="New Format Rule" id="338f-76da-0cd5-fdb5" hidden="false" type="regex" match="^([1-6])$" replace="$1+">
               <comment>Append &apos;+&apos;</comment>
             </formatRule>
           </formatRules>
