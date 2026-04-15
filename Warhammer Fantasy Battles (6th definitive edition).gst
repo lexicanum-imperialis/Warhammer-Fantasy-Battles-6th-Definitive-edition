@@ -81,7 +81,7 @@
             </formatRule>
           </formatRules>
         </characteristicType>
-        <characteristicType id="f1be-e66c-d5e1-673c" name="Sv">
+        <characteristicType id="f1be-e66c-d5e1-673c" name="Sv" defaultValue="-">
           <formatRules>
             <formatRule name="New Format Rule" id="f8ac-4740-5767-8f63" hidden="false" type="regex" match="^0$" replace="-">
               <comment>0 → -</comment>
@@ -89,13 +89,19 @@
             <formatRule name="New Format Rule" id="369e-0bd4-4377-98fb" hidden="false" type="regex" match="^$" replace="-">
               <comment>Empty → -</comment>
             </formatRule>
+            <formatRule name="New Format Rule" id="70d9-d1d4-626a-8b17" hidden="false" type="regex" match="^7$" replace="-">
+              <comment>7 → -</comment>
+            </formatRule>
             <formatRule name="New Format Rule" id="338f-76da-0cd5-fdb5" hidden="false" type="regex" match="^(\d+)$" replace="$1+">
-              <comment>Append SUFFIX</comment>
+              <comment>Append &apos;+&apos;</comment>
             </formatRule>
           </formatRules>
         </characteristicType>
-        <characteristicType id="d4a9-0ed4-d041-e54b" name="Sv+">
+        <characteristicType id="d4a9-0ed4-d041-e54b" name="Sv+" defaultValue="7">
           <formatRules>
+            <formatRule name="New Format Rule" id="f2ca-425d-e0eb-e4ad" hidden="false" type="regex" match="^7$" replace="-">
+              <comment>default value of 7</comment>
+            </formatRule>
             <formatRule name="New Format Rule" id="fd27-98ee-5dff-e47a" hidden="false" type="regex" match="^0$" replace="-">
               <comment>0 → -</comment>
             </formatRule>
@@ -125,22 +131,70 @@
     </profileType>
     <profileType id="7889-42d9-70a0-3ea9" name="Weapon">
       <characteristicTypes>
-        <characteristicType id="3107-4d1e-9a51-6564" name="Range"/>
-        <characteristicType id="6fe4-1ebb-cb04-1378" name="Strength"/>
-        <characteristicType id="6f2f-d612-52ef-1633" name="Damage"/>
-        <characteristicType id="a21a-cdc0-4b13-b236" name="Special Rules"/>
-        <characteristicType id="8014-a8b2-15c3-da95" name="Saves"/>
+        <characteristicType id="3107-4d1e-9a51-6564" name="Range">
+          <formatRules>
+            <formatRule name="New Format Rule" id="c3aa-2f75-a8fd-e67b" hidden="false" type="regex" match="^$" replace="CC">
+              <comment>Empty → -</comment>
+            </formatRule>
+          </formatRules>
+        </characteristicType>
+        <characteristicType id="6fe4-1ebb-cb04-1378" name="Strength">
+          <formatRules>
+            <formatRule name="New Format Rule" id="50b4-63fb-4140-c259" hidden="false" type="regex" match="^$" replace="As user">
+              <comment>Empty → -</comment>
+            </formatRule>
+          </formatRules>
+        </characteristicType>
+        <characteristicType id="6f2f-d612-52ef-1633" name="Damage">
+          <formatRules>
+            <formatRule name="New Format Rule" id="80f7-9221-cec7-7889" hidden="false" type="regex" match="^$" replace="-">
+              <comment>Empty → -</comment>
+            </formatRule>
+          </formatRules>
+        </characteristicType>
+        <characteristicType id="a21a-cdc0-4b13-b236" name="Special Rules">
+          <formatRules>
+            <formatRule name="New Format Rule" id="091b-dbb5-f692-0680" hidden="false" type="regex" match="^$" replace="-">
+              <comment>Empty → -</comment>
+            </formatRule>
+          </formatRules>
+        </characteristicType>
+        <characteristicType id="8014-a8b2-15c3-da95" name="Saves">
+          <formatRules>
+            <formatRule name="New Format Rule" id="04c9-dd0b-9057-0cd7" hidden="false" type="regex" match="^$" replace="-">
+              <comment>Empty → -</comment>
+            </formatRule>
+          </formatRules>
+        </characteristicType>
       </characteristicTypes>
     </profileType>
     <profileType id="f681-9937-db53-f1d8" name="Armour">
       <characteristicTypes>
-        <characteristicType id="b600-e1ed-0765-27c1" name="Saving Throw Modifier"/>
-        <characteristicType id="42c3-68ab-cfa5-203e" name="Special rules"/>
+        <characteristicType id="b600-e1ed-0765-27c1" name="Saving Throw Modifier">
+          <formatRules>
+            <formatRule name="New Format Rule" id="e7a2-2165-9844-51fa" hidden="false" type="regex" match="^$" replace="-">
+              <comment>Empty → -</comment>
+            </formatRule>
+          </formatRules>
+        </characteristicType>
+        <characteristicType id="42c3-68ab-cfa5-203e" name="Special rules">
+          <formatRules>
+            <formatRule name="New Format Rule" id="c763-b047-c4df-de7a" hidden="false" type="regex" match="^$" replace="-">
+              <comment>Empty → -</comment>
+            </formatRule>
+          </formatRules>
+        </characteristicType>
       </characteristicTypes>
     </profileType>
     <profileType id="a89b-d5a3-7805-c44e" name="Magic Items">
       <characteristicTypes>
-        <characteristicType id="c7b5-c239-d6c1-0627" name="Magic stuff"/>
+        <characteristicType id="c7b5-c239-d6c1-0627" name="Magic stuff">
+          <formatRules>
+            <formatRule name="New Format Rule" id="cb60-3ade-7f7c-c360" hidden="false" type="regex" match="^$" replace="-">
+              <comment>Empty → -</comment>
+            </formatRule>
+          </formatRules>
+        </characteristicType>
       </characteristicTypes>
     </profileType>
     <profileType id="07eb-6084-5f84-a505" name="Spell">
@@ -428,6 +482,9 @@ Quatar</comment>
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ffd4-6f1b-e014-6708" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry id="abdb-bbd0-41b2-5dff" name="Hand Weapon" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -2616,7 +2673,7 @@ Always Strikes Last</characteristic>
     </profile>
     <profile id="25e4-8f3a-a1a8-a7b6" name="Barding" hidden="false" typeId="f681-9937-db53-f1d8" typeName="Armour">
       <characteristics>
-        <characteristic name="Saving Throw Modifier" typeId="b600-e1ed-0765-27c1">+1</characteristic>
+        <characteristic name="Saving Throw Modifier" typeId="b600-e1ed-0765-27c1">-1</characteristic>
         <characteristic name="Special rules" typeId="42c3-68ab-cfa5-203e"/>
       </characteristics>
     </profile>

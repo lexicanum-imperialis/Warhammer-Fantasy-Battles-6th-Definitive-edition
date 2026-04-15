@@ -130,6 +130,16 @@
               <costs>
                 <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="21"/>
               </costs>
+              <entryLinks>
+                <entryLink import="true" name="Barding" hidden="false" id="d815-1f70-6690-1f14" type="selectionEntry" targetId="3211-d836-02f1-01d0" defaultAmount="1">
+                  <costs>
+                    <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="25d8-9ea5-9936-d44c" includeChildSelections="false"/>
+              </constraints>
             </entryLink>
             <entryLink id="e5ec-96f5-5031-3bfc" name="Hippogryph" hidden="false" collective="false" import="true" targetId="5990-c1ff-bcab-6ef7" type="selectionEntry">
               <costs>
@@ -232,7 +242,34 @@
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
       <infoLinks>
-        <infoLink id="c2cae708-0b6f-4553-9adc-754be21e3d2e" name="Bretonnian Lord" hidden="false" targetId="58b5-73df-d1c1-7387" type="profile"/>
+        <infoLink id="c2cae708-0b6f-4553-9adc-754be21e3d2e" name="Bretonnian Lord" hidden="false" targetId="58b5-73df-d1c1-7387" type="profile">
+          <modifiers>
+            <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="50e2-1873-a856-03e7" shared="true" childName="Shield" includeChildSelections="true"/>
+              </conditions>
+              <comment>Shield</comment>
+            </modifier>
+            <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="3211-d836-02f1-01d0" shared="true" childName="Barding" includeChildSelections="true"/>
+              </conditions>
+              <comment>Barding</comment>
+            </modifier>
+            <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="adc2-53db-4a9e-b8ea" shared="true" childName="Bretonnian Warhorse" includeChildSelections="true"/>
+              </conditions>
+              <comment>Horse</comment>
+            </modifier>
+            <modifier type="decrement" value="2" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="dde4-0ba8-7b3c-57b7" shared="true" childName="Heavy Armour" includeChildSelections="true"/>
+              </conditions>
+              <comment>Heavy armour</comment>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <modifiers>
         <modifier type="decrement" value="100" field="ce6e-afde-2ed1-aac2">
@@ -254,7 +291,20 @@
     <selectionEntry id="1efc-5470-e01d-d037" name="Prophetess of the Lady" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
         <infoLink id="07b5-2e76-395d-a26c" name="Aura of the Lady" hidden="false" targetId="2725-335a-09fb-a734" type="rule"/>
-        <infoLink id="332bdebf-19c5-41eb-a627-40ba29800986" name="Prophetess of the Lady" hidden="false" targetId="496d-8daf-463a-5cef" type="profile"/>
+        <infoLink id="332bdebf-19c5-41eb-a627-40ba29800986" name="Prophetess of the Lady" hidden="false" targetId="496d-8daf-463a-5cef" type="profile">
+          <modifiers>
+            <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="adc2-53db-4a9e-b8ea" shared="true" childName="Bretonnian Warhorse" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="3211-d836-02f1-01d0" shared="true" childName="Barding" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="174f-ff83-ce9b-ed52" name="Lord" hidden="false" targetId="d024-d25b-a9b4-73b6" primary="true"/>
@@ -278,21 +328,12 @@
           </constraints>
           <entryLinks>
             <entryLink id="5264-a396-191e-df16" name="Bretonnian Warhorse" hidden="false" collective="false" import="true" targetId="adc2-53db-4a9e-b8ea" type="selectionEntry">
-              <selectionEntries>
-                <selectionEntry id="281b-4e67-591e-2d00" name="Barding" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="de37-2880-2d55-32fa" type="max"/>
-                  </constraints>
-                  <costs>
-                    <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="6"/>
-                    <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-                    <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
               <costs>
                 <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="15"/>
               </costs>
+              <entryLinks>
+                <entryLink import="true" name="Barding" hidden="false" id="d529-7ddf-1ac4-a748" type="selectionEntry" targetId="3211-d836-02f1-01d0"/>
+              </entryLinks>
             </entryLink>
             <entryLink id="b769-0b9f-0691-1311" name="Royal Pegasus" hidden="false" collective="false" import="true" targetId="bfa3-6734-c03f-3594" type="selectionEntry">
               <costs>
@@ -594,29 +635,53 @@
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
       <infoLinks>
-        <infoLink id="19aaad2c-7229-4b4a-969d-c4ede8022ce2" name="Paladin" hidden="false" targetId="1db0-aea0-4295-0322" type="profile"/>
-      </infoLinks>
-      <modifiers>
-        <modifier type="decrement" value="100" field="ce6e-afde-2ed1-aac2">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="self" childId="95b8-f74e-dcc8-aaf3" shared="true" includeChildSelections="true"/>
-          </conditions>
-          <conditionGroups>
-            <conditionGroup type="or">
+        <infoLink id="19aaad2c-7229-4b4a-969d-c4ede8022ce2" name="Paladin" hidden="false" targetId="1db0-aea0-4295-0322" type="profile">
+          <modifiers>
+            <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="self" childId="bfa3-6734-c03f-3594" shared="true" includeChildSelections="true"/>
-                <condition type="atLeast" value="1" field="selections" scope="self" childId="5990-c1ff-bcab-6ef7" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="50e2-1873-a856-03e7" shared="true" childName="Shield" includeChildSelections="true"/>
               </conditions>
-            </conditionGroup>
-          </conditionGroups>
-          <comment>Swedish Comp System</comment>
-        </modifier>
-      </modifiers>
+              <comment>Shield</comment>
+            </modifier>
+            <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="3211-d836-02f1-01d0" shared="true" childName="Barding" includeChildSelections="true"/>
+              </conditions>
+              <comment>Barding</comment>
+            </modifier>
+            <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="adc2-53db-4a9e-b8ea" shared="true" childName="Bretonnian Warhorse" includeChildSelections="true"/>
+              </conditions>
+              <comment>Horse</comment>
+            </modifier>
+            <modifier type="decrement" value="2" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="dde4-0ba8-7b3c-57b7" shared="true" childName="Heavy Armour" includeChildSelections="true"/>
+              </conditions>
+              <comment>Heavy armour</comment>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry id="9f03-3ab3-72d8-3a69" name="Damsel of the Lady" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
         <infoLink id="053f-eb0d-0b81-3fe3" name="Aura of the Lady" hidden="false" targetId="2725-335a-09fb-a734" type="rule"/>
-        <infoLink id="881a2ed9-de36-4abc-8932-ea99a1589c57" name="Damsel of the Lady" hidden="false" targetId="2939-b056-06de-4d6d" type="profile"/>
+        <infoLink id="881a2ed9-de36-4abc-8932-ea99a1589c57" name="Damsel of the Lady" hidden="false" targetId="2939-b056-06de-4d6d" type="profile">
+          <modifiers>
+            <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="de37-bd60-33c2-3d73" shared="true" childName="Bretonnian Warhorse" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="3211-d836-02f1-01d0" shared="true" childName="Barding" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="8ad3-15e0-4638-03c5" name="Characters" hidden="false" targetId="7a1c-d611-c2dc-def1" primary="false"/>
@@ -640,21 +705,19 @@
           </constraints>
           <entryLinks>
             <entryLink id="de37-bd60-33c2-3d73" name="Bretonnian Warhorse" hidden="false" collective="false" import="true" targetId="adc2-53db-4a9e-b8ea" type="selectionEntry">
-              <selectionEntries>
-                <selectionEntry id="590f-811e-abe8-b5a8" name="Barding" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e530-5971-2267-9495" type="max"/>
-                  </constraints>
-                  <costs>
-                    <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="4"/>
-                    <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-                    <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
               <costs>
                 <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="10"/>
               </costs>
+              <entryLinks>
+                <entryLink import="true" name="Barding" hidden="false" id="f608-4e8a-47d4-378f" type="selectionEntry" targetId="3211-d836-02f1-01d0">
+                  <costs>
+                    <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="4"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c7c2-a2a3-84ee-1156" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
             </entryLink>
             <entryLink id="349a-77d5-4b8c-5f81" name="Royal Pegasus" hidden="false" collective="false" import="true" targetId="bfa3-6734-c03f-3594" type="selectionEntry">
               <costs>
@@ -1189,8 +1252,8 @@
                 <characteristic name="I" typeId="dfff-363e-f72a-5a59">3</characteristic>
                 <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
                 <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">5</characteristic>
-                <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
-                <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+                <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">7</characteristic>
+                <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">7</characteristic>
                 <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
                 <characteristic name="Base" typeId="2cad-bb76-8a5a-1607"/>
               </characteristics>
@@ -1357,7 +1420,7 @@
                 <characteristic name="I" typeId="dfff-363e-f72a-5a59">3</characteristic>
                 <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
                 <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">5</characteristic>
-                <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+                <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">7</characteristic>
                 <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
                 <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
                 <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">20x20</characteristic>
@@ -1877,10 +1940,10 @@
                 <characteristic name="I" typeId="dfff-363e-f72a-5a59">3</characteristic>
                 <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
                 <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">8</characteristic>
-                <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+                <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">4</characteristic>
                 <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
                 <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
-                <characteristic name="Base" typeId="2cad-bb76-8a5a-1607"/>
+                <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">20x20</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1935,7 +1998,7 @@
         <categoryLink id="cba5-ad8c-0d58-8405" name="Special" hidden="false" targetId="43cc-fc3f-35a7-8d03" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="c2d0-6b0b-2eb9-7eb4" name="Mounted Yeoman" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry id="c2d0-6b0b-2eb9-7eb4" name="Mounted Yeoman" hidden="false" collective="false" import="true" type="model" sortIndex="1">
           <constraints>
             <constraint field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0746-54d4-f9e9-5091" type="min"/>
           </constraints>
@@ -1951,11 +2014,28 @@
                 <characteristic name="I" typeId="dfff-363e-f72a-5a59">3</characteristic>
                 <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
                 <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">6</characteristic>
-                <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
-                <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
-                <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
+                <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">7</characteristic>
+                <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">7</characteristic>
+                <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">2</characteristic>
                 <characteristic name="Base" typeId="2cad-bb76-8a5a-1607"/>
               </characteristics>
+              <modifiers>
+                <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="055f-8e4e-f170-35d2" shared="true" childName="Light Armour" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="d05b-7c35-f07e-226e" shared="true" childName="Horse"/>
+                  </conditions>
+                </modifier>
+                <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="50e2-1873-a856-03e7" shared="true" childName="Shield" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </profile>
           </profiles>
           <costs>
@@ -1964,7 +2044,7 @@
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="d05b-7c35-f07e-226e" name="Horse" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="d05b-7c35-f07e-226e" name="Horse" hidden="false" collective="false" import="true" type="upgrade" sortIndex="4">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eba7-a5d0-a383-a3c8" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5843-1946-307b-7c22" type="max"/>
@@ -1984,7 +2064,7 @@
                 <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
                 <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
                 <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
-                <characteristic name="Base" typeId="2cad-bb76-8a5a-1607"/>
+                <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">25x50</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2001,7 +2081,7 @@
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Command group" id="8cd2-84a8-c3dc-9982" hidden="false">
+        <selectionEntryGroup name="Command group" id="8cd2-84a8-c3dc-9982" hidden="false" sortIndex="3">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Warden" hidden="false" id="ef6a-3c92-787b-235d" collective="false">
               <constraints>
@@ -2054,7 +2134,7 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Weapons and Armour" id="a4c0-681c-db52-c841" hidden="false">
+        <selectionEntryGroup name="Weapons and Armour" id="a4c0-681c-db52-c841" hidden="false" sortIndex="2">
           <entryLinks>
             <entryLink import="true" name="Bow" hidden="false" id="dfea-f7d9-c837-3435" collective="false" targetId="9efb-2b02-f245-62f5" type="selectionEntry">
               <constraints>
@@ -2558,23 +2638,30 @@
             <condition type="instanceOf" value="1" field="selections" scope="force" childId="10e2-baf2-e758-c27e" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
-        <modifier type="decrement" value="100" field="ce6e-afde-2ed1-aac2">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="self" childId="95b8-f74e-dcc8-aaf3" shared="true" includeChildSelections="true"/>
-          </conditions>
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="self" childId="bfa3-6734-c03f-3594" shared="true" includeChildSelections="true"/>
-                <condition type="atLeast" value="1" field="selections" scope="self" childId="5990-c1ff-bcab-6ef7" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-          <comment>Swedish Comp System</comment>
-        </modifier>
       </modifiers>
       <infoLinks>
-        <infoLink id="426e9f86-176e-4bb2-9358-fadda536d8b9" name="Paladin" hidden="false" targetId="1db0-aea0-4295-0322" type="profile"/>
+        <infoLink id="426e9f86-176e-4bb2-9358-fadda536d8b9" name="Paladin" hidden="false" targetId="1db0-aea0-4295-0322" type="profile">
+          <modifiers>
+            <modifier type="decrement" value="2" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="dde4-0ba8-7b3c-57b7" shared="true" childName="Heavy Armour" includeChildSelections="true"/>
+              </conditions>
+              <comment>Heavy armour</comment>
+            </modifier>
+            <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="3211-d836-02f1-01d0" shared="true" childName="Barding" includeChildSelections="true"/>
+              </conditions>
+              <comment>Barding</comment>
+            </modifier>
+            <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="adc2-53db-4a9e-b8ea" shared="true" childName="Bretonnian Warhorse" includeChildSelections="true"/>
+              </conditions>
+              <comment>Horse</comment>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
     </selectionEntry>
     <selectionEntry id="e9d1-eb9d-7c44-f777" name="The Green Knight" publicationId="143d-ca87-8001-00a0" page="75" hidden="false" collective="false" import="true" type="unit">
@@ -3286,6 +3373,7 @@ Grail Knights will often join the ranks of the young Knights Errant to give them
       <infoLinks>
         <infoLink id="387e-6742-6398-1891" name="Bretonnian Warhorse" hidden="false" targetId="aacb-6185-2309-fed2" type="profile"/>
         <infoLink id="717e-733a-dcf1-1d25" name="Purebreed Warhorse" hidden="false" targetId="178a-cce9-03bb-8c64" type="rule"/>
+        <infoLink name="Bretonnian Warhorse" id="16dc-1b8c-f578-ec89" hidden="false" type="profile" targetId="60c7-3993-fc09-cb38"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="14"/>
@@ -5005,7 +5093,7 @@ A Champion (or character for that matter) that is in the second (or third) rank 
         <characteristic name="I" typeId="dfff-363e-f72a-5a59">3</characteristic>
         <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">5</characteristic>
-        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">6+</characteristic>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
         <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
         <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">25x50</characteristic>
@@ -5056,10 +5144,10 @@ A Champion (or character for that matter) that is in the second (or third) rank 
         <characteristic name="I" typeId="dfff-363e-f72a-5a59">5</characteristic>
         <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">2</characteristic>
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">8</characteristic>
-        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">2</characteristic>
         <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
-        <characteristic name="Base" typeId="2cad-bb76-8a5a-1607"/>
+        <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">-</characteristic>
       </characteristics>
     </profile>
     <profile id="58b5-73df-d1c1-7387" name="Bretonnian Lord" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
@@ -5073,10 +5161,10 @@ A Champion (or character for that matter) that is in the second (or third) rank 
         <characteristic name="I" typeId="dfff-363e-f72a-5a59">6</characteristic>
         <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">4</characteristic>
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">9</characteristic>
-        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">7</characteristic>
         <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
-        <characteristic name="Base" typeId="2cad-bb76-8a5a-1607"/>
+        <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">20x20</characteristic>
       </characteristics>
     </profile>
     <profile id="496d-8daf-463a-5cef" name="Prophetess of the Lady" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
@@ -5090,10 +5178,10 @@ A Champion (or character for that matter) that is in the second (or third) rank 
         <characteristic name="I" typeId="dfff-363e-f72a-5a59">3</characteristic>
         <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">8</characteristic>
-        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">7</characteristic>
         <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
-        <characteristic name="Base" typeId="2cad-bb76-8a5a-1607"/>
+        <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">20x20</characteristic>
       </characteristics>
     </profile>
     <profile id="1db0-aea0-4295-0322" name="Paladin" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
@@ -5107,10 +5195,10 @@ A Champion (or character for that matter) that is in the second (or third) rank 
         <characteristic name="I" typeId="dfff-363e-f72a-5a59">5</characteristic>
         <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">3</characteristic>
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">8</characteristic>
-        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">7</characteristic>
         <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
-        <characteristic name="Base" typeId="2cad-bb76-8a5a-1607"/>
+        <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">20x20</characteristic>
       </characteristics>
     </profile>
     <profile id="2939-b056-06de-4d6d" name="Damsel of the Lady" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
@@ -5124,10 +5212,10 @@ A Champion (or character for that matter) that is in the second (or third) rank 
         <characteristic name="I" typeId="dfff-363e-f72a-5a59">3</characteristic>
         <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">7</characteristic>
-        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">7</characteristic>
         <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
-        <characteristic name="Base" typeId="2cad-bb76-8a5a-1607"/>
+        <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">20x20</characteristic>
       </characteristics>
     </profile>
     <profile id="ea5c-9741-bd2b-e555" name="Knight Errant" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
@@ -5144,7 +5232,7 @@ A Champion (or character for that matter) that is in the second (or third) rank 
         <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">2+</characteristic>
         <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
-        <characteristic name="Base" typeId="2cad-bb76-8a5a-1607"/>
+        <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">-</characteristic>
       </characteristics>
     </profile>
     <profile id="75fa-c423-29c4-cd94" name="Knight of the Realm" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
@@ -5158,10 +5246,10 @@ A Champion (or character for that matter) that is in the second (or third) rank 
         <characteristic name="I" typeId="dfff-363e-f72a-5a59">3</characteristic>
         <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">8</characteristic>
-        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">2+</characteristic>
         <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
-        <characteristic name="Base" typeId="2cad-bb76-8a5a-1607"/>
+        <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">-</characteristic>
       </characteristics>
     </profile>
     <profile id="53bb-dc89-d898-6ba6" name="Questing Knight" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
@@ -5175,10 +5263,10 @@ A Champion (or character for that matter) that is in the second (or third) rank 
         <characteristic name="I" typeId="dfff-363e-f72a-5a59">3</characteristic>
         <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">8</characteristic>
-        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">2</characteristic>
         <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
-        <characteristic name="Base" typeId="2cad-bb76-8a5a-1607"/>
+        <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">-</characteristic>
       </characteristics>
     </profile>
     <profile id="ce23-2f51-c71d-ba5b" name="Pegasus Knights" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
@@ -5192,10 +5280,10 @@ A Champion (or character for that matter) that is in the second (or third) rank 
         <characteristic name="I" typeId="dfff-363e-f72a-5a59">4</characteristic>
         <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">8</characteristic>
-        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">3</characteristic>
         <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
-        <characteristic name="Base" typeId="2cad-bb76-8a5a-1607"/>
+        <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">40x40</characteristic>
       </characteristics>
     </profile>
     <profile id="2e29-744a-e4ca-fe2c" name="Field Trebuchet" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
@@ -5229,7 +5317,7 @@ A Champion (or character for that matter) that is in the second (or third) rank 
         <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
         <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
-        <characteristic name="Base" typeId="2cad-bb76-8a5a-1607"/>
+        <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">-</characteristic>
       </characteristics>
     </profile>
     <profile id="3ca2-e60e-b453-0467" name="Shadow Steed" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
@@ -5246,7 +5334,7 @@ A Champion (or character for that matter) that is in the second (or third) rank 
         <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
         <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
-        <characteristic name="Base" typeId="2cad-bb76-8a5a-1607"/>
+        <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">25x50</characteristic>
       </characteristics>
     </profile>
     <profile id="8537-20fc-2340-6fd6" name="Fay Enchantress" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile" page="77" publicationId="143d-ca87-8001-00a0">
@@ -5263,7 +5351,7 @@ A Champion (or character for that matter) that is in the second (or third) rank 
         <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">6</characteristic>
         <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">4</characteristic>
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
-        <characteristic name="Base" typeId="2cad-bb76-8a5a-1607"/>
+        <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">20x20</characteristic>
       </characteristics>
     </profile>
     <profile id="1a53-45f8-f922-1568" name="King Louen" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
@@ -5280,7 +5368,7 @@ A Champion (or character for that matter) that is in the second (or third) rank 
         <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">4</characteristic>
         <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">5</characteristic>
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
-        <characteristic name="Base" typeId="2cad-bb76-8a5a-1607"/>
+        <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">20x20</characteristic>
       </characteristics>
     </profile>
     <profile id="e181-3504-0dc4-b045" name="Sir Amalric" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
@@ -5297,7 +5385,7 @@ A Champion (or character for that matter) that is in the second (or third) rank 
         <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">2</characteristic>
         <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">5</characteristic>
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
-        <characteristic name="Base" typeId="2cad-bb76-8a5a-1607"/>
+        <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">-</characteristic>
       </characteristics>
     </profile>
     <profile id="7583-7180-87b3-b952" name="Sir Tristan (mounted)" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile" page="110" publicationId="ba83-2064-0694-2dd6">
@@ -5314,7 +5402,7 @@ A Champion (or character for that matter) that is in the second (or third) rank 
         <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">2</characteristic>
         <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
-        <characteristic name="Base" typeId="2cad-bb76-8a5a-1607"/>
+        <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">-</characteristic>
       </characteristics>
     </profile>
     <profile name="Sword of the Quest" typeId="7889-42d9-70a0-3ea9" typeName="Weapon" hidden="false" id="301d-5501-5bc9-3bc7">
@@ -5324,6 +5412,18 @@ A Champion (or character for that matter) that is in the second (or third) rank 
         <characteristic name="Damage" typeId="6f2f-d612-52ef-1633">-</characteristic>
         <characteristic name="Special Rules" typeId="a21a-cdc0-4b13-b236">May be used as either a hand weapon or a great weapon, decided at the start of combat as normal.</characteristic>
         <characteristic name="Saves" typeId="8014-a8b2-15c3-da95">No Armour saves</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Bretonnian Warhorse" typeId="f681-9937-db53-f1d8" typeName="Armour" hidden="false" id="60c7-3993-fc09-cb38">
+      <characteristics>
+        <characteristic name="Saving Throw Modifier" typeId="b600-e1ed-0765-27c1">-1</characteristic>
+        <characteristic name="Special rules" typeId="42c3-68ab-cfa5-203e"/>
+      </characteristics>
+    </profile>
+    <profile name="Barding" typeId="f681-9937-db53-f1d8" typeName="Armour" hidden="false" id="fe5c-9081-3093-5d1e">
+      <characteristics>
+        <characteristic name="Saving Throw Modifier" typeId="b600-e1ed-0765-27c1">-1</characteristic>
+        <characteristic name="Special rules" typeId="42c3-68ab-cfa5-203e"/>
       </characteristics>
     </profile>
   </sharedProfiles>
