@@ -134,7 +134,7 @@
         <characteristicType id="3107-4d1e-9a51-6564" name="Range">
           <formatRules>
             <formatRule name="New Format Rule" id="c3aa-2f75-a8fd-e67b" hidden="false" type="regex" match="^$" replace="CC">
-              <comment>Empty → -</comment>
+              <comment>Empty → CC</comment>
             </formatRule>
           </formatRules>
         </characteristicType>
@@ -2582,8 +2582,8 @@ Therefore, the enemy Armour save is reduced by an additional -1. For example, an
   <sharedProfiles>
     <profile id="5556-38ea-b278-4a8f" name="Hand Weapon" publicationId="315e-e3c4-08af-fd51" page="91" hidden="false" typeId="7889-42d9-70a0-3ea9" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="3107-4d1e-9a51-6564">CC only</characteristic>
-        <characteristic name="Strength" typeId="6fe4-1ebb-cb04-1378">As User</characteristic>
+        <characteristic name="Range" typeId="3107-4d1e-9a51-6564"/>
+        <characteristic name="Strength" typeId="6fe4-1ebb-cb04-1378"/>
         <characteristic name="Damage" typeId="6f2f-d612-52ef-1633"/>
         <characteristic name="Special Rules" typeId="a21a-cdc0-4b13-b236"/>
         <characteristic name="Saves" typeId="8014-a8b2-15c3-da95"/>
@@ -2655,7 +2655,7 @@ Always Strikes Last</characteristic>
     </profile>
     <profile id="222b-1e29-9d24-09d7" name="Spears (Infantry)" hidden="false" typeId="7889-42d9-70a0-3ea9" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="3107-4d1e-9a51-6564">-</characteristic>
+        <characteristic name="Range" typeId="3107-4d1e-9a51-6564"/>
         <characteristic name="Strength" typeId="6fe4-1ebb-cb04-1378">As user</characteristic>
         <characteristic name="Damage" typeId="6f2f-d612-52ef-1633"/>
         <characteristic name="Special Rules" typeId="a21a-cdc0-4b13-b236">May fight in two ranks</characteristic>
