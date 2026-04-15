@@ -18,15 +18,69 @@
     <profileType id="a54a-7f00-29bf-12b1" name="Profile">
       <comment>Unit Strenght. From official rulebooks, supplements and the Base Size and Unit Strenght Card Reference from WD-286-UK</comment>
       <characteristicTypes>
-        <characteristicType id="0e92-d038-82bf-fb41" name="Mv"/>
-        <characteristicType id="f95b-da01-0578-3bdc" name="WS"/>
-        <characteristicType id="4a8b-0c8e-3daf-7901" name="BS"/>
-        <characteristicType id="b690-4bc0-bb73-267b" name="S"/>
-        <characteristicType id="8712-f56f-5b22-a720" name="T"/>
-        <characteristicType id="253a-9b00-4fde-8ac2" name="W"/>
-        <characteristicType id="dfff-363e-f72a-5a59" name="I"/>
-        <characteristicType id="6b9f-c8fe-8998-27e3" name="A"/>
-        <characteristicType id="2d45-18fe-9eb3-b113" name="Ld"/>
+        <characteristicType id="0e92-d038-82bf-fb41" name="Mv">
+          <formatRules>
+            <formatRule name="New Format Rule" id="ad35-bd1d-7341-cfac" hidden="false" type="regex" match="^$" replace="-">
+              <comment>Empty → -</comment>
+            </formatRule>
+          </formatRules>
+        </characteristicType>
+        <characteristicType id="f95b-da01-0578-3bdc" name="WS">
+          <formatRules>
+            <formatRule name="New Format Rule" id="92f4-bfd3-2d44-4bbc" hidden="false" type="regex" match="^$" replace="-">
+              <comment>Empty → -</comment>
+            </formatRule>
+          </formatRules>
+        </characteristicType>
+        <characteristicType id="4a8b-0c8e-3daf-7901" name="BS">
+          <formatRules>
+            <formatRule name="New Format Rule" id="e85f-101f-c260-ca3f" hidden="false" type="regex" match="^$" replace="-">
+              <comment>Empty → -</comment>
+            </formatRule>
+          </formatRules>
+        </characteristicType>
+        <characteristicType id="b690-4bc0-bb73-267b" name="S">
+          <formatRules>
+            <formatRule name="New Format Rule" id="b324-6e4c-f0db-ed1f" hidden="false" type="regex" match="^$" replace="-">
+              <comment>Empty → -</comment>
+            </formatRule>
+          </formatRules>
+        </characteristicType>
+        <characteristicType id="8712-f56f-5b22-a720" name="T">
+          <formatRules>
+            <formatRule name="New Format Rule" id="8be9-0559-dfa3-0817" hidden="false" type="regex" match="^$" replace="-">
+              <comment>Empty → -</comment>
+            </formatRule>
+          </formatRules>
+        </characteristicType>
+        <characteristicType id="253a-9b00-4fde-8ac2" name="W">
+          <formatRules>
+            <formatRule name="New Format Rule" id="ac9a-2746-5904-4032" hidden="false" type="regex" match="^$" replace="-">
+              <comment>Empty → -</comment>
+            </formatRule>
+          </formatRules>
+        </characteristicType>
+        <characteristicType id="dfff-363e-f72a-5a59" name="I">
+          <formatRules>
+            <formatRule name="New Format Rule" id="32e7-ae87-a928-4747" hidden="false" type="regex" match="^$" replace="-">
+              <comment>Empty → -</comment>
+            </formatRule>
+          </formatRules>
+        </characteristicType>
+        <characteristicType id="6b9f-c8fe-8998-27e3" name="A">
+          <formatRules>
+            <formatRule name="New Format Rule" id="40b6-d2fe-818e-5765" hidden="false" type="regex" match="^$" replace="-">
+              <comment>Empty → -</comment>
+            </formatRule>
+          </formatRules>
+        </characteristicType>
+        <characteristicType id="2d45-18fe-9eb3-b113" name="Ld">
+          <formatRules>
+            <formatRule name="New Format Rule" id="5de7-894c-d779-a010" hidden="false" type="regex" match="^$" replace="-">
+              <comment>Empty → -</comment>
+            </formatRule>
+          </formatRules>
+        </characteristicType>
         <characteristicType id="f1be-e66c-d5e1-673c" name="Sv">
           <formatRules>
             <formatRule name="New Format Rule" id="f8ac-4740-5767-8f63" hidden="false" type="regex" match="^0$" replace="-">
@@ -53,8 +107,20 @@
             </formatRule>
           </formatRules>
         </characteristicType>
-        <characteristicType id="fa44-51dd-e69c-8d6a" name="US"/>
-        <characteristicType name="Base" id="2cad-bb76-8a5a-1607"/>
+        <characteristicType id="fa44-51dd-e69c-8d6a" name="US">
+          <formatRules>
+            <formatRule name="New Format Rule" id="b47f-1891-6eab-8bf9" hidden="false" type="regex" match="^$" replace="-">
+              <comment>Empty → -</comment>
+            </formatRule>
+          </formatRules>
+        </characteristicType>
+        <characteristicType name="Base" id="2cad-bb76-8a5a-1607">
+          <formatRules>
+            <formatRule name="New Format Rule" id="7156-e254-5f30-1e8d" hidden="false" type="regex" match="^$" replace="-">
+              <comment>Empty → -</comment>
+            </formatRule>
+          </formatRules>
+        </characteristicType>
       </characteristicTypes>
     </profileType>
     <profileType id="7889-42d9-70a0-3ea9" name="Weapon">
