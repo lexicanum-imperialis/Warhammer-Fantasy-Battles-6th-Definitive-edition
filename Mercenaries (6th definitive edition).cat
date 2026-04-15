@@ -4891,6 +4891,7 @@ The target may attempt to avoid the blow by taking and passing an Initiative tes
     <selectionEntry id="313455d3-3643-49fe-b5e6-a2260731f465" name="Warhorse" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="0f2de4b1-f07e-4672-becd-ff7c1e76ca9a" name="Warhorse" hidden="false" targetId="267b0a03-a2c5-419b-a2d0-3aa3c3d6654c" type="profile"/>
+        <infoLink name="Warhorse" id="e58b-6849-abc8-e3d0" hidden="false" type="profile" targetId="e3e4-7932-8361-1fe4"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
@@ -7254,7 +7255,9 @@ NOTE: This unit does not specify the category of the unit (besides being Core in
                   </conditionGroups>
                   <comment>HW and Shield</comment>
                 </modifier>
-                <modifier type="decrement" value="4" field="f1be-e66c-d5e1-673c"/>
+                <modifier type="decrement" value="4" field="f1be-e66c-d5e1-673c">
+                  <comment>For avoiding race condition</comment>
+                </modifier>
               </modifiers>
             </profile>
           </profiles>
@@ -7410,11 +7413,42 @@ NOTE: This unit does not specify the category of the unit (besides being Core in
                 <characteristic name="I" typeId="dfff-363e-f72a-5a59">3</characteristic>
                 <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
                 <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">8</characteristic>
-                <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+                <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">11</characteristic>
                 <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
                 <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
                 <characteristic name="Base" typeId="2cad-bb76-8a5a-1607"/>
               </characteristics>
+              <modifiers>
+                <modifier type="decrement" value="4" field="f1be-e66c-d5e1-673c">
+                  <comment>For avoiding race condition</comment>
+                </modifier>
+                <modifier type="decrement" value="2" field="f1be-e66c-d5e1-673c">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="dde4-0ba8-7b3c-57b7" shared="true" childName="Heavy Armour" includeChildSelections="true">
+                      <comment>Heavy armour</comment>
+                    </condition>
+                  </conditions>
+                </modifier>
+                <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="313455d3-3643-49fe-b5e6-a2260731f465" shared="true" childName="Warhorse" includeChildSelections="true">
+                      <comment>Warhorse</comment>
+                    </condition>
+                  </conditions>
+                </modifier>
+                <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="3211-d836-02f1-01d0" shared="true" childName="Barding" includeChildSelections="true"/>
+                  </conditions>
+                  <comment>Barding</comment>
+                </modifier>
+                <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="50e2-1873-a856-03e7" shared="true" childName="Shield" includeChildSelections="true"/>
+                  </conditions>
+                  <comment>Shield</comment>
+                </modifier>
+              </modifiers>
             </profile>
           </profiles>
         </selectionEntry>
@@ -7443,6 +7477,11 @@ NOTE: This unit does not specify the category of the unit (besides being Core in
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2766-029b-dfb4-a2b7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1da1-2220-18cc-82d6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Shield" hidden="false" id="f40b-e44a-da6e-1ee0" type="selectionEntry" targetId="50e2-1873-a856-03e7">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="25b4-961d-adac-a9fe" includeChildSelections="false"/>
               </constraints>
             </entryLink>
           </entryLinks>
@@ -7580,11 +7619,29 @@ NOTE: This unit does not specify the category of the unit (besides being Core in
                 <characteristic name="I" typeId="dfff-363e-f72a-5a59">3</characteristic>
                 <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
                 <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">7</characteristic>
-                <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+                <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">11</characteristic>
                 <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
                 <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
-                <characteristic name="Base" typeId="2cad-bb76-8a5a-1607"/>
+                <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">-</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="decrement" value="4" field="f1be-e66c-d5e1-673c">
+                  <comment>For avoiding race condition</comment>
+                </modifier>
+                <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="313455d3-3643-49fe-b5e6-a2260731f465" shared="true" childName="Warhorse" includeChildSelections="true">
+                      <comment>Warhorse</comment>
+                    </condition>
+                  </conditions>
+                </modifier>
+                <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="50e2-1873-a856-03e7" shared="true" childName="Shield" includeChildSelections="true"/>
+                  </conditions>
+                  <comment>Shield</comment>
+                </modifier>
+              </modifiers>
             </profile>
           </profiles>
         </selectionEntry>
@@ -7700,7 +7757,11 @@ NOTE: This unit does not specify the category of the unit (besides being Core in
         </selectionEntryGroup>
         <selectionEntryGroup name="Mounts" id="2d08-a90a-8f58-44e9" hidden="false">
           <entryLinks>
-            <entryLink import="true" name="Warhorse" hidden="false" id="0976-f810-00eb-4603" type="selectionEntry" targetId="313455d3-3643-49fe-b5e6-a2260731f465"/>
+            <entryLink import="true" name="Warhorse" hidden="false" id="0976-f810-00eb-4603" type="selectionEntry" targetId="313455d3-3643-49fe-b5e6-a2260731f465">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3e1f-2569-841f-cf63" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -7720,6 +7781,9 @@ NOTE: This unit does not specify the category of the unit (besides being Core in
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
+          <infoLinks>
+            <infoLink name="Pikemen" id="981d76c3-e786-41a2-b05a-12ceb31a2298" hidden="false" targetId="99bb-98f4-cd6d-7689" type="profile"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -7848,9 +7912,6 @@ NOTE: This unit does not specify the category of the unit (besides being Core in
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
-      <infoLinks>
-        <infoLink id="981d76c3-e786-41a2-b05a-12ceb31a2298" name="Pikemen" hidden="false" targetId="99bb-98f4-cd6d-7689" type="profile"/>
-      </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Halfling hot pot" hidden="false" id="b5ed-dd0e-323d-407a" collective="false">
       <categoryLinks>
@@ -9821,10 +9882,10 @@ Dwarf Hanguns get a +1 to hit at short range</characteristic>
         <characteristic name="I" typeId="dfff-363e-f72a-5a59">2</characteristic>
         <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">3</characteristic>
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">7</characteristic>
-        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">5+</characteristic>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">5</characteristic>
         <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">3</characteristic>
-        <characteristic name="Base" typeId="2cad-bb76-8a5a-1607"/>
+        <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">40x40</characteristic>
       </characteristics>
     </profile>
     <profile id="fa0d-31e5-e0b2-84f4" name="Dwarf" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
@@ -10020,7 +10081,7 @@ Dwarf Hanguns get a +1 to hit at short range</characteristic>
         <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
         <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">3 (1 per crew)</characteristic>
-        <characteristic name="Base" typeId="2cad-bb76-8a5a-1607"/>
+        <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">25x50</characteristic>
       </characteristics>
     </profile>
     <profile name="Halfling crew" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="39ca-bc3d-b1cb-ebe2">
@@ -10037,7 +10098,7 @@ Dwarf Hanguns get a +1 to hit at short range</characteristic>
         <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
         <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
-        <characteristic name="Base" typeId="2cad-bb76-8a5a-1607"/>
+        <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">20x20</characteristic>
       </characteristics>
     </profile>
     <profile name="Cannon" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="5e53-7700-4787-ad9e">
