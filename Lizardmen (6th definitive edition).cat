@@ -496,42 +496,46 @@
     </selectionEntry>
     <selectionEntry id="c243-9509-ac23-a5a0" name="Saurus Oldblood" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
-        <infoLink id="9b2c-3cb3-35a4-2ee3" name="Saurus Oldblood" hidden="false" targetId="8b58-5eef-0236-0cce" type="profile"/>
+        <infoLink id="9b2c-3cb3-35a4-2ee3" name="Saurus Oldblood" hidden="false" targetId="8b58-5eef-0236-0cce" type="profile">
+          <modifiers>
+            <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+              <comment>HW + Shield</comment>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="2" field="selections" scope="self" childId="848f-0fe2-1aa6-2259" shared="true" childName="Weapons" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="50e2-1873-a856-03e7" shared="true" childName="Shield" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="decrement" value="2" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="d392-d274-c983-ac9d" shared="true" childName="Scaly Skin (5+)" includeChildSelections="true"/>
+              </conditions>
+              <comment>Scaly skin (5+)</comment>
+            </modifier>
+            <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="055f-8e4e-f170-35d2" shared="true" childName="Light Armour" includeChildSelections="true"/>
+              </conditions>
+              <comment>Light armour</comment>
+            </modifier>
+            <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="50e2-1873-a856-03e7" shared="true" childName="Shield" includeChildSelections="true"/>
+              </conditions>
+              <comment>Shield</comment>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink id="228b-cc3f-ccee-4965" name="Cold Blooded" hidden="false" targetId="da71-1c1e-ded6-959a" type="rule"/>
-        <infoLink id="6b51-6108-674e-b81b" name="Scaly Skin 5+" hidden="false" targetId="0afe-62e9-ea96-1421" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="5737-4cf9-875b-33b0" name="Characters" hidden="false" targetId="7a1c-d611-c2dc-def1" primary="false"/>
         <categoryLink id="c131-4dfe-4f9c-73e2" name="Lord" hidden="false" targetId="d024-d25b-a9b4-73b6" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="44b4-f0d8-8959-a222" name="Hand weapon" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c4f9-4899-2f55-759b" type="max"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="50fb-05d1-772a-e152" type="min"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="8c08-869d-7318-c8fa" name="Hand Weapon" hidden="false" targetId="5556-38ea-b278-4a8f" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
-            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="e30c-06e0-eef0-e9bf" name="Shield" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="721f-b795-e566-5169" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="8744-53b8-0d19-7db6" name="Shield" hidden="false" targetId="3d79-7984-991a-8b67" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="3"/>
-            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-          </costs>
-        </selectionEntry>
         <selectionEntry id="74cd-7b3f-b338-f6ef" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8bb1-4445-70b9-7b57" type="max"/>
@@ -565,7 +569,7 @@
         </selectionEntryGroup>
         <selectionEntryGroup id="848f-0fe2-1aa6-2259" name="Weapons" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b20-238e-6dfb-fc67" type="max"/>
+            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b20-238e-6dfb-fc67" type="max"/>
           </constraints>
           <selectionEntries>
             <selectionEntry id="7509-4335-de27-02d4" name="Great Weapon" hidden="false" collective="false" import="true" type="upgrade">
@@ -577,17 +581,9 @@
                 <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
                 <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
               </costs>
-            </selectionEntry>
-            <selectionEntry id="36c5-b11c-e4e7-02a0" name="Spear" hidden="false" collective="false" import="true" type="upgrade">
-              <infoLinks>
-                <infoLink id="bb6f-6dfa-1d47-47b2" name="Spears (Infantry)" hidden="false" targetId="222b-1e29-9d24-09d7" type="profile"/>
-                <infoLink id="8af1-d5d5-3dda-3b02" name="Spear (Mounted)" hidden="false" targetId="ec7d-fa6d-d0f6-5589" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="6"/>
-                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="34f9-03be-1588-17a9" includeChildSelections="false"/>
+              </constraints>
             </selectionEntry>
             <selectionEntry id="6c50-9504-bb55-262a" name="Halberd" hidden="false" collective="false" import="true" type="upgrade">
               <infoLinks>
@@ -598,8 +594,20 @@
                 <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
                 <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
               </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="57ba-0d47-fe90-c4db" includeChildSelections="false"/>
+              </constraints>
             </selectionEntry>
           </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Spear" hidden="false" id="caa6-4efb-9770-37da" type="selectionEntry" targetId="8f37-5de9-60ee-6dcb"/>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="764d-ed17-4b12-eb16" type="selectionEntry" targetId="abdb-bbd0-41b2-5dff">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e165-9649-6391-6b2c" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <comment>Oldblood</comment>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -612,6 +620,12 @@
               </conditions>
             </modifier>
           </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Scaly Skin (5+)" hidden="false" id="6087-20f8-0582-fe5d" type="selectionEntry" targetId="d392-d274-c983-ac9d"/>
+        <entryLink import="true" name="Shield" hidden="false" id="0454-3267-a4cb-42b5" type="selectionEntry" targetId="50e2-1873-a856-03e7">
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="3"/>
+          </costs>
         </entryLink>
       </entryLinks>
       <costs>
@@ -820,36 +834,46 @@
     </selectionEntry>
     <selectionEntry id="c9ce-c817-1d25-962d" name="Saurus Scar-Veteran" publicationId="3a49-dd2e-fcaa-cdb1" page="59" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
-        <infoLink id="dfea-3737-5c57-fe36" name="Saurus Scar-Veterans" hidden="false" targetId="f1b0-dc96-6515-b7a6" type="profile"/>
+        <infoLink id="dfea-3737-5c57-fe36" name="Saurus Scar-Veterans" hidden="false" targetId="f1b0-dc96-6515-b7a6" type="profile">
+          <modifiers>
+            <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+              <comment>HW + Shield</comment>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="2" field="selections" scope="self" childId="a913-5dab-16a2-9293" shared="true" childName="Weapons" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="50e2-1873-a856-03e7" shared="true" childName="Shield" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="decrement" value="2" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="d392-d274-c983-ac9d" shared="true" childName="Scaly Skin (5+)" includeChildSelections="true"/>
+              </conditions>
+              <comment>Scaly skin (5+)</comment>
+            </modifier>
+            <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="055f-8e4e-f170-35d2" shared="true" childName="Light Armour" includeChildSelections="true"/>
+              </conditions>
+              <comment>Light armour</comment>
+            </modifier>
+            <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="50e2-1873-a856-03e7" shared="true" childName="Shield" includeChildSelections="true"/>
+              </conditions>
+              <comment>Shield</comment>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink id="5e8a-718e-b1f8-239b" name="Cold Blooded" hidden="false" targetId="da71-1c1e-ded6-959a" type="rule"/>
-        <infoLink id="553f-7424-3dc5-3a7e" name="Scaly Skin 5+" hidden="false" targetId="0afe-62e9-ea96-1421" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="71e4-5ea4-79e7-ed9f" name="Characters" hidden="false" targetId="7a1c-d611-c2dc-def1" primary="false"/>
         <categoryLink id="df5d-fa5d-1687-5fc8" name="Heroes" hidden="false" targetId="c16b-f319-2c62-2c12" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="6234-5782-97ac-d222" name="Shield" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0dfa-e93a-6db2-716e" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="f735-6742-caf1-23dd" name="Shield" hidden="false" targetId="3d79-7984-991a-8b67" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="2"/>
-            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-          </costs>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="unit" childId="2ef7-3efe-a448-423f" shared="true" includeChildSelections="true"/>
-              </conditions>
-              <comment>BSB</comment>
-            </modifier>
-          </modifiers>
-        </selectionEntry>
         <selectionEntry id="3386-b151-27f3-68c8" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d285-1a50-7760-e7f1" type="max"/>
@@ -879,65 +903,33 @@
       <selectionEntryGroups>
         <selectionEntryGroup id="a913-5dab-16a2-9293" name="Weapons" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fdc8-5108-d364-eedf" type="max"/>
+            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fdc8-5108-d364-eedf" type="max"/>
           </constraints>
-          <selectionEntries>
-            <selectionEntry id="d5a4-0f08-1460-d315" name="Great Weapon" hidden="false" collective="false" import="true" type="upgrade">
-              <infoLinks>
-                <infoLink id="0319-121e-436b-f664" name="Great Weapon" hidden="false" targetId="97d4-ed3b-5f76-5a23" type="profile"/>
-              </infoLinks>
+          <entryLinks>
+            <entryLink import="true" name="Great Weapon" hidden="false" id="c3e4-da68-38e2-1461" type="selectionEntry" targetId="1eb7-3f36-8cf7-e0ba">
               <costs>
                 <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="4"/>
-                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
               </costs>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="2ef7-3efe-a448-423f" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                  <comment>BSB</comment>
-                </modifier>
-              </modifiers>
-            </selectionEntry>
-            <selectionEntry id="a00d-2006-6512-3967" name="Spear" hidden="false" collective="false" import="true" type="upgrade">
-              <infoLinks>
-                <infoLink id="9b5e-235e-0a51-8fec" name="Spears (Infantry)" hidden="false" targetId="222b-1e29-9d24-09d7" type="profile"/>
-                <infoLink id="ba46-dd7b-eca4-acec" name="Spear (Mounted)" hidden="false" targetId="ec7d-fa6d-d0f6-5589" type="profile"/>
-              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0e77-8814-b7c7-e91b" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Halberds" hidden="false" id="d891-9222-9954-2fc6" type="selectionEntry" targetId="b3f3-a133-2869-0be8">
               <costs>
                 <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="4"/>
-                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
               </costs>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="2ef7-3efe-a448-423f" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                  <comment>BSB</comment>
-                </modifier>
-              </modifiers>
-            </selectionEntry>
-            <selectionEntry id="e7f5-24c4-332e-7253" name="Halberd" hidden="false" collective="false" import="true" type="upgrade">
-              <infoLinks>
-                <infoLink id="2026-2a9b-0589-a645" name="Halberd" hidden="false" targetId="3596-7d17-9ca2-fb92" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="4"/>
-                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-              </costs>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="2ef7-3efe-a448-423f" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                  <comment>BSB</comment>
-                </modifier>
-              </modifiers>
-            </selectionEntry>
-          </selectionEntries>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cc39-3a82-02b0-e19b" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="168b-249c-abbc-3480" type="selectionEntry" targetId="abdb-bbd0-41b2-5dff">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0750-a08d-44a8-2e84" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Spear" hidden="false" id="11f5-3982-2061-f9f8" type="selectionEntry" targetId="8f37-5de9-60ee-6dcb"/>
+          </entryLinks>
+          <comment>Scar-vet</comment>
         </selectionEntryGroup>
         <selectionEntryGroup id="7b22-faa7-197a-e29e" name="Armour" hidden="false" collective="false" import="true">
           <constraints>
@@ -972,6 +964,12 @@
           </constraints>
         </entryLink>
         <entryLink id="5ebb-4a14-5c6e-fafa" name="General" hidden="false" collective="false" import="true" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry"/>
+        <entryLink import="true" name="Scaly Skin (5+)" hidden="false" id="add5-af9c-630b-5c48" type="selectionEntry" targetId="d392-d274-c983-ac9d"/>
+        <entryLink import="true" name="Shield" hidden="false" id="44d5-8080-562c-5e82" type="selectionEntry" targetId="50e2-1873-a856-03e7">
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="2"/>
+          </costs>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="85"/>
@@ -3391,7 +3389,6 @@ Tehenhauin may only join units of Jungle Swarms (not Lesser Swarms), and is coun
     </selectionEntry>
     <selectionEntry id="64ec-34d1-14ee-0d54" name="Red Crested Skinks" hidden="true" collective="false" import="true" type="unit">
       <infoLinks>
-        <infoLink id="3aa4-3131-9729-184b" name="Red Crest" hidden="false" targetId="d0d0-091e-8468-5ff5" type="profile"/>
         <infoLink id="0e3b-7370-34b8-e8e8" name="Aquatic" hidden="false" targetId="d1be-78da-561d-0934" type="rule"/>
         <infoLink id="745c-7d89-3241-b273" name="Cold Blooded" hidden="false" targetId="da71-1c1e-ded6-959a" type="rule"/>
         <infoLink name="Blesssed Spawning of Sotek, the Serpent God" id="7e28-b13c-920e-b9ae" hidden="false" type="rule" targetId="d93f-c967-c856-d295"/>
@@ -3424,6 +3421,24 @@ Tehenhauin may only join units of Jungle Swarms (not Lesser Swarms), and is coun
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
+          <infoLinks>
+            <infoLink name="Red Crest" id="3aa4-3131-9729-184b" hidden="false" targetId="d0d0-091e-8468-5ff5" type="profile">
+              <modifiers>
+                <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="104f-5817-4bda-9382" shared="true" childName="Spear Infantry" includeChildSelections="true"/>
+                  </conditions>
+                  <comment>HW + Shield</comment>
+                </modifier>
+                <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="50e2-1873-a856-03e7" shared="true" childName="Shield" includeChildSelections="true"/>
+                  </conditions>
+                  <comment>Shield</comment>
+                </modifier>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
         </selectionEntry>
         <selectionEntry id="0818-6a32-7248-a6bb" name="Scouts" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
@@ -3476,22 +3491,6 @@ Tehenhauin may only join units of Jungle Swarms (not Lesser Swarms), and is coun
             <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e5ba-4773-6ff4-ef28" type="min"/>
             <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0218-2524-00d6-602e" type="max"/>
           </constraints>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Hand Weapon" hidden="false" id="f356-8011-2438-e698" collective="false">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="49e3-d84e-020b-b007" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="93bb-247d-99fa-ca28" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-              <infoLinks>
-                <infoLink name="Hand Weapon" id="5b46-838b-c018-d323" hidden="false" targetId="5556-38ea-b278-4a8f" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
-                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
           <entryLinks>
             <entryLink import="true" name="Shield" hidden="false" id="3604-c218-e6fb-343f" type="selectionEntry" targetId="50e2-1873-a856-03e7">
               <constraints>
@@ -3499,6 +3498,7 @@ Tehenhauin may only join units of Jungle Swarms (not Lesser Swarms), and is coun
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="820b-f7f3-0a85-1873" includeChildSelections="false"/>
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="cbfb-5fac-037f-0756" type="selectionEntry" targetId="abdb-bbd0-41b2-5dff"/>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup name="Blessed Spawning (Skinks of the Southlands)" id="7844-dc2c-6536-142a" hidden="false" collective="false" import="true">
@@ -6515,7 +6515,7 @@ These may take one of the following Blessed Spawning each:
         <characteristic name="I" typeId="dfff-363e-f72a-5a59">3</characteristic>
         <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">5</characteristic>
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">8</characteristic>
-        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">7</characteristic>
         <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
         <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">25x25</characteristic>
@@ -6685,7 +6685,7 @@ These may take one of the following Blessed Spawning each:
         <characteristic name="I" typeId="dfff-363e-f72a-5a59">3</characteristic>
         <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">4</characteristic>
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">8</characteristic>
-        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">7</characteristic>
         <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
         <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">25x25</characteristic>

@@ -489,7 +489,6 @@ Quatar</comment>
     <selectionEntry id="abdb-bbd0-41b2-5dff" name="Hand Weapon" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bdef-ba9b-d6ce-5b14" type="min"/>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="99cb-a514-335b-8bf5" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="1091-5b16-bd29-c7f0" name="Hand Weapon" hidden="false" targetId="5556-38ea-b278-4a8f" type="profile"/>
@@ -1862,6 +1861,20 @@ Warhammer Armies: Vampire Counts (page 61)</description>
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="260c-1cbd-0217-721c" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Spear" hidden="false" id="8f37-5de9-60ee-6dcb" collective="false">
+      <infoLinks>
+        <infoLink name="Spears (Infantry)" id="fb34-45b0-0e68-658a" hidden="false" targetId="222b-1e29-9d24-09d7" type="profile"/>
+        <infoLink name="Spear (Mounted)" id="b8cb-74ef-ab8a-c859" hidden="false" targetId="ec7d-fa6d-d0f6-5589" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="6"/>
+        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a23a-178d-ead4-ea53" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="f679-dff7-370a-6050" name="Lore of Metal" hidden="false" collective="false" import="true" collapsible="true">
@@ -2585,7 +2598,7 @@ Therefore, the enemy Armour save is reduced by an additional -1. For example, an
         <characteristic name="Range" typeId="3107-4d1e-9a51-6564"/>
         <characteristic name="Strength" typeId="6fe4-1ebb-cb04-1378"/>
         <characteristic name="Damage" typeId="6f2f-d612-52ef-1633"/>
-        <characteristic name="Special Rules" typeId="a21a-cdc0-4b13-b236"/>
+        <characteristic name="Special Rules" typeId="a21a-cdc0-4b13-b236">-1 Sv with HW</characteristic>
         <characteristic name="Saves" typeId="8014-a8b2-15c3-da95"/>
       </characteristics>
     </profile>
@@ -2634,7 +2647,7 @@ Always Strikes Last</characteristic>
     </profile>
     <profile id="752a-95b9-343a-8f75" name="Light Armour" hidden="false" typeId="f681-9937-db53-f1d8" typeName="Armour">
       <characteristics>
-        <characteristic name="Saving Throw Modifier" typeId="b600-e1ed-0765-27c1">6+</characteristic>
+        <characteristic name="Saving Throw Modifier" typeId="b600-e1ed-0765-27c1">-1</characteristic>
         <characteristic name="Special rules" typeId="42c3-68ab-cfa5-203e"/>
       </characteristics>
     </profile>
@@ -2646,8 +2659,8 @@ Always Strikes Last</characteristic>
     </profile>
     <profile id="ec7d-fa6d-d0f6-5589" name="Spear (Mounted)" hidden="false" typeId="7889-42d9-70a0-3ea9" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="3107-4d1e-9a51-6564">-</characteristic>
-        <characteristic name="Strength" typeId="6fe4-1ebb-cb04-1378">As user</characteristic>
+        <characteristic name="Range" typeId="3107-4d1e-9a51-6564"/>
+        <characteristic name="Strength" typeId="6fe4-1ebb-cb04-1378"/>
         <characteristic name="Damage" typeId="6f2f-d612-52ef-1633"/>
         <characteristic name="Special Rules" typeId="a21a-cdc0-4b13-b236">+1S on charge</characteristic>
         <characteristic name="Saves" typeId="8014-a8b2-15c3-da95"/>
@@ -2656,7 +2669,7 @@ Always Strikes Last</characteristic>
     <profile id="222b-1e29-9d24-09d7" name="Spears (Infantry)" hidden="false" typeId="7889-42d9-70a0-3ea9" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="3107-4d1e-9a51-6564"/>
-        <characteristic name="Strength" typeId="6fe4-1ebb-cb04-1378">As user</characteristic>
+        <characteristic name="Strength" typeId="6fe4-1ebb-cb04-1378"/>
         <characteristic name="Damage" typeId="6f2f-d612-52ef-1633"/>
         <characteristic name="Special Rules" typeId="a21a-cdc0-4b13-b236">May fight in two ranks</characteristic>
         <characteristic name="Saves" typeId="8014-a8b2-15c3-da95"/>
