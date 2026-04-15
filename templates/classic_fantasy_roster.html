@@ -1,0 +1,493 @@
+<template>      
+<set name="ruleProfiles" value="special rule,rule,rules,command"/>
+
+<table class="master-print-table">
+  
+  <tfoot>
+    <tr>
+      <td>
+        <div class="footer-stamp">COPYRIGHT GAMES WORKSHOP LTD 2000. PERMISSION IS GRANTED TO PHOTOCOPY THIS PAGE FOR PERSONAL USE ONLY. TEMPLATE ARCHITECTED BY KARAK NORN</div>
+      </td>
+    </tr>
+  </tfoot>
+
+  <tbody>
+    <tr>
+      <td>
+
+        <div class="roster-state-wrapper">
+          
+          <div class="scribe-controls no-print">
+            <input type="checkbox" id="hide-rules-toggle" />
+            <label for="hide-rules-toggle">
+              <strong>HIDE RULES GLOSSARY</strong> 
+              <br/>
+              <span class="control-subtext">(Check this box to instantly remove the Rules &amp; Profiles Glossary from the bottom of your Battle Forces before printing).</span>
+            </label>
+          </div>
+
+          <forces>
+            
+            <div class="force-title-banner">
+              BATTLE FORCE: 
+              <if field="customName">{{customName}} ({{catalogueName}})</if>
+              <if field="customName" type="not">{{catalogueName}}</if>
+            </div>
+
+            <div class="roster-page force-container">
+              
+              <div class="document-header">
+                <div class="header-row">
+                  <div class="header-field"><span class="label">PLAYER:</span><span class="line"></span></div>
+                  <div class="header-field"><span class="label">ARMY NAME:</span><span class="line force-name-text"><if field="customName">{{customName}}</if><if field="customName" type="not">{{name}}</if></span></div>
+                </div>
+                <div class="header-row">
+                  
+                  <div class="header-field"><span class="label">GENERAL:</span><span class="line force-name-text">
+                    <units>
+                      <set name="isGen" value="false"/>
+                      <entries recursive="true">
+                        <if field="name" type="match" value="General" flags="i"><set name="isGen" value="true"/></if>
+                        <categories><if field="name" type="match" value="General" flags="i"><set name="isGen" value="true"/></if></categories>
+                      </entries>
+                      <if field="isGen" type="equals" value="true">
+                        <if field="customName">{{customName}} (</if>{{name}}<if field="customName">)</if>
+                      </if>
+                    </units>
+                  </span></div>
+                  
+                  <div class="header-field"><span class="label">TOTAL PTS:</span><span class="line force-name-text">
+                    <costs><if field="name" type="match" value="pts" flags="i">{{value}}</if></costs>
+                  </span></div>
+                  
+                </div>
+              </div>
+
+              <categories skip-empty="true">
+                <if field="name" type="match" value="^(Lord|Lords|Heroes|Core|Special|Rare|Mercenaries|Regiments? of Renown|Characters|Special Characters|Named Characters)$" flags="i">
+                  
+                  <div class="category-block">
+                    <h3 class="category-title">{{name}}</h3>
+                    
+                    <units dedupe="true">
+                      <div class="unit-card">
+                        <table class="unit-table">
+                          
+                          <tr class="unit-header-row">
+                            <th colspan="2" class="unit-header-name">
+                              UNIT: 
+                              <if field="customName">{{customName}} ({{name}})</if>
+                              <if field="customName" type="not">{{name}}</if>
+                            </th>
+                            
+                            <th class="unit-header-size">SIZE: <span class="calc-size"><entries><if field="type" type="equals" value="model">{{number}}{{amount}}</if></entries></span><span class="fallback-size">{{number}}{{amount}}</span></th>
+
+                            <th class="unit-header-pts">PTS: 
+                              <costs><if field="name" type="match" value="pts" flags="i">{{value}}</if></costs>
+                            </th>
+                            
+                            <th class="unit-header-upgrades">UPGRADES / SELECTIONS</th>
+                            <th class="unit-header-rules">RULES</th>
+                          </tr>
+                          
+                          <tr class="unit-data-row">
+                            
+                            <td colspan="4" class="profile-cell">
+                              <profiles grouped="true" amount="false" exclude="{{ruleProfiles}}">
+                                <table class="profile-inner-table">
+                                  <items max="1">
+                                    <tr>
+                                      <th class="profile-type">{{typeName}}</th>
+                                      <characteristics><if field="length" type="not-equals" value="1"><th class="stat-heading">{{name}}</th></if></characteristics>
+                                    </tr>
+                                  </items>
+                                  <items>
+                                    <tr class="stat-row">
+                                      <characteristics>
+                                        <if field="length" type="equals" value="1">
+                                          <td class="name single-data" colspan="15">
+                                            <span class="profile-name">{{item.name}}</span><span class="data" type="markdown">{{value}}</span>
+                                          </td>
+                                        </if>
+                                      </characteristics>
+                                      <else>
+                                        <td class="name">{{item.name}}</td>
+                                        <characteristics><td class="data" type="markdown">{{value}}</td></characteristics>
+                                      </else>
+                                    </tr>
+                                  </items>
+                                </table>
+                              </profiles>
+                            </td>
+                            
+                            <td class="upgrades-cell">
+                              
+                              <costs>
+                                <if field="name" type="not-match" value="pts" flags="i">
+                                  <div class="list-item"><strong>{{name}}:</strong> {{value}}</div>
+                                </if>
+                              </costs>
+
+                              <set name="parentUnitName" value="{{name}}"/>
+                              <dedupe>
+                                <entries>
+                                  <if field="type" type="equals" value="upgrade">
+                                    <if field="name" type="not-equals" value="{{parentUnitName}}">
+                                      <div class="list-item">
+                                        <if field="number" type="greater" value="1">{{number}}x </if>
+                                        <if field="amount" type="greater" value="1">{{amount}}x </if>
+                                        {{name}}
+                                      </div>
+                                    </if>
+                                  </if>
+                                </entries>
+
+                                <entries>
+                                  <if field="type" type="equals" value="model">
+                                    <entries>
+                                      <if field="type" type="equals" value="upgrade">
+                                        <if field="name" type="not-equals" value="{{parentUnitName}}">
+                                          <div class="list-item">
+                                            <if field="number" type="greater" value="1">{{number}}x </if>
+                                            <if field="amount" type="greater" value="1">{{amount}}x </if>
+                                            {{name}}
+                                          </div>
+                                        </if>
+                                      </if>
+                                    </entries>
+                                  </if>
+                                </entries>
+                              </dedupe>
+                            </td>
+                            
+                            <td class="rules-cell">
+                              <dedupe>
+                                <rules>
+                                  <div class="list-item">{{name}}</div>
+                                </rules>
+                                <profiles include="{{ruleProfiles}}">
+                                  <div class="list-item">{{name}}</div>
+                                </profiles>
+                              </dedupe>
+                            </td>
+                          </tr>
+                          
+                        </table>
+                      </div>
+                    </units>
+                  </div>
+                  
+                </if>
+              </categories>
+
+              <div class="global-rules-section">
+                <h2 class="rules-summary-title">RULES AND ITEMS GLOSSARY</h2>
+                
+                <rules sort="true">
+                  <div class="global-rule-item">
+                    <span class="rule-name">{{name}}:</span>
+                    <span class="rule-desc" type="markdown">{{description}}</span>
+                  </div>
+                </rules>
+
+                <profiles include="{{ruleProfiles}}" sort="true">
+                  <div class="global-rule-item">
+                    <span class="rule-name">{{name}}:</span>
+                    <characteristics>
+                      <span class="rule-desc" type="markdown">{{value}}</span>
+                    </characteristics>
+                  </div>
+                </profiles>
+              </div>
+
+            </div> </forces>
+
+        </div> </td>
+    </tr>
+  </tbody>
+</table> 
+
+</template>
+
+<style>
+/* Pure Black and White Printable PDF Clone */
+@page {
+  size: auto;
+  margin: 12mm; 
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff; 
+  color: #000000; 
+  font-family: Arial, Helvetica, sans-serif; 
+  font-size: 11px; 
+  line-height: 1.2;
+}
+
+* {
+  box-sizing: border-box;
+  print-color-adjust: exact !important;
+  -webkit-print-color-adjust: exact !important;
+}
+
+/* INTERACTIVE TOGGLE LOGIC */
+.scribe-controls {
+  background-color: #f5f5f5;
+  border: 2px dashed #000000;
+  margin: 20px auto;
+  padding: 15px;
+  max-width: 1000px;
+  text-align: center;
+}
+
+.control-subtext {
+  font-size: 11px;
+  font-style: italic;
+  color: #555;
+}
+
+.roster-state-wrapper:has(#hide-rules-toggle:checked) .global-rules-section {
+  display: none !important;
+}
+
+@media print {
+  .no-print { display: none !important; }
+}
+
+/* MASTER PRINT TABLE */
+.master-print-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: none;
+}
+
+.master-print-table td {
+  padding: 0;
+  border: none;
+}
+
+tfoot {
+  display: table-footer-group; 
+}
+
+.footer-stamp {
+  text-align: center;
+  border-top: 1px solid #000000;
+  padding-top: 5px;
+  margin-top: 20px;
+  color: #000000;
+  font-size: 9px;
+  text-transform: uppercase;
+}
+
+/* EMPTY CATEGORY & SIZE FIXES */
+.category-block { display: none; }
+.category-block:has(.unit-card) { display: block; }
+.calc-size:not(:empty) + .fallback-size { display: none; }
+
+/* ROSTER LAYOUT */
+.force-title-banner {
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 8px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  border: 2px solid #000000;
+  text-transform: uppercase;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.force-container {
+  margin-bottom: 60px;
+  padding-bottom: 40px;
+  border-bottom: 8px solid #000000;
+  page-break-after: always;
+}
+
+.roster-page {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.document-header {
+  margin-top: 20px;
+  margin-bottom: 25px;
+  width: 100%;
+}
+
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.header-field {
+  display: flex;
+  flex: 1;
+  align-items: flex-end;
+  margin-right: 20px;
+}
+
+.header-field .label {
+  font-weight: bold;
+  font-size: 12px;
+  margin-right: 5px;
+  white-space: nowrap;
+}
+
+.header-field .line {
+  flex-grow: 1;
+  border-bottom: 1px solid #000000;
+  height: 1em;
+  padding-left: 5px;
+  font-style: italic;
+  font-size: 13px;
+}
+
+.category-title {
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 4px 8px;
+  margin-bottom: 12px;
+  border: 1px solid #000000;
+  page-break-after: avoid;
+}
+
+.unit-card {
+  break-inside: avoid;
+  page-break-inside: avoid;
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+.unit-table {
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: fixed; 
+  border: 2px solid #000000; 
+  background-color: #ffffff;
+}
+
+.unit-header-row th {
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 1px solid #000000;
+  padding: 6px 8px;
+  text-align: left;
+}
+
+.unit-header-name { width: 35%; }
+.unit-header-size { width: 10%; text-align: center; }
+.unit-header-pts { width: 10%; text-align: center; }
+.unit-header-upgrades { width: 22.5%; }
+.unit-header-rules { width: 22.5%; }
+
+.unit-data-row td {
+  vertical-align: top;
+  border: 1px solid #000000;
+  padding: 0; 
+}
+
+.upgrades-cell, .rules-cell {
+  padding: 6px; 
+  font-size: 10px;
+}
+
+.list-item {
+  margin-bottom: 3px;
+  padding-left: 8px;
+  text-indent: -8px;
+}
+
+.list-item::before {
+  content: "- ";
+}
+
+.profile-inner-table {
+  border-collapse: collapse;
+  width: 100%;
+  border: none; 
+}
+
+.profile-inner-table th, .profile-inner-table td {
+  border: 1px solid #000000;
+  padding: 3px 5px; 
+  text-align: center;
+  word-wrap: break-word; 
+}
+
+.profile-inner-table th {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 10px;
+  background-color: #e6e6e6 !important; 
+  border-top: 1px solid #000000; 
+}
+
+.profile-inner-table th.profile-type {
+  text-align: left;
+  width: 30%; 
+}
+
+.profile-inner-table td.name {
+  text-align: left;
+  font-weight: bold;
+}
+
+.profile-inner-table td.single-data {
+  text-align: left;
+  font-weight: normal;
+}
+
+.profile-name {
+  font-weight: bold;
+}
+
+.profile-name:has(+.data)::after {
+  content: ": ";
+}
+
+.global-rules-section {
+  margin-top: 20px;
+  border-top: 2px solid #000000;
+  padding-top: 15px;
+}
+
+.rules-summary-title {
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.global-rule-item {
+  margin-bottom: 10px;
+  text-align: justify;
+  font-size: 11px;
+}
+
+.rule-name {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+ol, ul, menu {
+  margin: 0;
+  padding-left: 16px;
+  margin-bottom: -18px;
+}
+</style>

@@ -27,8 +27,32 @@
         <characteristicType id="dfff-363e-f72a-5a59" name="I"/>
         <characteristicType id="6b9f-c8fe-8998-27e3" name="A"/>
         <characteristicType id="2d45-18fe-9eb3-b113" name="Ld"/>
-        <characteristicType id="f1be-e66c-d5e1-673c" name="Sv"/>
-        <characteristicType id="d4a9-0ed4-d041-e54b" name="Sv+"/>
+        <characteristicType id="f1be-e66c-d5e1-673c" name="Sv">
+          <formatRules>
+            <formatRule name="New Format Rule" id="f8ac-4740-5767-8f63" hidden="false" type="regex" match="^0$" replace="-">
+              <comment>0 → -</comment>
+            </formatRule>
+            <formatRule name="New Format Rule" id="369e-0bd4-4377-98fb" hidden="false" type="regex" match="^$" replace="-">
+              <comment>Empty → -</comment>
+            </formatRule>
+            <formatRule name="New Format Rule" id="338f-76da-0cd5-fdb5" hidden="false" type="regex" match="^(\d+)$" replace="$1+">
+              <comment>Append SUFFIX</comment>
+            </formatRule>
+          </formatRules>
+        </characteristicType>
+        <characteristicType id="d4a9-0ed4-d041-e54b" name="Sv+">
+          <formatRules>
+            <formatRule name="New Format Rule" id="fd27-98ee-5dff-e47a" hidden="false" type="regex" match="^0$" replace="-">
+              <comment>0 → -</comment>
+            </formatRule>
+            <formatRule name="New Format Rule" id="414c-eb40-22c4-6048" hidden="false" type="regex" match="^$" replace="-">
+              <comment>Empty → -</comment>
+            </formatRule>
+            <formatRule name="New Format Rule" id="4ec6-a627-5daa-cddf" hidden="false" type="regex" match="^(\d+)$" replace="$1+">
+              <comment>Add Plus Sign</comment>
+            </formatRule>
+          </formatRules>
+        </characteristicType>
         <characteristicType id="fa44-51dd-e69c-8d6a" name="US"/>
         <characteristicType name="Base" id="2cad-bb76-8a5a-1607"/>
       </characteristicTypes>
