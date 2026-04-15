@@ -139,6 +139,7 @@
       <infoLinks>
         <infoLink id="a1e8-f496-9a23-3ac2" name="Warhorse" hidden="false" targetId="f46e-1fd9-a8f8-65af" type="profile"/>
         <infoLink id="00bc-14e9-01ca-9378" name="Fast Cavalry" hidden="false" targetId="6a56-df83-e623-2218" type="rule"/>
+        <infoLink name="Warhorse" id="ee0b-b853-a055-a8f9" hidden="false" type="profile" targetId="e3e4-7932-8361-1fe4"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="518f-f8d0-4a8b-2260" name="Regiment of Renown" hidden="false" targetId="ee09-9a50-ad78-9c32" primary="true"/>
@@ -166,7 +167,7 @@
                 <characteristic name="I" typeId="dfff-363e-f72a-5a59">3</characteristic>
                 <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
                 <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">7</characteristic>
-                <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+                <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">5</characteristic>
                 <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
                 <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
                 <characteristic name="Base" typeId="2cad-bb76-8a5a-1607"/>
@@ -1194,6 +1195,29 @@
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Pavise" hidden="false" id="0559-146b-c553-daf6">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e45e-5262-1344-dad8" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1a02-f2ca-ded0-971a" includeChildSelections="false"/>
+          </constraints>
+          <rules>
+            <rule name="Pavise" id="b382-d1d8-e5dd-0c59" hidden="false" publicationId="cc59-6466-b62e-cf5b" page="64">
+              <description>A pavise is a large shield which each Crossbowman can prop up in front of him.
+To represent this, Crossbowmen equipped with pavises have an additional +2 Armour save versus normal and magical missile attacks.
+They do not get this bonus in close combat.
+So a Crossbowman in heavy armour with a pavise gets an Armour save of 3+ versus missile attacks, but only an Armour save of 5+ in close combat.</description>
+            </rule>
+          </rules>
+          <profiles>
+            <profile name="Pavise" typeId="f681-9937-db53-f1d8" typeName="Armour" hidden="false" id="c2a6-6a9a-de89-b0d9">
+              <characteristics>
+                <characteristic name="Saving Throw Modifier" typeId="b600-e1ed-0765-27c1">5+/3+</characteristic>
+                <characteristic name="Special rules" typeId="42c3-68ab-cfa5-203e">5+ in CC
+3+ vs missile attacks</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
       </selectionEntries>
       <entryLinks>
         <entryLink id="fb75-35bf-ec14-4ed0" name="Hand Weapon" hidden="false" collective="false" import="true" targetId="abdb-bbd0-41b2-5dff" type="selectionEntry">
@@ -1208,7 +1232,6 @@
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="232d-d1ab-0c41-b10a" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="ce8f-be58-1ebc-410c" name="Shield" hidden="false" collective="false" import="true" targetId="50e2-1873-a856-03e7" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="86"/>
@@ -1285,14 +1308,13 @@
     <selectionEntry id="ab79-9343-3a3d-ff06" name="Bearmen of Urslo" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
         <infoLink id="35e6-6a05-66b2-a29d" name="Frenzy" hidden="false" targetId="ab5d-dda1-bffc-a027" type="rule"/>
-        <infoLink id="39a619fa-729b-400b-8f4b-efb20b8cd722" name="Bearmen" hidden="false" targetId="f3c5-8cfb-2554-967d" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="7caa-d03e-729b-267a" name="Special" hidden="false" targetId="43cc-fc3f-35a7-8d03" primary="false"/>
         <categoryLink id="ae77-c44c-cb5c-a915" name="Regiment of Renown" hidden="false" targetId="ee09-9a50-ad78-9c32" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="a7c7-5257-8b73-af45" name="Marauder" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry id="a7c7-5257-8b73-af45" name="Bearmen" hidden="false" collective="false" import="true" type="model">
           <constraints>
             <constraint field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e6ab-e36b-fd84-48f1" type="min"/>
           </constraints>
@@ -1301,6 +1323,9 @@
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
+          <infoLinks>
+            <infoLink name="Bearmen" id="39a619fa-729b-400b-8f4b-efb20b8cd722" hidden="false" targetId="f3c5-8cfb-2554-967d" type="profile"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -1406,9 +1431,9 @@
                     <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">4</characteristic>
                     <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">8</characteristic>
                     <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
-                    <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">4+</characteristic>
+                    <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">4</characteristic>
                     <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
-                    <characteristic name="Base" typeId="2cad-bb76-8a5a-1607"/>
+                    <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">20x20</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2019,7 +2044,7 @@
                     <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">3+</characteristic>
                     <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
                     <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">6</characteristic>
-                    <characteristic name="Base" typeId="2cad-bb76-8a5a-1607"/>
+                    <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">50x50</characteristic>
                   </characteristics>
                 </profile>
                 <profile id="cf30-885e-8bf2-2c65" name="Breath weapon" publicationId="315e-e3c4-08af-fd51" page="114" hidden="false" typeId="7889-42d9-70a0-3ea9" typeName="Weapon">
@@ -2029,6 +2054,12 @@
                     <characteristic name="Damage" typeId="6f2f-d612-52ef-1633"/>
                     <characteristic name="Special Rules" typeId="a21a-cdc0-4b13-b236">Hit if covered, partials with 4+. Not for stand&amp;shoot reaction.</characteristic>
                     <characteristic name="Saves" typeId="8014-a8b2-15c3-da95"/>
+                  </characteristics>
+                </profile>
+                <profile name="Scaly Skin 3+" typeId="f681-9937-db53-f1d8" typeName="Armour" hidden="false" id="1556-8d45-13cf-e796">
+                  <characteristics>
+                    <characteristic name="Saving Throw Modifier" typeId="b600-e1ed-0765-27c1">3+</characteristic>
+                    <characteristic name="Special rules" typeId="42c3-68ab-cfa5-203e"/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2120,7 +2151,6 @@ No only the leader counts (Asarnil and Hengist), in the cases you mentioned.</de
       <infoLinks>
         <infoLink id="1203-c75e-3c2d-168c" name="Fly" hidden="false" targetId="e930-0b71-2fef-3937" type="rule"/>
         <infoLink id="aab2-f8a5-2560-7091" name="Skirmishers" hidden="false" targetId="1945-ac89-9cc4-3537" type="rule"/>
-        <infoLink id="063d0772-5dcd-438b-9b30-4876be05c748" name="Birdmen" hidden="false" targetId="6216-c846-9c97-95d2" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="2204-a486-732a-0558" name="Regiment of Renown" hidden="false" targetId="ee09-9a50-ad78-9c32" primary="true"/>
@@ -2172,6 +2202,9 @@ No only the leader counts (Asarnil and Hengist), in the cases you mentioned.</de
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
+          <infoLinks>
+            <infoLink name="Birdmen" id="063d0772-5dcd-438b-9b30-4876be05c748" hidden="false" targetId="6216-c846-9c97-95d2" type="profile"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -2276,6 +2309,7 @@ No only the leader counts (Asarnil and Hengist), in the cases you mentioned.</de
           <infoLinks>
             <infoLink id="b817-52ce-b951-188c" name="Warhorse" hidden="false" targetId="f46e-1fd9-a8f8-65af" type="profile"/>
             <infoLink name="Cannons" id="97e4-743b-9ca7-786e" hidden="false" type="rule" targetId="1bda-9392-bbe9-36e5"/>
+            <infoLink name="Warhorse" id="4918-95f6-f351-e21c" hidden="false" targetId="e3e4-7932-8361-1fe4" type="profile"/>
           </infoLinks>
           <categoryLinks>
             <categoryLink id="547a-1462-968d-e24b" name="Rare" hidden="false" targetId="e94b-6a54-8779-cd60" primary="false"/>
@@ -2300,8 +2334,8 @@ No only the leader counts (Asarnil and Hengist), in the cases you mentioned.</de
                     <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">7</characteristic>
                     <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
                     <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
-                    <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
-                    <characteristic name="Base" typeId="2cad-bb76-8a5a-1607"/>
+                    <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
+                    <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">20x20</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2335,15 +2369,16 @@ No only the leader counts (Asarnil and Hengist), in the cases you mentioned.</de
                 <characteristic name="I" typeId="dfff-363e-f72a-5a59">5</characteristic>
                 <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">3</characteristic>
                 <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">8</characteristic>
-                <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">5+</characteristic>
+                <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">4</characteristic>
                 <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
                 <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
-                <characteristic name="Base" typeId="2cad-bb76-8a5a-1607"/>
+                <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">20x20</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink id="78f0-9b7a-7eb1-0de3" name="Warhorse" hidden="false" targetId="f46e-1fd9-a8f8-65af" type="profile"/>
+            <infoLink id="78f0-9b7a-7eb1-0de3" name="Warhorse" hidden="false" targetId="e3e4-7932-8361-1fe4" type="profile"/>
+            <infoLink id="7fd2-b117-ae97-2fa7" name="Warhorse" hidden="false" targetId="f46e-1fd9-a8f8-65af" type="profile"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="be71-fe1a-ef3c-d90e" name="Weapons and Armour" hidden="false" collective="false" import="true" type="upgrade">
@@ -3989,7 +4024,11 @@ The Cursed Company and Richter cause fear.</description>
             <constraint type="max" value="20" field="selections" scope="parent" shared="true" id="aa44-e6c3-387b-be1d" includeChildSelections="false"/>
           </constraints>
           <infoLinks>
-            <infoLink name="Amazon" id="3645-5ebd-c72a-1ebb" hidden="false" type="profile" targetId="0db4-314f-7419-19d7"/>
+            <infoLink name="Amazon" id="3645-5ebd-c72a-1ebb" hidden="false" type="profile" targetId="0db4-314f-7419-19d7">
+              <modifiers>
+                <modifier type="set" value="6" field="d4a9-0ed4-d041-e54b"/>
+              </modifiers>
+            </infoLink>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="11"/>
@@ -4021,7 +4060,16 @@ In addition the Amazons can point the Blades at the enemy and unleash the very f
                 </rule>
               </rules>
               <profiles>
-                <profile name="Blades of the Ancients" typeId="7889-42d9-70a0-3ea9" typeName="Weapon" hidden="false" id="d994-9aac-b00c-f84c">
+                <profile name="Blades of the Ancients (Ranged)" typeId="7889-42d9-70a0-3ea9" typeName="Weapon" hidden="false" id="d994-9aac-b00c-f84c">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3107-4d1e-9a51-6564">12&quot;</characteristic>
+                    <characteristic name="Strength" typeId="6fe4-1ebb-cb04-1378">S3</characteristic>
+                    <characteristic name="Damage" typeId="6f2f-d612-52ef-1633"/>
+                    <characteristic name="Special Rules" typeId="a21a-cdc0-4b13-b236">No penalties for range nor movement</characteristic>
+                    <characteristic name="Saves" typeId="8014-a8b2-15c3-da95"/>
+                  </characteristics>
+                </profile>
+                <profile name="Blades of the Ancients (CC)" typeId="7889-42d9-70a0-3ea9" typeName="Weapon" hidden="false" id="ec79-df1b-e536-0df1">
                   <characteristics>
                     <characteristic name="Range" typeId="3107-4d1e-9a51-6564">CC</characteristic>
                     <characteristic name="Strength" typeId="6fe4-1ebb-cb04-1378">+1S</characteristic>
@@ -5974,6 +6022,14 @@ Vampires dies when wounded, no regeneration.</characteristic>
       <constraints>
         <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="c119-268d-86ad-9c9b"/>
       </constraints>
+      <profiles>
+        <profile name="Scaly Skin 2+" typeId="f681-9937-db53-f1d8" typeName="Armour" hidden="false" id="dd0c-5fec-d46b-1ca4">
+          <characteristics>
+            <characteristic name="Saving Throw Modifier" typeId="b600-e1ed-0765-27c1">2+</characteristic>
+            <characteristic name="Special rules" typeId="42c3-68ab-cfa5-203e"/>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Toxote&apos;s Hellmounts" hidden="true" id="1a52-2060-f39b-38ee" publicationId="3637-81a7-ae18-030f" page="25">
       <costs>
@@ -6377,11 +6433,39 @@ NOTE: This unit does not specify the category of the unit (besides being Core in
                 <characteristic name="I" typeId="dfff-363e-f72a-5a59">2</characteristic>
                 <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
                 <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">9</characteristic>
-                <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+                <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">6</characteristic>
                 <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
                 <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
                 <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">20x20</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="decrement" value="2" field="f1be-e66c-d5e1-673c">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="dde4-0ba8-7b3c-57b7" shared="true" includeChildSelections="true" childName="Heavy Armour"/>
+                  </conditions>
+                </modifier>
+                <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="50e2-1873-a856-03e7" shared="true" includeChildSelections="true" childName="Shield"/>
+                  </conditions>
+                </modifier>
+                <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="055f-8e4e-f170-35d2" shared="true" includeChildSelections="true" childName="Light Armour"/>
+                  </conditions>
+                </modifier>
+                <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="1eb7-3f36-8cf7-e0ba" shared="true" childName="Great Weapon" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="50e2-1873-a856-03e7" shared="true" includeChildSelections="true" childName="Shield"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="increment" value="1" field="f1be-e66c-d5e1-673c"/>
+              </modifiers>
             </profile>
           </profiles>
         </selectionEntry>
@@ -6418,7 +6502,7 @@ NOTE: This unit does not specify the category of the unit (besides being Core in
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="b1d3-7af4-b681-ece9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3dee-76e5-80da-2bfa" includeChildSelections="false"/>
               </constraints>
             </entryLink>
             <entryLink import="true" name="Great Weapon" hidden="false" id="0dab-c8ee-ac8d-ea02" collective="false" targetId="1eb7-3f36-8cf7-e0ba" type="selectionEntry">
@@ -6430,7 +6514,7 @@ NOTE: This unit does not specify the category of the unit (besides being Core in
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="98fd-b3bc-6b95-6236" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e8c1-8bb3-8732-7d53" includeChildSelections="false"/>
               </constraints>
             </entryLink>
             <entryLink import="true" name="Hand Weapon" hidden="false" id="c3b1-01d2-85a9-9b83" collective="false" targetId="abdb-bbd0-41b2-5dff" type="selectionEntry">
@@ -7148,11 +7232,29 @@ NOTE: This unit does not specify the category of the unit (besides being Core in
                 <characteristic name="I" typeId="dfff-363e-f72a-5a59">3</characteristic>
                 <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
                 <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">7</characteristic>
-                <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+                <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">7</characteristic>
                 <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
                 <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
                 <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">20x20</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="50e2-1873-a856-03e7" shared="true" childName="Shield" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="unit" childId="4c34-ff31-b065-2372" shared="true" childName="Equipment" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="50e2-1873-a856-03e7" shared="true" childName="Shield" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                  <comment>HW and Shield</comment>
+                </modifier>
+              </modifiers>
             </profile>
           </profiles>
         </selectionEntry>
@@ -9385,8 +9487,8 @@ Fires X3</characteristic>
         <characteristic name="I" typeId="dfff-363e-f72a-5a59">3</characteristic>
         <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">7</characteristic>
-        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">6+</characteristic>
-        <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">6+</characteristic>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
+        <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
         <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">20x20</characteristic>
       </characteristics>
@@ -9402,7 +9504,7 @@ Fires X3</characteristic>
         <characteristic name="I" typeId="dfff-363e-f72a-5a59">3</characteristic>
         <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">3</characteristic>
-        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">5+</characteristic>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">5</characteristic>
         <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
         <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">25x50</characteristic>
@@ -9650,10 +9752,10 @@ Dwarf Hanguns get a +1 to hit at short range</characteristic>
         <characteristic name="I" typeId="dfff-363e-f72a-5a59">3</characteristic>
         <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">7</characteristic>
-        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">4+</characteristic>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">5+/3+</characteristic>
         <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
-        <characteristic name="Base" typeId="2cad-bb76-8a5a-1607"/>
+        <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">20x20</characteristic>
       </characteristics>
     </profile>
     <profile id="f3c5-8cfb-2554-967d" name="Bearmen" publicationId="1ec0-3b22-5b99-e411" page="76" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
@@ -9667,10 +9769,10 @@ Dwarf Hanguns get a +1 to hit at short range</characteristic>
         <characteristic name="I" typeId="dfff-363e-f72a-5a59">4</characteristic>
         <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">7</characteristic>
-        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">+5</characteristic>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">5</characteristic>
         <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
-        <characteristic name="Base" typeId="2cad-bb76-8a5a-1607"/>
+        <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">20x20</characteristic>
       </characteristics>
     </profile>
     <profile id="3242-b366-39b2-c292" name="Oglah Khan" publicationId="1ec0-3b22-5b99-e411" page="77" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
@@ -9752,7 +9854,7 @@ Dwarf Hanguns get a +1 to hit at short range</characteristic>
         <characteristic name="I" typeId="dfff-363e-f72a-5a59">7</characteristic>
         <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">4</characteristic>
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">9</characteristic>
-        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">4+</characteristic>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">4</characteristic>
         <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
         <characteristic name="Base" typeId="2cad-bb76-8a5a-1607"/>
@@ -9772,7 +9874,7 @@ Dwarf Hanguns get a +1 to hit at short range</characteristic>
         <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
         <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
-        <characteristic name="Base" typeId="2cad-bb76-8a5a-1607"/>
+        <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">40x40</characteristic>
       </characteristics>
     </profile>
     <profile id="812f-b39d-3437-fed0" name="Horned One" publicationId="1ec0-3b22-5b99-e411" page="79" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
@@ -9855,9 +9957,9 @@ Dwarf Hanguns get a +1 to hit at short range</characteristic>
         <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">8</characteristic>
         <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
-        <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">5+</characteristic>
+        <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">5</characteristic>
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
-        <characteristic name="Base" typeId="2cad-bb76-8a5a-1607"/>
+        <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">20x20</characteristic>
       </characteristics>
     </profile>
     <profile name="Truthsayer" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="de9b-71d0-7c5f-9f91" page="15" publicationId="91c2-b862-8010-87bb">
@@ -9897,7 +9999,7 @@ Dwarf Hanguns get a +1 to hit at short range</characteristic>
         <characteristic name="I" typeId="dfff-363e-f72a-5a59">6</characteristic>
         <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">8</characteristic>
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">10</characteristic>
-        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">2+</characteristic>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">2</characteristic>
         <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">30</characteristic>
         <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">100x150</characteristic>
@@ -9968,7 +10070,7 @@ Dwarf Hanguns get a +1 to hit at short range</characteristic>
         <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
         <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
-        <characteristic name="Base" typeId="2cad-bb76-8a5a-1607"/>
+        <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">20x20</characteristic>
       </characteristics>
     </profile>
     <profile name="Josef Bugman" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="68dd-89f8-9cb7-98da" publicationId="2774-7faa-fcfc-e6a3" page="13-14">
@@ -9995,6 +10097,12 @@ Dwarf Hanguns get a +1 to hit at short range</characteristic>
       </characteristics>
     </profile>
     <profile name="Thick-skinned" typeId="f681-9937-db53-f1d8" typeName="Armour" hidden="false" id="8ab1-dd33-6415-2b3e">
+      <characteristics>
+        <characteristic name="Saving Throw Modifier" typeId="b600-e1ed-0765-27c1">-1</characteristic>
+        <characteristic name="Special rules" typeId="42c3-68ab-cfa5-203e"/>
+      </characteristics>
+    </profile>
+    <profile name="Warhorse" typeId="f681-9937-db53-f1d8" typeName="Armour" hidden="false" id="e3e4-7932-8361-1fe4">
       <characteristics>
         <characteristic name="Saving Throw Modifier" typeId="b600-e1ed-0765-27c1">-1</characteristic>
         <characteristic name="Special rules" typeId="42c3-68ab-cfa5-203e"/>
