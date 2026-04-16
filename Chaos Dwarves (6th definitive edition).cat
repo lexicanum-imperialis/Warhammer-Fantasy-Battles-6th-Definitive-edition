@@ -1348,7 +1348,7 @@ A single character in the front rank will not effect the unit’s fire</characte
                   <conditions>
                     <condition type="lessThan" value="2" field="selections" scope="self" childId="4d5d-18a3-321b-fe93" shared="true" childName="Weapons" includeChildSelections="true"/>
                     <condition type="atLeast" value="1" field="selections" scope="self" childId="50e2-1873-a856-03e7" shared="true" childName="Shield" includeChildSelections="true"/>
-                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="4104-1080-9488-fc99" shared="true" childName="Wolf"/>
+                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="3774-21f3-7566-456a" shared="true" childName="Great Taurus" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -1392,9 +1392,15 @@ A single character in the front rank will not effect the unit’s fire</characte
                 <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">4</characteristic>
                 <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">50x50</characteristic>
               </characteristics>
-              <attributes>
-                <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-              </attributes>
+            </profile>
+            <profile name="Fire breath" typeId="7889-42d9-70a0-3ea9" typeName="Weapon" hidden="false" id="bd15-8a08-58b9-ddd5">
+              <characteristics>
+                <characteristic name="Range" typeId="3107-4d1e-9a51-6564">Fire template</characteristic>
+                <characteristic name="Strength" typeId="6fe4-1ebb-cb04-1378">3</characteristic>
+                <characteristic name="Damage" typeId="6f2f-d612-52ef-1633"/>
+                <characteristic name="Special Rules" typeId="a21a-cdc0-4b13-b236">Flaming Attacks*</characteristic>
+                <characteristic name="Saves" typeId="8014-a8b2-15c3-da95"/>
+              </characteristics>
             </profile>
           </profiles>
           <rules>
@@ -1406,6 +1412,7 @@ A single character in the front rank will not effect the unit’s fire</characte
             <infoLink name="Fly" id="9339-5511-6c18-b525" hidden="false" targetId="e930-0b71-2fef-3937" type="rule"/>
             <infoLink name="Large Target" id="aa9d-dbf3-1096-d6d2" hidden="false" targetId="4463-1b38-aa4d-e03c" type="rule"/>
             <infoLink name="Terror" id="0a3e-9611-a5d1-353c" hidden="false" targetId="96f0-c50f-e59e-85fa" type="rule"/>
+            <infoLink name="Flaming Attacks*" id="2304-9550-d27b-2822" hidden="false" type="rule" targetId="aeba-8177-ee4a-9271"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="230"/>
@@ -1539,9 +1546,6 @@ A single character in the front rank will not effect the unit’s fire</characte
                 <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">4</characteristic>
                 <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">50x50</characteristic>
               </characteristics>
-              <attributes>
-                <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-              </attributes>
             </profile>
           </profiles>
           <rules>
@@ -1706,9 +1710,6 @@ A single character in the front rank will not effect the unit’s fire</characte
                     <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">2</characteristic>
                     <characteristic name="Base" typeId="2cad-bb76-8a5a-1607"/>
                   </characteristics>
-                  <attributes>
-                    <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-                  </attributes>
                 </profile>
               </profiles>
               <costs>
@@ -1849,9 +1850,6 @@ A single character in the front rank will not effect the unit’s fire</characte
                 <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">3 (one per crewman)</characteristic>
                 <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">50x50</characteristic>
               </characteristics>
-              <attributes>
-                <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-              </attributes>
             </profile>
           </profiles>
           <costs>
@@ -2007,9 +2005,6 @@ A single character in the front rank will not effect the unit’s fire</characte
                     <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
                     <characteristic name="Base" typeId="2cad-bb76-8a5a-1607"/>
                   </characteristics>
-                  <attributes>
-                    <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-                  </attributes>
                 </profile>
               </profiles>
               <costs>
@@ -2120,9 +2115,6 @@ A single character in the front rank will not effect the unit’s fire</characte
                 <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">2 (one per crewman)</characteristic>
                 <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">50x50</characteristic>
               </characteristics>
-              <attributes>
-                <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-              </attributes>
             </profile>
           </profiles>
           <costs>
@@ -2205,7 +2197,7 @@ A single character in the front rank will not effect the unit’s fire</characte
             </infoLink>
           </infoLinks>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Light Armour" hidden="false" id="7c9a-ee06-e9fd-3528" collective="false" page="">
+        <selectionEntry type="upgrade" import="true" name="Light Armour" hidden="false" id="7c9a-ee06-e9fd-3528" collective="false">
           <modifiers>
             <modifier type="increment" value="1" field="ecfa-8486-4f6c-c249">
               <repeats>
@@ -2898,9 +2890,6 @@ A single character in the front rank will not effect the unit’s fire</characte
                     <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
                     <characteristic name="Base" typeId="2cad-bb76-8a5a-1607"/>
                   </characteristics>
-                  <attributes>
-                    <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-                  </attributes>
                 </profile>
               </profiles>
               <costs>
@@ -3255,9 +3244,6 @@ A single character in the front rank will not effect the unit’s fire</characte
                 <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">2</characteristic>
                 <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">50x50</characteristic>
               </characteristics>
-              <attributes>
-                <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-              </attributes>
             </profile>
           </profiles>
           <costs>
@@ -3314,9 +3300,6 @@ A single character in the front rank will not effect the unit’s fire</characte
                 <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">2</characteristic>
                 <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">50x50</characteristic>
               </characteristics>
-              <attributes>
-                <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-              </attributes>
             </profile>
           </profiles>
           <costs>
@@ -3618,9 +3601,6 @@ wound.</characteristic>
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
         <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">25x50</characteristic>
       </characteristics>
-      <attributes>
-        <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-      </attributes>
     </profile>
     <profile name="Goblin" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="bfb8-b51d-7775-9ba4" publicationId="d22a-b2ad-8731-c6f7" page="43">
       <characteristics>
@@ -3638,9 +3618,6 @@ wound.</characteristic>
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
         <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">20x20</characteristic>
       </characteristics>
-      <attributes>
-        <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-      </attributes>
     </profile>
     <profile name="Goblin Boss" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="a6da-1d55-d3e6-6bcc" publicationId="d22a-b2ad-8731-c6f7" page="43">
       <characteristics>
@@ -3658,9 +3635,6 @@ wound.</characteristic>
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
         <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">20x20</characteristic>
       </characteristics>
-      <attributes>
-        <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-      </attributes>
     </profile>
     <profile name="Hobgoblin" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="98fe-fcb0-3c5d-8937" publicationId="756d-4758-8a13-1d8a">
       <characteristics>
@@ -3678,9 +3652,6 @@ wound.</characteristic>
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
         <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">20x20</characteristic>
       </characteristics>
-      <attributes>
-        <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-      </attributes>
     </profile>
     <profile name="Orc basic" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="3fa6-5972-314c-9362" publicationId="d22a-b2ad-8731-c6f7" page="42">
       <characteristics>
@@ -3698,9 +3669,6 @@ wound.</characteristic>
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
         <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">25x25</characteristic>
       </characteristics>
-      <attributes>
-        <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-      </attributes>
     </profile>
     <profile name="Orc Big Uns" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="a0c7-017f-e4f5-a6a7" publicationId="d22a-b2ad-8731-c6f7" page="42">
       <characteristics>
@@ -3718,9 +3686,6 @@ wound.</characteristic>
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
         <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">25x25</characteristic>
       </characteristics>
-      <attributes>
-        <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-      </attributes>
     </profile>
     <profile name="Orc boss" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="065e-32ec-e41d-afb4" publicationId="d22a-b2ad-8731-c6f7" page="42">
       <characteristics>
@@ -3738,9 +3703,6 @@ wound.</characteristic>
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
         <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">25x25</characteristic>
       </characteristics>
-      <attributes>
-        <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-      </attributes>
     </profile>
     <profile name="Talisman of Obsidian" typeId="a89b-d5a3-7805-c44e" typeName="Magic Items" hidden="false" id="0925-27fa-3f39-7df9">
       <characteristics>
@@ -3795,9 +3757,6 @@ wound.</characteristic>
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
         <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">20x20</characteristic>
       </characteristics>
-      <attributes>
-        <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-      </attributes>
     </profile>
     <profile name="Bull Centaur Hero" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="3d83-7cc9-c284-595a" publicationId="756d-4758-8a13-1d8a" page="32">
       <characteristics>
@@ -3815,9 +3774,6 @@ wound.</characteristic>
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">2</characteristic>
         <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">25x50</characteristic>
       </characteristics>
-      <attributes>
-        <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-      </attributes>
     </profile>
     <profile name="Chaos Dwarf Hero" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="f483-fdb3-a566-dc51" publicationId="756d-4758-8a13-1d8a" page="32">
       <characteristics>
@@ -3835,9 +3791,6 @@ wound.</characteristic>
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
         <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">20x20</characteristic>
       </characteristics>
-      <attributes>
-        <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-      </attributes>
     </profile>
     <profile name="Chaos Dwarf Sorcerer" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="3992-02bc-3b03-4228" publicationId="756d-4758-8a13-1d8a" page="32">
       <characteristics>
@@ -3855,9 +3808,6 @@ wound.</characteristic>
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
         <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">20x20</characteristic>
       </characteristics>
-      <attributes>
-        <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-      </attributes>
     </profile>
     <profile name="Hobgoblin Hero" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="7634-26d0-e896-ff44">
       <characteristics>
@@ -3875,9 +3825,6 @@ wound.</characteristic>
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
         <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">20x20</characteristic>
       </characteristics>
-      <attributes>
-        <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-      </attributes>
     </profile>
     <profile name="Bull Centaur Lord" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="32c3-cced-c292-575b" publicationId="756d-4758-8a13-1d8a" page="32">
       <characteristics>
@@ -3895,9 +3842,6 @@ wound.</characteristic>
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">2</characteristic>
         <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">25x50</characteristic>
       </characteristics>
-      <attributes>
-        <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-      </attributes>
     </profile>
     <profile name="Chaos Dwarf Lord" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="36b0-8854-524c-68fb" publicationId="756d-4758-8a13-1d8a" page="32">
       <characteristics>
@@ -3915,9 +3859,6 @@ wound.</characteristic>
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
         <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">20x20</characteristic>
       </characteristics>
-      <attributes>
-        <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-      </attributes>
     </profile>
     <profile name="Sorcerer Lord" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="43fd-65f7-ddab-5f2d" publicationId="756d-4758-8a13-1d8a" page="32">
       <characteristics>
@@ -3935,9 +3876,6 @@ wound.</characteristic>
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
         <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">20x20</characteristic>
       </characteristics>
-      <attributes>
-        <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-      </attributes>
     </profile>
     <profile name="Bull Centaur" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="0286-f16f-935d-24ad">
       <characteristics>
@@ -3955,9 +3893,6 @@ wound.</characteristic>
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">2</characteristic>
         <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">25x50</characteristic>
       </characteristics>
-      <attributes>
-        <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-      </attributes>
     </profile>
     <profile name="Black Orcs" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="7698-a473-1d88-3e71">
       <characteristics>
@@ -3975,9 +3910,6 @@ wound.</characteristic>
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
         <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">25x25</characteristic>
       </characteristics>
-      <attributes>
-        <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-      </attributes>
     </profile>
     <profile name="Big&apos;Uns" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="f2c9-4b6a-e859-84f7">
       <characteristics>
@@ -3995,9 +3927,6 @@ wound.</characteristic>
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
         <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">25x25</characteristic>
       </characteristics>
-      <attributes>
-        <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-      </attributes>
     </profile>
     <profile name="Orcs" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="3078-c09e-8916-3a20" publicationId="d22a-b2ad-8731-c6f7" page="10">
       <characteristics>
@@ -4015,9 +3944,6 @@ wound.</characteristic>
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
         <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">25x25</characteristic>
       </characteristics>
-      <attributes>
-        <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-      </attributes>
     </profile>
     <profile name="Mount" typeId="f681-9937-db53-f1d8" typeName="Armour" hidden="false" id="d420-64da-66ba-d5c6">
       <characteristics>

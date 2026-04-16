@@ -4582,6 +4582,18 @@ In addition, a monster that is beaten in hand to hand combat by Rakarth is assum
               <attributes>
                 <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
               </attributes>
+              <modifiers>
+                <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="055f-8e4e-f170-35d2" shared="true" childName="Light Armour" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="5d63-eca8-32c8-2b95" shared="true" childName="Shield" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </profile>
           </profiles>
           <costs>
@@ -4795,6 +4807,13 @@ In addition, a monster that is beaten in hand to hand combat by Rakarth is assum
           </conditions>
         </modifier>
       </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Light Armour" hidden="false" id="ed9d-fa3b-7d48-84e9" type="selectionEntry" targetId="055f-8e4e-f170-35d2">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9c18-b8e8-b211-f3a1" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Watchtower army list rule" hidden="true" id="660d-c205-1f43-9e48">
       <categoryLinks>

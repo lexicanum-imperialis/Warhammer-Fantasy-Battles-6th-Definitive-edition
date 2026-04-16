@@ -169,6 +169,9 @@
             <formatRule name="New Format Rule" id="e7a2-2165-9844-51fa" hidden="false" type="regex" match="^$" replace="-">
               <comment>Empty → -</comment>
             </formatRule>
+            <formatRule name="New Format Rule" id="63cf-9ed0-f2a4-69ee" hidden="false" type="regex" match="(^\d)" replace="$1+">
+              <comment>Append SUFFIX</comment>
+            </formatRule>
           </formatRules>
         </characteristicType>
         <characteristicType id="42c3-68ab-cfa5-203e" name="Special rules">
@@ -2799,9 +2802,6 @@ Always Strikes Last</characteristic>
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
         <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">40x40</characteristic>
       </characteristics>
-      <attributes>
-        <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-      </attributes>
     </profile>
     <profile id="6c75-5af6-cc63-e80a" name="Bolt-Thrower" publicationId="315e-e3c4-08af-fd51" page="124" hidden="false" typeId="7889-42d9-70a0-3ea9" typeName="Weapon">
       <characteristics>
