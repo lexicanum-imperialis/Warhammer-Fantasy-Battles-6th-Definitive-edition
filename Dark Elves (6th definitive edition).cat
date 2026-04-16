@@ -439,6 +439,19 @@
             <profile id="3cf5-3ae8-90fd-5fe8" name="Dark Elf" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
               <modifiers>
                 <modifier type="set" field="name" value="Dark Elf Warriors "/>
+                <modifier type="decrement" value="4" field="f1be-e66c-d5e1-673c">
+                  <comment>race condition</comment>
+                </modifier>
+                <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="055f-8e4e-f170-35d2" shared="true" childName="Light Armour" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="2564-f879-8b1b-e19a" shared="true" childName="Shield" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <characteristics>
                 <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">5</characteristic>
@@ -450,10 +463,10 @@
                 <characteristic name="I" typeId="dfff-363e-f72a-5a59">5</characteristic>
                 <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
                 <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">8</characteristic>
-                <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">7</characteristic>
+                <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">11</characteristic>
                 <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">7</characteristic>
                 <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
-                <characteristic name="Base" typeId="2cad-bb76-8a5a-1607"/>
+                <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">20x20</characteristic>
               </characteristics>
               <attributes>
                 <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
@@ -619,6 +632,11 @@
       </modifiers>
       <entryLinks>
         <entryLink import="true" name="Mark of Slaanesh (troops)" hidden="false" id="b289-cc4c-96a8-2cf4" type="selectionEntry" targetId="fdca-8baf-a3cb-dc25"/>
+        <entryLink import="true" name="Light Armour" hidden="false" id="e980-c8df-bb06-a448" type="selectionEntry" targetId="055f-8e4e-f170-35d2">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1cd0-3292-5a05-4dc9" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
     </selectionEntry>
     <selectionEntry id="ca34-2c11-1f0d-c958" name="High Soceress" hidden="false" collective="false" import="true" type="unit">
@@ -1659,12 +1677,12 @@
                 <characteristic name="T" typeId="8712-f56f-5b22-a720">3</characteristic>
                 <characteristic name="W" typeId="253a-9b00-4fde-8ac2">1</characteristic>
                 <characteristic name="I" typeId="dfff-363e-f72a-5a59">5</characteristic>
-                <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
+                <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1(2)</characteristic>
                 <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">8</characteristic>
-                <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">7</characteristic>
+                <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">5+/4+</characteristic>
                 <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">7</characteristic>
-                <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
-                <characteristic name="Base" typeId="2cad-bb76-8a5a-1607"/>
+                <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
+                <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">20x20</characteristic>
               </characteristics>
               <attributes>
                 <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
@@ -1759,7 +1777,11 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="4447-b01b-8d5c-c902" name="Light Armour" hidden="false" collective="false" import="true" targetId="055f-8e4e-f170-35d2" type="selectionEntry"/>
+        <entryLink id="4447-b01b-8d5c-c902" name="Light Armour" hidden="false" collective="false" import="true" targetId="055f-8e4e-f170-35d2" type="selectionEntry">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bac7-a99a-9f4b-1518" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
         <entryLink id="f467-588b-d103-263a" name="Two Hand Weapons" hidden="false" collective="false" import="true" targetId="36a8-7bbb-d204-0314" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="816c-152d-3864-ae5c" type="max"/>
@@ -1840,9 +1862,9 @@
                 <characteristic name="I" typeId="dfff-363e-f72a-5a59">5</characteristic>
                 <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
                 <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">8</characteristic>
-                <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">7</characteristic>
+                <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">5</characteristic>
                 <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">7</characteristic>
-                <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
+                <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
                 <characteristic name="Base" typeId="2cad-bb76-8a5a-1607"/>
               </characteristics>
               <attributes>
@@ -1850,9 +1872,6 @@
               </attributes>
             </profile>
           </profiles>
-          <infoLinks>
-            <infoLink id="6cea-a3ad-a7a0-fc5a" name="Dark Steed" hidden="false" targetId="d928-b122-2947-d618" type="profile"/>
-          </infoLinks>
           <costs>
             <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="18"/>
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
@@ -1879,6 +1898,16 @@
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Dark steed" hidden="false" id="c597-0afe-832c-394a">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ec89-29fa-5dc3-be5d" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="38fa-5e2d-9b29-2fea" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Dark Steed" id="6cea-a3ad-a7a0-fc5a" hidden="false" targetId="d928-b122-2947-d618" type="profile"/>
+            <infoLink name="Mount" id="9449-ae30-8470-e6d8" hidden="false" type="profile" targetId="ba88-8cd6-307f-3e56"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -4574,10 +4603,10 @@ In addition, a monster that is beaten in hand to hand combat by Rakarth is assum
                 <characteristic name="I" typeId="dfff-363e-f72a-5a59">5</characteristic>
                 <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
                 <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">8</characteristic>
-                <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">7</characteristic>
+                <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">11</characteristic>
                 <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">7</characteristic>
                 <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
-                <characteristic name="Base" typeId="2cad-bb76-8a5a-1607"/>
+                <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">20x20</characteristic>
               </characteristics>
               <attributes>
                 <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
@@ -4592,6 +4621,9 @@ In addition, a monster that is beaten in hand to hand combat by Rakarth is assum
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="parent" childId="5d63-eca8-32c8-2b95" shared="true" childName="Shield" includeChildSelections="true"/>
                   </conditions>
+                </modifier>
+                <modifier type="decrement" value="4" field="f1be-e66c-d5e1-673c">
+                  <comment>race condition</comment>
                 </modifier>
               </modifiers>
             </profile>
@@ -5040,46 +5072,10 @@ In addition, a monster that is beaten in hand to hand combat by Rakarth is assum
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Marauders Of Chaos" hidden="true" id="8405-93e6-c040-a867" collective="false">
-      <infoLinks>
-        <infoLink name="Marauder" id="e589-faf6-2e3a-6c43" hidden="false" targetId="9a22-76ec-8c40-915d" type="profile"/>
-      </infoLinks>
       <categoryLinks>
         <categoryLink name="Core" hidden="false" id="b646-6004-dba0-737f" targetId="64bf-efb4-9978-26df" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Musician" hidden="false" id="ac8e-f9db-caf8-33bd" collective="false">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3b4d-f500-8b87-fbc1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="5"/>
-            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Standard Bearer" hidden="false" id="197b-6fce-e338-6fc2" collective="false">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c9f7-8d39-4104-933b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="10"/>
-            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Chieftan" hidden="false" id="5d83-3288-1992-c322" collective="false">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7201-8f63-9c24-a102" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-          <infoLinks>
-            <infoLink name="Chieftan" id="3fdd-96f3-cfcb-39ff" hidden="false" targetId="c8f9-5d1a-83b4-60e2" type="profile" publicationId="d67c-4221-e6fc-7951"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="10"/>
-            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-          </costs>
-        </selectionEntry>
         <selectionEntry type="model" import="true" name="Marauders of Chaos" hidden="false" id="bcb5-82de-1cc7-9510" collective="false">
           <constraints>
             <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="d5c4-98f2-3ec0-da15" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -5089,15 +5085,78 @@ In addition, a monster that is beaten in hand to hand combat by Rakarth is assum
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
+          <infoLinks>
+            <infoLink name="Marauder" id="e589-faf6-2e3a-6c43" hidden="false" targetId="9a22-76ec-8c40-915d" type="profile">
+              <modifiers>
+                <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="equalTo" value="0" field="selections" scope="parent" childId="959f-b729-6963-09ab" shared="true" childName="Weapons Selection"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="50e2-1873-a856-03e7" shared="true" childName="Shield"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="decrement" value="4" field="f1be-e66c-d5e1-673c">
+                  <comment>race condition</comment>
+                </modifier>
+                <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="055f-8e4e-f170-35d2" shared="true" childName="Light Armour"/>
+                  </conditions>
+                </modifier>
+                <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="50e2-1873-a856-03e7" shared="true" childName="Shield"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Weapons Selection" id="959f-b729-6963-09ab" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="41c3-0af1-14d8-bbc2" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
+        <selectionEntryGroup name="Command group" id="7674-df94-6f29-4c17" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Musician" hidden="false" id="ac8e-f9db-caf8-33bd" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3b4d-f500-8b87-fbc1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="5"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Chieftan" hidden="false" id="5d83-3288-1992-c322" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7201-8f63-9c24-a102" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Chieftan" id="3fdd-96f3-cfcb-39ff" hidden="false" targetId="c8f9-5d1a-83b4-60e2" type="profile" publicationId="d67c-4221-e6fc-7951"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="10"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Standard Bearer" hidden="false" id="197b-6fce-e338-6fc2" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c9f7-8d39-4104-933b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="10"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Weapons and Armour" id="9a5a-3355-5f7c-5bf2" hidden="false">
           <entryLinks>
-            <entryLink import="true" name="Flail" hidden="false" id="8146-239a-c25c-a38a" collective="false" targetId="2eb9-be12-caec-57e8" type="selectionEntry">
+            <entryLink import="true" name="Shield" hidden="false" id="0b28-e6d5-be14-d5e6" collective="false" targetId="50e2-1873-a856-03e7" type="selectionEntry">
               <modifiers>
                 <modifier type="increment" value="1" field="ecfa-8486-4f6c-c249">
                   <repeats>
@@ -5106,9 +5165,15 @@ In addition, a monster that is beaten in hand to hand combat by Rakarth is assum
                 </modifier>
               </modifiers>
             </entryLink>
-            <entryLink import="true" name="Great Weapon" hidden="false" id="ea74-eabe-bdf5-c3e5" collective="false" targetId="1eb7-3f36-8cf7-e0ba" type="selectionEntry">
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="85d0-f573-9c4d-bf47" collective="false" targetId="abdb-bbd0-41b2-5dff" type="selectionEntry">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8fbd-6e62-f609-8543" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="83b9-68f6-5fec-818f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Light Armour" hidden="false" id="7d62-adc1-9656-d27d" collective="false" targetId="055f-8e4e-f170-35d2" type="selectionEntry">
               <modifiers>
-                <modifier type="increment" value="2" field="ecfa-8486-4f6c-c249">
+                <modifier type="increment" value="1" field="ecfa-8486-4f6c-c249">
                   <repeats>
                     <repeat value="1" repeats="1" field="selections" scope="parent" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </repeats>
@@ -5116,34 +5181,35 @@ In addition, a monster that is beaten in hand to hand combat by Rakarth is assum
               </modifiers>
             </entryLink>
           </entryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Weapons Selection" id="959f-b729-6963-09ab" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="41c3-0af1-14d8-bbc2" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Flail" hidden="false" id="8146-239a-c25c-a38a" collective="false" targetId="2eb9-be12-caec-57e8" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="increment" value="1" field="ecfa-8486-4f6c-c249">
+                      <repeats>
+                        <repeat value="1" repeats="1" field="selections" scope="parent" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Great Weapon" hidden="false" id="ea74-eabe-bdf5-c3e5" collective="false" targetId="1eb7-3f36-8cf7-e0ba" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="increment" value="2" field="ecfa-8486-4f6c-c249">
+                      <repeats>
+                        <repeat value="1" repeats="1" field="selections" scope="parent" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks>
-        <entryLink import="true" name="Hand Weapon" hidden="false" id="85d0-f573-9c4d-bf47" collective="false" targetId="abdb-bbd0-41b2-5dff" type="selectionEntry">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8fbd-6e62-f609-8543" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="83b9-68f6-5fec-818f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-        </entryLink>
-        <entryLink import="true" name="Shield" hidden="false" id="0b28-e6d5-be14-d5e6" collective="false" targetId="50e2-1873-a856-03e7" type="selectionEntry">
-          <modifiers>
-            <modifier type="increment" value="1" field="ecfa-8486-4f6c-c249">
-              <repeats>
-                <repeat value="1" repeats="1" field="selections" scope="parent" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </repeats>
-            </modifier>
-          </modifiers>
-        </entryLink>
-        <entryLink import="true" name="Light Armour" hidden="false" id="7d62-adc1-9656-d27d" collective="false" targetId="055f-8e4e-f170-35d2" type="selectionEntry">
-          <modifiers>
-            <modifier type="increment" value="1" field="ecfa-8486-4f6c-c249">
-              <repeats>
-                <repeat value="1" repeats="1" field="selections" scope="parent" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </repeats>
-            </modifier>
-          </modifiers>
-        </entryLink>
-      </entryLinks>
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
@@ -5196,7 +5262,6 @@ In addition, a monster that is beaten in hand to hand combat by Rakarth is assum
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Daemonettes" hidden="true" id="5fd4-e79a-0bfe-c08e" collective="false">
       <infoLinks>
-        <infoLink name="Daemonettes" id="bef6-1ba6-8be7-27bf" hidden="false" targetId="0d75-0731-7136-c1fe" type="profile"/>
         <infoLink name="Daemonic attacks" id="ceaf-c0ea-547f-4dc4" hidden="false" targetId="a3ff-00d1-caef-2667" type="rule"/>
         <infoLink name="Aura of Slaanesh" id="768d-f9c8-7466-9a1d" hidden="false" targetId="92f7-56e0-c884-185f" type="rule"/>
       </infoLinks>
@@ -5213,6 +5278,9 @@ In addition, a monster that is beaten in hand to hand combat by Rakarth is assum
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
+          <infoLinks>
+            <infoLink name="Daemonettes" id="bef6-1ba6-8be7-27bf" hidden="false" targetId="0d75-0731-7136-c1fe" type="profile"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -8495,8 +8563,8 @@ The unit gains +D3 to its combat resolution the first time it charges.</descript
     </profile>
     <profile id="ac64-371e-2bbf-45bb" name="Sea Dragon Cloak" hidden="false" typeId="f681-9937-db53-f1d8" typeName="Armour">
       <characteristics>
-        <characteristic name="Saving Throw Modifier" typeId="b600-e1ed-0765-27c1">+1/+2</characteristic>
-        <characteristic name="Special rules" typeId="42c3-68ab-cfa5-203e">+1 in CC, +2 against shooting</characteristic>
+        <characteristic name="Saving Throw Modifier" typeId="b600-e1ed-0765-27c1">-1/-2</characteristic>
+        <characteristic name="Special rules" typeId="42c3-68ab-cfa5-203e">-1 in CC, -2 against shooting</characteristic>
       </characteristics>
     </profile>
     <profile id="912c-0009-269f-c90e" name="Lordling" publicationId="20b9-0ee7-8f6f-8d28" page="6" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
@@ -8690,7 +8758,7 @@ The unit gains +D3 to its combat resolution the first time it charges.</descript
         <characteristic name="I" typeId="dfff-363e-f72a-5a59">4</characteristic>
         <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">7</characteristic>
-        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">7</characteristic>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">11</characteristic>
         <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">7</characteristic>
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
         <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">25x25</characteristic>

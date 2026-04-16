@@ -2891,5 +2891,11 @@ The spell cannot affect Undead targets, Chaos Daemons or Unbreakable units. Unit
         <characteristic name="Saves" typeId="8014-a8b2-15c3-da95"/>
       </characteristics>
     </profile>
+    <profile name="Mount" typeId="f681-9937-db53-f1d8" typeName="Armour" hidden="false" id="ba88-8cd6-307f-3e56">
+      <characteristics>
+        <characteristic name="Saving Throw Modifier" typeId="b600-e1ed-0765-27c1">-1</characteristic>
+        <characteristic name="Special rules" typeId="42c3-68ab-cfa5-203e"/>
+      </characteristics>
+    </profile>
   </sharedProfiles>
 </gameSystem>
