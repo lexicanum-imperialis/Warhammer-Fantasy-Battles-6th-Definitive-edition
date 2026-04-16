@@ -149,7 +149,20 @@
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
           <infoLinks>
-            <infoLink name="Chaos Dwarf" id="b384-a8a1-88c8-19df" hidden="false" publicationId="756d-4758-8a13-1d8a" page="32" targetId="06aa-1bc8-f015-6cb1" type="profile"/>
+            <infoLink name="Chaos Dwarf" id="b384-a8a1-88c8-19df" hidden="false" publicationId="756d-4758-8a13-1d8a" page="32" targetId="06aa-1bc8-f015-6cb1" type="profile">
+              <modifiers>
+                <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="50e2-1873-a856-03e7" shared="true" childName="Shield" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="1" field="f1be-e66c-d5e1-673c">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="1a24-3693-f258-6483" shared="true" childName="Great Axe" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
@@ -224,9 +237,6 @@
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="a08a-c72c-17af-86f5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="037d-bde3-3cb4-d139" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
-              <infoLinks>
-                <infoLink name="Hand Weapon" id="6cd5-064a-5ce9-253c" hidden="false" targetId="5556-38ea-b278-4a8f" type="profile"/>
-              </infoLinks>
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Great Axe" hidden="false" id="1a24-3693-f258-6483" collective="false" sortIndex="2">
                   <modifiers>
@@ -282,26 +292,14 @@ A single character in the front rank will not effect the unit’s fire</characte
                 </selectionEntry>
               </selectionEntries>
               <entryLinks>
-                <entryLink import="true" name="Hand Weapon" hidden="false" id="703d-b1bc-fd53-9387" type="selectionEntry" targetId="abdb-bbd0-41b2-5dff" sortIndex="1"/>
+                <entryLink import="true" name="Hand Weapon" hidden="false" id="703d-b1bc-fd53-9387" type="selectionEntry" targetId="abdb-bbd0-41b2-5dff" sortIndex="1">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="13ac-3068-a789-8565" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup name="Armour" id="2586-acfe-a93a-2f02" hidden="false">
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Heavy Armour" hidden="false" id="f73d-a07f-f4a2-34de" collective="false">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1df6-ce01-adbc-e761" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4dcb-0465-1cab-0e7f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink name="Heavy Armour" id="b2ff-e0ae-1a4d-0927" hidden="false" targetId="3dd5-f228-98a7-453a" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
-                    <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-                    <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
               <entryLinks>
                 <entryLink import="true" name="Shield" hidden="false" id="4050-cd66-73f4-0a99" type="selectionEntry" targetId="50e2-1873-a856-03e7">
                   <constraints>
@@ -314,6 +312,11 @@ A single character in the front rank will not effect the unit’s fire</characte
                       </conditions>
                     </modifier>
                   </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Heavy Armour" hidden="false" id="f6e5-cc7a-3ab2-630f" type="selectionEntry" targetId="dde4-0ba8-7b3c-57b7">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="99a3-cc30-a62e-a4d2" includeChildSelections="false"/>
+                  </constraints>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
@@ -344,20 +347,32 @@ A single character in the front rank will not effect the unit’s fire</characte
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
           <infoLinks>
-            <infoLink name="Hobgoblin" id="8783-96f9-ea10-50e9" hidden="false" publicationId="756d-4758-8a13-1d8a" page="32" targetId="98fe-fcb0-3c5d-8937" type="profile"/>
+            <infoLink name="Hobgoblin" id="8783-96f9-ea10-50e9" hidden="false" publicationId="756d-4758-8a13-1d8a" page="32" targetId="98fe-fcb0-3c5d-8937" type="profile">
+              <modifiers>
+                <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="055f-8e4e-f170-35d2" shared="true" childName="Light Armour" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="50e2-1873-a856-03e7" shared="true" childName="Shield" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
           </infoLinks>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Wolf" hidden="false" id="7a84-404f-7d7e-fd78">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f9a4-c704-c736-42bc" includeChildSelections="false"/>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="adab-39d1-d08f-eb22" includeChildSelections="false"/>
-              </constraints>
-              <infoLinks>
-                <infoLink name="Wolf" id="11da-cc55-fd3c-c757" hidden="false" publicationId="756d-4758-8a13-1d8a" page="32" targetId="6236-be6a-b588-b9bd" type="profile"/>
-                <infoLink name="Fast Cavalry" id="68e0-c884-e435-1f02" hidden="false" type="rule" targetId="6a56-df83-e623-2218"/>
-              </infoLinks>
-            </selectionEntry>
-          </selectionEntries>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Wolf" hidden="false" id="7a84-404f-7d7e-fd78">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f9a4-c704-c736-42bc" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="adab-39d1-d08f-eb22" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Wolf" id="11da-cc55-fd3c-c757" hidden="false" publicationId="756d-4758-8a13-1d8a" page="32" targetId="6236-be6a-b588-b9bd" type="profile"/>
+            <infoLink name="Fast Cavalry" id="68e0-c884-e435-1f02" hidden="false" type="rule" targetId="6a56-df83-e623-2218"/>
+            <infoLink name="Mount" id="d907-562b-4763-b651" hidden="false" type="profile" targetId="d420-64da-66ba-d5c6"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -376,7 +391,11 @@ A single character in the front rank will not effect the unit’s fire</characte
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="df6f-7ad3-7dda-dd24" includeChildSelections="false"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Hand Weapon" hidden="false" id="8307-73bc-3399-0563" type="selectionEntry" targetId="abdb-bbd0-41b2-5dff"/>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="8307-73bc-3399-0563" type="selectionEntry" targetId="abdb-bbd0-41b2-5dff">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="70bb-a496-2e7d-e4a0" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup name="Command Group" id="9df8-58e0-7a71-7905" hidden="false" collective="false" import="true">
@@ -483,7 +502,23 @@ A single character in the front rank will not effect the unit’s fire</characte
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
           <infoLinks>
-            <infoLink name="Hobgoblin" id="0fe5-ab74-8fe3-c394" hidden="false" publicationId="756d-4758-8a13-1d8a" page="32" targetId="98fe-fcb0-3c5d-8937" type="profile"/>
+            <infoLink name="Hobgoblin" id="0fe5-ab74-8fe3-c394" hidden="false" publicationId="756d-4758-8a13-1d8a" page="32" targetId="98fe-fcb0-3c5d-8937" type="profile">
+              <modifiers>
+                <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="1dd2-a9a7-a7bb-8244" shared="true" childName="Light Armour" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="a8c9-fe44-d0c0-aa64" shared="true" childName="Shields" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="decrement" value="4" field="f1be-e66c-d5e1-673c">
+                  <comment>Race condition</comment>
+                </modifier>
+              </modifiers>
+            </infoLink>
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
@@ -628,7 +663,25 @@ A single character in the front rank will not effect the unit’s fire</characte
       <infoLinks>
         <infoLink name="Ignore Orc &amp; Goblins panic" id="4249-6889-b976-ce29" hidden="false" targetId="5322-be33-9974-a502" type="rule"/>
         <infoLink name="Ignore Hobgoblin panic" id="f73b-f47c-7809-cfdc" hidden="false" targetId="9a9f-687b-fb6a-b6b0" type="rule"/>
-        <infoLink id="b22db2ea-b629-45c3-b473-af8173194165" name="Bull Centaur Hero" hidden="false" targetId="3d83-7cc9-c284-595a" type="profile"/>
+        <infoLink id="b22db2ea-b629-45c3-b473-af8173194165" name="Bull Centaur Hero" hidden="false" targetId="3d83-7cc9-c284-595a" type="profile">
+          <modifiers>
+            <modifier type="decrement" value="2" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="dde4-0ba8-7b3c-57b7" shared="true" childName="Heavy Armour" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="50e2-1873-a856-03e7" shared="true" childName="Shield" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="055f-8e4e-f170-35d2" shared="true" childName="Light Armour" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Characters" hidden="false" id="0977-3e2d-28ba-2c63" targetId="7a1c-d611-c2dc-def1" primary="false"/>
@@ -692,45 +745,26 @@ A single character in the front rank will not effect the unit’s fire</characte
         <selectionEntryGroup name="Armour" id="3f0b-08aa-e562-0db3" hidden="false" collective="false" import="true" sortIndex="3">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f30f-946b-b126-09e3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1495-1f79-d99a-8767" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Light Armour" hidden="false" id="4807-55c5-1dcf-c729" collective="false">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f82c-0e4e-076c-5ef5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-              <infoLinks>
-                <infoLink name="Light Armour" id="701e-a290-ba3c-04eb" hidden="false" targetId="752a-95b9-343a-8f75" type="profile"/>
-              </infoLinks>
+          <entryLinks>
+            <entryLink import="true" name="Shield" hidden="false" id="89b0-e5af-0c4e-7760" type="selectionEntry" targetId="50e2-1873-a856-03e7">
               <costs>
                 <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="2"/>
-                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
               </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Heavy Armour" hidden="false" id="4dad-e288-e9b8-5d3b" collective="false">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9818-633f-6132-4081" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-              <infoLinks>
-                <infoLink name="Heavy Armour" id="3242-922a-04fe-9345" hidden="false" targetId="3dd5-f228-98a7-453a" type="profile"/>
-              </infoLinks>
+            </entryLink>
+            <entryLink import="true" name="Heavy Armour" hidden="false" id="5084-3b54-743d-cdb8" type="selectionEntry" targetId="dde4-0ba8-7b3c-57b7">
               <costs>
                 <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="4"/>
-                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
               </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <entryLinks>
-            <entryLink import="true" name="Shield" hidden="false" id="7906-3626-c70a-59e8" type="selectionEntry" targetId="50e2-1873-a856-03e7">
+            </entryLink>
+            <entryLink import="true" name="Light Armour" hidden="false" id="a674-3ac4-f1f5-9c9d" type="selectionEntry" targetId="055f-8e4e-f170-35d2">
               <costs>
                 <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="2"/>
               </costs>
             </entryLink>
           </entryLinks>
           <modifiers>
-            <modifier type="increment" value="1" field="1495-1f79-d99a-8767">
+            <modifier type="increment" value="1" field="f30f-946b-b126-09e3">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="parent" childId="50e2-1873-a856-03e7" shared="true" includeChildSelections="true"/>
               </conditions>
@@ -808,7 +842,35 @@ A single character in the front rank will not effect the unit’s fire</characte
       <infoLinks>
         <infoLink name="Ignore Hobgoblin panic" id="ccd3-6d0d-60c8-9187" hidden="false" targetId="9a9f-687b-fb6a-b6b0" type="rule"/>
         <infoLink name="Ignore Orc &amp; Goblins panic" id="2137-6d5c-1176-80ff" hidden="false" targetId="5322-be33-9974-a502" type="rule"/>
-        <infoLink id="85a21280-6742-4802-b465-fa24c13f8b4e" name="Chaos Dwarf Hero" hidden="false" targetId="f483-fdb3-a566-dc51" type="profile"/>
+        <infoLink id="85a21280-6742-4802-b465-fa24c13f8b4e" name="Chaos Dwarf Hero" hidden="false" targetId="f483-fdb3-a566-dc51" type="profile">
+          <modifiers>
+            <modifier type="decrement" value="2" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="dde4-0ba8-7b3c-57b7" shared="true" childName="Heavy Armour" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="2" field="selections" scope="self" childId="dd7f-b52a-3788-28a3" shared="true" childName="Weapons" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="50e2-1873-a856-03e7" shared="true" childName="Shield" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="055f-8e4e-f170-35d2" shared="true" childName="Light Armour" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="50e2-1873-a856-03e7" shared="true" childName="Shield" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Characters" hidden="false" id="b6f3-01a3-7c45-180a" targetId="7a1c-d611-c2dc-def1" primary="false"/>
@@ -873,34 +935,6 @@ A single character in the front rank will not effect the unit’s fire</characte
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="84d2-4308-487d-7c35" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Light Armour" hidden="false" id="b602-efe0-9763-9af9" collective="false">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4291-5b4a-679d-224e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-              <infoLinks>
-                <infoLink name="Light Armour" id="470a-7973-24ee-eac3" hidden="false" targetId="752a-95b9-343a-8f75" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="2"/>
-                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Heavy Armour" hidden="false" id="169e-acb9-6374-b4d6" collective="false">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="de45-a644-b88f-1689" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-              <infoLinks>
-                <infoLink name="Heavy Armour" id="ea12-4d9e-051b-3d67" hidden="false" targetId="3dd5-f228-98a7-453a" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="4"/>
-                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
           <modifiers>
             <modifier type="increment" value="1" field="84d2-4308-487d-7c35">
               <conditions>
@@ -909,7 +943,17 @@ A single character in the front rank will not effect the unit’s fire</characte
             </modifier>
           </modifiers>
           <entryLinks>
-            <entryLink import="true" name="Shield" hidden="false" id="e967-88d9-2386-d6fd" type="selectionEntry" targetId="50e2-1873-a856-03e7">
+            <entryLink import="true" name="Heavy Armour" hidden="false" id="4e4e-ff9c-a3ea-8eb9" type="selectionEntry" targetId="dde4-0ba8-7b3c-57b7">
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="4"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Light Armour" hidden="false" id="9308-33c6-cc15-f913" type="selectionEntry" targetId="055f-8e4e-f170-35d2">
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="2"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Shield" hidden="false" id="6163-e041-6e70-0154" type="selectionEntry" targetId="50e2-1873-a856-03e7">
               <costs>
                 <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="2"/>
               </costs>
@@ -1036,7 +1080,8 @@ A single character in the front rank will not effect the unit’s fire</characte
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="97a5-d436-85c0-8acc" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <infoLinks>
-            <infoLink name="Wolf" id="3010-e7bb-64ab-d9c0" hidden="false" targetId="6236-be6a-b588-b9bd" type="profile"/>
+            <infoLink name="Mount" id="3010-e7bb-64ab-d9c0" hidden="false" targetId="d420-64da-66ba-d5c6" type="profile"/>
+            <infoLink name="Wolf" id="fc98-dbf2-175e-1e9a" hidden="false" targetId="6236-be6a-b588-b9bd" type="profile"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="12"/>
@@ -1075,41 +1120,30 @@ A single character in the front rank will not effect the unit’s fire</characte
               </costs>
             </selectionEntry>
           </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="4fd6-80f6-99da-b496" type="selectionEntry" targetId="abdb-bbd0-41b2-5dff">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7a00-77b9-1e8d-721d" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup name="Armour" id="4cb0-43db-e587-c4fe" hidden="false" collective="false" import="true" sortIndex="3">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="79f1-0f33-ef26-27bf" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Light Armour" hidden="false" id="123c-2434-b7d7-2a32" collective="false">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8a4b-6ed8-ce2e-bb4b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-              <infoLinks>
-                <infoLink name="Light Armour" id="f227-6e3a-ae10-1ac1" hidden="false" targetId="752a-95b9-343a-8f75" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="2"/>
-                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Heavy Armour" hidden="false" id="651b-ff95-20a1-e587" collective="false">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0672-7f98-72be-c28e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-              <infoLinks>
-                <infoLink name="Heavy Armour" id="8f11-6057-7e15-a825" hidden="false" targetId="3dd5-f228-98a7-453a" type="profile"/>
-              </infoLinks>
+          <entryLinks>
+            <entryLink import="true" name="Heavy Armour" hidden="false" id="319c-6f38-5dd4-85e8" type="selectionEntry" targetId="dde4-0ba8-7b3c-57b7">
               <costs>
                 <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="4"/>
-                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
               </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <entryLinks>
-            <entryLink import="true" name="Shield" hidden="false" id="ad08-f302-6d42-e454" type="selectionEntry" targetId="50e2-1873-a856-03e7">
+            </entryLink>
+            <entryLink import="true" name="Light Armour" hidden="false" id="7315-90f6-62fb-98ac" type="selectionEntry" targetId="055f-8e4e-f170-35d2">
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="2"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Shield" hidden="false" id="d318-b80f-4373-b903" type="selectionEntry" targetId="50e2-1873-a856-03e7">
               <costs>
                 <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="2"/>
               </costs>
@@ -1145,7 +1179,36 @@ A single character in the front rank will not effect the unit’s fire</characte
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
       <infoLinks>
-        <infoLink id="2f8fc856-3205-4b69-81a0-adc98d985d33" name="Hobgoblin Hero" hidden="false" targetId="7634-26d0-e896-ff44" type="profile"/>
+        <infoLink id="2f8fc856-3205-4b69-81a0-adc98d985d33" name="Hobgoblin Hero" hidden="false" targetId="7634-26d0-e896-ff44" type="profile">
+          <modifiers>
+            <modifier type="decrement" value="2" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="dde4-0ba8-7b3c-57b7" shared="true" childName="Heavy Armour" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="2" field="selections" scope="self" childId="f3cf-f0c8-08e9-ffe9" shared="true" childName="Weapons" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="50e2-1873-a856-03e7" shared="true" childName="Shield" includeChildSelections="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="4104-1080-9488-fc99" shared="true" childName="Wolf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="055f-8e4e-f170-35d2" shared="true" childName="Light Armour" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="50e2-1873-a856-03e7" shared="true" childName="Shield" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Bull Centaur Lord" hidden="false" id="077a-6f4e-bdc2-b42d" publicationId="756d-4758-8a13-1d8a" collective="false">
@@ -1155,7 +1218,25 @@ A single character in the front rank will not effect the unit’s fire</characte
       <infoLinks>
         <infoLink name="Ignore Orc &amp; Goblins panic" id="99d6-8a34-1d23-7755" hidden="false" targetId="5322-be33-9974-a502" type="rule"/>
         <infoLink name="Ignore Hobgoblin panic" id="2ae3-d1e7-ffc5-4390" hidden="false" targetId="9a9f-687b-fb6a-b6b0" type="rule"/>
-        <infoLink id="382fec06-a1e6-4188-a19b-86804a489416" name="Bull Centaur Lord" hidden="false" targetId="32c3-cced-c292-575b" type="profile"/>
+        <infoLink id="382fec06-a1e6-4188-a19b-86804a489416" name="Bull Centaur Lord" hidden="false" targetId="32c3-cced-c292-575b" type="profile">
+          <modifiers>
+            <modifier type="decrement" value="2" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="dde4-0ba8-7b3c-57b7" shared="true" childName="Heavy Armour" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="50e2-1873-a856-03e7" shared="true" childName="Shield" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="055f-8e4e-f170-35d2" shared="true" childName="Light Armour" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Characters" hidden="false" id="36c8-017d-f2c7-6b04" targetId="7a1c-d611-c2dc-def1" primary="false"/>
@@ -1196,36 +1277,18 @@ A single character in the front rank will not effect the unit’s fire</characte
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="515f-41f6-e5e6-31a8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Light Armour" hidden="false" id="8d7e-70cf-235b-9fbd" collective="false">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ca52-69e2-d1d3-fcf5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-              <infoLinks>
-                <infoLink name="Light Armour" id="3a66-2f3c-dba3-736e" hidden="false" targetId="752a-95b9-343a-8f75" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="3"/>
-                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Heavy Armour" hidden="false" id="729f-9498-3fda-6d93" collective="false">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4a48-190f-ee8a-46da" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-              <infoLinks>
-                <infoLink name="Heavy Armour" id="089a-aed8-c685-824c" hidden="false" targetId="3dd5-f228-98a7-453a" type="profile"/>
-              </infoLinks>
+          <entryLinks>
+            <entryLink import="true" name="Heavy Armour" hidden="false" id="93ad-820c-ab72-bc17" type="selectionEntry" targetId="dde4-0ba8-7b3c-57b7">
               <costs>
                 <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="6"/>
-                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
               </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <entryLinks>
-            <entryLink import="true" name="Shield" hidden="false" id="6e03-1a3a-02b6-d947" type="selectionEntry" targetId="50e2-1873-a856-03e7">
+            </entryLink>
+            <entryLink import="true" name="Light Armour" hidden="false" id="d21a-9382-d6c9-4a77" type="selectionEntry" targetId="055f-8e4e-f170-35d2">
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="3"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Shield" hidden="false" id="a46e-1cf8-4b79-9eba" type="selectionEntry" targetId="50e2-1873-a856-03e7">
               <costs>
                 <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="3"/>
               </costs>
@@ -1272,7 +1335,36 @@ A single character in the front rank will not effect the unit’s fire</characte
       <infoLinks>
         <infoLink name="Ignore Orc &amp; Goblins panic" id="4c4c-21c1-0bef-5c8d" hidden="false" targetId="5322-be33-9974-a502" type="rule"/>
         <infoLink name="Ignore Hobgoblin panic" id="7250-76e7-7b01-63d2" hidden="false" targetId="9a9f-687b-fb6a-b6b0" type="rule"/>
-        <infoLink id="7a94e456-bdf7-4c18-9947-f5c7066dd992" name="Chaos Dwarf Lord" hidden="false" targetId="36b0-8854-524c-68fb" type="profile"/>
+        <infoLink id="7a94e456-bdf7-4c18-9947-f5c7066dd992" name="Chaos Dwarf Lord" hidden="false" targetId="36b0-8854-524c-68fb" type="profile">
+          <modifiers>
+            <modifier type="decrement" value="2" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="dde4-0ba8-7b3c-57b7" shared="true" childName="Heavy Armour" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="2" field="selections" scope="self" childId="4d5d-18a3-321b-fe93" shared="true" childName="Weapons" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="50e2-1873-a856-03e7" shared="true" childName="Shield" includeChildSelections="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="4104-1080-9488-fc99" shared="true" childName="Wolf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="055f-8e4e-f170-35d2" shared="true" childName="Light Armour" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="50e2-1873-a856-03e7" shared="true" childName="Shield" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Characters" hidden="false" id="029f-1214-4e95-be53" targetId="7a1c-d611-c2dc-def1" primary="false"/>
@@ -1352,39 +1444,18 @@ A single character in the front rank will not effect the unit’s fire</characte
               </costs>
             </selectionEntry>
           </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="2354-6449-138e-565c" type="selectionEntry" targetId="abdb-bbd0-41b2-5dff">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d8a4-79ac-db36-5821" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup name="Armour" id="dd30-dcd7-339c-7a49" hidden="false" collective="false" import="true" sortIndex="3">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1def-5d28-a6c0-8428" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Light Armour" hidden="false" id="36de-f09b-1757-d97d" collective="false">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7d8d-c690-4f6d-7eac" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-              <infoLinks>
-                <infoLink name="Light Armour" id="796c-6b6e-cf49-3b2b" hidden="false" targetId="752a-95b9-343a-8f75" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="3"/>
-                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Heavy Armour" hidden="false" id="a589-d832-f5a9-6277" collective="false">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ad77-6352-efe1-04ef" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-              <infoLinks>
-                <infoLink name="Heavy Armour" id="cee6-3244-c593-4e60" hidden="false" targetId="3dd5-f228-98a7-453a" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="6"/>
-                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
           <modifiers>
             <modifier type="increment" value="1" field="1def-5d28-a6c0-8428">
               <conditions>
@@ -1393,7 +1464,17 @@ A single character in the front rank will not effect the unit’s fire</characte
             </modifier>
           </modifiers>
           <entryLinks>
-            <entryLink import="true" name="Shield" hidden="false" id="8082-bf74-8151-b6d7" type="selectionEntry" targetId="50e2-1873-a856-03e7">
+            <entryLink import="true" name="Heavy Armour" hidden="false" id="5482-2fa0-bef7-538c" type="selectionEntry" targetId="dde4-0ba8-7b3c-57b7">
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="6"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Light Armour" hidden="false" id="c4bc-05bd-2e7d-6762" type="selectionEntry" targetId="055f-8e4e-f170-35d2">
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="3"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Shield" hidden="false" id="db06-37da-1e37-6b48" type="selectionEntry" targetId="50e2-1873-a856-03e7">
               <costs>
                 <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="3"/>
               </costs>
@@ -1539,8 +1620,25 @@ A single character in the front rank will not effect the unit’s fire</characte
       <infoLinks>
         <infoLink name="Ignore Orc &amp; Goblins panic" id="82ca-fcc4-b2fc-e3fa" hidden="false" targetId="5322-be33-9974-a502" type="rule"/>
         <infoLink name="Ignore Hobgoblin panic" id="41e2-4d4b-40da-ced3" hidden="false" targetId="9a9f-687b-fb6a-b6b0" type="rule"/>
-        <infoLink name="Hand Weapon" id="2904-5f4b-5707-b00f" hidden="false" targetId="5556-38ea-b278-4a8f" type="profile"/>
-        <infoLink id="0ed4dd79-9491-428e-95c8-dbb9dc9d20e3" name="Bull Centaur" hidden="false" targetId="0286-f16f-935d-24ad" type="profile"/>
+        <infoLink id="0ed4dd79-9491-428e-95c8-dbb9dc9d20e3" name="Bull Centaur" hidden="false" targetId="0286-f16f-935d-24ad" type="profile">
+          <modifiers>
+            <modifier type="decrement" value="2" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="dacf-26dc-5509-d9bf" shared="true" childName="Heavy Armour" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="50e2-1873-a856-03e7" shared="true" childName="Shield" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="d241-a542-3b8e-9fff" shared="true" childName="Light Armour" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Rare" hidden="false" id="edb1-cbd8-c7c9-2477" targetId="e94b-6a54-8779-cd60" primary="true"/>
@@ -1705,7 +1803,11 @@ A single character in the front rank will not effect the unit’s fire</characte
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
-            <entryLink import="true" name="Hand Weapon" hidden="false" id="d2ba-aab1-494e-d5c1" type="selectionEntry" targetId="abdb-bbd0-41b2-5dff"/>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="d2ba-aab1-494e-d5c1" type="selectionEntry" targetId="abdb-bbd0-41b2-5dff">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5eba-8c91-cc7b-d05b" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -1780,7 +1882,7 @@ A single character in the front rank will not effect the unit’s fire</characte
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Black Orcs" hidden="false" id="e3ad-0e9f-0aba-9822" collective="false">
+    <selectionEntry type="unit" import="true" name="0-1 Black Orcs" hidden="false" id="e3ad-0e9f-0aba-9822" collective="false">
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="91e6-bb0e-2017-95e1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
       </constraints>
@@ -1789,7 +1891,6 @@ A single character in the front rank will not effect the unit’s fire</characte
         <infoLink name="Ignore Hobgoblin panic" id="bb18-9b23-b7a4-c36d" hidden="false" targetId="9a9f-687b-fb6a-b6b0" type="rule"/>
         <infoLink name="Choppa" id="8628-7201-732b-9e29" hidden="false" targetId="4bac-0d2b-0a25-97c1" type="rule"/>
         <infoLink name="Ignore Greenskin Panic" id="8c35-395b-6367-a4b6" hidden="false" targetId="99a1-98f2-68f5-fa9c" type="rule"/>
-        <infoLink id="9540261e-6a83-4ea8-b945-a1b4c2b53173" name="Black Orcs" hidden="false" targetId="7698-a473-1d88-3e71" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Special" hidden="false" id="5792-5763-7008-e336" targetId="43cc-fc3f-35a7-8d03" primary="true"/>
@@ -1804,20 +1905,27 @@ A single character in the front rank will not effect the unit’s fire</characte
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Choppa" hidden="false" id="3fe5-93b3-1f9b-5e49" collective="false">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d1f1-c629-e9ee-074e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a95f-9a16-cfe0-8f7b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
           <infoLinks>
-            <infoLink name="Choppa" id="5e6a-591a-b7dd-d4f6" hidden="false" targetId="7b8f-d3a3-e1ed-54d8" type="profile"/>
+            <infoLink name="Black Orcs" id="9540261e-6a83-4ea8-b945-a1b4c2b53173" hidden="false" targetId="7698-a473-1d88-3e71" type="profile">
+              <modifiers>
+                <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="0047-c8fd-eb9d-ab47" shared="true" childName="Shield" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="0047-c8fd-eb9d-ab47" shared="true" childName="Shield" includeChildSelections="true"/>
+                        <condition type="lessThan" value="2" field="selections" scope="parent" childId="4313-86e4-28e4-c358" shared="true" childName="Weapons" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </infoLink>
           </infoLinks>
-          <costs>
-            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
-            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-          </costs>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Heavy Armour" hidden="false" id="c0b3-6c71-6bba-216e" collective="false">
           <constraints>
@@ -1914,7 +2022,7 @@ A single character in the front rank will not effect the unit’s fire</characte
         </selectionEntryGroup>
         <selectionEntryGroup name="Weapons" id="4313-86e4-28e4-c358" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ee45-6df3-617a-00b6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="ee45-6df3-617a-00b6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Additional Hand Weapon" hidden="false" id="4605-baf2-4f75-7076" collective="false">
@@ -1933,6 +2041,9 @@ A single character in the front rank will not effect the unit’s fire</characte
                 <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
                 <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
               </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3192-9f0c-20b8-3d26" includeChildSelections="false"/>
+              </constraints>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Great Axe" hidden="false" id="827a-0aa1-cefa-fcc0" collective="false">
               <modifiers>
@@ -1944,6 +2055,23 @@ A single character in the front rank will not effect the unit’s fire</characte
               </modifiers>
               <infoLinks>
                 <infoLink name="Great Weapon" id="b117-0ea6-7160-2d73" hidden="false" targetId="97d4-ed3b-5f76-5a23" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6ec6-a073-af8b-0c81" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Choppa" hidden="false" id="3fe5-93b3-1f9b-5e49" collective="false">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d1f1-c629-e9ee-074e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a95f-9a16-cfe0-8f7b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Choppa" id="5e6a-591a-b7dd-d4f6" hidden="false" targetId="7b8f-d3a3-e1ed-54d8" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
@@ -2017,8 +2145,16 @@ A single character in the front rank will not effect the unit’s fire</characte
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
           <entryLinks>
-            <entryLink import="true" name="Heavy Armour" hidden="false" id="1f32-e1e0-aa33-7e73" type="selectionEntry" targetId="dde4-0ba8-7b3c-57b7"/>
-            <entryLink import="true" name="Hand Weapon" hidden="false" id="d14d-6d91-5fb5-3937" type="selectionEntry" targetId="abdb-bbd0-41b2-5dff"/>
+            <entryLink import="true" name="Heavy Armour" hidden="false" id="1f32-e1e0-aa33-7e73" type="selectionEntry" targetId="dde4-0ba8-7b3c-57b7">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2f4f-61f8-a587-3246" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="d14d-6d91-5fb5-3937" type="selectionEntry" targetId="abdb-bbd0-41b2-5dff">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8a13-ce55-b7d4-e8d3" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
         </selectionEntry>
       </selectionEntries>
@@ -2030,7 +2166,6 @@ A single character in the front rank will not effect the unit’s fire</characte
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Goblins" hidden="false" id="3926-7a13-1069-6c28" collective="false">
       <infoLinks>
-        <infoLink name="Goblin" id="d2d0-2f8e-444a-2a52" hidden="false" targetId="bfb8-b51d-7775-9ba4" type="profile"/>
         <infoLink name="Animosity" id="f370-e34b-6eec-7327" hidden="false" targetId="44d7-6c38-6927-1d0e" type="rule"/>
         <infoLink name="Fear Elves" id="afc6-75a4-3915-37fa" hidden="false" targetId="8bf4-0765-1d78-0cc7" type="rule"/>
         <infoLink name="Ignore Hobgoblin panic" id="4c81-ac11-3962-a1e6" hidden="false" targetId="9a9f-687b-fb6a-b6b0" type="rule"/>
@@ -2048,8 +2183,29 @@ A single character in the front rank will not effect the unit’s fire</characte
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
+          <infoLinks>
+            <infoLink name="Goblin" id="d2d0-2f8e-444a-2a52" hidden="false" targetId="bfb8-b51d-7775-9ba4" type="profile">
+              <modifiers>
+                <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="9452-a7e6-9906-e79a" shared="true" childName="Hand Weapons and Shields" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="50e2-1873-a856-03e7" shared="true" childName="Shield" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="7c9a-ee06-e9fd-3528" shared="true" childName="Light Armour" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Light Armour" hidden="false" id="7c9a-ee06-e9fd-3528" collective="false">
+        <selectionEntry type="upgrade" import="true" name="Light Armour" hidden="false" id="7c9a-ee06-e9fd-3528" collective="false" page="">
           <modifiers>
             <modifier type="increment" value="1" field="ecfa-8486-4f6c-c249">
               <repeats>
@@ -2089,6 +2245,16 @@ A single character in the front rank will not effect the unit’s fire</characte
                 <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
                 <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
               </costs>
+              <infoLinks>
+                <infoLink name="Hand Weapon" id="c93b-ecc9-e274-8396" hidden="false" type="profile" targetId="5556-38ea-b278-4a8f"/>
+              </infoLinks>
+              <entryLinks>
+                <entryLink import="true" name="Shield" hidden="false" id="ec8c-31f5-11c0-f329" type="selectionEntry" targetId="50e2-1873-a856-03e7">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2a8c-04c8-c14a-5cba" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Short Bows" hidden="false" id="9dbc-97be-3c9e-45bf" collective="false">
               <comment>Swap shield for shortbow</comment>
@@ -2121,6 +2287,13 @@ A single character in the front rank will not effect the unit’s fire</characte
                 <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
                 <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
               </costs>
+              <entryLinks>
+                <entryLink import="true" name="Shield" hidden="false" id="1b17-85bb-0849-62a2" type="selectionEntry" targetId="50e2-1873-a856-03e7">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ccca-a5fc-cee0-0777" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -2174,7 +2347,6 @@ A single character in the front rank will not effect the unit’s fire</characte
         <infoLink name="Animosity" id="e7b3-35a9-b8a7-3097" hidden="false" targetId="44d7-6c38-6927-1d0e" type="rule"/>
         <infoLink name="Choppa" id="b5ec-c99b-ce4b-31e4" hidden="false" targetId="4bac-0d2b-0a25-97c1" type="rule"/>
         <infoLink name="Ignore Hobgoblin panic" id="7650-4141-d630-1c4b" hidden="false" targetId="9a9f-687b-fb6a-b6b0" type="rule"/>
-        <infoLink id="ce601db4-ec50-422b-8021-75f8c920e2a1" name="Orcs" hidden="false" targetId="3078-c09e-8916-3a20" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Special" hidden="false" id="e8b8-5e1d-821b-0825" targetId="43cc-fc3f-35a7-8d03" primary="true"/>
@@ -2189,6 +2361,17 @@ A single character in the front rank will not effect the unit’s fire</characte
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
+          <infoLinks>
+            <infoLink name="Orcs" id="ce601db4-ec50-422b-8021-75f8c920e2a1" hidden="false" targetId="3078-c09e-8916-3a20" type="profile">
+              <modifiers>
+                <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="86cc-93fb-dd37-b68c" shared="true" childName="Light Armour" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -2291,7 +2474,30 @@ A single character in the front rank will not effect the unit’s fire</characte
         <infoLink name="Choppa" id="3bc0-cfda-177e-199a" hidden="false" targetId="4bac-0d2b-0a25-97c1" type="rule"/>
         <infoLink name="Animosity" id="9a70-91f2-4ab9-6a74" hidden="false" targetId="44d7-6c38-6927-1d0e" type="rule"/>
         <infoLink name="Ignore Hobgoblin panic" id="24d7-52c6-2df6-818e" hidden="false" targetId="9a9f-687b-fb6a-b6b0" type="rule"/>
-        <infoLink id="48035911-bda4-4ad9-9d3c-cf53c412997d" name="Big&apos;Uns" hidden="false" targetId="f2c9-4b6a-e859-84f7" type="profile"/>
+        <infoLink id="48035911-bda4-4ad9-9d3c-cf53c412997d" name="Big&apos;Uns" hidden="false" targetId="f2c9-4b6a-e859-84f7" type="profile">
+          <modifiers>
+            <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="0280-7fe5-70b9-a4fe" shared="true" childName="Weapons" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="0f74-bda1-2967-65fb" shared="true" childName="Shield" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="0f74-bda1-2967-65fb" shared="true" childName="Shield" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="8443-02b5-aeb2-d830" shared="true" childName="Light Armour" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Special" hidden="false" id="7572-4a07-9770-c8a8" targetId="43cc-fc3f-35a7-8d03" primary="true"/>
@@ -2449,7 +2655,30 @@ A single character in the front rank will not effect the unit’s fire</characte
         <infoLink name="Animosity" id="d124-1730-2e13-ac94" hidden="false" targetId="44d7-6c38-6927-1d0e" type="rule"/>
         <infoLink name="Choppa" id="26e4-3ab3-4450-eae3" hidden="false" targetId="4bac-0d2b-0a25-97c1" type="rule"/>
         <infoLink name="Ignore Hobgoblin panic" id="53d9-5cb3-00c7-1547" hidden="false" targetId="9a9f-687b-fb6a-b6b0" type="rule"/>
-        <infoLink id="49bb85ab-ed2c-4182-876e-65f7fdbfde8e" name="Orcs" hidden="false" targetId="3078-c09e-8916-3a20" type="profile"/>
+        <infoLink id="49bb85ab-ed2c-4182-876e-65f7fdbfde8e" name="Orcs" hidden="false" targetId="3078-c09e-8916-3a20" type="profile">
+          <modifiers>
+            <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="0988-820f-20d9-5605" shared="true" childName="Weapons" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="3e39-1412-49bd-cfc2" shared="true" childName="Shield" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="3e39-1412-49bd-cfc2" shared="true" childName="Shield" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="f189-3afd-8286-f8bb" shared="true" childName="Light Armour" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Special" hidden="false" id="925b-f3e7-18bd-235d" targetId="43cc-fc3f-35a7-8d03" primary="true"/>
@@ -2604,7 +2833,6 @@ A single character in the front rank will not effect the unit’s fire</characte
     <selectionEntry type="unit" import="true" name="Sneaky Gits" hidden="false" id="7c4a-74bc-9951-d95e" collective="false">
       <infoLinks>
         <infoLink name="Animosity" id="be6b-c716-52ee-c832" hidden="false" targetId="44d7-6c38-6927-1d0e" type="rule"/>
-        <infoLink name="Hobgoblin" id="7007-5543-2d76-039a" hidden="false" publicationId="756d-4758-8a13-1d8a" page="32" targetId="98fe-fcb0-3c5d-8937" type="profile"/>
         <infoLink name="Additional Hand weapon" id="e085-7bdb-c335-8f85" hidden="false" targetId="72aa-da68-2dae-4ab6" type="profile"/>
         <infoLink name="Poisoned Attacks" id="0f3e-534d-4ae0-858e" hidden="false" targetId="2738-27d5-f4af-4722" type="rule"/>
       </infoLinks>
@@ -2621,6 +2849,9 @@ A single character in the front rank will not effect the unit’s fire</characte
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
+          <infoLinks>
+            <infoLink name="Hobgoblin" id="7007-5543-2d76-039a" hidden="false" publicationId="756d-4758-8a13-1d8a" page="32" targetId="98fe-fcb0-3c5d-8937" type="profile"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -3402,7 +3633,7 @@ wound.</characteristic>
         <characteristic name="I" typeId="dfff-363e-f72a-5a59">2</characteristic>
         <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">6</characteristic>
-        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">6</characteristic>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">7</characteristic>
         <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">7</characteristic>
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
         <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">20x20</characteristic>
@@ -3442,7 +3673,7 @@ wound.</characteristic>
         <characteristic name="I" typeId="dfff-363e-f72a-5a59">2</characteristic>
         <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">6</characteristic>
-        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">7</characteristic>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">11</characteristic>
         <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">7</characteristic>
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
         <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">20x20</characteristic>
@@ -3559,7 +3790,7 @@ wound.</characteristic>
         <characteristic name="I" typeId="dfff-363e-f72a-5a59">2</characteristic>
         <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">9</characteristic>
-        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">7</characteristic>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">5</characteristic>
         <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">7</characteristic>
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
         <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">20x20</characteristic>
@@ -3733,13 +3964,13 @@ wound.</characteristic>
         <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">4</characteristic>
         <characteristic name="WS" typeId="f95b-da01-0578-3bdc">4</characteristic>
         <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">3</characteristic>
-        <characteristic name="S" typeId="b690-4bc0-bb73-267b">4</characteristic>
+        <characteristic name="S" typeId="b690-4bc0-bb73-267b">4(5)</characteristic>
         <characteristic name="T" typeId="8712-f56f-5b22-a720">4</characteristic>
         <characteristic name="W" typeId="253a-9b00-4fde-8ac2">1</characteristic>
         <characteristic name="I" typeId="dfff-363e-f72a-5a59">2</characteristic>
         <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">8</characteristic>
-        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">7</characteristic>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">5</characteristic>
         <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">7</characteristic>
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
         <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">25x25</characteristic>
@@ -3773,13 +4004,13 @@ wound.</characteristic>
         <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">4</characteristic>
         <characteristic name="WS" typeId="f95b-da01-0578-3bdc">3</characteristic>
         <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">3</characteristic>
-        <characteristic name="S" typeId="b690-4bc0-bb73-267b">3</characteristic>
+        <characteristic name="S" typeId="b690-4bc0-bb73-267b">3(4)</characteristic>
         <characteristic name="T" typeId="8712-f56f-5b22-a720">4</characteristic>
         <characteristic name="W" typeId="253a-9b00-4fde-8ac2">1</characteristic>
         <characteristic name="I" typeId="dfff-363e-f72a-5a59">2</characteristic>
         <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">7</characteristic>
-        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">6</characteristic>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">7</characteristic>
         <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">7</characteristic>
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
         <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">25x25</characteristic>
@@ -3787,6 +4018,12 @@ wound.</characteristic>
       <attributes>
         <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
       </attributes>
+    </profile>
+    <profile name="Mount" typeId="f681-9937-db53-f1d8" typeName="Armour" hidden="false" id="d420-64da-66ba-d5c6">
+      <characteristics>
+        <characteristic name="Saving Throw Modifier" typeId="b600-e1ed-0765-27c1">-1</characteristic>
+        <characteristic name="Special rules" typeId="42c3-68ab-cfa5-203e"/>
+      </characteristics>
     </profile>
   </sharedProfiles>
   <catalogueLinks>
