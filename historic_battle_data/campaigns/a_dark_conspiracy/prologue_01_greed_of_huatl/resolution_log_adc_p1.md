@@ -18,7 +18,7 @@
 ## Tactical Overview & Board State
 *The following is the raw mathematical ledger and combat resolution data for the engagement.*
 
-![Deployment Map](https://blogger.googleusercontent.com/img/a/AVvXsEi_Ic8-EYG5TIkZ9QDdRt73Cl4ozD_BHzSU0LxG0oKKDNEHTz1hE3tCeZ2KyzkRf9uqirBECN1_NsHiWvE21nDCcRFIzxkmVR-9XavQBgKsJbGDSVfk99GFsyf9a-OUxWz-f2yMPdy-Nq39aJYUetxAQtvwyW1XyNS2JNG5R00VP_qvICbq3MOXOGxrNiM=w622-h622)
+![Deployment Map](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEitWj_AT94ZsHiC9t0BrS7tdsbcKAJLZyeQRYV8nzD9LcsUSFWxme-GL4jMTtoMAeU4EUae8ri1qNKfpNBNhEbvalGv9kzQsv5g0UIgLUtONGj4rkd5E9eRwdry3AdWr8mUDHAkZFlGD4622bYXraTADcTor4gy1Hx_gc6DvKmXg3JNevQf5cWuohoMJX8/w587-h587-rw/The_Looting_of_Huat_(DEPLOYMENT)_Deployment.png)
 
 ---
 
@@ -46,7 +46,7 @@
     * **Poison Rule:** 6 darts needing 6+ to hit -> Rolls: 2, 5, 6, 3, 4, 1 -> 1 auto-wound.
     * **Armour Save:** Base 2+ -> Roll: 3 -> Saved.
 
-![Turn 1](https://blogger.googleusercontent.com/img/a/AVvXsEg4Y3jsUbbaRfltZ5GffaZ7gQ2htbaRMR1NKOtuW-R8mIPgjw6SI69xtmQI2Y-Y1_VT50aiVUSWE2LagiP4hi5XhNvsmwyrJX0v41bltK7TnTjCyEZutPd7qBy1MsFeH-0ZeNBHVXNVz0CJn-OvGL_qHDkhGPblU1jwXhOVxyLdPMrbPrWgMi8IwUkhGjc)
+![Turn 1](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhRceQZlgMbzl3RQ0_BaMHoaCDkdm7MUU-ftQtXBVdTVAeZ1UXfW90yPVzVmKgnX_uugQnojiq7UXyKEdUAY1FdiRp1r2DZdI5iG4jhmYm80OkWkvOEfE_bqmpc8mPTU5T0s7lXMA_CotXnKtI_WnM2etOPa271IUgTFpag1fGwt1CX0DpzszfQ1NQ7XZM/w571-h571-rw/The_Looting_of_Huat_(T4-LIZD)_Turn_1_Guardians_of_Huatl.png)
 
 ---
 
@@ -91,7 +91,7 @@
     * **To Wound:** S3 vs T2 = Needing 3+ -> 1 wound -> Skink dies.
 * **Securing the Loot:** 3 markers generate 3x25 VPs.
 
-![Turn 2 (mid)](https://blogger.googleusercontent.com/img/a/AVvXsEg-FGe8ulc-Y8YpB7xTvHjPziVwI33g9sg0vgQEdxI95Lc055YW4u8l7itLj5q2x6Cw3mWekeKeQSbjoLHgw5mJtCn4IG4SXQD4nJNrPFPPsFZ769xlCq4TqL0Szz2M9oC92iFbTCD_oTaA4ARq6i-Ib07eOf7i_axf_mq7banuyLPbw5nmqlc07jhHhUU)
+![Turn 2 (mid)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiTO-T71JjQ4oQqUPmFD2julYjOuXDb-LPsmyFlQJxgHvIZIve-h8cnaY4ByRN-KTlA7g5cQbDsPH14donCv_GakSVTaipyg7frnHXUynM5BdrPPDMqeLTo4rCYl3cgJK-FvPeZXezkKSX2-OZsWfyH6wm16d3oGW35c6LPLUcYn-3TqrAv-ECJCLkm1n0/w576-h576-rw/The_Looting_of_Huat_(T4-LIZD)_Turn_2_Bretonnian_Expedition.png)
 
 ### Lizardmen
 * *Eastern Jaw* passes **Cold-Blooded Leadership** test -> 3D6: 1, 2, 6 (Result 3) < Ld 5 -> Rallies.
@@ -140,7 +140,7 @@
 
 * **Break Test:** Knights test with -7 penalty -> Roll 11 -> Re-roll with BSB: Roll 12 -> Unit **Flees**.
 
-![Turn 2 (end)](https://blogger.googleusercontent.com/img/a/AVvXsEgYR1rlrKV1HVGgeH1k3uB2eer8zzvTU7_XUfLITbS0oPHK50lsFcpAGGLWId-egdDtMr4v9G5jtyUh87Gsm3qN8I0B15wybiWsfl69jZIYFypVLOjClYxwep2ObkDLUZaBNUELjKOlz7h5p20MIAWzQkh0L_0lXfb1XRPP8mkhvNfNo3D3wP2NO5Tv87s)
+![Turn 2 (end)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiSoglmEZNRL8fad_STK3x_jl37K-BfN4MvBzlYdLiczxVXt63jWfxRB-XwU1JO1RZoXTRbdN2EKkfJWsEs5TKvHFcnb7igq3hNzgjeK871M9uO8OIsH4rOLw1MNilZGZ_OP7j07r09BwgNBluKhcNcdJVO1KgCiYAhIfzPDUJ3gxFj3kJhEYfvwX0h9oI/w583-h583-rw/The_Looting_of_Huat_(T4-LIZD)_Turn_2_Guardians_of_Huatl.png)
 
 ---
 
@@ -161,7 +161,7 @@
 * Bretonnians successfully **Dispel** the building Comet (Roll 11).
 * **Securing the Loot:** 2 markers generate 2x25 VPs.
 
-![Turn 3 (mid)](https://blogger.googleusercontent.com/img/a/AVvXsEhbluQrh7PdEedi2sBZGcU3Q_-axNJfNIRn3MDa088sniv8WU5-gvWFkBcvU5x5Ddwo7bxYkXDKA3V-MWpmW8zsmtSzv8AB8pgEe3rJFKXrYwbGo28mlnQcW2sBy6qgMl6EnsrI7SDPmx223x_qwSO8XN6U_1MWRqVYeodrpB3Bv8EbZC4mC3QXiOYDdtY)
+![Turn 3 (mid)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgMnB9nTYKTnjpWeHQy2o-eKBpA7VImNf86ghwe8Q2FLKyQB5k5sPneBsU1IC3GQqdB471MSnQjbPsOt2sCSGHSRe_OKkvofhTUovKq7pF6MQJtp4U4nfJggc9U5gCc6sHW8EQVIY8mr0VNj3wMwoeDS48-PliNiO-rcMfyotLpzXBKejqoN2FX06mIr9k/w575-h575-rw/The_Looting_of_Huat_(T4-LIZD)_Turn_3_Bretonnian_Expedition.png)
 
 ### Lizardmen
 * Xiin casts another *Comet of Casandora* with 4 dice -> Rolls: 3, 3, 4, 3 (Result 13) -> Marker placed on *Bowmen of Bordeleaux*.
@@ -188,7 +188,7 @@
 
 * **Break Test:** Skinks test (Ld 5) = Roll 8 -> Re-roll with BSB: Fail -> **Flee** 9", *Hunters* **Pursue** 8".
 
-![Turn 3 (end)](https://blogger.googleusercontent.com/img/a/AVvXsEiPzOQkcSwyUg4YHzrvfDjeznMHh1pfzIhiyvHUtWdnOnqwLPCiFWDgKUIJOgbHc7bwHcXYaDc8FOwfnpnfPaUlLE4lZsO773lQq9JBWGe_mHUekX282FW_wUWDZfswX2a9lhClyKZ1vHs357U6CGQXMcfPyd0bzjUXECTMPDRSoNiQcgDbwYAUCMd9Avg)
+![Turn 3 (end)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEin1X0n7SxTZ5EJXk2hFdDwaZiqDh4NcwZ8KeKRhSSPEAJJGhN003f9CF0hzvpUoaEpgzpAeEXvUvhX1ZH5iAiB1ntE4PpY9kjzcBjyZdp7UZ_4Q63dNq2pSzceDCUrCvizIlwnTvwS6qYGR4EXKHv3YfGrX5FiXeRQfyU-jM4j7PFoumeqa7Ffl6oMnWA/w575-h575-rw/The_Looting_of_Huat_(T4-LIZD)_Turn_3_Guardians_of_Huatl.png)
 
 ---
 
@@ -224,7 +224,7 @@
 
 * *Hunters of Bordeleaux* and *The Duc* **March** to escape the board.
 
-![Turn 4 (mid)](https://blogger.googleusercontent.com/img/a/AVvXsEhAKlfl2-XbAL2mMLjV4lk2jwjEM3KOEYe6v9Pyz-dIpUflUr3wVDcy-IoRu6szZFI6mHj9JhFzQ7BjhpfgWcx__zIyBM_zPRxIRpvh-J9zvPCEOU8FHRx0jsxccAzBGxfyZVc1DYTs1metsLmEYuvw9oQph83gILm7P8ikJIhqYjNKLbDGwKVtYDBLxnE)
+![Turn 4 (mid)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjU4iAoHl-SuqFofczgJDZoduah9jcempPjfLYFnsUh8QiOFAaN34NEoIaH8jmQqHBpZ6ltllnXvJ3Q1uO3uX2B3mVebC3ADXFQz9wfskYcRJBzdQP43jkjaFTOVeTFbYMYGs8T3BAJuf9PJQQLv0nqxHE0Slcb0wmzignu9E_CIhCeA3LduJr8s4Uojpk/w586-h586-rw/The_Looting_of_Huat_(T4-LIZD)_Turn_4_Bretonnian_Expedition.png)
 
 ### Lizardmen
 * *Eastern Jaw* **Rallies**.
@@ -240,7 +240,7 @@
     * **To Wound:** S3 vs T4 = Needing 5+ -> Roll: 5 -> 1 wound. 
     * **Armour Save:** Quntael Base 4+ -> Fail -> Quntael dies. Saurus wipe out remaining Knights.
 
-![Turn 4 (end)](https://blogger.googleusercontent.com/img/a/AVvXsEgZ0A4Bxnm452B4V9fMdFJU-CIwU8OD0rgehoG_rO-KSbkYPR9ssVINId1vcuKqJlbe7MuoeV3JqU8EDfT7JN0XSRfmqCpeixeBUH8EmhmqdMDnp83J9A6j7em56GORiv0vKlaEbVRI3_gPZnnMhltuxqa2MVgvOzW8E5jhIcMVue3R_XrARc_38AwBsMA)
+![Turn 4 (end)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgGaSBoDvZaHtqg-mB5DtvUD95WVdBGQyEba1oNVvXtPPeFYtp5f1_HIjBwnmcGXk3qTqPS6KhRnvPdu8Eo8S6xpD8AZXOk2fp7QP7-bsiQkcsFNzcjgRpzdIGASbAoJl5U8ao6EX9atkGd404dE6BQtkYiRY1C6_UTlln16KLccfwW3rUvK_vZ759kCY0/w591-h591-rw/The_Looting_of_Huat_(T4-LIZD)_Turn_4_Guardians_of_Huatl.png)
 
 ---
 
