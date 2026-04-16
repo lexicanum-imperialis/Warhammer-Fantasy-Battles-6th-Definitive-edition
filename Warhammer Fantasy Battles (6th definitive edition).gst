@@ -81,31 +81,25 @@
             </formatRule>
           </formatRules>
         </characteristicType>
-        <characteristicType id="f1be-e66c-d5e1-673c" name="Sv" defaultValue="-">
+        <characteristicType id="f1be-e66c-d5e1-673c" name="Sv" defaultValue="7">
           <formatRules>
-            <formatRule name="New Format Rule" id="369e-0bd4-4377-98fb" hidden="false" type="regex" match="^$" replace="-">
-              <comment>Empty → -</comment>
-            </formatRule>
-            <formatRule name="New Format Rule" id="70d9-d1d4-626a-8b17" hidden="false" type="regex" match="^7$" replace="-">
-              <comment>7 → -</comment>
+            <formatRule name="New Format Rule" id="338f-76da-0cd5-fdb5" hidden="false" type="regex" match="^([1-6])$" replace="$1+">
+              <comment>Append &apos;+&apos;</comment>
             </formatRule>
             <formatRule name="New Format Rule" id="4e39-eef7-14be-b336" hidden="false" type="regex" match="^7+$" replace="-">
               <comment>Empty → -</comment>
             </formatRule>
-            <formatRule name="New Format Rule" id="338f-76da-0cd5-fdb5" hidden="false" type="regex" match="^([1-6])$" replace="$1+">
-              <comment>Append &apos;+&apos;</comment>
+            <formatRule name="New Format Rule" id="369e-0bd4-4377-98fb" hidden="false" type="regex" match="^$" replace="-">
+              <comment>Empty → -</comment>
             </formatRule>
           </formatRules>
         </characteristicType>
         <characteristicType id="d4a9-0ed4-d041-e54b" name="Sv+" defaultValue="7">
           <formatRules>
-            <formatRule name="New Format Rule" id="f2ca-425d-e0eb-e4ad" hidden="false" type="regex" match="^7$" replace="-">
-              <comment>default value of 7</comment>
-            </formatRule>
-            <formatRule name="New Format Rule" id="fd27-98ee-5dff-e47a" hidden="false" type="regex" match="^0$" replace="-">
-              <comment>0 → -</comment>
-            </formatRule>
             <formatRule name="New Format Rule" id="414c-eb40-22c4-6048" hidden="false" type="regex" match="^$" replace="-">
+              <comment>Empty → -</comment>
+            </formatRule>
+            <formatRule name="New Format Rule" id="1119-b579-e817-9347" hidden="false" type="regex" match="^7+$" replace="-">
               <comment>Empty → -</comment>
             </formatRule>
             <formatRule name="New Format Rule" id="4ec6-a627-5daa-cddf" hidden="false" type="regex" match="^(\d+)$" replace="$1+">
@@ -2647,13 +2641,13 @@ Always Strikes Last</characteristic>
     </profile>
     <profile id="752a-95b9-343a-8f75" name="Light Armour" hidden="false" typeId="f681-9937-db53-f1d8" typeName="Armour">
       <characteristics>
-        <characteristic name="Saving Throw Modifier" typeId="b600-e1ed-0765-27c1">6+</characteristic>
+        <characteristic name="Saving Throw Modifier" typeId="b600-e1ed-0765-27c1">6</characteristic>
         <characteristic name="Special rules" typeId="42c3-68ab-cfa5-203e"/>
       </characteristics>
     </profile>
     <profile id="3dd5-f228-98a7-453a" name="Heavy Armour" hidden="false" typeId="f681-9937-db53-f1d8" typeName="Armour">
       <characteristics>
-        <characteristic name="Saving Throw Modifier" typeId="b600-e1ed-0765-27c1">5+</characteristic>
+        <characteristic name="Saving Throw Modifier" typeId="b600-e1ed-0765-27c1">5</characteristic>
         <characteristic name="Special rules" typeId="42c3-68ab-cfa5-203e"/>
       </characteristics>
     </profile>
@@ -2800,11 +2794,14 @@ Always Strikes Last</characteristic>
         <characteristic name="I" typeId="dfff-363e-f72a-5a59">-</characteristic>
         <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">-</characteristic>
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">-</characteristic>
-        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
-        <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">7</characteristic>
+        <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">7</characteristic>
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
         <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">40x40</characteristic>
       </characteristics>
+      <attributes>
+        <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
+      </attributes>
     </profile>
     <profile id="6c75-5af6-cc63-e80a" name="Bolt-Thrower" publicationId="315e-e3c4-08af-fd51" page="124" hidden="false" typeId="7889-42d9-70a0-3ea9" typeName="Weapon">
       <characteristics>
@@ -2817,7 +2814,7 @@ Always Strikes Last</characteristic>
     </profile>
     <profile id="43ed-5f08-fbef-86f5" name="1. Dark Hand of Death" publicationId="315e-e3c4-08af-fd51" page="151" hidden="false" typeId="07eb-6084-5f84-a505" typeName="Spell">
       <characteristics>
-        <characteristic name="Cast" typeId="f1e6-8816-26e0-8a70">5+</characteristic>
+        <characteristic name="Cast" typeId="f1e6-8816-26e0-8a70">5</characteristic>
         <characteristic name="Range" typeId="42e6-553f-842f-0b91">24&quot;</characteristic>
         <characteristic name="Type" typeId="194f-3dee-9698-7291">Magic missile</characteristic>
         <characteristic name="CC" typeId="d360-4f33-c1a6-b3ab">NO</characteristic>
@@ -2827,7 +2824,7 @@ Always Strikes Last</characteristic>
     </profile>
     <profile id="1924-9763-6322-9bab" name="2. Death Dealer" publicationId="315e-e3c4-08af-fd51" page="151" hidden="false" typeId="07eb-6084-5f84-a505" typeName="Spell">
       <characteristics>
-        <characteristic name="Cast" typeId="f1e6-8816-26e0-8a70">5+</characteristic>
+        <characteristic name="Cast" typeId="f1e6-8816-26e0-8a70">5</characteristic>
         <characteristic name="Range" typeId="42e6-553f-842f-0b91">20&quot;</characteristic>
         <characteristic name="Type" typeId="194f-3dee-9698-7291">Buff</characteristic>
         <characteristic name="CC" typeId="d360-4f33-c1a6-b3ab">NO</characteristic>
@@ -2837,7 +2834,7 @@ Always Strikes Last</characteristic>
     </profile>
     <profile id="e880-65a0-8613-e7b6" name="3. Steal Soul" publicationId="315e-e3c4-08af-fd51" page="151" hidden="false" typeId="07eb-6084-5f84-a505" typeName="Spell">
       <characteristics>
-        <characteristic name="Cast" typeId="f1e6-8816-26e0-8a70">8+</characteristic>
+        <characteristic name="Cast" typeId="f1e6-8816-26e0-8a70">8</characteristic>
         <characteristic name="Range" typeId="42e6-553f-842f-0b91">12&quot;</characteristic>
         <characteristic name="Type" typeId="194f-3dee-9698-7291">Hex</characteristic>
         <characteristic name="CC" typeId="d360-4f33-c1a6-b3ab">NO</characteristic>
@@ -2850,7 +2847,7 @@ The spell cannot affect Undead, Chaos Daemons, and similar units which don&apos;
     </profile>
     <profile id="3866-03c8-acf0-a7c8" name="4. Wind of Death" publicationId="315e-e3c4-08af-fd51" page="151" hidden="false" typeId="07eb-6084-5f84-a505" typeName="Spell">
       <characteristics>
-        <characteristic name="Cast" typeId="f1e6-8816-26e0-8a70">8+</characteristic>
+        <characteristic name="Cast" typeId="f1e6-8816-26e0-8a70">8</characteristic>
         <characteristic name="Range" typeId="42e6-553f-842f-0b91">24&quot;</characteristic>
         <characteristic name="Type" typeId="194f-3dee-9698-7291">Magic missile</characteristic>
         <characteristic name="CC" typeId="d360-4f33-c1a6-b3ab">NO</characteristic>
@@ -2860,7 +2857,7 @@ The spell cannot affect Undead, Chaos Daemons, and similar units which don&apos;
     </profile>
     <profile id="f202-5fe5-1e6b-7c77" name="5. Drain Life" publicationId="315e-e3c4-08af-fd51" page="151" hidden="false" typeId="07eb-6084-5f84-a505" typeName="Spell">
       <characteristics>
-        <characteristic name="Cast" typeId="f1e6-8816-26e0-8a70">10+</characteristic>
+        <characteristic name="Cast" typeId="f1e6-8816-26e0-8a70">10</characteristic>
         <characteristic name="Range" typeId="42e6-553f-842f-0b91">12&quot;</characteristic>
         <characteristic name="Type" typeId="194f-3dee-9698-7291">Hex</characteristic>
         <characteristic name="CC" typeId="d360-4f33-c1a6-b3ab">NO</characteristic>
@@ -2873,7 +2870,7 @@ The spell cannot affect Undead, Chaos Daemons, or buildings and similar models, 
     </profile>
     <profile id="9b2a-65c0-824f-dc67" name="6. Doom and Darkness!" publicationId="315e-e3c4-08af-fd51" page="151" hidden="false" typeId="07eb-6084-5f84-a505" typeName="Spell">
       <characteristics>
-        <characteristic name="Cast" typeId="f1e6-8816-26e0-8a70">12+</characteristic>
+        <characteristic name="Cast" typeId="f1e6-8816-26e0-8a70">12</characteristic>
         <characteristic name="Range" typeId="42e6-553f-842f-0b91">24&quot;</characteristic>
         <characteristic name="Type" typeId="194f-3dee-9698-7291">Last One Turn</characteristic>
         <characteristic name="CC" typeId="d360-4f33-c1a6-b3ab">NO</characteristic>

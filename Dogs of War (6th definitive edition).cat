@@ -128,6 +128,64 @@
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="e2c6-72d9-a389-e118" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
+            <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="3211-d836-02f1-01d0" shared="true" childName="Barding" includeChildSelections="true">
+                  <comment>shield</comment>
+                </condition>
+              </conditions>
+              <comment>barding</comment>
+            </modifier>
+            <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="055f-8e4e-f170-35d2" shared="true" childName="Light Armour">
+                  <comment>shield</comment>
+                </condition>
+              </conditions>
+              <comment>light</comment>
+            </modifier>
+            <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+              <comment>HW + Shield</comment>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="self" childId="2701-72dc-c0ba-7912" shared="true" childName="Weapons">
+                      <comment>shield</comment>
+                    </condition>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="50e2-1873-a856-03e7" shared="true" childName="Shield">
+                      <comment>shield</comment>
+                    </condition>
+                    <condition type="lessThan" value="1" field="selections" scope="self" childId="1535-21f4-1a59-54f7" shared="true" childName="Mounts">
+                      <comment>shield</comment>
+                    </condition>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="decrement" value="2" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="dde4-0ba8-7b3c-57b7" shared="true" childName="Heavy Armour">
+                  <comment>shield</comment>
+                </condition>
+              </conditions>
+              <comment>heavy</comment>
+            </modifier>
+            <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="8b51-464e-6bdb-123d" shared="true" childName="Warhorse" includeChildSelections="true">
+                  <comment>shield</comment>
+                </condition>
+              </conditions>
+              <comment>mount</comment>
+            </modifier>
+            <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="50e2-1873-a856-03e7" shared="true" childName="Shield">
+                  <comment>shield</comment>
+                </condition>
+              </conditions>
+              <comment>shield</comment>
+            </modifier>
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -354,6 +412,13 @@
           </conditions>
         </modifier>
       </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Hand Weapon" hidden="false" id="f6b0-58ac-1896-fef3" type="selectionEntry" targetId="abdb-bbd0-41b2-5dff">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2da8-a277-ca68-e2da" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry id="8ccf-0c2b-1e09-998e" name="Mercenary General" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
@@ -536,6 +601,11 @@
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="55d6-b65d-1215-fe2f" name="General" hidden="false" collective="false" import="true" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry"/>
+        <entryLink import="true" name="Hand Weapon" hidden="false" id="0b71-ef99-70a2-9b36" type="selectionEntry" targetId="abdb-bbd0-41b2-5dff">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f2b1-d500-32fc-f441" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="90"/>
@@ -543,7 +613,68 @@
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
       <infoLinks>
-        <infoLink id="cab1dddb-53c4-4849-982b-0ca2f3ac126b" name="Mercenary General" hidden="false" targetId="553d-206f-986d-bd7d" type="profile"/>
+        <infoLink id="cab1dddb-53c4-4849-982b-0ca2f3ac126b" name="Mercenary General" hidden="false" targetId="553d-206f-986d-bd7d" type="profile">
+          <modifiers>
+            <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="50e2-1873-a856-03e7" shared="true" childName="Shield">
+                  <comment>shield</comment>
+                </condition>
+              </conditions>
+              <comment>shield</comment>
+            </modifier>
+            <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="3211-d836-02f1-01d0" shared="true" childName="Barding" includeChildSelections="true">
+                  <comment>shield</comment>
+                </condition>
+              </conditions>
+              <comment>barding</comment>
+            </modifier>
+            <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="055f-8e4e-f170-35d2" shared="true" childName="Light Armour">
+                  <comment>shield</comment>
+                </condition>
+              </conditions>
+              <comment>light</comment>
+            </modifier>
+            <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+              <comment>HW + Shield</comment>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="self" childId="0aab-0677-afe5-35e6" shared="true" childName="Weapons">
+                      <comment>shield</comment>
+                    </condition>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="50e2-1873-a856-03e7" shared="true" childName="Shield">
+                      <comment>shield</comment>
+                    </condition>
+                    <condition type="lessThan" value="1" field="selections" scope="self" childId="7d37-20eb-0794-a372" shared="true" childName="Mounts">
+                      <comment>shield</comment>
+                    </condition>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="decrement" value="2" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="dde4-0ba8-7b3c-57b7" shared="true" childName="Heavy Armour">
+                  <comment>shield</comment>
+                </condition>
+              </conditions>
+              <comment>heavy</comment>
+            </modifier>
+            <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="8b51-464e-6bdb-123d" shared="true" childName="Warhorse" includeChildSelections="true">
+                  <comment>shield</comment>
+                </condition>
+              </conditions>
+              <comment>mount</comment>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
     </selectionEntry>
     <selectionEntry id="6190-5bc3-baa4-7e05" name="Mercenary Captain" hidden="false" collective="false" import="true" type="unit">
@@ -743,6 +874,11 @@
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="c9e4-13ef-ad6a-838b" name="General" hidden="false" collective="false" import="true" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry"/>
+        <entryLink import="true" name="Hand Weapon" hidden="false" id="0c68-cce2-a336-8c41" type="selectionEntry" targetId="abdb-bbd0-41b2-5dff">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="72e9-e6df-95d9-d9a2" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="50"/>
@@ -750,7 +886,68 @@
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
       <infoLinks>
-        <infoLink id="662fb37b-3c74-47cf-be37-337b38820cae" name="Mercenary Captain" hidden="false" targetId="5a97-cea7-0bcc-1807" type="profile"/>
+        <infoLink id="662fb37b-3c74-47cf-be37-337b38820cae" name="Mercenary Captain" hidden="false" targetId="5a97-cea7-0bcc-1807" type="profile">
+          <modifiers>
+            <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="3211-d836-02f1-01d0" shared="true" childName="Barding" includeChildSelections="true">
+                  <comment>shield</comment>
+                </condition>
+              </conditions>
+              <comment>barding</comment>
+            </modifier>
+            <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="055f-8e4e-f170-35d2" shared="true" childName="Light Armour">
+                  <comment>shield</comment>
+                </condition>
+              </conditions>
+              <comment>light</comment>
+            </modifier>
+            <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+              <comment>HW + Shield</comment>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="self" childId="9bd2-e2ed-decd-e268" shared="true" childName="Weapons">
+                      <comment>shield</comment>
+                    </condition>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="50e2-1873-a856-03e7" shared="true" childName="Shield">
+                      <comment>shield</comment>
+                    </condition>
+                    <condition type="lessThan" value="1" field="selections" scope="self" childId="d8c3-b869-1f2a-ff6b" shared="true" childName="Mounts">
+                      <comment>shield</comment>
+                    </condition>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="decrement" value="2" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="dde4-0ba8-7b3c-57b7" shared="true" childName="Heavy Armour">
+                  <comment>shield</comment>
+                </condition>
+              </conditions>
+              <comment>heavy</comment>
+            </modifier>
+            <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="8b51-464e-6bdb-123d" shared="true" childName="Warhorse" includeChildSelections="true">
+                  <comment>shield</comment>
+                </condition>
+              </conditions>
+              <comment>mount</comment>
+            </modifier>
+            <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="50e2-1873-a856-03e7" shared="true" childName="Shield">
+                  <comment>shield</comment>
+                </condition>
+              </conditions>
+              <comment>shield</comment>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
     </selectionEntry>
     <selectionEntry id="6eef-a7f7-6ad9-d417" name="Wizard Lord" hidden="false" collective="false" import="true" type="unit">
@@ -849,8 +1046,28 @@
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
       <infoLinks>
-        <infoLink id="3958ed6d-2210-4056-8eb3-d27633e8cc17" name="Hireling Wizard" hidden="false" targetId="d6df-59c4-259d-5cf0" type="profile"/>
+        <infoLink id="3958ed6d-2210-4056-8eb3-d27633e8cc17" name="Hireling Wizard" hidden="false" targetId="d6df-59c4-259d-5cf0" type="profile">
+          <modifiers>
+            <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="8b51-464e-6bdb-123d" shared="true" childName="Warhorse" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="3211-d836-02f1-01d0" shared="true" childName="Barding" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Hand Weapon" hidden="false" id="d209-38fa-986f-a5aa" type="selectionEntry" targetId="abdb-bbd0-41b2-5dff">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="da2d-4631-1c90-0838" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry id="891e-a151-5f7f-781c" name="Hireling Wizard" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
@@ -940,10 +1157,28 @@
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
       <infoLinks>
-        <infoLink id="023e7eaa-ac6b-47ca-a376-ca23cfe969a9" name="Hireling Wizard" hidden="false" targetId="d6df-59c4-259d-5cf0" type="profile"/>
+        <infoLink id="023e7eaa-ac6b-47ca-a376-ca23cfe969a9" name="Hireling Wizard" hidden="false" targetId="d6df-59c4-259d-5cf0" type="profile">
+          <modifiers>
+            <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="8b51-464e-6bdb-123d" shared="true" childName="Warhorse" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="3211-d836-02f1-01d0" shared="true" childName="Barding" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Enchanted Items (Relics of Lustria)" hidden="false" id="68a6-9891-89cd-432f" type="selectionEntryGroup" targetId="b77d-ca97-7903-6bc6"/>
+        <entryLink import="true" name="Hand Weapon" hidden="false" id="3593-972c-9c96-8d56" type="selectionEntry" targetId="abdb-bbd0-41b2-5dff">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ebb4-35ce-c7a7-7ca2" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
     </selectionEntry>
     <selectionEntry id="303a-0a83-53f7-4e96" name="0-1 Paymasters Bodyguard" hidden="false" collective="false" import="true" type="unit">
@@ -954,7 +1189,7 @@
         <categoryLink id="1762-6fc8-069e-4150" name="Special" hidden="false" targetId="43cc-fc3f-35a7-8d03" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="3e90-c76b-66a9-e05d" name="Relic-Handmaiden" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry id="3e90-c76b-66a9-e05d" name="Bodyguard" hidden="false" collective="false" import="true" type="model">
           <constraints>
             <constraint field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="373c-5b1c-d3fe-5fc1" type="min"/>
           </constraints>
@@ -975,10 +1210,10 @@
                 <characteristic name="I" typeId="dfff-363e-f72a-5a59">3</characteristic>
                 <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
                 <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">8</characteristic>
-                <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
-                <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
-                <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
-                <characteristic name="Base" typeId="2cad-bb76-8a5a-1607"/>
+                <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">11</characteristic>
+                <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">7</characteristic>
+                <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
+                <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">20x20</characteristic>
               </characteristics>
               <modifiers>
                 <modifier type="set" value="Handmaidens" field="name">
@@ -986,7 +1221,27 @@
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="e2c6-72d9-a389-e118" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
+                <modifier type="decrement" value="2" field="f1be-e66c-d5e1-673c">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="dde4-0ba8-7b3c-57b7" shared="true" childName="Heavy Armour" includeChildSelections="true">
+                      <comment>Heavy armour</comment>
+                    </condition>
+                  </conditions>
+                  <comment>heavy armour</comment>
+                </modifier>
+                <modifier type="decrement" value="4" field="f1be-e66c-d5e1-673c">
+                  <comment>For avoiding race condition</comment>
+                </modifier>
+                <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="055f-8e4e-f170-35d2" shared="true" childName="Light Armour" includeChildSelections="true"/>
+                  </conditions>
+                  <comment>light armour</comment>
+                </modifier>
               </modifiers>
+              <attributes>
+                <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
+              </attributes>
             </profile>
           </profiles>
           <modifiers>
@@ -1073,11 +1328,14 @@
                     <characteristic name="I" typeId="dfff-363e-f72a-5a59">3</characteristic>
                     <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">2</characteristic>
                     <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">8</characteristic>
-                    <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
-                    <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+                    <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">7</characteristic>
+                    <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">7</characteristic>
                     <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
                     <characteristic name="Base" typeId="2cad-bb76-8a5a-1607"/>
                   </characteristics>
+                  <attributes>
+                    <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
+                  </attributes>
                 </profile>
               </profiles>
               <costs>
@@ -1153,11 +1411,14 @@
                 <characteristic name="I" typeId="dfff-363e-f72a-5a59">2</characteristic>
                 <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
                 <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">7</characteristic>
-                <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
-                <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+                <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">7</characteristic>
+                <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">7</characteristic>
                 <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
                 <characteristic name="Base" typeId="2cad-bb76-8a5a-1607"/>
               </characteristics>
+              <attributes>
+                <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
+              </attributes>
             </profile>
           </profiles>
           <rules>
@@ -1191,11 +1452,14 @@
                 <characteristic name="I" typeId="dfff-363e-f72a-5a59">-</characteristic>
                 <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">-</characteristic>
                 <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">-</characteristic>
-                <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">4+</characteristic>
-                <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+                <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">4</characteristic>
+                <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">7</characteristic>
                 <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
                 <characteristic name="Base" typeId="2cad-bb76-8a5a-1607"/>
               </characteristics>
+              <attributes>
+                <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
+              </attributes>
             </profile>
           </profiles>
           <selectionEntryGroups>
@@ -1303,14 +1567,17 @@ To represent this, every attack from this unit counts as magical, thus able to w
                     <characteristic name="I" typeId="dfff-363e-f72a-5a59">3</characteristic>
                     <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
                     <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">8</characteristic>
-                    <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">5+</characteristic>
-                    <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+                    <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">5</characteristic>
+                    <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">7</characteristic>
                     <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
                     <characteristic name="Base" typeId="2cad-bb76-8a5a-1607"/>
                   </characteristics>
                   <modifiers>
                     <modifier type="set" value="4" field="b690-4bc0-bb73-267b"/>
                   </modifiers>
+                  <attributes>
+                    <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
+                  </attributes>
                 </profile>
               </profiles>
             </selectionEntry>
@@ -1354,11 +1621,14 @@ To represent this, every attack from this unit counts as magical, thus able to w
                         <characteristic name="I" typeId="dfff-363e-f72a-5a59">3</characteristic>
                         <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">2</characteristic>
                         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">8</characteristic>
-                        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
-                        <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+                        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">7</characteristic>
+                        <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">7</characteristic>
                         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
                         <characteristic name="Base" typeId="2cad-bb76-8a5a-1607"/>
                       </characteristics>
+                      <attributes>
+                        <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
+                      </attributes>
                     </profile>
                   </profiles>
                   <costs>
@@ -1608,7 +1878,7 @@ To represent this, every attack from this unit counts as magical, thus able to w
               <profiles>
                 <profile name="Armour of Brazen Bronze" typeId="f681-9937-db53-f1d8" typeName="Armour" hidden="false" id="0400-6a71-fa8d-e19a" page="112" publicationId="91c2-b862-8010-87bb">
                   <characteristics>
-                    <characteristic name="Saving Throw Modifier" typeId="b600-e1ed-0765-27c1">5+</characteristic>
+                    <characteristic name="Saving Throw Modifier" typeId="b600-e1ed-0765-27c1">5</characteristic>
                     <characteristic name="Special rules" typeId="42c3-68ab-cfa5-203e">Ward save of 5+</characteristic>
                   </characteristics>
                 </profile>
@@ -1688,12 +1958,15 @@ To represent this, every attack from this unit counts as magical, thus able to w
                     <characteristic name="I" typeId="dfff-363e-f72a-5a59">4</characteristic>
                     <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">2</characteristic>
                     <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">5</characteristic>
-                    <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
-                    <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+                    <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">7</characteristic>
+                    <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">7</characteristic>
                     <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">3</characteristic>
                     <characteristic name="Base" typeId="2cad-bb76-8a5a-1607"/>
                   </characteristics>
                   <comment>For US, see https://6th.whfb.app/units/unit-strength</comment>
+                  <attributes>
+                    <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
+                  </attributes>
                 </profile>
               </profiles>
               <infoLinks>
@@ -1816,7 +2089,7 @@ To represent this, every attack from this unit counts as magical, thus able to w
               <profiles>
                 <profile name="Shield of Myrmidia" typeId="f681-9937-db53-f1d8" typeName="Armour" hidden="false" id="8c72-0a17-6bde-fca4" page="113" publicationId="91c2-b862-8010-87bb">
                   <characteristics>
-                    <characteristic name="Saving Throw Modifier" typeId="b600-e1ed-0765-27c1">6+</characteristic>
+                    <characteristic name="Saving Throw Modifier" typeId="b600-e1ed-0765-27c1">6</characteristic>
                     <characteristic name="Special rules" typeId="42c3-68ab-cfa5-203e">Every enemy model in base-to-base contact loses 1 Attack.</characteristic>
                   </characteristics>
                 </profile>
@@ -1919,11 +2192,14 @@ To represent this, every attack from this unit counts as magical, thus able to w
                 <characteristic name="I" typeId="dfff-363e-f72a-5a59">3</characteristic>
                 <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">S</characteristic>
                 <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">6</characteristic>
-                <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
-                <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+                <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">7</characteristic>
+                <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">7</characteristic>
                 <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">5</characteristic>
                 <characteristic name="Base" typeId="2cad-bb76-8a5a-1607"/>
               </characteristics>
+              <attributes>
+                <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
+              </attributes>
             </profile>
           </profiles>
           <entryLinks>
@@ -1981,11 +2257,14 @@ Against smaller opponents:
                 <characteristic name="I" typeId="dfff-363e-f72a-5a59">3</characteristic>
                 <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
                 <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">7</characteristic>
-                <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
-                <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+                <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">7</characteristic>
+                <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">7</characteristic>
                 <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
                 <characteristic name="Base" typeId="2cad-bb76-8a5a-1607"/>
               </characteristics>
+              <attributes>
+                <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
+              </attributes>
             </profile>
           </profiles>
           <entryLinks>
@@ -2046,11 +2325,14 @@ Albion Giants within 6&quot; may use Hengus&apos;s Ld</characteristic>
                 <characteristic name="I" typeId="dfff-363e-f72a-5a59">3</characteristic>
                 <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">S</characteristic>
                 <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">6</characteristic>
-                <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
-                <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+                <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">7</characteristic>
+                <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">7</characteristic>
                 <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">5</characteristic>
                 <characteristic name="Base" typeId="2cad-bb76-8a5a-1607"/>
               </characteristics>
+              <attributes>
+                <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
+              </attributes>
             </profile>
           </profiles>
           <entryLinks>
@@ -2260,11 +2542,27 @@ We have tested them in the Prologue tournament and we think they are balanced as
                 <characteristic name="I" typeId="dfff-363e-f72a-5a59">5</characteristic>
                 <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
                 <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">8</characteristic>
-                <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
-                <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+                <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">11</characteristic>
+                <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">7</characteristic>
                 <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
                 <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">20x20</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="decrement" value="4" field="f1be-e66c-d5e1-673c">
+                  <comment>For avoiding race condition</comment>
+                </modifier>
+                <modifier type="decrement" value="2" field="f1be-e66c-d5e1-673c">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="13b6-2f35-1456-7398" shared="true" childName="Light Armour, Shield and spear" includeChildSelections="true">
+                      <comment>Heavy armour</comment>
+                    </condition>
+                  </conditions>
+                  <comment>Shield and light armour</comment>
+                </modifier>
+              </modifiers>
+              <attributes>
+                <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
+              </attributes>
             </profile>
           </profiles>
         </selectionEntry>
@@ -2344,11 +2642,14 @@ We have tested them in the Prologue tournament and we think they are balanced as
                     <characteristic name="I" typeId="dfff-363e-f72a-5a59">5</characteristic>
                     <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">2</characteristic>
                     <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">8</characteristic>
-                    <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
-                    <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+                    <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">7</characteristic>
+                    <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">7</characteristic>
                     <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
                     <characteristic name="Base" typeId="2cad-bb76-8a5a-1607"/>
                   </characteristics>
+                  <attributes>
+                    <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
+                  </attributes>
                 </profile>
               </profiles>
               <costs>
@@ -2418,14 +2719,17 @@ We have tested them in the Prologue tournament and we think they are balanced as
                 <characteristic name="I" typeId="dfff-363e-f72a-5a59">3</characteristic>
                 <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
                 <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">7</characteristic>
-                <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
-                <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+                <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">7</characteristic>
+                <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">7</characteristic>
                 <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
                 <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">20x20</characteristic>
               </characteristics>
               <modifiers>
                 <modifier type="set" value="Piranha Warriors" field="name"/>
               </modifiers>
+              <attributes>
+                <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
+              </attributes>
             </profile>
           </profiles>
         </selectionEntry>
@@ -2472,11 +2776,14 @@ We have tested them in the Prologue tournament and we think they are balanced as
                     <characteristic name="I" typeId="dfff-363e-f72a-5a59">4</characteristic>
                     <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">2</characteristic>
                     <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">7</characteristic>
-                    <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
-                    <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+                    <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">7</characteristic>
+                    <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">7</characteristic>
                     <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
                     <characteristic name="Base" typeId="2cad-bb76-8a5a-1607"/>
                   </characteristics>
+                  <attributes>
+                    <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
+                  </attributes>
                 </profile>
               </profiles>
               <costs>
@@ -2555,14 +2862,17 @@ We have tested them in the Prologue tournament and we think they are balanced as
                 <characteristic name="I" typeId="dfff-363e-f72a-5a59">3</characteristic>
                 <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
                 <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">7</characteristic>
-                <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
-                <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+                <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">7</characteristic>
+                <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">7</characteristic>
                 <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
                 <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">20x20</characteristic>
               </characteristics>
               <modifiers>
                 <modifier type="set" value="Eagle Warriors" field="name"/>
               </modifiers>
+              <attributes>
+                <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
+              </attributes>
             </profile>
           </profiles>
         </selectionEntry>
@@ -2642,11 +2952,14 @@ We have tested them in the Prologue tournament and we think they are balanced as
                     <characteristic name="I" typeId="dfff-363e-f72a-5a59">4</characteristic>
                     <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">2</characteristic>
                     <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">7</characteristic>
-                    <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
-                    <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+                    <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">7</characteristic>
+                    <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">7</characteristic>
                     <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
-                    <characteristic name="Base" typeId="2cad-bb76-8a5a-1607"/>
+                    <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">20x20</characteristic>
                   </characteristics>
+                  <attributes>
+                    <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
+                  </attributes>
                 </profile>
               </profiles>
               <costs>
@@ -2725,14 +3038,38 @@ We have tested them in the Prologue tournament and we think they are balanced as
                 <characteristic name="I" typeId="dfff-363e-f72a-5a59">4</characteristic>
                 <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
                 <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">8</characteristic>
-                <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
-                <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
-                <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
-                <characteristic name="Base" typeId="2cad-bb76-8a5a-1607"/>
+                <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">11</characteristic>
+                <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">7</characteristic>
+                <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
+                <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">20x20</characteristic>
               </characteristics>
               <modifiers>
                 <modifier type="set" value="Jaguar Warrior" field="name"/>
+                <modifier type="decrement" value="4" field="f1be-e66c-d5e1-673c">
+                  <comment>For avoiding race condition</comment>
+                </modifier>
+                <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="50e2-1873-a856-03e7" shared="true" childName="Shield" includeChildSelections="true">
+                      <comment>Heavy armour</comment>
+                    </condition>
+                  </conditions>
+                  <comment>Shield</comment>
+                </modifier>
+                <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="a680-3851-9948-6264" shared="true" childName="Weapons" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="50e2-1873-a856-03e7" shared="true" includeChildSelections="true" childName="Shield"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
               </modifiers>
+              <attributes>
+                <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
+              </attributes>
             </profile>
           </profiles>
         </selectionEntry>
@@ -2824,11 +3161,14 @@ We have tested them in the Prologue tournament and we think they are balanced as
                     <characteristic name="I" typeId="dfff-363e-f72a-5a59">4</characteristic>
                     <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">2</characteristic>
                     <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">7</characteristic>
-                    <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
-                    <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+                    <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">7</characteristic>
+                    <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">7</characteristic>
                     <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
                     <characteristic name="Base" typeId="2cad-bb76-8a5a-1607"/>
                   </characteristics>
+                  <attributes>
+                    <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
+                  </attributes>
                 </profile>
               </profiles>
               <costs>
@@ -2908,7 +3248,7 @@ We have tested them in the Prologue tournament and we think they are balanced as
           <profiles>
             <profile name="1. Singing Wind" typeId="07eb-6084-5f84-a505" typeName="Spell" hidden="false" id="7535-9f57-505a-b66f" page="35" publicationId="5607-d1af-87fe-3515">
               <characteristics>
-                <characteristic name="Cast" typeId="f1e6-8816-26e0-8a70">5+</characteristic>
+                <characteristic name="Cast" typeId="f1e6-8816-26e0-8a70">5</characteristic>
                 <characteristic name="Range" typeId="42e6-553f-842f-0b91">Flame template</characteristic>
                 <characteristic name="Type" typeId="194f-3dee-9698-7291">Breath Weapon</characteristic>
                 <characteristic name="CC" typeId="d360-4f33-c1a6-b3ab">NO</characteristic>
@@ -2918,7 +3258,7 @@ We have tested them in the Prologue tournament and we think they are balanced as
             </profile>
             <profile name="2. Serpent&apos;s Strength" typeId="07eb-6084-5f84-a505" typeName="Spell" hidden="false" id="00ac-a02c-e456-ea64" page="35" publicationId="5607-d1af-87fe-3515">
               <characteristics>
-                <characteristic name="Cast" typeId="f1e6-8816-26e0-8a70">6+</characteristic>
+                <characteristic name="Cast" typeId="f1e6-8816-26e0-8a70">6</characteristic>
                 <characteristic name="Range" typeId="42e6-553f-842f-0b91">6&quot;</characteristic>
                 <characteristic name="Type" typeId="194f-3dee-9698-7291">Buff</characteristic>
                 <characteristic name="CC" typeId="d360-4f33-c1a6-b3ab">NO</characteristic>
@@ -2928,7 +3268,7 @@ We have tested them in the Prologue tournament and we think they are balanced as
             </profile>
             <profile name="3. Wendala&apos;s Maelstrom" typeId="07eb-6084-5f84-a505" typeName="Spell" hidden="false" id="b9f7-2e6d-2c90-8318" page="35" publicationId="5607-d1af-87fe-3515">
               <characteristics>
-                <characteristic name="Cast" typeId="f1e6-8816-26e0-8a70">7+</characteristic>
+                <characteristic name="Cast" typeId="f1e6-8816-26e0-8a70">7</characteristic>
                 <characteristic name="Range" typeId="42e6-553f-842f-0b91">0&quot;</characteristic>
                 <characteristic name="Type" typeId="194f-3dee-9698-7291">Remains in Play</characteristic>
                 <characteristic name="CC" typeId="d360-4f33-c1a6-b3ab">NO</characteristic>
@@ -2938,7 +3278,7 @@ We have tested them in the Prologue tournament and we think they are balanced as
             </profile>
             <profile name="4. Shield of Thorns" typeId="07eb-6084-5f84-a505" typeName="Spell" hidden="false" id="3c0f-3070-d579-8f86" page="35" publicationId="5607-d1af-87fe-3515">
               <characteristics>
-                <characteristic name="Cast" typeId="f1e6-8816-26e0-8a70">8+</characteristic>
+                <characteristic name="Cast" typeId="f1e6-8816-26e0-8a70">8</characteristic>
                 <characteristic name="Range" typeId="42e6-553f-842f-0b91">-</characteristic>
                 <characteristic name="Type" typeId="194f-3dee-9698-7291">Remains in Play</characteristic>
                 <characteristic name="CC" typeId="d360-4f33-c1a6-b3ab">NO</characteristic>
@@ -2948,7 +3288,7 @@ We have tested them in the Prologue tournament and we think they are balanced as
             </profile>
             <profile name="5. The Living Jungle" typeId="07eb-6084-5f84-a505" typeName="Spell" hidden="false" id="590d-cef0-c98e-fae0" page="35" publicationId="5607-d1af-87fe-3515">
               <characteristics>
-                <characteristic name="Cast" typeId="f1e6-8816-26e0-8a70">8+</characteristic>
+                <characteristic name="Cast" typeId="f1e6-8816-26e0-8a70">8</characteristic>
                 <characteristic name="Range" typeId="42e6-553f-842f-0b91">12&quot;</characteristic>
                 <characteristic name="Type" typeId="194f-3dee-9698-7291">Magic missile</characteristic>
                 <characteristic name="CC" typeId="d360-4f33-c1a6-b3ab">NO</characteristic>
@@ -2958,7 +3298,7 @@ We have tested them in the Prologue tournament and we think they are balanced as
             </profile>
             <profile name="6. Siren&apos;s Dream" typeId="07eb-6084-5f84-a505" typeName="Spell" hidden="false" id="352b-88cf-8c9b-c547" page="35" publicationId="5607-d1af-87fe-3515">
               <characteristics>
-                <characteristic name="Cast" typeId="f1e6-8816-26e0-8a70">9+</characteristic>
+                <characteristic name="Cast" typeId="f1e6-8816-26e0-8a70">9</characteristic>
                 <characteristic name="Range" typeId="42e6-553f-842f-0b91">12&quot;</characteristic>
                 <characteristic name="Type" typeId="194f-3dee-9698-7291"/>
                 <characteristic name="CC" typeId="d360-4f33-c1a6-b3ab">NO</characteristic>
@@ -3038,6 +3378,16 @@ We have tested them in the Prologue tournament and we think they are balanced as
         <infoLink id="9e9f-a462-53fe-9858" name="Hireling Wizard" hidden="false" targetId="d6df-59c4-259d-5cf0" type="profile">
           <modifiers>
             <modifier type="set" value="Amazon Serpent Acolyte" field="name"/>
+            <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="8b51-464e-6bdb-123d" shared="true" childName="Warhorse" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="3211-d836-02f1-01d0" shared="true" childName="Barding" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -3051,6 +3401,11 @@ We have tested them in the Prologue tournament and we think they are balanced as
       <comment>HOUSE RULE</comment>
       <entryLinks>
         <entryLink import="true" name="General" hidden="false" id="9b24-950a-d637-686c" type="selectionEntry" targetId="1b7c-2c90-6d96-28c9"/>
+        <entryLink import="true" name="Hand Weapon" hidden="false" id="08ae-54c2-6686-edfc" type="selectionEntry" targetId="abdb-bbd0-41b2-5dff">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ccc5-3be2-6466-2593" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
     </selectionEntry>
   </selectionEntries>
@@ -3638,7 +3993,7 @@ We have tested them in the Prologue tournament and we think they are balanced as
         </modifierGroup>
       </modifierGroups>
     </entryLink>
-    <entryLink import="true" name="Halflings" hidden="false" id="4c34-ecba-0acc-0187" type="selectionEntry" targetId="ac65-e5ec-fe6c-edfd">
+    <entryLink import="true" name="0-1 Halflings" hidden="false" id="4c34-ecba-0acc-0187" type="selectionEntry" targetId="ac65-e5ec-fe6c-edfd">
       <modifierGroups>
         <modifierGroup type="and">
           <conditions>
@@ -3755,12 +4110,16 @@ We have tested them in the Prologue tournament and we think they are balanced as
     <selectionEntry id="8b51-464e-6bdb-123d" name="Warhorse" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="ab5b-2885-b03d-be4d" name="Warhorse" hidden="false" targetId="2ed2-6b46-07d6-3c75" type="profile"/>
+        <infoLink name="Warhorse" id="94d9-808c-5723-1cde" hidden="false" type="profile" targetId="e3e4-7932-8361-1fe4"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="319e-1160-a760-641a" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry id="963b-c068-df09-3d8e" name="Pegasus" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
@@ -3771,6 +4130,9 @@ We have tested them in the Prologue tournament and we think they are balanced as
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d21a-3a01-4252-24f4" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry id="6b04-ed89-95ca-209b" name="Pikes" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
@@ -4141,7 +4503,7 @@ To represent this, when Lorenzo is in the front rank of any infantry regiment (i
   <sharedProfiles>
     <profile name="Iron Fist" typeId="f681-9937-db53-f1d8" typeName="Armour" hidden="false" id="86bb-3947-e3e1-7876">
       <characteristics>
-        <characteristic name="Saving Throw Modifier" typeId="b600-e1ed-0765-27c1">6+</characteristic>
+        <characteristic name="Saving Throw Modifier" typeId="b600-e1ed-0765-27c1">6</characteristic>
         <characteristic name="Special rules" typeId="42c3-68ab-cfa5-203e">In close combat, Ogres may choose to use the Iron Fist as either a shield or an extra hand weapon</characteristic>
       </characteristics>
     </profile>
@@ -4156,11 +4518,14 @@ To represent this, when Lorenzo is in the front rank of any infantry regiment (i
         <characteristic name="I" typeId="dfff-363e-f72a-5a59">4</characteristic>
         <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">2</characteristic>
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">6</characteristic>
-        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
-        <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">7</characteristic>
+        <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">7</characteristic>
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">3</characteristic>
         <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">40x40</characteristic>
       </characteristics>
+      <attributes>
+        <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
+      </attributes>
     </profile>
     <profile name="Warhorse" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="2ed2-6b46-07d6-3c75">
       <characteristics>
@@ -4173,11 +4538,14 @@ To represent this, when Lorenzo is in the front rank of any infantry regiment (i
         <characteristic name="I" typeId="dfff-363e-f72a-5a59">3</characteristic>
         <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">5</characteristic>
-        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
-        <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">7</characteristic>
+        <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">7</characteristic>
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
         <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">25x50</characteristic>
       </characteristics>
+      <attributes>
+        <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
+      </attributes>
     </profile>
     <profile name="Brace of Handguns" typeId="7889-42d9-70a0-3ea9" typeName="Weapon" hidden="false" id="464d-0a99-7e8f-3bc3">
       <characteristics>
@@ -4235,11 +4603,14 @@ To represent this, when Lorenzo is in the front rank of any infantry regiment (i
         <characteristic name="I" typeId="dfff-363e-f72a-5a59">-</characteristic>
         <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">-</characteristic>
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">-</characteristic>
-        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">5+</characteristic>
-        <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">5</characteristic>
+        <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">7</characteristic>
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">-</characteristic>
         <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">50x100</characteristic>
       </characteristics>
+      <attributes>
+        <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
+      </attributes>
     </profile>
     <profile id="eeed-0a49-2030-55ec" name="Paymaster" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
       <characteristics>
@@ -4252,11 +4623,14 @@ To represent this, when Lorenzo is in the front rank of any infantry regiment (i
         <characteristic name="I" typeId="dfff-363e-f72a-5a59">4</characteristic>
         <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">2</characteristic>
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">8</characteristic>
-        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
-        <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">7</characteristic>
+        <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">7</characteristic>
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
-        <characteristic name="Base" typeId="2cad-bb76-8a5a-1607"/>
+        <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">20x20</characteristic>
       </characteristics>
+      <attributes>
+        <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
+      </attributes>
     </profile>
     <profile id="553d-206f-986d-bd7d" name="Mercenary General" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
       <characteristics>
@@ -4269,11 +4643,14 @@ To represent this, when Lorenzo is in the front rank of any infantry regiment (i
         <characteristic name="I" typeId="dfff-363e-f72a-5a59">6</characteristic>
         <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">4</characteristic>
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">9</characteristic>
-        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
-        <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">7</characteristic>
+        <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">7</characteristic>
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
         <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">20x20</characteristic>
       </characteristics>
+      <attributes>
+        <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
+      </attributes>
     </profile>
     <profile id="5a97-cea7-0bcc-1807" name="Mercenary Captain" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
       <characteristics>
@@ -4286,11 +4663,14 @@ To represent this, when Lorenzo is in the front rank of any infantry regiment (i
         <characteristic name="I" typeId="dfff-363e-f72a-5a59">5</characteristic>
         <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">3</characteristic>
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">8</characteristic>
-        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
-        <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">7</characteristic>
+        <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">7</characteristic>
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
         <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">20x20</characteristic>
       </characteristics>
+      <attributes>
+        <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
+      </attributes>
     </profile>
     <profile id="d6df-59c4-259d-5cf0" name="Hireling Wizard" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
       <characteristics>
@@ -4303,11 +4683,14 @@ To represent this, when Lorenzo is in the front rank of any infantry regiment (i
         <characteristic name="I" typeId="dfff-363e-f72a-5a59">3</characteristic>
         <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">7</characteristic>
-        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
-        <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">7</characteristic>
+        <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">7</characteristic>
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
         <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">20x20</characteristic>
       </characteristics>
+      <attributes>
+        <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
+      </attributes>
     </profile>
     <profile name="Lucrezzia Belladonna" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="5fa2-c045-0d75-7a0d" page="111" publicationId="91c2-b862-8010-87bb">
       <characteristics>
@@ -4320,11 +4703,14 @@ To represent this, when Lorenzo is in the front rank of any infantry regiment (i
         <characteristic name="I" typeId="dfff-363e-f72a-5a59">3</characteristic>
         <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">8</characteristic>
-        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">5+</characteristic>
-        <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">5</characteristic>
+        <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">7</characteristic>
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
-        <characteristic name="Base" typeId="2cad-bb76-8a5a-1607"/>
+        <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">20x20</characteristic>
       </characteristics>
+      <attributes>
+        <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
+      </attributes>
     </profile>
     <profile name="Borgio the Besieger" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="7023-7d89-d637-164f" page="112" publicationId="91c2-b862-8010-87bb">
       <characteristics>
@@ -4337,11 +4723,14 @@ To represent this, when Lorenzo is in the front rank of any infantry regiment (i
         <characteristic name="I" typeId="dfff-363e-f72a-5a59">5</characteristic>
         <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">4</characteristic>
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">9</characteristic>
-        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">2+</characteristic>
-        <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">5+</characteristic>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">2</characteristic>
+        <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">5</characteristic>
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
-        <characteristic name="Base" typeId="2cad-bb76-8a5a-1607"/>
+        <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">20x20</characteristic>
       </characteristics>
+      <attributes>
+        <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
+      </attributes>
     </profile>
     <profile name="Ghazak Khan" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="fcd0-8a81-a7e5-5916">
       <characteristics>
@@ -4354,28 +4743,34 @@ To represent this, when Lorenzo is in the front rank of any infantry regiment (i
         <characteristic name="I" typeId="dfff-363e-f72a-5a59">6</characteristic>
         <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">4</characteristic>
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">9</characteristic>
-        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">1+</characteristic>
-        <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">(4+)</characteristic>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">1</characteristic>
+        <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">(4)</characteristic>
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
-        <characteristic name="Base" typeId="2cad-bb76-8a5a-1607"/>
+        <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">20x20</characteristic>
       </characteristics>
+      <attributes>
+        <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
+      </attributes>
     </profile>
     <profile name="Lorenzo Lupo" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="e642-77bc-0352-adb0" page="113" publicationId="91c2-b862-8010-87bb">
       <characteristics>
-        <characteristic name="Mv" typeId="0e92-d038-82bf-fb41"/>
-        <characteristic name="WS" typeId="f95b-da01-0578-3bdc"/>
-        <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901"/>
-        <characteristic name="S" typeId="b690-4bc0-bb73-267b"/>
-        <characteristic name="T" typeId="8712-f56f-5b22-a720"/>
-        <characteristic name="W" typeId="253a-9b00-4fde-8ac2"/>
-        <characteristic name="I" typeId="dfff-363e-f72a-5a59"/>
-        <characteristic name="A" typeId="6b9f-c8fe-8998-27e3"/>
-        <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113"/>
-        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">4+</characteristic>
-        <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+        <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">4</characteristic>
+        <characteristic name="WS" typeId="f95b-da01-0578-3bdc">6</characteristic>
+        <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">5</characteristic>
+        <characteristic name="S" typeId="b690-4bc0-bb73-267b">4</characteristic>
+        <characteristic name="T" typeId="8712-f56f-5b22-a720">4</characteristic>
+        <characteristic name="W" typeId="253a-9b00-4fde-8ac2">3</characteristic>
+        <characteristic name="I" typeId="dfff-363e-f72a-5a59">6</characteristic>
+        <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">4</characteristic>
+        <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">9</characteristic>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">4</characteristic>
+        <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">7</characteristic>
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
-        <characteristic name="Base" typeId="2cad-bb76-8a5a-1607"/>
+        <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">20x20</characteristic>
       </characteristics>
+      <attributes>
+        <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
+      </attributes>
     </profile>
     <profile name="Halftank" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="e1a0-4a70-d82e-851a" page="93" publicationId="dd0b-d116-f039-1182">
       <characteristics>
@@ -4388,11 +4783,14 @@ To represent this, when Lorenzo is in the front rank of any infantry regiment (i
         <characteristic name="I" typeId="dfff-363e-f72a-5a59">0</characteristic>
         <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">0</characteristic>
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">10</characteristic>
-        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c"/>
-        <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b"/>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">7</characteristic>
+        <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">7</characteristic>
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">6</characteristic>
         <characteristic name="Base" typeId="2cad-bb76-8a5a-1607"/>
       </characteristics>
+      <attributes>
+        <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
+      </attributes>
     </profile>
     <profile name="Impacts" typeId="7889-42d9-70a0-3ea9" typeName="Weapon" hidden="false" id="f2ab-d37f-ab28-f6fe" page="93" publicationId="dd0b-d116-f039-1182">
       <characteristics>
