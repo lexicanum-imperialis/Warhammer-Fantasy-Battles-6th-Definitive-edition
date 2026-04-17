@@ -2903,5 +2903,20 @@ The spell cannot affect Undead targets, Chaos Daemons or Unbreakable units. Unit
         <characteristic name="Special rules" typeId="42c3-68ab-cfa5-203e"/>
       </characteristics>
     </profile>
+    <profile name="Breath fire" typeId="7889-42d9-70a0-3ea9" typeName="Weapon" hidden="false" id="2e1e-a6a0-3022-be5d">
+      <characteristics>
+        <characteristic name="Range" typeId="3107-4d1e-9a51-6564">Fire template</characteristic>
+        <characteristic name="Strength" typeId="6fe4-1ebb-cb04-1378">3</characteristic>
+        <characteristic name="Damage" typeId="6f2f-d612-52ef-1633"/>
+        <characteristic name="Special Rules" typeId="a21a-cdc0-4b13-b236">Breath Weapons, Flaming Attacks*</characteristic>
+        <characteristic name="Saves" typeId="8014-a8b2-15c3-da95"/>
+      </characteristics>
+    </profile>
+    <profile name="Heavy Chariot" typeId="f681-9937-db53-f1d8" typeName="Armour" hidden="false" id="77db-3ba2-9b07-6bfa">
+      <characteristics>
+        <characteristic name="Saving Throw Modifier" typeId="b600-e1ed-0765-27c1">4+</characteristic>
+        <characteristic name="Special rules" typeId="42c3-68ab-cfa5-203e">Use 4+ (chariot&apos;s) or the unit&apos;s Sv</characteristic>
+      </characteristics>
+    </profile>
   </sharedProfiles>
 </gameSystem>
