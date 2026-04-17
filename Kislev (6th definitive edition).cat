@@ -73,7 +73,46 @@ The Glacial Barrier continues to exist until it is dispelled, destroyed as above
       <infoLinks>
         <infoLink name="Stubborn" id="64c6-e470-f2fc-9e1a" hidden="false" type="rule" targetId="410a-0d06-9044-665e"/>
         <infoLink name="Stubborn (Boyars)" id="ad49-82f8-d82a-e662" hidden="false" type="rule" targetId="adff-99d2-6ad6-96ea"/>
-        <infoLink id="3b944d88-f6c3-48de-90c2-3692280e354a" name="Boyar" hidden="false" targetId="f515-c0f0-496d-82e0" type="profile"/>
+        <infoLink id="3b944d88-f6c3-48de-90c2-3692280e354a" name="Boyar" hidden="false" targetId="f515-c0f0-496d-82e0" type="profile">
+          <modifiers>
+            <modifier type="decrement" value="2" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="dde4-0ba8-7b3c-57b7" shared="true" childName="Heavy Armour" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="313455d3-3643-49fe-b5e6-a2260731f465" shared="true" childName="Warhorse" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="3211-d836-02f1-01d0" shared="true" childName="Barding" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="2" field="selections" scope="self" childId="b941-b6fd-d228-abec" shared="true" childName="CC Weapons" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="50e2-1873-a856-03e7" shared="true" childName="Shield" includeChildSelections="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="self" childId="de96-d171-5627-50f3" shared="true" childName="Mounts" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="055f-8e4e-f170-35d2" shared="true" childName="Light Armour" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="50e2-1873-a856-03e7" shared="true" childName="Shield" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="90"/>
@@ -316,6 +355,7 @@ The Glacial Barrier continues to exist until it is dispelled, destroyed as above
             <infoLink name="Human" id="b6ce-28a2-d76f-f372" hidden="false" type="profile" targetId="0dc6-73f5-9c78-d0a4">
               <modifiers>
                 <modifier type="set" value="Kossar" field="name"/>
+                <modifier type="decrement" value="4" field="f1be-e66c-d5e1-673c"/>
               </modifiers>
             </infoLink>
           </infoLinks>
@@ -444,8 +484,8 @@ The Glacial Barrier continues to exist until it is dispelled, destroyed as above
                 <infoLink name="Human Champion" id="a20e-ec14-b9b8-55ed" hidden="false" type="profile" targetId="c23d-9c4f-8c8e-f4ed">
                   <modifiers>
                     <modifier type="set" value="Rotamaster" field="name"/>
-                    <modifier type="set" value="4" field="f95b-da01-0578-3bdc"/>
-                    <modifier type="set" value="8" field="2d45-18fe-9eb3-b113"/>
+                    <modifier type="increment" value="1" field="2d45-18fe-9eb3-b113"/>
+                    <modifier type="increment" value="1" field="f95b-da01-0578-3bdc"/>
                   </modifiers>
                 </infoLink>
               </infoLinks>
@@ -506,9 +546,21 @@ The Glacial Barrier continues to exist until it is dispelled, destroyed as above
           <infoLinks>
             <infoLink name="Human" id="4de7-b2bf-26db-63e0" hidden="false" type="profile" targetId="0dc6-73f5-9c78-d0a4">
               <modifiers>
-                <modifier type="set" value="8" field="2d45-18fe-9eb3-b113"/>
+                <modifier type="increment" value="1" field="2d45-18fe-9eb3-b113"/>
                 <modifier type="set" value="Winged Lancer" field="name"/>
-                <modifier type="set" value="4" field="f95b-da01-0578-3bdc"/>
+                <modifier type="increment" value="1" field="f95b-da01-0578-3bdc"/>
+                <modifier type="decrement" value="2" field="f1be-e66c-d5e1-673c">
+                  <comment>heavy armour</comment>
+                </modifier>
+                <modifier type="decrement" value="4" field="f1be-e66c-d5e1-673c">
+                  <comment>race condition</comment>
+                </modifier>
+                <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+                  <comment>shield</comment>
+                </modifier>
+                <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+                  <comment>mount</comment>
+                </modifier>
               </modifiers>
             </infoLink>
           </infoLinks>
@@ -605,7 +657,9 @@ The Glacial Barrier continues to exist until it is dispelled, destroyed as above
             <infoLink name="Human" id="1aa7-9a17-656b-6308" hidden="false" type="profile" targetId="0dc6-73f5-9c78-d0a4">
               <modifiers>
                 <modifier type="set" value="Ungol Horse Archer" field="name"/>
-                <modifier type="set" value="4" field="4a8b-0c8e-3daf-7901"/>
+                <modifier type="increment" value="1" field="4a8b-0c8e-3daf-7901"/>
+                <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c"/>
+                <modifier type="decrement" value="4" field="f1be-e66c-d5e1-673c"/>
               </modifiers>
             </infoLink>
           </infoLinks>
@@ -963,6 +1017,16 @@ If this test is failed, they suffer an additional wound, with no Armour or Ward 
         <infoLink name="Hireling Wizard" id="cf34-91e8-7143-b02f" hidden="false" targetId="30e0-dc06-884d-e074" type="profile">
           <modifiers>
             <modifier type="set" value="Kislevite Shaman" field="name"/>
+            <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="3211-d836-02f1-01d0" shared="true" childName="Barding" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="313455d3-3643-49fe-b5e6-a2260731f465" shared="true" childName="Warhorse" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </infoLink>
         <infoLink name="The Lore of Ice" id="c2a5-872f-e440-5b60" hidden="false" type="rule" targetId="d4ec-d2aa-0581-1c1a"/>
@@ -990,7 +1054,7 @@ This addition is not official, discuss with your opponent beforehand." field="wa
         <characteristic name="I" typeId="dfff-363e-f72a-5a59">3</characteristic>
         <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">7</characteristic>
-        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">7</characteristic>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">11</characteristic>
         <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">7</characteristic>
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
         <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">20x20</characteristic>
@@ -1229,4 +1293,13 @@ This addition is not official, discuss with your opponent beforehand." field="wa
       <comment>aDC</comment>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
+  <infoLinks>
+    <infoLink name="Human" id="8e97-c366-05eb-1025" hidden="false" type="profile" targetId="0dc6-73f5-9c78-d0a4">
+      <modifiers>
+        <modifier type="set" value="Ungol Horse Archer" field="name"/>
+        <modifier type="set" value="4" field="4a8b-0c8e-3daf-7901"/>
+        <modifier type="set" value="6" field="f1be-e66c-d5e1-673c"/>
+      </modifiers>
+    </infoLink>
+  </infoLinks>
 </catalogue>
