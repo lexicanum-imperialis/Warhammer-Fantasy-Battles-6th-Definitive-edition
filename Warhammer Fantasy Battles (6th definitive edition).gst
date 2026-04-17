@@ -169,7 +169,7 @@
             <formatRule name="New Format Rule" id="e7a2-2165-9844-51fa" hidden="false" type="regex" match="^$" replace="-">
               <comment>Empty → -</comment>
             </formatRule>
-            <formatRule name="New Format Rule" id="63cf-9ed0-f2a4-69ee" hidden="false" type="regex" match="(^\d)" replace="$1+">
+            <formatRule name="New Format Rule" id="63cf-9ed0-f2a4-69ee" hidden="false" type="regex" match="^(\d+)$" replace="-$1">
               <comment>Append SUFFIX</comment>
             </formatRule>
           </formatRules>
@@ -2893,7 +2893,13 @@ The spell cannot affect Undead targets, Chaos Daemons or Unbreakable units. Unit
     </profile>
     <profile name="Mount" typeId="f681-9937-db53-f1d8" typeName="Armour" hidden="false" id="ba88-8cd6-307f-3e56">
       <characteristics>
-        <characteristic name="Saving Throw Modifier" typeId="b600-e1ed-0765-27c1">-1</characteristic>
+        <characteristic name="Saving Throw Modifier" typeId="b600-e1ed-0765-27c1">1</characteristic>
+        <characteristic name="Special rules" typeId="42c3-68ab-cfa5-203e"/>
+      </characteristics>
+    </profile>
+    <profile name="Thick Skinned" typeId="f681-9937-db53-f1d8" typeName="Armour" hidden="false" id="80be-499c-001a-2147">
+      <characteristics>
+        <characteristic name="Saving Throw Modifier" typeId="b600-e1ed-0765-27c1">1</characteristic>
         <characteristic name="Special rules" typeId="42c3-68ab-cfa5-203e"/>
       </characteristics>
     </profile>

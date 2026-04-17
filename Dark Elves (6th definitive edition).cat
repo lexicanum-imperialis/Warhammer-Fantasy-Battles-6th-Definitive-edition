@@ -13,7 +13,54 @@
     <selectionEntry id="79af-7092-a9a9-393d" name="Highborn" publicationId="20b9-0ee7-8f6f-8d28" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
         <infoLink id="b1ff-6dc0-f6aa-4cb3" name="Hate High Elves" hidden="false" targetId="cc26-8206-5d40-1626" type="rule"/>
-        <infoLink id="7ae07422-6715-4692-aeb9-89fbd4ed033f" name="Highborn" hidden="false" targetId="3ffc-3172-37a9-a1fc" type="profile"/>
+        <infoLink id="7ae07422-6715-4692-aeb9-89fbd4ed033f" name="Highborn" hidden="false" targetId="3ffc-3172-37a9-a1fc" type="profile">
+          <modifiers>
+            <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="0b9c-d3ff-6535-74cd" shared="true" includeChildSelections="true" childName="Shield"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="03e9-b763-6e56-2836" shared="true" includeChildSelections="true" childName="Dark Steed"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="5757-fa04-871e-f842" shared="true" includeChildSelections="true" childName="Sea Dragon Cloak"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" value="4" field="f1be-e66c-d5e1-673c">
+              <comment>race condition</comment>
+            </modifier>
+            <modifier type="decrement" value="2" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="6315-38ea-2a11-da65" shared="true" includeChildSelections="true" childName="Cold One"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="self" childId="ba90-e917-dbad-292c" shared="true" childName="Mounts" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="0b9c-d3ff-6535-74cd" shared="true" includeChildSelections="true" childName="Shield"/>
+                    <condition type="lessThan" value="1" field="selections" scope="self" childId="4c8c-ab06-0b67-d4e8" shared="true" childName="CC Weapons" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="b03f-3877-64c5-d83f" shared="true" includeChildSelections="true" childName="Light Amour"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" value="2" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="03b3-b1ea-0aef-65f1" shared="true" includeChildSelections="true" childName="Heavy Armour"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="7eb2-a743-5eb2-5a12" name="Lord" hidden="false" targetId="d024-d25b-a9b4-73b6" primary="true"/>
@@ -468,9 +515,6 @@
                 <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
                 <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">20x20</characteristic>
               </characteristics>
-              <attributes>
-                <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-              </attributes>
             </profile>
           </profiles>
           <costs>
@@ -599,9 +643,6 @@
                     <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
                     <characteristic name="Base" typeId="2cad-bb76-8a5a-1607"/>
                   </characteristics>
-                  <attributes>
-                    <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-                  </attributes>
                 </profile>
               </profiles>
               <costs>
@@ -643,7 +684,23 @@
       <infoLinks>
         <infoLink id="0f2f-0cc0-f9ea-cccb" name="Hate High Elves" hidden="false" targetId="cc26-8206-5d40-1626" type="rule"/>
         <infoLink id="8dd7-7b2f-848d-6a3a" name="Sect Enmity" hidden="false" targetId="dcd7-72d5-27bb-be52" type="rule"/>
-        <infoLink id="c2738e1e-b16c-4624-97f8-c860ed4e9e4b" name="High Soceress" hidden="false" targetId="bc9c-fced-4a3e-fbba" type="profile"/>
+        <infoLink id="c2738e1e-b16c-4624-97f8-c860ed4e9e4b" name="High Soceress" hidden="false" targetId="bc9c-fced-4a3e-fbba" type="profile">
+          <modifiers>
+            <modifier type="decrement" value="4" field="f1be-e66c-d5e1-673c">
+              <comment>race condition</comment>
+            </modifier>
+            <modifier type="decrement" value="2" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="6315-38ea-2a11-da65" shared="true" includeChildSelections="true" childName="Cold One"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="03e9-b763-6e56-2836" shared="true" includeChildSelections="true" childName="Dark Steed"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="6ff5-aef1-4602-5dae" name="Lord" hidden="false" targetId="d024-d25b-a9b4-73b6" primary="true"/>
@@ -1163,14 +1220,82 @@
         </modifier>
       </modifiers>
       <infoLinks>
-        <infoLink id="5c2e1a49-8ece-4726-8d67-81eb7b45df58" name="Noble" hidden="false" targetId="228a-f3ab-a796-d92d" type="profile"/>
+        <infoLink id="5c2e1a49-8ece-4726-8d67-81eb7b45df58" name="Noble" hidden="false" targetId="228a-f3ab-a796-d92d" type="profile">
+          <modifiers>
+            <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="03e9-b763-6e56-2836" shared="true" includeChildSelections="true" childName="Dark Steed"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="ab69-76b5-97c8-a03b" shared="true" includeChildSelections="true" childName="Sea Dragon Cloak"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" value="4" field="f1be-e66c-d5e1-673c">
+              <comment>race condition</comment>
+            </modifier>
+            <modifier type="decrement" value="2" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="6315-38ea-2a11-da65" shared="true" includeChildSelections="true" childName="Cold One"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="self" childId="e26c-c1cc-c821-d48e" shared="true" childName="Mounts" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="d472-d3a0-5133-b72a" shared="true" includeChildSelections="true" childName="Shield"/>
+                    <condition type="lessThan" value="1" field="selections" scope="self" childId="a1bb-85a6-aaee-575c" shared="true" childName="CC Weapons" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="decrement" value="3" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="91d4-774c-6c6c-fba3" shared="true" includeChildSelections="true" childName="Chaos Armour*"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="8643-af87-6476-1739" shared="true" includeChildSelections="true" childName="Light Amour"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" value="2" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="2205-f5f1-c6bc-5683" shared="true" includeChildSelections="true" childName="Heavy Armour"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="d472-d3a0-5133-b72a" shared="true" includeChildSelections="true" childName="Shield"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
     </selectionEntry>
     <selectionEntry id="b6ba-f748-beec-07e8" name="Sorceress" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
         <infoLink id="314f-ee8d-4afb-2e63" name="Hate High Elves" hidden="false" targetId="cc26-8206-5d40-1626" type="rule"/>
         <infoLink id="5551-991a-e1b5-72b1" name="Sect Enmity" hidden="false" targetId="dcd7-72d5-27bb-be52" type="rule"/>
-        <infoLink id="aa923c50-2931-41cd-9fcc-19b8bba37c14" name="Sorceress" hidden="false" targetId="cebe-d383-fc05-5e46" type="profile"/>
+        <infoLink id="aa923c50-2931-41cd-9fcc-19b8bba37c14" name="Sorceress" hidden="false" targetId="cebe-d383-fc05-5e46" type="profile">
+          <modifiers>
+            <modifier type="decrement" value="4" field="f1be-e66c-d5e1-673c">
+              <comment>race condition</comment>
+            </modifier>
+            <modifier type="decrement" value="2" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="6315-38ea-2a11-da65" shared="true" includeChildSelections="true" childName="Cold One"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="03e9-b763-6e56-2836" shared="true" includeChildSelections="true" childName="Dark Steed"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="6e2b-d576-c14e-de84" name="Heroes" hidden="false" targetId="c16b-f319-2c62-2c12" primary="true"/>
@@ -1314,6 +1439,31 @@
       <infoLinks>
         <infoLink id="4fe9-cc14-47a0-06cc" name="Hate High Elves" hidden="false" targetId="cc26-8206-5d40-1626" type="rule"/>
         <infoLink id="0c76-904b-854d-e548" name="Beastmaster" hidden="false" targetId="6ac7-07e1-6898-1711" type="rule"/>
+        <infoLink name="Beastmaster" id="928e-9618-a3b0-cc82" hidden="false" type="profile" targetId="4983-f15c-2913-f6fc">
+          <modifiers>
+            <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="8cc4-44bf-16d6-b960" shared="true" includeChildSelections="true" childName="Sea Dragon Cloak"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" value="4" field="f1be-e66c-d5e1-673c"/>
+            <modifier type="decrement" value="2" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="6315-38ea-2a11-da65" shared="true" includeChildSelections="true" childName="Cold One"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="055f-8e4e-f170-35d2" shared="true" includeChildSelections="true" childName="Light Armour"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="03e9-b763-6e56-2836" shared="true" includeChildSelections="true" childName="Dark Steed"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="29d4-0daa-b466-c516" name="Heroes" hidden="false" targetId="c16b-f319-2c62-2c12" primary="true"/>
@@ -1684,9 +1834,6 @@
                 <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
                 <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">20x20</characteristic>
               </characteristics>
-              <attributes>
-                <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-              </attributes>
             </profile>
           </profiles>
           <costs>
@@ -1762,9 +1909,6 @@
                     <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
                     <characteristic name="Base" typeId="2cad-bb76-8a5a-1607"/>
                   </characteristics>
-                  <attributes>
-                    <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-                  </attributes>
                 </profile>
               </profiles>
               <costs>
@@ -1867,9 +2011,6 @@
                 <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
                 <characteristic name="Base" typeId="2cad-bb76-8a5a-1607"/>
               </characteristics>
-              <attributes>
-                <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-              </attributes>
             </profile>
           </profiles>
           <costs>
@@ -1954,9 +2095,6 @@
                     <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
                     <characteristic name="Base" typeId="2cad-bb76-8a5a-1607"/>
                   </characteristics>
-                  <attributes>
-                    <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-                  </attributes>
                 </profile>
               </profiles>
               <costs>
@@ -2179,9 +2317,6 @@
                 <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
                 <characteristic name="Base" typeId="2cad-bb76-8a5a-1607"/>
               </characteristics>
-              <attributes>
-                <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-              </attributes>
             </profile>
           </profiles>
           <costs>
@@ -2265,9 +2400,6 @@
                     <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
                     <characteristic name="Base" typeId="2cad-bb76-8a5a-1607"/>
                   </characteristics>
-                  <attributes>
-                    <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-                  </attributes>
                 </profile>
               </profiles>
               <entryLinks>
@@ -2355,9 +2487,6 @@
                 <characteristic name="Base" typeId="2cad-bb76-8a5a-1607"/>
               </characteristics>
               <comment>WD#287-UK</comment>
-              <attributes>
-                <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-              </attributes>
             </profile>
           </profiles>
         </selectionEntry>
@@ -2386,9 +2515,6 @@
                     <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
                     <characteristic name="Base" typeId="2cad-bb76-8a5a-1607"/>
                   </characteristics>
-                  <attributes>
-                    <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-                  </attributes>
                 </profile>
               </profiles>
               <costs>
@@ -2623,9 +2749,6 @@
                 <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
                 <characteristic name="Base" typeId="2cad-bb76-8a5a-1607"/>
               </characteristics>
-              <attributes>
-                <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-              </attributes>
             </profile>
           </profiles>
           <costs>
@@ -2698,9 +2821,6 @@
                 <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">6</characteristic>
                 <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">50x50</characteristic>
               </characteristics>
-              <attributes>
-                <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-              </attributes>
             </profile>
           </profiles>
           <rules>
@@ -2748,9 +2868,6 @@
                         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">6</characteristic>
                         <characteristic name="Base" typeId="2cad-bb76-8a5a-1607"/>
                       </characteristics>
-                      <attributes>
-                        <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-                      </attributes>
                     </profile>
                   </profiles>
                   <infoGroups>
@@ -2798,9 +2915,6 @@
                         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">6</characteristic>
                         <characteristic name="Base" typeId="2cad-bb76-8a5a-1607"/>
                       </characteristics>
-                      <attributes>
-                        <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-                      </attributes>
                     </profile>
                   </profiles>
                   <infoGroups>
@@ -2848,9 +2962,6 @@
                         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">6</characteristic>
                         <characteristic name="Base" typeId="2cad-bb76-8a5a-1607"/>
                       </characteristics>
-                      <attributes>
-                        <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-                      </attributes>
                     </profile>
                   </profiles>
                   <infoGroups>
@@ -3002,11 +3113,12 @@ Check &quot;Allow experimental rules?&quot; to disable this message." field="war
                 <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">7</characteristic>
                 <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">7</characteristic>
                 <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
-                <characteristic name="Base" typeId="2cad-bb76-8a5a-1607"/>
+                <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">20x20</characteristic>
               </characteristics>
-              <attributes>
-                <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-              </attributes>
+              <modifiers>
+                <modifier type="set" value="-" field="fa44-51dd-e69c-8d6a"/>
+                <modifier type="set" value="-/4+" field="d4a9-0ed4-d041-e54b"/>
+              </modifiers>
             </profile>
           </profiles>
           <rules>
@@ -3020,6 +3132,9 @@ Check &quot;Allow experimental rules?&quot; to disable this message." field="war
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
+          <infoLinks>
+            <infoLink name="Magical Resistance (1)" id="6687-3a14-bfe0-9b47" hidden="false" type="rule" targetId="da12-a0e8-30ec-6c32"/>
+          </infoLinks>
         </selectionEntry>
         <selectionEntry id="f1e0-c1f7-4389-abe8" name="Hag" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -3041,11 +3156,8 @@ Check &quot;Allow experimental rules?&quot; to disable this message." field="war
                 <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">7</characteristic>
                 <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">7</characteristic>
                 <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
-                <characteristic name="Base" typeId="2cad-bb76-8a5a-1607"/>
+                <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">20x20</characteristic>
               </characteristics>
-              <attributes>
-                <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-              </attributes>
             </profile>
           </profiles>
           <entryLinks>
@@ -3113,20 +3225,17 @@ Check &quot;Allow experimental rules?&quot; to disable this message." field="war
                 <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">5</characteristic>
                 <characteristic name="WS" typeId="f95b-da01-0578-3bdc">5</characteristic>
                 <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">4</characteristic>
-                <characteristic name="S" typeId="b690-4bc0-bb73-267b">3</characteristic>
+                <characteristic name="S" typeId="b690-4bc0-bb73-267b">3(4)</characteristic>
                 <characteristic name="T" typeId="8712-f56f-5b22-a720">3</characteristic>
                 <characteristic name="W" typeId="253a-9b00-4fde-8ac2">1</characteristic>
                 <characteristic name="I" typeId="dfff-363e-f72a-5a59">6</characteristic>
                 <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
                 <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">9</characteristic>
-                <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">7</characteristic>
+                <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">5</characteristic>
                 <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">7</characteristic>
-                <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
-                <characteristic name="Base" typeId="2cad-bb76-8a5a-1607"/>
+                <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
+                <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">20x20</characteristic>
               </characteristics>
-              <attributes>
-                <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-              </attributes>
             </profile>
           </profiles>
           <costs>
@@ -3188,9 +3297,6 @@ Check &quot;Allow experimental rules?&quot; to disable this message." field="war
                     <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
                     <characteristic name="Base" typeId="2cad-bb76-8a5a-1607"/>
                   </characteristics>
-                  <attributes>
-                    <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-                  </attributes>
                 </profile>
               </profiles>
               <costs>
@@ -3203,8 +3309,17 @@ Check &quot;Allow experimental rules?&quot; to disable this message." field="war
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="15d6-2f68-e657-cea9" name="Halberds" hidden="false" collective="false" import="true" targetId="b3f3-a133-2869-0be8" type="selectionEntry"/>
-        <entryLink id="5f14-ae3d-86f1-146a" name="Heavy Armour" hidden="false" collective="false" import="true" targetId="dde4-0ba8-7b3c-57b7" type="selectionEntry"/>
+        <entryLink id="15d6-2f68-e657-cea9" name="Halberds" hidden="false" collective="false" import="true" targetId="b3f3-a133-2869-0be8" type="selectionEntry">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6fc9-3f97-c295-94b8" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c999-2760-279a-7b61" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="5f14-ae3d-86f1-146a" name="Heavy Armour" hidden="false" collective="false" import="true" targetId="dde4-0ba8-7b3c-57b7" type="selectionEntry">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="050b-525e-5f7b-0aef" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
@@ -3290,9 +3405,6 @@ Check &quot;Allow experimental rules?&quot; to disable this message." field="war
                     <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
                     <characteristic name="Base" typeId="2cad-bb76-8a5a-1607"/>
                   </characteristics>
-                  <attributes>
-                    <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-                  </attributes>
                 </profile>
               </profiles>
               <costs>
@@ -3347,9 +3459,6 @@ Check &quot;Allow experimental rules?&quot; to disable this message." field="war
                     <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">2</characteristic>
                     <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">50x50</characteristic>
                   </characteristics>
-                  <attributes>
-                    <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-                  </attributes>
                 </profile>
               </profiles>
               <costs>
@@ -3787,9 +3896,6 @@ Check &quot;Allow experimental rules?&quot; to disable this message." field="war
                     <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
                     <characteristic name="Base" typeId="2cad-bb76-8a5a-1607"/>
                   </characteristics>
-                  <attributes>
-                    <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-                  </attributes>
                 </profile>
               </profiles>
               <constraints>
@@ -3890,9 +3996,6 @@ Check &quot;Allow experimental rules?&quot; to disable this message." field="war
                 <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
                 <characteristic name="Base" typeId="2cad-bb76-8a5a-1607"/>
               </characteristics>
-              <attributes>
-                <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-              </attributes>
             </profile>
           </profiles>
           <infoLinks>
@@ -4608,9 +4711,6 @@ In addition, a monster that is beaten in hand to hand combat by Rakarth is assum
                 <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
                 <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">20x20</characteristic>
               </characteristics>
-              <attributes>
-                <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-              </attributes>
               <modifiers>
                 <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
                   <conditions>
@@ -4813,9 +4913,6 @@ In addition, a monster that is beaten in hand to hand combat by Rakarth is assum
                     <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
                     <characteristic name="Base" typeId="2cad-bb76-8a5a-1607"/>
                   </characteristics>
-                  <attributes>
-                    <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-                  </attributes>
                 </profile>
               </profiles>
               <costs>
@@ -5002,25 +5099,32 @@ In addition, a monster that is beaten in hand to hand combat by Rakarth is assum
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6f4f-d351-94f6-5bba" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Chaos Steed" hidden="false" id="edb1-7e1f-e894-af22" collective="false" targetId="3c1f-3fc2-11b9-49aa" type="selectionEntry">
-              <entryLinks>
-                <entryLink import="true" name="Barding" hidden="false" id="dddf-96c3-c1df-88f3" collective="false" targetId="3211-d836-02f1-01d0" type="selectionEntry">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6b83-9508-4fdc-1507" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4e35-2cc5-7d30-d1bc" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
+            <entryLink import="true" name="Chaos Steed" hidden="false" id="edb1-7e1f-e894-af22" collective="false" targetId="3c1f-3fc2-11b9-49aa" type="selectionEntry" sortIndex="2">
               <costs>
                 <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="16"/>
               </costs>
             </entryLink>
-            <entryLink import="true" name="Chaos Chariot" hidden="false" id="238f-0fc0-3391-6b0f" collective="false" targetId="0033-5ce2-e8f6-b42f" type="selectionEntry">
+            <entryLink import="true" name="Chaos Chariot" hidden="false" id="238f-0fc0-3391-6b0f" collective="false" targetId="0033-5ce2-e8f6-b42f" type="selectionEntry" sortIndex="1">
               <infoLinks>
                 <infoLink name="Chaos Chariot" id="1c40-2e93-37e3-d218" hidden="false" targetId="ed5a-5020-cb6f-706e" type="profile"/>
-                <infoLink name="Chaos Steed" id="f3cf-20e3-9275-d1e7" hidden="false" targetId="a7a4-d585-fbfc-2460" type="profile"/>
-                <infoLink name="Warrior C" id="dc65-acfa-f452-bc15" hidden="false" targetId="808f-9934-edab-df6e" type="profile"/>
+                <infoLink name="Chaos Steed" id="f3cf-20e3-9275-d1e7" hidden="false" targetId="8a33-7326-ce13-ee75" type="profile"/>
               </infoLinks>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Chariot Sv" hidden="false" id="c151-fea9-7496-8a2d">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a708-086f-02a0-67f4" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f613-9154-e48c-fde7" includeChildSelections="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Chariot Sv (Characters)" typeId="f681-9937-db53-f1d8" typeName="Armour" hidden="false" id="2209-3a27-d2e2-389e" publicationId="315e-e3c4-08af-fd51" page="127">
+                      <characteristics>
+                        <characteristic name="Saving Throw Modifier" typeId="b600-e1ed-0765-27c1">2</characteristic>
+                        <characteristic name="Special rules" typeId="42c3-68ab-cfa5-203e"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -5068,7 +5172,43 @@ In addition, a monster that is beaten in hand to hand combat by Rakarth is assum
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="b746-b7d0-bfab-adf1" includeChildSelections="false"/>
       </constraints>
       <infoLinks>
-        <infoLink id="e901c2cf-661e-4ebf-8d5b-fe7eb5855879" name="Aspiring Champion" hidden="false" targetId="ee73-f4ae-2ebd-0877" type="profile"/>
+        <infoLink id="e901c2cf-661e-4ebf-8d5b-fe7eb5855879" name="Aspiring Champion" hidden="false" targetId="ee73-f4ae-2ebd-0877" type="profile">
+          <modifiers>
+            <modifier type="decrement" value="2" field="f1be-e66c-d5e1-673c">
+              <comment>chariot save</comment>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="0033-5ce2-e8f6-b42f" shared="true" childName="Chaos Chariot" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" value="4" field="f1be-e66c-d5e1-673c">
+              <comment>race condition</comment>
+            </modifier>
+            <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+              <comment>barding</comment>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="3211-d836-02f1-01d0" shared="true" childName="Barding" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+              <comment>mount</comment>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="3c1f-3fc2-11b9-49aa" shared="true" childName="Chaos Steed" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+              <comment>shield</comment>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="50e2-1873-a856-03e7" shared="true" childName="Shield" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" value="3" field="f1be-e66c-d5e1-673c">
+              <comment>chaos armour</comment>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="91d4-774c-6c6c-fba3" shared="true" childName="Chaos Armour*" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Marauders Of Chaos" hidden="true" id="8405-93e6-c040-a867" collective="false">
@@ -5545,14 +5685,11 @@ In addition, a monster that is beaten in hand to hand combat by Rakarth is assum
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Knights of Chaos" hidden="true" id="7843-05b6-ba2d-cc2b" collective="false">
-      <infoLinks>
-        <infoLink name="Knight" id="4a24-a78e-7096-fda5" hidden="false" targetId="3842-ae9b-70a3-2123" type="profile"/>
-      </infoLinks>
       <categoryLinks>
         <categoryLink name="Rare" hidden="false" id="6725-e253-28c2-af97" targetId="e94b-6a54-8779-cd60" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Musician" hidden="false" id="8767-317f-3402-e5d3" collective="false">
+        <selectionEntry type="upgrade" import="true" name="Musician" hidden="false" id="8767-317f-3402-e5d3" collective="false" sortIndex="4">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cd44-faa6-fe30-974d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
@@ -5562,7 +5699,7 @@ In addition, a monster that is beaten in hand to hand combat by Rakarth is assum
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Standard Bearer" hidden="false" id="20f1-c09f-21ca-485e" collective="false">
+        <selectionEntry type="upgrade" import="true" name="Standard Bearer" hidden="false" id="20f1-c09f-21ca-485e" collective="false" sortIndex="5">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3dca-f0b6-e99e-3cf7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
@@ -5579,7 +5716,7 @@ In addition, a monster that is beaten in hand to hand combat by Rakarth is assum
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Champion" hidden="false" id="9fb1-d61c-c1c1-c7e4" collective="false">
+        <selectionEntry type="upgrade" import="true" name="Champion" hidden="false" id="9fb1-d61c-c1c1-c7e4" collective="false" sortIndex="3">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="da11-0429-8193-fa93" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
@@ -5592,7 +5729,7 @@ In addition, a monster that is beaten in hand to hand combat by Rakarth is assum
             <infoLink name="Knight Champion" id="bfac-f26f-ff32-7fd9" hidden="false" type="profile" targetId="c468-627f-f219-4334"/>
           </infoLinks>
         </selectionEntry>
-        <selectionEntry type="model" import="true" name="Knights of Chaos" hidden="false" id="2a5f-a5b9-62c7-4659" collective="false">
+        <selectionEntry type="model" import="true" name="Knights of Chaos" hidden="false" id="2a5f-a5b9-62c7-4659" collective="false" sortIndex="1">
           <constraints>
             <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="cb54-4992-1515-e03a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
@@ -5601,8 +5738,24 @@ In addition, a monster that is beaten in hand to hand combat by Rakarth is assum
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
+          <infoLinks>
+            <infoLink name="Knight" id="4a24-a78e-7096-fda5" hidden="false" targetId="3842-ae9b-70a3-2123" type="profile">
+              <modifiers>
+                <modifier type="increment" value="1" field="6b9f-c8fe-8998-27e3">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="7ab9-d251-abf3-8878" shared="true" childName="Chosen" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="7ab9-d251-abf3-8878" shared="true" childName="Chosen" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Additional Rare slot" hidden="false" id="bbc6-be9d-36c7-e71a">
+        <selectionEntry type="upgrade" import="true" name="Additional Rare slot" hidden="false" id="bbc6-be9d-36c7-e71a" sortIndex="2">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2d9b-6911-40b9-01aa" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="03d4-f851-1fb7-37f4" includeChildSelections="false"/>
@@ -5611,32 +5764,39 @@ In addition, a monster that is beaten in hand to hand combat by Rakarth is assum
             <categoryLink name="Rare" hidden="false" id="fd1c-0b13-13b3-7193" targetId="e94b-6a54-8779-cd60" primary="false"/>
           </categoryLinks>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Chosen" hidden="false" id="7ab9-d251-abf3-8878" sortIndex="11">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e044-8da5-f362-824e" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="7621-ea76-9d88-63c3" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="increment" value="12" field="ecfa-8486-4f6c-c249">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="model" shared="true" roundUp="false" childName="model"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink import="true" name="Hand Weapon" hidden="false" id="1eab-3950-8518-cec4" collective="false" targetId="abdb-bbd0-41b2-5dff" type="selectionEntry">
+        <entryLink import="true" name="Hand Weapon" hidden="false" id="1eab-3950-8518-cec4" collective="false" targetId="abdb-bbd0-41b2-5dff" type="selectionEntry" sortIndex="6">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f138-915b-bd0b-18bb" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3fde-4907-2865-d87f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Heavy Armour" hidden="false" id="4660-7075-6dec-5055" collective="false" targetId="dde4-0ba8-7b3c-57b7" type="selectionEntry">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c094-6d43-3868-7599" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ac29-1dc3-5291-79f2" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-        </entryLink>
-        <entryLink import="true" name="Shield" hidden="false" id="e517-105e-92b5-de39" collective="false" targetId="50e2-1873-a856-03e7" type="selectionEntry">
+        <entryLink import="true" name="Shield" hidden="false" id="e517-105e-92b5-de39" collective="false" targetId="50e2-1873-a856-03e7" type="selectionEntry" sortIndex="7">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b0c3-f0e7-8319-ce4d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9410-8464-eb23-1252" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Mark of Slaanesh (troops)" hidden="false" id="4b40-2f23-f079-8fdf" collective="false" targetId="fdca-8baf-a3cb-dc25" type="selectionEntry">
+        <entryLink import="true" name="Mark of Slaanesh (troops)" hidden="false" id="4b40-2f23-f079-8fdf" collective="false" targetId="fdca-8baf-a3cb-dc25" type="selectionEntry" sortIndex="10">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="41de-302a-7655-2546" includeChildSelections="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Chaos Steed" hidden="false" id="7946-1b32-e202-e6ff" collective="false" targetId="3c1f-3fc2-11b9-49aa" type="selectionEntry">
+        <entryLink import="true" name="Chaos Steed" hidden="false" id="7946-1b32-e202-e6ff" collective="false" targetId="3c1f-3fc2-11b9-49aa" type="selectionEntry" sortIndex="12">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dc9e-e06c-1be3-bc6a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5341-a13a-53cf-5f4f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -5644,14 +5804,35 @@ In addition, a monster that is beaten in hand to hand combat by Rakarth is assum
           <infoLinks>
             <infoLink name="Chaos Steed" id="a97a-1506-e57b-2567" hidden="false" targetId="a7a4-d585-fbfc-2460" type="profile"/>
           </infoLinks>
-          <entryLinks>
-            <entryLink import="true" name="Barding" hidden="false" id="9dcd-d8f4-fd21-610f" collective="false" targetId="3211-d836-02f1-01d0" type="selectionEntry">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d96f-364c-2258-6330" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d4bc-9bfb-f2f5-6afd" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
+        </entryLink>
+        <entryLink import="true" name="Heavy Armour" hidden="false" id="e62a-a91f-8f57-4e75" collective="false" targetId="dde4-0ba8-7b3c-57b7" type="selectionEntry" sortIndex="8">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1183-85a4-570d-865e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3280-167a-349f-c888" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="7ab9-d251-abf3-8878" shared="true" includeChildSelections="true" childName="Chosen"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Chaos Armour*" hidden="true" id="a969-18a8-f7a2-1ed4" collective="false" targetId="91d4-774c-6c6c-fba3" type="selectionEntry" sortIndex="9">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="b72c-0388-8010-ce40" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="7ab9-d251-abf3-8878" shared="true" includeChildSelections="true" childName="Chosen"/>
+              </conditions>
+              <modifiers>
+                <modifier type="set" value="1" field="b72c-0388-8010-ce40"/>
+                <modifier type="set" value="false" field="hidden"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </entryLink>
       </entryLinks>
       <costs>
@@ -5660,6 +5841,11 @@ In addition, a monster that is beaten in hand to hand combat by Rakarth is assum
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
       <modifiers>
+        <modifier type="prepend" value="Chosen" field="name" join=" ">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="self" childId="7ab9-d251-abf3-8878" shared="true" childName="Chosen" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
         <modifier type="set" value="false" field="hidden">
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="force" childId="5013-f9f4-e03b-94d5" shared="true" includeChildSelections="true"/>
@@ -5693,9 +5879,6 @@ In addition, a monster that is beaten in hand to hand combat by Rakarth is assum
                 <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
                 <characteristic name="Base" typeId="2cad-bb76-8a5a-1607"/>
               </characteristics>
-              <attributes>
-                <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-              </attributes>
             </profile>
           </profiles>
           <costs>
@@ -5782,9 +5965,6 @@ In addition, a monster that is beaten in hand to hand combat by Rakarth is assum
                     <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
                     <characteristic name="Base" typeId="2cad-bb76-8a5a-1607"/>
                   </characteristics>
-                  <attributes>
-                    <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-                  </attributes>
                 </profile>
               </profiles>
               <costs>
@@ -5856,7 +6036,61 @@ In addition, a monster that is beaten in hand to hand combat by Rakarth is assum
       <infoLinks>
         <infoLink name="Hate High Elves" id="8783-8ca8-561e-c978" hidden="false" targetId="cc26-8206-5d40-1626" type="rule"/>
         <infoLink name="Fear" id="f783-9c4d-d680-67d0" hidden="false" type="rule" targetId="1524-2372-4aa0-6881"/>
-        <infoLink id="064ab6cc-bee2-4903-b329-6ccabd3790f0" name="Anointed" hidden="false" targetId="50a7-d361-ba45-b0e6" type="profile"/>
+        <infoLink id="064ab6cc-bee2-4903-b329-6ccabd3790f0" name="Anointed" hidden="false" targetId="50a7-d361-ba45-b0e6" type="profile">
+          <modifiers>
+            <modifier type="decrement" value="4" field="f1be-e66c-d5e1-673c">
+              <comment>race condition</comment>
+            </modifier>
+            <modifier type="decrement" value="2" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="6315-38ea-2a11-da65" shared="true" includeChildSelections="true" childName="Cold One"/>
+              </conditions>
+              <comment>cold one</comment>
+            </modifier>
+            <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="50e2-1873-a856-03e7" shared="true" includeChildSelections="true" childName="Shield"/>
+              </conditions>
+              <comment>shield</comment>
+            </modifier>
+            <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="self" childId="2b28-cd0c-832f-8fb1" shared="true" childName="Mounts" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="50e2-1873-a856-03e7" shared="true" includeChildSelections="true" childName="Shield"/>
+                    <condition type="lessThan" value="1" field="selections" scope="self" childId="d117-81d3-3163-8f13" shared="true" childName="CC Weapons" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+              <comment>HW + Shield</comment>
+            </modifier>
+            <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="03e9-b763-6e56-2836" shared="true" includeChildSelections="true" childName="Dark Steed"/>
+              </conditions>
+              <comment>dark steed</comment>
+            </modifier>
+            <modifier type="decrement" value="3" field="f1be-e66c-d5e1-673c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="91d4-774c-6c6c-fba3" shared="true" includeChildSelections="true" childName="Chaos Armour*"/>
+              </conditions>
+              <comment>chaos armour</comment>
+            </modifier>
+            <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+              <comment>mount</comment>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="3c1f-3fc2-11b9-49aa" shared="true" childName="Chaos Steed" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+              <comment>barding</comment>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="3211-d836-02f1-01d0" shared="true" childName="Barding" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Characters" hidden="false" id="bdbe-2e34-7d71-e054" targetId="7a1c-d611-c2dc-def1" primary="false"/>
@@ -6142,6 +6376,8 @@ In addition, a monster that is beaten in hand to hand combat by Rakarth is assum
         <infoLink id="e987-6298-a037-23e6" name="Fear" hidden="false" targetId="1524-2372-4aa0-6881" type="rule"/>
         <infoLink id="59c1-b77c-d28d-aa59" name="Thick Skinned" hidden="false" targetId="4ba2-77c6-3294-03e2" type="rule"/>
         <infoLink id="3564-e4a8-3574-f44a" name="Stupidity" hidden="false" targetId="5d6f-7b4d-6093-4922" type="rule"/>
+        <infoLink name="Mount" id="3498-cb59-f155-9422" hidden="false" type="profile" targetId="ba88-8cd6-307f-3e56"/>
+        <infoLink name="Thick Skinned" id="60ff-111f-48e7-b26c" hidden="false" type="profile" targetId="80be-499c-001a-2147"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="26"/>
@@ -6155,6 +6391,7 @@ In addition, a monster that is beaten in hand to hand combat by Rakarth is assum
       </constraints>
       <infoLinks>
         <infoLink id="70a0-c350-5f54-5f66" name="Dark Steed" hidden="false" targetId="d928-b122-2947-d618" type="profile"/>
+        <infoLink name="Mount" id="4661-69d2-bd0e-68eb" hidden="false" type="profile" targetId="ba88-8cd6-307f-3e56"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="12"/>
@@ -6745,6 +6982,7 @@ In addition, a monster that is beaten in hand to hand combat by Rakarth is assum
       </constraints>
       <infoLinks>
         <infoLink name="Chaos Armour" id="495a-1d98-a36e-4521" hidden="false" targetId="db63-a281-2e84-691d" type="rule"/>
+        <infoLink name="Chaos Armour" id="f1b4-35ce-d3e1-f14e" hidden="false" type="profile" targetId="2764-d2c3-afc3-1b83"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
@@ -6979,6 +7217,7 @@ In addition, a monster that is beaten in hand to hand combat by Rakarth is assum
       </constraints>
       <infoLinks>
         <infoLink name="Chaos Steed" id="9dd5-9424-cb0b-8392" hidden="false" targetId="a7a4-d585-fbfc-2460" type="profile"/>
+        <infoLink name="Mount" id="4d1b-02a4-7695-5bab" hidden="false" type="profile" targetId="ba88-8cd6-307f-3e56"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
@@ -6986,7 +7225,14 @@ In addition, a monster that is beaten in hand to hand combat by Rakarth is assum
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
       <entryLinks>
-        <entryLink import="true" name="Barding" hidden="false" id="bbd6-10ce-3616-1ee9" type="selectionEntry" targetId="3211-d836-02f1-01d0"/>
+        <entryLink import="true" name="Barding" hidden="false" id="bbd6-10ce-3616-1ee9" type="selectionEntry" targetId="3211-d836-02f1-01d0">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3d49-595d-671e-df23" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+          </costs>
+        </entryLink>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Chaos Chariot" hidden="false" id="0033-5ce2-e8f6-b42f" collective="false">
@@ -7001,6 +7247,25 @@ In addition, a monster that is beaten in hand to hand combat by Rakarth is assum
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Crew" hidden="false" id="2667-85d3-ea2e-85a0">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="32ad-eefc-9d97-bc7d" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1d80-9917-87cf-8ba3" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Chariot Armour Save (3+)" typeId="f681-9937-db53-f1d8" typeName="Armour" hidden="false" id="e53f-8c80-0f5a-9b78" publicationId="315e-e3c4-08af-fd51" page="127">
+              <characteristics>
+                <characteristic name="Saving Throw Modifier" typeId="b600-e1ed-0765-27c1">3+</characteristic>
+                <characteristic name="Special rules" typeId="42c3-68ab-cfa5-203e">Use 3+ (chariot&apos;s) or the unit&apos;s Sv</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Chaos Warrior" id="dc65-acfa-f452-bc15" hidden="false" targetId="808f-9934-edab-df6e" type="profile"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Mark of Slaanesh (troops)" hidden="true" id="fdca-8baf-a3cb-dc25" collective="false">
       <constraints>
@@ -8417,9 +8682,6 @@ The unit gains +D3 to its combat resolution the first time it charges.</descript
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
         <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">25x50</characteristic>
       </characteristics>
-      <attributes>
-        <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-      </attributes>
     </profile>
     <profile id="4fae-ecab-5fc6-9297" name="Dark Pegasus" publicationId="20b9-0ee7-8f6f-8d28" page="14" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
       <characteristics>
@@ -8437,9 +8699,6 @@ The unit gains +D3 to its combat resolution the first time it charges.</descript
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">3</characteristic>
         <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">40x40</characteristic>
       </characteristics>
-      <attributes>
-        <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-      </attributes>
     </profile>
     <profile id="d928-b122-2947-d618" name="Dark Steed" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
       <characteristics>
@@ -8457,9 +8716,6 @@ The unit gains +D3 to its combat resolution the first time it charges.</descript
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
         <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">25x50</characteristic>
       </characteristics>
-      <attributes>
-        <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-      </attributes>
     </profile>
     <profile id="5d6d-bbcf-b923-6859" name="Manticore" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
       <characteristics>
@@ -8477,9 +8733,6 @@ The unit gains +D3 to its combat resolution the first time it charges.</descript
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">4</characteristic>
         <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">50x50</characteristic>
       </characteristics>
-      <attributes>
-        <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-      </attributes>
     </profile>
     <profile id="4165-0381-e2c9-d7c8" name="Black Dragon" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
       <characteristics>
@@ -8497,9 +8750,6 @@ The unit gains +D3 to its combat resolution the first time it charges.</descript
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">6</characteristic>
         <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">50x50</characteristic>
       </characteristics>
-      <attributes>
-        <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-      </attributes>
     </profile>
     <profile id="c4e9-1e4e-011c-1655" name="Cold one Chariot" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
       <characteristics>
@@ -8517,9 +8767,6 @@ The unit gains +D3 to its combat resolution the first time it charges.</descript
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">4*</characteristic>
         <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">50x100</characteristic>
       </characteristics>
-      <attributes>
-        <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-      </attributes>
     </profile>
     <profile id="76bc-b9f8-32d3-8669" name="Chariot Crew" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
       <characteristics>
@@ -8537,9 +8784,6 @@ The unit gains +D3 to its combat resolution the first time it charges.</descript
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">(1)</characteristic>
         <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">-</characteristic>
       </characteristics>
-      <attributes>
-        <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-      </attributes>
     </profile>
     <profile id="7eb9-82d3-2022-e28c" name="Dark Elf Warrior" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
       <characteristics>
@@ -8557,9 +8801,6 @@ The unit gains +D3 to its combat resolution the first time it charges.</descript
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
         <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">20x20</characteristic>
       </characteristics>
-      <attributes>
-        <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-      </attributes>
     </profile>
     <profile id="ac64-371e-2bbf-45bb" name="Sea Dragon Cloak" hidden="false" typeId="f681-9937-db53-f1d8" typeName="Armour">
       <characteristics>
@@ -8583,9 +8824,6 @@ The unit gains +D3 to its combat resolution the first time it charges.</descript
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
         <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">20x20</characteristic>
       </characteristics>
-      <attributes>
-        <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-      </attributes>
     </profile>
     <profile id="57f2-89ed-a351-e3d4" name="Dark Elf champion BS" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
       <characteristics>
@@ -8603,9 +8841,6 @@ The unit gains +D3 to its combat resolution the first time it charges.</descript
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
         <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">20x20</characteristic>
       </characteristics>
-      <attributes>
-        <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-      </attributes>
     </profile>
     <profile id="d52f-3c38-c729-8be1" name="Dark Elf elite" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
       <characteristics>
@@ -8623,9 +8858,6 @@ The unit gains +D3 to its combat resolution the first time it charges.</descript
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
         <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">20x20</characteristic>
       </characteristics>
-      <attributes>
-        <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-      </attributes>
     </profile>
     <profile id="5aea-354a-c3c2-6d4f" name="Dark Elf elite champion" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
       <characteristics>
@@ -8643,9 +8875,6 @@ The unit gains +D3 to its combat resolution the first time it charges.</descript
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
         <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">20x20</characteristic>
       </characteristics>
-      <attributes>
-        <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-      </attributes>
     </profile>
     <profile id="3f75-6a1e-b6b0-1db5" name="Dark Elf Noble" publicationId="20b9-0ee7-8f6f-8d28" page="6" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
       <characteristics>
@@ -8663,9 +8892,6 @@ The unit gains +D3 to its combat resolution the first time it charges.</descript
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
         <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">20x20</characteristic>
       </characteristics>
-      <attributes>
-        <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-      </attributes>
     </profile>
     <profile id="3458-0d9b-1260-6b79" name="Highborn" publicationId="20b9-0ee7-8f6f-8d28" page="6" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
       <characteristics>
@@ -8683,9 +8909,6 @@ The unit gains +D3 to its combat resolution the first time it charges.</descript
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
         <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">20x20</characteristic>
       </characteristics>
-      <attributes>
-        <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-      </attributes>
     </profile>
     <profile name="Chaos Chariot" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="ed5a-5020-cb6f-706e" publicationId="d67c-4221-e6fc-7951">
       <characteristics>
@@ -8703,9 +8926,6 @@ The unit gains +D3 to its combat resolution the first time it charges.</descript
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">4</characteristic>
         <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">50x100</characteristic>
       </characteristics>
-      <attributes>
-        <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-      </attributes>
     </profile>
     <profile name="Chaos Steed" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="a7a4-d585-fbfc-2460" publicationId="d67c-4221-e6fc-7951" page="24">
       <characteristics>
@@ -8723,11 +8943,8 @@ The unit gains +D3 to its combat resolution the first time it charges.</descript
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
         <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">25x50</characteristic>
       </characteristics>
-      <attributes>
-        <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-      </attributes>
     </profile>
-    <profile name="Warrior C" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="808f-9934-edab-df6e" publicationId="d67c-4221-e6fc-7951" page="24">
+    <profile name="Chaos Warrior" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="808f-9934-edab-df6e" publicationId="d67c-4221-e6fc-7951" page="24">
       <characteristics>
         <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">-</characteristic>
         <characteristic name="WS" typeId="f95b-da01-0578-3bdc">5</characteristic>
@@ -8738,14 +8955,12 @@ The unit gains +D3 to its combat resolution the first time it charges.</descript
         <characteristic name="I" typeId="dfff-363e-f72a-5a59">5</characteristic>
         <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">8</characteristic>
-        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">7</characteristic>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">3</characteristic>
         <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">7</characteristic>
-        <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
-        <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">25x25</characteristic>
+        <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
+        <characteristic name="Base" typeId="2cad-bb76-8a5a-1607"/>
       </characteristics>
-      <attributes>
-        <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-      </attributes>
+      <comment>(Chariot)</comment>
     </profile>
     <profile name="Marauder" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="9a22-76ec-8c40-915d" publicationId="d750-ac7f-7465-d6d1" page="25">
       <characteristics>
@@ -8763,9 +8978,6 @@ The unit gains +D3 to its combat resolution the first time it charges.</descript
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
         <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">25x25</characteristic>
       </characteristics>
-      <attributes>
-        <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-      </attributes>
     </profile>
     <profile name="Chieftan" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="c8f9-5d1a-83b4-60e2">
       <characteristics>
@@ -8783,9 +8995,6 @@ The unit gains +D3 to its combat resolution the first time it charges.</descript
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
         <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">25x25</characteristic>
       </characteristics>
-      <attributes>
-        <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-      </attributes>
     </profile>
     <profile name="Mount of Slaanesh" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="8df3-e167-7dc8-ab4c">
       <characteristics>
@@ -8803,9 +9012,6 @@ The unit gains +D3 to its combat resolution the first time it charges.</descript
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
         <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">25x50</characteristic>
       </characteristics>
-      <attributes>
-        <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-      </attributes>
     </profile>
     <profile name="Daemonettes" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="0d75-0731-7136-c1fe">
       <characteristics>
@@ -8823,9 +9029,6 @@ The unit gains +D3 to its combat resolution the first time it charges.</descript
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
         <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">25x25</characteristic>
       </characteristics>
-      <attributes>
-        <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-      </attributes>
     </profile>
     <profile name="Warrior" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="602f-40ae-14de-f5f8" publicationId="d750-ac7f-7465-d6d1" page="24">
       <characteristics>
@@ -8843,9 +9046,6 @@ The unit gains +D3 to its combat resolution the first time it charges.</descript
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
         <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">25x25</characteristic>
       </characteristics>
-      <attributes>
-        <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-      </attributes>
     </profile>
     <profile name="Spawn of Chaos" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="d928-8d35-0778-2088">
       <characteristics>
@@ -8863,9 +9063,6 @@ The unit gains +D3 to its combat resolution the first time it charges.</descript
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">3</characteristic>
         <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">40x40</characteristic>
       </characteristics>
-      <attributes>
-        <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-      </attributes>
     </profile>
     <profile name="Chaos Furies" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="355e-98d8-214d-a486">
       <characteristics>
@@ -8883,9 +9080,6 @@ The unit gains +D3 to its combat resolution the first time it charges.</descript
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
         <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">25x25</characteristic>
       </characteristics>
-      <attributes>
-        <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-      </attributes>
     </profile>
     <profile name="Knight" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="3842-ae9b-70a3-2123" publicationId="d750-ac7f-7465-d6d1" page="24">
       <characteristics>
@@ -8898,14 +9092,11 @@ The unit gains +D3 to its combat resolution the first time it charges.</descript
         <characteristic name="I" typeId="dfff-363e-f72a-5a59">5</characteristic>
         <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">8</characteristic>
-        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">7</characteristic>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">2</characteristic>
         <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">7</characteristic>
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
         <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">-</characteristic>
       </characteristics>
-      <attributes>
-        <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-      </attributes>
     </profile>
     <profile name="Knight Champion" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="c468-627f-f219-4334" publicationId="d750-ac7f-7465-d6d1" page="24">
       <characteristics>
@@ -8923,9 +9114,6 @@ The unit gains +D3 to its combat resolution the first time it charges.</descript
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
         <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">-</characteristic>
       </characteristics>
-      <attributes>
-        <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-      </attributes>
     </profile>
     <profile name="Champion" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="fa4e-971d-736d-1844">
       <characteristics>
@@ -8943,9 +9131,6 @@ The unit gains +D3 to its combat resolution the first time it charges.</descript
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
         <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">20x20</characteristic>
       </characteristics>
-      <attributes>
-        <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-      </attributes>
     </profile>
     <profile name="Steed of Slaanesh" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="beea-5b3e-3e44-bbc8">
       <characteristics>
@@ -8959,13 +9144,10 @@ The unit gains +D3 to its combat resolution the first time it charges.</descript
         <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">2</characteristic>
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">8</characteristic>
         <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">7</characteristic>
-        <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">7</characteristic>
+        <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">5</characteristic>
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">3</characteristic>
         <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">40x40</characteristic>
       </characteristics>
-      <attributes>
-        <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-      </attributes>
     </profile>
     <profile name="Cauldron of Blood" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="bf3c-6a45-b204-656a" publicationId="20b9-0ee7-8f6f-8d28" page="15">
       <characteristics>
@@ -8983,9 +9165,6 @@ The unit gains +D3 to its combat resolution the first time it charges.</descript
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">3</characteristic>
         <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">50x100</characteristic>
       </characteristics>
-      <attributes>
-        <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-      </attributes>
     </profile>
     <profile id="3ffc-3172-37a9-a1fc" name="Highborn" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
       <characteristics>
@@ -8998,7 +9177,7 @@ The unit gains +D3 to its combat resolution the first time it charges.</descript
         <characteristic name="I" typeId="dfff-363e-f72a-5a59">8</characteristic>
         <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">4</characteristic>
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">10</characteristic>
-        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">7</characteristic>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">11</characteristic>
         <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">7</characteristic>
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
         <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">20x20</characteristic>
@@ -9010,9 +9189,6 @@ The unit gains +D3 to its combat resolution the first time it charges.</descript
           </conditions>
         </modifier>
       </modifiers>
-      <attributes>
-        <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-      </attributes>
     </profile>
     <profile id="bc9c-fced-4a3e-fbba" name="High Soceress" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
       <characteristics>
@@ -9025,14 +9201,11 @@ The unit gains +D3 to its combat resolution the first time it charges.</descript
         <characteristic name="I" typeId="dfff-363e-f72a-5a59">5</characteristic>
         <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">9</characteristic>
-        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">7</characteristic>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">11</characteristic>
         <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">7</characteristic>
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
         <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">20x20</characteristic>
       </characteristics>
-      <attributes>
-        <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-      </attributes>
     </profile>
     <profile id="228a-f3ab-a796-d92d" name="Noble" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
       <characteristics>
@@ -9045,14 +9218,11 @@ The unit gains +D3 to its combat resolution the first time it charges.</descript
         <characteristic name="I" typeId="dfff-363e-f72a-5a59">7</characteristic>
         <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">3</characteristic>
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">9</characteristic>
-        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">7</characteristic>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">11</characteristic>
         <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">7</characteristic>
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
         <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">20x20</characteristic>
       </characteristics>
-      <attributes>
-        <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-      </attributes>
     </profile>
     <profile id="cebe-d383-fc05-5e46" name="Sorceress" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
       <characteristics>
@@ -9065,14 +9235,11 @@ The unit gains +D3 to its combat resolution the first time it charges.</descript
         <characteristic name="I" typeId="dfff-363e-f72a-5a59">5</characteristic>
         <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">8</characteristic>
-        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">7</characteristic>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">11</characteristic>
         <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">7</characteristic>
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
         <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">20x20</characteristic>
       </characteristics>
-      <attributes>
-        <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-      </attributes>
     </profile>
     <profile id="b85f-d9f8-b579-f2f5" name="Assassin" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
       <characteristics>
@@ -9090,9 +9257,6 @@ The unit gains +D3 to its combat resolution the first time it charges.</descript
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
         <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">20x20</characteristic>
       </characteristics>
-      <attributes>
-        <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-      </attributes>
     </profile>
     <profile id="fbe7-6b3a-79c4-af9b" name="Dark Elf basic" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
       <modifiers>
@@ -9113,9 +9277,6 @@ The unit gains +D3 to its combat resolution the first time it charges.</descript
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
         <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">20x20</characteristic>
       </characteristics>
-      <attributes>
-        <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-      </attributes>
     </profile>
     <profile id="3b27-ebfd-72ed-ccc3" name="Malekith" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile" publicationId="20b9-0ee7-8f6f-8d28" page="51">
       <characteristics>
@@ -9133,9 +9294,6 @@ The unit gains +D3 to its combat resolution the first time it charges.</descript
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
         <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">20x20</characteristic>
       </characteristics>
-      <attributes>
-        <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-      </attributes>
     </profile>
     <profile id="44ac-14bb-7e7e-8acf" name="Morathi" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile" page="52-53" publicationId="20b9-0ee7-8f6f-8d28">
       <characteristics>
@@ -9153,9 +9311,6 @@ The unit gains +D3 to its combat resolution the first time it charges.</descript
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
         <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">20x20</characteristic>
       </characteristics>
-      <attributes>
-        <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-      </attributes>
     </profile>
     <profile id="288f-15a8-2d59-0e5f" name="Malus Darkblade" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile" page="55" publicationId="20b9-0ee7-8f6f-8d28">
       <characteristics>
@@ -9173,9 +9328,6 @@ The unit gains +D3 to its combat resolution the first time it charges.</descript
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
         <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">25x50</characteristic>
       </characteristics>
-      <attributes>
-        <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-      </attributes>
     </profile>
     <profile id="3e84-ae52-7815-3611" name="Shadowblade" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile" page="77" publicationId="cc59-6466-b62e-cf5b">
       <characteristics>
@@ -9193,9 +9345,6 @@ The unit gains +D3 to its combat resolution the first time it charges.</descript
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
         <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">20x20</characteristic>
       </characteristics>
-      <attributes>
-        <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-      </attributes>
     </profile>
     <profile name="Rakarth, the Beastlord" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="a5a0-2937-a0e8-4425">
       <characteristics>
@@ -9213,9 +9362,6 @@ The unit gains +D3 to its combat resolution the first time it charges.</descript
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
         <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">20x20</characteristic>
       </characteristics>
-      <attributes>
-        <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-      </attributes>
     </profile>
     <profile id="360c-655f-9647-9877" name="Tullaris" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile" page="5" publicationId="df25-56db-f021-517a">
       <characteristics>
@@ -9233,9 +9379,6 @@ The unit gains +D3 to its combat resolution the first time it charges.</descript
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
         <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">20x20</characteristic>
       </characteristics>
-      <attributes>
-        <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-      </attributes>
     </profile>
     <profile id="5eed-6704-93d2-3882" name="Hellebron" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile" page="3" publicationId="df25-56db-f021-517a">
       <characteristics>
@@ -9253,9 +9396,6 @@ The unit gains +D3 to its combat resolution the first time it charges.</descript
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
         <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">20x20</characteristic>
       </characteristics>
-      <attributes>
-        <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-      </attributes>
     </profile>
     <profile id="36df-db46-65dc-df83" name="Dark Elf Highborn" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
       <characteristics>
@@ -9273,9 +9413,6 @@ The unit gains +D3 to its combat resolution the first time it charges.</descript
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
         <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">20x20</characteristic>
       </characteristics>
-      <attributes>
-        <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-      </attributes>
     </profile>
     <profile name="Keeper of Secrets" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="d98a-1dd4-659c-e23f" publicationId="d67c-4221-e6fc-7951">
       <characteristics>
@@ -9293,9 +9430,6 @@ The unit gains +D3 to its combat resolution the first time it charges.</descript
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">6</characteristic>
         <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">50x50</characteristic>
       </characteristics>
-      <attributes>
-        <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-      </attributes>
     </profile>
     <profile name="Aspiring Champion" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="ee73-f4ae-2ebd-0877" publicationId="d67c-4221-e6fc-7951" page="24">
       <characteristics>
@@ -9308,14 +9442,11 @@ The unit gains +D3 to its combat resolution the first time it charges.</descript
         <characteristic name="I" typeId="dfff-363e-f72a-5a59">6</characteristic>
         <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">3</characteristic>
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">8</characteristic>
-        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">7</characteristic>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">11</characteristic>
         <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">7</characteristic>
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
         <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">25x25</characteristic>
       </characteristics>
-      <attributes>
-        <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-      </attributes>
     </profile>
     <profile name="Anointed" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="50a7-d361-ba45-b0e6">
       <characteristics>
@@ -9328,14 +9459,11 @@ The unit gains +D3 to its combat resolution the first time it charges.</descript
         <characteristic name="I" typeId="dfff-363e-f72a-5a59">9</characteristic>
         <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">5</characteristic>
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">9</characteristic>
-        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">7</characteristic>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">11</characteristic>
         <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">5</characteristic>
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
         <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">20x20</characteristic>
       </characteristics>
-      <attributes>
-        <attribute name="New Attribute Type" typeId="bac5-666c-ae09-1db8"/>
-      </attributes>
     </profile>
     <profile id="9951-4b3c-1fe4-e1fd" name="Armour of Living Death" hidden="false" typeId="f681-9937-db53-f1d8" typeName="Armour">
       <characteristics>
@@ -9365,6 +9493,47 @@ The unit gains +D3 to its combat resolution the first time it charges.</descript
       <characteristics>
         <characteristic name="Saving Throw Modifier" typeId="b600-e1ed-0765-27c1">5</characteristic>
         <characteristic name="Special rules" typeId="42c3-68ab-cfa5-203e">Heavy armour, for every unsaved wound save is increased by 1 ro a maximum of 1+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Chaos Armour" typeId="f681-9937-db53-f1d8" typeName="Armour" hidden="false" id="2764-d2c3-afc3-1b83">
+      <characteristics>
+        <characteristic name="Saving Throw Modifier" typeId="b600-e1ed-0765-27c1">4+</characteristic>
+        <characteristic name="Special rules" typeId="42c3-68ab-cfa5-203e">Sorcerers can cast spells</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Chaos Steed" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="8a33-7326-ce13-ee75" publicationId="d67c-4221-e6fc-7951" page="24">
+      <characteristics>
+        <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">8</characteristic>
+        <characteristic name="WS" typeId="f95b-da01-0578-3bdc">3</characteristic>
+        <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">-</characteristic>
+        <characteristic name="S" typeId="b690-4bc0-bb73-267b">4</characteristic>
+        <characteristic name="T" typeId="8712-f56f-5b22-a720">-</characteristic>
+        <characteristic name="W" typeId="253a-9b00-4fde-8ac2">-</characteristic>
+        <characteristic name="I" typeId="dfff-363e-f72a-5a59">3</characteristic>
+        <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
+        <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">-</characteristic>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">7</characteristic>
+        <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">7</characteristic>
+        <characteristic name="US" typeId="fa44-51dd-e69c-8d6a"/>
+        <characteristic name="Base" typeId="2cad-bb76-8a5a-1607"/>
+      </characteristics>
+      <comment>Chariot</comment>
+    </profile>
+    <profile name="Beastmaster" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="4983-f15c-2913-f6fc" publicationId="20b9-0ee7-8f6f-8d28" page="27">
+      <characteristics>
+        <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">5</characteristic>
+        <characteristic name="WS" typeId="f95b-da01-0578-3bdc">4</characteristic>
+        <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">4</characteristic>
+        <characteristic name="S" typeId="b690-4bc0-bb73-267b">3</characteristic>
+        <characteristic name="T" typeId="8712-f56f-5b22-a720">3</characteristic>
+        <characteristic name="W" typeId="253a-9b00-4fde-8ac2">2</characteristic>
+        <characteristic name="I" typeId="dfff-363e-f72a-5a59">6</characteristic>
+        <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">2</characteristic>
+        <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">8</characteristic>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">11</characteristic>
+        <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">7</characteristic>
+        <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
+        <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">20x20</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
