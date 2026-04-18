@@ -792,11 +792,6 @@ In addition, Aislinn rules his vessels with an iron hand; and is automatically t
     </selectionEntry>
     <selectionEntry id="aace-2dc3-7a8e-4589" name="Archers" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
-        <infoLink id="040f-08d9-6ef7-b88c" name="Elven Basic" hidden="false" targetId="75d2-db91-901a-410f" type="profile">
-          <modifiers>
-            <modifier type="set" field="name" value="Archers"/>
-          </modifiers>
-        </infoLink>
         <infoLink id="94ed-4845-afc4-fead" name="Stoic" publicationId="a40f-696a-94e8-ecfb" page="6" hidden="false" targetId="8cbe-c290-da84-4c94" type="rule"/>
       </infoLinks>
       <categoryLinks>
@@ -813,26 +808,22 @@ In addition, Aislinn rules his vessels with an iron hand; and is automatically t
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
-        </selectionEntry>
-        <selectionEntry id="6e1f-3b1e-3ee2-e0e1" name="Light Armour" hidden="false" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="increment" field="ecfa-8486-4f6c-c249" value="1">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1929-88d6-a1f0-6141" type="max"/>
-          </constraints>
           <infoLinks>
-            <infoLink id="5a1f-a4cf-b623-e9b4" name="Light Armour" hidden="false" targetId="752a-95b9-343a-8f75" type="profile"/>
+            <infoLink name="Elven Basic" id="040f-08d9-6ef7-b88c" hidden="false" targetId="75d2-db91-901a-410f" type="profile">
+              <modifiers>
+                <modifier type="set" value="Archers" field="name"/>
+                <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+                  <comment>light armour</comment>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="055f-8e4e-f170-35d2" shared="true" childName="Light Armour" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="decrement" value="4" field="f1be-e66c-d5e1-673c">
+                  <comment>race condition</comment>
+                </modifier>
+              </modifiers>
+            </infoLink>
           </infoLinks>
-          <costs>
-            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
-            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -903,6 +894,7 @@ In addition, Aislinn rules his vessels with an iron hand; and is automatically t
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7052-1999-d1dd-eb38" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Light Armour" hidden="false" id="100b-8f25-e7da-6316" type="selectionEntry" targetId="055f-8e4e-f170-35d2"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
@@ -921,17 +913,12 @@ In addition, Aislinn rules his vessels with an iron hand; and is automatically t
       <infoLinks>
         <infoLink id="5ce4-8a07-fb65-284d" name="Fight in three ranks" hidden="false" targetId="184b-9a54-e59b-eef5" type="rule"/>
         <infoLink id="b57f-8c35-5249-50ab" name="Stoic" publicationId="a40f-696a-94e8-ecfb" page="6" hidden="false" targetId="8cbe-c290-da84-4c94" type="rule"/>
-        <infoLink name="Elven Basic" id="f390-abb5-18bc-ac18" hidden="false" targetId="75d2-db91-901a-410f" type="profile">
-          <modifiers>
-            <modifier type="set" value="Spearman" field="name"/>
-          </modifiers>
-        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="36bd-a7b3-5930-1401" name="Core" hidden="false" targetId="64bf-efb4-9978-26df" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="841d-6320-e3ac-ce1f" name="Spearmen" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry id="841d-6320-e3ac-ce1f" name="Spearmen" hidden="false" collective="false" import="true" type="model" sortIndex="1">
           <constraints>
             <constraint field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4429-43da-53f4-dee1" type="min"/>
           </constraints>
@@ -940,10 +927,32 @@ In addition, Aislinn rules his vessels with an iron hand; and is automatically t
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
+          <infoLinks>
+            <infoLink name="Elven Basic" id="f390-abb5-18bc-ac18" hidden="false" targetId="75d2-db91-901a-410f" type="profile">
+              <modifiers>
+                <modifier type="set" value="Spearman" field="name"/>
+                <modifier type="decrement" value="4" field="f1be-e66c-d5e1-673c">
+                  <comment>race condition</comment>
+                </modifier>
+                <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+                  <comment>shield</comment>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="50e2-1873-a856-03e7" shared="true" includeChildSelections="true" childName="Shield"/>
+                  </conditions>
+                </modifier>
+                <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+                  <comment>light armour</comment>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="055f-8e4e-f170-35d2" shared="true" includeChildSelections="true" childName="Light Armour"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="58b0-7e71-111f-9143" name="Command Group" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="58b0-7e71-111f-9143" name="Command Group" hidden="false" collective="false" import="true" sortIndex="2">
           <selectionEntries>
             <selectionEntry id="f0f0-0805-2642-ce79" name="Musician" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -960,7 +969,7 @@ In addition, Aislinn rules his vessels with an iron hand; and is automatically t
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b665-efc4-e54c-284a" type="max"/>
               </constraints>
               <entryLinks>
-                <entryLink id="2abd-50d3-1af1-4190" name="Magic Banners" hidden="false" collective="false" import="true" targetId="c1c3-239d-926d-d504" type="selectionEntryGroup" collapsible="true">
+                <entryLink id="2abd-50d3-1af1-4190" name="Magic Banners" hidden="true" collective="false" import="true" targetId="c1c3-239d-926d-d504" type="selectionEntryGroup" collapsible="true">
                   <modifiers>
                     <modifier type="increment" field="e048-382c-808f-d5d2" value="1">
                       <conditions>
@@ -970,6 +979,11 @@ In addition, Aislinn rules his vessels with an iron hand; and is automatically t
                     <modifier type="set" value="50" field="c730-ca1e-368a-3aca">
                       <conditions>
                         <condition type="instanceOf" value="1" field="selections" scope="force" childId="de56-fe9d-6d66-d2a2" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="856f-751b-ac49-5aff" shared="true" childName="First among equals"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -1041,31 +1055,38 @@ In addition, Aislinn rules his vessels with an iron hand; and is automatically t
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="3e16-4442-15e6-407c" name="Spear Infantry" hidden="false" collective="false" import="true" targetId="104f-5817-4bda-9382" type="selectionEntry">
+        <entryLink id="3e16-4442-15e6-407c" name="Spear Infantry" hidden="false" collective="false" import="true" targetId="104f-5817-4bda-9382" type="selectionEntry" sortIndex="5">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6c84-6bb8-5d4e-83f0" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f0c-b494-ef1e-61af" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="c623-b1b2-e330-1b68" name="Hand Weapon" hidden="false" collective="false" import="true" targetId="abdb-bbd0-41b2-5dff" type="selectionEntry">
+        <entryLink id="c623-b1b2-e330-1b68" name="Hand Weapon" hidden="false" collective="false" import="true" targetId="abdb-bbd0-41b2-5dff" type="selectionEntry" sortIndex="4">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4ef2-b884-d46b-72de" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1119-3075-c02f-a23a" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="75f5-e09f-689c-9178" name="Light Armour" hidden="false" collective="false" import="true" targetId="055f-8e4e-f170-35d2" type="selectionEntry">
+        <entryLink id="75f5-e09f-689c-9178" name="Light Armour" hidden="false" collective="false" import="true" targetId="055f-8e4e-f170-35d2" type="selectionEntry" sortIndex="3">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="de0b-9a7a-a02b-ed28" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0fc7-38f4-f404-2c99" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="a15a-6fc3-b618-9b5b" name="Shield" hidden="false" collective="false" import="true" targetId="50e2-1873-a856-03e7" type="selectionEntry">
+        <entryLink id="a15a-6fc3-b618-9b5b" name="Shield" hidden="false" collective="false" import="true" targetId="50e2-1873-a856-03e7" type="selectionEntry" sortIndex="6">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="801b-8514-3461-2b5b" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d0e8-87f0-bff2-f518" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="1cae-60a3-504b-b348" name="First Among Equals" hidden="false" collective="false" import="true" targetId="ccdc-f2fe-7d5e-fde7" type="selectionEntry"/>
+        <entryLink import="true" name="First Among Equals" hidden="false" id="cc23-d3e7-8f67-b129" collective="false" targetId="ccdc-f2fe-7d5e-fde7" type="selectionEntry" sortIndex="7">
+          <infoLinks>
+            <infoLink name="First among equals" id="40f8-fb86-3f1d-9f02" hidden="false" type="rule" targetId="7971-cc7e-4513-dad8" publicationId="a40f-696a-94e8-ecfb" page="27"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink name="First among equals" hidden="false" id="e590-23ac-88d9-f051" targetId="856f-751b-ac49-5aff" primary="false"/>
+          </categoryLinks>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
@@ -1087,18 +1108,13 @@ In addition, Aislinn rules his vessels with an iron hand; and is automatically t
       </constraints>
       <infoLinks>
         <infoLink id="5a8b-7128-379f-c09d" name="Fight in three ranks" hidden="false" targetId="184b-9a54-e59b-eef5" type="rule"/>
-        <infoLink id="37db-6156-c664-9228" name="Elven Basic" hidden="false" targetId="75d2-db91-901a-410f" type="profile">
-          <modifiers>
-            <modifier type="set" field="name" value="Lothern Sea Guard"/>
-          </modifiers>
-        </infoLink>
         <infoLink id="281c-d4b4-ccfb-dfbe" name="Stoic" publicationId="a40f-696a-94e8-ecfb" page="6" hidden="false" targetId="8cbe-c290-da84-4c94" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="b85c-9c43-c041-00b4" name="Core" hidden="false" targetId="64bf-efb4-9978-26df" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="5610-7701-bab7-78b4" name="Lothern Sea Guard" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry id="5610-7701-bab7-78b4" name="Lothern Sea Guard" hidden="false" collective="false" import="true" type="model" sortIndex="1">
           <constraints>
             <constraint field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad1d-9b12-aee5-f314" type="min"/>
           </constraints>
@@ -1107,10 +1123,32 @@ In addition, Aislinn rules his vessels with an iron hand; and is automatically t
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
+          <infoLinks>
+            <infoLink name="Elven Basic" id="37db-6156-c664-9228" hidden="false" targetId="75d2-db91-901a-410f" type="profile">
+              <modifiers>
+                <modifier type="set" value="Lothern Sea Guard" field="name"/>
+                <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+                  <comment>shield</comment>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="50e2-1873-a856-03e7" shared="true" childName="Shield" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="decrement" value="4" field="f1be-e66c-d5e1-673c">
+                  <comment>race condition</comment>
+                </modifier>
+                <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+                  <comment>light armour</comment>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="055f-8e4e-f170-35d2" shared="true" childName="Light Armour" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="6afa-80fc-ed39-3965" name="Command Group" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="6afa-80fc-ed39-3965" name="Command Group" hidden="false" collective="false" import="true" sortIndex="2">
           <selectionEntries>
             <selectionEntry id="e972-0f97-b90c-35eb" name="Musician" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -1464,24 +1502,13 @@ In addition, Aislinn rules his vessels with an iron hand; and is automatically t
     </selectionEntry>
     <selectionEntry id="6c7e-bb42-34c5-c18e" name="Silver Helms" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
-        <infoLink id="4f42-4520-4d34-709e" name="Elven Basic" hidden="false" targetId="75d2-db91-901a-410f" type="profile">
-          <modifiers>
-            <modifier type="set" field="name" value="Silver Helms"/>
-          </modifiers>
-        </infoLink>
-        <infoLink id="ac12-3d3b-5498-7f20" name="Elven Steed" hidden="false" targetId="a098-a6dd-1150-67c5" type="profile">
-          <modifiers>
-            <modifier type="set" field="name" value="Barded Elven Steed"/>
-          </modifiers>
-        </infoLink>
         <infoLink id="a40e-76e8-2697-e1be" name="Stoic" publicationId="a40f-696a-94e8-ecfb" page="6" hidden="false" targetId="8cbe-c290-da84-4c94" type="rule"/>
-        <infoLink id="7099-6439-96e6-3bff" name="Barding" hidden="false" targetId="25e4-8f3a-a1a8-a7b6" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="371a-9d33-3a48-4b88" name="Core" hidden="false" targetId="64bf-efb4-9978-26df" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="b1ad-5382-e265-44a3" name="Silver Helm" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry id="b1ad-5382-e265-44a3" name="Silver Helm" hidden="false" collective="false" import="true" type="model" sortIndex="1">
           <constraints>
             <constraint field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba40-d239-67fa-32b2" type="min"/>
           </constraints>
@@ -1490,10 +1517,56 @@ In addition, Aislinn rules his vessels with an iron hand; and is automatically t
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
+          <infoLinks>
+            <infoLink name="Elven Basic" id="4f42-4520-4d34-709e" hidden="false" targetId="75d2-db91-901a-410f" type="profile">
+              <modifiers>
+                <modifier type="set" value="Silver Helms" field="name"/>
+                <modifier type="decrement" value="2" field="f1be-e66c-d5e1-673c">
+                  <comment>heavy armour</comment>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="dde4-0ba8-7b3c-57b7" shared="true" includeChildSelections="true" childName="Heavy Armour"/>
+                  </conditions>
+                </modifier>
+                <modifier type="decrement" value="4" field="f1be-e66c-d5e1-673c">
+                  <comment>race condition</comment>
+                </modifier>
+                <modifier type="decrement" value="2" field="f1be-e66c-d5e1-673c">
+                  <comment>barded steed</comment>
+                </modifier>
+                <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+                  <comment>shield</comment>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="50e2-1873-a856-03e7" shared="true" includeChildSelections="true" childName="Shield"/>
+                  </conditions>
+                </modifier>
+                <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+                  <comment>light armour</comment>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="055f-8e4e-f170-35d2" shared="true" includeChildSelections="true" childName="Light Armour"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Elven Steed" hidden="false" id="1d59-4971-2441-949a" sortIndex="4">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b7d9-4320-92c3-3d97" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="851b-1094-9afc-037b" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Elven Steed" id="ac12-3d3b-5498-7f20" hidden="false" targetId="a098-a6dd-1150-67c5" type="profile">
+              <modifiers>
+                <modifier type="set" value="Barded Elven Steed" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Mount" id="7099-6439-96e6-3bff" hidden="false" targetId="ba88-8cd6-307f-3e56" type="profile"/>
+            <infoLink name="Barding" id="02c6-f36a-7fe9-7105" hidden="false" targetId="25e4-8f3a-a1a8-a7b6" type="profile"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="37d1-84bf-454b-7594" name="Command Group" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="37d1-84bf-454b-7594" name="Command Group" hidden="false" collective="false" import="true" sortIndex="2">
           <selectionEntries>
             <selectionEntry id="ea17-c771-5d6b-3e05" name="Musician" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -1510,7 +1583,7 @@ In addition, Aislinn rules his vessels with an iron hand; and is automatically t
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="19b3-8ecb-19b5-e999" type="max"/>
               </constraints>
               <entryLinks>
-                <entryLink id="09ab-2953-1e3c-0ed6" name="Magic Banners" hidden="false" collective="false" import="true" targetId="c1c3-239d-926d-d504" type="selectionEntryGroup" collapsible="true">
+                <entryLink id="09ab-2953-1e3c-0ed6" name="Magic Banners" hidden="true" collective="false" import="true" targetId="c1c3-239d-926d-d504" type="selectionEntryGroup" collapsible="true">
                   <modifiers>
                     <modifier type="increment" field="7e79-8f07-e9d4-2355" value="1">
                       <conditions>
@@ -1520,6 +1593,11 @@ In addition, Aislinn rules his vessels with an iron hand; and is automatically t
                     <modifier type="set" value="50" field="89cd-03f3-437f-b4ac">
                       <conditions>
                         <condition type="instanceOf" value="1" field="selections" scope="force" childId="de56-fe9d-6d66-d2a2" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="856f-751b-ac49-5aff" shared="true" childName="First among equals"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -1589,7 +1667,7 @@ In addition, Aislinn rules his vessels with an iron hand; and is automatically t
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="f5f9-43c4-2d69-988e" name="Armour" hidden="false" collective="false" import="true" defaultSelectionEntryId="229a-ec63-3266-6dbb">
+        <selectionEntryGroup id="f5f9-43c4-2d69-988e" name="Armour" hidden="false" collective="false" import="true" defaultSelectionEntryId="229a-ec63-3266-6dbb" sortIndex="5">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fef5-9820-da3f-9fe9" type="max"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ea7-c53e-576d-02b7" type="min"/>
@@ -1616,19 +1694,19 @@ In addition, Aislinn rules his vessels with an iron hand; and is automatically t
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="6b58-b5f8-e8fb-44d8" name="Lance" hidden="false" collective="false" import="true" targetId="8649-8ac8-5a6f-fd8d" type="selectionEntry">
+        <entryLink id="6b58-b5f8-e8fb-44d8" name="Lance" hidden="false" collective="false" import="true" targetId="8649-8ac8-5a6f-fd8d" type="selectionEntry" sortIndex="7">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4e95-d154-f393-a038" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="79b5-9e7d-15c4-8546" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="0c5e-ae03-9405-d8c2" name="Hand Weapon" hidden="false" collective="false" import="true" targetId="abdb-bbd0-41b2-5dff" type="selectionEntry">
+        <entryLink id="0c5e-ae03-9405-d8c2" name="Hand Weapon" hidden="false" collective="false" import="true" targetId="abdb-bbd0-41b2-5dff" type="selectionEntry" sortIndex="6">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="db2b-2905-c1db-01f3" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e662-f9d1-4ce3-4fc5" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="efb7-8add-0b38-3fb2" name="Shield" hidden="false" collective="false" import="true" targetId="50e2-1873-a856-03e7" type="selectionEntry">
+        <entryLink id="efb7-8add-0b38-3fb2" name="Shield" hidden="false" collective="false" import="true" targetId="50e2-1873-a856-03e7" type="selectionEntry" sortIndex="3">
           <modifiers>
             <modifier type="increment" field="ecfa-8486-4f6c-c249" value="2">
               <repeats>
@@ -1640,7 +1718,14 @@ In addition, Aislinn rules his vessels with an iron hand; and is automatically t
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0ce0-badf-2eb2-2752" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="ae6b-7c12-a538-b24d" name="First Among Equals" hidden="false" collective="false" import="true" targetId="ccdc-f2fe-7d5e-fde7" type="selectionEntry"/>
+        <entryLink id="ae6b-7c12-a538-b24d" name="First Among Equals" hidden="false" collective="false" import="true" targetId="ccdc-f2fe-7d5e-fde7" type="selectionEntry" sortIndex="8">
+          <infoLinks>
+            <infoLink name="First among equals" id="e426-d99c-e5b0-1973" hidden="false" type="rule" targetId="7971-cc7e-4513-dad8" publicationId="a40f-696a-94e8-ecfb" page="27"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink name="First among equals" hidden="false" id="3de5-24b4-a4ef-d229" targetId="856f-751b-ac49-5aff" primary="false"/>
+          </categoryLinks>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
@@ -3900,17 +3985,12 @@ Poisoned weapons and other attacks lose any special benefits, but otherwise cou
     <selectionEntry id="9866-032c-9e18-64d6" name="Ship&apos;s Company" hidden="true" collective="false" import="true" type="unit" publicationId="d2ec-1dc7-f0d5-acbb" page="94">
       <infoLinks>
         <infoLink id="f8a8-543c-64b5-8929" name="Stoic" publicationId="a40f-696a-94e8-ecfb" page="6" hidden="false" targetId="8cbe-c290-da84-4c94" type="rule"/>
-        <infoLink name="Elven Basic" id="5cf0-7689-cd90-f81d" hidden="false" targetId="75d2-db91-901a-410f" type="profile">
-          <modifiers>
-            <modifier type="set" value="Mariner" field="name"/>
-          </modifiers>
-        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="b9f5-c04e-36f3-bdac" name="Core" hidden="false" targetId="64bf-efb4-9978-26df" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="359d-1e35-a250-0723" name="Mariner" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry id="359d-1e35-a250-0723" name="Mariner" hidden="false" collective="false" import="true" type="model" sortIndex="1">
           <constraints>
             <constraint field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d36-4c24-3c8e-c28f" type="min"/>
           </constraints>
@@ -3919,10 +3999,32 @@ Poisoned weapons and other attacks lose any special benefits, but otherwise cou
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
+          <infoLinks>
+            <infoLink name="Elven Basic" id="5cf0-7689-cd90-f81d" hidden="false" targetId="75d2-db91-901a-410f" type="profile">
+              <modifiers>
+                <modifier type="set" value="Mariner" field="name"/>
+                <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+                  <comment>shield</comment>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="50e2-1873-a856-03e7" shared="true" childName="Shield" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="decrement" value="4" field="f1be-e66c-d5e1-673c">
+                  <comment>race condition</comment>
+                </modifier>
+                <modifier type="decrement" value="1" field="f1be-e66c-d5e1-673c">
+                  <comment>light armour</comment>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="055f-8e4e-f170-35d2" shared="true" childName="Light Armour" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="fb2c-abe3-3dba-23a0" name="Command Group" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="fb2c-abe3-3dba-23a0" name="Command Group" hidden="false" collective="false" import="true" sortIndex="2">
           <selectionEntries>
             <selectionEntry id="5020-f009-e353-6f73" name="Musician" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -3977,32 +4079,44 @@ Poisoned weapons and other attacks lose any special benefits, but otherwise cou
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="1979-a761-a713-8983" name="Spear Infantry" hidden="false" collective="false" import="true" targetId="104f-5817-4bda-9382" type="selectionEntry">
+        <entryLink id="1979-a761-a713-8983" name="Spear Infantry" hidden="false" collective="false" import="true" targetId="104f-5817-4bda-9382" type="selectionEntry" sortIndex="5">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="58c5-b94e-ecde-4bd0" type="max"/>
           </constraints>
-          <costs>
-            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="1"/>
-          </costs>
+          <modifiers>
+            <modifier type="increment" value="1" field="ecfa-8486-4f6c-c249">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="model" shared="true" roundUp="false" childName="model" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+          </modifiers>
         </entryLink>
-        <entryLink id="1a1c-120a-fd76-596a" name="Hand Weapon" hidden="false" collective="false" import="true" targetId="abdb-bbd0-41b2-5dff" type="selectionEntry">
+        <entryLink id="1a1c-120a-fd76-596a" name="Hand Weapon" hidden="false" collective="false" import="true" targetId="abdb-bbd0-41b2-5dff" type="selectionEntry" sortIndex="3">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df33-d5e2-ab56-b820" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="71ff-afb2-f565-a8c4" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="dcb8-4c39-732a-8a21" name="Light Armour" hidden="false" collective="false" import="true" targetId="055f-8e4e-f170-35d2" type="selectionEntry">
-          <costs>
-            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="1"/>
-          </costs>
+        <entryLink id="dcb8-4c39-732a-8a21" name="Light Armour" hidden="false" collective="false" import="true" targetId="055f-8e4e-f170-35d2" type="selectionEntry" sortIndex="4">
+          <modifiers>
+            <modifier type="increment" value="1" field="ecfa-8486-4f6c-c249">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="model" shared="true" roundUp="false" childName="model" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+          </modifiers>
         </entryLink>
         <entryLink id="9d8a-2b81-5a22-5df3" name="Bow" hidden="false" collective="false" import="true" targetId="9efb-2b02-f245-62f5" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e00b-e2c7-77bf-ffa7" type="max"/>
           </constraints>
-          <costs>
-            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="2"/>
-          </costs>
+          <modifiers>
+            <modifier type="increment" value="2" field="ecfa-8486-4f6c-c249">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="model" shared="true" roundUp="false" childName="model" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+          </modifiers>
         </entryLink>
       </entryLinks>
       <costs>
@@ -6130,6 +6244,9 @@ Should the mage be slain, the Merwyrm must test on its own Leadership each turn,
 - A Dragon ridden by a Lord (so NOT a Drake ridden by a Dragon Prince) may be upgraded to a Lvl 1 Wizard for 50 points. The Dragon may only use Fire Magic.
 - Dragon Princes as they are in the High Elf armies book cannot be taken at all but are replaced by the following new unit.</description>
     </rule>
+    <rule name="First among equals" id="7971-cc7e-4513-dad8" hidden="false" publicationId="a40f-696a-94e8-ecfb" page="27">
+      <description>One unit of either Spearmen or Silver Helms may be given a magic standard worth up to 25 pts</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="3f9e-10ff-4016-0d94" name="Dragon Armour" hidden="false" typeId="f681-9937-db53-f1d8" typeName="Armour">
@@ -6259,7 +6376,7 @@ Should the mage be slain, the Merwyrm must test on its own Leadership each turn,
         <characteristic name="I" typeId="dfff-363e-f72a-5a59">5</characteristic>
         <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">8</characteristic>
-        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">7</characteristic>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">11</characteristic>
         <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">7</characteristic>
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
         <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">20x20</characteristic>
@@ -6981,4 +7098,11 @@ Should the mage be slain, the Merwyrm must test on its own Leadership each turn,
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Mercenaries" id="135b-73b0-2e7d-a7e5" targetId="fc47-8392-a6c8-452a"/>
   </catalogueLinks>
+  <categoryEntries>
+    <categoryEntry name="First among equals" id="856f-751b-ac49-5aff" hidden="false">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="47e7-2d2b-26c2-a75f" includeChildSelections="false"/>
+      </constraints>
+    </categoryEntry>
+  </categoryEntries>
 </catalogue>

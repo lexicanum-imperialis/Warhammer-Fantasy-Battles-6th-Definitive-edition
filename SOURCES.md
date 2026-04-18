@@ -21,6 +21,7 @@
 - [x] Orion, King in the Woods (WE-AB)
 - [x] Drycha (WE-AB)
 - [x] Twilight Sisters (WE-AB)
+- [x] Durthu, the Treeman (WD#310-UK)
 - [x] Ariel, Queen of Athel Loren (WebGW)
 - [x] Skaw the Falconer (WebGW)
 

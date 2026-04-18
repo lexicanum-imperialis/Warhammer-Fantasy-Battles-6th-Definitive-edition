@@ -18,7 +18,7 @@
 ## Tactical Overview & Board State
 *The following is the raw mathematical ledger and combat resolution data for the engagement.*
 
-![Deployment Map](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEitWj_AT94ZsHiC9t0BrS7tdsbcKAJLZyeQRYV8nzD9LcsUSFWxme-GL4jMTtoMAeU4EUae8ri1qNKfpNBNhEbvalGv9kzQsv5g0UIgLUtONGj4rkd5E9eRwdry3AdWr8mUDHAkZFlGD4622bYXraTADcTor4gy1Hx_gc6DvKmXg3JNevQf5cWuohoMJX8/w587-h587-rw/The_Looting_of_Huat_(DEPLOYMENT)_Deployment.png)
+![Deployment Map](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEitWj_AT94ZsHiC9t0BrS7tdsbcKAJLZyeQRYV8nzD9LcsUSFWxme-GL4jMTtoMAeU4EUae8ri1qNKfpNBNhEbvalGv9kzQsv5g0UIgLUtONGj4rkd5E9eRwdry3AdWr8mUDHAkZFlGD4622bYXraTADcTor4gy1Hx_gc6DvKmXg3JNevQf5cWuohoMJX8/s2048/The_Looting_of_Huat_(DEPLOYMENT)_Deployment.png)
 
 ---
 
