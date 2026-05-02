@@ -29,10 +29,7 @@ To use this data for list building, you do not need to download the files manual
 > *Due to the massive expansion of units (~60 extra forces), alternative lists, and complex mechanical integrations, **these files exceed the capabilities of the legacy BattleScribe engine and are not compatible.** Attempting to load this repository in BattleScribe will result in fatal database errors. We highly recommend all generals migrate to NewRecruit for the definitive mechanical experience.*
 
 ### Official Integration: New Recruit
-To use this data for list building, you do not need to download the files manually. Simply add this repository to your app of choice:
-
-### For New Recruit (Recommended)
-Click in the image
+To use this data for list building, you do not need to download the files manually. Simply click in the image
 
 [![alt text](tutorial/image.png)](https://www.newrecruit.eu/app/MySystems?addSystem=lexicanum-imperialis/Warhammer-Fantasy-Battles-6th-Definitive-edition&ref=main)
 
