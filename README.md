@@ -102,6 +102,34 @@ Our mechanical framework relies on:
 
 ---
 
+## 🏹 Special Game Mode: **Border Patrols** (500 pts)
+
+When the `pts limit` is set to 500, you may select _Border Patrols_ game rules, which applies automatically the composition limits of the **Border Patrols** rules from CR-04, p.97
+
+### 📋 Composition Requirements:
+
+- You must choose an army of not more than 500 points.
+- You must have a SINGLE Hero to lead the force, but the Hero may not be an Army Battle Standard Bearer.
+- The army must consist of at least TWO units but no more than FOUR units.
+- You must have at least ONE Core choice.
+- You may take ONE choice of either Special or Rare units, but not both.
+- You must include at least ONE infantry unit of 10+ models.
+- No unit may contain more than 25 models.
+- No unit may carry a magical standard.
+- No single model may cost more than 125 points.
+- An army may have no more than ONE chariot or war machine. This also applies to choices that allow more than one item per pick, like Goblin Wolf Chariots. You may only buy ONE per choice,
+
+### 🏛️ Army specific notes:
+
+- Bretonnians do not have their Army Battle Standard Bearer.
+- Tomb Kings must have a Liche Priest as the Hero. He will also act as the General.
+- Tomb Kings may have more than one Chariot.
+- A Vampire Thrall may lead a Vampire Counts army.
+
+_Estimated Playtime: 30–40 minutes._
+
+---
+
 ## Event: A Dark Conspiracy Campaign
 
 The engine has been adapted for the **A Dark Conspiracy** campaign, originally released in 1997 and [now restored for 6th edition](https://karaknornwargaming.blogspot.com/p/a-dark-conspiracy.html) by _Karak Norn Wargaming Club_.
