@@ -217,7 +217,15 @@
         </modifier>
       </modifiers>
     </categoryEntry>
-    <categoryEntry id="d024-d25b-a9b4-73b6" name="Lord" hidden="false"/>
+    <categoryEntry id="d024-d25b-a9b4-73b6" name="Lord" hidden="false">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="4e15-0353-165f-5528" shared="true" includeChildSelections="true" includeChildForces="true" childName="Border Patrols rules"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </categoryEntry>
     <categoryEntry id="c16b-f319-2c62-2c12" name="Heroes" hidden="false">
       <constraints>
         <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="81a8-870f-2200-8bfb"/>
