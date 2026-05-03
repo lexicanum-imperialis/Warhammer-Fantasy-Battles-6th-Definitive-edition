@@ -221,97 +221,443 @@
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
+            <condition type="lessThan" value="2000" field="limit::ecfa-8486-4f6c-c249" scope="roster" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+          <comment>&lt; 2000 pts</comment>
+        </modifier>
+        <modifier type="set" value="0" field="a59d-2ddb-429c-1aca">
+          <conditions>
+            <condition type="lessThan" value="200" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+          <comment>Warbands (small)</comment>
+        </modifier>
+        <modifier type="set" value="0" field="a59d-2ddb-429c-1aca">
+          <comment>Warbands (big)</comment>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="200" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="lessThan" value="500" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="4e15-0353-165f-5528" shared="true" includeChildSelections="true" includeChildForces="true" childName="Border Patrols rules"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="0" field="a59d-2ddb-429c-1aca">
+          <conditions>
             <condition type="atLeast" value="1" field="selections" scope="roster" childId="4e15-0353-165f-5528" shared="true" includeChildSelections="true" includeChildForces="true" childName="Border Patrols rules"/>
           </conditions>
+          <comment>Border Patrols</comment>
+        </modifier>
+        <modifier type="set" value="1" field="a59d-2ddb-429c-1aca">
+          <comment>2000-2999 pts</comment>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="4e15-0353-165f-5528" shared="true" includeChildSelections="true" includeChildForces="true" childName="Border Patrols rules"/>
+                <condition type="atLeast" value="2000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="lessThan" value="3000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="2" field="a59d-2ddb-429c-1aca">
+          <comment>3000-3999 pts</comment>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="4e15-0353-165f-5528" shared="true" includeChildSelections="true" includeChildForces="true" childName="Border Patrols rules"/>
+                <condition type="atLeast" value="3000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="lessThan" value="4000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="3" field="a59d-2ddb-429c-1aca">
+          <comment>4000-4999 pts</comment>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="4e15-0353-165f-5528" shared="true" includeChildSelections="true" includeChildForces="true" childName="Border Patrols rules"/>
+                <condition type="atLeast" value="4000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="lessThan" value="5000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="4" field="a59d-2ddb-429c-1aca">
+          <comment>5000-5999 pts</comment>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="4e15-0353-165f-5528" shared="true" includeChildSelections="true" includeChildForces="true" childName="Border Patrols rules"/>
+                <condition type="atLeast" value="5000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="lessThan" value="6000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
+      <comment>basic comp categories</comment>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="force" shared="true" id="a59d-2ddb-429c-1aca" includeChildSelections="true"/>
+      </constraints>
     </categoryEntry>
     <categoryEntry id="c16b-f319-2c62-2c12" name="Heroes" hidden="false">
       <constraints>
-        <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="81a8-870f-2200-8bfb"/>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="7fca-63fb-63d2-9dad" includeChildSelections="true"/>
       </constraints>
-      <modifiers>
-        <modifier type="set" value="1" field="81a8-870f-2200-8bfb">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="4e15-0353-165f-5528" shared="true" childName="Border Patrols rules" includeChildSelections="true"/>
-          </conditions>
-          <comment>Border Patrols</comment>
-        </modifier>
-      </modifiers>
+      <comment>basic comp categories</comment>
     </categoryEntry>
     <categoryEntry id="64bf-efb4-9978-26df" name="Core" hidden="false">
       <constraints>
-        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="605c-2c3e-d330-2bb2"/>
+        <constraint type="min" value="2" field="selections" scope="force" shared="true" id="35c2-d478-392a-aeb1" includeChildSelections="true"/>
       </constraints>
       <modifiers>
-        <modifier type="set" value="1" field="605c-2c3e-d330-2bb2">
+        <modifier type="set" value="1" field="35c2-d478-392a-aeb1">
           <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="4e15-0353-165f-5528" shared="true" childName="Border Patrols rules" includeChildSelections="true"/>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="4e15-0353-165f-5528" shared="true" includeChildSelections="true" includeChildForces="true" childName="Border Patrols rules"/>
           </conditions>
           <comment>Border Patrols</comment>
         </modifier>
+        <modifier type="set" value="3" field="35c2-d478-392a-aeb1">
+          <comment>2000-2999 pts</comment>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="4e15-0353-165f-5528" shared="true" includeChildSelections="true" includeChildForces="true" childName="Border Patrols rules"/>
+                <condition type="atLeast" value="2000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="lessThan" value="3000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="4" field="35c2-d478-392a-aeb1">
+          <comment>3000-3999 pts</comment>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="4e15-0353-165f-5528" shared="true" includeChildSelections="true" includeChildForces="true" childName="Border Patrols rules"/>
+                <condition type="atLeast" value="3000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="lessThan" value="4000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="5" field="35c2-d478-392a-aeb1">
+          <comment>4000-4999 pts</comment>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="4e15-0353-165f-5528" shared="true" includeChildSelections="true" includeChildForces="true" childName="Border Patrols rules"/>
+                <condition type="atLeast" value="4000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="lessThan" value="5000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="6" field="35c2-d478-392a-aeb1">
+          <comment>5000-5999 pts</comment>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="4e15-0353-165f-5528" shared="true" includeChildSelections="true" includeChildForces="true" childName="Border Patrols rules"/>
+                <condition type="atLeast" value="5000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="lessThan" value="6000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
+      <comment>basic comp categories</comment>
     </categoryEntry>
     <categoryEntry id="43cc-fc3f-35a7-8d03" name="Special" hidden="false">
       <constraints>
-        <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="ca62-54da-9a97-3377"/>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="16f0-6e5b-55d0-4102" includeChildSelections="true"/>
       </constraints>
       <modifiers>
-        <modifier type="set" value="1" field="ca62-54da-9a97-3377">
-          <comment>Border Patrols</comment>
+        <modifier type="set" value="0" field="16f0-6e5b-55d0-4102">
+          <conditions>
+            <condition type="lessThan" value="200" field="limit::ecfa-8486-4f6c-c249" scope="roster" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+          <comment>Warbands (small)</comment>
+        </modifier>
+        <modifier type="set" value="1" field="16f0-6e5b-55d0-4102">
+          <comment>Warbands (big)</comment>
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="4e15-0353-165f-5528" shared="true" childName="Border Patrols rules" includeChildSelections="true"/>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="e94b-6a54-8779-cd60" shared="true" childName="Rare" includeChildSelections="true"/>
+                <condition type="atLeast" value="200" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="lessThan" value="500" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="4e15-0353-165f-5528" shared="true" includeChildSelections="true" includeChildForces="true" childName="Border Patrols rules"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="e94b-6a54-8779-cd60" shared="true" includeChildSelections="true" includeChildForces="true" childName="Rare"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="set" value="0" field="ca62-54da-9a97-3377">
+        <modifier type="set" value="1" field="16f0-6e5b-55d0-4102">
           <comment>Border Patrols</comment>
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="4e15-0353-165f-5528" shared="true" childName="Border Patrols rules" includeChildSelections="true"/>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="e94b-6a54-8779-cd60" shared="true" childName="Rare" includeChildSelections="true"/>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="e94b-6a54-8779-cd60" shared="true" includeChildSelections="true" includeChildForces="true" childName="Rare"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="4e15-0353-165f-5528" shared="true" includeChildSelections="true" includeChildForces="true" childName="Border Patrols rules"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="0" field="16f0-6e5b-55d0-4102">
+          <comment>Border Patrols</comment>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="e94b-6a54-8779-cd60" shared="true" includeChildSelections="true" includeChildForces="true" childName="Rare"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="4e15-0353-165f-5528" shared="true" includeChildSelections="true" includeChildForces="true" childName="Border Patrols rules"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="4" field="16f0-6e5b-55d0-4102">
+          <comment>2000-2999 pts</comment>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="4e15-0353-165f-5528" shared="true" includeChildSelections="true" includeChildForces="true" childName="Border Patrols rules"/>
+                <condition type="atLeast" value="2000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="lessThan" value="3000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="5" field="16f0-6e5b-55d0-4102">
+          <comment>3000-3999 pts</comment>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="4e15-0353-165f-5528" shared="true" includeChildSelections="true" includeChildForces="true" childName="Border Patrols rules"/>
+                <condition type="atLeast" value="3000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="lessThan" value="4000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="6" field="16f0-6e5b-55d0-4102">
+          <comment>4000-4999 pts</comment>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="4e15-0353-165f-5528" shared="true" includeChildSelections="true" includeChildForces="true" childName="Border Patrols rules"/>
+                <condition type="atLeast" value="4000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="lessThan" value="5000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="7" field="16f0-6e5b-55d0-4102">
+          <comment>5000-5999 pts</comment>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="4e15-0353-165f-5528" shared="true" includeChildSelections="true" includeChildForces="true" childName="Border Patrols rules"/>
+                <condition type="atLeast" value="5000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="lessThan" value="6000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="2" field="16f0-6e5b-55d0-4102">
+          <comment>Warbands (big)</comment>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="200" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="lessThan" value="500" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="4e15-0353-165f-5528" shared="true" includeChildSelections="true" includeChildForces="true" childName="Border Patrols rules"/>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="e94b-6a54-8779-cd60" shared="true" includeChildSelections="true" includeChildForces="true" childName="Rare"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
       </modifiers>
+      <comment>basic comp categories</comment>
     </categoryEntry>
     <categoryEntry id="e94b-6a54-8779-cd60" name="Rare" hidden="false">
       <constraints>
-        <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="ae68-8b99-6830-6c55"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="0a44-2d3f-adfe-f3a1" includeChildSelections="true"/>
       </constraints>
       <modifiers>
-        <modifier type="set" value="0" field="ae68-8b99-6830-6c55">
-          <comment>Border Patrols</comment>
+        <modifier type="set" value="0" field="0a44-2d3f-adfe-f3a1">
+          <conditions>
+            <condition type="lessThan" value="200" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+          <comment>Warbands (small)</comment>
+        </modifier>
+        <modifier type="set" value="1" field="0a44-2d3f-adfe-f3a1">
+          <comment>Warbands (big)</comment>
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="4e15-0353-165f-5528" shared="true" childName="Border Patrols rules" includeChildSelections="true"/>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="43cc-fc3f-35a7-8d03" shared="true" childName="Special" includeChildSelections="true"/>
+                <condition type="atLeast" value="200" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="lessThan" value="500" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="4e15-0353-165f-5528" shared="true" includeChildSelections="true" includeChildForces="true" childName="Border Patrols rules"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="set" value="1" field="ae68-8b99-6830-6c55">
+        <modifier type="set" value="0" field="0a44-2d3f-adfe-f3a1">
           <comment>Border Patrols</comment>
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="4e15-0353-165f-5528" shared="true" childName="Border Patrols rules" includeChildSelections="true"/>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="43cc-fc3f-35a7-8d03" shared="true" childName="Special" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="43cc-fc3f-35a7-8d03" shared="true" includeChildSelections="true" includeChildForces="true" childName="Special"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="4e15-0353-165f-5528" shared="true" includeChildSelections="true" includeChildForces="true" childName="Border Patrols rules"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="1" field="0a44-2d3f-adfe-f3a1">
+          <comment>Border Patrols</comment>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="43cc-fc3f-35a7-8d03" shared="true" includeChildSelections="true" includeChildForces="true" childName="Special"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="4e15-0353-165f-5528" shared="true" includeChildSelections="true" includeChildForces="true" childName="Border Patrols rules"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="2" field="0a44-2d3f-adfe-f3a1">
+          <comment>2000-2999 pts</comment>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="4e15-0353-165f-5528" shared="true" includeChildSelections="true" includeChildForces="true" childName="Border Patrols rules"/>
+                <condition type="atLeast" value="2000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="lessThan" value="3000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="3" field="0a44-2d3f-adfe-f3a1">
+          <comment>3000-3999 pts</comment>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="4e15-0353-165f-5528" shared="true" includeChildSelections="true" includeChildForces="true" childName="Border Patrols rules"/>
+                <condition type="atLeast" value="3000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="lessThan" value="4000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="4" field="0a44-2d3f-adfe-f3a1">
+          <comment>4000-4999 pts</comment>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="4e15-0353-165f-5528" shared="true" includeChildSelections="true" includeChildForces="true" childName="Border Patrols rules"/>
+                <condition type="atLeast" value="4000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="lessThan" value="5000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="5" field="0a44-2d3f-adfe-f3a1">
+          <comment>5000-5999 pts</comment>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="4e15-0353-165f-5528" shared="true" includeChildSelections="true" includeChildForces="true" childName="Border Patrols rules"/>
+                <condition type="atLeast" value="5000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="lessThan" value="6000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <comment>basic comp categories</comment>
+    </categoryEntry>
+    <categoryEntry id="b0b1-5266-2bcd-f592" name="Detachment" hidden="false"/>
+    <categoryEntry id="7a1c-d611-c2dc-def1" name="Characters" hidden="false">
+      <comment>basic comp categories</comment>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="c3c3-a80c-e026-200f" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="1" field="c3c3-a80c-e026-200f">
+          <conditions>
+            <condition type="lessThan" value="200" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+          <comment>Warbands (small)</comment>
+        </modifier>
+        <modifier type="set" value="2" field="c3c3-a80c-e026-200f">
+          <comment>Warbands (big)</comment>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="200" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="lessThan" value="500" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="4e15-0353-165f-5528" shared="true" includeChildSelections="true" includeChildForces="true" childName="Border Patrols rules"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="1" field="c3c3-a80c-e026-200f">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="4e15-0353-165f-5528" shared="true" includeChildSelections="true" includeChildForces="true" childName="Border Patrols rules"/>
+          </conditions>
+          <comment>Border Patrols</comment>
+        </modifier>
+        <modifier type="set" value="4" field="c3c3-a80c-e026-200f">
+          <comment>2000-2999 pts</comment>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="4e15-0353-165f-5528" shared="true" includeChildSelections="true" includeChildForces="true" childName="Border Patrols rules"/>
+                <condition type="atLeast" value="2000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="lessThan" value="3000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="6" field="c3c3-a80c-e026-200f">
+          <comment>3000-3999 pts</comment>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="4e15-0353-165f-5528" shared="true" includeChildSelections="true" includeChildForces="true" childName="Border Patrols rules"/>
+                <condition type="atLeast" value="3000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="lessThan" value="4000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="8" field="c3c3-a80c-e026-200f">
+          <comment>4000-4999 pts</comment>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="4e15-0353-165f-5528" shared="true" includeChildSelections="true" includeChildForces="true" childName="Border Patrols rules"/>
+                <condition type="atLeast" value="4000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="lessThan" value="5000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="10" field="c3c3-a80c-e026-200f">
+          <comment>5000-5999 pts</comment>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="4e15-0353-165f-5528" shared="true" includeChildSelections="true" includeChildForces="true" childName="Border Patrols rules"/>
+                <condition type="atLeast" value="5000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="lessThan" value="6000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
       </modifiers>
     </categoryEntry>
-    <categoryEntry id="b0b1-5266-2bcd-f592" name="Detachment" hidden="false"/>
-    <categoryEntry id="7a1c-d611-c2dc-def1" name="Characters" hidden="false"/>
     <categoryEntry id="a37e-7207-de6d-acb0" name="General" hidden="false">
       <constraints>
         <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="d818-c60d-b1f8-8aaa" type="max"/>
@@ -390,7 +736,36 @@ Quatar</comment>
     <categoryEntry name="BP Infantry 10+" id="6ad6-f54e-1867-00a7" hidden="true"/>
   </categoryEntries>
   <forceEntries>
-    <forceEntry id="b893-4403-5590-827a" name="." hidden="true"/>
+    <forceEntry id="b893-4403-5590-827a" name="." hidden="true">
+      <modifiers>
+        <modifier type="add" value="Small Warbands may not field more than 8 units." field="error">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="greaterThan" value="8" field="selections" scope="force" childId="unit" shared="true" includeChildSelections="true" childName="unit"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="3801-7137-c0e9-2614" shared="true" includeChildSelections="true" childName="Warbands rules"/>
+                <condition type="lessThan" value="200" field="limit::ecfa-8486-4f6c-c249" scope="roster" shared="true" includeChildSelections="true" childName="Warbands rules" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+          <comment>Warbands (small)</comment>
+        </modifier>
+        <modifier type="add" value="Big Warbands may not field more than 10 units." field="error">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="greaterThan" value="10" field="selections" scope="force" childId="unit" shared="true" includeChildSelections="true" childName="unit"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="3801-7137-c0e9-2614" shared="true" includeChildSelections="true" childName="Warbands rules"/>
+                <condition type="atLeast" value="200" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="any" shared="true" includeChildSelections="true" childName="Warbands rules" includeChildForces="true"/>
+                <condition type="lessThan" value="500" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="any" shared="true" includeChildSelections="true" childName="Warbands rules" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+          <comment>Warbands (big)</comment>
+        </modifier>
+      </modifiers>
+      <comment>basic comp categories</comment>
+    </forceEntry>
   </forceEntries>
   <sharedSelectionEntries>
     <selectionEntry id="e9ad-f1ce-aebf-6d23" name="Battle Standard Bearer" publicationId="315e-e3c4-08af-fd51" hidden="false" collective="false" import="true" type="upgrade">
@@ -2751,7 +3126,6 @@ Therefore, the enemy Armour save is reduced by an additional -1. For example, an
 - Tomb Kings may have more than one Chariot.
 - A Vampire Thrall may lead a Vampire Counts army.
 
-
 ### House rules:
 - Ogre Kingdoms Hero limits increased to 150 pts
 - Ogre Kingdoms may have a Maneater/Bruiser or ogre unit champion as General.
@@ -3123,6 +3497,18 @@ The spell cannot affect Undead targets, Chaos Daemons or Unbreakable units. Unit
           </conditions>
         </modifier>
       </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Warbands rules" hidden="true" id="3801-7137-c0e9-2614" defaultAmount="1">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a257-00e1-d8be-1135" includeChildSelections="false"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Border Patrols" id="1fd2-3df8-5f55-0c47" hidden="false" type="rule" targetId="a874-f34c-6bf6-5c83"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Special list rules" hidden="false" id="d45d-0c25-01f6-0c9e" targetId="32f1-197f-d719-a393" primary="true"/>
+      </categoryLinks>
+      <comment>WIP</comment>
     </selectionEntry>
   </selectionEntries>
 </gameSystem>
