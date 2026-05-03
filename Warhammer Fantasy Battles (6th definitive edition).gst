@@ -297,6 +297,7 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" value="0" field="a59d-2ddb-429c-1aca"/>
       </modifiers>
       <comment>basic comp categories</comment>
       <constraints>
