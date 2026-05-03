@@ -258,10 +258,15 @@
       </constraints>
       <modifiers>
         <modifier type="set" value="1" field="ca62-54da-9a97-3377">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="4e15-0353-165f-5528" shared="true" childName="Border Patrols rules" includeChildSelections="true"/>
-          </conditions>
           <comment>Border Patrols</comment>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="4e15-0353-165f-5528" shared="true" childName="Border Patrols rules" includeChildSelections="true"/>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="e94b-6a54-8779-cd60" shared="true" childName="Rare" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
         <modifier type="set" value="0" field="ca62-54da-9a97-3377">
           <comment>Border Patrols</comment>
@@ -293,10 +298,15 @@
           </conditionGroups>
         </modifier>
         <modifier type="set" value="1" field="ae68-8b99-6830-6c55">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="4e15-0353-165f-5528" shared="true" childName="Border Patrols rules" includeChildSelections="true"/>
-          </conditions>
           <comment>Border Patrols</comment>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="4e15-0353-165f-5528" shared="true" childName="Border Patrols rules" includeChildSelections="true"/>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="43cc-fc3f-35a7-8d03" shared="true" childName="Special" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
     </categoryEntry>
@@ -2724,7 +2734,6 @@ Therefore, the enemy Armour save is reduced by an additional -1. For example, an
     </rule>
     <rule name="Border Patrols" id="a874-f34c-6bf6-5c83" hidden="false" publicationId="cc59-6466-b62e-cf5b" page="97">
       <description>### Special limitations:
-
 - You must choose an army of not more than 500 points.
 - You must have a SINGLE Hero to lead the force, but the Hero may not be an Army Battle Standard Bearer.
 - The army must consist of at least TWO units but no more than FOUR units.
@@ -2737,7 +2746,6 @@ Therefore, the enemy Armour save is reduced by an additional -1. For example, an
 - An army may have no more than ONE chariot or war machine. This also applies to choices that allow more than one item per pick, like Goblin Wolf Chariots. You may only buy ONE per choice,
 
 ### Army specific notes:
-
 - Bretonnians do not have their Army Battle Standard Bearer.
 - Tomb Kings must have a Liche Priest as the Hero. He will also act as the General.
 - Tomb Kings may have more than one Chariot.

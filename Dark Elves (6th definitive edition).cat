@@ -10119,6 +10119,12 @@ The unit gains +D3 to its combat resolution the first time it charges.</descript
                 <condition type="lessThan" value="0" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="1" field="30a3-d53c-a04c-5ae3">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="4e15-0353-165f-5528" shared="true" childName="Border Patrols rules" includeChildSelections="true"/>
+              </conditions>
+              <comment>BP</comment>
+            </modifier>
           </modifiers>
         </categoryLink>
         <categoryLink name="Mercenaries" hidden="false" id="40a8-9717-4796-f96c" targetId="b640-7e9c-3054-c1ce"/>
@@ -10239,7 +10245,32 @@ The unit gains +D3 to its combat resolution the first time it charges.</descript
         <categoryLink name="Heroes" hidden="false" id="4eac-54b5-4e33-f50f" targetId="c16b-f319-2c62-2c12" primary="true"/>
         <categoryLink name="Core" hidden="false" id="466c-653c-b948-5738" targetId="64bf-efb4-9978-26df" primary="true"/>
         <categoryLink name="Special" hidden="false" id="a92f-db51-15e5-29d4" targetId="43cc-fc3f-35a7-8d03" primary="true"/>
-        <categoryLink name="Rare" hidden="false" id="cf82-ef06-804d-5c28" targetId="e94b-6a54-8779-cd60" primary="true"/>
+        <categoryLink name="Rare" hidden="false" id="cf82-ef06-804d-5c28" targetId="e94b-6a54-8779-cd60" primary="true">
+          <modifiers>
+            <modifier type="set" value="1" field="4e0f-1873-62a3-3aed">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="4e15-0353-165f-5528" shared="true" childName="Border Patrols rules" includeChildSelections="true"/>
+              </conditions>
+              <comment>BP</comment>
+            </modifier>
+            <modifier type="increment" value="1" field="4e0f-1873-62a3-3aed">
+              <repeats>
+                <repeat value="1000" repeats="1" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+              </repeats>
+              <conditions>
+                <condition type="atLeast" value="2000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="-1" field="4e0f-1873-62a3-3aed">
+              <conditions>
+                <condition type="lessThan" value="0" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="0" field="selections" scope="force" shared="true" id="4e0f-1873-62a3-3aed" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
+        </categoryLink>
         <categoryLink name="Mercenaries" hidden="false" id="7596-69ad-1226-4404" targetId="b640-7e9c-3054-c1ce"/>
         <categoryLink name="Regiment of Renown" hidden="false" id="c12f-49ef-54d2-d951" targetId="ee09-9a50-ad78-9c32" primary="true"/>
       </categoryLinks>
@@ -10254,7 +10285,32 @@ The unit gains +D3 to its combat resolution the first time it charges.</descript
         <categoryLink name="Heroes" hidden="false" id="fd67-be08-c824-3ff3" targetId="c16b-f319-2c62-2c12" primary="true"/>
         <categoryLink name="Core" hidden="false" id="4c9b-3b18-1c43-f390" targetId="64bf-efb4-9978-26df" primary="true"/>
         <categoryLink name="Special" hidden="false" id="cb5f-e9d2-fdaf-66ee" targetId="43cc-fc3f-35a7-8d03" primary="true"/>
-        <categoryLink name="Rare" hidden="false" id="c989-ed4e-8ea7-710c" targetId="e94b-6a54-8779-cd60" primary="true"/>
+        <categoryLink name="Rare" hidden="false" id="c989-ed4e-8ea7-710c" targetId="e94b-6a54-8779-cd60" primary="true">
+          <modifiers>
+            <modifier type="set" value="1" field="4ba4-f217-00b8-290e">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="4e15-0353-165f-5528" shared="true" childName="Border Patrols rules" includeChildSelections="true"/>
+              </conditions>
+              <comment>BP</comment>
+            </modifier>
+            <modifier type="increment" value="1" field="4ba4-f217-00b8-290e">
+              <repeats>
+                <repeat value="1000" repeats="1" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+              </repeats>
+              <conditions>
+                <condition type="atLeast" value="2000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="-1" field="4ba4-f217-00b8-290e">
+              <conditions>
+                <condition type="lessThan" value="0" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="0" field="selections" scope="force" shared="true" id="4ba4-f217-00b8-290e" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
     <forceEntry name="Cult of Slaanesh (SoC)" id="5013-f9f4-e03b-94d5" hidden="false" publicationId="d2ec-1dc7-f0d5-acbb" page="86">
@@ -10356,6 +10412,12 @@ The unit gains +D3 to its combat resolution the first time it charges.</descript
               <conditions>
                 <condition type="lessThan" value="0" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
+            </modifier>
+            <modifier type="set" value="1" field="380e-92de-4140-c47d">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="4e15-0353-165f-5528" shared="true" childName="Border Patrols rules" includeChildSelections="true"/>
+              </conditions>
+              <comment>BP</comment>
             </modifier>
           </modifiers>
         </categoryLink>

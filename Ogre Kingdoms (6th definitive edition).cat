@@ -390,9 +390,6 @@
       </modifiers>
     </selectionEntry>
     <selectionEntry id="9cb5-fe07-22d4-22de" name="Yhetees" hidden="false" collective="false" import="true" type="unit">
-      <constraints>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6098-2dd7-59df-2942" type="max"/>
-      </constraints>
       <infoLinks>
         <infoLink id="d50c-0ec8-55a5-ca67" name="Fear" hidden="false" targetId="1524-2372-4aa0-6881" type="rule"/>
         <infoLink id="e259-4ccd-233c-e69d" name="Yhetee" hidden="false" targetId="3601-32e6-c197-a338" type="profile"/>
@@ -3188,6 +3185,12 @@ Nearly Irresistible Force</characteristic>
                 <condition type="lessThan" value="0" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </modifier>
+            <modifier type="increment" value="1" field="217b-face-c446-899a">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="4e15-0353-165f-5528" shared="true" childName="Border Patrols rules" includeChildSelections="true"/>
+              </conditions>
+              <comment>BP</comment>
+            </modifier>
           </modifiers>
         </categoryLink>
         <categoryLink name="Mercenaries" hidden="false" id="d4b8-575b-1b7d-261a" targetId="b640-7e9c-3054-c1ce"/>
@@ -3294,6 +3297,12 @@ Nearly Irresistible Force</characteristic>
                 <condition type="lessThan" value="0" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="1" field="aa11-32bd-12cf-592e">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="4e15-0353-165f-5528" shared="true" childName="Border Patrols rules" includeChildSelections="true"/>
+              </conditions>
+              <comment>BP</comment>
+            </modifier>
           </modifiers>
         </categoryLink>
       </categoryLinks>
@@ -3398,6 +3407,12 @@ Nearly Irresistible Force</characteristic>
                 <condition type="lessThan" value="0" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="1" field="f7f1-a87d-090f-3215">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="4e15-0353-165f-5528" shared="true" childName="Border Patrols rules" includeChildSelections="true"/>
+              </conditions>
+              <comment>BP</comment>
+            </modifier>
           </modifiers>
         </categoryLink>
       </categoryLinks>
@@ -3412,6 +3427,7 @@ Nearly Irresistible Force</characteristic>
             <modifier type="remove" value="e94b-6a54-8779-cd60" field="category"/>
             <modifier type="add" value="64bf-efb4-9978-26df" field="category"/>
             <modifier type="set" value="1" field="32ed-26da-3f27-5c04"/>
+            <modifier type="remove" value="ee09-9a50-ad78-9c32" field="category"/>
           </modifiers>
           <conditions>
             <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8711-ed16-2a44-7251" shared="true" includeChildSelections="true"/>
@@ -3427,6 +3443,7 @@ Nearly Irresistible Force</characteristic>
             <modifier type="remove" value="e94b-6a54-8779-cd60" field="category"/>
             <modifier type="add" value="64bf-efb4-9978-26df" field="category"/>
             <modifier type="set-primary" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="remove" value="ee09-9a50-ad78-9c32" field="category"/>
           </modifiers>
         </modifierGroup>
       </modifierGroups>
@@ -3444,6 +3461,7 @@ Nearly Irresistible Force</characteristic>
             <modifier type="set-primary" value="43cc-fc3f-35a7-8d03" field="category"/>
             <modifier type="remove" value="e94b-6a54-8779-cd60" field="category"/>
             <modifier type="add" value="43cc-fc3f-35a7-8d03" field="category"/>
+            <modifier type="remove" value="ee09-9a50-ad78-9c32" field="category"/>
           </modifiers>
           <conditions>
             <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8711-ed16-2a44-7251" shared="true" includeChildSelections="true"/>
@@ -3459,6 +3477,7 @@ Nearly Irresistible Force</characteristic>
             <modifier type="remove" value="e94b-6a54-8779-cd60" field="category"/>
             <modifier type="add" value="64bf-efb4-9978-26df" field="category"/>
             <modifier type="set-primary" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="remove" value="ee09-9a50-ad78-9c32" field="category"/>
           </modifiers>
         </modifierGroup>
       </modifierGroups>
@@ -3476,12 +3495,13 @@ Nearly Irresistible Force</characteristic>
         </modifierGroup>
         <modifierGroup type="and">
           <modifiers>
-            <modifier type="add" value="e94b-6a54-8779-cd60" field="category"/>
+            <modifier type="remove" value="e94b-6a54-8779-cd60" field="category"/>
             <modifier type="set-primary" value="7a1c-d611-c2dc-def1" field="category">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="4e15-0353-165f-5528" shared="true" includeChildSelections="true" childName="Border Patrols rules" includeChildForces="true"/>
               </conditions>
             </modifier>
+            <modifier type="remove" value="ee09-9a50-ad78-9c32" field="category"/>
           </modifiers>
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="roster" childId="4e15-0353-165f-5528" shared="true" includeChildSelections="true" childName="Border Patrols rules" includeChildForces="true"/>
@@ -3510,6 +3530,7 @@ Nearly Irresistible Force</characteristic>
                 <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8711-ed16-2a44-7251" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
+            <modifier type="remove" value="ee09-9a50-ad78-9c32" field="category"/>
           </modifiers>
         </modifierGroup>
         <modifierGroup type="and">
@@ -3522,9 +3543,17 @@ Nearly Irresistible Force</characteristic>
             <modifier type="add" value="43cc-fc3f-35a7-8d03" field="category"/>
             <modifier type="set-primary" value="43cc-fc3f-35a7-8d03" field="category"/>
             <modifier type="add" value="7ff5-9e55-c594-4b40" field="category"/>
+            <modifier type="remove" value="ee09-9a50-ad78-9c32" field="category"/>
           </modifiers>
         </modifierGroup>
       </modifierGroups>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="4e15-0353-165f-5528" shared="true" includeChildSelections="true" childName="Border Patrols rules"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </entryLink>
     <entryLink import="true" name="Ironguts" hidden="false" id="53f2-756c-f086-9da6" type="selectionEntry" targetId="3e16-db9e-8507-029a">
       <modifierGroups>
@@ -3533,6 +3562,7 @@ Nearly Irresistible Force</characteristic>
             <modifier type="set-primary" value="64bf-efb4-9978-26df" field="category"/>
             <modifier type="remove" value="e94b-6a54-8779-cd60" field="category"/>
             <modifier type="add" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="remove" value="ee09-9a50-ad78-9c32" field="category"/>
           </modifiers>
           <conditions>
             <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8711-ed16-2a44-7251" shared="true" includeChildSelections="true"/>
@@ -3548,6 +3578,7 @@ Nearly Irresistible Force</characteristic>
             <modifier type="remove" value="e94b-6a54-8779-cd60" field="category"/>
             <modifier type="add" value="64bf-efb4-9978-26df" field="category"/>
             <modifier type="set-primary" value="64bf-efb4-9978-26df" field="category"/>
+            <modifier type="remove" value="ee09-9a50-ad78-9c32" field="category"/>
           </modifiers>
         </modifierGroup>
       </modifierGroups>
@@ -3584,6 +3615,9 @@ Nearly Irresistible Force</characteristic>
     <entryLink import="true" name="Emperor Fire Dragon" hidden="false" id="a8ac-af1e-d834-a080" type="selectionEntry" targetId="d7e3-ae46-6606-7806"/>
     <entryLink import="true" name="Manbiters" hidden="true" id="482c-0d14-dab2-d40e" type="selectionEntry" targetId="0efb-7f63-7932-0655">
       <comment>only in  gnoblar horde</comment>
+      <modifiers>
+        <modifier type="remove" value="ee09-9a50-ad78-9c32" field="category"/>
+      </modifiers>
     </entryLink>
     <entryLink import="true" name="Pikemen" hidden="false" id="d0b9-e033-6253-8bbf" type="selectionEntry" targetId="f7d8-66b4-21ee-00dd"/>
     <entryLink import="true" name="Cannon" hidden="false" id="78e1-3c85-4c3d-fcef" type="selectionEntry" targetId="1436-b224-dc06-d9fd"/>
