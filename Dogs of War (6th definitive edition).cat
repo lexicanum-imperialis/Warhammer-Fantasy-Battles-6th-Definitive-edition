@@ -118,9 +118,6 @@
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6325-b994-998e-c6ad" type="max">
           <comment>A Dogs of Was army must include a paymaster. Paymaster may not be the the army&apos;s general</comment>
         </constraint>
-        <constraint type="max" value="-1" field="ecfa-8486-4f6c-c249" scope="parent" shared="true" id="64de-6dbc-dbab-e7d5">
-          <comment>BP</comment>
-        </constraint>
       </constraints>
       <infoLinks>
         <infoLink id="e80b-9c46-3c29-568e" name="Paymaster" hidden="false" targetId="503c-8418-4fe3-ab2d" type="rule"/>
@@ -414,12 +411,6 @@
             <condition type="atLeast" value="1" field="selections" scope="force" childId="e2c6-72d9-a389-e118" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="125" field="64de-6dbc-dbab-e7d5">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="roster" childId="4e15-0353-165f-5528" shared="true" includeChildSelections="true" childName="Border Patrols rules" includeChildForces="true"/>
-          </conditions>
-          <comment>BP</comment>
-        </modifier>
       </modifiers>
       <entryLinks>
         <entryLink import="true" name="Hand Weapon" hidden="false" id="f6b0-58ac-1896-fef3" type="selectionEntry" targetId="abdb-bbd0-41b2-5dff">
@@ -428,6 +419,19 @@
           </constraints>
         </entryLink>
       </entryLinks>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="4e15-0353-165f-5528" shared="true" includeChildSelections="true" childName="Border Patrols rules" includeChildForces="true"/>
+          </conditions>
+          <modifiers>
+            <modifier type="set" value="0" field="d703-f473-ef66-cdec"/>
+            <modifier type="set" value="0" field="dc48-ee6d-0cf9-edf4"/>
+            <modifier type="set" value="true" field="hidden"/>
+          </modifiers>
+          <comment>BP</comment>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry id="8ccf-0c2b-1e09-998e" name="Mercenary General" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>

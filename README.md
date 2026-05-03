@@ -117,6 +117,12 @@ When the `pts limit` is set to 500, you may select _Border Patrols_ game rules, 
 - Tomb Kings may have more than one Chariot.
 - A Vampire Thrall may lead a Vampire Counts army.
 
+### House rules:
+- Ogre Kingdoms Hero limits increased to 150 pts
+- Ogre Kingdoms may have a Maneater/Bruiser or ogre unit champion as General.
+- Dogs of War do not have their Paymaster.
+- Dogs of War may have 1 Regiment of Renown. No other patrols may have RoR.
+
 _Estimated Playtime: 30–40 minutes._
 
 ---

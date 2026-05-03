@@ -436,6 +436,18 @@
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
+          <entryLinks>
+            <entryLink import="true" name="General" hidden="true" id="e2c3-adec-eb4d-dc54" collective="false" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry">
+              <comment>BP</comment>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="4e15-0353-165f-5528" shared="true" includeChildSelections="true" childName="Border Patrols rules" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -681,7 +693,15 @@
             <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="5"/>
           </costs>
         </entryLink>
-        <entryLink id="2b64-d509-f50a-84e2" name="General" hidden="false" collective="false" import="true" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry"/>
+        <entryLink id="2b64-d509-f50a-84e2" name="General" hidden="false" collective="false" import="true" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="4e15-0353-165f-5528" shared="true" includeChildSelections="true" childName="Border Patrols rules" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
         <entryLink id="92ef-c906-8724-a40a" name="Sword Gnoblar" hidden="false" collective="false" import="true" targetId="3562-2b92-9516-014d" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9a66-09f4-c376-20e2" type="max"/>
@@ -711,18 +731,27 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="set" value="125" field="eee0-7f62-d304-46d4">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="roster" childId="4e15-0353-165f-5528" shared="true" includeChildSelections="true" childName="Border Patrols rules" includeChildForces="true"/>
-          </conditions>
-          <comment>BP</comment>
-        </modifier>
       </modifiers>
       <constraints>
         <constraint type="max" value="-1" field="ecfa-8486-4f6c-c249" scope="parent" shared="true" id="eee0-7f62-d304-46d4">
           <comment>BP</comment>
         </constraint>
       </constraints>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>BP</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="4e15-0353-165f-5528" shared="true" includeChildSelections="true" childName="Border Patrols rules" includeChildForces="true"/>
+          </conditions>
+          <modifiers>
+            <modifier type="add" value="For Ogre Kingdoms, the max" field="warning"/>
+            <modifier type="set" value="150" field="eee0-7f62-d304-46d4">
+              <comment>BP</comment>
+            </modifier>
+            <modifier type="set" value="1" field="eee0-7f62-d304-46d4"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry id="478d-eeb4-9e02-c6b2" name="Hunter" hidden="false" collective="false" import="true" type="unit">
       <constraints>
@@ -798,7 +827,7 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="set" value="125" field="c7d2-e151-77ae-2e3a">
+        <modifier type="set" value="150" field="c7d2-e151-77ae-2e3a">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="roster" childId="4e15-0353-165f-5528" shared="true" includeChildSelections="true" childName="Border Patrols rules" includeChildForces="true"/>
           </conditions>
@@ -870,7 +899,7 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="set" value="125" field="1e74-cd60-b307-3ab4">
+        <modifier type="set" value="150" field="1e74-cd60-b307-3ab4">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="roster" childId="4e15-0353-165f-5528" shared="true" includeChildSelections="true" childName="Border Patrols rules" includeChildForces="true"/>
           </conditions>
@@ -3438,10 +3467,39 @@ Nearly Irresistible Force</characteristic>
       <modifierGroups>
         <modifierGroup type="and">
           <modifiers>
-            <modifier type="set-primary" value="e94b-6a54-8779-cd60" field="category"/>
+            <modifier type="set-primary" value="e94b-6a54-8779-cd60" field="category">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="4e15-0353-165f-5528" shared="true" includeChildSelections="true" childName="Border Patrols rules" includeChildForces="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </modifierGroup>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="add" value="e94b-6a54-8779-cd60" field="category"/>
+            <modifier type="set-primary" value="7a1c-d611-c2dc-def1" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="4e15-0353-165f-5528" shared="true" includeChildSelections="true" childName="Border Patrols rules" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="4e15-0353-165f-5528" shared="true" includeChildSelections="true" childName="Border Patrols rules" includeChildForces="true"/>
+          </conditions>
+        </modifierGroup>
       </modifierGroups>
+      <entryLinks>
+        <entryLink import="true" name="General" hidden="true" id="277a-5a1b-d97f-9c58" collective="false" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry">
+          <comment>BP</comment>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="4e15-0353-165f-5528" shared="true" includeChildSelections="true" childName="Border Patrols rules" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
     </entryLink>
     <entryLink import="true" name="Rhinox Riders" hidden="false" id="c8d5-1198-3d4a-8a67" type="selectionEntry" targetId="5e33-e510-ba45-933e">
       <modifierGroups>
