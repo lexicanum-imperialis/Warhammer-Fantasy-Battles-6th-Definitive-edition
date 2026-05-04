@@ -879,6 +879,63 @@
       <constraints>
         <constraint type="min" value="0" field="selections" scope="force" shared="true" id="2118-9889-ee00-6a58" includeChildSelections="false"/>
       </constraints>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="6" field="2118-9889-ee00-6a58">
+              <comment>5000-5999 pts</comment>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="4e15-0353-165f-5528" shared="true" includeChildSelections="true" includeChildForces="true" childName="Border Patrols rules"/>
+                    <condition type="atLeast" value="5000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="lessThan" value="6000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="4" field="2118-9889-ee00-6a58">
+              <comment>3000-3999 pts</comment>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="4e15-0353-165f-5528" shared="true" includeChildSelections="true" includeChildForces="true" childName="Border Patrols rules"/>
+                    <condition type="atLeast" value="3000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="lessThan" value="4000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="5" field="2118-9889-ee00-6a58">
+              <comment>4000-4999 pts</comment>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="4e15-0353-165f-5528" shared="true" includeChildSelections="true" includeChildForces="true" childName="Border Patrols rules"/>
+                    <condition type="atLeast" value="4000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="lessThan" value="5000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="3" field="2118-9889-ee00-6a58">
+              <comment>2000-2999 pts</comment>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="4e15-0353-165f-5528" shared="true" includeChildSelections="true" includeChildForces="true" childName="Border Patrols rules"/>
+                    <condition type="atLeast" value="2000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="lessThan" value="3000" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="10e2-baf2-e758-c27e" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifierGroup>
+      </modifierGroups>
       <selectionEntryGroups>
         <selectionEntryGroup name="Command group" id="d5ff-dd64-c08e-ccbb" hidden="false">
           <selectionEntries>
@@ -1026,16 +1083,8 @@
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <modifiers>
-        <modifier type="set" value="1" field="2118-9889-ee00-6a58">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="10e2-baf2-e758-c27e" shared="true" includeChildSelections="true"/>
-          </conditions>
-          <comment>Errantry Fervour (SoC, p.90)</comment>
-        </modifier>
-      </modifiers>
     </selectionEntry>
-    <selectionEntry id="3f3b-a058-295e-9046" name="Knights of the Realm" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="3f3b-a058-295e-9046" name="Knights of the Realm" hidden="false" collective="false" import="true" type="unit" defaultAmount="0">
       <constraints>
         <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f9c2-08f7-b725-fc4f" type="min"/>
       </constraints>
@@ -5025,7 +5074,8 @@ The enemy cannot choose the stand &amp; shoot reaction against the unit carrying
       <description>Damsels and Prophetesses are divinely protected by the Lady of the Lake. This gives Damsels Magic Resistance (1), and Prophetesses Magic Resistance (2).</description>
     </rule>
     <rule id="8d74-785f-2be0-4513" name="Impetuous" publicationId="143d-ca87-8001-00a0" page="48" hidden="false">
-      <description>After charges have been declared, if any Impetuous units did not declare a charge but are within charge range of an enemy, then they must take a Leadership test to restrain themselves from charging. If this test is failed, they are forced to charge. If the test is passed, they may move normally.
+      <description>After charges have been declared, if any Impetuous units did not declare a charge but are within charge range of an enemy, then they must take a Leadership test to restrain themselves from charging.
+If this test is failed, they are forced to charge. If the test is passed, they may move normally.
 In addition, so reckless are the Knights Errant, that whenever they charge, the unit and any characters that have joined them are Immune to Psychology for the rest of that turn.</description>
     </rule>
     <rule id="44b1-0886-65a0-ae6b" name="Defensive Stakes" publicationId="143d-ca87-8001-00a0" page="54" hidden="false">
