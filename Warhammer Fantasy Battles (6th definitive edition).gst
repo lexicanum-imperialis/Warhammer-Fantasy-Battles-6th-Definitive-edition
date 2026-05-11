@@ -221,7 +221,7 @@
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="lessThan" value="2000" field="limit::ecfa-8486-4f6c-c249" scope="roster" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="lessThan" value="2000" field="limit::ecfa-8486-4f6c-c249" scope="self" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
           <comment>&lt; 2000 pts</comment>
         </modifier>
@@ -231,7 +231,7 @@
           </conditions>
           <comment>Warbands (small)</comment>
         </modifier>
-        <modifier type="set" value="0" field="a59d-2ddb-429c-1aca">
+        <modifier type="set" value="0" field="fda5-91c2-e17f-774c">
           <comment>Warbands (big)</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -243,13 +243,13 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="set" value="0" field="a59d-2ddb-429c-1aca">
+        <modifier type="set" value="0" field="fda5-91c2-e17f-774c">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="roster" childId="4e15-0353-165f-5528" shared="true" includeChildSelections="true" includeChildForces="true" childName="Border Patrols rules"/>
           </conditions>
           <comment>Border Patrols</comment>
         </modifier>
-        <modifier type="set" value="1" field="a59d-2ddb-429c-1aca">
+        <modifier type="set" value="1" field="fda5-91c2-e17f-774c">
           <comment>2000-2999 pts</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -261,7 +261,7 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="set" value="2" field="a59d-2ddb-429c-1aca">
+        <modifier type="set" value="2" field="fda5-91c2-e17f-774c">
           <comment>3000-3999 pts</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -273,7 +273,7 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="set" value="3" field="a59d-2ddb-429c-1aca">
+        <modifier type="set" value="3" field="fda5-91c2-e17f-774c">
           <comment>4000-4999 pts</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -285,7 +285,7 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="set" value="4" field="a59d-2ddb-429c-1aca">
+        <modifier type="set" value="4" field="fda5-91c2-e17f-774c">
           <comment>5000-5999 pts</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -300,7 +300,7 @@
       </modifiers>
       <comment>basic comp categories</comment>
       <constraints>
-        <constraint type="max" value="0" field="selections" scope="force" shared="true" id="a59d-2ddb-429c-1aca" includeChildSelections="true"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fda5-91c2-e17f-774c" includeChildSelections="false"/>
       </constraints>
     </categoryEntry>
     <categoryEntry id="c16b-f319-2c62-2c12" name="Heroes" hidden="false">
@@ -378,7 +378,7 @@
       <modifiers>
         <modifier type="set" value="0" field="16f0-6e5b-55d0-4102">
           <conditions>
-            <condition type="lessThan" value="200" field="limit::ecfa-8486-4f6c-c249" scope="roster" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="lessThan" value="200" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
           <comment>Warbands (small)</comment>
         </modifier>
@@ -744,7 +744,7 @@ Quatar</comment>
               <conditions>
                 <condition type="greaterThan" value="8" field="selections" scope="force" childId="unit" shared="true" includeChildSelections="true" childName="unit"/>
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="3801-7137-c0e9-2614" shared="true" includeChildSelections="true" childName="Warbands rules"/>
-                <condition type="lessThan" value="200" field="limit::ecfa-8486-4f6c-c249" scope="roster" shared="true" includeChildSelections="true" childName="Warbands rules" includeChildForces="true"/>
+                <condition type="lessThan" value="200" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="any" shared="true" includeChildSelections="true" childName="Warbands rules" includeChildForces="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
