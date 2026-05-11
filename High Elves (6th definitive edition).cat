@@ -21,7 +21,7 @@
         <categoryLink id="7ed8-3d4b-f01d-df45" name="Characters" hidden="false" targetId="7a1c-d611-c2dc-def1" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="d4af-47cc-c7be-f83e" name="Mounts" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="d4af-47cc-c7be-f83e" name="Mounts" hidden="false" collective="false" import="true" defaultSelectionEntryId="none">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="343a-7dea-501c-50b6" type="max"/>
           </constraints>
@@ -76,7 +76,7 @@
                 </entryLink>
               </entryLinks>
             </entryLink>
-            <entryLink import="true" name="Tiranoc Chariot" hidden="false" id="5adb-f54a-1ff5-1cc2" type="selectionEntry" targetId="3f6e-c751-4eb2-f2fd"/>
+            <entryLink import="true" name="Tiranoc Chariot" hidden="false" id="5adb-f54a-1ff5-1cc2" type="selectionEntry" targetId="3f6e-c751-4eb2-f2fd" defaultAmount="0"/>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup name="Magic and Honors" id="a686-83d6-bfa2-3535" hidden="false" collective="false" import="true" collapsible="true">
@@ -88,7 +88,7 @@
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Master of the Mists" hidden="true" id="af83-644c-1a6d-d2f2">
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="aa72-732c-73ac-4284" includeChildSelections="false"/>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="aa72-732c-73ac-4284" includeChildSelections="false"/>
                   </constraints>
                   <rules>
                     <rule name="The Sea Lord Aislinn" id="7fe6-60cf-d1f3-bb64" hidden="false" page="94" publicationId="d2ec-1dc7-f0d5-acbb">
@@ -107,6 +107,11 @@ In addition, Aislinn rules his vessels with an iron hand; and is automatically t
                         <condition type="instanceOf" value="1" field="selections" scope="force" childId="1951-b0c9-254a-bcff" shared="true" includeChildSelections="true"/>
                       </conditions>
                       <comment>&quot;The Sea Lord Aislinn&quot; (SoC, p.94)</comment>
+                    </modifier>
+                    <modifier type="set" value="1" field="aa72-732c-73ac-4284">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="1951-b0c9-254a-bcff" shared="true" includeChildSelections="true"/>
+                      </conditions>
                     </modifier>
                   </modifiers>
                   <comment>&quot;The Sea Lord Aislinn&quot; (SoC, p.94)</comment>
@@ -2498,6 +2503,39 @@ In addition, Aislinn rules his vessels with an iron hand; and is automatically t
           <categoryLinks>
             <categoryLink name="Chariot" hidden="false" id="550b-4462-36b7-631c" targetId="d36d-5455-9f4d-3100" primary="false"/>
           </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Extra Special choice F" hidden="true" id="8fbc-75b3-f17e-682e" collective="false">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="a5c0-88a5-c4b3-2645" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="1f44-3f26-020f-f90b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink name="Special" hidden="false" id="9904-5cdd-c1e0-41fa" targetId="43cc-fc3f-35a7-8d03" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+              </costs>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="1" field="a5c0-88a5-c4b3-2645"/>
+                    <modifier type="set" value="false" field="hidden"/>
+                    <modifier type="set" value="1" field="1f44-3f26-020f-f90b"/>
+                  </modifiers>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="force" childId="4e15-0353-165f-5528" shared="true" includeChildSelections="true" childName="Border Patrols rules"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="7a1c-d611-c2dc-def1" shared="true" includeChildSelections="true" childName="Characters"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifierGroup>
+              </modifierGroups>
+            </selectionEntry>
+          </selectionEntries>
         </entryLink>
       </entryLinks>
     </selectionEntry>
@@ -5455,23 +5493,43 @@ Range 36&quot;, causes one wound per shot and grants Armour Rolls as normal, can
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Extra Special choice" hidden="true" id="a59e-6019-01f6-93a3" collective="false" defaultAmount="0">
+          <constraints>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="c548-758d-f8be-6f77" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="fb7d-6299-1965-6019" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink name="Special" hidden="false" id="2e02-4048-a425-5207" targetId="43cc-fc3f-35a7-8d03" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+          </costs>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="1" field="fb7d-6299-1965-6019"/>
+                <modifier type="set" value="false" field="hidden"/>
+                <modifier type="set" value="1" field="c548-758d-f8be-6f77"/>
+              </modifiers>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="4e15-0353-165f-5528" shared="true" includeChildSelections="true" childName="Border Patrols rules"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="7a1c-d611-c2dc-def1" shared="true" childName="Characters"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifierGroup>
+          </modifierGroups>
+        </selectionEntry>
       </selectionEntries>
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="71"/>
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
-      <entryLinks>
-        <entryLink import="true" name="Extra Special choice" hidden="true" id="21a8-bf04-180f-5b8c" type="selectionEntry" targetId="3100-f6cf-d7f4-9e5a">
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="7a1c-d611-c2dc-def1" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </entryLink>
-      </entryLinks>
       <modifierGroups>
         <modifierGroup type="and">
           <comment>As characters mount</comment>
