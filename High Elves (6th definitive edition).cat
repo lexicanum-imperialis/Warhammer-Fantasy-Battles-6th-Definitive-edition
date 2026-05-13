@@ -3065,21 +3065,17 @@ In addition, Aislinn rules his vessels with an iron hand; and is automatically t
             <modifier type="set" value="1" field="3130-9fac-fd29-f213"/>
           </modifiers>
           <conditionGroups>
-            <conditionGroup type="or">
+            <conditionGroup type="and">
               <conditions>
                 <condition type="lessThan" value="1" field="selections" scope="force" childId="fc1b-d92c-9b94-f1e1" shared="true" includeChildSelections="true"/>
                 <condition type="lessThan" value="1" field="selections" scope="force" childId="bc11-d14e-4c78-1496" shared="true" includeChildSelections="true"/>
               </conditions>
               <conditionGroups>
-                <conditionGroup type="not">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="force" childId="f42c-be6f-8a5d-7199" shared="true" includeChildSelections="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="1951-b0c9-254a-bcff" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="f42c-be6f-8a5d-7199" shared="true" includeChildSelections="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="1951-b0c9-254a-bcff" shared="true" includeChildSelections="true"/>
+                  </conditions>
                 </conditionGroup>
               </conditionGroups>
             </conditionGroup>
@@ -3099,23 +3095,31 @@ In addition, Aislinn rules his vessels with an iron hand; and is automatically t
         </modifier>
         <modifier type="remove" value="a37e-7207-de6d-acb0" field="category">
           <conditionGroups>
-            <conditionGroup type="and">
+            <conditionGroup type="or">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="f42c-be6f-8a5d-7199" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="1951-b0c9-254a-bcff" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="f42c-be6f-8a5d-7199" shared="true" includeChildSelections="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="1951-b0c9-254a-bcff" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="fc1b-d92c-9b94-f1e1" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="bc11-d14e-4c78-1496" shared="true" includeChildSelections="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="set" value="true" field="hidden">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="f42c-be6f-8a5d-7199" shared="true" includeChildSelections="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="1951-b0c9-254a-bcff" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
+        <modifier type="add" value="{this} is not allowed if Eltharion is selected" field="error">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="bc11-d14e-4c78-1496" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="{this} is not allowed if Tyrion is selected" field="error">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fc1b-d92c-9b94-f1e1" shared="true" includeChildSelections="true"/>
+          </conditions>
         </modifier>
       </modifiers>
     </selectionEntry>
