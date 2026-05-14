@@ -2420,6 +2420,8 @@ Warhammer Armies: Vampire Counts (page 61)</description>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fae4-595f-7b39-1909" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="993f-eb11-5986-8b3e" includeChildSelections="false"/>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="ee4d-e870-a60d-dae8" includeChildSelections="false"/>
+        <constraint type="min" value="0" field="selections" scope="force" shared="true" id="2d83-161b-9f18-1a31" includeChildSelections="false"/>
       </constraints>
       <categoryLinks>
         <categoryLink name="Special list rules" hidden="false" id="4cbe-48ad-8126-05f2" targetId="32f1-197f-d719-a393" primary="true"/>

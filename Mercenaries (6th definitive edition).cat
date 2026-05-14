@@ -38,14 +38,18 @@
     <categoryEntry id="ee09-9a50-ad78-9c32" name="Regiment of Renown" hidden="false">
       <modifiers>
         <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="force" childId="3d35-6b18-262f-6503" shared="true" includeChildSelections="true"/>
-          </conditions>
           <conditionGroups>
-            <conditionGroup type="and">
+            <conditionGroup type="or">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="4e15-0353-165f-5528" shared="true" includeChildSelections="true" childName="Border Patrols rules" includeChildForces="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="fa9c-5f79-ce12-480c" shared="true" childName="Dogs of War"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="4e15-0353-165f-5528" shared="true" includeChildSelections="true" childName="Border Patrols rules" includeChildForces="true"/>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="fa9c-5f79-ce12-480c" shared="true" childName="Dogs of War"/>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="3d35-6b18-262f-6503" shared="true" includeChildSelections="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
