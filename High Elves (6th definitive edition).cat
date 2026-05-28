@@ -5802,6 +5802,21 @@ Range 36&quot;, causes one wound per shot and grants Armour Rolls as normal, can
         <infoLink name="Fusil of Conflagration" id="4f87-0c69-4a26-11f1" hidden="false" type="profile" targetId="db21-750e-15cf-6446"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Claw of Devastation" hidden="false" id="1163-53c4-b497-1b3a" publicationId="91c2-b862-8010-87bb" page="11">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e7f5-7e06-47a4-80a8" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="8faa-72f1-11a8-a0a0" includeChildSelections="false"/>
+      </constraints>
+      <costs>
+        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="80"/>
+        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Claw of Devastation" id="4b2c-9624-62d7-3979" hidden="false" type="rule" targetId="86d4-87f6-6b61-df61"/>
+        <infoLink name="Claw of Devastation" id="203e-8b09-1679-6cc6" hidden="false" type="profile" targetId="ea88-fb02-ff64-8237"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="45a3-3e65-6c49-5cc0" name="Honours" publicationId="a40f-696a-94e8-ecfb" page="15" hidden="false" collective="false" import="true" collapsible="true">
@@ -5833,7 +5848,8 @@ Range 36&quot;, causes one wound per shot and grants Armour Rolls as normal, can
         <entryLink import="true" name="Blade of the Phoenix" hidden="false" id="fe83-561b-bd7d-acb9" type="selectionEntry" targetId="aa64-d418-ce28-69e8"/>
         <entryLink import="true" name="Sword of Ages" hidden="false" id="f28b-774f-dad1-a59b" type="selectionEntry" targetId="dc5d-5b3e-cccb-2342"/>
         <entryLink import="true" name="Magic Weapons (Relics of Lustria)" hidden="false" id="62f7-457b-431e-66ff" type="selectionEntryGroup" targetId="11e7-7d5d-b0fa-1f34"/>
-        <entryLink import="true" name="Fusil of Conflagration" hidden="false" id="a42a-eea9-6ed4-add2" type="selectionEntry" targetId="adb0-4960-337c-e09d"/>
+        <entryLink import="true" name="Claw of Devastation" hidden="false" id="a42a-eea9-6ed4-add2" type="selectionEntry" targetId="1163-53c4-b497-1b3a"/>
+        <entryLink import="true" name="Fusil of Conflagration" hidden="false" id="51c9-bdab-c2d1-3ade" type="selectionEntry" targetId="adb0-4960-337c-e09d"/>
       </entryLinks>
       <modifiers>
         <modifier type="append" value="Relics of Lustria" field="name" join="  + ">
@@ -6713,6 +6729,9 @@ Should the mage be slain, the Merwyrm must test on its own Leadership each turn,
     <rule name="Fusil of Conflagration" id="1bd2-80e3-b32f-8679" hidden="false" page="11" publicationId="91c2-b862-8010-87bb">
       <description>The bearer of the Fusil counts as having a breath attack, which hits at Strength 3. This is a flaming attack.</description>
     </rule>
+    <rule name="Claw of Devastation" id="86d4-87f6-6b61-df61" hidden="false" page="11" publicationId="91c2-b862-8010-87bb">
+      <description>The wielder may re-roll failed rolls to wound in close combat, and ignores Armour saves.</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="3f9e-10ff-4016-0d94" name="Dragon Armour" hidden="false" typeId="f681-9937-db53-f1d8" typeName="Armour">
@@ -7211,6 +7230,15 @@ Should the mage be slain, the Merwyrm must test on its own Leadership each turn,
         <characteristic name="Damage" typeId="6f2f-d612-52ef-1633"/>
         <characteristic name="Special Rules" typeId="a21a-cdc0-4b13-b236">Breath attack</characteristic>
         <characteristic name="Saves" typeId="8014-a8b2-15c3-da95"/>
+      </characteristics>
+    </profile>
+    <profile name="Claw of Devastation" typeId="7889-42d9-70a0-3ea9" typeName="Weapon" hidden="false" id="ea88-fb02-ff64-8237" publicationId="91c2-b862-8010-87bb" page="11">
+      <characteristics>
+        <characteristic name="Range" typeId="3107-4d1e-9a51-6564">CC</characteristic>
+        <characteristic name="Strength" typeId="6fe4-1ebb-cb04-1378"/>
+        <characteristic name="Damage" typeId="6f2f-d612-52ef-1633"/>
+        <characteristic name="Special Rules" typeId="a21a-cdc0-4b13-b236">re-roll to wound in CC</characteristic>
+        <characteristic name="Saves" typeId="8014-a8b2-15c3-da95">Ignore armour sabes</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
