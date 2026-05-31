@@ -4408,7 +4408,6 @@ This unremarkable-ooking sceptre throbs with the essence of every disease indige
           </constraints>
           <entryLinks>
             <entryLink id="5eca-8edd-5406-c4bd" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="e4b1-5857-9d82-17de" type="selectionEntryGroup"/>
-            <entryLink id="25cc-b15c-f9fc-4ee5" name="Arcane Items (SK-AB + Common)" hidden="false" collective="false" import="true" targetId="a18f-f748-fc50-5097" type="selectionEntryGroup"/>
             <entryLink id="ee71-a526-a4e2-86ed" name="Magic Talismans" hidden="false" collective="false" import="true" targetId="e52c-c54c-35bc-9c8e" type="selectionEntryGroup"/>
             <entryLink id="4d5d-ec24-f4a1-ee3f" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="dbce-3caf-2139-09ee" type="selectionEntryGroup"/>
             <entryLink import="true" name="Magic Armour" hidden="false" id="8edf-b7bf-ecfa-e5db" collective="false" targetId="3aa2-a354-e221-9114" type="selectionEntryGroup"/>
@@ -4509,101 +4508,12 @@ This unremarkable-ooking sceptre throbs with the essence of every disease indige
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Magic Level 4" hidden="false" id="20d6-5423-54ec-37c0" type="selectionEntry" targetId="fc28-3af2-d37a-d07e">
-          <costs>
-            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
-          </costs>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="965d-bb9b-5d85-6399" includeChildSelections="false"/>
-          </constraints>
-          <modifierGroups>
-            <modifierGroup type="and">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="unit" childId="158f-d753-59e2-9ad2" shared="true" includeChildSelections="true"/>
-              </conditions>
-              <modifiers>
-                <modifier type="decrement" value="10" field="ecfa-8486-4f6c-c249"/>
-              </modifiers>
-              <comment>Compensate Warpstone Tokens - LVL 1</comment>
-            </modifierGroup>
-            <modifierGroup type="and">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="unit" childId="fc28-3af2-d37a-d07e" shared="true" includeChildSelections="true"/>
-              </conditions>
-              <modifiers>
-                <modifier type="decrement" value="40" field="ecfa-8486-4f6c-c249"/>
-              </modifiers>
-              <comment>Compensate Warpstone Tokens - LVL 4</comment>
-            </modifierGroup>
-            <modifierGroup type="and">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="unit" childId="cb6c-c69a-5c73-97e8" shared="true" includeChildSelections="true"/>
-              </conditions>
-              <modifiers>
-                <modifier type="decrement" value="30" field="ecfa-8486-4f6c-c249"/>
-              </modifiers>
-              <comment>Compensate Warpstone Tokens - LVL 3</comment>
-            </modifierGroup>
-            <modifierGroup type="and">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="unit" childId="fbc2-5115-f240-7367" shared="true" includeChildSelections="true"/>
-              </conditions>
-              <modifiers>
-                <modifier type="decrement" value="20" field="ecfa-8486-4f6c-c249"/>
-              </modifiers>
-              <comment>Compensate Warpstone Tokens - LVL 2</comment>
-            </modifierGroup>
-          </modifierGroups>
-        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="130"/>
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="4"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="2"/>
       </costs>
-      <modifierGroups>
-        <modifierGroup type="and">
-          <comment>Warpstone Tokens</comment>
-          <modifierGroups>
-            <modifierGroup type="and">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="self" childId="fc28-3af2-d37a-d07e" shared="true" includeChildSelections="true"/>
-              </conditions>
-              <modifiers>
-                <modifier type="decrement" value="40" field="ecfa-8486-4f6c-c249"/>
-              </modifiers>
-              <comment>LVL 4</comment>
-            </modifierGroup>
-            <modifierGroup type="and">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="self" childId="cb6c-c69a-5c73-97e8" shared="true" includeChildSelections="true"/>
-              </conditions>
-              <modifiers>
-                <modifier type="decrement" value="30" field="ecfa-8486-4f6c-c249"/>
-              </modifiers>
-              <comment>LVL 3</comment>
-            </modifierGroup>
-            <modifierGroup type="and">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="self" childId="fbc2-5115-f240-7367" shared="true" includeChildSelections="true"/>
-              </conditions>
-              <modifiers>
-                <modifier type="decrement" value="20" field="ecfa-8486-4f6c-c249"/>
-              </modifiers>
-              <comment>LVL 2</comment>
-            </modifierGroup>
-            <modifierGroup type="and">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="self" childId="98f3-4b6d-e395-80f6" shared="true" includeChildSelections="true" childName="Magic Level 1"/>
-              </conditions>
-              <modifiers>
-                <modifier type="decrement" value="10" field="ecfa-8486-4f6c-c249"/>
-              </modifiers>
-              <comment>LVL 1</comment>
-            </modifierGroup>
-          </modifierGroups>
-        </modifierGroup>
-      </modifierGroups>
     </selectionEntry>
     <selectionEntry id="08c1-a580-7e93-b84b" name="Master Assassin" publicationId="f804-741f-2593-2dec" page="76" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
@@ -5160,7 +5070,6 @@ Warp Lightning is a magic missile with a range of 24&quot; It can be cast at a c
           </constraints>
           <entryLinks>
             <entryLink id="1458-727c-d7b6-d694" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="e4b1-5857-9d82-17de" type="selectionEntryGroup"/>
-            <entryLink id="95d9-7c09-8888-4b99" name="Arcane Items (SK-AB + Common)" hidden="false" collective="false" import="true" targetId="a18f-f748-fc50-5097" type="selectionEntryGroup"/>
             <entryLink id="1416-ed14-8aba-c280" name="Magic Talismans" hidden="false" collective="false" import="true" targetId="e52c-c54c-35bc-9c8e" type="selectionEntryGroup"/>
             <entryLink id="0771-22af-cafd-b3b6" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="dbce-3caf-2139-09ee" type="selectionEntryGroup"/>
             <entryLink import="true" name="Magic Armour" hidden="false" id="e10b-769d-243f-4d5d" collective="false" targetId="3aa2-a354-e221-9114" type="selectionEntryGroup"/>
@@ -5250,101 +5159,12 @@ Warp Lightning is a magic missile with a range of 24&quot; It can be cast at a c
             <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="6"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Magic Level 4" hidden="false" id="0acb-6aec-1854-daa9" type="selectionEntry" targetId="fc28-3af2-d37a-d07e">
-          <costs>
-            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
-          </costs>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6ebb-63d9-47c2-6d85" includeChildSelections="false"/>
-          </constraints>
-          <modifierGroups>
-            <modifierGroup type="and">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="unit" childId="158f-d753-59e2-9ad2" shared="true" includeChildSelections="true"/>
-              </conditions>
-              <modifiers>
-                <modifier type="decrement" value="10" field="ecfa-8486-4f6c-c249"/>
-              </modifiers>
-              <comment>Compensate Warpstone Tokens - LVL 1</comment>
-            </modifierGroup>
-            <modifierGroup type="and">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="unit" childId="fc28-3af2-d37a-d07e" shared="true" includeChildSelections="true"/>
-              </conditions>
-              <modifiers>
-                <modifier type="decrement" value="40" field="ecfa-8486-4f6c-c249"/>
-              </modifiers>
-              <comment>Compensate Warpstone Tokens - LVL 4</comment>
-            </modifierGroup>
-            <modifierGroup type="and">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="unit" childId="cb6c-c69a-5c73-97e8" shared="true" includeChildSelections="true"/>
-              </conditions>
-              <modifiers>
-                <modifier type="decrement" value="30" field="ecfa-8486-4f6c-c249"/>
-              </modifiers>
-              <comment>Compensate Warpstone Tokens - LVL 3</comment>
-            </modifierGroup>
-            <modifierGroup type="and">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="unit" childId="fbc2-5115-f240-7367" shared="true" includeChildSelections="true"/>
-              </conditions>
-              <modifiers>
-                <modifier type="decrement" value="20" field="ecfa-8486-4f6c-c249"/>
-              </modifiers>
-              <comment>Compensate Warpstone Tokens - LVL 2</comment>
-            </modifierGroup>
-          </modifierGroups>
-        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="130"/>
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="4"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="2"/>
       </costs>
-      <modifierGroups>
-        <modifierGroup type="and">
-          <comment>Warpstone Tokens</comment>
-          <modifierGroups>
-            <modifierGroup type="and">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="self" childId="fc28-3af2-d37a-d07e" shared="true" includeChildSelections="true"/>
-              </conditions>
-              <modifiers>
-                <modifier type="decrement" value="40" field="ecfa-8486-4f6c-c249"/>
-              </modifiers>
-              <comment>LVL 4</comment>
-            </modifierGroup>
-            <modifierGroup type="and">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="self" childId="cb6c-c69a-5c73-97e8" shared="true" includeChildSelections="true"/>
-              </conditions>
-              <modifiers>
-                <modifier type="decrement" value="30" field="ecfa-8486-4f6c-c249"/>
-              </modifiers>
-              <comment>LVL 3</comment>
-            </modifierGroup>
-            <modifierGroup type="and">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="self" childId="fbc2-5115-f240-7367" shared="true" includeChildSelections="true"/>
-              </conditions>
-              <modifiers>
-                <modifier type="decrement" value="20" field="ecfa-8486-4f6c-c249"/>
-              </modifiers>
-              <comment>LVL 2</comment>
-            </modifierGroup>
-            <modifierGroup type="and">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="self" childId="98f3-4b6d-e395-80f6" shared="true" includeChildSelections="true" childName="Magic Level 1"/>
-              </conditions>
-              <modifiers>
-                <modifier type="decrement" value="10" field="ecfa-8486-4f6c-c249"/>
-              </modifiers>
-              <comment>LVL 1</comment>
-            </modifierGroup>
-          </modifierGroups>
-        </modifierGroup>
-      </modifierGroups>
     </selectionEntry>
     <selectionEntry id="24c1-0452-6d24-9e02" name="Festering Chantor" publicationId="f804-741f-2593-2dec" page="78" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
