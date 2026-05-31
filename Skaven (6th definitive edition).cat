@@ -550,6 +550,11 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="2ac5-0165-8a9e-8942" shared="true" includeChildSelections="true" childName="Bubonic Court of Nurglitch (LUS)"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <infoLinks>
         <infoLink id="fc28-ad7b-ff7d-ba63" name="Clanrat" hidden="false" targetId="f88e-f6a6-f847-00c1" type="profile"/>
@@ -1787,6 +1792,11 @@
             <repeat field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="736a-30de-d314-9262" repeats="1" roundUp="false"/>
           </repeats>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="2ac5-0165-8a9e-8942" shared="true" includeChildSelections="true" childName="Bubonic Court of Nurglitch (LUS)"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <modifierGroups>
         <modifierGroup>
@@ -1952,6 +1962,11 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="2ac5-0165-8a9e-8942" shared="true" includeChildSelections="true" childName="Bubonic Court of Nurglitch (LUS)"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <modifierGroups>
         <modifierGroup>
@@ -2093,6 +2108,11 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="2ac5-0165-8a9e-8942" shared="true" includeChildSelections="true" childName="Bubonic Court of Nurglitch (LUS)"/>
+          </conditions>
         </modifier>
       </modifiers>
       <constraints>
@@ -8321,9 +8341,14 @@ no armour saves.</description>
           </conditions>
         </modifier>
         <modifier type="increment" field="d54b-c4e1-a6e0-c40a" value="1">
-          <conditions>
-            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b635-7643-5094-5520" type="equalTo"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="b635-7643-5094-5520" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="0" field="selections" scope="force" childId="2ac5-0165-8a9e-8942" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Bubonic Court of Nurglitch (LUS)"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
         <modifier type="add" field="category" value="7aa6-96b4-5b49-d7d9">
           <conditions>
