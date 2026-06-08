@@ -795,38 +795,6 @@ Quatar</comment>
     </categoryEntry>
     <categoryEntry name="BP Infantry 10+" id="6ad6-f54e-1867-00a7" hidden="true"/>
   </categoryEntries>
-  <forceEntries>
-    <forceEntry id="b893-4403-5590-827a" name="." hidden="true">
-      <modifiers>
-        <modifier type="add" value="Small Warbands may not field more than 8 units." field="error">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="greaterThan" value="8" field="selections" scope="force" childId="unit" shared="true" includeChildSelections="true" childName="unit"/>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="3801-7137-c0e9-2614" shared="true" includeChildSelections="true" childName="Warbands rules"/>
-                <condition type="lessThan" value="200" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="any" shared="true" includeChildSelections="true" childName="Warbands rules" includeChildForces="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-          <comment>Warbands (small)</comment>
-        </modifier>
-        <modifier type="add" value="Big Warbands may not field more than 10 units." field="error">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="greaterThan" value="10" field="selections" scope="force" childId="unit" shared="true" includeChildSelections="true" childName="unit"/>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="3801-7137-c0e9-2614" shared="true" includeChildSelections="true" childName="Warbands rules"/>
-                <condition type="atLeast" value="200" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="any" shared="true" includeChildSelections="true" childName="Warbands rules" includeChildForces="true"/>
-                <condition type="lessThan" value="500" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="any" shared="true" includeChildSelections="true" childName="Warbands rules" includeChildForces="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-          <comment>Warbands (big)</comment>
-        </modifier>
-      </modifiers>
-      <comment>basic comp categories</comment>
-    </forceEntry>
-  </forceEntries>
   <sharedSelectionEntries>
     <selectionEntry id="e9ad-f1ce-aebf-6d23" name="Battle Standard Bearer" publicationId="315e-e3c4-08af-fd51" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
