@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="0d13-7737-ea86-4662" name="Warhammer Fantasy Battles (6th definitive edition)" revision="1" battleScribeVersion="2.03" authorName="Lexicanum Imperialis" authorContact="lexicanum.imperialis@gmail.com" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="0d13-7737-ea86-4662" name="Warhammer Fantasy Battles (6th definitive edition)" revision="2" battleScribeVersion="2.03" authorName="Lexicanum Imperialis" authorContact="lexicanum.imperialis@gmail.com" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <publications>
     <publication id="315e-e3c4-08af-fd51" name="BRB" shortName="Warhammer Rulebook 6th Edition" publisher="by Rick Priestly and Tuomas Pirinen" publicationDate="2000" publisherUrl="Games-Workshop"/>
     <publication id="91c2-b862-8010-87bb" name="CR-03" shortName="Warhammer Chronicles (2003)" publisher="Jake Thornton &amp; Alessio Cavatore" publicationDate="2003" publisherUrl="Games-Workshop"/>
