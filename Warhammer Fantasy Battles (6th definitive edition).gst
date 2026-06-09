@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="0d13-7737-ea86-4662" name="Warhammer Fantasy Battles (6th definitive edition)" revision="1" battleScribeVersion="2.03" authorName="Lexicanum Imperialis" authorContact="lexicanum.imperialis@gmail.com" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="0d13-7737-ea86-4662" name="Warhammer Fantasy Battles (6th definitive edition)" revision="1" battleScribeVersion="2.03" authorName="Lexicanum Imperialis" authorContact="lexicanum.imperialis@gmail.com" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem" authorUrl="https://karaknornwargaming.blogspot.com/p/warhammer-6th-faq-norn-consensus.html">
   <publications>
     <publication id="315e-e3c4-08af-fd51" name="BRB" shortName="Warhammer Rulebook 6th Edition" publisher="by Rick Priestly and Tuomas Pirinen" publicationDate="2000" publisherUrl="Games-Workshop"/>
     <publication id="91c2-b862-8010-87bb" name="CR-03" shortName="Warhammer Chronicles (2003)" publisher="Jake Thornton &amp; Alessio Cavatore" publicationDate="2003" publisherUrl="Games-Workshop"/>
@@ -17626,4 +17626,43 @@ The spell cannot affect Undead targets, Chaos Daemons or Unbreakable units. Unit
       <comment>WIP</comment>
     </selectionEntry>
   </selectionEntries>
+  <readme># Warhammer Fantasy Battles (6th Definitive Edition) Data Repository
+
+Official open-source data repository for the maintenance, validation, and curation of **Warhammer Fantasy Battles (6th Definitive Edition)** list-building files. Designed for seamless execution within **NewRecruit**, BattleScribe, and compliant community roster engines.
+
+This ecosystem enforces the **6th Edition Standard**, integrating official Games Workshop errata alongside the Direwolf Council interpretations and the system-stabilizing **Norn Consensus** rules resolutions.
+
+---
+
+## ⚙️ Core System Architecture
+
+This repository acts as the single source of truth for competitive 6th Edition environments. The compiled data nodes structure the game logic across two distinct layers:
+
+### 1. The 6th Edition Standard (The Baseline)
+* Encodes the complete array of 6th Edition army lists, rules, equipment, and point costs.
+* Fully implements official historical errata up to the *Warhammer Chronicles 2004* and Direwolf Council precedents.
+* Resolves legacy engine errors natively—including explicit profile decoupling for complex unique entities (e.g., Sehenesmet, Vizier of Quatar) to ensure proper inline rendering in NewRecruit.
+
+### 2. The Norn Consensus Rules Toggles
+* Integrates a global, selectable ruleset flag directly into the repository metadata: `Configuration: Apply Norn Consensus Resolutions`.
+* **Mechanical Coexistence:** Hardcodes the binary taxonomy separating *Innate/Permanent Profile Traits* (Vows, Virtues, Marks, Vampiric Powers) from *External/Temporary Modifiers* (Magic Standards, Auras). Enforces that innate unit psychology (such as printed *Stubborn* on Wood Elf Treemen or Empire Greatswords) is never suppressed by external immunity auras (such as Volkmar&apos;s War Altar).
+* **Scale Balancing:** Automatically adapts mechanics for tactical escalations and Border Patrol constraints, allowing traditionally Lord-mandatory rosters to deploy a tailored, balanced Hero-version to lead their forces.
+
+---
+
+## 📚 Official Public Wiki &amp; Documentation
+The documentation layer for this repository is automatically generated and pushed live to ensure complete scannability for tabletop players:
+🔗 **Visit the Official [NewRecruit WFB 6th Definitive Edition Wiki](https://www.newrecruit.eu/wiki/warhammer-fantasy-battles-6th-definitive-edition/warhammer-fantasy-battles-(6th-definitive-edition))**
+
+Use the Wiki to audit the full legal text of the Norn Consensus FAQ, review historical rules excavations and cross-examine system errata.
+
+---
+
+## 🛠️ Data Maintenance &amp; System Signature
+* **System Maintainer:** [Your Name / Organization Signature]
+* **Repository Target:** `warhammer-fantasy-battles-6th-definitive-edition`
+* **Data Format:** XML / `.cat` (Catalogs) &amp; `.gst` (Game Systems) compliant with modern NewRecruit schemas.
+
+## 🤝 Community Governance &amp; Contributions
+We curate and conserve the mechanical reasoning and competitive resolutions. If you locate data bugs, missing item properties, or inconsistencies with the Norn Consensus standard, please submit an issue or open a Pull Request directly against our production branches.</readme>
 </gameSystem>
