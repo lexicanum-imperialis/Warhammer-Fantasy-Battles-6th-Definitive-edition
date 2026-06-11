@@ -7541,6 +7541,14 @@ The War Altar still prevents the unit from being affected by external Psychology
 The Banner of Sigismund is a Magic Standard attempting to grant Stubborn to a unit that is Immune to Psychology. There is no Magic vs. Mundane trump. The banner has no effect while the unit is Immune to Psychology.
 **Source:** `[Warhammer Chronicles 2004 page 116]`
 
+### BEASTS OF CHAOS
+**Q:** Can a Beasts of Chaos Herd arriving via Ambush deploy in a single-file line stretched along the board edge to maximize its footprint and set up selective charges?
+**Ruling:** No. Ambushing units enter the board from a marked point "in the same way as if they had pursued an enemy off the table".
+Official design intent dictates that the unit must physically expend its Movement characteristic to pull its models onto the table from that specific entry point.
+Because they arrive during the Remaining Moves phase, the window to declare a charge has already closed for that turn.
+Furthermore, if the unit has a massive footprint and lacks the movement to fully bring its entire skirmish formation onto the board from that single point, the remaining models are "fudged" into the back of the formation, rather than being illegally strung out along the table edge.
+**Source**: [Beasts of Chaos Army Book page 18 / Gav Thorpe - Warhammer Design Team / Direwolf FAQ Council / The Norn Consensus Historical Precedent]
+
 ### BRETONNIAN
 **Q:** Can a Bretonnian character benefit from both the *Grail Vow* and the *Virtue of the Penitent*?
 **Ruling:** Yes, if the character is otherwise legally built.
