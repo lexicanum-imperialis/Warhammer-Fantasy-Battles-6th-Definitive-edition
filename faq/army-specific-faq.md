@@ -1,4 +1,4 @@
-# 📜 Warhammer Fantasy Battles (6th Edition): Army Books & Faction FAQ Archive
+﻿# 📜 Warhammer Fantasy Battles (6th Edition): Army Books & Faction FAQ Archive
 
 This document serves as the definitive digital ledger for faction-specific rules in Warhammer Fantasy Battles 6th Edition. It compiles official Games Workshop Army Book Errata, the historical Direwolf Armies FAQ, the Great Lakes Warhammer League (GLWL) tournament precedents, and The Norn Consensus required to resolve faction edge-cases for engine compatibility.
 
@@ -7526,23 +7526,23 @@ S. Warhammer Chronicles 2004 page 12
 
 ### EMPIRE
 
-**Q:** Are Empire Greatswords within 12" of Volkmar’s War Altar still *Stubborn*?
+**Q:** Are Empire Greatswords within 12" of Volkmar's War Altar still *Stubborn*?
 
-**Ruling:** Yes. Greatswords have Stubborn as a printed rule in their own army-list entry. Volkmar’s War Altar grants Immune to Psychology to Empire units within 12", but it does not say that it removes existing Stubborn rules.
+**Ruling:** Yes. Greatswords have Stubborn as a printed rule in their own army-list entry. Volkmar's War Altar grants Immune to Psychology to Empire units within 12", but it does not say that it removes existing Stubborn rules.
 
-Therefore, Greatswords within 12" of Volkmar’s War Altar are both *Immune to Psychology* and *Stubborn*.
+Therefore, Greatswords within 12" of Volkmar's War Altar are both *Immune to Psychology* and *Stubborn*.
 
 They may not choose Flee as a charge reaction while Immune to Psychology. If they are required to take a Break test, they use Stubborn as normal.
 
-This is not the same as the Banner of Sigismund FAQ. The Banner of Sigismund is a Magic Standard trying to grant Stubborn to a unit that is already Immune to Psychology. Volkmar’s War Altar grants Immune to Psychology to a unit that already has Stubborn printed in its own entry.
+This is not the same as the Banner of Sigismund FAQ. The Banner of Sigismund is a Magic Standard trying to grant Stubborn to a unit that is already Immune to Psychology. Volkmar's War Altar grants Immune to Psychology to a unit that already has Stubborn printed in its own entry.
 
 **Source:** `[Empire Army Book / Warhammer Annual 2002 page 60 / Rulebook pages 74, 80, 85 & 112 / Warhammer Chronicles 2004 page 116 / Direwolf FAQ Council Interpretation / The Norn Consensus Historical Precedent]`
 
 ---
 
-**Q:** Does Volkmar’s War Altar suppress *Hatred*, *Stubborn*, *Frenzy*, *Stupidity* or similar rules already possessed by an Empire unit?
+**Q:** Does Volkmar's War Altar suppress *Hatred*, *Stubborn*, *Frenzy*, *Stupidity* or similar rules already possessed by an Empire unit?
 
-**Ruling:** No, not by itself. Volkmar’s War Altar grants Immune to Psychology. It does not say that it removes other Psychology rules already possessed by affected units.
+**Ruling:** No, not by itself. Volkmar's War Altar grants Immune to Psychology. It does not say that it removes other Psychology rules already possessed by affected units.
 
 Therefore, an Empire unit affected by the War Altar keeps any native or permanent non-magic-item Psychology rules it already has.
 
@@ -7562,35 +7562,55 @@ The Banner of Sigismund is a Magic Standard attempting to grant Stubborn to a un
 
 ---
 
-### HORDES OF CHAOS / BEASTS OF CHAOS
+**Q:** Can an Empire Parent unit declare a support-fire or counter-charge reaction if its Detachment is charged by the enemy?
 
-**Q:** Can a Chaos character bearing a dedicated Mark of Chaos, such as the Mark of Khorne, legally join a completely unmarked unit, such as Marauders or a Beast Herd?
+**Ruling:** No. The special rules for Detachments explicitly allow the Detachment to fire in support or counter-charge when the *Parent* unit is charged. The rules do not work in reverse; Parent units cannot perform these special reactions when their Detachments are charged.
 
-**Ruling:** Yes. A marked Chaos character may join an unmarked unit unless a specific rule forbids it.
-
-Official Warhammer Design Team rulings allow marked Chaos characters to join unmarked units such as Marauders and Chaos Hounds. The restriction applies when the character attempts to join a unit, ride a chariot, or otherwise combine with a model or unit that already has a different Mark of Chaos.
-
-An unmarked unit has no Mark and therefore creates no alignment conflict. By contrast, a unit or chariot that inherently has a Mark, such as a Tuskgor Chariot with the Mark of Chaos Undivided, follows the normal restrictions for different Marks.
-
-**Source:** `[Gav Thorpe - Warhammer Design Team / Hordes of Chaos FAQ / Beasts of Chaos FAQ / The Norn Consensus Historical Precedent]`
+**Source:** `[The Norn Consensus Historical Precedent / Empire Army Book]`
 
 ---
 
-**Q:** If a Chaos character bearing the Mark of Chaos Undivided joins a unit that does not have the Mark, does the unit benefit from the Mark’s ability to re-roll failed Psychology tests?
+**Q:** How is an Empire Steam Tank affected by spells or magical effects that do not have a defined Strength value, such as the *Brass Orb*, the *Hand of Dust*, or the Skaven *Screaming Bell*?
 
-**Ruling:** No. The unit may use the character’s Leadership if the normal character-and-unit Leadership rules allow it, but the Psychology test is still being taken by the unit.
+**Ruling:** The Steam Tank is completely immune to any spell or magical effect that does not attack it with a given Strength value. Spells that instantly destroy models (like *Hand of Dust*) or items that force Initiative tests (like the *Brass Orb*) have no effect on the Steam Tank, as it does not have standard characteristics to test against. For effects like the Skaven *Screaming Bell* that cause Structure Points damage, translate Structure Points directly to Wounds.
 
-A character’s specific psychological immunities, re-rolls or special Psychology rules do not transfer to a unit he has joined unless the rule explicitly states that they do. Because the unit itself does not have the Mark of Chaos Undivided, it cannot claim the Mark’s re-roll.
+**Source:** `[The Norn Consensus Historical Precedent / Empire FAQ]`
 
-For example, a Doombull with the Mark of Chaos Undivided joining an unmarked unit of Bestigors does not give that unit the Mark’s Psychology re-roll. The Bestigors may use the Doombull’s Leadership where normally permitted, but they do not count as having the Mark of Chaos Undivided.
+---
+
+**Q:** The Steam Tank's main cannon has a maximum guess range of 16". If a player legally guesses 16" but the subsequent Artillery Dice roll carries the cannonball beyond that maximum, does the cannonball disappear?
+
+**Ruling:** No. The range limitation dictates the maximum distance the player is allowed to guess. Once a legal guess is made and the first Artillery Die establishes the point of impact, the bounce generated by the second Artillery Die is resolved exactly like a normal cannon, even if it carries the cannonball further than the tank's maximum 16" guess capability.
+
+**Source:** `[The Norn Consensus Historical Precedent / Empire FAQ]`
+
+---
+
+### HORDES OF CHAOS / BEASTS OF CHAOS
+
+**Q:** If a Chaos character bearing the Mark of Chaos Undivided joins a unit that does not have the Mark, does the unit benefit from the Mark's ability to re-roll failed Psychology tests?
+
+**Ruling:** No. The unit may use the character's Leadership if the normal character-and-unit Leadership rules allow it, but the Psychology test is still being taken by the unit.
+
+A character's specific psychological immunities, re-rolls or special Psychology rules do not transfer to a unit he has joined unless the rule explicitly states that they do. Because the unit itself does not have the Mark of Chaos Undivided, it cannot claim the Mark's re-roll.
+
+For example, a Doombull with the Mark of Chaos Undivided joining an unmarked unit of Bestigors does not give that unit the Mark's Psychology re-roll. The Bestigors may use the Doombull's Leadership where normally permitted, but they do not count as having the Mark of Chaos Undivided.
 
 **Source:** `[Beasts of Chaos Army Book / Hordes of Chaos Army Book / White Dwarf 252 / White Dwarf 259 / Rulebook page 100 / Direwolf FAQ Council Interpretation / The Norn Consensus Historical Precedent]`
 
 ---
 
+**Q:** In a Storm of Chaos Daemonic Legion army, Daemons are granted an improved 5+ *Daemonic Aura* Ward Save. Does this improved save protect them against magical attacks and spells?
+
+**Ruling:** No. Although the Daemonic Aura is improved to a 5+ Ward Save in a Daemonic Legion list, it still retains the core Daemonic restriction: the Ward Save cannot be used against any magical attacks, including spells and magic items.
+
+**Source:** `[The Norn Consensus Historical Precedent / Storm of Chaos Book page 27 / Hordes of Chaos Army Book]`
+
+---
+
 ### TOMB KINGS
 
-**Q:** If a Screaming Skull Catapult’s crew is reduced by enemy fire, but crew models are restored by the Incantation of Summoning during the Magic phase, can the machine fire in the subsequent Shooting phase?
+**Q:** If a Screaming Skull Catapult's crew is reduced by enemy fire, but crew models are restored by the Incantation of Summoning during the Magic phase, can the machine fire in the subsequent Shooting phase?
 
 **Ruling:** Yes, provided the machine has sufficient restored crew to operate when the Shooting phase begins.
 
@@ -7602,17 +7622,33 @@ This is not the same as a different unit moving to re-crew an abandoned war mach
 
 ---
 
+**Q:** Can magic items or runes that destroy a spell on a certain dice roll, such as the Dwarf *Spelleater Rune*, permanently destroy a Tomb Kings Incantation or the *Casket of Souls*?
+
+**Ruling:** No. Tomb Kings Incantations and the *Casket of Souls* are innate magical abilities, not conventional spells. Items that specifically destroy spells have no effect on the *Casket of Souls* or a Liche Priest's Incantations, even if those items can normally destroy bound spells.
+
+**Source:** `[The Norn Consensus Historical Precedent / Warhammer Chronicles 2004 page 116]`
+
+---
+
+**Q:** Can a Tomb Kings Liche Priest or High Priest be equipped with Magic Armour such as *Scorpion Armour*?
+
+**Ruling:** No. The core rules state that characters who do not have the option to be equipped with mundane armour cannot choose to wear Magic Armour. Because Liche Priests cannot take mundane armour, they are barred from selecting any Magic Armour.
+
+**Source:** `[The Norn Consensus Historical Precedent / Rulebook page 152 / Tomb Kings Army Book]`
+
+---
+
 ### BEASTS OF CHAOS
 
 **Q:** Can a Beasts of Chaos Herd arriving via Ambush deploy in a single-file line stretched along the board edge to maximize its footprint and set up selective charges?
 
-**Ruling:** No. Ambushing units enter the board from a marked point “in the same way as if they had pursued an enemy off the table”.
+**Ruling:** No. Ambushing units enter the board from a marked point "in the same way as if they had pursued an enemy off the table".
 
 Official design intent dictates that the unit must physically expend its Movement characteristic to pull its models onto the table from that specific entry point.
 
 Because they arrive during the Remaining Moves phase, the window to declare a charge has already closed for that turn.
 
-Furthermore, if the unit has a massive footprint and lacks the movement to fully bring its entire skirmish formation onto the board from that single point, the remaining models are “fudged” into the back of the formation, rather than being illegally strung out along the table edge.
+Furthermore, if the unit has a massive footprint and lacks the movement to fully bring its entire skirmish formation onto the board from that single point, the remaining models are "fudged" into the back of the formation, rather than being illegally strung out along the table edge.
 
 **Source:** `[Beasts of Chaos Army Book page 18 / Gav Thorpe - Warhammer Design Team / Direwolf FAQ Council / The Norn Consensus Historical Precedent]`
 
@@ -7627,6 +7663,45 @@ The Beasts of Chaos rules state that a Shaggoth Champion is treated exactly like
 However, the same rules state that a Shaggoth Champion cannot take any Magic Items.
 
 **Source:** `[Beasts of Chaos Army Book pages 26 & 70 / The Norn Consensus Historical Precedent]`
+
+---
+
+**Q:** Is a *Braystaff* always considered a two-handed weapon?
+
+**Ruling:** No. The *Braystaff* is a versatile weapon. A character must choose how to wield it at the start of close combat. It can be used offensively as a two-handed weapon, granting +1 Strength and requiring both hands, or it can be used defensively alongside a normal hand weapon, granting a +1 Armour Save in close combat and functioning mechanically like a shield.
+
+**Source:** `[The Norn Consensus Historical Precedent / Beasts of Chaos Army Book page 62]`
+
+---
+
+**Q:** Does the Beasts of Chaos magic item *Fur of Sharrgu* replace a character's mundane armour or stack with it? Can a Bray-Shaman wear it?
+
+**Ruling:** Magic Armour always replaces mundane armour unless explicitly stated otherwise in the item's description, as with the *Enchanted Shield*. Therefore, the *Fur of Sharrgu* does not stack with mundane armour. Furthermore, because Bray-Shamans do not have the option to wear mundane armour in their profile, they are legally barred from selecting the *Fur of Sharrgu* or any other Magic Armour.
+
+**Source:** `[The Norn Consensus Historical Precedent / Rulebook page 152 / Beasts of Chaos Army Book]`
+
+---
+
+**Q:** If a Beastmen combat character such as a Wargor is given the Mark of Tzeentch, making him a Sorcerer, does this grant him access to Bray-Shaman-specific equipment such as the *Braystaff* or the *Staff of Darkoth*?
+
+**Ruling:** No. The Mark of Tzeentch grants the character spellcasting abilities and the Sorcerer classification but does not change his fundamental character class. He remains a Wargor or Doombull and therefore may not select magic items specifically restricted to Bray-Shamans.
+
+**Source:** `[The Norn Consensus Historical Precedent / Beasts of Chaos Army Book]`
+
+---
+
+**Q:** How does the "Storm Rage" special rule for Dragon Ogres and Shaggoths interact with lightning-based spells and attacks, and which specific attacks trigger this immunity?
+
+**Ruling:** Dragon Ogres and Shaggoths are immune to all lightning-based attacks and spells. When targeted or hit by one, they suffer no damage or effects from the attack and immediately become frenzied. In the case of the Shaggoth, it becomes frenzied even though it normally has the Immune to Psychology special rule.
+Based on the rules and descriptions across the army books, the following specific attacks and spells are considered lightning-based and will trigger _Storm Rage_:
+- **Lore of Heavens**: Forked Lightning and _Storm of Cronos_ (explicitly named in the _Storm Rage_ rule), as well as _Uranon's Thunder Bolt_ (which strikes the unit with a thunder bolt).
+- **Skaven (Clan Skryre)**: The Warp-lightning Cannon, the Warp Lightning spell, and the Storm Daemon arcane item (which casts a bound Warp Lightning spell). The rule explicitly names "Skaven warp-lightning attacks".
+- **Dwarfs**: The _Anvil of Doom_'s runic power _Rune of Air_ (which causes a storm of lightning to cascade down upon the unit).
+- **Hordes of Chaos**: The _Banner of Wrath_ magic standard (which contains a bound spell that lashes the enemy with forks of magical lightning).
+- **Lizardmen**: The _Rod of the Storm_ arcane item (which unleashes crackling branches of lightning).
+(Note: Magic items from other armies that contain bound spells or attacks explicitly described as projecting lightning will follow this exact same rule).
+
+**Source:** `[Warhammer Armies: Beasts of Chaos page 26 / Warhammer Armies: Skaven pages 28, 35 & 38 / Warhammer Armies: Dwarfs page 9 / Warhammer Armies: Hordes of Chaos page 53 / Warhammer Armies: Lizardmen page 55 / Warhammer Chronicles 2004 page 94]`
 
 ---
 
@@ -7658,6 +7733,30 @@ This is treated as a permanent non-magic-item army-list combination, not as a Ma
 
 ---
 
+**Q:** What equipment is a Bretonnian Paladin Battle Standard Bearer legally allowed to take? Can they take a lance, shield, or magic weapons?
+
+**Ruling:** A Bretonnian BSB cannot be equipped with mundane two-handed weapons, a lance, or a mundane shield. They may only carry a hand weapon and heavy armour. However, they may purchase Magic Weapons and Magic Armour, including Magic Shields, from their magic item allowance, provided they are not carrying a Magic Standard. They may also take Virtues and Vows normally.
+
+**Source:** `[The Norn Consensus Historical Precedent / Bretonnia Army Book page 66 / Rulebook page 102]`
+
+---
+
+**Q:** In small games such as 500-point Border Patrol games, Bretonnian armies are still required to take a Battle Standard Bearer. Does this character take up the single Hero slot allowed in these formats, or are they a free addition?
+
+**Ruling:** The Battle Standard Bearer is a mandatory inclusion for any Bretonnian army. In low-point formats restricted to a single Hero character, the BSB is that single Hero choice. They do not receive a free extra Hero slot simply because the BSB is mandatory; the Bretonnian player must field the BSB as their designated Hero and army commander.
+
+**Source:** `[The Norn Consensus Historical Precedent / Bretonnia Army Book]`
+
+---
+
+**Q:** If a Bretonnian Lance formation moves forward and its geometric footprint contacts a small, unengaged unit of Skirmishers or a lone character with Unit Strength 1 or 2 that the leader could not see, is the Lance blocked?
+
+**Ruling:** No. To prevent light units from artificially trapping the cumbersome Lance formation, the official "Make Way, Peasants!" rule applies. The light unit is simply moved slightly aside to create just enough space for the Lance to pass through. If a unit of Skirmishers is split in two by this, they must reform into a legal formation in their next Movement phase.
+
+**Source:** `[The Norn Consensus Historical Precedent / Warhammer Chronicles 2001 (White Dwarf 260) / Bretonnia Errata]`
+
+---
+
 ### STORM OF CHAOS - CULT OF SLAANESH
 
 **Q:** If Cold One Knights or a character riding a Cold One are given the Mark of Slaanesh in a Cult of Slaanesh army, does the resulting Immune to Psychology rule cancel out their Stupidity?
@@ -7666,7 +7765,7 @@ This is treated as a permanent non-magic-item army-list combination, not as a Ma
 
 The Cult of Slaanesh special rules explicitly state that units or characters with the Mark of Slaanesh and riding Cold Ones are still subject to Stupidity.
 
-This also aligns with the Norn Consensus ruling on Immune to Psychology: native or permanent army-list Psychology rules are not suppressed merely because the model or unit also gains Immune to Psychology from a permanent non-magic army-list upgrade. In this case, the Cold One’s Stupidity remains in force despite the Mark of Slaanesh.
+This also aligns with the Norn Consensus ruling on Immune to Psychology: native or permanent army-list Psychology rules are not suppressed merely because the model or unit also gains Immune to Psychology from a permanent non-magic army-list upgrade. In this case, the Cold One's Stupidity remains in force despite the Mark of Slaanesh.
 
 **Source:** `[Storm of Chaos Cult of Slaanesh Special Rules / The Norn Consensus Psychology Ruling]`
 
@@ -7678,7 +7777,7 @@ This also aligns with the Norn Consensus ruling on Immune to Psychology: native 
 
 **Ruling:** Yes. A Treeman has Forest Spirit and Stubborn in its own unit entry. Forest Spirit makes it Immune to Psychology, and Stubborn is also part of its printed rules.
 
-Because both rules are native to the creature’s profile and not the result of a Magic Item or Magic Standard, they do not trigger the Magic vs. Mundane cancellation principle from the Empire FAQ. The Treeman takes Stubborn Break tests on unmodified Leadership while simultaneously ignoring Psychology tests as normal.
+Because both rules are native to the creature's profile and not the result of a Magic Item or Magic Standard, they do not trigger the Magic vs. Mundane cancellation principle from the Empire FAQ. The Treeman takes Stubborn Break tests on unmodified Leadership while simultaneously ignoring Psychology tests as normal.
 
 **Source:** `[Rulebook pages 85 & 112 / Wood Elves Army Book / Warhammer Chronicles 2004 page 116 / Direwolf FAQ Council Interpretation / The Norn Consensus Historical Precedent]`
 
@@ -7693,3 +7792,208 @@ A Treeman has both Forest Spirit and Stubborn in its own unit entry. Neither rul
 The Treeman is therefore both *Immune to Psychology* and *Stubborn*.
 
 **Source:** `[Wood Elves Army Book / Warhammer Chronicles 2004 page 116 / Direwolf FAQ Council Interpretation / The Norn Consensus Historical Precedent]`
+
+---
+
+**Q:** Wood Elves natively ignore movement penalties for moving through woods. Does this mean a ranked unit of Wood Elf infantry can declare a march move through a wood, or charge through a wood without penalty?
+
+**Ruling:** No. While they ignore the distance penalty of moving at half rate, they are still subject to the core structural rules governing difficult terrain. Ranked units of Wood Elves still cannot declare a march move if their path goes through a wood, and if they charge through a wood they lose their rank bonuses as normal for fighting in difficult terrain. Only models with the *Skirmishers* special rule are permitted to march through woods.
+
+**Source:** `[The Norn Consensus Historical Precedent / Wood Elves Army Book / Rulebook]`
+
+---
+
+### CHAOS DWARFS
+
+**Q:** Do Hobgoblins count as Greenskins for the effects of the Waaagh! spell, The Hand of Gork, or other Greenskin magic?
+
+**Ruling:** Yes. Hobgoblins are classified as a type of Goblin and therefore count as Greenskins for rules and spells that affect Orc and Goblin units of any type.
+
+They may therefore be affected by Greenskin-targeting magic such as The Hand of Gork and the Waaagh! spell, where those spells refer to Orcs, Goblins, or Greenskin units.
+
+However, Greenskins in a Chaos Dwarf army are slave troops rather than members of a free Orcs & Goblins Waaagh!. They may not use magic banners from the Orcs & Goblins army book unless a specific Chaos Dwarf rule or approved event ruling allows it.
+
+**Source:** `[Warhammer Chronicles 2004 / Ravening Hordes / Direwolf FAQ / The Norn Consensus]`
+
+---
+
+**Q:** Do Hobgoblin Wolf Riders lose the Fast Cavalry rule if their armour save is improved to 5+ or better?
+
+**Ruling:** No. Hobgoblin Wolf Riders do not lose Fast Cavalry because of their armour save.
+
+The Ravening Hordes Chaos Dwarf list states that if Hobgoblins are mounted on wolves, they are Fast Cavalry. No armour-save exception is given.
+
+Therefore, Hobgoblin Wolf Riders may be equipped with light armour and shields without losing Fast Cavalry.
+
+**Source:** `[Ravening Hordes / The Norn Consensus]`
+
+---
+
+**Q:** Can a Chaos Dwarf character join a Hobgoblin unit, and can a Hobgoblin character join a Chaos Dwarf unit? Can either also join Bull Centaur units?
+
+**Ruling:** Yes, unless a specific rule forbids it.
+
+Characters may normally join units regardless of race, mount, or base size unless the rulebook, army book, or unit entry creates a specific restriction.
+
+A Chaos Dwarf character may join a Hobgoblin unit, and a Hobgoblin character may join a Chaos Dwarf unit. A character may also join Bull Centaurs unless prevented by a specific rule.
+
+If a Chaos Dwarf character on foot joins a cavalry-speed unit such as Hobgoblin Wolf Riders or Bull Centaurs, the combined unit moves at the speed of its slowest model.
+
+If a Bull Centaur Hero joins an infantry unit, he is placed in the unit according to his base size and displaces the appropriate number of rank-and-file models. This does not by itself make the infantry unit cavalry, nor does it grant the Bull Centaur any protection or benefit beyond the normal rules for joined characters and model size.
+
+**Source:** `[Rulebook / Warhammer Chronicles 2004 / Beasts of Chaos Army Book / The Norn Consensus]`
+
+---
+
+### DARK ELVES
+
+**Q:** Does the Cauldron of Blood's Red Fury rule, which affects "Any Dark Elf units", apply to non-Elf models in the Dark Elf army list, such as Harpies, War Hydras, monster mounts, or the impact hits and mount attacks of a Cold One Chariot?
+
+**Ruling:** Yes. In this context, "Dark Elf units" is read as an army-list/unit identity, not as a strict racial limitation to models with an Elven profile.
+
+The Cauldron rule does not say "Dark Elf models" or "Elves". It says "Any Dark Elf units", and even adds "including the Guardians", showing that the effect is applied at the unit level rather than by checking the race of each individual model.
+
+Therefore, units selected from the Dark Elf army list are Dark Elf units for this purpose. This includes non-Elf unit profiles and components such as Harpies, War Hydras, Cold Ones, Chariots, ridden monsters, and the Guardians of the Cauldron itself.
+
+Because Red Fury allows affected units to re-roll failed rolls to wound in the first round of any combat, the benefit applies to the whole affected unit footprint. This includes mount attacks and impact hits generated by a Cold One Chariot, provided the unit is within 24" of the Cauldron and otherwise qualifies.
+
+This ruling should not be extended to rules that name a race or creature type directly. A rule that refers to "Orcs and Goblins of all types" is a racial/type reference, not an army-list reference.
+
+**Source:** `[Warhammer Chronicles 2004 page 127 / The Norn Consensus Historical Precedent]`
+
+---
+
+### DOGS OF WAR
+
+**Q:** Can special mercenary characters such as Truthsayers or Dark Emissaries join normal units in the army that hired them? Can the hiring army use their Leadership, or the Leadership of a Mercenary General such as Marco Colombo?
+
+**Ruling:** Yes, they may join normal units following the standard rules for characters. However, as Dogs of War or Mercenary models, they are strictly bound by mercenary character restrictions: units from the main army can never use the Leadership of a mercenary character. Furthermore, a mercenary character can never be the army's General unless the entire army is a dedicated Dogs of War army. Therefore, Marco Colombo's Leadership 10 cannot be passed on to Empire or Tilean units in a standard army.
+
+**Source:** `[The Norn Consensus Historical Precedent / Warhammer Chronicles 2004 (Dark Shadows) / Dogs of War Army List]`
+
+---
+
+### DWARFS
+
+**Q:** If a unit of Dwarf Miners arrives on the battlefield using their Underground Advance rule, can they be struck by the Anvil of Doom's *Rune of Oath and Honour* in the subsequent Shooting phase to declare a charge?
+
+**Ruling:** Yes. While the Miners' special rule states they cannot declare a charge on the turn they arrive (as they arrive in the Remaining Moves phase, after standard charges are declared), the *Rune of Oath and Honour* explicitly allows a unit to make a "normal move (which can be a March or Charge) in the Shooting phase." This magical effect overrides the normal turn sequence and movement restrictions, allowing the newly arrived Miners to declare a charge during the Shooting phase.
+
+**Source:** `[The Norn Consensus Historical Precedent / Dwarfs Army Book (Revised) page 31]`
+
+---
+
+**Q:** Does the Dwarfs' Ancestral Grudge special rule, which causes Dwarfs to hate Orcs and Goblins, also apply to monsters and beasts in an Orcs & Goblins army, such as Trolls, Giants, Squigs, or similar creatures?
+
+**Ruling:** No. Dwarfs do not hate Trolls, Giants, Squigs, or other non-Orc/non-Goblin beasts merely because those models are selected from the Warhammer Armies: Orcs & Goblins army book.
+
+The Dwarf rule specifically states that Dwarfs hate "Orcs and Goblins of all types". This is a racial/model-type reference, not a blanket reference to every unit chosen from the Orcs & Goblins army list.
+
+Therefore, the hatred applies to Orc and Goblin racial subtypes, including recognised Goblin-kin where separately classified as Goblins or Greenskins, but it does not extend to allied monsters, beasts, war machines, chariots, mounts, or handlers' creatures unless those models are themselves Orcs or Goblins.
+
+The Cauldron of Blood precedent does not change this. The Cauldron affects "Any Dark Elf units", which is an army-list/unit identity phrase. By contrast, Ancestral Grudge says Dwarfs hate "Orcs and Goblins of all types", which names specific races or creature types. It therefore applies to Orc and Goblin variants, but not to every creature available in the Orcs & Goblins army list.
+
+Because the rule targets specific races and creature types rather than the army list itself, it universally applies to those racial subtypes wherever they are found. Therefore, Dwarfs will hate Black Orcs and Hobgoblins (which are officially classified as a type of Goblin) serving as troops in a Chaos Dwarf army. Similarly, Dwarfs will always hate Greenskin Mercenaries and Dogs of War, such as Ruglud's Armoured Orcs or other hired Goblinoids, no matter which army has currently paid for their services.
+
+**Source:** `[Warhammer Armies: Dwarfs / Warhammer Armies: Orcs & Goblins pages 18 & 21 / Warhammer Chronicles 2004 page 127 / The Norn Consensus]`
+
+---
+
+**Q:** How do Slayer Doomseekers resolve combat against an enemy model that also inflicts hits before or instead of normal combat, such as a Night Goblin Fanatic or a Skaven Plague Censer Bearer?
+
+**Ruling:** Both models apply their existing rules simultaneously. Against a Fanatic, the Fanatic inflicts its D6 Strength 5 hits and the Doomseeker simultaneously inflicts his one automatic hit back (at -1 to hit per his special rule). Against a Plague Censer Bearer, the Doomseeker strikes first because his *Whirlwind of Death* supersedes other special attacks, but he must still take the mandated Toughness test for touching the Censer at the beginning of the phase.
+
+**Source:** `[The Norn Consensus Historical Precedent / Storm of Chaos Book pages 64 & 67 / Skaven Army Book page 32 / Gav Thorpe - Warhammer Design Team]`
+
+---
+
+### HIGH ELVES
+
+---
+
+### LIZARDMEN
+
+**Q:** If a Lizardmen character attacks with the *Piranha Blade* (doubles unsaved wounds) and also has the *Bane Head* (doubles unsaved wounds against a nominated character), how are the wounds multiplied if he hits the nominated target?
+
+**Ruling:** The multipliers apply to the original base wound separately rather than compounding sequentially. One unsaved wound is doubled by the *Piranha Blade* (+1 wound) and doubled by the *Bane Head* (+1 wound), resulting in a total of 3 wounds inflicted per unsaved hit.
+
+**Source:** `[The Norn Consensus Historical Precedent / Lizardmen Army Book]`
+
+---
+
+**Q:** If a Slann Mage-Priest, which is a Large Target on a 50mm base, joins a unit of Temple Guard or Saurus Warriors, does it benefit from the *Look Out, Sir!* rule or protection from being individually targeted by shooting?
+
+**Ruling:** No. Because the Slann is a different size from the models around it, it can be singled out and targeted separately by enemy missiles and magic. Furthermore, it does not benefit from the *Look Out, Sir!* rule against template weapons such as cannons or stone throwers, though it does grant the +1 To Hit bonus for being a Large Target. Hits on the combined unit from normal shooting that are not specifically targeted at the Slann must be randomized if fewer than 5 rank-and-file models remain in the unit.
+
+**Source:** `[The Norn Consensus Historical Precedent / Warhammer Chronicles 2004 page 119]`
+
+---
+
+**Q:** If a Skink Character is riding a Stegadon, may the unit take *Stubborn* Break tests using the Leadership characteristic of the Skink character?
+
+**Ruling:** Yes. The Lizardmen army book explicitly states that "Stegadons AND THEIR RIDERS are Stubborn." Because the Skink Character is now a Stubborn character part of a Stubborn unit, the unit may utilize the Stubborn character's higher Leadership value when taking its Break tests.
+
+**Source:** `[The Norn Consensus Historical Precedent / Lizardmen Army Book page 31 / Rulebook page 85]`
+
+---
+
+**Q:** What Lores of Magic can a Slann Mage-Priest legally choose from? Can they choose High Magic, Dark Magic, or Skaven magic?
+
+**Ruling:** No. Slann Mage-Priests may only choose their spells from the eight standard Lores of Magic found in the core Warhammer Rulebook (Fire, Heavens, Metal, Shadow, Death, Beasts, Life, Light). They do not have access to any race-specific lores such as High Magic, Dark Magic, *Waaagh!* Magic, or Necromancy.
+
+**Source:** `[The Norn Consensus Historical Precedent / Lizardmen Army Book]`
+
+---
+
+**Q:** What Toughness value is used when rolling to wound a unit of Skink Horned One Riders - the Skink rider's T2 or the Horned One's T4?
+
+**Ruling:** You use the Skink rider's Toughness of 2. In Warhammer 6th Edition, standard cavalry models always use the Toughness of the rider for the purposes of resolving incoming attacks, regardless of how tough the mount's profile is.
+
+**Source:** `[The Norn Consensus Historical Precedent / Rulebook (Cavalry rules)]`
+
+---
+
+### OGRE KINGDOMS
+
+**Q:** Can Ogre Gut Magic be dispelled immediately when it is cast, or can it only be dispelled later as a *Remains in Play* spell? If dispelled later, does the original casting roll matter?
+
+**Ruling:** Gut Magic can be dispelled immediately during the Ogre player's Magic phase just like any normal spell, requiring your dispel roll to beat the Ogre player's casting roll. If it is not dispelled immediately, it successfully casts and becomes a *Remains in Play* spell. In any subsequent Magic phase, you may use excess Dispel Dice to remove it; when dispelling it in subsequent turns the original casting roll is ignored and the Gut Magic spell is always treated as having a Power Level of 7.
+
+**Source:** `[The Norn Consensus Historical Precedent / Ogre Kingdoms Army Book / Direwolf FAQ Compilation]`
+
+---
+
+### SKAVEN
+
+**Q:** If a Skaven unit pushing a *Screaming Bell* suffers heavy casualties and drops to 5 models or fewer so the Bell can no longer move, can the Grey Seer voluntarily dismount, or can the remaining Clanrats abandon the Bell to move freely?
+
+**Ruling:** No. The rules explicitly state that the Grey Seer can never voluntarily leave the *Screaming Bell*, nor can the unit pushing it. They are entirely stuck in place. The only time the Bell is abandoned is if the unit breaks and flees in close combat, at which point the Bell and striker are automatically destroyed by the enemy and the Grey Seer flees on foot alongside the broken unit.
+
+**Source:** `[The Norn Consensus Historical Precedent / Skaven Army Book page 30]`
+
+---
+
+**Q:** If a Skaven Tunneling Team marker surfaces directly into base contact with an enemy unit that causes Fear or Terror, must the Tunneling Team immediately take a Fear or Terror test?
+
+**Ruling:** No. Because a Tunneling Team marker that surfaces under an enemy unit "automatically engages" the enemy in close combat, they count as charging and do not need to take a Fear or Terror test.
+
+**Source:** `[The Norn Consensus Historical Precedent / Warhammer Chronicles 2004 page 118]`
+
+---
+
+### VAMPIRE COUNTS
+
+**Q:** In variant army lists that include living units such as the Sylvanian Militia, Free Company, or Strigany in Vampire Counts armies, can Undead characters join those living units?
+
+**Ruling:** No. Undead characters can never join living units, and living characters can never join Undead units. If an army includes living mercenaries or Sylvanian levies, the Vampires and Necromancers must remain entirely separate from them.
+However, in a Strigoi appendix army, living Mercenary characters (like Marco Colombo or a Dark Emissary) may join living Strigany units, as the restriction only prevents mixing Living and Undead models. Furthermore, if a mercenary champion's unit is destroyed, the surviving character becomes an independent model and may freely join a new eligible unit.
+
+**Source:** `[The Norn Consensus Historical Precedent / Direwolf FAQ Compilation / Vampire Counts Army Book]`
+
+---
+
+**Q:** Can Vampire characters cast spells if they are equipped with mundane or magical armour?
+
+**Ruling:** Yes. Vampires are a specific, army-wide exception to the core rule that Wizards cannot cast spells while wearing armour. Because Vampires have the innate option to wear mundane armour in their army list profiles, such as Blood Dragons and Von Carsteins, they may cast spells perfectly normally regardless of what mundane or magical armour they are equipped with. Necromancers do not have armour options and therefore cannot wear magic armour or cast in armour.
+
+**Source:** `[The Norn Consensus Historical Precedent / Vampire Counts Army Book]`
