@@ -7527,27 +7527,29 @@ S. Warhammer Chronicles 2004 page 12
 
 **Q:** Are Empire Greatswords within 12" of Volkmar's War Altar still *Stubborn*?
 
-**Ruling:** Yes. Greatswords have Stubborn as a printed rule in their own army-list entry. Volkmar's War Altar grants Immune to Psychology to Empire units within 12", but it does not say that it removes existing Stubborn rules.
+**Ruling:** Yes. Greatswords have *Stubborn* as a printed rule in their own army-list entry. Volkmar's War Altar grants *Immune to Psychology* to Empire units within 12", but it does not say that it removes existing *Stubborn* rules.
 
-Therefore, Greatswords within 12" of Volkmar's War Altar are both *Immune to Psychology* and *Stubborn*.
+Both Rulebook definitions of *Immune to Psychology* preserve Break tests. Since *Stubborn* modifies Break tests rather than causing a Psychology test, Greatswords within 12" of Volkmar's War Altar are both *Immune to Psychology* and *Stubborn*.
 
-They may not choose Flee as a charge reaction while Immune to Psychology. If they are required to take a Break test, they use Stubborn as normal.
+They may not choose Flee as a charge reaction while *Immune to Psychology*. If they are required to take a Break test, they use *Stubborn* as normal.
 
-This is not the same as the Banner of Sigismund FAQ. The Banner of Sigismund is a Magic Standard trying to grant Stubborn to a unit that is already Immune to Psychology. Volkmar's War Altar grants Immune to Psychology to a unit that already has Stubborn printed in its own entry.
+This is not the same as the Banner of Sigismund FAQ. The Banner of Sigismund is a Magic Standard trying to grant *Stubborn* to a unit that is already *Immune to Psychology*. Volkmar's War Altar grants *Immune to Psychology* to a unit that already has *Stubborn* printed in its own entry.
 
-**Source:** `[Empire Army Book / Warhammer Annual 2002 page 60 / Rulebook pages 74, 80, 85 & 112 / Warhammer Chronicles 2004 page 116 / Direwolf FAQ Council Interpretation / The Norn Consensus Historical Precedent]`
+**Source:** `[Empire Army Book / Warhammer Annual 2002 page 60 / Rulebook pages 74, 80, 85, 112 & 270 / Warhammer Chronicles 2004 page 116 / Direwolf FAQ Council Interpretation / The Norn Consensus Historical Precedent]`
 
 ---
 
 **Q:** Does Volkmar's War Altar suppress *Hatred*, *Stubborn*, *Frenzy*, *Stupidity* or similar rules already possessed by an Empire unit?
 
-**Ruling:** No, not by itself. Volkmar's War Altar grants Immune to Psychology. It does not say that it removes other Psychology rules already possessed by affected units.
+**Ruling:** No, not by itself. Volkmar's War Altar grants *Immune to Psychology*. It does not say that it removes other Psychology rules already possessed by affected units.
 
 Therefore, an Empire unit affected by the War Altar keeps any native or permanent non-magic-item Psychology rules it already has.
 
 The War Altar still prevents the unit from being affected by external Psychology effects in the normal way and prevents it from choosing Flee as a charge reaction.
 
-**Source:** `[Empire Army Book / Warhammer Annual 2002 page 60 / Rulebook pages 84, 85 & 112 / Direwolf FAQ Council Interpretation / The Norn Consensus Historical Precedent]`
+Specific rules and official FAQs override this general principle. If a spell, Magic Standard, prayer or other rule specifically says that a named Psychology rule is lost, suspended, or applies even to models Immune to Psychology, apply that specific wording.
+
+**Source:** `[Empire Army Book / Warhammer Annual 2002 page 60 / Rulebook pages 84, 85, 112 & 270 / Direwolf FAQ Council Interpretation / The Norn Consensus Historical Precedent]`
 
 ---
 
@@ -7555,9 +7557,11 @@ The War Altar still prevents the unit from being affected by external Psychology
 
 **Ruling:** No. This is the direct case answered by the official Empire FAQ and is not changed by the Norn Consensus.
 
-The Banner of Sigismund is a Magic Standard attempting to grant Stubborn to a unit that is Immune to Psychology. There is no Magic vs. Mundane trump. The banner has no effect while the unit is Immune to Psychology.
+The Banner of Sigismund is a Magic Standard attempting to grant *Stubborn* to a unit that is *Immune to Psychology*. There is no Magic vs. Mundane trump. The banner has no effect while the unit is *Immune to Psychology*.
 
-**Source:** `[Warhammer Chronicles 2004 page 116]`
+Appendix Seven supports the same practical reading: *Immune to Psychology* prevents Psychology interaction and Flee reactions, while Break tests still apply. It does not allow a Magic Standard to impose *Stubborn* onto a unit already protected by *Immune to Psychology*.
+
+**Source:** `[Rulebook pages 112 & 270 / Warhammer Chronicles 2004 page 116]`
 
 ---
 

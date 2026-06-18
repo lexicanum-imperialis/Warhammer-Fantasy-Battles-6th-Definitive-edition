@@ -3616,17 +3616,35 @@ Each attacking unit is considered separately when determining whether it has suf
 
 ### PSYCHOLOGY
 
+**Q:** How should the two Rulebook definitions of *Immune to Psychology* be read together?
+
+**Ruling:** Read them as a single rule.
+
+The main Special Rules entry states that troops Immune to Psychology are never affected by Fear, Terror, Frenzy or any other Psychology rules, may never flee as a charge reaction, and still take Break tests as normal.
+
+Appendix Seven clarifies the same rule in operational terms: units Immune to Psychology do not need to test for Psychology, such as Fear, Terror or Frenzy; they may never choose Flee as a charge response; and Break tests still apply as normal.
+
+The Norn Consensus therefore reads *Immune to Psychology* as preventing Psychology tests, Flee charge reactions, and externally imposed Psychology effects. It does not automatically erase rules already printed on the model/unit, or rules gained through permanent non-magic-item army-list upgrades, unless a specific rule or official FAQ says otherwise.
+
+**Source:** `[The Norn Consensus Historical Precedent / Rulebook pages 112 & 270 / Direwolf FAQ Council Interpretation]`
+
+---
+
 **Q:** Can a model or unit benefit from both *Immune to Psychology* and another Psychology rule such as *Stubborn*, *Frenzy*, *Hatred*, or *Stupidity*?
 
 **Ruling:** Yes, provided the other Psychology rule is part of the model/unit's own army-list entry, or is gained through a permanent non-magic-item army-list upgrade purchased for that model/unit.
 
 This includes, but is not limited to, Vows, Virtues, Vampiric or Bloodline Powers, Chaos Marks, Daemonic Gifts, Mutations, Sacred Spawnings, Kindreds, Blessings, Big Names, Honours and similar non-item army-list abilities, unless the relevant army book specifically treats the upgrade as a Magic Item.
 
-Magic Items, Magic Standards, spells, prayers, bound spells, temporary effects and externally conferred Psychology effects do not impose new Psychology rules onto a model or unit that is Immune to Psychology unless the rule specifically states that it affects models or units that are Immune to Psychology.
+The model or unit remains *Immune to Psychology* for the normal purposes of Psychology tests and charge reactions. It may not choose Flee as a charge reaction. It ignores Psychology tests and external Psychology effects as normal.
 
-This preserves the official Empire ruling concerning the Banner of Sigismund. A Magic Standard does not override Immune to Psychology merely because it is magical.
+However, *Immune to Psychology* does not automatically delete native or permanently purchased army-list rules already belonging to that model or unit.
 
-**Source:** `[The Norn Consensus Historical Precedent / Rulebook pages 74, 80, 84, 85 & 112 / Warhammer Chronicles 2004 page 116 / Direwolf FAQ Council Interpretation]`
+Magic Items, Magic Standards, spells, prayers, bound spells, temporary effects and externally conferred Psychology effects do not impose new Psychology rules onto a model or unit that is *Immune to Psychology* unless the rule specifically states that it affects models or units that are *Immune to Psychology*.
+
+This preserves the official Empire ruling concerning the Banner of Sigismund. A Magic Standard does not override *Immune to Psychology* merely because it is magical.
+
+**Source:** `[The Norn Consensus Historical Precedent / Rulebook pages 74, 80, 84, 85, 112 & 270 / Warhammer Chronicles 2004 page 116 / Direwolf FAQ Council Interpretation]`
 
 ---
 
@@ -3634,21 +3652,27 @@ This preserves the official Empire ruling concerning the Banner of Sigismund. A 
 
 **Ruling:** No. Break tests are Leadership tests, but they are not Psychology tests. *Stubborn* modifies Break tests by allowing the unit to use unmodified Leadership.
 
-A model or unit that already has both *Stubborn* and *Immune to Psychology* therefore uses *Stubborn* normally when taking Break tests.
+Both Rulebook definitions of *Immune to Psychology* preserve Break tests: the main Special Rules entry says that troops Immune to Psychology still take Break tests as normal, and Appendix Seven repeats that Break tests still apply as normal.
 
-This does not allow a Magic Item, Magic Standard, spell, prayer or other external effect to grant *Stubborn* to an *Immune to Psychology* unit unless that effect specifically says it works on models or units that are Immune to Psychology.
+Therefore, a model or unit that already has both *Stubborn* and *Immune to Psychology* uses *Stubborn* normally when taking Break tests.
 
-**Source:** `[The Norn Consensus Historical Precedent / Rulebook pages 74, 80, 85 & 112 / Warhammer Chronicles 2004 page 116 / Direwolf FAQ Council Interpretation]`
+This does not allow a Magic Item, Magic Standard, spell, prayer or other external effect to grant *Stubborn* to an *Immune to Psychology* unit unless that effect specifically says it works on models or units that are *Immune to Psychology*.
+
+**Source:** `[The Norn Consensus Historical Precedent / Rulebook pages 74, 80, 85, 112 & 270 / Warhammer Chronicles 2004 page 116 / Direwolf FAQ Council Interpretation]`
 
 ---
 
 **Q:** Does an aura or effect that grants *Immune to Psychology* suppress Psychology rules already possessed by the affected model or unit?
 
-**Ruling:** No, not by itself. If a model or unit already has *Stubborn*, *Frenzy*, *Hatred*, *Stupidity* or a similar rule as a native rule or permanent non-magic-item army-list upgrade, an aura or effect that grants *Immune to Psychology* does not suppress that rule unless the aura or effect specifically says so.
+**Ruling:** No, not by itself.
 
-The affected model or unit is still Immune to Psychology for the normal purposes of Psychology tests and charge reactions. For example, it may not choose Flee as a charge reaction while *Immune to Psychology*.
+If a model or unit already has *Stubborn*, *Frenzy*, *Hatred*, *Stupidity* or a similar rule as a native rule or permanent non-magic-item army-list upgrade, an aura or effect that grants *Immune to Psychology* does not suppress that rule unless the aura or effect specifically says so.
 
-**Source:** `[The Norn Consensus Historical Precedent / Rulebook pages 84, 85 & 112 / Direwolf FAQ Council Interpretation]`
+The affected model or unit is still *Immune to Psychology* for the normal purposes of Psychology tests and charge reactions. For example, it may not choose Flee as a charge reaction while *Immune to Psychology*.
+
+Specific rules and official FAQs override this general principle. For example, if a Magic Standard or spell specifically states that a named Psychology rule is lost, suspended, or applied even to models Immune to Psychology, apply that specific wording.
+
+**Source:** `[The Norn Consensus Historical Precedent / Rulebook pages 84, 85, 112 & 270 / Direwolf FAQ Council Interpretation]`
 
 ---
 
@@ -3658,7 +3682,7 @@ The affected model or unit is still Immune to Psychology for the normal purposes
 
 If a specific character rule or army-book rule explicitly grants *Immune to Psychology* to the unit, then the unit gains it as stated by that rule. This does not suppress *Stubborn*, *Frenzy*, *Hatred*, *Stupidity* or similar rules already possessed by the unit as native rules or permanent non-magic-item army-list upgrades.
 
-**Source:** `[The Norn Consensus Historical Precedent / Rulebook page 100 / Gav Thorpe - Warhammer Design Team / Direwolf FAQ Council Interpretation]`
+**Source:** `[The Norn Consensus Historical Precedent / Rulebook pages 100, 112 & 270 / Gav Thorpe - Warhammer Design Team / Direwolf FAQ Council Interpretation]`
 
 ---
 
@@ -3668,7 +3692,7 @@ If a specific character rule or army-book rule explicitly grants *Immune to Psyc
 
 The model or unit remains *Immune to Psychology* for all other purposes, but is still affected by the named rule because the exception specifically overrides *Immune to Psychology*.
 
-**Source:** `[The Norn Consensus Historical Precedent / Direwolf FAQ Council Interpretation]`
+**Source:** `[The Norn Consensus Historical Precedent / Rulebook pages 112 & 270 / Direwolf FAQ Council Interpretation]`
 
 ---
 
@@ -3680,15 +3704,17 @@ A unit made Immune to Psychology does not benefit from the Banner of Sigismund. 
 
 The Norn Consensus only clarifies that this official ruling should not be extended to cancel *Stubborn*, *Frenzy*, *Hatred*, *Stupidity* or similar rules already possessed by a model or unit as native rules or permanent non-magic-item army-list upgrades.
 
-**Source:** `[The Norn Consensus Historical Precedent / Warhammer Chronicles 2004 page 116 / Direwolf FAQ Council Interpretation]`
+**Source:** `[The Norn Consensus Historical Precedent / Rulebook pages 112 & 270 / Warhammer Chronicles 2004 page 116 / Direwolf FAQ Council Interpretation]`
 
 ---
 
 **Q:** Can a unit that is *Immune to Psychology* choose to Flee as a charge reaction, or choose to restrain pursuit if they win a combat?
 
-**Ruling:** A unit that is *Immune to Psychology* may never choose to Flee as a charge reaction. However, because *Immune to Psychology* does not inherently cause a unit to become *Frenzied* (which forces pursuit), the unit may still attempt a Leadership test to restrain pursuit normally after winning a combat, unless another rule specifically overrides this and forces them to pursue.
+**Ruling:** A unit that is *Immune to Psychology* may never choose to Flee as a charge reaction.
 
-**Source:** `[The Norn Consensus Historical Precedent / Rulebook page 112]`
+However, because *Immune to Psychology* does not inherently cause a unit to become *Frenzied* or otherwise force pursuit, the unit may still attempt a Leadership test to restrain pursuit normally after winning a combat, unless another rule specifically overrides this and forces them to pursue.
+
+**Source:** `[The Norn Consensus Historical Precedent / Rulebook pages 112 & 270]`
 
 ---
 
