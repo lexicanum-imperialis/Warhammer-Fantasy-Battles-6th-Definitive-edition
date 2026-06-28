@@ -67,7 +67,20 @@
         </categoryLink>
         <categoryLink id="9316-a77e-7f17-1138" name="Lord" hidden="false" targetId="d024-d25b-a9b4-73b6" primary="false"/>
         <categoryLink id="64c1-e90c-ed54-ade3" name="Heroes" hidden="false" targetId="c16b-f319-2c62-2c12" primary="false"/>
-        <categoryLink id="45a4-a523-a717-3a17" name="Core" hidden="false" targetId="64bf-efb4-9978-26df" primary="false"/>
+        <categoryLink id="45a4-a523-a717-3a17" name="Core" hidden="false" targetId="64bf-efb4-9978-26df" primary="false">
+          <modifiers>
+            <modifier type="increment" value="1" field="35c2-d478-392a-aeb1">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="force" childId="9557-839d-31fc-e10c" shared="true" roundUp="false" childName="Skink Skirmishers" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" value="1" field="35c2-d478-392a-aeb1">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="force" childId="5797-332f-ee94-ac10" shared="true" roundUp="false" childName="Lesser Swarms" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </categoryLink>
         <categoryLink id="7c6a-ec1f-fdcd-ea1d" name="Special" hidden="false" targetId="43cc-fc3f-35a7-8d03" primary="false"/>
         <categoryLink id="498d-266c-57b2-c07c" name="Rare" hidden="false" targetId="e94b-6a54-8779-cd60" primary="false"/>
         <categoryLink name="Mercenaries" hidden="false" id="e500-913d-80b6-4e12" targetId="b640-7e9c-3054-c1ce"/>
@@ -109,7 +122,7 @@
         <categoryLink id="fc7d-a4c3-e838-1714" name="Slann" hidden="false" targetId="5c12-eebd-de21-0b3d" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="7ad3-2507-2de7-7f96" name="Generation" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="7ad3-2507-2de7-7f96" name="Generation" hidden="false" collective="false" import="true" sortIndex="3">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d60d-c035-651b-6c16" type="max"/>
           </constraints>
@@ -183,7 +196,7 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="fd85-2603-9f24-94c2" name="Magic Items" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="fd85-2603-9f24-94c2" name="Magic Items" hidden="false" collective="false" import="true" sortIndex="4">
           <constraints>
             <constraint field="ecfa-8486-4f6c-c249" scope="parent" value="100" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="74e2-6941-ea2e-405d" type="max"/>
           </constraints>
@@ -194,7 +207,7 @@
             <entryLink id="994d-8a68-1123-dd6d" name="Plaques" hidden="false" collective="false" import="true" targetId="6150-3dae-687d-6461" type="selectionEntryGroup"/>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Spells Lore" id="df79-946f-4a83-d030" hidden="false" collapsible="true">
+        <selectionEntryGroup name="Spells Lore" id="df79-946f-4a83-d030" hidden="false" collapsible="true" sortIndex="6">
           <entryLinks>
             <entryLink import="true" name="Lore of Heavens" hidden="false" id="3257-bb7d-0e8b-0d6f" type="selectionEntryGroup" targetId="e999-4d26-ec27-9cd0" collapsible="true"/>
             <entryLink import="true" name="Lore of Death" hidden="false" id="4b40-08cc-c43f-8270" type="selectionEntryGroup" targetId="0a76-fdab-0afb-3612" collapsible="true"/>
@@ -211,14 +224,14 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="23ae-68d8-5722-da6d" name="Battle Standard Bearer" hidden="false" collective="false" import="true" targetId="e9ad-f1ce-aebf-6d23" type="selectionEntry">
+        <entryLink id="23ae-68d8-5722-da6d" name="Battle Standard Bearer" hidden="false" collective="false" import="true" targetId="e9ad-f1ce-aebf-6d23" type="selectionEntry" sortIndex="1">
           <entryLinks>
             <entryLink id="fc4c-e4db-d7b3-1c1a" name="Magic Banners" hidden="false" collective="false" import="true" targetId="106e-cbcc-35b6-ec13" type="selectionEntryGroup"/>
           </entryLinks>
           <comment>No points limits for Magic Banner, nor for General, nor for Magic Items</comment>
         </entryLink>
-        <entryLink id="81fb-e616-f2cc-edfc" name="General" hidden="false" collective="false" import="true" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry"/>
-        <entryLink id="52cb-5c4a-3bd0-20da" name="Magic Level 4" hidden="false" collective="false" import="true" targetId="fc28-3af2-d37a-d07e" type="selectionEntry">
+        <entryLink id="81fb-e616-f2cc-edfc" name="General" hidden="false" collective="false" import="true" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry" sortIndex="2"/>
+        <entryLink id="52cb-5c4a-3bd0-20da" name="Magic Level 4" hidden="false" collective="false" import="true" targetId="fc28-3af2-d37a-d07e" type="selectionEntry" sortIndex="5">
           <costs>
             <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
           </costs>
@@ -282,7 +295,7 @@
         <categoryLink id="c131-4dfe-4f9c-73e2" name="Lord" hidden="false" targetId="d024-d25b-a9b4-73b6" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="74cd-7b3f-b338-f6ef" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="74cd-7b3f-b338-f6ef" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade" sortIndex="3">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8bb1-4445-70b9-7b57" type="max"/>
             <constraint field="ecfa-8486-4f6c-c249" scope="parent" value="100" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="99c1-ffc7-395e-acf8" type="max"/>
@@ -301,7 +314,7 @@
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="f536-6a6c-0f93-4fe9" name="Armour" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="f536-6a6c-0f93-4fe9" name="Armour" hidden="false" collective="false" import="true" sortIndex="5">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e688-1b70-b537-886d" type="max"/>
           </constraints>
@@ -313,7 +326,7 @@
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="848f-0fe2-1aa6-2259" name="Weapons" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="848f-0fe2-1aa6-2259" name="Weapons" hidden="false" collective="false" import="true" sortIndex="4">
           <constraints>
             <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b20-238e-6dfb-fc67" type="max"/>
           </constraints>
@@ -357,8 +370,8 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="a3df-841c-2478-a463" name="General" hidden="false" collective="false" import="true" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry"/>
-        <entryLink import="true" name="Blessed Spawning (Oldblood)" hidden="false" id="5642-5b07-b2a4-1f03" type="selectionEntryGroup" targetId="37a8-e49e-d4b1-c361">
+        <entryLink id="a3df-841c-2478-a463" name="General" hidden="false" collective="false" import="true" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry" sortIndex="1"/>
+        <entryLink import="true" name="Blessed Spawning (Oldblood)" hidden="false" id="5642-5b07-b2a4-1f03" type="selectionEntryGroup" targetId="37a8-e49e-d4b1-c361" sortIndex="2">
           <modifiers>
             <modifier type="set" value="1" field="9979-1f79-69c6-7f24">
               <conditions>
@@ -367,8 +380,8 @@
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Scaly Skin (5+)" hidden="false" id="6087-20f8-0582-fe5d" type="selectionEntry" targetId="d392-d274-c983-ac9d"/>
-        <entryLink import="true" name="Shield" hidden="false" id="0454-3267-a4cb-42b5" type="selectionEntry" targetId="50e2-1873-a856-03e7">
+        <entryLink import="true" name="Scaly Skin (5+)" hidden="false" id="6087-20f8-0582-fe5d" type="selectionEntry" targetId="d392-d274-c983-ac9d" sortIndex="7"/>
+        <entryLink import="true" name="Shield" hidden="false" id="0454-3267-a4cb-42b5" type="selectionEntry" targetId="50e2-1873-a856-03e7" sortIndex="6">
           <costs>
             <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="3"/>
           </costs>
@@ -392,7 +405,7 @@
         <categoryLink id="bc33-d83d-2d51-c19b" name="Characters" hidden="false" targetId="7a1c-d611-c2dc-def1" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="da8c-6ffb-165f-bdb3" name="Hand weapon" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="da8c-6ffb-165f-bdb3" name="Hand weapon" hidden="false" collective="false" import="true" type="upgrade" sortIndex="7">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="41de-605b-041d-d1cc" type="max"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9906-36b0-e546-d5d4" type="min"/>
@@ -406,7 +419,7 @@
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="9c90-0c65-e927-7182" name="Scout" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="9c90-0c65-e927-7182" name="Scout" hidden="false" collective="false" import="true" type="upgrade" sortIndex="8">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="569c-2e7c-2d86-1134" type="max"/>
           </constraints>
@@ -419,7 +432,7 @@
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="6217-830f-33dc-e688" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="6217-830f-33dc-e688" name="Magic Items" hidden="false" collective="false" import="true" type="upgrade" sortIndex="6">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3b4b-617e-d1cf-be49" type="max"/>
             <constraint field="ecfa-8486-4f6c-c249" scope="parent" value="50" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8304-1b9c-c326-f7c0" type="max"/>
@@ -438,7 +451,7 @@
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="a1fb-7862-b3e3-99fe" name="Armour" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="a1fb-7862-b3e3-99fe" name="Armour" hidden="false" collective="false" import="true" sortIndex="5">
           <entryLinks>
             <entryLink id="61b2-5173-30b1-34c5" name="Light Armour" hidden="false" collective="false" import="true" targetId="055f-8e4e-f170-35d2" type="selectionEntry">
               <constraints>
@@ -458,7 +471,7 @@
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="c080-6abb-3d48-7e2a" name="Weapons" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="c080-6abb-3d48-7e2a" name="Weapons" hidden="false" collective="false" import="true" sortIndex="4">
           <selectionEntryGroups>
             <selectionEntryGroup id="efc8-ee70-a172-1237" name="Melee Weapons" hidden="false" collective="false" import="true">
               <constraints>
@@ -516,7 +529,7 @@
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
-        <selectionEntryGroup id="451d-f3aa-269d-a613" name="Mount" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="451d-f3aa-269d-a613" name="Mount" hidden="false" collective="false" import="true" sortIndex="9">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b140-2ff7-9bfa-e7f5" type="max"/>
             <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fda9-db74-9d8e-58fe" type="min"/>
@@ -535,8 +548,28 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="fd02-6b50-d219-173d" name="General" hidden="false" collective="false" import="true" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry"/>
-        <entryLink import="true" name="Blessed Spawning (Skinks of the Southlands)" hidden="true" id="2096-ee41-005e-fb1e" collective="false" targetId="62df-4048-7504-aed8" type="selectionEntryGroup">
+        <entryLink id="fd02-6b50-d219-173d" name="General" hidden="true" collective="false" import="true" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry" sortIndex="1">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="f7d4-7faf-8470-ee0d" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="4e15-0353-165f-5528" shared="true" includeChildSelections="true" childName="Border Patrols rules"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="fe15-38b7-daea-2ec8" shared="true" includeChildSelections="true" childName="Southlands (LM-AB)"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Blessed Spawning (Skinks of the Southlands)" hidden="true" id="2096-ee41-005e-fb1e" collective="false" targetId="62df-4048-7504-aed8" type="selectionEntryGroup" sortIndex="2">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditions>
@@ -555,7 +588,7 @@
             </selectionEntry>
           </selectionEntries>
         </entryLink>
-        <entryLink import="true" name="Blessed Spawning (Skinks)" hidden="false" id="8899-b410-457c-4d84" collective="false" targetId="b9e5-bb8b-3bbf-5f75" type="selectionEntryGroup">
+        <entryLink import="true" name="Blessed Spawning (Skinks)" hidden="false" id="8899-b410-457c-4d84" collective="false" targetId="b9e5-bb8b-3bbf-5f75" type="selectionEntryGroup" sortIndex="3">
           <modifiers>
             <modifier type="set" value="1" field="0a9a-d353-4702-54e4">
               <conditions>
@@ -584,6 +617,11 @@
             <condition type="atLeast" value="1" field="selections" scope="roster" childId="4e15-0353-165f-5528" shared="true" includeChildSelections="true" childName="Border Patrols rules" includeChildForces="true"/>
           </conditions>
           <comment>BP</comment>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="f7d4-7faf-8470-ee0d" shared="true" includeChildSelections="true"/>
+          </conditions>
         </modifier>
       </modifiers>
       <constraints>
@@ -761,7 +799,7 @@
         <categoryLink id="13c8-cca0-dab2-4073" name="Heroes" hidden="false" targetId="c16b-f319-2c62-2c12" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="39c7-6289-bda0-889e" name="Scout" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="39c7-6289-bda0-889e" name="Scout" hidden="false" collective="false" import="true" type="upgrade" sortIndex="7">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af3e-fb36-4a98-d64c" type="max"/>
           </constraints>
@@ -776,7 +814,7 @@
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="0868-fd00-1311-20a7" name="Wizard Level" hidden="false" collective="false" import="true" defaultSelectionEntryId="2e7e-4d6a-7fe0-6900">
+        <selectionEntryGroup id="0868-fd00-1311-20a7" name="Wizard Level" hidden="false" collective="false" import="true" defaultSelectionEntryId="2e7e-4d6a-7fe0-6900" sortIndex="4">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="08f1-3494-28f8-f4dc" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f352-a665-9559-a931" type="max"/>
@@ -786,7 +824,7 @@
             <entryLink import="true" name="Magic Level 1" hidden="false" id="5549-4420-5f61-f710" type="selectionEntry" targetId="158f-d753-59e2-9ad2"/>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="b6db-d0b5-8c34-6d79" name="Magic Items" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="b6db-d0b5-8c34-6d79" name="Magic Items" hidden="false" collective="false" import="true" sortIndex="6">
           <constraints>
             <constraint field="ecfa-8486-4f6c-c249" scope="parent" value="50" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3737-2abc-3cf6-a95c" type="max"/>
           </constraints>
@@ -798,7 +836,7 @@
             <entryLink id="4293-1445-c8e8-74e8" name="Arcane Items (LZ-AB + Common)" hidden="false" collective="false" import="true" targetId="fcbd-0a43-0a83-bb68" type="selectionEntryGroup"/>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="eb13-c5b7-e74e-7c96" name="Mount" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="eb13-c5b7-e74e-7c96" name="Mount" hidden="false" collective="false" import="true" sortIndex="8">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4021-851e-9cea-a0eb" type="max"/>
             <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="105e-15ba-ba57-b600" type="min"/>
@@ -817,8 +855,8 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="537c-1174-3865-af0f" name="General" hidden="false" collective="false" import="true" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry"/>
-        <entryLink id="df0a-7d8c-77a5-790e" name="Blessed Spawning (Skinks)" hidden="false" collective="false" import="true" targetId="b9e5-bb8b-3bbf-5f75" type="selectionEntryGroup">
+        <entryLink id="537c-1174-3865-af0f" name="General" hidden="false" collective="false" import="true" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry" sortIndex="1"/>
+        <entryLink id="df0a-7d8c-77a5-790e" name="Blessed Spawning (Skinks)" hidden="false" collective="false" import="true" targetId="b9e5-bb8b-3bbf-5f75" type="selectionEntryGroup" sortIndex="3">
           <modifiers>
             <modifier type="set" field="0f5c-e51b-f4b8-0ae3" value="1">
               <conditions>
@@ -835,7 +873,7 @@
             <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0f5c-e51b-f4b8-0ae3" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Blessed Spawning (Skinks of the Southlands)" hidden="true" id="7bd9-dcaf-b020-bcf7" collective="false" targetId="62df-4048-7504-aed8" type="selectionEntryGroup">
+        <entryLink import="true" name="Blessed Spawning (Skinks of the Southlands)" hidden="true" id="7bd9-dcaf-b020-bcf7" collective="false" targetId="62df-4048-7504-aed8" type="selectionEntryGroup" sortIndex="2">
           <modifiers>
             <modifier type="set" value="1" field="ce13-e799-f59d-b4d5">
               <conditions>
@@ -852,7 +890,7 @@
             <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="ce13-e799-f59d-b4d5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Lore of Heavens" hidden="false" id="9af4-e9d5-86a2-8687" type="selectionEntryGroup" targetId="e999-4d26-ec27-9cd0" collapsible="true"/>
+        <entryLink import="true" name="Lore of Heavens" hidden="false" id="9af4-e9d5-86a2-8687" type="selectionEntryGroup" targetId="e999-4d26-ec27-9cd0" collapsible="true" sortIndex="5"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="65"/>
@@ -997,7 +1035,7 @@
         <categoryLink id="4e44-1ec9-460f-8c88" name="Core" hidden="false" targetId="64bf-efb4-9978-26df" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="5005-7199-18bd-22ca" name="Saurus Warrior" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry id="5005-7199-18bd-22ca" name="Saurus Warrior" hidden="false" collective="false" import="true" type="model" sortIndex="1">
           <constraints>
             <constraint field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e39d-7db5-eef6-c332" type="min"/>
             <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="4c05-e886-ebe1-1b2e" percentValue="false" includeChildSelections="false" includeChildForces="false">
@@ -1044,7 +1082,7 @@
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="fe71-e62e-b861-f925" name="Command" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="fe71-e62e-b861-f925" name="Command" hidden="false" collective="false" import="true" sortIndex="2">
           <selectionEntries>
             <selectionEntry id="987c-969d-a5c2-4912" name="Spawning Champion" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -1081,9 +1119,31 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
+        <selectionEntryGroup name="Weapons and Armour" id="be2a-754f-1943-edaa" hidden="false" sortIndex="4">
+          <entryLinks>
+            <entryLink import="true" name="Spear Infantry" hidden="false" id="6645-dc60-e13b-9f31" type="selectionEntry" targetId="104f-5817-4bda-9382">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b487-9e51-7ab4-d3e2" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="2" field="ecfa-8486-4f6c-c249">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="parent" childId="model" shared="true" roundUp="false" includeChildSelections="true" childName="model"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="d534-9465-25dd-bcc0" type="selectionEntry" targetId="abdb-bbd0-41b2-5dff"/>
+            <entryLink import="true" name="Shield" hidden="false" id="f11f-b61d-fb7d-720a" type="selectionEntry" targetId="50e2-1873-a856-03e7">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="abfd-b45c-ec35-9243" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="08cf-e97b-2217-24d0" name="Blessed Spawning Warrios" hidden="false" collective="false" import="true" targetId="bd30-a138-fa7a-ecbe" type="selectionEntryGroup">
+        <entryLink id="08cf-e97b-2217-24d0" name="Blessed Spawning Warrios" hidden="false" collective="false" import="true" targetId="bd30-a138-fa7a-ecbe" type="selectionEntryGroup" sortIndex="3">
           <modifiers>
             <modifier type="set" field="30d8-59b7-0761-13b5" value="1">
               <conditionGroups>
@@ -1118,25 +1178,7 @@
             <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="30d8-59b7-0761-13b5" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Scaly Skin (6+)" hidden="false" id="e899-01e5-cba3-601f" type="selectionEntry" targetId="2481-9ff2-5fe7-f381"/>
-        <entryLink import="true" name="Shield" hidden="false" id="f11f-b61d-fb7d-720a" type="selectionEntry" targetId="50e2-1873-a856-03e7">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="abfd-b45c-ec35-9243" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
-        <entryLink import="true" name="Hand Weapon" hidden="false" id="d534-9465-25dd-bcc0" type="selectionEntry" targetId="abdb-bbd0-41b2-5dff"/>
-        <entryLink import="true" name="Spear Infantry" hidden="false" id="6645-dc60-e13b-9f31" type="selectionEntry" targetId="104f-5817-4bda-9382">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b487-9e51-7ab4-d3e2" includeChildSelections="false"/>
-          </constraints>
-          <modifiers>
-            <modifier type="increment" value="2" field="ecfa-8486-4f6c-c249">
-              <repeats>
-                <repeat value="1" repeats="1" field="selections" scope="parent" childId="model" shared="true" roundUp="false" includeChildSelections="true" childName="model"/>
-              </repeats>
-            </modifier>
-          </modifiers>
-        </entryLink>
+        <entryLink import="true" name="Scaly Skin (6+)" hidden="false" id="e899-01e5-cba3-601f" type="selectionEntry" targetId="2481-9ff2-5fe7-f381" sortIndex="5"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
@@ -2487,7 +2529,6 @@ If Kroq-Gar is wounded in close combat and does not pass his Ward save, then who
     </selectionEntry>
     <selectionEntry id="e709-38e8-3944-c7ab" name="Skink Chiefs" publicationId="3a49-dd2e-fcaa-cdb1" page="59" hidden="true" collective="false" import="true" type="unit">
       <infoLinks>
-        <infoLink id="f8a7-787a-405a-775a" name="Skink Chief" hidden="false" targetId="bd4c-23fc-ea1c-ce1e" type="profile"/>
         <infoLink id="7c58-593c-e43b-4d4a" name="Aquatic" hidden="false" targetId="d1be-78da-561d-0934" type="rule"/>
         <infoLink id="059a-24f4-d2c3-2a40" name="Cold Blooded" hidden="false" targetId="da71-1c1e-ded6-959a" type="rule"/>
         <infoLink id="4334-992e-bcf4-5623" name="Poisoned Attacks" hidden="false" targetId="c42e-9dc4-8229-5abe" type="rule"/>
@@ -2499,10 +2540,19 @@ If Kroq-Gar is wounded in close combat and does not pass his Ward save, then who
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Skink Chief" hidden="false" id="cf60-5947-e1b7-a0c5">
           <entryLinks>
-            <entryLink import="true" name="General" hidden="false" id="5df0-23b4-bfc8-90ea" collective="false" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry"/>
+            <entryLink import="true" name="General" hidden="false" id="5df0-23b4-bfc8-90ea" collective="false" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry" sortIndex="1"/>
+            <entryLink import="true" name="Battle Standard Bearer" hidden="true" id="d18a-6a64-56c3-ffc1" collective="false" targetId="e9ad-f1ce-aebf-6d23" type="selectionEntry" sortIndex="2">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="f7d4-7faf-8470-ee0d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
           </entryLinks>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Hand weapon" hidden="false" id="7a44-053c-3942-257b" collective="false">
+            <selectionEntry type="upgrade" import="true" name="Hand weapon" hidden="false" id="7a44-053c-3942-257b" collective="false" sortIndex="7">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c016-69ac-5b41-62df" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0725-a61e-9c5b-9339" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -2516,7 +2566,7 @@ If Kroq-Gar is wounded in close combat and does not pass his Ward save, then who
                 <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Magic Items" hidden="false" id="93c3-35d9-7bf8-5bf7" collective="false">
+            <selectionEntry type="upgrade" import="true" name="Magic Items" hidden="false" id="93c3-35d9-7bf8-5bf7" collective="false" sortIndex="4">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c4f9-10ea-a66f-6492" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <constraint type="max" value="50" field="ecfa-8486-4f6c-c249" scope="parent" shared="true" id="316e-76d8-28bc-df19" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -2540,7 +2590,7 @@ If Kroq-Gar is wounded in close combat and does not pass his Ward save, then who
                 </modifier>
               </modifiers>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Scout" hidden="false" id="4e67-1233-0a64-5cf3" collective="false">
+            <selectionEntry type="upgrade" import="true" name="Scout" hidden="false" id="4e67-1233-0a64-5cf3" collective="false" sortIndex="8">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3299-b0eb-9fd0-6007" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
@@ -2555,7 +2605,7 @@ If Kroq-Gar is wounded in close combat and does not pass his Ward save, then who
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Armour" id="d5bc-8fc1-34da-2630" hidden="false" collective="false" import="true">
+            <selectionEntryGroup name="Armour" id="d5bc-8fc1-34da-2630" hidden="false" collective="false" import="true" sortIndex="6">
               <entryLinks>
                 <entryLink import="true" name="Light Armour" hidden="false" id="0c5c-4482-7f54-ce7f" collective="false" targetId="055f-8e4e-f170-35d2" type="selectionEntry">
                   <constraints>
@@ -2575,7 +2625,7 @@ If Kroq-Gar is wounded in close combat and does not pass his Ward save, then who
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Mount" id="51cc-11ed-535e-015c" hidden="false" collective="false" import="true">
+            <selectionEntryGroup name="Mount" id="51cc-11ed-535e-015c" hidden="false" collective="false" import="true" sortIndex="9">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d2f4-2046-75c7-03c9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="1325-9b50-f109-8bbb" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -2591,7 +2641,7 @@ If Kroq-Gar is wounded in close combat and does not pass his Ward save, then who
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Weapons" id="1a53-ad4e-f0a1-8d04" hidden="false" collective="false" import="true">
+            <selectionEntryGroup name="Weapons" id="1a53-ad4e-f0a1-8d04" hidden="false" collective="false" import="true" sortIndex="5">
               <selectionEntryGroups>
                 <selectionEntryGroup name="Melee Weapons" id="c994-3367-b2ab-cf17" hidden="false" collective="false" import="true">
                   <constraints>
@@ -2649,7 +2699,7 @@ If Kroq-Gar is wounded in close combat and does not pass his Ward save, then who
                 </selectionEntryGroup>
               </selectionEntryGroups>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Blessed Spawnings" id="c8ac-0797-6420-bd05" hidden="false">
+            <selectionEntryGroup name="Blessed Spawnings" id="c8ac-0797-6420-bd05" hidden="false" sortIndex="3">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="30a3-0f27-a27a-8d51" includeChildSelections="false"/>
               </constraints>
@@ -2673,6 +2723,9 @@ If Kroq-Gar is wounded in close combat and does not pass his Ward save, then who
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e5ac-ee0c-efe2-63aa" includeChildSelections="false"/>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="9e37-936d-4550-59ac" includeChildSelections="false"/>
           </constraints>
+          <infoLinks>
+            <infoLink name="Skink Chief" id="f8a7-787a-405a-775a" hidden="false" targetId="bd4c-23fc-ea1c-ce1e" type="profile"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -2682,15 +2735,31 @@ If Kroq-Gar is wounded in close combat and does not pass his Ward save, then who
       </costs>
       <modifiers>
         <modifier type="set" value="false" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="fe15-38b7-daea-2ec8" shared="true" includeChildSelections="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="fe15-38b7-daea-2ec8" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="f7d4-7faf-8470-ee0d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="f7d4-7faf-8470-ee0d" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <modifiers>
+            <modifier type="remove" value="d024-d25b-a9b4-73b6" field="category"/>
+            <modifier type="add" value="c16b-f319-2c62-2c12" field="category"/>
+            <modifier type="set-primary" value="c16b-f319-2c62-2c12" field="category"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry id="6637-bcc1-7e8f-bf6b" name="Skink Priests" publicationId="3a49-dd2e-fcaa-cdb1" page="59" hidden="true" collective="false" import="true" type="unit">
       <infoLinks>
-        <infoLink id="b90f-78c1-288c-818c" name="Skink Priest" hidden="false" targetId="d227-12e7-4455-fdee" type="profile"/>
         <infoLink id="4ebd-5fe6-d7c9-9195" name="Cold Blooded" hidden="false" targetId="da71-1c1e-ded6-959a" type="rule"/>
         <infoLink id="fb3d-0118-ed3f-3c64" name="Aquatic" hidden="false" targetId="d1be-78da-561d-0934" type="rule"/>
       </infoLinks>
@@ -2701,12 +2770,11 @@ If Kroq-Gar is wounded in close combat and does not pass his Ward save, then who
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Skink Priest" hidden="false" id="8992-7a7e-1836-1c15">
           <entryLinks>
-            <entryLink import="true" name="General" hidden="false" id="6a6d-f0ce-bf9d-be98" collective="false" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry"/>
-            <entryLink import="true" name="Blessed Spawning (Skinks of the Southlands)" hidden="false" id="dd5d-d1ed-9f2e-4061" collective="false" targetId="62df-4048-7504-aed8" type="selectionEntryGroup"/>
-            <entryLink import="true" name="Lore of Heavens" hidden="false" id="35fa-ae13-e250-acb4" type="selectionEntryGroup" targetId="e999-4d26-ec27-9cd0"/>
+            <entryLink import="true" name="General" hidden="false" id="6a6d-f0ce-bf9d-be98" collective="false" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry" sortIndex="1"/>
+            <entryLink import="true" name="Blessed Spawning (Skinks of the Southlands)" hidden="false" id="dd5d-d1ed-9f2e-4061" collective="false" targetId="62df-4048-7504-aed8" type="selectionEntryGroup" sortIndex="2"/>
           </entryLinks>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Scout" hidden="false" id="b854-6c52-c23b-eae4" collective="false">
+            <selectionEntry type="upgrade" import="true" name="Scout" hidden="false" id="b854-6c52-c23b-eae4" collective="false" sortIndex="7">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="80a7-6754-bc5f-5e4e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
@@ -2721,19 +2789,7 @@ If Kroq-Gar is wounded in close combat and does not pass his Ward save, then who
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Magic Items" id="ad97-2e9b-aead-6624" hidden="false" collective="false" import="true">
-              <constraints>
-                <constraint type="max" value="50" field="ecfa-8486-4f6c-c249" scope="parent" shared="true" id="6729-b049-0567-22f1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-              <entryLinks>
-                <entryLink import="true" name="Enchanted Items" hidden="false" id="24da-3abc-da59-a7a5" collective="false" targetId="bbd0-c163-1cc8-5edf" type="selectionEntryGroup"/>
-                <entryLink import="true" name="Magic Armour" hidden="false" id="3b6e-563e-d51a-4b62" collective="false" targetId="ad6e-3337-4672-ae7b" type="selectionEntryGroup"/>
-                <entryLink import="true" name="Magic Weapons" hidden="false" id="155e-746c-3889-3a3d" collective="false" targetId="a2c9-7abf-3316-b089" type="selectionEntryGroup"/>
-                <entryLink import="true" name="Talismans" hidden="false" id="40d6-0d83-2a6e-f912" collective="false" targetId="bf9b-10c2-4821-9fee" type="selectionEntryGroup"/>
-                <entryLink import="true" name="Arcane Items (LZ-AB + Common)" hidden="false" id="836c-4a4d-659c-bf17" collective="false" targetId="fcbd-0a43-0a83-bb68" type="selectionEntryGroup"/>
-              </entryLinks>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="Mount" id="ad54-30ab-6165-3cec" hidden="false" collective="false" import="true">
+            <selectionEntryGroup name="Mount" id="ad54-30ab-6165-3cec" hidden="false" collective="false" import="true" sortIndex="8">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="13d3-ec5b-0bff-5ac5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="342d-1b65-c01e-c2f6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -2749,14 +2805,33 @@ If Kroq-Gar is wounded in close combat and does not pass his Ward save, then who
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Wizard Level" id="bd90-de1f-2a8e-ffbe" hidden="false" collective="false" import="true" defaultSelectionEntryId="2e7e-4d6a-7fe0-6900">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3533-4360-54f7-9a8c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c3ad-a7c5-221e-dbba" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
+            <selectionEntryGroup name="Magic" id="dbc2-669b-7230-091a" hidden="false" sortIndex="3">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Magic Items" id="ad97-2e9b-aead-6624" hidden="false" collective="false" import="true">
+                  <constraints>
+                    <constraint type="max" value="50" field="ecfa-8486-4f6c-c249" scope="parent" shared="true" id="6729-b049-0567-22f1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Enchanted Items" hidden="false" id="24da-3abc-da59-a7a5" collective="false" targetId="bbd0-c163-1cc8-5edf" type="selectionEntryGroup"/>
+                    <entryLink import="true" name="Magic Armour" hidden="false" id="3b6e-563e-d51a-4b62" collective="false" targetId="ad6e-3337-4672-ae7b" type="selectionEntryGroup"/>
+                    <entryLink import="true" name="Magic Weapons" hidden="false" id="155e-746c-3889-3a3d" collective="false" targetId="a2c9-7abf-3316-b089" type="selectionEntryGroup"/>
+                    <entryLink import="true" name="Talismans" hidden="false" id="40d6-0d83-2a6e-f912" collective="false" targetId="bf9b-10c2-4821-9fee" type="selectionEntryGroup"/>
+                    <entryLink import="true" name="Arcane Items (LZ-AB + Common)" hidden="false" id="836c-4a4d-659c-bf17" collective="false" targetId="fcbd-0a43-0a83-bb68" type="selectionEntryGroup"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Wizard Level" id="bd90-de1f-2a8e-ffbe" hidden="false" collective="false" import="true" defaultSelectionEntryId="2e7e-4d6a-7fe0-6900">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3533-4360-54f7-9a8c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c3ad-a7c5-221e-dbba" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Magic Level 2" hidden="false" id="29a1-48d2-5ebf-9d3f" type="selectionEntry" targetId="fbc2-5115-f240-7367"/>
+                    <entryLink import="true" name="Magic Level 1" hidden="false" id="6f44-4eae-ff50-7301" type="selectionEntry" targetId="158f-d753-59e2-9ad2"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
               <entryLinks>
-                <entryLink import="true" name="Magic Level 2" hidden="false" id="29a1-48d2-5ebf-9d3f" type="selectionEntry" targetId="fbc2-5115-f240-7367"/>
-                <entryLink import="true" name="Magic Level 1" hidden="false" id="6f44-4eae-ff50-7301" type="selectionEntry" targetId="158f-d753-59e2-9ad2"/>
+                <entryLink import="true" name="Show spells from Lore of Heavens" hidden="false" id="35fa-ae13-e250-acb4" type="selectionEntryGroup" targetId="e999-4d26-ec27-9cd0"/>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -2764,6 +2839,9 @@ If Kroq-Gar is wounded in close combat and does not pass his Ward save, then who
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1e16-1223-098f-29aa" includeChildSelections="false"/>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="1472-72ed-e455-8fa4" includeChildSelections="false"/>
           </constraints>
+          <infoLinks>
+            <infoLink name="Skink Priest" id="b90f-78c1-288c-818c" hidden="false" targetId="d227-12e7-4455-fdee" type="profile"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -3464,7 +3542,7 @@ Please discuss with your rival and/or activate the house rules under Campaign/A_
             <entryLink import="true" name="Hand Weapon" hidden="false" id="cbfb-5fac-037f-0756" type="selectionEntry" targetId="abdb-bbd0-41b2-5dff"/>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Blessed Spawning (Skinks of the Southlands)" id="7844-dc2c-6536-142a" hidden="false" collective="false" import="true">
+        <selectionEntryGroup name="Blessed Spawning (Skinks of the Southlands)" id="7844-dc2c-6536-142a" hidden="false" collective="false" import="true" collapsible="true">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8b67-ff9c-daab-a7c0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
@@ -3565,9 +3643,6 @@ Please discuss with your rival and/or activate the house rules under Campaign/A_
       </modifiers>
     </selectionEntry>
     <selectionEntry id="5797-332f-ee94-ac10" name="Lesser Swarms" hidden="true" collective="false" import="true" type="unit">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9f4a-3c9b-2204-36b0" type="max"/>
-      </constraints>
       <infoLinks>
         <infoLink id="31dd-058b-e051-fe0a" name="Lesser Swarms" hidden="false" targetId="687d-480b-61aa-33db" type="profile"/>
         <infoLink id="4be1-7081-3d3b-83b9" name="Swarm" hidden="false" targetId="777f-72b4-bdf2-184a" type="rule"/>
@@ -5511,7 +5586,7 @@ In addition, the bearer causes Fear in Skaven.</characteristic>
         <entryLink id="f64a-67ba-1705-fe2f" name="The Divine Plaque of Protection" hidden="false" collective="false" import="true" targetId="de9a-1fb7-3431-713d" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="bd30-a138-fa7a-ecbe" name="Blessed Spawning Warrios" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="bd30-a138-fa7a-ecbe" name="Blessed Spawning Warrios" hidden="false" collective="false" import="true" collapsible="true">
       <constraints>
         <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1239-2402-7195-3d05" type="max"/>
       </constraints>
@@ -5587,7 +5662,7 @@ In addition, the bearer causes Fear in Skaven.</characteristic>
         </modifierGroup>
       </modifierGroups>
     </selectionEntryGroup>
-    <selectionEntryGroup id="b5f1-cbfb-ba4b-490e" name="Blessed spawnings (Scar Vet)" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="b5f1-cbfb-ba4b-490e" name="Blessed spawnings (Scar Vet)" hidden="false" collective="false" import="true" collapsible="true">
       <entryLinks>
         <entryLink id="8176-4d84-0727-915c" name="Blessed Mark of the Old Ones" hidden="false" collective="false" import="true" targetId="9425-66a8-ef0e-bc7a" type="selectionEntry">
           <costs>
@@ -5636,7 +5711,7 @@ In addition, the bearer causes Fear in Skaven.</characteristic>
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="b9e5-bb8b-3bbf-5f75" name="Blessed Spawning (Skinks)" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="b9e5-bb8b-3bbf-5f75" name="Blessed Spawning (Skinks)" hidden="false" collective="false" import="true" collapsible="true">
       <constraints>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e42-9b97-cbbf-bc75" type="max"/>
       </constraints>
@@ -5783,7 +5858,7 @@ In addition, the bearer causes Fear in Skaven.</characteristic>
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Blessed Spawning (Skinks of the Southlands)" id="62df-4048-7504-aed8" hidden="false" collective="false" import="true">
+    <selectionEntryGroup name="Blessed Spawning (Skinks of the Southlands)" id="62df-4048-7504-aed8" hidden="false" collective="false" import="true" collapsible="true">
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5e35-4a66-4319-9a64" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
       </constraints>
@@ -5858,7 +5933,7 @@ In addition, the bearer causes Fear in Skaven.</characteristic>
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Blessed Spawning (Oldblood)" id="37a8-e49e-d4b1-c361" hidden="false">
+    <selectionEntryGroup name="Blessed Spawning (Oldblood)" id="37a8-e49e-d4b1-c361" hidden="false" collapsible="true">
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Blessed Mark of the Old Ones" hidden="false" id="f04d-a487-1e04-dfa1" collective="false">
           <constraints>
