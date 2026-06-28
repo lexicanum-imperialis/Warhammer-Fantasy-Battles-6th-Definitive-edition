@@ -16547,7 +16547,7 @@ The Norn Consensus only clarifies that this official ruling should not be extend
         <entryLink id="652e-ef44-16e3-ca1f" name="6. Pit of Shades" hidden="false" collective="false" import="true" targetId="892c-7bf1-9202-66fe" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="892e-a8dd-8f70-373a" name="Lore of Beasts" hidden="false" collective="false" import="true" collapsible="true">
+    <selectionEntryGroup id="892e-a8dd-8f70-373a" name="Show spells from Lore of Beasts" hidden="false" collective="false" import="true" collapsible="true">
       <constraints>
         <constraint field="selections" scope="parent" value="6" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="434c-c9e9-29ef-085a" type="max"/>
       </constraints>
@@ -16560,7 +16560,7 @@ The Norn Consensus only clarifies that this official ruling should not be extend
         <entryLink id="50c1-f00b-e2a4-b0d5" name="6. The Wolf Hunts" hidden="false" collective="false" import="true" targetId="8a75-3157-3b27-00c8" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="e999-4d26-ec27-9cd0" name="Lore of Heavens" hidden="false" collective="false" import="true" collapsible="true">
+    <selectionEntryGroup id="e999-4d26-ec27-9cd0" name="Show spells from Lore of Heavens" hidden="false" collective="false" import="true" collapsible="true">
       <constraints>
         <constraint field="selections" scope="parent" value="6" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2421-146f-1336-e9d5" type="max"/>
       </constraints>
