@@ -355,6 +355,7 @@
 - [x] Undgrin Ankor Force (DW1-AB, p.79) for DW2-AB
 - [x] War of Vengeance (DW1-AB, p.79) for DW1-AB
 - [x] War of Vengeance (DW1-AB, p.79) for DW2-AB
+- [ ] Gnoblar Horde
 
 
 ## Sources consulted
