@@ -17597,13 +17597,13 @@ The spell cannot affect Undead targets, Chaos Daemons or Unbreakable units. Unit
             <condition type="equalTo" value="500" field="limit::ecfa-8486-4f6c-c249" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="add" value="The army must consist of at least TWO units but no more than FOUR units" field="error">
+        <modifier type="add" value="The army must consist of at least TWO units but n more than FOUR units (+ 1 HERO)" field="error">
           <comment>BP: The army must consist of at least TWO units but no more than FOUR units</comment>
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition type="greaterThan" value="4" field="selections" scope="force" childId="unit" shared="true" includeChildSelections="false" childName="unit"/>
-                <condition type="lessThan" value="2" field="selections" scope="force" childId="unit" shared="true" includeChildSelections="false" childName="unit"/>
+                <condition type="greaterThan" value="5" field="selections" scope="force" childId="unit" shared="true" includeChildSelections="false" childName="unit"/>
+                <condition type="lessThan" value="3" field="selections" scope="force" childId="unit" shared="true" includeChildSelections="false" childName="unit"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
