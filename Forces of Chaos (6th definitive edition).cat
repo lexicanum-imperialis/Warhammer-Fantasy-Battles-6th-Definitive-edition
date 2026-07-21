@@ -4947,39 +4947,6 @@
         <categoryLink id="caec-345b-fb56-0f6f" name="Special" hidden="false" targetId="43cc-fc3f-35a7-8d03" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="abb4-d7a9-8d23-9f99" name="Musician" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d9e-9e3e-1c89-b7b8" type="max"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="5"/>
-            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="4f99-9fb6-9e7f-4556" name="Standard Bearer" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="06c4-40c9-1640-11c8" type="max"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="10"/>
-            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="6299-b088-957b-af2f" name="Chieftan" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c27b-638f-71b0-9717" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="d2ee-39c3-9954-3bc0" name="Chieftan" hidden="false" targetId="f04a-0250-eb10-8618" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="10"/>
-            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-          </costs>
-        </selectionEntry>
         <selectionEntry id="ebf1-b5d4-b12f-37f1" name="Marauders of Chaos" hidden="false" collective="false" import="true" type="model">
           <constraints>
             <constraint field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3b9d-bfbf-d5ba-defa" type="min"/>
@@ -5027,6 +4994,79 @@
               </modifiers>
             </entryLink>
           </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Command Group" id="48e9-b11b-d9c5-3bfb" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Musician" hidden="false" id="abb4-d7a9-8d23-9f99" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7d9e-9e3e-1c89-b7b8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="5"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="0" field="ecfa-8486-4f6c-c249">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="25" field="selections" scope="unit" childId="model" shared="true" childName="model"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="f1d2-edba-0f35-030a" shared="true" includeChildSelections="true" childName="Archaon&apos;s Horde (SoC)"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Chieftan" hidden="false" id="6299-b088-957b-af2f" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c27b-638f-71b0-9717" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Chieftan" id="d2ee-39c3-9954-3bc0" hidden="false" targetId="f04a-0250-eb10-8618" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="10"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="0" field="ecfa-8486-4f6c-c249">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="25" field="selections" scope="unit" childId="model" shared="true" childName="model"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="f1d2-edba-0f35-030a" shared="true" includeChildSelections="true" childName="Archaon&apos;s Horde (SoC)"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Standard Bearer" hidden="false" id="4f99-9fb6-9e7f-4556" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="06c4-40c9-1640-11c8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="10"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="0" field="ecfa-8486-4f6c-c249">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="25" field="selections" scope="unit" childId="model" shared="true" childName="model"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="f1d2-edba-0f35-030a" shared="true" includeChildSelections="true" childName="Archaon&apos;s Horde (SoC)"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -9379,12 +9419,7 @@ Always Strikes Last</characteristic>
         <categoryLink name="Lord" hidden="false" id="7b1f-d0e5-93ad-0ebf" targetId="d024-d25b-a9b4-73b6" primary="true"/>
       </categoryLinks>
       <infoLinks>
-        <infoLink name="Lord of Chaos" id="8a89-98bf-592f-9d9b" hidden="false" type="profile" targetId="337b-9f3a-7db4-6e41" page="75" publicationId="49b2-cfb5-5286-60ea">
-          <modifiers>
-            <modifier type="set" value="Norse Lord" field="name"/>
-            <modifier type="set" value="8" field="f95b-da01-0578-3bdc"/>
-          </modifiers>
-        </infoLink>
+        <infoLink name="Lord of Skeggi" id="8a89-98bf-592f-9d9b" hidden="false" type="profile" targetId="95e6-81be-287a-96e6" page="75" publicationId="49b2-cfb5-5286-60ea"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Weapons" id="9962-a274-3a4c-a253" hidden="false" sortIndex="3">
@@ -17379,6 +17414,23 @@ Be&apos;lakor may re-roll all his failed rolls to hit, but must always pursue fl
         <characteristic name="I" typeId="dfff-363e-f72a-5a59">6</characteristic>
         <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">3</characteristic>
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">8</characteristic>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">7</characteristic>
+        <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">7</characteristic>
+        <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
+        <characteristic name="Base" typeId="2cad-bb76-8a5a-1607"/>
+      </characteristics>
+    </profile>
+    <profile id="95e6-81be-287a-96e6" name="Norse Lord" publicationId="d750-ac7f-7465-d6d1" page="24" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
+      <characteristics>
+        <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">4</characteristic>
+        <characteristic name="WS" typeId="f95b-da01-0578-3bdc">8</characteristic>
+        <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">3</characteristic>
+        <characteristic name="S" typeId="b690-4bc0-bb73-267b">5</characteristic>
+        <characteristic name="T" typeId="8712-f56f-5b22-a720">5</characteristic>
+        <characteristic name="W" typeId="253a-9b00-4fde-8ac2">3</characteristic>
+        <characteristic name="I" typeId="dfff-363e-f72a-5a59">8</characteristic>
+        <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">5</characteristic>
+        <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">9</characteristic>
         <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">7</characteristic>
         <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">7</characteristic>
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
