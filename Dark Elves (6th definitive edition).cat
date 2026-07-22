@@ -1754,9 +1754,6 @@
                   </selectionEntries>
                 </selectionEntryGroup>
                 <selectionEntryGroup id="a565-e09a-4d23-1ac1" name="Kaine artifacts and skills" hidden="false" collective="false" import="true">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bec0-d206-df69-d9c2" type="max"/>
-                  </constraints>
                   <selectionEntries>
                     <selectionEntry id="ddaa-a5e7-423d-2b50" name="Dance of Doom" hidden="false" collective="false" import="true" type="upgrade">
                       <constraints>
@@ -2563,16 +2560,16 @@
                   <constraints>
                     <constraint type="max" value="25" field="ecfa-8486-4f6c-c249" scope="parent" shared="true" id="6991-a241-0be8-5570" includeChildSelections="false"/>
                   </constraints>
+                  <modifiers>
+                    <modifier type="increment" value="25" field="6991-a241-0be8-5570">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="6229-8c57-5bf7-6f2b" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                      <comment>Leader of The Cult of Khaine (Hellebron)</comment>
+                    </modifier>
+                  </modifiers>
                 </selectionEntryGroup>
               </selectionEntryGroups>
-              <modifiers>
-                <modifier type="set" value="25" field="6991-a241-0be8-5570">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="force" childId="6229-8c57-5bf7-6f2b" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                  <comment>Leader of The Cult of Khaine (Hellebron)</comment>
-                </modifier>
-              </modifiers>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -3371,26 +3368,68 @@ Check &quot;Allow experimental rules?&quot; to disable this message." field="war
               </characteristics>
             </profile>
           </profiles>
-          <entryLinks>
-            <entryLink id="22b0-70a0-6b61-b555" name="Kaine artifacts and skills" hidden="false" collective="false" import="true" targetId="2fcc-df96-7420-9107" type="selectionEntryGroup">
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+          </costs>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Temple of Khaine&apos;s upgrades" id="0ba4-86b6-c720-de3c" hidden="false">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Poisons" id="5702-2b97-3e35-f6fd" hidden="false" collective="false" import="true" collapsible="true">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e7e7-49f1-1941-93de" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Manbane" hidden="false" id="eead-0d8b-68b7-9889" collective="false">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2914-0b28-966d-8068" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="25"/>
+                        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Black Lotus" hidden="false" id="cb5d-19da-f6e3-46a9" collective="false">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5cdb-a032-70ba-f2f1" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="25"/>
+                        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Dark Venom" hidden="false" id="8600-6d18-a9e8-0f9d" collective="false">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6613-5289-03fa-2a68" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="10"/>
+                        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink import="true" name="Kaine artifacts and skills" hidden="false" id="4449-2580-aac2-a0d6" collective="false" targetId="2fcc-df96-7420-9107" type="selectionEntryGroup"/>
+              </entryLinks>
               <constraints>
-                <constraint field="ecfa-8486-4f6c-c249" scope="parent" value="25" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d8b5-beb8-eee3-71a0" type="max"/>
+                <constraint type="max" value="25" field="ecfa-8486-4f6c-c249" scope="parent" shared="true" id="3865-8fb5-b756-ac89" includeChildSelections="false"/>
               </constraints>
               <modifiers>
-                <modifier type="set" value="25" field="d8b5-beb8-eee3-71a0">
+                <modifier type="increment" value="25" field="3865-8fb5-b756-ac89">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="6229-8c57-5bf7-6f2b" shared="true" includeChildSelections="true"/>
                   </conditions>
                   <comment>Leader of The Cult of Khaine (Hellebron)</comment>
                 </modifier>
               </modifiers>
-            </entryLink>
-          </entryLinks>
-          <costs>
-            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
-            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-          </costs>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -8427,9 +8466,6 @@ In addition, a monster that is beaten in hand to hand combat by Rakarth is assum
       </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup id="2fcc-df96-7420-9107" name="Kaine artifacts and skills" hidden="false" collective="false" import="true" collapsible="true">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="998a-8f1b-847d-425f" type="max"/>
-      </constraints>
       <selectionEntries>
         <selectionEntry id="961d-f336-e023-2307" name="Touch of Death" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
