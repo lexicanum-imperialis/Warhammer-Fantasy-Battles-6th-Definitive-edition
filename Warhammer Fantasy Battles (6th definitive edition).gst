@@ -17249,6 +17249,15 @@ Therefore, the enemy Armour save is reduced by an additional -1. For example, an
 - Dogs of War do not have their Paymaster.
 - Dogs of War may have 1 Regiment of Renown. No other patrols may have RoR.</description>
     </rule>
+    <rule name="Small" id="c233-23af-27a2-4cf2" hidden="false">
+      <description>Units with this special rule do not block the line of sight of other units. Note that this does not, however, allow other skirmishers to move through their formation.</description>
+      <comment>Lizardmen, p. 27
+Skaven, p. 11
+Tomb Kings, p. 28</comment>
+    </rule>
+    <rule name="Cannot be joined by characters" id="6788-2a10-2568-a56c" hidden="false">
+      <description>No character can join to this unit.</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="5556-38ea-b278-4a8f" name="Hand Weapon" publicationId="315e-e3c4-08af-fd51" page="91" hidden="false" typeId="7889-42d9-70a0-3ea9" typeName="Weapon">
@@ -17667,15 +17676,4 @@ Use the Wiki to audit the full legal text of the Norn Consensus FAQ, review hist
 
 ## 🤝 Community Governance &amp; Contributions
 We curate and conserve the mechanical reasoning and competitive resolutions. If you locate data bugs, missing item properties, or inconsistencies with the Norn Consensus standard, please submit an issue or open a Pull Request directly against our production branches.</readme>
-  <rules>
-    <rule name="Cannot be joined by characters" id="6788-2a10-2568-a56c" hidden="false">
-      <description>No character can join to this unit.</description>
-    </rule>
-    <rule name="Small" id="c233-23af-27a2-4cf2" hidden="false">
-      <description>Units with this special rule do not block the line of sight of other units. Note that this does not, however, allow other skirmishers to move through their formation.</description>
-      <comment>Lizardmen, p. 27
-Skaven, p. 11
-Tomb Kings, p. 28</comment>
-    </rule>
-  </rules>
 </gameSystem>
