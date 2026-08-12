@@ -374,8 +374,8 @@
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Lore of Life" hidden="false" id="ad33-895b-8515-7103" type="selectionEntryGroup" targetId="7814-b731-32d8-88be"/>
-            <entryLink import="true" name="Lore of Beasts" hidden="false" id="88b8-65f3-ab0b-3311" type="selectionEntryGroup" targetId="892e-a8dd-8f70-373a"/>
-            <entryLink import="true" name="Lore of Heavens" hidden="false" id="fe9b-5855-aa88-3ea5" type="selectionEntryGroup" targetId="e999-4d26-ec27-9cd0"/>
+            <entryLink import="true" name="Show spells from Lore of Beasts" hidden="false" id="88b8-65f3-ab0b-3311" type="selectionEntryGroup" targetId="892e-a8dd-8f70-373a"/>
+            <entryLink import="true" name="Show spells from Lore of Heavens" hidden="false" id="fe9b-5855-aa88-3ea5" type="selectionEntryGroup" targetId="e999-4d26-ec27-9cd0"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -787,7 +787,7 @@
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Lore of Life" hidden="false" id="67ec-5461-75b4-0bf2" type="selectionEntryGroup" targetId="7814-b731-32d8-88be"/>
-            <entryLink import="true" name="Lore of Beasts" hidden="false" id="09a8-2db9-4222-ff3e" type="selectionEntryGroup" targetId="892e-a8dd-8f70-373a"/>
+            <entryLink import="true" name="Show spells from Lore of Beasts" hidden="false" id="09a8-2db9-4222-ff3e" type="selectionEntryGroup" targetId="892e-a8dd-8f70-373a"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -863,8 +863,14 @@
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7dbc-b7e1-d358-b075" type="min"/>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b15-ae0c-1c25-06e9" type="max"/>
               </constraints>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+              </costs>
             </entryLink>
           </entryLinks>
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+          </costs>
         </entryLink>
       </entryLinks>
       <costs>
@@ -993,7 +999,6 @@
                   </costs>
                   <entryLinks>
                     <entryLink import="true" name="Favour of the Fay" hidden="false" id="2528-0707-5605-4cd6" type="selectionEntry" targetId="64c1-eb82-5e42-c606"/>
-                    <entryLink import="true" name="Favour of the Fay" hidden="false" id="df39-45fe-58e3-f436" type="selectionEntry" targetId="64c1-eb82-5e42-c606"/>
                   </entryLinks>
                   <infoLinks>
                     <infoLink name="Grail Knight" id="8a67-742e-ba69-0f15" hidden="false" type="profile" targetId="a9a1-d6b0-af75-cf34"/>
@@ -1011,25 +1016,6 @@
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1ec1-9f92-7918-2cf1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5786-871e-e24d-607c" percentValue="false" includeChildSelections="false" includeChildForces="true"/>
                   </constraints>
-                  <profiles>
-                    <profile name="Cavalier" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="6aa4-e6ef-b120-121e">
-                      <characteristics>
-                        <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">4</characteristic>
-                        <characteristic name="WS" typeId="f95b-da01-0578-3bdc">3</characteristic>
-                        <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">3</characteristic>
-                        <characteristic name="S" typeId="b690-4bc0-bb73-267b">3</characteristic>
-                        <characteristic name="T" typeId="8712-f56f-5b22-a720">3</characteristic>
-                        <characteristic name="W" typeId="253a-9b00-4fde-8ac2">1</characteristic>
-                        <characteristic name="I" typeId="dfff-363e-f72a-5a59">3</characteristic>
-                        <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">2</characteristic>
-                        <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">7</characteristic>
-                        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">7</characteristic>
-                        <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">7</characteristic>
-                        <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
-                        <characteristic name="Base" typeId="2cad-bb76-8a5a-1607"/>
-                      </characteristics>
-                    </profile>
-                  </profiles>
                   <costs>
                     <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
                     <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
@@ -1045,6 +1031,9 @@
                       </conditions>
                     </modifier>
                   </modifiers>
+                  <infoLinks>
+                    <infoLink name="Cavalier" id="0359-fa34-c730-1b9c" hidden="false" type="profile" targetId="6aa4-e6ef-b120-121e"/>
+                  </infoLinks>
                 </selectionEntry>
               </selectionEntries>
               <constraints>
@@ -2900,7 +2889,7 @@
         </selectionEntryGroup>
         <selectionEntryGroup name="Spells Lore" id="4851-36e4-debc-4058" hidden="false" collapsible="true">
           <entryLinks>
-            <entryLink import="true" name="Lore of Heavens" hidden="false" id="49c2-b5cd-7c2b-20a0" type="selectionEntryGroup" targetId="e999-4d26-ec27-9cd0"/>
+            <entryLink import="true" name="Show spells from Lore of Heavens" hidden="false" id="49c2-b5cd-7c2b-20a0" type="selectionEntryGroup" targetId="e999-4d26-ec27-9cd0"/>
             <entryLink import="true" name="Lore of Death" hidden="false" id="76df-9735-ef7a-0bf0" type="selectionEntryGroup" targetId="0a76-fdab-0afb-3612"/>
             <entryLink import="true" name="Lore of Fire" hidden="false" id="a4bd-3c7e-d85f-88f5" type="selectionEntryGroup" targetId="ffc0-ed2b-71f0-b61c"/>
             <entryLink import="true" name="Lore of Life" hidden="false" id="ec24-1a55-bbf9-d72b" type="selectionEntryGroup" targetId="7814-b731-32d8-88be">
@@ -2926,7 +2915,7 @@
             <entryLink import="true" name="Lore of Metal" hidden="false" id="42a1-1f74-52f8-0b64" type="selectionEntryGroup" targetId="f679-dff7-370a-6050"/>
             <entryLink import="true" name="Lore of Light" hidden="false" id="c4eb-2a24-8f72-69e4" type="selectionEntryGroup" targetId="f6d6-76c8-90fe-ac07"/>
             <entryLink import="true" name="Lore of Shadow" hidden="false" id="9789-26e6-c355-8fda" type="selectionEntryGroup" targetId="b0de-c735-e115-5c82"/>
-            <entryLink import="true" name="Lore of Beasts" hidden="false" id="4bde-0aeb-e4be-69c9" type="selectionEntryGroup" targetId="892e-a8dd-8f70-373a"/>
+            <entryLink import="true" name="Show spells from Lore of Beasts" hidden="false" id="4bde-0aeb-e4be-69c9" type="selectionEntryGroup" targetId="892e-a8dd-8f70-373a"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -5736,6 +5725,23 @@ A Champion (or character for that matter) that is in the second (or third) rank 
     <profile name="Banner of Chalons" typeId="a89b-d5a3-7805-c44e" typeName="Magic Items" hidden="false" id="e341-1549-9d40-471a" page="63" publicationId="143d-ca87-8001-00a0">
       <characteristics>
         <characteristic name="Magic stuff" typeId="c7b5-c239-d6c1-0627">The enemy cannot choose the Stand &amp; Shoot reaction against the unit carrying the Banner.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Cavalier" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="6aa4-e6ef-b120-121e">
+      <characteristics>
+        <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">4</characteristic>
+        <characteristic name="WS" typeId="f95b-da01-0578-3bdc">3</characteristic>
+        <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">3</characteristic>
+        <characteristic name="S" typeId="b690-4bc0-bb73-267b">3</characteristic>
+        <characteristic name="T" typeId="8712-f56f-5b22-a720">3</characteristic>
+        <characteristic name="W" typeId="253a-9b00-4fde-8ac2">1</characteristic>
+        <characteristic name="I" typeId="dfff-363e-f72a-5a59">3</characteristic>
+        <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">2</characteristic>
+        <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">7</characteristic>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">7</characteristic>
+        <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">7</characteristic>
+        <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
+        <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">25x50</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
