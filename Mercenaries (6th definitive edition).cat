@@ -3859,20 +3859,34 @@ The Cursed Company and Richter cause fear.</description>
       <selectionEntryGroups>
         <selectionEntryGroup name="Weapons Selection" id="e5fc-7138-3778-150d" hidden="false" collective="false" import="true">
           <modifiers>
+            <modifier type="increment" value="1" field="23c6-c0a7-291c-b239">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" childName="model" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
             <modifier type="increment" value="1" field="7404-89b3-7fdc-429c">
               <repeats>
-                <repeat value="1" repeats="1" field="selections" scope="parent" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" childName="model" includeChildSelections="true"/>
               </repeats>
             </modifier>
           </modifiers>
           <constraints>
             <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="7404-89b3-7fdc-429c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="23c6-c0a7-291c-b239" includeChildSelections="false"/>
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Cathayan Longsword" hidden="false" id="bfa1-5138-391e-1d57" collective="false" targetId="b174-0c70-6a08-43e8" type="selectionEntry">
               <costs>
                 <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="6"/>
               </costs>
+              <modifiers>
+                <modifier type="increment" value="1" field="dc3b-0c35-52de-b354">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" childName="model" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+                <modifier type="decrement" value="1" field="dc3b-0c35-52de-b354"/>
+              </modifiers>
             </entryLink>
             <entryLink import="true" name="Great Weapon" hidden="false" id="5f7f-b8ef-456d-8090" collective="false" targetId="1eb7-3f36-8cf7-e0ba" type="selectionEntry">
               <costs>
@@ -3881,11 +3895,27 @@ The Cursed Company and Richter cause fear.</description>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="739d-97a2-a542-061c" includeChildSelections="false"/>
               </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="739d-97a2-a542-061c">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" childName="model" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+                <modifier type="decrement" value="1" field="739d-97a2-a542-061c"/>
+              </modifiers>
             </entryLink>
             <entryLink import="true" name="Brace of Handguns" hidden="false" id="f89a-f0cf-a71a-aca8" collective="false" targetId="02c0-d227-1ebd-f328" type="selectionEntry">
               <costs>
                 <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="6"/>
               </costs>
+              <modifiers>
+                <modifier type="increment" value="1" field="16a8-cacb-c8e8-fe62">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" childName="model" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+                <modifier type="decrement" value="1" field="16a8-cacb-c8e8-fe62"/>
+              </modifiers>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -3897,9 +3927,13 @@ The Cursed Company and Richter cause fear.</description>
           <entryLinks>
             <entryLink import="true" name="Light Armour" hidden="false" id="767d-78b8-1414-5e9e" collective="false" targetId="055f-8e4e-f170-35d2" type="selectionEntry"/>
             <entryLink import="true" name="Heavy Armour" hidden="false" id="e1fb-37a0-e55d-0777" collective="false" targetId="dde4-0ba8-7b3c-57b7" type="selectionEntry">
-              <costs>
-                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="4"/>
-              </costs>
+              <modifiers>
+                <modifier type="increment" value="4" field="ecfa-8486-4f6c-c249">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" childName="model" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
