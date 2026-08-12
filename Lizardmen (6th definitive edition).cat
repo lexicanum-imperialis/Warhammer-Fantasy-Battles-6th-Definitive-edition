@@ -743,7 +743,7 @@
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ecab-0a5c-13aa-ec06" type="max"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c174-d241-5f23-3e19" type="min"/>
+            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c174-d241-5f23-3e19" type="min"/>
           </constraints>
         </entryLink>
         <entryLink id="5ebb-4a14-5c6e-fafa" name="General" hidden="false" collective="false" import="true" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry"/>
@@ -4600,7 +4600,7 @@ This spell is targeted at a single hill anywhere on the table. Any unit at leas
         <infoLink id="4b20-44d8-f73d-f99e" name="Blesssed Spawning of Itzl, the Rider God" hidden="false" targetId="28f1-98c9-61a1-ff34" type="rule"/>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="cc81-eba5-ffef-a3dc" name="Oldblood mount" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="cc81-eba5-ffef-a3dc" name="Oldblood mount" hidden="true" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8b13-d30f-b026-9cb3" type="max"/>
           </constraints>
@@ -4634,6 +4634,38 @@ This spell is targeted at a single hill anywhere on the table. Any unit at leas
               </costs>
             </selectionEntry>
           </selectionEntries>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="unit" childId="d024-d25b-a9b4-73b6" shared="true" includeChildSelections="true" childName="Lord"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="8083-cfb4-2298-5410" name="ScarVet mount" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a97-199c-14ae-7925" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="4219-3aab-6534-dae9" name="Cold One" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="0312-1a15-2515-0a76" name="Cold One" hidden="false" targetId="7d3c-1d69-5f1c-711f" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="23"/>
+                <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+                <cost name="SC Saurus Chars" typeId="bc66-b624-4194-2f0f" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="unit" childId="c16b-f319-2c62-2c12" shared="true" includeChildSelections="true" childName="Heroes"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
