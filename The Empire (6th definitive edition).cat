@@ -5484,9 +5484,6 @@
               </modifiers>
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Fighting Platform" hidden="false" id="a620-81ad-4707-a76d" collective="false">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="83fb-70a0-012b-e419" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </constraints>
                   <costs>
                     <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="120"/>
                     <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
@@ -5495,22 +5492,29 @@
                   <selectionEntries>
                     <selectionEntry type="upgrade" import="true" name="Trainee Engineer" hidden="false" id="b28e-d5f9-b9d7-2258">
                       <constraints>
-                        <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="ec39-f6f8-16c1-c981" includeChildSelections="false"/>
-                        <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="6bfe-bd9c-bb2a-f0e2" includeChildSelections="false"/>
+                        <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="ca3f-23fd-c95e-7126" includeChildSelections="false"/>
+                        <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="cda4-271a-3c49-0e25" includeChildSelections="false"/>
                       </constraints>
                       <infoLinks>
                         <infoLink name="Trainee Engineer" id="37af-0254-9f81-e4b8" hidden="false" type="profile" targetId="f525-4716-7c1b-3d43"/>
                       </infoLinks>
-                      <selectionEntryGroups>
-                        <selectionEntryGroup name="Equipment" id="5f4e-ba43-39a1-2858" hidden="false">
+                      <infoGroups>
+                        <infoGroup name="Rules" id="8480-667b-d861-5710" hidden="false">
+                          <rules>
+                            <rule name="Engineers in the Steam Tank" id="6675-44b5-6f6d-b46f" hidden="false" page="53" publicationId="cc59-6466-b62e-cf5b">
+                              <description>Same rules as Characters riding a Chariot (BRB p.127):
+- +2 to Armour save -&gt; 4+
+- When shooting at the Tank, for each successfull hit: a 6 hits the Engineer, else against the Tank.
+- In CC the enemy can choose to attack either the Engineers or the Tank
+- They never &quot;move&quot; regarding move-or-shoot rules</description>
+                            </rule>
+                          </rules>
+                        </infoGroup>
+                      </infoGroups>
+                      <selectionEntries>
+                        <selectionEntry type="upgrade" import="true" name="Equipment" hidden="false" id="3bff-4c49-13c3-c993">
                           <entryLinks>
-                            <entryLink import="true" name="Hand Weapon" hidden="false" id="0425-8075-562e-7e76" type="selectionEntry" targetId="abdb-bbd0-41b2-5dff">
-                              <modifiers>
-                                <modifier type="set" value="6" field="bdef-ba9b-d6ce-5b14"/>
-                                <modifier type="set" value="6" field="e28e-dbb4-b8ad-d4ab"/>
-                              </modifiers>
-                            </entryLink>
-                            <entryLink import="true" name="Light Armour" hidden="false" id="39fc-b21f-2b7f-f0e3" type="selectionEntry" targetId="055f-8e4e-f170-35d2">
+                            <entryLink import="true" name="Light Armour" hidden="false" id="39fc-b21f-2b7f-f0e3" type="selectionEntry" targetId="055f-8e4e-f170-35d2" sortIndex="1">
                               <constraints>
                                 <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="3411-cf0f-ed87-0b8e" includeChildSelections="false"/>
                               </constraints>
@@ -5518,36 +5522,25 @@
                                 <modifier type="set" value="6" field="6f1a-1be1-6660-d9a6"/>
                               </modifiers>
                             </entryLink>
-                            <entryLink import="true" name="Hochland long rifle " hidden="false" id="630b-4646-3222-aafb" type="selectionEntry" targetId="42ca-6650-2617-8bc3">
+                            <entryLink import="true" name="Hand Weapon" hidden="false" id="0425-8075-562e-7e76" type="selectionEntry" targetId="abdb-bbd0-41b2-5dff" sortIndex="2">
+                              <modifiers>
+                                <modifier type="set" value="6" field="bdef-ba9b-d6ce-5b14"/>
+                                <modifier type="set" value="6" field="e28e-dbb4-b8ad-d4ab"/>
+                              </modifiers>
+                            </entryLink>
+                            <entryLink import="true" name="Hochland long rifle " hidden="false" id="630b-4646-3222-aafb" type="selectionEntry" targetId="42ca-6650-2617-8bc3" sortIndex="3">
                               <constraints>
                                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2f25-9dc8-ef4e-bf20" includeChildSelections="false"/>
                               </constraints>
                             </entryLink>
-                            <entryLink import="true" name="Repeater Handgun " hidden="false" id="4f47-308a-8f1a-9847" type="selectionEntry" targetId="ec58-81df-307e-7e4c">
+                            <entryLink import="true" name="Repeater Handgun " hidden="false" id="f905-9097-0efc-10d6" type="selectionEntry" targetId="ec58-81df-307e-7e4c" sortIndex="4">
                               <constraints>
-                                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a7ad-4529-518f-bed0" includeChildSelections="false"/>
+                                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2a5a-df09-13f2-5207" includeChildSelections="false"/>
                               </constraints>
                             </entryLink>
                           </entryLinks>
                           <selectionEntries>
-                            <selectionEntry type="upgrade" import="true" name="Ball and Chain" hidden="false" id="e0c2-373d-7a9f-34ef">
-                              <constraints>
-                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6ec5-1f42-8be7-2706" includeChildSelections="false"/>
-                                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="abce-bc0a-3084-0db0" includeChildSelections="false"/>
-                              </constraints>
-                              <profiles>
-                                <profile name="Ball and Chain" typeId="7889-42d9-70a0-3ea9" typeName="Weapon" hidden="false" id="780b-c1d9-dade-a902">
-                                  <characteristics>
-                                    <characteristic name="Range" typeId="3107-4d1e-9a51-6564"/>
-                                    <characteristic name="Strength" typeId="6fe4-1ebb-cb04-1378"/>
-                                    <characteristic name="Damage" typeId="6f2f-d612-52ef-1633"/>
-                                    <characteristic name="Special Rules" typeId="a21a-cdc0-4b13-b236">+3 to S on the first turn of each combat</characteristic>
-                                    <characteristic name="Saves" typeId="8014-a8b2-15c3-da95"/>
-                                  </characteristics>
-                                </profile>
-                              </profiles>
-                            </selectionEntry>
-                            <selectionEntry type="upgrade" import="true" name="Blunderbuss" hidden="false" id="f8c5-122b-e5bb-2128">
+                            <selectionEntry type="upgrade" import="true" name="Blunderbuss" hidden="false" id="f8c5-122b-e5bb-2128" sortIndex="5">
                               <constraints>
                                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4c19-2d38-0bc2-25ae" includeChildSelections="false"/>
                                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7d1f-e2b4-0262-b5d0" includeChildSelections="false"/>
@@ -5564,7 +5557,7 @@
                                 </profile>
                               </profiles>
                             </selectionEntry>
-                            <selectionEntry type="upgrade" import="true" name="Man-catcher" hidden="false" id="7cb6-f025-0666-2b75">
+                            <selectionEntry type="upgrade" import="true" name="Man-catcher" hidden="false" id="7cb6-f025-0666-2b75" sortIndex="6">
                               <constraints>
                                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d477-a179-32c0-9cd6" includeChildSelections="false"/>
                                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bac3-0ebd-ef54-b8f9" includeChildSelections="false"/>
@@ -5581,22 +5574,47 @@
                                 </profile>
                               </profiles>
                             </selectionEntry>
+                            <selectionEntry type="upgrade" import="true" name="Ball and Chain" hidden="false" id="e0c2-373d-7a9f-34ef" sortIndex="7">
+                              <constraints>
+                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6ec5-1f42-8be7-2706" includeChildSelections="false"/>
+                                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="abce-bc0a-3084-0db0" includeChildSelections="false"/>
+                              </constraints>
+                              <profiles>
+                                <profile name="Ball and Chain" typeId="7889-42d9-70a0-3ea9" typeName="Weapon" hidden="false" id="780b-c1d9-dade-a902">
+                                  <characteristics>
+                                    <characteristic name="Range" typeId="3107-4d1e-9a51-6564"/>
+                                    <characteristic name="Strength" typeId="6fe4-1ebb-cb04-1378"/>
+                                    <characteristic name="Damage" typeId="6f2f-d612-52ef-1633"/>
+                                    <characteristic name="Special Rules" typeId="a21a-cdc0-4b13-b236">+3 to S on the first turn of each combat</characteristic>
+                                    <characteristic name="Saves" typeId="8014-a8b2-15c3-da95"/>
+                                  </characteristics>
+                                </profile>
+                              </profiles>
+                            </selectionEntry>
+                            <selectionEntry type="upgrade" import="true" name="Hook Halberd" hidden="false" id="34e9-d778-1681-3575" sortIndex="6">
+                              <constraints>
+                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="af26-6195-1a58-9df3" includeChildSelections="false"/>
+                                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dfdd-e6e9-dcf2-4ee9" includeChildSelections="false"/>
+                              </constraints>
+                              <profiles>
+                                <profile name="Hook Halberd" typeId="7889-42d9-70a0-3ea9" typeName="Weapon" hidden="false" id="d00e-1ecd-7d4e-42fa">
+                                  <characteristics>
+                                    <characteristic name="Range" typeId="3107-4d1e-9a51-6564"/>
+                                    <characteristic name="Strength" typeId="6fe4-1ebb-cb04-1378">+1/+2</characteristic>
+                                    <characteristic name="Damage" typeId="6f2f-d612-52ef-1633"/>
+                                    <characteristic name="Special Rules" typeId="a21a-cdc0-4b13-b236">Requires two hands, +2S vs cavalry (instead of +1S)</characteristic>
+                                    <characteristic name="Saves" typeId="8014-a8b2-15c3-da95"/>
+                                  </characteristics>
+                                </profile>
+                              </profiles>
+                            </selectionEntry>
                           </selectionEntries>
-                        </selectionEntryGroup>
-                      </selectionEntryGroups>
-                      <infoGroups>
-                        <infoGroup name="Rules" id="8480-667b-d861-5710" hidden="false">
-                          <rules>
-                            <rule name="Engineers in the Steam Tank" id="6675-44b5-6f6d-b46f" hidden="false" page="53" publicationId="cc59-6466-b62e-cf5b">
-                              <description>Same rules as Characters riding a Chariot (BRB p.127):
-- +2 to Armour save -&gt; 4+
-- When shooting at the Tank, for each successfull hit: a 6 hits theEngineer, else against the Tank.
-- In CC the enemy can choose to attack either the Engineers or the Tank
-- They never &quot;move&quot; regarding move-or-shoot rules</description>
-                            </rule>
-                          </rules>
-                        </infoGroup>
-                      </infoGroups>
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f9aa-bd40-2621-763f" includeChildSelections="false"/>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1f9f-ff8c-9f91-d9ad" includeChildSelections="false"/>
+                          </constraints>
+                        </selectionEntry>
+                      </selectionEntries>
                     </selectionEntry>
                   </selectionEntries>
                 </selectionEntry>
@@ -10687,6 +10705,9 @@ No model in base contact may cast spells (including friendly models) or use Boun
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="82ae-7db7-0e9d-f686" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry id="a52d-aaeb-0794-440b" name="Repeater Pistol " hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
