@@ -5380,31 +5380,9 @@
             <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="8359-4fb7-d558-270c" name="Cannon in the hull" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b39e-c259-a70c-2ccb" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1a32-62c7-586d-63fc" type="max"/>
-          </constraints>
-          <costs>
-            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="4961-a250-64a0-816d" name="Steam gun in turret" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="52c6-f6e6-ccb3-97b2" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f94c-c692-e0a9-ad57" type="max"/>
-          </constraints>
-          <costs>
-            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
-          </costs>
-        </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="300"/>
+        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="250"/>
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
@@ -5433,6 +5411,213 @@
           </conditions>
         </modifier>
       </modifiers>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapons and upgardes" id="32a8-58f2-5748-bc19" hidden="false">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Hull upgrades" id="20a5-4dde-cf7d-95fb" hidden="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="604e-8992-e6f9-dcdd" includeChildSelections="false"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Main Cannon" hidden="false" id="8359-4fb7-d558-270c" collective="false">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1a32-62c7-586d-63fc" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="25"/>
+                    <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                    <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Main Cannon (Hull)" id="5591-add8-5105-a7ae" hidden="false" type="profile" targetId="7597-dbf0-9e56-05e2"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Volley Gun" hidden="false" id="a558-625e-ae18-65aa" collective="false">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8d6d-6c9e-bfcb-adbe" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="50"/>
+                    <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                    <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Volley Gun (far)" id="ec31-f159-392c-53d8" hidden="false" type="profile" targetId="f1ef-b7c5-f660-522a">
+                      <modifiers>
+                        <modifier type="set" value="-1" field="8014-a8b2-15c3-da95"/>
+                        <modifier type="set" value="3" field="6fe4-1ebb-cb04-1378"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink name="Volley Gun (close)" id="84ef-e6d9-8b18-e433" hidden="false" type="profile" targetId="22a5-fded-1481-4a12">
+                      <modifiers>
+                        <modifier type="set" value="-2" field="8014-a8b2-15c3-da95"/>
+                        <modifier type="set" value="4" field="6fe4-1ebb-cb04-1378"/>
+                      </modifiers>
+                    </infoLink>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Mortar (no turret)" hidden="false" id="8cb0-d86e-429c-30a4" collective="false">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ab57-a367-bd8d-8f57" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="-50"/>
+                    <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                    <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Mortar (Hull)" id="6789-5fc3-1e9c-02f9" hidden="false" type="profile" targetId="3448-32a1-4e2b-b7d6"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Turrent Upgrades" id="b3ae-598b-e080-80d2" hidden="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="329d-16df-33ac-5ac1" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="0" field="329d-16df-33ac-5ac1">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="8cb0-d86e-429c-30a4" shared="true" childName="Mortar (no turret)" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Fighting Platform" hidden="false" id="a620-81ad-4707-a76d" collective="false">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="83fb-70a0-012b-e419" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="120"/>
+                    <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                    <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+                  </costs>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Trainee Engineer" hidden="false" id="b28e-d5f9-b9d7-2258">
+                      <constraints>
+                        <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="ec39-f6f8-16c1-c981" includeChildSelections="false"/>
+                        <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="6bfe-bd9c-bb2a-f0e2" includeChildSelections="false"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink name="Trainee Engineer" id="37af-0254-9f81-e4b8" hidden="false" type="profile" targetId="f525-4716-7c1b-3d43"/>
+                      </infoLinks>
+                      <selectionEntryGroups>
+                        <selectionEntryGroup name="Equipment" id="5f4e-ba43-39a1-2858" hidden="false">
+                          <entryLinks>
+                            <entryLink import="true" name="Hand Weapon" hidden="false" id="0425-8075-562e-7e76" type="selectionEntry" targetId="abdb-bbd0-41b2-5dff">
+                              <modifiers>
+                                <modifier type="set" value="6" field="bdef-ba9b-d6ce-5b14"/>
+                                <modifier type="set" value="6" field="e28e-dbb4-b8ad-d4ab"/>
+                              </modifiers>
+                            </entryLink>
+                            <entryLink import="true" name="Light Armour" hidden="false" id="39fc-b21f-2b7f-f0e3" type="selectionEntry" targetId="055f-8e4e-f170-35d2">
+                              <constraints>
+                                <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="3411-cf0f-ed87-0b8e" includeChildSelections="false"/>
+                              </constraints>
+                              <modifiers>
+                                <modifier type="set" value="6" field="6f1a-1be1-6660-d9a6"/>
+                              </modifiers>
+                            </entryLink>
+                            <entryLink import="true" name="Hochland long rifle " hidden="false" id="630b-4646-3222-aafb" type="selectionEntry" targetId="42ca-6650-2617-8bc3">
+                              <constraints>
+                                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2f25-9dc8-ef4e-bf20" includeChildSelections="false"/>
+                              </constraints>
+                            </entryLink>
+                            <entryLink import="true" name="Repeater Handgun " hidden="false" id="4f47-308a-8f1a-9847" type="selectionEntry" targetId="ec58-81df-307e-7e4c">
+                              <constraints>
+                                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a7ad-4529-518f-bed0" includeChildSelections="false"/>
+                              </constraints>
+                            </entryLink>
+                          </entryLinks>
+                          <selectionEntries>
+                            <selectionEntry type="upgrade" import="true" name="Ball and Chain" hidden="false" id="e0c2-373d-7a9f-34ef">
+                              <constraints>
+                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6ec5-1f42-8be7-2706" includeChildSelections="false"/>
+                                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="abce-bc0a-3084-0db0" includeChildSelections="false"/>
+                              </constraints>
+                              <profiles>
+                                <profile name="Ball and Chain" typeId="7889-42d9-70a0-3ea9" typeName="Weapon" hidden="false" id="780b-c1d9-dade-a902">
+                                  <characteristics>
+                                    <characteristic name="Range" typeId="3107-4d1e-9a51-6564"/>
+                                    <characteristic name="Strength" typeId="6fe4-1ebb-cb04-1378"/>
+                                    <characteristic name="Damage" typeId="6f2f-d612-52ef-1633"/>
+                                    <characteristic name="Special Rules" typeId="a21a-cdc0-4b13-b236">+3 to S on the first turn of each combat</characteristic>
+                                    <characteristic name="Saves" typeId="8014-a8b2-15c3-da95"/>
+                                  </characteristics>
+                                </profile>
+                              </profiles>
+                            </selectionEntry>
+                            <selectionEntry type="upgrade" import="true" name="Blunderbuss" hidden="false" id="f8c5-122b-e5bb-2128">
+                              <constraints>
+                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4c19-2d38-0bc2-25ae" includeChildSelections="false"/>
+                                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7d1f-e2b4-0262-b5d0" includeChildSelections="false"/>
+                              </constraints>
+                              <profiles>
+                                <profile name="Blunderbuss" typeId="7889-42d9-70a0-3ea9" typeName="Weapon" hidden="false" id="2f70-d5c3-db72-7533">
+                                  <characteristics>
+                                    <characteristic name="Range" typeId="3107-4d1e-9a51-6564">Flame template</characteristic>
+                                    <characteristic name="Strength" typeId="6fe4-1ebb-cb04-1378">3</characteristic>
+                                    <characteristic name="Damage" typeId="6f2f-d612-52ef-1633"/>
+                                    <characteristic name="Special Rules" typeId="a21a-cdc0-4b13-b236">Move or fire, Armour piercing</characteristic>
+                                    <characteristic name="Saves" typeId="8014-a8b2-15c3-da95"/>
+                                  </characteristics>
+                                </profile>
+                              </profiles>
+                            </selectionEntry>
+                            <selectionEntry type="upgrade" import="true" name="Man-catcher" hidden="false" id="7cb6-f025-0666-2b75">
+                              <constraints>
+                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d477-a179-32c0-9cd6" includeChildSelections="false"/>
+                                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bac3-0ebd-ef54-b8f9" includeChildSelections="false"/>
+                              </constraints>
+                              <profiles>
+                                <profile name="Man-catcher" typeId="7889-42d9-70a0-3ea9" typeName="Weapon" hidden="false" id="cf51-6870-16cb-1ec0">
+                                  <characteristics>
+                                    <characteristic name="Range" typeId="3107-4d1e-9a51-6564"/>
+                                    <characteristic name="Strength" typeId="6fe4-1ebb-cb04-1378"/>
+                                    <characteristic name="Damage" typeId="6f2f-d612-52ef-1633"/>
+                                    <characteristic name="Special Rules" typeId="a21a-cdc0-4b13-b236">Killing Blow, Requires two hands</characteristic>
+                                    <characteristic name="Saves" typeId="8014-a8b2-15c3-da95"/>
+                                  </characteristics>
+                                </profile>
+                              </profiles>
+                            </selectionEntry>
+                          </selectionEntries>
+                        </selectionEntryGroup>
+                      </selectionEntryGroups>
+                      <infoGroups>
+                        <infoGroup name="Rules" id="8480-667b-d861-5710" hidden="false">
+                          <rules>
+                            <rule name="Engineers in the Steam Tank" id="6675-44b5-6f6d-b46f" hidden="false" page="53" publicationId="cc59-6466-b62e-cf5b">
+                              <description>Same rules as Characters riding a Chariot (BRB p.127):
+- +2 to Armour save -&gt; 4+
+- When shooting at the Tank, for each successfull hit: a 6 hits theEngineer, else against the Tank.
+- In CC the enemy can choose to attack either the Engineers or the Tank
+- They never &quot;move&quot; regarding move-or-shoot rules</description>
+                            </rule>
+                          </rules>
+                        </infoGroup>
+                      </infoGroups>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Steam Gun" hidden="false" id="2451-df52-b4b0-1d77" collective="false">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b193-0789-461f-b9d9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="25"/>
+                    <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+                    <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Steam Gun (Turret)" id="2da2-bba1-608f-f19f" hidden="false" type="profile" targetId="2fbb-9102-446b-62c7"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="daee-7819-84a3-5c3a" name="0-1 Reiksguard on Foot (EM-AB)" hidden="true" collective="false" import="true" type="unit">
       <constraints>
@@ -10478,9 +10663,9 @@ No model in base contact may cast spells (including friendly models) or use Boun
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="42ca-6650-2617-8bc3" name="Hocbland long rifle " publicationId="b61c-34ec-3be0-1b38" page="19" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="42ca-6650-2617-8bc3" name="Hochland long rifle " publicationId="b61c-34ec-3be0-1b38" page="19" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink id="351e-7624-7884-fed7" name="Hocbland long rifle " hidden="false" targetId="e32e-791d-8012-a6fb" type="profile"/>
+        <infoLink id="351e-7624-7884-fed7" name="Hochland long rifle " hidden="false" targetId="e32e-791d-8012-a6fb" type="profile"/>
         <infoLink id="4493-ef12-1de4-b7ba" name="Scientific Precision" hidden="false" targetId="4eb3-4ab8-e98f-b4eb" type="rule"/>
       </infoLinks>
       <costs>
@@ -10488,6 +10673,9 @@ No model in base contact may cast spells (including friendly models) or use Boun
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4a7b-c179-ebac-3e03" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry id="ec58-81df-307e-7e4c" name="Repeater Handgun " hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
@@ -15386,6 +15574,80 @@ Wearer is immune to spells of the Lore of Light.</characteristic>
         <characteristic name="Damage" typeId="6f2f-d612-52ef-1633">1D6</characteristic>
         <characteristic name="Special Rules" typeId="a21a-cdc0-4b13-b236">Single 1A instead of the rest of attacks of the character</characteristic>
         <characteristic name="Saves" typeId="8014-a8b2-15c3-da95"/>
+      </characteristics>
+    </profile>
+    <profile name="Team Gun (Turret)" typeId="7889-42d9-70a0-3ea9" typeName="Weapon" hidden="false" id="e11c-6468-d8bf-49bf" publicationId="cc59-6466-b62e-cf5b" page="53">
+      <characteristics>
+        <characteristic name="Range" typeId="3107-4d1e-9a51-6564">Flame</characteristic>
+        <characteristic name="Strength" typeId="6fe4-1ebb-cb04-1378">3</characteristic>
+        <characteristic name="Damage" typeId="6f2f-d612-52ef-1633">1</characteristic>
+        <characteristic name="Special Rules" typeId="a21a-cdc0-4b13-b236"/>
+        <characteristic name="Saves" typeId="8014-a8b2-15c3-da95">-3</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Main Cannon (Hull)" typeId="7889-42d9-70a0-3ea9" typeName="Weapon" hidden="false" id="7597-dbf0-9e56-05e2" publicationId="cc59-6466-b62e-cf5b" page="53">
+      <characteristics>
+        <characteristic name="Range" typeId="3107-4d1e-9a51-6564">16&quot;</characteristic>
+        <characteristic name="Strength" typeId="6fe4-1ebb-cb04-1378">8</characteristic>
+        <characteristic name="Damage" typeId="6f2f-d612-52ef-1633">D3</characteristic>
+        <characteristic name="Special Rules" typeId="a21a-cdc0-4b13-b236">Misfire in ST Malfunction table, also cannon is destroyed on [1], and can not shoot next turn if [2-3]</characteristic>
+        <characteristic name="Saves" typeId="8014-a8b2-15c3-da95">None</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Volley Gun (far)" typeId="7889-42d9-70a0-3ea9" typeName="Weapon" hidden="false" id="f1ef-b7c5-f660-522a" publicationId="cc59-6466-b62e-cf5b" page="53">
+      <characteristics>
+        <characteristic name="Range" typeId="3107-4d1e-9a51-6564">12&quot;*24&quot;</characteristic>
+        <characteristic name="Strength" typeId="6fe4-1ebb-cb04-1378">4</characteristic>
+        <characteristic name="Damage" typeId="6f2f-d612-52ef-1633"/>
+        <characteristic name="Special Rules" typeId="a21a-cdc0-4b13-b236">Hits/Shot: 1/2 Artillery dice.
+Misfire 1 dice on ST Malfunction chart, the other in Helblaster Misfire. Apply BOTH.</characteristic>
+        <characteristic name="Saves" typeId="8014-a8b2-15c3-da95">-2</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Volley Gun (close)" typeId="7889-42d9-70a0-3ea9" typeName="Weapon" hidden="false" id="22a5-fded-1481-4a12" publicationId="cc59-6466-b62e-cf5b" page="53">
+      <characteristics>
+        <characteristic name="Range" typeId="3107-4d1e-9a51-6564">0&quot;-12&quot;</characteristic>
+        <characteristic name="Strength" typeId="6fe4-1ebb-cb04-1378">5</characteristic>
+        <characteristic name="Damage" typeId="6f2f-d612-52ef-1633"/>
+        <characteristic name="Special Rules" typeId="a21a-cdc0-4b13-b236">Hits/shot: Artillery dice.
+Misfire 1 dice on ST Malfunction chart, the other in Helblaster Misfire. Apply BOTH.</characteristic>
+        <characteristic name="Saves" typeId="8014-a8b2-15c3-da95">-3</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Mortar (Hull)" typeId="7889-42d9-70a0-3ea9" typeName="Weapon" hidden="false" id="3448-32a1-4e2b-b7d6" publicationId="40c259e5-394b-4f0b-86e4-71098cffd0cf" page="13">
+      <characteristics>
+        <characteristic name="Range" typeId="3107-4d1e-9a51-6564">6&quot;-24&quot;</characteristic>
+        <characteristic name="Strength" typeId="6fe4-1ebb-cb04-1378">3, center S6</characteristic>
+        <characteristic name="Damage" typeId="6f2f-d612-52ef-1633">1, center D3</characteristic>
+        <characteristic name="Special Rules" typeId="a21a-cdc0-4b13-b236">5&quot; template
+Misfire in ST Malfunction table, also cannon is destroyed on [1], and can not shoot next turn if [2-3]</characteristic>
+        <characteristic name="Saves" typeId="8014-a8b2-15c3-da95">-1, none in center</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Steam Gun (Turret)" typeId="7889-42d9-70a0-3ea9" typeName="Weapon" hidden="false" id="2fbb-9102-446b-62c7" publicationId="cc59-6466-b62e-cf5b" page="53">
+      <characteristics>
+        <characteristic name="Range" typeId="3107-4d1e-9a51-6564">Fire Template</characteristic>
+        <characteristic name="Strength" typeId="6fe4-1ebb-cb04-1378">3</characteristic>
+        <characteristic name="Damage" typeId="6f2f-d612-52ef-1633">1</characteristic>
+        <characteristic name="Special Rules" typeId="a21a-cdc0-4b13-b236"/>
+        <characteristic name="Saves" typeId="8014-a8b2-15c3-da95">-3</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="f525-4716-7c1b-3d43" name="Trainee Engineer" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile" publicationId="cc59-6466-b62e-cf5b" page="53">
+      <characteristics>
+        <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">4</characteristic>
+        <characteristic name="WS" typeId="f95b-da01-0578-3bdc">3</characteristic>
+        <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">4</characteristic>
+        <characteristic name="S" typeId="b690-4bc0-bb73-267b">3</characteristic>
+        <characteristic name="T" typeId="8712-f56f-5b22-a720">3</characteristic>
+        <characteristic name="W" typeId="253a-9b00-4fde-8ac2">1</characteristic>
+        <characteristic name="I" typeId="dfff-363e-f72a-5a59">3</characteristic>
+        <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
+        <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">7</characteristic>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">4</characteristic>
+        <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">7</characteristic>
+        <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
+        <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">20x20</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
