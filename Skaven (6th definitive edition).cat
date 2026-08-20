@@ -8653,6 +8653,67 @@ no armour saves.</description>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Flayerkin" hidden="false" id="ee1c-7d76-146a-2c77">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Flayerkin" hidden="false" id="074f-172a-1e0e-36c0" sortIndex="1">
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="14"/>
+            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="cfcf-a508-19ab-d232" includeChildSelections="false"/>
+            <constraint type="max" value="20" field="selections" scope="parent" shared="true" id="28ab-ab4f-1e62-98fc" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Flayerkin" id="ea94-fb7d-e6fb-e996" hidden="false" type="profile" targetId="cab5-2935-fee7-94db"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Wallcreeper (Champion)" hidden="false" id="813e-f154-632e-d8b3" sortIndex="2">
+          <costs>
+            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="14"/>
+            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
+            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2b09-a539-396f-378d" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Wallcreeper" id="16b4-3bb8-1def-ce01" hidden="false" type="profile" targetId="7582-99e2-70f2-42d8"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Two Hand Weapons" hidden="false" id="3174-85e4-82cc-3e55" type="selectionEntry" targetId="36a8-7bbb-d204-0314" sortIndex="3">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c9db-5dcd-bf6f-2bfd" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="08ed-8fa9-3cba-9b11" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Grappling Hooks" hidden="false" id="bff6-ea6a-1827-c833" type="selectionEntry" targetId="6eac-4ed9-4511-ff14" sortIndex="4">
+          <modifiers>
+            <modifier type="decrement" value="1" field="ecfa-8486-4f6c-c249">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="any" shared="true" roundUp="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0e30-a37d-e33e-dede" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="Scouts" id="3037-6460-ebf2-4091" hidden="false" type="rule" targetId="889c-dfc3-95a5-2d30"/>
+        <infoLink name="Killing Blow" id="e413-f6ed-b00a-2892" hidden="false" type="rule" targetId="e08e-1c7b-a667-f05b"/>
+        <infoLink name="Skirmishers" id="5116-f8e7-11b3-f5d7" hidden="false" type="rule" targetId="1945-ac89-9cc4-3537"/>
+        <infoLink name="Human Chains" id="4ccf-5467-0d7d-1044" hidden="false" type="rule" targetId="6842-87ea-bd09-2384"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Experimental rules" hidden="false" id="5da1-f6ff-40df-3c94" targetId="4fed-b911-e6e0-927b" primary="false"/>
+        <categoryLink name="Special" hidden="false" id="4062-5795-0539-23a1" targetId="43cc-fc3f-35a7-8d03" primary="true"/>
+      </categoryLinks>
+    </selectionEntry>
   </selectionEntries>
   <entryLinks>
     <entryLink id="c042-1d75-40ca-c654" name="Allow experimental rules?" hidden="false" collective="false" import="true" targetId="8b76-92c4-23f9-54b1" type="selectionEntry">
@@ -10511,6 +10572,9 @@ If you roll a &apos;misfire&apos; result something has gone awry with the warps
     <rule id="f5b3-34d4-93ae-ca47" name="Warp Fleas (Morbus Sanguis)" publicationId="5963-108c-c916-4298" page="4" hidden="false">
       <description>Anyone fighting Morbus in hand-to-hand combat does so with -1 to hit penalty as they’re distracted by the biting fleas. This affects even Skaven because the fleas have grown so large from the effects of the warpstone in Morbus&apos; bloodstream.</description>
     </rule>
+    <rule name="Human Chains" id="6842-87ea-bd09-2384" hidden="false">
+      <description>Flayerkin may scale walls as if equipped with grappling hooks. If any non-mounted model reaches any wall or tower section that has had at least five Flayerkin scale its walls, it may climb up as if it was equipped with up to five ladders. Flayerkin ignore the penalty for attacking over a defended obstacle.</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="76a0-6aa7-9c16-c99f" name="Warlord" publicationId="f804-741f-2593-2dec" page="11" hidden="false" typeId="a54a-7f00-29bf-12b1" typeName="Profile">
@@ -11565,6 +11629,40 @@ An enemy model cannot attack back against whip-armed models if it is not in base
         <characteristic name="I" typeId="dfff-363e-f72a-5a59">3</characteristic>
         <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">2</characteristic>
         <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">4</characteristic>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">7</characteristic>
+        <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">7</characteristic>
+        <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
+        <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">20x20</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Wallcreeper" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="7582-99e2-70f2-42d8">
+      <characteristics>
+        <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">4</characteristic>
+        <characteristic name="WS" typeId="f95b-da01-0578-3bdc">4</characteristic>
+        <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">3</characteristic>
+        <characteristic name="S" typeId="b690-4bc0-bb73-267b">4</characteristic>
+        <characteristic name="T" typeId="8712-f56f-5b22-a720">3</characteristic>
+        <characteristic name="W" typeId="253a-9b00-4fde-8ac2">1</characteristic>
+        <characteristic name="I" typeId="dfff-363e-f72a-5a59">4</characteristic>
+        <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">2</characteristic>
+        <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">8</characteristic>
+        <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">7</characteristic>
+        <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">7</characteristic>
+        <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
+        <characteristic name="Base" typeId="2cad-bb76-8a5a-1607">20x20</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Flayerkin" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="cab5-2935-fee7-94db">
+      <characteristics>
+        <characteristic name="Mv" typeId="0e92-d038-82bf-fb41">4</characteristic>
+        <characteristic name="WS" typeId="f95b-da01-0578-3bdc">4</characteristic>
+        <characteristic name="BS" typeId="4a8b-0c8e-3daf-7901">3</characteristic>
+        <characteristic name="S" typeId="b690-4bc0-bb73-267b">4</characteristic>
+        <characteristic name="T" typeId="8712-f56f-5b22-a720">3</characteristic>
+        <characteristic name="W" typeId="253a-9b00-4fde-8ac2">1</characteristic>
+        <characteristic name="I" typeId="dfff-363e-f72a-5a59">4</characteristic>
+        <characteristic name="A" typeId="6b9f-c8fe-8998-27e3">1</characteristic>
+        <characteristic name="Ld" typeId="2d45-18fe-9eb3-b113">7</characteristic>
         <characteristic name="Sv" typeId="f1be-e66c-d5e1-673c">7</characteristic>
         <characteristic name="Sv+" typeId="d4a9-0ed4-d041-e54b">7</characteristic>
         <characteristic name="US" typeId="fa44-51dd-e69c-8d6a">1</characteristic>
