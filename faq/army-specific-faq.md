@@ -7605,6 +7605,22 @@ This mirrors the shooting distribution rules and prevents either model type from
 
 ---
 
+**Q:** When an Orc Bully is added to a Goblin war machine crew (Spear Chukka, Rock Lobber, or Doom Diver):
+
+- (a) Can the Goblins use the Bully's Leadership of 7?
+- (b) Does his Ignore Goblin Panic rule make the crew immune to Goblin panic?
+- (c) If the Goblins fail a Panic test, does the Orc Bully stay behind to fire the machine?
+
+**Ruling:** The interactions are resolved as follows:
+
+- (a) Leadership (Yes): The crew is treated as a single unit and may use the Bully's superior Ld 7 for all Leadership-based tests.
+- (b) Panic Immunity (No): The crew is a Goblin unit, not an Orc unit. The Ignore Goblin Panic rule does not apply; they must test if nearby Goblins or Snotlings flee.
+- (c) Fleeing (No): If the unit fails a Panic test, the entire unit (including the Orc Bully) must flee 2D6" away. Models belonging to a unit must flee if the unit flees, overriding any individual immunities. The machine is left abandoned.
+
+**Source:** `Source: [Warhammer FB Rulebook pages 100 & 119 / Orcs & Goblins Army Book pages 13 & 47]`
+
+---
+
 ### DWARFS
 
 **Q:** If a unit of Dwarf Miners arrives on the battlefield using their Underground Advance rule, can they be struck by the Anvil of Doom's *Rune of Oath and Honour* in the subsequent Shooting phase to declare a charge?

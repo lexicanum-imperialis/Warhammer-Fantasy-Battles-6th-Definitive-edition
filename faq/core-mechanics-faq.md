@@ -4028,6 +4028,14 @@ Although the Giant is fighting in close combat, the attack's distribution instru
 
 ---
 
+**Q:** If a specific model within a war machine crew is personally immune to a psychology trigger (e.g., an Orc Bully immune to Goblin panic), but the rest of the crew is not, how are Panic tests and flight resolved?
+
+**Ruling:** The entire unit tests and flees together as a single entity. A war machine crew and its upgrades function as a single unit. Under core psychology rules, if a unit fails a test and is forced to flee, every model belonging to that unit must flee with them, overriding any individual immunities. The entire crew flees 2D6" away, leaving the machine abandoned.
+
+**Source:** `[Warhammer FB Rulebook pages 100 & 119]`
+
+---
+
 ### MAGIC
 
 **Q:** What happens if two different Wizards cast spells on the same unit with completely contradictory ongoing effects, such as one spell preventing a unit from moving and a subsequent spell obliging it to move?
