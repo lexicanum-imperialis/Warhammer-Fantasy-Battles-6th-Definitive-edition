@@ -405,6 +405,12 @@
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry type="model" import="true" name="Elector Count" hidden="false" id="d2de-4db7-d3d9-2297">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7bf4-b6d0-b9f3-4e6f" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0b68-cd47-c086-104f" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="d7b5-6f57-f3fc-a0c4" name="Weapons" hidden="false" collective="false" import="true">
@@ -3440,11 +3446,6 @@
     </selectionEntry>
     <selectionEntry id="d3f0-a597-6023-0c70" name="Great Cannon" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
-        <infoLink id="ef45-e7f4-0f18-66ab" name="War machines" hidden="false" targetId="f9f4-4ab2-8b24-8433" type="profile">
-          <modifiers>
-            <modifier type="set" field="name" value="Canon"/>
-          </modifiers>
-        </infoLink>
         <infoLink id="882a-0407-41d3-041f" name="Empire soldier" hidden="false" targetId="b777-4b66-0f67-d717" type="profile">
           <modifiers>
             <modifier type="set" field="name" value="Crew"/>
@@ -3457,7 +3458,7 @@
         <categoryLink name="War Machine" hidden="false" id="6515-c652-17db-59a0" targetId="f672-d9d4-a601-479a" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="367b-d51f-1eed-8654" name="3 Crew" hidden="false" collective="true" import="true" type="upgrade">
+        <selectionEntry id="367b-d51f-1eed-8654" name="3 Crew" hidden="false" collective="true" import="true" type="model" subType="crew">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dee6-f4d6-4a01-8ae1" type="max"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9082-e16d-1c76-a071" type="min"/>
@@ -3475,6 +3476,19 @@
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Cannon" hidden="false" id="3b22-8c1c-be9b-b436">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2b26-5e9a-5135-4a19" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c916-87f2-5806-9b6f" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="War machines" id="ef45-e7f4-0f18-66ab" hidden="false" targetId="f9f4-4ab2-8b24-8433" type="profile">
+              <modifiers>
+                <modifier type="set" value="Canon" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -3550,11 +3564,6 @@
     </selectionEntry>
     <selectionEntry id="862d-3e61-0bf1-4f79" name="Mortar" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
-        <infoLink id="efcb-e9e1-3cff-bc09" name="War machines" hidden="false" targetId="f9f4-4ab2-8b24-8433" type="profile">
-          <modifiers>
-            <modifier type="set" field="name" value="Mortar"/>
-          </modifiers>
-        </infoLink>
         <infoLink id="9963-3c3b-b5c9-24a6" name="Empire soldier" hidden="false" targetId="b777-4b66-0f67-d717" type="profile">
           <modifiers>
             <modifier type="set" field="name" value="Crew"/>
@@ -3567,7 +3576,7 @@
         <categoryLink name="War Machine" hidden="false" id="386c-9971-3284-c878" targetId="f672-d9d4-a601-479a" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="9433-9730-ad2a-1e45" name="3 Crew" hidden="false" collective="true" import="true" type="upgrade">
+        <selectionEntry id="9433-9730-ad2a-1e45" name="3 Crew" hidden="false" collective="true" import="true" type="model" subType="crew">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="093e-4983-00ef-ea56" type="max"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e6e-86f3-97ac-b7b0" type="min"/>
@@ -3585,6 +3594,19 @@
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Mortar" hidden="false" id="9aa2-d40c-f92b-b9e4">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1ddd-dc86-0343-2973" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2d28-ce68-8736-6536" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="War machines" id="efcb-e9e1-3cff-bc09" hidden="false" targetId="f9f4-4ab2-8b24-8433" type="profile">
+              <modifiers>
+                <modifier type="set" value="Mortar" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -3886,6 +3908,12 @@
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Templar Grand Master" hidden="false" id="d897-1f1f-fc74-2869">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f7f0-ac74-2551-96a1" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="678e-d913-a426-500c" includeChildSelections="false"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -4219,6 +4247,12 @@
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry type="model" import="true" name="Wizard Lord" hidden="false" id="c688-fe89-3c83-4a2b">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="18a3-ff6e-1c82-7216" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ae0f-3929-868f-8098" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="049a-bf34-5824-3df7" name="Magic Level" hidden="false" collective="false" import="true" defaultSelectionEntryId="e237-8ffb-5cb1-601b">
@@ -4377,6 +4411,15 @@
               <comment>BSB</comment>
             </modifier>
           </modifiers>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Captain" hidden="false" id="61a5-e2fb-eacf-f0a7">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ebdb-d4fa-6f88-ace4" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fa06-96b9-6a3b-4550" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Captain" id="af047f62-72bb-403c-a75f-808f645eaf0e" hidden="false" targetId="72c7-c857-79a2-8e87" type="profile"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -4678,9 +4721,6 @@
           <comment>BP</comment>
         </modifier>
       </modifiers>
-      <infoLinks>
-        <infoLink id="af047f62-72bb-403c-a75f-808f645eaf0e" name="Captain" hidden="false" targetId="72c7-c857-79a2-8e87" type="profile"/>
-      </infoLinks>
       <constraints>
         <constraint type="max" value="-1" field="ecfa-8486-4f6c-c249" scope="parent" shared="true" id="88ac-d1fa-7c81-3fa3">
           <comment>BP</comment>
@@ -4738,6 +4778,12 @@
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Warrior Priest" hidden="false" id="d296-0119-99e1-8eaa">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d8ca-f884-7505-dcd7" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2bef-ce89-f96e-05e7" includeChildSelections="false"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -4910,6 +4956,12 @@
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry type="model" import="true" name="Master Engineer" hidden="false" id="1c70-fcf7-eee3-b3bd">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ecc1-1c6d-f9d0-4b59" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="18b2-c7de-229b-1e50" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="7b5b-79e8-6301-6d6a" name="Weapons" hidden="false" collective="false" import="true">
@@ -5051,6 +5103,15 @@
             </modifier>
           </modifiers>
         </selectionEntry>
+        <selectionEntry type="model" import="true" name="Battle Wizard" hidden="false" id="844c-ae0e-9275-6837">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f2fc-dfb2-9c74-8e11" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8d8e-d69d-d108-60bd" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Battle Wizard" id="a606e071-e00c-4bf7-a9d9-e5aebe35acd5" hidden="false" targetId="2741-6439-c30c-7b93" type="profile"/>
+          </infoLinks>
+        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="da79-c158-e45e-2082" name="Magic level" hidden="false" collective="false" import="true" defaultSelectionEntryId="0ec4-76e3-6e5f-9dd6">
@@ -5128,9 +5189,6 @@
           <comment>BP</comment>
         </modifier>
       </modifiers>
-      <infoLinks>
-        <infoLink id="a606e071-e00c-4bf7-a9d9-e5aebe35acd5" name="Battle Wizard" hidden="false" targetId="2741-6439-c30c-7b93" type="profile"/>
-      </infoLinks>
       <constraints>
         <constraint type="max" value="-1" field="ecfa-8486-4f6c-c249" scope="parent" shared="true" id="9a11-17c5-8960-5a53">
           <comment>BP</comment>
@@ -5161,6 +5219,12 @@
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Luthor Huss" hidden="false" id="178e-a037-c440-3b1f">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c43f-c26b-b516-0812" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d7e6-0d6c-157f-ec05" includeChildSelections="false"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -5352,6 +5416,14 @@
           </conditions>
         </modifier>
       </modifiers>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Balthazar Gelt" hidden="false" id="0738-9b75-971a-7f4b">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="07dc-112c-3dcd-ad5b" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bdfe-384a-51ae-c119" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry id="8d26-ff5b-57a1-bd47" name="Steam Tank" hidden="false" collective="false" import="true" type="unit">
       <constraints>
@@ -5816,6 +5888,12 @@
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6d83-791f-3124-ce36" includeChildSelections="false"/>
           </constraints>
         </selectionEntry>
+        <selectionEntry type="model" import="true" name="Kurt Helborg" hidden="false" id="2309-ec3a-b830-511b">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3054-9a16-bbce-795d" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d170-c98d-b38d-d491" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
       </selectionEntries>
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="370"/>
@@ -6240,6 +6318,12 @@ Makes sense to allow it with the &quot;other&quot; Reiksguard, but it&apos;s not
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry type="model" import="true" name="Volkmar" hidden="false" id="a82a-29e8-5934-f6f2">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2c6d-da1e-8476-515c" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2b23-7858-ee1e-cd15" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="9f19-4b1a-ee7c-14ca" name="Mounts" hidden="false" collective="false" import="true">
@@ -6451,6 +6535,12 @@ Makes sense to allow it with the &quot;other&quot; Reiksguard, but it&apos;s not
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Karl Franz" hidden="false" id="b77c-db8b-1649-7ffb">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="facb-7e03-c80d-2727" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7675-d4de-ee2a-f581" includeChildSelections="false"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -6751,6 +6841,12 @@ Magic Resistance (3)
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry type="model" import="true" name="Karl Franz" hidden="false" id="1706-f097-cfee-8f39">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ef21-773b-1146-df69" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="99b8-b7ee-eee6-827c" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
       </selectionEntries>
       <infoLinks>
         <infoLink id="5b8137e0-b538-427b-ad1d-798eddc81b30" name="Karl Franz" hidden="false" targetId="d6be-72c1-4adb-b4e2" type="profile"/>
@@ -6937,6 +7033,12 @@ Magic Resistance (3)
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry type="model" import="true" name="Karl Franz" hidden="false" id="f6f5-b093-d689-b830">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c788-8a47-61e1-6640" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="01f7-4db2-3680-83a9" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
       </selectionEntries>
       <infoLinks>
         <infoLink id="55d195b7-a165-495b-9c06-ef0cb5de85a8" name="Karl Franz" hidden="false" targetId="a487-9aef-ff6c-d124" type="profile"/>
@@ -7004,6 +7106,12 @@ Magic Resistance (3)
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Priest of Ulric" hidden="false" id="deb1-7887-1588-6ba1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="46ee-3cbd-0e38-46e4" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3e99-81af-7799-629b" includeChildSelections="false"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -7244,6 +7352,12 @@ Magic Resistance (3)
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry type="model" import="true" name="Grand Master" hidden="false" id="a0d6-f348-d97c-03b9">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="aea5-9416-bb31-1039" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6ed9-9d63-0413-cfcb" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
       </selectionEntries>
       <entryLinks>
         <entryLink id="c5fe-8963-eb23-197c" name="Full Plate Armour" hidden="false" collective="false" import="true" targetId="199f-b4b9-aaca-490f" type="selectionEntry">
@@ -7383,6 +7497,12 @@ Magic Resistance (3)
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="High Priest of Ulric" hidden="false" id="c9a8-6fde-4f9c-0800">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="943b-a000-68e3-9f34" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cea1-b243-649a-66fa" includeChildSelections="false"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -7550,6 +7670,12 @@ Magic Resistance (3)
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Seneschal of the White Wolf" hidden="false" id="ede0-9859-3d97-f822">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0d61-2cbd-4464-17bd" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="aede-54ab-c437-7254" includeChildSelections="false"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -8665,6 +8791,14 @@ In addition, the Talisman is infused with the power and courage of Ulric, granti
       <infoLinks>
         <infoLink id="5537e10b-b799-4471-bb7a-bb890edfb0e9" name="Boris Todbringer" hidden="false" targetId="4481-181c-9a49-3c73" type="profile"/>
       </infoLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Boris Todbringer" hidden="false" id="530f-b2f4-4a32-fb56">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b968-951f-bd28-f3ed" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8f6b-dbe9-c837-2c26" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry id="ebe1-daa6-82b1-ef69" name="High Priest Ar-Ulric Emil Valgeir" hidden="true" collective="false" import="true" type="unit" publicationId="d2ec-1dc7-f0d5-acbb" page="43">
       <categoryLinks>
@@ -8686,6 +8820,12 @@ In addition, the Talisman is infused with the power and courage of Ulric, granti
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Emil Valgeir" hidden="false" id="1ce5-351d-7293-7908">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="02a6-6a17-c941-2464" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6d95-c092-426d-7564" includeChildSelections="false"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -8969,6 +9109,14 @@ D6  | Result
       <infoLinks>
         <infoLink id="9228c379-4452-44ca-b5ae-ba4cecb6e3b5" name="Boris Todbringer" hidden="false" targetId="6824-b749-5466-3242" type="profile"/>
       </infoLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Boris Todbringer" hidden="false" id="c07d-1fce-bd62-216d">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aa6c-7643-7c5f-ae59" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="944b-6046-07d5-8794" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry id="a7de-6f6f-e0cc-18af" name="Boris Todbringer, Elector Count of Middenland (webGW-UK)" hidden="false" collective="false" import="true" type="unit" publicationId="a103-1e5b-e56e-45ae" page="empire/characters/8/">
       <categoryLinks>
@@ -9122,6 +9270,14 @@ In addition, the Talisman is infused with the power and courage of Ulric, granti
       <infoLinks>
         <infoLink id="6a9b1e89-8106-484d-9729-acd1d9d2d62b" name="Boris Todbringer" hidden="false" targetId="aeb3-966f-3abe-3fa6" type="profile"/>
       </infoLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Boris Todbringer" hidden="false" id="d4d8-123d-79c2-1435">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="737a-4756-ecf4-bc02" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="96a2-b4c8-e47e-0540" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry id="8695-0b45-8add-5bfa" name="Valmir von Raukov, Elector Count of Ostland" hidden="false" collective="false" import="true" type="unit" publicationId="a103-1e5b-e56e-45ae" page="empire/gaming/specialcharacters/valmir.htm">
       <categoryLinks>
@@ -9238,8 +9394,16 @@ In addition, the Talisman is infused with the power and courage of Ulric, granti
         <infoLink id="384a690f-44bd-4cc4-8483-863950cba8cb" name="Von Raukov" hidden="false" targetId="32e5-39a0-f3a6-ed7e" type="profile"/>
         <infoLink id="dc992508-e53f-4180-9f5c-bff3aa324ead" name="Master Archer" hidden="false" targetId="ea17-003a-3144-d780" type="rule"/>
       </infoLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Valmir von Raukov" hidden="false" id="3e9d-7fab-1f84-e34b">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c0b7-ac8b-9248-36e3" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4728-3e28-6ea1-17c5" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
-    <selectionEntry id="0af4-328d-3eb5-f36a" name="Ludwig Schwarzhelm - Champion of Karl Franz" hidden="false" collective="false" import="true" type="unit" publicationId="a103-1e5b-e56e-45ae" page="empire/characters/4/">
+    <selectionEntry id="0af4-328d-3eb5-f36a" name="Ludwig Schwarzhelm, Champion of Karl Franz" hidden="false" collective="false" import="true" type="unit" publicationId="a103-1e5b-e56e-45ae" page="empire/characters/4/">
       <categoryLinks>
         <categoryLink id="41e8-9a63-21d2-0e29" name="Characters" hidden="false" targetId="7a1c-d611-c2dc-def1" primary="false"/>
         <categoryLink name="Special Characters" hidden="false" id="7273-281f-4c1a-f82a" targetId="0644-bfcd-32c2-21dc" primary="true"/>
@@ -9378,6 +9542,12 @@ In addition to the normal rules that apply to the battle standard, any friendly 
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry type="model" import="true" name="Ludwig Schwarzhelm" hidden="false" id="7ee8-dd7d-37a7-f564">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4953-9016-7794-48ea" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5170-b167-f7cf-ae8c" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
       </selectionEntries>
       <infoLinks>
         <infoLink id="4136dc35-9436-4280-9eae-49b094192613" name="Ludwig Schwarzhelm" hidden="false" targetId="6930-9fca-5d7a-013d" type="profile"/>
@@ -9405,6 +9575,12 @@ In addition to the normal rules that apply to the battle standard, any friendly 
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Thyrus Gormann" hidden="false" id="6bb3-8ffb-9b01-62eb">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7449-994e-1b0b-b52c" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5e98-150d-d899-6a6f" includeChildSelections="false"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -9704,6 +9880,14 @@ Note that Thyrus cannot cast the Flaming Sword on himself (there are no cumulati
       <infoLinks>
         <infoLink id="e86a95c0-4a76-40f8-b091-d01e0e52ba02" name="Aldebrand Ludenhof" hidden="false" targetId="b864-3d89-d527-3b34" type="profile"/>
       </infoLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Aldebrand Ludenhof" hidden="false" id="f933-c753-b156-2ffe">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6419-cae8-5694-4850" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9785-1deb-e537-d0ce" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry id="3b47-be35-e49a-1f11" name="Marius Leitdorf, Elector Count of Averland (webGW-UK)" hidden="false" collective="false" import="true" type="unit" publicationId="a103-1e5b-e56e-45ae" page="empire/characters/9/">
       <categoryLinks>
@@ -9821,6 +10005,14 @@ Note that Thyrus cannot cast the Flaming Sword on himself (there are no cumulati
         <infoLink id="4a1e15ba-ac79-4046-b5ea-df75eb59e696" name="Marius Leitdorf" hidden="false" targetId="1f10-952e-5a98-3b0b" type="profile"/>
         <infoLink id="78e685b6-7d2a-4cd2-acd1-8115879d7f08" name="Frenzy (Marius)" hidden="false" targetId="6cac-90e7-0f0c-e7ea" type="rule"/>
       </infoLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Marius Leitdorf" hidden="false" id="d009-6299-152f-2b96">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="18af-9871-0e5f-1edb" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="01ab-de9e-53d7-ccad" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Valten, Champion of Sigmar" hidden="false" id="4b24-53e8-0d77-3f63" publicationId="cc59-6466-b62e-cf5b" page="73">
       <categoryLinks>
@@ -9851,6 +10043,12 @@ Note that Thyrus cannot cast the Flaming Sword on himself (there are no cumulati
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Valten" hidden="false" id="962b-4e39-b357-40ad">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6e47-bda6-3906-dd7f" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7938-5f39-fcbd-8498" includeChildSelections="false"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -9919,6 +10117,12 @@ Note that Thyrus cannot cast the Flaming Sword on himself (there are no cumulati
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Valten" hidden="false" id="7220-66a2-a6c8-e140">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e9ac-6f60-4657-bf93" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="25bd-22a3-67d1-e7d1" includeChildSelections="false"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -10045,6 +10249,12 @@ No model in base contact may cast spells (including friendly models) or use Boun
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Valten" hidden="false" id="4ab1-d3ae-c094-c237">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fbe6-2f64-8e86-14f2" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cf59-4bbf-5d7f-23a7" includeChildSelections="false"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -10226,6 +10436,14 @@ No model in base contact may cast spells (including friendly models) or use Boun
         <infoLink id="1203aa81-b06b-416c-8a6b-09fe1a2e72e0" name="Marius Leitdorf" hidden="false" targetId="1f10-952e-5a98-3b0b" type="profile"/>
         <infoLink id="23fdcf5e-36a5-4029-9903-8d3094d10a2c" name="Frenzy (Marius)" hidden="false" targetId="6cac-90e7-0f0c-e7ea" type="rule"/>
       </infoLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Marius Leitdorf" hidden="false" id="724c-feee-21d2-9ec2">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="935c-0ae1-1e97-a51a" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="563d-5632-fc04-db09" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry id="de50-2671-9b98-b462" name="Arch Lector of Sigmar" hidden="false" collective="false" import="true" type="unit" publicationId="0ea7-2a59-bcdf-f4ce" page="85">
       <infoLinks>
@@ -10261,6 +10479,12 @@ No model in base contact may cast spells (including friendly models) or use Boun
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Arch Lector of Sigmar" hidden="false" id="6b18-f0f0-69b9-43b4">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="431e-8497-6eac-3213" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="434e-f902-1e33-41fe" includeChildSelections="false"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
