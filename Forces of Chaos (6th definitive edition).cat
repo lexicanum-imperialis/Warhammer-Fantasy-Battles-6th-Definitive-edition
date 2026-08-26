@@ -739,7 +739,6 @@
         <infoLink id="5986-21c3-3b6b-6ee0" name="Shaggoth" hidden="false" targetId="8536-631e-b1f0-4249" type="profile"/>
         <infoLink id="b7a1-84d7-4c70-f3e0" name="Terror" hidden="false" targetId="96f0-c50f-e59e-85fa" type="rule"/>
         <infoLink id="a224-c548-96e0-7a03" name="Large Target" hidden="false" targetId="4463-1b38-aa4d-e03c" type="rule"/>
-        <infoLink id="546a-f7de-4afb-19e6" name="Scaly Skin 4+" hidden="false" targetId="ac0c-1a00-3030-9706" type="rule"/>
         <infoLink id="9aca-3e66-7f45-3643" name="Immune to Panic" hidden="false" targetId="ff2b-8db6-64fa-e9ca" type="rule"/>
         <infoLink id="3c7a-afdb-1b56-a094" name="Unit Strength" hidden="false" targetId="d096-8ca3-94ed-0c40" type="rule"/>
         <infoLink id="2478-d234-5ca5-ec5d" name="Storm Rage Shaggoth" hidden="false" targetId="2bc0-51ef-94ff-08a3" type="rule"/>
@@ -826,6 +825,13 @@
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <entryLinks>
+        <entryLink import="true" name="Scaly skin (4+)" hidden="false" id="8ab2-acab-e15e-5c9d" type="selectionEntry" targetId="0776-c92c-2017-cc42">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0dbb-eb4a-c8f9-fd47" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry id="46d7-63d8-cda7-acef" name="Beast Herd" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
@@ -899,23 +905,6 @@
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="ae45-efb6-992e-68d2" name="Ungor Shields" hidden="false" collective="false" import="true" type="upgrade" sortIndex="5">
-          <modifiers>
-            <modifier type="increment" field="ecfa-8486-4f6c-c249" value="1">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2bd3-f28e-f10b-3f8e" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="145c-8f6e-eb6b-17cb" type="max"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
-            <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-            <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-          </costs>
-        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="ce5c-1a20-f865-93f7" name="Gor Weapons selection" hidden="false" collective="false" import="true" defaultSelectionEntryId="204c-06b2-2300-3842" sortIndex="4">
@@ -970,12 +959,36 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
+        <selectionEntryGroup name="Ungor Weapons selection" id="9d68-c73d-e560-8d00" hidden="false" sortIndex="5">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Spear" hidden="false" id="2ba2-ca0f-230d-50dc">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5569-b998-4e54-d221" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f423-aa1e-5c12-e36f" includeChildSelections="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Spears (Infantry)" id="25e8-4616-6766-89a4" hidden="false" targetId="222b-1e29-9d24-09d7" type="profile"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Shield" hidden="false" id="b52d-878a-40b7-05eb" type="selectionEntry" targetId="50e2-1873-a856-03e7">
+              <modifiers>
+                <modifier type="increment" value="1" field="ecfa-8486-4f6c-c249">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="parent" childId="2bd3-f28e-f10b-3f8e" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="5069-a582-451a-9356" name="Hand Weapon" hidden="false" collective="false" import="true" targetId="abdb-bbd0-41b2-5dff" type="selectionEntry" sortIndex="6">
+        <entryLink import="true" name="Hand Weapon" hidden="false" id="915e-5305-e95b-290f" collective="false" targetId="abdb-bbd0-41b2-5dff" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="382e-5b2f-0f2c-5a79" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2a96-9437-cd40-7722" type="max"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0c4d-924f-2cea-e1ed" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="feac-1ebc-838b-16d0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -2528,7 +2541,6 @@
       <infoLinks>
         <infoLink id="b216-d063-0651-64a6" name="Dragon ogre" hidden="false" targetId="3f33-b185-cb21-6b5d" type="profile"/>
         <infoLink id="7c7e-dddf-e97c-279f" name="Fear" hidden="false" targetId="1524-2372-4aa0-6881" type="rule"/>
-        <infoLink id="3656-9796-6ede-c24d" name="Scaly Skin 5+" hidden="false" targetId="0540-9668-5221-67d7" type="rule"/>
         <infoLink id="d6ba-e61a-79bb-dc86" name="Storm Rage" hidden="false" targetId="3f90-f890-d070-9b85" type="rule"/>
       </infoLinks>
       <categoryLinks>
@@ -2599,6 +2611,11 @@
               </repeats>
             </modifier>
           </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Scaly skin (5+)" hidden="false" id="3880-c6ba-0dc9-6599" type="selectionEntry" targetId="4725-aa37-0613-2bdf">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dc36-c2d9-b7e5-15c8" includeChildSelections="false"/>
+          </constraints>
         </entryLink>
       </entryLinks>
       <costs>

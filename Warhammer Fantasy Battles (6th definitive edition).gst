@@ -16506,6 +16506,15 @@ The Norn Consensus only clarifies that this official ruling should not be extend
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Scaly skin (5+)" hidden="false" id="4725-aa37-0613-2bdf">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="75f9-b4f4-1cca-ce3c" includeChildSelections="false"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Scaly Skin 5+" id="9e87-3210-0ab6-246c" hidden="false" type="rule" targetId="1be6-9cc1-e3fb-f82f"/>
+        <infoLink name="Scaly skin 5+" id="e3a3-0f16-7abe-aec1" hidden="false" type="profile" targetId="200e-79a6-dc8c-17d7"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="f679-dff7-370a-6050" name="Lore of Metal" hidden="false" collective="false" import="true" collapsible="true">
@@ -17258,6 +17267,9 @@ Tomb Kings, p. 28</comment>
     <rule name="Cannot be joined by characters" id="6788-2a10-2568-a56c" hidden="false">
       <description>No character can join to this unit.</description>
     </rule>
+    <rule id="1be6-9cc1-e3fb-f82f" name="Scaly Skin 5+" hidden="false">
+      <description>Armour save 5+</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="5556-38ea-b278-4a8f" name="Hand Weapon" publicationId="315e-e3c4-08af-fd51" page="91" hidden="false" typeId="7889-42d9-70a0-3ea9" typeName="Weapon">
@@ -17586,6 +17598,30 @@ The spell cannot affect Undead targets, Chaos Daemons or Unbreakable units. Unit
       <characteristics>
         <characteristic name="Saving Throw Modifier" typeId="b600-e1ed-0765-27c1">4+</characteristic>
         <characteristic name="Special rules" typeId="42c3-68ab-cfa5-203e">Use 4+ (chariot&apos;s) or the unit&apos;s Sv</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Scaly skin 6+" typeId="f681-9937-db53-f1d8" typeName="Armour" hidden="false" id="c72d-70c2-a635-3eb0">
+      <characteristics>
+        <characteristic name="Saving Throw Modifier" typeId="b600-e1ed-0765-27c1">6+</characteristic>
+        <characteristic name="Special rules" typeId="42c3-68ab-cfa5-203e"/>
+      </characteristics>
+    </profile>
+    <profile name="Scaly skin 3+" typeId="f681-9937-db53-f1d8" typeName="Armour" hidden="false" id="8af1-34df-594a-1a56">
+      <characteristics>
+        <characteristic name="Saving Throw Modifier" typeId="b600-e1ed-0765-27c1">3+</characteristic>
+        <characteristic name="Special rules" typeId="42c3-68ab-cfa5-203e"/>
+      </characteristics>
+    </profile>
+    <profile name="Scaly skin 5+" typeId="f681-9937-db53-f1d8" typeName="Armour" hidden="false" id="200e-79a6-dc8c-17d7">
+      <characteristics>
+        <characteristic name="Saving Throw Modifier" typeId="b600-e1ed-0765-27c1">5+</characteristic>
+        <characteristic name="Special rules" typeId="42c3-68ab-cfa5-203e"/>
+      </characteristics>
+    </profile>
+    <profile name="Scaly skin 4+" typeId="f681-9937-db53-f1d8" typeName="Armour" hidden="false" id="4048-cdc1-6894-ad42">
+      <characteristics>
+        <characteristic name="Saving Throw Modifier" typeId="b600-e1ed-0765-27c1">4+</characteristic>
+        <characteristic name="Special rules" typeId="42c3-68ab-cfa5-203e"/>
       </characteristics>
     </profile>
   </sharedProfiles>
