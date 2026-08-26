@@ -16515,6 +16515,15 @@ The Norn Consensus only clarifies that this official ruling should not be extend
         <infoLink name="Scaly skin 5+" id="e3a3-0f16-7abe-aec1" hidden="false" type="profile" targetId="200e-79a6-dc8c-17d7"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Scaly skin (4+)" hidden="false" id="0776-c92c-2017-cc42">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="60ae-0699-f9b4-3d8c" includeChildSelections="false"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Scaly Skin 4+" id="08f7-a81e-dda6-0658" hidden="false" type="rule" targetId="ac96-22af-fac6-56f9"/>
+        <infoLink name="Scaly skin 4+" id="6efb-49eb-e3e8-7455" hidden="false" type="profile" targetId="4048-cdc1-6894-ad42"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="f679-dff7-370a-6050" name="Lore of Metal" hidden="false" collective="false" import="true" collapsible="true">
