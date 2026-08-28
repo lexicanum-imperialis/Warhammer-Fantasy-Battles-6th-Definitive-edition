@@ -426,7 +426,6 @@
     </selectionEntry>
     <selectionEntry id="6c24-577a-af2c-e173" name="Chaos Giant" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
-        <infoLink id="8d1b-807d-7b14-4e04" name="Giant" hidden="false" targetId="2add-4573-354b-54f4" type="profile"/>
         <infoLink id="0c8c-9d2e-a26a-ac85" name="Fall Over(Giants)" hidden="false" targetId="197a-b58b-3324-b6a5" type="rule"/>
         <infoLink id="7ec9-58f7-0062-de4a" name="Terror" hidden="false" targetId="96f0-c50f-e59e-85fa" type="rule"/>
         <infoLink id="f952-cf1f-e241-86e3" name="Giant Special Attacks" hidden="false" targetId="51d3-ac6f-3e2e-ab89" type="rule"/>
@@ -446,6 +445,15 @@
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Chaos Giant" hidden="false" id="6c8b-dbdb-f9ac-3f03">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="580f-ff28-1afd-d966" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="600b-1650-0d95-57a2" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Giant" id="8d1b-807d-7b14-4e04" hidden="false" targetId="2add-4573-354b-54f4" type="profile"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -832,6 +840,14 @@
           </constraints>
         </entryLink>
       </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Shaggoth" hidden="false" id="8086-6265-2f4d-457b">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ace7-49ad-f420-dba4" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cd67-deac-9edc-1eff" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry id="46d7-63d8-cda7-acef" name="Beast Herd" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
@@ -6742,7 +6758,7 @@
         <categoryLink id="62be-9613-0be5-14d7" name="Chaos Undivided" hidden="false" targetId="6fdb-6843-6499-2a04" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Dorghar, Steed of the Apocalypse" hidden="false" id="a621-aa59-873d-ecb2">
+        <selectionEntry type="model" import="true" name="Dorghar, Steed of the Apocalypse" hidden="false" id="a621-aa59-873d-ecb2" subType="mount">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="915a-f4c5-0a55-75ef" includeChildSelections="false"/>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fa96-ae9a-e8f2-ea63" includeChildSelections="false"/>
@@ -6773,6 +6789,15 @@
           </costs>
           <infoLinks>
             <infoLink name="Daemonic Mount" id="68fc-a04d-98f5-55ae" hidden="false" type="rule" targetId="cd35-ebef-197b-e333"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Archaon" hidden="false" id="7221-36f6-23d8-879f">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b0be-1423-b9fe-768c" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9a65-d0bc-6cfa-006d" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Archaon" id="b95f8050-c09e-4525-bd55-988cb84f6fe6" hidden="false" targetId="4ed9-15dd-f32f-248f" type="profile"/>
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
@@ -7142,9 +7167,6 @@ Attacks, spell effects and anything that does not affect or has a reduced effect
       <constraints>
         <constraint type="max" value="0" field="selections" scope="force" shared="true" id="f41c-188c-d806-835f" includeChildSelections="false"/>
       </constraints>
-      <infoLinks>
-        <infoLink id="b95f8050-c09e-4525-bd55-988cb84f6fe6" name="Archaon" hidden="false" targetId="4ed9-15dd-f32f-248f" type="profile"/>
-      </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Khazrak the One-Eye" hidden="false" id="6880-84b4-7e4d-c31a" page="69" publicationId="7f4a-e6ae-d049-ee56">
       <constraints>
@@ -7263,9 +7285,17 @@ Note that these extra wounds can only ever hit the model that was the original t
           </conditions>
         </modifier>
       </modifiers>
-      <infoLinks>
-        <infoLink id="d18ef4a8-8a82-4f7f-873f-0ba08609d955" name="Khazrak" hidden="false" targetId="67b4-8c68-6914-8457" type="profile"/>
-      </infoLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Khazrak " hidden="false" id="cda0-9ad5-a8a3-ee88">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5e25-2e80-d1e0-c9db" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9902-842b-acd5-f2d5" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Khazrak" id="d18ef4a8-8a82-4f7f-873f-0ba08609d955" hidden="false" targetId="67b4-8c68-6914-8457" type="profile"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Gorthor the Beastlord" hidden="false" id="8e81-b7bc-04d2-9129" page="70-71" publicationId="7f4a-e6ae-d049-ee56">
       <constraints>
@@ -7399,7 +7429,7 @@ In addition, if any of Gorthor&apos;s to hit rolls are doubles, triples or quadr
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Bagrar the Tamer" hidden="false" id="6f10-6e83-39ed-3706" page="71" publicationId="7f4a-e6ae-d049-ee56">
+        <selectionEntry type="model" import="true" name="Bagrar the Tamer" hidden="false" id="6f10-6e83-39ed-3706" page="71" publicationId="7f4a-e6ae-d049-ee56" subType="crew">
           <profiles>
             <profile name="Bagrar" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="de2f-35e6-4f5f-b72a" page="71" publicationId="7f4a-e6ae-d049-ee56">
               <characteristics>
@@ -7465,11 +7495,19 @@ He counts as having the Mark of all four Chaos gods for the purposes of army com
             </rule>
           </rules>
         </selectionEntry>
+        <selectionEntry type="model" import="true" name="Gorthor " hidden="false" id="0b14-6504-55e4-47f6">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ce9a-1b07-6363-1017" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6350-daa9-709a-d717" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Gorthor" id="d6911ef0-6317-4e98-bcfa-8c3123748d17" hidden="false" targetId="a5fb-096e-877e-56d5" type="profile"/>
+          </infoLinks>
+        </selectionEntry>
       </selectionEntries>
       <infoLinks>
         <infoLink name="Raiders" id="3c97-fe1a-2063-a8dd" hidden="false" type="rule" targetId="94df-5354-54cd-c16e"/>
         <infoLink name="Beastmen Ambush" id="e942-8a2c-d096-4bc3" hidden="false" type="rule" targetId="171a-a558-c27b-9cc9"/>
-        <infoLink id="d6911ef0-6317-4e98-bcfa-8c3123748d17" name="Gorthor" hidden="false" targetId="a5fb-096e-877e-56d5" type="profile"/>
         <infoLink id="c9946309-d633-4cf0-9ed0-b004d0169dcc" name="Beloved of the Gods" hidden="false" targetId="f4be-169d-b21d-5d3d" type="rule"/>
         <infoLink id="1a032d66-f5b5-47c6-af99-8940d285d499" name="The Favoured of Chaos" hidden="false" targetId="1750-a1c5-2094-80cd" type="rule"/>
       </infoLinks>
@@ -7649,9 +7687,17 @@ Any missile attack or spell targeted at Morghur will never effect him unless the
           </conditions>
         </modifier>
       </modifiers>
-      <infoLinks>
-        <infoLink id="91ac0ad3-4507-4fed-b763-d547bfdd9d52" name="Morghur" hidden="false" targetId="50d3-d51c-8992-c678" type="profile"/>
-      </infoLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Morghur" hidden="false" id="e7e4-71af-2cc5-5719">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b633-707b-6c17-64f2" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="34f8-ddbf-7b38-f2c6" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Morghur" id="91ac0ad3-4507-4fed-b763-d547bfdd9d52" hidden="false" targetId="50d3-d51c-8992-c678" type="profile"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry id="126c-b15f-f4e3-b7d9" name="PlagueRiders" hidden="true" collective="false" import="true" type="unit" page="28" publicationId="d2ec-1dc7-f0d5-acbb">
       <modifiers>
@@ -7751,7 +7797,7 @@ Any missile attack or spell targeted at Morghur will never effect him unless the
             </modifierGroup>
           </modifierGroups>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Chariot" hidden="false" id="a81e-25d0-f448-5797" sortIndex="1">
+        <selectionEntry type="model" import="true" name="Chariot" hidden="false" id="a81e-25d0-f448-5797" sortIndex="1">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a9e9-b191-7043-8b3e" includeChildSelections="false"/>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ec83-728d-1659-11da" includeChildSelections="false"/>
@@ -7911,6 +7957,12 @@ Place the small template with the central hole over the point of impact. Anythin
             <entryLink import="true" name="Hand Weapon" hidden="false" id="0f8e-7419-a770-4480" type="selectionEntry" targetId="abdb-bbd0-41b2-5dff"/>
           </entryLinks>
         </selectionEntry>
+        <selectionEntry type="model" import="true" name="Hellcannon " hidden="false" id="86f4-1699-3f8b-3fca">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="759c-96ee-0e4e-e801" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e47e-e055-7328-4206" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
       </selectionEntries>
       <costs>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="270"/>
@@ -8050,7 +8102,6 @@ Place the small template with the central hole over the point of impact. Anythin
         <infoLink name="Large Target" id="1fb8-65be-678b-4b3f" hidden="false" type="rule" targetId="4463-1b38-aa4d-e03c"/>
         <infoLink name="Breath Weapons" id="03d9-4eac-b21c-2dd0" hidden="false" type="rule" targetId="c61b-e026-e2af-20de"/>
         <infoLink name="Daemonic Aura" id="10c2-df78-b9bd-af14" hidden="false" type="rule" targetId="3c43-59c1-6cb0-968d"/>
-        <infoLink id="7db37b77-7227-4abd-b6d1-23b2abdb476f" name="Galrauch" hidden="false" targetId="88d1-5a51-d0b1-eed7" type="profile"/>
         <infoLink id="e83b56ab-497b-4518-b9a0-77a4e742d207" name="Spirit of Galrauch" hidden="false" targetId="00ca-3c22-f1ed-9669" type="rule"/>
       </infoLinks>
       <entryLinks>
@@ -8115,6 +8166,17 @@ Place the small template with the central hole over the point of impact. Anythin
       <constraints>
         <constraint type="max" value="0" field="selections" scope="force" shared="true" id="aa1b-4d76-b9b4-d22e" includeChildSelections="false"/>
       </constraints>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Galrauch" hidden="false" id="19f8-68d9-53ec-b10c">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f28f-2a19-ffe7-114f" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="451b-9e6a-c845-e47a" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Galrauch" id="7db37b77-7227-4abd-b6d1-23b2abdb476f" hidden="false" targetId="88d1-5a51-d0b1-eed7" type="profile"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Flamer unit" hidden="true" id="cbd5-d7df-e058-a9a8">
       <categoryLinks>
@@ -8365,7 +8427,7 @@ Place the small template with the central hole over the point of impact. Anythin
             </modifierGroup>
           </modifierGroups>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Chariot" hidden="false" id="15b2-9964-b071-9427" sortIndex="1">
+        <selectionEntry type="model" import="true" name="Chariot" hidden="false" id="15b2-9964-b071-9427" sortIndex="1">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2aaa-6585-6ae6-2fca" includeChildSelections="false"/>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1720-21de-69f4-273c" includeChildSelections="false"/>
@@ -8448,7 +8510,7 @@ Place the small template with the central hole over the point of impact. Anythin
             </modifierGroup>
           </modifierGroups>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Chariot" hidden="false" id="087f-dbe9-f0cf-fd10" sortIndex="1">
+        <selectionEntry type="model" import="true" name="Chariot" hidden="false" id="087f-dbe9-f0cf-fd10" sortIndex="1">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="08f7-3fe6-63b8-6f46" includeChildSelections="false"/>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b641-fd14-e3e7-254f" includeChildSelections="false"/>
@@ -8524,7 +8586,7 @@ Place the small template with the central hole over the point of impact. Anythin
             </modifierGroup>
           </modifierGroups>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Chariot" hidden="false" id="5b79-105b-1e44-7e17" sortIndex="1">
+        <selectionEntry type="model" import="true" name="Chariot" hidden="false" id="5b79-105b-1e44-7e17" sortIndex="1">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f62f-8cdc-674e-52de" includeChildSelections="false"/>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d583-3f4f-1f66-1c45" includeChildSelections="false"/>
@@ -8898,6 +8960,15 @@ Place the small template with the central hole over the point of impact. Anythin
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry type="model" import="true" name="Arbaal" hidden="false" id="b19e-d54f-74df-1643">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4dfb-c4cb-8f0d-c5ef" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="350e-cc8e-334b-3e47" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Arbaal" id="15c5991b-02fc-43f9-b93b-ae7f9f780c6b" hidden="false" targetId="6be9-f804-5e1f-6831" type="profile"/>
+          </infoLinks>
+        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup name="Weapons and Armour" id="24cc-99ad-1b45-e2ac" hidden="false">
@@ -8933,7 +9004,6 @@ In addition, Arbaal will never lose his Frenzy, even if he is defeated in comb
       <infoLinks>
         <infoLink name="Gaze of the Gods" id="e930-9e44-f33c-5923" hidden="false" type="rule" targetId="4df5-c6f4-0f93-c676"/>
         <infoLink name="Frenzy" id="4d02-cc71-f6ed-1fdc" hidden="false" type="rule" targetId="ab5d-dda1-bffc-a027"/>
-        <infoLink id="15c5991b-02fc-43f9-b93b-ae7f9f780c6b" name="Arbaal" hidden="false" targetId="6be9-f804-5e1f-6831" type="profile"/>
         <infoLink id="a2e772f9-6805-4177-a21b-702815d33a74" name="Challenge" hidden="false" targetId="c3c1-2cc1-ca53-3db2" type="rule"/>
       </infoLinks>
       <modifiers>
@@ -8999,7 +9069,7 @@ In addition, Arbaal will never lose his Frenzy, even if he is defeated in comb
         </entryLink>
       </entryLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Baudros (Chaos Dragon)" hidden="false" id="8b65-6991-c20c-bb6a">
+        <selectionEntry type="model" import="true" name="Baudros (Chaos Dragon)" hidden="false" id="8b65-6991-c20c-bb6a" subType="mount">
           <profiles>
             <profile name="Baudros" typeId="a54a-7f00-29bf-12b1" typeName="Profile" hidden="false" id="64e2-84bf-0e5c-4a89" page="10" publicationId="eef3-24a3-1f08-2597">
               <characteristics>
@@ -9034,6 +9104,15 @@ In addition, Arbaal will never lose his Frenzy, even if he is defeated in comb
             <infoLink name="Terror" id="9729-a33f-9f42-d60c" hidden="false" type="rule" targetId="96f0-c50f-e59e-85fa"/>
             <infoLink name="Two Breath Weapons" id="aff7-41db-5768-088d" hidden="false" type="rule" targetId="b0f1-feca-2a7b-feba"/>
             <infoLink name="Fly" id="71b3-6809-f6e1-bece" hidden="false" type="rule" targetId="e930-0b71-2fef-3937"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="van Horstman" hidden="false" id="97e7-9030-4194-9057">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7b55-ff14-d19e-41a2" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="da95-cebd-fea7-39c2" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Egrimm" id="f553a2ad-64ea-4d7c-ae9a-1b239a42ffde" hidden="false" targetId="5bbf-7fd9-5b6a-33de" type="profile"/>
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
@@ -9106,7 +9185,6 @@ In addition, Arbaal will never lose his Frenzy, even if he is defeated in comb
         </modifier>
       </modifiers>
       <infoLinks>
-        <infoLink id="f553a2ad-64ea-4d7c-ae9a-1b239a42ffde" name="Egrimm" hidden="false" targetId="5bbf-7fd9-5b6a-33de" type="profile"/>
         <infoLink id="d7510b27-772e-40f9-b631-9b104636bb36" name="Cunning of Tzeentch" hidden="false" targetId="6b11-73f2-ca27-7a85" type="rule"/>
       </infoLinks>
     </selectionEntry>
@@ -9118,8 +9196,8 @@ In addition, Arbaal will never lose his Frenzy, even if he is defeated in comb
         <categoryLink name="Experimental rules" hidden="false" id="f5bd-681d-04f0-ce96" targetId="4fed-b911-e6e0-927b" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink import="true" name="Extra Hero choice" hidden="false" id="032c-2d77-d8c9-d577" type="selectionEntry" targetId="3e25-986a-693f-a975" sortIndex="2"/>
-        <entryLink import="true" name="Hero of Tzeentch" hidden="false" id="dfed-ef27-69cf-22e2" type="selectionEntry" targetId="7b7d-a133-0091-820c" sortIndex="3">
+        <entryLink import="true" name="Extra Hero choice" hidden="false" id="032c-2d77-d8c9-d577" type="selectionEntry" targetId="3e25-986a-693f-a975" sortIndex="3"/>
+        <entryLink import="true" name="Hero of Tzeentch" hidden="false" id="dfed-ef27-69cf-22e2" type="selectionEntry" targetId="7b7d-a133-0091-820c" sortIndex="4">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7a09-cc19-ff9d-015a" includeChildSelections="false"/>
           </constraints>
@@ -9127,7 +9205,7 @@ In addition, Arbaal will never lose his Frenzy, even if he is defeated in comb
             <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="General" hidden="false" id="2b20-7221-8cfc-7b35" collective="false" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry" sortIndex="1">
+        <entryLink import="true" name="General" hidden="false" id="2b20-7221-8cfc-7b35" collective="false" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry" sortIndex="2">
           <modifiers>
             <modifier type="add" value="4648-b919-37ed-cf92" field="category"/>
           </modifiers>
@@ -9145,7 +9223,7 @@ In addition, Arbaal will never lose his Frenzy, even if he is defeated in comb
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Equipment" id="8e29-5a3d-2140-fa6a" hidden="false">
+        <selectionEntryGroup name="Equipment" id="8e29-5a3d-2140-fa6a" hidden="false" sortIndex="5">
           <entryLinks>
             <entryLink import="true" name="Chaos Armour" hidden="false" id="1f07-2625-b2da-e322" type="selectionEntry" targetId="9b37-1817-ce12-f693"/>
           </entryLinks>
@@ -9183,7 +9261,6 @@ Always Strikes Last</characteristic>
       </selectionEntryGroups>
       <infoLinks>
         <infoLink name="Regeneration" id="f038-ca9b-6964-3116" hidden="false" type="rule" targetId="59c1-8a35-5a25-ebe1"/>
-        <infoLink id="bb27caec-1886-4dda-910e-08e9ab92b8ef" name="Aekold" hidden="false" targetId="7bef-3454-be4e-618d" type="profile"/>
         <infoLink id="ed4484fb-1593-41cd-8c73-656d7e80cc85" name="The Breath of Life" hidden="false" targetId="fda7-79bc-5298-436f" type="rule"/>
       </infoLinks>
       <modifiers>
@@ -9208,6 +9285,17 @@ Always Strikes Last</characteristic>
           </conditions>
         </modifier>
       </modifiers>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Aekold" hidden="false" id="0432-5af8-82d9-26c3" sortIndex="1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dbd8-6978-a70d-10ff" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a1d4-e1a5-c1ca-d12c" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Aekold" id="bb27caec-1886-4dda-910e-08e9ab92b8ef" hidden="false" targetId="7bef-3454-be4e-618d" type="profile"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Scyla Anfinngrim, Chaos Spawn" hidden="false" id="1fdd-e11d-5d88-ddaf" page="14-15" publicationId="eef3-24a3-1f08-2597">
       <constraints>
@@ -9225,7 +9313,6 @@ Always Strikes Last</characteristic>
         <infoLink name="Unbreakable" id="44b5-a3d8-8895-5f3c" hidden="false" targetId="8ae3-9724-980f-7308" type="rule"/>
         <infoLink name="Unit Strength 3" id="94a8-1260-d123-2b17" hidden="false" targetId="f3a8-3c9f-4fcb-5092" type="rule"/>
         <infoLink name="Scaly Skin 4+" id="97b0-68f5-795d-d9c9" hidden="false" type="rule" targetId="ac96-22af-fac6-56f9"/>
-        <infoLink id="0dff7aee-a383-4edd-b9e1-6eaeb0f420b5" name="Scyla" hidden="false" targetId="e96d-c8fe-963e-82cb" type="profile"/>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Collar of Khorne" hidden="false" id="2cfc-663a-2f12-fca7" type="selectionEntry" targetId="ed09-2fa4-796d-b953">
@@ -9264,6 +9351,17 @@ Always Strikes Last</characteristic>
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Scyla " hidden="false" id="3fd6-ab6c-8168-48aa">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e54a-59a1-e914-0656" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="521f-9cfe-b336-5328" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Scyla" id="0dff7aee-a383-4edd-b9e1-6eaeb0f420b5" hidden="false" targetId="e96d-c8fe-963e-82cb" type="profile"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Dechala, the Denied One" hidden="false" id="1e06-513b-55f8-3114" page="15-16" publicationId="eef3-24a3-1f08-2597">
       <constraints>
@@ -9331,6 +9429,14 @@ Always Strikes Last</characteristic>
           </conditions>
         </modifier>
       </modifiers>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Dechala" hidden="false" id="3098-fe57-8bf9-e472">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="21b1-1685-4293-6b22" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c6f4-13ec-81e2-942a" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Azazel, Prince of Damnation" hidden="false" id="a8d2-3848-cd2f-84e5" page="16-17" publicationId="eef3-24a3-1f08-2597">
       <costs>
@@ -9400,6 +9506,12 @@ Always Strikes Last</characteristic>
               </characteristics>
             </profile>
           </profiles>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Azazel" hidden="false" id="fa20-c18c-f1e5-741f">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5b55-e63e-1a2c-5367" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dddf-4626-859e-6758" includeChildSelections="false"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
       <modifiers>
@@ -9857,6 +9969,14 @@ Always Strikes Last</characteristic>
           </conditions>
         </modifier>
       </modifiers>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Giant Chaos Spawn" hidden="false" id="79c6-2b24-9785-dde8">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6daa-9379-c40a-1b86" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bc0b-cc2f-bf0a-c74c" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Giant Spined Chaos Beast" hidden="false" id="9276-1275-7021-4954" page="PDF/warhammerchaosbeast.pdf" publicationId="be5b-2ad1-4ab5-bc1e">
       <costs>
@@ -9890,6 +10010,14 @@ Always Strikes Last</characteristic>
         <infoLink name="Unbreakable" id="8a31-452d-b18d-513d" hidden="false" type="rule" targetId="8ae3-9724-980f-7308"/>
         <infoLink id="58a1f041-4239-4eb3-9a0d-f0dadffe2ca6" name="Giant Spined Chaos Beast" hidden="false" targetId="c684-4341-240a-2f42" type="profile"/>
       </infoLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Giant Spined Chaos Beast" hidden="false" id="bca8-d755-2ac0-3dad">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1554-2084-9978-013d" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1bef-52a5-86bf-f01a" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Great Chaos Dragon" hidden="false" id="303d-d274-153c-d340" publicationId="046d-88bc-e852-2147" page="PDF/dragchaos.pdf">
       <costs>
@@ -9929,6 +10057,12 @@ Always Strikes Last</characteristic>
             <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
             <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
           </costs>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Great Chaos Dragon" hidden="false" id="7dc7-8eaa-a5e6-b848">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9528-2d32-5227-f5b4" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2104-08fb-f28a-b08c" includeChildSelections="false"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
       <modifiers>
@@ -10044,9 +10178,17 @@ In addition, if he fights with sword and shield in a challenge, any special rule
       <constraints>
         <constraint type="max" value="0" field="selections" scope="force" shared="true" id="f05b-8f63-d9bd-6f27" includeChildSelections="false"/>
       </constraints>
-      <infoLinks>
-        <infoLink id="2b03701b-245c-47d2-b7e0-9f42c874492a" name="Crom" hidden="false" targetId="fef2-7e87-66da-46d1" type="profile"/>
-      </infoLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Crom" hidden="false" id="d0a3-c2d1-3b60-3b5d">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e258-1332-f4be-7e91" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9a40-d793-0aae-a968" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Crom" id="2b03701b-245c-47d2-b7e0-9f42c874492a" hidden="false" targetId="fef2-7e87-66da-46d1" type="profile"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Be&apos;lakor, the Dark Master" hidden="true" id="99a1-a235-af7f-0ac6" page="26" publicationId="d2ec-1dc7-f0d5-acbb">
       <costs>
@@ -10147,6 +10289,15 @@ In addition, if he fights with sword and shield in a challenge, any special rule
             </profile>
           </profiles>
         </selectionEntry>
+        <selectionEntry type="model" import="true" name="Be&apos;lakor" hidden="false" id="4e74-f6a2-f2f6-5dca">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fec9-6914-6c71-278d" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bda6-9734-e76d-0fca" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Be&apos;lakor" id="97c0d2b5-184d-4aa6-b4fc-9cd5c1fa73cb" hidden="false" targetId="27fb-45df-ebc0-da46" type="profile"/>
+          </infoLinks>
+        </selectionEntry>
       </selectionEntries>
       <infoLinks>
         <infoLink name="Terror" id="c7d4-8842-4992-e39f" hidden="false" type="rule" targetId="96f0-c50f-e59e-85fa"/>
@@ -10155,7 +10306,6 @@ In addition, if he fights with sword and shield in a challenge, any special rule
         <infoLink name="Unit Strength 3" id="98c1-edad-5cce-72d8" hidden="false" type="rule" targetId="f3a8-3c9f-4fcb-5092"/>
         <infoLink name="Fly" id="e23f-1d10-f1e3-7ee5" hidden="false" type="rule" targetId="e930-0b71-2fef-3937"/>
         <infoLink name="Large Target" id="60ee-b90b-f442-c6f2" hidden="false" type="rule" targetId="4463-1b38-aa4d-e03c"/>
-        <infoLink id="97c0d2b5-184d-4aa6-b4fc-9cd5c1fa73cb" name="Be&apos;lakor" hidden="false" targetId="27fb-45df-ebc0-da46" type="profile"/>
         <infoLink id="65c0b35d-00dd-40e5-a4ac-7eb5ed36f331" name="Eternal Terror" hidden="false" targetId="e33c-77ea-b7f4-0d76" type="rule"/>
         <infoLink id="3c449e6f-9508-4621-a5a3-1e1fa4b071eb" name="Insurmountable Rage" hidden="false" targetId="35ce-c024-6d93-9929" type="rule"/>
         <infoLink id="18a1c4a9-74b3-450a-90a5-67d0774486a0" name="Night Wards" hidden="false" targetId="6d8c-63ee-f087-91f3" type="rule"/>
@@ -17800,6 +17950,14 @@ Be&apos;lakor may re-roll all his failed rolls to hit, but must always pursue fl
       <constraints>
         <constraint type="max" value="0" field="selections" scope="force" shared="true" id="358d-ea4f-8bab-ca3c" includeChildSelections="false"/>
       </constraints>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Mammoth" hidden="false" id="1229-905f-3eed-c510">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5e05-a061-4bcc-5ee0" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e055-2f48-41c6-3a9e" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </entryLink>
     <entryLink import="true" name="Emperor Fire Dragon" hidden="false" id="9e5c-fb39-3419-6590" type="selectionEntry" targetId="d7e3-ae46-6606-7806"/>
     <entryLink import="true" name="Toxote&apos;s Hellmounts" hidden="false" id="ae95-eb4e-2af9-4cd0" type="selectionEntry" targetId="1a52-2060-f39b-38ee"/>
