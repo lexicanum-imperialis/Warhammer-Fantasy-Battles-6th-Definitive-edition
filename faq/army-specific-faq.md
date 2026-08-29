@@ -7617,7 +7617,7 @@ This mirrors the shooting distribution rules and prevents either model type from
 - (b) Panic Immunity (No): The crew is a Goblin unit, not an Orc unit. The Ignore Goblin Panic rule does not apply; they must test if nearby Goblins or Snotlings flee.
 - (c) Fleeing (No): If the unit fails a Panic test, the entire unit (including the Orc Bully) must flee 2D6" away. Models belonging to a unit must flee if the unit flees, overriding any individual immunities. The machine is left abandoned.
 
-**Source:** `Source: [Warhammer FB Rulebook pages 100 & 119 / Orcs & Goblins Army Book pages 13 & 47]`
+**Source:** `Source: [The Norn Consensus Historical Precedent / Warhammer FB Rulebook pages 100 & 119 / Orcs & Goblins Army Book pages 13 & 47]`
 
 ---
 
@@ -7659,10 +7659,50 @@ Because the rule targets specific races and creature types rather than the army 
 
 **Q:** In variant army lists that include living units such as the Sylvanian Militia, Free Company, or Strigany in Vampire Counts armies, can Undead characters join those living units?
 
-**Ruling:** No. Undead characters can never join living units, and living characters can never join Undead units. If an army includes living mercenaries or Sylvanian levies, the Vampires and Necromancers must remain entirely separate from them.
+**Ruling:** No. As a general rule, Undead characters can never join living units, and living characters can never join Undead units. If an army includes living mercenaries or Sylvanian levies, the Vampires and Necromancers must remain entirely separate from them.
 However, in a Strigoi appendix army, living Mercenary characters (like Marco Colombo or a Dark Emissary) may join living Strigany units, as the restriction only prevents mixing Living and Undead models. Furthermore, if a mercenary champion's unit is destroyed, the surviving character becomes an independent model and may freely join a new eligible unit.
 
 **Source:** `[The Norn Consensus Historical Precedent / Direwolf FAQ Compilation / Vampire Counts Army Book]`
+
+---
+
+**Q:** In the Lahmian alternative list, can Swains join units containing Lahmian Vampires, despite being living characters in an Undead army?
+
+The Lahmian alternative list includes Swains: living heroes devoted to the Lahmian Vampire. Under the general Living/Undead joining restriction, they appear to be forced to operate alone and cannot even join the Lahmian Vampire they are sworn to serve.
+
+**Norn Resolution:** Yes, exceptionally.
+
+**Designer Answer:** "I would house rule those separately. Clearly an oversight."
+
+**Norn Consensus Comment:** This does not overturn the general Living/Undead joining restriction for all Vampire Counts variant armies. Instead, it identifies the Lahmian Swain interaction as a specific oversight in the Lahmian alternative list.
+
+The purpose of Swains is clearly to serve, protect, and accompany the Lahmian Vampire. Forcing them to operate alone makes the unit function awkwardly and undermines the theme of the list.
+
+**Ruling:** In the Lahmian alternative list only, Swains may join a unit containing a Lahmian Vampire, or otherwise accompany a Lahmian Vampire as agreed before the game. This is a specific exception for Swains and Lahmians, not a general permission for Living and Undead characters to freely join each other's units in other Vampire Counts lists.
+
+**Practical Version:** The normal rule remains: do not mix Living and Undead characters/units. The Lahmian Swain case is a specific oversight and may be house-ruled separately.
+
+**Source:** `[Tuomas Pirinen, designer answer to Norn Consensus inquiry / Vampire Counts Army Book, Lahmian Alternative List / The Norn Consensus Historical Precedent]`
+
+---
+
+**Q:** Can Necrarch or Lahmian Vampires choose magic armour if the specific magic item does not explicitly forbid them from taking it?
+
+Some Vampire Counts magic armour entries specifically say that they cannot be chosen by Necrarchs or Lahmians, while others do not. However, the FAQ states that if a character cannot take mundane armour, they cannot take magic armour either.
+
+**Norn Resolution:** No.
+
+**Designer Answer:** "I think the armour limitations were added before they were forbidden from taking armour in general. So both limitations are true."
+
+**Norn Consensus Comment:** This matches the established 6th Edition FAQ logic for magic item access. *Warhammer Chronicles 2004* states that a character with no normal armour option cannot wear magic armour.
+
+The Dark Elf Beastmaster ruling follows the same principle: even if a character can take armour, lacking the mundane shield option prevents him from taking a magic shield, or magic armour that includes a shield, such as *Armour of Darkness*.
+
+Therefore, the item-specific lines saying "not available to Necrarchs or Lahmians" should not be read as permission to take every other piece of magic armour. They are best understood as older or redundant restrictions, written before the broader limitation was clarified.
+
+**Ruling:** Necrarch and Lahmian Vampires cannot take magic armour unless a rule explicitly grants them permission to do so.
+
+**Source:** `[Tuomas Pirinen, designer answer to Norn Consensus inquiry / Warhammer Chronicles 2004 page 116 / Anthony Reynolds, Warhammer Design Team, Dark Elf Beastmaster magic shield precedent / Vampire Counts Army Book]`
 
 ---
 
@@ -7717,6 +7757,32 @@ The Flaming component still applies in the normal sense: Regeneration cannot be 
 **Ruling:** No. Because a Tunneling Team marker that surfaces under an enemy unit "automatically engages" the enemy in close combat, they count as charging and do not need to take a Fear or Terror test.
 
 **Source:** `[The Norn Consensus Historical Precedent / Warhammer Chronicles 2004 page 118]`
+
+---
+
+**Q:** Do Skaven benefit from their rank bonus to Leadership when affected by rules such as the Banshee's *Ghostly Howl* or the Khemrian *Casket of Souls*?
+
+These effects use Leadership, but they are not normal Leadership tests with a simple pass/fail result. For example, *Ghostly Howl* and the *Casket of Souls* roll dice and compare the result against the target's Leadership to determine wounds.
+
+**Norn Resolution:** Yes.
+
+**Designer Answer:** "Skaven benefit from their numbers. They are literally braver in packs. RAI."
+
+**Norn Consensus Comment:** The Skaven Leadership bonus from ranks applies whenever the unit's Leadership value is being used for this type of effect, even if the rule is not a conventional Leadership test.
+
+This includes effects that compare a dice roll against the target's Leadership, such as the Banshee's *Ghostly Howl* or the Khemrian *Casket of Souls*. In those cases, the rule is asking for the unit's Leadership value, and Skaven Leadership is affected by their numbers.
+
+However, this does not mean that Skaven add their rank bonus to every rule that mentions Leadership. If a rule specifically refers to a model's **base Leadership**, **unmodified Leadership**, or printed Leadership characteristic, the Skaven rank bonus does not apply.
+
+For example, a rule such as *Crush the Weak*, which checks whether a model has a base Leadership characteristic of 6 or lower, uses the printed/base Leadership value. Skaven do not increase their base Leadership because they have ranks.
+
+**Ruling:** Skaven may use their rank bonus to Leadership against *Ghostly Howl*, the *Casket of Souls*, and similar Leadership-based effects that use or compare against the unit's Leadership value.
+
+Skaven may not use their rank bonus when a rule explicitly checks **base Leadership**, **unmodified Leadership**, or the printed Leadership characteristic.
+
+**Practical Version:** If the rule asks for the unit's Leadership, Skaven are braver in packs. If the rule asks for base or unmodified Leadership, use the printed value.
+
+**Source:** `[Tuomas Pirinen, designer answer to Norn Consensus inquiry / Skaven Army Book / Vampire Counts Army Book / Tomb Kings Army Book]`
 
 ---
 
