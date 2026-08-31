@@ -7764,7 +7764,7 @@ The Flaming component still applies in the normal sense: Regeneration cannot be 
 
 These effects use Leadership, but they are not normal Leadership tests with a simple pass/fail result. For example, *Ghostly Howl* and the *Casket of Souls* roll dice and compare the result against the target's Leadership to determine wounds.
 
-**Norn Resolution:** Yes.
+**Norn Resolution:** Yes, when the rule uses the unit's Leadership value. No, when the rule asks for base, unmodified, or printed Leadership.
 
 **Designer Answer:** "Skaven benefit from their numbers. They are literally braver in packs. RAI."
 

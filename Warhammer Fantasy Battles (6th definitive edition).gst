@@ -17681,6 +17681,31 @@ The spell cannot affect Undead targets, Chaos Daemons or Unbreakable units. Unit
       </categoryLinks>
       <comment>WIP</comment>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="House rules" hidden="true" id="7be4-d5ef-d844-2e73">
+      <comment>A selection of house-rules that can be enabled for the game</comment>
+      <categoryLinks>
+        <categoryLink name="Special list rules" hidden="false" id="cad2-246d-b8d6-7f4c" targetId="32f1-197f-d719-a393" primary="true"/>
+        <categoryLink name="Experimental rules" hidden="false" id="9f5d-5087-9ed8-1596" targetId="4fed-b911-e6e0-927b" primary="false"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="8b76-92c4-23f9-54b1" shared="true" includeChildSelections="true" childName="Allow experimental rules?"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <rules>
+        <rule name="House rules" id="e3fb-14ec-5de1-102c" hidden="false">
+          <description>This list contains house-rules. These rules are legal only if both players agree on them, and must be discussed beforehand.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Show FAQs" hidden="false" id="2628-9a31-5fc9-c97e">
+      <categoryLinks>
+        <categoryLink name="Special list rules" hidden="false" id="c2ad-f8e0-348e-4e67" targetId="32f1-197f-d719-a393" primary="true"/>
+      </categoryLinks>
+      <comment>If this is active, the units will be selected with their related FAQs, and printed with the army list.</comment>
+    </selectionEntry>
   </selectionEntries>
   <readme># Warhammer Fantasy Battles (6th Definitive Edition) Data Repository
 
