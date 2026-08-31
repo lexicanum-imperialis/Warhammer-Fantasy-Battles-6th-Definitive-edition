@@ -3446,7 +3446,7 @@ END
 
 ### General Line of Sight and Targeting
 **Ruling:** "Intent" does not override physical line of sight. If a model cannot physically draw a clear line of sight to a target due to intervening models or terrain, it cannot declare a charge or shooting attack, regardless of whether the player knows the enemy is there. 
-**Source:** `[GLWL Core Rules Clarifications]`
+**Source:** GLWL Core Rules Clarifications
 
 ---
 
@@ -3468,7 +3468,7 @@ Although a Reform is resolved around the unit's centre, the physical repositioni
 
 A Reform may not be used to create artificial "screening walls" or to seal off movement channels by stretching the unit's footprint beyond what the models could physically achieve.
 
-**Source:** `[The Norn Consensus Historical Precedent / FB_faq_0 Geometry & Reform Limitations]`
+**Source:** The Norn Consensus Historical Precedent / FB_faq_0 Geometry & Reform Limitations
 
 ---
 
@@ -3476,7 +3476,7 @@ A Reform may not be used to create artificial "screening walls" or to seal off m
 
 **Ruling:** No. You do not alternate declarations. You must declare ALL of your charges for the phase first. Once all charges have been declared, the defending player then declares the charge reactions for each of their charged units. Reactions are then resolved (fleeing units move, Stand & Shoot fire is resolved), and finally all charging units are physically moved.
 
-**Source:** `[The Norn Consensus Historical Precedent / Rulebook page 44]`
+**Source:** The Norn Consensus Historical Precedent / Rulebook page 44
 
 ---
 
@@ -3486,7 +3486,7 @@ A Reform may not be used to create artificial "screening walls" or to seal off m
 
 When your unit completes its reform, you must ensure its final position maintains this mandatory 1" gap.
 
-**Source:** `[The Norn Consensus / Rulebook, pages 49, 55]`
+**Source:** The Norn Consensus / Rulebook, pages 49, 55
 
 ---
 
@@ -3494,7 +3494,7 @@ When your unit completes its reform, you must ensure its final position maintain
 
 **Ruling:** It is determined by the position of the majority of the charging unit's footprint at the moment the charge is declared. You project the target unit's arcs from its corners. Whichever arc the majority of the charging unit's footprint lies within is the arc that must be charged, regardless of the charging unit's own facing.
 
-**Source:** `[The Norn Consensus Historical Precedent / FB_faq_0 Case 9]`
+**Source:** The Norn Consensus Historical Precedent / FB_faq_0 Case 9
 
 ---
 
@@ -3504,7 +3504,7 @@ When your unit completes its reform, you must ensure its final position maintain
 
 If terrain gets in the way of the physical rotation, players should allow a slight adjustment to the unit's positioning, provided that no individual model ends up moving further than its maximum allowed Movement distance.
 
-**Source:** `[The Norn Consensus / Rulebook, page 49]`
+**Source:** The Norn Consensus / Rulebook, page 49
 
 ---
 
@@ -3516,7 +3516,7 @@ If terrain gets in the way of the physical rotation, players should allow a slig
 
 Wizards in the unit are not prevented from casting spells merely because the unit failed a charge, unless another rule specifically prevents them from doing so.
 
-**Source:** `[The Norn Consensus Historical Precedent / Rulebook Shooting Restrictions / Warhammer Skirmish Rules pages 8 & 10 / White Dwarf 254]`
+**Source:** The Norn Consensus Historical Precedent / Rulebook Shooting Restrictions / Warhammer Skirmish Rules pages 8 & 10 / White Dwarf 254
 
 ---
 
@@ -3524,7 +3524,7 @@ Wizards in the unit are not prevented from casting spells merely because the uni
 
 **Ruling:** No. A war machine using the Artillery Dice, Scatter Dice, or a guess-range procedure must have a valid line of sight to its intended target. A player may not declare a shot against a unit that the crew cannot see, nor use a visible unit as a pretext to intentionally guess beyond it in order to hit an unseen unit hidden behind terrain or another unit.
 
-**Source:** `[The Norn Consensus Historical Precedent / Rulebook Shooting and War Machines sections]`
+**Source:** The Norn Consensus Historical Precedent / Rulebook Shooting and War Machines sections
 
 ---
 
@@ -3534,7 +3534,7 @@ Wizards in the unit are not prevented from casting spells merely because the uni
 
 Furthermore, if multiple units charge the shooters and even one of those charging units starts its charge within its normal Movement distance, the shooters cannot Stand & Shoot at any of them.
 
-**Source:** `[The Norn Consensus / Rulebook, pages 45-46]`
+**Source:** The Norn Consensus / Rulebook, pages 45-46
 
 ---
 
@@ -3542,7 +3542,7 @@ Furthermore, if multiple units charge the shooters and even one of those chargin
 
 **Ruling:** No. A character without the *Scouts* special rule may not deploy using the Scout deployment rules. Scouts are placed after normal deployment has been completed. A non-Scout character must be deployed during the normal deployment sequence and cannot be held back to "piggyback" onto a scouting unit's forward or hidden deployment.
 
-**Source:** `[The Norn Consensus Historical Precedent / Rulebook Scouts and Deployment sections]`
+**Source:** The Norn Consensus Historical Precedent / Rulebook Scouts and Deployment sections
 
 ---
 
@@ -3554,7 +3554,7 @@ Furthermore, if multiple units charge the shooters and even one of those chargin
 
 Each attacking unit is considered separately when determining whether it has sufficient Unit Strength to disrupt ranks or claim flank/rear combat resolution bonuses. Therefore, two independent Unit Strength 4 Chariots charging the same flank do not combine to count as Unit Strength 8. Neither Chariot is Unit Strength 5 or more, so neither unit negates the enemy's rank bonus by itself.
 
-**Source:** `[The Norn Consensus Historical Precedent / Rulebook pages 77 & 78 / Warhammer Chronicles 2004 page 112 / Direwolf FAQ Council Interpretation]`
+**Source:** The Norn Consensus Historical Precedent / Rulebook pages 77 & 78 / Warhammer Chronicles 2004 page 112 / Direwolf FAQ Council Interpretation
 
 ---
 
@@ -3562,7 +3562,7 @@ Each attacking unit is considered separately when determining whether it has suf
 
 **Ruling:** Rank bonus is claimed and calculated at the start of the Close Combat phase. Because the unit is engaged in the flank by Unit Strength 5+, its rank bonus is immediately nullified to zero for that turn. Models armed with spears in the rear ranks cannot make supporting attacks into the flank; spears only fight directly to the front. However, the unit does still claim the +1 Combat Resolution bonus for its Standard Bearer; banners grant their passive +1 CR bonus regardless of the direction of the attack.
 
-**Source:** `[The Norn Consensus Historical Precedent / Rulebook pages 73, 78 & 89 / Warhammer Chronicles 2004 page 112]`
+**Source:** The Norn Consensus Historical Precedent / Rulebook pages 73, 78 & 89 / Warhammer Chronicles 2004 page 112
 
 ---
 
@@ -3570,7 +3570,7 @@ Each attacking unit is considered separately when determining whether it has suf
 
 **Ruling:** No. Area-of-effect banners add their bonus to the overall combat resolution of an engagement, rather than granting a stacking bonus for every unit affected. Because there is only one combat resolution tallied for the entire fight, each aura's bonus is only applied once per engagement, not once per unit it affects.
 
-**Source:** `[The Norn Consensus Historical Precedent / Rulebook page 73]`
+**Source:** The Norn Consensus Historical Precedent / Rulebook page 73
 
 ---
 
@@ -3578,7 +3578,7 @@ Each attacking unit is considered separately when determining whether it has suf
 
 **Ruling:** Yes. While a side can normally only claim a maximum of +1 Combat Resolution for possessing standard bearers, magical bonuses from different items and area effects are cumulative unless specifically stated otherwise. The unit would receive the base +1 CR for having a standard, +1 CR from the War Banner, and +1 CR from the area effect of the Master Rune of Stromni Redbeard.
 
-**Source:** `[The Norn Consensus Historical Precedent / Rulebook page 73 / Dwarfs Army Book]`
+**Source:** The Norn Consensus Historical Precedent / Rulebook page 73 / Dwarfs Army Book
 
 ---
 
@@ -3586,7 +3586,7 @@ Each attacking unit is considered separately when determining whether it has suf
 
 **Ruling:** No. The rules for fighting in additional ranks explicitly apply only when fighting against enemy models directly to the unit's front. Models in the rear ranks of a unit armed with spears or pikes may only attack models directly to their front and cannot direct strikes into a flank or rear engagement.
 
-**Source:** `[The Norn Consensus Historical Precedent / Rulebook page 89]`
+**Source:** The Norn Consensus Historical Precedent / Rulebook page 89
 
 ---
 
@@ -3594,7 +3594,7 @@ Each attacking unit is considered separately when determining whether it has suf
 
 **Ruling:** The Chariot's impact hits are always resolved first. Impact hits happen before everything else in the Close Combat phase. This qualifies as an attack that is "entitled to strike first because of a special ability", meaning it supersedes both Pikes and "Always Strikes First" magic weapons.
 
-**Source:** `[The Norn Consensus Historical Precedent / Gav Thorpe - Warhammer Design Team / Warhammer Chronicles 2004 page 57]`
+**Source:** The Norn Consensus Historical Precedent / Gav Thorpe - Warhammer Design Team / Warhammer Chronicles 2004 page 57
 
 ---
 
@@ -3602,7 +3602,7 @@ Each attacking unit is considered separately when determining whether it has suf
 
 **Ruling:** No. When an overrun move is initiated, the unit must move directly forward in a straight line. Only if this forward movement would take it into an enemy unit is the unit then allowed to wheel to try and bring as many models as possible into contact. You cannot wheel to manufacture a charge against a unit that is not already in your direct forward path.
 
-**Source:** `[The Norn Consensus Historical Precedent / Warhammer Annual 2002 page 16 / Rulebook page 78]`
+**Source:** The Norn Consensus Historical Precedent / Warhammer Annual 2002 page 16 / Rulebook page 78
 
 ---
 
@@ -3610,7 +3610,7 @@ Each attacking unit is considered separately when determining whether it has suf
 
 **Ruling:** The Chariot suffers the hits. The charging unit must align to the target if physically possible. Because difficult terrain is not impassable terrain, the Chariot can physically enter it. The Chariot must complete the alignment, and because this moves the Chariot into difficult terrain, it immediately suffers the D6 S6 hits. The target unit only aligns to the charger if the charger is physically unable to do so, such as when blocked by impassable terrain.
 
-**Source:** `[The Norn Consensus Historical Precedent / Rulebook pages 52 & 127]`
+**Source:** The Norn Consensus Historical Precedent / Rulebook pages 52 & 127
 
 ---
 
@@ -3626,7 +3626,7 @@ Appendix Seven clarifies the same rule in operational terms: units Immune to Psy
 
 The Norn Consensus therefore reads *Immune to Psychology* as preventing Psychology tests, Flee charge reactions, and externally imposed Psychology effects. It does not automatically erase rules already printed on the model/unit, or rules gained through permanent non-magic-item army-list upgrades, unless a specific rule or official FAQ says otherwise.
 
-**Source:** `[The Norn Consensus Historical Precedent / Rulebook pages 112 & 270 / Direwolf FAQ Council Interpretation]`
+**Source:** The Norn Consensus Historical Precedent / Rulebook pages 112 & 270 / Direwolf FAQ Council Interpretation
 
 ---
 
@@ -3644,7 +3644,7 @@ Magic Items, Magic Standards, spells, prayers, bound spells, temporary effects a
 
 This preserves the official Empire ruling concerning the Banner of Sigismund. A Magic Standard does not override *Immune to Psychology* merely because it is magical.
 
-**Source:** `[The Norn Consensus Historical Precedent / Rulebook pages 74, 80, 84, 85, 112 & 270 / Warhammer Chronicles 2004 page 116 / Direwolf FAQ Council Interpretation]`
+**Source:** The Norn Consensus Historical Precedent / Rulebook pages 74, 80, 84, 85, 112 & 270 / Warhammer Chronicles 2004 page 116 / Direwolf FAQ Council Interpretation
 
 ---
 
@@ -3658,7 +3658,7 @@ Therefore, a model or unit that already has both *Stubborn* and *Immune to Psych
 
 This does not allow a Magic Item, Magic Standard, spell, prayer or other external effect to grant *Stubborn* to an *Immune to Psychology* unit unless that effect specifically says it works on models or units that are *Immune to Psychology*.
 
-**Source:** `[The Norn Consensus Historical Precedent / Rulebook pages 74, 80, 85, 112 & 270 / Warhammer Chronicles 2004 page 116 / Direwolf FAQ Council Interpretation]`
+**Source:** The Norn Consensus Historical Precedent / Rulebook pages 74, 80, 85, 112 & 270 / Warhammer Chronicles 2004 page 116 / Direwolf FAQ Council Interpretation
 
 ---
 
@@ -3672,7 +3672,7 @@ The affected model or unit is still *Immune to Psychology* for the normal purpos
 
 Specific rules and official FAQs override this general principle. For example, if a Magic Standard or spell specifically states that a named Psychology rule is lost, suspended, or applied even to models Immune to Psychology, apply that specific wording.
 
-**Source:** `[The Norn Consensus Historical Precedent / Rulebook pages 84, 85, 112 & 270 / Direwolf FAQ Council Interpretation]`
+**Source:** The Norn Consensus Historical Precedent / Rulebook pages 84, 85, 112 & 270 / Direwolf FAQ Council Interpretation
 
 ---
 
@@ -3682,7 +3682,7 @@ Specific rules and official FAQs override this general principle. For example, i
 
 If a specific character rule or army-book rule explicitly grants *Immune to Psychology* to the unit, then the unit gains it as stated by that rule. This does not suppress *Stubborn*, *Frenzy*, *Hatred*, *Stupidity* or similar rules already possessed by the unit as native rules or permanent non-magic-item army-list upgrades.
 
-**Source:** `[The Norn Consensus Historical Precedent / Rulebook pages 100, 112 & 270 / Gav Thorpe - Warhammer Design Team / Direwolf FAQ Council Interpretation]`
+**Source:** The Norn Consensus Historical Precedent / Rulebook pages 100, 112 & 270 / Gav Thorpe - Warhammer Design Team / Direwolf FAQ Council Interpretation
 
 ---
 
@@ -3692,7 +3692,7 @@ If a specific character rule or army-book rule explicitly grants *Immune to Psyc
 
 The model or unit remains *Immune to Psychology* for all other purposes, but is still affected by the named rule because the exception specifically overrides *Immune to Psychology*.
 
-**Source:** `[The Norn Consensus Historical Precedent / Rulebook pages 112 & 270 / Direwolf FAQ Council Interpretation]`
+**Source:** The Norn Consensus Historical Precedent / Rulebook pages 112 & 270 / Direwolf FAQ Council Interpretation
 
 ---
 
@@ -3704,7 +3704,7 @@ A unit made Immune to Psychology does not benefit from the Banner of Sigismund. 
 
 The Norn Consensus only clarifies that this official ruling should not be extended to cancel *Stubborn*, *Frenzy*, *Hatred*, *Stupidity* or similar rules already possessed by a model or unit as native rules or permanent non-magic-item army-list upgrades.
 
-**Source:** `[The Norn Consensus Historical Precedent / Rulebook pages 112 & 270 / Warhammer Chronicles 2004 page 116 / Direwolf FAQ Council Interpretation]`
+**Source:** The Norn Consensus Historical Precedent / Rulebook pages 112 & 270 / Warhammer Chronicles 2004 page 116 / Direwolf FAQ Council Interpretation
 
 ---
 
@@ -3714,7 +3714,7 @@ The Norn Consensus only clarifies that this official ruling should not be extend
 
 However, because *Immune to Psychology* does not inherently cause a unit to become *Frenzied* or otherwise force pursuit, the unit may still attempt a Leadership test to restrain pursuit normally after winning a combat, unless another rule specifically overrides this and forces them to pursue.
 
-**Source:** `[The Norn Consensus Historical Precedent / Rulebook pages 112 & 270]`
+**Source:** The Norn Consensus Historical Precedent / Rulebook pages 112 & 270
 
 ---
 
@@ -3722,7 +3722,7 @@ However, because *Immune to Psychology* does not inherently cause a unit to beco
 
 **Ruling:** No. Units that are actively engaged in close combat are too busy fighting for their lives to notice the wider battle. The core rules explicitly state that units engaged in close combat never take Panic tests, regardless of the trigger.
 
-**Source:** `[The Norn Consensus Historical Precedent / Rulebook page 80]`
+**Source:** The Norn Consensus Historical Precedent / Rulebook page 80
 
 ---
 
@@ -3738,7 +3738,7 @@ The charging unit does not wheel or rotate to match the lone character's facing.
 
 This ruling applies to lone man-sized characters on foot. It does not apply to single models that move as monsters or are otherwise larger than man-sized; those models have a clear front, flank and rear for charge and combat purposes.
 
-**Source:** `[The Norn Consensus Historical Precedent / Rulebook page 116 / Warhammer Annual 2002 / Warhammer Chronicles 2004 page 114 / White Dwarf 254 / Direwolf FAQ Council Interpretation]`
+**Source:** The Norn Consensus Historical Precedent / Rulebook page 116 / Warhammer Annual 2002 / Warhammer Chronicles 2004 page 114 / White Dwarf 254 / Direwolf FAQ Council Interpretation
 
 ---
 
@@ -3756,7 +3756,7 @@ A cavalry-mounted character is larger than infantry and is not hidden by infantr
 
 Therefore, a mounted or monster-mounted character may only claim the normal proximity or joined-unit shooting protection if he is the same size as, or smaller than, the friendly unit of 5+ rank-and-file models providing that protection. If he is larger, he may be singled out by enemy missile fire.
 
-**Source:** `[The Norn Consensus / Warhammer Chronicles 2004 pages 112-113 / Rulebook pages 97-98 / Direwolf FAQ Compilation]`
+**Source:** The Norn Consensus / Warhammer Chronicles 2004 pages 112-113 / Rulebook pages 97-98 / Direwolf FAQ Compilation
 
 ---
 
@@ -3766,7 +3766,7 @@ Therefore, a mounted or monster-mounted character may only claim the normal prox
 
 If the rider is slain or removed from play by the Giant's attack, the mount must take a Monster Reaction test. However, if the monster is still engaged in close combat, the Monster Reaction test is delayed until that close combat has been fully resolved.
 
-**Source:** `[The Norn Consensus Historical Precedent / Beasts of Chaos Army Book page 29 / Orcs & Goblins Army Book page 22 / Rulebook page 105]`
+**Source:** The Norn Consensus Historical Precedent / Beasts of Chaos Army Book page 29 / Orcs & Goblins Army Book page 22 / Rulebook page 105
 
 ---
 
@@ -3774,7 +3774,7 @@ If the rider is slain or removed from play by the Giant's attack, the mount must
 
 **Ruling:** No. The core rules for refusing a challenge explicitly state that a retiring character "is pushed into the ranks to hide... his Leadership cannot be used for any tests and he cannot use any magic items." Because the BSB is actively hiding in the rear rank, he cannot inspire the troops, wave the standard, or utilize its magical properties. All Battle Standard benefits are completely nullified for that round.
 
-**Source:** `[The Norn Consensus Historical Precedent / Rulebook pages 99 & 100 / Direwolf FAQ Council Interpretation]`
+**Source:** The Norn Consensus Historical Precedent / Rulebook pages 99 & 100 / Direwolf FAQ Council Interpretation
 
 ---
 
@@ -3782,7 +3782,7 @@ If the rider is slain or removed from play by the Giant's attack, the mount must
 
 **Ruling:** No. The specific rules governing Characters override standard weapon rules. A character can only fight in close combat if they are placed in the front rank or are otherwise in physical base-to-base contact with the enemy. A character in the second rank cannot fight, regardless of whether they carry a spear or pike.
 
-**Source:** `[The Norn Consensus Historical Precedent / Rulebook page 97]`
+**Source:** The Norn Consensus Historical Precedent / Rulebook page 97
 
 ---
 
@@ -3790,7 +3790,7 @@ If the rider is slain or removed from play by the Giant's attack, the mount must
 
 **Ruling:** The character remains exactly where he is and continues fighting as a lone, independent model on foot. He does not drop out of the combat, nor does he automatically join another friendly unit fighting the same enemy. If the enemy models that were in base contact with him are removed as casualties, the standard sliding rule applies: slide the character or the enemy models slightly so they remain in base-to-base contact to continue the fight.
 
-**Source:** `[The Norn Consensus Historical Precedent / Warhammer Chronicles 2004 page 112]`
+**Source:** The Norn Consensus Historical Precedent / Warhammer Chronicles 2004 page 112
 
 ---
 
@@ -3798,7 +3798,7 @@ If the rider is slain or removed from play by the Giant's attack, the mount must
 
 **Ruling:** It is resolved normally, once per Close Combat phase. The models engaged in the challenge direct their attacks against each other during the normal combat sequence. If both survive, the challenge continues into the next turn's combat phase.
 
-**Source:** `[The Norn Consensus Historical Precedent / Rulebook page 99]`
+**Source:** The Norn Consensus Historical Precedent / Rulebook page 99
 
 ---
 
@@ -3806,7 +3806,7 @@ If the rider is slain or removed from play by the Giant's attack, the mount must
 
 **Ruling:** Yes, unless otherwise forbidden. A character takes up the space of an equivalent number of rank-and-file models as their base fills. For example, a cavalry model takes up one space in the first rank and one space in the second rank of an infantry unit, and these ranks still count as complete if they remain four "spaces" wide.
 
-**Source:** `[The Norn Consensus Historical Precedent / Warhammer Chronicles 2004 page 113]`
+**Source:** The Norn Consensus Historical Precedent / Warhammer Chronicles 2004 page 113
 
 ---
 
@@ -3818,7 +3818,7 @@ The character may move with the unit, but does not benefit from Fast Cavalry rul
 
 In practice, the unit’s movement and manoeuvring may also be restricted because the formation must remain legal while including a model that does not itself have the Fast Cavalry rule.
 
-**Source:** `[Rulebook / Warhammer Chronicles 2004 / Direwolf FAQ / The Norn Consensus]`
+**Source:** Rulebook / Warhammer Chronicles 2004 / Direwolf FAQ / The Norn Consensus
 
 ---
 
@@ -3828,7 +3828,7 @@ In practice, the unit’s movement and manoeuvring may also be restricted becaus
 
 If the chariot is destroyed underneath them, the character immediately takes a Strength 5 hit. If they survive this hit, they are placed on foot where the chariot was destroyed and operate as an independent character.
 
-**Source:** `[The Norn Consensus / Rulebook, page 127]`
+**Source:** The Norn Consensus / Rulebook, page 127
 
 ---
 
@@ -3840,7 +3840,7 @@ A player does not need special permission merely because a character is named, p
 
 Opponent agreement is required where the character’s rules are marked as Trial Rules, where the publication explicitly requires permission, or where an event pack, campaign pack, or tournament pack restricts Special Characters.
 
-**Source:** `[Warhammer Chronicles 2004 / White Dwarf / The Norn Consensus]`
+**Source:** Warhammer Chronicles 2004 / White Dwarf / The Norn Consensus
 
 ---
 
@@ -3848,7 +3848,7 @@ Opponent agreement is required where the character’s rules are marked as Trial
 
 **Ruling:** No. You use the Monster or Chariot's starting Unit Strength and simply add +1 for the rider. For a ridden monster, its base Unit Strength equals its starting Wounds profile. For a chariot, its base Unit Strength is 4. Therefore, a character on a Dragon with 6 starting Wounds has a combined Unit Strength of 7, regardless of how many wounds either model has taken.
 
-**Source:** `[The Norn Consensus Historical Precedent / Warhammer Chronicles 2004 page 114]`
+**Source:** The Norn Consensus Historical Precedent / Warhammer Chronicles 2004 page 114
 
 ---
 
@@ -3856,7 +3856,7 @@ Opponent agreement is required where the character’s rules are marked as Trial
 
 **Ruling:** Yes. Casualties are removed from the back ranks of ranked units. As long as there are enough models left to physically form a second rank, those models are assumed to step forward to fill the gaps and may make their supporting spear attacks.
 
-**Source:** `[The Norn Consensus Historical Precedent / Rulebook pages 58 & 65]`
+**Source:** The Norn Consensus Historical Precedent / Rulebook pages 58 & 65
 
 ---
 
@@ -3864,7 +3864,7 @@ Opponent agreement is required where the character’s rules are marked as Trial
 
 **Ruling:** No. The arc that you charge (Front, Flank, or Rear) is strictly determined by the position of the majority of the charging unit at the exact moment the charge is declared. If the flyers start their turn in the target's front arc, they must charge the front.
 
-**Source:** `[The Norn Consensus Historical Precedent / FB_faq_0]`
+**Source:** The Norn Consensus Historical Precedent / FB_faq_0
 
 ---
 
@@ -3878,7 +3878,7 @@ If the attack states that hits are distributed exactly like hits from shooting, 
 
 Although the Giant is fighting in close combat, the attack's distribution instruction means that casualties are removed as shooting casualties: normally from the rear rank of a ranked unit, with the owning player removing casualties as normal.
 
-**Source:** `[The Norn Consensus Historical Precedent / Rulebook pages 58, 65, 97, 98 & 109 / Orcs & Goblins Army Book / Direwolf FAQ Council Interpretation]`
+**Source:** The Norn Consensus Historical Precedent / Rulebook pages 58, 65, 97, 98 & 109 / Orcs & Goblins Army Book / Direwolf FAQ Council Interpretation
 
 ---
 
@@ -3886,7 +3886,7 @@ Although the Giant is fighting in close combat, the attack's distribution instru
 
 **Ruling:** Yes, but only if they have Line of Sight to the target at the start of the charge. Ethereal creatures block line of sight normally and cannot see through solid objects, woods, or other units. However, if they can see the target, their Ethereal movement allows them to physically pass through intervening obstacles, terrain, and models during their charge move without penalty.
 
-**Source:** `[The Norn Consensus Historical Precedent / Vampire Counts Army Book page 28 / Warhammer Chronicles 2004 page 116]`
+**Source:** The Norn Consensus Historical Precedent / Vampire Counts Army Book page 28 / Warhammer Chronicles 2004 page 116
 
 ---
 
@@ -3896,7 +3896,7 @@ Although the Giant is fighting in close combat, the attack's distribution instru
 
 **Ruling:** You score Victory Points equal to the unit's full original points value, unless the unit has been reduced to below half strength. If it is below half strength, you only score half of its points value. Fleeing units earn zero bonus Victory Points.
 
-**Source:** `[The Norn Consensus Historical Precedent / White Dwarf 292 page 28]`
+**Source:** The Norn Consensus Historical Precedent / White Dwarf 292 page 28
 
 ---
 
@@ -3904,7 +3904,7 @@ Although the Giant is fighting in close combat, the attack's distribution instru
 
 **Ruling:** Yes. Regeneration rolls are taken during the phase the wounds are suffered. Even if the total wounds inflicted exceed the remaining wounds of the entire unit, you make all the Regeneration rolls first, then remove whole models as casualties for any un-regenerated wounds. It is fully possible for the last model to be "killed" but successfully regenerate and remain in play.
 
-**Source:** `[The Norn Consensus Historical Precedent / Warhammer Chronicles 2004 page 114 / White Dwarf 258 page 39]`
+**Source:** The Norn Consensus Historical Precedent / Warhammer Chronicles 2004 page 114 / White Dwarf 258 page 39
 
 ---
 
@@ -3912,7 +3912,7 @@ Although the Giant is fighting in close combat, the attack's distribution instru
 
 **Ruling:** No. You can never take a Ward Save and a Regeneration roll against the same wound. A model may attempt an Armour Save first. If that save is failed or modified away, the defending player must choose to use either their Ward Save or their Regeneration roll.
 
-**Source:** `[The Norn Consensus Historical Precedent / Rulebook page 65]`
+**Source:** The Norn Consensus Historical Precedent / Rulebook page 65
 
 ---
 
@@ -3920,7 +3920,7 @@ Although the Giant is fighting in close combat, the attack's distribution instru
 
 **Ruling:** No. Despite their loose formation and physical gaps on the tabletop, units of Skirmishers completely block line of sight to other units, including characters that have joined the Skirmishing unit. It is explicitly illegal to trace line of sight through the gaps between Skirmishing models.
 
-**Source:** `[The Norn Consensus Historical Precedent / Rulebook page 115]`
+**Source:** The Norn Consensus Historical Precedent / Rulebook page 115
 
 ---
 
@@ -3928,7 +3928,7 @@ Although the Giant is fighting in close combat, the attack's distribution instru
 
 **Ruling:** Yes, it can be used as a Stand & Shoot reaction against enemies scaling ladders or ropes. Because Boiling Oil uses the circular 3" template positioned directly beneath the cauldron, no To Hit rolls are necessary at all. Any model whose base touches the template suffers an automatic S5 hit with no armour save allowed.
 
-**Source:** `[The Norn Consensus Historical Precedent / Rulebook page 254 (Siege Rules)]`
+**Source:** The Norn Consensus Historical Precedent / Rulebook page 254 (Siege Rules)
 
 ---
 
@@ -3936,7 +3936,7 @@ Although the Giant is fighting in close combat, the attack's distribution instru
 
 **Ruling:** No. With the explicit exception of Dispel Scrolls and Power Stones (which may be duplicated multiple times across the army, and even stacked on a single Wizard), all magic items including Common Magic Items are completely unique. You may only ever have one of each specific magic item in your entire army.
 
-**Source:** `[The Norn Consensus Historical Precedent / Rulebook pages 152-154]`
+**Source:** The Norn Consensus Historical Precedent / Rulebook pages 152-154
 
 ---
 
@@ -3944,7 +3944,7 @@ Although the Giant is fighting in close combat, the attack's distribution instru
 
 **Ruling:** Yes. The *Enchanted Shield* is the single specific exception to this rule. Its entry explicitly states: "The Enchanted Shield can be worn with other magical armour." This allows a character to legally equip both a magical suit of armour and the *Enchanted Shield*.
 
-**Source:** `[The Norn Consensus Historical Precedent / Rulebook page 154 (Common Magic Items)]`
+**Source:** The Norn Consensus Historical Precedent / Rulebook page 154 (Common Magic Items)
 
 ---
 
@@ -3952,7 +3952,7 @@ Although the Giant is fighting in close combat, the attack's distribution instru
 
 **Ruling:** No. There is no universal "Swarm" troop type that grants automatic special rules across all armies in 6th Edition. You must follow the specific rules printed in each unit's army book entry. While many swarms are *Unbreakable* and *Skirmishers*, you cannot assume a swarm has these rules unless its specific profile says so.
 
-**Source:** `[The Norn Consensus Historical Precedent]`
+**Source:** The Norn Consensus Historical Precedent
 
 ---
 
@@ -3960,7 +3960,7 @@ Although the Giant is fighting in close combat, the attack's distribution instru
 
 **Ruling:** You may absolutely use newer models as "counts-as" proxies for legal 6th Edition units. However, the later-edition rules profiles for those units do not exist in 6th Edition architecture and cannot be used under any circumstances.
 
-**Source:** `[The Norn Consensus Historical Precedent / Tournament Proxy Precedents]`
+**Source:** The Norn Consensus Historical Precedent / Tournament Proxy Precedents
 
 ---
 
@@ -3968,7 +3968,7 @@ Although the Giant is fighting in close combat, the attack's distribution instru
 
 **Ruling:** No. Unless a specific tournament pack explicitly lists a White Dwarf or Citadel Journal character as legal, only characters found in the official 6th Edition Army Books and the Storm of Chaos campaign book are permitted. Mixing editions is strictly forbidden; you may not use 7th Edition or 8th Edition army books, unit profiles, or proxy rules in a 6th Edition game. *(Note: The later 6th Edition Dwarf book, often referred to by the community as "6.5", is the official legal Dwarf book for late-era 6th Edition games).*
 
-**Source:** `[The Norn Consensus Historical Precedent / GLWL Tournament Precedents]`
+**Source:** The Norn Consensus Historical Precedent / GLWL Tournament Precedents
 
 ---
 
@@ -3976,7 +3976,7 @@ Although the Giant is fighting in close combat, the attack's distribution instru
 
 **Ruling:** The unit must attempt to fulfill four strict priorities in order: (1) Move as directly as possible away from the cause. (2) Do not move through an enemy unit. (3) Do not move within 4" of an enemy unit. (4) Do not move through a friendly unit. If it cannot fulfill all of these, it ignores them in ascending order, starting by ignoring priority 4 (going through friends), then priority 3, and so on, until a path is resolved.
 
-**Source:** `[The Norn Consensus Historical Precedent / Warhammer Annual 2002 page 10]`
+**Source:** The Norn Consensus Historical Precedent / Warhammer Annual 2002 page 10
 
 ---
 
@@ -3984,7 +3984,7 @@ Although the Giant is fighting in close combat, the attack's distribution instru
 
 **Ruling:** Yes, they are caught. The calculation of whether a fleeing unit is run down is based on the speed and distance the pursuers can cover, not the strict terrain limitations at the exact theoretical landing spot. The fleeing unit is caught and removed from play, and the Flyer stops at the edge of the wood.
 
-**Source:** `[The Norn Consensus Historical Precedent / Tournament Combat Precedents]`
+**Source:** The Norn Consensus Historical Precedent / Tournament Combat Precedents
 
 ### WAR MACHINES
 
@@ -3992,7 +3992,7 @@ Although the Giant is fighting in close combat, the attack's distribution instru
 
 **Ruling:** It only hits models whose bases are physically crossed by the cannonball's line. Skirmishers do not form ranks and maintain physical gaps between models. Therefore, if the cannonball's line passes through a gap between Skirmishers without touching any model's base, it scores no hit on the unit and continues its path normally.
 
-**Source:** `[The Norn Consensus Historical Precedent / White Dwarf 259 / Rulebook Skirmisher and Cannon rules]`
+**Source:** The Norn Consensus Historical Precedent / White Dwarf 259 / Rulebook Skirmisher and Cannon rules
 
 ---
 
@@ -4000,7 +4000,7 @@ Although the Giant is fighting in close combat, the attack's distribution instru
 
 **Ruling:** Yes to both. A Cannon may be fired at any target it has Line of Sight to, and a Large Target is visible over the heads of normal-sized models. When the cannon is fired, the bouncing cannonball line is resolved normally, hitting any and all models whose bases fall under the template's path, including the intervening troops, regardless of whether they were the intended target.
 
-**Source:** `[The Norn Consensus Historical Precedent / Rulebook page 122 / White Dwarf 259 page 41]`
+**Source:** The Norn Consensus Historical Precedent / Rulebook page 122 / White Dwarf 259 page 41
 
 ---
 
@@ -4008,7 +4008,7 @@ Although the Giant is fighting in close combat, the attack's distribution instru
 
 **Ruling:** No. Pre-game movements occur entirely outside of the normal turn sequence, taking place after deployment but before Turn 1 begins. Therefore, when the Movement and Shooting phases of Turn 1 officially commence, the unit has not yet moved in that turn. They may march normally, and missile-armed troops do not suffer the -1 "moved and shooting" penalty.
 
-**Source:** `[The Norn Consensus Historical Precedent]`
+**Source:** The Norn Consensus Historical Precedent
 
 ---
 
@@ -4016,7 +4016,7 @@ Although the Giant is fighting in close combat, the attack's distribution instru
 
 **Ruling:** No. A unit that rallies may not shoot in that turn's Shooting phase. Even Fast Cavalry, which are explicitly permitted to make a free move after rallying from a voluntary Flee charge reaction, are still barred from shooting during that turn.
 
-**Source:** `[The Norn Consensus Historical Precedent / Warhammer Chronicles 2004 page 114 / White Dwarf 258 page 39]`
+**Source:** The Norn Consensus Historical Precedent / Warhammer Chronicles 2004 page 114 / White Dwarf 258 page 39
 
 ---
 
@@ -4024,7 +4024,7 @@ Although the Giant is fighting in close combat, the attack's distribution instru
 
 **Ruling:** No. If a template ends up touching only models from one side, and none of the models it touches are actually in base-to-base contact with the enemy, then all casualties are worked out normally against that single unit. Hits are only distributed equally to both sides if the template touches models from either side that are actively fighting, or touches models from both sides.
 
-**Source:** `[The Norn Consensus Historical Precedent / Rulebook page 60]`
+**Source:** The Norn Consensus Historical Precedent / Rulebook page 60
 
 ---
 
@@ -4032,7 +4032,7 @@ Although the Giant is fighting in close combat, the attack's distribution instru
 
 **Ruling:** The entire unit tests and flees together as a single entity. A war machine crew and its upgrades function as a single unit. Under core psychology rules, if a unit fails a test and is forced to flee, every model belonging to that unit must flee with them, overriding any individual immunities. The entire crew flees 2D6" away, leaving the machine abandoned.
 
-**Source:** `[The Norn Consensus Historical Precedent / Warhammer FB Rulebook pages 100 & 119]`
+**Source:** The Norn Consensus Historical Precedent / Warhammer FB Rulebook pages 100 & 119
 
 ---
 
@@ -4042,7 +4042,7 @@ Although the Giant is fighting in close combat, the attack's distribution instru
 
 **Ruling:** The most recently cast spell always takes precedence. If the effect of one spell contradicts the effect of another, the most recent spell automatically dispels the previous one.
 
-**Source:** `[The Norn Consensus Historical Precedent / Rulebook page 142]`
+**Source:** The Norn Consensus Historical Precedent / Rulebook page 142
 
 ---
 
@@ -4050,7 +4050,7 @@ Although the Giant is fighting in close combat, the attack's distribution instru
 
 **Ruling:** No. Any psychological or compulsory condition that prevents a unit from moving, shooting, or charging normally during their turn also prevents them from being moved by magical spells. A unit that has failed *Stupidity* "can do nothing else that turn," and a unit squabbling from *Animosity* is similarly restricted. They cannot bypass these debilitating failed tests via the Magic phase.
 
-**Source:** `[The Norn Consensus Historical Precedent / Gav Thorpe - Warhammer Design Team / Rulebook page 83]`
+**Source:** The Norn Consensus Historical Precedent / Gav Thorpe - Warhammer Design Team / Rulebook page 83
 
 ---
 
@@ -4058,7 +4058,7 @@ Although the Giant is fighting in close combat, the attack's distribution instru
 
 **Ruling:** No. Bound spells follow all normal targeting restrictions for magic. Unless the specific spell unleashed by the bound item explicitly states in its description that it can be cast onto units engaged in close combat, it cannot target them.
 
-**Source:** `[The Norn Consensus Historical Precedent / Rulebook page 139]`
+**Source:** The Norn Consensus Historical Precedent / Rulebook page 139
 
 ---
 
@@ -4068,7 +4068,7 @@ Although the Giant is fighting in close combat, the attack's distribution instru
 
 You may freely jump back and forth between your Wizards when casting spells during the Magic phase.
 
-**Source:** `[The Norn Consensus / Rulebook, page 135]`
+**Source:** The Norn Consensus / Rulebook, page 135
 
 ---
 
@@ -4076,7 +4076,7 @@ You may freely jump back and forth between your Wizards when casting spells duri
 
 **Ruling:** Yes. Every army generates a base pool of exactly two Dispel Dice in the enemy's Magic phase, regardless of whether they have any surviving Wizards.
 
-**Source:** `[The Norn Consensus Historical Precedent / Rulebook page 137]`
+**Source:** The Norn Consensus Historical Precedent / Rulebook page 137
 
 ---
 
@@ -4084,7 +4084,7 @@ You may freely jump back and forth between your Wizards when casting spells duri
 
 **Ruling:** Yes. If different Wizards have successfully generated the same spell, or if a Bound Item contains a spell that a Wizard also knows, each individual source may cast it once per phase. Note that Bound Items are still strictly limited by the magic item duplication rules; you may only have one of each specific magic item per army.
 
-**Source:** `[The Norn Consensus Historical Precedent]`
+**Source:** The Norn Consensus Historical Precedent
 
 ---
 
@@ -4092,7 +4092,7 @@ You may freely jump back and forth between your Wizards when casting spells duri
 
 **Ruling:** No. The Artillery Die and the Scatter Die are entirely separate classes of dice from a standard D6. An ability must explicitly state that it can be used to re-roll an Artillery Die, Scatter Die, or "any single die" to affect them. If an ability specifically allows the re-roll of a "D6", it can only be used on a standard six-sided die.
 
-**Source:** `[The Norn Consensus Historical Precedent / Rulebook page 37]`
+**Source:** The Norn Consensus Historical Precedent / Rulebook page 37
 
 ---
 
@@ -4100,7 +4100,7 @@ You may freely jump back and forth between your Wizards when casting spells duri
 
 **Ruling:** No, Magic Resistance does not stack. You simply apply the highest single Magic Resistance value present within the unit, not all values added together. Regarding template or line spells, Magic Resistance does apply, provided the unit with Magic Resistance is an actual potential target or is hit by the spell's area of effect.
 
-**Source:** `[The Norn Consensus Historical Precedent / White Dwarf 275 page 63]`
+**Source:** The Norn Consensus Historical Precedent / White Dwarf 275 page 63
 
 ---
 
@@ -4108,6 +4108,6 @@ You may freely jump back and forth between your Wizards when casting spells duri
 
 **Ruling:** No. Fleeing Wizards are not allowed to cast or dispel spells. They cannot harvest additional dice from nearby units. Furthermore, using a Dispel Scroll legally counts as dispelling a spell, which a fleeing Wizard is explicitly forbidden from doing.
 
-**Source:** `[The Norn Consensus Historical Precedent / Warhammer Chronicles 2004 page 115]`
+**Source:** The Norn Consensus Historical Precedent / Warhammer Chronicles 2004 page 115
 
 ---
