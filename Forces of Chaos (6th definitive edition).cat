@@ -2800,7 +2800,6 @@
       </infoLinks>
       <categoryLinks>
         <categoryLink id="b23b-f2bc-13e4-6008" name="Lord" hidden="false" targetId="d024-d25b-a9b4-73b6" primary="true"/>
-        <categoryLink id="3b6b-4f3e-2ac6-3cde" name="Mortal General" hidden="false" targetId="a878-7899-6700-e5fb" primary="false"/>
         <categoryLink id="f028-2970-32f1-061b" name="Characters" hidden="false" targetId="7a1c-d611-c2dc-def1" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
@@ -7984,12 +7983,17 @@ Any missile attack or spell targeted at Morghur will never effect him unless the
         <infoLink id="e353e2cc-3a94-464a-8048-2112f0b03b8e" name="Rules of the Archaon&apos;s Horde" hidden="false" targetId="1f0a-5c96-1c05-cdf4" type="rule"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="0-1 Hellcannon of Chaos" hidden="true" id="3c83-ca03-5f02-2f23">
+    <selectionEntry type="unit" import="true" name="0-1 Hellcannon of Chaos" hidden="false" id="3c83-ca03-5f02-2f23">
       <modifiers>
-        <modifier type="set" value="false" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="f1d2-edba-0f35-030a" shared="true" includeChildSelections="true"/>
-          </conditions>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="93f4-7522-86e9-7d45" shared="true" includeChildSelections="true"/>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="a878-7899-6700-e5fb" shared="true" includeChildSelections="true" childName="Mortal General"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
         <modifier type="set" value="true" field="hidden">
           <conditions>
