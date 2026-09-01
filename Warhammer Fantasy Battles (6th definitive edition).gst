@@ -16965,6 +16965,66 @@ Alternatively, Scouts can be placed on the controlling player&apos;s deployment 
     </rule>
     <rule id="1945-ac89-9cc4-3537" name="Skirmishers" hidden="false">
       <description>Unit are skirmishers</description>
+          <modifiers>
+        <modifier type="append" value="**Q.** How do skirmishing units form into rows (ranks) when charged by multiple units?
+
+**A.** The charging player controls where the skirmishing unit forms into rows (ranks) as you move the charging units in the order in which the charges were declared. When the skirmishers are charged, the charging unit is brought into base contact with the closest skirmisher model and then the charging unit is halted; the charging unit is not aligned against the skirmishing models. The skirmishers form up against the charging unit as explained in the skirmishing section of the Rulebook and the charging player then proceeds with further charges.
+
+So: the first unit that declared a charge is moved into contact with the skirmishing unit; the skirmishing unit then forms up with its front facing that unit; the remaining chargers then attempt to move into contact with the skirmishing unit. Note this may result in the skirmishing unit being hit in the flank or rear by the remaining chargers, or in the remaining charges failing.
+
+**S.** Warhammer Chronicles 2004 pages 121, 123 / Rulebook pages 46, 116
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="**Q.** While not engaged in close combat, may models in skirmishing units be in base to base contact with other members of their unit?
+
+**A.** No. When not engaged in close combat, models in a skirmishing unit must be positioned up to 1&quot; apart so that they are not touching each other.
+
+**S.** Rulebook page 115
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="**Q.** What types of characters may join a skirmishing unit?
+
+**A.** A roughly man-sized character on foot may join a skirmishing unit. No other characters (mounted, riding in chariots, etc.) can join skirmishing units.
+
+**S.** Warhammer Chronicles 2004 page 121
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="**Q.** How do characters and command models (standards, musicians, and champions) in a skirmishing unit rank up when engaging in close combat?
+
+**A.** A Skirmishing unit ranked up for close combat should be thought of like a regular, ranked formation for the duration of the combat. The Standard Bearer, Musician, Champion, and any characters must generally be placed in the front rank. However, the general Skirmishers rules do not have special allowances for command and character models the way the Beast Herd rules do - if a model does not have enough movement to reach the fighting line, or the ranked-up formation is not wide enough, it should be placed in the closest rank to the front it can reach. When assigning placement due to limited space, the Standard Bearer takes precedence and must bump the other models back, then the Musician and Champion, then characters.
+
+As noted in their respective sections of the Rulebook, character and command models add little or no benefit to a unit if they are not in the front rank (no +1 combat resolution, no tie-break, a Champion cannot attack, and characters are considered &quot;out of the game&quot; - though if the enemy somehow engages a Champion or character in a rear rank, they may fight back as normal).
+
+In subsequent turns a character, if not fighting, may move to replace a fighting trooper in his movement phase; there is no equivalent rule for command models, so it is suggested players remove killed models from where the wounds occur in the fighting line and, during Redress the Ranks, shuffle models forward to fill vacated positions - letting a stranded Standard Bearer, Musician, or Champion reach the front rank that way. Benefits apply starting with the first close combat phase each respective model is in the front rank.
+
+**S.** Rulebook pages 95, 97, 108-109, 115-116 / Direwolf FAQ Council Interpretation
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </rule>
     <rule id="ab5d-dda1-bffc-a027" name="Frenzy" publicationId="315e-e3c4-08af-fd51" page="84" hidden="false">
       <description>Subject to frenzy. +1 Attack
