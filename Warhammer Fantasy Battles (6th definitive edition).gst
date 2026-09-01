@@ -16942,6 +16942,151 @@ https://6th.whfb.app/flyers</description>
     </rule>
     <rule id="6a56-df83-e623-2218" name="Fast Cavalry" hidden="false">
       <description>See rulebook or https://6th.whfb.app/fast-cavalry</description>
+          <modifiers>
+        <modifier type="append" value="**Q.** Can Fast Cavalry shoot on the turn that they rally from a flee reaction?
+
+**A.** No. It is stated that they can move normally, but not that they can shoot.
+
+**S.** Warhammer Chronicles 2004 page 114
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="**Q.** Can Fast Cavalry shoot on the turn they perform a reform?
+
+**A.** Yes. Per the errata in Warhammer Chronicles they may shoot even when marching or reforming.
+
+**S.** Warhammer Chronicles 2004 page 123
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="**Q.** Fast Cavalry can shoot all round - does this mean they have 360 degree LoS for the purposes of standing and shooting?
+
+**A.** No. Per the rulebook, &quot;...for charging, stand &amp; shoot reactions, etc, the model needs to be facing the enemy as normal.&quot;
+
+**S.** Rulebook page 117
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="**Q.** Can a Fast Cavalry model use its 360 degree LOS for shooting to shoot through a friendly model in the same unit?
+
+**A.** No. If a model in a Fast Cavalry unit cannot draw LOS from its base to its target without going through a friendly model, it may not fire.
+
+**S.** Rulebook pages 59, 117
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="**Q.** Can a character in a Fast Cavalry unit shoot in a 360 degree arc?
+
+**A.** Only if the character himself has the Fast Cavalry rule. Also note that characters without the Fast Cavalry rule may not shoot if the unit marches.
+
+**S.** Rulebook page 117
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="**Q.** Can a wizard in a Fast Cavalry unit cast spells requiring LoS in a 360 degree arc?
+
+**A.** No. As specified in the Fast Cavalry rules, the improved LoS only applies to models with the Fast Cavalry rule and only applies to shooting.
+
+**S.** Rulebook page 117
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="**Q.** Fast Cavalry can shoot all round - does this mean they have 360&#176; line of sight for the purposes of the Casket of Souls?
+
+**A.** No, as described in the rules for Fast Cavalry, they use normal line of sight for everything except shooting.
+
+**S.** Warhammer Chronicles 2004 page 119
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="**Q.** How many reforms may a Fast Cavalry unit perform during a single turn&apos;s Movement phase?
+
+**A.** Per the errata in Warhammer Chronicles, an unlimited number of reforms may be performed, though no model may move more than its maximum movement distance.
+
+**S.** Warhammer Chronicles 2004 page 121
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="**Q.** Do Fast Cavalry auto-rally if they flee a charge?
+
+**A.** No. This was an error printed in the Special Rules Summary Appendix and subsequently corrected in the Warhammer Chronicles errata.
+
+**S.** Warhammer Chronicles 2004 page 124
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="**Q.** If a Fast Cavalry unit rallies two or more turns after it voluntarily flees a charge, can it move in that turn? What if it involuntarily flees (from fear, terror, panic, etc.) and rallies on its next turn?
+
+**A.** No, in both cases. The ability to move upon rallying is limited to when the unit rallies on its very next turn after having VOLUNTARILY fled a charge.
+
+**S.** Rulebook page 117
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="**Q.** Does a character have to be mounted to join a Fast Cavalry unit?
+
+**A.** No. Per the errata in Warhammer Chronicles, any character model may join a Fast Cavalry unit and move with the unit, but they do not benefit from any of the special rules. However, if you join a character on foot to a unit of Fast Cavalry, the character may slow the unit down, as all units are restricted to moving at the pace of the slowest member of the unit.
+
+**S.** Warhammer Chronicles 2004 page 125
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </rule>
     <rule id="889c-dfc3-95a5-2d30" name="Scouts" hidden="false">
       <description>These troops are skilled at sneaking forwards to scout out the enemy before the main force arrives. By making the best use of cover, advancing at night, or with other troops providing a diversion, they are able to deploy ahead of the rest of the army.
