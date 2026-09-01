@@ -17742,6 +17742,21 @@ Note that a spell cast with a Power Stone can never be cast with Irresistible Fo
     </rule>
     <rule id="1bda-9392-bbe9-36e5" name="Cannons" publicationId="315e-e3c4-08af-fd51" page="122-123" hidden="false">
       <description>See rules for cannons in https://6th.whfb.app/war-machines/cannons</description>
+          <modifiers>
+        <modifier type="append" value="**Q.** When a cannonball hits a war machine unit do you randomize to determine what is hit?
+
+**A.** No. A cannonball is treated as a thin template and thus hits whatever falls under the line it passes through. The section on randomizing hits on war machine units applies to fire from missile weapons and magic missiles and does not apply to templates. In addition, remember a war machine is not a model with multiple parts, it is a unit with multiple models.
+
+**S.** Rulebook page 122
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </rule>
     <rule id="3cde-53bb-8bd8-e8af" name="Scaly Skin 6+" hidden="false">
       <description>Armour save 6+</description>
