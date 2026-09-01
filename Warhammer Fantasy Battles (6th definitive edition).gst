@@ -18109,6 +18109,34 @@ As with all scrolls, Dispel Scrolls are not unique items - they are prepared by 
 
 Note that a Dispel Scroll will not help if the spell has been cast with Irresistible Force
 . Any spell that is successfully cast with two or more 6s is Irresistible and no Dispel roll is permitted.</description>
+          <modifiers>
+        <modifier type="append" value="**Q.** Can you use a Dispel Scroll to dispel a spell cast in a previous turn that has remained in play?
+
+**A.** No. The description of the item states that it needs to be used &quot;as soon as a spell has been cast.&quot; If the spell was cast in the previous turn, this won&apos;t be the case.
+
+**S.** Warhammer Chronicles 2004 page 115
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="**Q.** Can a fleeing Wizard use Dispel Scrolls?
+
+**A.** No. Fleeing Wizards are not allowed to cast or dispel spells, and using a Dispel Scroll counts as dispelling a spell.
+
+**S.** Warhammer Chronicles 2004 page 115
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </rule>
     <rule id="ba52-fca2-87b6-72c7" name="Power Stone" hidden="false">
       <description>The Power Stone is imbued with a powerful magical invocation. When it is held out by a Wizard before he casts a spell, the effect is to enhance the efficacy of the magic. A further two dice are added to the Casting roll. Note that using a Power Stone will allow a Wizard to use more Power dice than he is normally permitted. For example, a First Level Wizard may read a Power Stone and thus use four Power dice to cast a spell (2 basic + 2 from a Power Stone). A Power Stone can only be used once - after one use its power is exhausted.
@@ -18118,6 +18146,34 @@ Using a Power Stone will bring any spell in play cast earlier by that Wizard to 
 As with scrolls, Power Stones are not unique items - they are prepared by a Wizard prior to battle and it is quite possible for several Wizards to carry Power Stones, and for a Wizard to carry more than one. However, only one Power Stone can be used to enhance a spell.
 
 Note that a spell cast with a Power Stone can never be cast with Irresistible Force, though it can be Miscast</description>
+          <modifiers>
+        <modifier type="append" value="**Q.** Can I use a Power Stone as the only source to power a spell, or can I only use it to add to dice I am already using?
+
+**A.** No, a Power Stone cannot be used on its own.
+
+**S.** Anthony Reynolds - Warhammer Design Team (Online Q&amp;A on the Games Workshop Warhammer Forum)
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="**Q.** May a Wizard be equipped with Power Stones and another Arcane item at the same time?
+
+**A.** No. The general rule is that characters may only be equipped with one magic item from each category (Magic Weapons, Talismans, Arcane Items, etc.). While Wizards have an explicit exception in the Power Stones description allowing several Wizards to carry Power Stones and a single Wizard to carry more than one, they are not given an explicit exception to carry Power Stones alongside another Arcane item.
+
+**S.** Rulebook pages 152, 153, 154
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </rule>
     <rule id="f2d3-6ce8-88ad-7cad" name="War Banner(Magic Standard)" hidden="false">
       <description>+1 Combat Resolution. The War Banner carries powerful enchantments that fill all those who fight beneath it with heroic courage and determination. A unit, which has a War Banner adds a further +1. to its combat resolution when working out which side has won the combat.</description>
@@ -18471,6 +18527,21 @@ Also, remember that creatures pulling the Chariot can only attack enemy directly
     </rule>
     <rule name="Magical attacks" id="08b6-0c27-dc2a-95fa" hidden="false" publicationId="315e-e3c4-08af-fd51">
       <description>The unit attacks are considered magical.</description>
+          <modifiers>
+        <modifier type="append" value="**Q.** Do the hits from all magic weapons, including bows and other missile weapons, count as &quot;magical&quot;?
+
+**A.** Yes. Any attack from a magic weapon counts as magical.
+
+**S.** Gav Thorpe - Warhammer Design Team
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </rule>
     <rule name="Monster Mounts" id="0ffd-48e7-f69d-138d" hidden="false" page="103" publicationId="315e-e3c4-08af-fd51">
       <description>If a mount has 2 or more Wounds then it is classed as a monster and the following rules are used for riders and mounts. These rules would therefore apply to a Hero riding a Griffon, a Wizard mounted on a Wyvern, a Dragon and its lordly rider, and so on. No additional +1 is added to the rider&apos;s saving throw, as the advantages of riding the monster are worked out in other ways instead.
