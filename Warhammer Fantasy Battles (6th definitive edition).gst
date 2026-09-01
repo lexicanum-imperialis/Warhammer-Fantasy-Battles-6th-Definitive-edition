@@ -1092,6 +1092,22 @@ Quatar</comment>
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
+      <rules>
+        <rule name="FAQ (GW)" id="7f9c-3ac1-6df0-2b5e" hidden="true">
+          <description>**Q.** Can a mounted character use two pistols, or a sword and a pistol in close combat?
+
+**A.** No. This is a special rule for Pistoliers only. Characters can use one pistol (though only 1 Attack can be made with the pistol), but they cannot claim +1 Attack. So, if a mounted character has a pistol and 3 Attacks, he can make 3 Close Combat attacks, one of which is with the pistol.
+
+**S.** Anthony Reynolds - Warhammer Design Team (Online Q&amp;A on the Games Workshop Warhammer Forum)</description>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </rule>
+      </rules>
     </selectionEntry>
     <selectionEntry id="9efb-2b02-f245-62f5" name="Bow" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
