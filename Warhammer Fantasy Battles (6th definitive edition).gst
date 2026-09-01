@@ -16712,6 +16712,103 @@ The Norn Consensus only clarifies that this official ruling should not be extend
     </rule>
     <rule id="1524-2372-4aa0-6881" name="Fear" publicationId="315e-e3c4-08af-fd51" page="81" hidden="false">
       <description>Unit causes Fear</description>
+          <modifiers>
+        <modifier type="append" value="**Q.** When do you resolve Fear tests for an enemy unit that wishes to stand &amp; shoot?
+
+**A.** Use the following procedure: The Fear causing unit declares a charge. The charged player says, &quot;The unit will stand and shoot.&quot; Check to see if the charging unit is in range; if it is, then the charged unit must take a Fear test. If it fails the test and is outnumbered, it will flee as normal and not make its stand and shoot charge reaction. If for any reason it does not flee, then the charged unit may stand &amp; shoot as normal.
+
+**S.** Warhammer Chronicles 2004 page 113
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="**Q.** How do you resolve situations where a single model causing fear is in the front rank of a unit that does not cause fear?
+
+**A.** If a single model (e.g. a character) that causes fear is in a unit that doesn&apos;t cause fear then any tests or effects that the fear causes is only applied to that character, not the entire unit he is with.
+
+For example, a unit would have to take a fear test if a unit with a single fear causing model in it charges them. However if that test is failed then the unit only flees if the fear causing character by itself has a higher Unit Strength than the unit being charged. If the test is failed and the unit requires 6&apos;s to hit, then it is only 6&apos;s to hit the single fear causing model, not the rest of the unit he is with.
+
+In an instance where a unit declares a charge against an enemy unit with a single fear causing model and the unit declaring the charge will come into contact with the single fear causing model, then the unit declaring the charge must also take a fear test and, if the fear test is failed, the unit will not charge.
+
+**S.** Rulebook page 81
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="**Q.** For purposes of determining if fear causing units outnumber their foes to force an auto-break situation, do you determine it by the largest fear causing unit engaged in the combat or do you use the total Unit Strength of the fear causing units and compare it to the defender&apos;s combined Unit Strength?
+
+**A.** Neither. If a unit is outnumbered by fear-causing enemies, then it automatically breaks. Operative word is unit, not side, so it is worked out on its Unit Strength versus total Unit Strength of fear-causing enemies it is actually fighting (i.e. in base to base contact with), in the same way that break tests are rolled for individually rather than per side.
+
+**S.** Gav Thorpe - Warhammer Design Team / Rulebook page 81
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="**Q.** Does placing a fear (or terror) causing character in a unit actually make the unit immune to fear (or terror)? The Fear / Terror liability section on page 82 of the Rulebook states troops accompanied by fear or terror causing creatures (such as a skink unit with a Kroxigor) would be immune to fear. Does the last sentence only apply to mixed units such as Rat Ogres &amp; Packmasters, War Hydras &amp; Apprentices, etc., or does it apply to characters as well?
+
+**A.** The example on page 82 refers only to mixed units including some models in the unit causing fear, others not - it does not refer to characters at all. A fear causing character does not make a unit immune to fear, per page 100: &quot;if a unit of troops panics, or is forced to flee because of a Fear or Terror test, then any character who is part of the unit must also flee even if he is immune to panic, fear, or terror.&quot;
+
+**S.** Anthony Reynolds - Warhammer Design Team (Online Q&amp;A on the Games Workshop Warhammer Forum)
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="**Q.** Concerning the Fear test, what if your Unit Strength is equal to the enemy&apos;s when you fail the test?
+
+**A.** Change &apos;higher&apos; to &apos;equal to or higher&apos; in the section on being charged by a fear-causing enemy.
+
+**S.** Warhammer Chronicles 2004 page 113
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="**Q.** If charged by more than one fear-causing unit, do you test once per unit, or once only and add up the total number of charging models?
+
+**A.** Test once per unit, as each is found to be in range.
+
+**S.** Warhammer Chronicles 2004 page 113
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="**Q.** If a Character (e.g. Shadowblade) is in a unit that is charged by a Fear-causing creature and the unit fails its Fear test and requires 6&apos;s to hit, does the Character also require 6&apos;s to hit, or do they make a separate test on their own, probably higher, Leadership?
+
+**A.** If, for some reason, a Character does not pass his Ld on to a unit he has joined, then he may make a separate Ld test. In most cases, this rule won&apos;t make a difference; if the unit flees (from Terror or Panic, for example), the Character has to flee with it, regardless of Ld values.
+
+**S.** Warhammer Chronicles 2004 page 113
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </rule>
     <rule id="96f0-c50f-e59e-85fa" name="Terror" publicationId="315e-e3c4-08af-fd51" page="81" hidden="false">
       <description>Unit causes Terror.
@@ -16722,9 +16819,78 @@ If a creature causes terror then it automatically causes fear as well, and all t
 A unit must make a Terror test if charged by or wishing to charge an enemy that causes terror.
 
 A unit must make a Terror test at the start of its turn if there is an enemy which causes terror within 6&quot;.</description>
+          <modifiers>
+        <modifier type="append" value="**Q.** Is there a limit to the amount of Terror tests a unit is forced to take?
+
+**A.** Yes, each unit is only forced to take one Terror test per BATTLE. After taking the first Terror test, units treat Terror causing units as causing Fear.
+
+**S.** Rulebook page 81
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="**Q.** If a unit is charged by a Terror causing creature (or a unit wants to charge a Terror causing creature), does the unit have to take both a Terror and a Fear test?
+
+**A.** No. Just a Terror test.
+
+**S.** Rulebook page 82
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </rule>
     <rule id="5d6f-7b4d-6093-4922" name="Stupidity" publicationId="315e-e3c4-08af-fd51" page="82" hidden="false">
       <description>Subject to Stupidity</description>
+          <modifiers>
+        <modifier type="append" value="**Q.** What happens if a stupid unit wanders off the board?
+
+**A.** It counts as having fled the table, and thus the enemy gets the victory points.
+
+**S.** Anthony Reynolds - Warhammer Design Team (Online Q&amp;A on the Games Workshop Warhammer Forum)
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="**Q.** Can a unit suffering from stupidity elect to flee?
+
+**A.** No.
+
+**S.** Anthony Reynolds - Warhammer Design Team (Online Q&amp;A on the Games Workshop Warhammer Forum)
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="**Q.** If a character that is suffering stupidity is part of a unit that is not stupid, does the character force the unit to stumble forwards, or does he leave the unit, allowing the unit to operate as normal?
+
+**A.** The entire unit stumbles forward at half the character&apos;s movement value or the unit&apos;s base movement value, whichever is lower.
+
+**S.** Anthony Reynolds - Warhammer Design Team (Online Q&amp;A on the Games Workshop Warhammer Forum)
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </rule>
     <rule id="e930-0b71-2fef-3937" name="Fly" hidden="false">
       <description>Unit can fly
@@ -16747,6 +16913,60 @@ Alternatively, Scouts can be placed on the controlling player&apos;s deployment 
     <rule id="ab5d-dda1-bffc-a027" name="Frenzy" publicationId="315e-e3c4-08af-fd51" page="84" hidden="false">
       <description>Subject to frenzy. +1 Attack
 Frenzied troops must pursue broken units.</description>
+          <modifiers>
+        <modifier type="append" value="**Q.** When exactly do you move frenzied units?
+
+**A.** Follow this sequence: 1) Declare normal charges; 2) Measure to see if frenzied units must charge, declare charges for those that have to; 3) Move chargers; 4) Move frenzied chargers.
+
+**S.** Gav Thorpe - Warhammer Design Team
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="**Q.** Are the target units of forced frenzied charges allowed charge reactions as normal?
+
+**A.** Yes, forced frenzied charges are treated as normal charges in regards to charge reactions.
+
+**S.** Direwolf FAQ Council Interpretation
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="**Q.** Would a frenzied unit which lost a combat, auto-break from an outnumbering fear causing enemy in the same round?
+
+**A.** First, Frenzied units that lose combat always take break tests, just like any other unit. Second, the break test isn&apos;t to see if you are defeated - if you have to take a break test you are already defeated, that&apos;s what losing the combat resolution means. So regardless of the outcome of a break test, a frenzied unit has already lost its frenzy, just by having to take one. An outnumbering fear causing enemy will therefore normally break a formerly frenzied unit, as the state of frenzy is lost prior to having to take a break test.
+
+**S.** Rulebook pages 71, 84
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="**Q.** Can a unit be frenzied while fleeing (with the use of spells)?
+
+**A.** No. If for some reason they should still be affected by frenzy, they regain it as soon as they rally.
+
+**S.** Anthony Reynolds - Warhammer Design Team (Online Q&amp;A on the Games Workshop Warhammer Forum)
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </rule>
     <rule id="2738-27d5-f4af-4722" name="Poisoned Attacks" publicationId="315e-e3c4-08af-fd51" page="114" hidden="false">
       <description>Poisoned Attacks. Hits of 6 auto wound. Sve as normal.</description>
@@ -16777,6 +16997,21 @@ They may never, however. declare that they are fleeing as a charge reaction, as 
     <rule id="1e6c-d634-a65c-78eb" name="Hatred" hidden="false">
       <description>Troops fighting in close combat with a hated foe may re-roll any misses When they attack in the first turn of any combat. This bonus only applies in the first turn of a combat and represents the unit venting its pent up hatred on the foe. After the initial round of blood mad hacking they lose some impetus and subsequently fight as normal for the rest of the combat.
 Troops who hate their enemy must always pursue them if they flee. They cannot attempt to avoid pursuit by testing their Leadership as other troops can. They must even pursue if behind a defended obstacle.</description>
+          <modifiers>
+        <modifier type="append" value="**Q.** If a hating unit is engaged in combat, that combat ends up a draw, and in the following turn the unit is then charged in the flank by a different enemy unit (which it also hates), do the previously unengaged models get to utilize the first round of combat re-rolls versus the new attacker?
+
+**A.** No, only the newly charging unit counts as &quot;in first round of combat&quot; in this situation. All models in a unit fight together and the defending unit is no longer in &quot;first round of combat&quot; since it was already fighting a different enemy unit in a previous turn.
+
+**S.** Rulebook pages 67, 84 / Direwolf FAQ Council Interpretation
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </rule>
     <rule id="eecc-4ed0-db8a-f6dc" name="Thrown Weapons" hidden="false">
       <description>Thrown weapons do not suffer penalties for long range, nor for moving</description>
@@ -17238,12 +17473,70 @@ If successful, the player may control the monster as normal for the rest of the 
 Victory points are rewarded separately for the monster and the character riding it.
 
 https://6th.whfb.app/monsters/monster-mounts</description>
+          <modifiers>
+        <modifier type="append" value="**Q.** How does psychology work with monster mounts (and chariots) and their character riders? Does the rider&apos;s psychology take precedence?
+
+**A.** The character&apos;s psychology takes precedence. So, if the character is Immune to Psychology, the entire model is Immune to Psychology. Also, if a character rider is frenzied, then it must always charge (using the movement of the monster). However, there are some exceptions to this. These exceptions are: Fear, Terror, Stupidity and Frenzy. A Fear or Terror causing monster (or chariot) passes on immunity to fear/terror to its rider. If the monster (or chariot) suffers from Stupidity, or is subject to Frenzy, then these are out of the control of the rider, and the entire model may suffer from it. In all other cases, the entire model uses the character rider&apos;s psychology.
+
+Further Direwolf FAQ Council clarification: In these cases where the mount&apos;s Stupidity or Frenzy affects the rider, it is the movement effects, not the close combat effects.
+
+**S.** Anthony Reynolds - Warhammer Design Team (Online Q&amp;A on the Games Workshop Warhammer Forum) / Direwolf FAQ Council Interpretation
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </rule>
     <rule id="2acc-e985-cc4e-e123" name="Immune to Psycology " publicationId="315e-e3c4-08af-fd51" page="112" hidden="false">
       <description>Some warriors and creatures in the Warhammer world are almost completely fearless, or such grizzled veterans that scenes which would make lesser troops panic have no effect on them.
 Troops that are immune to psychology are never affected by fear terror, frenzy or any other Psychology rules. Troops immune to Psychology may never flee as a charge reaction - they are far too proud and brave to do this! These troops still have to take Break tests as normal. (BRB p.112)
 
 Units immune to psychology never need test for psychology such as fear, terror or frenzy and they may never choose flee as a charge response Break tests still apply as normal. (BRB p.270)</description>
+          <modifiers>
+        <modifier type="append" value="**Q.** Can a unit that&apos;s immune to psychology (or unbreakable or frenzied, both of which also count as immune to psychology) flee from a charge?
+
+**A.** No.
+
+**S.** Rulebook page 112
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="**Q.** In a situation where a character that is immune to psychology, frenzied, or unbreakable is attached to a unit that suffers from psychology (e.g. a Chaos Exalted Champion with the Mark of Slaanesh attached to a unit of Marauders) can the unit voluntarily declare &quot;flee&quot; as the charge reaction, or must the unit hold due to the presence of the character?
+
+**A.** The unit may voluntarily declare &quot;flee&quot; as a charge reaction. It is the unit which declares the charge reaction (and not the character) and the immunity to psychology of the character does not transfer to the unit. Also, if they didn&apos;t choose to flee but were forced to, the character would be dragged along anyway.
+
+**S.** Gav Thorpe - Warhammer Design Team
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="**Q.** Do fleeing units have to take additional psychology tests?
+
+**A.** No.
+
+**S.** Rulebook page 76
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </rule>
     <rule id="39b8-b067-c6d9-901e" name="Scaly Skin 2+" hidden="false">
       <description>Scaly Skin gives 2+ saving throw</description>
