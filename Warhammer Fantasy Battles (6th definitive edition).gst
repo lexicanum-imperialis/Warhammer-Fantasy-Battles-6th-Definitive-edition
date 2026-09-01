@@ -16947,6 +16947,21 @@ https://6th.whfb.app/flyers</description>
       <description>These troops are skilled at sneaking forwards to scout out the enemy before the main force arrives. By making the best use of cover, advancing at night, or with other troops providing a diversion, they are able to deploy ahead of the rest of the army.
 Scouts are set up after both armies have been deployed. They can be set up anywhere on the table, at least 10&quot; away from the enemy and must be out of the sight of any enemy troops and in or behind interposing terrain (not out in the open!). If both armies contain troops with this ability, each player should roll a D6, with the player scoring the highest choosing whether he deploys before or after the enemy&apos;s Scouts. Two opposing groups of Scouts cannot be set up within 10&quot; of each other.
 Alternatively, Scouts can be placed on the controlling player&apos;s deployment zone like any other troops, after deployment of both main armies is finished.</description>
+          <modifiers>
+        <modifier type="append" value="**Q.** Are all units considered to have 360 degree Line of Sight during the deployment phase for the purposes of restricting the placement of Scouting units?
+
+**A.** Yes.
+
+**S.** Warhammer Annual 2002 page 7
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </rule>
     <rule id="1945-ac89-9cc4-3537" name="Skirmishers" hidden="false">
       <description>Unit are skirmishers</description>
@@ -17014,6 +17029,25 @@ Frenzied troops must pursue broken units.</description>
     </rule>
     <rule id="e08e-1c7b-a667-f05b" name="Killing Blow" hidden="false">
       <description>Wound roll of 6 slays man sized opponent, no saving throw, no matter how many wounds. Ward save still applies.</description>
+          <modifiers>
+        <modifier type="append" value="**Q.** Is Killing Blow effective against &quot;Units of Flyers&quot; which consist of a flying mount and an approximately man-sized rider? What about against riderless cavalry models such as Bull Centaurs and Centigors?
+
+**A.** If a model consists of both a rider that would be placed on a 20mm or 25mm square base if alone on foot and another creature, but the model cannot be separated into components (e.g. Standard Cavalry models, Pegasus Knights, Terradons, Warhawks, Daemonic Cavalry, etc.), then Killing Blow is effective vs. the model as a whole (excluding chariots).
+
+In cases where the model can exist as two (or more) separate parts and one (or more) of the components would be placed on a 20mm or 25mm square base if it was by itself on foot, Killing Blow is only effective vs. that component(s) of the model (e.g. a character in a chariot, a dragon rider, etc.).
+
+Bull Centaurs and Centigors cannot be separated into a component which would be placed on a 20mm or 25mm square base (in addition to the fact that they are larger than approximately man-sized) and Killing Blow is therefore not effective against these models.
+
+**S.** Rulebook pages 112, 113 / Anthony Reynolds - Warhammer Design Team / Direwolf FAQ Council Interpretation / Storm of Chaos Q&amp;As, October 2004 Issue of White Dwarf Magazine
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </rule>
     <rule id="410a-0d06-9044-665e" name="Stubborn" hidden="false">
       <description>Leadership breaktest are unmodified.</description>
@@ -17022,12 +17056,57 @@ Frenzied troops must pursue broken units.</description>
       <description>A creature with this ability may try to regenerate any wound on a 1d6 roll of 4+. Only one attempt may be made on each wound to regenerate it.
 Troops that are able to can regenerate damage if not too badly hurt. Work this out as follows. When attacked in close combat, shot at, or the target of spells, calculate the number of wounds suffered as normal. Once all attacks for the phase have been made, the creature may try to regenerate. Roll a D6 for each wound suffered during that phase. If a 4 or more is rolled, that wound has regenerated. You may only try to regenerate any single wound once. Any regenerated wounds are reinstated, and models removed as casualties are replaced if enough wounds are regenerated.
 The results of combat, panic, etc are worked out after creatures have regenerated (the number of wounds inflicted does not include any that arc regenerated).</description>
+          <modifiers>
+        <modifier type="append" value="**Q.** Can a model regenerate if slain by a model with Killing Blow that rolls a 6 to wound?
+
+**A.** You cannot regenerate a wound caused by a Killing Blow. Note that for the purpose of combat resolution, use the remaining wounds of a model slain by Killing Blow.
+
+**S.** Warhammer Chronicles 2004 page 114
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="**Q.** Can a model with Regeneration suffer more wounds than are on its profile? For example, if a Troll suffers 4 wounds does it have to regenerate all 4 wounds, or only the 3 wounds on its profile?
+
+**A.** A model does not suffer more wounds than it started with. An attack that does multiple wounds cannot inflict more wounds than the model struck has, and they do not carry over from model to model. For example, a ball from an Empire Great Cannon ploughs through a unit of Trolls, hitting and wounding three of them; each suffers D6 wounds, but since no Troll can take more than 3 wounds, the rolls are capped at each Troll&apos;s remaining wounds before being regenerated.
+
+In challenges, this means no chance of Overkill wounds from the capped portion - but if the model fails to regenerate, any excess wounds inflicted (before capping) count towards Overkill as normal. E.g. a character with 3 wounds in a challenge suffers 5 wounds after its ward save; it only needs to make three Regeneration rolls (the number of wounds it had at the start of the combat), but if all three rolls are failed and it dies, the total 5 wounds inflicted count towards combat results.
+
+**S.** Warhammer Chronicles 2004 page 114
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </rule>
     <rule id="8ae3-9724-980f-7308" name="Unbreakable" hidden="false">
       <description>Some creatures are utterly fearless and will never give up a battle, no matter how hopeless the situation might be. This could be because of the troops&apos; extreme bravery, or because the creatures fighting are not truly alive.
 These troops never break in close combat, and they are also immune to panic, terror and fear or any other Psychology rules.
 If defeated in close combat (even by fear-causing creatures that outnumber them) unbreakable troops continue to fight on regardless of results.
 They may never, however. declare that they are fleeing as a charge reaction, as they will literally die fighting under any circumstances.</description>
+          <modifiers>
+        <modifier type="append" value="**Q.** Can a character who is not Unbreakable himself join an Unbreakable unit?
+
+**A.** No. Unbreakable units cannot be joined by characters except those which are already Unbreakable.
+
+**S.** Warhammer Annual 2002 page 5
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </rule>
     <rule id="ff2b-8db6-64fa-e9ca" name="Immune to Panic" publicationId="315e-e3c4-08af-fd51" page="112" hidden="false">
       <description>The unit do not take Panic tests.</description>
