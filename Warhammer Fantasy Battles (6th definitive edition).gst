@@ -17170,6 +17170,34 @@ In subsequent turns a character, if not fighting, may move to replace a fighting
           </conditions>
         </modifier>
       </modifiers>
+          <modifiers>
+        <modifier type="append" value="**Q.** When shooting a Bolt Thrower at a unit of skirmishers, can you hit more than one skirmisher model?
+
+**A.** No. Skirmishers do not form into ranks outside of close combat and thus the maximum amount of models that can be hit by a Bolt Thrower is one. Note that a skirmish unit is required to adopt the loose skirmish formation as soon as combat ends.
+
+**S.** Rulebook pages 116, 124
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="**Q.** A skirmishing unit with two models outside of the woods, and the rest in the woods, is shot at by a unit of archers. Does the skirmishing unit count as being in soft cover?
+
+**A.** No. Either the unit is completely in cover or it&apos;s not. If the unit shooting has line of sight to any models that aren&apos;t in cover, the unit being shot at can be targeted without the cover penalty. The same answer would apply if the situation involved a ranked unit with the front rank outside of the woods and the remainder of the unit inside of the woods.
+
+**S.** Rulebook page 62 / Direwolf FAQ Council Interpretation
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </rule>
     <rule id="ab5d-dda1-bffc-a027" name="Frenzy" publicationId="315e-e3c4-08af-fd51" page="84" hidden="false">
       <description>Subject to frenzy. +1 Attack
@@ -17765,6 +17793,21 @@ Note that a spell cast with a Power Stone can never be cast with Irresistible Fo
       <description>Some missile weapons enable their users to shoot several times in each Shooting phase - known as multiple shots. The number of times the weapon can fire is given as part of its description. Eg, a Dark Elf repeater crossbow can fire two shots in each Shooting phase so is noted as having 2x multiple shots. These weapons can either fire once without penalty, or several times with a -1 to hit penalty for each shot.
 
 Note that a model&apos;s Attacks characteristic has no effect on the number of shots it can make. The Attacks characteristic refers to close combat attacks only.</description>
+          <modifiers>
+        <modifier type="append" value="**Q.** With Multiple Shots missile weapons that have three (or more) multiple shots, do you simply apply a -1 to hit modifier to each of the shots, or is the -1 modifier cumulative (e.g. -1 for the second shot, -2 for the third shot, etc.)?
+
+**A.** Simply apply a -1 modifier to each of the shots. No specific mention or example of the penalty being cumulative exists.
+
+**S.** Rulebook page 90 / Direwolf FAQ Council Interpretation
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </rule>
     <rule id="7f45-dea2-ae93-7524" name="Strikes First" publicationId="315e-e3c4-08af-fd51" hidden="false">
       <description>Troops armed with a weapon that strikes last will always strike FIRST during close combat where they would otherwise strike in Initiative order. Note that troops that charge will still strike first in the initial turn of close combat, as charging troops always strike first rather man in Initiative order.</description>
