@@ -17399,9 +17399,143 @@ Troops who hate their enemy must always pursue them if they flee. They cannot at
     </rule>
     <rule id="df8d-7c05-c47b-9cd6" name="Magical Resistance (2)" hidden="false">
       <description>Generates two dispel dice when spells cast at the unit</description>
+          <modifiers>
+        <modifier type="append" value="**Q.** If a unit with Magic Resistance is a potential target for a spell that affects all enemy units in sight/range, does it get to add its dispel dice? Do multiple units with Magic Resistance targeted by the same spell add their dice together?
+
+**A.** If a unit with Magic Resistance is a potential target for one of these spells its Magic Resistance may be used. If multiple units with Magic Resistance are targeted, use the highest Magic Resistance value, NOT all of them added together.
+
+**S.** Warhammer Chronicles 2004 page 115
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="**Q.** If a character has Magic Resistance and joins a unit, does the whole unit benefit from that Magic Resistance?
+
+**A.** Yes.
+
+**S.** Anthony Reynolds - Warhammer Design Team (Online Q&amp;A on the Games Workshop Warhammer Forum)
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="**Q.** Do items or abilities which provide extra dispel dice when targeted by enemy spells work the same as items specifically noted with &quot;Magic Resistance&quot;?
+
+**A.** These extra dispel dice (which appeared in some item descriptions early in Sixth Edition) should be treated just like Magic Resistance.
+
+**S.** Gav Thorpe - Warhammer Design Team
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="**Q.** If a unit has multiple sources of Magic Resistance (e.g. MR(1) from a character and MR(2) from a magic banner) do the sources add together, or do you simply apply the highest value?
+
+**A.** Apply the highest value.
+
+**S.** Gav Thorpe - Warhammer Design Team
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="**Q.** Can units with Magic Resistance dice use these dice to dispel chain spells (e.g. Gork&apos;s Warpath, Plague) when they are not the first unit targeted? Does Magic Resistance count against Comet of Cassandora and other spells with a random range of effect? May units with Magic Resistance dice use these dice to dispel &quot;remains in play&quot; spells in subsequent turns?
+
+**A.** No to all of the above. It is not enough for the unit with Magic Resistance to be a potential target - the unit has to be an actual target of the spell. Magic Resistance, like dispel scrolls, comes into effect only at the point when the magical energy is summoned (i.e. the spell is cast). Once the effects of the spell become a reality, it&apos;s too late.
+
+**S.** Warhammer Chronicles 2004 page 115 / Gav Thorpe - Warhammer Design Team
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </rule>
     <rule id="da12-a0e8-30ec-6c32" name="Magical Resistance (1)" hidden="false">
       <description>Generates 1 dispel dice for spells cast at the unit.</description>
+          <modifiers>
+        <modifier type="append" value="**Q.** If a unit with Magic Resistance is a potential target for a spell that affects all enemy units in sight/range, does it get to add its dispel dice? Do multiple units with Magic Resistance targeted by the same spell add their dice together?
+
+**A.** If a unit with Magic Resistance is a potential target for one of these spells its Magic Resistance may be used. If multiple units with Magic Resistance are targeted, use the highest Magic Resistance value, NOT all of them added together.
+
+**S.** Warhammer Chronicles 2004 page 115
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="**Q.** If a character has Magic Resistance and joins a unit, does the whole unit benefit from that Magic Resistance?
+
+**A.** Yes.
+
+**S.** Anthony Reynolds - Warhammer Design Team (Online Q&amp;A on the Games Workshop Warhammer Forum)
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="**Q.** Do items or abilities which provide extra dispel dice when targeted by enemy spells work the same as items specifically noted with &quot;Magic Resistance&quot;?
+
+**A.** These extra dispel dice (which appeared in some item descriptions early in Sixth Edition) should be treated just like Magic Resistance.
+
+**S.** Gav Thorpe - Warhammer Design Team
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="**Q.** If a unit has multiple sources of Magic Resistance (e.g. MR(1) from a character and MR(2) from a magic banner) do the sources add together, or do you simply apply the highest value?
+
+**A.** Apply the highest value.
+
+**S.** Gav Thorpe - Warhammer Design Team
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="**Q.** Can units with Magic Resistance dice use these dice to dispel chain spells (e.g. Gork&apos;s Warpath, Plague) when they are not the first unit targeted? Does Magic Resistance count against Comet of Cassandora and other spells with a random range of effect? May units with Magic Resistance dice use these dice to dispel &quot;remains in play&quot; spells in subsequent turns?
+
+**A.** No to all of the above. It is not enough for the unit with Magic Resistance to be a potential target - the unit has to be an actual target of the spell. Magic Resistance, like dispel scrolls, comes into effect only at the point when the magical energy is summoned (i.e. the spell is cast). Once the effects of the spell become a reality, it&apos;s too late.
+
+**S.** Warhammer Chronicles 2004 page 115 / Gav Thorpe - Warhammer Design Team
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </rule>
     <rule id="ac96-22af-fac6-56f9" name="Scaly Skin 4+" hidden="false">
       <description>Armour save 4+</description>
@@ -17415,6 +17549,21 @@ Troops who hate their enemy must always pursue them if they flee. They cannot at
     <rule id="2b48-77b8-4869-a2e0" name="Rule of Burning Iron" hidden="false">
       <description>Cast on 3+
 Burning Iron is a magic missile with a range of up to 24&quot;. If successfully cast, the spell hits a single model (chosen by the caster) and causes 1 S3 hit if the target has no armour save or a save of 6, 1 S4 hit if the target has an armour save of 5+, and 1 S5 hit if the target has an armour save of 4+ or better. This is a Fire attack and causes double damage against flammable  targets.</description>
+          <modifiers>
+        <modifier type="append" value="**Q.** Does the Lore of Metal spell, Rule of Burning Iron, allow the caster to ignore normal targeting restrictions? Can the spell be used to pick out champions or characters inside units?
+
+**A.** The spell is classified as a &apos;Magic Missile&apos;, so it can only be cast at a target that would be viable per the rules for shooting (LOS, range, and the usual protection for a lone similar-sized character/Skaven weapon team within a unit of five or more similar sized models). Once a valid target unit is chosen and the spell is successfully cast, its text states &quot;the spell hits a single model (chosen by the caster)&quot; - meaning the caster may allocate the hit to a champion or an attached character within that valid target unit.
+
+**S.** Rulebook pages 142, 145 / Anthony Reynolds - Warhammer Design Team (Online Q&amp;A on the Games Workshop Warhammer Forum)
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </rule>
     <rule id="3d8c-0ee2-bef1-198b" name="Commandment of Brass" hidden="false">
       <description>Cast on 6+
@@ -17435,6 +17584,21 @@ This spell can be cast on an enemy unit that is within 24&quot; of the caster. T
     <rule id="985a-72ac-2e14-3b5f" name="Bane of Forged Steel" hidden="false">
       <description>Caston 11+
 This spell has a range of 12&quot; and can be cast on an enemy unit which is visible to the caster. If successfully cast, the enemy&apos;s weapons begin to crumble and rust away. No weapon bonuses or penalties apply to the affected unit for the remainder of the battle. For example, a unit wielding Great Swords will not get their +2 Strength bonus in combat for the rest of the battle, but will now not have to strike last. A unit with missile weapons may not shoot for the duration of the entire battle. Affected units are assumed to use their fist/claws, etc, and so cannot benefit from the rules for using two hand weapons or a hand weapon and shield. War machines and magic weapons cannot be affected by the Bane of Forged Steel - only ordinary weaponry carried by troops.</description>
+          <modifiers>
+        <modifier type="append" value="**Q.** What is the corrected description for the Lore of Metal spell, Bane of Forged Steel?
+
+**A.** This spell has a range of 12&quot; and can be cast on an enemy unit which is visible to the caster. If successfully cast, the enemy&apos;s weapons begin to crumble and rust away. No weapon bonuses or penalties apply to the affected unit for the remainder of the battle - for example, a unit wielding Great Swords will not get their +2 Strength bonus in combat for the rest of the battle, but will also no longer have to strike last. A unit with missile weapons may not shoot for the duration of the entire battle. Affected units are assumed to use their fists/claws, etc, and so cannot benefit from the rules for using two hand weapons or a hand weapon and shield. War machines and magic weapons cannot be affected by the Bane of Forged Steel - only ordinary weaponry carried by troops.
+
+**S.** Warhammer Chronicles 2004 page 122
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </rule>
     <rule id="e4f3-ac8c-8f42-8bad" name="Fire Ball" hidden="false">
       <description>Cast on 5+
@@ -17469,12 +17633,44 @@ The unit suffers 1 automatic hit for each model (including characters) in its fr
 Once it is cast, the Wall of Fire remains where it is until it is dispelled, or until the Wizard chooses to end it (which he can do at any time), attempts to cast another spell or is slain. No further hits are caused by the Wall of Fire unless a unit tries to move through it, in which case each model that moves through the Wall of Fire suffers a further Strength 4 hit.
 
 The Wall of Fire does not block the line of sight of archers and chargers, nor does it reduce a unit&apos;s Movement rate.</description>
+          <modifiers>
+        <modifier type="append" value="**Q.** What is the corrected description for the Lore of Fire spell, Wall of Fire?
+
+**A.** This spell has a range of 24&quot; and can be cast on an enemy unit visible to the caster which has no models (friend or foe) within 1&quot; of its front rank (walls, hedges and other scenic features don&apos;t matter). The spell cannot be cast on units with 360&#176; line of sight.
+
+The unit suffers 1 automatic hit for each model (including characters) in its front rank. Each hit is resolved with a Strength of 4.
+
+**S.** Warhammer Chronicles 2004 page 122
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </rule>
     <rule id="7d9a-67cc-3fbe-e93e" name="Steed of Shadows" hidden="false">
       <description>Cast on 4+
 This spell may be cast upon the Wizard himself or any single friendly independent character model within 12&quot; of him - the spell can only be cast on a model with a Unit Strength of 1 (it won&apos;t work on a mounted model or a model riding in a chariot, for example).
 
 If successfully cast, the model can make a normal flight move of up to 20&quot;. The model can fly out of close combat if desired, but cannot fly into close combat unless positioned so that it could do so by making a normal aerial charge (for example, it must not be engaged in combat already and must be able to see the target).</description>
+          <modifiers>
+        <modifier type="append" value="**Q.** What is the corrected description for the first paragraph of the Lore of Shadows spell, Steed of Shadows?
+
+**A.** This spell may be cast upon the Wizard himself or any single friendly independent character model within 12&quot; of him - the spell can only be cast on a model with a Unit Strength of 1 (it won&apos;t work on a mounted model or a model riding in a chariot, for example).
+
+**S.** Warhammer Chronicles 2004 page 122
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </rule>
     <rule id="3b5a-e19c-52db-18cd" name="Creeping Death" hidden="false">
       <description>Cast on 6+
@@ -17486,6 +17682,21 @@ Remains in play.
 This spell can be cast on a friendly unit that is within 24&quot; of the caster. If successfully cast, all subsequent shooting directed at the unit requires a 6 to hit. All weapons which use a Scatter dice to hit will scatter automatically when targeted at the unit.
 
 Once it is cast, the Pelt of Midnight continues to work until it is dispelled, or until the Wizard chooses to end it (which he can do at any time), attempts to cast another spell or is slain.</description>
+          <modifiers>
+        <modifier type="append" value="**Q.** If a unit has the spell Pelt of Midnight (from the Lore of Shadow) cast upon it, does this have any effect against a flame template from a Dragon, Gyrocopter, etc.?
+
+**A.** No.
+
+**S.** Anthony Reynolds - Warhammer Design Team (Online Q&amp;A on the Games Workshop Warhammer Forum)
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </rule>
     <rule id="4f37-9562-182c-b68d" name="Shades of Death" hidden="false">
       <description>Cast on 8+
@@ -17508,6 +17719,21 @@ Take the 3&quot; template and place it over a single target enemy unit. All mode
     <rule id="986a-0c00-d0d0-6dda" name="The Oxen Stands" hidden="false">
       <description>Cast on a 5+
 This spell can be cast on any friendly fleeing unit on the tabtetop. If successful, the unit is rallies immediately.</description>
+          <modifiers>
+        <modifier type="append" value="**Q.** Can the Lore of Beasts spell, The Oxen Stands (which immediately rallies fleeing troops) be used to rally a unit that is at less than 25% of its starting size?
+
+**A.** No. Questions such as this should be answered with the phrase &quot;if normally allowed&quot; in mind. As a unit that is less than 25% of its starting size is not normally allowed to rally, the spell cannot be used to rally the unit.
+
+**S.** Rulebook pages 75, 147 / Direwolf FAQ Council Interpretation
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </rule>
     <rule id="d67c-9fdd-1e8a-1920" name="The Eagle&apos;s Cry" hidden="false">
       <description>Cast on a 6+
@@ -17558,10 +17784,66 @@ This spell can be cast on any unengaged enemy unit within 24&quot; of the caster
     <rule id="5290-687f-3b11-d9dd" name="Uranon&apos;s Thunder Bolt (Revised)" hidden="false">
       <description>Cast on 9+
 This spell can be cast on any unengaged enemy unit within 24&quot; of the caster. If successfully cast, the unit is struck by a thunder bolt causing D6 Strength 4 hits with no Armour save possible. These hits are distributed exactly like hits from shooting.</description>
+          <modifiers>
+        <modifier type="append" value="**Q.** Can Uranon&apos;s Thunderbolt target characters in Buildings?
+
+**A.** Yes (the thunderbolts smash through the roof, obviously!)
+
+**S.** Warhammer Chronicles 2004 page 115
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="**Q.** Do magic items or abilities that provide special saves against missiles (e.g. The Golden Eye of Tzeentch, Wristbands of Black Gold, Shield of Ptolos, etc.) work against spells not classified as &quot;magic missiles&quot;, such as Uranon&apos;s Thunderbolt, Storm of Cronos, or Father of the Thorn?
+
+**A.** No. The only spells which count as missiles are those specifically noted as &quot;magic missiles&quot; in their descriptions.
+
+**S.** Warhammer Chronicles 2004 page 115 / Anthony Reynolds - Warhammer Design Team (Online Q&amp;A on the Games Workshop Warhammer Forum)
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </rule>
     <rule id="2530-d828-3c0d-f0db" name="Storm of Cronos" hidden="false">
       <description>Cast on 9+
 This spell can be cast on all enemy units which are visible to and within 12&quot; of the caster. If successfully cast, all enemy units within range and sight are affected. Each unit takes D6 Strength 4 hits, distributed exactly like shooting.</description>
+          <modifiers>
+        <modifier type="append" value="**Q.** Can spells which affect all enemy units in sight, within a defined range, and/or on the battlefield (e.g. Storm of Cronos, Drain Life, Fog of Death) be cast if enemy units in the area are engaged in close combat?
+
+**A.** Yes they can be cast, but only unengaged units are affected, as such spells do not specifically state that they can be cast at units in combat.
+
+**S.** Warhammer Chronicles 2004 page 115
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="**Q.** Do magic items or abilities that provide special saves against missiles (e.g. The Golden Eye of Tzeentch, Wristbands of Black Gold, Shield of Ptolos, etc.) work against spells not classified as &quot;magic missiles&quot;, such as Uranon&apos;s Thunderbolt, Storm of Cronos, or Father of the Thorn?
+
+**A.** No. The only spells which count as missiles are those specifically noted as &quot;magic missiles&quot; in their descriptions.
+
+**S.** Warhammer Chronicles 2004 page 115 / Anthony Reynolds - Warhammer Design Team (Online Q&amp;A on the Games Workshop Warhammer Forum)
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </rule>
     <rule id="fbf7-a711-49c2-cb2c" name="The Comet of Casandora (Revised)" hidden="false">
       <description>Cast on 11+
@@ -17569,6 +17851,21 @@ This spell can be cast upon any fixed point on the tabletop. If successfully cas
 
 Once cast, the player rolls a D6 at the start of each player&apos;s turn (ie, at the start of his turn and at the start of his opponent&apos;s turn). On a score of 1-3 nothing happens, but place another marker on the first. On the score of a 4-6 the spot is struck by a comet. All units from either side which are within D6&quot; multiplied by the number of markers already placed are struck by the comet. Each unit struck by the comet takes 2D6 Strength 4 hits. For example - if there are two markers in place and the D6 roll is a 4, all units within 4 x 2 = 8&quot; are struck. The Comet is not a remains in play
  spell as such, although the spell can be dispelled while in play, (remove all markers), and a Wizard cannot have more than one Comet in play at one time.</description>
+          <modifiers>
+        <modifier type="append" value="**Q.** The rules for the Comet of Casandora (Lore of Heavens) state that it remains in play, but the standard &quot;stays in play until the Wizard wants to cancel it, or he dies&quot; statement is not included. Must it actively be dispelled to stop it, surviving even if the caster dies?
+
+**A.** Once the comet is on its way, the death of the wizard does not automatically cancel the spell. You can however attempt to dispel it in subsequent turns as usual.
+
+**S.** Warhammer Chronicles 2004 page 115
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </rule>
     <rule id="d187-4b56-6442-ebf4" name="Pha&apos;s Illumination" hidden="false">
       <description>Cast on 5+
@@ -17576,6 +17873,21 @@ Remains in play.
 This spell can be cast by the Wizard on himself. Once it has been cast, the spell lasts until the Wizard attempts another spell or until it is dispelled.
 
 The Wizard is swatched in power. Regardless of his characteristics, he has 3 Attacks and Strength 5 while this spell lasts. He cannot wield a weapon whilst using this spell. No magic weapons can be used to attack him whilst the spell lasts. Once cast, the spell lasts for the duration of the combat engagement until it is dispelled, until the Wizard chooses to end it (which he can do at any time), attempts to cast another spell or is slain.</description>
+          <modifiers>
+        <modifier type="append" value="**Q.** Do the attacks generated by the Lore of Light spell, Pha&apos;s Illumination, count as magical?
+
+**A.** Yes.
+
+**S.** Gav Thorpe - Warhammer Design Team / Rulebook page 149
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </rule>
     <rule id="0c87-73f2-590b-eaa0" name="Burning Gaze" hidden="false">
       <description>Cast on 5+
@@ -17599,6 +17911,21 @@ Remains in play.
 This spell affects all friendly units that are within 12&quot; of the caster. If successfully cast, all these units are now Immune to Psychology, and fleeing units automatically rally.
 
 Once cast, the spell remains in play until it is dispelled, until the Wizard chooses to end it (which he can do at any time), attempts to cast another spell or is slain.</description>
+          <modifiers>
+        <modifier type="append" value="**Q.** Does the Lore of Light spell, Guardian Light, immediately rally fleeing troops within 12&quot; in the magic phase?
+
+**A.** No. The spell means that fleeing troops within 12&quot; will not have to take a leadership test in the rally stage of their next turn and will automatically rally at that time - it does not rally them immediately in the magic phase. Note the difference in wording between Guardian Light and the Lore of Beasts spell, The Oxen Stands.
+
+**S.** Rulebook pages 147, 149
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </rule>
     <rule id="30d3-53c0-a560-fc59" name="Blinding Light" hidden="false">
       <description>Cast on 9+
@@ -17614,11 +17941,54 @@ This spell cast be cast upon an enemy unit that is within 12&quot; of a river, s
 The Father of the Thorn can be cast on an unengaged enemy unit within 24&quot; of the caster. If successfully cast, thorns and briars shoot from the earth entangling limbs and tearing at flesh.
 
 The spell causes 2D6 Strength 3 hits.</description>
+          <modifiers>
+        <modifier type="append" value="**Q.** Father of the Thorn is not listed as a &quot;magic missile&quot;, its only requirements for targeting being 24&quot; range and LOS. Can it be cast upon characters who are within 5&quot; of a unit of five or more similar sized models?
+
+**A.** Yes. As it is not a &quot;magic missile&quot;, it does not need to conform to normal targeting rules.
+
+**S.** Warhammer Chronicles 2004 page 115
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="**Q.** Do magic items or abilities that provide special saves against missiles (e.g. The Golden Eye of Tzeentch, Wristbands of Black Gold, Shield of Ptolos, etc.) work against spells not classified as &quot;magic missiles&quot;, such as Uranon&apos;s Thunderbolt, Storm of Cronos, or Father of the Thorn?
+
+**A.** No. The only spells which count as missiles are those specifically noted as &quot;magic missiles&quot; in their descriptions.
+
+**S.** Warhammer Chronicles 2004 page 115 / Anthony Reynolds - Warhammer Design Team (Online Q&amp;A on the Games Workshop Warhammer Forum)
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </rule>
     <rule id="004f-b7a6-35f6-c02b" name="The Howler Wind (Revised)" hidden="false">
       <description>Cast on 7+
 Remains in play. 
 This spell can be cast upon the Wizard himself. If successfully cast, no shooting with Strength 4 or less can be targeted at units within 12&quot; of the Wizard - even if some models in the unit are more than 12&quot; away. This doesn&apos;t prevent units from firing through or out of the affected area at targets beyond. In addition, all enemy units within 12&quot; of the Wizard move at half speed due to the effect of the howling wind. Note that this move penalty only applies when actually within the affected area - enemy treat the entire zone as if it were difficult ground. Once cast, the spell lasts until dispelled, the Wizard chooses to end it (which he can do at any time), attempts to cast another spell or is slain.</description>
+          <modifiers>
+        <modifier type="append" value="**Q.** The Howler Wind spell (Lore of Life) is hard to interpret. Should the movement effect be applied as &quot;half speed&quot; or &quot;difficult ground&quot;?
+
+**A.** Half speed.
+
+**S.** Anthony Reynolds - Warhammer Design Team (Online Q&amp;A on the Games Workshop Warhammer Forum)
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </rule>
     <rule id="5c6d-2bfa-f852-ef3e" name="Master of the Wood (Revised)" hidden="false">
       <description>Cast on 7+
@@ -17640,6 +18010,21 @@ A soaked unit suffers a further -1 modifier on its shooting rolls to hit. If the
 
 This is not a remains in play
  spell as such, but units that have been soaked suffer the effects for the rest of the battle. There is no additional effect for being soaked more than once.</description>
+          <modifiers>
+        <modifier type="append" value="**Q.** Looking at the Rain Lord spell (Lore of Life), is it correct that you always need to roll 4+ every turn to shoot, and cannot remove the effect of the spell in the normal way?
+
+**A.** That&apos;s exactly how it works - once you&apos;re wet, you stay wet.
+
+**S.** Warhammer Chronicles 2004 page 115
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </rule>
     <rule id="9fe7-c1dc-0e19-0809" name="Dark Hand of Death" hidden="false">
       <description>Cast on 5+
@@ -17658,6 +18043,21 @@ This spell can be cast on an enemy model within 12&quot;. If successfully cast, 
 The enemy model loses 1 Wound. No armour save is allowed. In addition, the casting Wizard gains 1 Wound for the duration of the battle. This spell can be used to increase the caster&apos;s Wounds characteristic beyond its normal maximum level, and can be used several times to increase the caster&apos;s Wounds even further. At the end of the battle, any stolen Wounds are lost - if the Wizard has no Wounds left once stolen Wounds are removed, he is slain.
 
 The spell cannot affect Undead, Chaos Daemons, and similar units which don&apos;t have a soul!</description>
+          <modifiers>
+        <modifier type="append" value="**Q.** The Steal Soul spell (Lore of Death) says nothing about Ward Saves. If the model saves a wound with its ward save, does the spellcaster still receive the +1 Wound?
+
+**A.** No.
+
+**S.** Anthony Reynolds - Warhammer Design Team (Online Q&amp;A on the Games Workshop Warhammer Forum)
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </rule>
     <rule id="bac7-c263-d173-ac75" name="Wind of Death" hidden="false">
       <description>Cast on 8+
@@ -17670,6 +18070,21 @@ If cast successfully each enemy unit within 12&quot; of the Wizard is affected.
 Each unit takes D6 Strength 3 hits. No armour saves are allowed against a Drain Life spell. These hits are distributed exactly like hits from shooting.
 
 The spell cannot affect Undead, Chaos Daemons, or buildings and similar models, as they are not truly alive.</description>
+          <modifiers>
+        <modifier type="append" value="**Q.** Can spells which affect all enemy units in sight, within a defined range, and/or on the battlefield (e.g. Storm of Cronos, Drain Life, Fog of Death) be cast if enemy units in the area are engaged in close combat?
+
+**A.** Yes they can be cast, but only unengaged units are affected, as such spells do not specifically state that they can be cast at units in combat.
+
+**S.** Warhammer Chronicles 2004 page 115
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </rule>
     <rule id="ea42-2df2-f47b-3578" name="Doom and Darkness!" hidden="false">
       <description>Cast on 12+
@@ -17767,6 +18182,73 @@ Note that a spell cast with a Power Stone can never be cast with Irresistible Fo
     </rule>
     <rule id="7b4c-7e37-f46f-5955" name="Magical Resistance (3)" hidden="false">
       <description>Generates three dispel dice when spells cast at the unit</description>
+          <modifiers>
+        <modifier type="append" value="**Q.** If a unit with Magic Resistance is a potential target for a spell that affects all enemy units in sight/range, does it get to add its dispel dice? Do multiple units with Magic Resistance targeted by the same spell add their dice together?
+
+**A.** If a unit with Magic Resistance is a potential target for one of these spells its Magic Resistance may be used. If multiple units with Magic Resistance are targeted, use the highest Magic Resistance value, NOT all of them added together.
+
+**S.** Warhammer Chronicles 2004 page 115
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="**Q.** If a character has Magic Resistance and joins a unit, does the whole unit benefit from that Magic Resistance?
+
+**A.** Yes.
+
+**S.** Anthony Reynolds - Warhammer Design Team (Online Q&amp;A on the Games Workshop Warhammer Forum)
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="**Q.** Do items or abilities which provide extra dispel dice when targeted by enemy spells work the same as items specifically noted with &quot;Magic Resistance&quot;?
+
+**A.** These extra dispel dice (which appeared in some item descriptions early in Sixth Edition) should be treated just like Magic Resistance.
+
+**S.** Gav Thorpe - Warhammer Design Team
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="**Q.** If a unit has multiple sources of Magic Resistance (e.g. MR(1) from a character and MR(2) from a magic banner) do the sources add together, or do you simply apply the highest value?
+
+**A.** Apply the highest value.
+
+**S.** Gav Thorpe - Warhammer Design Team
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="**Q.** Can units with Magic Resistance dice use these dice to dispel chain spells (e.g. Gork&apos;s Warpath, Plague) when they are not the first unit targeted? Does Magic Resistance count against Comet of Cassandora and other spells with a random range of effect? May units with Magic Resistance dice use these dice to dispel &quot;remains in play&quot; spells in subsequent turns?
+
+**A.** No to all of the above. It is not enough for the unit with Magic Resistance to be a potential target - the unit has to be an actual target of the spell. Magic Resistance, like dispel scrolls, comes into effect only at the point when the magical energy is summoned (i.e. the spell is cast). Once the effects of the spell become a reality, it&apos;s too late.
+
+**S.** Warhammer Chronicles 2004 page 115 / Gav Thorpe - Warhammer Design Team
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </rule>
     <rule id="1bda-9392-bbe9-36e5" name="Cannons" publicationId="315e-e3c4-08af-fd51" page="122-123" hidden="false">
       <description>See rules for cannons in https://6th.whfb.app/war-machines/cannons</description>
