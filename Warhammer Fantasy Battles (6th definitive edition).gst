@@ -16993,6 +16993,34 @@ They may never, however. declare that they are fleeing as a charge reaction, as 
     </rule>
     <rule id="e5ce-0262-e817-adc2" name="Brace Of Pistols" hidden="false">
       <description>In first round of combat (H-T-H) the model counts as having two handweapons. In the first turn only these have STR4 and Armour Piercing.</description>
+          <modifiers>
+        <modifier type="append" value="**Q.** When using a pistol in close combat does a model roll to hit using his Ballistic Skill?
+
+**A.** No. When using a pistol in close combat a model rolls to hit using the comparative Weapon Skill of him and his foe.
+
+**S.** Rulebook pages 69, 91
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="**Q.** In the first round of close combat after a Stand and Shoot reaction does a model armed with a pistol receive an Armour Piercing Attack?
+
+**A.** Yes. The pistol rules clearly state that a model armed with a pistol receives an Armour Piercing Attack in the first round of close combat. No exceptions for Stand and Shoot reactions are listed.
+
+**S.** Direwolf FAQ Council Interpretation / Rulebook page 91
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </rule>
     <rule id="1e6c-d634-a65c-78eb" name="Hatred" hidden="false">
       <description>Troops fighting in close combat with a hated foe may re-roll any misses When they attack in the first turn of any combat. This bonus only applies in the first turn of a combat and represents the unit venting its pent up hatred on the foe. After the initial round of blood mad hacking they lose some impetus and subsequently fight as normal for the rest of the combat.
@@ -17355,6 +17383,34 @@ Note that a spell cast with a Power Stone can never be cast with Irresistible Fo
     </rule>
     <rule id="dd3a-b57e-97a7-2da7" name="Strikes Last" publicationId="315e-e3c4-08af-fd51" page="89" hidden="false">
       <description>Troops armed with a weapon that strikes last will always strike last during close combat where they would otherwise strike in Initiative order. Note that troops that charge will still strike first in the initial turn of close combat, as charging troops always strike first rather man in Initiative order. For example, troops armed with Great Axes will strike first on the turn they charge and strike last thereafter.</description>
+          <modifiers>
+        <modifier type="append" value="**Q.** There is no explicit reference for striking order between two non-charging units both armed with Great Weapons. Is it Initiative order?
+
+**A.** It follows normal combat rules: they will strike in Initiative order. If they both have the same Initiative, then the winner of the previous round&apos;s combat strikes first. As a last resort, roll a dice, as there are never simultaneous Attacks in Warhammer.
+
+**S.** Warhammer Chronicles 2004 page 113
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="**Q.** If a character or a unit armed with Great Weapons has a magical item, or spell cast on them, that allows them to strike first (e.g. Helm of Many Eyes, Bash &apos;Em Ladz), does the effect overrule the normal rules for Great Weapons striking last?
+
+**A.** Yes.
+
+**S.** Warhammer Chronicles 2004 page 113
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </rule>
     <rule id="7b4c-7e37-f46f-5955" name="Magical Resistance (3)" hidden="false">
       <description>Generates three dispel dice when spells cast at the unit</description>
