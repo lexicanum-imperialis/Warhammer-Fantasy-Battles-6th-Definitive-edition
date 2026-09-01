@@ -16891,6 +16891,21 @@ A unit must make a Terror test at the start of its turn if there is an enemy whi
           </conditions>
         </modifier>
       </modifiers>
+          <modifiers>
+        <modifier type="append" value="**Q.** Can a unit that has failed its Stupidity or Animosity test in the current turn be moved or forced to charge via a magical movement spell such as Unseen Lurker or The Hand of Gork?
+
+**A.** No. Any psychological or compulsory condition that prevents a unit from moving, shooting, or charging normally during their turn also prevents them from being moved by magical spells. A unit that has failed Stupidity &quot;can do nothing else that turn&quot;, and a unit squabbling from Animosity is similarly restricted - they cannot bypass these debilitating failed tests via the Magic phase.
+
+**S.** The Norn Consensus Historical Precedent / Gav Thorpe - Warhammer Design Team / Rulebook page 83
+" field="description" join="
+
+### FAQ (NornConsensus)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </rule>
     <rule id="e930-0b71-2fef-3937" name="Fly" hidden="false">
       <description>Unit can fly
@@ -16930,6 +16945,34 @@ https://6th.whfb.app/flyers</description>
 " field="description" join="
 
 ### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+          <modifiers>
+        <modifier type="append" value="**Q.** Can a flying unit that declares a charge use its 20&quot; fly move to completely fly over the target and charge its rear instead of its front?
+
+**A.** No. The arc that you charge (Front, Flank, or Rear) is strictly determined by the position of the majority of the charging unit at the exact moment the charge is declared. If the flyers start their turn in the target&apos;s front arc, they must charge the front.
+
+**S.** The Norn Consensus Historical Precedent / FB_faq_0
+" field="description" join="
+
+### FAQ (NornConsensus)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="**Q.** When a unit of Flyers declares a charge against a fleeing unit, and the fleeing unit&apos;s move places it entirely inside a wood that the Flyer cannot enter, but the Flyer has more than enough distance to catch them, is the fleeing unit caught?
+
+**A.** Yes. Whether a fleeing unit is run down is based on the speed and distance the pursuers can cover, not the strict terrain limitations at the exact theoretical landing spot. The fleeing unit is caught and removed from play, and the Flyer stops at the edge of the wood.
+
+**S.** The Norn Consensus Historical Precedent / Tournament Combat Precedents
+" field="description" join="
+
+### FAQ (NornConsensus)
 ">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
@@ -17087,6 +17130,34 @@ https://6th.whfb.app/flyers</description>
           </conditions>
         </modifier>
       </modifiers>
+          <modifiers>
+        <modifier type="append" value="**Q.** If a mounted character joins a Fast Cavalry unit, does the unit lose its Fast Cavalry rules?
+
+**A.** No. The unit remains a Fast Cavalry unit, but the joined character does not gain the Fast Cavalry special rules (such as 360-degree line of sight for shooting) unless the character already has them. The unit&apos;s movement and manoeuvring may also be restricted because the formation must remain legal while including a model that does not itself have the Fast Cavalry rule.
+
+**S.** Rulebook / Warhammer Chronicles 2004 / Direwolf FAQ / The Norn Consensus Historical Precedent
+" field="description" join="
+
+### FAQ (NornConsensus)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="**Q.** Can troops that rally during their turn fire missile weapons in the subsequent Shooting phase?
+
+**A.** No. A unit that rallies may not shoot in that turn&apos;s Shooting phase. Even Fast Cavalry, which are explicitly permitted to make a free move after rallying from a voluntary Flee charge reaction, are still barred from shooting during that turn.
+
+**S.** The Norn Consensus Historical Precedent / Warhammer Chronicles 2004 page 114 / White Dwarf 258 page 39
+" field="description" join="
+
+### FAQ (NornConsensus)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </rule>
     <rule id="889c-dfc3-95a5-2d30" name="Scouts" hidden="false">
       <description>These troops are skilled at sneaking forwards to scout out the enemy before the main force arrives. By making the best use of cover, advancing at night, or with other troops providing a diversion, they are able to deploy ahead of the rest of the army.
@@ -17101,6 +17172,21 @@ Alternatively, Scouts can be placed on the controlling player&apos;s deployment 
 " field="description" join="
 
 ### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+          <modifiers>
+        <modifier type="append" value="**Q.** Can a character who does not have the Scouts special rule gain Scout deployment by joining a unit of Scouts before the game begins?
+
+**A.** No. A character without the Scouts special rule may not deploy using the Scout deployment rules. A non-Scout character must be deployed during the normal deployment sequence and cannot be held back to &quot;piggyback&quot; onto a scouting unit&apos;s forward or hidden deployment.
+
+**S.** The Norn Consensus Historical Precedent / Rulebook Scouts and Deployment sections
+" field="description" join="
+
+### FAQ (NornConsensus)
 ">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
@@ -17192,6 +17278,34 @@ In subsequent turns a character, if not fighting, may move to replace a fighting
 " field="description" join="
 
 ### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+          <modifiers>
+        <modifier type="append" value="**Q.** Because Skirmishers maintain a loose formation with up to 1&quot; gaps between models, can an enemy unit draw Line of Sight to a target behind them by looking through the physical gaps in the skirmish screen?
+
+**A.** No. Despite their loose formation and physical gaps on the tabletop, units of Skirmishers completely block line of sight to other units, including characters that have joined the Skirmishing unit. It is explicitly illegal to trace line of sight through the gaps between Skirmishing models.
+
+**S.** The Norn Consensus Historical Precedent / Rulebook page 115
+" field="description" join="
+
+### FAQ (NornConsensus)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="**Q.** When a bouncing cannonball&apos;s path passes through the loose footprint of a Skirmishing unit, does it automatically hit the unit, or only models whose bases are physically crossed by the line?
+
+**A.** It only hits models whose bases are physically crossed by the cannonball&apos;s line. Skirmishers do not form ranks and maintain physical gaps between models, so if the cannonball&apos;s line passes through a gap without touching any model&apos;s base, it scores no hit and continues its path normally.
+
+**S.** The Norn Consensus Historical Precedent / White Dwarf 259 / Rulebook Skirmisher and Cannon rules
+" field="description" join="
+
+### FAQ (NornConsensus)
 ">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
@@ -17313,6 +17427,34 @@ In challenges, this means no chance of Overkill wounds from the capped portion -
 " field="description" join="
 
 ### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+          <modifiers>
+        <modifier type="append" value="**Q.** If a unit with Regeneration takes massive damage that would otherwise wipe out the entire unit including the final model, does the final model still get to attempt its Regeneration rolls?
+
+**A.** Yes. Regeneration rolls are taken during the phase the wounds are suffered. Even if the total wounds inflicted exceed the remaining wounds of the entire unit, you make all the Regeneration rolls first, then remove whole models as casualties for any un-regenerated wounds. It is fully possible for the last model to be &quot;killed&quot; but successfully regenerate and remain in play.
+
+**S.** The Norn Consensus Historical Precedent / Warhammer Chronicles 2004 page 114 / White Dwarf 258 page 39
+" field="description" join="
+
+### FAQ (NornConsensus)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="**Q.** If a model suffers a wound, can they attempt an Armour Save, a Ward Save, and a Regeneration roll in sequence?
+
+**A.** No. You can never take a Ward Save and a Regeneration roll against the same wound. A model may attempt an Armour Save first; if that save is failed or modified away, the defending player must choose to use either their Ward Save or their Regeneration roll.
+
+**S.** The Norn Consensus Historical Precedent / Rulebook page 65
+" field="description" join="
+
+### FAQ (NornConsensus)
 ">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
@@ -17466,6 +17608,21 @@ Troops who hate their enemy must always pursue them if they flee. They cannot at
           </conditions>
         </modifier>
       </modifiers>
+          <modifiers>
+        <modifier type="append" value="**Q.** Does Magic Resistance stack if both a character and the unit they have joined possess the rule? Does Magic Resistance work against spells that use a line or template rather than targeting a specific unit?
+
+**A.** No, Magic Resistance does not stack - apply the highest single Magic Resistance value present within the unit, not all values added together. Regarding template or line spells, Magic Resistance does apply, provided the unit with Magic Resistance is an actual potential target or is hit by the spell&apos;s area of effect.
+
+**S.** The Norn Consensus Historical Precedent / White Dwarf 275 page 63
+" field="description" join="
+
+### FAQ (NornConsensus)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </rule>
     <rule id="da12-a0e8-30ec-6c32" name="Magical Resistance (1)" hidden="false">
       <description>Generates 1 dispel dice for spells cast at the unit.</description>
@@ -17530,6 +17687,21 @@ Troops who hate their enemy must always pursue them if they flee. They cannot at
 " field="description" join="
 
 ### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+          <modifiers>
+        <modifier type="append" value="**Q.** Does Magic Resistance stack if both a character and the unit they have joined possess the rule? Does Magic Resistance work against spells that use a line or template rather than targeting a specific unit?
+
+**A.** No, Magic Resistance does not stack - apply the highest single Magic Resistance value present within the unit, not all values added together. Regarding template or line spells, Magic Resistance does apply, provided the unit with Magic Resistance is an actual potential target or is hit by the spell&apos;s area of effect.
+
+**S.** The Norn Consensus Historical Precedent / White Dwarf 275 page 63
+" field="description" join="
+
+### FAQ (NornConsensus)
 ">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
@@ -18099,6 +18271,21 @@ The spell cannot affect Undead targets, Chaos Daemons
     </rule>
     <rule id="90ad-6aa4-2d97-164e" name="Enchanted Shield" hidden="false">
       <description>5+ Armour Save. The Enchanted Shield protects its user with powerful magic. The shield confers an armour save of 5+ rather than a mundane shield&apos;s annour save of 6+. This can be combined with other magical or mundane armour - for example, light armour + Enchanted Shield = armour save 4+, heavy armour + Enchanted Shield + mounted = armour save 2+.</description>
+          <modifiers>
+        <modifier type="append" value="**Q.** Does the Enchanted Shield override the standard restriction that a character may only carry a single piece of Magic Armour?
+
+**A.** Yes. The Enchanted Shield is the single specific exception to this rule - its entry explicitly states it can be worn with other magical armour, allowing a character to legally equip both a magical suit of armour and the Enchanted Shield.
+
+**S.** The Norn Consensus Historical Precedent / Rulebook page 154 (Common Magic Items)
+" field="description" join="
+
+### FAQ (NornConsensus)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </rule>
     <rule id="c9bc-2907-97ae-5e43" name="Dispel Scroll(Arcane Item)" hidden="false">
       <description>A Dispel Scroll is inscribed with a powerful anti-magical invocation. When it is read out by a Wizard, the effect is to drain away magical power and weaken a spell that has been cast. As soon as a spell has been cast, any Wizard who has a Dispel Scroll can read it. This automatically dispels the cast spell, no dice roll is required.
@@ -18131,6 +18318,34 @@ Note that a Dispel Scroll will not help if the spell has been cast with Irresist
 " field="description" join="
 
 ### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+          <modifiers>
+        <modifier type="append" value="**Q.** Can an army take multiple copies of the same Common Magic Item, such as giving two different characters a Sword of Might?
+
+**A.** No. With the explicit exception of Dispel Scrolls and Power Stones (which may be duplicated multiple times across the army, and even stacked on a single Wizard), all magic items including Common Magic Items are completely unique - you may only ever have one of each specific magic item in your entire army.
+
+**S.** The Norn Consensus Historical Precedent / Rulebook pages 152-154
+" field="description" join="
+
+### FAQ (NornConsensus)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="**Q.** Can a fleeing Wizard harvest magic dice from nearby units, generate Power/Dispel Dice, or use a Dispel Scroll?
+
+**A.** No. Fleeing Wizards are not allowed to cast or dispel spells. They cannot harvest additional dice from nearby units, and using a Dispel Scroll legally counts as dispelling a spell, which a fleeing Wizard is explicitly forbidden from doing.
+
+**S.** The Norn Consensus Historical Precedent / Warhammer Chronicles 2004 page 115
+" field="description" join="
+
+### FAQ (NornConsensus)
 ">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
@@ -18174,6 +18389,21 @@ Note that a spell cast with a Power Stone can never be cast with Irresistible Fo
           </conditions>
         </modifier>
       </modifiers>
+          <modifiers>
+        <modifier type="append" value="**Q.** Can an army take multiple copies of the same Common Magic Item, such as giving two different characters a Sword of Might?
+
+**A.** No. With the explicit exception of Dispel Scrolls and Power Stones (which may be duplicated multiple times across the army, and even stacked on a single Wizard), all magic items including Common Magic Items are completely unique - you may only ever have one of each specific magic item in your entire army.
+
+**S.** The Norn Consensus Historical Precedent / Rulebook pages 152-154
+" field="description" join="
+
+### FAQ (NornConsensus)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </rule>
     <rule id="f2d3-6ce8-88ad-7cad" name="War Banner(Magic Standard)" hidden="false">
       <description>+1 Combat Resolution. The War Banner carries powerful enchantments that fill all those who fight beneath it with heroic courage and determination. A unit, which has a War Banner adds a further +1. to its combat resolution when working out which side has won the combat.</description>
@@ -18198,6 +18428,21 @@ Note that a spell cast with a Power Stone can never be cast with Irresistible Fo
     </rule>
     <rule id="3be4-7ba4-c28d-154b" name="Special characters" publicationId="315e-e3c4-08af-fd51" page="101" hidden="false">
       <description>Both players are allowed to field special characters, even if the rules already set no permission was needed. This is a courtesy rule.</description>
+          <modifiers>
+        <modifier type="append" value="**Q.** In a standard matched play game outside a tournament, do Special Characters require the opponent&apos;s permission, or are they balanced for normal play?
+
+**A.** Official Special Characters printed for Warhammer Fantasy Battles 6th Edition are legal for standard play unless their rules state otherwise. A player does not need special permission merely because a character is named, provided the character&apos;s rules are official and valid for the game being played. Opponent agreement is required where the character&apos;s rules are marked as Trial Rules, where the publication explicitly requires permission, or where an event/campaign/tournament pack restricts Special Characters.
+
+**S.** Warhammer Chronicles 2004 / White Dwarf / The Norn Consensus Historical Precedent
+" field="description" join="
+
+### FAQ (NornConsensus)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </rule>
     <rule id="bcce-845e-1cd0-b65e" name="Move-or-Fire" publicationId="315e-e3c4-08af-fd51" page="90" hidden="false">
       <description>Some missile weapons take a long time to load, such as crossbows and handguns. So, a model that is armed with a move-or-fire weapon may not fire his weapon if he has moved at all during that turn. It doesn&apos;t matter if the model was forced to move by some compulsory action or by magic. Any movement will prevent the model from shooting, even the simple act of turning round.</description>
@@ -18305,6 +18550,21 @@ Note that a spell cast with a Power Stone can never be cast with Irresistible Fo
           </conditions>
         </modifier>
       </modifiers>
+          <modifiers>
+        <modifier type="append" value="**Q.** Does Magic Resistance stack if both a character and the unit they have joined possess the rule? Does Magic Resistance work against spells that use a line or template rather than targeting a specific unit?
+
+**A.** No, Magic Resistance does not stack - apply the highest single Magic Resistance value present within the unit, not all values added together. Regarding template or line spells, Magic Resistance does apply, provided the unit with Magic Resistance is an actual potential target or is hit by the spell&apos;s area of effect.
+
+**S.** The Norn Consensus Historical Precedent / White Dwarf 275 page 63
+" field="description" join="
+
+### FAQ (NornConsensus)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </rule>
     <rule id="1bda-9392-bbe9-36e5" name="Cannons" publicationId="315e-e3c4-08af-fd51" page="122-123" hidden="false">
       <description>See rules for cannons in https://6th.whfb.app/war-machines/cannons</description>
@@ -18317,6 +18577,34 @@ Note that a spell cast with a Power Stone can never be cast with Irresistible Fo
 " field="description" join="
 
 ### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+          <modifiers>
+        <modifier type="append" value="**Q.** When a bouncing cannonball&apos;s path passes through the loose footprint of a Skirmishing unit, does it automatically hit the unit, or only models whose bases are physically crossed by the line?
+
+**A.** It only hits models whose bases are physically crossed by the cannonball&apos;s line. Skirmishers do not form ranks and maintain physical gaps between models, so if the cannonball&apos;s line passes through a gap without touching any model&apos;s base, it scores no hit and continues its path normally.
+
+**S.** The Norn Consensus Historical Precedent / White Dwarf 259 / Rulebook Skirmisher and Cannon rules
+" field="description" join="
+
+### FAQ (NornConsensus)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="**Q.** Can a Cannon declare a shot against a Large Target that is visible behind an intervening screen of normal-sized enemy troops? If so, does the bouncing cannonball hit the intervening troops?
+
+**A.** Yes to both. A Cannon may be fired at any target it has Line of Sight to, and a Large Target is visible over the heads of normal-sized models. When fired, the bouncing cannonball line hits any and all models whose bases fall under the template&apos;s path, including the intervening troops, regardless of whether they were the intended target.
+
+**S.** The Norn Consensus Historical Precedent / Rulebook page 122 / White Dwarf 259 page 41
+" field="description" join="
+
+### FAQ (NornConsensus)
 ">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
@@ -18524,6 +18812,73 @@ Also, remember that creatures pulling the Chariot can only attack enemy directly
           </conditions>
         </modifier>
       </modifiers>
+          <modifiers>
+        <modifier type="append" value="**Q.** Can two or more separate units, such as two Chariots with Unit Strength 4 each, combine their Unit Strengths to reach the 5+ Unit Strength required to negate an enemy unit&apos;s rank bonus when charging the same flank or rear?
+
+**A.** No. Separate units do not pool their Unit Strengths for this purpose. Each attacking unit is considered separately, so two independent Unit Strength 4 Chariots charging the same flank do not combine to count as Unit Strength 8 - neither negates the enemy&apos;s rank bonus by itself.
+
+**S.** The Norn Consensus Historical Precedent / Rulebook pages 77 &amp; 78 / Warhammer Chronicles 2004 page 112 / Direwolf FAQ Council Interpretation
+" field="description" join="
+
+### FAQ (NornConsensus)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="**Q.** When a Chariot charges a unit armed with Pikes, or a unit containing a character with an &quot;Always Strikes First&quot; magic weapon, which attacks are resolved first?
+
+**A.** The Chariot&apos;s impact hits are always resolved first - impact hits happen before everything else in the Close Combat phase. This qualifies as an attack that is &quot;entitled to strike first because of a special ability&quot;, so it supersedes both Pikes and &quot;Always Strikes First&quot; magic weapons.
+
+**S.** The Norn Consensus Historical Precedent / Gav Thorpe - Warhammer Design Team / Warhammer Chronicles 2004 page 57
+" field="description" join="
+
+### FAQ (NornConsensus)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="**Q.** If a Chariot charges an enemy unit and the mandatory alignment swings the Chariot into difficult terrain, does the Chariot suffer D6 Strength 6 hits, or does the target unit align instead?
+
+**A.** The Chariot suffers the hits. The charging unit must align to the target if physically possible, and because difficult terrain is not impassable, the Chariot can physically enter it and must complete the alignment, immediately suffering the D6 S6 hits. The target unit only aligns to the charger if the charger is physically unable to do so, such as when blocked by impassable terrain.
+
+**S.** The Norn Consensus Historical Precedent / Rulebook pages 52 &amp; 127
+" field="description" join="
+
+### FAQ (NornConsensus)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="**Q.** If a character riding in a chariot survives the chariot being destroyed beneath them, do they continue on foot?
+
+**A.** Yes. If the chariot is destroyed underneath them, the character immediately takes a Strength 5 hit. If they survive this hit, they are placed on foot where the chariot was destroyed and operate as an independent character.
+
+**S.** The Norn Consensus Historical Precedent / Rulebook page 127
+" field="description" join="
+
+### FAQ (NornConsensus)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="**Q.** How is Unit Strength calculated for a character riding a monster such as a Dragon, or a chariot? Do you add the Monster&apos;s current remaining wounds to the rider&apos;s wounds?
+
+**A.** No. You use the Monster or Chariot&apos;s starting Unit Strength and simply add +1 for the rider. For a ridden monster, its base Unit Strength equals its starting Wounds profile; for a chariot, its base Unit Strength is 4. So a character on a Dragon with 6 starting Wounds has a combined Unit Strength of 7, regardless of how many wounds either model has taken.
+
+**S.** The Norn Consensus Historical Precedent / Warhammer Chronicles 2004 page 114
+" field="description" join="
+
+### FAQ (NornConsensus)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </rule>
     <rule name="Magical attacks" id="08b6-0c27-dc2a-95fa" hidden="false" publicationId="315e-e3c4-08af-fd51">
       <description>The unit attacks are considered magical.</description>
@@ -18682,6 +19037,34 @@ Also note that any character allowed to join the unit counts as &apos;riding&apo
           </conditions>
         </modifier>
       </modifiers>
+          <modifiers>
+        <modifier type="append" value="**Q.** When a Giant is fighting a character riding a monster, can the Giant target the rider specifically with its Special Attacks? If the rider is removed, when does the surviving monster take its Monster Reaction test?
+
+**A.** Yes, the Giant player must decide whether the Giant is attacking the rider or the mount before rolling on the Special Attacks table. If the rider is slain or removed from play by the Giant&apos;s attack, the mount must take a Monster Reaction test - but if the monster is still engaged in close combat, the test is delayed until that close combat has been fully resolved.
+
+**S.** The Norn Consensus Historical Precedent / Beasts of Chaos Army Book page 29 / Orcs &amp; Goblins Army Book page 22 / Rulebook page 105
+" field="description" join="
+
+### FAQ (NornConsensus)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="**Q.** How is Unit Strength calculated for a character riding a monster such as a Dragon, or a chariot? Do you add the Monster&apos;s current remaining wounds to the rider&apos;s wounds?
+
+**A.** No. You use the Monster or Chariot&apos;s starting Unit Strength and simply add +1 for the rider. For a ridden monster, its base Unit Strength equals its starting Wounds profile; for a chariot, its base Unit Strength is 4. So a character on a Dragon with 6 starting Wounds has a combined Unit Strength of 7, regardless of how many wounds either model has taken.
+
+**S.** The Norn Consensus Historical Precedent / Warhammer Chronicles 2004 page 114
+" field="description" join="
+
+### FAQ (NornConsensus)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </rule>
     <rule id="2acc-e985-cc4e-e123" name="Immune to Psycology " publicationId="315e-e3c4-08af-fd51" page="112" hidden="false">
       <description>Some warriors and creatures in the Warhammer world are almost completely fearless, or such grizzled veterans that scenes which would make lesser troops panic have no effect on them.
@@ -18723,6 +19106,129 @@ Units immune to psychology never need test for psychology such as fear, terror o
 " field="description" join="
 
 ### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+          <modifiers>
+        <modifier type="append" value="**Q.** How should the two Rulebook definitions of Immune to Psychology be read together?
+
+**A.** Read them as a single rule. The main Special Rules entry states that troops Immune to Psychology are never affected by Fear, Terror, Frenzy or any other Psychology rules, may never flee as a charge reaction, and still take Break tests as normal. Appendix Seven clarifies the same rule in operational terms.
+
+The Norn Consensus reads Immune to Psychology as preventing Psychology tests, Flee charge reactions, and externally imposed Psychology effects. It does not automatically erase rules already printed on the model/unit, or rules gained through permanent non-magic-item army-list upgrades, unless a specific rule or official FAQ says otherwise.
+
+**S.** The Norn Consensus Historical Precedent / Rulebook pages 112 &amp; 270 / Direwolf FAQ Council Interpretation
+" field="description" join="
+
+### FAQ (NornConsensus)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="**Q.** Can a model or unit benefit from both Immune to Psychology and another Psychology rule such as Stubborn, Frenzy, Hatred, or Stupidity?
+
+**A.** Yes, provided the other Psychology rule is part of the model/unit&apos;s own army-list entry, or is gained through a permanent non-magic-item army-list upgrade purchased for that model/unit (Vows, Virtues, Vampiric or Bloodline Powers, Chaos Marks, Daemonic Gifts, Mutations, Sacred Spawnings, Kindreds, Blessings, Big Names, Honours, and similar).
+
+The model or unit remains Immune to Psychology for the normal purposes of Psychology tests and charge reactions - it may not choose Flee as a charge reaction, and ignores Psychology tests and external Psychology effects as normal. However, Immune to Psychology does not automatically delete native or permanently purchased army-list rules already belonging to that model or unit. Magic Items, Magic Standards, spells, prayers, bound spells, and other temporary/externally conferred Psychology effects do not impose new Psychology rules onto an Immune to Psychology model or unit unless the rule specifically says it affects models Immune to Psychology.
+
+**S.** The Norn Consensus Historical Precedent / Rulebook pages 74, 80, 84, 85, 112 &amp; 270 / Warhammer Chronicles 2004 page 116 / Direwolf FAQ Council Interpretation
+" field="description" join="
+
+### FAQ (NornConsensus)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="**Q.** Does Immune to Psychology cancel Stubborn because Stubborn appears in the Psychology section of the Rulebook?
+
+**A.** No. Break tests are Leadership tests, but they are not Psychology tests, and Stubborn modifies Break tests by allowing the unit to use unmodified Leadership. Both Rulebook definitions of Immune to Psychology preserve Break tests as normal. A model or unit with both Stubborn and Immune to Psychology uses Stubborn normally when taking Break tests. This does not allow a Magic Item, Magic Standard, spell, or other external effect to grant Stubborn to an Immune to Psychology unit unless that effect specifically says it works on models that are Immune to Psychology.
+
+**S.** The Norn Consensus Historical Precedent / Rulebook pages 74, 80, 85, 112 &amp; 270 / Warhammer Chronicles 2004 page 116 / Direwolf FAQ Council Interpretation
+" field="description" join="
+
+### FAQ (NornConsensus)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="**Q.** Does an aura or effect that grants Immune to Psychology suppress Psychology rules already possessed by the affected model or unit?
+
+**A.** No, not by itself. If a model or unit already has Stubborn, Frenzy, Hatred, Stupidity or a similar rule as a native rule or permanent non-magic-item army-list upgrade, an aura or effect that grants Immune to Psychology does not suppress that rule unless the aura or effect specifically says so. The affected model or unit is still Immune to Psychology for the normal purposes of Psychology tests and charge reactions (e.g. it may not choose Flee). Specific rules and official FAQs override this general principle.
+
+**S.** The Norn Consensus Historical Precedent / Rulebook pages 84, 85, 112 &amp; 270 / Direwolf FAQ Council Interpretation
+" field="description" join="
+
+### FAQ (NornConsensus)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="**Q.** Does a character who is Immune to Psychology automatically make a unit he has joined Immune to Psychology?
+
+**A.** No. A character&apos;s Immunity to Psychology does not automatically transfer to the unit - it is the unit which declares a charge reaction, not the character. If a specific character rule or army-book rule explicitly grants Immune to Psychology to the unit, then the unit gains it as stated by that rule. This does not suppress Stubborn, Frenzy, Hatred, Stupidity, or similar rules already possessed by the unit as native rules or permanent non-magic-item army-list upgrades.
+
+**S.** The Norn Consensus Historical Precedent / Rulebook pages 100, 112 &amp; 270 / Gav Thorpe - Warhammer Design Team / Direwolf FAQ Council Interpretation
+" field="description" join="
+
+### FAQ (NornConsensus)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="**Q.** If a rule says that a model or unit is affected by a named Psychology rule &quot;even if Immune to Psychology&quot;, does it work?
+
+**A.** Yes. Apply the named exception exactly as written. The model or unit remains Immune to Psychology for all other purposes, but is still affected by the named rule because the exception specifically overrides Immune to Psychology.
+
+**S.** The Norn Consensus Historical Precedent / Rulebook pages 112 &amp; 270 / Direwolf FAQ Council Interpretation
+" field="description" join="
+
+### FAQ (NornConsensus)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="**Q.** Does this Psychology ruling change the official Empire FAQ concerning the Banner of Sigismund?
+
+**A.** No, that official ruling remains unchanged - a unit made Immune to Psychology does not benefit from the Banner of Sigismund, since it is a Magic Standard trying to grant Stubborn to a unit that is Immune to Psychology, and there is no Magic vs. Mundane trump. This only clarifies that the ruling should not be extended to cancel Stubborn, Frenzy, Hatred, Stupidity or similar rules already possessed by a model or unit as native rules or permanent non-magic-item army-list upgrades.
+
+**S.** The Norn Consensus Historical Precedent / Rulebook pages 112 &amp; 270 / Warhammer Chronicles 2004 page 116 / Direwolf FAQ Council Interpretation
+" field="description" join="
+
+### FAQ (NornConsensus)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="**Q.** Can a unit that is Immune to Psychology choose to Flee as a charge reaction, or choose to restrain pursuit if they win a combat?
+
+**A.** A unit that is Immune to Psychology may never choose to Flee as a charge reaction. However, because Immune to Psychology does not inherently cause a unit to become Frenzied or otherwise force pursuit, the unit may still attempt a Leadership test to restrain pursuit normally after winning a combat, unless another rule specifically overrides this and forces them to pursue.
+
+**S.** The Norn Consensus Historical Precedent / Rulebook pages 112 &amp; 270
+" field="description" join="
+
+### FAQ (NornConsensus)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="**Q.** Are units that are currently engaged in close combat ever required to take a Panic test, for example if a friendly unit breaks from combat within 6&quot; of them?
+
+**A.** No. Units that are actively engaged in close combat never take Panic tests, regardless of the trigger.
+
+**S.** The Norn Consensus Historical Precedent / Rulebook page 80
+" field="description" join="
+
+### FAQ (NornConsensus)
 ">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
