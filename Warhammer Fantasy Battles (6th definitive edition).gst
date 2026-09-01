@@ -16895,6 +16895,47 @@ A unit must make a Terror test at the start of its turn if there is an enemy whi
     <rule id="e930-0b71-2fef-3937" name="Fly" hidden="false">
       <description>Unit can fly
 https://6th.whfb.app/flyers</description>
+          <modifiers>
+        <modifier type="append" value="**Q.** Should flyers be on square bases? If so what size?
+
+**A.** Yes, flyers should be on square bases (generally 40mm for Fell Bats, Carrion, Terradons, Warhawk Riders, and other things with a wide wingspan).
+
+**S.** Rulebook page 106
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="**Q.** How far do flyers move if they fail a charge?
+
+**A.** They move their full 20&quot;.
+
+**S.** Anthony Reynolds - Warhammer Design Team (Online Q&amp;A on the Games Workshop Warhammer Forum)
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="**Q.** Is a Great Eagle a flying skirmisher?
+
+**A.** No. A Great Eagle is NOT classified as a &quot;Unit of Flyers&quot;, and is therefore not a skirmisher. This means that a Great Eagle is classified as a monster per the &quot;Unit Strength and Single Model&apos;s Movement&quot; chart found in Warhammer Chronicles.
+
+**S.** Rulebook page 106 / Warhammer Chronicles 2004 page 114
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </rule>
     <rule id="494d-d57a-c1fa-b48e" name="Scaly Skin 3+" hidden="false">
       <description>Scaly Skin gives 3+ saving throw</description>
@@ -17537,6 +17578,68 @@ https://6th.whfb.app/monsters/monster-mounts</description>
 Further Direwolf FAQ Council clarification: In these cases where the mount&apos;s Stupidity or Frenzy affects the rider, it is the movement effects, not the close combat effects.
 
 **S.** Anthony Reynolds - Warhammer Design Team (Online Q&amp;A on the Games Workshop Warhammer Forum) / Direwolf FAQ Council Interpretation
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+          <modifiers>
+        <modifier type="append" value="**Q.** After the rider or crew is killed, when do you take the monster reaction test?
+
+**A.** If you are not in close combat then you take the monster reaction test at the end of the phase in which the rider or crew are killed. If you are involved in close combat the rules clearly state that the test is not taken until after the combat is entirely resolved. If the monster is victorious in the combat, then it states to take the test in the first turn when the monster would be free to move and act normally.
+
+If you lose a combat and flee, but are not caught by the enemy, the book is silent on when to take the test. If we use the timing of a victorious monster as a guide, then the test should be taken the first turn when the monster would be free to move and act normally. Therefore, in cases where the monster loses a combat and flees, take the monster reaction test at the beginning of the turn after it rallies.
+
+**S.** Rulebook page 105 / Direwolf FAQ Council Interpretation
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="**Q.** If the monster reaction test is failed, when do you apply the results of the monster reaction chart?
+
+**A.** It depends on which reaction you roll. Also remember that the monster only performs actions in the owning player&apos;s turn. So for example if a result of 1-2 (monster runs away) is rolled then it will be applied in the owning player&apos;s compulsory movement phase. If a result of 3-4 (monster charges) is rolled then it will be applied at the declare charges step in the owning player&apos;s movement phase. If a result of 5-6 (shooting / guarding the body of its master) is rolled then it is applied immediately but will only come into play if the monster has a ranged attack or breath weapon and an enemy unit is within range during the owning player&apos;s shooting phases.
+
+**S.** Rulebook page 105
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="**Q.** Can a monster utilize its breath weapon(s) if it performs a March move?
+
+**A.** No.
+
+**S.** Warhammer Chronicles 2004 page 114
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="**Q.** How do mixed units of monsters and handlers that are not defined as skirmishers (e.g. Dark Elf War Hydras) work?
+
+**A.** These units do not count as skirmishers even though the models are not ranked up. When determining what the unit can charge, or for the purposes of flank/rear charges by enemy units, use 90 degree arcs centered on the monster itself.
+
+When the unit is in close combat, it forms up following the rules for skirmishers - i.e. those in range get into base-to-base contact, those out of range form up behind.
+
+The models in the unit move at their own Movement value as long as they remain within 1&quot; of each other.
+
+Also note that any character allowed to join the unit counts as &apos;riding&apos; the monster for the purposes of any special rules they may have. For example, if a Dark Elf Beastmaster joins a War Hydra unit, then it does get to ignore Monster Reaction tests if all the &quot;crew&quot; are wiped out.
+
+**S.** Warhammer Chronicles 2004 page 115
 " field="description" join="
 
 ### FAQ (GW)
