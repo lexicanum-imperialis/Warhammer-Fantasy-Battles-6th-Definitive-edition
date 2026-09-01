@@ -17805,6 +17805,144 @@ Breath weapons may not be used as a stand &amp; shoot charge reaction, and neith
     <rule name="Chariots" id="9306-4fc7-4348-ed06" hidden="false" publicationId="315e-e3c4-08af-fd51" page="126">
       <description>Unit is a Chariot.
 See https://6th.whfb.app/chariots</description>
+          <modifiers>
+        <modifier type="append" value="**Q.** Are Chariots immune to poison?
+
+**A.** Yes, as they have many parts that are wood or metal (i.e. unliving). Note that Undead Chariots are also immune to poison.
+
+**S.** Warhammer Chronicles 2004 page 117 / Anthony Reynolds - Warhammer Design Team
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="**Q.** A Chariot (or unit) pursues a fleeing unit and rolls higher than the fleeing roll. The fleeing unit has a smaller frontage that allows it to avoid a nearby wood (or difficult terrain), while the chariot unit, moving straight towards the fleeing unit, will have some of its models coming across the woods. What happens?
+
+**A.** The pursued unit is destroyed as normal, and the Chariot(s) will move into the woods and suffer hits.
+
+**S.** Warhammer Chronicles 2004 page 114
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="**Q.** Is it alright to charge with a Chariot in such a way that it is only touching a single model in an enemy unit? Is there a rule against &quot;clipping&quot; with Chariots?
+
+**A.** Strictly, there is no rule to stop such behaviour, and in some cases it is unavoidable or appropriate. However, deliberately turning a chariot so that when it charges it clips the enemy&apos;s unit is bad form, and to be frowned upon. See page 266 of the Warhammer rulebook for a fuller discussion of &apos;clipping&apos;.
+
+**S.** Warhammer Chronicles 2004 page 115
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="**Q.** Chariot impact hits are resolved before combat - can you add the +1 bonus to Armour save from using a mundane hand weapon and mundane shield against the impact hits from a chariot?
+
+**A.** Yes. It&apos;s still in the Close Combat phase, just before anything else happens (with the notable exception that the resolution of wounds caused by warpstone vapors from Skaven Clan Pestilens plague censers is resolved before impact hits).
+
+**S.** Warhammer Chronicles 2004 page 114 / Skaven Army Book page 32
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="**Q.** Do impact hits happen before &apos;strikes first&apos; magic weapons or abilities?
+
+**A.** Yes.
+
+**S.** Gav Thorpe - Warhammer Design Team
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="**Q.** When a friendly character in a Chariot engages in a challenge, how do we resolve it?
+
+**A.** Regardless of the challenge situation, a character in a Chariot is considered to have stepped down from the Chariot for a challenge and therefore does not benefit from the Chariot&apos;s enhancement to his armour save.
+
+In addition, regardless of the challenge situation, the Chariot&apos;s attacks are not lost. If the enemy character engaged in the challenge is in a unit made up of multiple models, all the chariot attacks (impact hits, crew, and beasts) strike the enemy unit. The enemy character can only attack the friendly character per the rules for challenges, and the enemy unit can attack the friendly Chariot.
+
+If the enemy character is a single model the friendly Chariot can attack the enemy character as if the Chariot was in the challenge, with one exception: when the enemy character is riding a monster, impact hits are applied against the monster, not the rider. In this situation the enemy character (and his monster) can strike either the friendly character or the friendly Chariot.
+
+Also, remember that creatures pulling the Chariot can only attack enemy directly in front of them.
+
+**S.** Rulebook page 128
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="**Q.** What exactly is meant by &quot;creatures pulling the Chariot can only attack enemy directly in front of them&quot;?
+
+**A.** This means that creatures pulling the Chariot can only attack enemy models in their front zone. This includes enemy models in corner to corner contact in their front zone. The creatures may not attack enemy models in their flank (or rear) zones due to the restrictions imposed by harness and reins.
+
+**S.** Rulebook page 128 / Direwolf FAQ Council Interpretation
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="**Q.** If a character is engaged in a challenge where he is considered to have stepped down from his Chariot, and his Chariot is destroyed during the combat, does the character still suffer the S5 hit?
+
+**A.** No. The S5 hit only applies to situations where the character is considered to be in the chariot at the time the chariot is destroyed. As the character has lost his armour save bonus due to stepping down from the chariot and is considered to be fighting on foot at the time, applying the S5 hit for the character being thrown from the chariot does not appear appropriate in this circumstance.
+
+**S.** Rulebook page 127 / Direwolf FAQ Council Interpretation
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="**Q.** If a Chariot begins a turn stuck in difficult terrain (e.g. from pursuit or overrun during the previous close combat phase, new woods from the Acorn of Ages, etc.) can the Chariot move (or charge), or is it now stuck for the remainder of the game?
+
+**A.** Strictly by the rules, unless the Chariot is compelled by psychology (e.g. frenzy, failed panic test, etc.) to move, then it is stuck for the remainder of the game, per the rule that Chariots cannot voluntarily move over obstacles or difficult terrain. However, it is the opinion of the Direwolf FAQ Council that this situation was not thought of during the writing of the text, and recommends that in this situation the owning player be allowed to move (or charge) out of the difficult terrain (provided the Chariot survives the additional D6 S6 hits it will immediately take for moving through difficult terrain again).
+
+**S.** Rulebook page 127 / Direwolf FAQ Council Interpretation
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="**Q.** If a Chariot that is frenzied or otherwise compelled to charge an enemy unit in difficult terrain is destroyed from the D6 S6 hits, and the enemy unit is within 2&quot; of the edge of the difficult terrain, can a surviving character use the 2&quot; placement move for being thrown from the Chariot to complete the charge?
+
+**A.** Yes, the rules state that you can place the character anywhere within 2&quot; of the destroyed Chariot, and there was a legal charge declared against that enemy unit. The owning player could not place the character into combat with a unit within 2&quot; that the charge was not declared against.
+
+**S.** Rulebook page 127 / Direwolf FAQ Council Interpretation
+" field="description" join="
+
+### FAQ (GW)
+">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </rule>
     <rule name="Magical attacks" id="08b6-0c27-dc2a-95fa" hidden="false" publicationId="315e-e3c4-08af-fd51">
       <description>The unit attacks are considered magical.</description>
