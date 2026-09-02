@@ -16515,6 +16515,375 @@ A unit made Immune to Psychology does not benefit from the Banner of Sigismund. 
 The Norn Consensus only clarifies that this official ruling should not be extended to cancel *Stubborn*, *Frenzy*, *Hatred*, *Stupidity* or similar rules already possessed by a model or unit as native rules or permanent non-magic-item army-list upgrades.
 **Source:** `[Warhammer Chronicles 2004 page 116 / Direwolf FAQ Council Interpretation / The Norn Consensus Historical Precedent]`</description>
             </rule>
+          <rule name="Core Mechanics FAQ: Units" id="c1a2-b3c4-d5e6-f701" hidden="false">
+            <description># Core Mechanics FAQ: Units
+
+Generic Units questions with no single addressable rule target.
+
+
+**Q:** Where can I find the corrected Unit Strength table which replaced the table on page 41 of the Rulebook?
+**Ruling:** In Warhammer Chronicles 2004.
+**Source:** `[Warhammer Chronicles 2004 page 114]`
+
+
+**Q:** How does the sole remaining model of a formerly ranked unit move? For example, if a unit of Empire handgunners is reduced to 1 model, how does the sole remaining model move? Does he still have to pay to wheel, etc.? Does he still cause an enemy unit to form up on him? Or does he follow the Single Models Movement Chart?
+**Ruling:** He moves like a single model on foot - freely, like a character on foot.
+**Source:** `[Gav Thorpe - Warhammer Design Team]`
+
+
+**Q:** When is Cavalry Not Cavalry? The rule that models on a 25mm x 50mm base are classed as cavalry has thrown up points regarding beasts such as Chaos Hounds/Dire Wolves and creatures like Bull Centaurs.
+**Ruling:** All models on a 25mm x 50mm base have a Unit Strength of 2. Models on a 25mm x 50mm base which consist of a rider on a steed with a single Wound are classed as cavalry and follow all the rules as such. Models on a 25mm x 50mm base which consist of only one creature (such as a Bull Centaur) are classed as cavalry with these exceptions: they do not gain a +1 Armour save, they may benefit from using two hand weapons or a hand weapon and shield as if on foot, and they use the cavalry rules for spears.
+**Source:** `[Warhammer Chronicles 2004 page 112 / Beasts of Chaos Army Book page 24]`
+
+
+**Q:** Do units which are bought with the same Troop choice have to be deployed together?
+**Ruling:** Unless specifically noted otherwise (e.g. war machines, Empire Detachments, Skaven Weapons Teams) separate units are always deployed separately.
+**Source:** `[Warhammer Chronicles 2004 page 112]`
+
+
+**Q:** Can two characters join each other, thus forming a unit? What if they are mounted on chariots or monsters?
+**Ruling:** Characters may form a unit with each other only if they are on foot or a cavalry mount. Characters mounted on larger creatures and chariots may not form units at all. A character on a flying monster may not join a unit of flyers, as described in the rules for flyers.
+**Source:** `[Warhammer Chronicles 2004 page 112]`
+
+
+**Q:** Can a hero mounted on a Great Eagle join with another single Great Eagle (purchased from the special or rare slots) to form a single US7 unit capable of taking out ranks?
+**Ruling:** No. A character on a flying monster cannot join a unit of flyers or another flying monster.
+**Source:** `[Gav Thorpe - Warhammer Design Team]`
+
+
+**Q:** Can single non-character monsters and creatures, such as Giants or Spawn of Chaos, join each other, thus forming a unit?
+**Ruling:** No. You cannot form a unit from two Giants, for example, or three Chaos Spawn.
+**Source:** `[Warhammer Chronicles 2004 page 112 / Gav Thorpe - Warhammer Design Team]`
+
+
+**Q:** Can a character join a non-character monster or creature, thus forming a unit? For example, could a Goblin Big Boss mounted on a wolf join a Giant and form a unit?
+**Ruling:** Yes (excluding flying monsters).
+**Source:** `[Gav Thorpe - Warhammer Design Team]`</description>
+          </rule>
+          <rule name="Core Mechanics FAQ: Movement" id="d2b3-c4d5-e6f7-0812" hidden="false">
+            <description># Core Mechanics FAQ: Movement
+
+Generic Movement/Charging questions with no single addressable rule target.
+
+
+**Q:** Friendly unit A is engaged in combat with enemy unit B from a previous turn. Friendly unit C, in unit B&apos;s front zone, wants to charge into the combat but the entire frontage of B has already been taken up by A. Is C allowed to charge the flank of B?
+**Ruling:** No. The rules clearly state that to charge in the flank/rear, the majority of the charging unit must be in that zone, and there are no exceptions - you should have to positively move the unit into position rather than simply fill up the front with other stuff.
+**Source:** `[Gav Thorpe - Warhammer Design Team / Rulebook page 46]`
+
+
+**Q:** Can a unit redirect a charge against an enemy unit that it could have originally charged?
+**Ruling:** No. You can only redirect a charge against a unit if you could not have declared a charge against them normally, but can now do so due to the enemy fleeing.
+**Source:** `[Warhammer Chronicles 2004 page 112]`
+
+
+**Q:** If an enemy unit flees and I redirect my charge against a newly revealed enemy unit, can I both run down the fleeing unit and charge the newly revealed unit, provided I have enough movement for both?
+**Ruling:** No. You do not declare whether you are redirecting until after the fleeing unit has completed its movement, at which point you must choose one or the other.
+**Source:** `[Rulebook page 53 / Warhammer Chronicles 2004 page 112 / Direwolf FAQ Council Interpretation]`
+
+
+**Q:** How do you determine if a defending unit is ineligible to perform a stand and shoot reaction?
+**Ruling:** Calculate the actual charge movement expended (wheels, difficult terrain, etc.) by the charging unit(s). If one or more charging units can expend half or less of its charge movement to complete the charge, the defending unit may not stand and shoot.
+**Source:** `[Rulebook pages 45, 46, 61 / Anthony Reynolds - Warhammer Design Team (Online Q&amp;A on the Games Workshop Warhammer Forum) / Direwolf FAQ Council Interpretation]`
+
+
+**Q:** If a unit fails a charge against a defending unit that chose stand and shoot, does the defender still get to stand and shoot?
+**Ruling:** Yes, as long as the failed charge brings the charging unit into range of the defender&apos;s missile weapons.
+**Source:** `[Gav Thorpe - Warhammer Design Team / Direwolf FAQ Council Interpretation]`
+
+
+**Q:** If a character joins a war machine and has a missile weapon, could he stand &amp; fire with that weapon?
+**Ruling:** Unless specifically acting as crew, a character who joins a war machine unit is not considered crew and so may stand &amp; shoot.
+**Source:** `[Warhammer Chronicles 2004 page 114]`
+
+
+**Q:** What happens when the monstrous mount of a rider is killed by a stand and shoot reaction prior to / during the mount&apos;s charge move? Does the rider continue to attempt the charge?
+**Ruling:** If the stand and shoot is resolved before the charger moves, the rider is on foot before the model starts moving and attempts to complete the charge using his own charge move. If resolved after the charger has started moving (which only happens if it started out of range), the charge fails automatically at that point.
+**Source:** `[Rulebook pages 52, 53 / Direwolf FAQ Council Interpretation]`
+
+
+**Q:** What happens when the chariot a character is riding is destroyed by a stand and shoot reaction prior to / during its charge move? Does the character continue to attempt the charge?
+**Ruling:** If resolved before the chariot moves, the character is placed anywhere within 2&quot; of the destroyed chariot and attempts to complete the charge using his own charge move. If resolved after the chariot has started moving, the charge fails automatically and the character is placed anywhere within 2&quot; of the destroyed chariot.
+**Source:** `[Rulebook pages 52, 53, 127 / Direwolf FAQ Council Interpretation]`
+
+
+**Q:** If a character is the only model left in a unit that flees, and the unit was below 25% of its original size, can the character still rally?
+**Ruling:** If the character is the only one left, the unit has been destroyed and the character is no longer part of it. Since the character is above 25% of their own starting size, they will always be able to rally.
+**Source:** `[July 2002 Q&amp;A Update on the Warhammer Chronicles website]`
+
+
+**Q:** When a unit with random compulsory movement (e.g. Chaos Spawn, Snotling Pumpwagon) pursues another unit off the board and returns in its next compulsory move phase, can that move bring it into contact with the enemy?
+**Ruling:** Yes. Units that use random compulsory movement do not declare charges, so they are not restricted from coming into contact with an enemy unit on the turn they return to the table.
+**Source:** `[Rulebook page 76]`
+
+
+**Q:** In the Appendix Six guidance on charges involving multiple charging units (dividing the target&apos;s frontage evenly), does this still apply when one or more of the charging units is a single model (chariot, giant, lone character, etc.)?
+**Ruling:** Yes, the rule about splitting the target unit&apos;s frontage still applies, with the maximize-chargers rule applied to the portion of the target unit each charging unit has been allocated.
+**Source:** `[Rulebook page 268 / Direwolf FAQ Council Interpretation]`
+
+
+**Q:** During the move chargers step, if a charging unit catches a fleeing enemy unit and its full charge move would carry it into contact with an additional enemy unit, does this count as pursuit into fresh enemy, or must it stop 1&quot; away?
+**Ruling:** The rules do not allow contact with an enemy unit during Move Chargers unless a valid charge/redirected charge was declared against it, or it was &apos;drawn-in&apos; per Appendix Six&apos;s multiple-targets rules. So the charging unit is forced to stop 1&quot; away from the additional enemy unit.
+**Source:** `[Rulebook pages 55, 267 / Direwolf FAQ Council Interpretation]`
+
+
+**Q:** If an unengaged unit classified as &apos;Moves as a Monster&apos; is charged in the Flank or Rear, does it have the ability to turn and face the chargers?
+**Ruling:** No. Anything larger than a man-sized character on foot now has a clear front/flank/rear for combat purposes, and the opponent gets the flank/rear bonuses if charged there.
+**Source:** `[Gav Thorpe - Warhammer Design Team / Warhammer Chronicles 2004 page 114]`
+
+
+**Q:** If unit A wants to charge unit B but a patch of difficult ground is in the way (going straight through it fails the charge, but wheeling around it brings fewer models into contact), can unit A wheel around the difficult terrain to make the charge?
+**Ruling:** Yes. The first rule of charging is to bring as many models from the charging unit into combat as possible - as &apos;fewer&apos; is greater than &apos;zero&apos;, unit A must perform the wheel and complete the charge.
+**Source:** `[Rulebook page 52 / Direwolf FAQ Council Interpretation]`
+
+
+**Q:** Single Models that move &apos;As Monsters&apos; or &apos;As Skirmishers&apos; can pivot on the spot with no penalty instead of wheeling - does this mean they can zig-zag or change direction several times while charging?
+**Ruling:** No. When charging, single models move exactly like other units except that instead of the single wheel allowed, the model may be rotated once in place for no movement penalty - they can only change direction once when charging.
+**Source:** `[Warhammer Chronicles 2004 page 114 / Direwolf FAQ Council Interpretation]`
+
+
+**Q:** What happens when the charging rules would force a charging unit to move off the board (e.g. running down a fleeing unit at the table edge)?
+**Ruling:** Simply move the chargers off the table and then allow them to return next turn, in the Remaining Moves phase, as normal.
+**Source:** `[Gav Thorpe - Warhammer Design Team]`
+
+
+**Q:** Can you change the position of a character within a ranked up unit in the movement phase?
+**Ruling:** As long as you&apos;re not charging, yes - though he must still remain in the front rank if possible (except for Skaven).
+**Source:** `[Anthony Reynolds - Warhammer Design Team (Online Q&amp;A on the Games Workshop Warhammer Forum)]`
+
+
+**Q:** When a unit that pursued another unit off the board returns, do you place the entire unit back on the table and then move it, or expend movement to move it back on?
+**Ruling:** The unit has to physically move onto the table, as if its front rank started the phase touching the outside edge of the board.
+**Source:** `[Gav Thorpe - Warhammer Design Team]`
+
+
+**Q:** If a unit has pursued another unit off the board, when in its following movement phase does it arrive back on the battlefield?
+**Ruling:** It arrives back when it would normally move - most units in the Remaining Moves phase (as they cannot charge); units like Spawn of Chaos arrive in the Compulsory Moves phase.
+**Source:** `[Anthony Reynolds - Warhammer Design Team (Online Q&amp;A on the Games Workshop Warhammer Forum)]`
+
+
+**Q:** A unit that pursued another unit off the board is said to arrive back in the same place it left. What happens if your opponent has placed a unit there?
+**Ruling:** Move the unit back on as close to the position it left as possible.
+**Source:** `[Anthony Reynolds - Warhammer Design Team (Online Q&amp;A on the Games Workshop Warhammer Forum)]`
+
+
+**Q:** If a ranked unit doesn&apos;t have enough movement to get its entire formation back onto the table (e.g. Dwarfs in difficult terrain), should you just &apos;fudge&apos; it and let them come back on?
+**Ruling:** Correct - this also happens to deep infantry units with enemy units close by that stop marching.
+**Source:** `[Gav Thorpe - Warhammer Design Team]`
+
+
+**Q:** If at the start of a turn, enemy units are within 8&quot; of the position where a unit must re-enter the table, does it prevent the re-entering unit from marching?
+**Ruling:** Yes.
+**Source:** `[Gav Thorpe - Warhammer Design Team]`</description>
+          </rule>
+          <rule name="Core Mechanics FAQ: Close Combat" id="e3c4-d5e6-f708-1923" hidden="false">
+            <description># Core Mechanics FAQ: Close Combat
+
+Generic Close Combat questions with no single addressable rule target.
+
+
+**Q:** When exactly do you calculate the various Combat Resolution modifiers?
+**Ruling:** The only Combat Resolution modifier calculated at the beginning of each round of combat is rank bonus. All other modifiers are calculated at the end of each round of combat.
+**Source:** `[Gav Thorpe - Warhammer Design Team]`
+
+
+**Q:** If a unit charges into the rear/flank of an enemy but is reduced below Unit Strength 5 during the ensuing Close Combat phase, does it still cancel ranks, and can it still gain the flank/rear bonus?
+**Ruling:** Rank bonus is claimed and calculated at the start of the Close Combat phase, so it is nullified this turn. The flank/rear bonus is calculated at the end of the phase, so the attacking unit can&apos;t claim it since it has been reduced below Unit Strength 5.
+**Source:** `[Warhammer Chronicles 2004 page 112]`
+
+
+**Q:** Is the combat results example in Fig. 3 on page 72 of the Rulebook incorrect?
+**Ruling:** Yes, the example is wrong because the Empire should no longer gain a flank bonus.
+**Source:** `[Gav Thorpe - Warhammer Design Team]`
+
+
+**Q:** Can a unit engaged in the flank/rear turn to face its attackers in subsequent rounds of combat?
+**Ruling:** No. Once your unit is hit in the flank or rear, your unit&apos;s facing is stuck until the combat is over.
+**Source:** `[Rulebook page 76]`
+
+
+**Q:** Who strikes first when two units are charging each other, for example if you pursue into fresh combat and then in the enemy&apos;s turn the pursuing unit is charged?
+**Ruling:** Chargers strike in the order in which they charged. Models may not strike against an enemy that has charged them until that charging unit&apos;s attacks are resolved. A unit that has been charged and is not charging itself always strikes after all charging units. Empire Detachments always strike first when specifically counter-charging.
+**Source:** `[Warhammer Chronicles 2004 page 16]`
+
+
+**Q:** Can a unit consisting of one rank &apos;lap around&apos; the enemy with unengaged models if it wins a round of close combat? Can a ranked unit &apos;lap around&apos; to its flank?
+**Ruling:** Yes to both.
+**Source:** `[Rulebook page 77 / US White Dwarf #283 pages 22-25 / UK White Dwarf #283 pages 74-77]`
+
+
+**Q:** If a unit engaged in close combat has lapped around its enemy, where are its casualties removed from?
+**Ruling:** From the back of the unit, not from those models lapping around - unless there are no models in the back rank.
+**Source:** `[Anthony Reynolds - Warhammer Design Team (Online Q&amp;A on the Games Workshop Warhammer Forum)]`
+
+
+**Q:** Does a unit that has lapped around the enemy need to have models with a Unit Strength of 5+ lapped around in order to earn the flank or rear bonus?
+**Ruling:** No. You can lap around with a single Unit Strength 1 model to the flank (or rear) and still earn the bonus - it is the Unit Strength of the entire unit that must be 5+, not the models lapping around.
+**Source:** `[Rulebook pages 77, 78]`
+
+
+**Q:** If my unit is engaged to the front of an enemy unit, can I negate the enemy unit&apos;s rank bonus by lapping around?
+**Ruling:** No. Lapping around does not negate the enemy&apos;s rank bonus.
+**Source:** `[Rulebook pages 77, 78]`
+
+
+**Q:** If a unit chooses to expand frontage during combat, is this a true formation change, or does the unit revert to its pre-combat formation at the end of the combat?
+**Ruling:** This is considered to be a true formation change.
+**Source:** `[Rulebook page 77 / Gav Thorpe - Warhammer Design Team]`
+
+
+**Q:** If the Initiative value is equal between two models and the roll-off is also a tie, do you actually strike simultaneously?
+**Ruling:** No, roll off until you have a winner.
+**Source:** `[Warhammer Chronicles 2004 page 112]`
+
+
+**Q:** Two units are attacking one enemy unit, one from the front and one on the flank. Casualty removal leaves the enemy unit with models only in contact with the &apos;front&apos; unit. Has this legally brought my flanking unit out of combat, allowing an overrun move?
+**Ruling:** No, there are still models remaining in the unit it is engaged with. Slide the flanking unit across slightly so it is in contact with at least one enemy model.
+**Source:** `[Warhammer Chronicles 2004 page 112]`
+
+
+**Q:** Two units are attacking two enemy units in a single combat. One of my units wipes out the only enemy unit it was in base contact with. Does my unit still count as being in combat, or is it free to act independently in subsequent turns?
+**Ruling:** All units in a combat are subject to combat resolution and resulting Break tests. However, if a unit is no longer in contact with the enemy due to elimination of the only enemy unit it was in contact with, it does not count as being in combat in subsequent turns and can charge, shoot, be shot at, etc.
+**Source:** `[US White Dwarf #283 page 24 / UK White Dwarf #283 page 76]`
+
+
+**Q:** If one side is completely wiped out in a combat, do you still have to determine the combat&apos;s result?
+**Ruling:** No! If one side is completely wiped out, the other side has won with no need for a Break Test.
+**Source:** `[Warhammer Chronicles 2004 page 121]`
+
+
+**Q:** How do you work out close combat attacks that do multiple wounds against units of creatures with multiple Wounds (such as Trolls, Ogres, or Fellbats)?
+**Ruling:** Roll to hit, roll to wound, make saves as normal, then roll for each wounding hit to see how many actual wounds are inflicted - the maximum per hit is the number of Wounds the enemy model has. Add up all wounds and remove whole models as normal.
+**Source:** `[Warhammer Chronicles 2004 page 112]`
+
+
+**Q:** How do you kill a champion in close combat?
+**Ruling:** The enemy must generally specifically allocate attacks at the champion. If no attacks are allocated at the champion, the champion will still be killed if enough wounds to kill all rank and file members of the unit are inflicted - champions are still considered rank and file members of the unit.
+**Source:** `[Rulebook page 109 / Warhammer Chronicles 2004 page 113]`
+
+
+**Q:** If you didn&apos;t allocate any attacks at an enemy champion but cause enough wounds to kill the enemy&apos;s front rank, do you remove the enemy champion?
+**Ruling:** No.
+**Source:** `[Anthony Reynolds - Warhammer Design Team (Online Q&amp;A on the Games Workshop Warhammer Forum)]`
+
+
+**Q:** If attacks allocated on the champion cause more unsaved wounds than the champion has on his profile, are the excess unsaved wounds lost?
+**Ruling:** In a non-challenge situation the excess unsaved wounds are lost - they no longer carry over onto the rank &amp; file. In a challenge situation, the enemy can score up to +5 overkill points over the champion&apos;s wounds characteristic.
+**Source:** `[Rulebook pages 99, 109 / Warhammer Chronicles 2004 page 121]`
+
+
+**Q:** Can Champions be moved into a fighting position in the same way a character can (Moving Characters Within Engaged Units, p.97)?
+**Ruling:** No, they cannot. Champions remain part of the command group at the center of the front rank of their unit.
+**Source:** `[Warhammer Chronicles 2004 page 113]`
+
+
+**Q:** If attacks allocated on the rank and file cause more unsaved wounds than there are rank and file members, do the excess wounds carry over onto a character attached to the unit?
+**Ruling:** No. Excess wounds caused against ordinary troops are not carried over onto enemy characters fighting alongside them.
+**Source:** `[Rulebook page 98 / Direwolf FAQ Council Interpretation]`
+
+
+**Q:** Does a standard bearer / battle standard bearer have to be alive at the end of the combat round to contribute the +1 combat resolution and/or combat resolution effects of a magic banner?
+**Ruling:** Yes, including banners that increase or negate rank bonuses.
+**Source:** `[Rulebook pages 71, 78 / Warhammer Chronicles 2004 page 120]`
+
+
+**Q:** If a unit has only its command group left and removes the standard bearer, does that deny the enemy from collecting victory points for the standard?
+**Ruling:** If the standard bearer is removed as a casualty, the enemy only gets the victory points for capturing it if the unit is destroyed completely in the same round of combat, or the unit flees and is pursued in that same round.
+**Source:** `[Anthony Reynolds - Warhammer Design Team (Online Q&amp;A on the Games Workshop Warhammer Forum)]`
+
+
+**Q:** Have there been any articles written providing additional guidance on moving fleeing and pursuing units?
+**Ruling:** Yes, see the Warhammer Annual 2002.
+**Source:** `[Warhammer Annual 2002 pages 10-12]`
+
+
+**Q:** What happens when a unit making a pursuit move hits a unit which is already fleeing from another combat?
+**Ruling:** If a pursuing unit would move into a fleeing unit, that unit makes another flee move and will either get away or be wiped out if it can&apos;t outdistance its foe.
+**Source:** `[Rulebook page 75 / Warhammer Annual 2002 page 16]`
+
+
+**Q:** If you break two enemy units, you can only pursue one of them. What if your pursuit move brings you into contact with the fleeing unit you didn&apos;t pursue?
+**Ruling:** The pursuing unit will go around that unit if at all possible, with some &apos;fudging&apos; allowed. If utterly impossible, halt the pursuers 1&quot; away (they still catch and kill the other unit if they rolled higher than its flee roll, regardless of distance moved).
+**Source:** `[Anthony Reynolds - Warhammer Design Team (Online Q&amp;A on the Games Workshop Warhammer Forum)]`
+
+
+**Q:** Can a unit make an overrun move if it is charged and wipes out the chargers?
+**Ruling:** Yes, any unit that wipes out its enemy in the first round of combat may make an overrun move.
+**Source:** `[July 2002 Q&amp;A Update on the Warhammer Chronicles website]`
+
+
+**Q:** What happens when a unit making an overrun move hits a unit which is already fleeing?
+**Ruling:** If a unit performing an overrun would move into a fleeing unit, that unit makes another flee move and will either get away or be wiped out if it can&apos;t outdistance its foe.
+**Source:** `[Rulebook page 75 / Warhammer Annual 2002 page 16]`</description>
+          </rule>
+          <rule name="Core Mechanics FAQ: Characters, Challenges, Generals &amp; Battle Standards" id="f4d5-e6f7-0819-2a34" hidden="false">
+            <description># Core Mechanics FAQ: Characters, Challenges, Generals &amp; Battle Standards
+
+Generic Character/Challenge/General/Battle-Standard questions with no single addressable rule target.
+
+
+**Q:** How do characters interact with units of differently sized models?
+**Ruling:** Unless otherwise forbidden, a character can always join a unit regardless of their mount. A unit always moves at the speed of its slowest model. A character only gains &apos;Look out, Sir!&apos; (and the same targeting protection) if part of a unit of similar sized models - a character on a monster base (40mm+) counts as bigger than normal cavalry. A character in a chariot cannot join a unit unless it is a chariot unit. A character takes up the space of an equivalent number of rank and file models as their base fills.
+**Source:** `[Warhammer Chronicles 2004 page 113]`
+
+
+**Q:** There are shooting limitations at characters near units. Can they be freely charged, or do the same limitations apply?
+**Ruling:** They can be freely charged.
+**Source:** `[Warhammer Chronicles 2004 page 113]`
+
+
+**Q:** If two characters are with a unit that captures an enemy standard, what happens to the captured banner if they are the only survivors?
+**Ruling:** They still have it (and still count as a unit of two models). If they split up, you can choose which character retains the captured standard.
+**Source:** `[Warhammer Chronicles 2004 page 113]`
+
+
+**Q:** Do Champions count as rank and file in counting the five models for the &apos;Look Out, Sir!&apos; and/or &apos;Shooting at Independent Characters&apos; rules?
+**Ruling:** Yes. Except where noted, a Champion is treated as a rank and file model.
+**Source:** `[Warhammer Chronicles 2004 page 113]`
+
+
+**Q:** If a character is in a unit with only one rank, can he refuse a challenge, as there are no rear ranks for him to be moved to?
+**Ruling:** If there is space in the single rank for him to be positioned where he cannot fight, he may refuse the challenge. If the entire rank is engaged, he cannot avoid the challenge.
+**Source:** `[Warhammer Chronicles 2004 page 113]`
+
+
+**Q:** If a combat involves a single character, can the owning player ever refuse a challenge? What if there are other friendly units and characters involved in the same combat?
+**Ruling:** If there is a lone character involved in a combat (even a multiple combat where more characters are involved), the owning player&apos;s side can never refuse a challenge.
+**Source:** `[Anthony Reynolds - Warhammer Design Team (Online Q&amp;A on the Games Workshop Warhammer Forum)]`
+
+
+**Q:** Can you use the multiplying effect of multiple wound weapons to rack up overkill on a one-wound champion (or character starting the combat round with one wound) in a challenge?
+**Ruling:** Yes - number of Wounds doesn&apos;t matter, because a character reduced to one wound is the same as a champion starting with one wound for purposes of multiple wound weapons in a challenge. Each unsaved wound is multiplied when attacks are allocated, so you can score the full overkill even though the target has only one wound.
+**Source:** `[Gav Thorpe - Warhammer Design Team / Annual 2002 page 15]`
+
+
+**Q:** How do weapons/items that affect all models in base to base contact work when held by a character (or champion) in a challenge?
+**Ruling:** Models engaged in the challenge are considered to be in single combat and may not attack or be attacked by models outside the challenge - the weapon/item only affects the opposing model in the challenge (and the bearer if it would normally affect him).
+**Source:** `[Direwolf FAQ Council Interpretation / Rulebook page 99 / Tomb Kings Army Book page 36 / Storm of Chaos Slayer Army List]`
+
+
+**Q:** Can a single model (e.g. Lord on a Dragon, Greater Daemon, etc.) engaged in an ongoing challenge be charged by another enemy unit?
+**Ruling:** Yes. A single model being engaged in a challenge does not prevent an additional enemy unit charging it, to add ranks, Unit Strength, the flanking bonus, etc. to the overall combat result.
+**Source:** `[Rulebook page 99 / Direwolf FAQ Council Interpretation]`
+
+
+**Q:** A Battle Standard can only be captured if the Battle Standard Bearer is killed in close combat - will he still lose the standard if broken in combat?
+**Ruling:** A Battle Standard will not automatically drop the banner if broken in combat. However, if he is broken and subsequently run down, it is captured.
+**Source:** `[Anthony Reynolds - Warhammer Design Team (Online Q&amp;A on the Games Workshop Warhammer Forum)]`
+
+
+**Q:** Can a Battle Standard Bearer take any standard, even those restricted to specific units? For example, can an Orc Battle Standard take a &apos;goblin only&apos; banner, or can an Icon Bearer take the Icon of Rakaph (Tomb Guard/skeleton warriors only)?
+**Ruling:** The restrictions apply to the bearer - an Orc Battle Standard cannot carry a Goblin only banner. However, an Icon Bearer can carry the Icon of Rakaph as he is effectively a Tomb Guard character.
+**Source:** `[Anthony Reynolds - Warhammer Design Team (Online Q&amp;A on the Games Workshop Warhammer Forum)]`
+
+
+**Q:** Can units use the Battle Standard&apos;s re-roll if the Battle Standard itself is fleeing, but within 12&quot;?
+**Ruling:** No.
+**Source:** `[Warhammer Chronicles 2004 page 113]`</description>
+          </rule>
+
+
+
+
           </rules>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="893d-13c6-618d-1726" includeChildSelections="false"/>
