@@ -13888,22 +13888,23 @@ See [PDF, p.X]" field="error">
   <sharedRules>
     <rule id="23f9-c5d1-7c15-0c4c" name="Animosity" publicationId="7dda-637b-31ad-951c" page="8" hidden="false">
       <description>Subject to animosity</description>
-      <modifiers>
-        <modifier type="append" value="**Q.** When an Animosity result of &quot;We&apos;ll Show &apos;em&quot; is generated does the Greenskin unit always have to move towards an enemy unit it has an existing line of sight to?
+    </rule>
+      <rule name="FAQ (NornConsensus)" id="378b-d7a4-6c99-49b6" hidden="false">
+        <description>**Q.** When an Animosity result of &quot;We&apos;ll Show &apos;em&quot; is generated does the Greenskin unit always have to move towards an enemy unit it has an existing line of sight to?
 
 **A.** No. The unit immediately makes a full normal move (not a march move) towards the nearest enemy unit, regardless of whether or not the Greenskin unit had line of sight to the enemy unit when the result was generated. While moving towards the nearest enemy unit, the Greenskin unit deducts the usual penalties for terrain, turning, etc.
 
 **S.** Direwolf FAQ Council Interpretation / Orcs &amp; Goblins Army Book page 9
-" field="description" join="
+</description>
+        <modifiers>
+          <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+              </conditions>
+          </modifier>
+        </modifiers>
+      </rule>
 
-### FAQ (NornConsensus)
-">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-    </rule>
     <rule id="f457-297e-425b-75d4" name="Ignore Goblin Panic" publicationId="7dda-637b-31ad-951c" page="6" hidden="false">
       <description>Orcs expect the smaller greenskins to run awayy and it doesn&apos;t really surprise them when they do. The sight of fleeing Goblins and Snotlings simply reminds the bigger and bolder Orcs why they are best. Consequently when a Goblin unit. Snotling Swarm or Snotling Pump Wagon is destroyed, breaks or flees pat. Orc units do not need to test for panic. See the Viarhammer rulebook. pages 80-81</description>
     </rule>
@@ -13921,101 +13922,110 @@ Note that the bonus armour save for using a hand weapon and shield does not appl
     </rule>
     <rule id="b9cb-9cdd-44c3-ba52" name="Fear Elves" publicationId="7dda-637b-31ad-951c" page="6" hidden="false">
       <description>Fear Elves: All Goblins dislike fighting Elves of any kind because they &apos;stink funny and because their haughty manner unnerves the little greenskins. A unit of Goblin troops therefore fears any unit of Elves that it does not outnumber by at least two to one. Count any Orcs. Squigs or anything else in the unit as well as the Gobbos. See pages 10-41 of the Warhammer rulebook for the rules on Unit Strength. The rules  for fear an on page 81 of the Warhammer rulebook.</description>
-          <modifiers>
-        <modifier type="append" value="**Q.** Goblin Wolf Chariots, Goblin Rock Lobbers, Goblin Spear Chukkas, and Goblin Doom Diver Catapults do not include &quot;Fear Elves&quot; in the Special Rules section of thier Unit Entry boxes. Was this intentional or an oversight?
+    </rule>
+      <rule name="FAQ (GW)" id="30de-bccd-5d14-4e18" hidden="false">
+        <description>**Q.** Goblin Wolf Chariots, Goblin Rock Lobbers, Goblin Spear Chukkas, and Goblin Doom Diver Catapults do not include &quot;Fear Elves&quot; in the Special Rules section of thier Unit Entry boxes. Was this intentional or an oversight?
 
 **A.** It was intentional. The Orcs &amp; Goblins Army Book states &quot;Note: The Fear Elves, Animosity and Hatred rules described above only apply to goblin infantry or cavalry units, and characters. They do not apply to war machines, Chariots, Fanatics or Squigs who are just too crazed or brainless to care. Only big mobs of Goblins are affected by these wayward tendencies as they goad each other into acts of cowardice, betrayal and petty vindictiveness.&quot;
 
 **S.** Orcs &amp; Goblins Army Book page 13
-" field="description" join="
-
-### FAQ (GW)
-">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-          </conditions>
-        </modifier>
-        <modifier type="append" value="**Q.** Does the exemption regarding &quot;Fear Elves&quot; still apply in situations where a Goblin character is riding in a chariot or has joined a war machine?
+</description>
+        <modifiers>
+          <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+              </conditions>
+          </modifier>
+        </modifiers>
+      </rule>
+      <rule name="FAQ (GW)" id="dc56-2321-3cdc-46e1" hidden="false">
+        <description>**Q.** Does the exemption regarding &quot;Fear Elves&quot; still apply in situations where a Goblin character is riding in a chariot or has joined a war machine?
 
 **A.** Yes it does. The Rulebook states &quot;If a character is liable to a Terror or Fear test which doesn&apos;t apply to the rest of the unit, he can ignore any tests.&quot;
 
 **S.** Rulebook page 100
-" field="description" join="
+</description>
+        <modifiers>
+          <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+              </conditions>
+          </modifier>
+        </modifiers>
+      </rule>
 
-### FAQ (GW)
-">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-    </rule>
     <rule id="01cc-ed1b-58ba-0cd6" name="Frenzy: Savage Orcs " publicationId="7dda-637b-31ad-951c" page="6" hidden="false">
       <description>Frenzy: Savage Orcs are wild and ferocious fighters and are therefore affected by the rules for frenzy. See page 84 of the Warhammer rulebook.</description>
     </rule>
     <rule id="e8d6-cd4a-7353-54a7" name="Warpaint" hidden="false">
       <description>Warpaint: Some Savage Orcs adorn themselves with warpaint, tattoos and charms in the belief they will attract the favour of Gork and Mork. Such is a Savage Orc&apos;s faith in his warpaint that he gets a 6+ Ward save. A Savage Ore with warpaint may not wear armour, though he may carry a shield.</description>
-          <modifiers>
-        <modifier type="append" value="**Q.** Can Savage Orc Characters (shield option only) take magic armour, or magic shields only?
+    </rule>
+      <rule name="FAQ (GW)" id="a261-c444-0ffa-4a73" hidden="false">
+        <description>**Q.** Can Savage Orc Characters (shield option only) take magic armour, or magic shields only?
 
 **A.** Magic Shields only, as anything else in Magic Armour counts as armour, which they cannot use!
 
 **S.** Warhammer Chronicles 2004 page 116
-" field="description" join="
+</description>
+        <modifiers>
+          <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+              </conditions>
+          </modifier>
+        </modifiers>
+      </rule>
 
-### FAQ (GW)
-">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-    </rule>
     <rule id="4b7d-a55f-2761-127c" name="Big ‘Uns " hidden="false">
       <description>Big ‘Uns : The meanest and strongest Orcs in a tribe often fight together in a single mob. Sometimes they fight as Boar boyz, sometimes on foot - it depends on the tribe.
 Choose up to one unit allowed in the army to upgrade to Beatins and pay the appropriate points. This may be a unit of Orc Bon. Savage Orc Bon. Orc !kat Bos-z or Savage Orc Boar Bon. Whichever type of unit you choose to upgrade you must have at least as many normal models of that type in other units before you take the Bigtns. You may only ever have one unit of Biatins in any army. A unit of Miens may carry a masa standard wonh up to 50 points. This is in addition to any magical banners that would normally be allowed to units of that type. So, for example. if your Bigtris are Boar Boys then both they and one unit of normal Boar Bon may take a magic banner.</description>
-          <modifiers>
-        <modifier type="append" value="**Q.** If I want to field a unit of Big&apos;Uns, what does &quot;type&quot; refer to in the statement from the O&amp;G book, &quot;Whichever type of unit you choose to upgrade you must have at least as many normal models of that type&quot;?
+    </rule>
+      <rule name="FAQ (GW)" id="54e5-4c13-4f49-4c4f" hidden="false">
+        <description>**Q.** If I want to field a unit of Big&apos;Uns, what does &quot;type&quot; refer to in the statement from the O&amp;G book, &quot;Whichever type of unit you choose to upgrade you must have at least as many normal models of that type&quot;?
 
 **A.** Each of the four listed units is a distinct type: Orc Boyz, Savage Orc Boyz, Orc Boar Boyz or Savage Orc Boar Boyz. E.g., in order to field a unit of 30 Orc Boyz Big&apos;Uns, you must field at least 30 normal Orc Boyz - either 1 unit of 30, a unit of 20 and a unit of 10, etc. In order to field a unit of 10 Savage Orc Boar Boyz Big&apos;Uns, you must have at least 10 Savage Orc Boar Boyz in the army, etc.
 
 **S.** Orcs &amp; Goblins Army Book page 6
-" field="description" join="
-
-### FAQ (GW)
-">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-          </conditions>
-        </modifier>
-        <modifier type="append" value="**Q.** If I want to field a unit of Big&apos;Uns, do the regular models need to all be in a single unit?
+</description>
+        <modifiers>
+          <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+              </conditions>
+          </modifier>
+        </modifiers>
+      </rule>
+      <rule name="FAQ (GW)" id="0baa-f726-8bd2-469d" hidden="false">
+        <description>**Q.** If I want to field a unit of Big&apos;Uns, do the regular models need to all be in a single unit?
 
 **A.** No. The rule states, &quot;Whichever type of unit you choose to upgrade you must have at least as many normal models of that type in other units before you take the Big&apos;Uns.&quot; It does not state that these need to be in the same unit. Also, note that it does explicitly state that the normal models are in &quot;other units&quot; (i.e., it is plural).
 
 **S.** Orcs &amp; Goblins Army Book page 6
-" field="description" join="
-
-### FAQ (GW)
-">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-          </conditions>
-        </modifier>
-        <modifier type="append" value="**Q.** If I want to field a unit of Big&apos;Uns, do the normal models of the same type have to be armed in the same manner as the Big&apos;Un unit?
+</description>
+        <modifiers>
+          <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+              </conditions>
+          </modifier>
+        </modifiers>
+      </rule>
+      <rule name="FAQ (GW)" id="cb59-be8d-7911-4e64" hidden="false">
+        <description>**Q.** If I want to field a unit of Big&apos;Uns, do the normal models of the same type have to be armed in the same manner as the Big&apos;Un unit?
 
 **A.** No. The rule states, &quot;Whichever type of unit you choose to upgrade you must have at least as many normal models of that type in other units before you take the Big&apos;Uns.&quot; It does not state that these need to be armed in the same way.
 
 **S.** Orcs &amp; Goblins Army Book page 6
-" field="description" join="
+</description>
+        <modifiers>
+          <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+              </conditions>
+          </modifier>
+        </modifiers>
+      </rule>
 
-### FAQ (GW)
-">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-    </rule>
     <rule id="0f2a-c100-8eb9-7490" name="Quell Animosity" hidden="false">
       <description>Quell Animosity: Black Orcs do not test for Animosity. Furthermore, the stem scowls and menacing sneers of the Black Orcs are so threatening that a unit which fails an Animosity test when led by a Black Orc character, or within 6&quot; of a Black Orc character or unit, will ignore the roll and must immediately roll again. If this second roll is also failed then even the menacing presence of the Black Ores can&apos;t keep the greenskins in order, and a roll on the Animosity table is taken as usual. If the Black Orcs are fleeing then they cannot quell Animosity in other units nearby.</description>
     </rule>
@@ -14245,22 +14255,23 @@ The &apos;Itty Ring contains the &apos;Eadbutt spell described in the spells of 
     </rule>
     <rule id="0eca-6895-4217-9c4d" name="MORK&apos;S SPIRIT-TOTEM" publicationId="7dda-637b-31ad-951c" page="33" hidden="false">
       <description>The unit carrying Monk&apos;s Spirit-Intern gains Magic Resistance (1). In addition. any attempt to dispel any enemy spell that isn&apos;t cast at the unit gains + 1 to its Dispel roll. Finally, no enemy Wizard in contact with the unit carrysing Mork&apos;s Splrit•Totem can cast a spell at all – good old Mork stops &apos;em.</description>
-          <modifiers>
-        <modifier type="append" value="**Q.** If an Orc and Goblin army has both the Staff of sorcery and Mork&apos;s Spirit Totem do they get a +2 modifier to their Dispel roll (are the affects of the two magic items cumulative)?
+    </rule>
+      <rule name="FAQ (GW)" id="fe75-a378-9771-4c11" hidden="false">
+        <description>**Q.** If an Orc and Goblin army has both the Staff of sorcery and Mork&apos;s Spirit Totem do they get a +2 modifier to their Dispel roll (are the affects of the two magic items cumulative)?
 
 **A.** In this case, yes they do get +2 to dispel.
 
 **S.** warhammer Chronicles 2004 page 116
-" field="description" join="
+</description>
+        <modifiers>
+          <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+              </conditions>
+          </modifier>
+        </modifiers>
+      </rule>
 
-### FAQ (GW)
-">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-    </rule>
     <rule id="75aa-b73d-461c-cf4f" name="ROWDY GROTT&apos;S BIG RED RAGGEDY BANNER" publicationId="7dda-637b-31ad-951c" page="33" hidden="false">
       <description>Common Goblins (including characters) in a unit with Rowdy Grott&apos;s Rig Red Raggedy Banner get a + 1 Leadership bonus up to a maximum value of 9.</description>
     </rule>
@@ -14342,87 +14353,98 @@ This magic item may only be used with the army list below. Only one character i
 * Grimgor is only interested in getting the biggest, strongest, hurtiest Orcs in his army. Consequently, any number of units of Orc Boyz or Orc Boar Boyz can be upgraded to Big &apos;Uns.
 
 Note. Originally, Grimgor&apos;s bodyguards were defined as having additional hand weapons as these were the only models available. Since then the range has expanded to include Black Orcs with great weapons, so if you wish, you may arm Grimgor&apos;s bodyguard with these instead.</description>
-          <modifiers>
-        <modifier type="append" value="**Q.** Can every Orc unit be Big &apos;Uns, or should there be at least the same number of common Orcs as in the O&amp;G army list?
+    </rule>
+      <rule name="FAQ (GW)" id="03eb-a499-37ff-4095" hidden="false">
+        <description>**Q.** Can every Orc unit be Big &apos;Uns, or should there be at least the same number of common Orcs as in the O&amp;G army list?
 
 **A.** You can have as many Big &apos;Uns in the army as you want without the need to have the same number of &quot;normal&quot; Orcs. Thus, if you wanted, you could have an entire army of Big &apos;Uns!
 
 **S.** October 2004 Issue of White Dwarf Magazine (US #297 / UK #298)
-" field="description" join="
-
-### FAQ (GW)
-">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-          </conditions>
-        </modifier>
-        <modifier type="append" value="**Q.** Can every Big &apos;Un and Black Orc unit carry a magic Standard?
+</description>
+        <modifiers>
+          <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+              </conditions>
+          </modifier>
+        </modifiers>
+      </rule>
+      <rule name="FAQ (GW)" id="a276-d66d-ff97-4b35" hidden="false">
+        <description>**Q.** Can every Big &apos;Un and Black Orc unit carry a magic Standard?
 
 **A.** Any unit of Black Orcs or Big &apos;Uns can have a magic banner.
 
 **S.** October 2004 Issue of White Dwarf Magazine (US #297 / UK #298)
-" field="description" join="
-
-### FAQ (GW)
-">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-          </conditions>
-        </modifier>
-        <modifier type="append" value="**Q.** There must be &quot;more&quot; Warbosses/Bigbosses than Great Shamen/Shamen. Does this mean &quot;at least one more&quot; or &quot;at least the same number&quot;?
+</description>
+        <modifiers>
+          <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+              </conditions>
+          </modifier>
+        </modifiers>
+      </rule>
+      <rule name="FAQ (GW)" id="1222-896f-4346-4d3c" hidden="false">
+        <description>**Q.** There must be &quot;more&quot; Warbosses/Bigbosses than Great Shamen/Shamen. Does this mean &quot;at least one more&quot; or &quot;at least the same number&quot;?
 
 **A.** More means MORE! There must be MORE Warbosses and Bigbosses in total than there are Great Shamans and Shamans.
 
 **S.** October 2004 Issue of White Dwarf Magazine (US #297 / UK #298)
-" field="description" join="
-
-### FAQ (GW)
-">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-          </conditions>
-        </modifier>
-        <modifier type="append" value="**Q.** Black Orc characters only take up an extra Hero slot if they are mounted. Do they count as mounted if they are riding a Chariot?
+</description>
+        <modifiers>
+          <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+              </conditions>
+          </modifier>
+        </modifiers>
+      </rule>
+      <rule name="FAQ (GW)" id="c870-6300-3436-479d" hidden="false">
+        <description>**Q.** Black Orc characters only take up an extra Hero slot if they are mounted. Do they count as mounted if they are riding a Chariot?
 
 **A.** Yes.
 
 **S.** October 2004 Issue of White Dwarf Magazine (US #297 / UK #298)
-" field="description" join="
-
-### FAQ (GW)
-">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-          </conditions>
-        </modifier>
-        <modifier type="append" value="**Q.** How big should the Effigy of Gork be?
+</description>
+        <modifiers>
+          <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+              </conditions>
+          </modifier>
+        </modifiers>
+      </rule>
+      <rule name="FAQ (GW)" id="f4ed-8b07-e7ce-479a" hidden="false">
+        <description>**Q.** How big should the Effigy of Gork be?
 
 **A.** A movement tray (100mm x 75mm) is about the most suitable size. See the pictures on p.60 of the Storm of Chaos book for two examples of Effigies.
 
 **S.** October 2004 Issue of White Dwarf Magazine (US #297 / UK #298)
-" field="description" join="
-
-### FAQ (GW)
-">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-          </conditions>
-        </modifier>
-        <modifier type="append" value="**Q.** Can a Grimgor's 'Ardboyz army hire Dogs of War / Regiments of Renown units?
+</description>
+        <modifiers>
+          <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+              </conditions>
+          </modifier>
+        </modifiers>
+      </rule>
+      <rule name="FAQ (GW)" id="521a-0f1b-9cf1-4953" hidden="false">
+        <description>**Q.** Can a Grimgor's 'Ardboyz army hire Dogs of War / Regiments of Renown units?
 
 **A.** No. Dogs of War / Regiments of Renown are not listed as an option in the army list. The only exception to this is Ruglud's Armoured Orcs, which may be hired using a Rare slot as specifically noted in the army list.
 
 **S.** Storm of Chaos Book page 58 / Anthony Reynolds - Warhammer Design Team
-" field="description" join="
+</description>
+        <modifiers>
+          <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+              </conditions>
+          </modifier>
+        </modifiers>
+      </rule>
 
-### FAQ (GW)
-">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-    </rule>
     <rule name="The Facebeater" id="8e29-41c5-d3ae-77af" hidden="false" page="57" publicationId="d2ec-1dc7-f0d5-acbb">
       <description>If Borgut fights in a challenge, then at the beginning of the first Close Combat phase of the challenge, he can smash his thick Orc skull into the face of his opponent or any monstrous mount they may be riding (note this does not include steeds). This is in addition to his normal attacks, and is resolved before any other attacks in the challenge. If the attack hits, it is worked out at Strength 7 and if the recipient of Borgut&apos;s &apos;eadbutt suffers a wound then he/she/it counts as WS1 for the rest of the Close Combat phase and will attack last, regardless of charging, magic items or any other bonuses. If this mighty &apos;eadbutt kills his opponent, Borgut should still make his remaining attacks to calculate overkill for the purposes of combat resolution.</description>
     </rule>
