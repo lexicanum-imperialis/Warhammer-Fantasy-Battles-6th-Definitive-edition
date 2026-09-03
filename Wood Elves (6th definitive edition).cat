@@ -4363,22 +4363,23 @@ Either place them exactly like Scouts, but with no minimum distance between them
     </rule>
     <rule id="fcf3-acc8-01dd-b878" name="Forest Walkers" hidden="false">
       <description>A lifetime spent in the confines of Athel Loren inevitably teaches how CO move through woodlands without hindrance. All models in the Wood Elf army (except flyers using their flying movement) may ignore movement penalties for moving through woods.</description>
-          <modifiers>
-        <modifier type="append" value="**Q.** Wood Elves natively ignore movement penalties for moving through woods. Does this mean a ranked unit of Wood Elf infantry can declare a march move through a wood, or charge through a wood without penalty?
+    </rule>
+      <rule name="FAQ (NornConsensus)" id="d749-5ee4-1283-4c2e" hidden="false">
+        <description>**Q.** Wood Elves natively ignore movement penalties for moving through woods. Does this mean a ranked unit of Wood Elf infantry can declare a march move through a wood, or charge through a wood without penalty?
 
 **A.** No. While they ignore the distance penalty of moving at half rate, they are still subject to the core structural rules governing difficult terrain. Ranked units of Wood Elves still cannot declare a march move if their path goes through a wood, and if they charge through a wood they lose their rank bonuses as normal for fighting in difficult terrain. Only models with the Skirmishers special rule are permitted to march through woods.
 
 **S.** The Norn Consensus Historical Precedent / Wood Elves Army Book / Rulebook
-" field="description" join="
+</description>
+        <modifiers>
+          <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+              </conditions>
+          </modifier>
+        </modifiers>
+      </rule>
 
-### FAQ (NornConsensus)
-">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-    </rule>
     <rule id="de60-361a-88fe-281f" name="Woodland Ambush" hidden="false">
       <description>Wood Elves invariably fight battles on the borders of woodland, where the Spellweavers can encourage the trees themselves to intervene. In Pitched Battles, just after the roll for table sides, but before any units have been deployed, the Wood Elf player can place an extra wood (no larger than 6&quot; in diameter) anywhere in his half of the table.</description>
     </rule>
