@@ -151,8 +151,9 @@ While Kraggi is alive Thorek may re-roll a failed attempt to strike a rune on th
     </rule>
     <rule name="Ancestral Grudge (Hate Greenskins)" id="592e-13bb-4805-b074" hidden="false" publicationId="45c1-a503-0feb-507a" page="28">
       <description>Dwarfs hate all types of Orcs, Goblins and Snotlings, including Night Goblins, Black Orcs, Hobgoblins, Gnoblars... In fact all greenskins of any description!</description>
-          <modifiers>
-        <modifier type="append" value="**Q.** Does the Dwarfs&apos; Ancestral Grudge special rule, which causes Dwarfs to hate Orcs and Goblins, also apply to monsters and beasts in an Orcs &amp; Goblins army, such as Trolls, Giants, Squigs, or similar creatures?
+    </rule>
+      <rule name="FAQ (NornConsensus)" id="7264-5d35-b94b-49ab" hidden="false">
+        <description>**Q.** Does the Dwarfs&apos; Ancestral Grudge special rule, which causes Dwarfs to hate Orcs and Goblins, also apply to monsters and beasts in an Orcs &amp; Goblins army, such as Trolls, Giants, Squigs, or similar creatures?
 
 **A.** No. Dwarfs do not hate Trolls, Giants, Squigs, or other non-Orc/non-Goblin beasts merely because those models are selected from the Warhammer Armies: Orcs &amp; Goblins army book.
 
@@ -163,16 +164,16 @@ Therefore, the hatred applies to Orc and Goblin racial subtypes, including recog
 Because the rule targets specific races and creature types rather than the army list itself, it universally applies to those racial subtypes wherever they are found. Therefore, Dwarfs will hate Black Orcs and Hobgoblins (which are officially classified as a type of Goblin) serving as troops in a Chaos Dwarf army. Similarly, Dwarfs will always hate Greenskin Mercenaries and Dogs of War, such as Ruglud&apos;s Armoured Orcs or other hired Goblinoids, no matter which army has currently paid for their services.
 
 **S.** Warhammer Armies: Dwarfs / Warhammer Armies: Orcs &amp; Goblins pages 18 &amp; 21 / Warhammer Chronicles 2004 page 127 / The Norn Consensus
-" field="description" join="
+</description>
+        <modifiers>
+          <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+              </conditions>
+          </modifier>
+        </modifiers>
+      </rule>
 
-### FAQ (NornConsensus)
-">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-    </rule>
     <rule name="Anvil of Doom" id="833c-294f-f797-e478" hidden="false" publicationId="45c1-a503-0feb-507a" page="30">
       <description>The Runelord and the two Anvil Guards must remain for all the battle on the platform. They are Unbreakable, may not declare charges and will never pursue beaten foes. The Anvil and crew have a Unit Strength of 5. No other characters may join the Anvil crew.
 
@@ -190,106 +191,117 @@ If the Runelord and both guards are killed then Victory Points are scored for th
 
 **Dispel Dice**
 While the owning Runelord lives, an Anvil adds an extra dice to the Dwarfs&apos; Dispel pool.</description>
-          <modifiers>
-        <modifier type="append" value="**Q.** Is a Master Engineer really allowed to entrench the Anvil of Doom?
+    </rule>
+      <rule name="FAQ (GW)" id="a069-7145-e175-4940" hidden="false">
+        <description>**Q.** Is a Master Engineer really allowed to entrench the Anvil of Doom?
 
 **A.** Yes, as the Anvil of Doom is classified as a war machine, a Master Engineer may entrench it.
 
 **S.** Games Workshop's Official Dwarfs FAQ
-" field="description" join="
-
-### FAQ (GW)
-">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-          </conditions>
-        </modifier>
-        <modifier type="append" value="**Q.** Are shooting hits against the Anvil of Doom randomised as normal for a war machine (e.g. 1-4 hitting the Anvil and discarded and 5-6 hitting the Dwarfs) or are all shooting hits resolved against the Dwarfs?
+</description>
+        <modifiers>
+          <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+              </conditions>
+          </modifier>
+        </modifiers>
+      </rule>
+      <rule name="FAQ (GW)" id="db87-e5ea-5078-4f09" hidden="false">
+        <description>**Q.** Are shooting hits against the Anvil of Doom randomised as normal for a war machine (e.g. 1-4 hitting the Anvil and discarded and 5-6 hitting the Dwarfs) or are all shooting hits resolved against the Dwarfs?
 
 **A.** All shooting hits fall amongst the Dwarfs. The protection offered by the Anvil is taken into account by the 4+ ward save granted to the Dwarfs against missiles.
 
 **S.** Games Workshop's Official Dwarfs FAQ
-" field="description" join="
-
-### FAQ (GW)
-">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-          </conditions>
-        </modifier>
-        <modifier type="append" value="**Q.** Does the Unit Strength of the Anvil of Doom decrease if the Anvil Guards or Runelord is killed? Normally the Unit Strength of a war machine is equal to the number of remaining crew.
+</description>
+        <modifiers>
+          <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+              </conditions>
+          </modifier>
+        </modifiers>
+      </rule>
+      <rule name="FAQ (GW)" id="a656-19d7-4fe5-4d01" hidden="false">
+        <description>**Q.** Does the Unit Strength of the Anvil of Doom decrease if the Anvil Guards or Runelord is killed? Normally the Unit Strength of a war machine is equal to the number of remaining crew.
 
 **A.** No, as long as there is at least one remaining crew (including the Runelord), the Anvil of Doom has a unit strength of 5.
 
 **S.** Games Workshop's Official Dwarfs FAQ
-" field="description" join="
-
-### FAQ (GW)
-">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-          </conditions>
-        </modifier>
-        <modifier type="append" value="**Q.** When striking the Rune of Wrath &amp; Ruin with the Ancient Power, do enemy units suffer the movement penalties an enemy unit suffers if the Rune is struck normally? The text under the Ancient Power of this rune is unclear.
+</description>
+        <modifiers>
+          <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+              </conditions>
+          </modifier>
+        </modifiers>
+      </rule>
+      <rule name="FAQ (GW)" id="2aa2-9564-dab5-40b3" hidden="false">
+        <description>**Q.** When striking the Rune of Wrath &amp; Ruin with the Ancient Power, do enemy units suffer the movement penalties an enemy unit suffers if the Rune is struck normally? The text under the Ancient Power of this rune is unclear.
 
 **A.** Yes. Enemy units affected by the Ancient Power of the Rune of Wrath &amp; Ruin also suffer movement penalties.
 
 **S.** Games Workshop's Official Dwarfs FAQ
-" field="description" join="
-
-### FAQ (GW)
-">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-          </conditions>
-        </modifier>
-        <modifier type="append" value="**Q.** Is the enemy allowed to declare a charge reaction against a charge made via the Rune of Oath and Honour?
+</description>
+        <modifiers>
+          <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+              </conditions>
+          </modifier>
+        </modifiers>
+      </rule>
+      <rule name="FAQ (GW)" id="066f-4d19-9388-4ff5" hidden="false">
+        <description>**Q.** Is the enemy allowed to declare a charge reaction against a charge made via the Rune of Oath and Honour?
 
 **A.** Yes. The enemy is definitely allowed to make a charge reaction against the Rune of Oath and Honour. The exact text states &quot;A single friendly Dwarf unit (but not a Gyrocopter) may make a NORMAL move (which can be a March or Charge) in the Shooting phase.&quot;
 
 A normal charge certainly allows a charge reaction and nowhere in the description of the Rune of Oath and Honour does it state that the enemy may not make a reaction / may only hold.
 
 **S.** Dwarfs Army Book page 31 / Rulebook page 45
-" field="description" join="
-
-### FAQ (GW)
-">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-          </conditions>
-        </modifier>
-        <modifier type="append" value="**Q.** Does the Rune of Wrath &amp; Ruin have to cause casualties / unsaved wounds on the target unit(s) in order for the movement penalty to be applied?
+</description>
+        <modifiers>
+          <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+              </conditions>
+          </modifier>
+        </modifiers>
+      </rule>
+      <rule name="FAQ (GW)" id="0161-8561-d61d-49f5" hidden="false">
+        <description>**Q.** Does the Rune of Wrath &amp; Ruin have to cause casualties / unsaved wounds on the target unit(s) in order for the movement penalty to be applied?
 
 **A.** No. Nowhere in the Rune of Wrath &amp; Ruin does it state that casualties must be caused in order for the movement penalty to be applied.
 
 The Rune lists the two affects that the enemy unit suffers from - one which is the D6 S4 hits and the second is the movement penalty. Nowhere in the description are either made contingent on the other.
 
 **S.** Dwarfs Army Book page 31
-" field="description" join="
-
-### FAQ (GW)
-">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-          <modifiers>
-        <modifier type="append" value="**Q.** If a unit of Dwarf Miners arrives on the battlefield using their Underground Advance rule, can they be struck by the Anvil of Doom&apos;s Rune of Oath and Honour in the subsequent Shooting phase to declare a charge?
+</description>
+        <modifiers>
+          <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+              </conditions>
+          </modifier>
+        </modifiers>
+      </rule>
+      <rule name="FAQ (NornConsensus)" id="76f4-11ab-7076-4cf6" hidden="false">
+        <description>**Q.** If a unit of Dwarf Miners arrives on the battlefield using their Underground Advance rule, can they be struck by the Anvil of Doom&apos;s Rune of Oath and Honour in the subsequent Shooting phase to declare a charge?
 
 **A.** Yes. While the Miners&apos; special rule states they cannot declare a charge on the turn they arrive (as they arrive in the Remaining Moves phase, after standard charges are declared), the Rune of Oath and Honour explicitly allows a unit to make a &quot;normal move (which can be a March or Charge) in the Shooting phase.&quot; This magical effect overrides the normal turn sequence and movement restrictions, allowing the newly arrived Miners to declare a charge during the Shooting phase.
 
 **S.** The Norn Consensus Historical Precedent / Dwarfs Army Book (Revised) page 31
-" field="description" join="
+</description>
+        <modifiers>
+          <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+              </conditions>
+          </modifier>
+        </modifiers>
+      </rule>
 
-### FAQ (NornConsensus)
-">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-    </rule>
     <rule name="Artillery Master" id="687e-0fce-0a39-d90a" hidden="false" publicationId="45c1-a503-0feb-507a" page="38">
       <description>The Master Engineer is adept at operating artillery.
 - If he joins a Bolt Thrower, you may use his BS.
@@ -401,22 +413,23 @@ A unit that suffers casualties from the Flame Cannon, must take an immediate Pan
 If the Gyrocopter can&apos;t fly for any reason, it can&apos;t move.
 
 A Gyrocopter that chooses to flee as a charge reaction and subsequently rallies at the beginning of its next turn may reform facing in any direction and is free to move during the Movement phase, but may not shoot or charge.</description>
-          <modifiers>
-        <modifier type="append" value="**Q.** May a Gyrocopter be affected by Poisoned Attacks?
+    </rule>
+      <rule name="FAQ (GW)" id="0006-d45d-ed15-4ff7" hidden="false">
+        <description>**Q.** May a Gyrocopter be affected by Poisoned Attacks?
 
 **A.** Yes.
 
 **S.** Games Workshop's Official Dwarfs FAQ
-" field="description" join="
+</description>
+        <modifiers>
+          <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+              </conditions>
+          </modifier>
+        </modifiers>
+      </rule>
 
-### FAQ (GW)
-">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-    </rule>
     <rule name="Immune to Panic" id="1ebc-d532-0ba0-89b6" hidden="false" publicationId="45c1-a503-0feb-507a" page="32">
       <description>Longbeards automatically pass any Panic tests they have to take.</description>
     </rule>
@@ -494,22 +507,23 @@ When the Anvil is struck and the name of Grimnir is invoked, the power of the Ru
       <description>A single unit of Warriors, Quarrellers or Longbeards that are armed with great weapons may be upgraded to Rangers at a cost of +1 point per model. These units have the Scout special rule.
 
 Warriors or Longbeards that are upgraded to Rangers can additionally be armed with throwing axes at a cost of +1 point per model.</description>
-          <modifiers>
-        <modifier type="append" value="**Q.** If a unit of Warriors or Longbeards is upgraded to Rangers does the unit continue to count as part of the ratio which restricts players to not having more units of Longbeards than they have Warriors?
+    </rule>
+      <rule name="FAQ (GW)" id="1d6b-b66f-d3e9-4f8e" hidden="false">
+        <description>**Q.** If a unit of Warriors or Longbeards is upgraded to Rangers does the unit continue to count as part of the ratio which restricts players to not having more units of Longbeards than they have Warriors?
 
 **A.** Rangers are not Warriors, so an army with Rangers in it must still include a unit of Warriors before it can field an unit of Longbeards.
 
 **S.** Games Workshop's Official Dwarfs FAQ
-" field="description" join="
+</description>
+        <modifiers>
+          <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+              </conditions>
+          </modifier>
+        </modifiers>
+      </rule>
 
-### FAQ (GW)
-">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-    </rule>
     <rule name="Relentless" id="1834-1814-c74d-110c" hidden="false" publicationId="45c1-a503-0feb-507a" page="6">
       <description>Dwarf units may march even if there are enemy close enough to inhibit march moves.</description>
     </rule>
@@ -520,22 +534,23 @@ Warriors or Longbeards that are upgraded to Rangers can additionally be armed wi
       <description>Dwarf Lords (but not Thanes) are of Royal Blood. This special rule is used in conjunction with the Bodyguard special rule - refer to the Hammerer entry for details.
 
 In addition, if an army contains a character with Royal Blood, it may have one more unit of Longbeards than it does Warriors. These represent the Dwarfs of the character&apos;s own clan.</description>
-          <modifiers>
-        <modifier type="append" value="**Q.** Page 29 under Royal Blood states &quot;Dwarf Lords (but Thanes) are of Royal Blood.&quot; Should that state &quot;Dwarf Lords (but not Thanes)...&quot;?
+    </rule>
+      <rule name="FAQ (GW)" id="166a-5f1c-7b60-4e3d" hidden="false">
+        <description>**Q.** Page 29 under Royal Blood states &quot;Dwarf Lords (but Thanes) are of Royal Blood.&quot; Should that state &quot;Dwarf Lords (but not Thanes)...&quot;?
 
 **A.** Yes. Thanes are not of Royal Blood. See the entry for Thanes on page 51 of the Dwarf Army Book.
 
 **S.** Games Workshop's Official Dwarfs FAQ
-" field="description" join="
+</description>
+        <modifiers>
+          <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+              </conditions>
+          </modifier>
+        </modifiers>
+      </rule>
 
-### FAQ (GW)
-">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-    </rule>
     <rule name="Rune Lore" id="2b09-f93a-2dd3-5e2a" hidden="false" publicationId="45c1-a503-0feb-507a" page="30">
       <description>A Runesmith gives the Dwarf player an extra Dispel dice in the enemy Magic phase. A Runelord gives the Dwarf player an extra two Dispel dice in the enemy Magic phase.</description>
     </rule>
@@ -621,35 +636,38 @@ In addition, a weapon with this rune may be used in close combat as a hand weapo
     </rule>
     <rule name="Rune of Might" id="7c1e-2a76-8373-56d0" hidden="false" page="44" publicationId="45c1-a503-0feb-507a">
       <description>Multiples of this rune have no further effect. The welder&apos;s Strength is doubled against any enemies with Toughness 5 or more.</description>
-          <modifiers>
-        <modifier type="append" value="**Q.** If a Runic Weapon is inscribed with both the Rune of Might and the Rune of Cleaving and is used against a T5+ enemy, is the Strength of the attack resolved at S9 or S10?
+    </rule>
+      <rule name="FAQ (GW)" id="dab2-4918-da9f-4839" hidden="false">
+        <description>**Q.** If a Runic Weapon is inscribed with both the Rune of Might and the Rune of Cleaving and is used against a T5+ enemy, is the Strength of the attack resolved at S9 or S10?
 
 **A.** S10.
 
 **S.** Games Workshop's Official Dwarfs FAQ
-" field="description" join="
-
-### FAQ (GW)
-">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-          </conditions>
-        </modifier>
-        <modifier type="append" value="**Q.** How does the Slayer skill work if the model is armed with a Rune of Might?
+</description>
+        <modifiers>
+          <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+              </conditions>
+          </modifier>
+        </modifiers>
+      </rule>
+      <rule name="FAQ (GW)" id="c959-a937-e0ad-479c" hidden="false">
+        <description>**Q.** How does the Slayer skill work if the model is armed with a Rune of Might?
 
 **A.** As noted in the description of the Slayer skill, Slayers' Strength is only increased after modifications for weapons. In this situation, the Slayer's Strength will only be increased if his doubled Strength is still less than that of his opponent's Toughness (which is unlikely since that would mean the opponent's Toughness was 9 or 10!)
 
 **S.** Warhammer Chronicles 2004 page 116
-" field="description" join="
+</description>
+        <modifiers>
+          <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+              </conditions>
+          </modifier>
+        </modifiers>
+      </rule>
 
-### FAQ (GW)
-">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-    </rule>
     <rule name="Rune of Stone" id="9747-e72e-6ae2-bd1d" hidden="false" publicationId="45c1-a503-0feb-507a" page="45">
       <description>Multiples of this rune have no further effect. This rune adds +1 to the character&apos;s Armour Save. The Rune of Stone is an exception to the normal Rule of Pride that forbids the same combination of runes to be used on several items, so a single Rune of Stone may be inscribed onto any character&apos;s armour.</description>
     </rule>
@@ -700,8 +718,9 @@ In addition, a weapon with this rune may be used in close combat as a hand weapo
     </rule>
     <rule name="Rune of Slowness" id="9ead-9181-2cce-9c8d" hidden="false" page="45" publicationId="45c1-a503-0feb-507a">
       <description>Any foes charging the unit subtract D6&quot; from their charge distance. If the unit fails to make contact then all the usual rules for a failed charge apply. If multiples of this rune are used, the charge reduction is not added up, instead roll a D6 for each rune and choose the best score.</description>
-          <modifiers>
-        <modifier type="append" value="**Q.** How exactly does the Dwarf Rune of Slowness work?
+    </rule>
+      <rule name="FAQ (GW)" id="de22-84f2-13a0-4645" hidden="false">
+        <description>**Q.** How exactly does the Dwarf Rune of Slowness work?
 
 **A.** The Rune comes into play when an enemy unit declares a charge on a Dwarf unit containing a standard with this Rune.
 
@@ -712,16 +731,16 @@ In addition, a weapon with this rune may be used in close combat as a hand weapo
 3) If the charge is not successful, then it counts a failed charge and the unit moves its normal move. However, keep in mind the general rule that units must stay at least 1 inch apart - this means that if the charging unit's normal move is far enough that it would contact the Dwarfs anyway, then you stop the chargers 1 inch away from the Dwarf unit.
 
 **S.** Dwarfs Army Book page 45 / Rulebook pages 52, 55
-" field="description" join="
+</description>
+        <modifiers>
+          <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+              </conditions>
+          </modifier>
+        </modifiers>
+      </rule>
 
-### FAQ (GW)
-">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-    </rule>
     <rule name="Master Rune of Grungni" id="9f21-ea8a-bf8a-d599" hidden="false" page="45" publicationId="45c1-a503-0feb-507a">
       <description>Any friendly Dwarf unit within 6&quot; of a standard with this rune gets a 5+ Ward Save against shooting attacks and any spell defined as Magic Missiles.</description>
     </rule>
@@ -745,22 +764,23 @@ In addition, a weapon with this rune may be used in close combat as a hand weapo
     </rule>
     <rule name="Rune of Luck" id="a61f-ed62-14bb-8794" hidden="false" publicationId="45c1-a503-0feb-507a" page="46">
       <description>One use only. This rune allows its bearer to re-roll any single to hit roll, to wound roll, Armour Save or Ward Save during the game.</description>
-          <modifiers>
-        <modifier type="append" value="**Q.** May a Master Engineer with the Rune of Luck use the rune to re-roll a to hit roll for a Bolt Thrower he is acting as an Artillery Master for? Also, may a Master Engineer with the Rune of Luck use the rune to re-roll a to wound roll for a Bolt Thrower, Cannon, or Grudge Thrower he is acting as an Artillery Master for?
+    </rule>
+      <rule name="FAQ (GW)" id="6b1a-69a8-454c-48ed" hidden="false">
+        <description>**Q.** May a Master Engineer with the Rune of Luck use the rune to re-roll a to hit roll for a Bolt Thrower he is acting as an Artillery Master for? Also, may a Master Engineer with the Rune of Luck use the rune to re-roll a to wound roll for a Bolt Thrower, Cannon, or Grudge Thrower he is acting as an Artillery Master for?
 
 **A.** No to all of the above.
 
 **S.** Games Workshop's Official Dwarfs FAQ
-" field="description" join="
+</description>
+        <modifiers>
+          <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+              </conditions>
+          </modifier>
+        </modifiers>
+      </rule>
 
-### FAQ (GW)
-">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-    </rule>
     <rule name="Rune of Brotherhood" id="5185-03cb-5dc9-ab2f" hidden="false" page="46" publicationId="45c1-a503-0feb-507a">
       <description>Multiples of this rune have no further effect. One Use Only. May not be used by a character with an Oath stone or Shieldbearers. A character with this rune may either be deployed with a unit of Rangers utilising the Scout rule as if he had the Scout rule himself or join a unit of Miners utilising the Underground Advance rule, arriving with them.</description>
     </rule>
@@ -772,22 +792,23 @@ In addition, a weapon with this rune may be used in close combat as a hand weapo
     </rule>
     <rule name="Master Rune of Challenge" id="f207-283d-4818-ff9d" hidden="false" page="46" publicationId="45c1-a503-0feb-507a">
       <description>One use only. This rune is normally inscribed in a book or on a warhorn. The rune is used during the enemy turn before they declare charges. Nominate one enemy unit within 20&quot; of the rune user. The unit must be able to charge and reach the rune user or the unit he is with according to the normal rules. The enemy unit must either declare a charge against the rune user (and any unit he is with) or must flee in the Compulsory Movement phase as if it had failed a Panic test. This rune has no effect on units that are Immune to Psychology.</description>
-          <modifiers>
-        <modifier type="append" value="**Q.** Can you use the Master Rune of Challenge to force an enemy unit to charge (or flee from) a Dwarf unit with the Master Rune of Slowness?
+    </rule>
+      <rule name="FAQ (DireWolf)" id="4773-9b18-7d86-4530" hidden="false">
+        <description>**Q.** Can you use the Master Rune of Challenge to force an enemy unit to charge (or flee from) a Dwarf unit with the Master Rune of Slowness?
 
 **A.** Yes. Use of this combination is allowed. Note that the Master Rune of Challenge states &quot;The unit must be able to charge and reach the rune user or the unit he is with according to the normal rules.&quot; Note the term &quot;according to the normal rules&quot; means that the normal charge distance would be measured to determine if the Master Rune of Challenge was useable and the Rune of Slowness would not apply until after the charge was declared.
 
 **S.** Dwarfs Army Book pages 45, 46 / Direwolf FAQ Council Interpretation
-" field="description" join="
+</description>
+        <modifiers>
+          <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+              </conditions>
+          </modifier>
+        </modifiers>
+      </rule>
 
-### FAQ (DireWolf)
-">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-    </rule>
     <rule name="Rune of Fate" id="4e01-03d7-32b5-d9b5" hidden="false" publicationId="45c1-a503-0feb-507a" page="46">
       <description>Multiples of this rune have no further effect. One use only. The model has a 2+ Ward Save against the first wound suffered and not saved by armour.</description>
     </rule>
@@ -811,22 +832,23 @@ In addition, a weapon with this rune may be used in close combat as a hand weapo
     </rule>
     <rule name="Rune of Reloading" id="c802-4ddd-bd8a-4941" hidden="false" page="47" publicationId="45c1-a503-0feb-507a">
       <description>The war machine can shoot every turn, as long as there is at least one crewman left, even if the machine has rolled a Misfire in the previous turn.</description>
-          <modifiers>
-        <modifier type="append" value="**Q.** Does the Rune of Reloading overrule the affects of The Rain Lord spell or other similar spells / items which state that a player must roll a D6 to ascertain if his war machine is eligible to shoot? Does the Rune of Reloading allow a war machine to be moved and then fire in the same turn?
+    </rule>
+      <rule name="FAQ (GW)" id="c932-7ffc-1c7d-456f" hidden="false">
+        <description>**Q.** Does the Rune of Reloading overrule the affects of The Rain Lord spell or other similar spells / items which state that a player must roll a D6 to ascertain if his war machine is eligible to shoot? Does the Rune of Reloading allow a war machine to be moved and then fire in the same turn?
 
 **A.** No, the rune just overrides the rules slowing down the machine's rate of fire caused by the machine's own misfire results and the loss of crew.
 
 **S.** Games Workshop's Official Dwarfs FAQ
-" field="description" join="
+</description>
+        <modifiers>
+          <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+              </conditions>
+          </modifier>
+        </modifiers>
+      </rule>
 
-### FAQ (GW)
-">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-    </rule>
     <rule name="Flakkson&apos;s Rune of Seeking" id="a443-fdeb-e4bd-be64" hidden="false" page="47" publicationId="45c1-a503-0feb-507a">
       <description>Bolt Throwers only. Each rune adds +1 to the Bolt Thrower&apos;s to hit rolls against targets with the Fly special ability but cannot reduce the score to hit below 2+.</description>
     </rule>
@@ -838,22 +860,23 @@ In addition, a weapon with this rune may be used in close combat as a hand weapo
     </rule>
     <rule name="Rune of Penetrating" id="6333-0bf2-570a-0da5" hidden="false" page="47" publicationId="45c1-a503-0feb-507a">
       <description>The Strength of a hit from the war machine increases by +1, to a maximum of 10.</description>
-          <modifiers>
-        <modifier type="append" value="**Q.** When a Grudge Thrower is inscribed with the Rune of Penetrating does the rune modify the basic strength of the hits to S5 before calculating the double strength hit(s) (i.e. S10) or does it modify the strength after calculating the double strength hit(s) (i.e. S9)?
+    </rule>
+      <rule name="FAQ (GW)" id="0d40-0db8-1771-4ddd" hidden="false">
+        <description>**Q.** When a Grudge Thrower is inscribed with the Rune of Penetrating does the rune modify the basic strength of the hits to S5 before calculating the double strength hit(s) (i.e. S10) or does it modify the strength after calculating the double strength hit(s) (i.e. S9)?
 
 **A.** It modifies the basic strength of the hits to S5, thus the double strength hit(s) would be S10.
 
 **S.** Games Workshop's Official Dwarfs FAQ
-" field="description" join="
+</description>
+        <modifiers>
+          <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+              </conditions>
+          </modifier>
+        </modifiers>
+      </rule>
 
-### FAQ (GW)
-">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-    </rule>
     <rule name="Rune of Fortune" id="748e-1961-16d4-c5a3" hidden="false" page="47" publicationId="45c1-a503-0feb-507a">
       <description>One use only. If a machine has the Rune of Fortune, the player may use it to amend a dice rolled on the machine&apos;s Misfire chart to a result of 6.</description>
     </rule>
@@ -865,35 +888,38 @@ In addition, a weapon with this rune may be used in close combat as a hand weapo
     </rule>
     <rule name="Master Rune of Immolation" id="c892-01aa-62d7-5bfe" hidden="false" page="47" publicationId="45c1-a503-0feb-507a">
       <description>One use only. The Dwarf player can cause the machine to explode at the end of any round of combat before determining the result. The machine and its crew are all killed. Each enemy unit in combat with the war machine takes 2D6 Strength 4 magical hits allocated as shooting.</description>
-          <modifiers>
-        <modifier type="append" value="**Q.** If the Master Rune of Immolation is set-off (killing all of the Dwarfs engaged in the combat) may the enemy make an Overrun move (assuming the enemy had charged that same turn)?
-
-**A.** Yes.
-
-**S.** Games Workshop's Official Dwarfs FAQ
-" field="description" join="
-
-### FAQ (GW)
-">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-          </conditions>
-        </modifier>
-        <modifier type="append" value="**Q.** Can the Master Rune of Immolation be activated if all the Dwarfs attached to the machine have been wiped out?
-
-**A.** Yes.
-
-**S.** Games Workshop's Official Dwarfs FAQ
-" field="description" join="
-
-### FAQ (GW)
-">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-          </conditions>
-        </modifier>
-      </modifiers>
     </rule>
+      <rule name="FAQ (GW)" id="cc33-e93c-396c-41eb" hidden="false">
+        <description>**Q.** If the Master Rune of Immolation is set-off (killing all of the Dwarfs engaged in the combat) may the enemy make an Overrun move (assuming the enemy had charged that same turn)?
+
+**A.** Yes.
+
+**S.** Games Workshop's Official Dwarfs FAQ
+</description>
+        <modifiers>
+          <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+              </conditions>
+          </modifier>
+        </modifiers>
+      </rule>
+      <rule name="FAQ (GW)" id="e243-b531-07b1-454d" hidden="false">
+        <description>**Q.** Can the Master Rune of Immolation be activated if all the Dwarfs attached to the machine have been wiped out?
+
+**A.** Yes.
+
+**S.** Games Workshop's Official Dwarfs FAQ
+</description>
+        <modifiers>
+          <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+              </conditions>
+          </modifier>
+        </modifiers>
+      </rule>
+
     <rule name="Master Rune of Disguise" id="3d57-92af-0291-42c0" hidden="false" page="47" publicationId="45c1-a503-0feb-507a">
       <description>Until it moves or shoots, the machine cannot be seen, and cannot therefore be targeted with spells, shot at or charged. Once the machine has moved/fired, or if an enemy unit moves to within 3&quot; of it, the machine is revealed and can be seen and attacked as normal for the rest of the battle.</description>
     </rule>
@@ -956,159 +982,177 @@ Remember that a model with a rune axe loses the normal benefits of a great weapo
       <description>Some Slayers are covered in protective tattoos that ward away enemy magic.
 They have Magic Resistance (1), which can also be used on any spell cast by a wizard within 6&quot; or targetted within 6&quot; of the model.
 A Slayer character may be given Wards of Grimnir for +30 pts (this comes out of their allowance for Runes)</description>
-          <modifiers>
-        <modifier type="append" value="**Q.** Can the Wards of Grimnir (Magic Resistance (1) within 6&quot;) be used against a spell that targets an &apos;area&apos; (such as Invocation of Nehek) rather than a unit if part of the area is within range?
+    </rule>
+      <rule name="FAQ (GW)" id="498e-c75f-1196-418c" hidden="false">
+        <description>**Q.** Can the Wards of Grimnir (Magic Resistance (1) within 6&quot;) be used against a spell that targets an &apos;area&apos; (such as Invocation of Nehek) rather than a unit if part of the area is within range?
 
 **A.** Yes, although no specific model is targeted, if the spell is cast or the target is within 6&quot; of the Wards of Grimnir, the Magic Resistance will come into effect. Note that in regards to Sylvanian Grave Markers, if the Grave Marker OR the target is within 6&quot;, the Wards of Grimnir apply.
 
 **S.** October 2004 Issue of White Dwarf Magazine (US #297 / UK #298) / Gav Thorpe - Warhammer Design Team
-" field="description" join="
-
-### FAQ (GW)
-">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-          </conditions>
-        </modifier>
-        <modifier type="append" value="**Q.** Do Wards of Grimnir work against Bound Items?
+</description>
+        <modifiers>
+          <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+              </conditions>
+          </modifier>
+        </modifiers>
+      </rule>
+      <rule name="FAQ (GW)" id="b4d6-c4bd-a024-40a8" hidden="false">
+        <description>**Q.** Do Wards of Grimnir work against Bound Items?
 
 **A.** Yes. I intended for the Wards of Grimnir to work against all spells, including bound ones.
 
 **S.** Gav Thorpe - Warhammer Design Team
-" field="description" join="
-
-### FAQ (GW)
-">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-          </conditions>
-        </modifier>
-        <modifier type="append" value="**Q.** If an enemy spell would affect (or fall within 6&quot;) of multiple models with the Wards of Grimnir, can the Slayers add a dispel dice for each model with the Wards?
+</description>
+        <modifiers>
+          <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+              </conditions>
+          </modifier>
+        </modifiers>
+      </rule>
+      <rule name="FAQ (GW)" id="8f11-213a-5123-4535" hidden="false">
+        <description>**Q.** If an enemy spell would affect (or fall within 6&quot;) of multiple models with the Wards of Grimnir, can the Slayers add a dispel dice for each model with the Wards?
 
 **A.** No, in cases where there are more than one eligible source of Magic Resistance the highest MR value is used, they are not added together.
 
 **S.** Gav Thorpe - Warhammer Design Team
-" field="description" join="
+</description>
+        <modifiers>
+          <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+              </conditions>
+          </modifier>
+        </modifiers>
+      </rule>
 
-### FAQ (GW)
-">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-    </rule>
     <rule name="Single Model (Doomseeker)" id="ad2a-5db7-6182-d001" hidden="false" page="64" publicationId="d2ec-1dc7-f0d5-acbb">
       <description>Slayer Doomseekers are independent models, which move as single characters on foot and can only be targeted using the Shooting at Characters rule.</description>
-          <modifiers>
-        <modifier type="append" value="**Q.** How do Slayer Doomseekers resolve combat against an enemy model that also inflicts hits before or instead of normal combat, such as a Night Goblin Fanatic or a Skaven Plague Censer Bearer?
+    </rule>
+      <rule name="FAQ (NornConsensus)" id="8e4a-85f5-392f-45a1" hidden="false">
+        <description>**Q.** How do Slayer Doomseekers resolve combat against an enemy model that also inflicts hits before or instead of normal combat, such as a Night Goblin Fanatic or a Skaven Plague Censer Bearer?
 
 **A.** Both models apply their existing rules simultaneously. Against a Fanatic, the Fanatic inflicts its D6 Strength 5 hits and the Doomseeker simultaneously inflicts his one automatic hit back (at -1 to hit per his special rule). Against a Plague Censer Bearer, the Doomseeker strikes first because his Whirlwind of Death supersedes other special attacks, but he must still take the mandated Toughness test for touching the Censer at the beginning of the phase.
 
 **S.** The Norn Consensus Historical Precedent / Storm of Chaos Book pages 64 &amp; 67 / Skaven Army Book page 32 / Gav Thorpe - Warhammer Design Team
-" field="description" join="
-
-### FAQ (NornConsensus)
-">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-          <modifiers>
-        <modifier type="append" value="**Q.** If we go strictly on the rules, a fanatic cannot be attacked in close combat and thus, it appears a Doomseeker can not harm a fanatic. Is that how we are to play it?
+</description>
+        <modifiers>
+          <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+              </conditions>
+          </modifier>
+        </modifiers>
+      </rule>
+      <rule name="FAQ (GW)" id="d528-b97c-013c-4df0" hidden="false">
+        <description>**Q.** If we go strictly on the rules, a fanatic cannot be attacked in close combat and thus, it appears a Doomseeker can not harm a fanatic. Is that how we are to play it?
 
 **A.** You are correct - simply apply their existing rules.
 
 **S.** Gav Thorpe - Warhammer Design Team
-" field="description" join="
-
-### FAQ (GW)
-">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-          </conditions>
-        </modifier>
-        <modifier type="append" value="**Q.** As Doomseekers do not attack normally, if you are an enemy model in a ranked unit the maximum amount of hits you can take from attacking Doomseekers is one, correct?
+</description>
+        <modifiers>
+          <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+              </conditions>
+          </modifier>
+        </modifiers>
+      </rule>
+      <rule name="FAQ (GW)" id="6f20-72e5-9acd-4e71" hidden="false">
+        <description>**Q.** As Doomseekers do not attack normally, if you are an enemy model in a ranked unit the maximum amount of hits you can take from attacking Doomseekers is one, correct?
 
 **A.** This is correct. Regardless of the number of Doomseekers attacking a ranked unit, any model in that ranked unit may only take one hit.
 
 **S.** Gav Thorpe - Warhammer Design Team
-" field="description" join="
-
-### FAQ (GW)
-">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-          </conditions>
-        </modifier>
-        <modifier type="append" value="**Q.** If you are an enemy model in a ranked unit and two Doomseekers are in base to base contact with you, you still only take one automatic hit, correct?
+</description>
+        <modifiers>
+          <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+              </conditions>
+          </modifier>
+        </modifiers>
+      </rule>
+      <rule name="FAQ (GW)" id="59d4-9467-a13a-4d81" hidden="false">
+        <description>**Q.** If you are an enemy model in a ranked unit and two Doomseekers are in base to base contact with you, you still only take one automatic hit, correct?
 
 **A.** This is also correct.
 
 **S.** Gav Thorpe - Warhammer Design Team
-" field="description" join="
-
-### FAQ (GW)
-">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-          </conditions>
-        </modifier>
-        <modifier type="append" value="**Q.** How exactly are Rank and File model casualties caused by Doomseeker attacks removed? Do we remove casualties as we would in a standard combat, or are the Doomseeker attacks considered to be &quot;allocated&quot; attacks?
+</description>
+        <modifiers>
+          <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+              </conditions>
+          </modifier>
+        </modifiers>
+      </rule>
+      <rule name="FAQ (GW)" id="452f-6476-1ad6-4c23" hidden="false">
+        <description>**Q.** How exactly are Rank and File model casualties caused by Doomseeker attacks removed? Do we remove casualties as we would in a standard combat, or are the Doomseeker attacks considered to be &quot;allocated&quot; attacks?
 
 **A.** The Doomseeker attacks are considered to be allocated attacks. As stated in the Whirlwind of Death rules, the Doomseekers do not attack normally in close combat. Thus, when resolving a Doomseeker&apos;s attacks against Rank and File models (rolls to wound, armour saves, etc.), it is very important to segregate hits against the rank and file models which will have an opportunity to strike back at the Doomseeker if they survive from those that do not have an opportunity to strike back at the Doomseeker. Obviously it is also important to separately resolve hits against characters and champions.
 
 **S.** Gav Thorpe - Warhammer Design Team / Storm of Chaos Book page 64 / Direwolf FAQ Council Interpretation
-" field="description" join="
-
-### FAQ (GW)
-">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-          </conditions>
-        </modifier>
-        <modifier type="append" value="**Q.** If two Doomseekers are in base to base contact with a single enemy model (e.g. a chariot) how many hits does the single enemy model take? One D3 or two D3?
+</description>
+        <modifiers>
+          <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+              </conditions>
+          </modifier>
+        </modifiers>
+      </rule>
+      <rule name="FAQ (GW)" id="1018-1bad-b364-498c" hidden="false">
+        <description>**Q.** If two Doomseekers are in base to base contact with a single enemy model (e.g. a chariot) how many hits does the single enemy model take? One D3 or two D3?
 
 **A.** D3 per Doomseeker.
 
 **S.** Gav Thorpe - Warhammer Design Team
-" field="description" join="
-
-### FAQ (GW)
-">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-          </conditions>
-        </modifier>
-        <modifier type="append" value="**Q.** When a Doomseeker scores hits against a single model with multiple parts (e.g. a character riding on a monstrous mount or chariot) does the Doomseeker get to choose which part of the enemy model is hit? Or is it randomized as shooting?
+</description>
+        <modifiers>
+          <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+              </conditions>
+          </modifier>
+        </modifiers>
+      </rule>
+      <rule name="FAQ (GW)" id="7769-cf74-ae37-4ebe" hidden="false">
+        <description>**Q.** When a Doomseeker scores hits against a single model with multiple parts (e.g. a character riding on a monstrous mount or chariot) does the Doomseeker get to choose which part of the enemy model is hit? Or is it randomized as shooting?
 
 **A.** As the Doomseeker does not attack normally, it should be randomly allocated as shooting.
 
 **S.** Gav Thorpe - Warhammer Design Team
-" field="description" join="
-
-### FAQ (GW)
-">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-          </conditions>
-        </modifier>
-        <modifier type="append" value="**Q.** Does a Doomseeker get re-rolls to hit Greenskins in the first round of combat due to hatred? Does a Doomseeker need sixes to hit an enemy unit behind a defended obstacle?
+</description>
+        <modifiers>
+          <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+              </conditions>
+          </modifier>
+        </modifiers>
+      </rule>
+      <rule name="FAQ (GW)" id="df31-3e2c-ae55-4749" hidden="false">
+        <description>**Q.** Does a Doomseeker get re-rolls to hit Greenskins in the first round of combat due to hatred? Does a Doomseeker need sixes to hit an enemy unit behind a defended obstacle?
 
 **A.** No. He does not attack (or roll to hit) in the normal manner and therefore, the re-rolls to hit do not apply. In addition special rules or magic items which modify a &quot;to hit&quot; roll do not apply to a Doomseeker.
 
 **S.** Gav Thorpe - Warhammer Design Team
-" field="description" join="
+</description>
+        <modifiers>
+          <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+              </conditions>
+          </modifier>
+        </modifiers>
+      </rule>
 
-### FAQ (GW)
-">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile name="Steam Gun" typeId="7889-42d9-70a0-3ea9" typeName="Weapon" hidden="false" id="c67b-fcfa-2aa2-e242" publicationId="45c1-a503-0feb-507a" page="42">
