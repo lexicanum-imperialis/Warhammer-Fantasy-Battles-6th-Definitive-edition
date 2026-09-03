@@ -2049,19 +2049,6 @@ Chronicles/Annual</comment>
         <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2f23-1b8b-5314-4d34" name="Print FAQ with the roster rules?" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="2f7f-d59e-3780-5c1f" type="max"/>
-      </constraints>
-      <categoryLinks>
-        <categoryLink id="bb58-248c-7f84-9835" name="Special list rules" hidden="false" targetId="32f1-197f-d719-a393" primary="true"/>
-      </categoryLinks>
-      <costs>
-        <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
-        <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
-        <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="fc28-3af2-d37a-d07e" name="Magic Level 4" publicationId="315e-e3c4-08af-fd51" page="134" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8975-9aca-1463-1a1f" type="max"/>
