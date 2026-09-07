@@ -3642,15 +3642,9 @@ This is a different question from whether two *different* magical bonus sources 
 
 **Q.** How should the two Rulebook definitions of *Immune to Psychology* be read together?
 
-**A.** Read them together with the separate Direwolf ruling on Break tests, which is what actually settles the gap between them.
+**A.** Immune to Psychology prevents Psychology tests, Flee charge reactions, and externally imposed Psychology effects - but Break tests still apply as normal, and Appendix Seven confirms this explicitly. The Direwolf Rules FAQ explains why: "Break tests are leadership tests but are not one of the defined psychology tests per the Psychology section of the Rulebook" (which is also why psychology-test re-rolls can't touch Break tests, and vice versa). Break tests were never covered by "any other Psychology rules" to begin with.
 
-The main Special Rules entry states that troops Immune to Psychology are never affected by Fear, Terror, Frenzy or any other Psychology rules, and may never flee as a charge reaction. It does not itself say anything about Break tests, one way or the other.
-
-Appendix Seven restates the same rule in operational terms and adds an explicit carve-out: units Immune to Psychology do not need to test for Psychology, such as Fear, Terror or Frenzy; they may never choose Flee as a charge response; and Break tests still apply as normal.
-
-The Direwolf Rules FAQ explains why that carve-out doesn't actually narrow the main entry's wording: "Break tests are leadership tests but are not one of the defined psychology tests per the Psychology section of the Rulebook" (this is also why items and abilities that re-roll psychology tests cannot re-roll Break tests, and vice versa). Break tests were never inside "any other Psychology rules" to begin with.
-
-The Norn Consensus therefore reads *Immune to Psychology* as preventing Psychology tests, Flee charge reactions, and externally imposed Psychology effects, while leaving Break tests, and any rule that only ever modifies a Break test, untouched. It does not automatically erase rules already printed on the model/unit, or rules gained through permanent non-magic-item army-list upgrades, unless a specific rule or official FAQ says otherwise.
+This means Immune to Psychology does not automatically erase rules already printed on the model/unit, or rules gained through permanent non-magic-item army-list upgrades, unless a specific rule or official FAQ says otherwise.
 
 **S.** The Norn Consensus Historical Precedent / Rulebook pages 74, 80, 112 & 270 / Direwolf FAQ Council Interpretation
 
@@ -3658,33 +3652,20 @@ The Norn Consensus therefore reads *Immune to Psychology* as preventing Psycholo
 
 **Q.** Can a model or unit benefit from both *Immune to Psychology* and another Psychology rule such as *Stubborn*, *Frenzy*, *Hatred*, or *Stupidity*?
 
-**A.** This is the Norn Consensus Golden Rule for Immune to Psychology, built empirically from every printed 6th edition case we could find, with no exceptions surviving the check.
+**A.** Yes, but it depends on the rule and on whether it's native or external. This is the Norn Consensus Golden Rule for Immune to Psychology, built from every printed 6th edition case we could find (Appendix Seven only defines three things - Fear/Terror/Frenzy auto-passed, Flee never valid, Break tests unaffected - and stays silent on Stubborn, Hatred and Stupidity, which is the gap this rule fills).
 
-It has to be built empirically, because the rulebook itself doesn't settle it. Appendix Seven, the section whose whole job is to give the operational definition of Immune to Psychology, explicitly names exactly three things: Fear/Terror/Frenzy tests are auto-passed, Flee is never a valid charge reaction, and Break tests still apply as normal. It says nothing at all, one way or the other, about Stupidity, Hatred, or Stubborn. That's an odd gap for a clarifying appendix to leave open on rules that clearly do interact with Immune to Psychology in play - and it's exactly the gap this Golden Rule exists to fill, from real printed cases rather than from silence.
+**Stubborn and Hatred** (and any Psychology rule not named in Immune to Psychology's own text): survives if *native* - built into the model's own profile, or a permanent personal upgrade (Virtue, Vow, Mark, Bloodline Power, Daemonic Gift, Mutation, Sacred Spawning, Kindred, Blessing, Big Name, Honour - none of these are Magic Items). Blocked by default if *external* - a Magic Item, Magic Standard, spell, or another model's aura - unless that specific rule explicitly overrides it ("even though," "except that," "even if").
 
-The four rules split cleanly into two groups.
+- Native, no override needed: Wood Elf Treeman (Stubborn), Ogre Kingdoms Maneaters (Stubborn - the "even though" text is a courtesy, not a necessity), Bretonnian Hermit Knight (Grail Vow + Virtue of the Penitent).
+- External, blocked, no override: Banner of Sigismund (Stubborn - official Empire FAQ), Warrior Priest *Righteous Fury* (Hatred - its own text: "units Immune to Psychology are not affected by this power as well").
+- External, overridden, so working: Volkmar's *War Altar*, Luthor Huss's *Righteous Fury* variant, the *Greater Icon of Chaos*, the *Banner of the Gods*, Valten - each carries its own explicit override clause.
 
-**Part 1 - Stubborn and Hatred (and, by the same reasoning, any Psychology rule not explicitly named in Immune to Psychology's own text): native survives, external is blocked by default unless explicitly overridden.**
+**Frenzy and Stupidity:** blocked outright, native or external, unless a specific rule explicitly overrides it. Frenzy is named directly in Immune to Psychology's text; Stupidity is caught by its "any other Psychology rules" catch-all.
 
-*Native* means the rule is built directly into the model/unit's own profile, or is a permanent personal army-list upgrade purchased for that same model (a Virtue, Vow, Mark, Bloodline Power, Daemonic Gift, Mutation, Sacred Spawning, Kindred, Blessing, Big Name, or Honour - none of these are Magic Items). *External* means the rule is being delivered onto the model/unit by a separate source - a Magic Item, Magic Standard, spell, or another model's aura/special rule reaching out to affect different models.
+- Native+native (rules out "only blocked when external"): Daemon Prince/Exalted Daemon of Khorne - Immune to Psychology from *Daemonic*, Frenzy from *Mark of Khorne* - still needed its own override.
+- External, overridden: Witch Elves under the *Banner of Balance*, the Shaggoth's *Storm Rage*, Cult of Slaanesh Mark of Slaanesh Cold Ones, Lizardmen *Blessed Spawning of Tlazcotl*.
 
-Confirmed native cases, no override present or needed: the Wood Elf Treeman (Stubborn, via its own entry), the Ogre Kingdoms Maneaters (Stubborn - their entry adds "even though they are normally immune to psychology" as a plain-language reminder, not a mechanical necessity, since nothing anywhere restricts Stubborn the way Righteous Fury restricts Hatred), and the Bretonnian Hermit Knight (Grail Vow + Virtue of the Penitent, both personal army-list choices on the same character).
-
-Confirmed external cases, blocked by default with no override, so blocked: the Banner of Sigismund (Stubborn) - official Empire FAQ, "Immune to Psychology is Immune to Psychology" - and the generic Warrior Priest *Righteous Fury* rule (Hatred), whose own text states "units Immune to Psychology are not affected by this power as well."
-
-Confirmed external cases with an explicit override, so working: Volkmar's *War Altar* ("...are Immune to Psychology, except that they will hate..."), Luthor Huss's personal *Righteous Fury* variant ("even characters in the unit and models who are normally Immune to Psychology will share..."), the *Greater Icon of Chaos* ("...even though they are otherwise Immune to Psychology"), the *Banner of the Gods* ("...even if normally Immune to Psychology"), and Valten (his unit is Immune to Psychology, "with the only exception that they always count as being stubborn").
-
-**Part 2 - Frenzy and Stupidity: blocked by Immune to Psychology outright, native or external, unless a specific rule explicitly overrides it.**
-
-Frenzy is named directly in Immune to Psychology's own main rule text ("never affected by fear, terror, frenzy"). Stupidity isn't named in that same sentence but is a dedicated test living in the Psychology section of the Rulebook, caught by the same "or any other Psychology rules" catch-all the Break-test ruling uses to define what Immune to Psychology actually governs. Unlike Stubborn and Hatred, Immune to Psychology reaches both of these directly, on its own, without needing an external source to trigger it.
-
-This is confirmed even in a clean native-plus-native case, which is what rules out "only happens when external" as the explanation: the Hordes of Chaos Daemon Prince/Exalted Daemon of Khorne gets Immune to Psychology from the baseline *Daemonic* special rule ("Daemons are immune to psychology") and Frenzy from *Mark of Khorne*, both permanent parts of the same single model, no aura or item involved - and it still needed its own explicit "even if otherwise Immune to Psychology" clause to make Frenzy work.
-
-Confirmed external cases, each needing and getting its own override: the Dark Elf Witch Elves under the High Elf *Banner of Balance* (Frenzy suppressed while in contact, regained on leaving - Warhammer Chronicles 2003 p.133, "Immune to Psychology is Immune to Psychology!"), the Shaggoth's *Storm Rage* (forced Frenzied despite being normally Immune to Psychology), the Cult of Slaanesh Mark of Slaanesh Cold Ones ("...are still subject to Stupidity"), and the Lizardmen *Blessed Spawning of Tlazcotl* (a ridden Carnosaur "is still subject to Blood-Frenzy," a ridden Cold One "will still be subject to stupidity" - relative to the mount specifically, the rider's own Immune to Psychology is the external arrival).
-
-The model or unit remains *Immune to Psychology* for the normal purposes of Psychology tests and charge reactions regardless of any of the above - it may not choose Flee as a charge reaction, and it ignores Psychology tests and external Psychology effects as normal.
-
-This preserves the official Empire ruling concerning the Banner of Sigismund exactly as printed. A Magic Standard does not override *Immune to Psychology* merely because it is magical, and this Golden Rule does not change that - it only clarifies which native rules were never at risk from it in the first place.
+A model or unit is always still Immune to Psychology for Psychology tests and Flee reactions regardless of the above. This changes nothing about the official Banner of Sigismund ruling, which stands exactly as printed.
 
 **S.** The Norn Consensus / Rulebook pages 74, 80, 84, 85, 112 & 270 / Warhammer Chronicles 2003 page 133 / Warhammer Chronicles 2004 page 116 / Ogre Kingdoms Army Book (Maneaters) / Bretonnia Army Book (Hermit Knight) / Empire Army Book (Righteous Fury, Volkmar's War Altar, Luthor Huss) / Hordes of Chaos Army Book (Daemonic, Mark of Khorne, Greater Icon of Chaos, Storm Rage) / Lizardmen Army Book (Blessed Spawning of Tlazcotl) / Storm of Chaos Book (Cult of Slaanesh) / Direwolf FAQ Council Interpretation
 
@@ -3692,13 +3673,9 @@ This preserves the official Empire ruling concerning the Banner of Sigismund exa
 
 **Q.** Does *Immune to Psychology* cancel *Stubborn* because *Stubborn* appears in the Psychology section of the Rulebook?
 
-**A.** No. Break tests are Leadership tests, but they are not Psychology tests, per the Direwolf Rules FAQ: "Break tests are leadership tests but are not one of the defined psychology tests per the Psychology section of the Rulebook" (Rulebook pages 74, 80). *Stubborn* modifies Break tests by allowing the unit to use unmodified Leadership, so it was never within reach of *Immune to Psychology* to begin with, regardless of how broadly that rule's own wording is read.
+**A.** No. Break tests are Leadership tests, not Psychology tests ("Break tests are leadership tests but are not one of the defined psychology tests per the Psychology section of the Rulebook" - Direwolf Rules FAQ, Rulebook pages 74, 80), and Appendix Seven confirms Break tests still apply as normal to Immune to Psychology units. *Stubborn* only ever modifies a Break test, so it was never within reach of *Immune to Psychology* to begin with. A model or unit with both already printed uses *Stubborn* normally on Break tests.
 
-Appendix Seven confirms this specifically for *Immune to Psychology*: Break tests still apply as normal to a unit that is Immune to Psychology. The main Special Rules entry does not mention Break tests at all, but it doesn't need to, since Break tests were never Psychology tests in the first place.
-
-Therefore, a model or unit that already has both *Stubborn* and *Immune to Psychology* uses *Stubborn* normally when taking Break tests.
-
-This does not allow a Magic Item, Magic Standard, spell, prayer or other external effect to grant *Stubborn* to an *Immune to Psychology* unit unless that effect specifically says it works on models or units that are *Immune to Psychology*.
+This does not let a Magic Item, Magic Standard, spell, or prayer grant *Stubborn* to an already-Immune-to-Psychology unit - that's a different (external) case, blocked by default (see the Golden Rule entry above).
 
 **S.** The Norn Consensus Historical Precedent / Rulebook pages 74, 80, 112 & 270 / Warhammer Chronicles 2004 page 116 / Direwolf FAQ Council Interpretation
 
@@ -3706,7 +3683,7 @@ This does not allow a Magic Item, Magic Standard, spell, prayer or other externa
 
 **Q.** Does an aura or effect that grants *Immune to Psychology* suppress Psychology rules already possessed by the affected model or unit?
 
-**A.** Yes, when that immunity is what's arriving from outside - this is the external half of the Golden Rule above, just viewed from the angle of the incoming immunity rather than the incoming trait. A newly-arriving *Immune to Psychology* effect (an aura, an item, a rider's blessing extending to a mount) is treated the same as any other external imposition: it's blocked from removing *Stubborn* or *Hatred* by default (neither is reachable by Immune to Psychology at all), but it does suppress *Frenzy* and *Stupidity* by default, since both are directly reachable by Immune to Psychology's own text regardless of which side is arriving. See the Golden Rule entry above for the full evidence and citations.
+**A.** No, not if that *Stubborn* or *Hatred* was already native to the model. A newly-arriving *Immune to Psychology* effect (an aura, an item, a rider's blessing extending to a mount) cannot strip them, since Immune to Psychology's own text never names either one. It does suppress *Frenzy* and *Stupidity* by default, since both are named or caught directly by that text. See the Golden Rule entry above for the full evidence and citations.
 
 The affected model or unit is still *Immune to Psychology* for the normal purposes of Psychology tests and charge reactions regardless of the above. For example, it may not choose Flee as a charge reaction while *Immune to Psychology*.
 
@@ -3768,7 +3745,7 @@ However, because *Immune to Psychology* does not inherently cause a unit to beco
 
 **Q.** Is it legal to deliberately face units away or angle them so that a Frenzied enemy model (e.g. a Bloodthirster) has nothing in its charge arc, denying it a forced charge that turn?
 
-**A.** Yes, this is legal. Positioning your own units to deny a Frenzied enemy a valid compulsory charge target is no different in principle from angling a monster-mounted Wizard for spell Line of Sight, or timing a Tunneling unit's emergence to avoid an enemy charge - all are cases of using deployment and facing to control what an opponent's rules can interact with. There is nothing in the rules that requires a player to leave a valid charge target in arc for an opponent's Frenzied models, even though doing so may not feel very fluffy for the Frenzied side.
+**A.** Yes, this is legal - no different in principle from angling a monster-mounted Wizard for spell Line of Sight, or timing a Tunneling unit's emergence to avoid a charge. Nothing requires a player to leave a valid charge target in arc for an opponent's Frenzied models, even if it isn't very fluffy.
 
 **S.** GW-JadeGriffon (Joe), Games Workshop staff, official eshare rules board
 
@@ -3792,17 +3769,9 @@ This ruling applies to lone man-sized characters on foot. It does not apply to s
 
 **Q.** Can a character mounted on a monster or chariot join a standard ranked unit? If a cavalry-mounted character joins, or stands within 5" of, an infantry unit, is he protected from being singled out by enemy missile fire?
 
-**A.** It depends on the mount.
+**A.** It depends on the mount. A character riding in a chariot may not join a non-chariot unit; one riding a flying monster may not join a unit of flyers or another flying monster. A character riding a non-flying monster can join an ordinary unit unless a specific rule, base-size issue, or troop-type restriction says otherwise.
 
-A character riding in a chariot may not join a non-chariot unit. A character riding a flying monster may not join a unit of flyers or another flying monster. Characters mounted on larger creatures or chariots may also not form a character-only unit with each other.
-
-However, a character riding a non-flying monster is not automatically forbidden from joining an ordinary unit, unless a specific rule, army book entry, base-size issue, or troop-type restriction prevents it.
-
-Joining a unit does not automatically grant protection from enemy shooting. For normal missile-fire targeting, compare the size of the character model to the unit providing protection.
-
-A cavalry-mounted character is larger than infantry and is not hidden by infantry models. A character on a monster base, or riding a mount with more than 1 Wound, counts as larger than cavalry for targeting purposes. A Large Target is larger than all non-Large Target models.
-
-Therefore, a mounted or monster-mounted character may only claim the normal proximity or joined-unit shooting protection if he is the same size as, or smaller than, the friendly unit of 5+ rank-and-file models providing that protection. If he is larger, he may be singled out by enemy missile fire.
+Joining a unit doesn't automatically grant shooting protection - that depends on relative size. A cavalry-mounted character is larger than infantry and isn't hidden by them; a character on a monster base or a mount with more than 1 Wound counts as larger than cavalry; a Large Target is larger than everything else. A mounted or monster-mounted character can only claim proximity/joined-unit protection if he's the same size as or smaller than the friendly unit providing it - if he's larger, he can be singled out.
 
 **S.** The Norn Consensus / Warhammer Chronicles 2004 pages 112-113 / Rulebook pages 97-98 / Direwolf FAQ Compilation
 
@@ -4030,11 +3999,13 @@ Although the Giant is fighting in close combat, the attack's distribution instru
 
 **Q.** When a unit of Flyers declares a charge against a fleeing unit, and the fleeing unit's move places it entirely inside a wood that the Flyer cannot enter, but the Flyer has more than enough distance to catch them - is the fleeing unit caught?
 
-**A.** This isn't a settled ruling - we don't have a rulebook page, Direwolf citation, or official FAQ to point to, only a general tournament-table convention, and the core pursuit rule (compare the pursuer's roll to the fleeing unit's roll) doesn't address what happens when the pursuer is physically unable to enter the terrain the target ends up in. This is the same kind of genuine rules gap as the "Chariot stuck in difficult terrain forever" case elsewhere in this FAQ, and deserves the same honesty rather than a confident answer with no real support behind it.
+**A.** Not settled - no rulebook page, Direwolf citation, or official FAQ, only tournament convention. The core pursuit rule (compare pursuer's roll to fleeing unit's roll) doesn't address the pursuer being physically unable to enter the terrain the target ends up in - the same kind of gap as the "Chariot stuck in difficult terrain forever" case elsewhere in this FAQ.
 
-The common tournament convention treats it as caught anyway, reasoning that the catch calculation is about relative speed, not about whether the pursuer's own model could physically stand on the final square. If you want a firm ruling for your own games, we'd recommend agreeing on this with your opponent before it comes up, the same as we recommend for the Chariot-in-terrain case, rather than treating either as house law.
+Convention treats it as caught anyway, since the catch calculation is about relative speed, not whether the pursuer's model could physically stand on the final square. Agree this with your opponent before it comes up.
 
 **S.** Tournament convention only - no rulebook, Direwolf, or official FAQ support found
+
+---
 
 ### WAR MACHINES
 
@@ -4090,9 +4061,7 @@ The common tournament convention treats it as caught anyway, reasoning that the 
 
 **Q.** What happens if two different Wizards cast spells on the same unit with completely contradictory ongoing effects, such as one spell preventing a unit from moving and a subsequent spell obliging it to move?
 
-**A.** Roll a die - this is not a case where "most recent wins" or automatic dispelling has any support in the rules, and we corrected an earlier version of this answer that claimed otherwise. Multiple spells on the same unit are normally meant to stack or coexist (page 142 confirms this for the ordinary case, using Flames of the Phoenix as its example), and nothing in the rulebook or the Direwolf FAQ gives a later spell the power to automatically cancel an earlier one just by contradicting it.
-
-For the genuine edge case where two active effects are flatly irreconcilable, this document uses the same "irresistible force vs. immovable object" resolution it uses everywhere else this problem comes up (see the 0+ save re-roll, Casket of Souls dice-stealing, Netlings vs. Banner of the Barrows, and Blade of Darting Steel entries): roll a D6 each time it matters to see which effect actually applies at that moment, rather than assuming either spell simply wins.
+**A.** Roll a D6 each time it matters to see which effect actually applies - "most recent wins" and automatic dispelling have no support in the rules. Multiple spells on the same unit are normally meant to stack or coexist (page 142, using Flames of the Phoenix as its example); nothing gives a later spell the power to auto-cancel an earlier one just by contradicting it. Where two effects are flatly irreconcilable, this is the same "irresistible force vs. immovable object" resolution used elsewhere in this document (see the 0+ save re-roll, Casket of Souls dice-stealing, Netlings vs. Banner of the Barrows, and Blade of Darting Steel entries).
 
 **S.** The Norn Consensus Historical Precedent / Rulebook page 142 / Direwolf FAQ Council Interpretation (by analogy to the same resolution used elsewhere in this document)
 

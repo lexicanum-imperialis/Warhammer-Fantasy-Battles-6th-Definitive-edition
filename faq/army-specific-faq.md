@@ -7541,17 +7541,13 @@ This is not the same as the Banner of Sigismund FAQ. The Banner of Sigismund is 
 
 **Q.** Does Volkmar's War Altar suppress *Hatred*, *Stubborn*, *Frenzy*, *Stupidity* or similar rules already possessed by an Empire unit?
 
-**A.** Volkmar's War Altar is actually the single clearest illustration of the full Norn Consensus Golden Rule for Immune to Psychology (see the Psychology section of the core rules FAQ for the complete evidence), because its own printed text touches every part of it at once. Its full rule reads: *"...the Grand Theogonist and any Empire unit within 12" are Immune to Psychology, except that they will hate all Chaos, Undead and Skaven (as per the Righteous Fury special rule)."*
+**A.** The War Altar's full text: *"...the Grand Theogonist and any Empire unit within 12" are Immune to Psychology, except that they will hate all Chaos, Undead and Skaven (as per the Righteous Fury special rule)."* Broken down:
 
-*Stubborn* survives untouched. It only ever modifies a Break test, and Break tests are not Psychology tests, so *Immune to Psychology* never reaches it regardless of where the immunity comes from. An Empire unit with printed Stubborn (Greatswords, for example) keeps it within the War Altar's radius with no special wording needed.
+- **Stubborn** survives untouched, no special wording needed - it only modifies Break tests, and Break tests aren't Psychology tests, so Immune to Psychology never reaches it.
+- **Hatred** survives *because* the Altar's text explicitly overrides a real block: *Righteous Fury* (which grants the Hatred in the first place) says outright "units Immune to Psychology are not affected by this power as well." Without the Altar's "except that they will hate..." clause, that Hatred would switch off the moment the unit became Immune to Psychology. A Warrior Priest's unit with Hatred but no War Altar nearby loses it the normal way.
+- **Frenzy** and **Stupidity** do not survive, regardless of native or external sourcing (see the Banner of Balance and Daemon Prince of Khorne cases in the Golden Rule entry).
 
-*Hatred* is the interesting one, and it does **not** survive here by the same default logic as Stubborn - it survives specifically *because* the War Altar's own text overrides a real, printed block. The generic *Righteous Fury* rule (which is what grants Hatred to a Warrior Priest's unit in the first place) states outright: "units Immune to Psychology are not affected by this power as well." That means the moment the War Altar makes the unit Immune to Psychology, Righteous Fury's own Hatred would normally switch off - which is exactly why the War Altar's text has to add "except that they will hate..." to force it back on. Without that clause, Volkmar's own unit would lose its Hatred the instant it came within his own Altar's radius. This is an external-imposition-with-explicit-override case, not a "Hatred is always safe" case - compare the generic Warrior Priest without a War Altar, whose Hatred *is* switched off by an incoming Immune to Psychology effect with no override present.
-
-*Frenzy* and *Stupidity* do not survive contact with an *Immune to Psychology* effect, regardless of native or external sourcing, confirmed independently by the Banner of Balance ruling (Warhammer Chronicles 2003, p.133) and by the Daemon Prince of Khorne needing its own "even if otherwise Immune to Psychology" override for Frenzy despite both rules being permanently native to that single model.
-
-Therefore: an Empire unit affected by the War Altar keeps *Stubborn* if it already has it (nothing to suppress it in the first place), keeps its Warrior Priest's *Hatred* specifically because the Altar's text says so, and loses the practical benefit of *Frenzy* or *Stupidity* for as long as it remains in range and *Immune to Psychology*, unless some other specific rule says otherwise.
-
-The War Altar still prevents the unit from being affected by external Psychology effects in the normal way and prevents it from choosing Flee as a charge reaction.
+The unit still can't choose Flee as a charge reaction, and is otherwise unaffected by external Psychology effects as normal.
 
 **S.** Empire Army Book (The War Altar, Righteous Fury) / Warhammer Annual 2002 page 60 / Rulebook pages 74, 80, 84, 85, 112 & 270 / Warhammer Chronicles 2003 page 133 (Banner of Balance ruling) / Warhammer Chronicles 2004 page 116 / Hordes of Chaos Army Book (Daemonic, Mark of Khorne) / Direwolf FAQ Council Interpretation / The Norn Consensus
 
@@ -7625,9 +7621,7 @@ This mirrors the shooting distribution rules and prevents either model type from
 
 **Q.** Does the *Banner of Butchery*'s one-time +1 Attack apply to the whole unit, or only to models in the front rank? Does it apply to mounted models' mounts as well as their riders?
 
-**A.** It applies to every model in the unit that is fighting that turn - including models in a second fighting rank (such as spearmen), not just the front rank - because the banner's own wording grants the bonus to "each model fighting for that turn," the same phrase used elsewhere in the rulebook to describe every model actually resolving an attack that turn, not merely the front rank.
-
-The banner's wording also settles the mount question directly rather than leaving it to inference: for mounted models, only the rider gets the bonus, the mount does not. Because the item text goes out of its way to carve out this mount/rider distinction explicitly, it should be read as being deliberately precise about exactly which models benefit, supporting the "every fighting model" reading for infantry rather than a vaguer "front rank only" one.
+**A.** It applies to every model in the unit fighting that turn, including a second fighting rank (such as spearmen), not just the front rank - the banner's own wording grants the bonus to "each model fighting for that turn." For mounted models, only the rider gets the bonus; the mount does not.
 
 **S.** GW-JadeGriffon (Joe), Games Workshop staff, official eshare rules board / Orcs & Goblins Army Book (*Banner of Butchery*)
 
@@ -7645,15 +7639,9 @@ The banner's wording also settles the mount question directly rather than leavin
 
 **Q.** Does the Dwarfs' Ancestral Grudge special rule, which causes Dwarfs to hate Orcs and Goblins, also apply to monsters and beasts in an Orcs & Goblins army, such as Trolls, Giants, Squigs, or similar creatures?
 
-**A.** No. Dwarfs do not hate Trolls, Giants, Squigs, or other non-Orc/non-Goblin beasts merely because those models are selected from the Warhammer Armies: Orcs & Goblins army book.
+**A.** No. The rule's actual text names races, not an army list: "Dwarfs hate all types of Orcs, Goblins and Snotlings, including Night Goblins, Black Orcs, Hobgoblins... In fact all greenskins of any description!" That covers Orc, Goblin and Snotling subtypes - it does not extend to Trolls, Giants, Squigs, or other creatures that merely happen to be selected from the same army book but aren't themselves greenskins.
 
-The Dwarf rule's actual text is broader than a simple "Orcs and Goblins" line: "Dwarfs hate all types of Orcs, Goblins and Snotlings, including Night Goblins, Black Orcs, Hobgoblins... In fact all greenskins of any description!" This is still a racial/model-type reference, not a blanket reference to every unit chosen from the Orcs & Goblins army list, and it explicitly covers Snotlings by name alongside Orcs and Goblins.
-
-Therefore, the hatred applies to Orc, Goblin and Snotling racial subtypes and any other model the army book or common usage would recognise as a "greenskin," but it does not extend to allied monsters, beasts, war machines, chariots, mounts, or handlers' creatures that aren't themselves greenskins - Trolls, Giants, and Squigs are their own distinct creature types in Warhammer lore, not classified as greenskins, even when fielded from the Orcs & Goblins army list.
-
-The Cauldron of Blood precedent does not change this. The Cauldron affects "Any Dark Elf units", which is an army-list/unit identity phrase. By contrast, Ancestral Grudge says Dwarfs hate "Orcs and Goblins of all types", which names specific races or creature types. It therefore applies to Orc and Goblin variants, but not to every creature available in the Orcs & Goblins army list.
-
-Because the rule targets specific races and creature types rather than the army list itself, it universally applies to those racial subtypes wherever they are found. Therefore, Dwarfs will hate Black Orcs and Hobgoblins (which are officially classified as a type of Goblin) serving as troops in a Chaos Dwarf army. Similarly, Dwarfs will always hate Greenskin Mercenaries and Dogs of War, such as Ruglud's Armoured Orcs or other hired Goblinoids, no matter which army has currently paid for their services.
+This is a race-targeting rule (unlike the Cauldron of Blood's "Any Dark Elf units," which targets by army-list identity), so it follows the race wherever it's fielded: Dwarfs hate Black Orcs and Hobgoblins serving in a Chaos Dwarf army, and Greenskin mercenaries/Dogs of War (e.g. Ruglud's Armoured Orcs), regardless of who's currently paying them.
 
 **S.** Warhammer Armies: Dwarfs / Warhammer Armies: Orcs & Goblins pages 18 & 21 / Warhammer Chronicles 2004 page 127 / The Norn Consensus
 
@@ -7680,19 +7668,9 @@ However, in a Strigoi appendix army, living Mercenary characters (like Marco Col
 
 **Q.** In the Lahmian alternative list, can Swains join units containing Lahmian Vampires, despite being living characters in an Undead army?
 
-The Lahmian alternative list includes Swains: living heroes devoted to the Lahmian Vampire. Under the general Living/Undead joining restriction, they appear to be forced to operate alone and cannot even join the Lahmian Vampire they are sworn to serve.
-
-**Norn Resolution:** Yes, exceptionally.
+**A.** Yes, exceptionally, and only in the Lahmian alternative list: Swains may join a unit containing a Lahmian Vampire, or otherwise accompany one as agreed before the game. This is a specific fix for Swains and Lahmians, not general permission for Living and Undead to mix in other Vampire Counts lists - the normal rule still stands everywhere else.
 
 **Designer Answer:** "I would house rule those separately. Clearly an oversight."
-
-**Norn Consensus Comment:** This does not overturn the general Living/Undead joining restriction for all Vampire Counts variant armies. Instead, it identifies the Lahmian Swain interaction as a specific oversight in the Lahmian alternative list.
-
-The purpose of Swains is clearly to serve, protect, and accompany the Lahmian Vampire. Forcing them to operate alone makes the unit function awkwardly and undermines the theme of the list.
-
-**A.** In the Lahmian alternative list only, Swains may join a unit containing a Lahmian Vampire, or otherwise accompany a Lahmian Vampire as agreed before the game. This is a specific exception for Swains and Lahmians, not a general permission for Living and Undead characters to freely join each other's units in other Vampire Counts lists.
-
-**Practical Version:** The normal rule remains: do not mix Living and Undead characters/units. The Lahmian Swain case is a specific oversight and may be house-ruled separately.
 
 **S.** Tuomas Pirinen, designer answer to Norn Consensus inquiry / Vampire Counts Army Book, Lahmian Alternative List / The Norn Consensus Historical Precedent
 
@@ -7700,19 +7678,9 @@ The purpose of Swains is clearly to serve, protect, and accompany the Lahmian Va
 
 **Q.** Can Necrarch or Lahmian Vampires choose magic armour if the specific magic item does not explicitly forbid them from taking it?
 
-Some Vampire Counts magic armour entries specifically say that they cannot be chosen by Necrarchs or Lahmians, while others do not. However, the FAQ states that if a character cannot take mundane armour, they cannot take magic armour either.
-
-**Norn Resolution:** No.
+**A.** No. Necrarch and Lahmian Vampires cannot take magic armour unless a rule explicitly grants them permission to do so. *Warhammer Chronicles 2004* already establishes that a character with no normal armour option cannot wear magic armour either (the same logic behind the Dark Elf Beastmaster being unable to take a magic shield for lacking the mundane shield option) - the item-specific "not available to Necrarchs or Lahmians" lines are older/redundant restrictions written before that broader limitation was clarified, not permission to take everything else.
 
 **Designer Answer:** "I think the armour limitations were added before they were forbidden from taking armour in general. So both limitations are true."
-
-**Norn Consensus Comment:** This matches the established 6th Edition FAQ logic for magic item access. *Warhammer Chronicles 2004* states that a character with no normal armour option cannot wear magic armour.
-
-The Dark Elf Beastmaster ruling follows the same principle: even if a character can take armour, lacking the mundane shield option prevents him from taking a magic shield, or magic armour that includes a shield, such as *Armour of Darkness*.
-
-Therefore, the item-specific lines saying "not available to Necrarchs or Lahmians" should not be read as permission to take every other piece of magic armour. They are best understood as older or redundant restrictions, written before the broader limitation was clarified.
-
-**A.** Necrarch and Lahmian Vampires cannot take magic armour unless a rule explicitly grants them permission to do so.
 
 **S.** Tuomas Pirinen, designer answer to Norn Consensus inquiry / Warhammer Chronicles 2004 page 116 / Anthony Reynolds, Warhammer Design Team, Dark Elf Beastmaster magic shield precedent / Vampire Counts Army Book
 
@@ -7724,19 +7692,15 @@ Therefore, the item-specific lines saying "not available to Necrarchs or Lahmian
 
 **S.** The Norn Consensus Historical Precedent / Vampire Counts Army Book
 
+---
+
 ### DARK ELVES
 
 **Q.** Does the Cauldron of Blood's Red Fury rule, which affects "Any Dark Elf units", apply to non-Elf models in the Dark Elf army list, such as Harpies, War Hydras, monster mounts, or the impact hits and mount attacks of a Cold One Chariot?
 
-**A.** Yes. In this context, "Dark Elf units" is read as an army-list/unit identity, not as a strict racial limitation to models with an Elven profile.
+**A.** Yes. "Any Dark Elf units" (the rule even adds "including the Guardians") is an army-list/unit identity, applied at the unit level, not a strict racial check on each model. So it covers Harpies, War Hydras, Cold Ones, Chariots, ridden monsters, and the Guardians - anything selected from the Dark Elf list - including mount attacks and impact hits from a Cold One Chariot, provided the unit is within 24" of the Cauldron.
 
-The Cauldron rule does not say "Dark Elf models" or "Elves". It says "Any Dark Elf units", and even adds "including the Guardians", showing that the effect is applied at the unit level rather than by checking the race of each individual model.
-
-Therefore, units selected from the Dark Elf army list are Dark Elf units for this purpose. This includes non-Elf unit profiles and components such as Harpies, War Hydras, Cold Ones, Chariots, ridden monsters, and the Guardians of the Cauldron itself.
-
-Because Red Fury allows affected units to re-roll failed rolls to wound in the first round of any combat, the benefit applies to the whole affected unit footprint. This includes mount attacks and impact hits generated by a Cold One Chariot, provided the unit is within 24" of the Cauldron and otherwise qualifies.
-
-This ruling should not be extended to rules that name a race or creature type directly. A rule that refers to "Orcs and Goblins of all types" is a racial/type reference, not an army-list reference.
+This does not extend to rules that name a race or creature type directly instead of a unit/army identity - "Orcs and Goblins of all types" is a racial reference, not an army-list one, and reads differently (see Ancestral Grudge, above).
 
 **S.** Warhammer Chronicles 2004 page 127 / The Norn Consensus Historical Precedent
 
@@ -7782,25 +7746,9 @@ The Flaming component still applies in the normal sense: Regeneration cannot be 
 
 **Q.** Do Skaven benefit from their rank bonus to Leadership when affected by rules such as the Banshee's *Ghostly Howl* or the Khemrian *Casket of Souls*?
 
-These effects use Leadership, but they are not normal Leadership tests with a simple pass/fail result. For example, *Ghostly Howl* and the *Casket of Souls* roll dice and compare the result against the target's Leadership to determine wounds.
-
-**Norn Resolution:** Yes, when the rule uses the unit's Leadership value. No, when the rule asks for base, unmodified, or printed Leadership.
+**A.** Yes, when the rule uses the unit's Leadership value - this includes *Ghostly Howl* and the *Casket of Souls*, which roll dice and compare against Leadership rather than running a pass/fail test. No, when a rule explicitly checks **base**, **unmodified**, or printed Leadership - for example *Crush the Weak* (checks base Leadership 6 or lower): Skaven don't raise their base Leadership just by having ranks.
 
 **Designer Answer:** "Skaven benefit from their numbers. They are literally braver in packs. RAI."
-
-**Norn Consensus Comment:** The Skaven Leadership bonus from ranks applies whenever the unit's Leadership value is being used for this type of effect, even if the rule is not a conventional Leadership test.
-
-This includes effects that compare a dice roll against the target's Leadership, such as the Banshee's *Ghostly Howl* or the Khemrian *Casket of Souls*. In those cases, the rule is asking for the unit's Leadership value, and Skaven Leadership is affected by their numbers.
-
-However, this does not mean that Skaven add their rank bonus to every rule that mentions Leadership. If a rule specifically refers to a model's **base Leadership**, **unmodified Leadership**, or printed Leadership characteristic, the Skaven rank bonus does not apply.
-
-For example, a rule such as *Crush the Weak*, which checks whether a model has a base Leadership characteristic of 6 or lower, uses the printed/base Leadership value. Skaven do not increase their base Leadership because they have ranks.
-
-**A.** Skaven may use their rank bonus to Leadership against *Ghostly Howl*, the *Casket of Souls*, and similar Leadership-based effects that use or compare against the unit's Leadership value.
-
-Skaven may not use their rank bonus when a rule explicitly checks **base Leadership**, **unmodified Leadership**, or the printed Leadership characteristic.
-
-**Practical Version:** If the rule asks for the unit's Leadership, Skaven are braver in packs. If the rule asks for base or unmodified Leadership, use the printed value.
 
 **S.** Tuomas Pirinen, designer answer to Norn Consensus inquiry / Skaven Army Book / Vampire Counts Army Book / Tomb Kings Army Book
 
@@ -7832,7 +7780,7 @@ For example, a Doombull with the Mark of Chaos Undivided joining an unmarked uni
 
 **A.** No, but only because the entry explicitly says so, not because the two rules are naturally compatible. The *Daemonic* special rule states plainly: "Immune to Psychology: Daemons are immune to psychology." The printed entry for the Daemon Prince/Exalted Daemon of Khorne then adds: "The [Daemon] is subject to frenzy even if otherwise Immune to Psychology."
 
-This is a genuinely important data point for the Norn Consensus Golden Rule for Immune to Psychology (see the Psychology section of the core rules FAQ), because both rules here are permanently native to the same single model - Immune to Psychology from the baseline Daemonic type, Frenzy from the Mark of Khorne, no external aura or item involved anywhere. Despite that, the explicit override was still required. This confirms Frenzy is blocked by Immune to Psychology outright, regardless of native or external sourcing, unlike Stubborn or Hatred, which are never reachable by Immune to Psychology at all and never need this kind of override when native.
+This is a genuinely important data point for the Norn Consensus Golden Rule for Immune to Psychology (see the Psychology section of the core rules FAQ), because both rules here are permanently native to the same single model - Immune to Psychology from the baseline Daemonic type, Frenzy from the Mark of Khorne, no external aura or item involved anywhere. Despite that, the explicit override was still required. This confirms Frenzy is blocked by Immune to Psychology outright, regardless of native or external sourcing - unlike Stubborn or Hatred, which are never named in Immune to Psychology's own text and so need no override when native (externally-sourced Stubborn or Hatred is still blocked by default, but through a separate mechanism - see the Golden Rule entry above).
 
 **S.** Hordes of Chaos Army Book (Daemonic, Mark of Khorne, Daemon Prince, Exalted Daemon) / The Norn Consensus
 
@@ -7878,7 +7826,7 @@ This is not the same as a different unit moving to re-crew an abandoned war mach
 
 **Q.** When a Tomb Scorpion (or other Tunneling model) emerges using "It Came From Below," can it face any direction the controlling player wants, or does the direction it emerged from constrain its facing?
 
-**A.** It may face any direction the controlling player wants, exactly as with normal model placement. The Tunneling rules do not alter or restrict the default rule that a player places a model facing however they choose; there is nothing in the Tunneling rules that ties facing to the direction of emergence or the direction of scatter. This was extensively play-tested with no issue.
+**A.** Any direction the controlling player wants - the Tunneling rules don't alter the default rule that a player places a model facing however they choose, and nothing ties facing to the direction of emergence or scatter. This was extensively play-tested with no issue.
 
 **S.** GW-JadeGriffon (Joe), Games Workshop staff, official eshare rules board, from direct playtesting experience
 
@@ -7904,7 +7852,7 @@ This is not the same as a different unit moving to re-crew an abandoned war mach
 
 **Q.** If a Lizardmen character attacks with the *Piranha Blade* (doubles unsaved wounds) and also has the *Bane Head* (doubles unsaved wounds against a nominated character), how are the wounds multiplied if he hits the nominated target?
 
-**A.** Four wounds, not three. No official FAQ covers this exact combo, so the answer follows from reading each item's own wording literally rather than inventing a stacking rule. *Piranha Blade*: "Any wound inflicted by the Piranha Blade is multiplied into two wounds after Armour saves" — this doubles the wound(s) that weapon itself causes: 1 unsaved wound becomes 2. *Bane Head*: "all unsaved wounds caused by the bearer... on the nominated target are doubled" — note this is worded around the bearer's total wound output against that target, not "wounds inflicted by the Bane Head" the way Piranha Blade is scoped to itself. It has no reason to ignore the 2 wounds the Piranha Blade already produced, so it doubles that running total: 2 becomes 4. There's no textual basis for the alternative of computing each multiplier against the original 1 wound and adding the results (1+1+1=3) — neither item says "add" or "independently of other doubling effects," so that reading would be inventing a mechanic rather than applying the printed one. The Grudge Thrower + Rune of Penetrating case earlier in this document (a genuine Official Dwarfs FAQ ruling) is the closest real precedent for how 6th edition resolves a modifier feeding into a multiplier: fold it into the running value first, then apply the next step — not compute both effects against the original base and combine them after the fact. That confirms the sequential (4-wound) reading is the one consistent with how GW itself has resolved an analogous stacking question, even though it isn't a direct ruling on this specific combo.
+**A.** Four wounds, not three. *Piranha Blade* doubles the wound(s) it causes: 1 unsaved wound becomes 2. *Bane Head* doubles "all unsaved wounds caused by the bearer... on the nominated target" - worded around the bearer's total wound output, not scoped to itself the way Piranha Blade is - so it doubles the running total (2 becomes 4), not the original 1. Nothing in either item's text supports computing each multiplier separately against the original wound and adding them (1+1+1=3). This matches the Grudge Thrower + Rune of Penetrating case earlier in this document (an Official Dwarfs FAQ ruling): a modifier feeds into the running value first, and the next step multiplies that - not the original base.
 
 **S.** The Norn Consensus / Lizardmen Army Book (Piranha Blade, Bane Head — "Treasures of the Lost World") / Games Workshop's Official Dwarfs FAQ (Grudge Thrower + Rune of Penetrating, cited above, as the closest real precedent for sequencing a modifier into a multiplier)
 
@@ -7944,7 +7892,7 @@ This is not the same as a different unit moving to re-crew an abandoned war mach
 
 **Q.** The *Warhammer Realms: Lustria* supplement's themed special-character army lists (the Lizardmen *Red Host of Tehenhauin* and the Skaven *Bubonic Court of Nurglitch*) list their special character as a "(compulsory)" Lord choice. Does this only mean he must be your first Lord pick if you take one, or does it mean the entire themed list can only be played at 2000+ points at all?
 
-**A.** It means the whole themed list requires 2000+ points; the compulsory character is not an optional Lord slot you can skip at smaller games. These two lists are a package deal built around their special character - Tehenhauin or Nurglitch is mandatory regardless of whether the points level would normally require you to field a Lord at all, and that mandatory requirement is what restricts the list to 2000-point games and larger. Below 2000 points, use the standard Lizardmen or Skaven army list instead; these are not available as a smaller-scale option.
+**A.** The whole themed list requires 2000+ points - Tehenhauin or Nurglitch is mandatory regardless of whether the points level would normally require a Lord at all, which is what restricts the list to that size and larger. Below 2000 points, use the standard Lizardmen or Skaven army list instead.
 
 **S.** GW-Trollslayer (Tom), Games Workshop staff, official eshare rules board, after checking with Design Team member Andy Hoare and correcting an earlier in-thread answer / *Warhammer Realms: Lustria*
 
@@ -8021,13 +7969,7 @@ Based on the rules and descriptions across the army books, the following specifi
 
 **Q.** Can a Bretonnian character benefit from both the *Grail Vow* and the *Virtue of the Penitent*?
 
-**A.** Yes, if the character is otherwise legally built.
-
-The Grail Vow makes the character *Immune to Psychology*. The Virtue of the Penitent makes the character *Stubborn* and imposes its own restrictions.
-
-The Virtue is not a Magic Item. It is a permanent Bretonnian army-list ability purchased for the character.
-
-Both Rulebook definitions of *Immune to Psychology* preserve Break tests. Since *Stubborn* modifies Break tests rather than causing a Psychology test, the character is both *Immune to Psychology* and *Stubborn*. The character takes Break tests on unmodified Leadership while ignoring Psychology tests and external Psychology effects as normal.
+**A.** Yes, if the character is otherwise legally built. The Grail Vow makes him *Immune to Psychology*; the Virtue of the Penitent makes him *Stubborn* (and is not a Magic Item - it's a permanent Bretonnian army-list ability). Both are native, so nothing here needed overriding - see the Golden Rule entry above.
 
 **S.** Bretonnia Army Book / Rulebook pages 74, 80, 85, 112 & 270 / Direwolf FAQ Council Interpretation / The Norn Consensus Historical Precedent
 
@@ -8035,11 +7977,7 @@ Both Rulebook definitions of *Immune to Psychology* preserve Break tests. Since 
 
 **Q.** Does the official Empire FAQ concerning the Banner of Sigismund prevent a Grail character with the *Virtue of the Penitent* from being Stubborn?
 
-**A.** No. The Empire FAQ concerns a Magic Standard granting *Stubborn* to a unit that is already *Immune to Psychology*.
-
-A Bretonnian character with the Grail Vow and the Virtue of the Penitent is not receiving *Stubborn* from a Magic Standard. Both rules are permanent army-list choices belonging to the character.
-
-This is treated as a permanent non-magic-item army-list combination, not as a Magic Item overriding *Immune to Psychology*.
+**A.** No. The Empire FAQ concerns a Magic Standard granting *Stubborn* to a unit already *Immune to Psychology*. A Grail Vow character with the Virtue of the Penitent isn't in that situation - both are permanent army-list choices, not a Magic Item.
 
 **S.** Bretonnia Army Book / Rulebook pages 112 & 270 / Warhammer Chronicles 2004 page 116 / Direwolf FAQ Council Interpretation / The Norn Consensus Historical Precedent
 
@@ -8097,9 +8035,9 @@ It's the explicit Cult of Slaanesh wording that overrides that default here, not
 
 **Q.** Maneaters are printed with both *Immune to Psychology* and *Stubborn*. Their entry adds "even though they are normally immune to psychology" - is this an exception being granted, or is it redundant?
 
-**A.** Redundant, as far as we can tell - a plain-language reminder rather than a mechanical necessity. This is a genuine native-plus-native case, both keywords permanently on the same unit's own profile, no external item or aura involved. Under the Norn Consensus Golden Rule for Immune to Psychology (see the Psychology section of the core rules FAQ), Stubborn is never reachable by Immune to Psychology at all, native or external, so there was nothing here that actually needed overriding - unlike Hatred, where a real, printed default block exists (the Empire *Righteous Fury* rule) that later rules had to explicitly route around.
+**A.** Redundant, as far as we can tell - a plain-language reminder, not a mechanical necessity. Both keywords are permanent, native parts of the Maneaters' own profile, with no external item or aura involved. Immune to Psychology's own text never names Stubborn, so a native Stubborn was never something it could touch - there was nothing here to override. (This doesn't extend to externally-granted Stubborn, which is still blocked by default for unrelated reasons - see the Golden Rule entry above.)
 
-Ogre Kingdoms (2004) was written and released around the same time the Bretonnia Grail Vow/Virtue of the Penitent combination was already causing confusion on the community boards, and shortly after the Empire Banner of Sigismund FAQ had been issued. The most likely explanation is that Ogre Kingdoms' writers were aware of that live confusion and added the clarifying phrase to head it off for their own players, even though nothing in either rule's own text would have created a conflict to begin with. Treat this the same as the Treeman: Stubborn survives, and the explanatory phrasing is a courtesy, not a special case.
+Treat this the same as the Treeman: Stubborn survives, and the phrase is a courtesy, not a special case.
 
 **S.** Ogre Kingdoms Army Book (Maneaters) / The Norn Consensus
 
@@ -8109,11 +8047,7 @@ Ogre Kingdoms (2004) was written and released around the same time the Bretonnia
 
 **Q.** Does a Treeman natively benefit from both *Stubborn* and *Immune to Psychology* via the Forest Spirit rule in close combat?
 
-**A.** Yes. A Treeman has Forest Spirit and *Stubborn* in its own unit entry. Forest Spirit makes it *Immune to Psychology*, and *Stubborn* is also part of its printed rules.
-
-Both Rulebook definitions of *Immune to Psychology* preserve Break tests. Since *Stubborn* modifies Break tests rather than causing a Psychology test, the Treeman takes Stubborn Break tests on unmodified Leadership while simultaneously ignoring Psychology tests and external Psychology effects as normal.
-
-This is one of the clearest examples showing that *Immune to Psychology* cannot be read as automatically deleting every other Psychology rule already printed on the model.
+**A.** Yes. A Treeman has Forest Spirit (which grants *Immune to Psychology*) and *Stubborn*, both printed in its own unit entry - both native, so nothing here needed overriding (see the Golden Rule entry above). This is one of the clearest examples showing *Immune to Psychology* doesn't automatically delete every other Psychology rule already printed on a model.
 
 **S.** Rulebook pages 85, 112 & 270 / Wood Elves Army Book / Warhammer Chronicles 2004 page 116 / Direwolf FAQ Council Interpretation / The Norn Consensus Historical Precedent
 
@@ -8121,11 +8055,7 @@ This is one of the clearest examples showing that *Immune to Psychology* cannot 
 
 **Q.** Does the Treeman ruling contradict the official Empire FAQ concerning the Banner of Sigismund?
 
-**A.** No. The Banner of Sigismund FAQ concerns a Magic Standard granting *Stubborn* to a unit that is already *Immune to Psychology*.
-
-A Treeman has both Forest Spirit and *Stubborn* in its own unit entry. Neither rule is being imposed by a Magic Item or Magic Standard.
-
-The Treeman is therefore both *Immune to Psychology* and *Stubborn*.
+**A.** No. The Banner of Sigismund FAQ concerns a Magic Standard granting *Stubborn* to a unit already *Immune to Psychology*. A Treeman's Forest Spirit and *Stubborn* are both printed in its own unit entry, not imposed by a Magic Item or Standard - so the Sigismund block doesn't apply here.
 
 **S.** Wood Elves Army Book / Rulebook pages 112 & 270 / Warhammer Chronicles 2004 page 116 / Direwolf FAQ Council Interpretation / The Norn Consensus Historical Precedent
 
