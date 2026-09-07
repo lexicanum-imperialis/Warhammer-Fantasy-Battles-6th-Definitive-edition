@@ -7351,7 +7351,7 @@ troops, too. To do this you'll obviously need both Ravening
 Hordes and the new Orc & Goblins book. The following changes
 bring the list up to date:
 
-- Replace the Special unit entries in Ravvvvveeening Hordes for the
+- Replace the Special unit entries in Ravening Hordes for the
 Orc Boyz, Goblins and Black Orcs with the following army list
 entries  from the Orc & Goblin Armies book: Goblins, Orc Boyz,
 Orc Arrer Boyz and 0-1 units of Black Orcs. One unit of Orc
@@ -7359,13 +7359,13 @@ Boyz may be upgraded to Big'Uns as per the normal rules in
 the book. All these units count as Special units in the Chaos
 Dwarf army.
 
-- Delete special rule 5 about Orcs ignoriiiiinnng panicking Gobbos
+- Delete special rule 5 about Orcs ignoring panicking Gobbos
 (this is replaced by the full rules from the book)
 
-- Troops described in the Orc & Goblin booooooook follow the rules
+- Troops described in the Orc & Goblin book follow the rules
 there rather than the shorthand versions in Ravening Hordes.
 
-- Hobgoblins suffer Animosity just as a uuuuunnnit of Goblins would
+- Hobgoblins suffer Animosity just as a unit of Goblins would
 in the Orc & Goblin book. This replaces the animosity rule in
 Ravening Hordes (special rule 3).
 S. US White Dwarf #250 page 11
@@ -7541,15 +7541,19 @@ This is not the same as the Banner of Sigismund FAQ. The Banner of Sigismund is 
 
 **Q.** Does Volkmar's War Altar suppress *Hatred*, *Stubborn*, *Frenzy*, *Stupidity* or similar rules already possessed by an Empire unit?
 
-**A.** No, not by itself. Volkmar's War Altar grants *Immune to Psychology*. It does not say that it removes other Psychology rules already possessed by affected units.
+**A.** Volkmar's War Altar is actually the single clearest illustration of the full Norn Consensus Golden Rule for Immune to Psychology (see the Psychology section of the core rules FAQ for the complete evidence), because its own printed text touches every part of it at once. Its full rule reads: *"...the Grand Theogonist and any Empire unit within 12" are Immune to Psychology, except that they will hate all Chaos, Undead and Skaven (as per the Righteous Fury special rule)."*
 
-Therefore, an Empire unit affected by the War Altar keeps any native or permanent non-magic-item Psychology rules it already has.
+*Stubborn* survives untouched. It only ever modifies a Break test, and Break tests are not Psychology tests, so *Immune to Psychology* never reaches it regardless of where the immunity comes from. An Empire unit with printed Stubborn (Greatswords, for example) keeps it within the War Altar's radius with no special wording needed.
+
+*Hatred* is the interesting one, and it does **not** survive here by the same default logic as Stubborn - it survives specifically *because* the War Altar's own text overrides a real, printed block. The generic *Righteous Fury* rule (which is what grants Hatred to a Warrior Priest's unit in the first place) states outright: "units Immune to Psychology are not affected by this power as well." That means the moment the War Altar makes the unit Immune to Psychology, Righteous Fury's own Hatred would normally switch off - which is exactly why the War Altar's text has to add "except that they will hate..." to force it back on. Without that clause, Volkmar's own unit would lose its Hatred the instant it came within his own Altar's radius. This is an external-imposition-with-explicit-override case, not a "Hatred is always safe" case - compare the generic Warrior Priest without a War Altar, whose Hatred *is* switched off by an incoming Immune to Psychology effect with no override present.
+
+*Frenzy* and *Stupidity* do not survive contact with an *Immune to Psychology* effect, regardless of native or external sourcing, confirmed independently by the Banner of Balance ruling (Warhammer Chronicles 2003, p.133) and by the Daemon Prince of Khorne needing its own "even if otherwise Immune to Psychology" override for Frenzy despite both rules being permanently native to that single model.
+
+Therefore: an Empire unit affected by the War Altar keeps *Stubborn* if it already has it (nothing to suppress it in the first place), keeps its Warrior Priest's *Hatred* specifically because the Altar's text says so, and loses the practical benefit of *Frenzy* or *Stupidity* for as long as it remains in range and *Immune to Psychology*, unless some other specific rule says otherwise.
 
 The War Altar still prevents the unit from being affected by external Psychology effects in the normal way and prevents it from choosing Flee as a charge reaction.
 
-Specific rules and official FAQs override this general principle. If a spell, Magic Standard, prayer or other rule specifically says that a named Psychology rule is lost, suspended, or applies even to models Immune to Psychology, apply that specific wording.
-
-**S.** Empire Army Book / Warhammer Annual 2002 page 60 / Rulebook pages 84, 85, 112 & 270 / Direwolf FAQ Council Interpretation / The Norn Consensus Historical Precedent
+**S.** Empire Army Book (The War Altar, Righteous Fury) / Warhammer Annual 2002 page 60 / Rulebook pages 74, 80, 84, 85, 112 & 270 / Warhammer Chronicles 2003 page 133 (Banner of Balance ruling) / Warhammer Chronicles 2004 page 116 / Hordes of Chaos Army Book (Daemonic, Mark of Khorne) / Direwolf FAQ Council Interpretation / The Norn Consensus
 
 ---
 
@@ -7633,9 +7637,9 @@ This mirrors the shooting distribution rules and prevents either model type from
 
 **A.** No. Dwarfs do not hate Trolls, Giants, Squigs, or other non-Orc/non-Goblin beasts merely because those models are selected from the Warhammer Armies: Orcs & Goblins army book.
 
-The Dwarf rule specifically states that Dwarfs hate "Orcs and Goblins of all types". This is a racial/model-type reference, not a blanket reference to every unit chosen from the Orcs & Goblins army list.
+The Dwarf rule's actual text is broader than a simple "Orcs and Goblins" line: "Dwarfs hate all types of Orcs, Goblins and Snotlings, including Night Goblins, Black Orcs, Hobgoblins... In fact all greenskins of any description!" This is still a racial/model-type reference, not a blanket reference to every unit chosen from the Orcs & Goblins army list, and it explicitly covers Snotlings by name alongside Orcs and Goblins.
 
-Therefore, the hatred applies to Orc and Goblin racial subtypes, including recognised Goblin-kin where separately classified as Goblins or Greenskins, but it does not extend to allied monsters, beasts, war machines, chariots, mounts, or handlers' creatures unless those models are themselves Orcs or Goblins.
+Therefore, the hatred applies to Orc, Goblin and Snotling racial subtypes and any other model the army book or common usage would recognise as a "greenskin," but it does not extend to allied monsters, beasts, war machines, chariots, mounts, or handlers' creatures that aren't themselves greenskins - Trolls, Giants, and Squigs are their own distinct creature types in Warhammer lore, not classified as greenskins, even when fielded from the Orcs & Goblins army list.
 
 The Cauldron of Blood precedent does not change this. The Cauldron affects "Any Dark Elf units", which is an army-list/unit identity phrase. By contrast, Ancestral Grudge says Dwarfs hate "Orcs and Goblins of all types", which names specific races or creature types. It therefore applies to Orc and Goblin variants, but not to every creature available in the Orcs & Goblins army list.
 
@@ -7798,6 +7802,16 @@ For example, a Doombull with the Mark of Chaos Undivided joining an unmarked uni
 
 ---
 
+**Q.** A Daemon Prince or Exalted Daemon with the Mark of Khorne is Immune to Psychology (from the *Daemonic* special rule) and gains Frenzy (from the Mark). Does the Immune to Psychology suppress the Frenzy?
+
+**A.** No, but only because the entry explicitly says so, not because the two rules are naturally compatible. The *Daemonic* special rule states plainly: "Immune to Psychology: Daemons are immune to psychology." The printed entry for the Daemon Prince/Exalted Daemon of Khorne then adds: "The [Daemon] is subject to frenzy even if otherwise Immune to Psychology."
+
+This is a genuinely important data point for the Norn Consensus Golden Rule for Immune to Psychology (see the Psychology section of the core rules FAQ), because both rules here are permanently native to the same single model - Immune to Psychology from the baseline Daemonic type, Frenzy from the Mark of Khorne, no external aura or item involved anywhere. Despite that, the explicit override was still required. This confirms Frenzy is blocked by Immune to Psychology outright, regardless of native or external sourcing, unlike Stubborn or Hatred, which are never reachable by Immune to Psychology at all and never need this kind of override when native.
+
+**S.** Hordes of Chaos Army Book (Daemonic, Mark of Khorne, Daemon Prince, Exalted Daemon) / The Norn Consensus
+
+---
+
 **Q.** In a Storm of Chaos Daemonic Legion army, Daemons are granted an improved 5+ *Daemonic Aura* Ward Save. Does this improved save protect them against magical attacks and spells?
 
 **A.** No. Although the Daemonic Aura is improved to a 5+ Ward Save in a Daemonic Legion list, it still retains the core Daemonic restriction: the Ward Save cannot be used against any magical attacks, including spells and magic items.
@@ -7840,9 +7854,9 @@ This is not the same as a different unit moving to re-crew an abandoned war mach
 
 **Q.** If a Lizardmen character attacks with the *Piranha Blade* (doubles unsaved wounds) and also has the *Bane Head* (doubles unsaved wounds against a nominated character), how are the wounds multiplied if he hits the nominated target?
 
-**A.** The multipliers apply to the original base wound separately rather than compounding sequentially. One unsaved wound is doubled by the *Piranha Blade* (+1 wound) and doubled by the *Bane Head* (+1 wound), resulting in a total of 3 wounds inflicted per unsaved hit.
+**A.** Four wounds, not three. No official FAQ covers this exact combo, so the answer follows from reading each item's own wording literally rather than inventing a stacking rule. *Piranha Blade*: "Any wound inflicted by the Piranha Blade is multiplied into two wounds after Armour saves" — this doubles the wound(s) that weapon itself causes: 1 unsaved wound becomes 2. *Bane Head*: "all unsaved wounds caused by the bearer... on the nominated target are doubled" — note this is worded around the bearer's total wound output against that target, not "wounds inflicted by the Bane Head" the way Piranha Blade is scoped to itself. It has no reason to ignore the 2 wounds the Piranha Blade already produced, so it doubles that running total: 2 becomes 4. There's no textual basis for the alternative of computing each multiplier against the original 1 wound and adding the results (1+1+1=3) — neither item says "add" or "independently of other doubling effects," so that reading would be inventing a mechanic rather than applying the printed one. The Grudge Thrower + Rune of Penetrating case earlier in this document (a genuine Official Dwarfs FAQ ruling) is the closest real precedent for how 6th edition resolves a modifier feeding into a multiplier: fold it into the running value first, then apply the next step — not compute both effects against the original base and combine them after the fact. That confirms the sequential (4-wound) reading is the one consistent with how GW itself has resolved an analogous stacking question, even though it isn't a direct ruling on this specific combo.
 
-**S.** The Norn Consensus Historical Precedent / Lizardmen Army Book
+**S.** The Norn Consensus / Lizardmen Army Book (Piranha Blade, Bane Head — "Treasures of the Lost World") / Games Workshop's Official Dwarfs FAQ (Grudge Thrower + Rune of Penetrating, cited above, as the closest real precedent for sequencing a modifier into a multiplier)
 
 ---
 
@@ -8005,11 +8019,11 @@ This is treated as a permanent non-magic-item army-list combination, not as a Ma
 
 The Cult of Slaanesh special rules explicitly state that units or characters with the Mark of Slaanesh and riding Cold Ones are still subject to Stupidity.
 
-This also aligns with the Norn Consensus ruling on *Immune to Psychology*. Appendix Seven clarifies that *Immune to Psychology* prevents Psychology tests and Flee charge reactions, while Break tests still apply. The Norn Consensus further preserves native or permanent army-list Psychology rules unless a specific rule removes them.
+This is actually the opposite of the Norn Consensus's general default for Stupidity: per the Warhammer Chronicles 2003 Banner of Balance precedent (see the Empire and core Psychology entries), Stupidity is normally suppressed while a unit is *Immune to Psychology*, the same way Frenzy is. Without this specific Cult of Slaanesh rule, Cold One Knights given the Mark of Slaanesh would likely lose the practical effect of their Stupidity while immune.
 
-In this case, the specific Cult of Slaanesh rule is decisive: the Cold One's Stupidity remains in force despite the Mark of Slaanesh.
+It's the explicit Cult of Slaanesh wording that overrides that default here, not the default itself: the army book specifically states that Mark of Slaanesh Cold Ones remain subject to Stupidity, which is exactly the kind of named exception that overrides the general suppression rule.
 
-**S.** Storm of Chaos Cult of Slaanesh Special Rules / Rulebook pages 112 & 270 / The Norn Consensus Psychology Ruling
+**S.** Storm of Chaos Cult of Slaanesh Special Rules / Rulebook pages 112 & 270 / Warhammer Chronicles 2003 page 133 (Banner of Balance ruling) / The Norn Consensus
 
 ---
 
@@ -8020,6 +8034,16 @@ In this case, the specific Cult of Slaanesh rule is decisive: the Cold One's Stu
 **A.** Gut Magic can be dispelled immediately during the Ogre player's Magic phase just like any normal spell, requiring your dispel roll to beat the Ogre player's casting roll. If it is not dispelled immediately, it successfully casts and becomes a *Remains in Play* spell. In any subsequent Magic phase, you may use excess Dispel Dice to remove it; when dispelling it in subsequent turns the original casting roll is ignored and the Gut Magic spell is always treated as having a Power Level of 7.
 
 **S.** The Norn Consensus Historical Precedent / Ogre Kingdoms Army Book / Direwolf FAQ Compilation
+
+---
+
+**Q.** Maneaters are printed with both *Immune to Psychology* and *Stubborn*. Their entry adds "even though they are normally immune to psychology" - is this an exception being granted, or is it redundant?
+
+**A.** Redundant, as far as we can tell - a plain-language reminder rather than a mechanical necessity. This is a genuine native-plus-native case, both keywords permanently on the same unit's own profile, no external item or aura involved. Under the Norn Consensus Golden Rule for Immune to Psychology (see the Psychology section of the core rules FAQ), Stubborn is never reachable by Immune to Psychology at all, native or external, so there was nothing here that actually needed overriding - unlike Hatred, where a real, printed default block exists (the Empire *Righteous Fury* rule) that later rules had to explicitly route around.
+
+Ogre Kingdoms (2004) was written and released around the same time the Bretonnia Grail Vow/Virtue of the Penitent combination was already causing confusion on the community boards, and shortly after the Empire Banner of Sigismund FAQ had been issued. The most likely explanation is that Ogre Kingdoms' writers were aware of that live confusion and added the clarifying phrase to head it off for their own players, even though nothing in either rule's own text would have created a conflict to begin with. Treat this the same as the Treeman: Stubborn survives, and the explanatory phrasing is a courtesy, not a special case.
+
+**S.** Ogre Kingdoms Army Book (Maneaters) / The Norn Consensus
 
 ---
 
