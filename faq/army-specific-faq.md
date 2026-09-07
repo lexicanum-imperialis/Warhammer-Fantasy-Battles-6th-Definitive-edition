@@ -7623,6 +7623,16 @@ This mirrors the shooting distribution rules and prevents either model type from
 
 ---
 
+**Q.** Does the *Banner of Butchery*'s one-time +1 Attack apply to the whole unit, or only to models in the front rank? Does it apply to mounted models' mounts as well as their riders?
+
+**A.** It applies to every model in the unit that is fighting that turn - including models in a second fighting rank (such as spearmen), not just the front rank - because the banner's own wording grants the bonus to "each model fighting for that turn," the same phrase used elsewhere in the rulebook to describe every model actually resolving an attack that turn, not merely the front rank.
+
+The banner's wording also settles the mount question directly rather than leaving it to inference: for mounted models, only the rider gets the bonus, the mount does not. Because the item text goes out of its way to carve out this mount/rider distinction explicitly, it should be read as being deliberately precise about exactly which models benefit, supporting the "every fighting model" reading for infantry rather than a vaguer "front rank only" one.
+
+**S.** GW-JadeGriffon (Joe), Games Workshop staff, official eshare rules board / Orcs & Goblins Army Book (*Banner of Butchery*)
+
+---
+
 ### DWARFS
 
 **Q.** If a unit of Dwarf Miners arrives on the battlefield using their Underground Advance rule, can they be struck by the Anvil of Doom's *Rune of Oath and Honour* in the subsequent Shooting phase to declare a charge?
@@ -7744,6 +7754,14 @@ The Flaming component still applies in the normal sense: Regeneration cannot be 
 
 ---
 
+**Q.** A High Elf Great Eagle is a 40mm model but is mounted on a 50mm base (since nothing may use the round flying base supplied). Does the 50mm base alone make it a Large Target?
+
+**A.** No. Base size alone does not determine Large Target status - a Tomb Scorpion, for example, is also mounted on a 50mm base and is not a Large Target either. A White Dwarf UK stat sheet that once listed the Great Eagle as a Large Target was acknowledged as a printing error, not a rules change. A Great Eagle should be treated as the same size as other 40mm/50mm-based models for targeting purposes unless a future army book entry explicitly grants it Large Target status.
+
+**S.** GW-JadeGriffon (Joe), Games Workshop staff, official eshare rules board / White Dwarf UK errata acknowledgement
+
+---
+
 ### SKAVEN
 
 **Q.** If a Skaven unit pushing a *Screaming Bell* suffers heavy casualties and drops to 5 models or fewer so the Bell can no longer move, can the Grey Seer voluntarily dismount, or can the remaining Clanrats abandon the Bell to move freely?
@@ -7785,6 +7803,14 @@ Skaven may not use their rank bonus when a rule explicitly checks **base Leaders
 **Practical Version:** If the rule asks for the unit's Leadership, Skaven are braver in packs. If the rule asks for base or unmodified Leadership, use the printed value.
 
 **S.** Tuomas Pirinen, designer answer to Norn Consensus inquiry / Skaven Army Book / Vampire Counts Army Book / Tomb Kings Army Book
+
+---
+
+**Q.** Skaven Censer Bearers force a Toughness test on models in base contact instead of an attack. Do Ward Saves apply against a failed test, and if so, at what Strength is the attack treated as being for the "5+ vs Strength 5+" ward tier?
+
+**A.** Ward Saves apply as normal - failing the test still inflicts a wound, and Ward Saves trigger against wounds regardless of how they were caused, the same way they apply against the Casket of Souls. However, the Censer's attack has no Strength value of its own. Because there is no Strength 5+ to trigger the better ward tier, victims always get only the flat 6+ Ward Save (where they have one at all), never the 5+ that would apply against a Strength 5+ attack, no matter how the fluff describes the gas cloud's potency.
+
+**S.** GW-JadeGriffon (Joe), Games Workshop staff, official eshare rules board
 
 ---
 
@@ -7850,6 +7876,30 @@ This is not the same as a different unit moving to re-crew an abandoned war mach
 
 ---
 
+**Q.** When a Tomb Scorpion (or other Tunneling model) emerges using "It Came From Below," can it face any direction the controlling player wants, or does the direction it emerged from constrain its facing?
+
+**A.** It may face any direction the controlling player wants, exactly as with normal model placement. The Tunneling rules do not alter or restrict the default rule that a player places a model facing however they choose; there is nothing in the Tunneling rules that ties facing to the direction of emergence or the direction of scatter. This was extensively play-tested with no issue.
+
+**S.** GW-JadeGriffon (Joe), Games Workshop staff, official eshare rules board, from direct playtesting experience
+
+---
+
+**Q.** When the *Casket of Souls* is used and its target unit has a General (or other high-Leadership character) who has joined it, can the player use the General's Leadership value instead of the unit's own for the Casket's damage roll?
+
+**A.** No. The Casket of Souls' damage roll is not a Leadership "test" in the rules-defined sense (rolling equal to or under a Leadership value); it is a to-hit-style roll that uses the target unit's own Leadership characteristic as a number to do math with, similar to a normal shooting-to-hit roll using Ballistic Skill. Because the "a joined character may use his Leadership in place of the unit's for tests" rule only applies to genuine Leadership tests, and the Casket's damage roll is not one, the unit's own printed Leadership is used regardless of which characters have joined it.
+
+**S.** GW-JadeGriffon (Joe), Games Workshop staff, official eshare rules board
+
+---
+
+**Q.** When the Incantation of Righteous Smiting is cast on a unit of Chariots, does each Chariot get one attack total, or one attack for each "part" of the Chariot (each horse plus each crewman)?
+
+**A.** Each part of the Chariot gets its own single attack under the Incantation. A Chariot is made up of multiple models for this purpose (its horses/steeds and its crew), and Righteous Smiting grants one attack per model in base contact, not one attack per Chariot as a unit. This makes the Incantation notably strong on Chariots specifically, since a single Chariot can generate several attacks this way rather than the lone attack a solitary model such as a Tomb Scorpion or Giant would get from the same spell.
+
+**S.** GW-JadeGriffon (Joe), Games Workshop staff, official eshare rules board
+
+---
+
 ### LIZARDMEN
 
 **Q.** If a Lizardmen character attacks with the *Piranha Blade* (doubles unsaved wounds) and also has the *Bane Head* (doubles unsaved wounds against a nominated character), how are the wounds multiplied if he hits the nominated target?
@@ -7889,6 +7939,14 @@ This is not the same as a different unit moving to re-crew an abandoned war mach
 **A.** You use the Skink rider's Toughness of 2. In Warhammer 6th Edition, standard cavalry models always use the Toughness of the rider for the purposes of resolving incoming attacks, regardless of how tough the mount's profile is.
 
 **S.** The Norn Consensus Historical Precedent / Rulebook (Cavalry rules)
+
+---
+
+**Q.** The *Warhammer Realms: Lustria* supplement's themed special-character army lists (the Lizardmen *Red Host of Tehenhauin* and the Skaven *Bubonic Court of Nurglitch*) list their special character as a "(compulsory)" Lord choice. Does this only mean he must be your first Lord pick if you take one, or does it mean the entire themed list can only be played at 2000+ points at all?
+
+**A.** It means the whole themed list requires 2000+ points; the compulsory character is not an optional Lord slot you can skip at smaller games. These two lists are a package deal built around their special character - Tehenhauin or Nurglitch is mandatory regardless of whether the points level would normally require you to field a Lord at all, and that mandatory requirement is what restricts the list to 2000-point games and larger. Below 2000 points, use the standard Lizardmen or Skaven army list instead; these are not available as a smaller-scale option.
+
+**S.** GW-Trollslayer (Tom), Games Workshop staff, official eshare rules board, after checking with Design Team member Andy Hoare and correcting an earlier in-thread answer / *Warhammer Realms: Lustria*
 
 ---
 

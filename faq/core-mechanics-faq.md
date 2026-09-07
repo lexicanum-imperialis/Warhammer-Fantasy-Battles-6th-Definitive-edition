@@ -3536,6 +3536,22 @@ Furthermore, if multiple units charge the shooters and even one of those chargin
 
 ---
 
+**Q.** Can a mounted character (e.g. a Wizard on a horse) see and be seen over friendly infantry, on the theory that a rider sits higher than the infantry around him?
+
+**A.** No. Models of any size block Line of Sight to models of any size, unless the target model is specifically classed as a Large Target - being mounted on a horse or similar non-Large-Target mount does not change this. The rulebook's separate note that a character on a horse can still be singled out as a target even within 5" of friendly infantry is a targeting exception, not a Line of Sight exception, and should not be read as granting cavalry-mounted characters the ability to see over intervening infantry.
+
+**S.** GW-JadeGriffon (Joe), Games Workshop staff, official eshare rules board / Rulebook pages 59, 97 & 142
+
+---
+
+**Q.** If a war machine (or its crew) is destroyed outright by a misfire result such as "Destroyed!", does a crewman's Ward Save from magic armour or a talisman apply?
+
+**A.** No. A "Destroyed!" misfire result kills the crew outright rather than inflicting a wound on them, in the same way that being caught while fleeing kills outright. Ward Saves only ever trigger against wounds, so an effect that removes a model without causing a wound bypasses Ward Saves entirely, regardless of how powerful the Ward Save is.
+
+**S.** GW-JadeGriffon (Joe), Games Workshop staff, official eshare rules board
+
+---
+
 ### CLOSE COMBAT
 
 **Q.** Can two or more separate units, such as two Chariots with Unit Strength 4 each, combine their Unit Strengths to reach the 5+ Unit Strength required to negate an enemy unit's rank bonus when charging the same flank or rear?
@@ -3603,6 +3619,22 @@ This is a different question from whether two *different* magical bonus sources 
 **A.** The Chariot suffers the hits. The charging unit must align to the target if physically possible. Because difficult terrain is not impassable terrain, the Chariot can physically enter it. The Chariot must complete the alignment, and because this moves the Chariot into difficult terrain, it immediately suffers the D6 S6 hits. The target unit only aligns to the charger if the charger is physically unable to do so, such as when blocked by impassable terrain.
 
 **S.** The Norn Consensus Historical Precedent / Rulebook pages 52 & 127
+
+---
+
+**Q.** Does a 1+ Armour Save actually mean the model rolls against an effective 2+, with modifiers then applied on top?
+
+**A.** Yes, that is the correct way to read it. An unmodified 1+ save is rolled for and succeeds on a 2 or more (a roll of 1 always fails, as normal), and any negative save modifiers are then subtracted from that starting point exactly as they would be for a 2+, 3+, etc. save.
+
+**S.** GW-JadeGriffon (Joe), Games Workshop staff, official eshare rules board
+
+---
+
+**Q.** When a weapon grants a Strength bonus in close combat (such as a halberd's +1 Strength), does that bonus also modify the target's Armour Save, or does it only affect the To Wound roll?
+
+**A.** The bonus also modifies the Armour Save. Once a weapon's Strength bonus is applied, the attacker's effective Strength for that combat is used for every purpose the rules ask for Strength, including the Armour Save modifier - not only for determining whether the hit wounds. A Strength 3 model wielding a +1 Strength halberd resolves its hits as Strength 4 across the board, applying the associated -1 Armour Save modifier along with the improved To Wound roll.
+
+**S.** GW-JadeGriffon (Joe), Games Workshop staff, official eshare rules board
 
 ---
 
@@ -3731,6 +3763,14 @@ However, because *Immune to Psychology* does not inherently cause a unit to beco
 **A.** No. Units that are actively engaged in close combat are too busy fighting for their lives to notice the wider battle. The core rules explicitly state that units engaged in close combat never take Panic tests, regardless of the trigger.
 
 **S.** The Norn Consensus Historical Precedent / Rulebook page 80
+
+---
+
+**Q.** Is it legal to deliberately face units away or angle them so that a Frenzied enemy model (e.g. a Bloodthirster) has nothing in its charge arc, denying it a forced charge that turn?
+
+**A.** Yes, this is legal. Positioning your own units to deny a Frenzied enemy a valid compulsory charge target is no different in principle from angling a monster-mounted Wizard for spell Line of Sight, or timing a Tunneling unit's emergence to avoid an enemy charge - all are cases of using deployment and facing to control what an opponent's rules can interact with. There is nothing in the rules that requires a player to leave a valid charge target in arc for an opponent's Frenzied models, even though doing so may not feel very fluffy for the Frenzied side.
+
+**S.** GW-JadeGriffon (Joe), Games Workshop staff, official eshare rules board
 
 ---
 
@@ -4102,9 +4142,9 @@ You may freely jump back and forth between your Wizards when casting spells duri
 
 **Q.** Can a player use a spell, magic item, or special ability that allows them to "re-roll a D6" to re-roll an Artillery Die or a Scatter Die?
 
-**A.** No. The Artillery Die and the Scatter Die are entirely separate classes of dice from a standard D6. An ability must explicitly state that it can be used to re-roll an Artillery Die, Scatter Die, or "any single die" to affect them. If an ability specifically allows the re-roll of a "D6", it can only be used on a standard six-sided die.
+**A.** No. The Artillery Die and the Scatter Die are entirely separate classes of dice from a standard D6. An ability must explicitly state that it can be used to re-roll an Artillery Die, Scatter Die, or "any single die" to affect them. If an ability specifically allows the re-roll of a "D6", it can only be used on a standard six-sided die. This is why, for example, the Lore of Heavens spell that lets a Wizard re-roll a D6 cannot be used to re-roll the Scatter or Artillery Dice for a stone thrower or similar war machine.
 
-**S.** The Norn Consensus Historical Precedent / Rulebook page 37
+**S.** The Norn Consensus Historical Precedent / Rulebook page 37 / GW-JadeGriffon (Joe), Games Workshop staff, official eshare rules board
 
 ---
 
@@ -4121,5 +4161,13 @@ You may freely jump back and forth between your Wizards when casting spells duri
 **A.** No. Fleeing Wizards are not allowed to cast or dispel spells. They cannot harvest additional dice from nearby units. Furthermore, using a Dispel Scroll legally counts as dispelling a spell, which a fleeing Wizard is explicitly forbidden from doing.
 
 **S.** The Norn Consensus Historical Precedent / Warhammer Chronicles 2004 page 115
+
+---
+
+**Q.** Are Wizards' spells for the battle rolled before both sides deploy, or after deployment but before Turn 1?
+
+**A.** Before both sides deploy. This is explicit in the rulebook and is often overlooked despite the real impact spell selection can have on deployment choices - for example, a player who knows they failed to roll a spell that threatens isolated characters may deploy an Independent Character more aggressively than they otherwise would.
+
+**S.** GW-JadeGriffon (Joe), Games Workshop staff, official eshare rules board / Rulebook page 142
 
 ---
