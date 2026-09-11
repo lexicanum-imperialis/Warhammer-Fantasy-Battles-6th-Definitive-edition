@@ -11807,7 +11807,7 @@ Hordes and the new Orc &amp; Goblins book. The following changes
 bring the list up to date:
 
 
-- Replace the Special unit entries in Ravvvvveeening Hordes for the
+- Replace the Special unit entries in Ravening Hordes for the
 Orc Boyz, Goblins and Black Orcs with the following army list
 entries from the Orc &amp; Goblin Armies book: Goblins, Orc Boyz,
 Orc Arrer Boyz and 0-1 units of Black Orcs. One unit of Orc
@@ -11816,15 +11816,15 @@ the book. All these units count as Special units in the Chaos
 Dwarf army.
 
 
-- Delete special rule 5 about Orcs ignoriiiiinnng panicking Gobbos
+- Delete special rule 5 about Orcs ignoring panicking Gobbos
 (this is replaced by the full rules from the book)
 
 
-- Troops described in the Orc &amp; Goblin booooooook follow the rules
+- Troops described in the Orc &amp; Goblin book follow the rules
 there rather than the shorthand versions in Ravening Hordes.
 
 
-- Hobgoblins suffer Animosity just as a uuuuunnnit of Goblins would
+- Hobgoblins suffer Animosity just as a unit of Goblins would
 in the Orc &amp; Goblin book. This replaces the animosity rule in
 Ravening Hordes (special rule 3).
 S. US White Dwarf #250 page 11
@@ -16867,8 +16867,126 @@ Generic Character/Challenge/General/Battle-Standard questions with no single add
 **Ruling:** No.
 **Source:** `[Warhammer Chronicles 2004 page 113]`</description>
           </rule>
+          <rule name="FAQ (NornConsensus)" id="1d26-3a9f-212d-2647" hidden="false">
+            <description>**Q.** Can a mounted character (e.g. a Wizard on a horse) see and be seen over friendly infantry, on the theory that a rider sits higher than the infantry around him?
 
+**A.** No. Models of any size block Line of Sight to models of any size, unless the target model is specifically classed as a Large Target - being mounted on a horse or similar non-Large-Target mount does not change this. The rulebook&apos;s separate note that a character on a horse can still be singled out as a target even within 5&quot; of friendly infantry is a targeting exception, not a Line of Sight exception, and should not be read as granting cavalry-mounted characters the ability to see over intervening infantry.
 
+**S.** GW-JadeGriffon (Joe), Games Workshop staff, official eshare rules board / Rulebook pages 59, 97 &amp; 142
+</description>
+            <modifiers>
+              <modifier type="set" value="true" field="hidden">
+                <conditions>
+                  <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+                </conditions>
+              </modifier>
+            </modifiers>
+          </rule>
+          <rule name="FAQ (NornConsensus)" id="0032-11b7-4af5-0529" hidden="false">
+            <description>**Q.** If a war machine (or its crew) is destroyed outright by a misfire result such as &quot;Destroyed!&quot;, does a crewman&apos;s Ward Save from magic armour or a talisman apply?
+
+**A.** No. A &quot;Destroyed!&quot; misfire result kills the crew outright rather than inflicting a wound on them, in the same way that being caught while fleeing kills outright. Ward Saves only ever trigger against wounds, so an effect that removes a model without causing a wound bypasses Ward Saves entirely, regardless of how powerful the Ward Save is.
+
+**S.** GW-JadeGriffon (Joe), Games Workshop staff, official eshare rules board
+</description>
+            <modifiers>
+              <modifier type="set" value="true" field="hidden">
+                <conditions>
+                  <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+                </conditions>
+              </modifier>
+            </modifiers>
+          </rule>
+          <rule name="FAQ (NornConsensus)" id="0615-7fa0-2f2f-1ca2" hidden="false">
+            <description>**Q.** If a single area-of-effect banner or aura, such as the Dwarf Master Rune of Stromni Redbeard, is in range of and applies to multiple friendly units that are all fighting in the same combat, does its +1 Combat Resolution bonus get added once for each unit it affects?
+
+**A.** No. An area-of-effect banner or aura adds its bonus to the overall combat resolution of an engagement, rather than granting a stacking bonus for every unit it happens to affect. Because there is only one combat resolution tallied for the entire fight, a single aura&apos;s bonus is only applied once per engagement, regardless of how many friendly units within its range are involved in that combat. This is a different question from whether two different magical bonus sources stack with each other.
+
+**S.** The Norn Consensus Historical Precedent / Rulebook page 73
+</description>
+            <modifiers>
+              <modifier type="set" value="true" field="hidden">
+                <conditions>
+                  <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+                </conditions>
+              </modifier>
+            </modifiers>
+          </rule>
+          <rule name="FAQ (NornConsensus)" id="3eef-11de-54da-0c01" hidden="false">
+            <description>**Q.** Does a 1+ Armour Save actually mean the model rolls against an effective 2+, with modifiers then applied on top?
+
+**A.** Yes, that is the correct way to read it. An unmodified 1+ save is rolled for and succeeds on a 2 or more (a roll of 1 always fails, as normal), and any negative save modifiers are then subtracted from that starting point exactly as they would be for a 2+, 3+, etc. save.
+
+**S.** GW-JadeGriffon (Joe), Games Workshop staff, official eshare rules board
+</description>
+            <modifiers>
+              <modifier type="set" value="true" field="hidden">
+                <conditions>
+                  <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+                </conditions>
+              </modifier>
+            </modifiers>
+          </rule>
+          <rule name="FAQ (NornConsensus)" id="53a9-4bca-19b1-3d96" hidden="false">
+            <description>**Q.** When a weapon grants a Strength bonus in close combat (such as a halberd&apos;s +1 Strength), does that bonus also modify the target&apos;s Armour Save, or does it only affect the To Wound roll?
+
+**A.** The bonus also modifies the Armour Save. Once a weapon&apos;s Strength bonus is applied, the attacker&apos;s effective Strength for that combat is used for every purpose the rules ask for Strength, including the Armour Save modifier - not only for determining whether the hit wounds. A Strength 3 model wielding a +1 Strength halberd resolves its hits as Strength 4 across the board, applying the associated -1 Armour Save modifier along with the improved To Wound roll.
+
+**S.** GW-JadeGriffon (Joe), Games Workshop staff, official eshare rules board
+</description>
+            <modifiers>
+              <modifier type="set" value="true" field="hidden">
+                <conditions>
+                  <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+                </conditions>
+              </modifier>
+            </modifiers>
+          </rule>
+          <rule name="FAQ (NornConsensus)" id="2d37-3af5-661c-48b2" hidden="false">
+            <description>**Q.** What happens if two different Wizards cast spells on the same unit with completely contradictory ongoing effects, such as one spell preventing a unit from moving and a subsequent spell obliging it to move?
+
+**A.** Roll a D6 each time it matters to see which effect actually applies - &quot;most recent wins&quot; and automatic dispelling have no support in the rules. Multiple spells on the same unit are normally meant to stack or coexist (page 142, using Flames of the Phoenix as its example); nothing gives a later spell the power to auto-cancel an earlier one just by contradicting it. Where two effects are flatly irreconcilable, this is the same &quot;irresistible force vs. immovable object&quot; resolution used elsewhere in this document (the 0+ save re-roll, Casket of Souls dice-stealing, Netlings vs. Banner of the Barrows, and Blade of Darting Steel cases).
+
+**S.** The Norn Consensus Historical Precedent / Rulebook page 142 / Direwolf FAQ Council Interpretation (by analogy to the same resolution used elsewhere in this document)
+</description>
+            <modifiers>
+              <modifier type="set" value="true" field="hidden">
+                <conditions>
+                  <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+                </conditions>
+              </modifier>
+            </modifiers>
+          </rule>
+          <rule name="FAQ (NornConsensus)" id="5381-6c81-23e4-1e33" hidden="false">
+            <description>**Q.** Can a player use a spell, magic item, or special ability that allows them to &quot;re-roll a D6&quot; to re-roll an Artillery Die or a Scatter Die?
+
+**A.** No. The Artillery Die and the Scatter Die are entirely separate classes of dice from a standard D6. An ability must explicitly state that it can be used to re-roll an Artillery Die, Scatter Die, or &quot;any single die&quot; to affect them. If an ability specifically allows the re-roll of a &quot;D6&quot;, it can only be used on a standard six-sided die. This is why, for example, the Lore of Heavens spell that lets a Wizard re-roll a D6 cannot be used to re-roll the Scatter or Artillery Dice for a stone thrower or similar war machine.
+
+**S.** The Norn Consensus Historical Precedent / Rulebook page 37 / GW-JadeGriffon (Joe), Games Workshop staff, official eshare rules board
+</description>
+            <modifiers>
+              <modifier type="set" value="true" field="hidden">
+                <conditions>
+                  <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+                </conditions>
+              </modifier>
+            </modifiers>
+          </rule>
+          <rule name="FAQ (NornConsensus)" id="5113-0318-6af1-2db8" hidden="false">
+            <description>**Q.** Are Wizards&apos; spells for the battle rolled before both sides deploy, or after deployment but before Turn 1?
+
+**A.** Before both sides deploy. This is explicit in the rulebook and is often overlooked despite the real impact spell selection can have on deployment choices - for example, a player who knows they failed to roll a spell that threatens isolated characters may deploy an Independent Character more aggressively than they otherwise would.
+
+**S.** GW-JadeGriffon (Joe), Games Workshop staff, official eshare rules board / Rulebook page 142
+</description>
+            <modifiers>
+              <modifier type="set" value="true" field="hidden">
+                <conditions>
+                  <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+                </conditions>
+              </modifier>
+            </modifiers>
+          </rule>
 
 
           </rules>
@@ -17351,9 +17469,11 @@ https://6th.whfb.app/flyers</description>
       <rule name="FAQ (NornConsensus)" id="5cac-ad1f-54a1-440f" hidden="false">
         <description>**Q.** When a unit of Flyers declares a charge against a fleeing unit, and the fleeing unit&apos;s move places it entirely inside a wood that the Flyer cannot enter, but the Flyer has more than enough distance to catch them, is the fleeing unit caught?
 
-**A.** Yes. Whether a fleeing unit is run down is based on the speed and distance the pursuers can cover, not the strict terrain limitations at the exact theoretical landing spot. The fleeing unit is caught and removed from play, and the Flyer stops at the edge of the wood.
+**A.** Not settled - no rulebook page, Direwolf citation, or official FAQ, only tournament convention. The core pursuit rule (compare pursuer&apos;s roll to fleeing unit&apos;s roll) doesn&apos;t address the pursuer being physically unable to enter the terrain the target ends up in.
 
-**S.** The Norn Consensus Historical Precedent / Tournament Combat Precedents
+Convention treats it as caught anyway, since the catch calculation is about relative speed, not whether the pursuer&apos;s model could physically stand on the final square. Agree this with your opponent before it comes up.
+
+**S.** Tournament convention only - no rulebook, Direwolf, or official FAQ support found
 </description>
         <modifiers>
           <modifier type="set" value="true" field="hidden">
@@ -17787,6 +17907,21 @@ Frenzied troops must pursue broken units.</description>
 **A.** No. If for some reason they should still be affected by frenzy, they regain it as soon as they rally.
 
 **S.** Anthony Reynolds - Warhammer Design Team (Online Q&amp;A on the Games Workshop Warhammer Forum)
+</description>
+        <modifiers>
+          <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+              </conditions>
+          </modifier>
+        </modifiers>
+      </rule>
+      <rule name="FAQ (GW)" id="8f1a-2c3d-4e5f-6071" hidden="false">
+        <description>**Q.** Is it legal to deliberately face units away or angle them so that a Frenzied enemy model (e.g. a Bloodthirster) has nothing in its charge arc, denying it a forced charge that turn?
+
+**A.** Yes, this is legal - no different in principle from angling a monster-mounted Wizard for spell Line of Sight, or timing a Tunneling unit&apos;s emergence to avoid a charge. Nothing requires a player to leave a valid charge target in arc for an opponent&apos;s Frenzied models, even if it isn&apos;t very fluffy.
+
+**S.** GW-JadeGriffon (Joe), Games Workshop staff, official eshare rules board
 </description>
         <modifiers>
           <modifier type="set" value="true" field="hidden">
@@ -18752,7 +18887,7 @@ The spell cannot affect Undead targets, Chaos Daemons
       <rule name="FAQ (NornConsensus)" id="47ab-3c35-52ef-40df" hidden="false">
         <description>**Q.** Does the Enchanted Shield override the standard restriction that a character may only carry a single piece of Magic Armour?
 
-**A.** Yes. The Enchanted Shield is the single specific exception to this rule - its entry explicitly states it can be worn with other magical armour, allowing a character to legally equip both a magical suit of armour and the Enchanted Shield.
+**A.** Yes. The Enchanted Shield is the single specific exception to this rule. Its entry explicitly states: &quot;This can be combined with other magical or mundane armour,&quot; with worked examples (light armour + Enchanted Shield = 4+ save; heavy armour + Enchanted Shield + mounted = 2+ save). This allows a character to legally equip both a magical suit of armour and the Enchanted Shield.
 
 **S.** The Norn Consensus Historical Precedent / Rulebook page 154 (Common Magic Items)
 </description>
@@ -19660,11 +19795,11 @@ Units immune to psychology never need test for psychology such as fear, terror o
       <rule name="FAQ (NornConsensus)" id="7afe-c362-299d-4c0b" hidden="false">
         <description>**Q.** How should the two Rulebook definitions of Immune to Psychology be read together?
 
-**A.** Read them as a single rule. The main Special Rules entry states that troops Immune to Psychology are never affected by Fear, Terror, Frenzy or any other Psychology rules, may never flee as a charge reaction, and still take Break tests as normal. Appendix Seven clarifies the same rule in operational terms.
+**A.** Immune to Psychology prevents Psychology tests, Flee charge reactions, and externally imposed Psychology effects - but Break tests still apply as normal, and Appendix Seven confirms this explicitly. The Direwolf Rules FAQ explains why: &quot;Break tests are leadership tests but are not one of the defined psychology tests per the Psychology section of the Rulebook&quot; (which is also why psychology-test re-rolls can&apos;t touch Break tests, and vice versa). Break tests were never covered by &quot;any other Psychology rules&quot; to begin with.
 
-The Norn Consensus reads Immune to Psychology as preventing Psychology tests, Flee charge reactions, and externally imposed Psychology effects. It does not automatically erase rules already printed on the model/unit, or rules gained through permanent non-magic-item army-list upgrades, unless a specific rule or official FAQ says otherwise.
+This means Immune to Psychology does not automatically erase rules already printed on the model/unit, or rules gained through permanent non-magic-item army-list upgrades, unless a specific rule or official FAQ says otherwise.
 
-**S.** The Norn Consensus Historical Precedent / Rulebook pages 112 &amp; 270 / Direwolf FAQ Council Interpretation
+**S.** The Norn Consensus Historical Precedent / Rulebook pages 74, 80, 112 &amp; 270 / Direwolf FAQ Council Interpretation
 </description>
         <modifiers>
           <modifier type="set" value="true" field="hidden">
@@ -19677,11 +19812,22 @@ The Norn Consensus reads Immune to Psychology as preventing Psychology tests, Fl
       <rule name="FAQ (NornConsensus)" id="ae96-7269-175d-4973" hidden="false">
         <description>**Q.** Can a model or unit benefit from both Immune to Psychology and another Psychology rule such as Stubborn, Frenzy, Hatred, or Stupidity?
 
-**A.** Yes, provided the other Psychology rule is part of the model/unit&apos;s own army-list entry, or is gained through a permanent non-magic-item army-list upgrade purchased for that model/unit (Vows, Virtues, Vampiric or Bloodline Powers, Chaos Marks, Daemonic Gifts, Mutations, Sacred Spawnings, Kindreds, Blessings, Big Names, Honours, and similar).
+**A.** Yes, but it depends on the rule and on whether it&apos;s native or external. This is the Norn Consensus Golden Rule for Immune to Psychology, built from every printed 6th edition case we could find (Appendix Seven only defines three things - Fear/Terror/Frenzy auto-passed, Flee never valid, Break tests unaffected - and stays silent on Stubborn, Hatred and Stupidity, which is the gap this rule fills).
 
-The model or unit remains Immune to Psychology for the normal purposes of Psychology tests and charge reactions - it may not choose Flee as a charge reaction, and ignores Psychology tests and external Psychology effects as normal. However, Immune to Psychology does not automatically delete native or permanently purchased army-list rules already belonging to that model or unit. Magic Items, Magic Standards, spells, prayers, bound spells, and other temporary/externally conferred Psychology effects do not impose new Psychology rules onto an Immune to Psychology model or unit unless the rule specifically says it affects models Immune to Psychology.
+**Stubborn and Hatred** (and any Psychology rule not named in Immune to Psychology&apos;s own text): survives if *native* - built into the model&apos;s own profile, or a permanent personal upgrade (Virtue, Vow, Mark, Bloodline Power, Daemonic Gift, Mutation, Sacred Spawning, Kindred, Blessing, Big Name, Honour - none of these are Magic Items). Blocked by default if *external* - a Magic Item, Magic Standard, spell, or another model&apos;s aura - unless that specific rule explicitly overrides it (&quot;even though,&quot; &quot;except that,&quot; &quot;even if&quot;).
 
-**S.** The Norn Consensus Historical Precedent / Rulebook pages 74, 80, 84, 85, 112 &amp; 270 / Warhammer Chronicles 2004 page 116 / Direwolf FAQ Council Interpretation
+- Native, no override needed: Wood Elf Treeman (Stubborn), Ogre Kingdoms Maneaters (Stubborn - the &quot;even though&quot; text is a courtesy, not a necessity), Bretonnian Hermit Knight (Grail Vow + Virtue of the Penitent).
+- External, blocked, no override: Banner of Sigismund (Stubborn - official Empire FAQ), Warrior Priest *Righteous Fury* (Hatred - its own text: &quot;units Immune to Psychology are not affected by this power as well&quot;).
+- External, overridden, so working: Volkmar&apos;s *War Altar*, Luthor Huss&apos;s *Righteous Fury* variant, the *Greater Icon of Chaos*, the *Banner of the Gods*, Valten - each carries its own explicit override clause.
+
+**Frenzy and Stupidity:** blocked outright, native or external, unless a specific rule explicitly overrides it. Frenzy is named directly in Immune to Psychology&apos;s text; Stupidity is caught by its &quot;any other Psychology rules&quot; catch-all.
+
+- Native+native (rules out &quot;only blocked when external&quot;): Daemon Prince/Exalted Daemon of Khorne - Immune to Psychology from *Daemonic*, Frenzy from *Mark of Khorne* - still needed its own override.
+- External, overridden: Witch Elves under the *Banner of Balance*, the Shaggoth&apos;s *Storm Rage*, Cult of Slaanesh Mark of Slaanesh Cold Ones, Lizardmen *Blessed Spawning of Tlazcotl*.
+
+A model or unit is always still Immune to Psychology for Psychology tests and Flee reactions regardless of the above. This changes nothing about the official Banner of Sigismund ruling, which stands exactly as printed.
+
+**S.** The Norn Consensus / Rulebook pages 74, 80, 84, 85, 112 &amp; 270 / Warhammer Chronicles 2003 page 133 / Warhammer Chronicles 2004 page 116 / Ogre Kingdoms Army Book (Maneaters) / Bretonnia Army Book (Hermit Knight) / Empire Army Book (Righteous Fury, Volkmar&apos;s War Altar, Luthor Huss) / Hordes of Chaos Army Book (Daemonic, Mark of Khorne, Greater Icon of Chaos, Storm Rage) / Lizardmen Army Book (Blessed Spawning of Tlazcotl) / Storm of Chaos Book (Cult of Slaanesh) / Direwolf FAQ Council Interpretation
 </description>
         <modifiers>
           <modifier type="set" value="true" field="hidden">
@@ -19694,9 +19840,11 @@ The model or unit remains Immune to Psychology for the normal purposes of Psycho
       <rule name="FAQ (NornConsensus)" id="baed-2c05-9f18-4b59" hidden="false">
         <description>**Q.** Does Immune to Psychology cancel Stubborn because Stubborn appears in the Psychology section of the Rulebook?
 
-**A.** No. Break tests are Leadership tests, but they are not Psychology tests, and Stubborn modifies Break tests by allowing the unit to use unmodified Leadership. Both Rulebook definitions of Immune to Psychology preserve Break tests as normal. A model or unit with both Stubborn and Immune to Psychology uses Stubborn normally when taking Break tests. This does not allow a Magic Item, Magic Standard, spell, or other external effect to grant Stubborn to an Immune to Psychology unit unless that effect specifically says it works on models that are Immune to Psychology.
+**A.** No. Break tests are Leadership tests, not Psychology tests (&quot;Break tests are leadership tests but are not one of the defined psychology tests per the Psychology section of the Rulebook&quot; - Direwolf Rules FAQ, Rulebook pages 74, 80), and Appendix Seven confirms Break tests still apply as normal to Immune to Psychology units. Stubborn only ever modifies a Break test, so it was never within reach of Immune to Psychology to begin with. A model or unit with both already printed uses Stubborn normally on Break tests.
 
-**S.** The Norn Consensus Historical Precedent / Rulebook pages 74, 80, 85, 112 &amp; 270 / Warhammer Chronicles 2004 page 116 / Direwolf FAQ Council Interpretation
+This does not let a Magic Item, Magic Standard, spell, or prayer grant Stubborn to an already-Immune-to-Psychology unit - that&apos;s a different (external) case, blocked by default (see the Golden Rule entry above).
+
+**S.** The Norn Consensus Historical Precedent / Rulebook pages 74, 80, 112 &amp; 270 / Warhammer Chronicles 2004 page 116 / Direwolf FAQ Council Interpretation
 </description>
         <modifiers>
           <modifier type="set" value="true" field="hidden">
@@ -19709,9 +19857,13 @@ The model or unit remains Immune to Psychology for the normal purposes of Psycho
       <rule name="FAQ (NornConsensus)" id="5c92-ecd6-d220-4a06" hidden="false">
         <description>**Q.** Does an aura or effect that grants Immune to Psychology suppress Psychology rules already possessed by the affected model or unit?
 
-**A.** No, not by itself. If a model or unit already has Stubborn, Frenzy, Hatred, Stupidity or a similar rule as a native rule or permanent non-magic-item army-list upgrade, an aura or effect that grants Immune to Psychology does not suppress that rule unless the aura or effect specifically says so. The affected model or unit is still Immune to Psychology for the normal purposes of Psychology tests and charge reactions (e.g. it may not choose Flee). Specific rules and official FAQs override this general principle.
+**A.** No, not if that Stubborn or Hatred was already native to the model. A newly-arriving Immune to Psychology effect (an aura, an item, a rider&apos;s blessing extending to a mount) cannot strip them, since Immune to Psychology&apos;s own text never names either one. It does suppress Frenzy and Stupidity by default, since both are named or caught directly by that text. See the Golden Rule entry above for the full evidence and citations.
 
-**S.** The Norn Consensus Historical Precedent / Rulebook pages 84, 85, 112 &amp; 270 / Direwolf FAQ Council Interpretation
+The affected model or unit is still Immune to Psychology for the normal purposes of Psychology tests and charge reactions regardless of the above. For example, it may not choose Flee as a charge reaction while Immune to Psychology.
+
+Specific rules and official FAQs override this general principle. For example, if a Magic Standard or spell specifically states that a named Psychology rule is lost, suspended, or applied even to models Immune to Psychology, apply that specific wording.
+
+**S.** The Norn Consensus, see above / Rulebook pages 74, 80, 84, 85, 112 &amp; 270 / Warhammer Chronicles 2003 page 133 (Banner of Balance ruling) / Direwolf FAQ Council Interpretation
 </description>
         <modifiers>
           <modifier type="set" value="true" field="hidden">
@@ -19754,7 +19906,7 @@ The model or unit remains Immune to Psychology for the normal purposes of Psycho
       <rule name="FAQ (NornConsensus)" id="d5e7-ba66-0203-47fa" hidden="false">
         <description>**Q.** Does this Psychology ruling change the official Empire FAQ concerning the Banner of Sigismund?
 
-**A.** No, that official ruling remains unchanged - a unit made Immune to Psychology does not benefit from the Banner of Sigismund, since it is a Magic Standard trying to grant Stubborn to a unit that is Immune to Psychology, and there is no Magic vs. Mundane trump. This only clarifies that the ruling should not be extended to cancel Stubborn, Frenzy, Hatred, Stupidity or similar rules already possessed by a model or unit as native rules or permanent non-magic-item army-list upgrades.
+**A.** No, that official ruling remains unchanged - a unit made Immune to Psychology does not benefit from the Banner of Sigismund, since it is a Magic Standard trying to grant Stubborn to a unit that is Immune to Psychology, and there is no Magic vs. Mundane trump. This only clarifies that the ruling should not be extended to cancel Stubborn (or any similar rule that only touches a Break test) when it&apos;s already possessed by a model or unit as a native rule or permanent non-magic-item army-list upgrade. It does not extend to Frenzy or Stupidity, which are genuinely suppressed while Immune to Psychology is in effect, regardless of the source.
 
 **S.** The Norn Consensus Historical Precedent / Rulebook pages 112 &amp; 270 / Warhammer Chronicles 2004 page 116 / Direwolf FAQ Council Interpretation
 </description>

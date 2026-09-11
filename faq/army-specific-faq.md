@@ -8011,13 +8011,9 @@ Based on the rules and descriptions across the army books, the following specifi
 
 **Q.** If Cold One Knights or a character riding a Cold One are given the Mark of Slaanesh in a Cult of Slaanesh army, does the resulting *Immune to Psychology* rule cancel out their Stupidity?
 
-**A.** No. They remain subject to Stupidity.
+**A.** No. The Cult of Slaanesh special rules explicitly state that Mark of Slaanesh Cold Ones are still subject to Stupidity - this is a named exception overriding the general default.
 
-The Cult of Slaanesh special rules explicitly state that units or characters with the Mark of Slaanesh and riding Cold Ones are still subject to Stupidity.
-
-This is actually the opposite of the Norn Consensus's general default for Stupidity: per the Warhammer Chronicles 2003 Banner of Balance precedent (see the Empire and core Psychology entries), Stupidity is normally suppressed while a unit is *Immune to Psychology*, the same way Frenzy is. Without this specific Cult of Slaanesh rule, Cold One Knights given the Mark of Slaanesh would likely lose the practical effect of their Stupidity while immune.
-
-It's the explicit Cult of Slaanesh wording that overrides that default here, not the default itself: the army book specifically states that Mark of Slaanesh Cold Ones remain subject to Stupidity, which is exactly the kind of named exception that overrides the general suppression rule.
+That default runs the other way: per the Warhammer Chronicles 2003 Banner of Balance precedent, Stupidity is normally suppressed while a unit is *Immune to Psychology*, the same way Frenzy is. Without this specific rule, Mark of Slaanesh Cold Ones would lose the practical effect of their Stupidity while immune - the army book's explicit wording is what keeps it active.
 
 **S.** Storm of Chaos Cult of Slaanesh Special Rules / Rulebook pages 112 & 270 / Warhammer Chronicles 2003 page 133 (Banner of Balance ruling) / The Norn Consensus
 
@@ -8107,11 +8103,7 @@ Therefore, Hobgoblin Wolf Riders may be equipped with light armour and shields w
 
 **Q.** Can a Chaos Dwarf character join a Hobgoblin unit, and can a Hobgoblin character join a Chaos Dwarf unit? Can either also join Bull Centaur units?
 
-**A.** Yes, unless a specific rule forbids it.
-
-Characters may normally join units regardless of race, mount, or base size unless the rulebook, army book, or unit entry creates a specific restriction.
-
-A Chaos Dwarf character may join a Hobgoblin unit, and a Hobgoblin character may join a Chaos Dwarf unit. A character may also join Bull Centaurs unless prevented by a specific rule.
+**A.** Yes to all three - characters may normally join units regardless of race, mount, or base size unless the rulebook, army book, or unit entry creates a specific restriction, and none does here.
 
 If a Chaos Dwarf character on foot joins a cavalry-speed unit such as Hobgoblin Wolf Riders or Bull Centaurs, the combined unit moves at the speed of its slowest model.
 

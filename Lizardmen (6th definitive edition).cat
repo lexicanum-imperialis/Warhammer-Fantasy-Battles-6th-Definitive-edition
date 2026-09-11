@@ -42,6 +42,23 @@
       <comment>&quot;This is a fully official list, and so you do not need your opponent&apos;s permission to use it.&quot; (LM-AB, p.74)</comment>
     </forceEntry>
     <forceEntry id="f7d4-7faf-8470-ee0d" name="Red Host (LUS)" publicationId="415d-9fbb-df83-ad27" page="59-61" hidden="false">
+      <rules>
+        <rule name="FAQ (GW)" id="b3f7-1d9c-6a24-8e5f" hidden="false">
+          <description>**Q.** The Warhammer Realms: Lustria supplement&apos;s themed special-character army lists (the Lizardmen Red Host of Tehenhauin and the Skaven Bubonic Court of Nurglitch) list their special character as a &quot;(compulsory)&quot; Lord choice. Does this only mean he must be your first Lord pick if you take one, or does it mean the entire themed list can only be played at 2000+ points at all?
+
+**A.** The whole themed list requires 2000+ points - Tehenhauin or Nurglitch is mandatory regardless of whether the points level would normally require a Lord at all, which is what restricts the list to that size and larger. Below 2000 points, use the standard Lizardmen or Skaven army list instead.
+
+**S.** GW-Trollslayer (Tom), Games Workshop staff, official eshare rules board, after checking with Design Team member Andy Hoare and correcting an earlier in-thread answer / Warhammer Realms: Lustria
+</description>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </rule>
+      </rules>
       <categoryLinks>
         <categoryLink id="058d-7cf5-cdd6-6c17" name="Experimental rules" hidden="false" targetId="4fed-b911-e6e0-927b" primary="false"/>
         <categoryLink id="8b05-5778-ddb1-ad95" name="Special list rules" hidden="false" targetId="32f1-197f-d719-a393" primary="false"/>
@@ -7809,9 +7826,9 @@ Against units that are Immune to Psychology, the weapon simply counts as a magic
       <rule name="FAQ (NornConsensus)" id="67f4-98a7-5c63-4b9a" hidden="false">
         <description>**Q.** If a Lizardmen character attacks with the Piranha Blade (doubles unsaved wounds) and also has the Bane Head (doubles unsaved wounds against a nominated character), how are the wounds multiplied if he hits the nominated target?
 
-**A.** The multipliers apply to the original base wound separately rather than compounding sequentially. One unsaved wound is doubled by the Piranha Blade (+1 wound) and doubled by the Bane Head (+1 wound), resulting in a total of 3 wounds inflicted per unsaved hit.
+**A.** Four wounds, not three. Piranha Blade doubles the wound(s) it causes: 1 unsaved wound becomes 2. Bane Head doubles &quot;all unsaved wounds caused by the bearer... on the nominated target&quot; - worded around the bearer&apos;s total wound output, not scoped to itself the way Piranha Blade is - so it doubles the running total (2 becomes 4), not the original 1. Nothing in either item&apos;s text supports computing each multiplier separately against the original wound and adding them (1+1+1=3). This matches the Grudge Thrower + Rune of Penetrating case elsewhere in this FAQ (an Official Dwarfs FAQ ruling): a modifier feeds into the running value first, and the next step multiplies that - not the original base.
 
-**S.** The Norn Consensus Historical Precedent / Lizardmen Army Book
+**S.** The Norn Consensus / Lizardmen Army Book (Piranha Blade, Bane Head — &quot;Treasures of the Lost World&quot;) / Games Workshop&apos;s Official Dwarfs FAQ (Grudge Thrower + Rune of Penetrating, as the closest real precedent for sequencing a modifier into a multiplier)
 </description>
         <modifiers>
           <modifier type="set" value="true" field="hidden">

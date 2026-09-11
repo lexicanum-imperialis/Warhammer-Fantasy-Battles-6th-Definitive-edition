@@ -16276,6 +16276,23 @@ The Daemonic Aura becomes a normal ward save so can be used against magical atta
     <rule id="f02e-4e79-552e-68dd" name="Daemon Prince of Khorne" hidden="false">
       <description>The daemon Prince is subject to frenzy even if normally immune to psycology. In addition its presence adds 1 Dice to the dispell pool</description>
     </rule>
+      <rule name="FAQ (NornConsensus)" id="c4a8-3e1f-9d2b-750c" hidden="false">
+        <description>**Q.** A Daemon Prince or Exalted Daemon with the Mark of Khorne is Immune to Psychology (from the Daemonic special rule) and gains Frenzy (from the Mark). Does the Immune to Psychology suppress the Frenzy?
+
+**A.** No, but only because the entry explicitly says so, not because the two rules are naturally compatible. The Daemonic special rule states plainly: &quot;Immune to Psychology: Daemons are immune to psychology.&quot; The printed entry for the Daemon Prince/Exalted Daemon of Khorne then adds: &quot;The [Daemon] is subject to frenzy even if otherwise Immune to Psychology.&quot;
+
+This is a genuinely important data point for the Norn Consensus Golden Rule for Immune to Psychology (see the Psychology section of the core rules FAQ), because both rules here are permanently native to the same single model - Immune to Psychology from the baseline Daemonic type, Frenzy from the Mark of Khorne, no external aura or item involved anywhere. Despite that, the explicit override was still required. This confirms Frenzy is blocked by Immune to Psychology outright, regardless of native or external sourcing - unlike Stubborn or Hatred, which are never named in Immune to Psychology&apos;s own text and so need no override when native.
+
+**S.** Hordes of Chaos Army Book (Daemonic, Mark of Khorne, Daemon Prince, Exalted Daemon) / The Norn Consensus
+</description>
+        <modifiers>
+          <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+              </conditions>
+          </modifier>
+        </modifiers>
+      </rule>
     <rule id="1176-fa45-53b7-3f9c" name="Daemon Prince of Tzeentch" hidden="false">
       <description>The daemon is a level 4 sorcerer</description>
     </rule>
