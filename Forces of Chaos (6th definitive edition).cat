@@ -259,8 +259,25 @@
         </entryLink>
         <entryLink id="5fe2-1532-40cc-1d17" name="Tuskgor Chariot" hidden="false" collective="false" import="true" targetId="31bd-713a-c541-62af" type="selectionEntry">
           <entryLinks>
-            <entryLink id="3f29-4b9c-4278-1503" name="Spear (Mounted)" hidden="false" collective="false" import="true" targetId="027b-31d2-b3e2-23a4" type="selectionEntry"/>
+            <entryLink id="3f29-4b9c-4278-1503" name="Spear (Mounted)" hidden="false" collective="false" import="true" targetId="027b-31d2-b3e2-23a4" type="selectionEntry">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c889-8807-f51f-7887" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="43f4-9cf2-8c6c-5b49" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
+          <modifiers>
+            <modifier type="set" value="0" field="85df-4afe-1331-794d">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="unit" childId="6fdb-6843-6499-2a04" shared="true" includeChildSelections="true" childName="Chaos Undivided"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="{this} requires Mark of Chaos Undivided" field="error">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="unit" childId="6fdb-6843-6499-2a04" shared="true" includeChildSelections="true" childName="Chaos Undivided"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </entryLink>
         <entryLink id="bfac-9443-ba44-3042" name="General" hidden="false" collective="false" import="true" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry">
           <modifiers>
@@ -1425,8 +1442,25 @@
         </entryLink>
         <entryLink id="e485-22e3-cee9-3f6f" name="Tuskgor Chariot" hidden="false" collective="false" import="true" targetId="31bd-713a-c541-62af" type="selectionEntry">
           <entryLinks>
-            <entryLink id="cf62-7cb0-6473-86f7" name="Spear (Mounted)" hidden="false" collective="false" import="true" targetId="027b-31d2-b3e2-23a4" type="selectionEntry"/>
+            <entryLink id="cf62-7cb0-6473-86f7" name="Spear (Mounted)" hidden="false" collective="false" import="true" targetId="027b-31d2-b3e2-23a4" type="selectionEntry">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="29ec-ec6f-acaa-776e" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="da2d-826d-4f5c-b557" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
+          <modifiers>
+            <modifier type="set" value="0" field="85df-4afe-1331-794d">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="unit" childId="6fdb-6843-6499-2a04" shared="true" includeChildSelections="true" childName="Chaos Undivided"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="{this} requires Mark of Chaos Undivided" field="error">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="unit" childId="6fdb-6843-6499-2a04" shared="true" includeChildSelections="true" childName="Chaos Undivided"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </entryLink>
         <entryLink id="58f6-139a-cf78-116f" name="General" hidden="false" collective="false" import="true" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry">
           <modifiers>

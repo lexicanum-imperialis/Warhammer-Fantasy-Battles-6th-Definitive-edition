@@ -16502,8 +16502,8 @@ A unit made Immune to Psychology does not benefit from the Banner of Sigismund. 
 The Norn Consensus only clarifies that this official ruling should not be extended to cancel *Stubborn*, *Frenzy*, *Hatred*, *Stupidity* or similar rules already possessed by a model or unit as native rules or permanent non-magic-item army-list upgrades.
 **Source:** `[Warhammer Chronicles 2004 page 116 / Direwolf FAQ Council Interpretation / The Norn Consensus Historical Precedent]`</description>
             </rule>
-          <rule name="Core Mechanics FAQ: Units" id="c1a2-b3c4-d5e6-f701" hidden="false">
-            <description># Core Mechanics FAQ: Units
+            <rule name="Core Mechanics FAQ: Units" id="c1a2-b3c4-d5e6-f701" hidden="false">
+              <description># Core Mechanics FAQ: Units
 
 Generic Units questions with no single addressable rule target.
 
@@ -16546,9 +16546,9 @@ Generic Units questions with no single addressable rule target.
 **Q:** Can a character join a non-character monster or creature, thus forming a unit? For example, could a Goblin Big Boss mounted on a wolf join a Giant and form a unit?
 **Ruling:** Yes (excluding flying monsters).
 **Source:** `[Gav Thorpe - Warhammer Design Team]`</description>
-          </rule>
-          <rule name="Core Mechanics FAQ: Movement" id="d2b3-c4d5-e6f7-0812" hidden="false">
-            <description># Core Mechanics FAQ: Movement
+            </rule>
+            <rule name="Core Mechanics FAQ: Movement" id="d2b3-c4d5-e6f7-0812" hidden="false">
+              <description># Core Mechanics FAQ: Movement
 
 Generic Movement/Charging questions with no single addressable rule target.
 
@@ -16661,9 +16661,9 @@ Generic Movement/Charging questions with no single addressable rule target.
 **Q:** If at the start of a turn, enemy units are within 8&quot; of the position where a unit must re-enter the table, does it prevent the re-entering unit from marching?
 **Ruling:** Yes.
 **Source:** `[Gav Thorpe - Warhammer Design Team]`</description>
-          </rule>
-          <rule name="Core Mechanics FAQ: Close Combat" id="e3c4-d5e6-f708-1923" hidden="false">
-            <description># Core Mechanics FAQ: Close Combat
+            </rule>
+            <rule name="Core Mechanics FAQ: Close Combat" id="e3c4-d5e6-f708-1923" hidden="false">
+              <description># Core Mechanics FAQ: Close Combat
 
 Generic Close Combat questions with no single addressable rule target.
 
@@ -16801,9 +16801,9 @@ Generic Close Combat questions with no single addressable rule target.
 **Q:** What happens when a unit making an overrun move hits a unit which is already fleeing?
 **Ruling:** If a unit performing an overrun would move into a fleeing unit, that unit makes another flee move and will either get away or be wiped out if it can&apos;t outdistance its foe.
 **Source:** `[Rulebook page 75 / Warhammer Annual 2002 page 16]`</description>
-          </rule>
-          <rule name="Core Mechanics FAQ: Characters, Challenges, Generals &amp; Battle Standards" id="f4d5-e6f7-0819-2a34" hidden="false">
-            <description># Core Mechanics FAQ: Characters, Challenges, Generals &amp; Battle Standards
+            </rule>
+            <rule name="Core Mechanics FAQ: Characters, Challenges, Generals &amp; Battle Standards" id="f4d5-e6f7-0819-2a34" hidden="false">
+              <description># Core Mechanics FAQ: Characters, Challenges, Generals &amp; Battle Standards
 
 Generic Character/Challenge/General/Battle-Standard questions with no single addressable rule target.
 
@@ -16866,129 +16866,119 @@ Generic Character/Challenge/General/Battle-Standard questions with no single add
 **Q:** Can units use the Battle Standard&apos;s re-roll if the Battle Standard itself is fleeing, but within 12&quot;?
 **Ruling:** No.
 **Source:** `[Warhammer Chronicles 2004 page 113]`</description>
-          </rule>
-          <rule name="FAQ (NornConsensus)" id="1d26-3a9f-212d-2647" hidden="false">
-            <description>**Q.** Can a mounted character (e.g. a Wizard on a horse) see and be seen over friendly infantry, on the theory that a rider sits higher than the infantry around him?
+            </rule>
+            <rule name="FAQ (NornConsensus)" id="1d26-3a9f-212d-2647" hidden="false">
+              <description>**Q.** Can a mounted character (e.g. a Wizard on a horse) see and be seen over friendly infantry, on the theory that a rider sits higher than the infantry around him?
 
 **A.** No. Models of any size block Line of Sight to models of any size, unless the target model is specifically classed as a Large Target - being mounted on a horse or similar non-Large-Target mount does not change this. The rulebook&apos;s separate note that a character on a horse can still be singled out as a target even within 5&quot; of friendly infantry is a targeting exception, not a Line of Sight exception, and should not be read as granting cavalry-mounted characters the ability to see over intervening infantry.
 
-**S.** GW-JadeGriffon (Joe), Games Workshop staff, official eshare rules board / Rulebook pages 59, 97 &amp; 142
-</description>
-            <modifiers>
-              <modifier type="set" value="true" field="hidden">
-                <conditions>
-                  <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-                </conditions>
-              </modifier>
-            </modifiers>
-          </rule>
-          <rule name="FAQ (NornConsensus)" id="0032-11b7-4af5-0529" hidden="false">
-            <description>**Q.** If a war machine (or its crew) is destroyed outright by a misfire result such as &quot;Destroyed!&quot;, does a crewman&apos;s Ward Save from magic armour or a talisman apply?
+**S.** GW-JadeGriffon (Joe), Games Workshop staff, official eshare rules board / Rulebook pages 59, 97 &amp; 142</description>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </rule>
+            <rule name="FAQ (NornConsensus)" id="0032-11b7-4af5-0529" hidden="false">
+              <description>**Q.** If a war machine (or its crew) is destroyed outright by a misfire result such as &quot;Destroyed!&quot;, does a crewman&apos;s Ward Save from magic armour or a talisman apply?
 
 **A.** No. A &quot;Destroyed!&quot; misfire result kills the crew outright rather than inflicting a wound on them, in the same way that being caught while fleeing kills outright. Ward Saves only ever trigger against wounds, so an effect that removes a model without causing a wound bypasses Ward Saves entirely, regardless of how powerful the Ward Save is.
 
-**S.** GW-JadeGriffon (Joe), Games Workshop staff, official eshare rules board
-</description>
-            <modifiers>
-              <modifier type="set" value="true" field="hidden">
-                <conditions>
-                  <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-                </conditions>
-              </modifier>
-            </modifiers>
-          </rule>
-          <rule name="FAQ (NornConsensus)" id="0615-7fa0-2f2f-1ca2" hidden="false">
-            <description>**Q.** If a single area-of-effect banner or aura, such as the Dwarf Master Rune of Stromni Redbeard, is in range of and applies to multiple friendly units that are all fighting in the same combat, does its +1 Combat Resolution bonus get added once for each unit it affects?
+**S.** GW-JadeGriffon (Joe), Games Workshop staff, official eshare rules board</description>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </rule>
+            <rule name="FAQ (NornConsensus)" id="0615-7fa0-2f2f-1ca2" hidden="false">
+              <description>**Q.** If a single area-of-effect banner or aura, such as the Dwarf Master Rune of Stromni Redbeard, is in range of and applies to multiple friendly units that are all fighting in the same combat, does its +1 Combat Resolution bonus get added once for each unit it affects?
 
 **A.** No. An area-of-effect banner or aura adds its bonus to the overall combat resolution of an engagement, rather than granting a stacking bonus for every unit it happens to affect. Because there is only one combat resolution tallied for the entire fight, a single aura&apos;s bonus is only applied once per engagement, regardless of how many friendly units within its range are involved in that combat. This is a different question from whether two different magical bonus sources stack with each other.
 
-**S.** The Norn Consensus Historical Precedent / Rulebook page 73
-</description>
-            <modifiers>
-              <modifier type="set" value="true" field="hidden">
-                <conditions>
-                  <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-                </conditions>
-              </modifier>
-            </modifiers>
-          </rule>
-          <rule name="FAQ (NornConsensus)" id="3eef-11de-54da-0c01" hidden="false">
-            <description>**Q.** Does a 1+ Armour Save actually mean the model rolls against an effective 2+, with modifiers then applied on top?
+**S.** The Norn Consensus Historical Precedent / Rulebook page 73</description>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </rule>
+            <rule name="FAQ (NornConsensus)" id="3eef-11de-54da-0c01" hidden="false">
+              <description>**Q.** Does a 1+ Armour Save actually mean the model rolls against an effective 2+, with modifiers then applied on top?
 
 **A.** Yes, that is the correct way to read it. An unmodified 1+ save is rolled for and succeeds on a 2 or more (a roll of 1 always fails, as normal), and any negative save modifiers are then subtracted from that starting point exactly as they would be for a 2+, 3+, etc. save.
 
-**S.** GW-JadeGriffon (Joe), Games Workshop staff, official eshare rules board
-</description>
-            <modifiers>
-              <modifier type="set" value="true" field="hidden">
-                <conditions>
-                  <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-                </conditions>
-              </modifier>
-            </modifiers>
-          </rule>
-          <rule name="FAQ (NornConsensus)" id="53a9-4bca-19b1-3d96" hidden="false">
-            <description>**Q.** When a weapon grants a Strength bonus in close combat (such as a halberd&apos;s +1 Strength), does that bonus also modify the target&apos;s Armour Save, or does it only affect the To Wound roll?
+**S.** GW-JadeGriffon (Joe), Games Workshop staff, official eshare rules board</description>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </rule>
+            <rule name="FAQ (NornConsensus)" id="53a9-4bca-19b1-3d96" hidden="false">
+              <description>**Q.** When a weapon grants a Strength bonus in close combat (such as a halberd&apos;s +1 Strength), does that bonus also modify the target&apos;s Armour Save, or does it only affect the To Wound roll?
 
 **A.** The bonus also modifies the Armour Save. Once a weapon&apos;s Strength bonus is applied, the attacker&apos;s effective Strength for that combat is used for every purpose the rules ask for Strength, including the Armour Save modifier - not only for determining whether the hit wounds. A Strength 3 model wielding a +1 Strength halberd resolves its hits as Strength 4 across the board, applying the associated -1 Armour Save modifier along with the improved To Wound roll.
 
-**S.** GW-JadeGriffon (Joe), Games Workshop staff, official eshare rules board
-</description>
-            <modifiers>
-              <modifier type="set" value="true" field="hidden">
-                <conditions>
-                  <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-                </conditions>
-              </modifier>
-            </modifiers>
-          </rule>
-          <rule name="FAQ (NornConsensus)" id="2d37-3af5-661c-48b2" hidden="false">
-            <description>**Q.** What happens if two different Wizards cast spells on the same unit with completely contradictory ongoing effects, such as one spell preventing a unit from moving and a subsequent spell obliging it to move?
+**S.** GW-JadeGriffon (Joe), Games Workshop staff, official eshare rules board</description>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </rule>
+            <rule name="FAQ (NornConsensus)" id="2d37-3af5-661c-48b2" hidden="false">
+              <description>**Q.** What happens if two different Wizards cast spells on the same unit with completely contradictory ongoing effects, such as one spell preventing a unit from moving and a subsequent spell obliging it to move?
 
 **A.** Roll a D6 each time it matters to see which effect actually applies - &quot;most recent wins&quot; and automatic dispelling have no support in the rules. Multiple spells on the same unit are normally meant to stack or coexist (page 142, using Flames of the Phoenix as its example); nothing gives a later spell the power to auto-cancel an earlier one just by contradicting it. Where two effects are flatly irreconcilable, this is the same &quot;irresistible force vs. immovable object&quot; resolution used elsewhere in this document (the 0+ save re-roll, Casket of Souls dice-stealing, Netlings vs. Banner of the Barrows, and Blade of Darting Steel cases).
 
-**S.** The Norn Consensus Historical Precedent / Rulebook page 142 / Direwolf FAQ Council Interpretation (by analogy to the same resolution used elsewhere in this document)
-</description>
-            <modifiers>
-              <modifier type="set" value="true" field="hidden">
-                <conditions>
-                  <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-                </conditions>
-              </modifier>
-            </modifiers>
-          </rule>
-          <rule name="FAQ (NornConsensus)" id="5381-6c81-23e4-1e33" hidden="false">
-            <description>**Q.** Can a player use a spell, magic item, or special ability that allows them to &quot;re-roll a D6&quot; to re-roll an Artillery Die or a Scatter Die?
+**S.** The Norn Consensus Historical Precedent / Rulebook page 142 / Direwolf FAQ Council Interpretation (by analogy to the same resolution used elsewhere in this document)</description>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </rule>
+            <rule name="FAQ (NornConsensus)" id="5381-6c81-23e4-1e33" hidden="false">
+              <description>**Q.** Can a player use a spell, magic item, or special ability that allows them to &quot;re-roll a D6&quot; to re-roll an Artillery Die or a Scatter Die?
 
 **A.** No. The Artillery Die and the Scatter Die are entirely separate classes of dice from a standard D6. An ability must explicitly state that it can be used to re-roll an Artillery Die, Scatter Die, or &quot;any single die&quot; to affect them. If an ability specifically allows the re-roll of a &quot;D6&quot;, it can only be used on a standard six-sided die. This is why, for example, the Lore of Heavens spell that lets a Wizard re-roll a D6 cannot be used to re-roll the Scatter or Artillery Dice for a stone thrower or similar war machine.
 
-**S.** The Norn Consensus Historical Precedent / Rulebook page 37 / GW-JadeGriffon (Joe), Games Workshop staff, official eshare rules board
-</description>
-            <modifiers>
-              <modifier type="set" value="true" field="hidden">
-                <conditions>
-                  <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-                </conditions>
-              </modifier>
-            </modifiers>
-          </rule>
-          <rule name="FAQ (NornConsensus)" id="5113-0318-6af1-2db8" hidden="false">
-            <description>**Q.** Are Wizards&apos; spells for the battle rolled before both sides deploy, or after deployment but before Turn 1?
+**S.** The Norn Consensus Historical Precedent / Rulebook page 37 / GW-JadeGriffon (Joe), Games Workshop staff, official eshare rules board</description>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </rule>
+            <rule name="FAQ (NornConsensus)" id="5113-0318-6af1-2db8" hidden="false">
+              <description>**Q.** Are Wizards&apos; spells for the battle rolled before both sides deploy, or after deployment but before Turn 1?
 
 **A.** Before both sides deploy. This is explicit in the rulebook and is often overlooked despite the real impact spell selection can have on deployment choices - for example, a player who knows they failed to roll a spell that threatens isolated characters may deploy an Independent Character more aggressively than they otherwise would.
 
-**S.** GW-JadeGriffon (Joe), Games Workshop staff, official eshare rules board / Rulebook page 142
-</description>
-            <modifiers>
-              <modifier type="set" value="true" field="hidden">
-                <conditions>
-                  <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-                </conditions>
-              </modifier>
-            </modifiers>
-          </rule>
-
-
+**S.** GW-JadeGriffon (Joe), Games Workshop staff, official eshare rules board / Rulebook page 142</description>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </rule>
           </rules>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="893d-13c6-618d-1726" includeChildSelections="false"/>
@@ -17187,23 +17177,22 @@ Generic Character/Challenge/General/Battle-Standard questions with no single add
     <rule id="1524-2372-4aa0-6881" name="Fear" publicationId="315e-e3c4-08af-fd51" page="81" hidden="false">
       <description>Unit causes Fear</description>
     </rule>
-      <rule name="FAQ (GW)" id="cabd-75de-9942-4d07" hidden="false">
-        <description>**Q.** When do you resolve Fear tests for an enemy unit that wishes to stand &amp; shoot?
+    <rule name="FAQ (GW)" id="cabd-75de-9942-4d07" hidden="false">
+      <description>**Q.** When do you resolve Fear tests for an enemy unit that wishes to stand &amp; shoot?
 
 **A.** Use the following procedure: The Fear causing unit declares a charge. The charged player says, &quot;The unit will stand and shoot.&quot; Check to see if the charging unit is in range; if it is, then the charged unit must take a Fear test. If it fails the test and is outnumbered, it will flee as normal and not make its stand and shoot charge reaction. If for any reason it does not flee, then the charged unit may stand &amp; shoot as normal.
 
-**S.** Warhammer Chronicles 2004 page 113
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (GW)" id="d6e9-1af5-22bb-42d1" hidden="false">
-        <description>**Q.** How do you resolve situations where a single model causing fear is in the front rank of a unit that does not cause fear?
+**S.** Warhammer Chronicles 2004 page 113</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (GW)" id="d6e9-1af5-22bb-42d1" hidden="false">
+      <description>**Q.** How do you resolve situations where a single model causing fear is in the front rank of a unit that does not cause fear?
 
 **A.** If a single model (e.g. a character) that causes fear is in a unit that doesn&apos;t cause fear then any tests or effects that the fear causes is only applied to that character, not the entire unit he is with.
 
@@ -17211,92 +17200,85 @@ For example, a unit would have to take a fear test if a unit with a single fear 
 
 In an instance where a unit declares a charge against an enemy unit with a single fear causing model and the unit declaring the charge will come into contact with the single fear causing model, then the unit declaring the charge must also take a fear test and, if the fear test is failed, the unit will not charge.
 
-**S.** Rulebook page 81
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (GW)" id="aedf-a2ff-17ea-477a" hidden="false">
-        <description>**Q.** For purposes of determining if fear causing units outnumber their foes to force an auto-break situation, do you determine it by the largest fear causing unit engaged in the combat or do you use the total Unit Strength of the fear causing units and compare it to the defender&apos;s combined Unit Strength?
+**S.** Rulebook page 81</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (GW)" id="aedf-a2ff-17ea-477a" hidden="false">
+      <description>**Q.** For purposes of determining if fear causing units outnumber their foes to force an auto-break situation, do you determine it by the largest fear causing unit engaged in the combat or do you use the total Unit Strength of the fear causing units and compare it to the defender&apos;s combined Unit Strength?
 
 **A.** Neither. If a unit is outnumbered by fear-causing enemies, then it automatically breaks. Operative word is unit, not side, so it is worked out on its Unit Strength versus total Unit Strength of fear-causing enemies it is actually fighting (i.e. in base to base contact with), in the same way that break tests are rolled for individually rather than per side.
 
-**S.** Gav Thorpe - Warhammer Design Team / Rulebook page 81
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (GW)" id="d866-6bbf-c642-4e06" hidden="false">
-        <description>**Q.** Does placing a fear (or terror) causing character in a unit actually make the unit immune to fear (or terror)? The Fear / Terror liability section on page 82 of the Rulebook states troops accompanied by fear or terror causing creatures (such as a skink unit with a Kroxigor) would be immune to fear. Does the last sentence only apply to mixed units such as Rat Ogres &amp; Packmasters, War Hydras &amp; Apprentices, etc., or does it apply to characters as well?
+**S.** Gav Thorpe - Warhammer Design Team / Rulebook page 81</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (GW)" id="d866-6bbf-c642-4e06" hidden="false">
+      <description>**Q.** Does placing a fear (or terror) causing character in a unit actually make the unit immune to fear (or terror)? The Fear / Terror liability section on page 82 of the Rulebook states troops accompanied by fear or terror causing creatures (such as a skink unit with a Kroxigor) would be immune to fear. Does the last sentence only apply to mixed units such as Rat Ogres &amp; Packmasters, War Hydras &amp; Apprentices, etc., or does it apply to characters as well?
 
 **A.** The example on page 82 refers only to mixed units including some models in the unit causing fear, others not - it does not refer to characters at all. A fear causing character does not make a unit immune to fear, per page 100: &quot;if a unit of troops panics, or is forced to flee because of a Fear or Terror test, then any character who is part of the unit must also flee even if he is immune to panic, fear, or terror.&quot;
 
-**S.** Anthony Reynolds - Warhammer Design Team (Online Q&amp;A on the Games Workshop Warhammer Forum)
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (GW)" id="a354-71c1-cc29-41f0" hidden="false">
-        <description>**Q.** Concerning the Fear test, what if your Unit Strength is equal to the enemy&apos;s when you fail the test?
+**S.** Anthony Reynolds - Warhammer Design Team (Online Q&amp;A on the Games Workshop Warhammer Forum)</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (GW)" id="a354-71c1-cc29-41f0" hidden="false">
+      <description>**Q.** Concerning the Fear test, what if your Unit Strength is equal to the enemy&apos;s when you fail the test?
 
 **A.** Change &apos;higher&apos; to &apos;equal to or higher&apos; in the section on being charged by a fear-causing enemy.
 
-**S.** Warhammer Chronicles 2004 page 113
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (GW)" id="564c-5ca4-a644-4346" hidden="false">
-        <description>**Q.** If charged by more than one fear-causing unit, do you test once per unit, or once only and add up the total number of charging models?
+**S.** Warhammer Chronicles 2004 page 113</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (GW)" id="564c-5ca4-a644-4346" hidden="false">
+      <description>**Q.** If charged by more than one fear-causing unit, do you test once per unit, or once only and add up the total number of charging models?
 
 **A.** Test once per unit, as each is found to be in range.
 
-**S.** Warhammer Chronicles 2004 page 113
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (GW)" id="ea4a-c488-77c9-4913" hidden="false">
-        <description>**Q.** If a Character (e.g. Shadowblade) is in a unit that is charged by a Fear-causing creature and the unit fails its Fear test and requires 6&apos;s to hit, does the Character also require 6&apos;s to hit, or do they make a separate test on their own, probably higher, Leadership?
+**S.** Warhammer Chronicles 2004 page 113</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (GW)" id="ea4a-c488-77c9-4913" hidden="false">
+      <description>**Q.** If a Character (e.g. Shadowblade) is in a unit that is charged by a Fear-causing creature and the unit fails its Fear test and requires 6&apos;s to hit, does the Character also require 6&apos;s to hit, or do they make a separate test on their own, probably higher, Leadership?
 
 **A.** If, for some reason, a Character does not pass his Ld on to a unit he has joined, then he may make a separate Ld test. In most cases, this rule won&apos;t make a difference; if the unit flees (from Terror or Panic, for example), the Character has to flee with it, regardless of Ld values.
 
-**S.** Warhammer Chronicles 2004 page 113
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-
+**S.** Warhammer Chronicles 2004 page 113</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
     <rule id="96f0-c50f-e59e-85fa" name="Terror" publicationId="315e-e3c4-08af-fd51" page="81" hidden="false">
       <description>Unit causes Terror.
 Troops who are confronted by monsters or situations that cause terror must test to see whether they overcome their terror. If they fail, they are completely terrified and are reduced to gibbering wrecks. Troops only ever test for terror once in a battle. Once they&apos;ve overcome their terror they are not affected again.
@@ -17307,473 +17289,439 @@ A unit must make a Terror test if charged by or wishing to charge an enemy that 
 
 A unit must make a Terror test at the start of its turn if there is an enemy which causes terror within 6&quot;.</description>
     </rule>
-      <rule name="FAQ (GW)" id="3552-052f-8497-47f8" hidden="false">
-        <description>**Q.** Is there a limit to the amount of Terror tests a unit is forced to take?
+    <rule name="FAQ (GW)" id="3552-052f-8497-47f8" hidden="false">
+      <description>**Q.** Is there a limit to the amount of Terror tests a unit is forced to take?
 
 **A.** Yes, each unit is only forced to take one Terror test per BATTLE. After taking the first Terror test, units treat Terror causing units as causing Fear.
 
-**S.** Rulebook page 81
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (GW)" id="a6f1-9162-6232-446a" hidden="false">
-        <description>**Q.** If a unit is charged by a Terror causing creature (or a unit wants to charge a Terror causing creature), does the unit have to take both a Terror and a Fear test?
+**S.** Rulebook page 81</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (GW)" id="a6f1-9162-6232-446a" hidden="false">
+      <description>**Q.** If a unit is charged by a Terror causing creature (or a unit wants to charge a Terror causing creature), does the unit have to take both a Terror and a Fear test?
 
 **A.** No. Just a Terror test.
 
-**S.** Rulebook page 82
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-
+**S.** Rulebook page 82</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
     <rule id="5d6f-7b4d-6093-4922" name="Stupidity" publicationId="315e-e3c4-08af-fd51" page="82" hidden="false">
       <description>Subject to Stupidity</description>
     </rule>
-      <rule name="FAQ (GW)" id="89b8-91b0-a7a8-4134" hidden="false">
-        <description>**Q.** What happens if a stupid unit wanders off the board?
+    <rule name="FAQ (GW)" id="89b8-91b0-a7a8-4134" hidden="false">
+      <description>**Q.** What happens if a stupid unit wanders off the board?
 
 **A.** It counts as having fled the table, and thus the enemy gets the victory points.
 
-**S.** Anthony Reynolds - Warhammer Design Team (Online Q&amp;A on the Games Workshop Warhammer Forum)
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (GW)" id="0934-53d0-e34e-4728" hidden="false">
-        <description>**Q.** Can a unit suffering from stupidity elect to flee?
+**S.** Anthony Reynolds - Warhammer Design Team (Online Q&amp;A on the Games Workshop Warhammer Forum)</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (GW)" id="0934-53d0-e34e-4728" hidden="false">
+      <description>**Q.** Can a unit suffering from stupidity elect to flee?
 
 **A.** No.
 
-**S.** Anthony Reynolds - Warhammer Design Team (Online Q&amp;A on the Games Workshop Warhammer Forum)
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (GW)" id="d14f-8318-ebd3-48f1" hidden="false">
-        <description>**Q.** If a character that is suffering stupidity is part of a unit that is not stupid, does the character force the unit to stumble forwards, or does he leave the unit, allowing the unit to operate as normal?
+**S.** Anthony Reynolds - Warhammer Design Team (Online Q&amp;A on the Games Workshop Warhammer Forum)</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (GW)" id="d14f-8318-ebd3-48f1" hidden="false">
+      <description>**Q.** If a character that is suffering stupidity is part of a unit that is not stupid, does the character force the unit to stumble forwards, or does he leave the unit, allowing the unit to operate as normal?
 
 **A.** The entire unit stumbles forward at half the character&apos;s movement value or the unit&apos;s base movement value, whichever is lower.
 
-**S.** Anthony Reynolds - Warhammer Design Team (Online Q&amp;A on the Games Workshop Warhammer Forum)
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (NornConsensus)" id="08ff-8406-74af-492e" hidden="false">
-        <description>**Q.** Can a unit that has failed its Stupidity or Animosity test in the current turn be moved or forced to charge via a magical movement spell such as Unseen Lurker or The Hand of Gork?
+**S.** Anthony Reynolds - Warhammer Design Team (Online Q&amp;A on the Games Workshop Warhammer Forum)</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (NornConsensus)" id="08ff-8406-74af-492e" hidden="false">
+      <description>**Q.** Can a unit that has failed its Stupidity or Animosity test in the current turn be moved or forced to charge via a magical movement spell such as Unseen Lurker or The Hand of Gork?
 
 **A.** No. Any psychological or compulsory condition that prevents a unit from moving, shooting, or charging normally during their turn also prevents them from being moved by magical spells. A unit that has failed Stupidity &quot;can do nothing else that turn&quot;, and a unit squabbling from Animosity is similarly restricted - they cannot bypass these debilitating failed tests via the Magic phase.
 
-**S.** The Norn Consensus Historical Precedent / Gav Thorpe - Warhammer Design Team / Rulebook page 83
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-
+**S.** The Norn Consensus Historical Precedent / Gav Thorpe - Warhammer Design Team / Rulebook page 83</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
     <rule id="e930-0b71-2fef-3937" name="Fly" hidden="false">
       <description>Unit can fly
 https://6th.whfb.app/flyers</description>
     </rule>
-      <rule name="FAQ (GW)" id="fe95-f715-29bf-4f0c" hidden="false">
-        <description>**Q.** Should flyers be on square bases? If so what size?
+    <rule name="FAQ (GW)" id="fe95-f715-29bf-4f0c" hidden="false">
+      <description>**Q.** Should flyers be on square bases? If so what size?
 
 **A.** Yes, flyers should be on square bases (generally 40mm for Fell Bats, Carrion, Terradons, Warhawk Riders, and other things with a wide wingspan).
 
-**S.** Rulebook page 106
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (GW)" id="c3ce-f652-1829-4dfa" hidden="false">
-        <description>**Q.** How far do flyers move if they fail a charge?
+**S.** Rulebook page 106</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (GW)" id="c3ce-f652-1829-4dfa" hidden="false">
+      <description>**Q.** How far do flyers move if they fail a charge?
 
 **A.** They move their full 20&quot;.
 
-**S.** Anthony Reynolds - Warhammer Design Team (Online Q&amp;A on the Games Workshop Warhammer Forum)
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (GW)" id="9a21-d8d2-79af-41ea" hidden="false">
-        <description>**Q.** Is a Great Eagle a flying skirmisher?
+**S.** Anthony Reynolds - Warhammer Design Team (Online Q&amp;A on the Games Workshop Warhammer Forum)</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (GW)" id="9a21-d8d2-79af-41ea" hidden="false">
+      <description>**Q.** Is a Great Eagle a flying skirmisher?
 
 **A.** No. A Great Eagle is NOT classified as a &quot;Unit of Flyers&quot;, and is therefore not a skirmisher. This means that a Great Eagle is classified as a monster per the &quot;Unit Strength and Single Model&apos;s Movement&quot; chart found in Warhammer Chronicles.
 
-**S.** Rulebook page 106 / Warhammer Chronicles 2004 page 114
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (NornConsensus)" id="f4c5-5053-df29-4f51" hidden="false">
-        <description>**Q.** Can a flying unit that declares a charge use its 20&quot; fly move to completely fly over the target and charge its rear instead of its front?
+**S.** Rulebook page 106 / Warhammer Chronicles 2004 page 114</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (NornConsensus)" id="f4c5-5053-df29-4f51" hidden="false">
+      <description>**Q.** Can a flying unit that declares a charge use its 20&quot; fly move to completely fly over the target and charge its rear instead of its front?
 
 **A.** No. The arc that you charge (Front, Flank, or Rear) is strictly determined by the position of the majority of the charging unit at the exact moment the charge is declared. If the flyers start their turn in the target&apos;s front arc, they must charge the front.
 
-**S.** The Norn Consensus Historical Precedent / FB_faq_0
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (NornConsensus)" id="5cac-ad1f-54a1-440f" hidden="false">
-        <description>**Q.** When a unit of Flyers declares a charge against a fleeing unit, and the fleeing unit&apos;s move places it entirely inside a wood that the Flyer cannot enter, but the Flyer has more than enough distance to catch them, is the fleeing unit caught?
+**S.** The Norn Consensus Historical Precedent / FB_faq_0</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (NornConsensus)" id="5cac-ad1f-54a1-440f" hidden="false">
+      <description>**Q.** When a unit of Flyers declares a charge against a fleeing unit, and the fleeing unit&apos;s move places it entirely inside a wood that the Flyer cannot enter, but the Flyer has more than enough distance to catch them, is the fleeing unit caught?
 
 **A.** Not settled - no rulebook page, Direwolf citation, or official FAQ, only tournament convention. The core pursuit rule (compare pursuer&apos;s roll to fleeing unit&apos;s roll) doesn&apos;t address the pursuer being physically unable to enter the terrain the target ends up in.
 
 Convention treats it as caught anyway, since the catch calculation is about relative speed, not whether the pursuer&apos;s model could physically stand on the final square. Agree this with your opponent before it comes up.
 
-**S.** Tournament convention only - no rulebook, Direwolf, or official FAQ support found
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-
+**S.** Tournament convention only - no rulebook, Direwolf, or official FAQ support found</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
     <rule id="494d-d57a-c1fa-b48e" name="Scaly Skin 3+" hidden="false">
       <description>Scaly Skin gives 3+ saving throw</description>
     </rule>
     <rule id="6a56-df83-e623-2218" name="Fast Cavalry" hidden="false">
       <description>See rulebook or https://6th.whfb.app/fast-cavalry</description>
     </rule>
-      <rule name="FAQ (GW)" id="236e-6927-d10f-4950" hidden="false">
-        <description>**Q.** Can Fast Cavalry shoot on the turn that they rally from a flee reaction?
+    <rule name="FAQ (GW)" id="236e-6927-d10f-4950" hidden="false">
+      <description>**Q.** Can Fast Cavalry shoot on the turn that they rally from a flee reaction?
 
 **A.** No. It is stated that they can move normally, but not that they can shoot.
 
-**S.** Warhammer Chronicles 2004 page 114
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (GW)" id="8ebb-b515-c027-4556" hidden="false">
-        <description>**Q.** Can Fast Cavalry shoot on the turn they perform a reform?
+**S.** Warhammer Chronicles 2004 page 114</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (GW)" id="8ebb-b515-c027-4556" hidden="false">
+      <description>**Q.** Can Fast Cavalry shoot on the turn they perform a reform?
 
 **A.** Yes. Per the errata in Warhammer Chronicles they may shoot even when marching or reforming.
 
-**S.** Warhammer Chronicles 2004 page 123
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (GW)" id="0075-5cb6-102e-437b" hidden="false">
-        <description>**Q.** Fast Cavalry can shoot all round - does this mean they have 360 degree LoS for the purposes of standing and shooting?
+**S.** Warhammer Chronicles 2004 page 123</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (GW)" id="0075-5cb6-102e-437b" hidden="false">
+      <description>**Q.** Fast Cavalry can shoot all round - does this mean they have 360 degree LoS for the purposes of standing and shooting?
 
 **A.** No. Per the rulebook, &quot;...for charging, stand &amp; shoot reactions, etc, the model needs to be facing the enemy as normal.&quot;
 
-**S.** Rulebook page 117
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (GW)" id="63bd-605c-fc03-4d1e" hidden="false">
-        <description>**Q.** Can a Fast Cavalry model use its 360 degree LOS for shooting to shoot through a friendly model in the same unit?
+**S.** Rulebook page 117</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (GW)" id="63bd-605c-fc03-4d1e" hidden="false">
+      <description>**Q.** Can a Fast Cavalry model use its 360 degree LOS for shooting to shoot through a friendly model in the same unit?
 
 **A.** No. If a model in a Fast Cavalry unit cannot draw LOS from its base to its target without going through a friendly model, it may not fire.
 
-**S.** Rulebook pages 59, 117
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (GW)" id="82f2-bac6-7eb7-4e41" hidden="false">
-        <description>**Q.** Can a character in a Fast Cavalry unit shoot in a 360 degree arc?
+**S.** Rulebook pages 59, 117</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (GW)" id="82f2-bac6-7eb7-4e41" hidden="false">
+      <description>**Q.** Can a character in a Fast Cavalry unit shoot in a 360 degree arc?
 
 **A.** Only if the character himself has the Fast Cavalry rule. Also note that characters without the Fast Cavalry rule may not shoot if the unit marches.
 
-**S.** Rulebook page 117
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (GW)" id="f602-9bf2-4830-41a7" hidden="false">
-        <description>**Q.** Can a wizard in a Fast Cavalry unit cast spells requiring LoS in a 360 degree arc?
+**S.** Rulebook page 117</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (GW)" id="f602-9bf2-4830-41a7" hidden="false">
+      <description>**Q.** Can a wizard in a Fast Cavalry unit cast spells requiring LoS in a 360 degree arc?
 
 **A.** No. As specified in the Fast Cavalry rules, the improved LoS only applies to models with the Fast Cavalry rule and only applies to shooting.
 
-**S.** Rulebook page 117
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (GW)" id="cb69-31ad-225b-4f18" hidden="false">
-        <description>**Q.** Fast Cavalry can shoot all round - does this mean they have 360&#176; line of sight for the purposes of the Casket of Souls?
+**S.** Rulebook page 117</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (GW)" id="cb69-31ad-225b-4f18" hidden="false">
+      <description>**Q.** Fast Cavalry can shoot all round - does this mean they have 360&amp;#176; line of sight for the purposes of the Casket of Souls?
 
 **A.** No, as described in the rules for Fast Cavalry, they use normal line of sight for everything except shooting.
 
-**S.** Warhammer Chronicles 2004 page 119
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (GW)" id="be91-fd56-8234-48d3" hidden="false">
-        <description>**Q.** How many reforms may a Fast Cavalry unit perform during a single turn&apos;s Movement phase?
+**S.** Warhammer Chronicles 2004 page 119</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (GW)" id="be91-fd56-8234-48d3" hidden="false">
+      <description>**Q.** How many reforms may a Fast Cavalry unit perform during a single turn&apos;s Movement phase?
 
 **A.** Per the errata in Warhammer Chronicles, an unlimited number of reforms may be performed, though no model may move more than its maximum movement distance.
 
-**S.** Warhammer Chronicles 2004 page 121
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (GW)" id="812a-7313-66f5-4e71" hidden="false">
-        <description>**Q.** Do Fast Cavalry auto-rally if they flee a charge?
+**S.** Warhammer Chronicles 2004 page 121</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (GW)" id="812a-7313-66f5-4e71" hidden="false">
+      <description>**Q.** Do Fast Cavalry auto-rally if they flee a charge?
 
 **A.** No. This was an error printed in the Special Rules Summary Appendix and subsequently corrected in the Warhammer Chronicles errata.
 
-**S.** Warhammer Chronicles 2004 page 124
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (GW)" id="600a-6742-8baa-4b0c" hidden="false">
-        <description>**Q.** If a Fast Cavalry unit rallies two or more turns after it voluntarily flees a charge, can it move in that turn? What if it involuntarily flees (from fear, terror, panic, etc.) and rallies on its next turn?
+**S.** Warhammer Chronicles 2004 page 124</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (GW)" id="600a-6742-8baa-4b0c" hidden="false">
+      <description>**Q.** If a Fast Cavalry unit rallies two or more turns after it voluntarily flees a charge, can it move in that turn? What if it involuntarily flees (from fear, terror, panic, etc.) and rallies on its next turn?
 
 **A.** No, in both cases. The ability to move upon rallying is limited to when the unit rallies on its very next turn after having VOLUNTARILY fled a charge.
 
-**S.** Rulebook page 117
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (GW)" id="f1a9-9ca2-697f-4180" hidden="false">
-        <description>**Q.** Does a character have to be mounted to join a Fast Cavalry unit?
+**S.** Rulebook page 117</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (GW)" id="f1a9-9ca2-697f-4180" hidden="false">
+      <description>**Q.** Does a character have to be mounted to join a Fast Cavalry unit?
 
 **A.** No. Per the errata in Warhammer Chronicles, any character model may join a Fast Cavalry unit and move with the unit, but they do not benefit from any of the special rules. However, if you join a character on foot to a unit of Fast Cavalry, the character may slow the unit down, as all units are restricted to moving at the pace of the slowest member of the unit.
 
-**S.** Warhammer Chronicles 2004 page 125
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (NornConsensus)" id="1131-df40-c1ef-4456" hidden="false">
-        <description>**Q.** If a mounted character joins a Fast Cavalry unit, does the unit lose its Fast Cavalry rules?
+**S.** Warhammer Chronicles 2004 page 125</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (NornConsensus)" id="1131-df40-c1ef-4456" hidden="false">
+      <description>**Q.** If a mounted character joins a Fast Cavalry unit, does the unit lose its Fast Cavalry rules?
 
 **A.** No. The unit remains a Fast Cavalry unit, but the joined character does not gain the Fast Cavalry special rules (such as 360-degree line of sight for shooting) unless the character already has them. The unit&apos;s movement and manoeuvring may also be restricted because the formation must remain legal while including a model that does not itself have the Fast Cavalry rule.
 
-**S.** Rulebook / Warhammer Chronicles 2004 / Direwolf FAQ / The Norn Consensus Historical Precedent
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (NornConsensus)" id="da8e-62b3-d3c2-4146" hidden="false">
-        <description>**Q.** Can troops that rally during their turn fire missile weapons in the subsequent Shooting phase?
+**S.** Rulebook / Warhammer Chronicles 2004 / Direwolf FAQ / The Norn Consensus Historical Precedent</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (NornConsensus)" id="da8e-62b3-d3c2-4146" hidden="false">
+      <description>**Q.** Can troops that rally during their turn fire missile weapons in the subsequent Shooting phase?
 
 **A.** No. A unit that rallies may not shoot in that turn&apos;s Shooting phase. Even Fast Cavalry, which are explicitly permitted to make a free move after rallying from a voluntary Flee charge reaction, are still barred from shooting during that turn.
 
-**S.** The Norn Consensus Historical Precedent / Warhammer Chronicles 2004 page 114 / White Dwarf 258 page 39
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-
+**S.** The Norn Consensus Historical Precedent / Warhammer Chronicles 2004 page 114 / White Dwarf 258 page 39</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
     <rule id="889c-dfc3-95a5-2d30" name="Scouts" hidden="false">
       <description>These troops are skilled at sneaking forwards to scout out the enemy before the main force arrives. By making the best use of cover, advancing at night, or with other troops providing a diversion, they are able to deploy ahead of the rest of the army.
 Scouts are set up after both armies have been deployed. They can be set up anywhere on the table, at least 10&quot; away from the enemy and must be out of the sight of any enemy troops and in or behind interposing terrain (not out in the open!). If both armies contain troops with this ability, each player should roll a D6, with the player scoring the highest choosing whether he deploys before or after the enemy&apos;s Scouts. Two opposing groups of Scouts cannot be set up within 10&quot; of each other.
 Alternatively, Scouts can be placed on the controlling player&apos;s deployment zone like any other troops, after deployment of both main armies is finished.</description>
     </rule>
-      <rule name="FAQ (GW)" id="b2d7-6e6c-a645-46af" hidden="false">
-        <description>**Q.** Are all units considered to have 360 degree Line of Sight during the deployment phase for the purposes of restricting the placement of Scouting units?
+    <rule name="FAQ (GW)" id="b2d7-6e6c-a645-46af" hidden="false">
+      <description>**Q.** Are all units considered to have 360 degree Line of Sight during the deployment phase for the purposes of restricting the placement of Scouting units?
 
 **A.** Yes.
 
-**S.** Warhammer Annual 2002 page 7
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (NornConsensus)" id="2c96-d4c9-3ba9-4261" hidden="false">
-        <description>**Q.** Can a character who does not have the Scouts special rule gain Scout deployment by joining a unit of Scouts before the game begins?
+**S.** Warhammer Annual 2002 page 7</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (NornConsensus)" id="2c96-d4c9-3ba9-4261" hidden="false">
+      <description>**Q.** Can a character who does not have the Scouts special rule gain Scout deployment by joining a unit of Scouts before the game begins?
 
 **A.** No. A character without the Scouts special rule may not deploy using the Scout deployment rules. A non-Scout character must be deployed during the normal deployment sequence and cannot be held back to &quot;piggyback&quot; onto a scouting unit&apos;s forward or hidden deployment.
 
-**S.** The Norn Consensus Historical Precedent / Rulebook Scouts and Deployment sections
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-
+**S.** The Norn Consensus Historical Precedent / Rulebook Scouts and Deployment sections</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
     <rule id="1945-ac89-9cc4-3537" name="Skirmishers" hidden="false">
       <description>Unit are skirmishers</description>
     </rule>
-      <rule name="FAQ (GW)" id="2cc0-eafa-6f11-4425" hidden="false">
-        <description>**Q.** How do skirmishing units form into rows (ranks) when charged by multiple units?
+    <rule name="FAQ (GW)" id="2cc0-eafa-6f11-4425" hidden="false">
+      <description>**Q.** How do skirmishing units form into rows (ranks) when charged by multiple units?
 
 **A.** The charging player controls where the skirmishing unit forms into rows (ranks) as you move the charging units in the order in which the charges were declared. When the skirmishers are charged, the charging unit is brought into base contact with the closest skirmisher model and then the charging unit is halted; the charging unit is not aligned against the skirmishing models. The skirmishers form up against the charging unit as explained in the skirmishing section of the Rulebook and the charging player then proceeds with further charges.
 
 So: the first unit that declared a charge is moved into contact with the skirmishing unit; the skirmishing unit then forms up with its front facing that unit; the remaining chargers then attempt to move into contact with the skirmishing unit. Note this may result in the skirmishing unit being hit in the flank or rear by the remaining chargers, or in the remaining charges failing.
 
-**S.** Warhammer Chronicles 2004 pages 121, 123 / Rulebook pages 46, 116
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (GW)" id="42cb-bf2e-22b1-42f4" hidden="false">
-        <description>**Q.** While not engaged in close combat, may models in skirmishing units be in base to base contact with other members of their unit?
+**S.** Warhammer Chronicles 2004 pages 121, 123 / Rulebook pages 46, 116</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (GW)" id="42cb-bf2e-22b1-42f4" hidden="false">
+      <description>**Q.** While not engaged in close combat, may models in skirmishing units be in base to base contact with other members of their unit?
 
 **A.** No. When not engaged in close combat, models in a skirmishing unit must be positioned up to 1&quot; apart so that they are not touching each other.
 
-**S.** Rulebook page 115
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (GW)" id="2256-8fbb-9855-4834" hidden="false">
-        <description>**Q.** What types of characters may join a skirmishing unit?
+**S.** Rulebook page 115</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (GW)" id="2256-8fbb-9855-4834" hidden="false">
+      <description>**Q.** What types of characters may join a skirmishing unit?
 
 **A.** A roughly man-sized character on foot may join a skirmishing unit. No other characters (mounted, riding in chariots, etc.) can join skirmishing units.
 
-**S.** Warhammer Chronicles 2004 page 121
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (GW)" id="d0ec-e624-052a-42ed" hidden="false">
-        <description>**Q.** How do characters and command models (standards, musicians, and champions) in a skirmishing unit rank up when engaging in close combat?
+**S.** Warhammer Chronicles 2004 page 121</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (GW)" id="d0ec-e624-052a-42ed" hidden="false">
+      <description>**Q.** How do characters and command models (standards, musicians, and champions) in a skirmishing unit rank up when engaging in close combat?
 
 **A.** A Skirmishing unit ranked up for close combat should be thought of like a regular, ranked formation for the duration of the combat. The Standard Bearer, Musician, Champion, and any characters must generally be placed in the front rank. However, the general Skirmishers rules do not have special allowances for command and character models the way the Beast Herd rules do - if a model does not have enough movement to reach the fighting line, or the ranked-up formation is not wide enough, it should be placed in the closest rank to the front it can reach. When assigning placement due to limited space, the Standard Bearer takes precedence and must bump the other models back, then the Musician and Champion, then characters.
 
@@ -17781,165 +17729,153 @@ As noted in their respective sections of the Rulebook, character and command mod
 
 In subsequent turns a character, if not fighting, may move to replace a fighting trooper in his movement phase; there is no equivalent rule for command models, so it is suggested players remove killed models from where the wounds occur in the fighting line and, during Redress the Ranks, shuffle models forward to fill vacated positions - letting a stranded Standard Bearer, Musician, or Champion reach the front rank that way. Benefits apply starting with the first close combat phase each respective model is in the front rank.
 
-**S.** Rulebook pages 95, 97, 108-109, 115-116 / Direwolf FAQ Council Interpretation
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (GW)" id="a322-5943-ea05-43a1" hidden="false">
-        <description>**Q.** When shooting a Bolt Thrower at a unit of skirmishers, can you hit more than one skirmisher model?
+**S.** Rulebook pages 95, 97, 108-109, 115-116 / Direwolf FAQ Council Interpretation</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (GW)" id="a322-5943-ea05-43a1" hidden="false">
+      <description>**Q.** When shooting a Bolt Thrower at a unit of skirmishers, can you hit more than one skirmisher model?
 
 **A.** No. Skirmishers do not form into ranks outside of close combat and thus the maximum amount of models that can be hit by a Bolt Thrower is one. Note that a skirmish unit is required to adopt the loose skirmish formation as soon as combat ends.
 
-**S.** Rulebook pages 116, 124
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (GW)" id="3e7e-8746-73c0-4a28" hidden="false">
-        <description>**Q.** A skirmishing unit with two models outside of the woods, and the rest in the woods, is shot at by a unit of archers. Does the skirmishing unit count as being in soft cover?
+**S.** Rulebook pages 116, 124</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (GW)" id="3e7e-8746-73c0-4a28" hidden="false">
+      <description>**Q.** A skirmishing unit with two models outside of the woods, and the rest in the woods, is shot at by a unit of archers. Does the skirmishing unit count as being in soft cover?
 
 **A.** No. Either the unit is completely in cover or it&apos;s not. If the unit shooting has line of sight to any models that aren&apos;t in cover, the unit being shot at can be targeted without the cover penalty. The same answer would apply if the situation involved a ranked unit with the front rank outside of the woods and the remainder of the unit inside of the woods.
 
-**S.** Rulebook page 62 / Direwolf FAQ Council Interpretation
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (NornConsensus)" id="7945-d21e-235e-48aa" hidden="false">
-        <description>**Q.** Because Skirmishers maintain a loose formation with up to 1&quot; gaps between models, can an enemy unit draw Line of Sight to a target behind them by looking through the physical gaps in the skirmish screen?
+**S.** Rulebook page 62 / Direwolf FAQ Council Interpretation</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (NornConsensus)" id="7945-d21e-235e-48aa" hidden="false">
+      <description>**Q.** Because Skirmishers maintain a loose formation with up to 1&quot; gaps between models, can an enemy unit draw Line of Sight to a target behind them by looking through the physical gaps in the skirmish screen?
 
 **A.** No. Despite their loose formation and physical gaps on the tabletop, units of Skirmishers completely block line of sight to other units, including characters that have joined the Skirmishing unit. It is explicitly illegal to trace line of sight through the gaps between Skirmishing models.
 
-**S.** The Norn Consensus Historical Precedent / Rulebook page 115
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (NornConsensus)" id="5ac6-f2a8-1359-4bea" hidden="false">
-        <description>**Q.** When a bouncing cannonball&apos;s path passes through the loose footprint of a Skirmishing unit, does it automatically hit the unit, or only models whose bases are physically crossed by the line?
+**S.** The Norn Consensus Historical Precedent / Rulebook page 115</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (NornConsensus)" id="5ac6-f2a8-1359-4bea" hidden="false">
+      <description>**Q.** When a bouncing cannonball&apos;s path passes through the loose footprint of a Skirmishing unit, does it automatically hit the unit, or only models whose bases are physically crossed by the line?
 
 **A.** It only hits models whose bases are physically crossed by the cannonball&apos;s line. Skirmishers do not form ranks and maintain physical gaps between models, so if the cannonball&apos;s line passes through a gap without touching any model&apos;s base, it scores no hit and continues its path normally.
 
-**S.** The Norn Consensus Historical Precedent / White Dwarf 259 / Rulebook Skirmisher and Cannon rules
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-
+**S.** The Norn Consensus Historical Precedent / White Dwarf 259 / Rulebook Skirmisher and Cannon rules</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
     <rule id="ab5d-dda1-bffc-a027" name="Frenzy" publicationId="315e-e3c4-08af-fd51" page="84" hidden="false">
       <description>Subject to frenzy. +1 Attack
 Frenzied troops must pursue broken units.</description>
     </rule>
-      <rule name="FAQ (GW)" id="189a-e896-a8a9-4add" hidden="false">
-        <description>**Q.** When exactly do you move frenzied units?
+    <rule name="FAQ (GW)" id="189a-e896-a8a9-4add" hidden="false">
+      <description>**Q.** When exactly do you move frenzied units?
 
 **A.** Follow this sequence: 1) Declare normal charges; 2) Measure to see if frenzied units must charge, declare charges for those that have to; 3) Move chargers; 4) Move frenzied chargers.
 
-**S.** Gav Thorpe - Warhammer Design Team
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (GW)" id="4362-f09f-5592-423c" hidden="false">
-        <description>**Q.** Are the target units of forced frenzied charges allowed charge reactions as normal?
+**S.** Gav Thorpe - Warhammer Design Team</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (GW)" id="4362-f09f-5592-423c" hidden="false">
+      <description>**Q.** Are the target units of forced frenzied charges allowed charge reactions as normal?
 
 **A.** Yes, forced frenzied charges are treated as normal charges in regards to charge reactions.
 
-**S.** Direwolf FAQ Council Interpretation
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (GW)" id="fb14-ef33-54e6-4f84" hidden="false">
-        <description>**Q.** Would a frenzied unit which lost a combat, auto-break from an outnumbering fear causing enemy in the same round?
+**S.** Direwolf FAQ Council Interpretation</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (GW)" id="fb14-ef33-54e6-4f84" hidden="false">
+      <description>**Q.** Would a frenzied unit which lost a combat, auto-break from an outnumbering fear causing enemy in the same round?
 
 **A.** First, Frenzied units that lose combat always take break tests, just like any other unit. Second, the break test isn&apos;t to see if you are defeated - if you have to take a break test you are already defeated, that&apos;s what losing the combat resolution means. So regardless of the outcome of a break test, a frenzied unit has already lost its frenzy, just by having to take one. An outnumbering fear causing enemy will therefore normally break a formerly frenzied unit, as the state of frenzy is lost prior to having to take a break test.
 
-**S.** Rulebook pages 71, 84
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (GW)" id="cf4d-ca70-d356-4e2c" hidden="false">
-        <description>**Q.** Can a unit be frenzied while fleeing (with the use of spells)?
+**S.** Rulebook pages 71, 84</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (GW)" id="cf4d-ca70-d356-4e2c" hidden="false">
+      <description>**Q.** Can a unit be frenzied while fleeing (with the use of spells)?
 
 **A.** No. If for some reason they should still be affected by frenzy, they regain it as soon as they rally.
 
-**S.** Anthony Reynolds - Warhammer Design Team (Online Q&amp;A on the Games Workshop Warhammer Forum)
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (GW)" id="8f1a-2c3d-4e5f-6071" hidden="false">
-        <description>**Q.** Is it legal to deliberately face units away or angle them so that a Frenzied enemy model (e.g. a Bloodthirster) has nothing in its charge arc, denying it a forced charge that turn?
+**S.** Anthony Reynolds - Warhammer Design Team (Online Q&amp;A on the Games Workshop Warhammer Forum)</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (GW)" id="8f1a-2c3d-4e5f-6071" hidden="false">
+      <description>**Q.** Is it legal to deliberately face units away or angle them so that a Frenzied enemy model (e.g. a Bloodthirster) has nothing in its charge arc, denying it a forced charge that turn?
 
 **A.** Yes, this is legal - no different in principle from angling a monster-mounted Wizard for spell Line of Sight, or timing a Tunneling unit&apos;s emergence to avoid a charge. Nothing requires a player to leave a valid charge target in arc for an opponent&apos;s Frenzied models, even if it isn&apos;t very fluffy.
 
-**S.** GW-JadeGriffon (Joe), Games Workshop staff, official eshare rules board
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-
+**S.** GW-JadeGriffon (Joe), Games Workshop staff, official eshare rules board</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
     <rule id="2738-27d5-f4af-4722" name="Poisoned Attacks" publicationId="315e-e3c4-08af-fd51" page="114" hidden="false">
       <description>Poisoned Attacks. Hits of 6 auto wound. Sve as normal.</description>
     </rule>
     <rule id="e08e-1c7b-a667-f05b" name="Killing Blow" hidden="false">
       <description>Wound roll of 6 slays man sized opponent, no saving throw, no matter how many wounds. Ward save still applies.</description>
     </rule>
-      <rule name="FAQ (GW)" id="5d61-f81d-26e2-4371" hidden="false">
-        <description>**Q.** Is Killing Blow effective against &quot;Units of Flyers&quot; which consist of a flying mount and an approximately man-sized rider? What about against riderless cavalry models such as Bull Centaurs and Centigors?
+    <rule name="FAQ (GW)" id="5d61-f81d-26e2-4371" hidden="false">
+      <description>**Q.** Is Killing Blow effective against &quot;Units of Flyers&quot; which consist of a flying mount and an approximately man-sized rider? What about against riderless cavalry models such as Bull Centaurs and Centigors?
 
 **A.** If a model consists of both a rider that would be placed on a 20mm or 25mm square base if alone on foot and another creature, but the model cannot be separated into components (e.g. Standard Cavalry models, Pegasus Knights, Terradons, Warhawks, Daemonic Cavalry, etc.), then Killing Blow is effective vs. the model as a whole (excluding chariots).
 
@@ -17947,17 +17883,15 @@ In cases where the model can exist as two (or more) separate parts and one (or m
 
 Bull Centaurs and Centigors cannot be separated into a component which would be placed on a 20mm or 25mm square base (in addition to the fact that they are larger than approximately man-sized) and Killing Blow is therefore not effective against these models.
 
-**S.** Rulebook pages 112, 113 / Anthony Reynolds - Warhammer Design Team / Direwolf FAQ Council Interpretation / Storm of Chaos Q&amp;As, October 2004 Issue of White Dwarf Magazine
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-
+**S.** Rulebook pages 112, 113 / Anthony Reynolds - Warhammer Design Team / Direwolf FAQ Council Interpretation / Storm of Chaos Q&amp;As, October 2004 Issue of White Dwarf Magazine</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
     <rule id="410a-0d06-9044-665e" name="Stubborn" hidden="false">
       <description>Leadership breaktest are unmodified.</description>
     </rule>
@@ -17966,339 +17900,313 @@ Bull Centaurs and Centigors cannot be separated into a component which would be 
 Troops that are able to can regenerate damage if not too badly hurt. Work this out as follows. When attacked in close combat, shot at, or the target of spells, calculate the number of wounds suffered as normal. Once all attacks for the phase have been made, the creature may try to regenerate. Roll a D6 for each wound suffered during that phase. If a 4 or more is rolled, that wound has regenerated. You may only try to regenerate any single wound once. Any regenerated wounds are reinstated, and models removed as casualties are replaced if enough wounds are regenerated.
 The results of combat, panic, etc are worked out after creatures have regenerated (the number of wounds inflicted does not include any that arc regenerated).</description>
     </rule>
-      <rule name="FAQ (GW)" id="2939-4392-58b5-4601" hidden="false">
-        <description>**Q.** Can a model regenerate if slain by a model with Killing Blow that rolls a 6 to wound?
+    <rule name="FAQ (GW)" id="2939-4392-58b5-4601" hidden="false">
+      <description>**Q.** Can a model regenerate if slain by a model with Killing Blow that rolls a 6 to wound?
 
 **A.** You cannot regenerate a wound caused by a Killing Blow. Note that for the purpose of combat resolution, use the remaining wounds of a model slain by Killing Blow.
 
-**S.** Warhammer Chronicles 2004 page 114
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (GW)" id="15f2-762c-6e67-420a" hidden="false">
-        <description>**Q.** Can a model with Regeneration suffer more wounds than are on its profile? For example, if a Troll suffers 4 wounds does it have to regenerate all 4 wounds, or only the 3 wounds on its profile?
+**S.** Warhammer Chronicles 2004 page 114</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (GW)" id="15f2-762c-6e67-420a" hidden="false">
+      <description>**Q.** Can a model with Regeneration suffer more wounds than are on its profile? For example, if a Troll suffers 4 wounds does it have to regenerate all 4 wounds, or only the 3 wounds on its profile?
 
 **A.** A model does not suffer more wounds than it started with. An attack that does multiple wounds cannot inflict more wounds than the model struck has, and they do not carry over from model to model. For example, a ball from an Empire Great Cannon ploughs through a unit of Trolls, hitting and wounding three of them; each suffers D6 wounds, but since no Troll can take more than 3 wounds, the rolls are capped at each Troll&apos;s remaining wounds before being regenerated.
 
 In challenges, this means no chance of Overkill wounds from the capped portion - but if the model fails to regenerate, any excess wounds inflicted (before capping) count towards Overkill as normal. E.g. a character with 3 wounds in a challenge suffers 5 wounds after its ward save; it only needs to make three Regeneration rolls (the number of wounds it had at the start of the combat), but if all three rolls are failed and it dies, the total 5 wounds inflicted count towards combat results.
 
-**S.** Warhammer Chronicles 2004 page 114
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (NornConsensus)" id="3115-1a5d-c750-4055" hidden="false">
-        <description>**Q.** If a unit with Regeneration takes massive damage that would otherwise wipe out the entire unit including the final model, does the final model still get to attempt its Regeneration rolls?
+**S.** Warhammer Chronicles 2004 page 114</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (NornConsensus)" id="3115-1a5d-c750-4055" hidden="false">
+      <description>**Q.** If a unit with Regeneration takes massive damage that would otherwise wipe out the entire unit including the final model, does the final model still get to attempt its Regeneration rolls?
 
 **A.** Yes. Regeneration rolls are taken during the phase the wounds are suffered. Even if the total wounds inflicted exceed the remaining wounds of the entire unit, you make all the Regeneration rolls first, then remove whole models as casualties for any un-regenerated wounds. It is fully possible for the last model to be &quot;killed&quot; but successfully regenerate and remain in play.
 
-**S.** The Norn Consensus Historical Precedent / Warhammer Chronicles 2004 page 114 / White Dwarf 258 page 39
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (NornConsensus)" id="dbdc-5a65-b662-48c5" hidden="false">
-        <description>**Q.** If a model suffers a wound, can they attempt an Armour Save, a Ward Save, and a Regeneration roll in sequence?
+**S.** The Norn Consensus Historical Precedent / Warhammer Chronicles 2004 page 114 / White Dwarf 258 page 39</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (NornConsensus)" id="dbdc-5a65-b662-48c5" hidden="false">
+      <description>**Q.** If a model suffers a wound, can they attempt an Armour Save, a Ward Save, and a Regeneration roll in sequence?
 
 **A.** No. You can never take a Ward Save and a Regeneration roll against the same wound. A model may attempt an Armour Save first; if that save is failed or modified away, the defending player must choose to use either their Ward Save or their Regeneration roll.
 
-**S.** The Norn Consensus Historical Precedent / Rulebook page 65
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-
+**S.** The Norn Consensus Historical Precedent / Rulebook page 65</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
     <rule id="8ae3-9724-980f-7308" name="Unbreakable" hidden="false">
       <description>Some creatures are utterly fearless and will never give up a battle, no matter how hopeless the situation might be. This could be because of the troops&apos; extreme bravery, or because the creatures fighting are not truly alive.
 These troops never break in close combat, and they are also immune to panic, terror and fear or any other Psychology rules.
 If defeated in close combat (even by fear-causing creatures that outnumber them) unbreakable troops continue to fight on regardless of results.
 They may never, however. declare that they are fleeing as a charge reaction, as they will literally die fighting under any circumstances.</description>
     </rule>
-      <rule name="FAQ (GW)" id="0b65-caba-0fbc-4f2a" hidden="false">
-        <description>**Q.** Can a character who is not Unbreakable himself join an Unbreakable unit?
+    <rule name="FAQ (GW)" id="0b65-caba-0fbc-4f2a" hidden="false">
+      <description>**Q.** Can a character who is not Unbreakable himself join an Unbreakable unit?
 
 **A.** No. Unbreakable units cannot be joined by characters except those which are already Unbreakable.
 
-**S.** Warhammer Annual 2002 page 5
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-
+**S.** Warhammer Annual 2002 page 5</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
     <rule id="ff2b-8db6-64fa-e9ca" name="Immune to Panic" publicationId="315e-e3c4-08af-fd51" page="112" hidden="false">
       <description>The unit do not take Panic tests.</description>
     </rule>
     <rule id="e5ce-0262-e817-adc2" name="Brace Of Pistols" hidden="false">
       <description>In first round of combat (H-T-H) the model counts as having two handweapons. In the first turn only these have STR4 and Armour Piercing.</description>
     </rule>
-      <rule name="FAQ (GW)" id="e10a-85e7-71d3-4d1c" hidden="false">
-        <description>**Q.** When using a pistol in close combat does a model roll to hit using his Ballistic Skill?
+    <rule name="FAQ (GW)" id="e10a-85e7-71d3-4d1c" hidden="false">
+      <description>**Q.** When using a pistol in close combat does a model roll to hit using his Ballistic Skill?
 
 **A.** No. When using a pistol in close combat a model rolls to hit using the comparative Weapon Skill of him and his foe.
 
-**S.** Rulebook pages 69, 91
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (GW)" id="b914-3779-b893-4087" hidden="false">
-        <description>**Q.** In the first round of close combat after a Stand and Shoot reaction does a model armed with a pistol receive an Armour Piercing Attack?
+**S.** Rulebook pages 69, 91</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (GW)" id="b914-3779-b893-4087" hidden="false">
+      <description>**Q.** In the first round of close combat after a Stand and Shoot reaction does a model armed with a pistol receive an Armour Piercing Attack?
 
 **A.** Yes. The pistol rules clearly state that a model armed with a pistol receives an Armour Piercing Attack in the first round of close combat. No exceptions for Stand and Shoot reactions are listed.
 
-**S.** Direwolf FAQ Council Interpretation / Rulebook page 91
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-
+**S.** Direwolf FAQ Council Interpretation / Rulebook page 91</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
     <rule id="1e6c-d634-a65c-78eb" name="Hatred" hidden="false">
       <description>Troops fighting in close combat with a hated foe may re-roll any misses When they attack in the first turn of any combat. This bonus only applies in the first turn of a combat and represents the unit venting its pent up hatred on the foe. After the initial round of blood mad hacking they lose some impetus and subsequently fight as normal for the rest of the combat.
 Troops who hate their enemy must always pursue them if they flee. They cannot attempt to avoid pursuit by testing their Leadership as other troops can. They must even pursue if behind a defended obstacle.</description>
     </rule>
-      <rule name="FAQ (GW)" id="55b8-5705-022c-49cf" hidden="false">
-        <description>**Q.** If a hating unit is engaged in combat, that combat ends up a draw, and in the following turn the unit is then charged in the flank by a different enemy unit (which it also hates), do the previously unengaged models get to utilize the first round of combat re-rolls versus the new attacker?
+    <rule name="FAQ (GW)" id="55b8-5705-022c-49cf" hidden="false">
+      <description>**Q.** If a hating unit is engaged in combat, that combat ends up a draw, and in the following turn the unit is then charged in the flank by a different enemy unit (which it also hates), do the previously unengaged models get to utilize the first round of combat re-rolls versus the new attacker?
 
 **A.** No, only the newly charging unit counts as &quot;in first round of combat&quot; in this situation. All models in a unit fight together and the defending unit is no longer in &quot;first round of combat&quot; since it was already fighting a different enemy unit in a previous turn.
 
-**S.** Rulebook pages 67, 84 / Direwolf FAQ Council Interpretation
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-
+**S.** Rulebook pages 67, 84 / Direwolf FAQ Council Interpretation</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
     <rule id="eecc-4ed0-db8a-f6dc" name="Thrown Weapons" hidden="false">
       <description>Thrown weapons do not suffer penalties for long range, nor for moving</description>
     </rule>
     <rule id="df8d-7c05-c47b-9cd6" name="Magical Resistance (2)" hidden="false">
       <description>Generates two dispel dice when spells cast at the unit</description>
     </rule>
-      <rule name="FAQ (GW)" id="0d4b-5d8d-af2e-4ca3" hidden="false">
-        <description>**Q.** If a unit with Magic Resistance is a potential target for a spell that affects all enemy units in sight/range, does it get to add its dispel dice? Do multiple units with Magic Resistance targeted by the same spell add their dice together?
+    <rule name="FAQ (GW)" id="0d4b-5d8d-af2e-4ca3" hidden="false">
+      <description>**Q.** If a unit with Magic Resistance is a potential target for a spell that affects all enemy units in sight/range, does it get to add its dispel dice? Do multiple units with Magic Resistance targeted by the same spell add their dice together?
 
 **A.** If a unit with Magic Resistance is a potential target for one of these spells its Magic Resistance may be used. If multiple units with Magic Resistance are targeted, use the highest Magic Resistance value, NOT all of them added together.
 
-**S.** Warhammer Chronicles 2004 page 115
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (GW)" id="e343-9a8d-8675-4334" hidden="false">
-        <description>**Q.** If a character has Magic Resistance and joins a unit, does the whole unit benefit from that Magic Resistance?
+**S.** Warhammer Chronicles 2004 page 115</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (GW)" id="e343-9a8d-8675-4334" hidden="false">
+      <description>**Q.** If a character has Magic Resistance and joins a unit, does the whole unit benefit from that Magic Resistance?
 
 **A.** Yes.
 
-**S.** Anthony Reynolds - Warhammer Design Team (Online Q&amp;A on the Games Workshop Warhammer Forum)
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (GW)" id="d34c-1ea3-5f45-4a57" hidden="false">
-        <description>**Q.** Do items or abilities which provide extra dispel dice when targeted by enemy spells work the same as items specifically noted with &quot;Magic Resistance&quot;?
+**S.** Anthony Reynolds - Warhammer Design Team (Online Q&amp;A on the Games Workshop Warhammer Forum)</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (GW)" id="d34c-1ea3-5f45-4a57" hidden="false">
+      <description>**Q.** Do items or abilities which provide extra dispel dice when targeted by enemy spells work the same as items specifically noted with &quot;Magic Resistance&quot;?
 
 **A.** These extra dispel dice (which appeared in some item descriptions early in Sixth Edition) should be treated just like Magic Resistance.
 
-**S.** Gav Thorpe - Warhammer Design Team
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (GW)" id="9ddb-a6ac-6431-47ef" hidden="false">
-        <description>**Q.** If a unit has multiple sources of Magic Resistance (e.g. MR(1) from a character and MR(2) from a magic banner) do the sources add together, or do you simply apply the highest value?
+**S.** Gav Thorpe - Warhammer Design Team</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (GW)" id="9ddb-a6ac-6431-47ef" hidden="false">
+      <description>**Q.** If a unit has multiple sources of Magic Resistance (e.g. MR(1) from a character and MR(2) from a magic banner) do the sources add together, or do you simply apply the highest value?
 
 **A.** Apply the highest value.
 
-**S.** Gav Thorpe - Warhammer Design Team
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (GW)" id="a3ae-6e53-cbd8-4676" hidden="false">
-        <description>**Q.** Can units with Magic Resistance dice use these dice to dispel chain spells (e.g. Gork&apos;s Warpath, Plague) when they are not the first unit targeted? Does Magic Resistance count against Comet of Cassandora and other spells with a random range of effect? May units with Magic Resistance dice use these dice to dispel &quot;remains in play&quot; spells in subsequent turns?
+**S.** Gav Thorpe - Warhammer Design Team</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (GW)" id="a3ae-6e53-cbd8-4676" hidden="false">
+      <description>**Q.** Can units with Magic Resistance dice use these dice to dispel chain spells (e.g. Gork&apos;s Warpath, Plague) when they are not the first unit targeted? Does Magic Resistance count against Comet of Cassandora and other spells with a random range of effect? May units with Magic Resistance dice use these dice to dispel &quot;remains in play&quot; spells in subsequent turns?
 
 **A.** No to all of the above. It is not enough for the unit with Magic Resistance to be a potential target - the unit has to be an actual target of the spell. Magic Resistance, like dispel scrolls, comes into effect only at the point when the magical energy is summoned (i.e. the spell is cast). Once the effects of the spell become a reality, it&apos;s too late.
 
-**S.** Warhammer Chronicles 2004 page 115 / Gav Thorpe - Warhammer Design Team
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (NornConsensus)" id="ec5b-aa09-f44b-41df" hidden="false">
-        <description>**Q.** Does Magic Resistance stack if both a character and the unit they have joined possess the rule? Does Magic Resistance work against spells that use a line or template rather than targeting a specific unit?
+**S.** Warhammer Chronicles 2004 page 115 / Gav Thorpe - Warhammer Design Team</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (NornConsensus)" id="ec5b-aa09-f44b-41df" hidden="false">
+      <description>**Q.** Does Magic Resistance stack if both a character and the unit they have joined possess the rule? Does Magic Resistance work against spells that use a line or template rather than targeting a specific unit?
 
 **A.** No, Magic Resistance does not stack - apply the highest single Magic Resistance value present within the unit, not all values added together. Regarding template or line spells, Magic Resistance does apply, provided the unit with Magic Resistance is an actual potential target or is hit by the spell&apos;s area of effect.
 
-**S.** The Norn Consensus Historical Precedent / White Dwarf 275 page 63
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-
+**S.** The Norn Consensus Historical Precedent / White Dwarf 275 page 63</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
     <rule id="da12-a0e8-30ec-6c32" name="Magical Resistance (1)" hidden="false">
       <description>Generates 1 dispel dice for spells cast at the unit.</description>
     </rule>
-      <rule name="FAQ (GW)" id="c824-d9a2-9099-4003" hidden="false">
-        <description>**Q.** If a unit with Magic Resistance is a potential target for a spell that affects all enemy units in sight/range, does it get to add its dispel dice? Do multiple units with Magic Resistance targeted by the same spell add their dice together?
+    <rule name="FAQ (GW)" id="c824-d9a2-9099-4003" hidden="false">
+      <description>**Q.** If a unit with Magic Resistance is a potential target for a spell that affects all enemy units in sight/range, does it get to add its dispel dice? Do multiple units with Magic Resistance targeted by the same spell add their dice together?
 
 **A.** If a unit with Magic Resistance is a potential target for one of these spells its Magic Resistance may be used. If multiple units with Magic Resistance are targeted, use the highest Magic Resistance value, NOT all of them added together.
 
-**S.** Warhammer Chronicles 2004 page 115
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (GW)" id="8385-4bfb-d315-46ee" hidden="false">
-        <description>**Q.** If a character has Magic Resistance and joins a unit, does the whole unit benefit from that Magic Resistance?
+**S.** Warhammer Chronicles 2004 page 115</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (GW)" id="8385-4bfb-d315-46ee" hidden="false">
+      <description>**Q.** If a character has Magic Resistance and joins a unit, does the whole unit benefit from that Magic Resistance?
 
 **A.** Yes.
 
-**S.** Anthony Reynolds - Warhammer Design Team (Online Q&amp;A on the Games Workshop Warhammer Forum)
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (GW)" id="18e3-ba27-a097-4fbb" hidden="false">
-        <description>**Q.** Do items or abilities which provide extra dispel dice when targeted by enemy spells work the same as items specifically noted with &quot;Magic Resistance&quot;?
+**S.** Anthony Reynolds - Warhammer Design Team (Online Q&amp;A on the Games Workshop Warhammer Forum)</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (GW)" id="18e3-ba27-a097-4fbb" hidden="false">
+      <description>**Q.** Do items or abilities which provide extra dispel dice when targeted by enemy spells work the same as items specifically noted with &quot;Magic Resistance&quot;?
 
 **A.** These extra dispel dice (which appeared in some item descriptions early in Sixth Edition) should be treated just like Magic Resistance.
 
-**S.** Gav Thorpe - Warhammer Design Team
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (GW)" id="0643-c353-769a-42ed" hidden="false">
-        <description>**Q.** If a unit has multiple sources of Magic Resistance (e.g. MR(1) from a character and MR(2) from a magic banner) do the sources add together, or do you simply apply the highest value?
+**S.** Gav Thorpe - Warhammer Design Team</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (GW)" id="0643-c353-769a-42ed" hidden="false">
+      <description>**Q.** If a unit has multiple sources of Magic Resistance (e.g. MR(1) from a character and MR(2) from a magic banner) do the sources add together, or do you simply apply the highest value?
 
 **A.** Apply the highest value.
 
-**S.** Gav Thorpe - Warhammer Design Team
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (GW)" id="28e4-ce13-ebd0-4934" hidden="false">
-        <description>**Q.** Can units with Magic Resistance dice use these dice to dispel chain spells (e.g. Gork&apos;s Warpath, Plague) when they are not the first unit targeted? Does Magic Resistance count against Comet of Cassandora and other spells with a random range of effect? May units with Magic Resistance dice use these dice to dispel &quot;remains in play&quot; spells in subsequent turns?
+**S.** Gav Thorpe - Warhammer Design Team</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (GW)" id="28e4-ce13-ebd0-4934" hidden="false">
+      <description>**Q.** Can units with Magic Resistance dice use these dice to dispel chain spells (e.g. Gork&apos;s Warpath, Plague) when they are not the first unit targeted? Does Magic Resistance count against Comet of Cassandora and other spells with a random range of effect? May units with Magic Resistance dice use these dice to dispel &quot;remains in play&quot; spells in subsequent turns?
 
 **A.** No to all of the above. It is not enough for the unit with Magic Resistance to be a potential target - the unit has to be an actual target of the spell. Magic Resistance, like dispel scrolls, comes into effect only at the point when the magical energy is summoned (i.e. the spell is cast). Once the effects of the spell become a reality, it&apos;s too late.
 
-**S.** Warhammer Chronicles 2004 page 115 / Gav Thorpe - Warhammer Design Team
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (NornConsensus)" id="546b-8980-367e-46d8" hidden="false">
-        <description>**Q.** Does Magic Resistance stack if both a character and the unit they have joined possess the rule? Does Magic Resistance work against spells that use a line or template rather than targeting a specific unit?
+**S.** Warhammer Chronicles 2004 page 115 / Gav Thorpe - Warhammer Design Team</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (NornConsensus)" id="546b-8980-367e-46d8" hidden="false">
+      <description>**Q.** Does Magic Resistance stack if both a character and the unit they have joined possess the rule? Does Magic Resistance work against spells that use a line or template rather than targeting a specific unit?
 
 **A.** No, Magic Resistance does not stack - apply the highest single Magic Resistance value present within the unit, not all values added together. Regarding template or line spells, Magic Resistance does apply, provided the unit with Magic Resistance is an actual potential target or is hit by the spell&apos;s area of effect.
 
-**S.** The Norn Consensus Historical Precedent / White Dwarf 275 page 63
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-
+**S.** The Norn Consensus Historical Precedent / White Dwarf 275 page 63</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
     <rule id="ac96-22af-fac6-56f9" name="Scaly Skin 4+" hidden="false">
       <description>Armour save 4+</description>
     </rule>
@@ -18312,22 +18220,20 @@ Troops who hate their enemy must always pursue them if they flee. They cannot at
       <description>Cast on 3+
 Burning Iron is a magic missile with a range of up to 24&quot;. If successfully cast, the spell hits a single model (chosen by the caster) and causes 1 S3 hit if the target has no armour save or a save of 6, 1 S4 hit if the target has an armour save of 5+, and 1 S5 hit if the target has an armour save of 4+ or better. This is a Fire attack and causes double damage against flammable  targets.</description>
     </rule>
-      <rule name="FAQ (GW)" id="2a43-a932-8163-42f7" hidden="false">
-        <description>**Q.** Does the Lore of Metal spell, Rule of Burning Iron, allow the caster to ignore normal targeting restrictions? Can the spell be used to pick out champions or characters inside units?
+    <rule name="FAQ (GW)" id="2a43-a932-8163-42f7" hidden="false">
+      <description>**Q.** Does the Lore of Metal spell, Rule of Burning Iron, allow the caster to ignore normal targeting restrictions? Can the spell be used to pick out champions or characters inside units?
 
 **A.** The spell is classified as a &apos;Magic Missile&apos;, so it can only be cast at a target that would be viable per the rules for shooting (LOS, range, and the usual protection for a lone similar-sized character/Skaven weapon team within a unit of five or more similar sized models). Once a valid target unit is chosen and the spell is successfully cast, its text states &quot;the spell hits a single model (chosen by the caster)&quot; - meaning the caster may allocate the hit to a champion or an attached character within that valid target unit.
 
-**S.** Rulebook pages 142, 145 / Anthony Reynolds - Warhammer Design Team (Online Q&amp;A on the Games Workshop Warhammer Forum)
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-
+**S.** Rulebook pages 142, 145 / Anthony Reynolds - Warhammer Design Team (Online Q&amp;A on the Games Workshop Warhammer Forum)</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
     <rule id="3d8c-0ee2-bef1-198b" name="Commandment of Brass" hidden="false">
       <description>Cast on 6+
 Lasts one turn. This spell has a range of 24&quot; and can be cast on an enemy war machine or chariot which is visible to the caster and which is not already engaged in close combat. If successfully cast, the machine cannot move or shoot until the end of its own following turn. If forced to flee for whatever reason, the spell is broken and the unit flees.</description>
@@ -18348,22 +18254,20 @@ This spell can be cast on an enemy unit that is within 24&quot; of the caster. T
       <description>Caston 11+
 This spell has a range of 12&quot; and can be cast on an enemy unit which is visible to the caster. If successfully cast, the enemy&apos;s weapons begin to crumble and rust away. No weapon bonuses or penalties apply to the affected unit for the remainder of the battle. For example, a unit wielding Great Swords will not get their +2 Strength bonus in combat for the rest of the battle, but will now not have to strike last. A unit with missile weapons may not shoot for the duration of the entire battle. Affected units are assumed to use their fist/claws, etc, and so cannot benefit from the rules for using two hand weapons or a hand weapon and shield. War machines and magic weapons cannot be affected by the Bane of Forged Steel - only ordinary weaponry carried by troops.</description>
     </rule>
-      <rule name="FAQ (GW)" id="9526-f337-d4d7-4acc" hidden="false">
-        <description>**Q.** What is the corrected description for the Lore of Metal spell, Bane of Forged Steel?
+    <rule name="FAQ (GW)" id="9526-f337-d4d7-4acc" hidden="false">
+      <description>**Q.** What is the corrected description for the Lore of Metal spell, Bane of Forged Steel?
 
 **A.** This spell has a range of 12&quot; and can be cast on an enemy unit which is visible to the caster. If successfully cast, the enemy&apos;s weapons begin to crumble and rust away. No weapon bonuses or penalties apply to the affected unit for the remainder of the battle - for example, a unit wielding Great Swords will not get their +2 Strength bonus in combat for the rest of the battle, but will also no longer have to strike last. A unit with missile weapons may not shoot for the duration of the entire battle. Affected units are assumed to use their fists/claws, etc, and so cannot benefit from the rules for using two hand weapons or a hand weapon and shield. War machines and magic weapons cannot be affected by the Bane of Forged Steel - only ordinary weaponry carried by troops.
 
-**S.** Warhammer Chronicles 2004 page 122
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-
+**S.** Warhammer Chronicles 2004 page 122</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
     <rule id="e4f3-ac8c-8f42-8bad" name="Fire Ball" hidden="false">
       <description>Cast on 5+
 The fire ball is a magic missile with a range of up to 24&quot;. If successfully cast, the Fire Ball hits its target and causes D6 Strength 4 hits.</description>
@@ -18398,46 +18302,42 @@ Once it is cast, the Wall of Fire remains where it is until it is dispelled, or 
 
 The Wall of Fire does not block the line of sight of archers and chargers, nor does it reduce a unit&apos;s Movement rate.</description>
     </rule>
-      <rule name="FAQ (GW)" id="3169-7b9c-5feb-4144" hidden="false">
-        <description>**Q.** What is the corrected description for the Lore of Fire spell, Wall of Fire?
+    <rule name="FAQ (GW)" id="3169-7b9c-5feb-4144" hidden="false">
+      <description>**Q.** What is the corrected description for the Lore of Fire spell, Wall of Fire?
 
-**A.** This spell has a range of 24&quot; and can be cast on an enemy unit visible to the caster which has no models (friend or foe) within 1&quot; of its front rank (walls, hedges and other scenic features don&apos;t matter). The spell cannot be cast on units with 360&#176; line of sight.
+**A.** This spell has a range of 24&quot; and can be cast on an enemy unit visible to the caster which has no models (friend or foe) within 1&quot; of its front rank (walls, hedges and other scenic features don&apos;t matter). The spell cannot be cast on units with 360&amp;#176; line of sight.
 
 The unit suffers 1 automatic hit for each model (including characters) in its front rank. Each hit is resolved with a Strength of 4.
 
-**S.** Warhammer Chronicles 2004 page 122
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-
+**S.** Warhammer Chronicles 2004 page 122</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
     <rule id="7d9a-67cc-3fbe-e93e" name="Steed of Shadows" hidden="false">
       <description>Cast on 4+
 This spell may be cast upon the Wizard himself or any single friendly independent character model within 12&quot; of him - the spell can only be cast on a model with a Unit Strength of 1 (it won&apos;t work on a mounted model or a model riding in a chariot, for example).
 
 If successfully cast, the model can make a normal flight move of up to 20&quot;. The model can fly out of close combat if desired, but cannot fly into close combat unless positioned so that it could do so by making a normal aerial charge (for example, it must not be engaged in combat already and must be able to see the target).</description>
     </rule>
-      <rule name="FAQ (GW)" id="5bbb-8958-3c6c-4343" hidden="false">
-        <description>**Q.** What is the corrected description for the first paragraph of the Lore of Shadows spell, Steed of Shadows?
+    <rule name="FAQ (GW)" id="5bbb-8958-3c6c-4343" hidden="false">
+      <description>**Q.** What is the corrected description for the first paragraph of the Lore of Shadows spell, Steed of Shadows?
 
 **A.** This spell may be cast upon the Wizard himself or any single friendly independent character model within 12&quot; of him - the spell can only be cast on a model with a Unit Strength of 1 (it won&apos;t work on a mounted model or a model riding in a chariot, for example).
 
-**S.** Warhammer Chronicles 2004 page 122
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-
+**S.** Warhammer Chronicles 2004 page 122</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
     <rule id="3b5a-e19c-52db-18cd" name="Creeping Death" hidden="false">
       <description>Cast on 6+
 The Creeping Death is a magic missile with a range of up to 24&quot;. If successfully cast, the Creeping Death hits its targets and causes D6 Strength 3 hits. No armour saves are allowed against wounds caused by the Creeping Death.</description>
@@ -18449,22 +18349,20 @@ This spell can be cast on a friendly unit that is within 24&quot; of the caster.
 
 Once it is cast, the Pelt of Midnight continues to work until it is dispelled, or until the Wizard chooses to end it (which he can do at any time), attempts to cast another spell or is slain.</description>
     </rule>
-      <rule name="FAQ (GW)" id="3d09-3fc1-9a1f-4272" hidden="false">
-        <description>**Q.** If a unit has the spell Pelt of Midnight (from the Lore of Shadow) cast upon it, does this have any effect against a flame template from a Dragon, Gyrocopter, etc.?
+    <rule name="FAQ (GW)" id="3d09-3fc1-9a1f-4272" hidden="false">
+      <description>**Q.** If a unit has the spell Pelt of Midnight (from the Lore of Shadow) cast upon it, does this have any effect against a flame template from a Dragon, Gyrocopter, etc.?
 
 **A.** No.
 
-**S.** Anthony Reynolds - Warhammer Design Team (Online Q&amp;A on the Games Workshop Warhammer Forum)
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-
+**S.** Anthony Reynolds - Warhammer Design Team (Online Q&amp;A on the Games Workshop Warhammer Forum)</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
     <rule id="4f37-9562-182c-b68d" name="Shades of Death" hidden="false">
       <description>Cast on 8+
 Remains in play. 
@@ -18487,22 +18385,20 @@ Take the 3&quot; template and place it over a single target enemy unit. All mode
       <description>Cast on a 5+
 This spell can be cast on any friendly fleeing unit on the tabtetop. If successful, the unit is rallies immediately.</description>
     </rule>
-      <rule name="FAQ (GW)" id="c614-d5bf-2e4e-4d43" hidden="false">
-        <description>**Q.** Can the Lore of Beasts spell, The Oxen Stands (which immediately rallies fleeing troops) be used to rally a unit that is at less than 25% of its starting size?
+    <rule name="FAQ (GW)" id="c614-d5bf-2e4e-4d43" hidden="false">
+      <description>**Q.** Can the Lore of Beasts spell, The Oxen Stands (which immediately rallies fleeing troops) be used to rally a unit that is at less than 25% of its starting size?
 
 **A.** No. Questions such as this should be answered with the phrase &quot;if normally allowed&quot; in mind. As a unit that is less than 25% of its starting size is not normally allowed to rally, the spell cannot be used to rally the unit.
 
-**S.** Rulebook pages 75, 147 / Direwolf FAQ Council Interpretation
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-
+**S.** Rulebook pages 75, 147 / Direwolf FAQ Council Interpretation</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
     <rule id="d67c-9fdd-1e8a-1920" name="The Eagle&apos;s Cry" hidden="false">
       <description>Cast on a 6+
 This spell can be cast on an unengaged enemy cavalry unit, swarm, chariot or a single ridden or unridden monster which is within 24&quot; of the caster. If successful, the creature/s become momentarily wild and uncontrollable.
@@ -18553,72 +18449,66 @@ This spell can be cast on any unengaged enemy unit within 24&quot; of the caster
       <description>Cast on 9+
 This spell can be cast on any unengaged enemy unit within 24&quot; of the caster. If successfully cast, the unit is struck by a thunder bolt causing D6 Strength 4 hits with no Armour save possible. These hits are distributed exactly like hits from shooting.</description>
     </rule>
-      <rule name="FAQ (GW)" id="3f03-9c05-c389-44ad" hidden="false">
-        <description>**Q.** Can Uranon&apos;s Thunderbolt target characters in Buildings?
+    <rule name="FAQ (GW)" id="3f03-9c05-c389-44ad" hidden="false">
+      <description>**Q.** Can Uranon&apos;s Thunderbolt target characters in Buildings?
 
 **A.** Yes (the thunderbolts smash through the roof, obviously!)
 
-**S.** Warhammer Chronicles 2004 page 115
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (GW)" id="616d-a83e-aaf5-4420" hidden="false">
-        <description>**Q.** Do magic items or abilities that provide special saves against missiles (e.g. The Golden Eye of Tzeentch, Wristbands of Black Gold, Shield of Ptolos, etc.) work against spells not classified as &quot;magic missiles&quot;, such as Uranon&apos;s Thunderbolt, Storm of Cronos, or Father of the Thorn?
+**S.** Warhammer Chronicles 2004 page 115</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (GW)" id="616d-a83e-aaf5-4420" hidden="false">
+      <description>**Q.** Do magic items or abilities that provide special saves against missiles (e.g. The Golden Eye of Tzeentch, Wristbands of Black Gold, Shield of Ptolos, etc.) work against spells not classified as &quot;magic missiles&quot;, such as Uranon&apos;s Thunderbolt, Storm of Cronos, or Father of the Thorn?
 
 **A.** No. The only spells which count as missiles are those specifically noted as &quot;magic missiles&quot; in their descriptions.
 
-**S.** Warhammer Chronicles 2004 page 115 / Anthony Reynolds - Warhammer Design Team (Online Q&amp;A on the Games Workshop Warhammer Forum)
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-
+**S.** Warhammer Chronicles 2004 page 115 / Anthony Reynolds - Warhammer Design Team (Online Q&amp;A on the Games Workshop Warhammer Forum)</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
     <rule id="2530-d828-3c0d-f0db" name="Storm of Cronos" hidden="false">
       <description>Cast on 9+
 This spell can be cast on all enemy units which are visible to and within 12&quot; of the caster. If successfully cast, all enemy units within range and sight are affected. Each unit takes D6 Strength 4 hits, distributed exactly like shooting.</description>
     </rule>
-      <rule name="FAQ (GW)" id="7a8a-5b40-b6a4-4b39" hidden="false">
-        <description>**Q.** Can spells which affect all enemy units in sight, within a defined range, and/or on the battlefield (e.g. Storm of Cronos, Drain Life, Fog of Death) be cast if enemy units in the area are engaged in close combat?
+    <rule name="FAQ (GW)" id="7a8a-5b40-b6a4-4b39" hidden="false">
+      <description>**Q.** Can spells which affect all enemy units in sight, within a defined range, and/or on the battlefield (e.g. Storm of Cronos, Drain Life, Fog of Death) be cast if enemy units in the area are engaged in close combat?
 
 **A.** Yes they can be cast, but only unengaged units are affected, as such spells do not specifically state that they can be cast at units in combat.
 
-**S.** Warhammer Chronicles 2004 page 115
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (GW)" id="a067-97b7-6ea0-400b" hidden="false">
-        <description>**Q.** Do magic items or abilities that provide special saves against missiles (e.g. The Golden Eye of Tzeentch, Wristbands of Black Gold, Shield of Ptolos, etc.) work against spells not classified as &quot;magic missiles&quot;, such as Uranon&apos;s Thunderbolt, Storm of Cronos, or Father of the Thorn?
+**S.** Warhammer Chronicles 2004 page 115</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (GW)" id="a067-97b7-6ea0-400b" hidden="false">
+      <description>**Q.** Do magic items or abilities that provide special saves against missiles (e.g. The Golden Eye of Tzeentch, Wristbands of Black Gold, Shield of Ptolos, etc.) work against spells not classified as &quot;magic missiles&quot;, such as Uranon&apos;s Thunderbolt, Storm of Cronos, or Father of the Thorn?
 
 **A.** No. The only spells which count as missiles are those specifically noted as &quot;magic missiles&quot; in their descriptions.
 
-**S.** Warhammer Chronicles 2004 page 115 / Anthony Reynolds - Warhammer Design Team (Online Q&amp;A on the Games Workshop Warhammer Forum)
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-
+**S.** Warhammer Chronicles 2004 page 115 / Anthony Reynolds - Warhammer Design Team (Online Q&amp;A on the Games Workshop Warhammer Forum)</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
     <rule id="fbf7-a711-49c2-cb2c" name="The Comet of Casandora (Revised)" hidden="false">
       <description>Cast on 11+
 This spell can be cast upon any fixed point on the tabletop. If successfully cast, place a suitable marker over the exact spot affected - a small coin is ideal for this.
@@ -18626,22 +18516,20 @@ This spell can be cast upon any fixed point on the tabletop. If successfully cas
 Once cast, the player rolls a D6 at the start of each player&apos;s turn (ie, at the start of his turn and at the start of his opponent&apos;s turn). On a score of 1-3 nothing happens, but place another marker on the first. On the score of a 4-6 the spot is struck by a comet. All units from either side which are within D6&quot; multiplied by the number of markers already placed are struck by the comet. Each unit struck by the comet takes 2D6 Strength 4 hits. For example - if there are two markers in place and the D6 roll is a 4, all units within 4 x 2 = 8&quot; are struck. The Comet is not a remains in play
  spell as such, although the spell can be dispelled while in play, (remove all markers), and a Wizard cannot have more than one Comet in play at one time.</description>
     </rule>
-      <rule name="FAQ (GW)" id="655b-6e14-633f-48b6" hidden="false">
-        <description>**Q.** The rules for the Comet of Casandora (Lore of Heavens) state that it remains in play, but the standard &quot;stays in play until the Wizard wants to cancel it, or he dies&quot; statement is not included. Must it actively be dispelled to stop it, surviving even if the caster dies?
+    <rule name="FAQ (GW)" id="655b-6e14-633f-48b6" hidden="false">
+      <description>**Q.** The rules for the Comet of Casandora (Lore of Heavens) state that it remains in play, but the standard &quot;stays in play until the Wizard wants to cancel it, or he dies&quot; statement is not included. Must it actively be dispelled to stop it, surviving even if the caster dies?
 
 **A.** Once the comet is on its way, the death of the wizard does not automatically cancel the spell. You can however attempt to dispel it in subsequent turns as usual.
 
-**S.** Warhammer Chronicles 2004 page 115
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-
+**S.** Warhammer Chronicles 2004 page 115</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
     <rule id="d187-4b56-6442-ebf4" name="Pha&apos;s Illumination" hidden="false">
       <description>Cast on 5+
 Remains in play. 
@@ -18649,22 +18537,20 @@ This spell can be cast by the Wizard on himself. Once it has been cast, the spel
 
 The Wizard is swatched in power. Regardless of his characteristics, he has 3 Attacks and Strength 5 while this spell lasts. He cannot wield a weapon whilst using this spell. No magic weapons can be used to attack him whilst the spell lasts. Once cast, the spell lasts for the duration of the combat engagement until it is dispelled, until the Wizard chooses to end it (which he can do at any time), attempts to cast another spell or is slain.</description>
     </rule>
-      <rule name="FAQ (GW)" id="4c3c-622a-a443-472c" hidden="false">
-        <description>**Q.** Do the attacks generated by the Lore of Light spell, Pha&apos;s Illumination, count as magical?
+    <rule name="FAQ (GW)" id="4c3c-622a-a443-472c" hidden="false">
+      <description>**Q.** Do the attacks generated by the Lore of Light spell, Pha&apos;s Illumination, count as magical?
 
 **A.** Yes.
 
-**S.** Gav Thorpe - Warhammer Design Team / Rulebook page 149
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-
+**S.** Gav Thorpe - Warhammer Design Team / Rulebook page 149</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
     <rule id="0c87-73f2-590b-eaa0" name="Burning Gaze" hidden="false">
       <description>Cast on 5+
 Shem&apos;s Burning Gaze is a magic missile with a range of up to 24&quot;. If successfully cast, the Burning Gaze hits its targets and causes D6 Strength 4 hits.
@@ -18688,22 +18574,20 @@ This spell affects all friendly units that are within 12&quot; of the caster. If
 
 Once cast, the spell remains in play until it is dispelled, until the Wizard chooses to end it (which he can do at any time), attempts to cast another spell or is slain.</description>
     </rule>
-      <rule name="FAQ (GW)" id="3325-ebc8-efd5-4486" hidden="false">
-        <description>**Q.** Does the Lore of Light spell, Guardian Light, immediately rally fleeing troops within 12&quot; in the magic phase?
+    <rule name="FAQ (GW)" id="3325-ebc8-efd5-4486" hidden="false">
+      <description>**Q.** Does the Lore of Light spell, Guardian Light, immediately rally fleeing troops within 12&quot; in the magic phase?
 
 **A.** No. The spell means that fleeing troops within 12&quot; will not have to take a leadership test in the rally stage of their next turn and will automatically rally at that time - it does not rally them immediately in the magic phase. Note the difference in wording between Guardian Light and the Lore of Beasts spell, The Oxen Stands.
 
-**S.** Rulebook pages 147, 149
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-
+**S.** Rulebook pages 147, 149</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
     <rule id="30d3-53c0-a560-fc59" name="Blinding Light" hidden="false">
       <description>Cast on 9+
 Lasts one turn. 
@@ -18719,58 +18603,53 @@ The Father of the Thorn can be cast on an unengaged enemy unit within 24&quot; o
 
 The spell causes 2D6 Strength 3 hits.</description>
     </rule>
-      <rule name="FAQ (GW)" id="2cb3-cd85-6c8e-4c02" hidden="false">
-        <description>**Q.** Father of the Thorn is not listed as a &quot;magic missile&quot;, its only requirements for targeting being 24&quot; range and LOS. Can it be cast upon characters who are within 5&quot; of a unit of five or more similar sized models?
+    <rule name="FAQ (GW)" id="2cb3-cd85-6c8e-4c02" hidden="false">
+      <description>**Q.** Father of the Thorn is not listed as a &quot;magic missile&quot;, its only requirements for targeting being 24&quot; range and LOS. Can it be cast upon characters who are within 5&quot; of a unit of five or more similar sized models?
 
 **A.** Yes. As it is not a &quot;magic missile&quot;, it does not need to conform to normal targeting rules.
 
-**S.** Warhammer Chronicles 2004 page 115
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (GW)" id="2a56-569a-0bb3-4142" hidden="false">
-        <description>**Q.** Do magic items or abilities that provide special saves against missiles (e.g. The Golden Eye of Tzeentch, Wristbands of Black Gold, Shield of Ptolos, etc.) work against spells not classified as &quot;magic missiles&quot;, such as Uranon&apos;s Thunderbolt, Storm of Cronos, or Father of the Thorn?
+**S.** Warhammer Chronicles 2004 page 115</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (GW)" id="2a56-569a-0bb3-4142" hidden="false">
+      <description>**Q.** Do magic items or abilities that provide special saves against missiles (e.g. The Golden Eye of Tzeentch, Wristbands of Black Gold, Shield of Ptolos, etc.) work against spells not classified as &quot;magic missiles&quot;, such as Uranon&apos;s Thunderbolt, Storm of Cronos, or Father of the Thorn?
 
 **A.** No. The only spells which count as missiles are those specifically noted as &quot;magic missiles&quot; in their descriptions.
 
-**S.** Warhammer Chronicles 2004 page 115 / Anthony Reynolds - Warhammer Design Team (Online Q&amp;A on the Games Workshop Warhammer Forum)
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-
+**S.** Warhammer Chronicles 2004 page 115 / Anthony Reynolds - Warhammer Design Team (Online Q&amp;A on the Games Workshop Warhammer Forum)</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
     <rule id="004f-b7a6-35f6-c02b" name="The Howler Wind (Revised)" hidden="false">
       <description>Cast on 7+
 Remains in play. 
 This spell can be cast upon the Wizard himself. If successfully cast, no shooting with Strength 4 or less can be targeted at units within 12&quot; of the Wizard - even if some models in the unit are more than 12&quot; away. This doesn&apos;t prevent units from firing through or out of the affected area at targets beyond. In addition, all enemy units within 12&quot; of the Wizard move at half speed due to the effect of the howling wind. Note that this move penalty only applies when actually within the affected area - enemy treat the entire zone as if it were difficult ground. Once cast, the spell lasts until dispelled, the Wizard chooses to end it (which he can do at any time), attempts to cast another spell or is slain.</description>
     </rule>
-      <rule name="FAQ (GW)" id="3a36-c45a-52a6-4404" hidden="false">
-        <description>**Q.** The Howler Wind spell (Lore of Life) is hard to interpret. Should the movement effect be applied as &quot;half speed&quot; or &quot;difficult ground&quot;?
+    <rule name="FAQ (GW)" id="3a36-c45a-52a6-4404" hidden="false">
+      <description>**Q.** The Howler Wind spell (Lore of Life) is hard to interpret. Should the movement effect be applied as &quot;half speed&quot; or &quot;difficult ground&quot;?
 
 **A.** Half speed.
 
-**S.** Anthony Reynolds - Warhammer Design Team (Online Q&amp;A on the Games Workshop Warhammer Forum)
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-
+**S.** Anthony Reynolds - Warhammer Design Team (Online Q&amp;A on the Games Workshop Warhammer Forum)</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
     <rule id="5c6d-2bfa-f852-ef3e" name="Master of the Wood (Revised)" hidden="false">
       <description>Cast on 7+
 This spell can be cast upon an enemy unit that is within 12&quot; of a wood, copse or any other wooded feature on the tabletop which has been identified as such before the game. If there are no such features in range, it can be cast on any enemy unit within 12&quot; of the caster. It cannot be used against a unit that is engaged in close combat. If successfully cast, the unit is battered by the branches of trees if within a wood, or lashed at by roots which erupt from the ground if there is no wood nearby.
@@ -18792,22 +18671,20 @@ A soaked unit suffers a further -1 modifier on its shooting rolls to hit. If the
 This is not a remains in play
  spell as such, but units that have been soaked suffer the effects for the rest of the battle. There is no additional effect for being soaked more than once.</description>
     </rule>
-      <rule name="FAQ (GW)" id="3513-69e1-2e1f-4742" hidden="false">
-        <description>**Q.** Looking at the Rain Lord spell (Lore of Life), is it correct that you always need to roll 4+ every turn to shoot, and cannot remove the effect of the spell in the normal way?
+    <rule name="FAQ (GW)" id="3513-69e1-2e1f-4742" hidden="false">
+      <description>**Q.** Looking at the Rain Lord spell (Lore of Life), is it correct that you always need to roll 4+ every turn to shoot, and cannot remove the effect of the spell in the normal way?
 
 **A.** That&apos;s exactly how it works - once you&apos;re wet, you stay wet.
 
-**S.** Warhammer Chronicles 2004 page 115
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-
+**S.** Warhammer Chronicles 2004 page 115</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
     <rule id="9fe7-c1dc-0e19-0809" name="Dark Hand of Death" hidden="false">
       <description>Cast on 5+
 This is a magic missile with a range of up to 24&quot;. If successfully cast, the spell hits its target and causes D6 Strength 4 hits.</description>
@@ -18826,22 +18703,20 @@ The enemy model loses 1 Wound. No armour save is allowed. In addition, the casti
 
 The spell cannot affect Undead, Chaos Daemons, and similar units which don&apos;t have a soul!</description>
     </rule>
-      <rule name="FAQ (GW)" id="daea-59f2-67fd-4563" hidden="false">
-        <description>**Q.** The Steal Soul spell (Lore of Death) says nothing about Ward Saves. If the model saves a wound with its ward save, does the spellcaster still receive the +1 Wound?
+    <rule name="FAQ (GW)" id="daea-59f2-67fd-4563" hidden="false">
+      <description>**Q.** The Steal Soul spell (Lore of Death) says nothing about Ward Saves. If the model saves a wound with its ward save, does the spellcaster still receive the +1 Wound?
 
 **A.** No.
 
-**S.** Anthony Reynolds - Warhammer Design Team (Online Q&amp;A on the Games Workshop Warhammer Forum)
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-
+**S.** Anthony Reynolds - Warhammer Design Team (Online Q&amp;A on the Games Workshop Warhammer Forum)</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
     <rule id="bac7-c263-d173-ac75" name="Wind of Death" hidden="false">
       <description>Cast on 8+
 This is a magic missile with range of up to 24&quot;. If successfully cast, the spell hits its target and causes 2D6 Strength 4 hits.</description>
@@ -18854,22 +18729,20 @@ Each unit takes D6 Strength 3 hits. No armour saves are allowed against a Drain 
 
 The spell cannot affect Undead, Chaos Daemons, or buildings and similar models, as they are not truly alive.</description>
     </rule>
-      <rule name="FAQ (GW)" id="4293-8511-759f-47a5" hidden="false">
-        <description>**Q.** Can spells which affect all enemy units in sight, within a defined range, and/or on the battlefield (e.g. Storm of Cronos, Drain Life, Fog of Death) be cast if enemy units in the area are engaged in close combat?
+    <rule name="FAQ (GW)" id="4293-8511-759f-47a5" hidden="false">
+      <description>**Q.** Can spells which affect all enemy units in sight, within a defined range, and/or on the battlefield (e.g. Storm of Cronos, Drain Life, Fog of Death) be cast if enemy units in the area are engaged in close combat?
 
 **A.** Yes they can be cast, but only unengaged units are affected, as such spells do not specifically state that they can be cast at units in combat.
 
-**S.** Warhammer Chronicles 2004 page 115
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-
+**S.** Warhammer Chronicles 2004 page 115</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
     <rule id="ea42-2df2-f47b-3578" name="Doom and Darkness!" hidden="false">
       <description>Cast on 12+
 Lasts one turn+. 
@@ -18884,22 +18757,20 @@ The spell cannot affect Undead targets, Chaos Daemons
     <rule id="90ad-6aa4-2d97-164e" name="Enchanted Shield" hidden="false">
       <description>5+ Armour Save. The Enchanted Shield protects its user with powerful magic. The shield confers an armour save of 5+ rather than a mundane shield&apos;s annour save of 6+. This can be combined with other magical or mundane armour - for example, light armour + Enchanted Shield = armour save 4+, heavy armour + Enchanted Shield + mounted = armour save 2+.</description>
     </rule>
-      <rule name="FAQ (NornConsensus)" id="47ab-3c35-52ef-40df" hidden="false">
-        <description>**Q.** Does the Enchanted Shield override the standard restriction that a character may only carry a single piece of Magic Armour?
+    <rule name="FAQ (NornConsensus)" id="47ab-3c35-52ef-40df" hidden="false">
+      <description>**Q.** Does the Enchanted Shield override the standard restriction that a character may only carry a single piece of Magic Armour?
 
 **A.** Yes. The Enchanted Shield is the single specific exception to this rule. Its entry explicitly states: &quot;This can be combined with other magical or mundane armour,&quot; with worked examples (light armour + Enchanted Shield = 4+ save; heavy armour + Enchanted Shield + mounted = 2+ save). This allows a character to legally equip both a magical suit of armour and the Enchanted Shield.
 
-**S.** The Norn Consensus Historical Precedent / Rulebook page 154 (Common Magic Items)
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-
+**S.** The Norn Consensus Historical Precedent / Rulebook page 154 (Common Magic Items)</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
     <rule id="c9bc-2907-97ae-5e43" name="Dispel Scroll(Arcane Item)" hidden="false">
       <description>A Dispel Scroll is inscribed with a powerful anti-magical invocation. When it is read out by a Wizard, the effect is to drain away magical power and weaken a spell that has been cast. As soon as a spell has been cast, any Wizard who has a Dispel Scroll can read it. This automatically dispels the cast spell, no dice roll is required.
 
@@ -18910,67 +18781,62 @@ As with all scrolls, Dispel Scrolls are not unique items - they are prepared by 
 Note that a Dispel Scroll will not help if the spell has been cast with Irresistible Force
 . Any spell that is successfully cast with two or more 6s is Irresistible and no Dispel roll is permitted.</description>
     </rule>
-      <rule name="FAQ (GW)" id="ce57-2f76-d659-4214" hidden="false">
-        <description>**Q.** Can you use a Dispel Scroll to dispel a spell cast in a previous turn that has remained in play?
+    <rule name="FAQ (GW)" id="ce57-2f76-d659-4214" hidden="false">
+      <description>**Q.** Can you use a Dispel Scroll to dispel a spell cast in a previous turn that has remained in play?
 
 **A.** No. The description of the item states that it needs to be used &quot;as soon as a spell has been cast.&quot; If the spell was cast in the previous turn, this won&apos;t be the case.
 
-**S.** Warhammer Chronicles 2004 page 115
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (GW)" id="ac69-5fb8-44e5-463c" hidden="false">
-        <description>**Q.** Can a fleeing Wizard use Dispel Scrolls?
+**S.** Warhammer Chronicles 2004 page 115</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (GW)" id="ac69-5fb8-44e5-463c" hidden="false">
+      <description>**Q.** Can a fleeing Wizard use Dispel Scrolls?
 
 **A.** No. Fleeing Wizards are not allowed to cast or dispel spells, and using a Dispel Scroll counts as dispelling a spell.
 
-**S.** Warhammer Chronicles 2004 page 115
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (NornConsensus)" id="e939-21dc-b6b2-4ca3" hidden="false">
-        <description>**Q.** Can an army take multiple copies of the same Common Magic Item, such as giving two different characters a Sword of Might?
+**S.** Warhammer Chronicles 2004 page 115</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (NornConsensus)" id="e939-21dc-b6b2-4ca3" hidden="false">
+      <description>**Q.** Can an army take multiple copies of the same Common Magic Item, such as giving two different characters a Sword of Might?
 
 **A.** No. With the explicit exception of Dispel Scrolls and Power Stones (which may be duplicated multiple times across the army, and even stacked on a single Wizard), all magic items including Common Magic Items are completely unique - you may only ever have one of each specific magic item in your entire army.
 
-**S.** The Norn Consensus Historical Precedent / Rulebook pages 152-154
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (NornConsensus)" id="a395-9cda-69d1-416c" hidden="false">
-        <description>**Q.** Can a fleeing Wizard harvest magic dice from nearby units, generate Power/Dispel Dice, or use a Dispel Scroll?
+**S.** The Norn Consensus Historical Precedent / Rulebook pages 152-154</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (NornConsensus)" id="a395-9cda-69d1-416c" hidden="false">
+      <description>**Q.** Can a fleeing Wizard harvest magic dice from nearby units, generate Power/Dispel Dice, or use a Dispel Scroll?
 
 **A.** No. Fleeing Wizards are not allowed to cast or dispel spells. They cannot harvest additional dice from nearby units, and using a Dispel Scroll legally counts as dispelling a spell, which a fleeing Wizard is explicitly forbidden from doing.
 
-**S.** The Norn Consensus Historical Precedent / Warhammer Chronicles 2004 page 115
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-
+**S.** The Norn Consensus Historical Precedent / Warhammer Chronicles 2004 page 115</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
     <rule id="ba52-fca2-87b6-72c7" name="Power Stone" hidden="false">
       <description>The Power Stone is imbued with a powerful magical invocation. When it is held out by a Wizard before he casts a spell, the effect is to enhance the efficacy of the magic. A further two dice are added to the Casting roll. Note that using a Power Stone will allow a Wizard to use more Power dice than he is normally permitted. For example, a First Level Wizard may read a Power Stone and thus use four Power dice to cast a spell (2 basic + 2 from a Power Stone). A Power Stone can only be used once - after one use its power is exhausted.
 
@@ -18980,52 +18846,48 @@ As with scrolls, Power Stones are not unique items - they are prepared by a Wiza
 
 Note that a spell cast with a Power Stone can never be cast with Irresistible Force, though it can be Miscast</description>
     </rule>
-      <rule name="FAQ (GW)" id="41e6-834f-84e4-4122" hidden="false">
-        <description>**Q.** Can I use a Power Stone as the only source to power a spell, or can I only use it to add to dice I am already using?
+    <rule name="FAQ (GW)" id="41e6-834f-84e4-4122" hidden="false">
+      <description>**Q.** Can I use a Power Stone as the only source to power a spell, or can I only use it to add to dice I am already using?
 
 **A.** No, a Power Stone cannot be used on its own.
 
-**S.** Anthony Reynolds - Warhammer Design Team (Online Q&amp;A on the Games Workshop Warhammer Forum)
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (GW)" id="70e1-4eee-e795-4c55" hidden="false">
-        <description>**Q.** May a Wizard be equipped with Power Stones and another Arcane item at the same time?
+**S.** Anthony Reynolds - Warhammer Design Team (Online Q&amp;A on the Games Workshop Warhammer Forum)</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (GW)" id="70e1-4eee-e795-4c55" hidden="false">
+      <description>**Q.** May a Wizard be equipped with Power Stones and another Arcane item at the same time?
 
 **A.** No. The general rule is that characters may only be equipped with one magic item from each category (Magic Weapons, Talismans, Arcane Items, etc.). While Wizards have an explicit exception in the Power Stones description allowing several Wizards to carry Power Stones and a single Wizard to carry more than one, they are not given an explicit exception to carry Power Stones alongside another Arcane item.
 
-**S.** Rulebook pages 152, 153, 154
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (NornConsensus)" id="210b-e310-7584-4e66" hidden="false">
-        <description>**Q.** Can an army take multiple copies of the same Common Magic Item, such as giving two different characters a Sword of Might?
+**S.** Rulebook pages 152, 153, 154</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (NornConsensus)" id="210b-e310-7584-4e66" hidden="false">
+      <description>**Q.** Can an army take multiple copies of the same Common Magic Item, such as giving two different characters a Sword of Might?
 
 **A.** No. With the explicit exception of Dispel Scrolls and Power Stones (which may be duplicated multiple times across the army, and even stacked on a single Wizard), all magic items including Common Magic Items are completely unique - you may only ever have one of each specific magic item in your entire army.
 
-**S.** The Norn Consensus Historical Precedent / Rulebook pages 152-154
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-
+**S.** The Norn Consensus Historical Precedent / Rulebook pages 152-154</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
     <rule id="f2d3-6ce8-88ad-7cad" name="War Banner(Magic Standard)" hidden="false">
       <description>+1 Combat Resolution. The War Banner carries powerful enchantments that fill all those who fight beneath it with heroic courage and determination. A unit, which has a War Banner adds a further +1. to its combat resolution when working out which side has won the combat.</description>
     </rule>
@@ -19050,22 +18912,20 @@ Note that a spell cast with a Power Stone can never be cast with Irresistible Fo
     <rule id="3be4-7ba4-c28d-154b" name="Special characters" publicationId="315e-e3c4-08af-fd51" page="101" hidden="false">
       <description>Both players are allowed to field special characters, even if the rules already set no permission was needed. This is a courtesy rule.</description>
     </rule>
-      <rule name="FAQ (NornConsensus)" id="2912-5b23-5767-41b6" hidden="false">
-        <description>**Q.** In a standard matched play game outside a tournament, do Special Characters require the opponent&apos;s permission, or are they balanced for normal play?
+    <rule name="FAQ (NornConsensus)" id="2912-5b23-5767-41b6" hidden="false">
+      <description>**Q.** In a standard matched play game outside a tournament, do Special Characters require the opponent&apos;s permission, or are they balanced for normal play?
 
 **A.** Official Special Characters printed for Warhammer Fantasy Battles 6th Edition are legal for standard play unless their rules state otherwise. A player does not need special permission merely because a character is named, provided the character&apos;s rules are official and valid for the game being played. Opponent agreement is required where the character&apos;s rules are marked as Trial Rules, where the publication explicitly requires permission, or where an event/campaign/tournament pack restricts Special Characters.
 
-**S.** Warhammer Chronicles 2004 / White Dwarf / The Norn Consensus Historical Precedent
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-
+**S.** Warhammer Chronicles 2004 / White Dwarf / The Norn Consensus Historical Precedent</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
     <rule id="bcce-845e-1cd0-b65e" name="Move-or-Fire" publicationId="315e-e3c4-08af-fd51" page="90" hidden="false">
       <description>Some missile weapons take a long time to load, such as crossbows and handguns. So, a model that is armed with a move-or-fire weapon may not fire his weapon if he has moved at all during that turn. It doesn&apos;t matter if the model was forced to move by some compulsory action or by magic. Any movement will prevent the model from shooting, even the simple act of turning round.</description>
     </rule>
@@ -19075,180 +18935,166 @@ Note that a spell cast with a Power Stone can never be cast with Irresistible Fo
     <rule id="dd3a-b57e-97a7-2da7" name="Strikes Last" publicationId="315e-e3c4-08af-fd51" page="89" hidden="false">
       <description>Troops armed with a weapon that strikes last will always strike last during close combat where they would otherwise strike in Initiative order. Note that troops that charge will still strike first in the initial turn of close combat, as charging troops always strike first rather man in Initiative order. For example, troops armed with Great Axes will strike first on the turn they charge and strike last thereafter.</description>
     </rule>
-      <rule name="FAQ (GW)" id="4b60-621a-05d3-4a7e" hidden="false">
-        <description>**Q.** There is no explicit reference for striking order between two non-charging units both armed with Great Weapons. Is it Initiative order?
+    <rule name="FAQ (GW)" id="4b60-621a-05d3-4a7e" hidden="false">
+      <description>**Q.** There is no explicit reference for striking order between two non-charging units both armed with Great Weapons. Is it Initiative order?
 
 **A.** It follows normal combat rules: they will strike in Initiative order. If they both have the same Initiative, then the winner of the previous round&apos;s combat strikes first. As a last resort, roll a dice, as there are never simultaneous Attacks in Warhammer.
 
-**S.** Warhammer Chronicles 2004 page 113
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (GW)" id="80ef-6649-3638-467f" hidden="false">
-        <description>**Q.** If a character or a unit armed with Great Weapons has a magical item, or spell cast on them, that allows them to strike first (e.g. Helm of Many Eyes, Bash &apos;Em Ladz), does the effect overrule the normal rules for Great Weapons striking last?
+**S.** Warhammer Chronicles 2004 page 113</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (GW)" id="80ef-6649-3638-467f" hidden="false">
+      <description>**Q.** If a character or a unit armed with Great Weapons has a magical item, or spell cast on them, that allows them to strike first (e.g. Helm of Many Eyes, Bash &apos;Em Ladz), does the effect overrule the normal rules for Great Weapons striking last?
 
 **A.** Yes.
 
-**S.** Warhammer Chronicles 2004 page 113
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-
+**S.** Warhammer Chronicles 2004 page 113</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
     <rule id="7b4c-7e37-f46f-5955" name="Magical Resistance (3)" hidden="false">
       <description>Generates three dispel dice when spells cast at the unit</description>
     </rule>
-      <rule name="FAQ (GW)" id="e765-73e7-abb6-474b" hidden="false">
-        <description>**Q.** If a unit with Magic Resistance is a potential target for a spell that affects all enemy units in sight/range, does it get to add its dispel dice? Do multiple units with Magic Resistance targeted by the same spell add their dice together?
+    <rule name="FAQ (GW)" id="e765-73e7-abb6-474b" hidden="false">
+      <description>**Q.** If a unit with Magic Resistance is a potential target for a spell that affects all enemy units in sight/range, does it get to add its dispel dice? Do multiple units with Magic Resistance targeted by the same spell add their dice together?
 
 **A.** If a unit with Magic Resistance is a potential target for one of these spells its Magic Resistance may be used. If multiple units with Magic Resistance are targeted, use the highest Magic Resistance value, NOT all of them added together.
 
-**S.** Warhammer Chronicles 2004 page 115
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (GW)" id="5ae6-0dc0-cf2b-43b8" hidden="false">
-        <description>**Q.** If a character has Magic Resistance and joins a unit, does the whole unit benefit from that Magic Resistance?
+**S.** Warhammer Chronicles 2004 page 115</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (GW)" id="5ae6-0dc0-cf2b-43b8" hidden="false">
+      <description>**Q.** If a character has Magic Resistance and joins a unit, does the whole unit benefit from that Magic Resistance?
 
 **A.** Yes.
 
-**S.** Anthony Reynolds - Warhammer Design Team (Online Q&amp;A on the Games Workshop Warhammer Forum)
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (GW)" id="cc7e-575e-0774-4365" hidden="false">
-        <description>**Q.** Do items or abilities which provide extra dispel dice when targeted by enemy spells work the same as items specifically noted with &quot;Magic Resistance&quot;?
+**S.** Anthony Reynolds - Warhammer Design Team (Online Q&amp;A on the Games Workshop Warhammer Forum)</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (GW)" id="cc7e-575e-0774-4365" hidden="false">
+      <description>**Q.** Do items or abilities which provide extra dispel dice when targeted by enemy spells work the same as items specifically noted with &quot;Magic Resistance&quot;?
 
 **A.** These extra dispel dice (which appeared in some item descriptions early in Sixth Edition) should be treated just like Magic Resistance.
 
-**S.** Gav Thorpe - Warhammer Design Team
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (GW)" id="4944-7944-2847-470d" hidden="false">
-        <description>**Q.** If a unit has multiple sources of Magic Resistance (e.g. MR(1) from a character and MR(2) from a magic banner) do the sources add together, or do you simply apply the highest value?
+**S.** Gav Thorpe - Warhammer Design Team</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (GW)" id="4944-7944-2847-470d" hidden="false">
+      <description>**Q.** If a unit has multiple sources of Magic Resistance (e.g. MR(1) from a character and MR(2) from a magic banner) do the sources add together, or do you simply apply the highest value?
 
 **A.** Apply the highest value.
 
-**S.** Gav Thorpe - Warhammer Design Team
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (GW)" id="aa7c-fada-27a7-4286" hidden="false">
-        <description>**Q.** Can units with Magic Resistance dice use these dice to dispel chain spells (e.g. Gork&apos;s Warpath, Plague) when they are not the first unit targeted? Does Magic Resistance count against Comet of Cassandora and other spells with a random range of effect? May units with Magic Resistance dice use these dice to dispel &quot;remains in play&quot; spells in subsequent turns?
+**S.** Gav Thorpe - Warhammer Design Team</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (GW)" id="aa7c-fada-27a7-4286" hidden="false">
+      <description>**Q.** Can units with Magic Resistance dice use these dice to dispel chain spells (e.g. Gork&apos;s Warpath, Plague) when they are not the first unit targeted? Does Magic Resistance count against Comet of Cassandora and other spells with a random range of effect? May units with Magic Resistance dice use these dice to dispel &quot;remains in play&quot; spells in subsequent turns?
 
 **A.** No to all of the above. It is not enough for the unit with Magic Resistance to be a potential target - the unit has to be an actual target of the spell. Magic Resistance, like dispel scrolls, comes into effect only at the point when the magical energy is summoned (i.e. the spell is cast). Once the effects of the spell become a reality, it&apos;s too late.
 
-**S.** Warhammer Chronicles 2004 page 115 / Gav Thorpe - Warhammer Design Team
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (NornConsensus)" id="9e44-01a7-ebb0-4daf" hidden="false">
-        <description>**Q.** Does Magic Resistance stack if both a character and the unit they have joined possess the rule? Does Magic Resistance work against spells that use a line or template rather than targeting a specific unit?
+**S.** Warhammer Chronicles 2004 page 115 / Gav Thorpe - Warhammer Design Team</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (NornConsensus)" id="9e44-01a7-ebb0-4daf" hidden="false">
+      <description>**Q.** Does Magic Resistance stack if both a character and the unit they have joined possess the rule? Does Magic Resistance work against spells that use a line or template rather than targeting a specific unit?
 
 **A.** No, Magic Resistance does not stack - apply the highest single Magic Resistance value present within the unit, not all values added together. Regarding template or line spells, Magic Resistance does apply, provided the unit with Magic Resistance is an actual potential target or is hit by the spell&apos;s area of effect.
 
-**S.** The Norn Consensus Historical Precedent / White Dwarf 275 page 63
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-
+**S.** The Norn Consensus Historical Precedent / White Dwarf 275 page 63</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
     <rule id="1bda-9392-bbe9-36e5" name="Cannons" publicationId="315e-e3c4-08af-fd51" page="122-123" hidden="false">
       <description>See rules for cannons in https://6th.whfb.app/war-machines/cannons</description>
     </rule>
-      <rule name="FAQ (GW)" id="ffa6-9360-4694-4d17" hidden="false">
-        <description>**Q.** When a cannonball hits a war machine unit do you randomize to determine what is hit?
+    <rule name="FAQ (GW)" id="ffa6-9360-4694-4d17" hidden="false">
+      <description>**Q.** When a cannonball hits a war machine unit do you randomize to determine what is hit?
 
 **A.** No. A cannonball is treated as a thin template and thus hits whatever falls under the line it passes through. The section on randomizing hits on war machine units applies to fire from missile weapons and magic missiles and does not apply to templates. In addition, remember a war machine is not a model with multiple parts, it is a unit with multiple models.
 
-**S.** Rulebook page 122
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (NornConsensus)" id="b60e-5f57-8079-4a22" hidden="false">
-        <description>**Q.** When a bouncing cannonball&apos;s path passes through the loose footprint of a Skirmishing unit, does it automatically hit the unit, or only models whose bases are physically crossed by the line?
+**S.** Rulebook page 122</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (NornConsensus)" id="b60e-5f57-8079-4a22" hidden="false">
+      <description>**Q.** When a bouncing cannonball&apos;s path passes through the loose footprint of a Skirmishing unit, does it automatically hit the unit, or only models whose bases are physically crossed by the line?
 
 **A.** It only hits models whose bases are physically crossed by the cannonball&apos;s line. Skirmishers do not form ranks and maintain physical gaps between models, so if the cannonball&apos;s line passes through a gap without touching any model&apos;s base, it scores no hit and continues its path normally.
 
-**S.** The Norn Consensus Historical Precedent / White Dwarf 259 / Rulebook Skirmisher and Cannon rules
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (NornConsensus)" id="528d-ea10-ff94-464d" hidden="false">
-        <description>**Q.** Can a Cannon declare a shot against a Large Target that is visible behind an intervening screen of normal-sized enemy troops? If so, does the bouncing cannonball hit the intervening troops?
+**S.** The Norn Consensus Historical Precedent / White Dwarf 259 / Rulebook Skirmisher and Cannon rules</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (NornConsensus)" id="528d-ea10-ff94-464d" hidden="false">
+      <description>**Q.** Can a Cannon declare a shot against a Large Target that is visible behind an intervening screen of normal-sized enemy troops? If so, does the bouncing cannonball hit the intervening troops?
 
 **A.** Yes to both. A Cannon may be fired at any target it has Line of Sight to, and a Large Target is visible over the heads of normal-sized models. When fired, the bouncing cannonball line hits any and all models whose bases fall under the template&apos;s path, including the intervening troops, regardless of whether they were the intended target.
 
-**S.** The Norn Consensus Historical Precedent / Rulebook page 122 / White Dwarf 259 page 41
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-
+**S.** The Norn Consensus Historical Precedent / Rulebook page 122 / White Dwarf 259 page 41</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
     <rule id="3cde-53bb-8bd8-e8af" name="Scaly Skin 6+" hidden="false">
       <description>Armour save 6+</description>
     </rule>
@@ -19257,22 +19103,20 @@ Note that a spell cast with a Power Stone can never be cast with Irresistible Fo
 
 Note that a model&apos;s Attacks characteristic has no effect on the number of shots it can make. The Attacks characteristic refers to close combat attacks only.</description>
     </rule>
-      <rule name="FAQ (GW)" id="3744-b4d8-8b95-4ef9" hidden="false">
-        <description>**Q.** With Multiple Shots missile weapons that have three (or more) multiple shots, do you simply apply a -1 to hit modifier to each of the shots, or is the -1 modifier cumulative (e.g. -1 for the second shot, -2 for the third shot, etc.)?
+    <rule name="FAQ (GW)" id="3744-b4d8-8b95-4ef9" hidden="false">
+      <description>**Q.** With Multiple Shots missile weapons that have three (or more) multiple shots, do you simply apply a -1 to hit modifier to each of the shots, or is the -1 modifier cumulative (e.g. -1 for the second shot, -2 for the third shot, etc.)?
 
 **A.** Simply apply a -1 modifier to each of the shots. No specific mention or example of the penalty being cumulative exists.
 
-**S.** Rulebook page 90 / Direwolf FAQ Council Interpretation
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-
+**S.** Rulebook page 90 / Direwolf FAQ Council Interpretation</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
     <rule id="7f45-dea2-ae93-7524" name="Strikes First" publicationId="315e-e3c4-08af-fd51" hidden="false">
       <description>Troops armed with a weapon that strikes last will always strike FIRST during close combat where they would otherwise strike in Initiative order. Note that troops that charge will still strike first in the initial turn of close combat, as charging troops always strike first rather man in Initiative order.</description>
     </rule>
@@ -19313,83 +19157,78 @@ Breath weapons may not be used as a stand &amp; shoot charge reaction, and neith
       <description>Unit is a Chariot.
 See https://6th.whfb.app/chariots</description>
     </rule>
-      <rule name="FAQ (GW)" id="1b5c-860a-e688-470c" hidden="false">
-        <description>**Q.** Are Chariots immune to poison?
+    <rule name="FAQ (GW)" id="1b5c-860a-e688-470c" hidden="false">
+      <description>**Q.** Are Chariots immune to poison?
 
 **A.** Yes, as they have many parts that are wood or metal (i.e. unliving). Note that Undead Chariots are also immune to poison.
 
-**S.** Warhammer Chronicles 2004 page 117 / Anthony Reynolds - Warhammer Design Team
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (GW)" id="a3bb-73f9-4a67-44be" hidden="false">
-        <description>**Q.** A Chariot (or unit) pursues a fleeing unit and rolls higher than the fleeing roll. The fleeing unit has a smaller frontage that allows it to avoid a nearby wood (or difficult terrain), while the chariot unit, moving straight towards the fleeing unit, will have some of its models coming across the woods. What happens?
+**S.** Warhammer Chronicles 2004 page 117 / Anthony Reynolds - Warhammer Design Team</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (GW)" id="a3bb-73f9-4a67-44be" hidden="false">
+      <description>**Q.** A Chariot (or unit) pursues a fleeing unit and rolls higher than the fleeing roll. The fleeing unit has a smaller frontage that allows it to avoid a nearby wood (or difficult terrain), while the chariot unit, moving straight towards the fleeing unit, will have some of its models coming across the woods. What happens?
 
 **A.** The pursued unit is destroyed as normal, and the Chariot(s) will move into the woods and suffer hits.
 
-**S.** Warhammer Chronicles 2004 page 114
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (GW)" id="2f89-e8c0-3073-42eb" hidden="false">
-        <description>**Q.** Is it alright to charge with a Chariot in such a way that it is only touching a single model in an enemy unit? Is there a rule against &quot;clipping&quot; with Chariots?
+**S.** Warhammer Chronicles 2004 page 114</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (GW)" id="2f89-e8c0-3073-42eb" hidden="false">
+      <description>**Q.** Is it alright to charge with a Chariot in such a way that it is only touching a single model in an enemy unit? Is there a rule against &quot;clipping&quot; with Chariots?
 
 **A.** Strictly, there is no rule to stop such behaviour, and in some cases it is unavoidable or appropriate. However, deliberately turning a chariot so that when it charges it clips the enemy&apos;s unit is bad form, and to be frowned upon. See page 266 of the Warhammer rulebook for a fuller discussion of &apos;clipping&apos;.
 
-**S.** Warhammer Chronicles 2004 page 115
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (GW)" id="380f-bf87-5b34-4060" hidden="false">
-        <description>**Q.** Chariot impact hits are resolved before combat - can you add the +1 bonus to Armour save from using a mundane hand weapon and mundane shield against the impact hits from a chariot?
+**S.** Warhammer Chronicles 2004 page 115</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (GW)" id="380f-bf87-5b34-4060" hidden="false">
+      <description>**Q.** Chariot impact hits are resolved before combat - can you add the +1 bonus to Armour save from using a mundane hand weapon and mundane shield against the impact hits from a chariot?
 
 **A.** Yes. It&apos;s still in the Close Combat phase, just before anything else happens (with the notable exception that the resolution of wounds caused by warpstone vapors from Skaven Clan Pestilens plague censers is resolved before impact hits).
 
-**S.** Warhammer Chronicles 2004 page 114 / Skaven Army Book page 32
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (GW)" id="9182-1f15-4bd5-41de" hidden="false">
-        <description>**Q.** Do impact hits happen before &apos;strikes first&apos; magic weapons or abilities?
+**S.** Warhammer Chronicles 2004 page 114 / Skaven Army Book page 32</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (GW)" id="9182-1f15-4bd5-41de" hidden="false">
+      <description>**Q.** Do impact hits happen before &apos;strikes first&apos; magic weapons or abilities?
 
 **A.** Yes.
 
-**S.** Gav Thorpe - Warhammer Design Team
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (GW)" id="6084-6b8b-ab3a-4a5d" hidden="false">
-        <description>**Q.** When a friendly character in a Chariot engages in a challenge, how do we resolve it?
+**S.** Gav Thorpe - Warhammer Design Team</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (GW)" id="6084-6b8b-ab3a-4a5d" hidden="false">
+      <description>**Q.** When a friendly character in a Chariot engages in a challenge, how do we resolve it?
 
 **A.** Regardless of the challenge situation, a character in a Chariot is considered to have stepped down from the Chariot for a challenge and therefore does not benefit from the Chariot&apos;s enhancement to his armour save.
 
@@ -19399,171 +19238,158 @@ If the enemy character is a single model the friendly Chariot can attack the ene
 
 Also, remember that creatures pulling the Chariot can only attack enemy directly in front of them.
 
-**S.** Rulebook page 128
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (GW)" id="e3a1-db11-feea-44d6" hidden="false">
-        <description>**Q.** What exactly is meant by &quot;creatures pulling the Chariot can only attack enemy directly in front of them&quot;?
+**S.** Rulebook page 128</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (GW)" id="e3a1-db11-feea-44d6" hidden="false">
+      <description>**Q.** What exactly is meant by &quot;creatures pulling the Chariot can only attack enemy directly in front of them&quot;?
 
 **A.** This means that creatures pulling the Chariot can only attack enemy models in their front zone. This includes enemy models in corner to corner contact in their front zone. The creatures may not attack enemy models in their flank (or rear) zones due to the restrictions imposed by harness and reins.
 
-**S.** Rulebook page 128 / Direwolf FAQ Council Interpretation
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (GW)" id="3d86-6efe-5ede-4631" hidden="false">
-        <description>**Q.** If a character is engaged in a challenge where he is considered to have stepped down from his Chariot, and his Chariot is destroyed during the combat, does the character still suffer the S5 hit?
+**S.** Rulebook page 128 / Direwolf FAQ Council Interpretation</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (GW)" id="3d86-6efe-5ede-4631" hidden="false">
+      <description>**Q.** If a character is engaged in a challenge where he is considered to have stepped down from his Chariot, and his Chariot is destroyed during the combat, does the character still suffer the S5 hit?
 
 **A.** No. The S5 hit only applies to situations where the character is considered to be in the chariot at the time the chariot is destroyed. As the character has lost his armour save bonus due to stepping down from the chariot and is considered to be fighting on foot at the time, applying the S5 hit for the character being thrown from the chariot does not appear appropriate in this circumstance.
 
-**S.** Rulebook page 127 / Direwolf FAQ Council Interpretation
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (GW)" id="4bfa-da90-7fd2-4666" hidden="false">
-        <description>**Q.** If a Chariot begins a turn stuck in difficult terrain (e.g. from pursuit or overrun during the previous close combat phase, new woods from the Acorn of Ages, etc.) can the Chariot move (or charge), or is it now stuck for the remainder of the game?
+**S.** Rulebook page 127 / Direwolf FAQ Council Interpretation</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (GW)" id="4bfa-da90-7fd2-4666" hidden="false">
+      <description>**Q.** If a Chariot begins a turn stuck in difficult terrain (e.g. from pursuit or overrun during the previous close combat phase, new woods from the Acorn of Ages, etc.) can the Chariot move (or charge), or is it now stuck for the remainder of the game?
 
 **A.** Strictly by the rules, unless the Chariot is compelled by psychology (e.g. frenzy, failed panic test, etc.) to move, then it is stuck for the remainder of the game, per the rule that Chariots cannot voluntarily move over obstacles or difficult terrain. However, it is the opinion of the Direwolf FAQ Council that this situation was not thought of during the writing of the text, and recommends that in this situation the owning player be allowed to move (or charge) out of the difficult terrain (provided the Chariot survives the additional D6 S6 hits it will immediately take for moving through difficult terrain again).
 
-**S.** Rulebook page 127 / Direwolf FAQ Council Interpretation
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (GW)" id="8c95-6293-e488-4963" hidden="false">
-        <description>**Q.** If a Chariot that is frenzied or otherwise compelled to charge an enemy unit in difficult terrain is destroyed from the D6 S6 hits, and the enemy unit is within 2&quot; of the edge of the difficult terrain, can a surviving character use the 2&quot; placement move for being thrown from the Chariot to complete the charge?
+**S.** Rulebook page 127 / Direwolf FAQ Council Interpretation</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (GW)" id="8c95-6293-e488-4963" hidden="false">
+      <description>**Q.** If a Chariot that is frenzied or otherwise compelled to charge an enemy unit in difficult terrain is destroyed from the D6 S6 hits, and the enemy unit is within 2&quot; of the edge of the difficult terrain, can a surviving character use the 2&quot; placement move for being thrown from the Chariot to complete the charge?
 
 **A.** Yes, the rules state that you can place the character anywhere within 2&quot; of the destroyed Chariot, and there was a legal charge declared against that enemy unit. The owning player could not place the character into combat with a unit within 2&quot; that the charge was not declared against.
 
-**S.** Rulebook page 127 / Direwolf FAQ Council Interpretation
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (NornConsensus)" id="a8a3-de0d-8b0f-4127" hidden="false">
-        <description>**Q.** Can two or more separate units, such as two Chariots with Unit Strength 4 each, combine their Unit Strengths to reach the 5+ Unit Strength required to negate an enemy unit&apos;s rank bonus when charging the same flank or rear?
+**S.** Rulebook page 127 / Direwolf FAQ Council Interpretation</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (NornConsensus)" id="a8a3-de0d-8b0f-4127" hidden="false">
+      <description>**Q.** Can two or more separate units, such as two Chariots with Unit Strength 4 each, combine their Unit Strengths to reach the 5+ Unit Strength required to negate an enemy unit&apos;s rank bonus when charging the same flank or rear?
 
 **A.** No. Separate units do not pool their Unit Strengths for this purpose. Each attacking unit is considered separately, so two independent Unit Strength 4 Chariots charging the same flank do not combine to count as Unit Strength 8 - neither negates the enemy&apos;s rank bonus by itself.
 
-**S.** The Norn Consensus Historical Precedent / Rulebook pages 77 &amp; 78 / Warhammer Chronicles 2004 page 112 / Direwolf FAQ Council Interpretation
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (NornConsensus)" id="5401-f730-a421-4590" hidden="false">
-        <description>**Q.** When a Chariot charges a unit armed with Pikes, or a unit containing a character with an &quot;Always Strikes First&quot; magic weapon, which attacks are resolved first?
+**S.** The Norn Consensus Historical Precedent / Rulebook pages 77 &amp; 78 / Warhammer Chronicles 2004 page 112 / Direwolf FAQ Council Interpretation</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (NornConsensus)" id="5401-f730-a421-4590" hidden="false">
+      <description>**Q.** When a Chariot charges a unit armed with Pikes, or a unit containing a character with an &quot;Always Strikes First&quot; magic weapon, which attacks are resolved first?
 
 **A.** The Chariot&apos;s impact hits are always resolved first - impact hits happen before everything else in the Close Combat phase. This qualifies as an attack that is &quot;entitled to strike first because of a special ability&quot;, so it supersedes both Pikes and &quot;Always Strikes First&quot; magic weapons.
 
-**S.** The Norn Consensus Historical Precedent / Gav Thorpe - Warhammer Design Team / Warhammer Chronicles 2004 page 57
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (NornConsensus)" id="6115-24f0-6b2b-4fda" hidden="false">
-        <description>**Q.** If a Chariot charges an enemy unit and the mandatory alignment swings the Chariot into difficult terrain, does the Chariot suffer D6 Strength 6 hits, or does the target unit align instead?
+**S.** The Norn Consensus Historical Precedent / Gav Thorpe - Warhammer Design Team / Warhammer Chronicles 2004 page 57</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (NornConsensus)" id="6115-24f0-6b2b-4fda" hidden="false">
+      <description>**Q.** If a Chariot charges an enemy unit and the mandatory alignment swings the Chariot into difficult terrain, does the Chariot suffer D6 Strength 6 hits, or does the target unit align instead?
 
 **A.** The Chariot suffers the hits. The charging unit must align to the target if physically possible, and because difficult terrain is not impassable, the Chariot can physically enter it and must complete the alignment, immediately suffering the D6 S6 hits. The target unit only aligns to the charger if the charger is physically unable to do so, such as when blocked by impassable terrain.
 
-**S.** The Norn Consensus Historical Precedent / Rulebook pages 52 &amp; 127
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (NornConsensus)" id="2348-d919-4b79-4568" hidden="false">
-        <description>**Q.** If a character riding in a chariot survives the chariot being destroyed beneath them, do they continue on foot?
+**S.** The Norn Consensus Historical Precedent / Rulebook pages 52 &amp; 127</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (NornConsensus)" id="2348-d919-4b79-4568" hidden="false">
+      <description>**Q.** If a character riding in a chariot survives the chariot being destroyed beneath them, do they continue on foot?
 
 **A.** Yes. If the chariot is destroyed underneath them, the character immediately takes a Strength 5 hit. If they survive this hit, they are placed on foot where the chariot was destroyed and operate as an independent character.
 
-**S.** The Norn Consensus Historical Precedent / Rulebook page 127
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (NornConsensus)" id="f031-01ba-6703-4e56" hidden="false">
-        <description>**Q.** How is Unit Strength calculated for a character riding a monster such as a Dragon, or a chariot? Do you add the Monster&apos;s current remaining wounds to the rider&apos;s wounds?
+**S.** The Norn Consensus Historical Precedent / Rulebook page 127</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (NornConsensus)" id="f031-01ba-6703-4e56" hidden="false">
+      <description>**Q.** How is Unit Strength calculated for a character riding a monster such as a Dragon, or a chariot? Do you add the Monster&apos;s current remaining wounds to the rider&apos;s wounds?
 
 **A.** No. You use the Monster or Chariot&apos;s starting Unit Strength and simply add +1 for the rider. For a ridden monster, its base Unit Strength equals its starting Wounds profile; for a chariot, its base Unit Strength is 4. So a character on a Dragon with 6 starting Wounds has a combined Unit Strength of 7, regardless of how many wounds either model has taken.
 
-**S.** The Norn Consensus Historical Precedent / Warhammer Chronicles 2004 page 114
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-
+**S.** The Norn Consensus Historical Precedent / Warhammer Chronicles 2004 page 114</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
     <rule name="Magical attacks" id="08b6-0c27-dc2a-95fa" hidden="false" publicationId="315e-e3c4-08af-fd51">
       <description>The unit attacks are considered magical.</description>
     </rule>
-      <rule name="FAQ (GW)" id="040d-9e79-5c00-4030" hidden="false">
-        <description>**Q.** Do the hits from all magic weapons, including bows and other missile weapons, count as &quot;magical&quot;?
+    <rule name="FAQ (GW)" id="040d-9e79-5c00-4030" hidden="false">
+      <description>**Q.** Do the hits from all magic weapons, including bows and other missile weapons, count as &quot;magical&quot;?
 
 **A.** Yes. Any attack from a magic weapon counts as magical.
 
-**S.** Gav Thorpe - Warhammer Design Team
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-
+**S.** Gav Thorpe - Warhammer Design Team</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
     <rule name="Monster Mounts" id="0ffd-48e7-f69d-138d" hidden="false" page="103" publicationId="315e-e3c4-08af-fd51">
       <description>If a mount has 2 or more Wounds then it is classed as a monster and the following rules are used for riders and mounts. These rules would therefore apply to a Hero riding a Griffon, a Wizard mounted on a Wyvern, a Dragon and its lordly rider, and so on. No additional +1 is added to the rider&apos;s saving throw, as the advantages of riding the monster are worked out in other ways instead.
 
@@ -19625,72 +19451,68 @@ Victory points are rewarded separately for the monster and the character riding 
 
 https://6th.whfb.app/monsters/monster-mounts</description>
     </rule>
-      <rule name="FAQ (GW)" id="ec8c-9fe7-47b1-4412" hidden="false">
-        <description>**Q.** How does psychology work with monster mounts (and chariots) and their character riders? Does the rider&apos;s psychology take precedence?
+    <rule name="FAQ (GW)" id="ec8c-9fe7-47b1-4412" hidden="false">
+      <description>**Q.** How does psychology work with monster mounts (and chariots) and their character riders? Does the rider&apos;s psychology take precedence?
 
 **A.** The character&apos;s psychology takes precedence. So, if the character is Immune to Psychology, the entire model is Immune to Psychology. Also, if a character rider is frenzied, then it must always charge (using the movement of the monster). However, there are some exceptions to this. These exceptions are: Fear, Terror, Stupidity and Frenzy. A Fear or Terror causing monster (or chariot) passes on immunity to fear/terror to its rider. If the monster (or chariot) suffers from Stupidity, or is subject to Frenzy, then these are out of the control of the rider, and the entire model may suffer from it. In all other cases, the entire model uses the character rider&apos;s psychology.
 
 Further Direwolf FAQ Council clarification: In these cases where the mount&apos;s Stupidity or Frenzy affects the rider, it is the movement effects, not the close combat effects.
 
-**S.** Anthony Reynolds - Warhammer Design Team (Online Q&amp;A on the Games Workshop Warhammer Forum) / Direwolf FAQ Council Interpretation
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (GW)" id="0d5c-83ba-5fda-44b7" hidden="false">
-        <description>**Q.** After the rider or crew is killed, when do you take the monster reaction test?
+**S.** Anthony Reynolds - Warhammer Design Team (Online Q&amp;A on the Games Workshop Warhammer Forum) / Direwolf FAQ Council Interpretation</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (GW)" id="0d5c-83ba-5fda-44b7" hidden="false">
+      <description>**Q.** After the rider or crew is killed, when do you take the monster reaction test?
 
 **A.** If you are not in close combat then you take the monster reaction test at the end of the phase in which the rider or crew are killed. If you are involved in close combat the rules clearly state that the test is not taken until after the combat is entirely resolved. If the monster is victorious in the combat, then it states to take the test in the first turn when the monster would be free to move and act normally.
 
 If you lose a combat and flee, but are not caught by the enemy, the book is silent on when to take the test. If we use the timing of a victorious monster as a guide, then the test should be taken the first turn when the monster would be free to move and act normally. Therefore, in cases where the monster loses a combat and flees, take the monster reaction test at the beginning of the turn after it rallies.
 
-**S.** Rulebook page 105 / Direwolf FAQ Council Interpretation
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (GW)" id="77a6-6367-e82a-434c" hidden="false">
-        <description>**Q.** If the monster reaction test is failed, when do you apply the results of the monster reaction chart?
+**S.** Rulebook page 105 / Direwolf FAQ Council Interpretation</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (GW)" id="77a6-6367-e82a-434c" hidden="false">
+      <description>**Q.** If the monster reaction test is failed, when do you apply the results of the monster reaction chart?
 
 **A.** It depends on which reaction you roll. Also remember that the monster only performs actions in the owning player&apos;s turn. So for example if a result of 1-2 (monster runs away) is rolled then it will be applied in the owning player&apos;s compulsory movement phase. If a result of 3-4 (monster charges) is rolled then it will be applied at the declare charges step in the owning player&apos;s movement phase. If a result of 5-6 (shooting / guarding the body of its master) is rolled then it is applied immediately but will only come into play if the monster has a ranged attack or breath weapon and an enemy unit is within range during the owning player&apos;s shooting phases.
 
-**S.** Rulebook page 105
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (GW)" id="3de0-7fc0-80a4-4e16" hidden="false">
-        <description>**Q.** Can a monster utilize its breath weapon(s) if it performs a March move?
+**S.** Rulebook page 105</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (GW)" id="3de0-7fc0-80a4-4e16" hidden="false">
+      <description>**Q.** Can a monster utilize its breath weapon(s) if it performs a March move?
 
 **A.** No.
 
-**S.** Warhammer Chronicles 2004 page 114
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (GW)" id="6341-b6d8-7456-4a51" hidden="false">
-        <description>**Q.** How do mixed units of monsters and handlers that are not defined as skirmishers (e.g. Dark Elf War Hydras) work?
+**S.** Warhammer Chronicles 2004 page 114</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (GW)" id="6341-b6d8-7456-4a51" hidden="false">
+      <description>**Q.** How do mixed units of monsters and handlers that are not defined as skirmishers (e.g. Dark Elf War Hydras) work?
 
 **A.** These units do not count as skirmishers even though the models are not ranked up. When determining what the unit can charge, or for the purposes of flank/rear charges by enemy units, use 90 degree arcs centered on the monster itself.
 
@@ -19700,117 +19522,109 @@ The models in the unit move at their own Movement value as long as they remain w
 
 Also note that any character allowed to join the unit counts as &apos;riding&apos; the monster for the purposes of any special rules they may have. For example, if a Dark Elf Beastmaster joins a War Hydra unit, then it does get to ignore Monster Reaction tests if all the &quot;crew&quot; are wiped out.
 
-**S.** Warhammer Chronicles 2004 page 115
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (NornConsensus)" id="1f68-09d5-3b18-4ec0" hidden="false">
-        <description>**Q.** When a Giant is fighting a character riding a monster, can the Giant target the rider specifically with its Special Attacks? If the rider is removed, when does the surviving monster take its Monster Reaction test?
+**S.** Warhammer Chronicles 2004 page 115</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (NornConsensus)" id="1f68-09d5-3b18-4ec0" hidden="false">
+      <description>**Q.** When a Giant is fighting a character riding a monster, can the Giant target the rider specifically with its Special Attacks? If the rider is removed, when does the surviving monster take its Monster Reaction test?
 
 **A.** Yes, the Giant player must decide whether the Giant is attacking the rider or the mount before rolling on the Special Attacks table. If the rider is slain or removed from play by the Giant&apos;s attack, the mount must take a Monster Reaction test - but if the monster is still engaged in close combat, the test is delayed until that close combat has been fully resolved.
 
-**S.** The Norn Consensus Historical Precedent / Beasts of Chaos Army Book page 29 / Orcs &amp; Goblins Army Book page 22 / Rulebook page 105
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (NornConsensus)" id="3852-135e-0045-4038" hidden="false">
-        <description>**Q.** How is Unit Strength calculated for a character riding a monster such as a Dragon, or a chariot? Do you add the Monster&apos;s current remaining wounds to the rider&apos;s wounds?
+**S.** The Norn Consensus Historical Precedent / Beasts of Chaos Army Book page 29 / Orcs &amp; Goblins Army Book page 22 / Rulebook page 105</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (NornConsensus)" id="3852-135e-0045-4038" hidden="false">
+      <description>**Q.** How is Unit Strength calculated for a character riding a monster such as a Dragon, or a chariot? Do you add the Monster&apos;s current remaining wounds to the rider&apos;s wounds?
 
 **A.** No. You use the Monster or Chariot&apos;s starting Unit Strength and simply add +1 for the rider. For a ridden monster, its base Unit Strength equals its starting Wounds profile; for a chariot, its base Unit Strength is 4. So a character on a Dragon with 6 starting Wounds has a combined Unit Strength of 7, regardless of how many wounds either model has taken.
 
-**S.** The Norn Consensus Historical Precedent / Warhammer Chronicles 2004 page 114
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-
+**S.** The Norn Consensus Historical Precedent / Warhammer Chronicles 2004 page 114</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
     <rule id="2acc-e985-cc4e-e123" name="Immune to Psycology " publicationId="315e-e3c4-08af-fd51" page="112" hidden="false">
       <description>Some warriors and creatures in the Warhammer world are almost completely fearless, or such grizzled veterans that scenes which would make lesser troops panic have no effect on them.
 Troops that are immune to psychology are never affected by fear terror, frenzy or any other Psychology rules. Troops immune to Psychology may never flee as a charge reaction - they are far too proud and brave to do this! These troops still have to take Break tests as normal. (BRB p.112)
 
 Units immune to psychology never need test for psychology such as fear, terror or frenzy and they may never choose flee as a charge response Break tests still apply as normal. (BRB p.270)</description>
     </rule>
-      <rule name="FAQ (GW)" id="f768-1cc8-981b-4448" hidden="false">
-        <description>**Q.** Can a unit that&apos;s immune to psychology (or unbreakable or frenzied, both of which also count as immune to psychology) flee from a charge?
+    <rule name="FAQ (GW)" id="f768-1cc8-981b-4448" hidden="false">
+      <description>**Q.** Can a unit that&apos;s immune to psychology (or unbreakable or frenzied, both of which also count as immune to psychology) flee from a charge?
 
 **A.** No.
 
-**S.** Rulebook page 112
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (GW)" id="f038-4b84-95d6-43df" hidden="false">
-        <description>**Q.** In a situation where a character that is immune to psychology, frenzied, or unbreakable is attached to a unit that suffers from psychology (e.g. a Chaos Exalted Champion with the Mark of Slaanesh attached to a unit of Marauders) can the unit voluntarily declare &quot;flee&quot; as the charge reaction, or must the unit hold due to the presence of the character?
+**S.** Rulebook page 112</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (GW)" id="f038-4b84-95d6-43df" hidden="false">
+      <description>**Q.** In a situation where a character that is immune to psychology, frenzied, or unbreakable is attached to a unit that suffers from psychology (e.g. a Chaos Exalted Champion with the Mark of Slaanesh attached to a unit of Marauders) can the unit voluntarily declare &quot;flee&quot; as the charge reaction, or must the unit hold due to the presence of the character?
 
 **A.** The unit may voluntarily declare &quot;flee&quot; as a charge reaction. It is the unit which declares the charge reaction (and not the character) and the immunity to psychology of the character does not transfer to the unit. Also, if they didn&apos;t choose to flee but were forced to, the character would be dragged along anyway.
 
-**S.** Gav Thorpe - Warhammer Design Team
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (GW)" id="79b2-4108-c725-439d" hidden="false">
-        <description>**Q.** Do fleeing units have to take additional psychology tests?
+**S.** Gav Thorpe - Warhammer Design Team</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (GW)" id="79b2-4108-c725-439d" hidden="false">
+      <description>**Q.** Do fleeing units have to take additional psychology tests?
 
 **A.** No.
 
-**S.** Rulebook page 76
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (NornConsensus)" id="7afe-c362-299d-4c0b" hidden="false">
-        <description>**Q.** How should the two Rulebook definitions of Immune to Psychology be read together?
+**S.** Rulebook page 76</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (NornConsensus)" id="7afe-c362-299d-4c0b" hidden="false">
+      <description>**Q.** How should the two Rulebook definitions of Immune to Psychology be read together?
 
 **A.** Immune to Psychology prevents Psychology tests, Flee charge reactions, and externally imposed Psychology effects - but Break tests still apply as normal, and Appendix Seven confirms this explicitly. The Direwolf Rules FAQ explains why: &quot;Break tests are leadership tests but are not one of the defined psychology tests per the Psychology section of the Rulebook&quot; (which is also why psychology-test re-rolls can&apos;t touch Break tests, and vice versa). Break tests were never covered by &quot;any other Psychology rules&quot; to begin with.
 
 This means Immune to Psychology does not automatically erase rules already printed on the model/unit, or rules gained through permanent non-magic-item army-list upgrades, unless a specific rule or official FAQ says otherwise.
 
-**S.** The Norn Consensus Historical Precedent / Rulebook pages 74, 80, 112 &amp; 270 / Direwolf FAQ Council Interpretation
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (NornConsensus)" id="ae96-7269-175d-4973" hidden="false">
-        <description>**Q.** Can a model or unit benefit from both Immune to Psychology and another Psychology rule such as Stubborn, Frenzy, Hatred, or Stupidity?
+**S.** The Norn Consensus Historical Precedent / Rulebook pages 74, 80, 112 &amp; 270 / Direwolf FAQ Council Interpretation</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (NornConsensus)" id="ae96-7269-175d-4973" hidden="false">
+      <description>**Q.** Can a model or unit benefit from both Immune to Psychology and another Psychology rule such as Stubborn, Frenzy, Hatred, or Stupidity?
 
 **A.** Yes, but it depends on the rule and on whether it&apos;s native or external. This is the Norn Consensus Golden Rule for Immune to Psychology, built from every printed 6th edition case we could find (Appendix Seven only defines three things - Fear/Terror/Frenzy auto-passed, Flee never valid, Break tests unaffected - and stays silent on Stubborn, Hatred and Stupidity, which is the gap this rule fills).
 
@@ -19827,35 +19641,33 @@ This means Immune to Psychology does not automatically erase rules already print
 
 A model or unit is always still Immune to Psychology for Psychology tests and Flee reactions regardless of the above. This changes nothing about the official Banner of Sigismund ruling, which stands exactly as printed.
 
-**S.** The Norn Consensus / Rulebook pages 74, 80, 84, 85, 112 &amp; 270 / Warhammer Chronicles 2003 page 133 / Warhammer Chronicles 2004 page 116 / Ogre Kingdoms Army Book (Maneaters) / Bretonnia Army Book (Hermit Knight) / Empire Army Book (Righteous Fury, Volkmar&apos;s War Altar, Luthor Huss) / Hordes of Chaos Army Book (Daemonic, Mark of Khorne, Greater Icon of Chaos, Storm Rage) / Lizardmen Army Book (Blessed Spawning of Tlazcotl) / Storm of Chaos Book (Cult of Slaanesh) / Direwolf FAQ Council Interpretation
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (NornConsensus)" id="baed-2c05-9f18-4b59" hidden="false">
-        <description>**Q.** Does Immune to Psychology cancel Stubborn because Stubborn appears in the Psychology section of the Rulebook?
+**S.** The Norn Consensus / Rulebook pages 74, 80, 84, 85, 112 &amp; 270 / Warhammer Chronicles 2003 page 133 / Warhammer Chronicles 2004 page 116 / Ogre Kingdoms Army Book (Maneaters) / Bretonnia Army Book (Hermit Knight) / Empire Army Book (Righteous Fury, Volkmar&apos;s War Altar, Luthor Huss) / Hordes of Chaos Army Book (Daemonic, Mark of Khorne, Greater Icon of Chaos, Storm Rage) / Lizardmen Army Book (Blessed Spawning of Tlazcotl) / Storm of Chaos Book (Cult of Slaanesh) / Direwolf FAQ Council Interpretation</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (NornConsensus)" id="baed-2c05-9f18-4b59" hidden="false">
+      <description>**Q.** Does Immune to Psychology cancel Stubborn because Stubborn appears in the Psychology section of the Rulebook?
 
 **A.** No. Break tests are Leadership tests, not Psychology tests (&quot;Break tests are leadership tests but are not one of the defined psychology tests per the Psychology section of the Rulebook&quot; - Direwolf Rules FAQ, Rulebook pages 74, 80), and Appendix Seven confirms Break tests still apply as normal to Immune to Psychology units. Stubborn only ever modifies a Break test, so it was never within reach of Immune to Psychology to begin with. A model or unit with both already printed uses Stubborn normally on Break tests.
 
 This does not let a Magic Item, Magic Standard, spell, or prayer grant Stubborn to an already-Immune-to-Psychology unit - that&apos;s a different (external) case, blocked by default (see the Golden Rule entry above).
 
-**S.** The Norn Consensus Historical Precedent / Rulebook pages 74, 80, 112 &amp; 270 / Warhammer Chronicles 2004 page 116 / Direwolf FAQ Council Interpretation
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (NornConsensus)" id="5c92-ecd6-d220-4a06" hidden="false">
-        <description>**Q.** Does an aura or effect that grants Immune to Psychology suppress Psychology rules already possessed by the affected model or unit?
+**S.** The Norn Consensus Historical Precedent / Rulebook pages 74, 80, 112 &amp; 270 / Warhammer Chronicles 2004 page 116 / Direwolf FAQ Council Interpretation</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (NornConsensus)" id="5c92-ecd6-d220-4a06" hidden="false">
+      <description>**Q.** Does an aura or effect that grants Immune to Psychology suppress Psychology rules already possessed by the affected model or unit?
 
 **A.** No, not if that Stubborn or Hatred was already native to the model. A newly-arriving Immune to Psychology effect (an aura, an item, a rider&apos;s blessing extending to a mount) cannot strip them, since Immune to Psychology&apos;s own text never names either one. It does suppress Frenzy and Stupidity by default, since both are named or caught directly by that text. See the Golden Rule entry above for the full evidence and citations.
 
@@ -19863,92 +19675,85 @@ The affected model or unit is still Immune to Psychology for the normal purposes
 
 Specific rules and official FAQs override this general principle. For example, if a Magic Standard or spell specifically states that a named Psychology rule is lost, suspended, or applied even to models Immune to Psychology, apply that specific wording.
 
-**S.** The Norn Consensus, see above / Rulebook pages 74, 80, 84, 85, 112 &amp; 270 / Warhammer Chronicles 2003 page 133 (Banner of Balance ruling) / Direwolf FAQ Council Interpretation
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (NornConsensus)" id="7e6e-9753-bfce-48f1" hidden="false">
-        <description>**Q.** Does a character who is Immune to Psychology automatically make a unit he has joined Immune to Psychology?
+**S.** The Norn Consensus, see above / Rulebook pages 74, 80, 84, 85, 112 &amp; 270 / Warhammer Chronicles 2003 page 133 (Banner of Balance ruling) / Direwolf FAQ Council Interpretation</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (NornConsensus)" id="7e6e-9753-bfce-48f1" hidden="false">
+      <description>**Q.** Does a character who is Immune to Psychology automatically make a unit he has joined Immune to Psychology?
 
 **A.** No. A character&apos;s Immunity to Psychology does not automatically transfer to the unit - it is the unit which declares a charge reaction, not the character. If a specific character rule or army-book rule explicitly grants Immune to Psychology to the unit, then the unit gains it as stated by that rule. This does not suppress Stubborn, Frenzy, Hatred, Stupidity, or similar rules already possessed by the unit as native rules or permanent non-magic-item army-list upgrades.
 
-**S.** The Norn Consensus Historical Precedent / Rulebook pages 100, 112 &amp; 270 / Gav Thorpe - Warhammer Design Team / Direwolf FAQ Council Interpretation
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (NornConsensus)" id="fd97-497d-05ce-4ce6" hidden="false">
-        <description>**Q.** If a rule says that a model or unit is affected by a named Psychology rule &quot;even if Immune to Psychology&quot;, does it work?
+**S.** The Norn Consensus Historical Precedent / Rulebook pages 100, 112 &amp; 270 / Gav Thorpe - Warhammer Design Team / Direwolf FAQ Council Interpretation</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (NornConsensus)" id="fd97-497d-05ce-4ce6" hidden="false">
+      <description>**Q.** If a rule says that a model or unit is affected by a named Psychology rule &quot;even if Immune to Psychology&quot;, does it work?
 
 **A.** Yes. Apply the named exception exactly as written. The model or unit remains Immune to Psychology for all other purposes, but is still affected by the named rule because the exception specifically overrides Immune to Psychology.
 
-**S.** The Norn Consensus Historical Precedent / Rulebook pages 112 &amp; 270 / Direwolf FAQ Council Interpretation
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (NornConsensus)" id="d5e7-ba66-0203-47fa" hidden="false">
-        <description>**Q.** Does this Psychology ruling change the official Empire FAQ concerning the Banner of Sigismund?
+**S.** The Norn Consensus Historical Precedent / Rulebook pages 112 &amp; 270 / Direwolf FAQ Council Interpretation</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (NornConsensus)" id="d5e7-ba66-0203-47fa" hidden="false">
+      <description>**Q.** Does this Psychology ruling change the official Empire FAQ concerning the Banner of Sigismund?
 
 **A.** No, that official ruling remains unchanged - a unit made Immune to Psychology does not benefit from the Banner of Sigismund, since it is a Magic Standard trying to grant Stubborn to a unit that is Immune to Psychology, and there is no Magic vs. Mundane trump. This only clarifies that the ruling should not be extended to cancel Stubborn (or any similar rule that only touches a Break test) when it&apos;s already possessed by a model or unit as a native rule or permanent non-magic-item army-list upgrade. It does not extend to Frenzy or Stupidity, which are genuinely suppressed while Immune to Psychology is in effect, regardless of the source.
 
-**S.** The Norn Consensus Historical Precedent / Rulebook pages 112 &amp; 270 / Warhammer Chronicles 2004 page 116 / Direwolf FAQ Council Interpretation
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (NornConsensus)" id="f1c4-c11d-ac47-43a5" hidden="false">
-        <description>**Q.** Can a unit that is Immune to Psychology choose to Flee as a charge reaction, or choose to restrain pursuit if they win a combat?
+**S.** The Norn Consensus Historical Precedent / Rulebook pages 112 &amp; 270 / Warhammer Chronicles 2004 page 116 / Direwolf FAQ Council Interpretation</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (NornConsensus)" id="f1c4-c11d-ac47-43a5" hidden="false">
+      <description>**Q.** Can a unit that is Immune to Psychology choose to Flee as a charge reaction, or choose to restrain pursuit if they win a combat?
 
 **A.** A unit that is Immune to Psychology may never choose to Flee as a charge reaction. However, because Immune to Psychology does not inherently cause a unit to become Frenzied or otherwise force pursuit, the unit may still attempt a Leadership test to restrain pursuit normally after winning a combat, unless another rule specifically overrides this and forces them to pursue.
 
-**S.** The Norn Consensus Historical Precedent / Rulebook pages 112 &amp; 270
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-      <rule name="FAQ (NornConsensus)" id="9673-3eba-2318-415b" hidden="false">
-        <description>**Q.** Are units that are currently engaged in close combat ever required to take a Panic test, for example if a friendly unit breaks from combat within 6&quot; of them?
+**S.** The Norn Consensus Historical Precedent / Rulebook pages 112 &amp; 270</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
+    <rule name="FAQ (NornConsensus)" id="9673-3eba-2318-415b" hidden="false">
+      <description>**Q.** Are units that are currently engaged in close combat ever required to take a Panic test, for example if a friendly unit breaks from combat within 6&quot; of them?
 
 **A.** No. Units that are actively engaged in close combat never take Panic tests, regardless of the trigger.
 
-**S.** The Norn Consensus Historical Precedent / Rulebook page 80
-</description>
-        <modifiers>
-          <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
-              </conditions>
-          </modifier>
-        </modifiers>
-      </rule>
-
+**S.** The Norn Consensus Historical Precedent / Rulebook page 80</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="2628-9a31-5fc9-c97e" shared="true" includeChildSelections="true" childName="Show FAQs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
     <rule id="39b8-b067-c6d9-901e" name="Scaly Skin 2+" hidden="false">
       <description>Scaly Skin gives 2+ saving throw</description>
     </rule>
