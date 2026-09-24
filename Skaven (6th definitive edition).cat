@@ -377,6 +377,7 @@
           </constraints>
           <entryLinks>
             <entryLink id="a11a-682e-76d8-7705" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="e4b1-5857-9d82-17de" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Arcane Items (Unlimited)" hidden="false" id="d3ba-9ee3-cf2e-9dde" type="selectionEntryGroup" targetId="f737-94f8-fb8f-6b7e"/>
             <entryLink id="83c7-a6e7-4c02-a1a3" name="Arcane Items (SK-AB + Common)" hidden="false" collective="false" import="true" targetId="a18f-f748-fc50-5097" type="selectionEntryGroup"/>
             <entryLink id="a710-8ced-e6dd-2248" name="Magic Talismans" hidden="false" collective="false" import="true" targetId="e52c-c54c-35bc-9c8e" type="selectionEntryGroup"/>
             <entryLink id="0ccb-58d2-9b97-2471" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="dbce-3caf-2139-09ee" type="selectionEntryGroup"/>
@@ -449,47 +450,20 @@
         </entryLink>
         <entryLink id="28db-c575-a53f-aa04" name="General" hidden="false" collective="false" import="true" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry"/>
         <entryLink import="true" name="Magic Level 4" hidden="false" id="c4ac-0dd2-cde7-cf80" type="selectionEntry" targetId="fc28-3af2-d37a-d07e">
+          <entryLinks>
+            <entryLink import="true" name="Warpstone Tokens (Free)" hidden="false" id="4011-a599-bac0-7139" type="selectionEntry" targetId="093e-504e-b5cf-5ca4">
+              <constraints>
+                <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="5bca-668c-4b7c-eb3a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="bb5f-5a37-4ac8-9fa9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6be4-678a-9a3b-2e23" includeChildSelections="false"/>
           </constraints>
-          <modifierGroups>
-            <modifierGroup type="and">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="unit" childId="158f-d753-59e2-9ad2" shared="true" includeChildSelections="true"/>
-              </conditions>
-              <modifiers>
-                <modifier type="decrement" value="10" field="ecfa-8486-4f6c-c249"/>
-              </modifiers>
-              <comment>Compensate Warpstone Tokens - LVL 1</comment>
-            </modifierGroup>
-            <modifierGroup type="and">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="unit" childId="fc28-3af2-d37a-d07e" shared="true" includeChildSelections="true"/>
-              </conditions>
-              <modifiers>
-                <modifier type="decrement" value="40" field="ecfa-8486-4f6c-c249"/>
-              </modifiers>
-              <comment>Compensate Warpstone Tokens - LVL 4</comment>
-            </modifierGroup>
-            <modifierGroup type="and">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="unit" childId="cb6c-c69a-5c73-97e8" shared="true" includeChildSelections="true"/>
-              </conditions>
-              <modifiers>
-                <modifier type="decrement" value="30" field="ecfa-8486-4f6c-c249"/>
-              </modifiers>
-              <comment>Compensate Warpstone Tokens - LVL 3</comment>
-            </modifierGroup>
-            <modifierGroup type="and">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="unit" childId="fbc2-5115-f240-7367" shared="true" includeChildSelections="true"/>
-              </conditions>
-              <modifiers>
-                <modifier type="decrement" value="20" field="ecfa-8486-4f6c-c249"/>
-              </modifiers>
-              <comment>Compensate Warpstone Tokens - LVL 2</comment>
-            </modifierGroup>
-          </modifierGroups>
           <costs>
             <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
           </costs>
@@ -970,11 +944,25 @@
             <entryLink id="983d-2c04-236c-20c2" name="Magic Weapons (Clan Pestilens)" hidden="false" collective="false" import="true" targetId="272b-a08e-7a17-aea0" type="selectionEntryGroup"/>
             <entryLink id="c10d-ff3f-6e98-6649" name="Magic Talismans" hidden="false" collective="false" import="true" targetId="e52c-c54c-35bc-9c8e" type="selectionEntryGroup"/>
             <entryLink id="9d6c-3494-1ff5-4102" name="Enchanted Items (Clan Pestilens)" hidden="false" collective="false" import="true" targetId="178c-0a4a-4edc-43df" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Arcane Items (Unlimited)" hidden="false" id="3d08-01e1-b5ad-9702" type="selectionEntryGroup" targetId="f737-94f8-fb8f-6b7e">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dfde-a958-b396-5fb3" type="lessThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
             <entryLink id="97f4-2bc6-d681-051c" name="Arcane Items (SK-AB + Common)" hidden="false" collective="false" import="true" targetId="a18f-f748-fc50-5097" type="selectionEntryGroup">
               <modifiers>
                 <modifier type="increment" field="3588-a903-3a40-c646" value="1">
                   <conditions>
                     <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dfde-a958-b396-5fb3" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dfde-a958-b396-5fb3" type="lessThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -1255,6 +1243,7 @@
             <entryLink import="true" name="Magic Weapons (Common)" hidden="false" id="cb6e-a5fd-5340-4d9e" collective="false" targetId="8171-d883-19d8-6450" type="selectionEntryGroup"/>
             <entryLink import="true" name="Magic Talismans (Common)" hidden="false" id="f7d3-9b10-1546-40d1" collective="false" targetId="7dcf-8a09-c9b8-9a88" type="selectionEntryGroup"/>
             <entryLink import="true" name="Magic Armour (Common)" hidden="false" id="9282-ef57-2030-5dc7" collective="false" targetId="ed11-243d-9671-7f1c" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Arcane Items (Unlimited)" hidden="false" id="cef1-4b78-61f0-11fc" type="selectionEntryGroup" targetId="f737-94f8-fb8f-6b7e"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
@@ -1267,27 +1256,10 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a38c-4362-e6d0-950c" includeChildSelections="false"/>
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Arcane Items (Common)" hidden="false" id="5749-eab8-428d-4f72" type="selectionEntryGroup" targetId="0d3f-389c-02b2-bb34"/>
+                <entryLink import="true" name="Staff of Sorcery" hidden="false" id="3aa3-7d39-e188-dee3" type="selectionEntry" targetId="b22a-6be5-d4f9-7776"/>
                 <entryLink import="true" name="Arcane Items (SK-AB)" hidden="false" id="dec7-a6fd-17c2-8739" type="selectionEntryGroup" targetId="5317-e91e-bd46-d862"/>
                 <entryLink import="true" name="Arcane Items (Warlock Engineer)" hidden="false" id="a8c7-f20b-44fa-cc22" type="selectionEntryGroup" targetId="ab4d-6e55-06e6-6e8e"/>
               </entryLinks>
-              <modifiers>
-                <modifier type="increment" value="1" field="a38c-4362-e6d0-950c">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="parent" childId="093e-504e-b5cf-5ca4" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Warpstone Token"/>
-                  </repeats>
-                </modifier>
-                <modifier type="increment" value="1" field="a38c-4362-e6d0-950c">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="parent" childId="989e-9d22-7fea-19b5" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                  </repeats>
-                </modifier>
-                <modifier type="increment" value="1" field="a38c-4362-e6d0-950c">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="parent" childId="f969-0b28-b1cf-bb02" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <modifierGroups>
@@ -1374,48 +1346,21 @@
         </entryLink>
         <entryLink id="80a1-3096-824f-c323" name="General" hidden="false" collective="false" import="true" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry"/>
         <entryLink id="8145-8255-8969-b1ca" name="Magic Level 1" hidden="false" collective="false" import="true" targetId="158f-d753-59e2-9ad2" type="selectionEntry">
+          <entryLinks>
+            <entryLink import="true" name="Warpstone Tokens (Free)" hidden="false" id="d5cc-c9d2-5bcc-9db7" type="selectionEntry" targetId="093e-504e-b5cf-5ca4">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7eb2-2836-cd48-1489" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="53b5-5212-ae39-776a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b884-fff7-7b95-990c" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="776c-ef98-90be-bbd4" type="max"/>
           </constraints>
-          <modifierGroups>
-            <modifierGroup type="and">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="unit" childId="158f-d753-59e2-9ad2" shared="true" includeChildSelections="true"/>
-              </conditions>
-              <modifiers>
-                <modifier type="decrement" value="10" field="ecfa-8486-4f6c-c249"/>
-              </modifiers>
-              <comment>Compensate Warpstone Tokens - LVL 1</comment>
-            </modifierGroup>
-            <modifierGroup type="and">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="unit" childId="fc28-3af2-d37a-d07e" shared="true" includeChildSelections="true"/>
-              </conditions>
-              <modifiers>
-                <modifier type="decrement" value="40" field="ecfa-8486-4f6c-c249"/>
-              </modifiers>
-              <comment>Compensate Warpstone Tokens - LVL 4</comment>
-            </modifierGroup>
-            <modifierGroup type="and">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="unit" childId="cb6c-c69a-5c73-97e8" shared="true" includeChildSelections="true"/>
-              </conditions>
-              <modifiers>
-                <modifier type="decrement" value="30" field="ecfa-8486-4f6c-c249"/>
-              </modifiers>
-              <comment>Compensate Warpstone Tokens - LVL 3</comment>
-            </modifierGroup>
-            <modifierGroup type="and">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="unit" childId="fbc2-5115-f240-7367" shared="true" includeChildSelections="true"/>
-              </conditions>
-              <modifiers>
-                <modifier type="decrement" value="20" field="ecfa-8486-4f6c-c249"/>
-              </modifiers>
-              <comment>Compensate Warpstone Tokens - LVL 2</comment>
-            </modifierGroup>
-          </modifierGroups>
         </entryLink>
       </entryLinks>
       <costs>
@@ -4519,10 +4464,32 @@ This unremarkable-ooking sceptre throbs with the essence of every disease indige
           <entryLinks>
             <entryLink import="true" name="Magic Level 1" hidden="false" id="98f3-4b6d-e395-80f6" type="selectionEntry" targetId="158f-d753-59e2-9ad2">
               <entryLinks>
+                <entryLink import="true" name="Warpstone Tokens (Free)" hidden="false" id="b440-8d63-eb18-b9fb" type="selectionEntry" targetId="093e-504e-b5cf-5ca4">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5c5e-217b-92a5-a700" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="39ea-f370-ca9d-4765" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <entryLinks>
                 <entryLink import="true" name="4. Pestilent Breath" hidden="false" id="150d-c3be-aea7-8b29" collective="false" targetId="5ded-10a9-fa08-3184" type="selectionEntry"/>
               </entryLinks>
             </entryLink>
             <entryLink import="true" name="Magic Level 2" hidden="false" id="4e54-2ff7-8404-cd85" type="selectionEntry" targetId="fbc2-5115-f240-7367">
+              <entryLinks>
+                <entryLink import="true" name="Warpstone Tokens (Free)" hidden="false" id="f7c3-0b49-71e5-83e5" type="selectionEntry" targetId="093e-504e-b5cf-5ca4">
+                  <constraints>
+                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="853f-0090-0543-ca25" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="5412-69ab-baa6-376e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
               <entryLinks>
                 <entryLink import="true" name="4. Pestilent Breath" hidden="false" id="4de1-cbc9-6442-cd31" collective="false" targetId="5ded-10a9-fa08-3184" type="selectionEntry"/>
                 <entryLink import="true" name="6. Plague" hidden="false" id="a9e5-645d-8501-e7e6" collective="false" targetId="0e16-b607-44f9-c413" type="selectionEntry">
@@ -4562,6 +4529,7 @@ This unremarkable-ooking sceptre throbs with the essence of every disease indige
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Magic Weapons" hidden="false" id="c655-7d4f-57d7-7e9a" collective="false" targetId="e4b1-5857-9d82-17de" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Arcane Items (Unlimited)" hidden="false" id="b134-1e1d-49ef-718f" type="selectionEntryGroup" targetId="f737-94f8-fb8f-6b7e"/>
             <entryLink import="true" name="Arcane Items (SK-AB + Common)" hidden="false" id="c31e-73f1-0074-ac0c" collective="false" targetId="a18f-f748-fc50-5097" type="selectionEntryGroup"/>
             <entryLink import="true" name="Magic Talismans" hidden="false" id="a621-7889-e1b9-27e2" collective="false" targetId="e52c-c54c-35bc-9c8e" type="selectionEntryGroup"/>
             <entryLink import="true" name="Enchanted Items" hidden="false" id="5039-0477-1d95-3cfa" collective="false" targetId="dbce-3caf-2139-09ee" type="selectionEntryGroup"/>
@@ -4930,6 +4898,7 @@ This unremarkable-ooking sceptre throbs with the essence of every disease indige
             <entryLink id="4428-2be3-3904-1ae5" name="Magic Weapons (Clan Eshin)" hidden="false" collective="false" import="true" targetId="77a4-916d-8b96-b97a" type="selectionEntryGroup"/>
             <entryLink id="d7d3-f370-d8c8-d5a4" name="Magic Talismans" hidden="false" collective="false" import="true" targetId="e52c-c54c-35bc-9c8e" type="selectionEntryGroup"/>
             <entryLink id="ecc0-8cce-8eab-6cf6" name="Enchanted Items (Clan Eshin)" hidden="false" collective="false" import="true" targetId="07e7-1605-444d-4069" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Arcane Items (Unlimited)" hidden="false" id="9fa9-6db0-42a3-f28d" type="selectionEntryGroup" targetId="f737-94f8-fb8f-6b7e"/>
             <entryLink import="true" name="Arcane Items (SK-AB + Common)" hidden="false" id="6251-4b62-3f15-dbe2" type="selectionEntryGroup" targetId="a18f-f748-fc50-5097"/>
             <entryLink import="true" name="Magic Armour (Common)" hidden="false" id="a67b-fc3b-ad6f-e816" collective="false" targetId="ed11-243d-9671-7f1c" type="selectionEntryGroup"/>
             <entryLink import="true" name="Magic Talismans (Common)" hidden="false" id="a48e-1924-4544-06a5" collective="false" targetId="7dcf-8a09-c9b8-9a88" type="selectionEntryGroup"/>
@@ -4976,17 +4945,17 @@ This unremarkable-ooking sceptre throbs with the essence of every disease indige
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Magic Level 1" hidden="false" id="30a5-0d4b-2adf-deaa" type="selectionEntry" targetId="158f-d753-59e2-9ad2">
-              <modifierGroups>
-                <modifierGroup type="and">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="158f-d753-59e2-9ad2" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                  <modifiers>
-                    <modifier type="decrement" value="10" field="ecfa-8486-4f6c-c249"/>
-                  </modifiers>
-                  <comment>Compensate Warpstone Tokens - LVL 1</comment>
-                </modifierGroup>
-              </modifierGroups>
+              <entryLinks>
+                <entryLink import="true" name="Warpstone Tokens (Free)" hidden="false" id="c33f-6e03-50f3-73bc" type="selectionEntry" targetId="093e-504e-b5cf-5ca4">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3f48-708b-0ffe-161f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a1c3-3e66-fbff-5815" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
               <entryLinks>
                 <entryLink import="true" name="1. Skitterleap" hidden="false" id="f3ba-6243-ce75-0980" collective="false" targetId="b2d7-83c8-c22a-48db" type="selectionEntry"/>
                 <entryLink import="true" name="1. Skitterleap (SoC)" hidden="true" id="74c9-abb3-328e-69dc" collective="false" targetId="5f2f-e4c8-fc44-c91b" type="selectionEntry">
@@ -5001,17 +4970,17 @@ This unremarkable-ooking sceptre throbs with the essence of every disease indige
               </entryLinks>
             </entryLink>
             <entryLink import="true" name="Magic Level 2" hidden="false" id="a74a-9926-779e-6dab" type="selectionEntry" targetId="fbc2-5115-f240-7367">
-              <modifierGroups>
-                <modifierGroup type="and">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="fbc2-5115-f240-7367" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                  <modifiers>
-                    <modifier type="decrement" value="20" field="ecfa-8486-4f6c-c249"/>
-                  </modifiers>
-                  <comment>Compensate Warpstone Tokens - LVL 1</comment>
-                </modifierGroup>
-              </modifierGroups>
+              <entryLinks>
+                <entryLink import="true" name="Warpstone Tokens (Free)" hidden="false" id="aef2-ae8c-1d92-97a2" type="selectionEntry" targetId="093e-504e-b5cf-5ca4">
+                  <constraints>
+                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="f8c3-8bf4-aa3e-cedb" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="b615-5823-de95-751b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
               <entryLinks>
                 <entryLink import="true" name="1. Skitterleap" hidden="false" id="7c1c-5213-5a00-52e0" collective="false" targetId="b2d7-83c8-c22a-48db" type="selectionEntry"/>
                 <entryLink import="true" name="1. Skitterleap (SoC)" hidden="true" id="88db-5af0-0daf-e9db" collective="false" targetId="5f2f-e4c8-fc44-c91b" type="selectionEntry"/>
@@ -5129,6 +5098,7 @@ This unremarkable-ooking sceptre throbs with the essence of every disease indige
             <entryLink import="true" name="Magic Armour" hidden="false" id="02a9-61c1-354c-13ff" collective="false" targetId="3aa2-a354-e221-9114" type="selectionEntryGroup"/>
             <entryLink id="dc6a-6b2e-2e7e-2cdf" name="Magic Weapons (Clan Skryre)" hidden="false" collective="false" import="true" targetId="c1a7-b413-07a6-d5fe" type="selectionEntryGroup"/>
             <entryLink import="true" name="Magic Armour (Common)" hidden="false" id="87a3-5158-c845-3aba" collective="false" targetId="ed11-243d-9671-7f1c" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Arcane Items (Unlimited)" hidden="false" id="62ed-8081-bf7c-dcbe" type="selectionEntryGroup" targetId="f737-94f8-fb8f-6b7e"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
@@ -5141,22 +5111,10 @@ This unremarkable-ooking sceptre throbs with the essence of every disease indige
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5e06-0b78-363b-43f5" includeChildSelections="false"/>
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Arcane Items (Common)" hidden="false" id="8186-c8ca-3f84-012d" type="selectionEntryGroup" targetId="0d3f-389c-02b2-bb34"/>
+                <entryLink import="true" name="Staff of Sorcery" hidden="false" id="3f7b-1bfb-198a-ebd5" type="selectionEntry" targetId="b22a-6be5-d4f9-7776"/>
                 <entryLink import="true" name="Arcane Items (SK-AB)" hidden="false" id="8f80-6f10-2226-669e" type="selectionEntryGroup" targetId="5317-e91e-bd46-d862"/>
                 <entryLink import="true" name="Arcane Items (Warlock Engineer)" hidden="false" id="d6ee-0b1d-bb8e-f3c4" type="selectionEntryGroup" targetId="ab4d-6e55-06e6-6e8e"/>
               </entryLinks>
-              <modifiers>
-                <modifier type="increment" value="1" field="5e06-0b78-363b-43f5">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="parent" childId="f969-0b28-b1cf-bb02" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                  </repeats>
-                </modifier>
-                <modifier type="increment" value="1" field="5e06-0b78-363b-43f5">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="parent" childId="989e-9d22-7fea-19b5" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <modifierGroups>
@@ -5243,6 +5201,17 @@ This unremarkable-ooking sceptre throbs with the essence of every disease indige
         </entryLink>
         <entryLink id="bf97-1df7-10f8-f21e" name="General" hidden="false" collective="false" import="true" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry"/>
         <entryLink import="true" name="Magic Level 3" hidden="false" id="4d65-7e56-65c7-b6fe" type="selectionEntry" targetId="cb6c-c69a-5c73-97e8">
+          <entryLinks>
+            <entryLink import="true" name="Warpstone Tokens (Free)" hidden="false" id="8607-126e-91da-1666" type="selectionEntry" targetId="093e-504e-b5cf-5ca4">
+              <constraints>
+                <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="b929-134f-dba9-dca9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="b7a9-cce6-7d7f-4ef1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
           <costs>
             <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
           </costs>
@@ -5250,44 +5219,6 @@ This unremarkable-ooking sceptre throbs with the essence of every disease indige
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="120e-8a74-1b70-c74b" includeChildSelections="false"/>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c16f-6c2a-647a-48be" includeChildSelections="false"/>
           </constraints>
-          <modifierGroups>
-            <modifierGroup type="and">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="unit" childId="158f-d753-59e2-9ad2" shared="true" includeChildSelections="true"/>
-              </conditions>
-              <modifiers>
-                <modifier type="decrement" value="10" field="ecfa-8486-4f6c-c249"/>
-              </modifiers>
-              <comment>Compensate Warpstone Tokens - LVL 1</comment>
-            </modifierGroup>
-            <modifierGroup type="and">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="unit" childId="fc28-3af2-d37a-d07e" shared="true" includeChildSelections="true"/>
-              </conditions>
-              <modifiers>
-                <modifier type="decrement" value="40" field="ecfa-8486-4f6c-c249"/>
-              </modifiers>
-              <comment>Compensate Warpstone Tokens - LVL 4</comment>
-            </modifierGroup>
-            <modifierGroup type="and">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="unit" childId="cb6c-c69a-5c73-97e8" shared="true" includeChildSelections="true"/>
-              </conditions>
-              <modifiers>
-                <modifier type="decrement" value="30" field="ecfa-8486-4f6c-c249"/>
-              </modifiers>
-              <comment>Compensate Warpstone Tokens - LVL 3</comment>
-            </modifierGroup>
-            <modifierGroup type="and">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="unit" childId="fbc2-5115-f240-7367" shared="true" includeChildSelections="true"/>
-              </conditions>
-              <modifiers>
-                <modifier type="decrement" value="20" field="ecfa-8486-4f6c-c249"/>
-              </modifiers>
-              <comment>Compensate Warpstone Tokens - LVL 2</comment>
-            </modifierGroup>
-          </modifierGroups>
           <rules>
             <rule name="Warp Lightning (Skryre)" id="98da-975c-b023-b0f7" hidden="false" publicationId="f804-741f-2593-2dec" page="77">
               <comment>Question: Can he cast this spell with lower casting values?</comment>
@@ -5530,11 +5461,25 @@ Warp Lightning is a magic missile with a range of 24&quot; It can be cast at a c
             <entryLink id="6b71-b9b2-494c-e685" name="Magic Weapons (Clan Pestilens)" hidden="false" collective="false" import="true" targetId="272b-a08e-7a17-aea0" type="selectionEntryGroup"/>
             <entryLink id="1ade-89fd-4341-ead3" name="Magic Talismans" hidden="false" collective="false" import="true" targetId="e52c-c54c-35bc-9c8e" type="selectionEntryGroup"/>
             <entryLink id="9748-7fc3-c12f-56f5" name="Enchanted Items (Clan Pestilens)" hidden="false" collective="false" import="true" targetId="178c-0a4a-4edc-43df" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Arcane Items (Unlimited)" hidden="false" id="861f-c0b5-5283-5941" type="selectionEntryGroup" targetId="f737-94f8-fb8f-6b7e">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dfde-a958-b396-5fb3" type="lessThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
             <entryLink id="ab19-3b74-cb5a-c74a" name="Arcane Items (SK-AB + Common)" hidden="false" collective="false" import="true" targetId="a18f-f748-fc50-5097" type="selectionEntryGroup">
               <modifiers>
                 <modifier type="increment" field="d65f-5aa2-878a-758f" value="1">
                   <conditions>
                     <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dfde-a958-b396-5fb3" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dfde-a958-b396-5fb3" type="lessThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -5630,17 +5575,17 @@ Warp Lightning is a magic missile with a range of 24&quot; It can be cast at a c
         </entryLink>
         <entryLink id="b035-7e60-be8e-d85d" name="General" hidden="false" collective="false" import="true" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry"/>
         <entryLink import="true" name="Magic Level 1" hidden="false" id="e6b8-a0b9-72da-8b30" type="selectionEntry" targetId="158f-d753-59e2-9ad2">
-          <modifierGroups>
-            <modifierGroup type="and">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="unit" childId="158f-d753-59e2-9ad2" shared="true" includeChildSelections="true"/>
-              </conditions>
-              <modifiers>
-                <modifier type="decrement" value="10" field="ecfa-8486-4f6c-c249"/>
-              </modifiers>
-              <comment>Compensate Warpstone Tokens - LVL 1</comment>
-            </modifierGroup>
-          </modifierGroups>
+          <entryLinks>
+            <entryLink import="true" name="Warpstone Tokens (Free)" hidden="false" id="3062-0a09-085f-de25" type="selectionEntry" targetId="093e-504e-b5cf-5ca4">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f17a-22f5-0814-b457" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="937a-6382-3963-9045" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1d6e-fd9c-a888-226c" includeChildSelections="false"/>
           </constraints>
@@ -5840,6 +5785,7 @@ Warp Lightning is a magic missile with a range of 24&quot; It can be cast at a c
             <entryLink id="a999-6d64-1d1f-7c67" name="Magic Armour (Common)" hidden="false" collective="false" import="true" targetId="ed11-243d-9671-7f1c" type="selectionEntryGroup"/>
             <entryLink id="0c32-0b68-ffdb-7211" name="Magic Talismans (Common)" hidden="false" collective="false" import="true" targetId="7dcf-8a09-c9b8-9a88" type="selectionEntryGroup"/>
             <entryLink id="d29a-4f30-a78a-7daa" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="dbce-3caf-2139-09ee" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Arcane Items (Unlimited)" hidden="false" id="853b-5e0d-c446-69d6" type="selectionEntryGroup" targetId="f737-94f8-fb8f-6b7e"/>
             <entryLink import="true" name="Arcane Items (SK-AB + Common)" hidden="false" id="dae5-f1d7-89f2-c51a" type="selectionEntryGroup" targetId="a18f-f748-fc50-5097"/>
             <entryLink id="5eb4-853a-a8a8-5e70" name="Magic Armour" hidden="false" collective="false" import="true" targetId="3aa2-a354-e221-9114" type="selectionEntryGroup"/>
             <entryLink id="edac-5614-bd77-76b9" name="Magic Talismans" hidden="false" collective="false" import="true" targetId="e52c-c54c-35bc-9c8e" type="selectionEntryGroup"/>
@@ -5920,17 +5866,17 @@ Warp Lightning is a magic missile with a range of 24&quot; It can be cast at a c
         </entryLink>
         <entryLink id="5205-dcde-6aa4-217e" name="General" hidden="false" collective="false" import="true" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry"/>
         <entryLink import="true" name="Magic Level 1" hidden="false" id="615b-4996-f9db-6845" type="selectionEntry" targetId="158f-d753-59e2-9ad2">
-          <modifierGroups>
-            <modifierGroup type="and">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="unit" childId="158f-d753-59e2-9ad2" shared="true" includeChildSelections="true"/>
-              </conditions>
-              <modifiers>
-                <modifier type="decrement" value="10" field="ecfa-8486-4f6c-c249"/>
-              </modifiers>
-              <comment>Compensate Warpstone Tokens - LVL 1</comment>
-            </modifierGroup>
-          </modifierGroups>
+          <entryLinks>
+            <entryLink import="true" name="Warpstone Tokens (Free)" hidden="false" id="38de-4d06-dd40-1e69" type="selectionEntry" targetId="093e-504e-b5cf-5ca4">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="48b2-5d40-e237-931f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ed73-e354-c276-8c23" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1dad-e56c-223e-b897" includeChildSelections="false"/>
           </constraints>
@@ -6263,6 +6209,7 @@ Warp Lightning is a magic missile with a range of 24&quot; It can be cast at a c
             <entryLink id="4aa2-0429-2e28-2c59" name="Magic Weapons (Clan Skryre)" hidden="false" collective="false" import="true" targetId="c1a7-b413-07a6-d5fe" type="selectionEntryGroup"/>
             <entryLink id="2878-081b-9bc1-1ae5" name="Magic Talismans" hidden="false" collective="false" import="true" targetId="e52c-c54c-35bc-9c8e" type="selectionEntryGroup"/>
             <entryLink id="5213-4db2-fa4f-0845" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="dbce-3caf-2139-09ee" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Arcane Items (Unlimited)" hidden="false" id="fe02-518f-f326-eefe" type="selectionEntryGroup" targetId="f737-94f8-fb8f-6b7e"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
@@ -6275,27 +6222,10 @@ Warp Lightning is a magic missile with a range of 24&quot; It can be cast at a c
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6028-96ba-69fc-6ef6" includeChildSelections="false"/>
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Arcane Items (Common)" hidden="false" id="d406-3d80-6515-f587" type="selectionEntryGroup" targetId="0d3f-389c-02b2-bb34"/>
+                <entryLink import="true" name="Staff of Sorcery" hidden="false" id="48a8-90a3-ddbe-c3e5" type="selectionEntry" targetId="b22a-6be5-d4f9-7776"/>
                 <entryLink import="true" name="Arcane Items (SK-AB)" hidden="false" id="af16-5704-e470-8a30" type="selectionEntryGroup" targetId="5317-e91e-bd46-d862"/>
                 <entryLink import="true" name="Arcane Items (Warlock Engineer)" hidden="false" id="369a-c03d-bb42-d0c4" type="selectionEntryGroup" targetId="ab4d-6e55-06e6-6e8e"/>
               </entryLinks>
-              <modifiers>
-                <modifier type="increment" value="1" field="6028-96ba-69fc-6ef6">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="parent" childId="093e-504e-b5cf-5ca4" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Warpstone Token"/>
-                  </repeats>
-                </modifier>
-                <modifier type="increment" value="1" field="6028-96ba-69fc-6ef6">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="parent" childId="989e-9d22-7fea-19b5" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                  </repeats>
-                </modifier>
-                <modifier type="increment" value="1" field="6028-96ba-69fc-6ef6">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="parent" childId="f969-0b28-b1cf-bb02" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntry>
@@ -6367,6 +6297,17 @@ Warp Lightning is a magic missile with a range of 24&quot; It can be cast at a c
         </entryLink>
         <entryLink id="e458-0ca7-b0d0-b46a" name="General" hidden="false" collective="false" import="true" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry"/>
         <entryLink id="7e2b-25eb-3efe-94b4" name="Magic Level 3" hidden="false" collective="false" import="true" targetId="cb6c-c69a-5c73-97e8" type="selectionEntry">
+          <entryLinks>
+            <entryLink import="true" name="Warpstone Tokens (Free)" hidden="false" id="ad58-fb50-f1ad-99bd" type="selectionEntry" targetId="093e-504e-b5cf-5ca4">
+              <constraints>
+                <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="1a7a-4422-e733-9a8e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="5704-0234-6569-6f18" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="231a-7bae-20d5-0859" type="min"/>
           </constraints>
@@ -6424,6 +6365,7 @@ Warp Lightning is a magic missile with a range of 24&quot; It can be cast at a c
           </constraints>
           <entryLinks>
             <entryLink id="1752-c557-1975-e388" name="Magic Weapons" hidden="false" collective="false" import="true" targetId="e4b1-5857-9d82-17de" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Arcane Items (Unlimited)" hidden="false" id="4c84-b22a-c030-4b18" type="selectionEntryGroup" targetId="f737-94f8-fb8f-6b7e"/>
             <entryLink id="303b-f37b-4e71-aceb" name="Arcane Items (SK-AB + Common)" hidden="false" collective="false" import="true" targetId="a18f-f748-fc50-5097" type="selectionEntryGroup"/>
             <entryLink id="43dd-0c79-ce34-3e66" name="Magic Talismans" hidden="false" collective="false" import="true" targetId="e52c-c54c-35bc-9c8e" type="selectionEntryGroup"/>
             <entryLink id="1828-9169-3d42-9a42" name="Enchanted Items" hidden="false" collective="false" import="true" targetId="dbce-3caf-2139-09ee" type="selectionEntryGroup"/>
@@ -6570,6 +6512,17 @@ Warp Lightning is a magic missile with a range of 24&quot; It can be cast at a c
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Magic Level 2" hidden="false" id="1344-54cc-3a16-2e43" type="selectionEntry" targetId="fbc2-5115-f240-7367">
+              <entryLinks>
+                <entryLink import="true" name="Warpstone Tokens (Free)" hidden="false" id="ca0d-85ff-0931-d5e3" type="selectionEntry" targetId="093e-504e-b5cf-5ca4">
+                  <constraints>
+                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="c43f-bd72-187e-fa40" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="5b7d-71bd-35a1-7c48" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
               <costs>
                 <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
               </costs>
@@ -6579,6 +6532,17 @@ Warp Lightning is a magic missile with a range of 24&quot; It can be cast at a c
               </entryLinks>
             </entryLink>
             <entryLink import="true" name="Magic Level 3" hidden="false" id="3e69-89fc-783d-dc17" type="selectionEntry" targetId="cb6c-c69a-5c73-97e8">
+              <entryLinks>
+                <entryLink import="true" name="Warpstone Tokens (Free)" hidden="false" id="7173-aa23-c845-ef74" type="selectionEntry" targetId="093e-504e-b5cf-5ca4">
+                  <constraints>
+                    <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="fc9c-91a3-d69f-db14" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="f0cc-8144-d241-01d2" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
               <costs>
                 <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="60"/>
               </costs>
@@ -8288,6 +8252,17 @@ Warp Lightning is a magic missile with a range of 24&quot; It can be cast at a c
       <entryLinks>
         <entryLink id="6332-98d9-43f5-1d39" name="General" hidden="false" collective="false" import="true" targetId="1b7c-2c90-6d96-28c9" type="selectionEntry"/>
         <entryLink id="4c0e-a356-19a4-c6c3" name="Magic Level 4" hidden="false" collective="false" import="true" targetId="fc28-3af2-d37a-d07e" type="selectionEntry" collapsible="true">
+          <entryLinks>
+            <entryLink import="true" name="Warpstone Tokens (Free)" hidden="false" id="5d81-19fd-695a-b80f" type="selectionEntry" targetId="093e-504e-b5cf-5ca4">
+              <constraints>
+                <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="35dc-10e8-a731-7a3a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="514e-817b-a6b6-5be9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6da2-4529-e895-27d7" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="08d0-3231-461a-1f5d" type="max"/>
@@ -8658,6 +8633,17 @@ no armour saves.</description>
         </entryLink>
         <entryLink import="true" name="Extra Hero choice" hidden="false" id="39d9-1002-ab67-9ca0" type="selectionEntry" targetId="3e25-986a-693f-a975"/>
         <entryLink import="true" name="Magic Level 4" hidden="false" id="a9a1-6955-5976-5149" type="selectionEntry" targetId="fc28-3af2-d37a-d07e">
+          <entryLinks>
+            <entryLink import="true" name="Warpstone Tokens (Free)" hidden="false" id="5c97-860e-2f32-04a5" type="selectionEntry" targetId="093e-504e-b5cf-5ca4">
+              <constraints>
+                <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="86fe-17d3-1eec-8242" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="2fd3-95fd-2a61-01ec" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
           <costs>
             <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="0"/>
           </costs>
@@ -10192,37 +10178,8 @@ no armour saves.</description>
         <cost name=" Casting Dice" typeId="fcec-2340-6368-a2ba" value="0"/>
         <cost name=" Dispel Dice" typeId="6001-b2bf-4529-c07d" value="0"/>
       </costs>
-      <modifierGroups>
-        <modifierGroup type="and">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="unit" childId="fc28-3af2-d37a-d07e" shared="true" includeChildSelections="true"/>
-          </conditions>
-          <modifiers>
-            <modifier type="increment" value="3" field="c278-9265-4a16-5197"/>
-          </modifiers>
-          <comment>LVL 4</comment>
-        </modifierGroup>
-        <modifierGroup type="and">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="unit" childId="cb6c-c69a-5c73-97e8" shared="true" includeChildSelections="true"/>
-          </conditions>
-          <modifiers>
-            <modifier type="increment" value="2" field="c278-9265-4a16-5197"/>
-          </modifiers>
-          <comment>LVL 3</comment>
-        </modifierGroup>
-        <modifierGroup type="and">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="unit" childId="fbc2-5115-f240-7367" shared="true" includeChildSelections="true"/>
-          </conditions>
-          <modifiers>
-            <modifier type="increment" value="1" field="c278-9265-4a16-5197"/>
-          </modifiers>
-          <comment>LVL 2</comment>
-        </modifierGroup>
-      </modifierGroups>
       <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c278-9265-4a16-5197"/>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="c278-9265-4a16-5197"/>
       </constraints>
     </selectionEntry>
     <selectionEntry id="f32b-cdb7-6229-538e" name="Cloak of Shadows" hidden="false" collective="false" import="true" type="upgrade">
@@ -10892,11 +10849,20 @@ no armour saves.</description>
       </modifiers>
     </selectionEntryGroup>
     <selectionEntryGroup id="5317-e91e-bd46-d862" name="Arcane Items (SK-AB)" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8400-74b2-06ae-099e" includeChildSelections="false"/>
+      </constraints>
       <entryLinks>
         <entryLink id="c3c0-f234-e19b-6394" name="Warpstone Scroll" hidden="false" collective="false" import="true" targetId="3d73-cedc-a3c5-b238" type="selectionEntry"/>
         <entryLink id="f3f5-43e4-8c42-a625" name="Warp Scroll" hidden="false" collective="false" import="true" targetId="bf5f-a9d4-26e0-e575" type="selectionEntry"/>
         <entryLink id="d026-ccf9-2541-9690" name="Eye of the Horned Rat" hidden="false" collective="false" import="true" targetId="c037-761d-2d86-d0c1" type="selectionEntry"/>
-        <entryLink id="bbbe-793c-226d-74b4" name="Warpstone Token" hidden="false" collective="false" import="true" targetId="093e-504e-b5cf-5ca4" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Arcane Items (Unlimited)" id="f737-94f8-fb8f-6b7e" hidden="false">
+      <entryLinks>
+        <entryLink import="true" name="Dispel Scroll (one use only)" hidden="false" id="9f7c-b113-8555-08c9" type="selectionEntry" targetId="b76c-6bad-4650-dbb0"/>
+        <entryLink import="true" name="Power Stone (only one use)" hidden="false" id="289f-10be-e71a-eb89" type="selectionEntry" targetId="696a-648d-c842-4c6a"/>
+        <entryLink import="true" name="Warpstone Token" hidden="false" id="a5d8-f406-f22e-1cc8" type="selectionEntry" targetId="093e-504e-b5cf-5ca4"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="272b-a08e-7a17-aea0" name="Magic Weapons (Clan Pestilens)" hidden="false" collective="false" import="true">
@@ -11025,26 +10991,11 @@ no armour saves.</description>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6643-1946-ce0f-35b8" includeChildSelections="false"/>
       </constraints>
       <entryLinks>
-        <entryLink import="true" name="Arcane Items (Common)" hidden="false" id="0615-3f64-79ed-12f7" type="selectionEntryGroup" targetId="0d3f-389c-02b2-bb34"/>
+        <entryLink import="true" name="Staff of Sorcery" hidden="false" id="04d3-bc98-a400-0833" type="selectionEntry" targetId="b22a-6be5-d4f9-7776"/>
         <entryLink import="true" name="Arcane Items (SK-AB)" hidden="false" id="6b3b-5903-af11-0014" type="selectionEntryGroup" targetId="5317-e91e-bd46-d862"/>
         <entryLink import="true" name="Arcane Items (Relics of Lustria)" hidden="false" id="600b-3020-6935-83a5" type="selectionEntryGroup" targetId="9bff-59ad-43df-a403"/>
       </entryLinks>
       <modifiers>
-        <modifier type="increment" value="1" field="6643-1946-ce0f-35b8">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="parent" childId="f969-0b28-b1cf-bb02" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-        </modifier>
-        <modifier type="increment" value="1" field="6643-1946-ce0f-35b8">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="parent" childId="989e-9d22-7fea-19b5" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-        </modifier>
-        <modifier type="increment" value="1" field="6643-1946-ce0f-35b8">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="parent" childId="093e-504e-b5cf-5ca4" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-        </modifier>
         <modifier type="append" value="Relics of Lustria" field="name" join="  + ">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="force" childId="7d87-7436-5341-bbc0" shared="true" includeChildSelections="true"/>
@@ -11315,8 +11266,9 @@ Roll a D6 every time it is used. On a 1 the Storm Daemon runs out of power and c
       <description>The Wizard can decide to activate the Eye at the beginning of each of his Magic phases. On a result of 2-6 add one Power dice to the Power dice pool. If a 1 is rolled, no dice are added to the pool and instead one dice is removed from the pool.</description>
     </rule>
     <rule id="20e5-9fdd-a83b-01ad" name="Warpstone Token" publicationId="f804-741f-2593-2dec" page="38" hidden="false">
-      <description>See the rules for Warpstone tokens in the section of Skaven magic page 34
-In the same way as scrolls, all Skaven wizards in the army can buy as many Warpstone tokens as they can –afford within the limit of the points they can spend on magic items. Buying one or more tokens does not count as taking an arcane item.</description>
+      <description>See the rules for Warpstone tokens in the section of Skaven magic page 34: every Skaven Wizard automatically receives a number of Warpstone Tokens equal to his Wizard Level, completely free of charge (a Level 1 Wizard has 1, a Level 4 Wizard has 4). The sole exception is a wizard who is one purely through the Liber Bubonicus, who is a Level 1 Wizard but starts with no Warpstone Tokens at all.
+
+In the same way as scrolls, all Skaven wizards in the army can additionally buy as many Warpstone tokens as they can afford within the limit of the points they can spend on magic items (10 pts each). Buying one or more tokens does not count as taking an arcane item.</description>
     </rule>
       <rule name="FAQ (GW)" id="2367-c351-0fae-4318" hidden="false">
         <description>**Q.** If you die from using a Warpstone Token but successfully cast the spell, would the effects of the spell still go off?
