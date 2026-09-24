@@ -444,7 +444,7 @@ In addition, Aislinn rules his vessels with an iron hand; and is automatically t
                 <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="50"/>
               </costs>
             </entryLink>
-            <entryLink import="true" name="Tiranoc Chariot" hidden="false" id="e436-03dc-9306-0807" type="selectionEntry" targetId="3f6e-c751-4eb2-f2fd"/>
+            <entryLink import="true" name="Tiranoc Chariot" hidden="false" id="e436-03dc-9306-0807" type="selectionEntry" targetId="3f6e-c751-4eb2-f2fd" defaultAmount="0"/>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="6b4d-4477-c761-fe1c" name="Wizard Level" hidden="false" collective="false" import="true" defaultSelectionEntryId="a4b8-ef05-84db-e0ab">
@@ -532,7 +532,7 @@ In addition, Aislinn rules his vessels with an iron hand; and is automatically t
         <categoryLink id="1dc7-99ba-fd41-1b06" name="Heroes" hidden="false" targetId="c16b-f319-2c62-2c12" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="d8ed-1db8-eb15-b425" name="Mounts" hidden="false" collective="false" import="true" defaultSelectionEntryId="87ae-8607-6431-81a9">
+        <selectionEntryGroup id="d8ed-1db8-eb15-b425" name="Mounts" hidden="false" collective="false" import="true" defaultSelectionEntryId="none">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e0d1-38f2-96cd-605d" type="max"/>
           </constraints>
@@ -558,7 +558,7 @@ In addition, Aislinn rules his vessels with an iron hand; and is automatically t
                 <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="50"/>
               </costs>
             </entryLink>
-            <entryLink import="true" name="Tiranoc Chariot" hidden="false" id="9012-0a1b-9419-ff23" type="selectionEntry" targetId="3f6e-c751-4eb2-f2fd">
+            <entryLink import="true" name="Tiranoc Chariot" hidden="false" id="9012-0a1b-9419-ff23" type="selectionEntry" targetId="3f6e-c751-4eb2-f2fd" defaultAmount="0">
               <modifiers>
                 <modifier type="set" value="1" field="05c5-e8ad-327c-89cc"/>
                 <modifier type="set" value="0" field="c25c-b542-bad9-a998"/>
@@ -882,7 +882,7 @@ In addition, Aislinn rules his vessels with an iron hand; and is automatically t
                 <cost name="pts" typeId="ecfa-8486-4f6c-c249" value="17"/>
               </costs>
             </entryLink>
-            <entryLink import="true" name="Tiranoc Chariot" hidden="false" id="9685-1f9f-a473-858d" type="selectionEntry" targetId="3f6e-c751-4eb2-f2fd"/>
+            <entryLink import="true" name="Tiranoc Chariot" hidden="false" id="9685-1f9f-a473-858d" type="selectionEntry" targetId="3f6e-c751-4eb2-f2fd" defaultAmount="0"/>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup name="Wizard Level" id="aa2f-02df-529b-4d50" hidden="false" collective="false" import="true" defaultSelectionEntryId="a4b8-ef05-84db-e0ab">
@@ -5859,7 +5859,7 @@ All models in Chaos/Undead/Skaven/DarkElves can (at best) hit Phytrion at 4+</de
     <selectionEntry type="upgrade" import="true" name="Tiranoc Chariot" hidden="false" id="3f6e-c751-4eb2-f2fd" collective="false">
       <constraints>
         <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="05c5-e8ad-327c-89cc" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c25c-b542-bad9-a998" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="c25c-b542-bad9-a998" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
       </constraints>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Armour Save 5+" hidden="false" id="3634-255e-bc35-b977" collective="false">
@@ -5972,6 +5972,15 @@ All models in Chaos/Undead/Skaven/DarkElves can (at best) hit Phytrion at 4+</de
           </modifiers>
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="7a1c-d611-c2dc-def1" shared="true"/>
+          </conditions>
+        </modifierGroup>
+        <modifierGroup type="and">
+          <comment>As standalone Special unit (must contain at least 1 chariot)</comment>
+          <modifiers>
+            <modifier type="set" value="1" field="c25c-b542-bad9-a998"/>
+          </modifiers>
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="7a1c-d611-c2dc-def1" shared="true"/>
           </conditions>
         </modifierGroup>
       </modifierGroups>
