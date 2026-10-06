@@ -7840,6 +7840,14 @@ This is not the same as a different unit moving to re-crew an abandoned war mach
 
 ---
 
+**Q.** Does the *Casket of Souls*' Light of Death expend the manning Liche Priest's own incantation allotment, or does the Casket release it independently of whatever incantations that priest has already cast?
+
+**A.** Independently. The Light of Death is not itself an incantation - the rule only says it is "cast like" one (for determining its Power Level and how Dispel attempts interact with it), which by its own wording stops short of actually being one. This reading is reinforced by the Hieratic Hierarchy casting order printed in the army book: Liche Priests and High Priests cast their own incantations in step 5, and the *Casket of Souls* is listed as its own separate step 6, resolving only after every priest has already finished casting. A priest manning the Casket therefore casts his own incantation allotment as normal, and the Casket still releases the Light of Death afterward regardless of what he did or didn't cast.
+
+**S.** The Norn Consensus / Tomb Kings Army Book (Hieratic Hierarchy, Incantations, The Light of Death)
+
+---
+
 **Q.** When the Incantation of Righteous Smiting is cast on a unit of Chariots, does each Chariot get one attack total, or one attack for each "part" of the Chariot (each horse plus each crewman)?
 
 **A.** Each part of the Chariot gets its own single attack under the Incantation. A Chariot is made up of multiple models for this purpose (its horses/steeds and its crew), and Righteous Smiting grants one attack per model in base contact, not one attack per Chariot as a unit. This makes the Incantation notably strong on Chariots specifically, since a single Chariot can generate several attacks this way rather than the lone attack a solitary model such as a Tomb Scorpion or Giant would get from the same spell.
